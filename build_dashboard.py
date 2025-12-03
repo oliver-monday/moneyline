@@ -753,6 +753,15 @@ def build_html(slate, team_results, league_tbl, outfile):
                 else:
                     w(value(f"{home_ss['home_streak']} straight home games"))
 
+            # Enforce mutual exclusivity
+            if road_streak > 0 and home_streak > 0:
+                # pick the one matching the most recent game's location
+                last_game = hist.sort_values("game_date", ascending=False).iloc[0]
+                if last_game["is_home"]:
+                    road_streak = 0
+                else:
+                    home_streak = 0
+
         w("</pre>")
 
         # ---------------- AWAY TEAM ----------------
