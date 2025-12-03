@@ -146,6 +146,14 @@ def compute_schedule_stress(team_hist, today, venue_city, venue_state):
         else:
             break
 
+    # Compute consecutive home games
+    home_streak = 0
+    for _, row in recent_games[::-1].iterrows():  # iterate from most recent backward
+        if row["is_home"]:  # game was at home
+            home_streak += 1
+        else:
+            break
+
     # ---- Composite score 0–100 ----
     score = 0.0
 
@@ -192,6 +200,7 @@ def compute_schedule_stress(team_hist, today, venue_city, venue_state):
         "games_7": games_7,
         "travel_miles": travel_miles,
         "road_streak": road_streak,
+        "home_streak": home_streak,
     }
 
 # ------------ helpers --------------------------------------------------
@@ -727,13 +736,21 @@ def build_html(slate, team_results, league_tbl, outfile):
             w(value(travel_text))
 
             # Road stretch
-            w(label("Road stretch:"))
-            if home_ss["road_streak"] == 0:
-                w(value("no recent road streak"))
-            elif home_ss["road_streak"] == 1:
-                w(value("1 straight road game"))
-            else:
-                w(value(f"{home_ss['road_streak']} straight road games"))
+            # Only show road stretch if meaningful
+            if home_ss["road_streak"] >= 1:
+                w(label("Road stretch:"))
+                if home_ss["road_streak"] == 1:
+                    w(value("1 straight road game"))
+                else:
+                    w(value(f"{home_ss['road_streak']} straight road games"))
+
+            # Homestand indicator (only show if meaningful)
+            if home_ss["home_streak"] >= 2:
+                w(label("Home stand:"))
+                if home_ss["home_streak"] == 2:
+                    w(value("2 straight home games"))
+                else:
+                    w(value(f"{home_ss['home_streak']} straight home games"))
 
         w("</pre>")
 
@@ -828,13 +845,20 @@ def build_html(slate, team_results, league_tbl, outfile):
             w(label("Travel:"))
             w(value(travel_text))
 
-            w(label("Road stretch:"))
-            if away_ss["road_streak"] == 0:
-                w(value("no recent road streak"))
-            elif away_ss["road_streak"] == 1:
-                w(value("1 straight road game"))
-            else:
-                w(value(f"{away_ss['road_streak']} straight road games"))
+            # Only show road stretch if meaningful
+            if home_ss["road_streak"] >= 1:
+                w(label("Road stretch:"))
+                if home_ss["road_streak"] == 1:
+                    w(value("1 straight road game"))
+                else:
+                    w(value(f"{home_ss['road_streak']} straight road games"))
+
+            if away_ss["home_streak"] >= 2:
+                w(label("Home stand:"))
+                if away_ss["home_streak"] == 2:
+                    w(value("2 straight home games"))
+                else:
+                    w(value(f"{away_ss['home_streak']} straight home games"))
 
         w("</pre>")
         w("</details>")
