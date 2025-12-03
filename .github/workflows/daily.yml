@@ -2,86 +2,107 @@ name: Daily NBA Dashboard Refresh
 
 on:
   schedule:
-    - cron: "0 12 * * *"     # 07:00 AM ET (12:00 UTC)
-  workflow_dispatch:          # allow manual runs
+    - cron: "0 12 * * *"       # 7:00 AM ET (12:00 UTC)
+  workflow_dispatch:           # allow manual runs
+  push:
+    paths:
+      - "*.py"
+      - "nba_master.csv"
 
 jobs:
   run-refresh:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write   # allows pushing to gh-pages
+      contents: write          # required for pushing to gh-pages
 
     steps:
-      # --- CHECKOUT CODE (main) ---
+
+      # -------------------------------------------------------------
+      # CHECKOUT MAIN BRANCH
+      # -------------------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # --- INSTALL PYTHON ---
+      # -------------------------------------------------------------
+      # PYTHON SETUP
+      # -------------------------------------------------------------
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
-      # --- INSTALL REQUIRED PACKAGES ---
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install pandas numpy requests
 
-      # --- RUN DAILY ESPN INGEST (updates nba_master.csv on main) ---
+      # -------------------------------------------------------------
+      # INGEST + BUILD DASHBOARD
+      # -------------------------------------------------------------
       - name: Run ingest script
-        run: python espn_daily_ingest.py --out nba_master.csv
-
-      # --- BUILD DASHBOARD HTML ---
-      - name: Build dashboard
-        run: python build_dashboard.py
-
-            # --- PREPARE PUBLIC OUTPUT ---
-      - name: Create deploy folder
         run: |
-          mkdir -p public
+          echo "Running ESPN ingest…"
+          python espn_daily_ingest.py --out nba_master.csv
+          echo "Ingest complete."
+
+      - name: Build dashboard
+        run: |
+          echo "Building dashboard…"
+          python build_dashboard.py
+          echo "Dashboard built successfully."
+
+      # -------------------------------------------------------------
+      # SAVE GENERATED FILES BEFORE BRANCH SWITCH
+      # -------------------------------------------------------------
+      - name: Save dashboard artifacts
+        run: |
           FILE=$(ls dashboard_*.html | head -n 1)
           if [ -z "$FILE" ]; then
-            echo "ERROR: No dashboard HTML file found!"
+            echo "ERROR: No dashboard HTML generated!"
             exit 1
           fi
-          cp "$FILE" public/index.html
-          cp nba_master.csv public/nba_master.csv
 
-      # --- SAVE PUBLIC FOLDER BEFORE RESET ---
-      - name: Temporarily move public folder
-        run: mv public /tmp/public
+          echo "Saving artifacts to /tmp/"
+          cp "$FILE" /tmp/index.html
+          cp nba_master.csv /tmp/nba_master.csv
 
-      # --- RESET WORKING TREE ---
-        # Removes changes to tracked files (nba_master.csv) but preserves /tmp/public
-      - name: Reset working tree
-        run: git reset --hard
-
-      # --- DEPLOY TO GH-PAGES BRANCH ---
+      # -------------------------------------------------------------
+      # DEPLOY TO GH-PAGES (CLEAN + SAFE)
+      # -------------------------------------------------------------
       - name: Deploy to gh-pages
         run: |
-          git config user.name  "github-actions"
+          echo "Configuring git identity…"
+          git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          # Fetch & checkout gh-pages
+          echo "Fetching gh-pages branch…"
           git fetch origin gh-pages || true
+
+          echo "Switching to gh-pages…"
           git switch gh-pages || git switch --orphan gh-pages
 
-          # CLEAN BRANCH
+          echo "Clearing old published files…"
           git rm -rf . || true
 
-          # NOW recreate deploy folder
-          mkdir deploy
+          echo "Restoring new dashboard files…"
+          cp /tmp/index.html index.html
+          cp /tmp/nba_master.csv nba_master.csv
 
-          # Copy the output HTML + CSV from main workspace
-          cp "$GITHUB_WORKSPACE"/dashboard_*.html deploy/index.html
-          cp "$GITHUB_WORKSPACE"/nba_master.csv deploy/nba_master.csv
-
-          # Move into deploy folder and publish
-          mv deploy/* .
-          rm -rf deploy
-
+          echo "Creating commit…"
           git add index.html nba_master.csv
-          git commit -m "Dashboard update $(date -u +'%Y-%m-%d %H:%M:%S')" || true
+          git commit -m "Automated dashboard update $(date -u +'%Y-%m-%d %H:%M:%S')" || true
+
+          echo "Pushing to gh-pages…"
           git push origin gh-pages --force
+
+      # -------------------------------------------------------------
+      # OPTIONAL: BACKUP TO MAIN BRANCH (RETENTION)
+      # -------------------------------------------------------------
+      - name: Backup dashboard in /_backups
+        run: |
+          mkdir -p _backups
+          cp /tmp/index.html "_backups/dashboard_$(date -u +'%Y-%m-%d').html"
+          git add _backups || true
+          git commit -m "Backup dashboard $(date -u +'%Y-%m-%d')" || true
+          git push origin main || true
