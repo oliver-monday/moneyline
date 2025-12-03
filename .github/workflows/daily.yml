@@ -58,27 +58,23 @@ jobs:
       - name: Reset working tree
         run: git reset --hard
 
-      # --- DEPLOY TO GH-PAGES ---
-      - name: Deploy to gh-pages branch
+      # --- DEPLOY TO GH-PAGES BRANCH ---
+      - name: Deploy to gh-pages
         run: |
-          git config user.name "github-actions"
+          git config user.name  "github-actions"
           git config user.email "actions@github.com"
 
-          # Fetch or create gh-pages
-          if git ls-remote --exit-code origin gh-pages; then
-            git fetch origin gh-pages
-            git checkout gh-pages
-          else
-            git checkout --orphan gh-pages
-          fi
+          # Switch to gh-pages
+          git fetch origin gh-pages || true
+          git checkout gh-pages || git checkout --orphan gh-pages
 
-          # Clear old contents
-          rm -rf *
+          # Remove all files
+          git rm -rf . || true
 
-          # Restore public folder
-          mv /tmp/public/* .
+          # Copy new dashboard output
+          cp deploy/index.html index.html
+          cp deploy/nba_master.csv nba_master.csv
 
-          git add --all
-          git commit -m "Automated dashboard update $(date -u +'%Y-%m-%d %H:%M UTC')" || echo "Nothing to commit"
-
+          git add index.html nba_master.csv
+          git commit -m "Dashboard update $(date -u +'%Y-%m-%d %H:%M:%S')" || true
           git push origin gh-pages --force
