@@ -41,9 +41,9 @@ jobs:
             # --- DIAGNOSTIC: LIST FILES AFTER DASHBOARD BUILD ---
       - name: List generated files
         run: |
-        echo "===== REPO LISTING AFTER DASHBOARD BUILD ====="
-        ls -R .
-        echo "=============================================="
+          echo "===== REPO LISTING AFTER DASHBOARD BUILD ====="
+          ls -R .
+          echo "=============================================="
 
       # Create the output folder for GitHub Pages
       - name: Prepare site files
