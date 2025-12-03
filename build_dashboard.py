@@ -297,7 +297,39 @@ def compute_mismatch_index(team_form, opp_form):
     return raw, desc
 
 # ======================================================================
+# === PERFORMANCE RELATIVE TO MARKET (PRM) =============================
 # ======================================================================
+
+def compute_prm(trailing_roi):
+    """
+    trailing_roi: list or pandas Series of last N ROI values (we use last 10)
+    Returns:
+        (prm_score, descriptor)
+    Scoring:
+        > +2.5u  → Strongly undervalued
+        > +1.0u  → Mildly undervalued
+        > -1.0u  → Fairly priced
+        > -2.5u  → Mildly overvalued
+        else     → Strongly overvalued
+    """
+    if trailing_roi is None or len(trailing_roi) == 0:
+        return np.nan, "insufficient sample"
+
+    total = np.nansum(trailing_roi)
+
+    # Descriptor logic
+    if total >= 2.5:
+        desc = "Strongly undervalued"
+    elif total >= 1.0:
+        desc = "Mildly undervalued"
+    elif total > -1.0:
+        desc = "Fairly priced"
+    elif total > -2.5:
+        desc = "Mildly overvalued"
+    else:
+        desc = "Strongly overvalued"
+
+    return total, desc
 
 # ------------ HTML rendering ------------------------------------------
 
@@ -373,6 +405,13 @@ def build_html(slate, team_results, league_tbl, outfile):
         home_is_fav = home_ml < 0; home_is_dog = home_ml > 0
         away_is_fav = away_ml < 0; away_is_dog = away_ml > 0
 
+        # --- PRM: Performance Relative to Market (last 10 ROI) ---
+        home_last10_roi = hist_home.sort_values("game_date")["roi"].tail(10)
+        away_last10_roi = hist_away.sort_values("game_date")["roi"].tail(10)
+
+        home_prm_score, home_prm_desc = compute_prm(home_last10_roi)
+        away_prm_score, away_prm_desc = compute_prm(away_last10_roi)
+
         # Summary line (using tricodes)
         away_abbr=g.get("away_team_abbrev",""); home_abbr=g.get("home_team_abbrev","")
         summary_line=f"{away_abbr} {fmt_odds(away_ml)} ({fmt_pct(away_prob)}) | {home_abbr} {fmt_odds(home_ml)} ({fmt_pct(home_prob)})"
@@ -434,6 +473,13 @@ def build_html(slate, team_results, league_tbl, outfile):
             w(label("Mismatch index:"))
             w(value(f"{home_mis_score:+0.0f} ({home_mis_desc})"))
 
+        # === PRM: Performance Relative to Market ===
+        if pd.isna(home_prm_score):
+            w(label("PRM (vs market):")); w(value("— (insufficient sample)"))
+        else:
+            w(label("PRM (vs market):"))
+            w(value(f"{home_prm_score:+0.1f}u ({home_prm_desc})"))
+
         w("</pre>")
 
         # ---------------- AWAY TEAM ----------------
@@ -487,6 +533,13 @@ def build_html(slate, team_results, league_tbl, outfile):
         else:
             w(label("Mismatch index:"))
             w(value(f"{away_mis_score:+0.0f} ({away_mis_desc})"))
+
+        # === PRM: Performance Relative to Market ===
+        if pd.isna(away_prm_score):
+            w(label("PRM (vs market):")); w(value("— (insufficient sample)"))
+        else:
+            w(label("PRM (vs market):"))
+            w(value(f"{away_prm_score:+0.1f}u ({away_prm_desc})"))    
 
         w("</pre>")
         w("</details>")
