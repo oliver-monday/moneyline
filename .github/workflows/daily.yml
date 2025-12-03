@@ -1,0 +1,70 @@
+name: Daily NBA Dashboard Refresh
+
+on:
+  schedule:
+    - cron: "0 12 * * *"   # 07:00 AM ET (12:00 UTC)
+  workflow_dispatch:       # allow manual runs
+  push:
+    paths:
+      - "*.py"
+      - "nba_master.csv"
+
+jobs:
+  run-refresh:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # allow pushing updates & deploying to Pages
+
+    steps:
+      # --- CHECKOUT CODE ---
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # --- INSTALL PYTHON ---
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      # --- INSTALL REQUIRED PACKAGES ---
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas numpy requests
+
+      # --- RUN DAILY ESPN INGEST ---
+      - name: Run ingest script
+        run: python espn_daily_ingest.py --out nba_master.csv
+
+      # --- BUILD DASHBOARD HTML ---
+      - name: Build dashboard
+        run: python build_dashboard.py
+
+      # --- PREPARE DEPLOY DIRECTORY ---
+      - name: Copy dashboard to deploy folder
+        run: |
+          mkdir -p deploy
+          cp dashboard_*.html deploy/index.html
+          cp nba_master.csv deploy/nba_master.csv
+
+      # --- DEPLOY TO GITHUB PAGES ---
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: deploy
+
+  deploy:
+    needs: run-refresh
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy GitHub Pages site
+        id: deployment
+        uses: actions/deploy-pages@v3
