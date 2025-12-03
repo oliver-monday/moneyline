@@ -2,49 +2,64 @@ name: Daily NBA Dashboard Refresh
 
 on:
   schedule:
-    - cron: "0 12 * * *"     # 7:00 AM ET daily
-  workflow_dispatch:          # allow manual run
+    - cron: "0 12 * * *"     # 07:00 AM ET (12:00 UTC)
+  workflow_dispatch:          # allow manual runs
 
 jobs:
-  build:
+  run-refresh:
     runs-on: ubuntu-latest
+
     permissions:
-      contents: write
+      contents: write   # allows pushing to gh-pages
 
     steps:
-      - name: Checkout main branch
+      # --- CHECKOUT CODE (main) ---
+      - name: Checkout repository
         uses: actions/checkout@v4
 
+      # --- INSTALL PYTHON ---
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
+      # --- INSTALL REQUIRED PACKAGES ---
       - name: Install dependencies
         run: |
-          pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install pandas numpy requests
 
+      # --- RUN DAILY ESPN INGEST (updates nba_master.csv on main) ---
       - name: Run ingest script
         run: python espn_daily_ingest.py --out nba_master.csv
 
-      - name: Build dashboard HTML
+      # --- BUILD DASHBOARD HTML ---
+      - name: Build dashboard
         run: python build_dashboard.py
 
+      # --- PREPARE PUBLIC OUTPUT (what we actually want to publish) ---
       - name: Create deploy folder
         run: |
           mkdir -p public
           FILE=$(ls dashboard_*.html | head -n 1)
+          if [ -z "$FILE" ]; then
+            echo "ERROR: No dashboard HTML file found!"
+            exit 1
+          fi
           cp "$FILE" public/index.html
           cp nba_master.csv public/nba_master.csv
 
-      # ---- DEPLOY ----
+      # --- IMPORTANT: CLEAN WORKING TREE BEFORE SWITCHING BRANCHES ---
+      - name: Reset working tree (discard local changes on main)
+        run: git reset --hard
+
+      # --- DEPLOY TO gh-pages BRANCH ---
       - name: Deploy to gh-pages branch
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          # Fetch or create branch
+          # Does gh-pages already exist?
           if git ls-remote --exit-code origin gh-pages; then
             git fetch origin gh-pages
             git checkout gh-pages
@@ -52,10 +67,10 @@ jobs:
             git checkout --orphan gh-pages
           fi
 
-          # Clear existing files
+          # Wipe existing contents of gh-pages
           rm -rf *
 
-          # Add fresh site files
+          # Copy fresh site into branch root
           cp -r public/* .
 
           git add --all
