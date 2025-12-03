@@ -31,6 +31,169 @@ ML_BUCKETS = [
     (201, 10000, "Big dog (≥ +201)"),
 ]
 
+# Approximate arena coordinates for travel-distance modeling (miles)
+CITY_COORDS = {
+    ("Atlanta", "GA"): (33.7573, -84.3963),
+    ("Boston", "MA"): (42.3662, -71.0621),
+    ("Brooklyn", "NY"): (40.6826, -73.9754),
+    ("Charlotte", "NC"): (35.2251, -80.8392),
+    ("Chicago", "IL"): (41.8807, -87.6742),
+    ("Cleveland", "OH"): (41.4965, -81.6882),
+    ("Dallas", "TX"): (32.7905, -96.8104),
+    ("Denver", "CO"): (39.7487, -105.0077),
+    ("Detroit", "MI"): (42.3410, -83.0550),
+    ("San Francisco", "CA"): (37.7680, -122.3877),  # Warriors
+    ("Houston", "TX"): (29.7508, -95.3621),
+    ("Indianapolis", "IN"): (39.7639, -86.1555),
+    ("Los Angeles", "CA"): (34.0430, -118.2673),     # Lakers / Clippers
+    ("Memphis", "TN"): (35.1382, -90.0506),
+    ("Miami", "FL"): (25.7814, -80.1870),
+    ("Milwaukee", "WI"): (43.0451, -87.9165),
+    ("Minneapolis", "MN"): (44.9795, -93.2760),
+    ("New Orleans", "LA"): (29.9489, -90.0810),
+    ("New York", "NY"): (40.7505, -73.9934),
+    ("Oklahoma City", "OK"): (35.4634, -97.5151),
+    ("Orlando", "FL"): (28.5392, -81.3839),
+    ("Philadelphia", "PA"): (39.9012, -75.1720),
+    ("Phoenix", "AZ"): (33.4457, -112.0712),
+    ("Portland", "OR"): (45.5316, -122.6668),
+    ("Sacramento", "CA"): (38.6480, -121.5180),
+    ("San Antonio", "TX"): (29.4270, -98.4375),
+    ("Toronto", "ON"): (43.6435, -79.3791),
+    ("Salt Lake City", "UT"): (40.7683, -111.9011),
+    ("Washington", "DC"): (38.8981, -77.0209),
+}
+
+def haversine_miles(coord1, coord2):
+    """Great-circle distance between two (lat, lon) tuples in miles."""
+    if coord1 is None or coord2 is None:
+        return np.nan
+
+    lat1, lon1 = np.radians(coord1)
+    lat2, lon2 = np.radians(coord2)
+
+    dlat = lat2 - lat1
+    dlon = lon2 - lon1
+    a = (
+        np.sin(dlat / 2) ** 2
+        + np.cos(lat1) * np.cos(lat2) * np.sin(dlon / 2) ** 2
+    )
+    c = 2 * np.arcsin(np.sqrt(a))
+    R = 3958.8  # Earth radius in miles
+    return float(R * c)
+
+
+def compute_schedule_stress(team_hist, today, venue_city, venue_state):
+    """
+    Composite schedule stress for today's game based on:
+      - rest days
+      - games played in last 7 days
+      - travel distance from last venue to today's venue
+      - consecutive road games
+    Returns dict with score, desc, and raw components.
+    """
+    if team_hist.empty:
+        return {
+            "score": np.nan,
+            "desc": "insufficient sample",
+            "rest_days": None,
+            "is_b2b": None,
+            "games_7": 0,
+            "travel_miles": np.nan,
+            "road_streak": 0,
+        }
+
+    hist = team_hist.sort_values("game_date")
+    last_game = hist.iloc[-1]
+    last_date = last_game["game_date"]
+
+    # Days between game *dates*
+    days_diff = (today - last_date).days
+    if days_diff < 0:
+        # Corrupt future date; bail out
+        return {
+            "score": np.nan,
+            "desc": "insufficient sample",
+            "rest_days": None,
+            "is_b2b": None,
+            "games_7": 0,
+            "travel_miles": np.nan,
+            "road_streak": 0,
+        }
+
+    # Full off-days between games (e.g. last Tue, today Thu → 1 full rest day)
+    rest_days = max(0, days_diff - 1)
+    is_b2b = (days_diff == 1)
+
+    # Games in last 7 days (excluding today)
+    window_start = today - dt.timedelta(days=7)
+    games_7 = int(
+        hist[(hist["game_date"] >= window_start) & (hist["game_date"] < today)].shape[0]
+    )
+
+    # Travel from last venue to today's venue
+    prev_coord = CITY_COORDS.get(
+        (last_game.get("venue_city"), last_game.get("venue_state"))
+    )
+    today_coord = CITY_COORDS.get((venue_city, venue_state))
+    travel_miles = haversine_miles(prev_coord, today_coord)
+
+    # Consecutive road games (going backwards from last game)
+    road_streak = 0
+    for _, row in hist.sort_values("game_date", ascending=False).iterrows():
+        if not row["is_home"]:
+            road_streak += 1
+        else:
+            break
+
+    # ---- Composite score 0–100 ----
+    score = 0.0
+
+    # Rest component
+    if rest_days >= 3:
+        rest_comp = 0.0
+    elif rest_days == 2:
+        rest_comp = 10.0
+    elif rest_days == 1:
+        rest_comp = 25.0
+    else:  # 0 rest days → back-to-back
+        rest_comp = 40.0
+    score += rest_comp
+
+    # Games last 7 days
+    score += min(games_7 * 4.0, 20.0)
+
+    # Travel miles (cap at 20)
+    if not np.isnan(travel_miles):
+        score += min(travel_miles / 50.0, 20.0)
+
+    # Road stretch (cap at 15)
+    score += min(road_streak * 5.0, 15.0)
+
+    score = min(100.0, score)
+
+    # Descriptor
+    if score <= 20:
+        desc = "Fully rested"
+    elif score <= 35:
+        desc = "Mild fatigue"
+    elif score <= 55:
+        desc = "Moderate fatigue"
+    elif score <= 75:
+        desc = "High fatigue"
+    else:
+        desc = "Severe fatigue spot"
+
+    return {
+        "score": score,
+        "desc": desc,
+        "rest_days": rest_days,
+        "is_b2b": is_b2b,
+        "games_7": games_7,
+        "travel_miles": travel_miles,
+        "road_streak": road_streak,
+    }
+
 # ------------ helpers --------------------------------------------------
 
 def pick_bucket(odds):
@@ -98,14 +261,20 @@ def build_team_results(master):
         rows.append({
             "game_id": gid, "game_date": date,
             "team": r["home_team_name"], "opponent": r["away_team_name"],
-            "is_home": True, "ml": r["home_ml"], "spread": r["home_spread"],
-            "pf": r["home_score"], "pa": r["away_score"]
+            "is_home": True,
+            "ml": r["home_ml"], "spread": r["home_spread"],
+            "pf": r["home_score"], "pa": r["away_score"],
+            "venue_city": r.get("venue_city"),
+            "venue_state": r.get("venue_state"),
         })
         rows.append({
             "game_id": gid, "game_date": date,
             "team": r["away_team_name"], "opponent": r["home_team_name"],
-            "is_home": False, "ml": r["away_ml"], "spread": r["away_spread"],
-            "pf": r["away_score"], "pa": r["home_score"]
+            "is_home": False,
+            "ml": r["away_ml"], "spread": r["away_spread"],
+            "pf": r["away_score"], "pa": r["home_score"],
+            "venue_city": r.get("venue_city"),
+            "venue_state": r.get("venue_state"),
         })
     df = pd.DataFrame(rows)
     df["has_result"] = (~df["pf"].isna()) & (~df["pa"].isna())
@@ -446,6 +615,14 @@ def build_html(slate, team_results, league_tbl, outfile):
         home_underval, home_overval, home_prm_signal = analyze_prm_pattern(home_last10_roi)
         away_underval, away_overval, away_prm_signal = analyze_prm_pattern(away_last10_roi)
 
+        # Schedule Stress Index (home & away)
+        today_date = g["game_date"]
+        venue_city = g.get("venue_city")
+        venue_state = g.get("venue_state")
+
+        home_ss = compute_schedule_stress(hist_home, today_date, venue_city, venue_state)
+        away_ss = compute_schedule_stress(hist_away, today_date, venue_city, venue_state)
+
         # Summary line (using tricodes)
         away_abbr=g.get("away_team_abbrev",""); home_abbr=g.get("home_team_abbrev","")
         summary_line=f"{away_abbr} {fmt_odds(away_ml)} ({fmt_pct(away_prob)}) | {home_abbr} {fmt_odds(home_ml)} ({fmt_pct(home_prob)})"
@@ -521,6 +698,43 @@ def build_html(slate, team_results, league_tbl, outfile):
             w(label("Market signal:"))
             w(value(home_prm_signal))
 
+        # ---- Schedule Stress (home) ----
+        if pd.isna(home_ss["score"]):
+            w(label("Schedule stress:"))
+            w(value("— (insufficient sample)"))
+        else:
+            w(label("Schedule stress:"))
+            w(value(f"{home_ss['score']:0.0f} ({home_ss['desc']})"))
+
+            # Rest line
+            if home_ss["is_b2b"]:
+                rest_text = f"{home_ss['rest_days']} days (back-to-back)"
+            else:
+                rest_text = f"{home_ss['rest_days']} days"
+            w(label("Rest:"))
+            w(value(rest_text))
+
+            # Games last 7 days
+            w(label("Games last 7 days:"))
+            w(value(str(home_ss["games_7"])))
+
+            # Travel miles
+            if np.isnan(home_ss["travel_miles"]):
+                travel_text = "n/a"
+            else:
+                travel_text = f"{home_ss['travel_miles']:0.0f} miles"
+            w(label("Travel:"))
+            w(value(travel_text))
+
+            # Road stretch
+            w(label("Road stretch:"))
+            if home_ss["road_streak"] == 0:
+                w(value("no recent road streak"))
+            elif home_ss["road_streak"] == 1:
+                w(value("1 straight road game"))
+            else:
+                w(value(f"{home_ss['road_streak']} straight road games"))
+
         w("</pre>")
 
         # ---------------- AWAY TEAM ----------------
@@ -588,6 +802,39 @@ def build_html(slate, team_results, league_tbl, outfile):
 
             w(label("Market signal:"))
             w(value(away_prm_signal))   
+
+        # ---- Schedule Stress (away) ----
+        if pd.isna(away_ss["score"]):
+            w(label("Schedule stress:"))
+            w(value("— (insufficient sample)"))
+        else:
+            w(label("Schedule stress:"))
+            w(value(f"{away_ss['score']:0.0f} ({away_ss['desc']})"))
+
+            if away_ss["is_b2b"]:
+                rest_text = f"{away_ss['rest_days']} days (back-to-back)"
+            else:
+                rest_text = f"{away_ss['rest_days']} days"
+            w(label("Rest:"))
+            w(value(rest_text))
+
+            w(label("Games last 7 days:"))
+            w(value(str(away_ss["games_7"])))
+
+            if np.isnan(away_ss["travel_miles"]):
+                travel_text = "n/a"
+            else:
+                travel_text = f"{away_ss['travel_miles']:0.0f} miles"
+            w(label("Travel:"))
+            w(value(travel_text))
+
+            w(label("Road stretch:"))
+            if away_ss["road_streak"] == 0:
+                w(value("no recent road streak"))
+            elif away_ss["road_streak"] == 1:
+                w(value("1 straight road game"))
+            else:
+                w(value(f"{away_ss['road_streak']} straight road games"))
 
         w("</pre>")
         w("</details>")
