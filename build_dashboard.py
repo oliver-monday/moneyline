@@ -306,25 +306,33 @@ def opponent_adjusted_stats(team_df, league_tbl):
 
 
 def recent_form(team_df):
+    """Last 5 / 10 and current streak based on ML games with results."""
     played = team_df[team_df["has_result"] & team_df["has_ml"]].sort_values("game_date")
     if played.empty:
         return {"last5": (np.nan, 0), "last10": (np.nan, 0), "streak": 0}
 
-    def win_rate(df, n):
+    def window(df, n):
         sub = df.tail(n)
         if sub.empty:
             return np.nan, 0
         return sub["is_win"].mean(), len(sub)
 
-    last5 = win_rate(played, 5)
-    last10 = win_rate(played, 10)
+    last5 = window(played, 5)
+    last10 = window(played, 10)
 
+    # FIXED streak logic (no one-liner)
     streak = 0
     for _, row in played[::-1].iterrows():
         if row["is_win"]:
-            streak = streak + 1 if streak >= 0 else break
+            if streak >= 0:
+                streak += 1
+            else:
+                break
         else:
-            streak = streak - 1 if streak <= 0 else break
+            if streak <= 0:
+                streak -= 1
+            else:
+                break
 
     return {"last5": last5, "last10": last10, "streak": streak}
 
