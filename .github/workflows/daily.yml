@@ -2,8 +2,8 @@ name: Daily NBA Dashboard Refresh
 
 on:
   schedule:
-    - cron: "0 12 * * *"     # Runs daily at 12:00 UTC (7 AM ET)
-  workflow_dispatch:          # Allow manual run
+    - cron: "0 12 * * *"     # 07:00 AM ET (12:00 UTC)
+  workflow_dispatch:
   push:
     paths:
       - "*.py"
@@ -14,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write      # allow committing backups to main
-      pages: write         # allow deployment to GitHub Pages
+      contents: write      # backup commit permission
+      pages: write         # Pages deployment permission
       id-token: write
 
     steps:
       # ------------------------------------------------------------
-      # CHECKOUT CODE
+      # CHECKOUT
       # ------------------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -39,89 +39,81 @@ jobs:
           pip install pandas numpy requests
 
       # ------------------------------------------------------------
-      # RUN ESPN INGEST
+      # INGEST
       # ------------------------------------------------------------
-      - name: Run ingest script
+      - name: Run ingest
         id: ingest
         run: |
-          echo "=== Running espn_daily_ingest.py ==="
+          echo "=== Running ESPN ingest ==="
           python espn_daily_ingest.py --out nba_master.csv
-
-          echo "Ingest completed."
-          echo "Updated nba_master.csv size:"
+          echo "Master size:"
           ls -lh nba_master.csv
 
       # ------------------------------------------------------------
       # BUILD DASHBOARD
       # ------------------------------------------------------------
       - name: Build dashboard
-        id: dashboard
+        id: dash
         run: |
           echo "=== Building dashboard ==="
           python build_dashboard.py
 
           FILE=$(ls dashboard_*.html | head -n 1)
           if [ -z "$FILE" ]; then
-            echo "ERROR: Dashboard not generated!"
+            echo "ERROR: No dashboard created!"
             exit 1
           fi
 
-          echo "Generated dashboard:"
-          echo "$FILE"
-          echo "Dashboard size:"
-          ls -lh "$FILE"
-
-          # Save the filename for later steps
+          echo "Dashboard: $FILE"
           echo "file=$FILE" >> $GITHUB_OUTPUT
 
       # ------------------------------------------------------------
-      # CREATE BACKUP (stored in main branch)
+      # BACKUP DASHBOARD TO MAIN
       # ------------------------------------------------------------
-      - name: Save daily backup of dashboard
+      - name: Backup dashboard
         run: |
           mkdir -p _backups
-          cp "${{ steps.dashboard.outputs.file }}" "_backups/${{ steps.dashboard.outputs.file }}"
+          cp "${{ steps.dash.outputs.file }}" "_backups/${{ steps.dash.outputs.file }}"
 
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-
           git add _backups
-          git commit -m "Backup dashboard for $(date -u +'%Y-%m-%d')" || echo "No changes to commit"
-
+          git commit -m "Backup dashboard $(date -u +'%Y-%m-%d')" || echo "No changes"
           git push origin main
 
       # ------------------------------------------------------------
-      # PREPARE ARTIFACT FOR PAGES DEPLOY
+      # PREPARE PAGES ARTIFACT
       # ------------------------------------------------------------
-      - name: Prepare public folder
+      - name: Prepare static site
         run: |
           mkdir -p public
-          cp "${{ steps.dashboard.outputs.file }}" public/index.html
+          cp "${{ steps.dash.outputs.file }}" public/index.html
           cp nba_master.csv public/nba_master.csv
 
       # ------------------------------------------------------------
-      # UPLOAD ARTIFACT
+      # UPLOAD ARTIFACT (NEW VERSION!)
       # ------------------------------------------------------------
-      - name: Upload artifact for deployment
-        uses: actions/upload-pages-artifact@v2
+      - name: Upload artifact for Pages
+        uses: actions/upload-pages-artifact@v3
         with:
           path: public
 
   # ------------------------------------------------------------
-  # DEPLOY TO GITHUB PAGES
+  # DEPLOY TO GITHUB PAGES (NEW VERSION!)
   # ------------------------------------------------------------
   deploy:
     needs: run-refresh
     runs-on: ubuntu-latest
+
     permissions:
       pages: write
       id-token: write
 
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url }}
 
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+        id: deploy
+        uses: actions/deploy-pages@v4
