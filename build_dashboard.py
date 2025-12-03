@@ -462,6 +462,33 @@ def build_html(slate, team_results, league_tbl, outfile):
     with open(outfile,"w") as f:
         f.write("\n".join(lines))
 
+    def league_overview(team_results: pd.DataFrame) -> pd.DataFrame:
+        """Per-team league table for use in overview + opponent strength."""
+        hist = team_results[team_results["has_result"] & team_results["has_ml"]]
+
+        rows = []
+        for team, df in hist.groupby("team"):
+            w = df["is_win"].sum()
+            l = len(df) - w
+            ml_pct = w / (w + l) if (w + l) > 0 else np.nan
+
+            fav = df[df["is_fav"]]
+            home = df[df["is_home"]]
+            away = df[~df["is_home"]]
+            dog = df[df["is_dog"]]
+
+            rows.append(
+                {
+                    "team": team,
+                    "ml_pct": ml_pct,
+                    "home_pct": home["is_win"].mean() if len(home) else np.nan,
+                    "away_pct": away["is_win"].mean() if len(away) else np.nan,
+                    "fav_pct": fav["is_win"].mean() if len(fav) else np.nan,
+                    "dog_pct": dog["is_win"].mean() if len(dog) else np.nan,
+                }
+            )
+
+        return pd.DataFrame(rows)
 
 # -------------------------- MAIN --------------------------------------
 
