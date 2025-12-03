@@ -434,7 +434,7 @@ def build_html(slate, team_results, league_tbl, outfile):
 
     CSS = """
     <style>
-        body { font-family: Arial, sans-serif; margin: 30px; color: #222; }
+        body { font-family: Arial, sans-serif; margin: 30px; color: #222; font-size: 14px; }
         .game-card { border: 1px solid #ccc; padding: 15px; margin-top: 25px;
                      border-radius: 6px; background: #fafafa; }
         .subheader { font-weight: bold; margin-top: 10px; }
@@ -499,9 +499,12 @@ def build_html(slate, team_results, league_tbl, outfile):
         away_is_dog = away_ml > 0
 
         # Summary line: AWAY first, then HOME
+        away_tri = g.get("away_team_tricode", away)
+        home_tri = g.get("home_team_tricode", home)
+
         summary_line = (
-            f"{away} {fmt_odds(away_ml)} ({fmt_pct(away_prob)}) | "
-            f"{home} {fmt_odds(home_ml)} ({fmt_pct(home_prob)})"
+            f"{away_tri} {fmt_odds(away_ml)} ({fmt_pct(away_prob)}) | "
+            f"{home_tri} {fmt_odds(home_ml)} ({fmt_pct(home_prob)})"
         )
 
         w("<div class='game-card'>")
