@@ -2,42 +2,19 @@ name: Daily NBA Dashboard Refresh
 
 on:
   schedule:
-    - cron: "0 12 * * *"     # 07:00 AM ET (12:00 UTC)
-  workflow_dispatch:
-  push:
-    paths:
-      - "*.py"
-      - "nba_master.csv"
+    - cron: "0 12 * * *"     # 7:00 AM ET daily
+  workflow_dispatch:          # allow manual run
 
 jobs:
-  run-refresh:
+  build:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
-      pages: write
-      id-token: write
 
     steps:
-      # ------------------------------------------------------------
-      # FORCE ALL ACTIONS TO USE ARTIFACT v4 (GitHub requirement)
-      # ------------------------------------------------------------
-      - name: Override artifact action to v4
-        uses: actions/upload-artifact@v4
-        with:
-          name: dummy
-          path: README.md
-        continue-on-error: true
-
-      # ------------------------------------------------------------
-      # CHECKOUT
-      # ------------------------------------------------------------
-      - name: Checkout repository
+      - name: Checkout main branch
         uses: actions/checkout@v4
 
-      # ------------------------------------------------------------
-      # PYTHON SETUP
-      # ------------------------------------------------------------
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -45,77 +22,42 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
+          pip install --upgrade pip
           pip install pandas numpy requests
 
-      # ------------------------------------------------------------
-      # INGEST
-      # ------------------------------------------------------------
-      - name: Run ingest
-        id: ingest
-        run: |
-          echo "=== Running ESPN ingest ==="
-          python espn_daily_ingest.py --out nba_master.csv
-          echo "Master size:"
-          ls -lh nba_master.csv
+      - name: Run ingest script
+        run: python espn_daily_ingest.py --out nba_master.csv
 
-      # ------------------------------------------------------------
-      # BUILD DASHBOARD
-      # ------------------------------------------------------------
-      - name: Build dashboard
-        id: dash
-        run: |
-          python build_dashboard.py
-          FILE=$(ls dashboard_*.html | head -n 1)
-          echo "file=$FILE" >> $GITHUB_OUTPUT
+      - name: Build dashboard HTML
+        run: python build_dashboard.py
 
-      # ------------------------------------------------------------
-      # BACKUP ON MAIN BRANCH
-      # ------------------------------------------------------------
-      - name: Backup dashboard
-        run: |
-          mkdir -p _backups
-          cp "${{ steps.dash.outputs.file }}" "_backups/${{ steps.dash.outputs.file }}"
-
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add _backups
-          git commit -m "Backup dashboard $(date -u +'%Y-%m-%d')" || true
-          git push origin main
-
-      # ------------------------------------------------------------
-      # PREPARE STATIC PAGES CONTENT
-      # ------------------------------------------------------------
-      - name: Prepare site
+      - name: Create deploy folder
         run: |
           mkdir -p public
-          cp "${{ steps.dash.outputs.file }}" public/index.html
+          FILE=$(ls dashboard_*.html | head -n 1)
+          cp "$FILE" public/index.html
           cp nba_master.csv public/nba_master.csv
 
-      # ------------------------------------------------------------
-      # UPLOAD PAGES ARTIFACT (REQUIRED VERSION)
-      # ------------------------------------------------------------
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
+      # ---- DEPLOY ----
+      - name: Deploy to gh-pages branch
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
 
-  # ------------------------------------------------------------
-  # DEPLOY PAGES (LATEST VERSION REQUIRED)
-  # ------------------------------------------------------------
-  deploy:
-    needs: run-refresh
-    runs-on: ubuntu-latest
+          # Fetch or create branch
+          if git ls-remote --exit-code origin gh-pages; then
+            git fetch origin gh-pages
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+          fi
 
-    permissions:
-      pages: write
-      id-token: write
+          # Clear existing files
+          rm -rf *
 
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+          # Add fresh site files
+          cp -r public/* .
 
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deploy
-        uses: actions/deploy-pages@v4
+          git add --all
+          git commit -m "Automated dashboard update $(date -u +'%Y-%m-%d %H:%M UTC')" || echo "Nothing to commit"
+          git push origin gh-pages --force
