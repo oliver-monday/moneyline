@@ -29,6 +29,39 @@ ML_BUCKETS = [
     (201, 10000, "Big dog (≥ +201)"),
 ]
 
+TEAM_TRICODES = {
+    "Atlanta Hawks": "ATL",
+    "Boston Celtics": "BOS",
+    "Brooklyn Nets": "BKN",
+    "Charlotte Hornets": "CHA",
+    "Chicago Bulls": "CHI",
+    "Cleveland Cavaliers": "CLE",
+    "Dallas Mavericks": "DAL",
+    "Denver Nuggets": "DEN",
+    "Detroit Pistons": "DET",
+    "Golden State Warriors": "GSW",
+    "Houston Rockets": "HOU",
+    "Indiana Pacers": "IND",
+    "LA Clippers": "LAC",
+    "Los Angeles Lakers": "LAL",
+    "Memphis Grizzlies": "MEM",
+    "Miami Heat": "MIA",
+    "Milwaukee Bucks": "MIL",
+    "Minnesota Timberwolves": "MIN",
+    "New Orleans Pelicans": "NOP",
+    "New York Knicks": "NYK",
+    "Oklahoma City Thunder": "OKC",
+    "Orlando Magic": "ORL",
+    "Philadelphia 76ers": "PHI",
+    "Phoenix Suns": "PHX",
+    "Portland Trail Blazers": "POR",
+    "Sacramento Kings": "SAC",
+    "San Antonio Spurs": "SAS",
+    "Toronto Raptors": "TOR",
+    "Utah Jazz": "UTA",
+    "Washington Wizards": "WAS",
+}
+
 # ------------ helpers --------------------------------------------------
 
 
@@ -439,7 +472,7 @@ def build_html(slate, team_results, league_tbl, outfile):
                      border-radius: 6px; background: #fafafa; }
         .subheader { font-weight: bold; margin-top: 10px; }
         pre { background: #fff; border: 1px solid #ddd; padding: 10px; border-radius: 4px;
-              font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
+              font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px; }
         .hl { background-color: #fff3b0; padding: 2px 4px; border-radius: 4px; display: inline-block; }
         .league-block { margin-top: 30px; }
         details { margin-top: 8px; }
@@ -499,8 +532,8 @@ def build_html(slate, team_results, league_tbl, outfile):
         away_is_dog = away_ml > 0
 
         # Summary line: AWAY first, then HOME
-        away_tri = g.get("away_team_tricode", away)
-        home_tri = g.get("home_team_tricode", home)
+        away_tri = TEAM_TRICODES.get(away, away)
+        home_tri = TEAM_TRICODES.get(home, home)
 
         summary_line = (
             f"{away_tri} {fmt_odds(away_ml)} ({fmt_pct(away_prob)}) | "
