@@ -331,6 +331,36 @@ def compute_prm(trailing_roi):
 
     return total, desc
 
+    # ----------------------------------------------------------------------
+    # PRM helper: count undervalued / overvalued games + signal
+    # ----------------------------------------------------------------------
+def analyze_prm_pattern(roi_series):
+    """
+    roi_series: last N ROI values (typically last 10)
+
+    Returns:
+        undervalued_count  - # games with positive ROI
+        overvalued_count   - # games with negative ROI
+        signal_text        - Natural-language interpretation
+    """
+    if roi_series is None or len(roi_series) == 0:
+        return 0, 0, "insufficient sample"
+
+    vals = [x for x in roi_series if not pd.isna(x)]
+
+    underval = sum(1 for x in vals if x > 0)
+    overval = sum(1 for x in vals if x < 0)
+
+    # Natural-language market signal
+    if underval - overval >= 4:
+        signal = "Market undervaluing"
+    elif overval - underval >= 4:
+        signal = "Market overvaluing"
+    else:
+        signal = "Market roughly efficient"
+
+    return underval, overval, signal
+
 # ------------ HTML rendering ------------------------------------------
 
 def build_html(slate, team_results, league_tbl, outfile):
@@ -412,6 +442,10 @@ def build_html(slate, team_results, league_tbl, outfile):
         home_prm_score, home_prm_desc = compute_prm(home_last10_roi)
         away_prm_score, away_prm_desc = compute_prm(away_last10_roi)
 
+        # PRM pattern analysis (undervalued/overvalued counts + market signal)
+        home_underval, home_overval, home_prm_signal = analyze_prm_pattern(home_last10_roi)
+        away_underval, away_overval, away_prm_signal = analyze_prm_pattern(away_last10_roi)
+
         # Summary line (using tricodes)
         away_abbr=g.get("away_team_abbrev",""); home_abbr=g.get("home_team_abbrev","")
         summary_line=f"{away_abbr} {fmt_odds(away_ml)} ({fmt_pct(away_prob)}) | {home_abbr} {fmt_odds(home_ml)} ({fmt_pct(home_prob)})"
@@ -473,12 +507,19 @@ def build_html(slate, team_results, league_tbl, outfile):
             w(label("Mismatch index:"))
             w(value(f"{home_mis_score:+0.0f} ({home_mis_desc})"))
 
-        # === PRM: Performance Relative to Market ===
+        # === PRM: Performance Relative to Market (full block) ===
         if pd.isna(home_prm_score):
-            w(label("PRM (vs market):")); w(value("— (insufficient sample)"))
+            w(label("PRM last 10:")); 
+            w(value("— (insufficient sample)"))
         else:
-            w(label("PRM (vs market):"))
-            w(value(f"{home_prm_score:+0.1f}u ({home_prm_desc})"))
+            w(label("PRM last 10:"))
+            w(value(f"{home_prm_score:+0.1f}u"))
+
+            w(label("Mispricing trend:"))
+            w(value(f"undervalued in {home_underval} of last 10"))
+
+            w(label("Market signal:"))
+            w(value(home_prm_signal))
 
         w("</pre>")
 
@@ -534,12 +575,19 @@ def build_html(slate, team_results, league_tbl, outfile):
             w(label("Mismatch index:"))
             w(value(f"{away_mis_score:+0.0f} ({away_mis_desc})"))
 
-        # === PRM: Performance Relative to Market ===
+        # === PRM: Performance Relative to Market (full block) ===
         if pd.isna(away_prm_score):
-            w(label("PRM (vs market):")); w(value("— (insufficient sample)"))
+            w(label("PRM last 10:")); 
+            w(value("— (insufficient sample)"))
         else:
-            w(label("PRM (vs market):"))
-            w(value(f"{away_prm_score:+0.1f}u ({away_prm_desc})"))    
+            w(label("PRM last 10:"))
+            w(value(f"{away_prm_score:+0.1f}u"))
+
+            w(label("Mispricing trend:"))
+            w(value(f"undervalued in {away_underval} of last 10"))
+
+            w(label("Market signal:"))
+            w(value(away_prm_signal))   
 
         w("</pre>")
         w("</details>")
