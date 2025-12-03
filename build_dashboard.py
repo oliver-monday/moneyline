@@ -11,6 +11,7 @@ Features:
 - Recent form (Last 5 / Last 10 / Streak)
 - League overview block at bottom
 - Collapsible per-game sections with a summary line
+- Team Form Index (0–100) combining last10 form + opponent strength
 """
 
 import pandas as pd
@@ -28,39 +29,6 @@ ML_BUCKETS = [
     (101, 200, "Small dog (+101 to +200)"),
     (201, 10000, "Big dog (≥ +201)"),
 ]
-
-TEAM_TRICODES = {
-    "Atlanta Hawks": "ATL",
-    "Boston Celtics": "BOS",
-    "Brooklyn Nets": "BKN",
-    "Charlotte Hornets": "CHA",
-    "Chicago Bulls": "CHI",
-    "Cleveland Cavaliers": "CLE",
-    "Dallas Mavericks": "DAL",
-    "Denver Nuggets": "DEN",
-    "Detroit Pistons": "DET",
-    "Golden State Warriors": "GSW",
-    "Houston Rockets": "HOU",
-    "Indiana Pacers": "IND",
-    "LA Clippers": "LAC",
-    "Los Angeles Lakers": "LAL",
-    "Memphis Grizzlies": "MEM",
-    "Miami Heat": "MIA",
-    "Milwaukee Bucks": "MIL",
-    "Minnesota Timberwolves": "MIN",
-    "New Orleans Pelicans": "NOP",
-    "New York Knicks": "NYK",
-    "Oklahoma City Thunder": "OKC",
-    "Orlando Magic": "ORL",
-    "Philadelphia 76ers": "PHI",
-    "Phoenix Suns": "PHX",
-    "Portland Trail Blazers": "POR",
-    "Sacramento Kings": "SAC",
-    "San Antonio Spurs": "SAS",
-    "Toronto Raptors": "TOR",
-    "Utah Jazz": "UTA",
-    "Washington Wizards": "WAS",
-}
 
 # ------------ helpers --------------------------------------------------
 
@@ -460,6 +428,63 @@ def fmt_streak(streak):
     return f"L{abs(streak)}"
 
 
+# ------------ Team Form Index (new) -----------------------------------
+
+
+def _to_float_or_nan(x):
+    try:
+        return float(x)
+    except Exception:
+        return np.nan
+
+
+def compute_form_index(last10_pct, vs_strong_pct, vs_weak_pct):
+    """
+    Combine:
+      - last10 ML win% (base)
+      - vs strong opps win%
+      - vs weak opps win%
+
+    into a 0–100 Team Form Index plus a short descriptor.
+    """
+    last10 = _to_float_or_nan(last10_pct)
+    vs_strong = _to_float_or_nan(vs_strong_pct)
+    vs_weak = _to_float_or_nan(vs_weak_pct)
+
+    if np.isnan(last10):
+        return np.nan, "insufficient sample"
+
+    # Base: last 10 games
+    base = last10  # 0–1
+
+    # Adjustments around 0.5 baseline
+    adj = 0.0
+    if not np.isnan(vs_strong):
+        adj += 0.20 * (vs_strong - 0.5)
+    if not np.isnan(vs_weak):
+        adj += 0.10 * (vs_weak - 0.5)
+
+    idx = base + adj
+
+    # Clamp to [0, 1]
+    idx = max(0.0, min(1.0, idx))
+    score = idx * 100.0
+
+    # Descriptor buckets
+    if score >= 70:
+        desc = "Strong uptrend"
+    elif score >= 60:
+        desc = "Mild uptrend"
+    elif score >= 45:
+        desc = "Stable"
+    elif score >= 35:
+        desc = "Mild downtrend"
+    else:
+        desc = "Cold stretch"
+
+    return score, desc
+
+
 # ------------ HTML rendering ------------------------------------------
 
 
@@ -467,17 +492,17 @@ def build_html(slate, team_results, league_tbl, outfile):
 
     CSS = """
     <style>
-        body { font-family: Arial, sans-serif; margin: 30px; color: #222; font-size: 14px; }
-        .game-card { border: 1px solid #ccc; padding: 15px; margin-top: 25px;
+        body { font-family: Arial, sans-serif; margin: 30px; color: #222; }
+        .game-card { border: 1px solid #ccc; padding: 17px; margin-top: 25px;
                      border-radius: 6px; background: #fafafa; }
-        .subheader { font-weight: bold; margin-top: 10px; }
+        .subheader { font-weight: bold; margin-top: 10px; margin-bottom: 10px}
         pre {
             background: #fff;
             border: 1px solid #ddd;
-            padding: 10px;
+            padding: 12px;
             border-radius: 4px;
             font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-            font-size: 13px;
+            font-size: 12px;
             line-height: 1.35;
         }
         .hl { background-color: #fff3b0; padding: 2px 4px; border-radius: 4px; display: inline-block; }
@@ -533,18 +558,25 @@ def build_html(slate, team_results, league_tbl, outfile):
         formH = recent_form(hist_home)
         formA = recent_form(hist_away)
 
+        # NEW: Team Form Index for each side
+        home_form_score, home_form_desc = compute_form_index(
+            formH["last10_pct"], oppH["vs_strong_pct"], oppH["vs_weak_pct"]
+        )
+        away_form_score, away_form_desc = compute_form_index(
+            formA["last10_pct"], oppA["vs_strong_pct"], oppA["vs_weak_pct"]
+        )
+
         home_is_fav = home_ml < 0
         home_is_dog = home_ml > 0
         away_is_fav = away_ml < 0
         away_is_dog = away_ml > 0
 
-        # Summary line: AWAY first, then HOME
-        away_tri = TEAM_TRICODES.get(away, away)
-        home_tri = TEAM_TRICODES.get(home, home)
-
+        # Summary line: AWAY first, then HOME (using tricodes from master)
+        away_abbr = g.get("away_team_abbrev", "")
+        home_abbr = g.get("home_team_abbrev", "")
         summary_line = (
-            f"{away_tri} {fmt_odds(away_ml)} ({fmt_pct(away_prob)}) | "
-            f"{home_tri} {fmt_odds(home_ml)} ({fmt_pct(home_prob)})"
+            f"{away_abbr} {fmt_odds(away_ml)} ({fmt_pct(away_prob)}) | "
+            f"{home_abbr} {fmt_odds(home_ml)} ({fmt_pct(home_prob)})"
         )
 
         w("<div class='game-card'>")
@@ -559,13 +591,24 @@ def build_html(slate, team_results, league_tbl, outfile):
         w(f"<div class='subheader'>{home.upper()} (HOME)</div>")
         w("<pre>")
 
-        block_lines = maybe_hl_block(
-            [
-                label("ML record:"),
-                value(f"{home_sum['ml_record']} ({fmt_pct(home_sum['ml_win_pct'])})"),
-            ],
-            highlight=False,
-        )
+        block_lines = [
+            label("ML record:"),
+            value(f"{home_sum['ml_record']} ({fmt_pct(home_sum['ml_win_pct'])})"),
+        ]
+        for line in block_lines:
+            w(line)
+
+        # Form Index block (home)
+        if pd.isna(home_form_score):
+            block_lines = [
+                label("Form index:"),
+                value("— (insufficient sample)"),
+            ]
+        else:
+            block_lines = [
+                label("Form index:"),
+                value(f"{home_form_score:0.0f} ({home_form_desc})"),
+            ]
         for line in block_lines:
             w(line)
 
@@ -712,13 +755,24 @@ def build_html(slate, team_results, league_tbl, outfile):
         w(f"<div class='subheader'>{away.upper()} (AWAY)</div>")
         w("<pre>")
 
-        block_lines = maybe_hl_block(
-            [
-                label("ML record:"),
-                value(f"{away_sum['ml_record']} ({fmt_pct(away_sum['ml_win_pct'])})"),
-            ],
-            highlight=False,
-        )
+        block_lines = [
+            label("ML record:"),
+            value(f"{away_sum['ml_record']} ({fmt_pct(away_sum['ml_win_pct'])})"),
+        ]
+        for line in block_lines:
+            w(line)
+
+        # Form Index block (away)
+        if pd.isna(away_form_score):
+            block_lines = [
+                label("Form index:"),
+                value("— (insufficient sample)"),
+            ]
+        else:
+            block_lines = [
+                label("Form index:"),
+                value(f"{away_form_score:0.0f} ({away_form_desc})"),
+            ]
         for line in block_lines:
             w(line)
 
