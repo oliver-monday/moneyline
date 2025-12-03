@@ -312,13 +312,13 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401810175,2025-12-02,Boston Celtics,BOS,123,,,New York Knicks,NY,117,,,Boston,MA
 401810176,2025-12-02,New Orleans Pelicans,NO,142,,,Minnesota Timberwolves,MIN,149,,,New Orleans,LA
 401810177,2025-12-02,San Antonio Spurs,SA,126,,,Memphis Grizzlies,MEM,119,,,San Antonio,TX
-401810178,2025-12-02,Golden State Warriors,GS,44,,,Oklahoma City Thunder,OKC,63,,,San Francisco,CA
+401810178,2025-12-02,Golden State Warriors,GS,112,,,Oklahoma City Thunder,OKC,124,,,San Francisco,CA
 401810179,2025-12-03,Cleveland Cavaliers,CLE,0,-485.0,,Portland Trail Blazers,POR,0,370.0,,Cleveland,OH
 401810180,2025-12-03,Indiana Pacers,IND,0,245.0,,Denver Nuggets,DEN,0,-305.0,,Indianapolis,IN
 401810181,2025-12-03,Orlando Magic,ORL,0,-310.0,,San Antonio Spurs,SA,0,250.0,,Orlando,FL
 401810182,2025-12-03,Atlanta Hawks,ATL,0,-162.0,,LA Clippers,LAC,0,136.0,,Atlanta,GA
 401810183,2025-12-03,New York Knicks,NY,0,-395.0,,Charlotte Hornets,CHA,0,310.0,,New York,NY
-401810184,2025-12-03,Chicago Bulls,CHI,0,-345.0,,Brooklyn Nets,BKN,0,275.0,,Chicago,IL
-401810185,2025-12-03,Houston Rockets,HOU,0,,,Sacramento Kings,SAC,0,750.0,,Houston,TX
-401810186,2025-12-03,Milwaukee Bucks,MIL,0,136.0,,Detroit Pistons,DET,0,-162.0,,Milwaukee,WI
+401810184,2025-12-03,Chicago Bulls,CHI,0,-310.0,,Brooklyn Nets,BKN,0,250.0,,Chicago,IL
+401810185,2025-12-03,Houston Rockets,HOU,0,-1350.0,,Sacramento Kings,SAC,0,800.0,,Houston,TX
+401810186,2025-12-03,Milwaukee Bucks,MIL,0,140.0,,Detroit Pistons,DET,0,-166.0,,Milwaukee,WI
 401810187,2025-12-03,Dallas Mavericks,DAL,0,145.0,,Miami Heat,MIA,0,-175.0,,Dallas,TX
