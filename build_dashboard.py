@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 """
-NBA Moneyline Dashboard (Nested Formatting + Collapsible Matchups)
+Generates a lightly-styled HTML dashboard summarizing today's NBA matchups.
+Uses nba_master.csv.
+
+Presentation upgrades:
+- Collapsible matchup sections
+- Summary line below matchup title
+- Removed redundant Current Odds + Venue boxes
+- Nested indentation presentation for team stats
+- Removed the literal word “Bucket”
+- Highlight entire nested block when the row matches today’s game state
 """
 
 import pandas as pd
@@ -12,15 +21,14 @@ MASTER_PATH = Path("nba_master.csv")
 
 ML_BUCKETS = [
     (-10000, -300, "Big favorite (≤ -300)"),
-    (-299, -151,  "Medium favorite (-299 to -151)"),
-    (-150, -101,  "Small favorite (-150 to -101)"),
-    (-100, 100,   "Coinflip (-100 to +100)"),
-    (101, 200,    "Small dog (+101 to +200)"),
-    (201, 10000,  "Big dog (≥ +201)"),
+    (-299, -151, "Medium favorite (-299 to -151)"),
+    (-150, -101, "Small favorite (-150 to -101)"),
+    (-100, 100, "Coinflip (-100 to +100)"),
+    (101, 200, "Small dog (+101 to +200)"),
+    (201, 10000, "Big dog (≥ +201)"),
 ]
 
-
-# ========================= HELPERS =========================
+# --------------------------- helpers ----------------------------------
 
 def pick_bucket(odds):
     if pd.isna(odds):
@@ -30,56 +38,57 @@ def pick_bucket(odds):
             return label
     return None
 
-
 def american_to_prob(odds):
-    if pd.isna(odds): return None
-    odds = float(odds)
-    if odds < 0:
-        return (-odds) / ((-odds) + 100)
-    return 100 / (odds + 100)
-
+    if pd.isna(odds):
+        return None
+    o = float(odds)
+    if o < 0:
+        return (-o) / ((-o) + 100)
+    if o > 0:
+        return 100 / (o + 100)
+    return None
 
 def fmt_odds(odds):
-    if pd.isna(odds): return "—"
+    if pd.isna(odds):
+        return "—"
     return f"{int(round(odds)):+d}"
 
-
 def fmt_pct(x):
-    if x is None or pd.isna(x): return "—"
-    return f"{x*100:0.1f}%"
+    if x is None or pd.isna(x):
+        return "—"
+    return f"{x * 100:0.1f}%"
 
+def fmt_streak(st):
+    if st == 0:
+        return "—"
+    if st > 0:
+        return f"W{st}"
+    return f"L{abs(st)}"
 
-def fmt_streak(s):
-    if s == 0: return "—"
-    return f"W{s}" if s > 0 else f"L{abs(s)}"
+def label(text: str) -> str:
+    return f"{text}"
 
+def nest(text: str, indent: int = 4) -> str:
+    return " " * indent + text
 
-def hl_block(content, cond):
-    """Wrap whole block if highlighted."""
-    if cond:
-        return f"<span class='hl'>{content}</span>"
-    return content
+def maybe_block(text_lines, highlight=False):
+    """Wraps MULTI-LINE blocks in <span class='hl'> ... </span> when highlight=True."""
+    if not highlight:
+        return text_lines
+    wrapped = ["<span class='hl'>"]
+    wrapped.extend(text_lines)
+    wrapped.append("</span>")
+    return wrapped
 
-
-def nest(label, value):
-    """Label on one line, indented value on next."""
-    return f"{label}\n    {value}"
-
-
-# ========================= INGEST =========================
+# ------------------------- load & results ------------------------------
 
 def load_master():
     df = pd.read_csv(MASTER_PATH)
     df["game_date"] = pd.to_datetime(df["game_date"]).dt.date
-
-    numeric_cols = ["home_ml","away_ml","home_score","away_score",
-                    "home_spread","away_spread"]
-    for c in numeric_cols:
-        if c in df.columns:
-            df[c] = pd.to_numeric(df[c], errors="coerce")
-
+    for col in ["home_ml","away_ml","home_score","away_score","home_spread","away_spread"]:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
     return df
-
 
 def calc_return(row):
     if (not row["has_result"]) or (not row["has_ml"]):
@@ -87,42 +96,34 @@ def calc_return(row):
     odds = row["ml"]
     if row["is_win"]:
         return odds/100 if odds > 0 else 100/(-odds)
-    return -1.0
-
-
-# ========================= TEAM RESULTS =========================
+    else:
+        return -1.0
 
 def build_team_results(master):
     rows = []
     for _, r in master.iterrows():
-        rows.append({
-            "game_id": r["game_id"],
-            "game_date": r["game_date"],
-            "team": r["home_team_name"],
-            "abbr": r["home_team_abbrev"],
-            "opponent": r["away_team_name"],
-            "is_home": True,
-            "ml": r["home_ml"],
-            "pf": r["home_score"],
-            "pa": r["away_score"]
-        })
-        rows.append({
-            "game_id": r["game_id"],
-            "game_date": r["game_date"],
-            "team": r["away_team_name"],
-            "abbr": r["away_team_abbrev"],
-            "opponent": r["home_team_name"],
-            "is_home": False,
-            "ml": r["away_ml"],
-            "pf": r["away_score"],
-            "pa": r["home_score"]
-        })
+        gid = r["game_id"]
+        date = r["game_date"]
+
+        rows.append(dict(
+            game_id=gid, game_date=date, team=r["home_team_name"],
+            opponent=r["away_team_name"], is_home=True,
+            ml=r["home_ml"], spread=r["home_spread"],
+            pf=r["home_score"], pa=r["away_score"]
+        ))
+        rows.append(dict(
+            game_id=gid, game_date=date, team=r["away_team_name"],
+            opponent=r["home_team_name"], is_home=False,
+            ml=r["away_ml"], spread=r["away_spread"],
+            pf=r["away_score"], pa=r["home_score"]
+        ))
 
     df = pd.DataFrame(rows)
 
     df["has_result"] = (~df["pf"].isna()) & (~df["pa"].isna())
     df["is_win"] = df["has_result"] & (df["pf"] > df["pa"])
     df["has_ml"] = ~df["ml"].isna()
+
     df["is_fav"] = df["has_ml"] & (df["ml"] < 0)
     df["is_dog"] = df["has_ml"] & (df["ml"] > 0)
 
@@ -133,412 +134,355 @@ def build_team_results(master):
 
     df["ml_bucket"] = df["ml"].apply(pick_bucket)
     df["roi"] = df.apply(calc_return, axis=1)
-
     return df
-
 
 def summarize_team(df):
     played = df[df["has_result"] & df["has_ml"]]
+    total = len(played)
     wins = int(played["is_win"].sum())
-    losses = len(played) - wins
+    losses = total - wins
 
-    def pct(w, l): return w/(w+l) if (w+l)>0 else np.nan
+    def pct(w, l): return w/(w+l) if w+l>0 else np.nan
 
-    def rec(sub):
-        w = sub["is_win"].sum()
-        l = len(sub) - w
-        return f"{int(w)}-{int(l)}", pct(w, l)
-
-    fav = played[played["is_fav"]]
-    dog = played[played["is_dog"]]
+    fav  = played[played["is_fav"]]
+    dog  = played[played["is_dog"]]
     home = played[played["is_home"]]
     away = played[~played["is_home"]]
 
-    hfav = played[played["is_home_fav"]]
-    hdog = played[played["is_home_dog"]]
-    afav = played[played["is_away_fav"]]
-    adog = played[played["is_away_dog"]]
+    home_fav = played[played["is_home_fav"]]
+    home_dog = played[played["is_home_dog"]]
+    away_fav = played[played["is_away_fav"]]
+    away_dog = played[played["is_away_dog"]]
 
-    out = {
-        "ml_record": f"{wins}-{losses}",
-        "ml_pct": pct(wins, losses),
-        "fav_record": rec(fav)[0], "fav_pct": rec(fav)[1],
-        "dog_record": rec(dog)[0], "dog_pct": rec(dog)[1],
-        "home_record": rec(home)[0], "home_pct": rec(home)[1],
-        "away_record": rec(away)[0], "away_pct": rec(away)[1],
-        "home_fav_record": rec(hfav)[0], "home_fav_pct": rec(hfav)[1],
-        "home_dog_record": rec(hdog)[0], "home_dog_pct": rec(hdog)[1],
-        "away_fav_record": rec(afav)[0], "away_fav_pct": rec(afav)[1],
-        "away_dog_record": rec(adog)[0], "away_dog_pct": rec(adog)[1],
-        "roi_units": played["roi"].sum(),
-        "roi_pct": played["roi"].mean() if len(played)>0 else np.nan
-    }
-    return out
+    total_roi = played["roi"].sum()
+    fav_roi   = fav["roi"].sum()
+    dog_roi   = dog["roi"].sum()
 
+    return dict(
+        ml_record=f"{wins}-{losses}",
+        ml_win_pct=pct(wins,losses),
+
+        fav_record=f"{int(fav['is_win'].sum())}-{len(fav)-fav['is_win'].sum()}",
+        fav_win_pct=pct(fav["is_win"].sum(), len(fav)-fav["is_win"].sum()),
+
+        dog_record=f"{int(dog['is_win'].sum())}-{len(dog)-dog['is_win'].sum()}",
+        dog_win_pct=pct(dog["is_win"].sum(), len(dog)-dog["is_win"].sum()),
+
+        home_record=f"{int(home['is_win'].sum())}-{len(home)-home['is_win'].sum()}",
+        home_win_pct=pct(home["is_win"].sum(), len(home)-home["is_win"].sum()),
+
+        away_record=f"{int(away['is_win'].sum())}-{len(away)-away['is_win'].sum()}",
+        away_win_pct=pct(away["is_win"].sum(), len(away)-away["is_win"].sum()),
+
+        home_fav_record=f"{int(home_fav['is_win'].sum())}-{len(home_fav)-home_fav['is_win'].sum()}",
+        home_fav_win_pct=pct(home_fav["is_win"].sum(), len(home_fav)-home_fav["is_win"].sum()),
+
+        home_dog_record=f"{int(home_dog['is_win'].sum())}-{len(home_dog)-home_dog['is_win'].sum()}",
+        home_dog_win_pct=pct(home_dog["is_win"].sum(), len(home_dog)-home_dog["is_win"].sum()),
+
+        away_fav_record=f"{int(away_fav['is_win'].sum())}-{len(away_fav)-away_fav['is_win'].sum()}",
+        away_fav_win_pct=pct(away_fav["is_win"].sum(), len(away_fav)-away_fav["is_win"].sum()),
+
+        away_dog_record=f"{int(away_dog['is_win'].sum())}-{len(away_dog)-away_dog['is_win'].sum()}",
+        away_dog_win_pct=pct(away_dog["is_win"].sum(), len(away_dog)-away_dog["is_win"].sum()),
+
+        roi_units=total_roi,
+        roi_pct= total_roi/total if total>0 else np.nan,
+        fav_roi_units=fav_roi,
+        fav_roi_pct=fav_roi/len(fav) if len(fav)>0 else np.nan,
+        dog_roi_units=dog_roi,
+        dog_roi_pct=dog_roi/len(dog) if len(dog)>0 else np.nan
+    )
 
 def summarize_bucket(df, bucket):
-    b = df[(df["ml_bucket"] == bucket) & df["has_result"] & df["has_ml"]]
+    b = df[(df["ml_bucket"]==bucket) & df["has_result"] & df["has_ml"]]
     if b.empty:
-        return ("—", np.nan, 0)
-    w = b["is_win"].sum()
-    l = len(b) - w
-    return (f"{int(w)}-{int(l)}", w/(w+l), len(b))
-
-
-# ========================= OPPONENT ADJ + FORM =========================
-
-def league_overview(team_results):
-    hist = team_results[team_results["has_result"] & team_results["has_ml"]]
-    rows = []
-    for team, df in hist.groupby("team"):
-        w = df["is_win"].sum()
-        l = len(df) - w
-        pct = w/(w+l) if (w+l)>0 else np.nan
-
-        fav = df[df["is_fav"]]
-        dog = df[df["is_dog"]]
-        home = df[df["is_home"]]
-        away = df[~df["is_home"]]
-
-        rows.append({
-            "team": team,
-            "ml_pct": pct,
-            "home_pct": home["is_win"].mean() if len(home)>0 else np.nan,
-            "away_pct": away["is_win"].mean() if len(away)>0 else np.nan,
-            "fav_pct": fav["is_win"].mean() if len(fav)>0 else np.nan,
-            "dog_pct": dog["is_win"].mean() if len(dog)>0 else np.nan
-        })
-    return pd.DataFrame(rows)
-
+        return dict(bucket_record="—", bucket_win_pct=np.nan, n=0)
+    w = int(b["is_win"].sum())
+    return dict(
+        bucket_record=f"{w}-{len(b)-w}",
+        bucket_win_pct=w/len(b),
+        n=len(b)
+    )
 
 def opponent_adjusted_stats(team_df, league_tbl):
-    played = team_df[team_df["has_result"] & team_df["has_ml"]]
-    if played.empty or league_tbl.empty:
-        return {"vs_strong": ("—", np.nan, 0),
-                "vs_weak": ("—", np.nan, 0)}
+    hist = team_df[team_df["has_result"] & team_df["has_ml"]]
+    if league_tbl.empty or "ml_pct" not in league_tbl.columns:
+        return dict(vs_strong_record="—",vs_strong_pct=np.nan,vs_strong_n=0,
+                    vs_weak_record="—",vs_weak_pct=np.nan,vs_weak_n=0)
 
-    merged = played.merge(
-        league_tbl[["team","ml_pct"]],
-        left_on="opponent", right_on="team", how="left"
-    ).dropna(subset=["ml_pct"])
-
+    merged = hist.merge(league_tbl[["team","ml_pct"]],
+                        left_on="opponent", right_on="team", how="left",
+                        suffixes=("", "_opp"))
+    col = "ml_pct_opp" if "ml_pct_opp" in merged.columns else "ml_pct"
+    merged = merged.dropna(subset=[col])
     if merged.empty:
-        return {"vs_strong": ("—", np.nan, 0),
-                "vs_weak": ("—", np.nan, 0)}
+        return dict(vs_strong_record="—",vs_strong_pct=np.nan,vs_strong_n=0,
+                    vs_weak_record="—",vs_weak_pct=np.nan,vs_weak_n=0)
 
-    cuts = league_tbl["ml_pct"].dropna()
-    top, bot = cuts.quantile(0.80), cuts.quantile(0.20)
+    pct_vals = league_tbl["ml_pct"].dropna()
+    top = pct_vals.quantile(0.80)
+    bot = pct_vals.quantile(0.20)
 
-    strong = merged[merged["ml_pct"] >= top]
-    weak = merged[merged["ml_pct"] <= bot]
+    strong = merged[merged[col] >= top]
+    weak   = merged[merged[col] <= bot]
 
     def rec(df):
-        if df.empty: return ("—", np.nan, 0)
+        if df.empty: return "—", np.nan, 0
         w = df["is_win"].sum()
-        l = len(df) - w
-        return (f"{int(w)}-{int(l)}", w/(w+l), len(df))
+        return f"{int(w)}-{int(len(df)-w)}", w/len(df), len(df)
 
-    return {"vs_strong": rec(strong), "vs_weak": rec(weak)}
+    srec, spct, sn = rec(strong)
+    wrec, wpct, wn = rec(weak)
 
+    return dict(vs_strong_record=srec,vs_strong_pct=spct,vs_strong_n=sn,
+                vs_weak_record=wrec,vs_weak_pct=wpct,vs_weak_n=wn)
 
 def recent_form(team_df):
-    df = team_df[team_df["has_result"] & team_df["has_ml"]].sort_values("game_date")
-    if df.empty:
-        return {"last5": np.nan, "last10": np.nan, "streak": 0}
-    last5 = df["is_win"].tail(5).mean()
-    last10 = df["is_win"].tail(10).mean()
+    hist = team_df[team_df["has_result"] & team_df["has_ml"]].sort_values("game_date")
+    if hist.empty:
+        return dict(last5_pct=np.nan,last10_pct=np.nan,streak=0)
+    last5  = hist.tail(5)["is_win"].mean()
+    last10 = hist.tail(10)["is_win"].mean()
 
-    streak = 0
-    for _, row in df.sort_values("game_date", ascending=False).iterrows():
+    st=0
+    for _, row in hist.sort_values("game_date",ascending=False).iterrows():
         if row["is_win"]:
-            if streak >= 0: streak += 1
+            if st>=0: st+=1
             else: break
         else:
-            if streak <= 0: streak -= 1
+            if st<=0: st-=1
             else: break
 
-    return {"last5": last5, "last10": last10, "streak": streak}
+    return dict(last5_pct=last5,last10_pct=last10,streak=st)
 
-
-# ========================= HTML =========================
+# -------------------------- HTML RENDERING -----------------------------
 
 def build_html(slate, team_results, league_tbl, outfile):
 
     CSS = """
     <style>
-        body { font-family: Arial; margin: 30px; color: #222; line-height: 1.45; }
-        .game-card { 
-            border: 1px solid #ccc; 
-            padding: 15px; 
-            margin-top: 25px;
-            border-radius: 6px; 
-            background: #fafafa;
-        }
-        .summary-line {
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #333;
-        }
-        details summary {
-            cursor: pointer;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-        pre {
-            background: #fff;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 4px;
-            white-space: pre-wrap;
-        }
-        .hl { 
-            background-color: #fff3b0; 
-            padding: 2px 4px; 
-            border-radius: 4px; 
-            display: inline-block;
-        }
-        .league-block { margin-top: 30px; }
+        body { font-family: Arial; margin: 30px; color: #222; }
+        .game-card { border: 1px solid #ccc; padding: 15px; margin-top: 25px;
+                     border-radius: 6px; background: #fafafa; }
+        summary { font-weight: bold; cursor: pointer; margin-top: 5px; }
+        pre { background: #fff; border: 1px solid #ddd; padding: 10px; border-radius: 4px; }
+        .hl { background-color: #fff3b0; padding: 0 2px; border-radius: 3px; }
+        .league-block { margin-top: 40px; }
     </style>
     """
 
-    lines = []
-    w = lines.append
+    lines=[]
+    w=lines.append
+    w("<html><head>"+CSS+"</head><body>")
 
-    w("<html><head>")
-    w(CSS)
-    w("</head><body>")
-    today = slate["game_date"].iloc[0]
-
+    today=slate["game_date"].iloc[0]
     w("<h1>NBA Moneyline Dashboard</h1>")
     w(f"<h2>{today}</h2>")
 
-    # ----- Matchups -----
     for _, g in slate.iterrows():
+        home=g["home_team_name"]
+        away=g["away_team_name"]
+        home_ml=g["home_ml"]
+        away_ml=g["away_ml"]
+        home_prob=american_to_prob(home_ml)
+        away_prob=american_to_prob(away_ml)
 
-        home, away = g["home_team_name"], g["away_team_name"]
-        home_ml, away_ml = g["home_ml"], g["away_ml"]
+        hist_home=team_results[(team_results["team"]==home)&(team_results["game_date"]<g["game_date"])]
+        hist_away=team_results[(team_results["team"]==away)&(team_results["game_date"]<g["game_date"])]
 
-        home_abbr = team_results[team_results["team"]==home]["abbr"].iloc[0]
-        away_abbr = team_results[team_results["team"]==away]["abbr"].iloc[0]
+        home_sum=summarize_team(hist_home)
+        away_sum=summarize_team(hist_away)
 
-        home_prob = fmt_pct(american_to_prob(home_ml))
-        away_prob = fmt_pct(american_to_prob(away_ml))
+        bucket_home=pick_bucket(home_ml)
+        bucket_away=pick_bucket(away_ml)
 
-        histH = team_results[(team_results["team"]==home) & 
-                             (team_results["game_date"]<g["game_date"])]
-        histA = team_results[(team_results["team"]==away) & 
-                             (team_results["game_date"]<g["game_date"])]
+        bH=summarize_bucket(hist_home,bucket_home)
+        bA=summarize_bucket(hist_away,bucket_away)
 
-        sumH, sumA = summarize_team(histH), summarize_team(histA)
+        oppH=opponent_adjusted_stats(hist_home,league_tbl)
+        oppA=opponent_adjusted_stats(hist_away,league_tbl)
 
-        bH, bA = pick_bucket(home_ml), pick_bucket(away_ml)
-        bucketH = summarize_bucket(histH, bH) if bH else None
-        bucketA = summarize_bucket(histA, bA) if bA else None
+        formH=recent_form(hist_home)
+        formA=recent_form(hist_away)
 
-        oppH = opponent_adjusted_stats(histH, league_tbl)
-        oppA = opponent_adjusted_stats(histA, league_tbl)
+        home_is_fav = home_ml <0
+        home_is_dog = home_ml >0
+        away_is_fav = away_ml <0
+        away_is_dog = away_ml >0
 
-        formH = recent_form(histH)
-        formA = recent_form(histA)
+        summary_line=f"{away[:3].upper()} {fmt_odds(away_ml)} ({fmt_pct(away_prob)}) | {home[:3].upper()} {fmt_odds(home_ml)} ({fmt_pct(home_prob)})"
 
-        home_is_fav, away_is_fav = home_ml < 0, away_ml < 0
-        home_is_dog, away_is_dog = home_ml > 0, away_ml > 0
-
-        # ----- CARD -----
         w("<div class='game-card'>")
-
-        # Title
         w(f"<h3>{away} @ {home}</h3>")
+        w(f"<div><strong>{summary_line}</strong></div>")
 
-        # Summary line
-        summary = (
-            f"{away_abbr} {fmt_odds(away_ml)} ({away_prob})"
-            f" | {home_abbr} {fmt_odds(home_ml)} ({home_prob})"
-        )
-        w(f"<div class='summary-line'>{summary}</div>")
+        w("<details><summary>Click to expand</summary>")
+        w("<br>")
 
-        # Collapsible
-        w("<details>")
-        w("<summary>Click to expand</summary>")
+        # ----------- HOME TEAM BLOCK -------------
+        block=[]
+        block.append(f"{label('ML record:')}")
+        block.append(nest(f"{home_sum['ml_record']} ({fmt_pct(home_sum['ml_win_pct'])})"))
 
-        # ----- Odds -----
-        w("<div class='subheader'>Current Odds</div>")
+        block.append(f"{label('As favorite:')}")
+        block.append(nest(f"{home_sum['fav_record']} ({fmt_pct(home_sum['fav_win_pct'])})"))
+
+        block.append(f"{label('As underdog:')}")
+        block.append(nest(f"{home_sum['dog_record']} ({fmt_pct(home_sum['dog_win_pct'])})"))
+
+        block.append(f"{label('Home:')}")
+        block.append(nest(f"{home_sum['home_record']} ({fmt_pct(home_sum['home_win_pct'])})"))
+
+        block.append(f"{label('Away:')}")
+        block.append(nest(f"{home_sum['away_record']} ({fmt_pct(home_sum['away_win_pct'])})"))
+
+        block.append(f"{label('As home favorite:')}")
+        block.append(nest(f"{home_sum['home_fav_record']} ({fmt_pct(home_sum['home_fav_win_pct'])})"))
+
+        block.append(f"{label('As home underdog:')}")
+        block.append(nest(f"{home_sum['home_dog_record']} ({fmt_pct(home_sum['home_dog_win_pct'])})"))
+
+        if bucket_home:
+            block.append(label(bucket_home+":"))
+            block.append(nest(f"{bH['bucket_record']} ({fmt_pct(bH['bucket_win_pct'])}, n={bH['n']})"))
+
+        block.append(label("ROI all ML bets:"))
+        block.append(nest(f"{home_sum['roi_units']:+0.1f}u ({fmt_pct(home_sum['roi_pct'])})"))
+
+        block.append(label("ROI as favorite:"))
+        block.append(nest(f"{home_sum['fav_roi_units']:+0.1f}u ({fmt_pct(home_sum['fav_roi_pct'])})"))
+
+        block.append(label("ROI as underdog:"))
+        block.append(nest(f"{home_sum['dog_roi_units']:+0.1f}u ({fmt_pct(home_sum['dog_roi_pct'])})"))
+
+        block.append(label("Vs strong opps:"))
+        block.append(nest(f"{oppH['vs_strong_record']} ({fmt_pct(oppH['vs_strong_pct'])}, n={oppH['vs_strong_n']})"))
+
+        block.append(label("Vs weak opps:"))
+        block.append(nest(f"{oppH['vs_weak_record']} ({fmt_pct(oppH['vs_weak_pct'])}, n={oppH['vs_weak_n']})"))
+
+        block.append(label("Recent form:"))
+        block.append(nest(f"Last 5:   {fmt_pct(formH['last5_pct'])}"))
+        block.append(nest(f"Last 10:  {fmt_pct(formH['last10_pct'])}"))
+        block.append(nest(f"Streak:   {fmt_streak(formH['streak'])}"))
+
+        block = maybe_block(block, highlight=(home_is_fav or home_is_dog))
+
+        w("<div class='subheader'>"+home.upper()+" (HOME)</div>")
         w("<pre>")
-        w(f"{away}: {fmt_odds(away_ml)}   | implied: {away_prob}")
-        w(f"{home}: {fmt_odds(home_ml)}   | implied: {home_prob}")
-        w("</pre>")
+        for line in block: w(line)
+        w("</pre><br>")
 
-        # ----- Venue -----
-        w("<div class='subheader'>Venue</div>")
-        w(f"{g.get('venue_city','')}, {g.get('venue_state','')}")
-        w("<br><br>")
+        # ----------- AWAY TEAM BLOCK -------------
+        block=[]
+        block.append(label("ML record:"))
+        block.append(nest(f"{away_sum['ml_record']} ({fmt_pct(away_sum['ml_win_pct'])})"))
 
-        # =================== HOME TEAM BLOCK ===================
-        block = []
+        block.append(label("As favorite:"))
+        block.append(nest(f"{away_sum['fav_record']} ({fmt_pct(away_sum['fav_win_pct'])})"))
 
-        block.append(nest("ML record:", f"{sumH['ml_record']} ({fmt_pct(sumH['ml_pct'])})"))
+        block.append(label("As underdog:"))
+        block.append(nest(f"{away_sum['dog_record']} ({fmt_pct(away_sum['dog_win_pct'])})"))
 
-        block.append(hl_block(
-            nest("As favorite:", f"{sumH['fav_record']} ({fmt_pct(sumH['fav_pct'])})"),
-            home_is_fav
-        ))
-        block.append(hl_block(
-            nest("As underdog:", f"{sumH['dog_record']} ({fmt_pct(sumH['dog_pct'])})"),
-            home_is_dog
-        ))
+        block.append(label("Home:"))
+        block.append(nest(f"{away_sum['home_record']} ({fmt_pct(away_sum['home_win_pct'])})"))
 
-        block.append(hl_block(
-            nest("Home:", f"{sumH['home_record']} ({fmt_pct(sumH['home_pct'])})"),
-            True
-        ))
-        block.append(nest("Away:", f"{sumH['away_record']} ({fmt_pct(sumH['away_pct'])})"))
+        block.append(label("Away:"))
+        block.append(nest(f"{away_sum['away_record']} ({fmt_pct(away_sum['away_win_pct'])})"))
 
-        block.append(hl_block(
-            nest("As home favorite:", 
-                 f"{sumH['home_fav_record']} ({fmt_pct(sumH['home_fav_pct'])})"),
-            home_is_fav
-        ))
-        block.append(hl_block(
-            nest("As home underdog:", 
-                 f"{sumH['home_dog_record']} ({fmt_pct(sumH['home_dog_pct'])})"),
-            home_is_dog
-        ))
+        block.append(label("As away favorite:"))
+        block.append(nest(f"{away_sum['away_fav_record']} ({fmt_pct(away_sum['away_fav_win_pct'])})"))
 
-        if bucketH:
-            rec, pct, n = bucketH
-            block.append(nest(f"{bH}:", f"{rec} ({fmt_pct(pct)}, n={n})"))
+        block.append(label("As away underdog:"))
+        block.append(nest(f"{away_sum['away_dog_record']} ({fmt_pct(away_sum['away_dog_win_pct'])})"))
 
-        block.append(nest("ROI all ML bets:", 
-                          f"{sumH['roi_units']:+0.1f}u ({fmt_pct(sumH['roi_pct'])})"))
+        if bucket_away:
+            block.append(label(bucket_away+":"))
+            block.append(nest(f"{bA['bucket_record']} ({fmt_pct(bA['bucket_win_pct'])}, n={bA['n']})"))
 
-        vsS = oppH["vs_strong"]
-        vsW = oppH["vs_weak"]
-        block.append(nest("Vs strong opps:", f"{vsS[0]} ({fmt_pct(vsS[1])}, n={vsS[2]})"))
-        block.append(nest("Vs weak opps:", f"{vsW[0]} ({fmt_pct(vsW[1])}, n={vsW[2]})"))
+        block.append(label("ROI all ML bets:"))
+        block.append(nest(f"{away_sum['roi_units']:+0.1f}u ({fmt_pct(away_sum['roi_pct'])})"))
 
-        block.append("Recent form:")
-        block.append(f"    Last 5:  {fmt_pct(formH['last5'])}")
-        block.append(f"    Last 10: {fmt_pct(formH['last10'])}")
-        block.append(f"    Streak:  {fmt_streak(formH['streak'])}")
+        block.append(label("ROI as favorite:"))
+        block.append(nest(f"{away_sum['fav_roi_units']:+0.1f}u ({fmt_pct(away_sum['fav_roi_pct'])})"))
 
-        w(f"<div class='subheader'>{home.upper()} (HOME)</div>")
+        block.append(label("ROI as underdog:"))
+        block.append(nest(f"{away_sum['dog_roi_units']:+0.1f}u ({fmt_pct(away_sum['dog_roi_pct'])})"))
+
+        block.append(label("Vs strong opps:"))
+        block.append(nest(f"{oppA['vs_strong_record']} ({fmt_pct(oppA['vs_strong_pct'])}, n={oppA['vs_strong_n']})"))
+
+        block.append(label("Vs weak opps:"))
+        block.append(nest(f"{oppA['vs_weak_record']} ({fmt_pct(oppA['vs_weak_pct'])}, n={oppA['vs_weak_n']})"))
+
+        block.append(label("Recent form:"))
+        block.append(nest(f"Last 5:   {fmt_pct(formA['last5_pct'])}"))
+        block.append(nest(f"Last 10:  {fmt_pct(formA['last10_pct'])}"))
+        block.append(nest(f"Streak:   {fmt_streak(formA['streak'])}"))
+
+        block = maybe_block(block, highlight=(away_is_fav or away_is_dog))
+
+        w("<div class='subheader'>"+away.upper()+" (AWAY)</div>")
         w("<pre>")
-        for line in block:
-            w(line)
-        w("</pre>")
-
-        # =================== AWAY TEAM BLOCK ===================
-        block = []
-        block.append(nest("ML record:", f"{sumA['ml_record']} ({fmt_pct(sumA['ml_pct'])})"))
-
-        block.append(hl_block(
-            nest("As favorite:", f"{sumA['fav_record']} ({fmt_pct(sumA['fav_pct'])})"),
-            away_is_fav
-        ))
-        block.append(hl_block(
-            nest("As underdog:", f"{sumA['dog_record']} ({fmt_pct(sumA['dog_pct'])})"),
-            away_is_dog
-        ))
-
-        block.append(nest("Home:", f"{sumA['home_record']} ({fmt_pct(sumA['home_pct'])})"))
-        block.append(hl_block(
-            nest("Away:", f"{sumA['away_record']} ({fmt_pct(sumA['away_pct'])})"),
-            True
-        ))
-
-        block.append(hl_block(
-            nest("As away favorite:",
-                 f"{sumA['away_fav_record']} ({fmt_pct(sumA['away_fav_pct'])})"),
-            away_is_fav
-        ))
-        block.append(hl_block(
-            nest("As away underdog:",
-                 f"{sumA['away_dog_record']} ({fmt_pct(sumA['away_dog_pct'])})"),
-            away_is_dog
-        ))
-
-        if bucketA:
-            rec, pct, n = bucketA
-            block.append(nest(f"{bA}:", f"{rec} ({fmt_pct(pct)}, n={n})"))
-
-        block.append(nest("ROI all ML bets:", 
-                          f"{sumA['roi_units']:+0.1f}u ({fmt_pct(sumA['roi_pct'])})"))
-
-        vsS = oppA["vs_strong"]
-        vsW = oppA["vs_weak"]
-        block.append(nest("Vs strong opps:", f"{vsS[0]} ({fmt_pct(vsS[1])}, n={vsS[2]})"))
-        block.append(nest("Vs weak opps:", f"{vsW[0]} ({fmt_pct(vsW[1])}, n={vsW[2]})"))
-
-        block.append("Recent form:")
-        block.append(f"    Last 5:  {fmt_pct(formA['last5'])}")
-        block.append(f"    Last 10: {fmt_pct(formA['last10'])}")
-        block.append(f"    Streak:  {fmt_streak(formA['streak'])}")
-
-        w(f"<div class='subheader'>{away.upper()} (AWAY)</div>")
-        w("<pre>")
-        for line in block:
-            w(line)
+        for line in block: w(line)
         w("</pre>")
 
         w("</details>")
-        w("</div>")  # end card
+        w("</div>")  # end game card
 
-    # ---------- LEAGUE OVERVIEW ----------
+    # --------- LEAGUE OVERVIEW ----------
     if not league_tbl.empty:
         w("<div class='league-block'>")
         w("<h2>League Overview</h2>")
 
-        def section(title, df, col):
+        lv=league_tbl
+        overall=lv.sort_values("ml_pct",ascending=False).head(5)
+        home_best=lv.sort_values("home_pct",ascending=False).head(5)
+        away_best=lv.sort_values("away_pct",ascending=False).head(5)
+        fav_best=lv.sort_values("fav_pct",ascending=False).head(5)
+        dog_best=lv.sort_values("dog_pct",ascending=False).head(5)
+
+        def block(title,df,col):
             w(f"<h3>{title}</h3><pre>")
-            for i, row in enumerate(df.itertuples(index=False), start=1):
-                w(f"{i}. {row.team:22s} {fmt_pct(getattr(row, col))}")
+            for i,row in enumerate(df.itertuples(index=False),start=1):
+                w(f"{i}. {row.team:22s} {fmt_pct(getattr(row,col))}")
             w("</pre>")
 
-        ov = league_tbl.sort_values("ml_pct", ascending=False).head(5)
-        section("Best overall (ML win%)", ov, "ml_pct")
-
-        home = league_tbl.sort_values("home_pct", ascending=False).head(5)
-        section("Best home teams", home, "home_pct")
-
-        away = league_tbl.sort_values("away_pct", ascending=False).head(5)
-        section("Best away teams", away, "away_pct")
-
-        fav = league_tbl.sort_values("fav_pct", ascending=False).head(5)
-        section("Best favorites", fav, "fav_pct")
-
-        dog = league_tbl.sort_values("dog_pct", ascending=False).head(5)
-        section("Best underdogs", dog, "dog_pct")
+        block("Best overall (ML win%)",overall,"ml_pct")
+        block("Best home teams",home_best,"home_pct")
+        block("Best away teams",away_best,"away_pct")
+        block("Best favorites",fav_best,"fav_pct")
+        block("Best underdogs",dog_best,"dog_pct")
 
         w("</div>")
 
-    # ---------- Write ----------
     w("</body></html>")
-    with open(outfile, "w") as f:
+
+    with open(outfile,"w") as f:
         f.write("\n".join(lines))
 
 
-# ========================= MAIN =========================
+# -------------------------- MAIN --------------------------------------
 
 def main():
-    master = load_master()
-
-    today = dt.date.today()
+    master=load_master()
+    today=dt.date.today()
     if today not in master["game_date"].unique():
-        today = master["game_date"].max()
+        today=master["game_date"].max()
 
-    slate = master[master["game_date"] == today]
+    slate=master[master["game_date"]==today]
     if slate.empty:
-        print("No games for", today)
+        print("No games for",today)
         return
 
-    team_results = build_team_results(master)
-    league_tbl = league_overview(team_results)
+    results=build_team_results(master)
+    league_tbl=league_overview(results)
 
-    outfile = f"dashboard_{today}.html"
-    build_html(slate, team_results, league_tbl, outfile)
-    print("Dashboard written →", outfile)
+    outfile=f"dashboard_{today}.html"
+    build_html(slate,results,league_tbl,outfile)
 
+    print("Dashboard written →",outfile)
 
-if __name__ == "__main__":
+if __name__=="__main__":
     main()
