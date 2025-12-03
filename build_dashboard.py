@@ -231,22 +231,31 @@ def league_overview(team_results):
 def opponent_adjusted_stats(team_df, league_tbl):
     played = team_df[team_df["has_result"] & team_df["has_ml"]]
     if played.empty or league_tbl.empty:
-        return {"strong_record":"—","strong_pct":np.nan,"strong_n":0,
-                "weak_record":"—","weak_pct":np.nan,"weak_n":0}
+        return {
+            "strong_record": "—", "strong_pct": np.nan, "strong_n": 0,
+            "weak_record": "—",   "weak_pct": np.nan,   "weak_n": 0,
+        }
 
+    # Merge to bring in opponent ML win%
     merged = played.merge(
-        league_tbl[["team","ml_pct"]],
+        league_tbl[["team", "ml_pct"]],
         left_on="opponent",
         right_on="team",
-        how="left",
-        suffixes=("","_opp")
+        how="left"
     )
 
+    # Explicitly rename ml_pct to ml_pct_opp so it always exists
+    merged = merged.rename(columns={"ml_pct": "ml_pct_opp"})
+
+    # If no opponent pct data exists, bail out safely
     merged = merged.dropna(subset=["ml_pct_opp"])
     if merged.empty:
-        return {"strong_record":"—","strong_pct":np.nan,"strong_n":0,
-                "weak_record":"—","weak_pct":np.nan,"weak_n":0}
+        return {
+            "strong_record": "—", "strong_pct": np.nan, "strong_n": 0,
+            "weak_record": "—",   "weak_pct": np.nan,   "weak_n": 0,
+        }
 
+    # Establish strong/weak thresholds
     vals = league_tbl["ml_pct"].dropna()
     top = vals.quantile(0.80)
     bot = vals.quantile(0.20)
@@ -255,15 +264,22 @@ def opponent_adjusted_stats(team_df, league_tbl):
     weak   = merged[merged["ml_pct_opp"] <= bot]
 
     def rec(df):
-        if df.empty: return "—",np.nan,0
-        w = df["is_win"].sum()
-        return f"{int(w)}-{len(df)-int(w)}", w/len(df), len(df)
+        if df.empty:
+            return "—", np.nan, 0
+        wins = df["is_win"].sum()
+        return f"{int(wins)}-{len(df)-int(wins)}", wins / len(df), len(df)
 
-    srec, sp, sn = rec(strong)
-    wrec, wp, wn = rec(weak)
+    srec, spct, scount = rec(strong)
+    wrec, wpct, wcount = rec(weak)
 
-    return {"strong_record":srec,"strong_pct":sp,"strong_n":sn,
-            "weak_record":wrec,"weak_pct":wp,"weak_n":wn}
+    return {
+        "strong_record": srec,
+        "strong_pct": spct,
+        "strong_n": scount,
+        "weak_record": wrec,
+        "weak_pct": wpct,
+        "weak_n": wcount,
+    }
 
 
 # CLEAN FIXED VERSION OF STREAK COMPUTATION
