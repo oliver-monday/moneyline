@@ -148,7 +148,8 @@ def compute_schedule_stress(team_hist, today, venue_city, venue_state):
 
     # Compute consecutive home games
     home_streak = 0
-    for _, row in recent_games[::-1].iterrows():  # iterate from most recent backward
+    # iterate from most recent backward
+    for _, row in hist.sort_values("game_date", ascending=False).iterrows():  
         if row["is_home"]:  # game was at home
             home_streak += 1
         else:
