@@ -64,16 +64,23 @@ jobs:
           git config user.name  "github-actions"
           git config user.email "actions@github.com"
 
-          # Switch to gh-pages
+          # Fetch & checkout gh-pages
           git fetch origin gh-pages || true
-          git checkout gh-pages || git checkout --orphan gh-pages
+          git switch gh-pages || git switch --orphan gh-pages
 
-          # Remove all files
+          # CLEAN BRANCH
           git rm -rf . || true
 
-          # Copy new dashboard output
-          cp deploy/index.html index.html
-          cp deploy/nba_master.csv nba_master.csv
+          # NOW recreate deploy folder
+          mkdir deploy
+
+          # Copy the output HTML + CSV from main workspace
+          cp "$GITHUB_WORKSPACE"/dashboard_*.html deploy/index.html
+          cp "$GITHUB_WORKSPACE"/nba_master.csv deploy/nba_master.csv
+
+          # Move into deploy folder and publish
+          mv deploy/* .
+          rm -rf deploy
 
           git add index.html nba_master.csv
           git commit -m "Dashboard update $(date -u +'%Y-%m-%d %H:%M:%S')" || true
