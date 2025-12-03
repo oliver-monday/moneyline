@@ -222,6 +222,37 @@ def parse_scoreboard(date_obj: dt.date, data: Dict[str, Any]) -> List[Dict[str, 
 # UPSERT INTO MASTER CSV (STRICT SCHEMA)
 # --------------------------------------------------------------------
 
+def _preserve_existing_odds(df_new: pd.DataFrame, df_old_subset: pd.DataFrame) -> pd.DataFrame:
+    """
+    For overlapping game_ids, keep existing moneyline odds if the new ingest
+    has missing/zero values for that side.
+    """
+    if df_old_subset.empty:
+        return df_new
+
+    merged = df_new.merge(
+        df_old_subset[["game_id", "home_ml", "away_ml"]],
+        on="game_id",
+        how="left",
+        suffixes=("", "_old"),
+    )
+
+    for side in ["home", "away"]:
+        ml_col = f"{side}_ml"
+        old_col = f"{ml_col}_old"
+        if ml_col not in merged.columns or old_col not in merged.columns:
+            continue
+
+        # New is NaN/0, old is non-null and non-zero → keep old value
+        mask = merged[ml_col].isna() | (merged[ml_col] == 0)
+        mask &= merged[old_col].notna() & (merged[old_col] != 0)
+
+        merged.loc[mask, ml_col] = merged.loc[mask, old_col]
+        merged.drop(columns=[old_col], inplace=True)
+
+    return merged
+
+
 def upsert_rows(df_new: pd.DataFrame, csv_path: str):
     # Enforce schema on new data
     for col in MASTER_COLUMNS:
@@ -240,6 +271,13 @@ def upsert_rows(df_new: pd.DataFrame, csv_path: str):
         df_old = df_old[MASTER_COLUMNS].copy()
     else:
         df_old = pd.DataFrame(columns=MASTER_COLUMNS)
+
+    # ---- PATCH: preserve existing odds for overlapping games ----
+    if not df_old.empty:
+        overlap_old = df_old[df_old["game_id"].isin(df_new["game_id"])].copy()
+        if not overlap_old.empty:
+            df_new = _preserve_existing_odds(df_new, overlap_old)
+    # -------------------------------------------------------------
 
     # Drop any existing rows with the same game_ids
     df_old = df_old[~df_old["game_id"].isin(df_new["game_id"])]
