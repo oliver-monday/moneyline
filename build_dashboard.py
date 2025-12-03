@@ -856,12 +856,12 @@ def build_html(slate, team_results, league_tbl, outfile):
             w(value(travel_text))
 
             # Only show road stretch if meaningful
-            if home_ss["road_streak"] >= 1:
+            if away_ss["road_streak"] >= 1:
                 w(label("Road stretch:"))
-                if home_ss["road_streak"] == 1:
+                if away_ss["road_streak"] == 1:
                     w(value("1 straight road game"))
                 else:
-                    w(value(f"{home_ss['road_streak']} straight road games"))
+                    w(value(f"{away_ss['road_streak']} straight road games"))
 
             if away_ss["home_streak"] >= 2:
                 w(label("Home stand:"))
