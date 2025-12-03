@@ -22,6 +22,8 @@ Writes / upserts into nba_master.csv with the fixed schema:
   away_spread
   venue_city
   venue_state
+  home_injuries
+  away_injuries
 """
 
 import argparse
@@ -31,6 +33,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import pandas as pd
 import requests
+from bs4 import BeautifulSoup  # NEW: for Rotowire scraping
 
 # --------------------------------------------------------------------
 # CONSTANTS
@@ -38,6 +41,9 @@ import requests
 
 # ✅ This is the GOOD, stable ESPN endpoint
 SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard"
+
+# Rotowire starting lineups / injuries page
+ROTO_LINEUPS_URL = "https://www.rotowire.com/basketball/nba-lineups.php"
 
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -60,6 +66,8 @@ MASTER_COLUMNS = [
     "away_spread",
     "venue_city",
     "venue_state",
+    "home_injuries",   # NEW
+    "away_injuries",   # NEW
 ]
 
 
@@ -147,6 +155,124 @@ def fetch_moneylines_for_game(game_id: str) -> Tuple[Optional[int], Optional[int
 
 
 # --------------------------------------------------------------------
+# FETCH INJURIES FROM ROTOWIRE (BEST EFFORT)
+# --------------------------------------------------------------------
+
+def fetch_rotowire_injuries() -> Dict[str, str]:
+    """
+    Scrape Rotowire lineups page and return a mapping:
+        { TEAM_TRICODE (e.g. "BOS") : "Player1 (status – note); Player2 (...)" }
+
+    This is intentionally best-effort and resilient:
+      - If the page structure changes, we just return {} and ingestion continues.
+      - We only attach injuries for today's games (no historical backfill).
+    """
+    try:
+        resp = requests.get(
+            ROTO_LINEUPS_URL,
+            headers={"User-Agent": USER_AGENT, "Accept": "text/html"},
+            timeout=10,
+        )
+        resp.raise_for_status()
+    except Exception as e:
+        print(f"Warning: failed to fetch Rotowire lineups: {e}")
+        return {}
+
+    try:
+        soup = BeautifulSoup(resp.text, "html.parser")
+    except Exception as e:
+        print(f"Warning: failed to parse Rotowire HTML: {e}")
+        return {}
+
+    injuries_by_team: Dict[str, str] = {}
+
+    # Rotowire markup can change, so we keep the logic defensive and simple.
+    # Strategy:
+    #   - Iterate each team block.
+    #   - Grab team tricode (e.g. "BOS", "LAC") if visible.
+    #   - Find a section labeled "MAY NOT PLAY" and collect the nearby lines.
+    #
+    # NOTE: Class names are best guesses based on current site; if they change,
+    #       we just won't attach injuries rather than breaking the ingest.
+    team_blocks = soup.select(".nba-lineups__team, .lineup__team")
+    for tb in team_blocks:
+        # Try to get team tricode first
+        team_code = None
+
+        # common patterns where tricode might live
+        code_el = tb.select_one(".nba-lineups__abbr, .lineup__abbr, .lineup__team-abbrev")
+        if code_el:
+            team_code = code_el.get_text(strip=True)
+
+        # Fallback to full team name if no explicit abbrev is present
+        if not team_code:
+            name_el = tb.select_one(".nba-lineups__team-name, .lineup__team-name")
+            if not name_el:
+                continue
+            team_code = name_el.get_text(strip=True)
+
+        team_code = (team_code or "").strip().upper()
+        if not team_code:
+            continue
+
+        # Locate "MAY NOT PLAY" text within this block
+        inj_header = None
+        for txt in tb.stripped_strings:
+            if "MAY NOT PLAY" in txt.upper():
+                inj_header = txt
+                break
+        if not inj_header:
+            # No injury section for this team
+            continue
+
+        # Now collect a few injury lines following the header.
+        # We stay scoped to tb (team block) to avoid leaking into other teams.
+        items: List[str] = []
+        reached_header = False
+        for el in tb.descendants:
+            # We only work with element nodes that contain text
+            if not hasattr(el, "get_text"):
+                continue
+            text = el.get_text(strip=True)
+            if not text:
+                continue
+
+            up = text.upper()
+            if "MAY NOT PLAY" in up:
+                reached_header = True
+                continue
+
+            if not reached_header:
+                continue
+
+            # Stop if we clearly hit another section header
+            if any(x in up for x in ["PROBABLE STARTERS", "LINEUP", "BENCH"]):
+                break
+
+            # Skip non-injury fluff
+            if up in ("OUT", "QUESTIONABLE", "PROBABLE", "INJURED", "INJURY REPORT"):
+                continue
+
+            # Heuristic: real injury lines often contain a status word
+            if any(word in up for word in ["OUT", "QUESTIONABLE", "PROBABLE", "DOUBTFUL", "REST"]):
+                # Already includes status, keep as-is
+                items.append(" ".join(text.split()))
+            else:
+                # Might be "Player - knee" style; still useful
+                items.append(" ".join(text.split()))
+
+            if len(items) >= 4:
+                break
+
+        if not items:
+            continue
+
+        injuries_by_team[team_code] = "; ".join(items)
+
+    return injuries_by_team
+
+
+# --------------------------------------------------------------------
 # PARSE SCOREBOARD → CANONICAL ROWS
 # --------------------------------------------------------------------
 
@@ -211,6 +337,10 @@ def parse_scoreboard(date_obj: dt.date, data: Dict[str, Any]) -> List[Dict[str, 
 
             "venue_city": venue_city,
             "venue_state": venue_state,
+
+            # Injuries will be attached later for today's games
+            "home_injuries": None,
+            "away_injuries": None,
         }
 
         rows.append(row)
@@ -339,6 +469,33 @@ def main():
         return
 
     df_new = pd.DataFrame(all_rows)
+
+    # --- Attach injuries for today's games (best effort, does NOT error if scrape fails) ---
+    injuries_map = {}
+    try:
+        injuries_map = fetch_rotowire_injuries()
+    except Exception as e:
+        print(f"Warning: unexpected error in injury scraping: {e}")
+        injuries_map = {}
+
+    if injuries_map:
+        # Ensure columns exist in df_new
+        if "home_injuries" not in df_new.columns:
+            df_new["home_injuries"] = None
+        if "away_injuries" not in df_new.columns:
+            df_new["away_injuries"] = None
+
+        today_str = today.strftime("%Y-%m-%d")
+        mask_today = df_new["game_date"] == today_str
+
+        for idx in df_new[mask_today].index:
+            home_abbr = str(df_new.at[idx, "home_team_abbrev"] or "").upper()
+            away_abbr = str(df_new.at[idx, "away_team_abbrev"] or "").upper()
+            df_new.at[idx, "home_injuries"] = injuries_map.get(home_abbr)
+            df_new.at[idx, "away_injuries"] = injuries_map.get(away_abbr)
+
+    # -------------------------------------------------------------------------------------
+
     upsert_rows(df_new, args.out)
 
 

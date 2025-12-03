@@ -761,6 +761,12 @@ def build_html(slate, team_results, league_tbl, outfile):
                     w(value("2 straight home games"))
                 else:
                     w(value(f"{home_ss['home_streak']} straight home games"))
+            # ---- Injuries (home) ----
+            home_inj = g.get("home_injuries")
+            if home_inj and isinstance(home_inj, str) and home_inj.strip():
+                w(label("Injuries:"))
+                for item in home_inj.split(";"):
+                    w(value(item.strip()))
 
         w("</pre>")
 
@@ -869,6 +875,13 @@ def build_html(slate, team_results, league_tbl, outfile):
                     w(value("2 straight home games"))
                 else:
                     w(value(f"{away_ss['home_streak']} straight home games"))
+
+        # ---- Injuries (away) ----
+        away_inj = g.get("away_injuries")
+        if away_inj and isinstance(away_inj, str) and away_inj.strip():
+            w(label("Injuries:"))
+            for item in away_inj.split(";"):
+                w(value(item.strip()))
 
         w("</pre>")
         w("</details>")
