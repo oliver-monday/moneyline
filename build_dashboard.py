@@ -155,6 +155,15 @@ def compute_schedule_stress(team_hist, today, venue_city, venue_state):
         else:
             break
 
+    # Enforce mutual exclusivity between home_streak and road_streak
+    if road_streak > 0 and home_streak > 0:
+        # Look at the most recent game to decide which streak is real
+        last_game = hist.sort_values("game_date", ascending=False).iloc[0]
+        if last_game["is_home"]:
+            road_streak = 0
+        else:
+            home_streak = 0
+
     # ---- Composite score 0–100 ----
     score = 0.0
 
@@ -752,15 +761,6 @@ def build_html(slate, team_results, league_tbl, outfile):
                     w(value("2 straight home games"))
                 else:
                     w(value(f"{home_ss['home_streak']} straight home games"))
-
-            # Enforce mutual exclusivity
-            if road_streak > 0 and home_streak > 0:
-                # pick the one matching the most recent game's location
-                last_game = hist.sort_values("game_date", ascending=False).iloc[0]
-                if last_game["is_home"]:
-                    road_streak = 0
-                else:
-                    home_streak = 0
 
         w("</pre>")
 
