@@ -2,8 +2,8 @@ name: Daily NBA Dashboard Refresh
 
 on:
   schedule:
-    - cron: "0 12 * * *"     # 07:00 AM ET (12:00 UTC)
-  workflow_dispatch:          # allow manual runs
+    - cron: "0 12 * * *"     # Runs daily at 12:00 UTC (7 AM ET)
+  workflow_dispatch:          # Allow manual run
   push:
     paths:
       - "*.py"
@@ -14,70 +14,114 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write   # allows pushing to gh-pages
+      contents: write      # allow committing backups to main
+      pages: write         # allow deployment to GitHub Pages
+      id-token: write
 
     steps:
-      # --- CHECKOUT CODE ---
+      # ------------------------------------------------------------
+      # CHECKOUT CODE
+      # ------------------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # --- INSTALL PYTHON ---
+      # ------------------------------------------------------------
+      # PYTHON SETUP
+      # ------------------------------------------------------------
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
-      # --- INSTALL REQUIRED PACKAGES ---
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install pandas numpy requests
 
-      # --- RUN DAILY ESPN INGEST ---
+      # ------------------------------------------------------------
+      # RUN ESPN INGEST
+      # ------------------------------------------------------------
       - name: Run ingest script
-        run: python espn_daily_ingest.py --out nba_master.csv
-
-      # --- BUILD DASHBOARD HTML ---
-      - name: Build dashboard
-        run: python build_dashboard.py
-
-      # --- PREPARE PUBLIC OUTPUT SAFELY ---
-      - name: Prepare public output
+        id: ingest
         run: |
-          mkdir -p public
+          echo "=== Running espn_daily_ingest.py ==="
+          python espn_daily_ingest.py --out nba_master.csv
 
-          # Find the generated dashboard file (there will be exactly one)
+          echo "Ingest completed."
+          echo "Updated nba_master.csv size:"
+          ls -lh nba_master.csv
+
+      # ------------------------------------------------------------
+      # BUILD DASHBOARD
+      # ------------------------------------------------------------
+      - name: Build dashboard
+        id: dashboard
+        run: |
+          echo "=== Building dashboard ==="
+          python build_dashboard.py
+
           FILE=$(ls dashboard_*.html | head -n 1)
-
           if [ -z "$FILE" ]; then
-            echo "ERROR: No dashboard HTML file found!"
+            echo "ERROR: Dashboard not generated!"
             exit 1
           fi
 
-          cp "$FILE" public/index.html
-          cp nba_master.csv public/nba_master.csv
+          echo "Generated dashboard:"
+          echo "$FILE"
+          echo "Dashboard size:"
+          ls -lh "$FILE"
 
-      # --- DEPLOY DIRECTLY TO gh-pages BRANCH ---
-      - name: Deploy to gh-pages branch
+          # Save the filename for later steps
+          echo "file=$FILE" >> $GITHUB_OUTPUT
+
+      # ------------------------------------------------------------
+      # CREATE BACKUP (stored in main branch)
+      # ------------------------------------------------------------
+      - name: Save daily backup of dashboard
         run: |
+          mkdir -p _backups
+          cp "${{ steps.dashboard.outputs.file }}" "_backups/${{ steps.dashboard.outputs.file }}"
+
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          # Fetch gh-pages if exists
-          git fetch origin gh-pages || true
+          git add _backups
+          git commit -m "Backup dashboard for $(date -u +'%Y-%m-%d')" || echo "No changes to commit"
 
-          # Switch or create orphan branch
-          if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
-            git checkout gh-pages
-          else
-            git checkout --orphan gh-pages
-            git rm -rf .
-          fi
+          git push origin main
 
-          # Copy new content into branch root
-          cp public/index.html index.html
-          cp public/nba_master.csv nba_master.csv
+      # ------------------------------------------------------------
+      # PREPARE ARTIFACT FOR PAGES DEPLOY
+      # ------------------------------------------------------------
+      - name: Prepare public folder
+        run: |
+          mkdir -p public
+          cp "${{ steps.dashboard.outputs.file }}" public/index.html
+          cp nba_master.csv public/nba_master.csv
 
-          git add index.html nba_master.csv
-          git commit -m "Dashboard update $(date -u +'%Y-%m-%d %H:%M:%S')" || true
-          git push origin gh-pages --force
+      # ------------------------------------------------------------
+      # UPLOAD ARTIFACT
+      # ------------------------------------------------------------
+      - name: Upload artifact for deployment
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: public
+
+  # ------------------------------------------------------------
+  # DEPLOY TO GITHUB PAGES
+  # ------------------------------------------------------------
+  deploy:
+    needs: run-refresh
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3
