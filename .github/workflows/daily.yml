@@ -2,8 +2,8 @@ name: Daily NBA Dashboard Refresh
 
 on:
   schedule:
-    - cron: "0 12 * * *"   # 07:00 AM ET (12:00 UTC)
-  workflow_dispatch:       # allow manual runs
+    - cron: "0 12 * * *"     # 07:00 AM ET (12:00 UTC)
+  workflow_dispatch:          # allow manual runs
   push:
     paths:
       - "*.py"
@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write   # allow pushing updates & deploying to Pages
+      contents: write   # allows pushing to gh-pages
 
     steps:
       # --- CHECKOUT CODE ---
@@ -41,30 +41,34 @@ jobs:
       - name: Build dashboard
         run: python build_dashboard.py
 
-      # --- PREPARE DEPLOY DIRECTORY ---
-      - name: Copy dashboard to deploy folder
+      # --- PREPARE PUBLIC DIRECTORY FOR DEPLOY ---
+      - name: Prepare public output
         run: |
-          mkdir -p deploy
-          cp dashboard_*.html deploy/index.html
-          cp nba_master.csv deploy/nba_master.csv
+          mkdir -p public
+          cp dashboard_*.html public/index.html
+          cp nba_master.csv public/nba_master.csv
 
-      # --- DEPLOY TO GITHUB PAGES ---
-      - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: deploy
+      # --- DEPLOY DIRECTLY TO gh-pages BRANCH ---
+      - name: Deploy to gh-pages branch
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
 
-  deploy:
-    needs: run-refresh
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+          # Fetch gh-pages if exists
+          git fetch origin gh-pages || true
 
-    steps:
-      - name: Deploy GitHub Pages site
-        id: deployment
-        uses: actions/deploy-pages@v3
+          # Switch or create orphan branch
+          if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+            git rm -rf .
+          fi
+
+          # Copy new content into branch root
+          cp public/index.html index.html
+          cp public/nba_master.csv nba_master.csv
+
+          git add index.html nba_master.csv
+          git commit -m "Dashboard update $(date -u +'%Y-%m-%d %H:%M:%S')" || true
+          git push origin gh-pages --force
