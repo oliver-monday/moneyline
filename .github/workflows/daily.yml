@@ -37,7 +37,7 @@ jobs:
       - name: Build dashboard
         run: python build_dashboard.py
 
-      # --- PREPARE PUBLIC OUTPUT (what we actually want to publish) ---
+            # --- PREPARE PUBLIC OUTPUT ---
       - name: Create deploy folder
         run: |
           mkdir -p public
@@ -49,17 +49,22 @@ jobs:
           cp "$FILE" public/index.html
           cp nba_master.csv public/nba_master.csv
 
-      # --- IMPORTANT: CLEAN WORKING TREE BEFORE SWITCHING BRANCHES ---
-      - name: Reset working tree (discard local changes on main)
+      # --- SAVE PUBLIC FOLDER BEFORE RESET ---
+      - name: Temporarily move public folder
+        run: mv public /tmp/public
+
+      # --- RESET WORKING TREE ---
+        # Removes changes to tracked files (nba_master.csv) but preserves /tmp/public
+      - name: Reset working tree
         run: git reset --hard
 
-      # --- DEPLOY TO gh-pages BRANCH ---
+      # --- DEPLOY TO GH-PAGES ---
       - name: Deploy to gh-pages branch
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          # Does gh-pages already exist?
+          # Fetch or create gh-pages
           if git ls-remote --exit-code origin gh-pages; then
             git fetch origin gh-pages
             git checkout gh-pages
@@ -67,12 +72,13 @@ jobs:
             git checkout --orphan gh-pages
           fi
 
-          # Wipe existing contents of gh-pages
+          # Clear old contents
           rm -rf *
 
-          # Copy fresh site into branch root
-          cp -r public/* .
+          # Restore public folder
+          mv /tmp/public/* .
 
           git add --all
           git commit -m "Automated dashboard update $(date -u +'%Y-%m-%d %H:%M UTC')" || echo "Nothing to commit"
+
           git push origin gh-pages --force
