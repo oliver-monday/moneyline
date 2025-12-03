@@ -10,6 +10,17 @@ Features:
 - Opponent-strength stats (vs strong/weak opps)
 - Recent form (Last 5 / Last 10 / Streak)
 - League overview block at bottom
+
+Presentation tweaks in this version:
+- Nested, two-line stat blocks:
+
+    ML record:
+        13–9 (59.1%)
+
+- "Bucket" label shortened to just the bucket text:
+
+    Big favorite (≤ -300):
+        7–0 (100.0%, n=7)
 """
 
 import pandas as pd
@@ -68,13 +79,30 @@ def maybe_hl(text, cond):
 
 
 def label(text: str, width: int = 18) -> str:
-    """Left-align label text to a fixed width so values form a column."""
+    """Left-align label text to a fixed width so nested values line up."""
     return f"{text:<{width}}"
 
 
 def value(text: str, indent: int = 18) -> str:
-    """Indent-only line (used for multi-line sections like Recent form)."""
+    """Indent-only line (used for nested value lines)."""
     return " " * indent + text
+
+
+def write_block(w, label_text: str, value_text: str, highlight: bool = False):
+    """
+    Write a two-line block:
+
+    Label:
+        value
+
+    If highlight=True, the entire two-line block is wrapped in a <span class="hl">.
+    """
+    if highlight:
+        w(f"<span class='hl'>{label(label_text)}")
+        w(value(value_text) + "</span>")
+    else:
+        w(label(label_text))
+        w(value(value_text))
 
 
 def load_master():
@@ -263,9 +291,9 @@ def league_overview(team_results: pd.DataFrame) -> pd.DataFrame:
 
     rows = []
     for team, df in hist.groupby("team"):
-        w = df["is_win"].sum()
-        l = len(df) - w
-        ml_pct = w / (w + l) if (w + l) > 0 else np.nan
+        w_ = df["is_win"].sum()
+        l_ = len(df) - w_
+        ml_pct = w_ / (w_ + l_) if (w_ + l_) > 0 else np.nan
 
         fav = df[df["is_fav"]]
         w_f = fav["is_win"].sum()
@@ -504,85 +532,102 @@ def build_html(slate, team_results, league_tbl, outfile):
         w(f"<div class='subheader'>{home.upper()} (HOME)</div>")
         w("<pre>")
 
-        w(
-            f"{label('ML record:')}"
-            f"{home_sum['ml_record']} ({fmt_pct(home_sum['ml_win_pct'])})"
+        write_block(
+            w,
+            "ML record:",
+            f"{home_sum['ml_record']} ({fmt_pct(home_sum['ml_win_pct'])})",
+            highlight=False,
         )
 
-        w(
-            maybe_hl(
-                f"{label('As favorite:')}"
-                f"{home_sum['fav_record']} ({fmt_pct(home_sum['fav_win_pct'])})",
-                home_is_fav,
-            )
+        write_block(
+            w,
+            "As favorite:",
+            f"{home_sum['fav_record']} ({fmt_pct(home_sum['fav_win_pct'])})",
+            highlight=home_is_fav,
         )
 
-        w(
-            maybe_hl(
-                f"{label('As underdog:')}"
-                f"{home_sum['dog_record']} ({fmt_pct(home_sum['dog_win_pct'])})",
-                home_is_dog,
-            )
+        write_block(
+            w,
+            "As underdog:",
+            f"{home_sum['dog_record']} ({fmt_pct(home_sum['dog_win_pct'])})",
+            highlight=home_is_dog,
         )
 
-        w(
-            maybe_hl(
-                f"{label('Home:')}"
-                f"{home_sum['home_record']} ({fmt_pct(home_sum['home_win_pct'])})",
-                True,
-            )
+        write_block(
+            w,
+            "Home:",
+            f"{home_sum['home_record']} ({fmt_pct(home_sum['home_win_pct'])})",
+            highlight=True,  # home row always highlighted for home team
         )
 
-        w(
-            f"{label('Away:')}"
-            f"{home_sum['away_record']} ({fmt_pct(home_sum['away_win_pct'])})"
+        write_block(
+            w,
+            "Away:",
+            f"{home_sum['away_record']} ({fmt_pct(home_sum['away_win_pct'])})",
+            highlight=False,
         )
 
-        w(
-            maybe_hl(
-                f"{label('As home favorite:')}"
-                f"{home_sum['home_fav_record']} ({fmt_pct(home_sum['home_fav_win_pct'])})",
-                home_is_fav,
-            )
+        write_block(
+            w,
+            "As home favorite:",
+            f"{home_sum['home_fav_record']} ({fmt_pct(home_sum['home_fav_win_pct'])})",
+            highlight=home_is_fav,
         )
-        w(
-            maybe_hl(
-                f"{label('As home underdog:')}"
-                f"{home_sum['home_dog_record']} ({fmt_pct(home_sum['home_dog_win_pct'])})",
-                home_is_dog,
-            )
+
+        write_block(
+            w,
+            "As home underdog:",
+            f"{home_sum['home_dog_record']} ({fmt_pct(home_sum['home_dog_win_pct'])})",
+            highlight=home_is_dog,
         )
 
         if bucket_home:
             b = bucket_home_stats
-            w(
-                f"{label('Bucket ' + bucket_home + ':')}"
-                f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])}, n={b['n']})"
+            # Drop the literal "Bucket" word; label is just the bucket text
+            write_block(
+                w,
+                f"{bucket_home}:",
+                f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])}, n={b['n']})",
+                highlight=False,
             )
 
-        w(
-            f"{label('ROI all ML bets:')}"
-            f"{home_sum['roi_units']:+0.1f}u ({fmt_pct(home_sum['roi_pct'])})"
-        )
-        w(
-            f"{label('ROI as favorite:')}"
-            f"{home_sum['fav_roi_units']:+0.1f}u ({fmt_pct(home_sum['fav_roi_pct'])})"
-        )
-        w(
-            f"{label('ROI as underdog:')}"
-            f"{home_sum['dog_roi_units']:+0.1f}u ({fmt_pct(home_sum['dog_roi_pct'])})"
+        write_block(
+            w,
+            "ROI all ML bets:",
+            f"{home_sum['roi_units']:+0.1f}u ({fmt_pct(home_sum['roi_pct'])})",
+            highlight=False,
         )
 
-        w(
-            f"{label('Vs strong opps:')}"
-            f"{oppH['vs_strong_record']} ({fmt_pct(oppH['vs_strong_pct'])}, n={oppH['vs_strong_n']})"
-        )
-        w(
-            f"{label('Vs weak opps:')}"
-            f"{oppH['vs_weak_record']} ({fmt_pct(oppH['vs_weak_pct'])}, n={oppH['vs_weak_n']})"
+        write_block(
+            w,
+            "ROI as favorite:",
+            f"{home_sum['fav_roi_units']:+0.1f}u ({fmt_pct(home_sum['fav_roi_pct'])})",
+            highlight=False,
         )
 
-        w("Recent form:")
+        write_block(
+            w,
+            "ROI as underdog:",
+            f"{home_sum['dog_roi_units']:+0.1f}u ({fmt_pct(home_sum['dog_roi_pct'])})",
+            highlight=False,
+        )
+
+        write_block(
+            w,
+            "Vs strong opps:",
+            f"{oppH['vs_strong_record']} ({fmt_pct(oppH['vs_strong_pct'])}, n={oppH['vs_strong_n']})",
+            highlight=False,
+        )
+
+        write_block(
+            w,
+            "Vs weak opps:",
+            f"{oppH['vs_weak_record']} ({fmt_pct(oppH['vs_weak_pct'])}, n={oppH['vs_weak_n']})",
+            highlight=False,
+        )
+
+        # Recent form as a mini nested block
+        w(label("Recent form:"))
         w(value(f"Last 5:   {fmt_pct(formH['last5_pct'])}"))
         w(value(f"Last 10:  {fmt_pct(formH['last10_pct'])}"))
         w(value(f"Streak:   {fmt_streak(formH['streak'])}"))
@@ -593,85 +638,100 @@ def build_html(slate, team_results, league_tbl, outfile):
         w(f"<div class='subheader'>{away.upper()} (AWAY)</div>")
         w("<pre>")
 
-        w(
-            f"{label('ML record:')}"
-            f"{away_sum['ml_record']} ({fmt_pct(away_sum['ml_win_pct'])})"
+        write_block(
+            w,
+            "ML record:",
+            f"{away_sum['ml_record']} ({fmt_pct(away_sum['ml_win_pct'])})",
+            highlight=False,
         )
 
-        w(
-            maybe_hl(
-                f"{label('As favorite:')}"
-                f"{away_sum['fav_record']} ({fmt_pct(away_sum['fav_win_pct'])})",
-                away_is_fav,
-            )
+        write_block(
+            w,
+            "As favorite:",
+            f"{away_sum['fav_record']} ({fmt_pct(away_sum['fav_win_pct'])})",
+            highlight=away_is_fav,
         )
 
-        w(
-            maybe_hl(
-                f"{label('As underdog:')}"
-                f"{away_sum['dog_record']} ({fmt_pct(away_sum['dog_win_pct'])})",
-                away_is_dog,
-            )
+        write_block(
+            w,
+            "As underdog:",
+            f"{away_sum['dog_record']} ({fmt_pct(away_sum['dog_win_pct'])})",
+            highlight=away_is_dog,
         )
 
-        w(
-            f"{label('Home:')}"
-            f"{away_sum['home_record']} ({fmt_pct(away_sum['home_win_pct'])})"
+        write_block(
+            w,
+            "Home:",
+            f"{away_sum['home_record']} ({fmt_pct(away_sum['home_win_pct'])})",
+            highlight=False,
         )
 
-        w(
-            maybe_hl(
-                f"{label('Away:')}"
-                f"{away_sum['away_record']} ({fmt_pct(away_sum['away_win_pct'])})",
-                True,
-            )
+        write_block(
+            w,
+            "Away:",
+            f"{away_sum['away_record']} ({fmt_pct(away_sum['away_win_pct'])})",
+            highlight=True,  # away row always highlighted for away team
         )
 
-        w(
-            maybe_hl(
-                f"{label('As away favorite:')}"
-                f"{away_sum['away_fav_record']} ({fmt_pct(away_sum['away_fav_win_pct'])})",
-                away_is_fav,
-            )
+        write_block(
+            w,
+            "As away favorite:",
+            f"{away_sum['away_fav_record']} ({fmt_pct(away_sum['away_fav_win_pct'])})",
+            highlight=away_is_fav,
         )
-        w(
-            maybe_hl(
-                f"{label('As away underdog:')}"
-                f"{away_sum['away_dog_record']} ({fmt_pct(away_sum['away_dog_win_pct'])})",
-                away_is_dog,
-            )
+
+        write_block(
+            w,
+            "As away underdog:",
+            f"{away_sum['away_dog_record']} ({fmt_pct(away_sum['away_dog_win_pct'])})",
+            highlight=away_is_dog,
         )
 
         if bucket_away:
             b = bucket_away_stats
-            w(
-                f"{label('Bucket ' + bucket_away + ':')}"
-                f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])}, n={b['n']})"
+            write_block(
+                w,
+                f"{bucket_away}:",
+                f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])}, n={b['n']})",
+                highlight=False,
             )
 
-        w(
-            f"{label('ROI all ML bets:')}"
-            f"{away_sum['roi_units']:+0.1f}u ({fmt_pct(away_sum['roi_pct'])})"
-        )
-        w(
-            f"{label('ROI as favorite:')}"
-            f"{away_sum['fav_roi_units']:+0.1f}u ({fmt_pct(away_sum['fav_roi_pct'])})"
-        )
-        w(
-            f"{label('ROI as underdog:')}"
-            f"{away_sum['dog_roi_units']:+0.1f}u ({fmt_pct(away_sum['dog_roi_pct'])})"
+        write_block(
+            w,
+            "ROI all ML bets:",
+            f"{away_sum['roi_units']:+0.1f}u ({fmt_pct(away_sum['roi_pct'])})",
+            highlight=False,
         )
 
-        w(
-            f"{label('Vs strong opps:')}"
-            f"{oppA['vs_strong_record']} ({fmt_pct(oppA['vs_strong_pct'])}, n={oppA['vs_strong_n']})"
-        )
-        w(
-            f"{label('Vs weak opps:')}"
-            f"{oppA['vs_weak_record']} ({fmt_pct(oppA['vs_weak_pct'])}, n={oppA['vs_weak_n']})"
+        write_block(
+            w,
+            "ROI as favorite:",
+            f"{away_sum['fav_roi_units']:+0.1f}u ({fmt_pct(away_sum['fav_roi_pct'])})",
+            highlight=False,
         )
 
-        w("Recent form:")
+        write_block(
+            w,
+            "ROI as underdog:",
+            f"{away_sum['dog_roi_units']:+0.1f}u ({fmt_pct(away_sum['dog_roi_pct'])})",
+            highlight=False,
+        )
+
+        write_block(
+            w,
+            "Vs strong opps:",
+            f"{oppA['vs_strong_record']} ({fmt_pct(oppA['vs_strong_pct'])}, n={oppA['vs_strong_n']})",
+            highlight=False,
+        )
+
+        write_block(
+            w,
+            "Vs weak opps:",
+            f"{oppA['vs_weak_record']} ({fmt_pct(oppA['vs_weak_pct'])}, n={oppA['vs_weak_n']})",
+            highlight=False,
+        )
+
+        w(label("Recent form:"))
         w(value(f"Last 5:   {fmt_pct(formA['last5_pct'])}"))
         w(value(f"Last 10:  {fmt_pct(formA['last10_pct'])}"))
         w(value(f"Streak:   {fmt_streak(formA['streak'])}"))
