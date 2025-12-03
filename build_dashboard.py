@@ -598,20 +598,6 @@ def build_html(slate, team_results, league_tbl, outfile):
         for line in block_lines:
             w(line)
 
-        # Form Index block (home)
-        if pd.isna(home_form_score):
-            block_lines = [
-                label("Form index:"),
-                value("— (insufficient sample)"),
-            ]
-        else:
-            block_lines = [
-                label("Form index:"),
-                value(f"{home_form_score:0.0f} ({home_form_desc})"),
-            ]
-        for line in block_lines:
-            w(line)
-
         block_lines = maybe_hl_block(
             [
                 label("As favorite:"),
@@ -749,6 +735,20 @@ def build_html(slate, team_results, league_tbl, outfile):
         w(value(f"Last 10:  {fmt_pct(formH['last10_pct'])}"))
         w(value(f"Streak:   {fmt_streak(formH['streak'])}"))
 
+        # Form Index block (home)
+        if pd.isna(home_form_score):
+            block_lines = [
+                label("Form index:"),
+                value("— (insufficient sample)"),
+            ]
+        else:
+            block_lines = [
+                label("Form index:"),
+                value(f"{home_form_score:0.0f} ({home_form_desc})"),
+            ]
+        for line in block_lines:
+            w(line)
+
         w("</pre>")
 
         # ---------------- AWAY TEAM ----------------
@@ -759,20 +759,6 @@ def build_html(slate, team_results, league_tbl, outfile):
             label("ML record:"),
             value(f"{away_sum['ml_record']} ({fmt_pct(away_sum['ml_win_pct'])})"),
         ]
-        for line in block_lines:
-            w(line)
-
-        # Form Index block (away)
-        if pd.isna(away_form_score):
-            block_lines = [
-                label("Form index:"),
-                value("— (insufficient sample)"),
-            ]
-        else:
-            block_lines = [
-                label("Form index:"),
-                value(f"{away_form_score:0.0f} ({away_form_desc})"),
-            ]
         for line in block_lines:
             w(line)
 
@@ -911,6 +897,20 @@ def build_html(slate, team_results, league_tbl, outfile):
         w(value(f"Last 5:   {fmt_pct(formA['last5_pct'])}"))
         w(value(f"Last 10:  {fmt_pct(formA['last10_pct'])}"))
         w(value(f"Streak:   {fmt_streak(formA['streak'])}"))
+
+        # Form Index block (away)
+        if pd.isna(away_form_score):
+            block_lines = [
+                label("Form index:"),
+                value("— (insufficient sample)"),
+            ]
+        else:
+            block_lines = [
+                label("Form index:"),
+                value(f"{away_form_score:0.0f} ({away_form_desc})"),
+            ]
+        for line in block_lines:
+            w(line)
 
         w("</pre>")
         w("</details>")
