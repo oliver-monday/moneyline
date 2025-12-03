@@ -49,8 +49,16 @@ jobs:
       - name: Prepare site files
         run: |
           mkdir -p ./site
-          cp dashboard_*.html ./site/index.html
+
+          # Determine newest dashboard file
+          NEWEST=$(ls -t dashboard_*.html | head -n 1)
+          echo "Newest dashboard HTML: $NEWEST"
+
+          cp "$NEWEST" ./site/index.html
           cp nba_master.csv ./site/nba_master.csv
+
+          echo "===== SITE DIRECTORY CONTENTS ====="
+          ls -al ./site
 
       # Upload site folder as the artifact Pages will deploy
       - name: Upload artifact
