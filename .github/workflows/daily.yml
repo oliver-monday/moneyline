@@ -1,15 +1,71 @@
-    - name: Build dashboard
-      run: python build_dashboard.py
+name: Daily NBA Dashboard Refresh
 
-    # --- DIAGNOSTIC: LIST FILES AFTER DASHBOARD BUILD ---
-    - name: List generated files
-      run: |
+on:
+  schedule:
+    - cron: "0 12 * * *"   # 7:00 AM ET (12:00 UTC)
+  workflow_dispatch:
+  push:
+    paths:
+      - "*.py"
+      - "nba_master.csv"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas numpy requests
+
+      - name: Run ingest script
+        run: python espn_daily_ingest.py --out nba_master.csv
+
+      - name: Build dashboard
+        run: python build_dashboard.py
+
+            # --- DIAGNOSTIC: LIST FILES AFTER DASHBOARD BUILD ---
+      - name: List generated files
+        run: |
         echo "===== REPO LISTING AFTER DASHBOARD BUILD ====="
         ls -R .
         echo "=============================================="
 
-    - name: Prepare site files
-      run: |
-        mkdir -p ./site
-        cp dashboard_*.html ./site/index.html
-        cp nba_master.csv ./site/nba_master.csv
+      # Create the output folder for GitHub Pages
+      - name: Prepare site files
+        run: |
+          mkdir -p ./site
+          cp dashboard_*.html ./site/index.html
+          cp nba_master.csv ./site/nba_master.csv
+
+      # Upload site folder as the artifact Pages will deploy
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
