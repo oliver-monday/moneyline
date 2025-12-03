@@ -41,11 +41,20 @@ jobs:
       - name: Build dashboard
         run: python build_dashboard.py
 
-      # --- PREPARE PUBLIC DIRECTORY FOR DEPLOY ---
+      # --- PREPARE PUBLIC OUTPUT SAFELY ---
       - name: Prepare public output
         run: |
           mkdir -p public
-          cp dashboard_*.html public/index.html
+
+          # Find the generated dashboard file (there will be exactly one)
+          FILE=$(ls dashboard_*.html | head -n 1)
+
+          if [ -z "$FILE" ]; then
+            echo "ERROR: No dashboard HTML file found!"
+            exit 1
+          fi
+
+          cp "$FILE" public/index.html
           cp nba_master.csv public/nba_master.csv
 
       # --- DEPLOY DIRECTLY TO gh-pages BRANCH ---
