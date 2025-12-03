@@ -642,6 +642,10 @@ def build_html(slate, team_results, league_tbl, outfile):
         home_ss = compute_schedule_stress(hist_home, today_date, venue_city, venue_state)
         away_ss = compute_schedule_stress(hist_away, today_date, venue_city, venue_state)
 
+        # Injuries
+        home_inj = g.get("home_injuries")
+        away_inj = g.get("away_injuries")
+
         # Summary line (using tricodes)
         away_abbr=g.get("away_team_abbrev",""); home_abbr=g.get("home_team_abbrev","")
         summary_line=f"{away_abbr} {fmt_odds(away_ml)} ({fmt_pct(away_prob)}) | {home_abbr} {fmt_odds(home_ml)} ({fmt_pct(home_prob)})"
@@ -761,12 +765,12 @@ def build_html(slate, team_results, league_tbl, outfile):
                     w(value("2 straight home games"))
                 else:
                     w(value(f"{home_ss['home_streak']} straight home games"))
-            # ---- Injuries (home) ----
-            home_inj = g.get("home_injuries")
+            
+            # --- Injury Report (home) ---
             if home_inj and isinstance(home_inj, str) and home_inj.strip():
                 w(label("Injuries:"))
-                for item in home_inj.split(";"):
-                    w(value(item.strip()))
+                for line in home_inj.split(";"):
+                    w(value(line.strip()))
 
         w("</pre>")
 
@@ -876,12 +880,11 @@ def build_html(slate, team_results, league_tbl, outfile):
                 else:
                     w(value(f"{away_ss['home_streak']} straight home games"))
 
-        # ---- Injuries (away) ----
-        away_inj = g.get("away_injuries")
+        # --- Injury Report (away) ---
         if away_inj and isinstance(away_inj, str) and away_inj.strip():
             w(label("Injuries:"))
-            for item in away_inj.split(";"):
-                w(value(item.strip()))
+            for line in away_inj.split(";"):
+                w(value(line.strip()))
 
         w("</pre>")
         w("</details>")

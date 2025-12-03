@@ -32,8 +32,8 @@ import os
 from typing import Any, Dict, List, Optional, Tuple
 
 import pandas as pd
+import re
 import requests
-from bs4 import BeautifulSoup  # NEW: for Rotowire scraping
 
 # --------------------------------------------------------------------
 # CONSTANTS
@@ -154,122 +154,62 @@ def fetch_moneylines_for_game(game_id: str) -> Tuple[Optional[int], Optional[int
         return None, None
 
 
+import re
+import requests
+
 # --------------------------------------------------------------------
-# FETCH INJURIES FROM ROTOWIRE (BEST EFFORT)
+# ROTOWIRE INJURY SCRAPER (NO DEPENDENCIES)
 # --------------------------------------------------------------------
 
-def fetch_rotowire_injuries() -> Dict[str, str]:
-    """
-    Scrape Rotowire lineups page and return a mapping:
-        { TEAM_TRICODE (e.g. "BOS") : "Player1 (status – note); Player2 (...)" }
+ROTOWIRE_URL = "https://www.rotowire.com/basketball/nba-lineups.php"
 
-    This is intentionally best-effort and resilient:
-      - If the page structure changes, we just return {} and ingestion continues.
-      - We only attach injuries for today's games (no historical backfill).
+def fetch_rotowire_injuries() -> Dict[str, List[str]]:
     """
+    Scrapes Rotowire's NBA starting lineups page WITHOUT bs4.
+    Extracts injuries only at the team level.
+    
+    Returns:
+        dict: { "LAL": ["Anthony Davis (Q — hip)", ...], ... }
+    """
+
     try:
-        resp = requests.get(
-            ROTO_LINEUPS_URL,
-            headers={"User-Agent": USER_AGENT, "Accept": "text/html"},
-            timeout=10,
+        html = requests.get(ROTOWIRE_URL, headers={"User-Agent": USER_AGENT}).text
+    except Exception:
+        return {}
+
+    injuries = {}
+
+    # Rotowire uses data-team abbreviations, ex:
+    #   <div class="lineup__team" data-team="PHX">
+    team_blocks = re.split(r'<div class="lineup__team"[^>]*data-team="', html)[1:]
+
+    for block in team_blocks:
+        # First 3 chars are the tricode (ex: PHX)
+        team = block[:3].upper()
+        injuries[team] = []
+
+        # Each injury row looks like:
+        # <li class="lineup__injury"> <span>Kevin Durant</span> ... <span class="lineup__injury-status">Out</span>
+        # Simplify capture:
+        matches = re.findall(
+            r'lineup__injury.*?<span>(.*?)</span>.*?lineup__injury-status.*?>(.*?)<',
+            block,
+            flags=re.DOTALL,
         )
-        resp.raise_for_status()
-    except Exception as e:
-        print(f"Warning: failed to fetch Rotowire lineups: {e}")
-        return {}
 
-    try:
-        soup = BeautifulSoup(resp.text, "html.parser")
-    except Exception as e:
-        print(f"Warning: failed to parse Rotowire HTML: {e}")
-        return {}
+        for player, status in matches:
+            pname = player.strip()
+            s = status.strip()
 
-    injuries_by_team: Dict[str, str] = {}
+            # Only capture impactful statuses
+            if s.lower() in ("out", "doubtful", "questionable"):
+                injuries[team].append(f"{pname} ({s})")
 
-    # Rotowire markup can change, so we keep the logic defensive and simple.
-    # Strategy:
-    #   - Iterate each team block.
-    #   - Grab team tricode (e.g. "BOS", "LAC") if visible.
-    #   - Find a section labeled "MAY NOT PLAY" and collect the nearby lines.
-    #
-    # NOTE: Class names are best guesses based on current site; if they change,
-    #       we just won't attach injuries rather than breaking the ingest.
-    team_blocks = soup.select(".nba-lineups__team, .lineup__team")
-    for tb in team_blocks:
-        # Try to get team tricode first
-        team_code = None
+            # Rotowire marks rest as "Rest"
+            if "rest" in s.lower():
+                injuries[team].append(f"{pname} (Rest)")
 
-        # common patterns where tricode might live
-        code_el = tb.select_one(".nba-lineups__abbr, .lineup__abbr, .lineup__team-abbrev")
-        if code_el:
-            team_code = code_el.get_text(strip=True)
-
-        # Fallback to full team name if no explicit abbrev is present
-        if not team_code:
-            name_el = tb.select_one(".nba-lineups__team-name, .lineup__team-name")
-            if not name_el:
-                continue
-            team_code = name_el.get_text(strip=True)
-
-        team_code = (team_code or "").strip().upper()
-        if not team_code:
-            continue
-
-        # Locate "MAY NOT PLAY" text within this block
-        inj_header = None
-        for txt in tb.stripped_strings:
-            if "MAY NOT PLAY" in txt.upper():
-                inj_header = txt
-                break
-        if not inj_header:
-            # No injury section for this team
-            continue
-
-        # Now collect a few injury lines following the header.
-        # We stay scoped to tb (team block) to avoid leaking into other teams.
-        items: List[str] = []
-        reached_header = False
-        for el in tb.descendants:
-            # We only work with element nodes that contain text
-            if not hasattr(el, "get_text"):
-                continue
-            text = el.get_text(strip=True)
-            if not text:
-                continue
-
-            up = text.upper()
-            if "MAY NOT PLAY" in up:
-                reached_header = True
-                continue
-
-            if not reached_header:
-                continue
-
-            # Stop if we clearly hit another section header
-            if any(x in up for x in ["PROBABLE STARTERS", "LINEUP", "BENCH"]):
-                break
-
-            # Skip non-injury fluff
-            if up in ("OUT", "QUESTIONABLE", "PROBABLE", "INJURED", "INJURY REPORT"):
-                continue
-
-            # Heuristic: real injury lines often contain a status word
-            if any(word in up for word in ["OUT", "QUESTIONABLE", "PROBABLE", "DOUBTFUL", "REST"]):
-                # Already includes status, keep as-is
-                items.append(" ".join(text.split()))
-            else:
-                # Might be "Player - knee" style; still useful
-                items.append(" ".join(text.split()))
-
-            if len(items) >= 4:
-                break
-
-        if not items:
-            continue
-
-        injuries_by_team[team_code] = "; ".join(items)
-
-    return injuries_by_team
+    return injuries
 
 
 # --------------------------------------------------------------------
@@ -468,33 +408,35 @@ def main():
         print("No rows to ingest.")
         return
 
+    # NEW — fetch injuries once
+    rotowire_injuries = fetch_rotowire_injuries()
+
     df_new = pd.DataFrame(all_rows)
 
-    # --- Attach injuries for today's games (best effort, does NOT error if scrape fails) ---
-    injuries_map = {}
+    # ---- Attach injuries for today's games (safe + minimal) ----
+    rotowire_injuries = {}
     try:
-        injuries_map = fetch_rotowire_injuries()
+        rotowire_injuries = fetch_rotowire_injuries()
     except Exception as e:
-        print(f"Warning: unexpected error in injury scraping: {e}")
-        injuries_map = {}
+        print(f"Warning: injury scrape failed: {e}")
+        rotowire_injuries = {}
 
-    if injuries_map:
-        # Ensure columns exist in df_new
-        if "home_injuries" not in df_new.columns:
-            df_new["home_injuries"] = None
-        if "away_injuries" not in df_new.columns:
-            df_new["away_injuries"] = None
+    # Ensure injury columns exist
+    if "home_injuries" not in df_new.columns:
+        df_new["home_injuries"] = None
+    if "away_injuries" not in df_new.columns:
+        df_new["away_injuries"] = None
 
-        today_str = today.strftime("%Y-%m-%d")
-        mask_today = df_new["game_date"] == today_str
+    # Only fill for TODAY'S games
+    today_str = today.strftime("%Y-%m-%d")
+    mask_today = df_new["game_date"] == today_str
 
-        for idx in df_new[mask_today].index:
-            home_abbr = str(df_new.at[idx, "home_team_abbrev"] or "").upper()
-            away_abbr = str(df_new.at[idx, "away_team_abbrev"] or "").upper()
-            df_new.at[idx, "home_injuries"] = injuries_map.get(home_abbr)
-            df_new.at[idx, "away_injuries"] = injuries_map.get(away_abbr)
+    for idx in df_new[mask_today].index:
+        home_abbr = str(df_new.at[idx, "home_team_abbrev"] or "").upper()
+        away_abbr = str(df_new.at[idx, "away_team_abbrev"] or "").upper()
 
-    # -------------------------------------------------------------------------------------
+        df_new.at[idx, "home_injuries"] = rotowire_injuries.get(home_abbr)
+        df_new.at[idx, "away_injuries"] = rotowire_injuries.get(away_abbr)
 
     upsert_rows(df_new, args.out)
 
