@@ -471,8 +471,15 @@ def build_html(slate, team_results, league_tbl, outfile):
         .game-card { border: 1px solid #ccc; padding: 15px; margin-top: 25px;
                      border-radius: 6px; background: #fafafa; }
         .subheader { font-weight: bold; margin-top: 10px; }
-        pre { background: #fff; border: 1px solid #ddd; padding: 10px; border-radius: 4px;
-              font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px; }
+        pre {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+            font-size: 13px;
+            line-height: 1.35;
+        }
         .hl { background-color: #fff3b0; padding: 2px 4px; border-radius: 4px; display: inline-block; }
         .league-block { margin-top: 30px; }
         details { margin-top: 8px; }
