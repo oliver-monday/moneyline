@@ -173,8 +173,18 @@ def fetch_rotowire_injuries() -> Dict[str, List[str]]:
     """
 
     try:
-        html = requests.get(ROTOWIRE_URL, headers={"User-Agent": USER_AGENT}).text
-    except Exception:
+        resp = requests.get(ROTOWIRE_URL, headers={"User-Agent": USER_AGENT})
+        print("Rotowire status:", resp.status_code)
+        print("Rotowire length:", len(resp.text))
+
+        # Dump raw HTML so we can inspect structure in repo / artifacts
+        with open("debug_rotowire.html", "w", encoding="utf-8") as f:
+            f.write(resp.text)
+        print("Wrote debug_rotowire.html")
+
+        html = resp.text
+    except Exception as e:
+        print("Error fetching Rotowire:", e)
         return {}
 
     injuries = {}
