@@ -254,7 +254,7 @@ def maybe_hl_block(lines, highlight):
     return highlighted
 
 def label(text: str) -> str:
-    return text
+    return f"<span class='detail-label'>{text}</span>"
 
 def value(text: str, indent: int = 4) -> str:
     return " " * indent + text
@@ -577,7 +577,7 @@ def build_html(slate, team_results, league_tbl, outfile):
         .league-block { margin-top: 30px; }
         details { margin-top: 8px; }
         summary { cursor: pointer; font-weight: bold; color: #555; }
-        .summary-line { margin-top: 4px; margin-bottom: 8px; font-weight: 600; }
+        .summary-line { margin-top: 4px; margin-bottom: 12px; font-weight: 600; }
         .two-col {
         display: flex;
         gap: 30px;
@@ -585,6 +585,7 @@ def build_html(slate, team_results, league_tbl, outfile):
         .col {
             width: 50%;
         }
+        .detail-label { font-weight: 600; }
         pre {
             white-space: pre-wrap;   /* allows wrapping inside columns */
         }
@@ -616,8 +617,9 @@ def build_html(slate, team_results, league_tbl, outfile):
     w("<html><head>"); w(CSS); w("</head><body>")
 
     today = slate["game_date"].iloc[0]
+    today_display = pd.Timestamp(today).strftime("%m-%d-%Y")
     w("<h1>NBA Moneyline Dashboard</h1>")
-    w(f"<h2>{today}</h2>")
+    w(f"<h2>{today_display}</h2>")
 
     # ---------- Per-game cards ----------
     for _, g in slate.iterrows():
