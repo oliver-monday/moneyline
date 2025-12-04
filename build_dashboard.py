@@ -955,11 +955,11 @@ def build_html(slate, team_results, league_tbl, outfile):
             for i,row in enumerate(df.itertuples(index=False),start=1):
                 w(f"{i}. {row.team:22s} {fmt_pct(getattr(row,col))}")
             w("</pre>")
-        block("Best overall (ML win%)", lv.sort_values("ml_pct",ascending=False).head(5), "ml_pct")
-        block("Best home teams", lv.sort_values("home_pct",ascending=False).head(5), "home_pct")
-        block("Best away teams", lv.sort_values("away_pct",ascending=False).head(5), "away_pct")
-        block("Best favorites", lv.sort_values("fav_pct",ascending=False).head(5), "fav_pct")
-        block("Best underdogs", lv.sort_values("dog_pct",ascending=False).head(5), "dog_pct")
+        block("Best overall (ML win%)", lv.sort_values("ml_pct",ascending=False).head(10), "ml_pct")
+        block("Best home teams", lv.sort_values("home_pct",ascending=False).head(10), "home_pct")
+        block("Best away teams", lv.sort_values("away_pct",ascending=False).head(10), "away_pct")
+        block("Best favorites", lv.sort_values("fav_pct",ascending=False).head(10), "fav_pct")
+        block("Best underdogs", lv.sort_values("dog_pct",ascending=False).head(10), "dog_pct")
         w("</div>")
 
     w(TOGGLE_JS)
