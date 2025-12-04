@@ -158,68 +158,104 @@ import re
 import requests
 
 # --------------------------------------------------------------------
-# ROTOWIRE INJURY SCRAPER (NO DEPENDENCIES)
+# ROTOWIRE INJURY SCRAPER (NO EXTRA DEPENDENCIES)
 # --------------------------------------------------------------------
 
 ROTOWIRE_URL = "https://www.rotowire.com/basketball/nba-lineups.php"
 
-def fetch_rotowire_injuries() -> Dict[str, List[str]]:
+def fetch_rotowire_injuries() -> Dict[str, str]:
     """
-    Scrapes Rotowire's NBA starting lineups page WITHOUT bs4.
-    Extracts injuries only at the team level.
-    
-    Returns:
-        dict: { "LAL": ["Anthony Davis (Q — hip)", ...], ... }
+    Scrape Rotowire's NBA lineups page and return a mapping:
+
+        { "BOS": "J. Tatum (Out); J. Brown (Questionable)", ... }
+
+    Implementation notes:
+      - Best-effort only: if anything breaks, we just return {}.
+      - Uses regex on the HTML (no bs4) based on the current structure:
+          * Each team block has a button:
+                data-team="POR" ... >On/Off Court Stats</button>
+          * Followed by a "MAY NOT PLAY" section with
+                <li class="lineup__player has-injury-status"> ... </li>
+          * Each injury row contains:
+                <a ...>Player Name</a>
+                <span class="lineup__inj">Out|Questionable|Doubtful|Rest|OFS</span>
     """
 
     try:
-        resp = requests.get(ROTOWIRE_URL, headers={"User-Agent": USER_AGENT})
-        print("Rotowire status:", resp.status_code)
-        print("Rotowire length:", len(resp.text))
-
-        # Dump raw HTML so we can inspect structure in repo / artifacts
-        with open("debug_rotowire.html", "w", encoding="utf-8") as f:
-            f.write(resp.text)
-        print("Wrote debug_rotowire.html")
-
+        resp = requests.get(
+            ROTOWIRE_URL,
+            headers={"User-Agent": USER_AGENT},
+            timeout=10,
+        )
+        if resp.status_code != 200:
+            print(f"Rotowire HTTP {resp.status_code}, skipping injuries.")
+            return {}
         html = resp.text
     except Exception as e:
-        print("Error fetching Rotowire:", e)
+        print(f"Rotowire fetch error: {e}")
         return {}
 
-    injuries = {}
+    injuries_per_team: Dict[str, List[str]] = {}
 
-    # Rotowire uses data-team abbreviations, ex:
-    #   <div class="lineup__team" data-team="PHX">
-    team_blocks = re.split(r'<div class="lineup__team"[^>]*data-team="', html)[1:]
+    # 1) For each team, grab the block between the On/Off button and the end of that
+    #    MAY NOT PLAY list.
+    #
+    # Example pattern in the HTML:
+    #   data-team="POR" ...>On/Off Court Stats</button>
+    #       ...
+    #       <li class="lineup__title is-middle">MAY NOT PLAY</li>
+    #       <li class="lineup__player is-pct-play-0 has-injury-status" ...> ... </li>
+    #       ...
+    #   </ul>
+    team_block_pattern = re.compile(
+        r'data-team="([A-Z]{2,3})"[^>]*>On/Off Court Stats</button>(.*?)</ul>',
+        re.DOTALL,
+    )
 
-    for block in team_blocks:
-        # First 3 chars are the tricode (ex: PHX)
-        team = block[:3].upper()
-        injuries[team] = []
+    matches = team_block_pattern.findall(html)
 
-        # Each injury row looks like:
-        # <li class="lineup__injury"> <span>Kevin Durant</span> ... <span class="lineup__injury-status">Out</span>
-        # Simplify capture:
-        matches = re.findall(
-            r'lineup__injury.*?<span>(.*?)</span>.*?lineup__injury-status.*?>(.*?)<',
+    for team, block in matches:
+        team = team.upper()
+        players: List[str] = []
+
+        # 2) Inside that block, each injured player row looks like:
+        #    <li class="lineup__player ... has-injury-status" ...>
+        #        ... <a ...>Player Name</a> ... <span class="lineup__inj">Out</span>
+        #    </li>
+        for player_html, status_html in re.findall(
+            r'<li[^>]*has-injury-status[^>]*>.*?'
+            r'<a[^>]*>(.*?)</a>.*?'
+            r'<span class="lineup__inj">(.*?)</span>',
             block,
             flags=re.DOTALL,
-        )
+        ):
+            # Strip any nested tags from player name / status
+            name = re.sub(r"<.*?>", "", player_html).strip()
+            status = re.sub(r"<.*?>", "", status_html).strip()
 
-        for player, status in matches:
-            pname = player.strip()
-            s = status.strip()
+            if not name or not status:
+                continue
 
-            # Only capture impactful statuses
-            if s.lower() in ("out", "doubtful", "questionable"):
-                injuries[team].append(f"{pname} ({s})")
+            status_lower = status.lower()
 
-            # Rotowire marks rest as "Rest"
-            if "rest" in s.lower():
-                injuries[team].append(f"{pname} (Rest)")
+            # Keep only "impactful" statuses
+            if (
+                status_lower in ("out", "doubtful", "questionable")
+                or "rest" in status_lower
+                or status.upper() == "OFS"      # Rotowire's "offseason" flag
+            ):
+                players.append(f"{name} ({status})")
 
-    return injuries
+        if players:
+            injuries_per_team[team] = players
+
+    # 3) Convert to { TEAM: "Player1 (Status); Player2 (Status)" }
+    compact: Dict[str, str] = {
+        team: "; ".join(players) for team, players in injuries_per_team.items()
+    }
+
+    print(f"Rotowire injuries: got {len(compact)} teams with issues.")
+    return compact
 
 
 # --------------------------------------------------------------------
@@ -423,30 +459,28 @@ def main():
 
     df_new = pd.DataFrame(all_rows)
 
-    # ---- Attach injuries for today's games (safe + minimal) ----
-    rotowire_injuries = {}
+    # Attach injuries for today's games (best effort)
     try:
-        rotowire_injuries = fetch_rotowire_injuries()
+        injuries_map = fetch_rotowire_injuries()
     except Exception as e:
-        print(f"Warning: injury scrape failed: {e}")
-        rotowire_injuries = {}
+        print(f"Warning: unexpected error in injury scraping: {e}")
+        injuries_map = {}
 
-    # Ensure injury columns exist
-    if "home_injuries" not in df_new.columns:
-        df_new["home_injuries"] = None
-    if "away_injuries" not in df_new.columns:
-        df_new["away_injuries"] = None
+    if injuries_map:
+        # Ensure columns exist in df_new
+        if "home_injuries" not in df_new.columns:
+            df_new["home_injuries"] = None
+        if "away_injuries" not in df_new.columns:
+            df_new["away_injuries"] = None
 
-    # Only fill for TODAY'S games
-    today_str = today.strftime("%Y-%m-%d")
-    mask_today = df_new["game_date"] == today_str
+        today_str = today.strftime("%Y-%m-%d")
+        mask_today = df_new["game_date"] == today_str
 
-    for idx in df_new[mask_today].index:
-        home_abbr = str(df_new.at[idx, "home_team_abbrev"] or "").upper()
-        away_abbr = str(df_new.at[idx, "away_team_abbrev"] or "").upper()
-
-        df_new.at[idx, "home_injuries"] = rotowire_injuries.get(home_abbr)
-        df_new.at[idx, "away_injuries"] = rotowire_injuries.get(away_abbr)
+        for idx in df_new[mask_today].index:
+            home_abbr = str(df_new.at[idx, "home_team_abbrev"] or "").upper()
+            away_abbr = str(df_new.at[idx, "away_team_abbrev"] or "").upper()
+            df_new.at[idx, "home_injuries"] = injuries_map.get(home_abbr)
+            df_new.at[idx, "away_injuries"] = injuries_map.get(away_abbr)
 
     upsert_rows(df_new, args.out)
 
