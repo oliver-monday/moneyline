@@ -25,6 +25,31 @@ Writes / upserts into nba_master.csv with the fixed schema:
   home_injuries
   away_injuries
 """
+# --------------------------------------------------------------------
+# ESPN → Rotowire team code harmonization
+# --------------------------------------------------------------------
+# ESPN and Rotowire don't always use the exact same abbreviations.
+# This map normalizes ESPN's codes to what Rotowire uses in data-team="XYZ".
+ESPN_TO_ROTO = {
+    # Common mismatches
+    "WSH": "WAS",
+    "NO": "NOP",
+    "NY": "NYK",
+    "GS": "GSW",
+    "SA": "SAS",
+    "UTAH": "UTA",
+    # Some sites use these alternates; keep them safe
+    "PHO": "PHX",
+    "CHA": "CHA",  # identity, included for clarity
+}
+
+def to_roto_code(code: str) -> str:
+    """
+    Normalize ESPN team abbreviation to Rotowire's data-team code.
+    Falls back to the input code if no mapping is needed.
+    """
+    c = (code or "").upper()
+    return ESPN_TO_ROTO.get(c, c)
 
 import argparse
 import datetime as dt
@@ -454,12 +479,11 @@ def main():
         print("No rows to ingest.")
         return
 
-    # NEW — fetch injuries once
-    rotowire_injuries = fetch_rotowire_injuries()
-
     df_new = pd.DataFrame(all_rows)
 
+    # ---------------------------------------------------------
     # Attach injuries for today's games (best effort)
+    # ---------------------------------------------------------
     try:
         injuries_map = fetch_rotowire_injuries()
     except Exception as e:
@@ -477,10 +501,14 @@ def main():
         mask_today = df_new["game_date"] == today_str
 
         for idx in df_new[mask_today].index:
-            home_abbr = str(df_new.at[idx, "home_team_abbrev"] or "").upper()
-            away_abbr = str(df_new.at[idx, "away_team_abbrev"] or "").upper()
-            df_new.at[idx, "home_injuries"] = injuries_map.get(home_abbr)
-            df_new.at[idx, "away_injuries"] = injuries_map.get(away_abbr)
+            raw_home = df_new.at[idx, "home_team_abbrev"]
+            raw_away = df_new.at[idx, "away_team_abbrev"]
+
+            home_code = to_roto_code(raw_home)
+            away_code = to_roto_code(raw_away)
+
+            df_new.at[idx, "home_injuries"] = injuries_map.get(home_code)
+            df_new.at[idx, "away_injuries"] = injuries_map.get(away_code)
 
     upsert_rows(df_new, args.out)
 
