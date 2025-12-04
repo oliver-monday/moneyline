@@ -576,7 +576,7 @@ def build_html(slate, team_results, league_tbl, outfile):
         .hl { background-color: #fff3b0; padding: 2px 4px; border-radius: 4px; display: inline-block; }
         .league-block { margin-top: 30px; }
         details { margin-top: 8px; }
-        summary { cursor: pointer; font-weight: bold; color: #555; }
+        summary { cursor: pointer; font-weight: bold; color: #999; }
         .summary-line { margin-top: 4px; margin-bottom: 12px; font-weight: 600; }
         .two-col {
         display: flex;
@@ -721,21 +721,21 @@ def build_html(slate, team_results, league_tbl, outfile):
 
         if bucket_home:
             b=bucket_home_stats
-            w(label(f"{bucket_home}:")); w(value(f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])}, n={b['n']})"))
+            w(label(f"{bucket_home}:")); w(value(f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])})"))
 
         w(label("ROI all ML bets:")); w(value(f"{home_sum['roi_units']:+0.1f}u ({fmt_pct(home_sum['roi_pct'])})"))
         w(label("ROI as favorite:")); w(value(f"{home_sum['fav_roi_units']:+0.1f}u ({fmt_pct(home_sum['fav_roi_pct'])})"))
         w(label("ROI as underdog:")); w(value(f"{home_sum['dog_roi_units']:+0.1f}u ({fmt_pct(home_sum['dog_roi_pct'])})"))
 
-        w(label("Vs strong opps:")); w(value(f"{oppH['vs_strong_record']} ({fmt_pct(oppH['vs_strong_pct'])}, n={oppH['vs_strong_n']})"))
-        w(label("Vs weak opps:")); w(value(f"{oppH['vs_weak_record']} ({fmt_pct(oppH['vs_weak_pct'])}, n={oppH['vs_weak_n']})"))
+        w(label("Vs strong opps:")); w(value(f"{oppH['vs_strong_record']} ({fmt_pct(oppH['vs_strong_pct'])})"))
+        w(label("Vs weak opps:")); w(value(f"{oppH['vs_weak_record']} ({fmt_pct(oppH['vs_weak_pct'])})"))
 
         w("</pre></div>")
         w("<div class='col'><pre>")
         
         # RIGHT column items go below:
 
-        w("Recent form:")
+        w(label("Recent form:"))
         w(value(f"Last 5:   {fmt_pct(formH['last5_pct'])}"))
         w(value(f"Last 10:  {fmt_pct(formH['last10_pct'])}"))
         w(value(f"Streak:   {fmt_streak(formH['streak'])}"))
@@ -849,21 +849,21 @@ def build_html(slate, team_results, league_tbl, outfile):
 
         if bucket_away:
             b=bucket_away_stats
-            w(label(f"{bucket_away}:")); w(value(f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])}, n={b['n']})"))
+            w(label(f"{bucket_away}:")); w(value(f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])})"))
 
         w(label("ROI all ML bets:")); w(value(f"{away_sum['roi_units']:+0.1f}u ({fmt_pct(away_sum['roi_pct'])})"))
         w(label("ROI as favorite:")); w(value(f"{away_sum['fav_roi_units']:+0.1f}u ({fmt_pct(away_sum['fav_roi_pct'])})"))
         w(label("ROI as underdog:")); w(value(f"{away_sum['dog_roi_units']:+0.1f}u ({fmt_pct(away_sum['dog_roi_pct'])})"))
 
-        w(label("Vs strong opps:")); w(value(f"{oppA['vs_strong_record']} ({fmt_pct(oppA['vs_strong_pct'])}, n={oppA['vs_strong_n']})"))
-        w(label("Vs weak opps:")); w(value(f"{oppA['vs_weak_record']} ({fmt_pct(oppA['vs_weak_pct'])}, n={oppA['vs_weak_n']})"))
+        w(label("Vs strong opps:")); w(value(f"{oppA['vs_strong_record']} ({fmt_pct(oppA['vs_strong_pct'])})"))
+        w(label("Vs weak opps:")); w(value(f"{oppA['vs_weak_record']} ({fmt_pct(oppA['vs_weak_pct'])})"))
 
         w("</pre></div>")
         w("<div class='col'><pre>")
         
         # RIGHT column items go below:
 
-        w("Recent form:")
+        w(label("Recent form:"))
         w(value(f"Last 5:   {fmt_pct(formA['last5_pct'])}"))
         w(value(f"Last 10:  {fmt_pct(formA['last10_pct'])}"))
         w(value(f"Streak:   {fmt_streak(formA['streak'])}"))
