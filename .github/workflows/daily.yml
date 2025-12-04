@@ -35,6 +35,13 @@ jobs:
       - name: Run ingest script
         run: python espn_daily_ingest.py --out nba_master.csv
 
+      - name: Upload Rotowire debug HTML
+        uses: actions/upload-artifact@v3
+        with:
+          name: rotowire-debug
+          path: debug_rotowire.html
+          if-no-files-found: ignore  
+
       - name: Build dashboard
         run: python build_dashboard.py
 
