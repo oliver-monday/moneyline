@@ -573,7 +573,7 @@ def build_html(slate, team_results, league_tbl, outfile):
             font-size: 12px;
             line-height: 1.35;
         }
-        .hl { background-color: #fff3b0; padding: 2px 4px; border-radius: 4px; display: block; font-size: inherit; line-height: inherit; width: 100%; box-sizing: border-box; }
+        .hl { background-color: #fff3b0; padding: 2px 4px; border-radius: 4px; display: inline-block; font-size: inherit; line-height: inherit; width: 100%; box-sizing: border-box; }
         .league-block { margin-top: 30px; }
         details { margin-top: 8px; }
         summary { cursor: pointer; font-weight: bold; color: #999; }
