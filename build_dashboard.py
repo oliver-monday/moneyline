@@ -246,7 +246,12 @@ def fmt_pct(x):
 def maybe_hl_block(lines, highlight):
     if not highlight:
         return lines
-    return ["<span class='hl'>", *lines, "</span>"]
+    if not lines:
+        return lines
+    highlighted = lines.copy()
+    highlighted[0] = f"<span class='hl'>{highlighted[0]}"
+    highlighted[-1] = f"{highlighted[-1]}</span>"
+    return highlighted
 
 def label(text: str) -> str:
     return text
