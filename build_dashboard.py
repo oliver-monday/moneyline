@@ -573,6 +573,16 @@ def build_html(slate, team_results, league_tbl, outfile):
         details { margin-top: 8px; }
         summary { cursor: pointer; font-weight: bold; }
         .summary-line { margin-top: 4px; font-weight: 500; }
+        .two-col {
+        display: flex;
+        gap: 30px;
+        }
+        .col {
+            width: 50%;
+        }
+        pre {
+            white-space: pre-wrap;   /* allows wrapping inside columns */
+        }
     </style>
     """
 
@@ -657,9 +667,12 @@ def build_html(slate, team_results, league_tbl, outfile):
 
         # ---------------- HOME TEAM ----------------
         w(f"<div class='subheader'>{home.upper()} (HOME)</div>")
-        w("<pre>")
+        w("<div class='two-col'>")
+        w("<div class='col'><pre>")
+        
+        # LEFT column items go below:
 
-        w(label("ML record:")); w(value(f"{home_sum['ml_record']} ({fmt_pct(home_sum['ml_win_pct'])})"))
+        w(label("Record:")); w(value(f"{home_sum['ml_record']} ({fmt_pct(home_sum['ml_win_pct'])})"))
 
         bl = maybe_hl_block([label("As favorite:"), value(f"{home_sum['fav_record']} ({fmt_pct(home_sum['fav_win_pct'])})")], highlight=home_is_fav)
         for x in bl: w(x)
@@ -688,6 +701,11 @@ def build_html(slate, team_results, league_tbl, outfile):
 
         w(label("Vs strong opps:")); w(value(f"{oppH['vs_strong_record']} ({fmt_pct(oppH['vs_strong_pct'])}, n={oppH['vs_strong_n']})"))
         w(label("Vs weak opps:")); w(value(f"{oppH['vs_weak_record']} ({fmt_pct(oppH['vs_weak_pct'])}, n={oppH['vs_weak_n']})"))
+
+        w("</pre></div>")
+        w("<div class='col'><pre>")
+        
+        # RIGHT column items go below:
 
         w("Recent form:")
         w(value(f"Last 5:   {fmt_pct(formH['last5_pct'])}"))
@@ -772,13 +790,17 @@ def build_html(slate, team_results, league_tbl, outfile):
                 for line in home_inj.split(";"):
                     w(value(line.strip()))
 
-        w("</pre>")
+        w("</pre></div>")
+        w("</div>")   # end two-col
 
         # ---------------- AWAY TEAM ----------------
         w(f"<div class='subheader'>{away.upper()} (AWAY)</div>")
-        w("<pre>")
+        w("<div class='two-col'>")
+        w("<div class='col'><pre>")
+        
+        # LEFT column items go below:
 
-        w(label("ML record:")); w(value(f"{away_sum['ml_record']} ({fmt_pct(away_sum['ml_win_pct'])})"))
+        w(label("Record:")); w(value(f"{away_sum['ml_record']} ({fmt_pct(away_sum['ml_win_pct'])})"))
 
         bl = maybe_hl_block([label("As favorite:"), value(f"{away_sum['fav_record']} ({fmt_pct(away_sum['fav_win_pct'])})")], highlight=away_is_fav)
         for x in bl: w(x)
@@ -807,6 +829,11 @@ def build_html(slate, team_results, league_tbl, outfile):
 
         w(label("Vs strong opps:")); w(value(f"{oppA['vs_strong_record']} ({fmt_pct(oppA['vs_strong_pct'])}, n={oppA['vs_strong_n']})"))
         w(label("Vs weak opps:")); w(value(f"{oppA['vs_weak_record']} ({fmt_pct(oppA['vs_weak_pct'])}, n={oppA['vs_weak_n']})"))
+
+        w("</pre></div>")
+        w("<div class='col'><pre>")
+        
+        # RIGHT column items go below:
 
         w("Recent form:")
         w(value(f"Last 5:   {fmt_pct(formA['last5_pct'])}"))
@@ -886,9 +913,8 @@ def build_html(slate, team_results, league_tbl, outfile):
             for line in away_inj.split(";"):
                 w(value(line.strip()))
 
-        w("</pre>")
-        w("</details>")
-        w("</div>")  # end game-card
+        w("</pre></div>")
+        w("</div>")   # end two-col
 
     # --------- League overview ---------
     if not league_tbl.empty:
