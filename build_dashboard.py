@@ -554,6 +554,75 @@ def analyze_prm_pattern(roi_series):
 
     return underval, overval, signal
 
+    # ----- Matchup confidence signal (favorite-centric) -----
+    fav_team = None
+    fav_prob = None
+    fav_form = None
+    dog_form = None
+    fav_mis  = None
+    fav_prm  = None
+    fav_ss   = None
+
+    # Decide who is favorite by moneyline (fallback to lower implied prob)
+    if pd.notna(home_ml) and pd.notna(away_ml):
+        if home_ml < away_ml:
+            fav_team = "home"
+        else:
+            fav_team = "away"
+    elif pd.notna(home_ml):
+        fav_team = "home"
+    elif pd.notna(away_ml):
+        fav_team = "away"
+
+    if fav_team == "home":
+        fav_prob = home_prob
+        fav_form = home_form_score
+        dog_form = away_form_score
+        fav_mis  = home_mis_score
+        fav_prm  = home_prm_score
+        fav_ss   = home_ss["score"]
+    elif fav_team == "away":
+        fav_prob = away_prob
+        fav_form = away_form_score
+        dog_form = home_form_score
+        fav_mis  = away_mis_score
+        fav_prm  = away_prm_score
+        fav_ss   = away_ss["score"]
+
+    confidence_level = None   # "high" | "avoid" | None
+    confidence_label = None
+
+    if fav_team and fav_prob is not None and not pd.isna(fav_prob):
+        # Coinflip / mushy edge → stay away
+        prob_gap = abs((home_prob or 0) - (away_prob or 0))
+        if prob_gap < 0.08:
+            confidence_level = "avoid"
+            confidence_label = "Stay away: near coinflip"
+        elif fav_mis is not None and not pd.isna(fav_mis) and \
+                abs(fav_mis) < 10 and \
+                not pd.isna(home_form_score) and not pd.isna(away_form_score) and \
+                45 <= home_form_score <= 60 and 45 <= away_form_score <= 60:
+            confidence_level = "avoid"
+            confidence_label = "Stay away: evenly matched"
+
+        # Overvalued / fatigue red flags
+        elif fav_prm is not None and not pd.isna(fav_prm) and fav_prm <= -2.5:
+            confidence_level = "avoid"
+            confidence_label = "Stay away: favorite overvalued"
+        elif fav_ss is not None and not pd.isna(fav_ss) and fav_ss >= 65:
+            confidence_level = "avoid"
+            confidence_label = "Stay away: favorite fatigue risk"
+
+        # High-confidence favorite
+        elif (0.60 <= fav_prob <= 0.80 and
+                fav_form is not None and not pd.isna(fav_form) and fav_form >= 55 and
+                fav_mis is not None and not pd.isna(fav_mis) and fav_mis >= 20 and
+                dog_form is not None and not pd.isna(dog_form) and dog_form <= 55 and
+                fav_ss is not None and not pd.isna(fav_ss) and fav_ss <= 55 and
+                (fav_prm is None or pd.isna(fav_prm) or fav_prm > -1.0)):
+            confidence_level = "high"
+            confidence_label = "High-confidence favorite"
+
 # ------------ HTML rendering ------------------------------------------
 
 def build_html(slate, team_results, league_tbl, outfile):
@@ -563,6 +632,14 @@ def build_html(slate, team_results, league_tbl, outfile):
         body { font-family: Arial, sans-serif; margin: 30px; color: #222; }
         .game-card { border: 1px solid #ccc; padding: 17px; margin-top: 25px;
                      border-radius: 6px; background: #fafafa; }
+        .game-high {
+            background: #e8f7e8 !important;   /* soft green */
+            border-color: #6ac46a !important;
+        }
+        .game-avoid {
+            background: #fbeaea !important;   /* soft red */
+            border-color: #e08b8b !important;
+        }
         .subheader { font-weight: bold; margin-top: 16px; margin-bottom: 10px; padding-top: 4px; }
         pre {
             background: #fff;
@@ -687,7 +764,13 @@ def build_html(slate, team_results, league_tbl, outfile):
         away_abbr=g.get("away_team_abbrev",""); home_abbr=g.get("home_team_abbrev","")
         summary_line=f"{away_abbr} {fmt_odds(away_ml)} ({fmt_pct(away_prob)}) | {home_abbr} {fmt_odds(home_ml)} ({fmt_pct(home_prob)})"
 
-        w("<div class='game-card'>")
+        card_class = "game-card"
+        if confidence_level == "high":
+            card_class += " game-high"
+        elif confidence_level == "avoid":
+            card_class += " game-avoid"
+
+        w(f"<div class='{card_class}'>")
         w(f"<h3>{away} @ {home}</h3>")
         w(f"<div class='summary-line'>{summary_line}</div>")
         w("<details>")
@@ -955,11 +1038,11 @@ def build_html(slate, team_results, league_tbl, outfile):
             for i,row in enumerate(df.itertuples(index=False),start=1):
                 w(f"{i}. {row.team:22s} {fmt_pct(getattr(row,col))}")
             w("</pre>")
-        block("Best overall (ML win%)", lv.sort_values("ml_pct",ascending=False).head(10), "ml_pct")
-        block("Best home teams", lv.sort_values("home_pct",ascending=False).head(10), "home_pct")
-        block("Best away teams", lv.sort_values("away_pct",ascending=False).head(10), "away_pct")
-        block("Best favorites", lv.sort_values("fav_pct",ascending=False).head(10), "fav_pct")
-        block("Best underdogs", lv.sort_values("dog_pct",ascending=False).head(10), "dog_pct")
+        block("Best overall Win %", lv.sort_values("ml_pct",ascending=False).head(10), "ml_pct")
+        block("Best Home Teams", lv.sort_values("home_pct",ascending=False).head(10), "home_pct")
+        block("Best Away Teams", lv.sort_values("away_pct",ascending=False).head(10), "away_pct")
+        block("Best Favorites", lv.sort_values("fav_pct",ascending=False).head(10), "fav_pct")
+        block("Best Underdogs", lv.sort_values("dog_pct",ascending=False).head(10), "dog_pct")
         w("</div>")
 
     w(TOGGLE_JS)
