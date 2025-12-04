@@ -563,7 +563,7 @@ def build_html(slate, team_results, league_tbl, outfile):
         body { font-family: Arial, sans-serif; margin: 30px; color: #222; }
         .game-card { border: 1px solid #ccc; padding: 17px; margin-top: 25px;
                      border-radius: 6px; background: #fafafa; }
-        .subheader { font-weight: bold; margin-top: 10px; margin-bottom: 10px}
+        .subheader { font-weight: bold; margin-top: 16px; margin-bottom: 10px; padding-top: 4px; }
         pre {
             background: #fff;
             border: 1px solid #ddd;
@@ -576,8 +576,8 @@ def build_html(slate, team_results, league_tbl, outfile):
         .hl { background-color: #fff3b0; padding: 2px 4px; border-radius: 4px; display: inline-block; }
         .league-block { margin-top: 30px; }
         details { margin-top: 8px; }
-        summary { cursor: pointer; font-weight: bold; }
-        .summary-line { margin-top: 4px; font-weight: 500; }
+        summary { cursor: pointer; font-weight: bold; color: #555; }
+        .summary-line { margin-top: 4px; margin-bottom: 8px; font-weight: 600; }
         .two-col {
         display: flex;
         gap: 30px;
@@ -589,6 +589,26 @@ def build_html(slate, team_results, league_tbl, outfile):
             white-space: pre-wrap;   /* allows wrapping inside columns */
         }
     </style>
+    """
+
+    TOGGLE_JS = """
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('details').forEach(function (detailsEl) {
+                var label = detailsEl.querySelector('.summary-label');
+                if (!label) {
+                    return;
+                }
+                var openText = label.dataset.openText || 'Click to collapse';
+                var closedText = label.dataset.closedText || 'Click to expand';
+                var setText = function () {
+                    label.textContent = detailsEl.open ? openText : closedText;
+                };
+                setText();
+                detailsEl.addEventListener('toggle', setText);
+            });
+        });
+    </script>
     """
 
     lines=[]; w=lines.append
@@ -668,7 +688,8 @@ def build_html(slate, team_results, league_tbl, outfile):
         w("<div class='game-card'>")
         w(f"<h3>{away} @ {home}</h3>")
         w(f"<div class='summary-line'>{summary_line}</div>")
-        w("<details>"); w("<summary>Click to expand</summary>")
+        w("<details>")
+        w("<summary><span class='summary-label' data-closed-text='Click to expand' data-open-text='Click to collapse'>Click to expand</span></summary>")
 
         # ---------------- HOME TEAM ----------------
         w(f"<div class='subheader'>{home.upper()} (HOME)</div>")
@@ -939,6 +960,7 @@ def build_html(slate, team_results, league_tbl, outfile):
         block("Best underdogs", lv.sort_values("dog_pct",ascending=False).head(5), "dog_pct")
         w("</div>")
 
+    w(TOGGLE_JS)
     w("</body></html>")
     with open(outfile,"w") as f:
         f.write("\n".join(lines))
