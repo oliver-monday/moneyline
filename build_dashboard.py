@@ -764,10 +764,28 @@ def build_html(slate, team_results, league_tbl, outfile):
         away_abbr=g.get("away_team_abbrev",""); home_abbr=g.get("home_team_abbrev","")
         summary_line=f"{away_abbr} {fmt_odds(away_ml)} ({fmt_pct(away_prob)}) | {home_abbr} {fmt_odds(home_ml)} ({fmt_pct(home_prob)})"
 
+        # === Confidence classification (NEW) ===
+        confidence_level = "neutral"
+
+        # A high-confidence favorite:
+        # - strong mismatch advantage
+        # - good form
+        # - modest schedule disadvantage
+        if (home_mis_score >= 20 and home_form_score >= 60 and home_ss["score"] <= 40):
+            confidence_level = "high"
+        elif (away_mis_score >= 20 and away_form_score >= 60 and away_ss["score"] <= 40):
+            confidence_level = "high"
+
+        # AVOID conditions:
+        if (abs(home_mis_score) < 10 and abs(away_mis_score) < 10):
+            confidence_level = "stay-away"
+        elif (home_ss["score"] >= 70 or away_ss["score"] >= 70):
+            confidence_level = "stay-away"
+
         card_class = "game-card"
         if confidence_level == "high":
             card_class += " game-high"
-        elif confidence_level == "avoid":
+        elif confidence_level == "stay-away":
             card_class += " game-avoid"
 
         w(f"<div class='{card_class}'>")
