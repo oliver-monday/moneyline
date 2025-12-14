@@ -7,8 +7,7 @@ on:
   push:
     paths:
       - "*.py"
-      - "nba_master.csv"
-
+      - ".github/workflows/daily.yml"
 permissions:
   contents: write
   pages: write
@@ -16,11 +15,14 @@ permissions:
 
 jobs:
   build:
+    if: ${{ github.event_name != 'push' || github.actor != 'github-actions[bot]' }}
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -34,6 +36,18 @@ jobs:
 
       - name: Run ingest script
         run: python espn_daily_ingest.py --out nba_master.csv
+
+      - name: Commit updated master CSV
+        run: |
+          if git diff --quiet -- nba_master.csv; then
+            echo "nba_master.csv unchanged; nothing to commit."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add nba_master.csv
+            git commit -m "Update nba_master.csv [skip ci]"
+            git push
+          fi
 
       - name: Upload Rotowire debug HTML
         uses: actions/upload-artifact@v4
