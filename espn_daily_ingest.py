@@ -60,6 +60,31 @@ import pandas as pd
 import re
 import requests
 
+
+def _last_master_game_date(csv_path: str) -> Optional[dt.date]:
+    """Return the max game_date in an existing master CSV, or None."""
+    if not os.path.exists(csv_path):
+        return None
+    try:
+        df = pd.read_csv(csv_path, usecols=["game_date"])
+    except Exception:
+        return None
+    if "game_date" not in df.columns or df.empty:
+        return None
+    s = pd.to_datetime(df["game_date"], errors="coerce").dropna()
+    if s.empty:
+        return None
+    return s.max().date()
+
+
+def _daterange(start: dt.date, end: dt.date):
+    """Inclusive date range generator."""
+    cur = start
+    while cur <= end:
+        yield cur
+        cur += dt.timedelta(days=1)
+
+
 # --------------------------------------------------------------------
 # CONSTANTS
 # --------------------------------------------------------------------
@@ -440,12 +465,43 @@ def main():
         default="nba_master.csv",
         help="Path to season-long master CSV (default: nba_master.csv)",
     )
+    parser.add_argument(
+        "--no-backfill",
+        action="store_true",
+        help="Disable backfilling missing dates between the last date in the master CSV and yesterday.",
+    )
+    parser.add_argument(
+        "--max-backfill-days",
+        type=int,
+        default=30,
+        help="When backfilling, limit to at most this many days of history (default: 30).",
+    )
     args = parser.parse_args()
 
-    # Ingest strategy: yesterday + today
+    # Ingest strategy: always fetch yesterday + today.
+    # Optionally, backfill missing dates since the last date present in the master CSV.
     today = dt.date.today()
     yesterday = today - dt.timedelta(days=1)
-    dates = [yesterday, today]
+
+    dates = {yesterday, today}
+
+    if not args.no_backfill:
+        last_date = _last_master_game_date(args.out)
+        if last_date is not None and last_date < yesterday:
+            start = last_date + dt.timedelta(days=1)
+            end = yesterday
+
+            # Safety valve: avoid huge backfills by default.
+            if args.max_backfill_days is not None:
+                max_start = end - dt.timedelta(days=args.max_backfill_days)
+                if start < max_start:
+                    start = max_start
+
+            for d in _daterange(start, end):
+                dates.add(d)
+
+    # Keep deterministic ordering for logs
+    dates = sorted(dates)
 
     all_rows: List[Dict[str, Any]] = []
 
