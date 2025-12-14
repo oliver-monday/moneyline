@@ -2,3 +2,6 @@
 # macOS
 .DS_Store
 **/.DS_Store
+
+# generated dashboards
+dashboard_*.html
