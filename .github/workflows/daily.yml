@@ -35,7 +35,7 @@ jobs:
           pip install pandas numpy requests
 
       - name: Run ingest script
-        run: python espn_daily_ingest.py --out nba_master.csv
+        run: python espn_daily_ingest.py --out nba_master.csv --max-backfill-days 30
 
       - name: Commit updated master CSV
         run: |

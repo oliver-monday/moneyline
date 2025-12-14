@@ -479,26 +479,29 @@ def main():
     args = parser.parse_args()
 
     # Ingest strategy: always fetch yesterday + today.
-    # Optionally, backfill missing dates since the last date present in the master CSV.
+    # Backfill strategy (default): look for *missing* dates in a trailing window
+    # (max-backfill-days) ending yesterday. This fixes "holes" caused by a master
+    # file that kept getting reset while still containing today's date.
     today = dt.date.today()
     yesterday = today - dt.timedelta(days=1)
 
     dates = {yesterday, today}
 
-    if not args.no_backfill:
-        last_date = _last_master_game_date(args.out)
-        if last_date is not None and last_date < yesterday:
-            start = last_date + dt.timedelta(days=1)
-            end = yesterday
+    existing_dates = set()
+    if os.path.exists(args.out):
+        try:
+            tmp = pd.read_csv(args.out, usecols=["game_date"])
+            s = pd.to_datetime(tmp["game_date"], errors="coerce").dropna()
+            existing_dates = set(s.dt.date.unique())
+        except Exception:
+            existing_dates = set()
 
-            # Safety valve: avoid huge backfills by default.
-            if args.max_backfill_days is not None:
-                max_start = end - dt.timedelta(days=args.max_backfill_days)
-                if start < max_start:
-                    start = max_start
+    if not args.no_backfill and args.max_backfill_days and args.max_backfill_days > 0:
+        window_end = yesterday
+        window_start = window_end - dt.timedelta(days=args.max_backfill_days - 1)
 
-            for d in _daterange(start, end):
-                dates.add(d)
+        for d in _daterange(window_start, window_end):
+            dates.add(d)
 
     # Keep deterministic ordering for logs
     dates = sorted(dates)
