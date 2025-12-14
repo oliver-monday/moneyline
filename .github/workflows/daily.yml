@@ -41,6 +41,27 @@ jobs:
       - name: Run ingest script
         run: python espn_daily_ingest.py --out nba_master.csv --max-backfill-days 30
 
+      - name: Validate nba_master.csv
+        run: |
+          python - <<'PY'
+          import pandas as pd, sys
+
+          expected = [
+            "game_id","game_date","home_team_name","home_team_abbrev","home_score","home_ml","home_spread",
+            "away_team_name","away_team_abbrev","away_score","away_ml","away_spread","venue_city","venue_state",
+            "home_injuries","away_injuries"
+          ]
+
+          # If it's binary/zip/etc, this will error and fail the job (good).
+          df = pd.read_csv("nba_master.csv", nrows=1, dtype=str)
+
+          if list(df.columns) != expected:
+            print("BAD HEADER:", df.columns.tolist())
+            sys.exit(1)
+
+          print("Header OK")
+          PY
+
       - name: Commit updated master CSV
         run: |
           if git diff --quiet -- nba_master.csv; then
