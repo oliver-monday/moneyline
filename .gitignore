@@ -8,3 +8,7 @@ dashboard_*.html
 
 # generated dashboards
 dashboard_*.html
+
+# macOS
+.DS_Store
+**/.DS_Store
