@@ -1,315 +1,325 @@
-game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread,away_team_name,away_team_abbrev,away_score,away_ml,away_spread,venue_city,venue_state
-401809243,2025-10-21,Oklahoma City Thunder,OKC,125,-246.0,-6.5,Houston Rockets,HOU,124,216.0,6.5,Oklahoma City,OK
-401809244,2025-10-21,Los Angeles Lakers,LAL,109,123.0,2.5,Golden State Warriors,GS,119,-136.0,-2.5,Los Angeles,CA
-401809234,2025-10-22,New York Knicks,NY,119,104.0,1.5,Cleveland Cavaliers,CLE,111,-122.0,-1.5,New York,NY
-401809933,2025-10-22,Charlotte Hornets,CHA,136,-190.0,-5.0,Brooklyn Nets,BKN,117,169.0,5.0,Charlotte,NC
-401809934,2025-10-22,Orlando Magic,ORL,125,-353.0,-8.5,Miami Heat,MIA,121,298.0,8.5,Orlando,FL
-401809935,2025-10-22,Atlanta Hawks,ATL,118,-224.0,-5.5,Toronto Raptors,TOR,138,198.0,5.5,Atlanta,GA
-401809936,2025-10-22,Boston Celtics,BOS,116,-180.0,-4.5,Philadelphia 76ers,PHI,117,161.0,4.5,Boston,MA
-401809937,2025-10-22,Chicago Bulls,CHI,115,135.0,2.5,Detroit Pistons,DET,111,-149.0,-2.5,Chicago,IL
-401809938,2025-10-22,Memphis Grizzlies,MEM,128,-168.0,-4.0,New Orleans Pelicans,NO,122,151.0,4.0,Memphis,TN
-401809939,2025-10-22,Milwaukee Bucks,MIL,133,-437.0,-10.0,Washington Wizards,WSH,120,359.0,10.0,Milwaukee,WI
-401809940,2025-10-22,Utah Jazz,UTAH,129,329.0,9.5,LA Clippers,LAC,108,-395.0,-9.5,Salt Lake City,UT
-401809235,2025-10-22,Dallas Mavericks,DAL,92,-152.0,-3.0,San Antonio Spurs,SA,125,137.0,3.0,Dallas,TX
-401809941,2025-10-22,Phoenix Suns,PHX,120,-162.0,-4.0,Sacramento Kings,SAC,116,146.0,4.0,Phoenix,AZ
-401809942,2025-10-22,Portland Trail Blazers,POR,114,163.0,4.0,Minnesota Timberwolves,MIN,118,-183.0,-4.0,Portland,OR
-401809236,2025-10-23,Indiana Pacers,IND,135,262.0,7.5,Oklahoma City Thunder,OKC,141,-306.0,-7.5,Indianapolis,IN
-401809237,2025-10-23,Golden State Warriors,GS,137,-121.0,-2.0,Denver Nuggets,DEN,131,110.0,2.0,San Francisco,CA
-401809946,2025-10-24,Toronto Raptors,TOR,116,-120.0,-1.5,Milwaukee Bucks,MIL,122,109.0,1.5,Toronto,ON
-401809943,2025-10-24,Orlando Magic,ORL,107,-213.0,-6.0,Atlanta Hawks,ATL,111,188.0,6.0,Orlando,FL
-401809944,2025-10-24,Brooklyn Nets,BKN,124,500.0,11.5,Cleveland Cavaliers,CLE,131,-645.0,-11.5,Brooklyn,NY
-401809945,2025-10-24,New York Knicks,NY,105,-154.0,-3.5,Boston Celtics,BOS,95,139.0,3.5,New York,NY
-401809947,2025-10-24,Houston Rockets,HOU,111,-235.0,-6.5,Detroit Pistons,DET,115,207.0,6.5,Houston,TX
-401809948,2025-10-24,Memphis Grizzlies,MEM,114,-147.0,-3.0,Miami Heat,MIA,146,132.0,3.0,Memphis,TN
-401809949,2025-10-24,New Orleans Pelicans,NO,116,146.0,4.0,San Antonio Spurs,SA,120,-163.0,-4.0,New Orleans,LA
-401809950,2025-10-24,Dallas Mavericks,DAL,107,-435.0,-9.5,Washington Wizards,WSH,117,358.0,9.5,Dallas,TX
-401809951,2025-10-24,Los Angeles Lakers,LAL,128,107.0,1.5,Minnesota Timberwolves,MIN,110,-118.0,-1.5,Los Angeles,CA
-401809952,2025-10-24,Portland Trail Blazers,POR,139,129.0,2.5,Golden State Warriors,GS,119,-143.0,-2.5,Portland,OR
-401809953,2025-10-24,Sacramento Kings,SAC,105,-205.0,-6.0,Utah Jazz,UTAH,104,182.0,6.0,Sacramento,CA
-401809954,2025-10-24,LA Clippers,LAC,129,-450.0,-10.0,Phoenix Suns,PHX,102,368.0,10.0,Inglewood,CA
-401809955,2025-10-25,Orlando Magic,ORL,98,-229.0,-6.0,Chicago Bulls,CHI,110,205.0,6.0,Orlando,FL
-401809956,2025-10-25,Atlanta Hawks,ATL,100,257.0,8.0,Oklahoma City Thunder,OKC,117,-292.0,-8.0,Atlanta,GA
-401809957,2025-10-25,Philadelphia 76ers,PHI,125,-181.0,-4.5,Charlotte Hornets,CHA,121,163.0,4.5,Philadelphia,PA
-401809958,2025-10-25,Memphis Grizzlies,MEM,128,-129.0,-2.0,Indiana Pacers,IND,103,117.0,2.0,Memphis,TN
-401809959,2025-10-25,Denver Nuggets,DEN,133,-694.0,-13.0,Phoenix Suns,PHX,111,571.0,13.0,Denver,CO
-401809960,2025-10-26,San Antonio Spurs,SA,118,,,Brooklyn Nets,BKN,107,,,San Antonio,TX
-401809961,2025-10-26,Detroit Pistons,DET,119,-132.0,-2.5,Boston Celtics,BOS,113,119.0,2.5,Detroit,MI
-401809962,2025-10-26,Cleveland Cavaliers,CLE,118,-244.0,-6.5,Milwaukee Bucks,MIL,113,217.0,6.5,Cleveland,OH
-401809963,2025-10-26,Miami Heat,MIA,115,132.0,2.5,New York Knicks,NY,107,-145.0,-2.5,Miami,FL
-401809964,2025-10-26,Washington Wizards,WSH,113,-120.0,-1.5,Charlotte Hornets,CHA,139,109.0,1.5,Washington,DC
-401809965,2025-10-26,Minnesota Timberwolves,MIN,114,-568.0,-12.5,Indiana Pacers,IND,110,475.0,12.5,Minneapolis,MN
-401809966,2025-10-26,Dallas Mavericks,DAL,139,100.0,1.0,Toronto Raptors,TOR,129,-111.0,-1.0,Dallas,TX
-401809967,2025-10-26,LA Clippers,LAC,114,-310.0,-8.0,Portland Trail Blazers,POR,107,272.0,8.0,Inglewood,CA
-401809968,2025-10-26,Sacramento Kings,SAC,120,-153.0,-3.5,Los Angeles Lakers,LAL,127,139.0,3.5,Sacramento,CA
-401809245,2025-10-27,Detroit Pistons,DET,95,122.0,2.5,Cleveland Cavaliers,CLE,116,-134.0,-2.5,Detroit,MI
-401809969,2025-10-27,Philadelphia 76ers,PHI,136,194.0,5.5,Orlando Magic,ORL,124,-216.0,-5.5,Philadelphia,PA
-401809970,2025-10-27,Chicago Bulls,CHI,128,125.0,3.0,Atlanta Hawks,ATL,123,-138.0,-3.0,Chicago,IL
-401809971,2025-10-27,Houston Rockets,HOU,137,-1010.0,-16.0,Brooklyn Nets,BKN,109,790.0,16.0,Houston,TX
-401809972,2025-10-27,New Orleans Pelicans,NO,90,169.0,4.5,Boston Celtics,BOS,122,-188.0,-4.5,New Orleans,LA
-401809973,2025-10-27,San Antonio Spurs,SA,121,-168.0,-4.5,Toronto Raptors,TOR,103,152.0,4.5,San Antonio,TX
-401809974,2025-10-27,Dallas Mavericks,DAL,94,310.0,8.5,Oklahoma City Thunder,OKC,101,-357.0,-8.5,Dallas,TX
-401809975,2025-10-27,Utah Jazz,UTAH,138,-116.0,-1.0,Phoenix Suns,PHX,134,106.0,1.0,Salt Lake City,UT
-401809246,2025-10-27,Minnesota Timberwolves,MIN,114,201.0,6.5,Denver Nuggets,DEN,127,-225.0,-6.5,Minneapolis,MN
-401809976,2025-10-27,Golden State Warriors,GS,131,-327.0,-8.0,Memphis Grizzlies,MEM,118,286.0,8.0,San Francisco,CA
-401809977,2025-10-27,Los Angeles Lakers,LAL,108,124.0,3.0,Portland Trail Blazers,POR,122,-137.0,-3.0,Los Angeles,CA
-401809978,2025-10-28,Washington Wizards,WSH,134,170.0,5.0,Philadelphia 76ers,PHI,139,-191.0,-5.0,Washington,DC
-401809979,2025-10-28,Miami Heat,MIA,144,-202.0,-5.5,Charlotte Hornets,CHA,117,179.0,5.5,Miami,FL
-401809980,2025-10-28,Milwaukee Bucks,MIL,121,,,New York Knicks,NY,111,,,Milwaukee,WI
-401809981,2025-10-28,Oklahoma City Thunder,OKC,107,-1887.0,-18.5,Sacramento Kings,SAC,101,1164.0,18.5,Oklahoma City,OK
-401809982,2025-10-28,Golden State Warriors,GS,98,,,LA Clippers,LAC,79,,,San Francisco,CA
-401809986,2025-10-29,Toronto Raptors,TOR,121,191.0,5.5,Houston Rockets,HOU,139,-216.0,-5.5,Toronto,ON
-401809983,2025-10-29,Boston Celtics,BOS,125,148.0,3.5,Cleveland Cavaliers,CLE,105,-165.0,-3.5,Boston,MA
-401809984,2025-10-29,Detroit Pistons,DET,135,111.0,2.0,Orlando Magic,ORL,116,-122.0,-2.0,Detroit,MI
-401809985,2025-10-29,Brooklyn Nets,BKN,112,283.0,8.5,Atlanta Hawks,ATL,117,-332.0,-8.5,Brooklyn,NY
-401809987,2025-10-29,Chicago Bulls,CHI,126,-185.0,-5.0,Sacramento Kings,SAC,113,165.0,5.0,Chicago,IL
-401809988,2025-10-29,Dallas Mavericks,DAL,107,-234.0,-6.0,Indiana Pacers,IND,105,206.0,6.0,Dallas,TX
-401809989,2025-10-29,Denver Nuggets,DEN,122,-667.0,-12.5,New Orleans Pelicans,NO,88,515.0,12.5,Denver,CO
-401809990,2025-10-29,Utah Jazz,UTAH,134,131.0,3.0,Portland Trail Blazers,POR,136,-146.0,-3.0,Salt Lake City,UT
-401809991,2025-10-29,Minnesota Timberwolves,MIN,115,-276.0,-7.5,Los Angeles Lakers,LAL,116,239.0,7.5,Minneapolis,MN
-401809992,2025-10-29,Phoenix Suns,PHX,113,115.0,2.5,Memphis Grizzlies,MEM,114,-130.0,-2.5,Phoenix,AZ
-401809993,2025-10-30,Charlotte Hornets,CHA,107,122.0,2.5,Orlando Magic,ORL,123,-135.0,-2.5,Charlotte,NC
-401809994,2025-10-30,Milwaukee Bucks,MIL,120,,,Golden State Warriors,GS,110,,,Milwaukee,WI
-401809995,2025-10-30,Oklahoma City Thunder,OKC,127,,,Washington Wizards,WSH,108,,,Oklahoma City,OK
-401809996,2025-10-30,San Antonio Spurs,SA,107,,,Miami Heat,MIA,101,,,San Antonio,TX
-401809502,2025-10-31,Indiana Pacers,IND,108,114.0,2.5,Atlanta Hawks,ATL,128,-126.0,-2.5,Indianapolis,IN
-401809503,2025-10-31,Philadelphia 76ers,PHI,108,103.0,1.0,Boston Celtics,BOS,109,-114.0,-1.0,Philadelphia,PA
-401809504,2025-10-31,Cleveland Cavaliers,CLE,101,-265.0,-6.5,Toronto Raptors,TOR,112,230.0,6.5,Cleveland,OH
-401809505,2025-10-31,Chicago Bulls,CHI,135,163.0,5.0,New York Knicks,NY,125,-183.0,-5.0,Chicago,IL
-401809506,2025-10-31,Memphis Grizzlies,MEM,112,117.0,2.0,Los Angeles Lakers,LAL,117,-129.0,-2.0,Memphis,TN
-401809507,2025-10-31,Phoenix Suns,PHX,118,-148.0,-3.0,Utah Jazz,UTAH,96,133.0,3.0,Phoenix,AZ
-401809508,2025-10-31,Portland Trail Blazers,POR,109,186.0,5.0,Denver Nuggets,DEN,107,-210.0,-5.0,Portland,OR
-401809509,2025-10-31,LA Clippers,LAC,126,-521.0,-11.0,New Orleans Pelicans,NO,124,418.0,11.0,Inglewood,CA
-401809997,2025-11-01,Milwaukee Bucks,MIL,133,-259.0,-7.0,Sacramento Kings,SAC,135,220.0,7.0,Milwaukee,WI
-401809998,2025-11-01,Charlotte Hornets,CHA,105,152.0,4.5,Minnesota Timberwolves,MIN,122,-173.0,-4.5,Charlotte,NC
-401809999,2025-11-01,Indiana Pacers,IND,114,389.0,11.0,Golden State Warriors,GS,109,-478.0,-11.0,Indianapolis,IN
-401810000,2025-11-01,Washington Wizards,WSH,94,313.0,9.0,Orlando Magic,ORL,125,-373.0,-9.0,Washington,DC
-401810001,2025-11-01,Boston Celtics,BOS,101,173.0,5.5,Houston Rockets,HOU,128,-194.0,-5.5,Boston,MA
-401810002,2025-11-01,Detroit Pistons,DET,122,-288.0,-8.0,Dallas Mavericks,DAL,110,249.0,8.0,Mexico City,
-401810003,2025-11-02,Oklahoma City Thunder,OKC,137,-662.0,-13.0,New Orleans Pelicans,NO,106,512.0,13.0,Oklahoma City,OK
-401810004,2025-11-02,Brooklyn Nets,BKN,105,176.0,5.0,Philadelphia 76ers,PHI,129,-197.0,-5.0,Brooklyn,NY
-401810005,2025-11-02,Charlotte Hornets,CHA,126,104.0,1.5,Utah Jazz,UTAH,103,-114.0,-1.5,Charlotte,NC
-401810006,2025-11-02,Cleveland Cavaliers,CLE,117,-233.0,-6.0,Atlanta Hawks,ATL,109,205.0,6.0,Cleveland,OH
-401810007,2025-11-02,Toronto Raptors,TOR,117,-179.0,-4.5,Memphis Grizzlies,MEM,104,160.0,4.5,Toronto,ON
-401810008,2025-11-02,New York Knicks,NY,128,-280.0,-7.5,Chicago Bulls,CHI,116,242.0,7.5,New York,NY
-401810009,2025-11-02,Phoenix Suns,PHX,130,185.0,5.5,San Antonio Spurs,SA,118,-208.0,-5.5,Phoenix,AZ
-401810010,2025-11-02,Los Angeles Lakers,LAL,130,-186.0,-4.5,Miami Heat,MIA,120,166.0,4.5,Los Angeles,CA
-401810011,2025-11-03,Brooklyn Nets,BKN,109,348.0,9.5,Minnesota Timberwolves,MIN,125,-420.0,-9.5,Brooklyn,NY
-401810012,2025-11-03,Indiana Pacers,IND,115,198.0,6.0,Milwaukee Bucks,MIL,117,-224.0,-6.0,Indianapolis,IN
-401810013,2025-11-03,Boston Celtics,BOS,103,-450.0,-10.5,Utah Jazz,UTAH,105,369.0,10.5,Boston,MA
-401810014,2025-11-03,New York Knicks,NY,119,-645.0,-12.5,Washington Wizards,WSH,102,502.0,12.5,New York,NY
-401810015,2025-11-03,Houston Rockets,HOU,110,-633.0,-12.5,Dallas Mavericks,DAL,102,491.0,12.5,Houston,TX
-401810016,2025-11-03,Memphis Grizzlies,MEM,106,160.0,4.5,Detroit Pistons,DET,114,-179.0,-4.5,Memphis,TN
-401810017,2025-11-03,Denver Nuggets,DEN,130,-556.0,-11.0,Sacramento Kings,SAC,124,423.0,11.0,Denver,CO
-401810018,2025-11-03,Portland Trail Blazers,POR,115,-333.0,-8.5,Los Angeles Lakers,LAL,123,283.0,8.5,Portland,OR
-401810019,2025-11-03,LA Clippers,LAC,119,-302.0,-8.0,Miami Heat,MIA,120,259.0,8.0,Inglewood,CA
-401810020,2025-11-04,Toronto Raptors,TOR,128,-129.0,-2.0,Milwaukee Bucks,MIL,100,117.0,2.0,Toronto,ON
-401810021,2025-11-04,Atlanta Hawks,ATL,127,147.0,3.5,Orlando Magic,ORL,112,-164.0,-3.5,Atlanta,GA
-401810022,2025-11-04,Chicago Bulls,CHI,113,-124.0,-2.0,Philadelphia 76ers,PHI,111,112.0,2.0,Chicago,IL
-401810023,2025-11-04,New Orleans Pelicans,NO,116,-143.0,-2.5,Charlotte Hornets,CHA,112,129.0,2.5,New Orleans,LA
-401810024,2025-11-04,Golden State Warriors,GS,118,-405.0,-9.5,Phoenix Suns,PHX,107,336.0,9.5,San Francisco,CA
-401810025,2025-11-04,LA Clippers,LAC,107,260.0,8.5,Oklahoma City Thunder,OKC,126,-302.0,-8.5,Inglewood,CA
-401810026,2025-11-05,Cleveland Cavaliers,CLE,132,-467.0,-11.5,Philadelphia 76ers,PHI,121,381.0,11.5,Cleveland,OH
-401810027,2025-11-05,Detroit Pistons,DET,114,-417.0,-10.0,Utah Jazz,UTAH,103,345.0,10.0,Detroit,MI
-401810028,2025-11-05,Indiana Pacers,IND,103,-240.0,-6.5,Brooklyn Nets,BKN,112,211.0,6.5,Indianapolis,IN
-401810029,2025-11-05,Boston Celtics,BOS,136,-633.0,-12.5,Washington Wizards,WSH,107,492.0,12.5,Boston,MA
-401810030,2025-11-05,New York Knicks,NY,137,-154.0,-3.5,Minnesota Timberwolves,MIN,114,136.0,3.5,New York,NY
-401810031,2025-11-05,Memphis Grizzlies,MEM,109,255.0,7.5,Houston Rockets,HOU,124,-298.0,-7.5,Memphis,TN
-401810032,2025-11-05,Dallas Mavericks,DAL,99,-289.0,-8.5,New Orleans Pelicans,NO,101,249.0,8.5,Dallas,TX
-401810033,2025-11-05,Denver Nuggets,DEN,122,-375.0,-9.5,Miami Heat,MIA,112,314.0,9.5,Denver,CO
-401810034,2025-11-05,Los Angeles Lakers,LAL,118,-109.0,-1.0,San Antonio Spurs,SA,116,-101.0,1.0,Los Angeles,CA
-401810035,2025-11-05,Portland Trail Blazers,POR,121,147.0,4.0,Oklahoma City Thunder,OKC,119,-164.0,-4.0,Portland,OR
-401810036,2025-11-05,Sacramento Kings,SAC,121,-136.0,-2.5,Golden State Warriors,GS,116,123.0,2.5,Sacramento,CA
-401810037,2025-11-06,Phoenix Suns,PHX,115,-137.0,-2.5,LA Clippers,LAC,102,124.0,2.5,Phoenix,AZ
-401809510,2025-11-07,Orlando Magic,ORL,123,-159.0,-3.5,Boston Celtics,BOS,110,143.0,3.5,Orlando,FL
-401809511,2025-11-07,Washington Wizards,WSH,115,593.0,13.5,Cleveland Cavaliers,CLE,148,-794.0,-13.5,Washington,DC
-401809512,2025-11-07,Atlanta Hawks,ATL,97,-134.0,-2.0,Toronto Raptors,TOR,109,121.0,2.0,Atlanta,GA
-401809773,2025-11-07,Brooklyn Nets,BKN,107,381.0,10.5,Detroit Pistons,DET,125,-467.0,-10.5,Brooklyn,NY
-401809774,2025-11-07,San Antonio Spurs,SA,121,151.0,4.0,Houston Rockets,HOU,110,-169.0,-4.0,San Antonio,TX
-401809775,2025-11-07,Miami Heat,MIA,126,-253.0,-7.0,Charlotte Hornets,CHA,108,220.0,7.0,Miami,FL
-401809776,2025-11-07,Memphis Grizzlies,MEM,118,-177.0,-4.0,Dallas Mavericks,DAL,104,159.0,4.0,Memphis,TN
-401809777,2025-11-07,Milwaukee Bucks,MIL,126,-168.0,-4.5,Chicago Bulls,CHI,110,151.0,4.5,Milwaukee,WI
-401809778,2025-11-07,Minnesota Timberwolves,MIN,137,-625.0,-12.5,Utah Jazz,UTAH,97,489.0,12.5,Minneapolis,MN
-401809779,2025-11-07,Denver Nuggets,DEN,129,-410.0,-9.5,Golden State Warriors,GS,104,340.0,9.5,Denver,CO
-401809780,2025-11-07,Sacramento Kings,SAC,101,459.0,11.5,Oklahoma City Thunder,OKC,132,-581.0,-11.5,Sacramento,CA
-401810038,2025-11-08,Washington Wizards,WSH,105,177.0,5.5,Dallas Mavericks,DAL,111,-199.0,-5.5,Washington,DC
-401810039,2025-11-08,Philadelphia 76ers,PHI,130,-194.0,-5.0,Toronto Raptors,TOR,120,173.0,5.0,Philadelphia,PA
-401810040,2025-11-08,Atlanta Hawks,ATL,122,167.0,4.5,Los Angeles Lakers,LAL,102,-188.0,-4.5,Atlanta,GA
-401810041,2025-11-08,Cleveland Cavaliers,CLE,128,-332.0,-8.5,Chicago Bulls,CHI,122,283.0,8.5,Cleveland,OH
-401810042,2025-11-08,Miami Heat,MIA,136,141.0,4.0,Portland Trail Blazers,POR,131,-157.0,-4.0,Miami,FL
-401810043,2025-11-08,San Antonio Spurs,SA,126,-541.0,-11.0,New Orleans Pelicans,NO,119,430.0,11.0,San Antonio,TX
-401810044,2025-11-08,Denver Nuggets,DEN,117,-476.0,-10.5,Indiana Pacers,IND,100,373.0,10.5,Denver,CO
-401810045,2025-11-08,LA Clippers,LAC,103,-196.0,-5.0,Phoenix Suns,PHX,114,175.0,5.0,Inglewood,CA
-401810046,2025-11-09,Milwaukee Bucks,MIL,115,151.0,4.0,Houston Rockets,HOU,122,-168.0,-4.0,Milwaukee,WI
-401810047,2025-11-09,New York Knicks,NY,134,-1149.0,-15.5,Brooklyn Nets,BKN,98,796.0,15.5,New York,NY
-401810048,2025-11-09,Orlando Magic,ORL,107,-155.0,-4.0,Boston Celtics,BOS,111,140.0,4.0,Orlando,FL
-401810049,2025-11-09,Memphis Grizzlies,MEM,100,399.0,10.5,Oklahoma City Thunder,OKC,114,-493.0,-10.5,Memphis,TN
-401810050,2025-11-09,Philadelphia 76ers,PHI,108,160.0,4.5,Detroit Pistons,DET,111,-178.0,-4.5,Philadelphia,PA
-401810051,2025-11-09,Golden State Warriors,GS,114,-599.0,-13.0,Indiana Pacers,IND,83,470.0,13.0,San Francisco,CA
-401810052,2025-11-09,Sacramento Kings,SAC,117,182.0,5.0,Minnesota Timberwolves,MIN,144,-205.0,-5.0,Sacramento,CA
-401810053,2025-11-10,Charlotte Hornets,CHA,111,291.0,8.5,Los Angeles Lakers,LAL,121,-345.0,-8.5,Charlotte,NC
-401810054,2025-11-10,Detroit Pistons,DET,137,-606.0,-11.5,Washington Wizards,WSH,135,475.0,11.5,Detroit,MI
-401810055,2025-11-10,Orlando Magic,ORL,115,-122.0,-2.0,Portland Trail Blazers,POR,112,111.0,2.0,Orlando,FL
-401810056,2025-11-10,Miami Heat,MIA,140,243.0,7.5,Cleveland Cavaliers,CLE,138,-280.0,-7.5,Miami,FL
-401810057,2025-11-10,Chicago Bulls,CHI,117,169.0,5.0,San Antonio Spurs,SA,121,-189.0,-5.0,Chicago,IL
-401810058,2025-11-10,Dallas Mavericks,DAL,114,123.0,3.0,Milwaukee Bucks,MIL,116,-136.0,-3.0,Dallas,TX
-401810059,2025-11-10,Phoenix Suns,PHX,121,-358.0,-8.5,New Orleans Pelicans,NO,98,302.0,8.5,Phoenix,AZ
-401810060,2025-11-10,Utah Jazz,UTAH,113,249.0,7.5,Minnesota Timberwolves,MIN,120,-289.0,-7.5,Salt Lake City,UT
-401810061,2025-11-10,LA Clippers,LAC,102,-189.0,-5.0,Atlanta Hawks,ATL,105,168.0,5.0,Inglewood,CA
-401810062,2025-11-11,Brooklyn Nets,BKN,109,342.0,10.0,Toronto Raptors,TOR,119,-413.0,-10.0,Brooklyn,NY
-401810063,2025-11-11,New York Knicks,NY,133,-403.0,-10.0,Memphis Grizzlies,MEM,120,335.0,10.0,New York,NY
-401810064,2025-11-11,Philadelphia 76ers,PHI,102,111.0,1.5,Boston Celtics,BOS,100,-122.0,-1.5,Philadelphia,PA
-401810065,2025-11-11,Oklahoma City Thunder,OKC,126,-309.0,-7.5,Golden State Warriors,GS,102,264.0,7.5,Oklahoma City,OK
-401810066,2025-11-11,Utah Jazz,UTAH,152,128.0,3.0,Indiana Pacers,IND,128,-142.0,-3.0,Salt Lake City,UT
-401810067,2025-11-11,Sacramento Kings,SAC,108,284.0,8.5,Denver Nuggets,DEN,122,-333.0,-8.5,Sacramento,CA
-401810068,2025-11-12,Charlotte Hornets,CHA,111,125.0,2.0,Milwaukee Bucks,MIL,100,-138.0,-2.0,Charlotte,NC
-401810069,2025-11-12,Detroit Pistons,DET,124,128.0,2.5,Chicago Bulls,CHI,113,-142.0,-2.5,Detroit,MI
-401810070,2025-11-12,New York Knicks,NY,107,-170.0,-4.0,Orlando Magic,ORL,124,152.0,4.0,New York,NY
-401810071,2025-11-12,Boston Celtics,BOS,131,-307.0,-8.5,Memphis Grizzlies,MEM,95,263.0,8.5,Boston,MA
-401810072,2025-11-12,Miami Heat,MIA,116,-192.0,-5.5,Cleveland Cavaliers,CLE,130,171.0,5.5,Miami,FL
-401810073,2025-11-12,Houston Rockets,HOU,135,-1449.0,-17.0,Washington Wizards,WSH,112,951.0,17.0,Houston,TX
-401810074,2025-11-12,New Orleans Pelicans,NO,117,277.0,8.0,Portland Trail Blazers,POR,125,-325.0,-8.0,New Orleans,LA
-401810075,2025-11-12,San Antonio Spurs,SA,120,-161.0,-3.5,Golden State Warriors,GS,125,145.0,3.5,San Antonio,TX
-401810076,2025-11-12,Dallas Mavericks,DAL,114,118.0,2.0,Phoenix Suns,PHX,123,-130.0,-2.0,Dallas,TX
-401810077,2025-11-12,Oklahoma City Thunder,OKC,121,-313.0,-8.0,Los Angeles Lakers,LAL,92,268.0,8.0,Oklahoma City,OK
-401810078,2025-11-12,Sacramento Kings,SAC,100,151.0,4.5,Atlanta Hawks,ATL,133,-168.0,-4.5,Sacramento,CA
-401810079,2025-11-12,LA Clippers,LAC,116,170.0,4.5,Denver Nuggets,DEN,130,-191.0,-4.5,Inglewood,CA
-401810080,2025-11-13,Cleveland Cavaliers,CLE,113,-267.0,-7.5,Toronto Raptors,TOR,126,232.0,7.5,Cleveland,OH
-401810081,2025-11-13,Phoenix Suns,PHX,133,-168.0,-3.5,Indiana Pacers,IND,98,151.0,3.5,Phoenix,AZ
-401810082,2025-11-13,Utah Jazz,UTAH,122,113.0,2.0,Atlanta Hawks,ATL,132,-124.0,-2.0,Salt Lake City,UT
-401809781,2025-11-14,New York Knicks,NY,140,-239.0,-6.5,Miami Heat,MIA,132,210.0,6.5,New York,NY
-401809782,2025-11-14,Orlando Magic,ORL,105,-893.0,-14.0,Brooklyn Nets,BKN,98,651.0,14.0,Orlando,FL
-401809783,2025-11-14,Detroit Pistons,DET,114,-111.0,-1.0,Philadelphia 76ers,PHI,105,100.0,1.0,Detroit,MI
-401809784,2025-11-14,Houston Rockets,HOU,140,-296.0,-7.5,Portland Trail Blazers,POR,116,254.0,7.5,Houston,TX
-401809785,2025-11-14,Milwaukee Bucks,MIL,147,-360.0,-9.0,Charlotte Hornets,CHA,134,303.0,9.0,Milwaukee,WI
-401809786,2025-11-14,Minnesota Timberwolves,MIN,124,-578.0,-11.5,Sacramento Kings,SAC,110,458.0,11.5,Minneapolis,MN
-401809787,2025-11-14,New Orleans Pelicans,NO,104,375.0,9.5,Los Angeles Lakers,LAL,118,-459.0,-9.5,New Orleans,LA
-401809788,2025-11-14,Dallas Mavericks,DAL,127,120.0,2.5,LA Clippers,LAC,133,-133.0,-2.5,Dallas,TX
-401809789,2025-11-14,San Antonio Spurs,SA,108,-143.0,-2.5,Golden State Warriors,GS,109,129.0,2.5,San Antonio,TX
-401810083,2025-11-15,Cleveland Cavaliers,CLE,108,-543.0,-11.5,Memphis Grizzlies,MEM,100,433.0,11.5,Cleveland,OH
-401810084,2025-11-15,Charlotte Hornets,CHA,96,964.0,17.0,Oklahoma City Thunder,OKC,109,-1471.0,-17.0,Charlotte,NC
-401810085,2025-11-15,Indiana Pacers,IND,111,220.0,6.5,Toronto Raptors,TOR,129,-253.0,-6.5,Indianapolis,IN
-401810086,2025-11-15,Milwaukee Bucks,MIL,95,-114.0,-1.0,Los Angeles Lakers,LAL,119,103.0,1.0,Milwaukee,WI
-401810087,2025-11-15,Minnesota Timberwolves,MIN,112,,,Denver Nuggets,DEN,123,,,Minneapolis,MN
-401810088,2025-11-16,Boston Celtics,BOS,121,-209.0,-6.0,LA Clippers,LAC,118,185.0,6.0,Boston,MA
-401810089,2025-11-16,San Antonio Spurs,SA,123,-222.0,-6.5,Sacramento Kings,SAC,110,196.0,6.5,San Antonio,TX
-401810090,2025-11-16,Washington Wizards,WSH,106,-138.0,-2.5,Brooklyn Nets,BKN,129,125.0,2.5,Washington,DC
-401810091,2025-11-16,Houston Rockets,HOU,117,-300.0,-7.5,Orlando Magic,ORL,113,258.0,7.5,Houston,TX
-401810092,2025-11-16,New Orleans Pelicans,NO,106,,,Golden State Warriors,GS,124,,,New Orleans,LA
-401810093,2025-11-16,Dallas Mavericks,DAL,138,139.0,3.5,Portland Trail Blazers,POR,133,-155.0,-3.5,Dallas,TX
-401810094,2025-11-16,Phoenix Suns,PHX,122,-117.0,-2.0,Atlanta Hawks,ATL,124,106.0,2.0,Phoenix,AZ
-401810095,2025-11-16,Utah Jazz,UTAH,150,,,Chicago Bulls,CHI,147,,,Salt Lake City,UT
-401810096,2025-11-17,Cleveland Cavaliers,CLE,118,-236.0,-5.5,Milwaukee Bucks,MIL,106,208.0,5.5,Cleveland,OH
-401810097,2025-11-17,Detroit Pistons,DET,127,-353.0,-8.5,Indiana Pacers,IND,112,289.0,8.5,Detroit,MI
-401810098,2025-11-17,Philadelphia 76ers,PHI,110,-194.0,-5.5,LA Clippers,LAC,108,173.0,5.5,Philadelphia,PA
-401810099,2025-11-17,Miami Heat,MIA,115,-115.0,-1.0,New York Knicks,NY,113,104.0,1.0,Miami,FL
-401810100,2025-11-17,Toronto Raptors,TOR,110,-332.0,-8.5,Charlotte Hornets,CHA,108,282.0,8.5,Toronto,ON
-401810101,2025-11-17,Minnesota Timberwolves,MIN,120,-800.0,-14.0,Dallas Mavericks,DAL,96,596.0,14.0,Minneapolis,MN
-401810102,2025-11-17,New Orleans Pelicans,NO,109,1146.0,17.5,Oklahoma City Thunder,OKC,126,-1852.0,-17.5,New Orleans,LA
-401810103,2025-11-17,Denver Nuggets,DEN,127,-806.0,-13.5,Chicago Bulls,CHI,130,602.0,13.5,Denver,CO
-401810104,2025-11-18,Orlando Magic,ORL,121,123.0,2.5,Golden State Warriors,GS,113,-136.0,-2.5,Orlando,FL
-401810105,2025-11-18,Brooklyn Nets,BKN,99,442.0,11.0,Boston Celtics,BOS,113,-556.0,-11.0,Brooklyn,NY
-401810106,2025-11-18,Atlanta Hawks,ATL,112,117.0,2.5,Detroit Pistons,DET,120,-130.0,-2.5,Atlanta,GA
-401810107,2025-11-18,San Antonio Spurs,SA,111,-217.0,-6.0,Memphis Grizzlies,MEM,101,192.0,6.0,San Antonio,TX
-401810108,2025-11-18,Los Angeles Lakers,LAL,140,-680.0,-13.0,Utah Jazz,UTAH,126,522.0,13.0,Los Angeles,CA
-401810109,2025-11-18,Portland Trail Blazers,POR,110,-136.0,-2.5,Phoenix Suns,PHX,127,123.0,2.5,Portland,OR
-401810110,2025-11-19,Cleveland Cavaliers,CLE,104,114.0,1.5,Houston Rockets,HOU,114,-126.0,-1.5,Cleveland,OH
-401810111,2025-11-19,Indiana Pacers,IND,127,108.0,2.0,Charlotte Hornets,CHA,118,-119.0,-2.0,Indianapolis,IN
-401810113,2025-11-19,Philadelphia 76ers,PHI,112,120.0,2.0,Toronto Raptors,TOR,121,-133.0,-2.0,Philadelphia,PA
-401810112,2025-11-19,Miami Heat,MIA,110,-388.0,-10.5,Golden State Warriors,GS,96,324.0,10.5,Miami,FL
-401810114,2025-11-19,Minnesota Timberwolves,MIN,120,-1333.0,-17.0,Washington Wizards,WSH,109,893.0,17.0,Minneapolis,MN
-401810115,2025-11-19,New Orleans Pelicans,NO,118,593.0,14.0,Denver Nuggets,DEN,125,-794.0,-14.0,New Orleans,LA
-401810116,2025-11-19,Oklahoma City Thunder,OKC,113,,,Sacramento Kings,SAC,99,,,Oklahoma City,OK
-401810117,2025-11-19,Dallas Mavericks,DAL,111,247.0,7.5,New York Knicks,NY,113,-287.0,-7.5,Dallas,TX
-401810118,2025-11-19,Portland Trail Blazers,POR,121,147.0,3.5,Chicago Bulls,CHI,122,-164.0,-3.5,Portland,OR
-401810119,2025-11-20,Orlando Magic,ORL,129,-221.0,-5.5,LA Clippers,LAC,101,195.0,5.5,Orlando,FL
-401810120,2025-11-20,Memphis Grizzlies,MEM,137,-148.0,-3.0,Sacramento Kings,SAC,96,133.0,3.0,Memphis,TN
-401810121,2025-11-20,Milwaukee Bucks,MIL,114,109.0,1.5,Philadelphia 76ers,PHI,123,-120.0,-1.5,Milwaukee,WI
-401810122,2025-11-20,San Antonio Spurs,SA,135,103.0,1.5,Atlanta Hawks,ATL,126,-113.0,-1.5,San Antonio,TX
-401809790,2025-11-21,Cleveland Cavaliers,CLE,120,-909.0,-14.5,Indiana Pacers,IND,109,661.0,14.5,Cleveland,OH
-401809791,2025-11-21,Boston Celtics,BOS,105,-952.0,-15.0,Brooklyn Nets,BKN,113,690.0,15.0,Boston,MA
-401809792,2025-11-21,Toronto Raptors,TOR,140,-926.0,-14.0,Washington Wizards,WSH,110,671.0,14.0,Toronto,ON
-401809793,2025-11-21,Chicago Bulls,CHI,107,-138.0,-2.5,Miami Heat,MIA,143,125.0,2.5,Chicago,IL
-401809794,2025-11-21,Dallas Mavericks,DAL,118,-168.0,-4.0,New Orleans Pelicans,NO,115,151.0,4.0,Dallas,TX
-401809795,2025-11-21,Phoenix Suns,PHX,114,154.0,4.5,Minnesota Timberwolves,MIN,113,-172.0,-4.5,Phoenix,AZ
-401809796,2025-11-21,Houston Rockets,HOU,109,-134.0,-2.5,Denver Nuggets,DEN,112,122.0,2.5,Houston,TX
-401809797,2025-11-21,Utah Jazz,UTAH,112,868.0,16.0,Oklahoma City Thunder,OKC,144,-1282.0,-16.0,Salt Lake City,UT
-401809798,2025-11-21,Golden State Warriors,GS,123,-386.0,-9.5,Portland Trail Blazers,POR,127,323.0,9.5,San Francisco,CA
-401810123,2025-11-22,Charlotte Hornets,CHA,116,,,LA Clippers,LAC,131,,,Charlotte,NC
-401810124,2025-11-22,Orlando Magic,ORL,133,-116.0,-1.5,New York Knicks,NY,121,105.0,1.5,Orlando,FL
-401810125,2025-11-22,New Orleans Pelicans,NO,98,360.0,9.5,Atlanta Hawks,ATL,115,-439.0,-9.5,New Orleans,LA
-401810126,2025-11-22,Chicago Bulls,CHI,121,-645.0,-12.5,Washington Wizards,WSH,120,500.0,12.5,Chicago,IL
-401810127,2025-11-22,Milwaukee Bucks,MIL,116,286.0,8.0,Detroit Pistons,DET,129,-337.0,-8.0,Milwaukee,WI
-401810128,2025-11-22,Dallas Mavericks,DAL,96,-109.0,-1.0,Memphis Grizzlies,MEM,102,-101.0,1.0,Dallas,TX
-401810129,2025-11-22,Denver Nuggets,DEN,123,-513.0,-10.5,Sacramento Kings,SAC,128,412.0,10.5,Denver,CO
-401810130,2025-11-23,Philadelphia 76ers,PHI,117,,,Miami Heat,MIA,127,,,Philadelphia,PA
-401810131,2025-11-23,Atlanta Hawks,ATL,113,-292.0,-7.5,Charlotte Hornets,CHA,110,245.0,7.5,Atlanta,GA
-401810132,2025-11-23,Boston Celtics,BOS,138,-177.0,-4.5,Orlando Magic,ORL,129,158.0,4.5,Boston,MA
-401810133,2025-11-23,Cleveland Cavaliers,CLE,120,-313.0,-7.5,LA Clippers,LAC,105,268.0,7.5,Cleveland,OH
-401810134,2025-11-23,Toronto Raptors,TOR,119,-654.0,-12.5,Brooklyn Nets,BKN,109,505.0,12.5,Toronto,ON
-401810135,2025-11-23,Oklahoma City Thunder,OKC,122,-1163.0,-15.5,Portland Trail Blazers,POR,95,809.0,15.5,Oklahoma City,OK
-401810136,2025-11-23,Phoenix Suns,PHX,111,-138.0,-2.5,San Antonio Spurs,SA,102,125.0,2.5,Phoenix,AZ
-401810137,2025-11-23,Utah Jazz,UTAH,106,333.0,9.0,Los Angeles Lakers,LAL,108,-400.0,-9.0,Salt Lake City,UT
-401810138,2025-11-24,Indiana Pacers,IND,117,337.0,9.5,Detroit Pistons,DET,122,-407.0,-9.5,Indianapolis,IN
-401810139,2025-11-24,Toronto Raptors,TOR,110,-118.0,-1.5,Cleveland Cavaliers,CLE,99,107.0,1.5,Toronto,ON
-401810140,2025-11-24,Brooklyn Nets,BKN,100,561.0,12.5,New York Knicks,NY,113,-741.0,-12.5,Brooklyn,NY
-401810141,2025-11-24,Miami Heat,MIA,106,-255.0,-7.5,Dallas Mavericks,DAL,102,223.0,7.5,Miami,FL
-401810142,2025-11-24,Memphis Grizzlies,MEM,115,281.0,8.0,Denver Nuggets,DEN,125,-330.0,-8.0,Memphis,TN
-401810143,2025-11-24,Milwaukee Bucks,MIL,103,-109.0,-1.0,Portland Trail Blazers,POR,115,-101.0,1.0,Milwaukee,WI
-401810144,2025-11-24,New Orleans Pelicans,NO,143,181.0,5.5,Chicago Bulls,CHI,130,-204.0,-5.5,New Orleans,LA
-401810145,2025-11-24,Phoenix Suns,PHX,92,199.0,6.5,Houston Rockets,HOU,114,-226.0,-6.5,Phoenix,AZ
-401810146,2025-11-24,Golden State Warriors,GS,134,-800.0,-14.5,Utah Jazz,UTAH,117,597.0,14.5,San Francisco,CA
-401810147,2025-11-24,Sacramento Kings,SAC,117,358.0,10.0,Minnesota Timberwolves,MIN,112,-435.0,-10.0,Sacramento,CA
-401809799,2025-11-25,Washington Wizards,WSH,132,429.0,11.0,Atlanta Hawks,ATL,113,-538.0,-11.0,Washington,DC
-401809800,2025-11-25,Philadelphia 76ers,PHI,103,160.0,4.0,Orlando Magic,ORL,144,-179.0,-4.0,Philadelphia,PA
-401809801,2025-11-25,Los Angeles Lakers,LAL,135,-265.0,-6.5,LA Clippers,LAC,118,230.0,6.5,Los Angeles,CA
-401809802,2025-11-26,Boston Celtics,BOS,117,129.0,3.0,Detroit Pistons,DET,114,-142.0,-3.0,Boston,MA
-401809803,2025-11-26,Charlotte Hornets,CHA,101,219.0,6.5,New York Knicks,NY,129,-250.0,-6.5,Charlotte,NC
-401809804,2025-11-26,Miami Heat,MIA,106,-431.0,-10.0,Milwaukee Bucks,MIL,103,355.0,10.0,Miami,FL
-401809805,2025-11-26,Toronto Raptors,TOR,97,-427.0,-10.5,Indiana Pacers,IND,95,353.0,10.5,Toronto,ON
-401809806,2025-11-26,Oklahoma City Thunder,OKC,113,-398.0,-9.5,Minnesota Timberwolves,MIN,105,331.0,9.5,Oklahoma City,OK
-401809807,2025-11-26,New Orleans Pelicans,NO,128,145.0,3.5,Memphis Grizzlies,MEM,133,-161.0,-3.5,New Orleans,LA
-401809808,2025-11-26,Golden State Warriors,GS,100,-141.0,-2.5,Houston Rockets,HOU,104,128.0,2.5,San Francisco,CA
-401809809,2025-11-26,Portland Trail Blazers,POR,102,-107.0,-1.0,San Antonio Spurs,SA,115,-103.0,1.0,Portland,OR
-401809810,2025-11-26,Sacramento Kings,SAC,100,158.0,4.0,Phoenix Suns,PHX,112,-176.0,-4.0,Sacramento,CA
-401809811,2025-11-28,Atlanta Hawks,ATL,130,213.0,6.5,Cleveland Cavaliers,CLE,123,-243.0,-6.5,Atlanta,GA
-401809812,2025-11-28,Brooklyn Nets,BKN,103,223.0,7.0,Philadelphia 76ers,PHI,115,-255.0,-7.0,Brooklyn,NY
-401809813,2025-11-28,Charlotte Hornets,CHA,123,134.0,3.0,Chicago Bulls,CHI,116,-148.0,-3.0,Charlotte,NC
-401809814,2025-11-28,Detroit Pistons,DET,109,-156.0,-3.5,Orlando Magic,ORL,112,141.0,3.5,Detroit,MI
-401809815,2025-11-28,Indiana Pacers,IND,119,-253.0,-6.5,Washington Wizards,WSH,86,220.0,6.5,Indianapolis,IN
-401809816,2025-11-28,New York Knicks,NY,118,-256.0,-7.5,Milwaukee Bucks,MIL,109,224.0,7.5,New York,NY
-401809817,2025-11-28,Oklahoma City Thunder,OKC,123,-990.0,-14.5,Phoenix Suns,PHX,119,708.0,14.5,Oklahoma City,OK
-401809818,2025-11-28,Denver Nuggets,DEN,136,-294.0,-7.5,San Antonio Spurs,SA,139,253.0,7.5,Denver,CO
-401809819,2025-11-28,Utah Jazz,UTAH,128,-130.0,-2.0,Sacramento Kings,SAC,119,118.0,2.0,Salt Lake City,UT
-401809820,2025-11-28,Los Angeles Lakers,LAL,129,-402.0,-9.5,Dallas Mavericks,DAL,119,334.0,9.5,Los Angeles,CA
-401809821,2025-11-28,LA Clippers,LAC,107,-254.0,-6.5,Memphis Grizzlies,MEM,112,222.0,6.5,Inglewood,CA
-401810148,2025-11-29,Minnesota Timberwolves,MIN,119,-279.0,-7.5,Boston Celtics,BOS,115,242.0,7.5,Minneapolis,MN
-401810149,2025-11-29,Charlotte Hornets,CHA,118,278.0,7.5,Toronto Raptors,TOR,111,-327.0,-7.5,Charlotte,NC
-401810150,2025-11-29,Indiana Pacers,IND,103,126.0,2.5,Chicago Bulls,CHI,101,-140.0,-2.5,Indianapolis,IN
-401810151,2025-11-29,Miami Heat,MIA,135,-163.0,-4.0,Detroit Pistons,DET,138,147.0,4.0,Miami,FL
-401810152,2025-11-29,Milwaukee Bucks,MIL,116,-585.0,-11.5,Brooklyn Nets,BKN,99,460.0,11.5,Milwaukee,WI
-401810153,2025-11-29,Golden State Warriors,GS,104,-353.0,-9.0,New Orleans Pelicans,NO,96,298.0,9.0,San Francisco,CA
-401810154,2025-11-29,Phoenix Suns,PHX,112,126.0,2.5,Denver Nuggets,DEN,130,-139.0,-2.5,Phoenix,AZ
-401810155,2025-11-29,LA Clippers,LAC,110,-332.0,-8.0,Dallas Mavericks,DAL,114,282.0,8.0,Inglewood,CA
-401810156,2025-11-30,Utah Jazz,UTAH,101,455.0,12.0,Houston Rockets,HOU,129,-575.0,-12.0,Salt Lake City,UT
-401810157,2025-11-30,Cleveland Cavaliers,CLE,115,-277.0,-7.0,Boston Celtics,BOS,117,240.0,7.0,Cleveland,OH
-401810158,2025-11-30,New York Knicks,NY,116,-324.0,-8.0,Toronto Raptors,TOR,94,276.0,8.0,New York,NY
-401810159,2025-11-30,Philadelphia 76ers,PHI,134,-126.0,-2.0,Atlanta Hawks,ATL,142,114.0,2.0,Philadelphia,PA
-401810160,2025-11-30,Portland Trail Blazers,POR,115,462.0,11.5,Oklahoma City Thunder,OKC,123,-588.0,-11.5,Portland,OR
-401810161,2025-11-30,Minnesota Timberwolves,MIN,125,-184.0,-5.0,San Antonio Spurs,SA,112,164.0,5.0,Minneapolis,MN
-401810162,2025-11-30,Sacramento Kings,SAC,107,127.0,3.0,Memphis Grizzlies,MEM,115,-141.0,-3.0,Sacramento,CA
-401810163,2025-11-30,Los Angeles Lakers,LAL,133,-1266.0,-15.5,New Orleans Pelicans,NO,121,862.0,15.5,Los Angeles,CA
-401810164,2025-12-01,Detroit Pistons,DET,99,-412.0,-9.5,Atlanta Hawks,ATL,98,341.0,9.5,Detroit,MI
-401810165,2025-12-01,Indiana Pacers,IND,119,165.0,5.0,Cleveland Cavaliers,CLE,135,-185.0,-5.0,Indianapolis,IN
-401810166,2025-12-01,Washington Wizards,WSH,129,365.0,10.0,Milwaukee Bucks,MIL,126,-444.0,-10.0,Washington,DC
-401810167,2025-12-01,Brooklyn Nets,BKN,116,159.0,4.5,Charlotte Hornets,CHA,103,-178.0,-4.5,Brooklyn,NY
-401810168,2025-12-01,Miami Heat,MIA,140,-248.0,-6.0,LA Clippers,LAC,123,217.0,6.0,Miami,FL
-401810169,2025-12-01,Orlando Magic,ORL,125,-373.0,-9.0,Chicago Bulls,CHI,120,313.0,9.0,Orlando,FL
-401810170,2025-12-01,Denver Nuggets,DEN,121,-541.0,-11.0,Dallas Mavericks,DAL,131,430.0,11.0,Denver,CO
-401810171,2025-12-01,Utah Jazz,UTAH,133,449.0,11.5,Houston Rockets,HOU,125,-568.0,-11.5,Salt Lake City,UT
-401810172,2025-12-01,Los Angeles Lakers,LAL,108,-206.0,-5.0,Phoenix Suns,PHX,125,183.0,5.0,Los Angeles,CA
-401810173,2025-12-02,Philadelphia 76ers,PHI,0,-850.0,,Washington Wizards,WSH,0,575.0,,Philadelphia,PA
-401810174,2025-12-02,Toronto Raptors,TOR,0,-218.0,,Portland Trail Blazers,POR,0,180.0,,Toronto,ON
-401810175,2025-12-02,Boston Celtics,BOS,0,-108.0,,New York Knicks,NY,0,-112.0,,Boston,MA
-401810176,2025-12-02,New Orleans Pelicans,NO,0,470.0,,Minnesota Timberwolves,MIN,0,-650.0,,New Orleans,LA
-401810177,2025-12-02,San Antonio Spurs,SA,0,-205.0,,Memphis Grizzlies,MEM,0,170.0,,San Antonio,TX
-401810178,2025-12-02,Golden State Warriors,GS,0,440.0,,Oklahoma City Thunder,OKC,0,-600.0,,San Francisco,CA
+game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread,away_team_name,away_team_abbrev,away_score,away_ml,away_spread,venue_city,venue_state,home_injuries,away_injuries
+401809243,2025-10-21,Oklahoma City Thunder,OKC,125,-246.0,-6.5,Houston Rockets,HOU,124,216.0,6.5,Oklahoma City,OK,,
+401809244,2025-10-21,Los Angeles Lakers,LAL,109,123.0,2.5,Golden State Warriors,GS,119,-136.0,-2.5,Los Angeles,CA,,
+401809234,2025-10-22,New York Knicks,NY,119,104.0,1.5,Cleveland Cavaliers,CLE,111,-122.0,-1.5,New York,NY,,
+401809933,2025-10-22,Charlotte Hornets,CHA,136,-190.0,-5.0,Brooklyn Nets,BKN,117,169.0,5.0,Charlotte,NC,,
+401809934,2025-10-22,Orlando Magic,ORL,125,-353.0,-8.5,Miami Heat,MIA,121,298.0,8.5,Orlando,FL,,
+401809935,2025-10-22,Atlanta Hawks,ATL,118,-224.0,-5.5,Toronto Raptors,TOR,138,198.0,5.5,Atlanta,GA,,
+401809936,2025-10-22,Boston Celtics,BOS,116,-180.0,-4.5,Philadelphia 76ers,PHI,117,161.0,4.5,Boston,MA,,
+401809937,2025-10-22,Chicago Bulls,CHI,115,135.0,2.5,Detroit Pistons,DET,111,-149.0,-2.5,Chicago,IL,,
+401809938,2025-10-22,Memphis Grizzlies,MEM,128,-168.0,-4.0,New Orleans Pelicans,NO,122,151.0,4.0,Memphis,TN,,
+401809939,2025-10-22,Milwaukee Bucks,MIL,133,-437.0,-10.0,Washington Wizards,WSH,120,359.0,10.0,Milwaukee,WI,,
+401809940,2025-10-22,Utah Jazz,UTAH,129,329.0,9.5,LA Clippers,LAC,108,-395.0,-9.5,Salt Lake City,UT,,
+401809235,2025-10-22,Dallas Mavericks,DAL,92,-152.0,-3.0,San Antonio Spurs,SA,125,137.0,3.0,Dallas,TX,,
+401809941,2025-10-22,Phoenix Suns,PHX,120,-162.0,-4.0,Sacramento Kings,SAC,116,146.0,4.0,Phoenix,AZ,,
+401809942,2025-10-22,Portland Trail Blazers,POR,114,163.0,4.0,Minnesota Timberwolves,MIN,118,-183.0,-4.0,Portland,OR,,
+401809236,2025-10-23,Indiana Pacers,IND,135,262.0,7.5,Oklahoma City Thunder,OKC,141,-306.0,-7.5,Indianapolis,IN,,
+401809237,2025-10-23,Golden State Warriors,GS,137,-121.0,-2.0,Denver Nuggets,DEN,131,110.0,2.0,San Francisco,CA,,
+401809946,2025-10-24,Toronto Raptors,TOR,116,-120.0,-1.5,Milwaukee Bucks,MIL,122,109.0,1.5,Toronto,ON,,
+401809943,2025-10-24,Orlando Magic,ORL,107,-213.0,-6.0,Atlanta Hawks,ATL,111,188.0,6.0,Orlando,FL,,
+401809944,2025-10-24,Brooklyn Nets,BKN,124,500.0,11.5,Cleveland Cavaliers,CLE,131,-645.0,-11.5,Brooklyn,NY,,
+401809945,2025-10-24,New York Knicks,NY,105,-154.0,-3.5,Boston Celtics,BOS,95,139.0,3.5,New York,NY,,
+401809947,2025-10-24,Houston Rockets,HOU,111,-235.0,-6.5,Detroit Pistons,DET,115,207.0,6.5,Houston,TX,,
+401809948,2025-10-24,Memphis Grizzlies,MEM,114,-147.0,-3.0,Miami Heat,MIA,146,132.0,3.0,Memphis,TN,,
+401809949,2025-10-24,New Orleans Pelicans,NO,116,146.0,4.0,San Antonio Spurs,SA,120,-163.0,-4.0,New Orleans,LA,,
+401809950,2025-10-24,Dallas Mavericks,DAL,107,-435.0,-9.5,Washington Wizards,WSH,117,358.0,9.5,Dallas,TX,,
+401809951,2025-10-24,Los Angeles Lakers,LAL,128,107.0,1.5,Minnesota Timberwolves,MIN,110,-118.0,-1.5,Los Angeles,CA,,
+401809952,2025-10-24,Portland Trail Blazers,POR,139,129.0,2.5,Golden State Warriors,GS,119,-143.0,-2.5,Portland,OR,,
+401809953,2025-10-24,Sacramento Kings,SAC,105,-205.0,-6.0,Utah Jazz,UTAH,104,182.0,6.0,Sacramento,CA,,
+401809954,2025-10-24,LA Clippers,LAC,129,-450.0,-10.0,Phoenix Suns,PHX,102,368.0,10.0,Inglewood,CA,,
+401809955,2025-10-25,Orlando Magic,ORL,98,-229.0,-6.0,Chicago Bulls,CHI,110,205.0,6.0,Orlando,FL,,
+401809956,2025-10-25,Atlanta Hawks,ATL,100,257.0,8.0,Oklahoma City Thunder,OKC,117,-292.0,-8.0,Atlanta,GA,,
+401809957,2025-10-25,Philadelphia 76ers,PHI,125,-181.0,-4.5,Charlotte Hornets,CHA,121,163.0,4.5,Philadelphia,PA,,
+401809958,2025-10-25,Memphis Grizzlies,MEM,128,-129.0,-2.0,Indiana Pacers,IND,103,117.0,2.0,Memphis,TN,,
+401809959,2025-10-25,Denver Nuggets,DEN,133,-694.0,-13.0,Phoenix Suns,PHX,111,571.0,13.0,Denver,CO,,
+401809960,2025-10-26,San Antonio Spurs,SA,118,,,Brooklyn Nets,BKN,107,,,San Antonio,TX,,
+401809961,2025-10-26,Detroit Pistons,DET,119,-132.0,-2.5,Boston Celtics,BOS,113,119.0,2.5,Detroit,MI,,
+401809962,2025-10-26,Cleveland Cavaliers,CLE,118,-244.0,-6.5,Milwaukee Bucks,MIL,113,217.0,6.5,Cleveland,OH,,
+401809963,2025-10-26,Miami Heat,MIA,115,132.0,2.5,New York Knicks,NY,107,-145.0,-2.5,Miami,FL,,
+401809964,2025-10-26,Washington Wizards,WSH,113,-120.0,-1.5,Charlotte Hornets,CHA,139,109.0,1.5,Washington,DC,,
+401809965,2025-10-26,Minnesota Timberwolves,MIN,114,-568.0,-12.5,Indiana Pacers,IND,110,475.0,12.5,Minneapolis,MN,,
+401809966,2025-10-26,Dallas Mavericks,DAL,139,100.0,1.0,Toronto Raptors,TOR,129,-111.0,-1.0,Dallas,TX,,
+401809967,2025-10-26,LA Clippers,LAC,114,-310.0,-8.0,Portland Trail Blazers,POR,107,272.0,8.0,Inglewood,CA,,
+401809968,2025-10-26,Sacramento Kings,SAC,120,-153.0,-3.5,Los Angeles Lakers,LAL,127,139.0,3.5,Sacramento,CA,,
+401809245,2025-10-27,Detroit Pistons,DET,95,122.0,2.5,Cleveland Cavaliers,CLE,116,-134.0,-2.5,Detroit,MI,,
+401809969,2025-10-27,Philadelphia 76ers,PHI,136,194.0,5.5,Orlando Magic,ORL,124,-216.0,-5.5,Philadelphia,PA,,
+401809970,2025-10-27,Chicago Bulls,CHI,128,125.0,3.0,Atlanta Hawks,ATL,123,-138.0,-3.0,Chicago,IL,,
+401809971,2025-10-27,Houston Rockets,HOU,137,-1010.0,-16.0,Brooklyn Nets,BKN,109,790.0,16.0,Houston,TX,,
+401809972,2025-10-27,New Orleans Pelicans,NO,90,169.0,4.5,Boston Celtics,BOS,122,-188.0,-4.5,New Orleans,LA,,
+401809973,2025-10-27,San Antonio Spurs,SA,121,-168.0,-4.5,Toronto Raptors,TOR,103,152.0,4.5,San Antonio,TX,,
+401809974,2025-10-27,Dallas Mavericks,DAL,94,310.0,8.5,Oklahoma City Thunder,OKC,101,-357.0,-8.5,Dallas,TX,,
+401809975,2025-10-27,Utah Jazz,UTAH,138,-116.0,-1.0,Phoenix Suns,PHX,134,106.0,1.0,Salt Lake City,UT,,
+401809246,2025-10-27,Minnesota Timberwolves,MIN,114,201.0,6.5,Denver Nuggets,DEN,127,-225.0,-6.5,Minneapolis,MN,,
+401809976,2025-10-27,Golden State Warriors,GS,131,-327.0,-8.0,Memphis Grizzlies,MEM,118,286.0,8.0,San Francisco,CA,,
+401809977,2025-10-27,Los Angeles Lakers,LAL,108,124.0,3.0,Portland Trail Blazers,POR,122,-137.0,-3.0,Los Angeles,CA,,
+401809978,2025-10-28,Washington Wizards,WSH,134,170.0,5.0,Philadelphia 76ers,PHI,139,-191.0,-5.0,Washington,DC,,
+401809979,2025-10-28,Miami Heat,MIA,144,-202.0,-5.5,Charlotte Hornets,CHA,117,179.0,5.5,Miami,FL,,
+401809980,2025-10-28,Milwaukee Bucks,MIL,121,,,New York Knicks,NY,111,,,Milwaukee,WI,,
+401809981,2025-10-28,Oklahoma City Thunder,OKC,107,-1887.0,-18.5,Sacramento Kings,SAC,101,1164.0,18.5,Oklahoma City,OK,,
+401809982,2025-10-28,Golden State Warriors,GS,98,,,LA Clippers,LAC,79,,,San Francisco,CA,,
+401809986,2025-10-29,Toronto Raptors,TOR,121,191.0,5.5,Houston Rockets,HOU,139,-216.0,-5.5,Toronto,ON,,
+401809983,2025-10-29,Boston Celtics,BOS,125,148.0,3.5,Cleveland Cavaliers,CLE,105,-165.0,-3.5,Boston,MA,,
+401809984,2025-10-29,Detroit Pistons,DET,135,111.0,2.0,Orlando Magic,ORL,116,-122.0,-2.0,Detroit,MI,,
+401809985,2025-10-29,Brooklyn Nets,BKN,112,283.0,8.5,Atlanta Hawks,ATL,117,-332.0,-8.5,Brooklyn,NY,,
+401809987,2025-10-29,Chicago Bulls,CHI,126,-185.0,-5.0,Sacramento Kings,SAC,113,165.0,5.0,Chicago,IL,,
+401809988,2025-10-29,Dallas Mavericks,DAL,107,-234.0,-6.0,Indiana Pacers,IND,105,206.0,6.0,Dallas,TX,,
+401809989,2025-10-29,Denver Nuggets,DEN,122,-667.0,-12.5,New Orleans Pelicans,NO,88,515.0,12.5,Denver,CO,,
+401809990,2025-10-29,Utah Jazz,UTAH,134,131.0,3.0,Portland Trail Blazers,POR,136,-146.0,-3.0,Salt Lake City,UT,,
+401809991,2025-10-29,Minnesota Timberwolves,MIN,115,-276.0,-7.5,Los Angeles Lakers,LAL,116,239.0,7.5,Minneapolis,MN,,
+401809992,2025-10-29,Phoenix Suns,PHX,113,115.0,2.5,Memphis Grizzlies,MEM,114,-130.0,-2.5,Phoenix,AZ,,
+401809993,2025-10-30,Charlotte Hornets,CHA,107,122.0,2.5,Orlando Magic,ORL,123,-135.0,-2.5,Charlotte,NC,,
+401809994,2025-10-30,Milwaukee Bucks,MIL,120,,,Golden State Warriors,GS,110,,,Milwaukee,WI,,
+401809995,2025-10-30,Oklahoma City Thunder,OKC,127,,,Washington Wizards,WSH,108,,,Oklahoma City,OK,,
+401809996,2025-10-30,San Antonio Spurs,SA,107,,,Miami Heat,MIA,101,,,San Antonio,TX,,
+401809502,2025-10-31,Indiana Pacers,IND,108,114.0,2.5,Atlanta Hawks,ATL,128,-126.0,-2.5,Indianapolis,IN,,
+401809503,2025-10-31,Philadelphia 76ers,PHI,108,103.0,1.0,Boston Celtics,BOS,109,-114.0,-1.0,Philadelphia,PA,,
+401809504,2025-10-31,Cleveland Cavaliers,CLE,101,-265.0,-6.5,Toronto Raptors,TOR,112,230.0,6.5,Cleveland,OH,,
+401809505,2025-10-31,Chicago Bulls,CHI,135,163.0,5.0,New York Knicks,NY,125,-183.0,-5.0,Chicago,IL,,
+401809506,2025-10-31,Memphis Grizzlies,MEM,112,117.0,2.0,Los Angeles Lakers,LAL,117,-129.0,-2.0,Memphis,TN,,
+401809507,2025-10-31,Phoenix Suns,PHX,118,-148.0,-3.0,Utah Jazz,UTAH,96,133.0,3.0,Phoenix,AZ,,
+401809508,2025-10-31,Portland Trail Blazers,POR,109,186.0,5.0,Denver Nuggets,DEN,107,-210.0,-5.0,Portland,OR,,
+401809509,2025-10-31,LA Clippers,LAC,126,-521.0,-11.0,New Orleans Pelicans,NO,124,418.0,11.0,Inglewood,CA,,
+401809997,2025-11-01,Milwaukee Bucks,MIL,133,-259.0,-7.0,Sacramento Kings,SAC,135,220.0,7.0,Milwaukee,WI,,
+401809998,2025-11-01,Charlotte Hornets,CHA,105,152.0,4.5,Minnesota Timberwolves,MIN,122,-173.0,-4.5,Charlotte,NC,,
+401809999,2025-11-01,Indiana Pacers,IND,114,389.0,11.0,Golden State Warriors,GS,109,-478.0,-11.0,Indianapolis,IN,,
+401810000,2025-11-01,Washington Wizards,WSH,94,313.0,9.0,Orlando Magic,ORL,125,-373.0,-9.0,Washington,DC,,
+401810001,2025-11-01,Boston Celtics,BOS,101,173.0,5.5,Houston Rockets,HOU,128,-194.0,-5.5,Boston,MA,,
+401810002,2025-11-01,Detroit Pistons,DET,122,-288.0,-8.0,Dallas Mavericks,DAL,110,249.0,8.0,Mexico City,,,
+401810003,2025-11-02,Oklahoma City Thunder,OKC,137,-662.0,-13.0,New Orleans Pelicans,NO,106,512.0,13.0,Oklahoma City,OK,,
+401810004,2025-11-02,Brooklyn Nets,BKN,105,176.0,5.0,Philadelphia 76ers,PHI,129,-197.0,-5.0,Brooklyn,NY,,
+401810005,2025-11-02,Charlotte Hornets,CHA,126,104.0,1.5,Utah Jazz,UTAH,103,-114.0,-1.5,Charlotte,NC,,
+401810006,2025-11-02,Cleveland Cavaliers,CLE,117,-233.0,-6.0,Atlanta Hawks,ATL,109,205.0,6.0,Cleveland,OH,,
+401810007,2025-11-02,Toronto Raptors,TOR,117,-179.0,-4.5,Memphis Grizzlies,MEM,104,160.0,4.5,Toronto,ON,,
+401810008,2025-11-02,New York Knicks,NY,128,-280.0,-7.5,Chicago Bulls,CHI,116,242.0,7.5,New York,NY,,
+401810009,2025-11-02,Phoenix Suns,PHX,130,185.0,5.5,San Antonio Spurs,SA,118,-208.0,-5.5,Phoenix,AZ,,
+401810010,2025-11-02,Los Angeles Lakers,LAL,130,-186.0,-4.5,Miami Heat,MIA,120,166.0,4.5,Los Angeles,CA,,
+401810011,2025-11-03,Brooklyn Nets,BKN,109,348.0,9.5,Minnesota Timberwolves,MIN,125,-420.0,-9.5,Brooklyn,NY,,
+401810012,2025-11-03,Indiana Pacers,IND,115,198.0,6.0,Milwaukee Bucks,MIL,117,-224.0,-6.0,Indianapolis,IN,,
+401810013,2025-11-03,Boston Celtics,BOS,103,-450.0,-10.5,Utah Jazz,UTAH,105,369.0,10.5,Boston,MA,,
+401810014,2025-11-03,New York Knicks,NY,119,-645.0,-12.5,Washington Wizards,WSH,102,502.0,12.5,New York,NY,,
+401810015,2025-11-03,Houston Rockets,HOU,110,-633.0,-12.5,Dallas Mavericks,DAL,102,491.0,12.5,Houston,TX,,
+401810016,2025-11-03,Memphis Grizzlies,MEM,106,160.0,4.5,Detroit Pistons,DET,114,-179.0,-4.5,Memphis,TN,,
+401810017,2025-11-03,Denver Nuggets,DEN,130,-556.0,-11.0,Sacramento Kings,SAC,124,423.0,11.0,Denver,CO,,
+401810018,2025-11-03,Portland Trail Blazers,POR,115,-333.0,-8.5,Los Angeles Lakers,LAL,123,283.0,8.5,Portland,OR,,
+401810019,2025-11-03,LA Clippers,LAC,119,-302.0,-8.0,Miami Heat,MIA,120,259.0,8.0,Inglewood,CA,,
+401810020,2025-11-04,Toronto Raptors,TOR,128,-129.0,-2.0,Milwaukee Bucks,MIL,100,117.0,2.0,Toronto,ON,,
+401810021,2025-11-04,Atlanta Hawks,ATL,127,147.0,3.5,Orlando Magic,ORL,112,-164.0,-3.5,Atlanta,GA,,
+401810022,2025-11-04,Chicago Bulls,CHI,113,-124.0,-2.0,Philadelphia 76ers,PHI,111,112.0,2.0,Chicago,IL,,
+401810023,2025-11-04,New Orleans Pelicans,NO,116,-143.0,-2.5,Charlotte Hornets,CHA,112,129.0,2.5,New Orleans,LA,,
+401810024,2025-11-04,Golden State Warriors,GS,118,-405.0,-9.5,Phoenix Suns,PHX,107,336.0,9.5,San Francisco,CA,,
+401810025,2025-11-04,LA Clippers,LAC,107,260.0,8.5,Oklahoma City Thunder,OKC,126,-302.0,-8.5,Inglewood,CA,,
+401810026,2025-11-05,Cleveland Cavaliers,CLE,132,-467.0,-11.5,Philadelphia 76ers,PHI,121,381.0,11.5,Cleveland,OH,,
+401810027,2025-11-05,Detroit Pistons,DET,114,-417.0,-10.0,Utah Jazz,UTAH,103,345.0,10.0,Detroit,MI,,
+401810028,2025-11-05,Indiana Pacers,IND,103,-240.0,-6.5,Brooklyn Nets,BKN,112,211.0,6.5,Indianapolis,IN,,
+401810029,2025-11-05,Boston Celtics,BOS,136,-633.0,-12.5,Washington Wizards,WSH,107,492.0,12.5,Boston,MA,,
+401810030,2025-11-05,New York Knicks,NY,137,-154.0,-3.5,Minnesota Timberwolves,MIN,114,136.0,3.5,New York,NY,,
+401810031,2025-11-05,Memphis Grizzlies,MEM,109,255.0,7.5,Houston Rockets,HOU,124,-298.0,-7.5,Memphis,TN,,
+401810032,2025-11-05,Dallas Mavericks,DAL,99,-289.0,-8.5,New Orleans Pelicans,NO,101,249.0,8.5,Dallas,TX,,
+401810033,2025-11-05,Denver Nuggets,DEN,122,-375.0,-9.5,Miami Heat,MIA,112,314.0,9.5,Denver,CO,,
+401810034,2025-11-05,Los Angeles Lakers,LAL,118,-109.0,-1.0,San Antonio Spurs,SA,116,-101.0,1.0,Los Angeles,CA,,
+401810035,2025-11-05,Portland Trail Blazers,POR,121,147.0,4.0,Oklahoma City Thunder,OKC,119,-164.0,-4.0,Portland,OR,,
+401810036,2025-11-05,Sacramento Kings,SAC,121,-136.0,-2.5,Golden State Warriors,GS,116,123.0,2.5,Sacramento,CA,,
+401810037,2025-11-06,Phoenix Suns,PHX,115,-137.0,-2.5,LA Clippers,LAC,102,124.0,2.5,Phoenix,AZ,,
+401809510,2025-11-07,Orlando Magic,ORL,123,-159.0,-3.5,Boston Celtics,BOS,110,143.0,3.5,Orlando,FL,,
+401809511,2025-11-07,Washington Wizards,WSH,115,593.0,13.5,Cleveland Cavaliers,CLE,148,-794.0,-13.5,Washington,DC,,
+401809512,2025-11-07,Atlanta Hawks,ATL,97,-134.0,-2.0,Toronto Raptors,TOR,109,121.0,2.0,Atlanta,GA,,
+401809773,2025-11-07,Brooklyn Nets,BKN,107,381.0,10.5,Detroit Pistons,DET,125,-467.0,-10.5,Brooklyn,NY,,
+401809774,2025-11-07,San Antonio Spurs,SA,121,151.0,4.0,Houston Rockets,HOU,110,-169.0,-4.0,San Antonio,TX,,
+401809775,2025-11-07,Miami Heat,MIA,126,-253.0,-7.0,Charlotte Hornets,CHA,108,220.0,7.0,Miami,FL,,
+401809776,2025-11-07,Memphis Grizzlies,MEM,118,-177.0,-4.0,Dallas Mavericks,DAL,104,159.0,4.0,Memphis,TN,,
+401809777,2025-11-07,Milwaukee Bucks,MIL,126,-168.0,-4.5,Chicago Bulls,CHI,110,151.0,4.5,Milwaukee,WI,,
+401809778,2025-11-07,Minnesota Timberwolves,MIN,137,-625.0,-12.5,Utah Jazz,UTAH,97,489.0,12.5,Minneapolis,MN,,
+401809779,2025-11-07,Denver Nuggets,DEN,129,-410.0,-9.5,Golden State Warriors,GS,104,340.0,9.5,Denver,CO,,
+401809780,2025-11-07,Sacramento Kings,SAC,101,459.0,11.5,Oklahoma City Thunder,OKC,132,-581.0,-11.5,Sacramento,CA,,
+401810038,2025-11-08,Washington Wizards,WSH,105,177.0,5.5,Dallas Mavericks,DAL,111,-199.0,-5.5,Washington,DC,,
+401810039,2025-11-08,Philadelphia 76ers,PHI,130,-194.0,-5.0,Toronto Raptors,TOR,120,173.0,5.0,Philadelphia,PA,,
+401810040,2025-11-08,Atlanta Hawks,ATL,122,167.0,4.5,Los Angeles Lakers,LAL,102,-188.0,-4.5,Atlanta,GA,,
+401810041,2025-11-08,Cleveland Cavaliers,CLE,128,-332.0,-8.5,Chicago Bulls,CHI,122,283.0,8.5,Cleveland,OH,,
+401810042,2025-11-08,Miami Heat,MIA,136,141.0,4.0,Portland Trail Blazers,POR,131,-157.0,-4.0,Miami,FL,,
+401810043,2025-11-08,San Antonio Spurs,SA,126,-541.0,-11.0,New Orleans Pelicans,NO,119,430.0,11.0,San Antonio,TX,,
+401810044,2025-11-08,Denver Nuggets,DEN,117,-476.0,-10.5,Indiana Pacers,IND,100,373.0,10.5,Denver,CO,,
+401810045,2025-11-08,LA Clippers,LAC,103,-196.0,-5.0,Phoenix Suns,PHX,114,175.0,5.0,Inglewood,CA,,
+401810046,2025-11-09,Milwaukee Bucks,MIL,115,151.0,4.0,Houston Rockets,HOU,122,-168.0,-4.0,Milwaukee,WI,,
+401810047,2025-11-09,New York Knicks,NY,134,-1149.0,-15.5,Brooklyn Nets,BKN,98,796.0,15.5,New York,NY,,
+401810048,2025-11-09,Orlando Magic,ORL,107,-155.0,-4.0,Boston Celtics,BOS,111,140.0,4.0,Orlando,FL,,
+401810049,2025-11-09,Memphis Grizzlies,MEM,100,399.0,10.5,Oklahoma City Thunder,OKC,114,-493.0,-10.5,Memphis,TN,,
+401810050,2025-11-09,Philadelphia 76ers,PHI,108,160.0,4.5,Detroit Pistons,DET,111,-178.0,-4.5,Philadelphia,PA,,
+401810051,2025-11-09,Golden State Warriors,GS,114,-599.0,-13.0,Indiana Pacers,IND,83,470.0,13.0,San Francisco,CA,,
+401810052,2025-11-09,Sacramento Kings,SAC,117,182.0,5.0,Minnesota Timberwolves,MIN,144,-205.0,-5.0,Sacramento,CA,,
+401810053,2025-11-10,Charlotte Hornets,CHA,111,291.0,8.5,Los Angeles Lakers,LAL,121,-345.0,-8.5,Charlotte,NC,,
+401810054,2025-11-10,Detroit Pistons,DET,137,-606.0,-11.5,Washington Wizards,WSH,135,475.0,11.5,Detroit,MI,,
+401810055,2025-11-10,Orlando Magic,ORL,115,-122.0,-2.0,Portland Trail Blazers,POR,112,111.0,2.0,Orlando,FL,,
+401810056,2025-11-10,Miami Heat,MIA,140,243.0,7.5,Cleveland Cavaliers,CLE,138,-280.0,-7.5,Miami,FL,,
+401810057,2025-11-10,Chicago Bulls,CHI,117,169.0,5.0,San Antonio Spurs,SA,121,-189.0,-5.0,Chicago,IL,,
+401810058,2025-11-10,Dallas Mavericks,DAL,114,123.0,3.0,Milwaukee Bucks,MIL,116,-136.0,-3.0,Dallas,TX,,
+401810059,2025-11-10,Phoenix Suns,PHX,121,-358.0,-8.5,New Orleans Pelicans,NO,98,302.0,8.5,Phoenix,AZ,,
+401810060,2025-11-10,Utah Jazz,UTAH,113,249.0,7.5,Minnesota Timberwolves,MIN,120,-289.0,-7.5,Salt Lake City,UT,,
+401810061,2025-11-10,LA Clippers,LAC,102,-189.0,-5.0,Atlanta Hawks,ATL,105,168.0,5.0,Inglewood,CA,,
+401810062,2025-11-11,Brooklyn Nets,BKN,109,342.0,10.0,Toronto Raptors,TOR,119,-413.0,-10.0,Brooklyn,NY,,
+401810063,2025-11-11,New York Knicks,NY,133,-403.0,-10.0,Memphis Grizzlies,MEM,120,335.0,10.0,New York,NY,,
+401810064,2025-11-11,Philadelphia 76ers,PHI,102,111.0,1.5,Boston Celtics,BOS,100,-122.0,-1.5,Philadelphia,PA,,
+401810065,2025-11-11,Oklahoma City Thunder,OKC,126,-309.0,-7.5,Golden State Warriors,GS,102,264.0,7.5,Oklahoma City,OK,,
+401810066,2025-11-11,Utah Jazz,UTAH,152,128.0,3.0,Indiana Pacers,IND,128,-142.0,-3.0,Salt Lake City,UT,,
+401810067,2025-11-11,Sacramento Kings,SAC,108,284.0,8.5,Denver Nuggets,DEN,122,-333.0,-8.5,Sacramento,CA,,
+401810068,2025-11-12,Charlotte Hornets,CHA,111,125.0,2.0,Milwaukee Bucks,MIL,100,-138.0,-2.0,Charlotte,NC,,
+401810069,2025-11-12,Detroit Pistons,DET,124,128.0,2.5,Chicago Bulls,CHI,113,-142.0,-2.5,Detroit,MI,,
+401810070,2025-11-12,New York Knicks,NY,107,-170.0,-4.0,Orlando Magic,ORL,124,152.0,4.0,New York,NY,,
+401810071,2025-11-12,Boston Celtics,BOS,131,-307.0,-8.5,Memphis Grizzlies,MEM,95,263.0,8.5,Boston,MA,,
+401810072,2025-11-12,Miami Heat,MIA,116,-192.0,-5.5,Cleveland Cavaliers,CLE,130,171.0,5.5,Miami,FL,,
+401810073,2025-11-12,Houston Rockets,HOU,135,-1449.0,-17.0,Washington Wizards,WSH,112,951.0,17.0,Houston,TX,,
+401810074,2025-11-12,New Orleans Pelicans,NO,117,277.0,8.0,Portland Trail Blazers,POR,125,-325.0,-8.0,New Orleans,LA,,
+401810075,2025-11-12,San Antonio Spurs,SA,120,-161.0,-3.5,Golden State Warriors,GS,125,145.0,3.5,San Antonio,TX,,
+401810076,2025-11-12,Dallas Mavericks,DAL,114,118.0,2.0,Phoenix Suns,PHX,123,-130.0,-2.0,Dallas,TX,,
+401810077,2025-11-12,Oklahoma City Thunder,OKC,121,-313.0,-8.0,Los Angeles Lakers,LAL,92,268.0,8.0,Oklahoma City,OK,,
+401810078,2025-11-12,Sacramento Kings,SAC,100,151.0,4.5,Atlanta Hawks,ATL,133,-168.0,-4.5,Sacramento,CA,,
+401810079,2025-11-12,LA Clippers,LAC,116,170.0,4.5,Denver Nuggets,DEN,130,-191.0,-4.5,Inglewood,CA,,
+401810080,2025-11-13,Cleveland Cavaliers,CLE,113,-267.0,-7.5,Toronto Raptors,TOR,126,232.0,7.5,Cleveland,OH,,
+401810081,2025-11-13,Phoenix Suns,PHX,133,-168.0,-3.5,Indiana Pacers,IND,98,151.0,3.5,Phoenix,AZ,,
+401810082,2025-11-13,Utah Jazz,UTAH,122,113.0,2.0,Atlanta Hawks,ATL,132,-124.0,-2.0,Salt Lake City,UT,,
+401809781,2025-11-14,New York Knicks,NY,140,-239.0,-6.5,Miami Heat,MIA,132,210.0,6.5,New York,NY,,
+401809782,2025-11-14,Orlando Magic,ORL,105,-893.0,-14.0,Brooklyn Nets,BKN,98,651.0,14.0,Orlando,FL,,
+401809783,2025-11-14,Detroit Pistons,DET,114,-111.0,-1.0,Philadelphia 76ers,PHI,105,100.0,1.0,Detroit,MI,,
+401809784,2025-11-14,Houston Rockets,HOU,140,-296.0,-7.5,Portland Trail Blazers,POR,116,254.0,7.5,Houston,TX,,
+401809785,2025-11-14,Milwaukee Bucks,MIL,147,-360.0,-9.0,Charlotte Hornets,CHA,134,303.0,9.0,Milwaukee,WI,,
+401809786,2025-11-14,Minnesota Timberwolves,MIN,124,-578.0,-11.5,Sacramento Kings,SAC,110,458.0,11.5,Minneapolis,MN,,
+401809787,2025-11-14,New Orleans Pelicans,NO,104,375.0,9.5,Los Angeles Lakers,LAL,118,-459.0,-9.5,New Orleans,LA,,
+401809788,2025-11-14,Dallas Mavericks,DAL,127,120.0,2.5,LA Clippers,LAC,133,-133.0,-2.5,Dallas,TX,,
+401809789,2025-11-14,San Antonio Spurs,SA,108,-143.0,-2.5,Golden State Warriors,GS,109,129.0,2.5,San Antonio,TX,,
+401810083,2025-11-15,Cleveland Cavaliers,CLE,108,-543.0,-11.5,Memphis Grizzlies,MEM,100,433.0,11.5,Cleveland,OH,,
+401810084,2025-11-15,Charlotte Hornets,CHA,96,964.0,17.0,Oklahoma City Thunder,OKC,109,-1471.0,-17.0,Charlotte,NC,,
+401810085,2025-11-15,Indiana Pacers,IND,111,220.0,6.5,Toronto Raptors,TOR,129,-253.0,-6.5,Indianapolis,IN,,
+401810086,2025-11-15,Milwaukee Bucks,MIL,95,-114.0,-1.0,Los Angeles Lakers,LAL,119,103.0,1.0,Milwaukee,WI,,
+401810087,2025-11-15,Minnesota Timberwolves,MIN,112,,,Denver Nuggets,DEN,123,,,Minneapolis,MN,,
+401810088,2025-11-16,Boston Celtics,BOS,121,-209.0,-6.0,LA Clippers,LAC,118,185.0,6.0,Boston,MA,,
+401810089,2025-11-16,San Antonio Spurs,SA,123,-222.0,-6.5,Sacramento Kings,SAC,110,196.0,6.5,San Antonio,TX,,
+401810090,2025-11-16,Washington Wizards,WSH,106,-138.0,-2.5,Brooklyn Nets,BKN,129,125.0,2.5,Washington,DC,,
+401810091,2025-11-16,Houston Rockets,HOU,117,-300.0,-7.5,Orlando Magic,ORL,113,258.0,7.5,Houston,TX,,
+401810092,2025-11-16,New Orleans Pelicans,NO,106,,,Golden State Warriors,GS,124,,,New Orleans,LA,,
+401810093,2025-11-16,Dallas Mavericks,DAL,138,139.0,3.5,Portland Trail Blazers,POR,133,-155.0,-3.5,Dallas,TX,,
+401810094,2025-11-16,Phoenix Suns,PHX,122,-117.0,-2.0,Atlanta Hawks,ATL,124,106.0,2.0,Phoenix,AZ,,
+401810095,2025-11-16,Utah Jazz,UTAH,150,,,Chicago Bulls,CHI,147,,,Salt Lake City,UT,,
+401810096,2025-11-17,Cleveland Cavaliers,CLE,118,-236.0,-5.5,Milwaukee Bucks,MIL,106,208.0,5.5,Cleveland,OH,,
+401810097,2025-11-17,Detroit Pistons,DET,127,-353.0,-8.5,Indiana Pacers,IND,112,289.0,8.5,Detroit,MI,,
+401810098,2025-11-17,Philadelphia 76ers,PHI,110,-194.0,-5.5,LA Clippers,LAC,108,173.0,5.5,Philadelphia,PA,,
+401810099,2025-11-17,Miami Heat,MIA,115,-115.0,-1.0,New York Knicks,NY,113,104.0,1.0,Miami,FL,,
+401810100,2025-11-17,Toronto Raptors,TOR,110,-332.0,-8.5,Charlotte Hornets,CHA,108,282.0,8.5,Toronto,ON,,
+401810101,2025-11-17,Minnesota Timberwolves,MIN,120,-800.0,-14.0,Dallas Mavericks,DAL,96,596.0,14.0,Minneapolis,MN,,
+401810102,2025-11-17,New Orleans Pelicans,NO,109,1146.0,17.5,Oklahoma City Thunder,OKC,126,-1852.0,-17.5,New Orleans,LA,,
+401810103,2025-11-17,Denver Nuggets,DEN,127,-806.0,-13.5,Chicago Bulls,CHI,130,602.0,13.5,Denver,CO,,
+401810104,2025-11-18,Orlando Magic,ORL,121,123.0,2.5,Golden State Warriors,GS,113,-136.0,-2.5,Orlando,FL,,
+401810105,2025-11-18,Brooklyn Nets,BKN,99,442.0,11.0,Boston Celtics,BOS,113,-556.0,-11.0,Brooklyn,NY,,
+401810106,2025-11-18,Atlanta Hawks,ATL,112,117.0,2.5,Detroit Pistons,DET,120,-130.0,-2.5,Atlanta,GA,,
+401810107,2025-11-18,San Antonio Spurs,SA,111,-217.0,-6.0,Memphis Grizzlies,MEM,101,192.0,6.0,San Antonio,TX,,
+401810108,2025-11-18,Los Angeles Lakers,LAL,140,-680.0,-13.0,Utah Jazz,UTAH,126,522.0,13.0,Los Angeles,CA,,
+401810109,2025-11-18,Portland Trail Blazers,POR,110,-136.0,-2.5,Phoenix Suns,PHX,127,123.0,2.5,Portland,OR,,
+401810110,2025-11-19,Cleveland Cavaliers,CLE,104,114.0,1.5,Houston Rockets,HOU,114,-126.0,-1.5,Cleveland,OH,,
+401810111,2025-11-19,Indiana Pacers,IND,127,108.0,2.0,Charlotte Hornets,CHA,118,-119.0,-2.0,Indianapolis,IN,,
+401810113,2025-11-19,Philadelphia 76ers,PHI,112,120.0,2.0,Toronto Raptors,TOR,121,-133.0,-2.0,Philadelphia,PA,,
+401810112,2025-11-19,Miami Heat,MIA,110,-388.0,-10.5,Golden State Warriors,GS,96,324.0,10.5,Miami,FL,,
+401810114,2025-11-19,Minnesota Timberwolves,MIN,120,-1333.0,-17.0,Washington Wizards,WSH,109,893.0,17.0,Minneapolis,MN,,
+401810115,2025-11-19,New Orleans Pelicans,NO,118,593.0,14.0,Denver Nuggets,DEN,125,-794.0,-14.0,New Orleans,LA,,
+401810116,2025-11-19,Oklahoma City Thunder,OKC,113,,,Sacramento Kings,SAC,99,,,Oklahoma City,OK,,
+401810117,2025-11-19,Dallas Mavericks,DAL,111,247.0,7.5,New York Knicks,NY,113,-287.0,-7.5,Dallas,TX,,
+401810118,2025-11-19,Portland Trail Blazers,POR,121,147.0,3.5,Chicago Bulls,CHI,122,-164.0,-3.5,Portland,OR,,
+401810119,2025-11-20,Orlando Magic,ORL,129,-221.0,-5.5,LA Clippers,LAC,101,195.0,5.5,Orlando,FL,,
+401810120,2025-11-20,Memphis Grizzlies,MEM,137,-148.0,-3.0,Sacramento Kings,SAC,96,133.0,3.0,Memphis,TN,,
+401810121,2025-11-20,Milwaukee Bucks,MIL,114,109.0,1.5,Philadelphia 76ers,PHI,123,-120.0,-1.5,Milwaukee,WI,,
+401810122,2025-11-20,San Antonio Spurs,SA,135,103.0,1.5,Atlanta Hawks,ATL,126,-113.0,-1.5,San Antonio,TX,,
+401809790,2025-11-21,Cleveland Cavaliers,CLE,120,-909.0,-14.5,Indiana Pacers,IND,109,661.0,14.5,Cleveland,OH,,
+401809791,2025-11-21,Boston Celtics,BOS,105,-952.0,-15.0,Brooklyn Nets,BKN,113,690.0,15.0,Boston,MA,,
+401809792,2025-11-21,Toronto Raptors,TOR,140,-926.0,-14.0,Washington Wizards,WSH,110,671.0,14.0,Toronto,ON,,
+401809793,2025-11-21,Chicago Bulls,CHI,107,-138.0,-2.5,Miami Heat,MIA,143,125.0,2.5,Chicago,IL,,
+401809794,2025-11-21,Dallas Mavericks,DAL,118,-168.0,-4.0,New Orleans Pelicans,NO,115,151.0,4.0,Dallas,TX,,
+401809795,2025-11-21,Phoenix Suns,PHX,114,154.0,4.5,Minnesota Timberwolves,MIN,113,-172.0,-4.5,Phoenix,AZ,,
+401809796,2025-11-21,Houston Rockets,HOU,109,-134.0,-2.5,Denver Nuggets,DEN,112,122.0,2.5,Houston,TX,,
+401809797,2025-11-21,Utah Jazz,UTAH,112,868.0,16.0,Oklahoma City Thunder,OKC,144,-1282.0,-16.0,Salt Lake City,UT,,
+401809798,2025-11-21,Golden State Warriors,GS,123,-386.0,-9.5,Portland Trail Blazers,POR,127,323.0,9.5,San Francisco,CA,,
+401810123,2025-11-22,Charlotte Hornets,CHA,116,,,LA Clippers,LAC,131,,,Charlotte,NC,,
+401810124,2025-11-22,Orlando Magic,ORL,133,-116.0,-1.5,New York Knicks,NY,121,105.0,1.5,Orlando,FL,,
+401810125,2025-11-22,New Orleans Pelicans,NO,98,360.0,9.5,Atlanta Hawks,ATL,115,-439.0,-9.5,New Orleans,LA,,
+401810126,2025-11-22,Chicago Bulls,CHI,121,-645.0,-12.5,Washington Wizards,WSH,120,500.0,12.5,Chicago,IL,,
+401810127,2025-11-22,Milwaukee Bucks,MIL,116,286.0,8.0,Detroit Pistons,DET,129,-337.0,-8.0,Milwaukee,WI,,
+401810128,2025-11-22,Dallas Mavericks,DAL,96,-109.0,-1.0,Memphis Grizzlies,MEM,102,-101.0,1.0,Dallas,TX,,
+401810129,2025-11-22,Denver Nuggets,DEN,123,-513.0,-10.5,Sacramento Kings,SAC,128,412.0,10.5,Denver,CO,,
+401810130,2025-11-23,Philadelphia 76ers,PHI,117,,,Miami Heat,MIA,127,,,Philadelphia,PA,,
+401810131,2025-11-23,Atlanta Hawks,ATL,113,-292.0,-7.5,Charlotte Hornets,CHA,110,245.0,7.5,Atlanta,GA,,
+401810132,2025-11-23,Boston Celtics,BOS,138,-177.0,-4.5,Orlando Magic,ORL,129,158.0,4.5,Boston,MA,,
+401810133,2025-11-23,Cleveland Cavaliers,CLE,120,-313.0,-7.5,LA Clippers,LAC,105,268.0,7.5,Cleveland,OH,,
+401810134,2025-11-23,Toronto Raptors,TOR,119,-654.0,-12.5,Brooklyn Nets,BKN,109,505.0,12.5,Toronto,ON,,
+401810135,2025-11-23,Oklahoma City Thunder,OKC,122,-1163.0,-15.5,Portland Trail Blazers,POR,95,809.0,15.5,Oklahoma City,OK,,
+401810136,2025-11-23,Phoenix Suns,PHX,111,-138.0,-2.5,San Antonio Spurs,SA,102,125.0,2.5,Phoenix,AZ,,
+401810137,2025-11-23,Utah Jazz,UTAH,106,333.0,9.0,Los Angeles Lakers,LAL,108,-400.0,-9.0,Salt Lake City,UT,,
+401810138,2025-11-24,Indiana Pacers,IND,117,337.0,9.5,Detroit Pistons,DET,122,-407.0,-9.5,Indianapolis,IN,,
+401810139,2025-11-24,Toronto Raptors,TOR,110,-118.0,-1.5,Cleveland Cavaliers,CLE,99,107.0,1.5,Toronto,ON,,
+401810140,2025-11-24,Brooklyn Nets,BKN,100,561.0,12.5,New York Knicks,NY,113,-741.0,-12.5,Brooklyn,NY,,
+401810141,2025-11-24,Miami Heat,MIA,106,-255.0,-7.5,Dallas Mavericks,DAL,102,223.0,7.5,Miami,FL,,
+401810142,2025-11-24,Memphis Grizzlies,MEM,115,281.0,8.0,Denver Nuggets,DEN,125,-330.0,-8.0,Memphis,TN,,
+401810143,2025-11-24,Milwaukee Bucks,MIL,103,-109.0,-1.0,Portland Trail Blazers,POR,115,-101.0,1.0,Milwaukee,WI,,
+401810144,2025-11-24,New Orleans Pelicans,NO,143,181.0,5.5,Chicago Bulls,CHI,130,-204.0,-5.5,New Orleans,LA,,
+401810145,2025-11-24,Phoenix Suns,PHX,92,199.0,6.5,Houston Rockets,HOU,114,-226.0,-6.5,Phoenix,AZ,,
+401810146,2025-11-24,Golden State Warriors,GS,134,-800.0,-14.5,Utah Jazz,UTAH,117,597.0,14.5,San Francisco,CA,,
+401810147,2025-11-24,Sacramento Kings,SAC,117,358.0,10.0,Minnesota Timberwolves,MIN,112,-435.0,-10.0,Sacramento,CA,,
+401809799,2025-11-25,Washington Wizards,WSH,132,429.0,11.0,Atlanta Hawks,ATL,113,-538.0,-11.0,Washington,DC,,
+401809800,2025-11-25,Philadelphia 76ers,PHI,103,160.0,4.0,Orlando Magic,ORL,144,-179.0,-4.0,Philadelphia,PA,,
+401809801,2025-11-25,Los Angeles Lakers,LAL,135,-265.0,-6.5,LA Clippers,LAC,118,230.0,6.5,Los Angeles,CA,,
+401809802,2025-11-26,Boston Celtics,BOS,117,129.0,3.0,Detroit Pistons,DET,114,-142.0,-3.0,Boston,MA,,
+401809803,2025-11-26,Charlotte Hornets,CHA,101,219.0,6.5,New York Knicks,NY,129,-250.0,-6.5,Charlotte,NC,,
+401809804,2025-11-26,Miami Heat,MIA,106,-431.0,-10.0,Milwaukee Bucks,MIL,103,355.0,10.0,Miami,FL,,
+401809805,2025-11-26,Toronto Raptors,TOR,97,-427.0,-10.5,Indiana Pacers,IND,95,353.0,10.5,Toronto,ON,,
+401809806,2025-11-26,Oklahoma City Thunder,OKC,113,-398.0,-9.5,Minnesota Timberwolves,MIN,105,331.0,9.5,Oklahoma City,OK,,
+401809807,2025-11-26,New Orleans Pelicans,NO,128,145.0,3.5,Memphis Grizzlies,MEM,133,-161.0,-3.5,New Orleans,LA,,
+401809808,2025-11-26,Golden State Warriors,GS,100,-141.0,-2.5,Houston Rockets,HOU,104,128.0,2.5,San Francisco,CA,,
+401809809,2025-11-26,Portland Trail Blazers,POR,102,-107.0,-1.0,San Antonio Spurs,SA,115,-103.0,1.0,Portland,OR,,
+401809810,2025-11-26,Sacramento Kings,SAC,100,158.0,4.0,Phoenix Suns,PHX,112,-176.0,-4.0,Sacramento,CA,,
+401809811,2025-11-28,Atlanta Hawks,ATL,130,213.0,6.5,Cleveland Cavaliers,CLE,123,-243.0,-6.5,Atlanta,GA,,
+401809812,2025-11-28,Brooklyn Nets,BKN,103,223.0,7.0,Philadelphia 76ers,PHI,115,-255.0,-7.0,Brooklyn,NY,,
+401809813,2025-11-28,Charlotte Hornets,CHA,123,134.0,3.0,Chicago Bulls,CHI,116,-148.0,-3.0,Charlotte,NC,,
+401809814,2025-11-28,Detroit Pistons,DET,109,-156.0,-3.5,Orlando Magic,ORL,112,141.0,3.5,Detroit,MI,,
+401809815,2025-11-28,Indiana Pacers,IND,119,-253.0,-6.5,Washington Wizards,WSH,86,220.0,6.5,Indianapolis,IN,,
+401809816,2025-11-28,New York Knicks,NY,118,-256.0,-7.5,Milwaukee Bucks,MIL,109,224.0,7.5,New York,NY,,
+401809817,2025-11-28,Oklahoma City Thunder,OKC,123,-990.0,-14.5,Phoenix Suns,PHX,119,708.0,14.5,Oklahoma City,OK,,
+401809818,2025-11-28,Denver Nuggets,DEN,136,-294.0,-7.5,San Antonio Spurs,SA,139,253.0,7.5,Denver,CO,,
+401809819,2025-11-28,Utah Jazz,UTAH,128,-130.0,-2.0,Sacramento Kings,SAC,119,118.0,2.0,Salt Lake City,UT,,
+401809820,2025-11-28,Los Angeles Lakers,LAL,129,-402.0,-9.5,Dallas Mavericks,DAL,119,334.0,9.5,Los Angeles,CA,,
+401809821,2025-11-28,LA Clippers,LAC,107,-254.0,-6.5,Memphis Grizzlies,MEM,112,222.0,6.5,Inglewood,CA,,
+401810148,2025-11-29,Minnesota Timberwolves,MIN,119,-279.0,-7.5,Boston Celtics,BOS,115,242.0,7.5,Minneapolis,MN,,
+401810149,2025-11-29,Charlotte Hornets,CHA,118,278.0,7.5,Toronto Raptors,TOR,111,-327.0,-7.5,Charlotte,NC,,
+401810150,2025-11-29,Indiana Pacers,IND,103,126.0,2.5,Chicago Bulls,CHI,101,-140.0,-2.5,Indianapolis,IN,,
+401810151,2025-11-29,Miami Heat,MIA,135,-163.0,-4.0,Detroit Pistons,DET,138,147.0,4.0,Miami,FL,,
+401810152,2025-11-29,Milwaukee Bucks,MIL,116,-585.0,-11.5,Brooklyn Nets,BKN,99,460.0,11.5,Milwaukee,WI,,
+401810153,2025-11-29,Golden State Warriors,GS,104,-353.0,-9.0,New Orleans Pelicans,NO,96,298.0,9.0,San Francisco,CA,,
+401810154,2025-11-29,Phoenix Suns,PHX,112,126.0,2.5,Denver Nuggets,DEN,130,-139.0,-2.5,Phoenix,AZ,,
+401810155,2025-11-29,LA Clippers,LAC,110,-332.0,-8.0,Dallas Mavericks,DAL,114,282.0,8.0,Inglewood,CA,,
+401810156,2025-11-30,Utah Jazz,UTAH,101,455.0,12.0,Houston Rockets,HOU,129,-575.0,-12.0,Salt Lake City,UT,,
+401810157,2025-11-30,Cleveland Cavaliers,CLE,115,-277.0,-7.0,Boston Celtics,BOS,117,240.0,7.0,Cleveland,OH,,
+401810158,2025-11-30,New York Knicks,NY,116,-324.0,-8.0,Toronto Raptors,TOR,94,276.0,8.0,New York,NY,,
+401810159,2025-11-30,Philadelphia 76ers,PHI,134,-126.0,-2.0,Atlanta Hawks,ATL,142,114.0,2.0,Philadelphia,PA,,
+401810160,2025-11-30,Portland Trail Blazers,POR,115,462.0,11.5,Oklahoma City Thunder,OKC,123,-588.0,-11.5,Portland,OR,,
+401810161,2025-11-30,Minnesota Timberwolves,MIN,125,-184.0,-5.0,San Antonio Spurs,SA,112,164.0,5.0,Minneapolis,MN,,
+401810162,2025-11-30,Sacramento Kings,SAC,107,127.0,3.0,Memphis Grizzlies,MEM,115,-141.0,-3.0,Sacramento,CA,,
+401810163,2025-11-30,Los Angeles Lakers,LAL,133,-1266.0,-15.5,New Orleans Pelicans,NO,121,862.0,15.5,Los Angeles,CA,,
+401810164,2025-12-01,Detroit Pistons,DET,99,-412.0,-9.5,Atlanta Hawks,ATL,98,341.0,9.5,Detroit,MI,,
+401810165,2025-12-01,Indiana Pacers,IND,119,165.0,5.0,Cleveland Cavaliers,CLE,135,-185.0,-5.0,Indianapolis,IN,,
+401810166,2025-12-01,Washington Wizards,WSH,129,365.0,10.0,Milwaukee Bucks,MIL,126,-444.0,-10.0,Washington,DC,,
+401810167,2025-12-01,Brooklyn Nets,BKN,116,159.0,4.5,Charlotte Hornets,CHA,103,-178.0,-4.5,Brooklyn,NY,,
+401810168,2025-12-01,Miami Heat,MIA,140,-248.0,-6.0,LA Clippers,LAC,123,217.0,6.0,Miami,FL,,
+401810169,2025-12-01,Orlando Magic,ORL,125,-373.0,-9.0,Chicago Bulls,CHI,120,313.0,9.0,Orlando,FL,,
+401810170,2025-12-01,Denver Nuggets,DEN,121,-541.0,-11.0,Dallas Mavericks,DAL,131,430.0,11.0,Denver,CO,,
+401810171,2025-12-01,Utah Jazz,UTAH,133,449.0,11.5,Houston Rockets,HOU,125,-568.0,-11.5,Salt Lake City,UT,,
+401810172,2025-12-01,Los Angeles Lakers,LAL,108,-206.0,-5.0,Phoenix Suns,PHX,125,183.0,5.0,Los Angeles,CA,,
+401810173,2025-12-02,Philadelphia 76ers,PHI,0,-850.0,,Washington Wizards,WSH,0,575.0,,Philadelphia,PA,,
+401810174,2025-12-02,Toronto Raptors,TOR,0,-218.0,,Portland Trail Blazers,POR,0,180.0,,Toronto,ON,,
+401810175,2025-12-02,Boston Celtics,BOS,0,-108.0,,New York Knicks,NY,0,-112.0,,Boston,MA,,
+401810176,2025-12-02,New Orleans Pelicans,NO,0,470.0,,Minnesota Timberwolves,MIN,0,-650.0,,New Orleans,LA,,
+401810177,2025-12-02,San Antonio Spurs,SA,0,-205.0,,Memphis Grizzlies,MEM,0,170.0,,San Antonio,TX,,
+401810178,2025-12-02,Golden State Warriors,GS,0,440.0,,Oklahoma City Thunder,OKC,0,-600.0,,San Francisco,CA,,
+401809837,2025-12-13,Orlando Magic,ORL,120,,,New York Knicks,NY,132,,,Las Vegas,NV,,
+401809838,2025-12-13,Oklahoma City Thunder,OKC,109,,,San Antonio Spurs,SA,111,,,Las Vegas,NV,,
+401836797,2025-12-14,Indiana Pacers,IND,0,-360.0,,Washington Wizards,WSH,0,285.0,,Indianapolis,IN,,
+401836799,2025-12-14,Cleveland Cavaliers,CLE,0,-520.0,,Charlotte Hornets,CHA,0,390.0,,Cleveland,OH,,
+401836798,2025-12-14,Atlanta Hawks,ATL,0,-205.0,,Philadelphia 76ers,PHI,0,170.0,,Atlanta,GA,,
+401836800,2025-12-14,Brooklyn Nets,BKN,0,105.0,,Milwaukee Bucks,MIL,0,-125.0,,Brooklyn,NY,,
+401836801,2025-12-14,Minnesota Timberwolves,MIN,0,-550.0,,Sacramento Kings,SAC,0,410.0,,Minneapolis,MN,,
+401836804,2025-12-14,Chicago Bulls,CHI,0,-198.0,,New Orleans Pelicans,NO,0,164.0,,Chicago,IL,,
+401839699,2025-12-14,Phoenix Suns,PHX,0,114.0,,Los Angeles Lakers,LAL,0,-135.0,,Phoenix,AZ,,
+401836802,2025-12-14,Portland Trail Blazers,POR,0,154.0,,Golden State Warriors,GS,0,-185.0,,Portland,OR,,
