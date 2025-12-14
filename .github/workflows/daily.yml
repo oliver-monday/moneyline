@@ -45,7 +45,7 @@ jobs:
       - name: Build dashboard
         run: python build_dashboard.py
 
-            # --- DIAGNOSTIC: LIST FILES AFTER DASHBOARD BUILD ---
+      # --- DIAGNOSTIC: LIST FILES AFTER DASHBOARD BUILD ---
       - name: List generated files
         run: |
           echo "===== REPO LISTING AFTER DASHBOARD BUILD ====="
@@ -69,7 +69,7 @@ jobs:
 
       # Upload site folder as the artifact Pages will deploy
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./site
 
