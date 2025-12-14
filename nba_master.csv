@@ -373,11 +373,11 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401836796,2025-12-12,Golden State Warriors,GS,120,-125.0,,Minnesota Timberwolves,MIN,127,105.0,,San Francisco,CA,,
 401809837,2025-12-13,Orlando Magic,ORL,120,145.0,,New York Knicks,NY,132,-170.0,,Las Vegas,NV,,
 401809838,2025-12-13,Oklahoma City Thunder,OKC,109,-450.0,,San Antonio Spurs,SA,111,350.0,,Las Vegas,NV,,
-401836797,2025-12-14,Indiana Pacers,IND,0,-360.0,,Washington Wizards,WSH,0,285.0,,Indianapolis,IN,T. Haliburton (OFS); A. Nesmith (Out); B. Sheppard (Out); Obi Toppin (Out),M. Branham (Out); B. Coulibaly (Out); C. Kispert (Out); K. Middleton (Out); Alex Sarr (Out)
-401836799,2025-12-14,Cleveland Cavaliers,CLE,0,-550.0,,Charlotte Hornets,CHA,0,410.0,,Cleveland,OH,S. Merrill (Out); E. Mobley (Out); L. Nance (Out); Max Strus (Out),L. Ball (Out); P. Connaughton (Out); Tre Mann (Out); C. Sexton (Out); G. Williams (Out)
-401836798,2025-12-14,Atlanta Hawks,ATL,0,-205.0,,Philadelphia 76ers,PHI,0,170.0,,Atlanta,GA,J. Toppin (OFS); N. Dante (Out); K. Porzingis (Out); Trae Young (Out),K. Oubre (Out); T. Watford (Out)
+401836797,2025-12-14,Indiana Pacers,IND,0,-410.0,,Washington Wizards,WSH,0,320.0,,Indianapolis,IN,T. Haliburton (OFS); A. Nesmith (Out); B. Sheppard (Out); Obi Toppin (Out),M. Branham (Out); B. Coulibaly (Out); C. Kispert (Out); K. Middleton (Out); Alex Sarr (Out)
+401836799,2025-12-14,Cleveland Cavaliers,CLE,0,-575.0,,Charlotte Hornets,CHA,0,425.0,,Cleveland,OH,S. Merrill (Out); E. Mobley (Out); L. Nance (Out); Max Strus (Out),L. Ball (Out); P. Connaughton (Out); Tre Mann (Out); C. Sexton (Out); G. Williams (Out)
+401836798,2025-12-14,Atlanta Hawks,ATL,0,-192.0,,Philadelphia 76ers,PHI,0,160.0,,Atlanta,GA,J. Toppin (OFS); N. Dante (Out); K. Porzingis (Out); Trae Young (Out),K. Oubre (Out); T. Watford (Out)
 401836800,2025-12-14,Brooklyn Nets,BKN,0,110.0,,Milwaukee Bucks,MIL,0,-130.0,,Brooklyn,NY,H. Highsmith (Out); Cam Thomas (Out),G. Antetokounmpo (Out); AJ Green (Out); T. Prince (Out)
-401836801,2025-12-14,Minnesota Timberwolves,MIN,0,-550.0,,Sacramento Kings,SAC,0,410.0,,Minneapolis,MN,M. Conley (Out),D. Eubanks (Out); D. Sabonis (Out)
+401836801,2025-12-14,Minnesota Timberwolves,MIN,0,-675.0,,Sacramento Kings,SAC,0,490.0,,Minneapolis,MN,M. Conley (Out),D. Eubanks (Out); D. Sabonis (Out)
 401836804,2025-12-14,Chicago Bulls,CHI,0,-198.0,,New Orleans Pelicans,NO,0,164.0,,Chicago,IL,N. Essengue (OFS),D. Murray (Out)
-401839699,2025-12-14,Phoenix Suns,PHX,0,105.0,,Los Angeles Lakers,LAL,0,-125.0,,Phoenix,AZ,J. Green (Out); I. Livers (Out),M. Kleber (Out); A. Reaves (Out)
+401839699,2025-12-14,Phoenix Suns,PHX,0,-105.0,,Los Angeles Lakers,LAL,0,-115.0,,Phoenix,AZ,J. Green (Out); I. Livers (Out),M. Kleber (Out); A. Reaves (Out)
 401836802,2025-12-14,Portland Trail Blazers,POR,0,154.0,,Golden State Warriors,GS,0,-185.0,,Portland,OR,D. Lillard (OFS); S. Henderson (Out); J. Holiday (Out); M. Thybulle (Out); B. Wesley (Out),Al Horford (Out)
