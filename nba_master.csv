@@ -386,4 +386,6 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401836805,2025-12-15,Utah Jazz,UTAH,140,105.0,,Dallas Mavericks,DAL,133,-125.0,,Salt Lake City,UT,,
 401836806,2025-12-15,Denver Nuggets,DEN,128,-118.0,,Houston Rockets,HOU,125,-102.0,,Denver,CO,,
 401836807,2025-12-15,LA Clippers,LAC,103,-185.0,,Memphis Grizzlies,MEM,121,154.0,,Inglewood,CA,,
-401809839,2025-12-16,New York Knicks,NY,0,-142.0,,San Antonio Spurs,SA,0,120.0,,Las Vegas,NV,M. McBride (Out); L. Shamet (Out),
+401809839,2025-12-16,New York Knicks,NY,124,-142.0,,San Antonio Spurs,SA,113,120.0,,Las Vegas,NV,,
+401810222,2025-12-17,Chicago Bulls,CHI,0,164.0,,Cleveland Cavaliers,CLE,0,-198.0,,Chicago,IL,N. Essengue (OFS),S. Merrill (Out); E. Mobley (Out); L. Nance (Out); Max Strus (Out)
+401810223,2025-12-17,Minnesota Timberwolves,MIN,0,-290.0,,Memphis Grizzlies,MEM,0,235.0,,Minneapolis,MN,M. Conley (Out),Zach Edey (Out); Ty Jerome (Out); J. Konchar (Out); S. Pippen (Out); J. Small (Out); C. Spencer (Out)
