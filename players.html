@@ -62,6 +62,13 @@
     <label>MIN avg ≥
       <input id="minFilter" type="number" value="0" />
     </label>
+
+    <label>Scope
+      <select id="scope">
+        <option value="all" selected>All players</option>
+        <option value="today">Playing Today</option>
+      </select>
+    </label>
   </div>
 
   <table id="t">
@@ -94,7 +101,84 @@ async function load() {
     return obj;
   });
 
-  document.getElementById("meta").textContent = `Loaded ${rows.length} players from ${url}`;
+  const metaEl = document.getElementById("meta");
+  metaEl.textContent = `Loaded ${rows.length} players from ${url}`;
+  // --- Build "Playing Today" team set from nba_master.csv (robust CSV parse for quoted commas) ---
+  function csvParse(text) {
+    const rows = [];
+    let row = [];
+    let cur = "";
+    let inQuotes = false;
+
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i];
+
+      if (inQuotes) {
+        if (c === '"') {
+          if (text[i + 1] === '"') { cur += '"'; i++; }
+          else { inQuotes = false; }
+        } else {
+          cur += c;
+        }
+      } else {
+        if (c === '"') inQuotes = true;
+        else if (c === ',') { row.push(cur); cur = ""; }
+        else if (c === '\n') { row.push(cur); rows.push(row); row = []; cur = ""; }
+        else if (c === '\r') { /* skip */ }
+        else { cur += c; }
+      }
+    }
+    if (cur.length || row.length) { row.push(cur); rows.push(row); }
+    return rows.filter(r => r.length > 1);
+  }
+
+  function todayLocalYYYYMMDD() {
+    const d = new Date();
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, "0");
+    const day = String(d.getDate()).padStart(2, "0");
+    return `${y}-${m}-${day}`;
+  }
+
+  async function fetchTodaySlate() {
+    const dateStr = todayLocalYYYYMMDD();
+    try {
+      const res2 = await fetch("./nba_master.csv", {cache: "no-store"});
+      if (!res2.ok) return { dateStr, teams: new Set(), games: 0 };
+
+      const txt = await res2.text();
+      const data = csvParse(txt);
+      if (!data.length) return { dateStr, teams: new Set(), games: 0 };
+
+      const header = data[0];
+      const idxDate = header.indexOf("game_date");
+      const idxH = header.indexOf("home_team_abbrev");
+      const idxA = header.indexOf("away_team_abbrev");
+      if (idxDate < 0 || idxH < 0 || idxA < 0) return { dateStr, teams: new Set(), games: 0 };
+
+      const teams = new Set();
+      let games = 0;
+      for (const r of data.slice(1)) {
+        if ((r[idxDate] || "").trim() !== dateStr) continue;
+        const h = (r[idxH] || "").trim().toUpperCase();
+        const a = (r[idxA] || "").trim().toUpperCase();
+        if (h) teams.add(h);
+        if (a) teams.add(a);
+        games++;
+      }
+      return { dateStr, teams, games };
+    } catch (e) {
+      return { dateStr, teams: new Set(), games: 0 };
+    }
+  }
+
+  const slate = await fetchTodaySlate();
+  if (slate.games > 0) {
+    metaEl.textContent = `Loaded ${rows.length} players from ${url} • Today (${slate.dateStr}): ${slate.games} games`;
+  } else {
+    metaEl.textContent = `Loaded ${rows.length} players from ${url} • Today (${slate.dateStr}): no games found`;
+  }
+
 
   function num(x) {
     const v = parseFloat(x);
@@ -126,6 +210,7 @@ async function load() {
   const w = document.getElementById("w");
   const sort = document.getElementById("sort");
   const minFilter = document.getElementById("minFilter");
+  const scope = document.getElementById("scope");
   const tbody = document.querySelector("#t tbody");
 
   function render() {
@@ -138,6 +223,11 @@ async function load() {
       if (needle && !String(r.player_name).toLowerCase().includes(needle)) return false;
       const m = num(r[minKey]);
       if (Number.isFinite(minMin) && Number.isFinite(m) && m < minMin) return false;
+      if (scope.value === "today") {
+        if (!slate.teams || slate.teams.size === 0) return false;
+        const team = String(r.last_team_abbrev || "").toUpperCase();
+        if (!slate.teams.has(team)) return false;
+      }
       return true;
     });
 
@@ -197,6 +287,7 @@ async function load() {
   w.addEventListener("change", render);
   sort.addEventListener("change", render);
   minFilter.addEventListener("input", render);
+  scope.addEventListener("change", render);
   render();
 }
 

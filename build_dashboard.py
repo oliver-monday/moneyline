@@ -630,6 +630,9 @@ def build_html(slate, team_results, league_tbl, outfile):
     CSS = """
     <style>
         body { font-family: Arial, sans-serif; margin: 30px; color: #222; }
+        .nav { display:flex; gap:12px; margin: 10px 0 18px; }
+        .nav a { text-decoration:none; padding:8px 10px; border:1px solid #ddd; border-radius:10px; color:#111; }
+        .nav a.active { background:#111; color:#fff; border-color:#111; }
         .game-card { border: 1px solid #ccc; padding: 17px; margin-top: 25px;
                      border-radius: 6px; background: #fafafa; }
         .game-high {
@@ -697,6 +700,7 @@ def build_html(slate, team_results, league_tbl, outfile):
     today_display = pd.Timestamp(today).strftime("%m-%d-%Y")
     w("<h1>NBA Moneyline Dashboard</h1>")
     w(f"<h2>{today_display}</h2>")
+    w('<div class="nav"><a class="active" href="./index.html">Games</a><a href="./players.html">Player Props</a></div>')
 
     # ---------- Per-game cards ----------
     for _, g in slate.iterrows():
