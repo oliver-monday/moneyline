@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Moneyline | Players</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 16px; }
+    .nav { display:flex; gap:12px; margin-bottom: 16px; }
+    .nav a { text-decoration:none; padding:8px 10px; border:1px solid #ddd; border-radius:10px; color:#111; }
+    .nav a.active { background:#111; color:#fff; border-color:#111; }
+
+    .controls { display:flex; flex-wrap:wrap; gap:12px; align-items:end; margin: 12px 0 18px; }
+    .controls label { font-size: 13px; color:#333; display:flex; flex-direction:column; gap:6px; }
+    input, select { padding:8px 10px; border:1px solid #ddd; border-radius:10px; min-width: 160px; }
+
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border-bottom: 1px solid #eee; padding: 10px 8px; text-align:left; font-size: 14px; vertical-align: top; }
+    th { position: sticky; top: 0; background: #fff; z-index: 1; }
+    .pill { display:inline-block; padding: 3px 8px; border-radius: 999px; border: 1px solid #ddd; font-size: 12px; margin: 2px 6px 2px 0; white-space: nowrap; }
+    .muted { color:#666; }
+    .pills { display:flex; flex-wrap:wrap; }
+    .rowtitle { display:flex; align-items:center; gap:8px; }
+    .tag { display:inline-block; padding: 3px 8px; border-radius: 999px; border: 1px solid #ddd; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="./index.html">Games</a>
+    <a class="active" href="./players.html">Players</a>
+  </div>
+
+  <h2 style="margin:0 0 6px;">Players: threshold floors (L5 / L10 / L20)</h2>
+  <div class="muted" id="meta">Loading…</div>
+
+  <div class="controls">
+    <label>Search
+      <input id="q" placeholder="e.g., Luka, Brunson" />
+    </label>
+
+    <label>Window
+      <select id="w">
+        <option value="5">L5</option>
+        <option value="10" selected>L10</option>
+        <option value="20">L20</option>
+      </select>
+    </label>
+
+    <label>Sort
+      <select id="sort">
+        <option value="min_avg">MIN avg</option>
+        <option value="pts_ge20_rate" selected>PTS ≥ 20 hit%</option>
+        <option value="pts_ge25_rate">PTS ≥ 25 hit%</option>
+        <option value="reb_ge8_rate">REB ≥ 8 hit%</option>
+        <option value="ast_ge6_rate">AST ≥ 6 hit%</option>
+        <option value="pts_min">PTS min</option>
+        <option value="reb_min">REB min</option>
+        <option value="ast_min">AST min</option>
+      </select>
+    </label>
+
+    <label>MIN avg ≥
+      <input id="minFilter" type="number" value="0" />
+    </label>
+  </div>
+
+  <table id="t">
+    <thead>
+      <tr>
+        <th style="min-width:200px;">Player</th>
+        <th style="min-width:110px;">Team</th>
+        <th style="min-width:120px;">MIN</th>
+        <th style="min-width:280px;">PTS (hit counts)</th>
+        <th style="min-width:280px;">REB (hit counts)</th>
+        <th style="min-width:280px;">AST (hit counts)</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+<script>
+async function load() {
+  const url = "./data/player_snapshot.csv";
+  const res = await fetch(url, {cache: "no-store"});
+  if (!res.ok) throw new Error("Failed to fetch " + url + " (" + res.status + ")");
+  const text = await res.text();
+
+  const lines = text.trim().split(/\r?\n/);
+  const headers = lines[0].split(",");
+  const rows = lines.slice(1).map(line => {
+    const parts = line.split(",");
+    const obj = {};
+    headers.forEach((h, i) => obj[h] = parts[i] ?? "");
+    return obj;
+  });
+
+  document.getElementById("meta").textContent = `Loaded ${rows.length} players from ${url}`;
+
+  function num(x) {
+    const v = parseFloat(x);
+    return Number.isFinite(v) ? v : NaN;
+  }
+  function fmt(x, d=1) {
+    const v = num(x);
+    if (!Number.isFinite(v)) return "—";
+    return v.toFixed(d);
+  }
+  function hitStr(r, stat, t, win) {
+    const hits = parseInt(r[`${stat}_ge${t}_hits_${win}`] || "0", 10);
+    const gp = parseInt(r[`gp_${win}`] || "0", 10);
+    if (!gp) return `${t}+ : —`;
+    return `${t}+ : ${hits}/${gp}`;
+  }
+  function sortVal(r, sortKey, win) {
+    const col = `${sortKey}_${win}`;
+    const v = num(r[col]);
+    if (Number.isFinite(v)) return v;
+    if (sortKey.endsWith("_rate")) return -1;
+    return -1e9;
+  }
+
+  const PTS_T = [10,15,20,25,30,35];
+  const RA_T  = [2,4,6,8,10,12,14];
+
+  const q = document.getElementById("q");
+  const w = document.getElementById("w");
+  const sort = document.getElementById("sort");
+  const minFilter = document.getElementById("minFilter");
+  const tbody = document.querySelector("#t tbody");
+
+  function render() {
+    const win = w.value;
+    const needle = q.value.trim().toLowerCase();
+    const minMin = parseFloat(minFilter.value || "0");
+    const minKey = `min_avg_${win}`;
+
+    let out = rows.filter(r => {
+      if (needle && !String(r.player_name).toLowerCase().includes(needle)) return false;
+      const m = num(r[minKey]);
+      if (Number.isFinite(minMin) && Number.isFinite(m) && m < minMin) return false;
+      return true;
+    });
+
+    const sortKey = sort.value;
+    out.sort((a, b) => sortVal(b, sortKey, win) - sortVal(a, sortKey, win));
+
+    tbody.innerHTML = "";
+    for (const r of out) {
+      const tr = document.createElement("tr");
+
+      const team = r.last_team_abbrev || "";
+      const last = r.last_game_date || "";
+      const ha = r.last_home_away || "";
+      const minAvg = fmt(r[`min_avg_${win}`]);
+      const minMinWin = fmt(r[`min_min_${win}`]);
+
+      const ptsMin = fmt(r[`pts_min_${win}`], 0);
+      const rebMin = fmt(r[`reb_min_${win}`], 0);
+      const astMin = fmt(r[`ast_min_${win}`], 0);
+
+      const ptsPills = PTS_T.map(t => `<span class="pill">${hitStr(r, "pts", t, win)}</span>`).join("");
+      const rebPills = RA_T.map(t => `<span class="pill">${hitStr(r, "reb", t, win)}</span>`).join("");
+      const astPills = RA_T.map(t => `<span class="pill">${hitStr(r, "ast", t, win)}</span>`).join("");
+
+      tr.innerHTML = `
+        <td>
+          <div class="rowtitle">
+            <strong>${r.player_name}</strong>
+          </div>
+          <div class="muted" style="font-size:12px;margin-top:4px;">
+            last: ${last} (${ha || "—"})
+          </div>
+        </td>
+        <td><span class="tag">${team}</span></td>
+        <td>
+          <div><strong>${minAvg}</strong> <span class="muted">(avg)</span></div>
+          <div class="muted" style="font-size:12px;">min ${minMinWin}</div>
+        </td>
+        <td>
+          <div class="muted" style="font-size:12px;margin-bottom:6px;">min in window: <strong>${ptsMin}</strong></div>
+          <div class="pills">${ptsPills}</div>
+        </td>
+        <td>
+          <div class="muted" style="font-size:12px;margin-bottom:6px;">min in window: <strong>${rebMin}</strong></div>
+          <div class="pills">${rebPills}</div>
+        </td>
+        <td>
+          <div class="muted" style="font-size:12px;margin-bottom:6px;">min in window: <strong>${astMin}</strong></div>
+          <div class="pills">${astPills}</div>
+        </td>
+      `;
+      tbody.appendChild(tr);
+    }
+  }
+
+  q.addEventListener("input", render);
+  w.addEventListener("change", render);
+  sort.addEventListener("change", render);
+  minFilter.addEventListener("input", render);
+  render();
+}
+
+load().catch(err => {
+  document.getElementById("meta").textContent = "Error: " + err.message;
+  console.error(err);
+});
+</script>
+
+</body>
+</html>

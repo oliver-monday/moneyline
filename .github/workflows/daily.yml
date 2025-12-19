@@ -8,6 +8,9 @@ on:
     paths:
       - "*.py"
       - ".github/workflows/daily.yml"
+      - "playerprops/player_whitelist.csv"
+      - "players.html"
+
 permissions:
   contents: write
   pages: write
@@ -38,6 +41,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas numpy requests
 
+      # --- Moneyline master ingest ---
       - name: Run ingest script
         run: python espn_daily_ingest.py --out nba_master.csv --max-backfill-days 30
 
@@ -52,7 +56,6 @@ jobs:
             "home_injuries","away_injuries"
           ]
 
-          # If it's binary/zip/etc, this will error and fail the job (good).
           df = pd.read_csv("nba_master.csv", nrows=1, dtype=str)
 
           if list(df.columns) != expected:
@@ -62,22 +65,44 @@ jobs:
           print("Header OK")
           PY
 
-      - name: Commit updated master CSV
+      # --- Player props ingest (yesterday finals) ---
+      - name: Run player props ingest (yesterday)
         run: |
-          if git diff --quiet -- nba_master.csv; then
-            echo "nba_master.csv unchanged; nothing to commit."
-            exit 0
+          python espn_player_ingest.py --mode yesterday \
+            --whitelist playerprops/player_whitelist.csv \
+            --out player_game_log.csv \
+            --dim player_dim.csv \
+            --sleep 0.25
+
+      - name: Build player snapshot (threshold floors)
+        run: |
+          python build_player_snapshot_v2.py \
+            --in player_game_log.csv \
+            --out player_snapshot.csv
+
+      - name: Upload unresolved players report
+        uses: actions/upload-artifact@v4
+        with:
+          name: player-unresolved
+          path: player_unresolved.csv
+          retention-days: 7
+
+      # --- Commit updated CSVs (stateful inputs) ---
+      - name: Commit updated CSVs
+        run: |
+          if git diff --quiet -- nba_master.csv player_game_log.csv player_dim.csv; then
+            echo "No CSV changes; nothing to commit."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+
+            git add nba_master.csv player_game_log.csv player_dim.csv
+            git commit -m "Daily data refresh [skip ci]" || true
+
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
           fi
-
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add nba_master.csv
-          git commit -m "Update nba_master.csv [skip ci]" || exit 0
-
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
 
       - name: Upload Rotowire debug HTML
         uses: actions/upload-artifact@v4
@@ -89,29 +114,28 @@ jobs:
       - name: Build dashboard
         run: python build_dashboard.py
 
-      # --- DIAGNOSTIC: LIST FILES AFTER DASHBOARD BUILD ---
-      - name: List generated files
-        run: |
-          echo "===== REPO LISTING AFTER DASHBOARD BUILD ====="
-          ls -R .
-          echo "=============================================="
-
-      # Create the output folder for GitHub Pages
       - name: Prepare site files
         run: |
           mkdir -p ./site
+          mkdir -p ./site/data
 
-          # Determine newest dashboard file
+          # Newest dashboard becomes index.html
           NEWEST=$(ls -t dashboard_*.html | head -n 1)
           echo "Newest dashboard HTML: $NEWEST"
-
           cp "$NEWEST" ./site/index.html
+
+          # Data files
           cp nba_master.csv ./site/nba_master.csv
+
+          # Players page + its data
+          cp players.html ./site/players.html
+          cp player_snapshot.csv ./site/data/player_snapshot.csv
 
           echo "===== SITE DIRECTORY CONTENTS ====="
           ls -al ./site
+          echo "===== SITE/DATA DIRECTORY CONTENTS ====="
+          ls -al ./site/data
 
-      # Upload site folder as the artifact Pages will deploy
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
