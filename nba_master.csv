@@ -389,15 +389,20 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401809839,2025-12-16,New York Knicks,NY,124,-142.0,,San Antonio Spurs,SA,113,120.0,,Las Vegas,NV,,
 401810222,2025-12-17,Chicago Bulls,CHI,127,164.0,,Cleveland Cavaliers,CLE,111,-198.0,,Chicago,IL,,
 401810223,2025-12-17,Minnesota Timberwolves,MIN,110,-290.0,,Memphis Grizzlies,MEM,116,235.0,,Minneapolis,MN,,
-401810226,2025-12-18,Charlotte Hornets,CHA,0,180.0,,Atlanta Hawks,ATL,0,-218.0,,Charlotte,NC,P. Connaughton (Out); Tre Mann (Out); C. Sexton (Out); G. Williams (Out),K. Porzingis (Out)
-401810227,2025-12-18,Indiana Pacers,IND,0,154.0,,New York Knicks,NY,0,-185.0,,Indianapolis,IN,T. Haliburton (OFS); A. Nesmith (Out); B. Sheppard (Out); Obi Toppin (Out),M. McBride (Out); L. Shamet (Out)
-401810228,2025-12-18,Brooklyn Nets,BKN,0,210.0,,Miami Heat,MIA,0,-258.0,,Brooklyn,NY,H. Highsmith (Out); Cam Thomas (Out),T. Herro (Out); N. Jovic (Out); P. Larsson (Out); T. Rozier (Out)
-401810224,2025-12-18,Oklahoma City Thunder,OKC,0,-1600.0,,LA Clippers,LAC,0,900.0,,Oklahoma City,OK,T. Sorber (OFS); I. Hartenstein (Out); N. Topic (Out); J. Williams (Out),B. Beal (OFS); J. Harden (Out); D. Jones (Out); Chris Paul (Out)
-401810225,2025-12-18,San Antonio Spurs,SA,0,-1050.0,,Washington Wizards,WSH,0,675.0,,San Antonio,TX,,C. Kispert (Out); K. Middleton (Out)
-401810229,2025-12-18,Milwaukee Bucks,MIL,0,180.0,,Toronto Raptors,TOR,0,-218.0,,Milwaukee,WI,G. Antetokounmpo (Out); T. Prince (Out),RJ Barrett (Out)
-401810230,2025-12-18,New Orleans Pelicans,NO,0,330.0,,Houston Rockets,HOU,0,-425.0,,New Orleans,LA,D. Murray (Out),D. Finney-Smith (Out); F. VanVleet (Out)
-401810231,2025-12-18,Dallas Mavericks,DAL,0,195.0,,Detroit Pistons,DET,0,-238.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); K. Irving (Out),
-401810232,2025-12-18,Denver Nuggets,DEN,0,-285.0,,Orlando Magic,ORL,0,230.0,,Denver,CO,C. Braun (Out); A. Gordon (Out),C. Castleton (Out); J. Suggs (Out); M. Wagner (Out); F. Wagner (Out)
-401810233,2025-12-18,Phoenix Suns,PHX,0,110.0,,Golden State Warriors,GS,0,-130.0,,Phoenix,AZ,,Al Horford (Out); P. Spencer (Out)
-401810234,2025-12-18,Utah Jazz,UTAH,0,240.0,,Los Angeles Lakers,LAL,0,-298.0,,Salt Lake City,UT,W. Kessler (OFS); G. Niang (Out),D. Ayton (Out); A. Reaves (Out)
-401810235,2025-12-18,Portland Trail Blazers,POR,0,-355.0,,Sacramento Kings,SAC,0,280.0,,Portland,OR,D. Lillard (OFS); S. Henderson (Out); J. Holiday (Out); M. Thybulle (Out); B. Wesley (Out),D. Eubanks (Out); Z. LaVine (Out); D. Sabonis (Out)
+401810226,2025-12-18,Charlotte Hornets,CHA,133,180.0,,Atlanta Hawks,ATL,126,-218.0,,Charlotte,NC,,
+401810227,2025-12-18,Indiana Pacers,IND,113,154.0,,New York Knicks,NY,114,-185.0,,Indianapolis,IN,,
+401810228,2025-12-18,Brooklyn Nets,BKN,95,210.0,,Miami Heat,MIA,106,-258.0,,Brooklyn,NY,,
+401810224,2025-12-18,Oklahoma City Thunder,OKC,122,-1600.0,,LA Clippers,LAC,101,900.0,,Oklahoma City,OK,,
+401810225,2025-12-18,San Antonio Spurs,SA,119,-1050.0,,Washington Wizards,WSH,94,675.0,,San Antonio,TX,,
+401810229,2025-12-18,Milwaukee Bucks,MIL,105,180.0,,Toronto Raptors,TOR,111,-218.0,,Milwaukee,WI,,
+401810230,2025-12-18,New Orleans Pelicans,NO,133,330.0,,Houston Rockets,HOU,128,-425.0,,New Orleans,LA,,
+401810231,2025-12-18,Dallas Mavericks,DAL,116,195.0,,Detroit Pistons,DET,114,-238.0,,Dallas,TX,,
+401810232,2025-12-18,Denver Nuggets,DEN,126,-285.0,,Orlando Magic,ORL,115,230.0,,Denver,CO,,
+401810233,2025-12-18,Phoenix Suns,PHX,99,110.0,,Golden State Warriors,GS,98,-130.0,,Phoenix,AZ,,
+401810234,2025-12-18,Utah Jazz,UTAH,135,240.0,,Los Angeles Lakers,LAL,143,-298.0,,Salt Lake City,UT,,
+401810235,2025-12-18,Portland Trail Blazers,POR,134,-355.0,,Sacramento Kings,SAC,133,280.0,,Portland,OR,,
+401810236,2025-12-19,Boston Celtics,BOS,0,-258.0,,Miami Heat,MIA,0,210.0,,Boston,MA,J. Tatum (Out),T. Herro (Out); N. Jovic (Out); T. Rozier (Out)
+401810237,2025-12-19,New York Knicks,NY,0,-198.0,,Philadelphia 76ers,PHI,0,164.0,,New York,NY,Josh Hart (Out); M. McBride (Out); M. Robinson (Out); L. Shamet (Out); K. Towns (Out),K. Oubre (Out); T. Watford (Out)
+401810238,2025-12-19,Atlanta Hawks,ATL,0,120.0,,San Antonio Spurs,SA,0,-142.0,,Atlanta,GA,K. Porzingis (Out),
+401810239,2025-12-19,Cleveland Cavaliers,CLE,0,-290.0,,Chicago Bulls,CHI,0,235.0,,Cleveland,OH,S. Merrill (Out); E. Mobley (Out); L. Nance (Out); Max Strus (Out),N. Essengue (OFS)
+401810240,2025-12-19,Minnesota Timberwolves,MIN,0,270.0,,Oklahoma City Thunder,OKC,0,-340.0,,Minneapolis,MN,M. Conley (Out),T. Sorber (OFS); I. Hartenstein (Out); N. Topic (Out); J. Williams (Out)
