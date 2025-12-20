@@ -57,7 +57,7 @@
     details.filters-panel summary::-webkit-details-marker { display:none; }
     .stable-row{
       display:flex;
-      align-items:center;
+      align-items:flex-start;
       gap:12px;
       margin-top: 8px;
       flex-wrap: wrap;
@@ -67,6 +67,7 @@
       height: 22px;
     }
     .stable-title{ font-weight: 700; }
+    .stable-text{ display:flex; flex-direction:column; align-items:flex-start; }
     .stable-hint{ color:#666; font-size: 12px; }
 
     /* Cards */
@@ -146,6 +147,14 @@
     @media (max-width: 520px) {
       body { margin: 12px; }
       input, select { min-width: 140px; }
+      .controls { flex-direction: column; align-items: stretch; }
+      .controls label { width: 100%; }
+      .control-search { order: 1; }
+      .control-scope { order: 2; }
+      .control-window { order: 3; }
+      .control-sort { order: 4; }
+      .control-layout { order: 5; }
+      .control-min { order: 6; }
     }
   </style>
 </head>
@@ -161,18 +170,18 @@
   <details class="filters-panel" id="filtersPanel" open>
     <summary>Filters</summary>
     <div class="controls">
-      <label>Search
-        <input id="q" placeholder="e.g., Luka, Brunson" />
+      <label class="control-search">Search
+        <input id="q" type="text" placeholder="e.g., Luka, Brunson" />
       </label>
 
-      <label>Scope
+      <label class="control-scope">Scope
         <select id="scope">
           <option value="today" selected>Playing Today</option>
           <option value="all">All Players</option>
         </select>
       </label>
 
-      <label>Window
+      <label class="control-window">Window
         <select id="w">
           <option value="5">L5</option>
           <option value="10" selected>L10</option>
@@ -180,7 +189,7 @@
         </select>
       </label>
 
-      <label id="sortWrap">Sort
+      <label id="sortWrap" class="control-sort">Sort
         <select id="sort">
           <option value="min_avg">MIN avg</option>
           <option value="pts_ge20_rate" selected>PTS ≥ 20 hit%</option>
@@ -193,15 +202,15 @@
         </select>
       </label>
 
-      <label>MIN avg ≥
-        <input id="minFilter" type="number" value="0" />
-      </label>
-
-      <label>Layout
+      <label class="control-layout">Layout
         <select id="layout">
           <option value="grouped" selected>Grouped by Game</option>
           <option value="list">List (all players)</option>
         </select>
+      </label>
+
+      <label class="control-min">MIN avg ≥
+        <input id="minFilter" type="number" value="0" />
       </label>
     </div>
 
