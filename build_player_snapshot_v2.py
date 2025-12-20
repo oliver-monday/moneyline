@@ -76,10 +76,17 @@ def main():
     ap.add_argument("--out", dest="out", default="player_snapshot.csv", help="Output snapshot CSV (recommended: docs/data/player_snapshot.csv)")
     ap.add_argument("--season-end-year", type=int, default=None, help="Filter season_end_year (e.g., 2026)")
     ap.add_argument("--asof", default=None, help="Only include games with game_date <= asof (YYYY-MM-DD). Default: today")
+    ap.add_argument("--master", default=None, help="Optional nba_master.csv to normalize game_date by game_id")
     ap.add_argument("--windows", default="5,10,20", help="Comma-separated rolling windows (games played)")
     args = ap.parse_args()
 
     df = pd.read_csv(args.inp)
+    if args.master:
+        m = pd.read_csv(args.master, dtype=str)
+        if "game_id" in m.columns and "game_date" in m.columns:
+            gid_to_date = dict(zip(m["game_id"], m["game_date"]))
+            df["game_date"] = df["game_id"].astype(str).map(gid_to_date).fillna(df["game_date"].astype(str))
+
     required = {"season_end_year","game_id","game_date","team_abbrev","opp_abbrev","home_away","player_id","player_name","minutes","pts","reb","ast","dnp"}
     missing = required - set(df.columns)
     if missing:
