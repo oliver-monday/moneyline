@@ -629,12 +629,27 @@ def build_html(slate, team_results, league_tbl, outfile):
 
     CSS = """
     <style>
-        body { font-family: Arial, sans-serif; margin: 30px; color: #222; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            margin: 16px;
+            color: #111;
+        }
         .nav { display:flex; gap:12px; margin: 10px 0 18px; }
         .nav a { text-decoration:none; padding:8px 10px; border:1px solid #ddd; border-radius:10px; color:#111; }
         .nav a.active { background:#111; color:#fff; border-color:#111; }
-        .game-card { border: 1px solid #ccc; padding: 17px; margin-top: 25px;
-                     border-radius: 6px; background: #fafafa; }
+        .muted { color:#666; }
+        @media (max-width: 520px) {
+            body { margin: 12px; }
+        }
+        .page-title { margin: 0 0 6px; font-size: 32px; }
+        .page-subtitle { margin: 0 0 18px; }
+        .game-card {
+            border: 1px solid #eee;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 14px;
+            background: #fff;
+        }
         .game-high {
             background: #e8f7e8 !important;   /* soft green */
             border-color: #6ac46a !important;
@@ -659,11 +674,15 @@ def build_html(slate, team_results, league_tbl, outfile):
         summary { cursor: pointer; font-weight: bold; color: #999; }
         .summary-line { margin-top: 4px; margin-bottom: 12px; font-weight: 600; }
         .two-col {
-        display: flex;
-        gap: 30px;
+            display: flex;
+            gap: 30px;
         }
         .col {
             width: 50%;
+        }
+        @media (max-width: 900px) {
+            .two-col { flex-direction: column; gap: 14px; }
+            .col { width: 100%; }
         }
         .detail-label { font-weight: 600; }
         pre {
@@ -698,9 +717,9 @@ def build_html(slate, team_results, league_tbl, outfile):
 
     today = slate["game_date"].iloc[0]
     today_display = pd.Timestamp(today).strftime("%m-%d-%Y")
-    w("<h1>NBA Moneylines</h1>")
-    w(f"<h2>{today_display}</h2>")
     w('<div class="nav"><a class="active" href="./index.html">Games</a><a href="./players.html">Player Props</a></div>')
+    w("<h2 class=\"page-title\">NBA Moneylines</h2>")
+    w(f"<div class=\"muted page-subtitle\">{today_display}</div>")
 
     # ---------- Per-game cards ----------
     for _, g in slate.iterrows():
