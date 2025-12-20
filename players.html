@@ -44,6 +44,10 @@
     .preview-label { min-width: 42px; color:#666; font-size: 12px; font-weight: 600; }
     .preview-pills { display:flex; flex-wrap:wrap; gap: 6px; }
     .expand-body { margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; }
+    .game-section { margin: 20px 0; }
+    .game-title { font-size: 18px; font-weight: 600; margin: 12px 0 2px; }
+    .game-sub { color:#666; font-size: 13px; margin-bottom: 8px; }
+    .game-cards { display:flex; flex-direction:column; gap: 8px; }
     @media (max-width: 900px) {
       .card summary { flex-direction: column; }
       .card-left { min-width: auto; }
@@ -115,7 +119,7 @@
       </select>
     </label>
 
-    <label>Sort
+    <label id="sortWrap">Sort
       <select id="sort">
         <option value="min_avg">MIN avg</option>
         <option value="pts_ge20_rate" selected>PTS ≥ 20 hit%</option>
@@ -130,6 +134,13 @@
 
     <label>MIN avg ≥
       <input id="minFilter" type="number" value="0" />
+    </label>
+
+    <label>Layout
+      <select id="layout">
+        <option value="grouped" selected>Grouped by Game</option>
+        <option value="list">List (all players)</option>
+      </select>
     </label>
   </div>
 
@@ -287,13 +298,38 @@ async function load() {
 
   // Map team -> today's matchup info { opp, ha("H"/"A") }
   const gameMapToday = new Map();
+  const gameInfoById = new Map();
+  const gamesTodayOrdered = [];
   for (const g of games) {
     if ((g.game_date || "").trim() === today) {
       const home = (g.home_team_abbrev || "").trim().toUpperCase();
       const away = (g.away_team_abbrev || "").trim().toUpperCase();
       if (home && away) {
-        gameMapToday.set(home, { opp: away, ha: "H" });
-        gameMapToday.set(away, { opp: home, ha: "A" });
+        const gameId = String(g.game_id || `${today}-${home}-${away}`).trim();
+        let info = gameInfoById.get(gameId);
+        if (!info) {
+          info = {
+            id: gameId,
+            homeAbbrev: home,
+            awayAbbrev: away,
+            homeName: "",
+            awayName: "",
+            gameTime: "",
+            venue: "",
+          };
+          gameInfoById.set(gameId, info);
+          gamesTodayOrdered.push(info);
+        }
+        info.homeAbbrev = home;
+        info.awayAbbrev = away;
+        info.homeName = String(g.home_team_name || home).trim();
+        info.awayName = String(g.away_team_name || away).trim();
+        info.gameTime = String(g.game_time || g.tipoff_time || "").trim();
+        info.venue = (g.venue_city || g.venue_state)
+          ? `${g.venue_city || ""}, ${g.venue_state || ""}`.trim().replace(/^,\s*/, "")
+          : "";
+        gameMapToday.set(home, { opp: away, ha: "H", gameId });
+        gameMapToday.set(away, { opp: home, ha: "A", gameId });
       }
     }
   }
@@ -309,27 +345,32 @@ async function load() {
   const w = document.getElementById("w");
   const sort = document.getElementById("sort");
   const minFilter = document.getElementById("minFilter");
+  const layout = document.getElementById("layout");
+  const sortWrap = document.getElementById("sortWrap");
   const stableOnly = document.getElementById("stableOnly");
   const cards = document.getElementById("cards");
 
   function render() {
     const win = w.value;
+    const layoutMode = layout.value;
+    const groupedMode = layoutMode === "grouped" && scope.value === "today";
     const needle = q.value.trim().toLowerCase();
     const minMin = parseFloat(minFilter.value || "0");
     const minKey = `min_avg_${win}`;
 
-    let out = players.filter(r => {
+    if (sortWrap) {
+      sortWrap.style.display = groupedMode ? "none" : "";
+    }
+
+    let filtered = players.filter(r => {
       const team = String(r.last_team_abbrev || "").toUpperCase();
 
-      // Scope filter
       if (scope.value === "today" && teamsToday.size) {
         if (!teamsToday.has(team)) return false;
       }
 
-      // Search
       if (needle && !String(r.player_name).toLowerCase().includes(needle)) return false;
 
-      // Minutes filter
       const m = num(r[minKey]);
       if (Number.isFinite(minMin) && Number.isFinite(m) && m < minMin) return false;
 
@@ -339,11 +380,8 @@ async function load() {
     });
 
     const sortKey = sort.value;
-    out.sort((a, b) => sortVal(b, sortKey, win) - sortVal(a, sortKey, win));
 
-    cards.innerHTML = "";
-    for (const r of out) {
-
+    const cardDataList = filtered.map(r => {
       const team = (r.last_team_abbrev || "").toUpperCase();
       const last = r.last_game_date || "";
       const ha = r.last_home_away || "";
@@ -365,14 +403,50 @@ async function load() {
       const rebFull = RA_T.map(t => hitPill(r, "reb", t, win)).join("");
       const astFull = RA_T.map(t => hitPill(r, "ast", t, win)).join("");
 
-      const ptsBest = bestLegs(r, "pts", PTS_T, win).map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
-      const rebBest = bestLegs(r, "reb", RA_T, win).map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
-      const astBest = bestLegs(r, "ast", RA_T, win).map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
+      const ptsBestArr = bestLegs(r, "pts", PTS_T, win);
+      const rebBestArr = bestLegs(r, "reb", RA_T, win);
+      const astBestArr = bestLegs(r, "ast", RA_T, win);
 
+      const ptsBest = ptsBestArr.map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
+      const rebBest = rebBestArr.map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
+      const astBest = astBestArr.map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
+
+      const previewStrength = ptsBestArr.length + rebBestArr.length + astBestArr.length;
       const stable = isStableMinutes(r, win);
+
+      return {
+        row: r,
+        team,
+        playerName: r.player_name,
+        todayInfo,
+        subLine,
+        minAvg,
+        minMinWin,
+        ptsMin,
+        rebMin,
+        astMin,
+        ptsFull,
+        rebFull,
+        astFull,
+        ptsBest,
+        rebBest,
+        astBest,
+        previewStrength,
+        stable,
+      };
+    });
+
+    if (!groupedMode) {
+      cardDataList.sort((a, b) => sortVal(b.row, sortKey, win) - sortVal(a.row, sortKey, win));
+    }
+
+    cards.innerHTML = "";
+
+    function createCard(data) {
       const gateBadge = stableOnly.checked
-        ? `<span class="pill ${stable ? "good" : "bad"}">MIN gate: ${stable ? "PASS" : "FAIL"}</span>`
+        ? `<span class="pill ${data.stable ? "good" : "bad"}">MIN gate: ${data.stable ? "PASS" : "FAIL"}</span>`
         : "";
+      const placeholder = `<span class="muted" style="font-size:12px;">—</span>`;
 
       const el = document.createElement("details");
       el.className = "card";
@@ -381,12 +455,12 @@ async function load() {
         <summary>
           <div class="card-left">
             <div class="rowtitle">
-              <strong>${r.player_name}</strong>
-              <span class="teamcode">${team}</span>
+              <strong>${data.playerName}</strong>
+              <span class="teamcode">${data.team}</span>
             </div>
-            <div class="submeta">${subLine}</div>
+            <div class="submeta">${data.subLine}</div>
             <div class="submeta" style="margin-top:6px;">
-              <strong>MIN</strong> ${minAvg} <span class="muted">(avg)</span> · <span class="muted">min ${minMinWin}</span>
+              <strong>MIN</strong> ${data.minAvg} <span class="muted">(avg)</span> · <span class="muted">min ${data.minMinWin}</span>
             </div>
             <div style="margin-top:8px;">${gateBadge}</div>
           </div>
@@ -395,19 +469,19 @@ async function load() {
             <div class="preview-row">
               <div class="preview-label">PTS</div>
               <div class="preview-pills">
-                ${ptsBest || `<span class="muted" style="font-size:12px;">—</span>`}
+                ${data.ptsBest || placeholder}
               </div>
             </div>
             <div class="preview-row">
               <div class="preview-label">REB</div>
               <div class="preview-pills">
-                ${rebBest || `<span class="muted" style="font-size:12px;">—</span>`}
+                ${data.rebBest || placeholder}
               </div>
             </div>
             <div class="preview-row">
               <div class="preview-label">AST</div>
               <div class="preview-pills">
-                ${astBest || `<span class="muted" style="font-size:12px;">—</span>`}
+                ${data.astBest || placeholder}
               </div>
             </div>
           </div>
@@ -416,24 +490,95 @@ async function load() {
         <div class="expand-body">
           <div class="preview-row" style="margin-bottom:8px;">
             <div class="preview-label">PTS</div>
-            <div class="muted" style="font-size:12px;">min in window: <strong>${ptsMin}</strong></div>
+            <div class="muted" style="font-size:12px;">min in window: <strong>${data.ptsMin}</strong></div>
           </div>
-          <div class="pills">${ptsFull}</div>
+          <div class="pills">${data.ptsFull}</div>
 
           <div class="preview-row" style="margin:12px 0 8px;">
             <div class="preview-label">REB</div>
-            <div class="muted" style="font-size:12px;">min in window: <strong>${rebMin}</strong></div>
+            <div class="muted" style="font-size:12px;">min in window: <strong>${data.rebMin}</strong></div>
           </div>
-          <div class="pills">${rebFull}</div>
+          <div class="pills">${data.rebFull}</div>
 
           <div class="preview-row" style="margin:12px 0 8px;">
             <div class="preview-label">AST</div>
-            <div class="muted" style="font-size:12px;">min in window: <strong>${astMin}</strong></div>
+            <div class="muted" style="font-size:12px;">min in window: <strong>${data.astMin}</strong></div>
           </div>
-          <div class="pills">${astFull}</div>
+          <div class="pills">${data.astFull}</div>
         </div>
       `;
-      cards.appendChild(el);
+      return el;
+    }
+
+    if (groupedMode) {
+      const playersByGame = new Map();
+      const leftovers = [];
+
+      for (const data of cardDataList) {
+        const info = data.todayInfo && data.todayInfo.gameId ? gameInfoById.get(data.todayInfo.gameId) : null;
+        if (info) {
+          if (!playersByGame.has(info.id)) playersByGame.set(info.id, []);
+          playersByGame.get(info.id).push(data);
+        } else {
+          leftovers.push(data);
+        }
+      }
+
+      for (const info of gamesTodayOrdered) {
+        const arr = playersByGame.get(info.id);
+        if (!arr || !arr.length) continue;
+        arr.sort((a, b) => {
+          if (b.previewStrength !== a.previewStrength) return b.previewStrength - a.previewStrength;
+          return String(a.playerName).localeCompare(String(b.playerName));
+        });
+
+        const section = document.createElement("div");
+        section.className = "game-section";
+
+        const title = document.createElement("div");
+        title.className = "game-title";
+        title.textContent = `${info.awayName || info.awayAbbrev} @ ${info.homeName || info.homeAbbrev}`;
+        section.appendChild(title);
+
+        const subParts = [];
+        if (info.awayAbbrev && info.homeAbbrev) subParts.push(`${info.awayAbbrev} @ ${info.homeAbbrev}`);
+        if (info.gameTime) subParts.push(info.gameTime);
+        if (info.venue) subParts.push(info.venue);
+        if (subParts.length) {
+          const sub = document.createElement("div");
+          sub.className = "game-sub";
+          sub.textContent = subParts.join(" • ");
+          section.appendChild(sub);
+        }
+
+        const wrap = document.createElement("div");
+        wrap.className = "game-cards";
+        arr.forEach(playerData => wrap.appendChild(createCard(playerData)));
+        section.appendChild(wrap);
+        cards.appendChild(section);
+      }
+
+      if (leftovers.length) {
+        leftovers.sort((a, b) => {
+          if (b.previewStrength !== a.previewStrength) return b.previewStrength - a.previewStrength;
+          return String(a.playerName).localeCompare(String(b.playerName));
+        });
+        const section = document.createElement("div");
+        section.className = "game-section";
+        const title = document.createElement("div");
+        title.className = "game-title";
+        title.textContent = "Other players";
+        section.appendChild(title);
+        const wrap = document.createElement("div");
+        wrap.className = "game-cards";
+        leftovers.forEach(playerData => wrap.appendChild(createCard(playerData)));
+        section.appendChild(wrap);
+        cards.appendChild(section);
+      }
+    } else {
+      cardDataList.forEach(data => {
+        cards.appendChild(createCard(data));
+      });
     }
   }
 
@@ -443,6 +588,7 @@ async function load() {
   w.addEventListener("change", render);
   sort.addEventListener("change", render);
   minFilter.addEventListener("input", render);
+  layout.addEventListener("change", render);
   stableOnly.addEventListener("change", render);
   render();
 }
