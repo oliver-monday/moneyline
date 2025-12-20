@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Moneyline | Players</title>
+  <title>Moneyline | Player Props</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 16px; }
     .nav { display:flex; gap:12px; margin-bottom: 16px; }
@@ -14,20 +14,53 @@
     .controls label { font-size: 13px; color:#333; display:flex; flex-direction:column; gap:6px; }
     input, select { padding:8px 10px; border:1px solid #ddd; border-radius:10px; min-width: 160px; }
 
-    table { border-collapse: collapse; width: 100%; }
+    /* Table */
+    .table-wrap { overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; min-width: 980px; }
     th, td { border-bottom: 1px solid #eee; padding: 10px 8px; text-align:left; font-size: 14px; vertical-align: top; }
     th { position: sticky; top: 0; background: #fff; z-index: 1; }
-    .pill { display:inline-block; padding: 3px 8px; border-radius: 999px; border: 1px solid #ddd; font-size: 12px; margin: 2px 6px 2px 0; white-space: nowrap; }
-    .muted { color:#666; }
+
+    /* Pills (tints similar vibe to main page green/red) */
     .pills { display:flex; flex-wrap:wrap; }
-    .rowtitle { display:flex; align-items:center; gap:8px; }
-    .tag { display:inline-block; padding: 3px 8px; border-radius: 999px; border: 1px solid #ddd; font-size: 12px; }
+    .pill {
+      display:inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid #ddd;
+      font-size: 12px;
+      margin: 2px 6px 2px 0;
+      white-space: nowrap;
+    }
+    
+    .pill.good { 
+      background: #e8f7e8 !important;   /* soft green */
+      border-color: #6ac46a !important;
+    }
+    .pill.bad  { 
+      background: #fbeaea !important;   /* soft red */
+      border-color: #e08b8b !important;
+    }
+
+    .muted { color:#666; }
+    .rowtitle { display:flex; align-items:baseline; gap:10px; }
+    .teamcode { font-weight: 400; color:#666; font-size: 13px; }
+    .submeta { font-size:12px; margin-top:4px; color:#666; }
+
+    /* Slightly tighter player column */
+    td.player { min-width: 220px; }
+    td.mincol { min-width: 140px; }
+    td.statcol { min-width: 300px; }
+
+    @media (max-width: 520px) {
+      body { margin: 12px; }
+      input, select { min-width: 140px; }
+    }
   </style>
 </head>
 <body>
   <div class="nav">
     <a href="./index.html">Games</a>
-    <a class="active" href="./players.html">Players</a>
+    <a class="active" href="./players.html">Player Props</a>
   </div>
 
   <h2 style="margin:0 0 6px;">Players: threshold floors (L5 / L10 / L20)</h2>
@@ -36,6 +69,13 @@
   <div class="controls">
     <label>Search
       <input id="q" placeholder="e.g., Luka, Brunson" />
+    </label>
+
+    <label>Scope
+      <select id="scope">
+        <option value="today" selected>Playing Today</option>
+        <option value="all">All Players</option>
+      </select>
     </label>
 
     <label>Window
@@ -62,155 +102,117 @@
     <label>MIN avg ≥
       <input id="minFilter" type="number" value="0" />
     </label>
-
-    <label>Scope
-      <select id="scope">
-        <option value="all" selected>All players</option>
-        <option value="today">Playing Today</option>
-      </select>
-    </label>
   </div>
 
-  <table id="t">
-    <thead>
-      <tr>
-        <th style="min-width:200px;">Player</th>
-        <th style="min-width:110px;">Team</th>
-        <th style="min-width:120px;">MIN</th>
-        <th style="min-width:280px;">PTS (hit counts)</th>
-        <th style="min-width:280px;">REB (hit counts)</th>
-        <th style="min-width:280px;">AST (hit counts)</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+  <div class="table-wrap">
+    <table id="t">
+      <thead>
+        <tr>
+          <th style="min-width:220px;">Player</th>
+          <th style="min-width:140px;">MIN</th>
+          <th style="min-width:300px;">PTS (hit counts)</th>
+          <th style="min-width:300px;">REB (hit counts)</th>
+          <th style="min-width:300px;">AST (hit counts)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
 
 <script>
-async function load() {
-  const url = "./data/player_snapshot.csv";
+async function fetchText(url) {
   const res = await fetch(url, {cache: "no-store"});
-  if (!res.ok) throw new Error("Failed to fetch " + url + " (" + res.status + ")");
-  const text = await res.text();
+  if (!res.ok) throw new Error(`Failed to fetch ${url} (${res.status})`);
+  return await res.text();
+}
 
+function csvToRows(text) {
   const lines = text.trim().split(/\r?\n/);
   const headers = lines[0].split(",");
   const rows = lines.slice(1).map(line => {
-    const parts = line.split(",");
+    const parts = line.split(","); // OK for our generated CSVs (no embedded commas)
     const obj = {};
     headers.forEach((h, i) => obj[h] = parts[i] ?? "");
     return obj;
   });
+  return rows;
+}
 
-  const metaEl = document.getElementById("meta");
-  metaEl.textContent = `Loaded ${rows.length} players from ${url}`;
-  // --- Build "Playing Today" team set from nba_master.csv (robust CSV parse for quoted commas) ---
-  function csvParse(text) {
-    const rows = [];
-    let row = [];
-    let cur = "";
-    let inQuotes = false;
+function localYYYYMMDD() {
+  const d = new Date();
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth()+1).padStart(2,"0");
+  const dd = String(d.getDate()).padStart(2,"0");
+  return `${yyyy}-${mm}-${dd}`;
+}
 
-    for (let i = 0; i < text.length; i++) {
-      const c = text[i];
+function num(x) {
+  const v = parseFloat(x);
+  return Number.isFinite(v) ? v : NaN;
+}
+function fmt(x, d=1) {
+  const v = num(x);
+  if (!Number.isFinite(v)) return "—";
+  return v.toFixed(d);
+}
 
-      if (inQuotes) {
-        if (c === '"') {
-          if (text[i + 1] === '"') { cur += '"'; i++; }
-          else { inQuotes = false; }
-        } else {
-          cur += c;
-        }
-      } else {
-        if (c === '"') inQuotes = true;
-        else if (c === ',') { row.push(cur); cur = ""; }
-        else if (c === '\n') { row.push(cur); rows.push(row); row = []; cur = ""; }
-        else if (c === '\r') { /* skip */ }
-        else { cur += c; }
-      }
-    }
-    if (cur.length || row.length) { row.push(cur); rows.push(row); }
-    return rows.filter(r => r.length > 1);
-  }
+function pillClass(hits, gp) {
+  if (!gp) return "";
+  const r = hits / gp;
+  if (r >= 0.8) return "good";
+  if (r <= 0.4) return "bad";
+  return "";
+}
 
-  function todayLocalYYYYMMDD() {
-    const d = new Date();
-    const y = d.getFullYear();
-    const m = String(d.getMonth() + 1).padStart(2, "0");
-    const day = String(d.getDate()).padStart(2, "0");
-    return `${y}-${m}-${day}`;
-  }
+function hitPill(r, stat, t, win) {
+  const hits = parseInt(r[`${stat}_ge${t}_hits_${win}`] || "0", 10);
+  const gp = parseInt(r[`gp_${win}`] || "0", 10);
+  const cls = pillClass(hits, gp);
+  const text = gp ? `${t}+ : ${hits}/${gp}` : `${t}+ : —`;
+  return `<span class="pill ${cls}">${text}</span>`;
+}
 
-  async function fetchTodaySlate() {
-    const dateStr = todayLocalYYYYMMDD();
-    try {
-      const res2 = await fetch("./nba_master.csv", {cache: "no-store"});
-      if (!res2.ok) return { dateStr, teams: new Set(), games: 0 };
+function sortVal(r, sortKey, win) {
+  const col = `${sortKey}_${win}`;
+  const v = num(r[col]);
+  if (Number.isFinite(v)) return v;
+  if (sortKey.endsWith("_rate")) return -1;
+  return -1e9;
+}
 
-      const txt = await res2.text();
-      const data = csvParse(txt);
-      if (!data.length) return { dateStr, teams: new Set(), games: 0 };
+async function load() {
+  const today = localYYYYMMDD();
 
-      const header = data[0];
-      const idxDate = header.indexOf("game_date");
-      const idxH = header.indexOf("home_team_abbrev");
-      const idxA = header.indexOf("away_team_abbrev");
-      if (idxDate < 0 || idxH < 0 || idxA < 0) return { dateStr, teams: new Set(), games: 0 };
+  // Snapshot (players)
+  const snapshotUrl = "./data/player_snapshot.csv";
+  const snapshotText = await fetchText(snapshotUrl);
+  const players = csvToRows(snapshotText);
 
-      const teams = new Set();
-      let games = 0;
-      for (const r of data.slice(1)) {
-        if ((r[idxDate] || "").trim() !== dateStr) continue;
-        const h = (r[idxH] || "").trim().toUpperCase();
-        const a = (r[idxA] || "").trim().toUpperCase();
-        if (h) teams.add(h);
-        if (a) teams.add(a);
-        games++;
-      }
-      return { dateStr, teams, games };
-    } catch (e) {
-      return { dateStr, teams: new Set(), games: 0 };
+  // Master (today's teams)
+  const masterUrl = "./nba_master.csv";
+  const masterText = await fetchText(masterUrl);
+  const games = csvToRows(masterText);
+
+  // Determine teams playing today
+  const teamsToday = new Set();
+  for (const g of games) {
+    if ((g.game_date || "").trim() === today) {
+      if (g.home_team_abbrev) teamsToday.add(g.home_team_abbrev.trim().toUpperCase());
+      if (g.away_team_abbrev) teamsToday.add(g.away_team_abbrev.trim().toUpperCase());
     }
   }
 
-  const slate = await fetchTodaySlate();
-  if (slate.games > 0) {
-    metaEl.textContent = `Loaded ${rows.length} players from ${url} • Today (${slate.dateStr}): ${slate.games} games`;
-  } else {
-    metaEl.textContent = `Loaded ${rows.length} players from ${url} • Today (${slate.dateStr}): no games found`;
-  }
-
-
-  function num(x) {
-    const v = parseFloat(x);
-    return Number.isFinite(v) ? v : NaN;
-  }
-  function fmt(x, d=1) {
-    const v = num(x);
-    if (!Number.isFinite(v)) return "—";
-    return v.toFixed(d);
-  }
-  function hitStr(r, stat, t, win) {
-    const hits = parseInt(r[`${stat}_ge${t}_hits_${win}`] || "0", 10);
-    const gp = parseInt(r[`gp_${win}`] || "0", 10);
-    if (!gp) return `${t}+ : —`;
-    return `${t}+ : ${hits}/${gp}`;
-  }
-  function sortVal(r, sortKey, win) {
-    const col = `${sortKey}_${win}`;
-    const v = num(r[col]);
-    if (Number.isFinite(v)) return v;
-    if (sortKey.endsWith("_rate")) return -1;
-    return -1e9;
-  }
+  const meta = document.getElementById("meta");
+  meta.textContent = `Loaded ${players.length} players from ${snapshotUrl}. Today: ${today} (${teamsToday.size ? teamsToday.size + " teams" : "no teams found"})`;
 
   const PTS_T = [10,15,20,25,30,35];
   const RA_T  = [2,4,6,8,10,12,14];
 
   const q = document.getElementById("q");
+  const scope = document.getElementById("scope");
   const w = document.getElementById("w");
   const sort = document.getElementById("sort");
   const minFilter = document.getElementById("minFilter");
-  const scope = document.getElementById("scope");
   const tbody = document.querySelector("#t tbody");
 
   function render() {
@@ -219,15 +221,21 @@ async function load() {
     const minMin = parseFloat(minFilter.value || "0");
     const minKey = `min_avg_${win}`;
 
-    let out = rows.filter(r => {
+    let out = players.filter(r => {
+      const team = String(r.last_team_abbrev || "").toUpperCase();
+
+      // Scope filter
+      if (scope.value === "today" && teamsToday.size) {
+        if (!teamsToday.has(team)) return false;
+      }
+
+      // Search
       if (needle && !String(r.player_name).toLowerCase().includes(needle)) return false;
+
+      // Minutes filter
       const m = num(r[minKey]);
       if (Number.isFinite(minMin) && Number.isFinite(m) && m < minMin) return false;
-      if (scope.value === "today") {
-        if (!slate.teams || slate.teams.size === 0) return false;
-        const team = String(r.last_team_abbrev || "").toUpperCase();
-        if (!slate.teams.has(team)) return false;
-      }
+
       return true;
     });
 
@@ -238,9 +246,10 @@ async function load() {
     for (const r of out) {
       const tr = document.createElement("tr");
 
-      const team = r.last_team_abbrev || "";
+      const team = (r.last_team_abbrev || "").toUpperCase();
       const last = r.last_game_date || "";
       const ha = r.last_home_away || "";
+
       const minAvg = fmt(r[`min_avg_${win}`]);
       const minMinWin = fmt(r[`min_min_${win}`]);
 
@@ -248,33 +257,35 @@ async function load() {
       const rebMin = fmt(r[`reb_min_${win}`], 0);
       const astMin = fmt(r[`ast_min_${win}`], 0);
 
-      const ptsPills = PTS_T.map(t => `<span class="pill">${hitStr(r, "pts", t, win)}</span>`).join("");
-      const rebPills = RA_T.map(t => `<span class="pill">${hitStr(r, "reb", t, win)}</span>`).join("");
-      const astPills = RA_T.map(t => `<span class="pill">${hitStr(r, "ast", t, win)}</span>`).join("");
+      const ptsPills = PTS_T.map(t => hitPill(r, "pts", t, win)).join("");
+      const rebPills = RA_T.map(t => hitPill(r, "reb", t, win)).join("");
+      const astPills = RA_T.map(t => hitPill(r, "ast", t, win)).join("");
 
       tr.innerHTML = `
-        <td>
+        <td class="player">
           <div class="rowtitle">
             <strong>${r.player_name}</strong>
+            <span class="teamcode">${team}</span>
           </div>
-          <div class="muted" style="font-size:12px;margin-top:4px;">
-            last: ${last} (${ha || "—"})
-          </div>
+          <div class="submeta">last: ${last} (${ha || "—"})</div>
         </td>
-        <td><span class="tag">${team}</span></td>
-        <td>
+
+        <td class="mincol">
           <div><strong>${minAvg}</strong> <span class="muted">(avg)</span></div>
           <div class="muted" style="font-size:12px;">min ${minMinWin}</div>
         </td>
-        <td>
+
+        <td class="statcol">
           <div class="muted" style="font-size:12px;margin-bottom:6px;">min in window: <strong>${ptsMin}</strong></div>
           <div class="pills">${ptsPills}</div>
         </td>
-        <td>
+
+        <td class="statcol">
           <div class="muted" style="font-size:12px;margin-bottom:6px;">min in window: <strong>${rebMin}</strong></div>
           <div class="pills">${rebPills}</div>
         </td>
-        <td>
+
+        <td class="statcol">
           <div class="muted" style="font-size:12px;margin-bottom:6px;">min in window: <strong>${astMin}</strong></div>
           <div class="pills">${astPills}</div>
         </td>
@@ -283,11 +294,12 @@ async function load() {
     }
   }
 
+  // Default scope = Playing Today already set in HTML
   q.addEventListener("input", render);
+  scope.addEventListener("change", render);
   w.addEventListener("change", render);
   sort.addEventListener("change", render);
   minFilter.addEventListener("input", render);
-  scope.addEventListener("change", render);
   render();
 }
 
