@@ -707,8 +707,8 @@ def build_html(slate, team_results, league_tbl, outfile):
                 if (!label) {
                     return;
                 }
-                var openText = label.dataset.openText || 'Click to collapse';
-                var closedText = label.dataset.closedText || 'Click to expand';
+                var openText = label.dataset.openText || 'Collapse';
+                var closedText = label.dataset.closedText || 'Expand';
                 var setText = function () {
                     label.textContent = detailsEl.open ? openText : closedText;
                 };
@@ -826,7 +826,7 @@ def build_html(slate, team_results, league_tbl, outfile):
         w(f"<h3>{away} @ {home}</h3>")
         w(f"<div class='summary-line'>{summary_line}</div>")
         w("<details>")
-        w("<summary><span class='summary-label' data-closed-text='Click to expand' data-open-text='Click to collapse'>Click to expand</span></summary>")
+        w("<summary><span class='summary-label' data-closed-text='Expand' data-open-text='Collapse'>Expand</span></summary>")
 
         # ---------------- HOME TEAM ----------------
         w(f"<div class='subheader'>{home.upper()} (HOME)</div>")
