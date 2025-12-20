@@ -78,14 +78,6 @@
       </select>
     </label>
 
-    <label style="min-width:180px;">
-      Stable minutes only
-      <div style="display:flex; align-items:center; gap:8px;">
-        <input id="stableOnly" type="checkbox" />
-        <span class="muted" style="font-size:12px;">(avg≥30, min≥28, 28+ ≥80%)</span>
-      </div>
-    </label>
-
     <label>Window
       <select id="w">
         <option value="5">L5</option>
@@ -109,6 +101,14 @@
 
     <label>MIN avg ≥
       <input id="minFilter" type="number" value="0" />
+    </label>
+  </div>
+
+  <div class="controls" style="padding-top:6px;">
+    <label style="min-width:auto; flex-direction:row; align-items:center; gap:10px;">
+      <input id="stableOnly" type="checkbox" />
+      <span><strong>Stable minutes only</strong></span>
+      <span class="muted" style="font-size:12px;">(avg≥30, min≥24, 24+ ≥80%)</span>
     </label>
   </div>
 
@@ -185,11 +185,11 @@ function formatMMDDYYYY(iso) {
 function isStableMinutes(r, win) {
   const avg = num(r[`min_avg_${win}`]);
   const minv = num(r[`min_min_${win}`]);
-  const r28 = num(r[`min_ge28_rate_${win}`]);
+  const r24 = num(r[`min_ge24_rate_${win}`]);
 
-  if (!Number.isFinite(avg) || !Number.isFinite(minv) || !Number.isFinite(r28)) return true;
+  if (!Number.isFinite(avg) || !Number.isFinite(minv) || !Number.isFinite(r24)) return true;
 
-  return (avg >= 30) && (minv >= 28) && (r28 >= 0.8);
+  return (avg >= 30) && (minv >= 24) && (r24 >= 0.8);
 }
 
 function pillClass(hits, gp) {
