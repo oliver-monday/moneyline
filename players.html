@@ -45,9 +45,20 @@
     .preview-pills { display:flex; flex-wrap:wrap; gap: 6px; }
     .expand-body { margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; }
     .game-section { margin: 20px 0; }
-    .game-title { font-size: 18px; font-weight: 600; margin: 12px 0 2px; }
-    .game-sub { color:#666; font-size: 13px; margin-bottom: 8px; }
-    .game-cards { display:flex; flex-direction:column; gap: 8px; }
+    .game-group { border: 1px solid #eee; border-radius: 16px; margin: 12px 0; background:#fff; }
+    .game-group summary {
+      list-style:none;
+      cursor:pointer;
+      padding: 12px 14px;
+      border-bottom:1px solid #f2f2f2;
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+    }
+    .game-group summary::-webkit-details-marker { display:none; }
+    .game-title { font-size: 18px; font-weight: 600; }
+    .game-sub { color:#666; font-size: 13px; }
+    .game-cards { display:flex; flex-direction:column; gap: 8px; padding: 12px; }
     @media (max-width: 900px) {
       .card summary { flex-direction: column; }
       .card-left { min-width: auto; }
@@ -97,7 +108,6 @@
   </div>
 
   <h2 style="margin:0 0 6px;">Recent Performance</h2>
-  <div class="muted" id="meta">Loading…</div>
 
   <div class="controls">
     <label>Search
@@ -335,7 +345,7 @@ async function load() {
   }
   
   const meta = document.getElementById("meta");
-  meta.textContent = `Loaded ${players.length} players from ${snapshotUrl}. Today: ${todayDisplay} (${teamsToday.size ? teamsToday.size + " teams" : "no teams found"})`;
+  meta.textContent = todayDisplay;
 
   const PTS_T = [10,15,20,25,30,35];
   const RA_T  = [2,4,6,8,10,12,14];
@@ -532,30 +542,22 @@ async function load() {
           return String(a.playerName).localeCompare(String(b.playerName));
         });
 
-        const section = document.createElement("div");
-        section.className = "game-section";
+        const group = document.createElement("details");
+        group.className = "game-group";
 
+        const summary = document.createElement("summary");
         const title = document.createElement("div");
         title.className = "game-title";
         title.textContent = `${info.awayName || info.awayAbbrev} @ ${info.homeName || info.homeAbbrev}`;
-        section.appendChild(title);
+        summary.appendChild(title);
 
-        const subParts = [];
-        if (info.awayAbbrev && info.homeAbbrev) subParts.push(`${info.awayAbbrev} @ ${info.homeAbbrev}`);
-        if (info.gameTime) subParts.push(info.gameTime);
-        if (info.venue) subParts.push(info.venue);
-        if (subParts.length) {
-          const sub = document.createElement("div");
-          sub.className = "game-sub";
-          sub.textContent = subParts.join(" • ");
-          section.appendChild(sub);
-        }
+        group.appendChild(summary);
 
         const wrap = document.createElement("div");
         wrap.className = "game-cards";
         arr.forEach(playerData => wrap.appendChild(createCard(playerData)));
-        section.appendChild(wrap);
-        cards.appendChild(section);
+        group.appendChild(wrap);
+        cards.appendChild(group);
       }
 
       if (leftovers.length) {
