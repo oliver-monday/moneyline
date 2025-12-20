@@ -78,6 +78,14 @@
       </select>
     </label>
 
+    <label style="min-width:180px;">
+      Stable minutes only
+      <div style="display:flex; align-items:center; gap:8px;">
+        <input id="stableOnly" type="checkbox" />
+        <span class="muted" style="font-size:12px;">(avg≥30, min≥28, 28+ ≥80%)</span>
+      </div>
+    </label>
+
     <label>Window
       <select id="w">
         <option value="5">L5</option>
@@ -174,6 +182,16 @@ function formatMMDDYYYY(iso) {
   return `${mm}-${dd}-${yyyy}`;
 }
 
+function isStableMinutes(r, win) {
+  const avg = num(r[`min_avg_${win}`]);
+  const minv = num(r[`min_min_${win}`]);
+  const r28 = num(r[`min_ge28_rate_${win}`]);
+
+  if (!Number.isFinite(avg) || !Number.isFinite(minv) || !Number.isFinite(r28)) return true;
+
+  return (avg >= 30) && (minv >= 28) && (r28 >= 0.8);
+}
+
 function pillClass(hits, gp) {
   if (!gp) return "";
   const r = hits / gp;
@@ -245,6 +263,7 @@ async function load() {
   const w = document.getElementById("w");
   const sort = document.getElementById("sort");
   const minFilter = document.getElementById("minFilter");
+  const stableOnly = document.getElementById("stableOnly");
   const tbody = document.querySelector("#t tbody");
 
   function render() {
@@ -267,6 +286,8 @@ async function load() {
       // Minutes filter
       const m = num(r[minKey]);
       if (Number.isFinite(minMin) && Number.isFinite(m) && m < minMin) return false;
+
+      if (stableOnly.checked && !isStableMinutes(r, win)) return false;
 
       return true;
     });
@@ -338,6 +359,7 @@ async function load() {
   w.addEventListener("change", render);
   sort.addEventListener("change", render);
   minFilter.addEventListener("input", render);
+  stableOnly.addEventListener("change", render);
   render();
 }
 
