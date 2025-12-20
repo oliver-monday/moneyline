@@ -406,13 +406,13 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401810238,2025-12-19,Atlanta Hawks,ATL,98,136.0,,San Antonio Spurs,SA,126,-162.0,,Atlanta,GA,,
 401810239,2025-12-19,Cleveland Cavaliers,CLE,125,-180.0,,Chicago Bulls,CHI,136,150.0,,Cleveland,OH,,
 401810240,2025-12-19,Minnesota Timberwolves,MIN,112,235.0,,Oklahoma City Thunder,OKC,107,-290.0,,Minneapolis,MN,,
-401810241,2025-12-20,Denver Nuggets,DEN,0,-115.0,,Houston Rockets,HOU,0,-105.0,,Denver,CO,C. Braun (Out); A. Gordon (Out),Tari Eason (Out); D. Finney-Smith (Out); F. VanVleet (Out)
-401810242,2025-12-20,Philadelphia 76ers,PHI,0,-130.0,,Dallas Mavericks,DAL,0,110.0,,Philadelphia,PA,K. Oubre (Out); T. Watford (Out),Dante Exum (OFS); D. Lively (OFS); K. Irving (Out)
+401810241,2025-12-20,Denver Nuggets,DEN,0,-105.0,,Houston Rockets,HOU,0,-115.0,,Denver,CO,C. Braun (Out); A. Gordon (Out),Tari Eason (Out); D. Finney-Smith (Out); F. VanVleet (Out)
+401810242,2025-12-20,Philadelphia 76ers,PHI,0,-148.0,,Dallas Mavericks,DAL,0,124.0,,Philadelphia,PA,K. Oubre (Out); T. Watford (Out),Dante Exum (OFS); D. Lively (OFS); K. Irving (Out)
 401810243,2025-12-20,Toronto Raptors,TOR,0,100.0,,Boston Celtics,BOS,0,-120.0,,Toronto,ON,RJ Barrett (Out),J. Tatum (Out)
-401810244,2025-12-20,New Orleans Pelicans,NO,0,-162.0,,Indiana Pacers,IND,0,136.0,,New Orleans,LA,D. Murray (Out),T. Haliburton (OFS); A. Nesmith (Out); B. Sheppard (Out); Obi Toppin (Out)
+401810244,2025-12-20,New Orleans Pelicans,NO,0,-135.0,,Indiana Pacers,IND,0,114.0,,New Orleans,LA,D. Murray (Out),T. Haliburton (OFS); A. Nesmith (Out); B. Sheppard (Out); Obi Toppin (Out)
 401810245,2025-12-20,Detroit Pistons,DET,0,-520.0,,Charlotte Hornets,CHA,0,390.0,,Detroit,MI,,G. Williams (Out)
-401810246,2025-12-20,Memphis Grizzlies,MEM,0,-675.0,,Washington Wizards,WSH,0,490.0,,Memphis,TN,Zach Edey (Out); Ty Jerome (Out); J. Konchar (Out); Ja Morant (Out); S. Pippen (Out); J. Small (Out); V. Williams (Out),C. Kispert (Out)
+401810246,2025-12-20,Memphis Grizzlies,MEM,0,-800.0,,Washington Wizards,WSH,0,550.0,,Memphis,TN,Zach Edey (Out); Ty Jerome (Out); J. Konchar (Out); Ja Morant (Out); S. Pippen (Out); J. Small (Out); V. Williams (Out),C. Kispert (Out)
 401810247,2025-12-20,Golden State Warriors,GS,0,-245.0,,Phoenix Suns,PHX,0,200.0,,San Francisco,CA,Seth Curry (Out); Al Horford (Out),J. Green (Out)
 401810248,2025-12-20,Utah Jazz,UTAH,0,235.0,,Orlando Magic,ORL,0,-290.0,,Salt Lake City,UT,W. Kessler (OFS); G. Niang (Out),M. Wagner (Out); F. Wagner (Out)
 401810249,2025-12-20,Sacramento Kings,SAC,0,154.0,,Portland Trail Blazers,POR,0,-185.0,,Sacramento,CA,D. Eubanks (Out); Z. LaVine (Out); D. Sabonis (Out),D. Lillard (OFS); S. Henderson (Out); J. Holiday (Out); M. Thybulle (Out); B. Wesley (Out)
-401810250,2025-12-20,LA Clippers,LAC,0,114.0,,Los Angeles Lakers,LAL,0,-135.0,,Inglewood,CA,B. Beal (OFS); D. Jones (Out); Y. Niederhauser (Out); Chris Paul (Out),D. Ayton (Out); A. Reaves (Out); G. Vincent (Out)
+401810250,2025-12-20,LA Clippers,LAC,0,-102.0,,Los Angeles Lakers,LAL,0,-118.0,,Inglewood,CA,B. Beal (OFS); D. Jones (Out); Y. Niederhauser (Out); Chris Paul (Out),D. Ayton (Out); A. Reaves (Out); G. Vincent (Out)
