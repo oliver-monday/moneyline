@@ -59,11 +59,13 @@
     details.filters-panel summary::-webkit-details-marker { display:none; }
     .stable-row{
       display:flex;
-      align-items:center;
-      justify-content:flex-start;
-      gap:8px;
       margin-top: 8px;
-      flex-wrap: wrap;
+      grid-column: 1 / -1;
+    }
+    .stable-label{
+      display:flex;
+      align-items:center;
+      gap:8px;
     }
     .stable-row input[type="checkbox"]{
       width: 22px;
@@ -71,7 +73,7 @@
       flex:0 0 auto;
     }
     .stable-title{ font-weight: 700; }
-    .stable-text{ display:flex; flex-direction:column; align-items:flex-start; margin-left:0; flex:1; }
+    .stable-text{ display:flex; flex-direction:column; align-items:flex-start; }
     .stable-hint{ color:#666; font-size: 12px; }
 
     /* Cards */
@@ -219,11 +221,13 @@
     </div>
 
     <div class="stable-row">
-      <input id="stableOnly" type="checkbox" />
-      <div class="stable-text">
-        <div class="stable-title">Stable minutes only</div>
-        <div class="stable-hint">(avg≥30, min≥24, 24+ ≥80%)</div>
-      </div>
+      <label class="stable-label">
+        <input id="stableOnly" type="checkbox" />
+        <span class="stable-text">
+          <span class="stable-title">Stable minutes only</span>
+          <span class="stable-hint">(avg≥30, min≥24, 24+ ≥80%)</span>
+        </span>
+      </label>
     </div>
   </details>
 
