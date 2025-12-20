@@ -19,7 +19,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 2595516,Norman Powell,norman powell,MIA,2025-12-20,2025-12-20
 2991070,Jerami Grant,jerami grant,POR,2025-12-19,2025-12-19
 2991235,Steven Adams,steven adams,HOU,2025-12-19,2025-12-19
-3032976,Rudy Gobert,rudy gobert,MIN,2025-12-18,2025-12-18
+3032976,Rudy Gobert,rudy gobert,MIN,2025-12-20,2025-12-20
 3032977,Giannis Antetokounmpo,giannis antetokounmpo,MIL,2025-12-04,2025-12-04
 3059318,Joel Embiid,joel embiid,PHI,2025-12-14,2025-12-14
 3059319,Andrew Wiggins,andrew wiggins,MIA,2025-12-20,2025-12-20
@@ -27,7 +27,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 3064290,Aaron Gordon,aaron gordon,DEN,2025-11-22,2025-11-22
 3064440,Zach LaVine,zach lavine,SAC,2025-12-15,2025-12-15
 3064482,Bobby Portis,bobby portis,MIL,2025-12-19,2025-12-19
-3064514,Julius Randle,julius randle,MIN,2025-12-18,2025-12-18
+3064514,Julius Randle,julius randle,MIN,2025-12-20,2025-12-20
 3078576,Derrick White,derrick white,BOS,2025-12-20,2025-12-20
 3102531,Kristaps Porzingis,kristaps porzingis,ATL,2025-12-20,2025-12-20
 3112335,Nikola Jokic,nikola jokic,DEN,2025-12-19,2025-12-19
@@ -46,7 +46,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 3913176,Brandon Ingram,brandon ingram,TOR,2025-12-19,2025-12-19
 3917376,Jaylen Brown,jaylen brown,BOS,2025-12-20,2025-12-20
 3934672,Jalen Brunson,jalen brunson,NY,2025-12-20,2025-12-20
-3934673,Donte DiVincenzo,donte divincenzo,MIN,2025-12-18,2025-12-18
+3934673,Donte DiVincenzo,donte divincenzo,MIN,2025-12-20,2025-12-20
 3934719,OG Anunoby,og anunoby,NY,2025-12-20,2025-12-20
 3936299,Jamal Murray,jamal murray,DEN,2025-12-19,2025-12-19
 3945274,Luka Doncic,luka doncic,LAL,2025-12-19,2025-12-19
@@ -59,14 +59,14 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4066354,Payton Pritchard,payton pritchard,BOS,2025-12-20,2025-12-20
 4066383,Miles Bridges,miles bridges,CHA,2025-12-19,2025-12-19
 4066457,Austin Reaves,austin reaves,LAL,2025-12-11,2025-12-11
-4222252,Isaiah Hartenstein,isaiah hartenstein,OKC,2025-12-14,2025-12-14
+4222252,Isaiah Hartenstein,isaiah hartenstein,OKC,2025-12-20,2025-12-20
 4277811,Collin Sexton,collin sexton,CHA,2025-12-07,2025-12-07
 4277905,Trae Young,trae young,ATL,2025-12-20,2025-12-20
 4277956,Jordan Poole,jordan poole,NO,2025-12-19,2025-12-19
 4277961,Jaren Jackson Jr.,jaren jackson jr,MEM,2025-12-18,2025-12-18
 4278039,Nickeil Alexander-Walker,nickeil alexander walker,ATL,2025-12-20,2025-12-20
 4278067,Nic Claxton,nic claxton,BKN,2025-12-19,2025-12-19
-4278073,Shai Gilgeous-Alexander,shai gilgeous alexander,OKC,2025-12-19,2025-12-19
+4278073,Shai Gilgeous-Alexander,shai gilgeous alexander,OKC,2025-12-20,2025-12-20
 4278078,P.J. Washington,p j washington,DAL,2025-12-19,2025-12-19
 4278104,Michael Porter Jr.,michael porter jr,BKN,2025-12-19,2025-12-19
 4278129,Deandre Ayton,deandre ayton,LAL,2025-12-15,2025-12-15
@@ -83,13 +83,13 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4395725,Tyler Herro,tyler herro,MIA,2025-12-20,2025-12-20
 4396907,Darius Garland,darius garland,CLE,2025-12-20,2025-12-20
 4396909,Aaron Nesmith,aaron nesmith,IND,2025-11-14,2025-11-14
-4396971,Naz Reid,naz reid,MIN,2025-12-18,2025-12-18
+4396971,Naz Reid,naz reid,MIN,2025-12-20,2025-12-20
 4397002,Ayo Dosunmu,ayo dosunmu,CHI,2025-12-20,2025-12-20
 4397136,Saddiq Bey,saddiq bey,NO,2025-12-19,2025-12-19
 4397140,Kevin Porter Jr.,kevin porter jr,MIL,2025-12-19,2025-12-19
 4397424,Neemias Queta,neemias queta,BOS,2025-12-20,2025-12-20
 4397688,Trey Murphy III,trey murphy iii,NO,2025-12-19,2025-12-19
-4431671,Jaden McDaniels,jaden mcdaniels,MIN,2025-12-18,2025-12-18
+4431671,Jaden McDaniels,jaden mcdaniels,MIN,2025-12-20,2025-12-20
 4431678,Tyrese Maxey,tyrese maxey,PHI,2025-12-20,2025-12-20
 4431736,Toumani Camara,toumani camara,POR,2025-12-19,2025-12-19
 4431767,Christian Braun,christian braun,DEN,2025-11-13,2025-11-13
@@ -106,7 +106,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4433134,Scottie Barnes,scottie barnes,TOR,2025-12-19,2025-12-19
 4433136,Walker Kessler,walker kessler,UTAH,2025-11-01,2025-11-01
 4433192,Tari Eason,tari eason,HOU,2025-12-19,2025-12-19
-4433255,Chet Holmgren,chet holmgren,OKC,2025-12-19,2025-12-19
+4433255,Chet Holmgren,chet holmgren,OKC,2025-12-20,2025-12-20
 4433287,Brandon Miller,brandon miller,CHA,2025-12-19,2025-12-19
 4433621,Jalen Duren,jalen duren,DET,2025-12-19,2025-12-19
 4433627,Keyonte George,keyonte george,UTAH,2025-12-19,2025-12-19
@@ -114,8 +114,8 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4566434,Franz Wagner,franz wagner,ORL,2025-12-07,2025-12-07
 4591725,Ryan Rollins,ryan rollins,MIL,2025-12-19,2025-12-19
 4593125,Santi Aldama,santi aldama,MEM,2025-12-18,2025-12-18
-4593803,Jalen Williams,jalen williams,OKC,2025-12-19,2025-12-19
-4594268,Anthony Edwards,anthony edwards,MIN,2025-12-09,2025-12-09
+4593803,Jalen Williams,jalen williams,OKC,2025-12-20,2025-12-20
+4594268,Anthony Edwards,anthony edwards,MIN,2025-12-20,2025-12-20
 4594327,Keegan Murray,keegan murray,SAC,2025-12-19,2025-12-19
 4600663,Zach Edey,zach edey,MEM,2025-12-18,2025-12-18
 4683021,Deni Avdija,deni avdija,POR,2025-12-19,2025-12-19
@@ -134,7 +134,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4871145,Josh Giddey,josh giddey,CHI,2025-12-20,2025-12-20
 4873138,Ace Bailey,ace bailey,UTAH,2025-12-19,2025-12-19
 4898371,Maxime Raynaud,maxime raynaud,SAC,2025-12-19,2025-12-19
-4900671,Ajay Mitchell,ajay mitchell,OKC,2025-12-19,2025-12-19
+4900671,Ajay Mitchell,ajay mitchell,OKC,2025-12-20,2025-12-20
 4903027,Cedric Coward,cedric coward,MEM,2025-12-18,2025-12-18
 4914336,Shaedon Sharpe,shaedon sharpe,POR,2025-12-19,2025-12-19
 5037871,Dylan Harper,dylan harper,SA,2025-12-20,2025-12-20
