@@ -637,6 +637,13 @@ def build_html(slate, team_results, league_tbl, outfile):
         .nav { display:flex; gap:12px; margin: 10px 0 18px; }
         .nav a { text-decoration:none; padding:8px 10px; border:1px solid #ddd; border-radius:10px; color:#111; }
         .nav a.active { background:#111; color:#fff; border-color:#111; }
+        @media (max-width: 520px) {
+            .nav a {
+                padding: 12px 14px;
+                font-size: 16px;
+                border-radius: 14px;
+            }
+        }
         .muted { color:#666; }
         @media (max-width: 520px) {
             body { margin: 12px; }
