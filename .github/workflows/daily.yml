@@ -128,6 +128,10 @@ jobs:
           # Data files
           cp nba_master.csv ./site/nba_master.csv
 
+          # Branding assets
+          cp NBAGPTlogo.png ./site/NBAGPTlogo.png
+          cp manifest.webmanifest ./site/manifest.webmanifest
+
           # Players page + its data
           cp players.html ./site/players.html
           cp player_snapshot.csv ./site/data/player_snapshot.csv

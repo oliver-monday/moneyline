@@ -3,13 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Moneyline | Player Props</title>
+  <title>NBA GPT</title>
+  <link rel="icon" type="image/png" href="./NBAGPTlogo.png">
+  <link rel="apple-touch-icon" href="./NBAGPTlogo.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 16px; }
+    .brand { display:flex; align-items:center; gap:12px; margin:0 0 8px; }
+    .brand-logo { width: 36px; height: 36px; object-fit: contain; }
+    .brand-text { font-size: 32px; font-weight: 700; }
     .nav { display:flex; gap:12px; margin-bottom: 16px; }
     .nav a { text-decoration:none; padding:8px 10px; border:1px solid #ddd; border-radius:10px; color:#111; }
     .nav a.active { background:#111; color:#fff; border-color:#111; }
     @media (max-width: 520px) {
+      .brand-logo { width: 30px; height: 30px; }
+      .brand-text { font-size: 28px; }
       .nav a {
         padding: 12px 14px;
         font-size: 16px;
@@ -165,7 +176,10 @@
   </style>
 </head>
 <body>
-  <h1 style="font-size:32px; font-weight:700; margin:0 0 8px;">NBA GPT</h1>
+  <div class="brand">
+    <img class="brand-logo" src="./NBAGPTlogo.png" alt="NBA GPT logo">
+    <div class="brand-text">NBA GPT</div>
+  </div>
   <div class="nav">
     <a href="./index.html">Moneylines</a>
     <a class="active" href="./players.html">Player Props</a>

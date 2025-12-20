@@ -649,8 +649,14 @@ def build_html(slate, team_results, league_tbl, outfile):
         @media (max-width: 520px) {
             body { margin: 12px; }
         }
-        .page-title { margin: 0 0 6px; font-size: 32px; }
+        .brand { display:flex; align-items:center; gap:12px; margin: 0 0 6px; }
+        .brand-logo { width: 36px; height: 36px; object-fit: contain; }
+        .brand-text { font-size: 32px; font-weight: 700; }
         .page-subtitle { margin: 0 0 18px; }
+        @media (max-width: 520px) {
+            .brand-logo { width: 30px; height: 30px; }
+            .brand-text { font-size: 28px; }
+        }
         .game-card {
             border: 1px solid #eee;
             padding: 12px;
@@ -722,13 +728,20 @@ def build_html(slate, team_results, league_tbl, outfile):
     lines=[]; w=lines.append
 
     w("<html><head>")
+    w("<title>NBA GPT</title>")
     w('<meta name="viewport" content="width=device-width,initial-scale=1" />')
+    w('<link rel="icon" type="image/png" href="./NBAGPTlogo.png">')
+    w('<link rel="apple-touch-icon" href="./NBAGPTlogo.png">')
+    w('<link rel="manifest" href="./manifest.webmanifest">')
+    w('<meta name="theme-color" content="#ffffff">')
+    w('<meta name="apple-mobile-web-app-capable" content="yes">')
+    w('<meta name="apple-mobile-web-app-status-bar-style" content="default">')
     w(CSS)
     w("</head><body>")
 
     today = slate["game_date"].iloc[0]
     today_display = pd.Timestamp(today).strftime("%m-%d-%Y")
-    w('<h1 class="page-title">NBA GPT</h1>')
+    w('<div class="brand"><img class="brand-logo" src="./NBAGPTlogo.png" alt="NBA GPT logo"><div class="brand-text">NBA GPT</div></div>')
     w('<div class="nav"><a class="active" href="./index.html">Moneylines</a><a href="./players.html">Player Props</a></div>')
     w(f"<div class=\"muted page-subtitle\">{today_display}</div>")
 
