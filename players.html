@@ -50,6 +50,8 @@
     details.filters-panel { margin: 12px 0 6px; border: 1px solid #eee; border-radius: 12px; padding: 10px 12px; background:#fff; }
     details.filters-panel summary {
       font-weight: 700;
+      font-size: 18px;
+      color: #666;
       cursor: pointer;
       margin-bottom: 8px;
       list-style:none;
@@ -57,17 +59,19 @@
     details.filters-panel summary::-webkit-details-marker { display:none; }
     .stable-row{
       display:flex;
-      align-items:flex-start;
-      gap:12px;
+      align-items:center;
+      justify-content:flex-start;
+      gap:8px;
       margin-top: 8px;
       flex-wrap: wrap;
     }
     .stable-row input[type="checkbox"]{
       width: 22px;
       height: 22px;
+      flex:0 0 auto;
     }
     .stable-title{ font-weight: 700; }
-    .stable-text{ display:flex; flex-direction:column; align-items:flex-start; }
+    .stable-text{ display:flex; flex-direction:column; align-items:flex-start; margin-left:0; flex:1; }
     .stable-hint{ color:#666; font-size: 12px; }
 
     /* Cards */
