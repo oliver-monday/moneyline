@@ -14,11 +14,33 @@
     .controls label { font-size: 13px; color:#333; display:flex; flex-direction:column; gap:6px; font-weight:600; }
     input, select { padding:8px 10px; border:1px solid #ddd; border-radius:10px; min-width: 160px; }
 
-    /* Table */
-    .table-wrap { overflow-x: auto; }
-    table { border-collapse: collapse; width: 100%; min-width: 980px; }
-    th, td { border-bottom: 1px solid #eee; padding: 10px 8px; text-align:left; font-size: 14px; vertical-align: top; }
-    th { position: sticky; top: 0; background: #fff; z-index: 1; }
+    /* Cards */
+    #cards { margin-top: 12px; }
+    .card {
+      border: 1px solid #eee;
+      border-radius: 14px;
+      padding: 12px;
+      margin: 10px 0;
+      background: #fff;
+    }
+    .card summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .card summary::-webkit-details-marker { display:none; }
+    .card-left { min-width: 260px; }
+    .card-right { flex: 1; display: grid; gap: 10px; }
+    .preview-row { display:flex; flex-wrap:wrap; gap: 10px; align-items:center; }
+    .preview-label { min-width: 42px; color:#666; font-size: 12px; font-weight: 600; }
+    .preview-pills { display:flex; flex-wrap:wrap; gap: 6px; }
+    .expand-body { margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; }
+    @media (max-width: 900px) {
+      .card summary { flex-direction: column; }
+      .card-left { min-width: auto; }
+    }
 
     /* Pills (tints similar vibe to main page green/red) */
     .pills { display:flex; flex-wrap:wrap; }
@@ -112,20 +134,7 @@
     </label>
   </div>
 
-  <div class="table-wrap">
-    <table id="t">
-      <thead>
-        <tr>
-          <th style="min-width:220px;">Player</th>
-          <th style="min-width:140px;">MIN</th>
-          <th style="min-width:300px;">PTS (hit counts)</th>
-          <th style="min-width:300px;">REB (hit counts)</th>
-          <th style="min-width:300px;">AST (hit counts)</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
+  <div id="cards"></div>
 
 <script>
 async function fetchText(url) {
@@ -208,6 +217,36 @@ function hitPill(r, stat, t, win) {
   return `<span class="pill ${cls}">${text}</span>`;
 }
 
+function bestLegs(r, stat, thresholds, win) {
+  const gp = parseInt(r[`gp_${win}`] || "0", 10);
+  if (!gp) return [];
+
+  const vals = thresholds.map(t => {
+    const hits = parseInt(r[`${stat}_ge${t}_hits_${win}`] || "0", 10);
+    const rate = hits / gp;
+    return { t, hits, gp, rate };
+  });
+
+  const perfect = vals.filter(x => x.rate === 1).sort((a, b) => b.t - a.t).slice(0, 2);
+  const best80 = vals.filter(x => x.rate >= 0.8).sort((a, b) => b.t - a.t)[0];
+
+  const out = [];
+  const seen = new Set();
+  for (const x of [...perfect, ...(best80 ? [best80] : [])]) {
+    if (!seen.has(x.t)) {
+      seen.add(x.t);
+      out.push(x);
+    }
+  }
+
+  return out.sort((a, b) => b.t - a.t);
+}
+
+function legPillHTML(t, hits, gp) {
+  const cls = pillClass(hits, gp);
+  return `<span class="pill ${cls}">${t}+ : ${hits}/${gp}</span>`;
+}
+
 function sortVal(r, sortKey, win) {
   const col = `${sortKey}_${win}`;
   const v = num(r[col]);
@@ -264,7 +303,7 @@ async function load() {
   const sort = document.getElementById("sort");
   const minFilter = document.getElementById("minFilter");
   const stableOnly = document.getElementById("stableOnly");
-  const tbody = document.querySelector("#t tbody");
+  const cards = document.getElementById("cards");
 
   function render() {
     const win = w.value;
@@ -295,9 +334,8 @@ async function load() {
     const sortKey = sort.value;
     out.sort((a, b) => sortVal(b, sortKey, win) - sortVal(a, sortKey, win));
 
-    tbody.innerHTML = "";
+    cards.innerHTML = "";
     for (const r of out) {
-      const tr = document.createElement("tr");
 
       const team = (r.last_team_abbrev || "").toUpperCase();
       const last = r.last_game_date || "";
@@ -316,40 +354,79 @@ async function load() {
       const rebMin = fmt(r[`reb_min_${win}`], 0);
       const astMin = fmt(r[`ast_min_${win}`], 0);
 
-      const ptsPills = PTS_T.map(t => hitPill(r, "pts", t, win)).join("");
-      const rebPills = RA_T.map(t => hitPill(r, "reb", t, win)).join("");
-      const astPills = RA_T.map(t => hitPill(r, "ast", t, win)).join("");
+      const ptsFull = PTS_T.map(t => hitPill(r, "pts", t, win)).join("");
+      const rebFull = RA_T.map(t => hitPill(r, "reb", t, win)).join("");
+      const astFull = RA_T.map(t => hitPill(r, "ast", t, win)).join("");
 
-      tr.innerHTML = `
-        <td class="player">
-          <div class="rowtitle">
-            <strong>${r.player_name}</strong>
-            <span class="teamcode">${team}</span>
+      const ptsBest = bestLegs(r, "pts", PTS_T, win).map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
+      const rebBest = bestLegs(r, "reb", RA_T, win).map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
+      const astBest = bestLegs(r, "ast", RA_T, win).map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
+
+      const stable = isStableMinutes(r, win);
+      const gateBadge = stableOnly.checked
+        ? `<span class="pill ${stable ? "good" : "bad"}">MIN gate: ${stable ? "PASS" : "FAIL"}</span>`
+        : "";
+
+      const el = document.createElement("details");
+      el.className = "card";
+
+      el.innerHTML = `
+        <summary>
+          <div class="card-left">
+            <div class="rowtitle">
+              <strong>${r.player_name}</strong>
+              <span class="teamcode">${team}</span>
+            </div>
+            <div class="submeta">${subLine}</div>
+            <div class="submeta" style="margin-top:6px;">
+              <strong>MIN</strong> ${minAvg} <span class="muted">(avg)</span> · <span class="muted">min ${minMinWin}</span>
+            </div>
+            <div style="margin-top:8px;">${gateBadge}</div>
           </div>
-          <div class="submeta">${subLine}</div>
-        </td>
 
-        <td class="mincol">
-          <div><strong>${minAvg}</strong> <span class="muted">(avg)</span></div>
-          <div class="muted" style="font-size:12px;">min ${minMinWin}</div>
-        </td>
+          <div class="card-right">
+            <div class="preview-row">
+              <div class="preview-label">PTS</div>
+              <div class="preview-pills">
+                ${ptsBest || `<span class="muted" style="font-size:12px;">—</span>`}
+              </div>
+            </div>
+            <div class="preview-row">
+              <div class="preview-label">REB</div>
+              <div class="preview-pills">
+                ${rebBest || `<span class="muted" style="font-size:12px;">—</span>`}
+              </div>
+            </div>
+            <div class="preview-row">
+              <div class="preview-label">AST</div>
+              <div class="preview-pills">
+                ${astBest || `<span class="muted" style="font-size:12px;">—</span>`}
+              </div>
+            </div>
+          </div>
+        </summary>
 
-        <td class="statcol">
-          <div class="muted" style="font-size:12px;margin-bottom:6px;">min in window: <strong>${ptsMin}</strong></div>
-          <div class="pills">${ptsPills}</div>
-        </td>
+        <div class="expand-body">
+          <div class="preview-row" style="margin-bottom:8px;">
+            <div class="preview-label">PTS</div>
+            <div class="muted" style="font-size:12px;">min in window: <strong>${ptsMin}</strong></div>
+          </div>
+          <div class="pills">${ptsFull}</div>
 
-        <td class="statcol">
-          <div class="muted" style="font-size:12px;margin-bottom:6px;">min in window: <strong>${rebMin}</strong></div>
-          <div class="pills">${rebPills}</div>
-        </td>
+          <div class="preview-row" style="margin:12px 0 8px;">
+            <div class="preview-label">REB</div>
+            <div class="muted" style="font-size:12px;">min in window: <strong>${rebMin}</strong></div>
+          </div>
+          <div class="pills">${rebFull}</div>
 
-        <td class="statcol">
-          <div class="muted" style="font-size:12px;margin-bottom:6px;">min in window: <strong>${astMin}</strong></div>
-          <div class="pills">${astPills}</div>
-        </td>
+          <div class="preview-row" style="margin:12px 0 8px;">
+            <div class="preview-label">AST</div>
+            <div class="muted" style="font-size:12px;">min in window: <strong>${astMin}</strong></div>
+          </div>
+          <div class="pills">${astFull}</div>
+        </div>
       `;
-      tbody.appendChild(tr);
+      cards.appendChild(el);
     }
   }
 
