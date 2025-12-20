@@ -406,9 +406,9 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401810238,2025-12-19,Atlanta Hawks,ATL,98,136.0,,San Antonio Spurs,SA,126,-162.0,,Atlanta,GA,,
 401810239,2025-12-19,Cleveland Cavaliers,CLE,125,-180.0,,Chicago Bulls,CHI,136,150.0,,Cleveland,OH,,
 401810240,2025-12-19,Minnesota Timberwolves,MIN,112,235.0,,Oklahoma City Thunder,OKC,107,-290.0,,Minneapolis,MN,,
-401810241,2025-12-20,Denver Nuggets,DEN,23,-105.0,,Houston Rockets,HOU,23,-125.0,,Denver,CO,C. Braun (Out); A. Gordon (Out); P. Watson (Out),Tari Eason (Out); D. Finney-Smith (Out); F. VanVleet (Out)
-401810242,2025-12-20,Philadelphia 76ers,PHI,0,-115.0,,Dallas Mavericks,DAL,0,-105.0,,Philadelphia,PA,P. George (Out); K. Oubre (Out); T. Watford (Out),Dante Exum (OFS); D. Lively (OFS); K. Irving (Out)
-401810243,2025-12-20,Toronto Raptors,TOR,0,-122.0,,Boston Celtics,BOS,0,102.0,,Toronto,ON,RJ Barrett (Out); J. Poeltl (Out),J. Tatum (Out)
+401810241,2025-12-20,Denver Nuggets,DEN,37,102.0,,Houston Rockets,HOU,42,-122.0,,Denver,CO,C. Braun (Out); A. Gordon (Out); P. Watson (Out),Tari Eason (Out); D. Finney-Smith (Out); F. VanVleet (Out)
+401810242,2025-12-20,Philadelphia 76ers,PHI,0,-115.0,,Dallas Mavericks,DAL,0,-105.0,,Philadelphia,PA,J. Embiid (Out); P. George (Out); K. Oubre (Out); T. Watford (Out),Dante Exum (OFS); D. Lively (OFS); K. Irving (Out)
+401810243,2025-12-20,Toronto Raptors,TOR,0,-122.0,,Boston Celtics,BOS,0,102.0,,Toronto,ON,RJ Barrett (Out); J. Poeltl (Out),J. Brown (Out); J. Tatum (Out)
 401810244,2025-12-20,New Orleans Pelicans,NO,0,-130.0,,Indiana Pacers,IND,0,110.0,,New Orleans,LA,D. Murray (Out),T. Haliburton (OFS); A. Nesmith (Out); B. Sheppard (Out); Obi Toppin (Out)
 401810245,2025-12-20,Detroit Pistons,DET,0,-500.0,,Charlotte Hornets,CHA,0,380.0,,Detroit,MI,,C. Sexton (Out); G. Williams (Out)
 401810246,2025-12-20,Memphis Grizzlies,MEM,0,-650.0,,Washington Wizards,WSH,0,470.0,,Memphis,TN,Zach Edey (Out); Ty Jerome (Out); J. Konchar (Out); Ja Morant (Out); S. Pippen (Out); J. Small (Out); V. Williams (Out),B. Coulibaly (Out); C. Kispert (Out)
