@@ -11,7 +11,7 @@
     .nav a.active { background:#111; color:#fff; border-color:#111; }
 
     .controls { display:flex; flex-wrap:wrap; gap:12px; align-items:end; margin: 12px 0 18px; }
-    .controls label { font-size: 13px; color:#333; display:flex; flex-direction:column; gap:6px; }
+    .controls label { font-size: 13px; color:#333; display:flex; flex-direction:column; gap:6px; font-weight:600; }
     input, select { padding:8px 10px; border:1px solid #ddd; border-radius:10px; min-width: 160px; }
 
     /* Table */
@@ -63,7 +63,7 @@
     <a class="active" href="./players.html">Player Props</a>
   </div>
 
-  <h2 style="margin:0 0 6px;">Players: threshold floors (L5 / L10 / L20)</h2>
+  <h2 style="margin:0 0 6px;">Recent Performance</h2>
   <div class="muted" id="meta">Loading…</div>
 
   <div class="controls">
@@ -166,6 +166,14 @@ function restLabel(lastDateStr) {
   return diff + "d";
 }
 
+function formatMMDDYYYY(iso) {
+  if (!iso) return "";
+  const parts = iso.split("-");
+  if (parts.length !== 3) return iso;
+  const [yyyy, mm, dd] = parts;
+  return `${mm}-${dd}-${yyyy}`;
+}
+
 function pillClass(hits, gp) {
   if (!gp) return "";
   const r = hits / gp;
@@ -192,6 +200,7 @@ function sortVal(r, sortKey, win) {
 
 async function load() {
   const today = localYYYYMMDD();
+  const todayDisplay = formatMMDDYYYY(today);
 
   // Snapshot (players)
   const snapshotUrl = "./data/player_snapshot.csv";
@@ -226,7 +235,7 @@ async function load() {
   }
   
   const meta = document.getElementById("meta");
-  meta.textContent = `Loaded ${players.length} players from ${snapshotUrl}. Today: ${today} (${teamsToday.size ? teamsToday.size + " teams" : "no teams found"})`;
+  meta.textContent = `Loaded ${players.length} players from ${snapshotUrl}. Today: ${todayDisplay} (${teamsToday.size ? teamsToday.size + " teams" : "no teams found"})`;
 
   const PTS_T = [10,15,20,25,30,35];
   const RA_T  = [2,4,6,8,10,12,14];
