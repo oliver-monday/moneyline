@@ -20,6 +20,54 @@
     .controls { display:flex; flex-wrap:wrap; gap:12px; align-items:end; margin: 12px 0 18px; }
     .controls label { font-size: 13px; color:#333; display:flex; flex-direction:column; gap:6px; font-weight:600; }
     input, select { padding:8px 10px; border:1px solid #ddd; border-radius:10px; min-width: 160px; }
+    /* Unified form controls */
+    .controls input[type="text"],
+    .controls input[type="number"],
+    .controls select {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 12px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      font-size: 16px;
+      background: #fff;
+      color: #111;
+    }
+
+    .controls select {
+      -webkit-appearance: none;
+      appearance: none;
+      background-image:
+        linear-gradient(45deg, transparent 50%, #666 50%),
+        linear-gradient(135deg, #666 50%, transparent 50%);
+      background-position:
+        calc(100% - 18px) calc(50% - 3px),
+        calc(100% - 12px) calc(50% - 3px);
+      background-size: 6px 6px, 6px 6px;
+      background-repeat: no-repeat;
+      padding-right: 34px;
+    }
+    details.filters-panel { margin: 12px 0 6px; border: 1px solid #eee; border-radius: 12px; padding: 10px 12px; background:#fff; }
+    details.filters-panel summary {
+      font-weight: 700;
+      cursor: pointer;
+      margin-bottom: 8px;
+      list-style:none;
+    }
+    details.filters-panel summary::-webkit-details-marker { display:none; }
+    .stable-row{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+    .stable-row input[type="checkbox"]{
+      width: 22px;
+      height: 22px;
+    }
+    .stable-title{ font-weight: 700; }
+    .stable-hint{ color:#666; font-size: 12px; }
 
     /* Cards */
     #cards { margin-top: 12px; }
@@ -110,58 +158,61 @@
 
   <div class="muted" id="meta"></div>
 
-  <div class="controls">
-    <label>Search
-      <input id="q" placeholder="e.g., Luka, Brunson" />
-    </label>
+  <details class="filters-panel" id="filtersPanel" open>
+    <summary>Filters</summary>
+    <div class="controls">
+      <label>Search
+        <input id="q" placeholder="e.g., Luka, Brunson" />
+      </label>
 
-    <label>Scope
-      <select id="scope">
-        <option value="today" selected>Playing Today</option>
-        <option value="all">All Players</option>
-      </select>
-    </label>
+      <label>Scope
+        <select id="scope">
+          <option value="today" selected>Playing Today</option>
+          <option value="all">All Players</option>
+        </select>
+      </label>
 
-    <label>Window
-      <select id="w">
-        <option value="5">L5</option>
-        <option value="10" selected>L10</option>
-        <option value="20">L20</option>
-      </select>
-    </label>
+      <label>Window
+        <select id="w">
+          <option value="5">L5</option>
+          <option value="10" selected>L10</option>
+          <option value="20">L20</option>
+        </select>
+      </label>
 
-    <label id="sortWrap">Sort
-      <select id="sort">
-        <option value="min_avg">MIN avg</option>
-        <option value="pts_ge20_rate" selected>PTS ≥ 20 hit%</option>
-        <option value="pts_ge25_rate">PTS ≥ 25 hit%</option>
-        <option value="reb_ge8_rate">REB ≥ 8 hit%</option>
-        <option value="ast_ge6_rate">AST ≥ 6 hit%</option>
-        <option value="pts_min">PTS min</option>
-        <option value="reb_min">REB min</option>
-        <option value="ast_min">AST min</option>
-      </select>
-    </label>
+      <label id="sortWrap">Sort
+        <select id="sort">
+          <option value="min_avg">MIN avg</option>
+          <option value="pts_ge20_rate" selected>PTS ≥ 20 hit%</option>
+          <option value="pts_ge25_rate">PTS ≥ 25 hit%</option>
+          <option value="reb_ge8_rate">REB ≥ 8 hit%</option>
+          <option value="ast_ge6_rate">AST ≥ 6 hit%</option>
+          <option value="pts_min">PTS min</option>
+          <option value="reb_min">REB min</option>
+          <option value="ast_min">AST min</option>
+        </select>
+      </label>
 
-    <label>MIN avg ≥
-      <input id="minFilter" type="number" value="0" />
-    </label>
+      <label>MIN avg ≥
+        <input id="minFilter" type="number" value="0" />
+      </label>
 
-    <label>Layout
-      <select id="layout">
-        <option value="grouped" selected>Grouped by Game</option>
-        <option value="list">List (all players)</option>
-      </select>
-    </label>
-  </div>
+      <label>Layout
+        <select id="layout">
+          <option value="grouped" selected>Grouped by Game</option>
+          <option value="list">List (all players)</option>
+        </select>
+      </label>
+    </div>
 
-  <div class="controls" style="padding-top:6px;">
-    <label style="min-width:auto; flex-direction:row; align-items:center; gap:10px;">
+    <div class="stable-row">
       <input id="stableOnly" type="checkbox" />
-      <span><strong>Stable minutes only</strong></span>
-      <span class="muted" style="font-size:12px;">(avg≥30, min≥24, 24+ ≥80%)</span>
-    </label>
-  </div>
+      <div class="stable-text">
+        <div class="stable-title">Stable minutes only</div>
+        <div class="stable-hint">(avg≥30, min≥24, 24+ ≥80%)</div>
+      </div>
+    </div>
+  </details>
 
   <div id="cards"></div>
 
@@ -256,12 +307,12 @@ function bestLegs(r, stat, thresholds, win) {
     return { t, hits, gp, rate };
   });
 
-  const perfect = vals.filter(x => x.rate === 1).sort((a, b) => b.t - a.t).slice(0, 2);
+  const perfectTop = vals.filter(x => x.rate === 1).sort((a, b) => b.t - a.t)[0];
   const best80 = vals.filter(x => x.rate >= 0.8).sort((a, b) => b.t - a.t)[0];
 
   const out = [];
   const seen = new Set();
-  for (const x of [...perfect, ...(best80 ? [best80] : [])]) {
+  for (const x of [perfectTop, best80].filter(Boolean)) {
     if (!seen.has(x.t)) {
       seen.add(x.t);
       out.push(x);
@@ -359,6 +410,14 @@ async function load() {
   const layout = document.getElementById("layout");
   const sortWrap = document.getElementById("sortWrap");
   const stableOnly = document.getElementById("stableOnly");
+  const filtersPanel = document.getElementById("filtersPanel");
+  if (filtersPanel) {
+    if (window.matchMedia("(max-width: 520px)").matches) {
+      filtersPanel.removeAttribute("open");
+    } else {
+      filtersPanel.setAttribute("open", "");
+    }
+  }
   const cards = document.getElementById("cards");
 
   function render() {
