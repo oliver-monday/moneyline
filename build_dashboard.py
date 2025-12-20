@@ -629,6 +629,7 @@ def build_html(slate, team_results, league_tbl, outfile):
 
     CSS = """
     <style>
+        html { -webkit-text-size-adjust: 100%; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
             margin: 16px;
@@ -720,7 +721,10 @@ def build_html(slate, team_results, league_tbl, outfile):
 
     lines=[]; w=lines.append
 
-    w("<html><head>"); w(CSS); w("</head><body>")
+    w("<html><head>")
+    w('<meta name="viewport" content="width=device-width,initial-scale=1" />')
+    w(CSS)
+    w("</head><body>")
 
     today = slate["game_date"].iloc[0]
     today_display = pd.Timestamp(today).strftime("%m-%d-%Y")
