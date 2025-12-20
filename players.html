@@ -31,7 +31,7 @@
       margin: 2px 6px 2px 0;
       white-space: nowrap;
     }
-    
+
     .pill.good { 
       background: #e8f7e8 !important;   /* soft green */
       border-color: #6ac46a !important;
@@ -156,6 +156,16 @@ function fmt(x, d=1) {
   return v.toFixed(d);
 }
 
+function restLabel(lastDateStr) {
+  if (!lastDateStr) return "—";
+  const last = new Date(lastDateStr + "T00:00:00");
+  const t = new Date(localYYYYMMDD() + "T00:00:00");
+  const diff = Math.round((t - last) / 86400000);
+  if (!Number.isFinite(diff)) return "—";
+  if (diff <= 0) return "B2B";
+  return diff + "d";
+}
+
 function pillClass(hits, gp) {
   if (!gp) return "";
   const r = hits / gp;
@@ -202,6 +212,19 @@ async function load() {
     }
   }
 
+  // Map team -> today's matchup info { opp, ha("H"/"A") }
+  const gameMapToday = new Map();
+  for (const g of games) {
+    if ((g.game_date || "").trim() === today) {
+      const home = (g.home_team_abbrev || "").trim().toUpperCase();
+      const away = (g.away_team_abbrev || "").trim().toUpperCase();
+      if (home && away) {
+        gameMapToday.set(home, { opp: away, ha: "H" });
+        gameMapToday.set(away, { opp: home, ha: "A" });
+      }
+    }
+  }
+  
   const meta = document.getElementById("meta");
   meta.textContent = `Loaded ${players.length} players from ${snapshotUrl}. Today: ${today} (${teamsToday.size ? teamsToday.size + " teams" : "no teams found"})`;
 
@@ -250,6 +273,12 @@ async function load() {
       const last = r.last_game_date || "";
       const ha = r.last_home_away || "";
 
+      const todayInfo = gameMapToday.get(team);
+      const todayStr = todayInfo ? `Today: ${todayInfo.ha === "H" ? "vs" : "@"} ${todayInfo.opp}` : "";
+      const lastStr  = `Last: ${ha === "H" ? "vs" : "@"} ${(r.last_opp_abbrev || "").toUpperCase()} ${last}`;
+      const restStr  = `Rest: ${restLabel(last)}`;
+      const subLine = [todayStr, restStr, lastStr].filter(Boolean).join(" • ");
+
       const minAvg = fmt(r[`min_avg_${win}`]);
       const minMinWin = fmt(r[`min_min_${win}`]);
 
@@ -267,7 +296,7 @@ async function load() {
             <strong>${r.player_name}</strong>
             <span class="teamcode">${team}</span>
           </div>
-          <div class="submeta">last: ${last} (${ha || "—"})</div>
+          <div class="submeta">${subLine}</div>
         </td>
 
         <td class="mincol">
