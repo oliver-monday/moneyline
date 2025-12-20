@@ -55,6 +55,17 @@ def build_windows(df_player: pd.DataFrame, windows: List[int], thresholds: Dict[
         out[f"min_avg_{w}"] = float(d["minutes"].mean()) if gp else float("nan")
         out[f"min_min_{w}"] = safe_min(d["minutes"]) if gp else float("nan")
 
+        # Minutes thresholds (role reliability)
+        MIN_T = [24, 28, 30, 32]
+        for t in MIN_T:
+            tkey = str(int(t))
+            if gp:
+                hits, rate = rate_and_hits_ge(d["minutes"], t)
+            else:
+                hits, rate = 0, float("nan")
+            out[f"min_ge{tkey}_hits_{w}"] = hits
+            out[f"min_ge{tkey}_rate_{w}"] = rate
+
         for stat in ("pts", "reb", "ast"):
             out[f"{stat}_min_{w}"] = safe_min(d[stat]) if gp else float("nan")
 
