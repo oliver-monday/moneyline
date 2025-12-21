@@ -220,6 +220,21 @@
       align-items:center;
       gap:6px;
     }
+    .pill-soft {
+      border-color:#6ac46a !important;
+      color:#1f5f1f;
+      background: transparent !important;
+    }
+    .pill-tough {
+      border-color:#e08b8b !important;
+      color:#7a2e2e;
+      background: transparent !important;
+    }
+    .pill-opp {
+      border-color:#e3c676 !important;
+      color:#7a5b1a;
+      background: transparent !important;
+    }
     .meta-line { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; }
     .meta-chunk { display:inline-flex; align-items:center; gap:8px; flex-wrap:wrap; }
     .meta-chunk-load { display:inline-flex; align-items:center; gap:8px; white-space:nowrap; }
@@ -402,6 +417,8 @@ const RA_T  = [2,4,6,8,10,12,14];
 
 let todayISO = "";
 let teamLastPlayedDate = new Map();
+let matchupByTeam = {};
+let oppBigByTeam = {};
 function restLabel(lastDateStr) {
   if (!lastDateStr || !todayISO) return "";
   const diff = dayDiff(todayISO, lastDateStr);
@@ -681,6 +698,14 @@ function collectTargets(r, win, ptsT, raT) {
   return targets;
 }
 
+function matchupTier(oppTeam, stat) {
+  if (!oppTeam || !matchupByTeam) return "";
+  const info = matchupByTeam[oppTeam];
+  if (!info) return "";
+  const key = `${stat}_tier`;
+  return String(info[key] || "").toUpperCase();
+}
+
 function targetWeight(t) {
   const avg = Number.isFinite(t.avg) ? t.avg : NaN;
   const ratio = Number.isFinite(avg) && avg > 0 ? clamp(t.t / avg, 0.8, 1.4) : 1.0;
@@ -739,6 +764,22 @@ async function load() {
     if (res.ok) injuriesByTeam = await res.json();
   } catch (err) {
     injuriesByTeam = {};
+  }
+
+  // Matchup context (best effort)
+  matchupByTeam = {};
+  oppBigByTeam = {};
+  try {
+    const res = await fetch("./data/team_opp_allowed.json", {cache: "no-store"});
+    if (res.ok) matchupByTeam = await res.json();
+  } catch (err) {
+    matchupByTeam = {};
+  }
+  try {
+    const res = await fetch("./data/opp_big.json", {cache: "no-store"});
+    if (res.ok) oppBigByTeam = await res.json();
+  } catch (err) {
+    oppBigByTeam = {};
   }
 
   // Master (today's teams)
@@ -967,11 +1008,14 @@ async function load() {
 
       const targets = collectTargets(r, win, PTS_T, RA_T);
 
+      const oppTeam = (todayInfo && todayInfo.opp) ? String(todayInfo.opp || "").toUpperCase() : "";
+
       return {
         row: r,
         team,
         playerName: r.player_name,
         todayInfo,
+        oppTeam,
         minAvg,
         minMinWin,
         ptsMin,
@@ -1005,7 +1049,23 @@ async function load() {
       const placeholder = `<span class="muted" style="font-size:12px;">—</span>`;
       const targetChips = (data.targets || [])
         .slice(0, 3)
-        .map(t => `<span class="target-chip">Target: ${t.stat.toUpperCase()} ${t.t}+ (${t.hits}/${t.gp})</span>`)
+        .map(t => {
+          const stat = t.stat.toUpperCase();
+          const chip = `<span class="target-chip">Target: ${stat} ${t.t}+ (${t.hits}/${t.gp})</span>`;
+          if (!data.oppTeam) return chip;
+          const tier = matchupTier(data.oppTeam, t.stat);
+          const tierPill = (tier === "SOFT" || tier === "TOUGH")
+            ? `<span class="pill ${tier === "SOFT" ? "pill-soft" : "pill-tough"}">${stat}: ${tier}</span>`
+            : "";
+          let oppBig = "";
+          if (t.stat === "reb") {
+            const bigs = (oppBigByTeam && oppBigByTeam[data.oppTeam]) || [];
+            if (bigs.length) {
+              oppBig = `<span class="pill pill-opp">Opp Big: ${bigs[0]}</span>`;
+            }
+          }
+          return `${chip}${tierPill ? " " + tierPill : ""}${oppBig ? " " + oppBig : ""}`;
+        })
         .join("");
       const targetRow = targetChips ? `<div class="target-row">${targetChips}</div>` : "";
 

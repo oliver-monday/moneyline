@@ -66,6 +66,79 @@ CITY_COORDS = {
     ("Washington", "DC"): (38.8981, -77.0209),
 }
 
+ESPN_OPP_URL = "https://www.espn.com/nba/stats/team/_/view/opponent/table/general/sort/avgPoints/dir/asc"
+ESPN_REB_URL = "https://www.espn.com/nba/stats/player/_/table/general/sort/avgRebounds/dir/desc"
+
+_TEAM_NAME_MAP = {
+    "atlanta hawks": "ATL",
+    "boston celtics": "BOS",
+    "brooklyn nets": "BKN",
+    "charlotte hornets": "CHA",
+    "chicago bulls": "CHI",
+    "cleveland cavaliers": "CLE",
+    "dallas mavericks": "DAL",
+    "denver nuggets": "DEN",
+    "detroit pistons": "DET",
+    "golden state warriors": "GSW",
+    "houston rockets": "HOU",
+    "indiana pacers": "IND",
+    "los angeles clippers": "LAC",
+    "la clippers": "LAC",
+    "los angeles lakers": "LAL",
+    "la lakers": "LAL",
+    "memphis grizzlies": "MEM",
+    "miami heat": "MIA",
+    "milwaukee bucks": "MIL",
+    "minnesota timberwolves": "MIN",
+    "new orleans pelicans": "NOP",
+    "new york knicks": "NYK",
+    "oklahoma city thunder": "OKC",
+    "orlando magic": "ORL",
+    "philadelphia 76ers": "PHI",
+    "phoenix suns": "PHX",
+    "portland trail blazers": "POR",
+    "sacramento kings": "SAC",
+    "san antonio spurs": "SAS",
+    "toronto raptors": "TOR",
+    "utah jazz": "UTA",
+    "washington wizards": "WAS",
+}
+
+_SUFFIXES = {"jr", "jr.", "sr", "sr.", "ii", "iii", "iv", "v"}
+
+def _norm_team_name(s: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", str(s or "").lower()).strip()
+
+def _team_to_abbrev(name: str) -> str:
+    return _TEAM_NAME_MAP.get(_norm_team_name(name), "")
+
+def _last_name(full: str) -> str:
+    parts = [p for p in re.split(r"\s+", str(full or "").strip()) if p]
+    while parts and parts[-1].lower().strip(".") in _SUFFIXES:
+        parts.pop()
+    if not parts:
+        return ""
+    return re.sub(r"[^A-Za-z'-]", "", parts[-1])
+
+def _read_espn_table(url: str):
+    try:
+        tables = pd.read_html(url)
+    except Exception:
+        return None
+    return tables[0] if tables else None
+
+def _normalize_cols(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.copy()
+    df.columns = [re.sub(r"[^a-z0-9]+", "", str(c).lower()) for c in df.columns]
+    return df
+
+def _pick_col(cols, keys):
+    for c in cols:
+        for k in keys:
+            if k in c:
+                return c
+    return ""
+
 def haversine_miles(coord1, coord2):
     """Great-circle distance between two (lat, lon) tuples in miles."""
     if coord1 is None or coord2 is None:
@@ -764,6 +837,143 @@ def write_injury_files(slate: pd.DataFrame, asof_date: dt.date) -> None:
 
     print(f"[injuries] target_date={target_ymd} teams={len(injuries_today)} rows_logged={len(log_rows)}")
 
+def write_matchup_files(slate: pd.DataFrame, asof_date: dt.date) -> None:
+    # Canonical target date from slate if possible
+    target_ymd = str(asof_date)
+    try:
+        if isinstance(slate, pd.DataFrame) and (not slate.empty) and ("game_date" in slate.columns):
+            target = pd.to_datetime(slate["game_date"].iloc[0], errors="coerce")
+            if pd.notna(target):
+                target_ymd = target.strftime("%Y-%m-%d")
+    except Exception:
+        pass
+
+    team_opp = {}
+    opp_big = {}
+    team_log_rows = []
+    big_log_rows = []
+
+    df = _read_espn_table(ESPN_OPP_URL)
+    if df is not None:
+        df = _normalize_cols(df)
+        team_col = _pick_col(df.columns, ["team"])
+        pts_col = _pick_col(df.columns, ["pts", "points"])
+        reb_col = _pick_col(df.columns, ["reb"])
+        ast_col = _pick_col(df.columns, ["ast"])
+
+        if team_col and pts_col and reb_col and ast_col:
+            df["__team"] = df[team_col].astype(str)
+            df["__abbr"] = df["__team"].apply(_team_to_abbrev)
+            df["__pts"] = pd.to_numeric(df[pts_col], errors="coerce")
+            df["__reb"] = pd.to_numeric(df[reb_col], errors="coerce")
+            df["__ast"] = pd.to_numeric(df[ast_col], errors="coerce")
+
+            clean = df[df["__abbr"].ne("")].copy()
+            clean = clean.dropna(subset=["__pts", "__reb", "__ast"])
+            if not clean.empty:
+                clean["pts_rank"] = clean["__pts"].rank(method="min", ascending=True).astype(int)
+                clean["reb_rank"] = clean["__reb"].rank(method="min", ascending=True).astype(int)
+                clean["ast_rank"] = clean["__ast"].rank(method="min", ascending=True).astype(int)
+
+                def tier(rank):
+                    if rank <= 8:
+                        return "TOUGH"
+                    if rank >= 23:
+                        return "SOFT"
+                    return "NEUTRAL"
+
+                for row in clean.itertuples(index=False):
+                    abbr = row.__abbr
+                    pts_rank = int(row.pts_rank)
+                    reb_rank = int(row.reb_rank)
+                    ast_rank = int(row.ast_rank)
+                    team_opp[abbr] = {
+                        "pts_allowed": float(row.__pts),
+                        "pts_rank": pts_rank,
+                        "pts_tier": tier(pts_rank),
+                        "reb_allowed": float(row.__reb),
+                        "reb_rank": reb_rank,
+                        "reb_tier": tier(reb_rank),
+                        "ast_allowed": float(row.__ast),
+                        "ast_rank": ast_rank,
+                        "ast_tier": tier(ast_rank),
+                    }
+                    team_log_rows.append({
+                        "date": target_ymd,
+                        "team": abbr,
+                        "pts_allowed": float(row.__pts),
+                        "pts_rank": pts_rank,
+                        "pts_tier": tier(pts_rank),
+                        "reb_allowed": float(row.__reb),
+                        "reb_rank": reb_rank,
+                        "reb_tier": tier(reb_rank),
+                        "ast_allowed": float(row.__ast),
+                        "ast_rank": ast_rank,
+                        "ast_tier": tier(ast_rank),
+                        "source": "espn",
+                    })
+
+    df = _read_espn_table(ESPN_REB_URL)
+    if df is not None:
+        df = _normalize_cols(df)
+        player_col = _pick_col(df.columns, ["player"])
+        team_col = _pick_col(df.columns, ["team", "tm"])
+        if player_col and team_col:
+            top = df.head(10)
+            for row in top.itertuples(index=False):
+                name = getattr(row, player_col)
+                team_name = getattr(row, team_col)
+                abbr = _team_to_abbrev(team_name)
+                if not abbr:
+                    continue
+                last = _last_name(name)
+                if not last:
+                    continue
+                opp_big.setdefault(abbr, [])
+                if last not in opp_big[abbr]:
+                    opp_big[abbr].append(last)
+                big_log_rows.append({
+                    "date": target_ymd,
+                    "team": abbr,
+                    "last_name": last,
+                    "source": "espn",
+                })
+
+    data_dir = Path("data")
+    data_dir.mkdir(parents=True, exist_ok=True)
+    with open(data_dir / "team_opp_allowed.json", "w") as f:
+        json.dump(team_opp, f, indent=2)
+    with open(data_dir / "opp_big.json", "w") as f:
+        json.dump(opp_big, f, indent=2)
+
+    if team_log_rows or big_log_rows:
+        logs_dir = Path("logs")
+        logs_dir.mkdir(parents=True, exist_ok=True)
+
+        if team_log_rows:
+            log_path = logs_dir / "team_opp_allowed_log.csv"
+            new_df = pd.DataFrame(team_log_rows)
+            if log_path.exists():
+                old_df = pd.read_csv(log_path, dtype=str)
+                combined = pd.concat([old_df, new_df], ignore_index=True)
+            else:
+                combined = new_df
+            combined = combined.drop_duplicates(subset=["date", "team"], keep="last")
+            combined.to_csv(log_path, index=False)
+
+        if big_log_rows:
+            log_path = logs_dir / "opp_big_log.csv"
+            new_df = pd.DataFrame(big_log_rows)
+            if log_path.exists():
+                old_df = pd.read_csv(log_path, dtype=str)
+                combined = pd.concat([old_df, new_df], ignore_index=True)
+            else:
+                combined = new_df
+            combined = combined.drop_duplicates(subset=["date", "team", "last_name"], keep="last")
+            combined.to_csv(log_path, index=False)
+
+    print(f"[matchups] wrote team_opp_allowed.json teams={len(team_opp)}; opp_big.json teams={len(opp_big)}")
+
 
 # ------------ HTML rendering ------------------------------------------
 
@@ -1271,6 +1481,7 @@ def main():
     team_results = build_team_results(master)
     league_tbl = league_overview(team_results)
     write_injury_files(slate, today)
+    write_matchup_files(slate, today)
     outfile = f"dashboard_{today}.html"
     build_html(slate, team_results, league_tbl, outfile)
     print("Dashboard written →", outfile)

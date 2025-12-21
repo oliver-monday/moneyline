@@ -1,6 +1,9 @@
 asof_date,team_abbrev,player_name,status,details,source
 2025-12-21,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
 2025-12-21,HOU,Tari Eason,OUT,Tari Eason (Out),rotowire
+2025-12-21,WSH,B. Coulibaly,OUT,B. Coulibaly (Out),rotowire
+2025-12-21,WSH,J. Watkins,OUT,J. Watkins (Out),rotowire
+2025-12-21,WSH,C. Whitmore,OUT,C. Whitmore (Out),rotowire
 2025-12-21,ATL,N. Dante,OUT,N. Dante (Out),rotowire
 2025-12-21,ATL,K. Porzingis,OUT,K. Porzingis (Out),rotowire
 2025-12-21,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
@@ -14,10 +17,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2025-12-21,MIA,N. Jovic,OUT,N. Jovic (Out),rotowire
 2025-12-21,MIA,P. Larsson,OUT,P. Larsson (Out),rotowire
 2025-12-21,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
-2025-12-21,WSH,B. Coulibaly,OUT,B. Coulibaly (Out),rotowire
 2025-12-21,WSH,C. Kispert,OUT,C. Kispert (Out),rotowire
-2025-12-21,WSH,J. Watkins,OUT,J. Watkins (Out),rotowire
-2025-12-21,WSH,C. Whitmore,OUT,C. Whitmore (Out),rotowire
 2025-12-21,MIL,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
 2025-12-21,MIL,T. Prince,OUT,T. Prince (Out),rotowire
 2025-12-21,SAC,D. Eubanks,OUT,D. Eubanks (Out),rotowire
