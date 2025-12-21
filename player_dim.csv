@@ -174,6 +174,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4017837,Ivica Zubac,ivica zubac,LAC,2025-12-21,2025-12-21
 4066320,Desmond Bane,desmond bane,ORL,2025-12-21,2025-12-21
 4066354,Payton Pritchard,payton pritchard,BOS,2025-12-21,2025-12-21
+4066383,Miles Bridges,miles bridges,CHA,2025-12-21,2025-12-21
 4277956,Jordan Poole,jordan poole,NO,2025-12-21,2025-12-21
 4277961,Jaren Jackson Jr.,jaren jackson jr,MEM,2025-12-21,2025-12-21
 4278078,P.J. Washington,p j washington,DAL,2025-12-21,2025-12-21
@@ -186,10 +187,15 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4397688,Trey Murphy III,trey murphy iii,NO,2025-12-21,2025-12-21
 4431678,Tyrese Maxey,tyrese maxey,PHI,2025-12-21,2025-12-21
 4431736,Toumani Camara,toumani camara,POR,2025-12-21,2025-12-21
+4432166,Cade Cunningham,cade cunningham,DET,2025-12-21,2025-12-21
 4432573,Paolo Banchero,paolo banchero,ORL,2025-12-21,2025-12-21
 4432639,Jabari Smith Jr.,jabari smith jr,HOU,2025-12-20,2025-12-20
+4432810,Isaiah Stewart,isaiah stewart,DET,2025-12-21,2025-12-21
+4432816,LaMelo Ball,lamelo ball,CHA,2025-12-21,2025-12-21
 4433083,Cam Spencer,cam spencer,MEM,2025-12-21,2025-12-21
 4433134,Scottie Barnes,scottie barnes,TOR,2025-12-21,2025-12-21
+4433287,Brandon Miller,brandon miller,CHA,2025-12-21,2025-12-21
+4433621,Jalen Duren,jalen duren,DET,2025-12-21,2025-12-21
 4433627,Keyonte George,keyonte george,UTAH,2025-12-21,2025-12-21
 4593125,Santi Aldama,santi aldama,MEM,2025-12-21,2025-12-21
 4594327,Keegan Murray,keegan murray,SAC,2025-12-21,2025-12-21
@@ -197,6 +203,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4683021,Deni Avdija,deni avdija,POR,2025-12-21,2025-12-21
 4683634,Bennedict Mathurin,bennedict mathurin,IND,2025-12-21,2025-12-21
 4684740,Amen Thompson,amen thompson,HOU,2025-12-20,2025-12-20
+4684742,Ausar Thompson,ausar thompson,DET,2025-12-21,2025-12-21
 4701232,Mark Williams,mark williams,PHX,2025-12-21,2025-12-21
 4711272,Reed Sheppard,reed sheppard,HOU,2025-12-20,2025-12-20
 4869780,Derik Queen,derik queen,NO,2025-12-21,2025-12-21
@@ -206,6 +213,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4903027,Cedric Coward,cedric coward,MEM,2025-12-21,2025-12-21
 4914336,Shaedon Sharpe,shaedon sharpe,POR,2025-12-21,2025-12-21
 5041939,Cooper Flagg,cooper flagg,DAL,2025-12-21,2025-12-21
+5061575,Kon Knueppel,kon knueppel,CHA,2025-12-21,2025-12-21
 5105565,Donovan Clingan,donovan clingan,POR,2025-12-21,2025-12-21
 5112087,Jaylen Wells,jaylen wells,MEM,2025-12-21,2025-12-21
 5124612,VJ Edgecombe,vj edgecombe,PHI,2025-12-21,2025-12-21
