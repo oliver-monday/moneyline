@@ -245,21 +245,55 @@ def fmt_pct(x):
         return "—"
     return f"{x * 100:0.1f}%"
 
-def maybe_hl_block(lines, highlight):
-    if not highlight:
-        return lines
-    if not lines:
-        return lines
-    highlighted = lines.copy()
-    highlighted[0] = f"<span class='hl'>{highlighted[0]}"
-    highlighted[-1] = f"{highlighted[-1]}</span>"
-    return highlighted
-
 def label(text: str) -> str:
+    if not text:
+        return "<span class='detail-label detail-label-empty'>&nbsp;</span>"
     return f"<span class='detail-label'>{text}</span>"
 
-def value(text: str, indent: int = 4) -> str:
-    return " " * indent + text
+def _record_pill(text: str, warn: bool = False) -> str:
+    m = re.search(r"(\d+)-(\d+)\s*\((\d+(?:\.\d+)?)%\)", text)
+    if not m:
+        return text
+    pct = float(m.group(3))
+    if pct >= 80:
+        cls = "good"
+    elif pct <= 20:
+        cls = "bad"
+    else:
+        cls = "warn" if warn else "neutral"
+    pill = f"<span class='pill {cls}'>{m.group(0)}</span>"
+    return text.replace(m.group(0), pill, 1)
+
+def _signal_pill(text: str) -> str:
+    phrases = {
+        "Major advantage": "good",
+        "Clear advantage": "good",
+        "Strong uptrend": "good",
+        "Market undervaluing": "good",
+        "Major disadvantage": "bad",
+        "Clear disadvantage": "bad",
+        "High fatigue": "bad",
+        "Severe fatigue spot": "bad",
+        "Severe fatigue": "bad",
+        "Weak downtrend": "bad",
+        "Market overvaluing": "bad",
+    }
+    out = text
+    for phrase, cls in phrases.items():
+        pattern = re.compile(re.escape(phrase), re.IGNORECASE)
+        if pattern.search(out):
+            out = pattern.sub(lambda m: f"<span class='pill {cls}'>{m.group(0)}</span>", out, count=1)
+            break
+    return out
+
+def value_html(text: str, warn: bool = False) -> str:
+    s = "" if text is None else str(text)
+    s = _record_pill(s, warn=warn)
+    s = _signal_pill(s)
+    return f"<span class='detail-value'>{s}</span>"
+
+def line(label_text: str, value_text: str, warn: bool = False) -> str:
+    return f"<div class='detail-line'>{label(label_text)}{value_html(value_text, warn=warn)}</div>"
 
 def load_master():
     df = pd.read_csv(MASTER_PATH)
@@ -754,6 +788,26 @@ def build_html(slate, team_results, league_tbl, outfile):
             border-radius: 14px;
             background: #fff;
         }
+        .game-details summary {
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-right: 24px;
+        }
+        .game-details summary::-webkit-details-marker { display: none; }
+        .game-details summary::after {
+            content: "›";
+            position: absolute;
+            right: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.35;
+            transition: transform 0.15s ease;
+        }
+        .game-details[open] summary::after {
+            transform: translateY(-50%) rotate(90deg);
+        }
+        .game-title { font-size: 20px; font-weight: 700; }
         .game-high {
             background: #e8f7e8 !important;   /* soft green */
             border-color: #6ac46a !important;
@@ -763,20 +817,32 @@ def build_html(slate, team_results, league_tbl, outfile):
             border-color: #e08b8b !important;
         }
         .subheader { font-weight: bold; margin-top: 16px; margin-bottom: 10px; padding-top: 4px; }
-        pre {
-            background: #fff;
-            border: 1px solid #ddd;
-            padding: 12px;
-            border-radius: 4px;
-            font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-            font-size: 12px;
-            line-height: 1.35;
+        .details-block {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 14px;
+            line-height: 1.45;
         }
-        .hl { background-color: #fff3b0; padding: 2px 4px; border-radius: 4px; display: inline-block; font-size: inherit; line-height: inherit; width: 100%; box-sizing: border-box; }
+        .detail-line { display: flex; gap: 10px; align-items: flex-start; }
+        .detail-label { font-weight: 600; color: #444; min-width: 150px; }
+        .detail-label-empty { visibility: hidden; }
+        .detail-value { color: #111; }
+        .pill {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 999px;
+            border: 1px solid #ddd;
+            font-weight: 600;
+        }
+        .pill.warn { background: #fff3b0; border-color: #e6d27a; }
+        .pill.good { background: #e8f7e8; border-color: #6ac46a; }
+        .pill.bad { background: #fbeaea; border-color: #e08b8b; }
+        .pill.neutral { background: #fff; border-color: #ddd; color: #333; }
         .league-block { margin-top: 30px; }
         details { margin-top: 8px; }
-        summary { cursor: pointer; font-weight: bold; color: #999; }
-        .summary-line { margin-top: 4px; margin-bottom: 12px; font-weight: 600; }
+        summary { font-weight: bold; color: #111; }
+        .summary-line { margin-top: 4px; margin-bottom: 12px; font-weight: 600; color: #666; }
         .two-col {
             display: flex;
             gap: 30px;
@@ -788,31 +854,10 @@ def build_html(slate, team_results, league_tbl, outfile):
             .two-col { flex-direction: column; gap: 14px; }
             .col { width: 100%; }
         }
-        .detail-label { font-weight: 600; }
-        pre {
-            white-space: pre-wrap;   /* allows wrapping inside columns */
+        @media (max-width: 600px) {
+            .detail-label { min-width: 120px; }
         }
     </style>
-    """
-
-    TOGGLE_JS = """
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('details').forEach(function (detailsEl) {
-                var label = detailsEl.querySelector('.summary-label');
-                if (!label) {
-                    return;
-                }
-                var openText = label.dataset.openText || 'Collapse';
-                var closedText = label.dataset.closedText || 'Expand';
-                var setText = function () {
-                    label.textContent = detailsEl.open ? openText : closedText;
-                };
-                setText();
-                detailsEl.addEventListener('toggle', setText);
-            });
-        });
-    </script>
     """
 
     lines=[]; w=lines.append
@@ -926,260 +971,209 @@ def build_html(slate, team_results, league_tbl, outfile):
             card_class += " game-avoid"
 
         w(f"<div class='{card_class}'>")
-        w(f"<h3>{away} @ {home}</h3>")
+        w("<details class='game-details'>")
+        w("<summary>")
+        w(f"<div class='game-title'>{away} @ {home}</div>")
         w(f"<div class='summary-line'>{summary_line}</div>")
-        w("<details>")
-        w("<summary><span class='summary-label' data-closed-text='Expand' data-open-text='Collapse'>Expand</span></summary>")
+        w("</summary>")
 
         # ---------------- HOME TEAM ----------------
         w(f"<div class='subheader'>{home.upper()} (HOME)</div>")
         w("<div class='two-col'>")
-        w("<div class='col'><pre>")
+        w("<div class='col'><div class='details-block'>")
         
         # LEFT column items go below:
 
-        w(label("Record:")); w(value(f"{home_sum['ml_record']} ({fmt_pct(home_sum['ml_win_pct'])})"))
-
-        bl = maybe_hl_block([label("As favorite:"), value(f"{home_sum['fav_record']} ({fmt_pct(home_sum['fav_win_pct'])})")], highlight=home_is_fav)
-        for x in bl: w(x)
-
-        bl = maybe_hl_block([label("As underdog:"), value(f"{home_sum['dog_record']} ({fmt_pct(home_sum['dog_win_pct'])})")], highlight=home_is_dog)
-        for x in bl: w(x)
-
-        bl = maybe_hl_block([label("Home:"), value(f"{home_sum['home_record']} ({fmt_pct(home_sum['home_win_pct'])})")], highlight=True)
-        for x in bl: w(x)
-
-        w(label("Away:")); w(value(f"{home_sum['away_record']} ({fmt_pct(home_sum['away_win_pct'])})"))
-
-        bl = maybe_hl_block([label("As home favorite:"), value(f"{home_sum['home_fav_record']} ({fmt_pct(home_sum['home_fav_win_pct'])})")], highlight=home_is_fav)
-        for x in bl: w(x)
-
-        bl = maybe_hl_block([label("As home underdog:"), value(f"{home_sum['home_dog_record']} ({fmt_pct(home_sum['home_dog_win_pct'])})")], highlight=home_is_dog)
-        for x in bl: w(x)
+        w(line("Record:", f"{home_sum['ml_record']} ({fmt_pct(home_sum['ml_win_pct'])})"))
+        w(line("As favorite:", f"{home_sum['fav_record']} ({fmt_pct(home_sum['fav_win_pct'])})", warn=True))
+        w(line("As underdog:", f"{home_sum['dog_record']} ({fmt_pct(home_sum['dog_win_pct'])})", warn=True))
+        w(line("Home:", f"{home_sum['home_record']} ({fmt_pct(home_sum['home_win_pct'])})", warn=True))
+        w(line("Away:", f"{home_sum['away_record']} ({fmt_pct(home_sum['away_win_pct'])})", warn=True))
+        w(line("As home favorite:", f"{home_sum['home_fav_record']} ({fmt_pct(home_sum['home_fav_win_pct'])})", warn=True))
+        w(line("As home underdog:", f"{home_sum['home_dog_record']} ({fmt_pct(home_sum['home_dog_win_pct'])})", warn=True))
 
         if bucket_home:
             b=bucket_home_stats
-            w(label(f"{bucket_home}:")); w(value(f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])})"))
+            w(line(f"{bucket_home}:", f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])})"))
 
-        w(label("ROI all ML bets:")); w(value(f"{home_sum['roi_units']:+0.1f}u ({fmt_pct(home_sum['roi_pct'])})"))
-        w(label("ROI as favorite:")); w(value(f"{home_sum['fav_roi_units']:+0.1f}u ({fmt_pct(home_sum['fav_roi_pct'])})"))
-        w(label("ROI as underdog:")); w(value(f"{home_sum['dog_roi_units']:+0.1f}u ({fmt_pct(home_sum['dog_roi_pct'])})"))
+        w(line("ROI all ML bets:", f"{home_sum['roi_units']:+0.1f}u ({fmt_pct(home_sum['roi_pct'])})"))
+        w(line("ROI as favorite:", f"{home_sum['fav_roi_units']:+0.1f}u ({fmt_pct(home_sum['fav_roi_pct'])})"))
+        w(line("ROI as underdog:", f"{home_sum['dog_roi_units']:+0.1f}u ({fmt_pct(home_sum['dog_roi_pct'])})"))
 
-        w(label("Vs strong opps:")); w(value(f"{oppH['vs_strong_record']} ({fmt_pct(oppH['vs_strong_pct'])})"))
-        w(label("Vs weak opps:")); w(value(f"{oppH['vs_weak_record']} ({fmt_pct(oppH['vs_weak_pct'])})"))
+        w(line("Vs strong opps:", f"{oppH['vs_strong_record']} ({fmt_pct(oppH['vs_strong_pct'])})"))
+        w(line("Vs weak opps:", f"{oppH['vs_weak_record']} ({fmt_pct(oppH['vs_weak_pct'])})"))
 
-        w("</pre></div>")
-        w("<div class='col'><pre>")
+        w("</div></div>")
+        w("<div class='col'><div class='details-block'>")
         
         # RIGHT column items go below:
 
-        w(label("Recent form:"))
-        w(value(f"Last 5:   {fmt_pct(formH['last5_pct'])}"))
-        w(value(f"Last 10:  {fmt_pct(formH['last10_pct'])}"))
-        w(value(f"Streak:   {fmt_streak(formH['streak'])}"))
+        w(line("Recent form:", f"Last 5: {fmt_pct(formH['last5_pct'])}"))
+        w(line("", f"Last 10: {fmt_pct(formH['last10_pct'])}"))
+        w(line("", f"Streak: {fmt_streak(formH['streak'])}"))
 
         # === Insert Form Index at bottom ===
         if pd.isna(home_form_score):
-            w(label("Form index:")); w(value("— (insufficient sample)"))
+            w(line("Form index:", "— (insufficient sample)"))
         else:
-            w(label("Form index:")); w(value(f"{home_form_score:0.0f} ({home_form_desc})"))
+            w(line("Form index:", f"{home_form_score:0.0f} ({home_form_desc})"))
 
         # === NEW: Insert Mismatch Index right after Form Index ===
         if pd.isna(home_mis_score):
-            w(label("Mismatch index:")); w(value("— (insufficient sample)"))
+            w(line("Mismatch index:", "— (insufficient sample)"))
         else:
-            w(label("Mismatch index:"))
-            w(value(f"{home_mis_score:+0.0f} ({home_mis_desc})"))
+            w(line("Mismatch index:", f"{home_mis_score:+0.0f} ({home_mis_desc})"))
 
         # === PRM: Performance Relative to Market (full block) ===
         if pd.isna(home_prm_score):
-            w(label("PRM last 10:")); 
-            w(value("— (insufficient sample)"))
+            w(line("PRM last 10:", "— (insufficient sample)"))
         else:
-            w(label("PRM last 10:"))
-            w(value(f"{home_prm_score:+0.1f}u"))
-
-            w(label("Mispricing trend:"))
-            w(value(f"undervalued in {home_underval} of last 10"))
-
-            w(label("Market signal:"))
-            w(value(home_prm_signal))
+            w(line("PRM last 10:", f"{home_prm_score:+0.1f}u"))
+            w(line("Mispricing trend:", f"undervalued in {home_underval} of last 10"))
+            w(line("Market signal:", home_prm_signal))
 
         # ---- Schedule Stress (home) ----
         if pd.isna(home_ss["score"]):
-            w(label("Schedule stress:"))
-            w(value("— (insufficient sample)"))
+            w(line("Schedule stress:", "— (insufficient sample)"))
         else:
-            w(label("Schedule stress:"))
-            w(value(f"{home_ss['score']:0.0f} ({home_ss['desc']})"))
+            w(line("Schedule stress:", f"{home_ss['score']:0.0f} ({home_ss['desc']})"))
 
             # Rest line
             if home_ss["is_b2b"]:
-                rest_text = f"{home_ss['rest_days']} days (back-to-back)"
+                rest_text = "<span class='pill bad'>B2B</span>"
             else:
                 rest_text = f"{home_ss['rest_days']} days"
-            w(label("Rest:"))
-            w(value(rest_text))
+            w(line("Rest:", rest_text))
 
             # Games last 7 days
-            w(label("Games last 7 days:"))
-            w(value(str(home_ss["games_7"])))
+            w(line("Games last 7 days:", str(home_ss["games_7"])))
 
             # Travel miles
             if np.isnan(home_ss["travel_miles"]):
                 travel_text = "n/a"
             else:
                 travel_text = f"{home_ss['travel_miles']:0.0f} miles"
-            w(label("Travel:"))
-            w(value(travel_text))
+            w(line("Travel:", travel_text))
 
             # Road stretch
             # Only show road stretch if meaningful
             if home_ss["road_streak"] >= 1:
-                w(label("Road stretch:"))
                 if home_ss["road_streak"] == 1:
-                    w(value("1 straight road game"))
+                    w(line("Road stretch:", "1 straight road game"))
                 else:
-                    w(value(f"{home_ss['road_streak']} straight road games"))
+                    w(line("Road stretch:", f"{home_ss['road_streak']} straight road games"))
 
             # Homestand indicator (only show if meaningful)
             if home_ss["home_streak"] >= 2:
-                w(label("Home stand:"))
                 if home_ss["home_streak"] == 2:
-                    w(value("2 straight home games"))
+                    w(line("Home stand:", "2 straight home games"))
                 else:
-                    w(value(f"{home_ss['home_streak']} straight home games"))
+                    w(line("Home stand:", f"{home_ss['home_streak']} straight home games"))
             
             # --- Injury Report (home) ---
             if home_inj and isinstance(home_inj, str) and home_inj.strip():
-                w(label("Injuries:"))
-                for line in home_inj.split(";"):
-                    w(value(line.strip()))
+                parts = [x.strip() for x in home_inj.split(";") if x.strip()]
+                for i, part in enumerate(parts):
+                    w(line("Injuries:" if i == 0 else "", part))
 
-        w("</pre></div>")
+        w("</div></div>")
         w("</div>")   # end two-col
 
         # ---------------- AWAY TEAM ----------------
         w(f"<div class='subheader'>{away.upper()} (AWAY)</div>")
         w("<div class='two-col'>")
-        w("<div class='col'><pre>")
+        w("<div class='col'><div class='details-block'>")
         
         # LEFT column items go below:
 
-        w(label("Record:")); w(value(f"{away_sum['ml_record']} ({fmt_pct(away_sum['ml_win_pct'])})"))
-
-        bl = maybe_hl_block([label("As favorite:"), value(f"{away_sum['fav_record']} ({fmt_pct(away_sum['fav_win_pct'])})")], highlight=away_is_fav)
-        for x in bl: w(x)
-
-        bl = maybe_hl_block([label("As underdog:"), value(f"{away_sum['dog_record']} ({fmt_pct(away_sum['dog_win_pct'])})")], highlight=away_is_dog)
-        for x in bl: w(x)
-
-        w(label("Home:")); w(value(f"{away_sum['home_record']} ({fmt_pct(away_sum['home_win_pct'])})"))
-
-        bl = maybe_hl_block([label("Away:"), value(f"{away_sum['away_record']} ({fmt_pct(away_sum['away_win_pct'])})")], highlight=True)
-        for x in bl: w(x)
-
-        bl = maybe_hl_block([label("As away favorite:"), value(f"{away_sum['away_fav_record']} ({fmt_pct(away_sum['away_fav_win_pct'])})")], highlight=away_is_fav)
-        for x in bl: w(x)
-
-        bl = maybe_hl_block([label("As away underdog:"), value(f"{away_sum['away_dog_record']} ({fmt_pct(away_sum['away_dog_win_pct'])})")], highlight=away_is_dog)
-        for x in bl: w(x)
+        w(line("Record:", f"{away_sum['ml_record']} ({fmt_pct(away_sum['ml_win_pct'])})"))
+        w(line("As favorite:", f"{away_sum['fav_record']} ({fmt_pct(away_sum['fav_win_pct'])})", warn=True))
+        w(line("As underdog:", f"{away_sum['dog_record']} ({fmt_pct(away_sum['dog_win_pct'])})", warn=True))
+        w(line("Home:", f"{away_sum['home_record']} ({fmt_pct(away_sum['home_win_pct'])})", warn=True))
+        w(line("Away:", f"{away_sum['away_record']} ({fmt_pct(away_sum['away_win_pct'])})", warn=True))
+        w(line("As away favorite:", f"{away_sum['away_fav_record']} ({fmt_pct(away_sum['away_fav_win_pct'])})", warn=True))
+        w(line("As away underdog:", f"{away_sum['away_dog_record']} ({fmt_pct(away_sum['away_dog_win_pct'])})", warn=True))
 
         if bucket_away:
             b=bucket_away_stats
-            w(label(f"{bucket_away}:")); w(value(f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])})"))
+            w(line(f"{bucket_away}:", f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])})"))
 
-        w(label("ROI all ML bets:")); w(value(f"{away_sum['roi_units']:+0.1f}u ({fmt_pct(away_sum['roi_pct'])})"))
-        w(label("ROI as favorite:")); w(value(f"{away_sum['fav_roi_units']:+0.1f}u ({fmt_pct(away_sum['fav_roi_pct'])})"))
-        w(label("ROI as underdog:")); w(value(f"{away_sum['dog_roi_units']:+0.1f}u ({fmt_pct(away_sum['dog_roi_pct'])})"))
+        w(line("ROI all ML bets:", f"{away_sum['roi_units']:+0.1f}u ({fmt_pct(away_sum['roi_pct'])})"))
+        w(line("ROI as favorite:", f"{away_sum['fav_roi_units']:+0.1f}u ({fmt_pct(away_sum['fav_roi_pct'])})"))
+        w(line("ROI as underdog:", f"{away_sum['dog_roi_units']:+0.1f}u ({fmt_pct(away_sum['dog_roi_pct'])})"))
 
-        w(label("Vs strong opps:")); w(value(f"{oppA['vs_strong_record']} ({fmt_pct(oppA['vs_strong_pct'])})"))
-        w(label("Vs weak opps:")); w(value(f"{oppA['vs_weak_record']} ({fmt_pct(oppA['vs_weak_pct'])})"))
+        w(line("Vs strong opps:", f"{oppA['vs_strong_record']} ({fmt_pct(oppA['vs_strong_pct'])})"))
+        w(line("Vs weak opps:", f"{oppA['vs_weak_record']} ({fmt_pct(oppA['vs_weak_pct'])})"))
 
-        w("</pre></div>")
-        w("<div class='col'><pre>")
+        w("</div></div>")
+        w("<div class='col'><div class='details-block'>")
         
         # RIGHT column items go below:
 
-        w(label("Recent form:"))
-        w(value(f"Last 5:   {fmt_pct(formA['last5_pct'])}"))
-        w(value(f"Last 10:  {fmt_pct(formA['last10_pct'])}"))
-        w(value(f"Streak:   {fmt_streak(formA['streak'])}"))
+        w(line("Recent form:", f"Last 5: {fmt_pct(formA['last5_pct'])}"))
+        w(line("", f"Last 10: {fmt_pct(formA['last10_pct'])}"))
+        w(line("", f"Streak: {fmt_streak(formA['streak'])}"))
 
         # === Form Index (away) ===
         if pd.isna(away_form_score):
-            w(label("Form index:")); w(value("— (insufficient sample)"))
+            w(line("Form index:", "— (insufficient sample)"))
         else:
-            w(label("Form index:")); w(value(f"{away_form_score:0.0f} ({away_form_desc})"))
+            w(line("Form index:", f"{away_form_score:0.0f} ({away_form_desc})"))
 
         # === Mismatch Index (away) ===
         if pd.isna(away_mis_score):
-            w(label("Mismatch index:")); w(value("— (insufficient sample)"))
+            w(line("Mismatch index:", "— (insufficient sample)"))
         else:
-            w(label("Mismatch index:"))
-            w(value(f"{away_mis_score:+0.0f} ({away_mis_desc})"))
+            w(line("Mismatch index:", f"{away_mis_score:+0.0f} ({away_mis_desc})"))
 
         # === PRM: Performance Relative to Market (full block) ===
         if pd.isna(away_prm_score):
-            w(label("PRM last 10:")); 
-            w(value("— (insufficient sample)"))
+            w(line("PRM last 10:", "— (insufficient sample)"))
         else:
-            w(label("PRM last 10:"))
-            w(value(f"{away_prm_score:+0.1f}u"))
-
-            w(label("Mispricing trend:"))
-            w(value(f"undervalued in {away_underval} of last 10"))
-
-            w(label("Market signal:"))
-            w(value(away_prm_signal))   
+            w(line("PRM last 10:", f"{away_prm_score:+0.1f}u"))
+            w(line("Mispricing trend:", f"undervalued in {away_underval} of last 10"))
+            w(line("Market signal:", away_prm_signal))
 
         # ---- Schedule Stress (away) ----
         if pd.isna(away_ss["score"]):
-            w(label("Schedule stress:"))
-            w(value("— (insufficient sample)"))
+            w(line("Schedule stress:", "— (insufficient sample)"))
         else:
-            w(label("Schedule stress:"))
-            w(value(f"{away_ss['score']:0.0f} ({away_ss['desc']})"))
+            w(line("Schedule stress:", f"{away_ss['score']:0.0f} ({away_ss['desc']})"))
 
             if away_ss["is_b2b"]:
-                rest_text = f"{away_ss['rest_days']} days (back-to-back)"
+                rest_text = "<span class='pill bad'>B2B</span>"
             else:
                 rest_text = f"{away_ss['rest_days']} days"
-            w(label("Rest:"))
-            w(value(rest_text))
+            w(line("Rest:", rest_text))
 
-            w(label("Games last 7 days:"))
-            w(value(str(away_ss["games_7"])))
+            w(line("Games last 7 days:", str(away_ss["games_7"])))
 
             if np.isnan(away_ss["travel_miles"]):
                 travel_text = "n/a"
             else:
                 travel_text = f"{away_ss['travel_miles']:0.0f} miles"
-            w(label("Travel:"))
-            w(value(travel_text))
+            w(line("Travel:", travel_text))
 
             # Only show road stretch if meaningful
             if away_ss["road_streak"] >= 1:
-                w(label("Road stretch:"))
                 if away_ss["road_streak"] == 1:
-                    w(value("1 straight road game"))
+                    w(line("Road stretch:", "1 straight road game"))
                 else:
-                    w(value(f"{away_ss['road_streak']} straight road games"))
+                    w(line("Road stretch:", f"{away_ss['road_streak']} straight road games"))
 
             if away_ss["home_streak"] >= 2:
-                w(label("Home stand:"))
                 if away_ss["home_streak"] == 2:
-                    w(value("2 straight home games"))
+                    w(line("Home stand:", "2 straight home games"))
                 else:
-                    w(value(f"{away_ss['home_streak']} straight home games"))
+                    w(line("Home stand:", f"{away_ss['home_streak']} straight home games"))
 
         # --- Injury Report (away) ---
         if away_inj and isinstance(away_inj, str) and away_inj.strip():
-            w(label("Injuries:"))
-            for line in away_inj.split(";"):
-                w(value(line.strip()))
+            parts = [x.strip() for x in away_inj.split(";") if x.strip()]
+            for i, part in enumerate(parts):
+                w(line("Injuries:" if i == 0 else "", part))
 
-        w("</pre></div>")
+        w("</div></div>")
         w("</div>")   # end two-col
         w("</details>")
         w("</div>")  # end game-card
@@ -1189,10 +1183,11 @@ def build_html(slate, team_results, league_tbl, outfile):
         w("<div class='league-block'>"); w("<h2>League Overview</h2>")
         lv=league_tbl
         def block(title, df, col):
-            w(f"<h3>{title}</h3>"); w("<pre>")
-            for i,row in enumerate(df.itertuples(index=False),start=1):
-                w(f"{i}. {row.team:22s} {fmt_pct(getattr(row,col))}")
-            w("</pre>")
+            w(f"<h3>{title}</h3>")
+            w("<div class='details-block'>")
+            for i, row in enumerate(df.itertuples(index=False), start=1):
+                w(line(f"{i}.", f"{row.team} {fmt_pct(getattr(row, col))}"))
+            w("</div>")
         block("Best overall Win %", lv.sort_values("ml_pct",ascending=False).head(10), "ml_pct")
         block("Best Home Teams", lv.sort_values("home_pct",ascending=False).head(10), "home_pct")
         block("Best Away Teams", lv.sort_values("away_pct",ascending=False).head(10), "away_pct")
@@ -1200,7 +1195,6 @@ def build_html(slate, team_results, league_tbl, outfile):
         block("Best Underdogs", lv.sort_values("dog_pct",ascending=False).head(10), "dog_pct")
         w("</div>")
 
-    w(TOGGLE_JS)
     w("</body></html>")
     with open(outfile,"w") as f:
         f.write("\n".join(lines))
