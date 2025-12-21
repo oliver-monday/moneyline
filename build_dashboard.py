@@ -777,14 +777,29 @@ def build_html(slate, team_results, league_tbl, outfile):
             margin: 16px;
             color: #111;
         }
-        .nav { display:flex; gap:12px; margin: 10px 0 18px; }
-        .nav a { text-decoration:none; padding:8px 10px; border:1px solid #ddd; border-radius:10px; color:#111; }
+        .nav {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            gap:12px;
+            margin: 10px 0 18px;
+            width: 100%;
+        }
+        .nav a {
+            text-decoration:none;
+            padding:12px 16px;
+            border:1px solid #ddd;
+            border-radius:14px;
+            color:#111;
+            text-align:center;
+            font-size: 18px;
+            font-weight: 600;
+        }
         .nav a.active { background:#111; color:#fff; border-color:#111; }
         @media (max-width: 520px) {
             .nav a {
-                padding: 12px 14px;
-                font-size: 16px;
-                border-radius: 14px;
+                padding: 14px 16px;
+                font-size: 18px;
+                border-radius: 16px;
             }
         }
         .muted { color:#666; }
@@ -890,6 +905,8 @@ def build_html(slate, team_results, league_tbl, outfile):
             .detail-line { justify-content: space-between; }
             .detail-label { min-width: auto; }
             .detail-value { margin-left: auto; text-align: right; }
+            .league-list .detail-line { justify-content: flex-start; }
+            .league-list .detail-value { margin-left: 0; text-align: left; }
         }
     </style>
     """
