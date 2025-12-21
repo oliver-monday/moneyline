@@ -26,7 +26,7 @@ MASTER_PATH = Path("nba_master.csv")
 
 ML_BUCKETS = [
     (-10000, -300, "Big favorite (≤ -300)"),
-    (-299, -151, "Medium favorite (-299 to -151)"),
+    (-299, -151, "Med. favorite (-299 to -151)"),
     (-150, -101, "Small favorite (-150 to -101)"),
     (-100, 100, "Coinflip (-100 to +100)"),
     (101, 200, "Small dog (+101 to +200)"),
