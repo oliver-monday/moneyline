@@ -445,6 +445,17 @@ function seasonKey(row) {
   return season && pid ? `${season}::${pid}` : "";
 }
 
+function isOutStatus(status) {
+  return String(status || "").trim().toUpperCase() === "OUT";
+}
+
+function isOut(r, injuryStatus) {
+  const status = (injuryStatus != null)
+    ? injuryStatus
+    : (r && (r.injury_status || r.status || r.injuryStatus));
+  return isOutStatus(status);
+}
+
 let _stableCache = new Map();
 let _targetsCache = new Map();
 let _matchupRerendered = false;
@@ -469,6 +480,7 @@ function stableMemo(r, win) {
 }
 
 function targetsMemo(r, win) {
+  if (isOut(r)) return [];
   const key = playerKey(r);
   if (!key) return collectTargets(r, win, PTS_T, RA_T);
   const cacheKey = `${key}::${win}`;
@@ -733,6 +745,7 @@ function decisionTarget(r, stat, thresholds, win, band) {
 }
 
 function collectTargets(r, win, ptsT, raT) {
+  if (isOut(r)) return [];
   const targets = [];
   const pts = decisionTarget(r, "pts", ptsT, win, 2.5);
   const reb = decisionTarget(r, "reb", raT, win, 1.0);
@@ -985,6 +998,12 @@ async function load() {
 
       if (stableOnly.checked && !stableMemo(r, win)) return false;
       if (targetsOnly.checked) {
+        const injuryMatch = matchInjury(team, r.player_name, injuriesByTeam);
+        const injuryStatus = injuryMatch && injuryMatch.status
+          ? String(injuryMatch.status).toUpperCase()
+          : "";
+        r.injury_status = injuryStatus;
+        if (isOut(r, injuryStatus)) return false;
         const targets = targetsMemo(r, win);
         if (!targets.length) return false;
       }
@@ -1067,6 +1086,7 @@ async function load() {
       const injuryStatus = injuryMatch && injuryMatch.status
         ? String(injuryMatch.status).toUpperCase()
         : "";
+      r.injury_status = injuryStatus;
 
       const ptsAvg = seasonAvg(r, "pts");
       const rebAvg = seasonAvg(r, "reb");
@@ -1227,6 +1247,7 @@ async function load() {
 
         const targetEntries = [];
         for (const p of arr) {
+          if (isOut(p.row, p.injuryStatus)) continue;
           for (const t of (p.targets || [])) {
             targetEntries.push({
               playerName: p.playerName,
