@@ -371,6 +371,7 @@ function fmt(x, d=1) {
 }
 
 let todayISO = "";
+let teamLastPlayedDate = new Map();
 function restLabel(lastDateStr) {
   if (!lastDateStr || !todayISO) return "";
   const diff = dayDiff(todayISO, lastDateStr);
@@ -586,7 +587,7 @@ async function load() {
   todayISO = slateDate;
   const todayDisplay = formatMMDDYYYY(slateDate);
 
-  const teamLastPlayedDate = new Map();
+  teamLastPlayedDate = new Map();
   const isNumeric = v => /^\d+$/.test(String(v || "").trim());
   for (const g of games) {
     const gd = (g.game_date || "").trim();
