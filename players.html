@@ -492,11 +492,18 @@ async function load() {
       const ha = r.last_home_away || "";
 
       const todayInfo = gameMapToday.get(team);
-      const todayStr = todayInfo ? `Today: ${todayInfo.ha === "H" ? "vs" : "@"} ${todayInfo.opp}` : "";
-      const lastStr  = `Last: ${ha === "H" ? "vs" : "@"} ${(r.last_opp_abbrev || "").toUpperCase()} ${last}`;
-      const restStr  = `Rest: ${restLabel(last)}`;
-      const subLine = [todayStr, restStr, lastStr].filter(Boolean).join(" • ");
+      const opp = String(r.last_opp_abbrev || "").toUpperCase();
+      const haToken = ha === "H" ? "vs" : (ha === "A" ? "@" : "");
+      const lastStr = (opp && haToken) ? `Last: ${haToken} ${opp}` : "Last: —";
+      const lastPts = num(r.last_pts);
+      const lastReb = num(r.last_reb);
+      const lastAst = num(r.last_ast);
+      const lastStats = (Number.isFinite(lastPts) && Number.isFinite(lastReb) && Number.isFinite(lastAst))
+        ? `(PTS ${fmt(lastPts, 0)} · REB ${fmt(lastReb, 0)} · AST ${fmt(lastAst, 0)})`
+        : "";
+      const lastLine = [lastStr, lastStats].filter(Boolean).join(" ");
 
+      const restStr = `Rest: ${restLabel(last)}`;
       const loadLabel = String(r[`load_label_${win}`] || "").trim();
       const loadScoreVal = num(r[`load_score_${win}`]);
       let loadText = "Load: —";
@@ -506,7 +513,7 @@ async function load() {
       }
       const travel = String(r.travel_last3 || "").trim();
       const travelText = travel ? `Travel: ${travel}` : "";
-      const contextLine = [loadText, travelText].filter(Boolean).join(" · ");
+      const contextLine = [restStr, travelText, loadText].filter(Boolean).join(" · ");
 
       const minAvg = fmt(r[`min_avg_${win}`]);
       const minMinWin = fmt(r[`min_min_${win}`]);
@@ -535,7 +542,6 @@ async function load() {
         team,
         playerName: r.player_name,
         todayInfo,
-        subLine,
         minAvg,
         minMinWin,
         ptsMin,
@@ -549,6 +555,7 @@ async function load() {
         astBest,
         previewStrength,
         stable,
+        lastLine,
         contextLine,
       };
     });
@@ -575,10 +582,10 @@ async function load() {
               <strong>${data.playerName}</strong>
               <span class="teamcode">${data.team}</span>
             </div>
-            <div class="submeta">${data.subLine}</div>
+            <div class="submeta">${data.lastLine}</div>
             <div class="submeta">${data.contextLine}</div>
             <div class="submeta" style="margin-top:6px;">
-              <strong>MIN</strong> ${data.minAvg} <span class="muted">(avg)</span> · <span class="muted">min ${data.minMinWin}</span>
+              <strong>MINS</strong> ${data.minAvg} <span class="muted">(avg)</span> · ${data.minMinWin} <span class="muted">(min)</span>
             </div>
             <div style="margin-top:8px;">${gateBadge}</div>
           </div>

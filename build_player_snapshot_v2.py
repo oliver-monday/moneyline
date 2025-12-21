@@ -180,7 +180,8 @@ def main():
     for (pid, pname), g in df.groupby(["player_id","player_name"], sort=False):
         g = g.sort_values("game_date", ascending=False)
 
-        last_row = g.iloc[0]
+        gp = g[(g["minutes"] > 0) & (g["dnp"] != 1)].copy().sort_values("game_date", ascending=False)
+        last_row = gp.iloc[0] if len(gp) else g.iloc[0]
         base = {
             "season_end_year": int(season_end),
             "player_id": str(pid),
@@ -189,12 +190,15 @@ def main():
             "last_team_abbrev": str(last_row["team_abbrev"]).upper(),
             "last_opp_abbrev": str(last_row["opp_abbrev"]).upper(),
             "last_home_away": str(last_row["home_away"]),
+            "last_pts": float(last_row["pts"]) if len(gp) else float("nan"),
+            "last_reb": float(last_row["reb"]) if len(gp) else float("nan"),
+            "last_ast": float(last_row["ast"]) if len(gp) else float("nan"),
+            "last_min": float(last_row["minutes"]) if len(gp) else float("nan"),
             "games_total_rows": int(len(g)),
             "games_played_rows": int((g["minutes"] > 0).sum()),
             "dnp_rows": int((g["dnp"] == 1).sum()),
         }
 
-        gp = g[(g["minutes"] > 0) & (g["dnp"] != 1)].copy().sort_values("game_date", ascending=False)
         base.update(build_windows(gp, windows, thresholds))
         base.update(build_load_metrics(gp, windows))
         rows.append(base)
