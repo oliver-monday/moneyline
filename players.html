@@ -445,6 +445,45 @@ function seasonKey(row) {
   return season && pid ? `${season}::${pid}` : "";
 }
 
+let _stableCache = new Map();
+let _targetsCache = new Map();
+let _matchupRerendered = false;
+
+function playerKey(r) {
+  const key = seasonKey(r);
+  if (key) return key;
+  const pid = String(r.player_id || "").trim();
+  const name = String(r.player_name || "").trim().toLowerCase();
+  const team = String(r.last_team_abbrev || "").trim().toUpperCase();
+  return pid || name ? `${pid || name}::${team}` : "";
+}
+
+function stableMemo(r, win) {
+  const key = playerKey(r);
+  if (!key) return isStableMinutes(r, win);
+  const cacheKey = `${key}::${win}`;
+  if (_stableCache.has(cacheKey)) return _stableCache.get(cacheKey);
+  const val = isStableMinutes(r, win);
+  _stableCache.set(cacheKey, val);
+  return val;
+}
+
+function targetsMemo(r, win) {
+  const key = playerKey(r);
+  if (!key) return collectTargets(r, win, PTS_T, RA_T);
+  const cacheKey = `${key}::${win}`;
+  if (_targetsCache.has(cacheKey)) return _targetsCache.get(cacheKey);
+  const val = collectTargets(r, win, PTS_T, RA_T);
+  _targetsCache.set(cacheKey, val);
+  return val;
+}
+
+function clearComputedCaches() {
+  _stableCache.clear();
+  _targetsCache.clear();
+  _matchupRerendered = false;
+}
+
 function initHits(thresholds) {
   const out = {};
   for (const t of thresholds) out[t] = 0;
@@ -918,6 +957,8 @@ async function load() {
   }
   const cards = document.getElementById("cards");
 
+  clearComputedCaches();
+
   function render() {
     const win = w.value;
     const layoutMode = layout.value;
@@ -942,9 +983,9 @@ async function load() {
       const m = num(r[minKey]);
       if (Number.isFinite(minMin) && Number.isFinite(m) && m < minMin) return false;
 
-      if (stableOnly.checked && !isStableMinutes(r, win)) return false;
+      if (stableOnly.checked && !stableMemo(r, win)) return false;
       if (targetsOnly.checked) {
-        const targets = collectTargets(r, win, PTS_T, RA_T);
+        const targets = targetsMemo(r, win);
         if (!targets.length) return false;
       }
 
@@ -1034,7 +1075,7 @@ async function load() {
       const rebAvgText = Number.isFinite(rebAvg) ? rebAvg.toFixed(1) : "—";
       const astAvgText = Number.isFinite(astAvg) ? astAvg.toFixed(1) : "—";
 
-      const targets = collectTargets(r, win, PTS_T, RA_T);
+      const targets = targetsMemo(r, win);
 
       const oppTeam = (todayInfo && todayInfo.opp) ? String(todayInfo.opp || "").toUpperCase() : "";
 
@@ -1280,7 +1321,8 @@ async function load() {
     fetchJson("./data/opp_big.json").then(d => { OPP_BIG = d || {}; }),
     fetchJson("./data/team_opp_allowed.json").then(d => { TEAM_OPP = d || {}; }),
   ]).then(() => {
-    if (Object.keys(OPP_BIG).length || Object.keys(TEAM_OPP).length) {
+    if (!_matchupRerendered && (Object.keys(OPP_BIG).length || Object.keys(TEAM_OPP).length)) {
+      _matchupRerendered = true;
       render();
     }
   }).catch(() => {});
