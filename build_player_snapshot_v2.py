@@ -81,6 +81,57 @@ def build_windows(df_player: pd.DataFrame, windows: List[int], thresholds: Dict[
     return out
 
 
+def build_load_metrics(df_player: pd.DataFrame, windows: List[int]) -> Dict[str, float]:
+    """Compute load deltas/labels and recent travel string for a player."""
+    out: Dict[str, float] = {}
+    if df_player.empty:
+        for w in windows:
+            out[f"load_min_delta_{w}"] = float("nan")
+            out[f"load_pts_delta_{w}"] = float("nan")
+            out[f"load_score_{w}"] = float("nan")
+            out[f"load_label_{w}"] = ""
+        out["travel_last3"] = ""
+        return out
+
+    season_min_avg = float(df_player["minutes"].mean())
+    season_pts_avg = float(df_player["pts"].mean())
+
+    last3 = df_player.head(3)
+    if len(last3) == 3:
+        travel_map = {"A": "@", "H": "vs"}
+        travel_last3 = " ".join(travel_map.get(str(x), "") for x in last3["home_away"])
+    else:
+        travel_last3 = ""
+    out["travel_last3"] = travel_last3.strip()
+
+    for w in windows:
+        d = df_player.head(w)
+        gp = int(len(d))
+        if gp and np.isfinite(season_min_avg) and np.isfinite(season_pts_avg):
+            win_min_avg = float(d["minutes"].mean())
+            win_pts_avg = float(d["pts"].mean())
+            min_delta = win_min_avg - season_min_avg
+            pts_delta = win_pts_avg - season_pts_avg
+            score = 0.7 * min_delta + 0.3 * pts_delta
+            if score >= 3.0:
+                label = "HIGH"
+            elif score >= 1.5:
+                label = "MED"
+            else:
+                label = "Normal"
+        else:
+            min_delta = float("nan")
+            pts_delta = float("nan")
+            score = float("nan")
+            label = ""
+        out[f"load_min_delta_{w}"] = min_delta
+        out[f"load_pts_delta_{w}"] = pts_delta
+        out[f"load_score_{w}"] = score
+        out[f"load_label_{w}"] = label
+
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--in", dest="inp", default="player_game_log.csv", help="Input player_game_log.csv")
@@ -143,8 +194,9 @@ def main():
             "dnp_rows": int((g["dnp"] == 1).sum()),
         }
 
-        gp = g[g["minutes"] > 0].copy().sort_values("game_date", ascending=False)
+        gp = g[(g["minutes"] > 0) & (g["dnp"] != 1)].copy().sort_values("game_date", ascending=False)
         base.update(build_windows(gp, windows, thresholds))
+        base.update(build_load_metrics(gp, windows))
         rows.append(base)
 
     out = pd.DataFrame(rows)

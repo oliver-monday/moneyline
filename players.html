@@ -497,6 +497,17 @@ async function load() {
       const restStr  = `Rest: ${restLabel(last)}`;
       const subLine = [todayStr, restStr, lastStr].filter(Boolean).join(" • ");
 
+      const loadLabel = String(r[`load_label_${win}`] || "").trim();
+      const loadScoreVal = num(r[`load_score_${win}`]);
+      let loadText = "Load: —";
+      if (loadLabel && Number.isFinite(loadScoreVal)) {
+        const sign = loadScoreVal > 0 ? "+" : "";
+        loadText = `Load: ${loadLabel} (${sign}${loadScoreVal.toFixed(1)})`;
+      }
+      const travel = String(r.travel_last3 || "").trim();
+      const travelText = travel ? `Travel: ${travel}` : "";
+      const contextLine = [loadText, travelText].filter(Boolean).join(" · ");
+
       const minAvg = fmt(r[`min_avg_${win}`]);
       const minMinWin = fmt(r[`min_min_${win}`]);
 
@@ -538,6 +549,7 @@ async function load() {
         astBest,
         previewStrength,
         stable,
+        contextLine,
       };
     });
 
@@ -564,6 +576,7 @@ async function load() {
               <span class="teamcode">${data.team}</span>
             </div>
             <div class="submeta">${data.subLine}</div>
+            <div class="submeta">${data.contextLine}</div>
             <div class="submeta" style="margin-top:6px;">
               <strong>MIN</strong> ${data.minAvg} <span class="muted">(avg)</span> · <span class="muted">min ${data.minMinWin}</span>
             </div>
