@@ -160,6 +160,9 @@
       color: #7a2e2e;
     }
     .pill.inline { margin: 0 6px 0 0; }
+    .meta-line { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; }
+    .meta-chunk { display:inline-flex; align-items:center; gap:8px; white-space:nowrap; }
+    .meta-travel { white-space:normal; }
 
     .muted { color:#666; }
     .rowtitle { display:flex; align-items:baseline; gap:10px; }
@@ -570,7 +573,7 @@ async function load() {
       const restValue = restVal === "B2B"
         ? `<span class="pill danger inline">B2B</span>`
         : restVal;
-      const restStr = `<strong>Rest:</strong> ${restValue}`;
+      const restStr = `<span class="meta-chunk"><strong>Rest:</strong> ${restValue}</span>`;
       const loadLabel = String(r[`load_label_${win}`] || "").trim();
       const loadScoreVal = num(r[`load_score_${win}`]);
       let loadValue = "—";
@@ -582,9 +585,13 @@ async function load() {
           : labelText;
       }
       const travel = String(r.travel_last3 || "").trim();
-      const travelText = travel ? `<strong>Travel:</strong> ${travel}` : "";
-      const loadText = `<strong>Load:</strong> ${loadValue}`;
-      const contextLine = [restStr, travelText, loadText].filter(Boolean).join(" · ");
+      const travelText = travel
+        ? `<span class="meta-chunk meta-travel"><strong>Travel:</strong> ${travel}</span>`
+        : "";
+      const loadText = `<span class="meta-chunk"><strong>Load:</strong> ${loadValue}</span>`;
+      const dot = `<span class="muted">·</span>`;
+      const contextParts = [restStr, travelText, loadText].filter(Boolean);
+      const contextLine = contextParts.map((part, i) => (i ? `${dot}${part}` : part)).join(" ");
 
       const minAvg = fmt(r[`min_avg_${win}`]);
       const minMinWin = fmt(r[`min_min_${win}`]);
@@ -655,7 +662,7 @@ async function load() {
               ${data.injuryStatus ? `<span class="pill danger inline">${data.injuryStatus}</span>` : ""}
             </div>
             <div class="submeta">${data.lastLine}</div>
-            <div class="submeta">${data.contextLine}</div>
+            <div class="submeta meta-line">${data.contextLine}</div>
             <div class="submeta" style="margin-top:6px;">
               <strong>MINS</strong> ${data.minAvg} <span class="muted">(avg)</span> · ${data.minMinWin} <span class="muted">(min)</span>
             </div>
