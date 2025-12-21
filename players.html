@@ -161,7 +161,9 @@
     }
     .pill.inline { margin: 0 6px 0 0; }
     .meta-line { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; }
-    .meta-chunk { display:inline-flex; align-items:center; gap:8px; white-space:nowrap; }
+    .meta-chunk { display:inline-flex; align-items:center; gap:8px; flex-wrap:wrap; }
+    .meta-label { white-space:nowrap; }
+    .meta-value { white-space:normal; }
     .meta-travel { white-space:normal; }
 
     .muted { color:#666; }
@@ -573,7 +575,7 @@ async function load() {
       const restValue = restVal === "B2B"
         ? `<span class="pill danger inline">B2B</span>`
         : restVal;
-      const restStr = `<span class="meta-chunk"><strong>Rest:</strong> ${restValue}</span>`;
+      const restStr = `<span class="meta-chunk"><span class="meta-label"><strong>Rest:</strong></span> <span class="meta-value">${restValue}</span></span>`;
       const loadLabel = String(r[`load_label_${win}`] || "").trim();
       const loadScoreVal = num(r[`load_score_${win}`]);
       let loadValue = "—";
@@ -586,9 +588,9 @@ async function load() {
       }
       const travel = String(r.travel_last3 || "").trim();
       const travelText = travel
-        ? `<span class="meta-chunk meta-travel"><strong>Travel:</strong> ${travel}</span>`
+        ? `<span class="meta-chunk meta-travel"><span class="meta-label"><strong>Travel:</strong></span> <span class="meta-value">${travel}</span></span>`
         : "";
-      const loadText = `<span class="meta-chunk"><strong>Load:</strong> ${loadValue}</span>`;
+      const loadText = `<span class="meta-chunk"><span class="meta-label"><strong>Load:</strong></span> <span class="meta-value">${loadValue}</span></span>`;
       const dot = `<span class="muted">·</span>`;
       const contextParts = [restStr, travelText, loadText].filter(Boolean);
       const contextLine = contextParts.map((part, i) => (i ? `${dot}${part}` : part)).join(" ");
