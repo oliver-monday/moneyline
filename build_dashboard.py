@@ -806,6 +806,7 @@ def build_html(slate, team_results, league_tbl, outfile):
         @media (max-width: 520px) {
             body { margin: 12px; }
         }
+        .masthead { width: fit-content; max-width: 100%; }
         .brand { display:flex; align-items:center; gap:10px; width: 100%; margin: 0 0 10px; }
         .brand-logo { height: 80px; width: auto; object-fit: contain; }
         .brand-text { font-size: 80px; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
@@ -817,6 +818,7 @@ def build_html(slate, team_results, league_tbl, outfile):
         @media (max-width: 520px) {
             .brand-text { font-size: clamp(70px, 16vw, 108px); }
             .brand-logo { height: clamp(70px, 16vw, 108px); }
+            .masthead { width: 100%; }
         }
         .game-card {
             border: 1px solid #eee;
@@ -927,8 +929,10 @@ def build_html(slate, team_results, league_tbl, outfile):
 
     today = slate["game_date"].iloc[0]
     today_display = pd.Timestamp(today).strftime("%m-%d-%Y")
+    w('<div class="masthead">')
     w('<div class="brand"><img class="brand-logo" src="./NBAGPTlogo.png" alt="NBA GPT logo"><div class="brand-text">NBA GPT</div></div>')
     w('<div class="nav"><a class="active" href="./index.html">Moneylines</a><a href="./players.html">Player Props</a></div>')
+    w('</div>')
     w(f"<div class=\"muted page-subtitle\">{today_display}</div>")
 
     # ---------- Per-game cards ----------
