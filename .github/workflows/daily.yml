@@ -156,6 +156,7 @@ jobs:
           # Players page + its data
           cp players.html ./site/players.html
           cp player_snapshot.csv ./site/data/player_snapshot.csv
+          cp player_game_log.csv ./site/data/player_game_log.csv
           cp data/injuries_today.json ./site/data/injuries_today.json
 
           echo "===== SITE DIRECTORY CONTENTS ====="

@@ -296,6 +296,7 @@
           <option value="5">L5</option>
           <option value="10" selected>L10</option>
           <option value="20">L20</option>
+          <option value="SEASON">Season</option>
         </select>
       </label>
 
@@ -396,6 +397,9 @@ function fmt(x, d=1) {
   return v.toFixed(d);
 }
 
+const PTS_T = [10,15,20,25,30,35];
+const RA_T  = [2,4,6,8,10,12,14];
+
 let todayISO = "";
 let teamLastPlayedDate = new Map();
 function restLabel(lastDateStr) {
@@ -404,6 +408,115 @@ function restLabel(lastDateStr) {
   if (!Number.isFinite(diff) || diff <= 0) return "";
   const restDays = Math.max(0, diff - 1);
   return restDays === 0 ? "B2B" : `${restDays}d`;
+}
+
+function isDnp(v) {
+  const s = String(v || "").trim().toLowerCase();
+  if (!s) return false;
+  return s === "1" || s === "true" || s === "yes" || s === "y" || s.includes("dnp");
+}
+
+function seasonKey(row) {
+  const season = String(row.season_end_year || "").trim();
+  const pid = String(row.player_id || "").trim();
+  return season && pid ? `${season}::${pid}` : "";
+}
+
+function initHits(thresholds) {
+  const out = {};
+  for (const t of thresholds) out[t] = 0;
+  return out;
+}
+
+function computeSeasonStats(logRows) {
+  const map = new Map();
+  for (const g of logRows) {
+    const key = seasonKey(g);
+    if (!key || isDnp(g.dnp)) continue;
+
+    let s = map.get(key);
+    if (!s) {
+      s = {
+        gp: 0,
+        minSum: 0,
+        minMin: Infinity,
+        min24Hits: 0,
+        ptsSum: 0,
+        ptsMin: Infinity,
+        rebSum: 0,
+        rebMin: Infinity,
+        astSum: 0,
+        astMin: Infinity,
+        ptsHits: initHits(PTS_T),
+        rebHits: initHits(RA_T),
+        astHits: initHits(RA_T),
+      };
+      map.set(key, s);
+    }
+
+    s.gp += 1;
+
+    const mins = num(g.minutes);
+    if (Number.isFinite(mins)) {
+      s.minSum += mins;
+      if (mins < s.minMin) s.minMin = mins;
+      if (mins >= 24) s.min24Hits += 1;
+    }
+
+    const pts = num(g.pts);
+    if (Number.isFinite(pts)) {
+      s.ptsSum += pts;
+      if (pts < s.ptsMin) s.ptsMin = pts;
+      for (const t of PTS_T) if (pts >= t) s.ptsHits[t] += 1;
+    }
+
+    const reb = num(g.reb);
+    if (Number.isFinite(reb)) {
+      s.rebSum += reb;
+      if (reb < s.rebMin) s.rebMin = reb;
+      for (const t of RA_T) if (reb >= t) s.rebHits[t] += 1;
+    }
+
+    const ast = num(g.ast);
+    if (Number.isFinite(ast)) {
+      s.astSum += ast;
+      if (ast < s.astMin) s.astMin = ast;
+      for (const t of RA_T) if (ast >= t) s.astHits[t] += 1;
+    }
+  }
+  return map;
+}
+
+function applySeasonStats(players, seasonMap) {
+  for (const r of players) {
+    const key = seasonKey(r);
+    const s = key ? seasonMap.get(key) : null;
+    if (!s || !s.gp) continue;
+
+    r.gp_SEASON = s.gp;
+    r.min_avg_SEASON = s.minSum / s.gp;
+    r.min_min_SEASON = Number.isFinite(s.minMin) ? s.minMin : "";
+    r.min_ge24_rate_SEASON = s.min24Hits / s.gp;
+
+    r.pts_min_SEASON = Number.isFinite(s.ptsMin) ? s.ptsMin : "";
+    r.reb_min_SEASON = Number.isFinite(s.rebMin) ? s.rebMin : "";
+    r.ast_min_SEASON = Number.isFinite(s.astMin) ? s.astMin : "";
+
+    for (const t of PTS_T) {
+      const hits = s.ptsHits[t] || 0;
+      r[`pts_ge${t}_hits_SEASON`] = hits;
+      r[`pts_ge${t}_rate_SEASON`] = s.gp ? hits / s.gp : "";
+    }
+    for (const t of RA_T) {
+      const rh = s.rebHits[t] || 0;
+      r[`reb_ge${t}_hits_SEASON`] = rh;
+      r[`reb_ge${t}_rate_SEASON`] = s.gp ? rh / s.gp : "";
+
+      const ah = s.astHits[t] || 0;
+      r[`ast_ge${t}_hits_SEASON`] = ah;
+      r[`ast_ge${t}_rate_SEASON`] = s.gp ? ah / s.gp : "";
+    }
+  }
 }
 
 function teamRestLabel(teamAbbrev) {
@@ -476,7 +589,9 @@ function isStableMinutes(r, win) {
   const minv = num(r[`min_min_${win}`]);
   const r24 = num(r[`min_ge24_rate_${win}`]);
 
-  if (!Number.isFinite(avg) || !Number.isFinite(minv) || !Number.isFinite(r24)) return true;
+  if (!Number.isFinite(avg) || !Number.isFinite(minv) || !Number.isFinite(r24)) {
+    return win === "SEASON" ? false : true;
+  }
 
   return (avg >= 30) && (minv >= 24) && (r24 >= 0.8);
 }
@@ -592,6 +707,31 @@ async function load() {
   const snapshotText = await fetchText(snapshotUrl);
   const players = csvToRows(snapshotText);
 
+  // Best-effort season fallback from game log if SEASON columns missing
+  const needsSeason = players.length && !Object.prototype.hasOwnProperty.call(players[0], "gp_SEASON");
+  if (needsSeason) {
+    let logText = null;
+    try {
+      const res = await fetch("./data/player_game_log.csv", {cache: "no-store"});
+      if (res.ok) logText = await res.text();
+    } catch (err) {
+      logText = null;
+    }
+    if (!logText) {
+      try {
+        const res = await fetch("./player_game_log.csv", {cache: "no-store"});
+        if (res.ok) logText = await res.text();
+      } catch (err) {
+        logText = null;
+      }
+    }
+    if (logText) {
+      const logs = csvToRows(logText);
+      const seasonMap = computeSeasonStats(logs);
+      applySeasonStats(players, seasonMap);
+    }
+  }
+
   // Injuries (best effort)
   let injuriesByTeam = {};
   try {
@@ -689,9 +829,6 @@ async function load() {
   
   const meta = document.getElementById("meta");
   meta.textContent = todayDisplay;
-
-  const PTS_T = [10,15,20,25,30,35];
-  const RA_T  = [2,4,6,8,10,12,14];
 
   const q = document.getElementById("q");
   const scope = document.getElementById("scope");
