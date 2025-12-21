@@ -792,16 +792,16 @@ def build_html(slate, team_results, league_tbl, outfile):
             body { margin: 12px; }
         }
         .brand { display:flex; align-items:center; gap:10px; width: 100%; margin: 0 0 10px; }
-        .brand-logo { height: 64px; width: auto; object-fit: contain; }
-        .brand-text { font-size: 64px; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
+        .brand-logo { height: 72px; width: auto; object-fit: contain; }
+        .brand-text { font-size: 72px; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
         @media (min-width: 521px) {
-            .brand-text { font-size: 64px; }
-            .brand-logo { height: 64px; }
+            .brand-text { font-size: 72px; }
+            .brand-logo { height: 72px; }
         }
         .page-subtitle { margin: 0 0 18px; }
         @media (max-width: 520px) {
-            .brand-text { font-size: clamp(54px, 12.5vw, 84px); }
-            .brand-logo { height: clamp(54px, 12.5vw, 84px); }
+            .brand-text { font-size: clamp(60px, 14vw, 96px); }
+            .brand-logo { height: clamp(60px, 14vw, 96px); }
         }
         .game-card {
             border: 1px solid #eee;
