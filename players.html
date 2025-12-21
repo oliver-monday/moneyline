@@ -162,6 +162,8 @@
     .pill.inline { margin: 0 6px 0 0; }
     .meta-line { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; }
     .meta-chunk { display:inline-flex; align-items:center; gap:8px; flex-wrap:wrap; }
+    .meta-chunk-load { display:inline-flex; align-items:center; gap:8px; white-space:nowrap; }
+    .meta-line-load { margin-top:2px; }
     .meta-label { white-space:nowrap; }
     .meta-value { white-space:normal; }
     .meta-travel { white-space:normal; }
@@ -579,21 +581,28 @@ async function load() {
       const loadLabel = String(r[`load_label_${win}`] || "").trim();
       const loadScoreVal = num(r[`load_score_${win}`]);
       let loadValue = "—";
+      let loadIsPill = false;
       if (loadLabel && Number.isFinite(loadScoreVal)) {
         const sign = loadScoreVal > 0 ? "+" : "";
         const labelText = `${loadLabel} (${sign}${loadScoreVal.toFixed(1)})`;
         loadValue = loadLabel === "HIGH"
           ? `<span class="pill danger inline">${labelText}</span>`
           : labelText;
+        loadIsPill = loadLabel === "HIGH";
       }
       const travel = String(r.travel_last3 || "").trim();
       const travelText = travel
         ? `<span class="meta-chunk meta-travel"><span class="meta-label"><strong>Travel:</strong></span> <span class="meta-value">${travel}</span></span>`
         : "";
-      const loadText = `<span class="meta-chunk"><span class="meta-label"><strong>Load:</strong></span> <span class="meta-value">${loadValue}</span></span>`;
-      const dot = `<span class="muted">·</span>`;
-      const contextParts = [restStr, travelText, loadText].filter(Boolean);
-      const contextLine = contextParts.map((part, i) => (i ? `${dot}${part}` : part)).join(" ");
+      const loadText = `<span class="meta-chunk meta-chunk-load"><span class="meta-label"><strong>Load:</strong></span> <span class="meta-value">${loadValue}</span></span>`;
+      const dot = `<span class="meta-sep muted">·</span>`;
+      const contextParts = [restStr, travelText];
+      if (!loadIsPill) contextParts.push(loadText);
+      const contextLine = contextParts
+        .filter(Boolean)
+        .map((part, i) => (i ? `${dot}${part}` : part))
+        .join(" ");
+      const loadLine = loadIsPill ? `<div class="submeta meta-line meta-line-load">${loadText}</div>` : "";
 
       const minAvg = fmt(r[`min_avg_${win}`]);
       const minMinWin = fmt(r[`min_min_${win}`]);
@@ -639,6 +648,7 @@ async function load() {
         previewStrength,
         lastLine,
         contextLine,
+        loadLine,
         injuryStatus,
       };
     });
@@ -665,6 +675,7 @@ async function load() {
             </div>
             <div class="submeta">${data.lastLine}</div>
             <div class="submeta meta-line">${data.contextLine}</div>
+            ${data.loadLine || ""}
             <div class="submeta" style="margin-top:6px;">
               <strong>MINS</strong> ${data.minAvg} <span class="muted">(avg)</span> · ${data.minMinWin} <span class="muted">(min)</span>
             </div>
