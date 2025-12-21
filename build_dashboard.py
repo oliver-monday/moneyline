@@ -858,6 +858,8 @@ def build_html(slate, team_results, league_tbl, outfile):
         .detail-label { font-weight: 600; color: #444; min-width: 150px; }
         .detail-label-empty { visibility: hidden; }
         .detail-value { color: #111; }
+        .league-list .detail-line { gap: 6px; }
+        .league-list .detail-label { min-width: 26px; }
         .pill {
             display: inline-block;
             padding: 2px 10px;
@@ -1218,7 +1220,7 @@ def build_html(slate, team_results, league_tbl, outfile):
         lv=league_tbl
         def block(title, df, col):
             w(f"<h3>{title}</h3>")
-            w("<div class='details-block'>")
+            w("<div class='details-block league-list'>")
             for i, row in enumerate(df.itertuples(index=False), start=1):
                 w(line(f"{i}.", f"{row.team} {fmt_pct(getattr(row, col))}"))
             w("</div>")
