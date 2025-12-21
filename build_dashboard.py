@@ -15,10 +15,12 @@ Features:
 - Mismatch Index (team vs opponent)
 """
 
+import json
 import pandas as pd
 import numpy as np
 import datetime as dt
 from pathlib import Path
+import re
 
 MASTER_PATH = Path("nba_master.csv")
 
@@ -554,74 +556,158 @@ def analyze_prm_pattern(roi_series):
 
     return underval, overval, signal
 
-    # ----- Matchup confidence signal (favorite-centric) -----
-    fav_team = None
-    fav_prob = None
-    fav_form = None
-    dog_form = None
-    fav_mis  = None
-    fav_prm  = None
-    fav_ss   = None
+# ------------ injuries output -----------------------------------------
 
-    # Decide who is favorite by moneyline (fallback to lower implied prob)
-    if pd.notna(home_ml) and pd.notna(away_ml):
-        if home_ml < away_ml:
-            fav_team = "home"
+def _short_status(s: str) -> str:
+    t = (s or "").strip().lower()
+    if not t:
+        return ""
+    if "out" in t:
+        return "OUT"
+    if "doubt" in t:
+        return "OUT"
+    if "question" in t:
+        return "Q"
+    if "prob" in t:
+        return "PROB"
+    if "day" in t or "dtd" in t:
+        return "DTD"
+    return s.strip().upper()
+
+
+def _parse_injury_string(inj_text):
+    """
+    Accepts strings like:
+      "Tari Eason (Out); D. Finney-Smith (Out); F. VanVleet (Questionable)"
+    Returns:
+      [{"name": "...", "status":"OUT", "details":"..."}...]
+    """
+    if inj_text is None:
+        return []
+    s = str(inj_text).strip()
+    if not s or s.lower() in ("nan", "none"):
+        return []
+
+    parts = re.split(r"[;\n]+", s)
+    out = []
+    for p in parts:
+        p = p.strip()
+        if not p:
+            continue
+
+        m = re.match(r"^(.*?)\s*\((.*?)\)\s*$", p)
+        if m:
+            name = m.group(1).strip()
+            status_raw = m.group(2).strip()
         else:
-            fav_team = "away"
-    elif pd.notna(home_ml):
-        fav_team = "home"
-    elif pd.notna(away_ml):
-        fav_team = "away"
+            name = p
+            status_raw = ""
 
-    if fav_team == "home":
-        fav_prob = home_prob
-        fav_form = home_form_score
-        dog_form = away_form_score
-        fav_mis  = home_mis_score
-        fav_prm  = home_prm_score
-        fav_ss   = home_ss["score"]
-    elif fav_team == "away":
-        fav_prob = away_prob
-        fav_form = away_form_score
-        dog_form = home_form_score
-        fav_mis  = away_mis_score
-        fav_prm  = away_prm_score
-        fav_ss   = away_ss["score"]
+        out.append({
+            "name": name,
+            "status": _short_status(status_raw),
+            "details": p,
+        })
+    return out
 
-    confidence_level = None   # "high" | "avoid" | None
-    confidence_label = None
 
-    if fav_team and fav_prob is not None and not pd.isna(fav_prob):
-        # Coinflip / mushy edge → stay away
-        prob_gap = abs((home_prob or 0) - (away_prob or 0))
-        if prob_gap < 0.08:
-            confidence_level = "avoid"
-            confidence_label = "Stay away: near coinflip"
-        elif fav_mis is not None and not pd.isna(fav_mis) and \
-                abs(fav_mis) < 10 and \
-                not pd.isna(home_form_score) and not pd.isna(away_form_score) and \
-                45 <= home_form_score <= 60 and 45 <= away_form_score <= 60:
-            confidence_level = "avoid"
-            confidence_label = "Stay away: evenly matched"
+def write_injury_files(slate: pd.DataFrame, asof_date: dt.date) -> None:
+    """
+    Build:
+      - data/injuries_today.json  (used by players.html; overwritten daily)
+      - logs/injury_log.csv       (history; append-ish; not deployed)
+    Source of truth: nba_master.csv
 
-        # Overvalued / fatigue red flags
-        elif fav_prm is not None and not pd.isna(fav_prm) and fav_prm <= -2.5:
-            confidence_level = "avoid"
-            confidence_label = "Stay away: favorite overvalued"
-        elif fav_ss is not None and not pd.isna(fav_ss) and fav_ss >= 65:
-            confidence_level = "avoid"
-            confidence_label = "Stay away: favorite fatigue risk"
+    Key behavior:
+      Choose the earliest game_date >= asof_date that actually has injury text.
+    """
+    master = pd.read_csv("nba_master.csv", dtype=str)
 
-        # High-confidence favorite
-        elif (0.60 <= fav_prob <= 0.80 and
-                fav_form is not None and not pd.isna(fav_form) and fav_form >= 55 and
-                fav_mis is not None and not pd.isna(fav_mis) and fav_mis >= 20 and
-                dog_form is not None and not pd.isna(dog_form) and dog_form <= 55 and
-                fav_ss is not None and not pd.isna(fav_ss) and fav_ss <= 55 and
-                (fav_prm is None or pd.isna(fav_prm) or fav_prm > -1.0)):
-            confidence_level = "high"
-            confidence_label = "High-confidence favorite"
+    # Robust date normalization
+    master_dates = pd.to_datetime(master["game_date"], errors="coerce").dt.strftime("%Y-%m-%d")
+
+    home_inj = master.get("home_injuries", pd.Series([""] * len(master))).fillna("").astype(str).str.strip()
+    away_inj = master.get("away_injuries", pd.Series([""] * len(master))).fillna("").astype(str).str.strip()
+
+    has_inj = home_inj.ne("") | away_inj.ne("")
+    master_inj = master.loc[has_inj].copy()
+    inj_dates = pd.to_datetime(master_inj["game_date"], errors="coerce").dt.strftime("%Y-%m-%d").dropna().unique().tolist()
+
+    fallback = pd.to_datetime(asof_date, errors="coerce").strftime("%Y-%m-%d")
+
+    # Choose earliest date >= fallback that has injuries; else use latest date with injuries; else fallback
+    inj_dates_sorted = sorted(inj_dates)
+    candidates = [d for d in inj_dates_sorted if d >= fallback]
+    if candidates:
+        target_ymd = candidates[0]
+    elif inj_dates_sorted:
+        target_ymd = inj_dates_sorted[-1]
+    else:
+        target_ymd = fallback
+
+    todays = master[master_dates == target_ymd].copy()
+
+    injuries_today = {}
+    log_rows = []
+
+    for _, g in todays.iterrows():
+        for side in ("home", "away"):
+            team_abbrev = (g.get(f"{side}_team_abbrev") or "").strip().upper()
+            inj_text = g.get(f"{side}_injuries")
+
+            if not team_abbrev:
+                continue
+            if inj_text is None:
+                continue
+
+            s = str(inj_text).strip()
+            if not s or s.lower() in ("nan", "none"):
+                continue
+
+            entries = _parse_injury_string(s)
+            if not entries:
+                continue
+
+            injuries_today.setdefault(team_abbrev, [])
+            injuries_today[team_abbrev].extend(entries)
+
+            for e in entries:
+                log_rows.append({
+                    "asof_date": target_ymd,
+                    "team_abbrev": team_abbrev,
+                    "player_name": e.get("name", ""),
+                    "status": e.get("status", ""),
+                    "details": e.get("details", ""),
+                    "source": "rotowire",
+                })
+
+    # Always write JSON (even if empty)
+    data_dir = Path("data")
+    data_dir.mkdir(parents=True, exist_ok=True)
+    with open(data_dir / "injuries_today.json", "w") as f:
+        json.dump(injuries_today, f, indent=2)
+
+    # Write log only if we found injuries
+    if log_rows:
+        logs_dir = Path("logs")
+        logs_dir.mkdir(parents=True, exist_ok=True)
+        log_path = logs_dir / "injury_log.csv"
+
+        new_df = pd.DataFrame(log_rows)
+        if log_path.exists():
+            old_df = pd.read_csv(log_path, dtype=str)
+            combined = pd.concat([old_df, new_df], ignore_index=True)
+        else:
+            combined = new_df
+
+        combined = combined.drop_duplicates(
+            subset=["asof_date", "team_abbrev", "player_name"],
+            keep="last",
+        )
+        combined.to_csv(log_path, index=False)
+
+    print(f"[injuries] target_date={target_ymd} teams={len(injuries_today)} rows_logged={len(log_rows)}")
+
 
 # ------------ HTML rendering ------------------------------------------
 
@@ -1131,6 +1217,7 @@ def main():
         print("No games for", today); return
     team_results = build_team_results(master)
     league_tbl = league_overview(team_results)
+    write_injury_files(slate, today)
     outfile = f"dashboard_{today}.html"
     build_html(slate, team_results, league_tbl, outfile)
     print("Dashboard written →", outfile)

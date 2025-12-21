@@ -154,11 +154,17 @@
       background: #fbeaea !important;   /* soft red */
       border-color: #e08b8b !important;
     }
+    .pill.danger {
+      background: #fbeaea !important;
+      border-color: #e08b8b !important;
+      color: #7a2e2e;
+    }
+    .pill.inline { margin: 0 6px 0 0; }
 
     .muted { color:#666; }
     .rowtitle { display:flex; align-items:baseline; gap:10px; }
     .teamcode { font-weight: 400; color:#666; font-size: 13px; }
-    .submeta { font-size:12px; margin-top:4px; color:#666; }
+    .submeta { font-size:12px; margin-top:4px; color:#666; line-height:1.25; }
 
     /* Slightly tighter player column */
     td.player { min-width: 220px; }
@@ -306,6 +312,53 @@ function formatMMDDYYYY(iso) {
   return `${mm}-${dd}-${yyyy}`;
 }
 
+function normalizeName(s) {
+  return String(s || "")
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/[^a-z\s']/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function tokens(normName) {
+  return (normName || "").split(" ").filter(Boolean);
+}
+
+function abbrevMatch(injNorm, playerNorm) {
+  const it = tokens(injNorm);
+  const pt = tokens(playerNorm);
+  if (it.length < 2 || pt.length < 2) return false;
+
+  const first = it[0];
+  if (first.length !== 1) return false;
+
+  const rest = it.slice(1).join(" ");
+  const playerRest = pt.slice(1).join(" ");
+
+  return (pt[0][0] === first) && playerRest.includes(rest);
+}
+
+function matchInjury(team, playerName, injuriesByTeam) {
+  const list = (injuriesByTeam && injuriesByTeam[team]) || [];
+  const target = normalizeName(playerName);
+  let best = null;
+  for (const item of list) {
+    const nameNorm = normalizeName(item.name);
+    if (!nameNorm) continue;
+    const hit =
+      target.includes(nameNorm) ||
+      nameNorm.includes(target) ||
+      abbrevMatch(nameNorm, target);
+    if (hit) {
+      if (!best || nameNorm.length > best.nameNorm.length) {
+        best = { ...item, nameNorm };
+      }
+    }
+  }
+  return best;
+}
+
 function isStableMinutes(r, win) {
   const avg = num(r[`min_avg_${win}`]);
   const minv = num(r[`min_min_${win}`]);
@@ -378,6 +431,15 @@ async function load() {
   const snapshotUrl = "./data/player_snapshot.csv";
   const snapshotText = await fetchText(snapshotUrl);
   const players = csvToRows(snapshotText);
+
+  // Injuries (best effort)
+  let injuriesByTeam = {};
+  try {
+    const res = await fetch("./data/injuries_today.json", {cache: "no-store"});
+    if (res.ok) injuriesByTeam = await res.json();
+  } catch (err) {
+    injuriesByTeam = {};
+  }
 
   // Master (today's teams)
   const masterUrl = "./nba_master.csv";
@@ -494,7 +556,8 @@ async function load() {
       const todayInfo = gameMapToday.get(team);
       const opp = String(r.last_opp_abbrev || "").toUpperCase();
       const haToken = ha === "H" ? "vs" : (ha === "A" ? "@" : "");
-      const lastStr = (opp && haToken) ? `Last: ${haToken} ${opp}` : "Last: —";
+      const lastValue = (opp && haToken) ? `${haToken} ${opp}` : "—";
+      const lastStr = `<strong>Last:</strong> ${lastValue}`;
       const lastPts = num(r.last_pts);
       const lastReb = num(r.last_reb);
       const lastAst = num(r.last_ast);
@@ -503,16 +566,24 @@ async function load() {
         : "";
       const lastLine = [lastStr, lastStats].filter(Boolean).join(" ");
 
-      const restStr = `Rest: ${restLabel(last)}`;
+      const restVal = restLabel(last);
+      const restValue = restVal === "B2B"
+        ? `<span class="pill danger inline">B2B</span>`
+        : restVal;
+      const restStr = `<strong>Rest:</strong> ${restValue}`;
       const loadLabel = String(r[`load_label_${win}`] || "").trim();
       const loadScoreVal = num(r[`load_score_${win}`]);
-      let loadText = "Load: —";
+      let loadValue = "—";
       if (loadLabel && Number.isFinite(loadScoreVal)) {
         const sign = loadScoreVal > 0 ? "+" : "";
-        loadText = `Load: ${loadLabel} (${sign}${loadScoreVal.toFixed(1)})`;
+        const labelText = `${loadLabel} (${sign}${loadScoreVal.toFixed(1)})`;
+        loadValue = loadLabel === "HIGH"
+          ? `<span class="pill danger inline">${labelText}</span>`
+          : labelText;
       }
       const travel = String(r.travel_last3 || "").trim();
-      const travelText = travel ? `Travel: ${travel}` : "";
+      const travelText = travel ? `<strong>Travel:</strong> ${travel}` : "";
+      const loadText = `<strong>Load:</strong> ${loadValue}`;
       const contextLine = [restStr, travelText, loadText].filter(Boolean).join(" · ");
 
       const minAvg = fmt(r[`min_avg_${win}`]);
@@ -535,7 +606,10 @@ async function load() {
       const astBest = astBestArr.map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
 
       const previewStrength = ptsBestArr.length + rebBestArr.length + astBestArr.length;
-      const stable = isStableMinutes(r, win);
+      const injuryMatch = matchInjury(team, r.player_name, injuriesByTeam);
+      const injuryStatus = injuryMatch && injuryMatch.status
+        ? String(injuryMatch.status).toUpperCase()
+        : "";
 
       return {
         row: r,
@@ -554,9 +628,9 @@ async function load() {
         rebBest,
         astBest,
         previewStrength,
-        stable,
         lastLine,
         contextLine,
+        injuryStatus,
       };
     });
 
@@ -567,9 +641,6 @@ async function load() {
     cards.innerHTML = "";
 
     function createCard(data) {
-      const gateBadge = stableOnly.checked
-        ? `<span class="pill ${data.stable ? "good" : "bad"}">MIN gate: ${data.stable ? "PASS" : "FAIL"}</span>`
-        : "";
       const placeholder = `<span class="muted" style="font-size:12px;">—</span>`;
 
       const el = document.createElement("details");
@@ -581,13 +652,13 @@ async function load() {
             <div class="rowtitle">
               <strong>${data.playerName}</strong>
               <span class="teamcode">${data.team}</span>
+              ${data.injuryStatus ? `<span class="pill danger inline">${data.injuryStatus}</span>` : ""}
             </div>
             <div class="submeta">${data.lastLine}</div>
             <div class="submeta">${data.contextLine}</div>
             <div class="submeta" style="margin-top:6px;">
               <strong>MINS</strong> ${data.minAvg} <span class="muted">(avg)</span> · ${data.minMinWin} <span class="muted">(min)</span>
             </div>
-            <div style="margin-top:8px;">${gateBadge}</div>
           </div>
 
           <div class="card-right">

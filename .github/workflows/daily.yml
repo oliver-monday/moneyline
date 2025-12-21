@@ -98,6 +98,8 @@ jobs:
             "player_dim.csv"
             "player_snapshot.csv"
             "data/player_snapshot.csv"
+            "data/injuries_today.json"
+            "logs/injury_log.csv"
           )
 
           CHANGED=0
@@ -154,6 +156,7 @@ jobs:
           # Players page + its data
           cp players.html ./site/players.html
           cp player_snapshot.csv ./site/data/player_snapshot.csv
+          cp data/injuries_today.json ./site/data/injuries_today.json
 
           echo "===== SITE DIRECTORY CONTENTS ====="
           ls -al ./site
