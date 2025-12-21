@@ -923,6 +923,7 @@ def build_html(slate, team_results, league_tbl, outfile):
     w('<link rel="icon" type="image/png" href="./NBAGPTlogo.png">')
     w('<link rel="apple-touch-icon" href="./NBAGPTlogo.png">')
     w('<link rel="manifest" href="./manifest.webmanifest">')
+    w('<link rel="preload" as="image" href="./assets/NBAGPTlogo-header.png">')
     w('<meta name="theme-color" content="#ffffff">')
     w('<meta name="apple-mobile-web-app-capable" content="yes">')
     w('<meta name="apple-mobile-web-app-status-bar-style" content="default">')
@@ -932,7 +933,7 @@ def build_html(slate, team_results, league_tbl, outfile):
     today = slate["game_date"].iloc[0]
     today_display = pd.Timestamp(today).strftime("%m-%d-%Y")
     w('<div class="masthead">')
-    w('<div class="brand"><img class="brand-logo" src="./NBAGPTlogo.png" alt="NBA GPT logo"><div class="brand-text">NBA GPT</div></div>')
+    w('<div class="brand"><img class="brand-logo" src="./assets/NBAGPTlogo-header.png" width="80" height="80" decoding="async" fetchpriority="high" alt="NBA GPT logo"><div class="brand-text">NBA GPT</div></div>')
     w('<div class="nav"><a class="active" href="./index.html">Moneylines</a><a href="./players.html">Player Props</a></div>')
     w('</div>')
     w(f"<div class=\"muted page-subtitle\">{today_display}</div>")

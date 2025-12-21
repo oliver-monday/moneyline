@@ -144,6 +144,7 @@ jobs:
         run: |
           mkdir -p ./site
           mkdir -p ./site/data
+          mkdir -p ./site/assets
 
           # Newest dashboard becomes index.html
           NEWEST=$(ls -t dashboard_*.html | head -n 1)
@@ -156,6 +157,7 @@ jobs:
           # Branding assets
           cp NBAGPTlogo.png ./site/NBAGPTlogo.png
           cp manifest.webmanifest ./site/manifest.webmanifest
+          cp assets/NBAGPTlogo-header.png ./site/assets/NBAGPTlogo-header.png
 
           # Players page + its data
           cp players.html ./site/players.html
