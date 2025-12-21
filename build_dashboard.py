@@ -887,7 +887,9 @@ def build_html(slate, team_results, league_tbl, outfile):
             .col { width: 100%; }
         }
         @media (max-width: 600px) {
-            .detail-label { min-width: 120px; }
+            .detail-line { justify-content: space-between; }
+            .detail-label { min-width: auto; }
+            .detail-value { margin-left: auto; text-align: right; }
         }
     </style>
     """

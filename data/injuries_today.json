@@ -40,11 +40,6 @@
       "name": "RJ Barrett",
       "status": "OUT",
       "details": "RJ Barrett (Out)"
-    },
-    {
-      "name": "J. Poeltl",
-      "status": "OUT",
-      "details": "J. Poeltl (Out)"
     }
   ],
   "NY": [
@@ -133,11 +128,6 @@
     }
   ],
   "HOU": [
-    {
-      "name": "Tari Eason",
-      "status": "OUT",
-      "details": "Tari Eason (Out)"
-    },
     {
       "name": "D. Finney-Smith",
       "status": "OUT",
