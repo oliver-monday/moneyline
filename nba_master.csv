@@ -416,9 +416,9 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401810248,2025-12-20,Utah Jazz,UTAH,127,250.0,,Orlando Magic,ORL,128,-310.0,,Salt Lake City,UT,,
 401810249,2025-12-20,Sacramento Kings,SAC,93,145.0,,Portland Trail Blazers,POR,98,-175.0,,Sacramento,CA,,
 401810250,2025-12-20,LA Clippers,LAC,103,105.0,,Los Angeles Lakers,LAL,88,-125.0,,Inglewood,CA,,
-401810251,2025-12-21,Atlanta Hawks,ATL,0,-162.0,,Chicago Bulls,CHI,0,136.0,,Atlanta,GA,,
-401810252,2025-12-21,Brooklyn Nets,BKN,0,140.0,,Toronto Raptors,TOR,0,-166.0,,Brooklyn,NY,,RJ Barrett (Out); J. Poeltl (Out)
-401810253,2025-12-21,New York Knicks,NY,0,-325.0,,Miami Heat,MIA,0,260.0,,New York,NY,,
+401810251,2025-12-21,Atlanta Hawks,ATL,0,-162.0,,Chicago Bulls,CHI,0,136.0,,Atlanta,GA,N. Dante (Out); K. Porzingis (Out),N. Essengue (OFS)
+401810252,2025-12-21,Brooklyn Nets,BKN,0,140.0,,Toronto Raptors,TOR,0,-166.0,,Brooklyn,NY,H. Highsmith (Out); D. Powell (Out); Cam Thomas (Out),RJ Barrett (Out); J. Poeltl (Out)
+401810253,2025-12-21,New York Knicks,NY,0,-325.0,,Miami Heat,MIA,0,260.0,,New York,NY,M. McBride (Out); L. Shamet (Out),T. Herro (Out); N. Jovic (Out); P. Larsson (Out); T. Rozier (Out)
 401810254,2025-12-21,Washington Wizards,WSH,0,800.0,,San Antonio Spurs,SA,0,-1350.0,,Washington,DC,B. Coulibaly (Out); C. Kispert (Out); J. Watkins (Out); C. Whitmore (Out),
-401810255,2025-12-21,Minnesota Timberwolves,MIN,0,-700.0,,Milwaukee Bucks,MIL,0,500.0,,Minneapolis,MN,,
+401810255,2025-12-21,Minnesota Timberwolves,MIN,0,-700.0,,Milwaukee Bucks,MIL,0,500.0,,Minneapolis,MN,,G. Antetokounmpo (Out); T. Prince (Out)
 401810256,2025-12-21,Sacramento Kings,SAC,0,490.0,,Houston Rockets,HOU,0,-675.0,,Sacramento,CA,D. Eubanks (Out); Z. LaVine (Out); D. Sabonis (Out),Tari Eason (Out); D. Finney-Smith (Out); F. VanVleet (Out)
