@@ -101,8 +101,6 @@ jobs:
             "data/team_opp_allowed.json"
             "data/opp_big.json"
             "data/injuries_today.json"
-            "logs/team_opp_allowed_log.csv"
-            "logs/opp_big_log.csv"
             "logs/injury_log.csv"
           )
 
@@ -138,7 +136,9 @@ jobs:
           retention-days: 7
 
       - name: Build dashboard
-        run: python build_dashboard.py
+        run: |
+          python build_matchup_insights.py
+          python build_dashboard.py
 
       - name: Prepare site files
         run: |

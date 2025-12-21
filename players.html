@@ -380,6 +380,12 @@ function csvToRows(text) {
   return rows;
 }
 
+async function fetchJson(url) {
+  const res = await fetch(url, {cache: "no-store"});
+  if (!res.ok) throw new Error(`Failed to fetch ${url} (${res.status})`);
+  return await res.json();
+}
+
 function localYYYYMMDD() {
   const d = new Date();
   const yyyy = d.getFullYear();
@@ -417,8 +423,8 @@ const RA_T  = [2,4,6,8,10,12,14];
 
 let todayISO = "";
 let teamLastPlayedDate = new Map();
-let matchupByTeam = {};
-let oppBigByTeam = {};
+let TEAM_OPP = {};
+let OPP_BIG = {};
 function restLabel(lastDateStr) {
   if (!lastDateStr || !todayISO) return "";
   const diff = dayDiff(todayISO, lastDateStr);
@@ -698,12 +704,46 @@ function collectTargets(r, win, ptsT, raT) {
   return targets;
 }
 
-function matchupTier(oppTeam, stat) {
-  if (!oppTeam || !matchupByTeam) return "";
-  const info = matchupByTeam[oppTeam];
-  if (!info) return "";
-  const key = `${stat}_tier`;
-  return String(info[key] || "").toUpperCase();
+function matchupPills(oppTeam, stat) {
+  const opp = String(oppTeam || "").toUpperCase();
+  if (!opp) return "";
+
+  const info = TEAM_OPP && TEAM_OPP[opp];
+  const big = OPP_BIG && OPP_BIG[opp];
+
+  let tier = "";
+  if (stat === "reb") {
+    if (big && big.last) {
+      tier = "TOUGH";
+    } else if (info) {
+      const rAllowed = num(info.reb_allowed_rank);
+      const rDiff = num(info.reb_diff_rank);
+      if ((Number.isFinite(rAllowed) && rAllowed <= 10) || (Number.isFinite(rDiff) && rDiff <= 10)) {
+        tier = "TOUGH";
+      } else if ((Number.isFinite(rAllowed) && rAllowed >= 21) || (Number.isFinite(rDiff) && rDiff >= 21)) {
+        tier = "SOFT";
+      }
+    }
+  } else if (stat === "pts") {
+    const rAllowed = info ? num(info.pts_allowed_rank) : NaN;
+    if (Number.isFinite(rAllowed) && rAllowed <= 10) tier = "TOUGH";
+    else if (Number.isFinite(rAllowed) && rAllowed >= 21) tier = "SOFT";
+  } else if (stat === "ast") {
+    const rAllowed = info ? num(info.ast_allowed_rank) : NaN;
+    if (Number.isFinite(rAllowed) && rAllowed <= 10) tier = "TOUGH";
+    else if (Number.isFinite(rAllowed) && rAllowed >= 21) tier = "SOFT";
+  }
+
+  const pills = [];
+  if (tier === "SOFT" || tier === "TOUGH") {
+    const cls = tier === "SOFT" ? "pill-soft" : "pill-tough";
+    pills.push(`<span class="pill ${cls}">${stat.toUpperCase()}: ${tier}</span>`);
+  }
+  if (stat === "reb" && big && big.last) {
+    pills.push(`<span class="pill pill-opp">Opp Big: ${big.last}</span>`);
+  }
+
+  return pills.join(" ");
 }
 
 function targetWeight(t) {
@@ -766,21 +806,9 @@ async function load() {
     injuriesByTeam = {};
   }
 
-  // Matchup context (best effort)
-  matchupByTeam = {};
-  oppBigByTeam = {};
-  try {
-    const res = await fetch("./data/team_opp_allowed.json", {cache: "no-store"});
-    if (res.ok) matchupByTeam = await res.json();
-  } catch (err) {
-    matchupByTeam = {};
-  }
-  try {
-    const res = await fetch("./data/opp_big.json", {cache: "no-store"});
-    if (res.ok) oppBigByTeam = await res.json();
-  } catch (err) {
-    oppBigByTeam = {};
-  }
+  // Matchup context (best effort, non-blocking)
+  TEAM_OPP = {};
+  OPP_BIG = {};
 
   // Master (today's teams)
   const masterUrl = "./nba_master.csv";
@@ -1053,18 +1081,8 @@ async function load() {
           const stat = t.stat.toUpperCase();
           const chip = `<span class="target-chip">Target: ${stat} ${t.t}+ (${t.hits}/${t.gp})</span>`;
           if (!data.oppTeam) return chip;
-          const tier = matchupTier(data.oppTeam, t.stat);
-          const tierPill = (tier === "SOFT" || tier === "TOUGH")
-            ? `<span class="pill ${tier === "SOFT" ? "pill-soft" : "pill-tough"}">${stat}: ${tier}</span>`
-            : "";
-          let oppBig = "";
-          if (t.stat === "reb") {
-            const bigs = (oppBigByTeam && oppBigByTeam[data.oppTeam]) || [];
-            if (bigs.length) {
-              oppBig = `<span class="pill pill-opp">Opp Big: ${bigs[0]}</span>`;
-            }
-          }
-          return `${chip}${tierPill ? " " + tierPill : ""}${oppBig ? " " + oppBig : ""}`;
+          const pills = matchupPills(data.oppTeam, t.stat);
+          return pills ? `${chip} ${pills}` : chip;
         })
         .join("");
       const targetRow = targetChips ? `<div class="target-row">${targetChips}</div>` : "";
@@ -1257,6 +1275,15 @@ async function load() {
   stableOnly.addEventListener("change", render);
   targetsOnly.addEventListener("change", render);
   render();
+
+  Promise.allSettled([
+    fetchJson("./data/opp_big.json").then(d => { OPP_BIG = d || {}; }),
+    fetchJson("./data/team_opp_allowed.json").then(d => { TEAM_OPP = d || {}; }),
+  ]).then(() => {
+    if (Object.keys(OPP_BIG).length || Object.keys(TEAM_OPP).length) {
+      render();
+    }
+  }).catch(() => {});
 }
 
 load().catch(err => {

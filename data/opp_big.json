@@ -1,1 +1,62 @@
-{}
+{
+  "DAL": {
+    "avg_reb": 12.307692307692308,
+    "gp": 13,
+    "last": "Davis",
+    "player": "Anthony Davis"
+  },
+  "DEN": {
+    "avg_reb": 12.37037037037037,
+    "gp": 27,
+    "last": "Jokic",
+    "player": "Nikola Jokic"
+  },
+  "DET": {
+    "avg_reb": 11.038461538461538,
+    "gp": 26,
+    "last": "Duren",
+    "player": "Jalen Duren"
+  },
+  "LAC": {
+    "avg_reb": 11.214285714285714,
+    "gp": 28,
+    "last": "Zubac",
+    "player": "Ivica Zubac"
+  },
+  "MIA": {
+    "avg_reb": 10.428571428571429,
+    "gp": 28,
+    "last": "Ware",
+    "player": "Kel'el Ware"
+  },
+  "MIN": {
+    "avg_reb": 10.642857142857142,
+    "gp": 28,
+    "last": "Gobert",
+    "player": "Rudy Gobert"
+  },
+  "NY": {
+    "avg_reb": 11.807692307692308,
+    "gp": 26,
+    "last": "Towns",
+    "player": "Karl-Anthony Towns"
+  },
+  "OKC": {
+    "avg_reb": 10.571428571428571,
+    "gp": 21,
+    "last": "Hartenstein",
+    "player": "Isaiah Hartenstein"
+  },
+  "SA": {
+    "avg_reb": 11.875,
+    "gp": 16,
+    "last": "Wembanyama",
+    "player": "Victor Wembanyama"
+  },
+  "SAC": {
+    "avg_reb": 12.272727272727273,
+    "gp": 11,
+    "last": "Sabonis",
+    "player": "Domantas Sabonis"
+  }
+}

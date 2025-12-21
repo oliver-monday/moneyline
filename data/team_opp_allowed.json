@@ -1,1 +1,302 @@
-{}
+{
+  "ATL": {
+    "ast_allowed": 14.517241379310345,
+    "ast_allowed_rank": 10,
+    "pts_allowed": 68.6896551724138,
+    "pts_allowed_rank": 9,
+    "reb_allowed": 22.24137931034483,
+    "reb_allowed_rank": 6,
+    "reb_diff": -0.13793103448275862,
+    "reb_diff_rank": 15
+  },
+  "BKN": {
+    "ast_allowed": 15.807692307692308,
+    "ast_allowed_rank": 18,
+    "pts_allowed": 69.53846153846153,
+    "pts_allowed_rank": 12,
+    "reb_allowed": 23.384615384615383,
+    "reb_allowed_rank": 16,
+    "reb_diff": -9.038461538461538,
+    "reb_diff_rank": 28
+  },
+  "BOS": {
+    "ast_allowed": 14.428571428571429,
+    "ast_allowed_rank": 7,
+    "pts_allowed": 62.67857142857143,
+    "pts_allowed_rank": 2,
+    "reb_allowed": 22.678571428571427,
+    "reb_allowed_rank": 9,
+    "reb_diff": -0.5714285714285714,
+    "reb_diff_rank": 16
+  },
+  "CHA": {
+    "ast_allowed": 17.821428571428573,
+    "ast_allowed_rank": 26,
+    "pts_allowed": 75.07142857142857,
+    "pts_allowed_rank": 21,
+    "reb_allowed": 22.821428571428573,
+    "reb_allowed_rank": 12,
+    "reb_diff": -3.6785714285714284,
+    "reb_diff_rank": 20
+  },
+  "CHI": {
+    "ast_allowed": 15.518518518518519,
+    "ast_allowed_rank": 16,
+    "pts_allowed": 73.37037037037037,
+    "pts_allowed_rank": 18,
+    "reb_allowed": 23.074074074074073,
+    "reb_allowed_rank": 14,
+    "reb_diff": 3.3333333333333335,
+    "reb_diff_rank": 11
+  },
+  "CLE": {
+    "ast_allowed": 16.071428571428573,
+    "ast_allowed_rank": 20,
+    "pts_allowed": 69.10714285714286,
+    "pts_allowed_rank": 11,
+    "reb_allowed": 25.607142857142858,
+    "reb_allowed_rank": 26,
+    "reb_diff": -7.571428571428571,
+    "reb_diff_rank": 23
+  },
+  "DAL": {
+    "ast_allowed": 15.827586206896552,
+    "ast_allowed_rank": 19,
+    "pts_allowed": 77.48275862068965,
+    "pts_allowed_rank": 26,
+    "reb_allowed": 26.896551724137932,
+    "reb_allowed_rank": 29,
+    "reb_diff": -8.310344827586206,
+    "reb_diff_rank": 25
+  },
+  "DEN": {
+    "ast_allowed": 17.333333333333332,
+    "ast_allowed_rank": 25,
+    "pts_allowed": 76.66666666666667,
+    "pts_allowed_rank": 24,
+    "reb_allowed": 24.37037037037037,
+    "reb_allowed_rank": 20,
+    "reb_diff": 2.7777777777777777,
+    "reb_diff_rank": 12
+  },
+  "DET": {
+    "ast_allowed": 12.678571428571429,
+    "ast_allowed_rank": 2,
+    "pts_allowed": 69.07142857142857,
+    "pts_allowed_rank": 10,
+    "reb_allowed": 21.607142857142858,
+    "reb_allowed_rank": 3,
+    "reb_diff": 5.678571428571429,
+    "reb_diff_rank": 7
+  },
+  "GS": {
+    "ast_allowed": 16.923076923076923,
+    "ast_allowed_rank": 24,
+    "pts_allowed": 78.65384615384616,
+    "pts_allowed_rank": 28,
+    "reb_allowed": 24.53846153846154,
+    "reb_allowed_rank": 24,
+    "reb_diff": -10.0,
+    "reb_diff_rank": 29
+  },
+  "HOU": {
+    "ast_allowed": 13.12,
+    "ast_allowed_rank": 3,
+    "pts_allowed": 67.16,
+    "pts_allowed_rank": 6,
+    "reb_allowed": 18.92,
+    "reb_allowed_rank": 1,
+    "reb_diff": 22.44,
+    "reb_diff_rank": 1
+  },
+  "IND": {
+    "ast_allowed": 14.428571428571429,
+    "ast_allowed_rank": 7,
+    "pts_allowed": 70.67857142857143,
+    "pts_allowed_rank": 15,
+    "reb_allowed": 24.964285714285715,
+    "reb_allowed_rank": 25,
+    "reb_diff": -8.714285714285714,
+    "reb_diff_rank": 27
+  },
+  "LAC": {
+    "ast_allowed": 16.428571428571427,
+    "ast_allowed_rank": 23,
+    "pts_allowed": 76.39285714285714,
+    "pts_allowed_rank": 23,
+    "reb_allowed": 23.178571428571427,
+    "reb_allowed_rank": 15,
+    "reb_diff": -2.642857142857143,
+    "reb_diff_rank": 19
+  },
+  "LAL": {
+    "ast_allowed": 15.777777777777779,
+    "ast_allowed_rank": 17,
+    "pts_allowed": 72.51851851851852,
+    "pts_allowed_rank": 16,
+    "reb_allowed": 22.51851851851852,
+    "reb_allowed_rank": 8,
+    "reb_diff": -1.2222222222222223,
+    "reb_diff_rank": 17
+  },
+  "MEM": {
+    "ast_allowed": 16.142857142857142,
+    "ast_allowed_rank": 21,
+    "pts_allowed": 74.46428571428571,
+    "pts_allowed_rank": 20,
+    "reb_allowed": 24.464285714285715,
+    "reb_allowed_rank": 21,
+    "reb_diff": 6.357142857142857,
+    "reb_diff_rank": 6
+  },
+  "MIA": {
+    "ast_allowed": 15.0,
+    "ast_allowed_rank": 12,
+    "pts_allowed": 67.4074074074074,
+    "pts_allowed_rank": 7,
+    "reb_allowed": 24.22222222222222,
+    "reb_allowed_rank": 19,
+    "reb_diff": 7.148148148148148,
+    "reb_diff_rank": 5
+  },
+  "MIL": {
+    "ast_allowed": 14.392857142857142,
+    "ast_allowed_rank": 6,
+    "pts_allowed": 63.5,
+    "pts_allowed_rank": 3,
+    "reb_allowed": 21.785714285714285,
+    "reb_allowed_rank": 4,
+    "reb_diff": 5.392857142857143,
+    "reb_diff_rank": 8
+  },
+  "MIN": {
+    "ast_allowed": 14.25,
+    "ast_allowed_rank": 5,
+    "pts_allowed": 70.17857142857143,
+    "pts_allowed_rank": 14,
+    "reb_allowed": 22.678571428571427,
+    "reb_allowed_rank": 9,
+    "reb_diff": 14.214285714285714,
+    "reb_diff_rank": 2
+  },
+  "NO": {
+    "ast_allowed": 18.551724137931036,
+    "ast_allowed_rank": 27,
+    "pts_allowed": 77.0,
+    "pts_allowed_rank": 25,
+    "reb_allowed": 26.03448275862069,
+    "reb_allowed_rank": 27,
+    "reb_diff": 0.13793103448275862,
+    "reb_diff_rank": 14
+  },
+  "NY": {
+    "ast_allowed": 13.892857142857142,
+    "ast_allowed_rank": 4,
+    "pts_allowed": 64.25,
+    "pts_allowed_rank": 4,
+    "reb_allowed": 19.428571428571427,
+    "reb_allowed_rank": 2,
+    "reb_diff": 10.464285714285714,
+    "reb_diff_rank": 3
+  },
+  "OKC": {
+    "ast_allowed": 11.928571428571429,
+    "ast_allowed_rank": 1,
+    "pts_allowed": 56.75,
+    "pts_allowed_rank": 1,
+    "reb_allowed": 22.928571428571427,
+    "reb_allowed_rank": 13,
+    "reb_diff": 1.3214285714285714,
+    "reb_diff_rank": 13
+  },
+  "ORL": {
+    "ast_allowed": 15.035714285714286,
+    "ast_allowed_rank": 13,
+    "pts_allowed": 72.57142857142857,
+    "pts_allowed_rank": 17,
+    "reb_allowed": 23.821428571428573,
+    "reb_allowed_rank": 17,
+    "reb_diff": -5.428571428571429,
+    "reb_diff_rank": 22
+  },
+  "PHI": {
+    "ast_allowed": 14.481481481481481,
+    "ast_allowed_rank": 9,
+    "pts_allowed": 65.18518518518519,
+    "pts_allowed_rank": 5,
+    "reb_allowed": 22.333333333333332,
+    "reb_allowed_rank": 7,
+    "reb_diff": -8.185185185185185,
+    "reb_diff_rank": 24
+  },
+  "PHX": {
+    "ast_allowed": 14.892857142857142,
+    "ast_allowed_rank": 11,
+    "pts_allowed": 69.85714285714286,
+    "pts_allowed_rank": 13,
+    "reb_allowed": 21.821428571428573,
+    "reb_allowed_rank": 5,
+    "reb_diff": -2.3214285714285716,
+    "reb_diff_rank": 18
+  },
+  "POR": {
+    "ast_allowed": 15.392857142857142,
+    "ast_allowed_rank": 14,
+    "pts_allowed": 75.89285714285714,
+    "pts_allowed_rank": 22,
+    "reb_allowed": 24.5,
+    "reb_allowed_rank": 22,
+    "reb_diff": 7.678571428571429,
+    "reb_diff_rank": 4
+  },
+  "SA": {
+    "ast_allowed": 16.25,
+    "ast_allowed_rank": 22,
+    "pts_allowed": 74.07142857142857,
+    "pts_allowed_rank": 19,
+    "reb_allowed": 23.857142857142858,
+    "reb_allowed_rank": 18,
+    "reb_diff": 5.25,
+    "reb_diff_rank": 9
+  },
+  "SAC": {
+    "ast_allowed": 18.74074074074074,
+    "ast_allowed_rank": 28,
+    "pts_allowed": 87.0,
+    "pts_allowed_rank": 30,
+    "reb_allowed": 30.14814814814815,
+    "reb_allowed_rank": 30,
+    "reb_diff": -4.592592592592593,
+    "reb_diff_rank": 21
+  },
+  "TOR": {
+    "ast_allowed": 15.517241379310345,
+    "ast_allowed_rank": 15,
+    "pts_allowed": 68.34482758620689,
+    "pts_allowed_rank": 8,
+    "reb_allowed": 22.689655172413794,
+    "reb_allowed_rank": 11,
+    "reb_diff": 4.275862068965517,
+    "reb_diff_rank": 10
+  },
+  "UTAH": {
+    "ast_allowed": 19.666666666666668,
+    "ast_allowed_rank": 30,
+    "pts_allowed": 79.22222222222223,
+    "pts_allowed_rank": 29,
+    "reb_allowed": 24.51851851851852,
+    "reb_allowed_rank": 23,
+    "reb_diff": -8.62962962962963,
+    "reb_diff_rank": 26
+  },
+  "WSH": {
+    "ast_allowed": 19.192307692307693,
+    "ast_allowed_rank": 29,
+    "pts_allowed": 77.92307692307692,
+    "pts_allowed_rank": 27,
+    "reb_allowed": 26.23076923076923,
+    "reb_allowed_rank": 28,
+    "reb_diff": -15.692307692307692,
+    "reb_diff_rank": 30
+  }
+}
