@@ -91,19 +91,38 @@ jobs:
       # --- Commit updated CSVs (stateful inputs) ---
       - name: Commit updated CSVs
         run: |
-          if git diff --quiet -- nba_master.csv player_game_log.csv player_dim.csv; then
-            echo "No CSV changes; nothing to commit."
-          else
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Stage the CSVs we expect might change (only if they exist)
+          FILES=(
+            "nba_master.csv"
+            "player_game_log.csv"
+            "player_dim.csv"
+            "player_snapshot.csv"
+            "data/player_snapshot.csv"
+          )
 
-            git add nba_master.csv player_game_log.csv player_dim.csv
-            git commit -m "Daily data refresh [skip ci]" || true
+          CHANGED=0
+          for f in "${FILES[@]}"; do
+            if [ -f "$f" ]; then
+              if ! git diff --quiet -- "$f"; then
+                git add "$f"
+                CHANGED=1
+              fi
+            fi
+          done
 
-            git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
+          if [ "$CHANGED" -eq 0 ]; then
+            echo "No tracked CSV changes; nothing to commit."
+            exit 0
           fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git commit -m "Daily data refresh [skip ci]" || exit 0
+
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
 
       - name: Upload Rotowire debug HTML
         uses: actions/upload-artifact@v4
