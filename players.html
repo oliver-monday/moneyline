@@ -12,15 +12,19 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 16px; }
-    .brand { display:flex; align-items:center; gap:12px; margin:0 0 8px; }
-    .brand-logo { width: 36px; height: 36px; object-fit: contain; }
-    .brand-text { font-size: 32px; font-weight: 700; }
+    .brand { display:flex; align-items:center; gap:10px; width: 100%; margin: 0 0 10px; }
+    .brand-logo { height: 56px; width: auto; object-fit: contain; }
+    .brand-text { font-size: 56px; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
+    @media (min-width: 521px) {
+      .brand-text { font-size: 56px; }
+      .brand-logo { height: 56px; }
+    }
     .nav { display:flex; gap:12px; margin-bottom: 16px; }
     .nav a { text-decoration:none; padding:8px 10px; border:1px solid #ddd; border-radius:10px; color:#111; }
     .nav a.active { background:#111; color:#fff; border-color:#111; }
     @media (max-width: 520px) {
-      .brand-logo { width: 30px; height: 30px; }
-      .brand-text { font-size: 28px; }
+      .brand-text { font-size: clamp(44px, 10vw, 64px); }
+      .brand-logo { height: clamp(44px, 10vw, 64px); }
       .nav a {
         padding: 12px 14px;
         font-size: 16px;

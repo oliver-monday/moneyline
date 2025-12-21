@@ -649,13 +649,17 @@ def build_html(slate, team_results, league_tbl, outfile):
         @media (max-width: 520px) {
             body { margin: 12px; }
         }
-        .brand { display:flex; align-items:center; gap:12px; margin: 0 0 6px; }
-        .brand-logo { width: 36px; height: 36px; object-fit: contain; }
-        .brand-text { font-size: 32px; font-weight: 700; }
+        .brand { display:flex; align-items:center; gap:10px; width: 100%; margin: 0 0 10px; }
+        .brand-logo { height: 56px; width: auto; object-fit: contain; }
+        .brand-text { font-size: 56px; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
+        @media (min-width: 521px) {
+            .brand-text { font-size: 56px; }
+            .brand-logo { height: 56px; }
+        }
         .page-subtitle { margin: 0 0 18px; }
         @media (max-width: 520px) {
-            .brand-logo { width: 30px; height: 30px; }
-            .brand-text { font-size: 28px; }
+            .brand-text { font-size: clamp(44px, 10vw, 64px); }
+            .brand-logo { height: clamp(44px, 10vw, 64px); }
         }
         .game-card {
             border: 1px solid #eee;
