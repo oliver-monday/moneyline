@@ -379,6 +379,16 @@ function restLabel(lastDateStr) {
   return restDays === 0 ? "B2B" : `${restDays}d`;
 }
 
+function teamRestLabel(teamAbbrev) {
+  const t = String(teamAbbrev || "").trim().toUpperCase();
+  const lastTeamDate = teamLastPlayedDate.get(t);
+  if (!lastTeamDate || !todayISO) return "";
+  const diff = dayDiff(todayISO, lastTeamDate);
+  if (!Number.isFinite(diff) || diff <= 0) return "";
+  const restDays = Math.max(0, diff - 1);
+  return restDays === 0 ? "B2B" : `${restDays}d`;
+}
+
 function formatMMDDYYYY(iso) {
   if (!iso) return "";
   const parts = iso.split("-");
@@ -576,6 +586,33 @@ async function load() {
   todayISO = slateDate;
   const todayDisplay = formatMMDDYYYY(slateDate);
 
+  const teamLastPlayedDate = new Map();
+  const isNumeric = v => /^\d+$/.test(String(v || "").trim());
+  for (const g of games) {
+    const gd = (g.game_date || "").trim();
+    if (!gd || gd >= slateDate) continue;
+
+    const statusStr = String(g.game_status || g.status || "").toLowerCase();
+    const isFinal = statusStr.includes("final");
+    const scored = (
+      (isNumeric(g.home_score) && isNumeric(g.away_score)) ||
+      (isNumeric(g.home_points) && isNumeric(g.away_points)) ||
+      (isNumeric(g.home_pts) && isNumeric(g.away_pts))
+    );
+    if (!isFinal && !scored) continue;
+
+    const home = (g.home_team_abbrev || "").trim().toUpperCase();
+    const away = (g.away_team_abbrev || "").trim().toUpperCase();
+    if (home) {
+      const prev = teamLastPlayedDate.get(home);
+      if (!prev || gd > prev) teamLastPlayedDate.set(home, gd);
+    }
+    if (away) {
+      const prev = teamLastPlayedDate.get(away);
+      if (!prev || gd > prev) teamLastPlayedDate.set(away, gd);
+    }
+  }
+
   // Determine teams playing today
   const teamsToday = new Set();
   for (const g of games) {
@@ -701,7 +738,7 @@ async function load() {
         : "";
       const lastLine = [lastStr, lastStats].filter(Boolean).join(" ");
 
-      const restVal = restLabel(last);
+      const restVal = teamRestLabel(team) || restLabel(last);
       const restValue = restVal === "B2B"
         ? `<span class="pill danger inline">B2B</span>`
         : restVal;
