@@ -114,6 +114,23 @@
     .preview-label { min-width: 42px; color:#666; font-size: 12px; font-weight: 600; }
     .preview-pills { display:flex; flex-wrap:wrap; gap: 6px; }
     .preview-avg { font-weight:600; color:#666; }
+    .statline{
+      display:flex;
+      align-items:baseline;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .statlabel{
+      width:44px;
+      font-weight:700;
+      color:#666;
+    }
+    .statavg{
+      font-size:14px;
+      color:#777;
+      font-weight:600;
+      margin-right:6px;
+    }
     .avgchip { margin-left:auto; font-size:11px; color:#666; }
     .expand-body { margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; }
     .game-section { margin: 20px 0; }
@@ -139,7 +156,7 @@
     }
 
     /* Pills (tints similar vibe to main page green/red) */
-    .pills { display:flex; flex-wrap:wrap; }
+    .pills { display:flex; flex-wrap:wrap; gap:10px; }
     .pill {
       display:inline-block;
       padding: 3px 8px;
@@ -191,6 +208,17 @@
     .rowtitle { display:flex; align-items:baseline; gap:10px; }
     .teamcode { font-weight: 400; color:#666; font-size: 13px; }
     .submeta { font-size:12px; margin-top:4px; color:#666; line-height:1.25; }
+    .minsline{ margin-bottom:10px; }
+    .matrixhdr{
+      display:flex;
+      align-items:baseline;
+      gap:10px;
+      flex-wrap:wrap;
+      color:#777;
+      font-size:14px;
+      margin-top:6px;
+      margin-bottom:6px;
+    }
 
     /* Slightly tighter player column */
     td.player { min-width: 220px; }
@@ -322,16 +350,14 @@ function clamp(x, lo, hi) {
   return Math.max(lo, Math.min(hi, x));
 }
 
-function utcDayDiff(a, b) {
-  const pa = String(a || "").split("-");
-  const pb = String(b || "").split("-");
-  if (pa.length !== 3 || pb.length !== 3) return NaN;
-  const [ay, am, ad] = pa.map(Number);
-  const [by, bm, bd] = pb.map(Number);
-  if (!ay || !am || !ad || !by || !bm || !bd) return NaN;
-  const da = Date.UTC(ay, am - 1, ad);
-  const db = Date.UTC(by, bm - 1, bd);
-  return Math.round((da - db) / 86400000);
+function toUtcDay(s) {
+  const [y, m, d] = String(s || "").split("-").map(Number);
+  if (!y || !m || !d) return NaN;
+  return Date.UTC(y, m - 1, d);
+}
+
+function dayDiff(a, b) {
+  return Math.round((toUtcDay(a) - toUtcDay(b)) / 86400000);
 }
 
 function num(x) {
@@ -344,14 +370,13 @@ function fmt(x, d=1) {
   return v.toFixed(d);
 }
 
-function restLabelFrom(todayStr, lastDateStr) {
-  if (!lastDateStr) return "—";
-  const diff = utcDayDiff(todayStr, lastDateStr);
-  if (!Number.isFinite(diff)) return "—";
-  if (diff === 1) return "B2B";
-  if (diff === 2) return "1d";
-  if (diff === 3) return "2d";
-  return `${Math.max(0, diff - 1)}d`;
+let todayISO = "";
+function restLabel(lastDateStr) {
+  if (!lastDateStr || !todayISO) return "";
+  const diff = dayDiff(todayISO, lastDateStr);
+  if (!Number.isFinite(diff) || diff <= 0) return "";
+  const restDays = Math.max(0, diff - 1);
+  return restDays === 0 ? "B2B" : `${restDays}d`;
 }
 
 function formatMMDDYYYY(iso) {
@@ -548,7 +573,7 @@ async function load() {
   const slateDate = slateDates.includes(todayLocal)
     ? todayLocal
     : (slateDates.sort().slice(-1)[0] || todayLocal);
-  const TODAY_STR = slateDate;
+  todayISO = slateDate;
   const todayDisplay = formatMMDDYYYY(slateDate);
 
   // Determine teams playing today
@@ -676,7 +701,7 @@ async function load() {
         : "";
       const lastLine = [lastStr, lastStats].filter(Boolean).join(" ");
 
-      const restVal = restLabelFrom(TODAY_STR, last);
+      const restVal = restLabel(last);
       const restValue = restVal === "B2B"
         ? `<span class="pill danger inline">B2B</span>`
         : restVal;
@@ -798,55 +823,49 @@ async function load() {
             <div class="submeta">${data.lastLine}</div>
             <div class="submeta meta-line">${data.contextLine}</div>
             ${data.loadLine || ""}
-            <div class="submeta" style="margin-top:6px;">
+            <div class="submeta minsline" style="margin-top:6px;">
               <strong>MINS</strong> ${data.minAvg} <span class="muted">(avg)</span> · ${data.minMinWin} <span class="muted">(min)</span>
             </div>
           </div>
 
           <div class="card-right">
             <div>
-              <div class="preview-row">
-                <div class="preview-label">PTS</div>
-                <div class="avgchip">Avg ${data.ptsAvgText}</div>
+              <div class="statline">
+                <div class="statlabel">PTS</div>
+                <div class="statavg">Avg ${data.ptsAvgText}</div>
+                <div class="pills">${data.ptsBest || placeholder}</div>
               </div>
-              <div class="preview-pills">${data.ptsBest || placeholder}</div>
             </div>
             <div>
-              <div class="preview-row">
-                <div class="preview-label">REB</div>
-                <div class="avgchip">Avg ${data.rebAvgText}</div>
+              <div class="statline">
+                <div class="statlabel">REB</div>
+                <div class="statavg">Avg ${data.rebAvgText}</div>
+                <div class="pills">${data.rebBest || placeholder}</div>
               </div>
-              <div class="preview-pills">${data.rebBest || placeholder}</div>
             </div>
             <div>
-              <div class="preview-row">
-                <div class="preview-label">AST</div>
-                <div class="avgchip">Avg ${data.astAvgText}</div>
+              <div class="statline">
+                <div class="statlabel">AST</div>
+                <div class="statavg">Avg ${data.astAvgText}</div>
+                <div class="pills">${data.astBest || placeholder}</div>
               </div>
-              <div class="preview-pills">${data.astBest || placeholder}</div>
             </div>
           </div>
         </summary>
 
         <div class="expand-body">
-          <div class="preview-row" style="margin-bottom:8px;">
-            <div class="preview-label">PTS</div>
-            <div class="muted" style="font-size:12px;">min in window: <strong>${data.ptsMin}</strong></div>
-            <div class="avgchip">Avg ${data.ptsAvgText}</div>
+          <div class="matrixhdr">
+            <div><strong>PTS</strong> · Avg ${data.ptsAvgText} • min in window: ${data.ptsMin}</div>
           </div>
           <div class="pills">${data.ptsFull}</div>
 
-          <div class="preview-row" style="margin:12px 0 8px;">
-            <div class="preview-label">REB</div>
-            <div class="muted" style="font-size:12px;">min in window: <strong>${data.rebMin}</strong></div>
-            <div class="avgchip">Avg ${data.rebAvgText}</div>
+          <div class="matrixhdr">
+            <div><strong>REB</strong> · Avg ${data.rebAvgText} • min in window: ${data.rebMin}</div>
           </div>
           <div class="pills">${data.rebFull}</div>
 
-          <div class="preview-row" style="margin:12px 0 8px;">
-            <div class="preview-label">AST</div>
-            <div class="muted" style="font-size:12px;">min in window: <strong>${data.astMin}</strong></div>
-            <div class="avgchip">Avg ${data.astAvgText}</div>
+          <div class="matrixhdr">
+            <div><strong>AST</strong> · Avg ${data.astAvgText} • min in window: ${data.astMin}</div>
           </div>
           <div class="pills">${data.astFull}</div>
         </div>
