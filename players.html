@@ -113,10 +113,7 @@
     .preview-row { display:flex; flex-wrap:wrap; gap: 10px; align-items:center; }
     .preview-label { min-width: 42px; color:#666; font-size: 12px; font-weight: 600; }
     .preview-pills { display:flex; flex-wrap:wrap; gap: 6px; }
-    .preview-line { color:#666; font-size: 12px; }
-    .strong-text { font-weight: 600; }
-    .delta-pos { color:#2b7a2b; font-weight: 600; }
-    .delta-neg { color:#a23b3b; font-weight: 600; }
+    .preview-avg { font-weight:600; color:#666; }
     .expand-body { margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; }
     .game-section { margin: 20px 0; }
     .game-group { border: 1px solid #eee; border-radius: 16px; margin: 12px 0; background:#fff; }
@@ -164,6 +161,19 @@
       color: #7a2e2e;
     }
     .pill.inline { margin: 0 6px 0 0; }
+    .target-row { display:flex; flex-wrap:wrap; gap:6px; margin:6px 0 2px; }
+    .target-chip {
+      background:#e8f7e8;
+      border:1px solid #6ac46a;
+      color:#1f5f1f;
+      border-radius:999px;
+      padding:4px 8px;
+      font-size:12px;
+      font-weight:600;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+    }
     .meta-line { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; }
     .meta-chunk { display:inline-flex; align-items:center; gap:8px; flex-wrap:wrap; }
     .meta-chunk-load { display:inline-flex; align-items:center; gap:8px; white-space:nowrap; }
@@ -261,6 +271,14 @@
         <span class="stable-text">
           <span class="stable-title">Stable minutes only</span>
           <span class="stable-hint">(avg≥30, min≥24, 24+ ≥80%)</span>
+        </span>
+      </label>
+    </div>
+    <div class="stable-row">
+      <label class="stable-label">
+        <input id="targetsOnly" type="checkbox" />
+        <span class="stable-text">
+          <span class="stable-title">Targets only</span>
         </span>
       </label>
     </div>
@@ -426,31 +444,43 @@ function legPillHTML(t, hits, gp) {
   return `<span class="pill ${cls}">${t}+ : ${hits}/${gp}</span>`;
 }
 
-function decisionStrongLine(r, stat, thresholds, win, band) {
+function seasonAvg(r, stat) {
+  const v = num(r[`season_avg_${stat}`]);
+  if (Number.isFinite(v)) return v;
+  return num(r[`${stat}_avg_season`]);
+}
+
+function decisionTarget(r, stat, thresholds, win, band) {
   const gp = parseInt(r[`gp_${win}`] || "0", 10);
-  const seasonAvg = num(r[`season_avg_${stat}`]);
-  if (!gp || !Number.isFinite(seasonAvg)) return "—";
+  const avg = seasonAvg(r, stat);
+  if (!gp || !Number.isFinite(avg)) return null;
 
-  const inBand = thresholds.filter(t => Math.abs(seasonAvg - t) <= band);
-  if (!inBand.length) return "—";
+  const inBand = thresholds.filter(t => Math.abs(avg - t) <= band);
+  if (!inBand.length) return null;
 
-  let best = null;
+  const candidates = [];
   for (const t of inBand) {
     const hits = parseInt(r[`${stat}_ge${t}_hits_${win}`] || "0", 10);
     const rate = gp ? hits / gp : 0;
-    if (rate >= 0.8) {
-      if (!best || t > best.t) best = { t, hits, gp, rate };
-    }
+    if (rate >= 0.8) candidates.push({ t, hits, gp, rate });
   }
+  if (!candidates.length) return null;
 
-  if (!best) return "—";
+  const perfect = candidates.filter(c => c.rate === 1);
+  const pickFrom = perfect.length ? perfect : candidates;
+  const best = pickFrom.sort((a, b) => b.t - a.t)[0];
+  return { stat, ...best, perfect: best.rate === 1, avg };
+}
 
-  const delta = best.t - seasonAvg;
-  const deltaText = `${delta >= 0 ? "+" : ""}${delta.toFixed(1)}`;
-  const deltaCls = delta >= 1.0 ? "delta-pos" : (delta <= -1.0 ? "delta-neg" : "");
-  const avgText = seasonAvg.toFixed(1);
-
-  return `Avg ${avgText} → <span class="strong-text">Strong ${best.t}+ (${best.hits}/${best.gp})</span> Δ <span class="${deltaCls}">${deltaText}</span>`;
+function collectTargets(r, win, ptsT, raT) {
+  const targets = [];
+  const pts = decisionTarget(r, "pts", ptsT, win, 2.5);
+  const reb = decisionTarget(r, "reb", raT, win, 1.0);
+  const ast = decisionTarget(r, "ast", raT, win, 1.0);
+  if (pts) targets.push(pts);
+  if (reb) targets.push(reb);
+  if (ast) targets.push(ast);
+  return targets;
 }
 
 function sortVal(r, sortKey, win) {
@@ -545,6 +575,7 @@ async function load() {
   const layout = document.getElementById("layout");
   const sortWrap = document.getElementById("sortWrap");
   const stableOnly = document.getElementById("stableOnly");
+  const targetsOnly = document.getElementById("targetsOnly");
   const filtersPanel = document.getElementById("filtersPanel");
   if (filtersPanel) {
     if (window.matchMedia("(max-width: 520px)").matches) {
@@ -580,6 +611,10 @@ async function load() {
       if (Number.isFinite(minMin) && Number.isFinite(m) && m < minMin) return false;
 
       if (stableOnly.checked && !isStableMinutes(r, win)) return false;
+      if (targetsOnly.checked) {
+        const targets = collectTargets(r, win, PTS_T, RA_T);
+        if (!targets.length) return false;
+      }
 
       return true;
     });
@@ -650,15 +685,24 @@ async function load() {
       const rebBestArr = bestLegs(r, "reb", RA_T, win);
       const astBestArr = bestLegs(r, "ast", RA_T, win);
 
-      const ptsDecision = decisionStrongLine(r, "pts", PTS_T, win, 2.5);
-      const rebDecision = decisionStrongLine(r, "reb", RA_T, win, 1.0);
-      const astDecision = decisionStrongLine(r, "ast", RA_T, win, 1.0);
+      const ptsBest = ptsBestArr.map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
+      const rebBest = rebBestArr.map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
+      const astBest = astBestArr.map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
 
       const previewStrength = ptsBestArr.length + rebBestArr.length + astBestArr.length;
       const injuryMatch = matchInjury(team, r.player_name, injuriesByTeam);
       const injuryStatus = injuryMatch && injuryMatch.status
         ? String(injuryMatch.status).toUpperCase()
         : "";
+
+      const ptsAvg = seasonAvg(r, "pts");
+      const rebAvg = seasonAvg(r, "reb");
+      const astAvg = seasonAvg(r, "ast");
+      const ptsAvgText = Number.isFinite(ptsAvg) ? ptsAvg.toFixed(1) : "—";
+      const rebAvgText = Number.isFinite(rebAvg) ? rebAvg.toFixed(1) : "—";
+      const astAvgText = Number.isFinite(astAvg) ? astAvg.toFixed(1) : "—";
+
+      const targets = collectTargets(r, win, PTS_T, RA_T);
 
       return {
         row: r,
@@ -673,12 +717,16 @@ async function load() {
         ptsFull,
         rebFull,
         astFull,
-        ptsDecision,
-        rebDecision,
-        astDecision,
+        ptsBest,
+        rebBest,
+        astBest,
         previewStrength,
         lastLine,
         contextLine,
+        ptsAvgText,
+        rebAvgText,
+        astAvgText,
+        targets,
         loadLine,
         injuryStatus,
       };
@@ -692,6 +740,11 @@ async function load() {
 
     function createCard(data) {
       const placeholder = `<span class="muted" style="font-size:12px;">—</span>`;
+      const targetChips = (data.targets || [])
+        .slice(0, 3)
+        .map(t => `<span class="target-chip">Target: ${t.stat.toUpperCase()} ${t.t}+ (${t.hits}/${t.gp})</span>`)
+        .join("");
+      const targetRow = targetChips ? `<div class="target-row">${targetChips}</div>` : "";
 
       const el = document.createElement("details");
       el.className = "card";
@@ -704,6 +757,7 @@ async function load() {
               <span class="teamcode">${data.team}</span>
               ${data.injuryStatus ? `<span class="pill danger inline">${data.injuryStatus}</span>` : ""}
             </div>
+            ${targetRow}
             <div class="submeta">${data.lastLine}</div>
             <div class="submeta meta-line">${data.contextLine}</div>
             ${data.loadLine || ""}
@@ -716,19 +770,22 @@ async function load() {
             <div class="preview-row">
               <div class="preview-label">PTS</div>
               <div class="preview-pills">
-                <span class="preview-line">${data.ptsDecision || "—"}</span>
+                <span class="preview-avg">Avg ${data.ptsAvgText}</span>
+                ${data.ptsBest || placeholder}
               </div>
             </div>
             <div class="preview-row">
               <div class="preview-label">REB</div>
               <div class="preview-pills">
-                <span class="preview-line">${data.rebDecision || "—"}</span>
+                <span class="preview-avg">Avg ${data.rebAvgText}</span>
+                ${data.rebBest || placeholder}
               </div>
             </div>
             <div class="preview-row">
               <div class="preview-label">AST</div>
               <div class="preview-pills">
-                <span class="preview-line">${data.astDecision || "—"}</span>
+                <span class="preview-avg">Avg ${data.astAvgText}</span>
+                ${data.astBest || placeholder}
               </div>
             </div>
           </div>
@@ -788,6 +845,27 @@ async function load() {
         title.textContent = `${info.awayName || info.awayAbbrev} @ ${info.homeName || info.homeAbbrev}`;
         summary.appendChild(title);
 
+        const targetEntries = [];
+        for (const p of arr) {
+          for (const t of (p.targets || [])) {
+            targetEntries.push({ player: p.playerName, ...t });
+          }
+        }
+        if (targetEntries.length) {
+          targetEntries.sort((a, b) => {
+            if (a.perfect !== b.perfect) return a.perfect ? -1 : 1;
+            if (b.t !== a.t) return b.t - a.t;
+            return (b.hits || 0) - (a.hits || 0);
+          });
+          const topTargets = targetEntries.slice(0, 3).map(t =>
+            `${t.player} ${t.stat.toUpperCase()} ${t.t}+ (${t.hits}/${t.gp})`
+          ).join(" · ");
+          const sub = document.createElement("div");
+          sub.className = "game-sub";
+          sub.textContent = `Top targets: ${topTargets}`;
+          summary.appendChild(sub);
+        }
+
         group.appendChild(summary);
 
         const wrap = document.createElement("div");
@@ -829,6 +907,7 @@ async function load() {
   minFilter.addEventListener("input", render);
   layout.addEventListener("change", render);
   stableOnly.addEventListener("change", render);
+  targetsOnly.addEventListener("change", render);
   render();
 }
 
