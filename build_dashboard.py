@@ -250,50 +250,72 @@ def label(text: str) -> str:
         return "<span class='detail-label detail-label-empty'>&nbsp;</span>"
     return f"<span class='detail-label'>{text}</span>"
 
-def _record_pill(text: str, warn: bool = False) -> str:
+def _pill(text: str, cls: str) -> str:
+    return f"<span class='pill {cls}'>{text}</span>"
+
+def _record_pill(text: str, highlight: bool = False) -> str:
     m = re.search(r"(\d+)-(\d+)\s*\((\d+(?:\.\d+)?)%\)", text)
     if not m:
         return text
-    pct = float(m.group(3))
-    if pct >= 80:
-        cls = "good"
-    elif pct <= 20:
-        cls = "bad"
+    record = m.group(0)
+    if highlight:
+        pill = _pill(record, "pill-yellow")
     else:
-        cls = "warn" if warn else "neutral"
-    pill = f"<span class='pill {cls}'>{m.group(0)}</span>"
-    return text.replace(m.group(0), pill, 1)
+        pct = float(m.group(3))
+        if pct >= 80:
+            cls = "pill-green"
+        elif pct <= 20:
+            cls = "pill-red"
+        else:
+            cls = "pill-gray"
+        pill = _pill(record, cls)
+    return text.replace(record, pill, 1)
 
-def _signal_pill(text: str) -> str:
+def _qual_pill(text: str) -> str:
     phrases = {
-        "Major advantage": "good",
-        "Clear advantage": "good",
-        "Strong uptrend": "good",
-        "Market undervaluing": "good",
-        "Major disadvantage": "bad",
-        "Clear disadvantage": "bad",
-        "High fatigue": "bad",
-        "Severe fatigue spot": "bad",
-        "Severe fatigue": "bad",
-        "Weak downtrend": "bad",
-        "Market overvaluing": "bad",
+        "Major advantage": "pill-green",
+        "Clear advantage": "pill-green",
+        "Strong uptrend": "pill-green",
+        "Major disadvantage": "pill-red",
+        "Clear disadvantage": "pill-red",
+        "High fatigue": "pill-red",
+        "Severe fatigue spot": "pill-red",
+        "Severe fatigue": "pill-red",
+        "Weak downtrend": "pill-red",
+        "Cold stretch": "pill-red",
+        "Market undervaluing": "pill-green",
+        "Market overvaluing": "pill-red",
+        "Market roughly efficient": "pill-gray",
     }
-    out = text
-    for phrase, cls in phrases.items():
-        pattern = re.compile(re.escape(phrase), re.IGNORECASE)
-        if pattern.search(out):
-            out = pattern.sub(lambda m: f"<span class='pill {cls}'>{m.group(0)}</span>", out, count=1)
-            break
-    return out
+    base = (text or "").strip()
+    if not base:
+        return text
 
-def value_html(text: str, warn: bool = False) -> str:
+    # Handle "X (Descriptor)" by removing parens and pilling descriptor.
+    m = re.match(r"^(.*)\(([^)]+)\)\s*$", base)
+    if m:
+        left = m.group(1).strip()
+        desc = m.group(2).strip()
+        for phrase, cls in phrases.items():
+            if desc.lower() == phrase.lower():
+                return f"{left} {_pill(desc, cls)}".strip()
+        return text
+
+    # Handle whole-value descriptors (e.g., Market signal)
+    for phrase, cls in phrases.items():
+        if base.lower() == phrase.lower():
+            return _pill(base, cls)
+    return text
+
+def value_html(text: str, highlight: bool = False) -> str:
     s = "" if text is None else str(text)
-    s = _record_pill(s, warn=warn)
-    s = _signal_pill(s)
+    s = _record_pill(s, highlight=highlight)
+    if not highlight:
+        s = _qual_pill(s)
     return f"<span class='detail-value'>{s}</span>"
 
-def line(label_text: str, value_text: str, warn: bool = False) -> str:
-    return f"<div class='detail-line'>{label(label_text)}{value_html(value_text, warn=warn)}</div>"
+def line(label_text: str, value_text: str, highlight: bool = False) -> str:
+    return f"<div class='detail-line'>{label(label_text)}{value_html(value_text, highlight=highlight)}</div>"
 
 def load_master():
     df = pd.read_csv(MASTER_PATH)
@@ -816,7 +838,15 @@ def build_html(slate, team_results, league_tbl, outfile):
             background: #fbeaea !important;   /* soft red */
             border-color: #e08b8b !important;
         }
-        .subheader { font-weight: bold; margin-top: 16px; margin-bottom: 10px; padding-top: 4px; }
+        .subheader { font-weight: bold; margin-bottom: 10px; padding-top: 4px; }
+        .team-card {
+            background: #fff;
+            border: 1px solid #e6e6e6;
+            border-radius: 18px;
+            padding: 16px;
+            margin: 14px 0;
+            box-shadow: 0 1px 0 rgba(0,0,0,.03);
+        }
         .details-block {
             display: flex;
             flex-direction: column;
@@ -830,15 +860,15 @@ def build_html(slate, team_results, league_tbl, outfile):
         .detail-value { color: #111; }
         .pill {
             display: inline-block;
-            padding: 2px 8px;
+            padding: 2px 10px;
             border-radius: 999px;
             border: 1px solid #ddd;
             font-weight: 600;
         }
-        .pill.warn { background: #fff3b0; border-color: #e6d27a; }
-        .pill.good { background: #e8f7e8; border-color: #6ac46a; }
-        .pill.bad { background: #fbeaea; border-color: #e08b8b; }
-        .pill.neutral { background: #fff; border-color: #ddd; color: #333; }
+        .pill-yellow { background: #fff3b0; border-color: #e3d27a; }
+        .pill-green { background: #e8f7e8; border-color: #6ac46a; }
+        .pill-red { background: #fbeaea; border-color: #e08b8b; }
+        .pill-gray { background: #fff; border-color: #ddd; color: #333; }
         .league-block { margin-top: 30px; }
         details { margin-top: 8px; }
         summary { font-weight: bold; color: #111; }
@@ -978,6 +1008,7 @@ def build_html(slate, team_results, league_tbl, outfile):
         w("</summary>")
 
         # ---------------- HOME TEAM ----------------
+        w("<div class='team-card'>")
         w(f"<div class='subheader'>{home.upper()} (HOME)</div>")
         w("<div class='two-col'>")
         w("<div class='col'><div class='details-block'>")
@@ -985,12 +1016,12 @@ def build_html(slate, team_results, league_tbl, outfile):
         # LEFT column items go below:
 
         w(line("Record:", f"{home_sum['ml_record']} ({fmt_pct(home_sum['ml_win_pct'])})"))
-        w(line("As favorite:", f"{home_sum['fav_record']} ({fmt_pct(home_sum['fav_win_pct'])})", warn=True))
-        w(line("As underdog:", f"{home_sum['dog_record']} ({fmt_pct(home_sum['dog_win_pct'])})", warn=True))
-        w(line("Home:", f"{home_sum['home_record']} ({fmt_pct(home_sum['home_win_pct'])})", warn=True))
-        w(line("Away:", f"{home_sum['away_record']} ({fmt_pct(home_sum['away_win_pct'])})", warn=True))
-        w(line("As home favorite:", f"{home_sum['home_fav_record']} ({fmt_pct(home_sum['home_fav_win_pct'])})", warn=True))
-        w(line("As home underdog:", f"{home_sum['home_dog_record']} ({fmt_pct(home_sum['home_dog_win_pct'])})", warn=True))
+        w(line("As favorite:", f"{home_sum['fav_record']} ({fmt_pct(home_sum['fav_win_pct'])})", highlight=home_is_fav))
+        w(line("As underdog:", f"{home_sum['dog_record']} ({fmt_pct(home_sum['dog_win_pct'])})", highlight=home_is_dog))
+        w(line("Home:", f"{home_sum['home_record']} ({fmt_pct(home_sum['home_win_pct'])})", highlight=True))
+        w(line("Away:", f"{home_sum['away_record']} ({fmt_pct(home_sum['away_win_pct'])})"))
+        w(line("As home favorite:", f"{home_sum['home_fav_record']} ({fmt_pct(home_sum['home_fav_win_pct'])})", highlight=home_is_fav))
+        w(line("As home underdog:", f"{home_sum['home_dog_record']} ({fmt_pct(home_sum['home_dog_win_pct'])})", highlight=home_is_dog))
 
         if bucket_home:
             b=bucket_home_stats
@@ -1040,7 +1071,7 @@ def build_html(slate, team_results, league_tbl, outfile):
 
             # Rest line
             if home_ss["is_b2b"]:
-                rest_text = "<span class='pill bad'>B2B</span>"
+                rest_text = "<span class='pill pill-red'>B2B</span>"
             else:
                 rest_text = f"{home_ss['rest_days']} days"
             w(line("Rest:", rest_text))
@@ -1078,8 +1109,10 @@ def build_html(slate, team_results, league_tbl, outfile):
 
         w("</div></div>")
         w("</div>")   # end two-col
+        w("</div>")   # end team-card
 
         # ---------------- AWAY TEAM ----------------
+        w("<div class='team-card'>")
         w(f"<div class='subheader'>{away.upper()} (AWAY)</div>")
         w("<div class='two-col'>")
         w("<div class='col'><div class='details-block'>")
@@ -1087,12 +1120,12 @@ def build_html(slate, team_results, league_tbl, outfile):
         # LEFT column items go below:
 
         w(line("Record:", f"{away_sum['ml_record']} ({fmt_pct(away_sum['ml_win_pct'])})"))
-        w(line("As favorite:", f"{away_sum['fav_record']} ({fmt_pct(away_sum['fav_win_pct'])})", warn=True))
-        w(line("As underdog:", f"{away_sum['dog_record']} ({fmt_pct(away_sum['dog_win_pct'])})", warn=True))
-        w(line("Home:", f"{away_sum['home_record']} ({fmt_pct(away_sum['home_win_pct'])})", warn=True))
-        w(line("Away:", f"{away_sum['away_record']} ({fmt_pct(away_sum['away_win_pct'])})", warn=True))
-        w(line("As away favorite:", f"{away_sum['away_fav_record']} ({fmt_pct(away_sum['away_fav_win_pct'])})", warn=True))
-        w(line("As away underdog:", f"{away_sum['away_dog_record']} ({fmt_pct(away_sum['away_dog_win_pct'])})", warn=True))
+        w(line("As favorite:", f"{away_sum['fav_record']} ({fmt_pct(away_sum['fav_win_pct'])})", highlight=away_is_fav))
+        w(line("As underdog:", f"{away_sum['dog_record']} ({fmt_pct(away_sum['dog_win_pct'])})", highlight=away_is_dog))
+        w(line("Home:", f"{away_sum['home_record']} ({fmt_pct(away_sum['home_win_pct'])})"))
+        w(line("Away:", f"{away_sum['away_record']} ({fmt_pct(away_sum['away_win_pct'])})", highlight=True))
+        w(line("As away favorite:", f"{away_sum['away_fav_record']} ({fmt_pct(away_sum['away_fav_win_pct'])})", highlight=away_is_fav))
+        w(line("As away underdog:", f"{away_sum['away_dog_record']} ({fmt_pct(away_sum['away_dog_win_pct'])})", highlight=away_is_dog))
 
         if bucket_away:
             b=bucket_away_stats
@@ -1141,7 +1174,7 @@ def build_html(slate, team_results, league_tbl, outfile):
             w(line("Schedule stress:", f"{away_ss['score']:0.0f} ({away_ss['desc']})"))
 
             if away_ss["is_b2b"]:
-                rest_text = "<span class='pill bad'>B2B</span>"
+                rest_text = "<span class='pill pill-red'>B2B</span>"
             else:
                 rest_text = f"{away_ss['rest_days']} days"
             w(line("Rest:", rest_text))
@@ -1175,6 +1208,7 @@ def build_html(slate, team_results, league_tbl, outfile):
 
         w("</div></div>")
         w("</div>")   # end two-col
+        w("</div>")   # end team-card
         w("</details>")
         w("</div>")  # end game-card
 
