@@ -113,6 +113,10 @@
     .preview-row { display:flex; flex-wrap:wrap; gap: 10px; align-items:center; }
     .preview-label { min-width: 42px; color:#666; font-size: 12px; font-weight: 600; }
     .preview-pills { display:flex; flex-wrap:wrap; gap: 6px; }
+    .preview-line { color:#666; font-size: 12px; }
+    .strong-text { font-weight: 600; }
+    .delta-pos { color:#2b7a2b; font-weight: 600; }
+    .delta-neg { color:#a23b3b; font-weight: 600; }
     .expand-body { margin-top: 10px; padding-top: 10px; border-top: 1px solid #eee; }
     .game-section { margin: 20px 0; }
     .game-group { border: 1px solid #eee; border-radius: 16px; margin: 12px 0; background:#fff; }
@@ -422,6 +426,33 @@ function legPillHTML(t, hits, gp) {
   return `<span class="pill ${cls}">${t}+ : ${hits}/${gp}</span>`;
 }
 
+function decisionStrongLine(r, stat, thresholds, win, band) {
+  const gp = parseInt(r[`gp_${win}`] || "0", 10);
+  const seasonAvg = num(r[`season_avg_${stat}`]);
+  if (!gp || !Number.isFinite(seasonAvg)) return "—";
+
+  const inBand = thresholds.filter(t => Math.abs(seasonAvg - t) <= band);
+  if (!inBand.length) return "—";
+
+  let best = null;
+  for (const t of inBand) {
+    const hits = parseInt(r[`${stat}_ge${t}_hits_${win}`] || "0", 10);
+    const rate = gp ? hits / gp : 0;
+    if (rate >= 0.8) {
+      if (!best || t > best.t) best = { t, hits, gp, rate };
+    }
+  }
+
+  if (!best) return "—";
+
+  const delta = best.t - seasonAvg;
+  const deltaText = `${delta >= 0 ? "+" : ""}${delta.toFixed(1)}`;
+  const deltaCls = delta >= 1.0 ? "delta-pos" : (delta <= -1.0 ? "delta-neg" : "");
+  const avgText = seasonAvg.toFixed(1);
+
+  return `Avg ${avgText} → <span class="strong-text">Strong ${best.t}+ (${best.hits}/${best.gp})</span> Δ <span class="${deltaCls}">${deltaText}</span>`;
+}
+
 function sortVal(r, sortKey, win) {
   const col = `${sortKey}_${win}`;
   const v = num(r[col]);
@@ -619,9 +650,9 @@ async function load() {
       const rebBestArr = bestLegs(r, "reb", RA_T, win);
       const astBestArr = bestLegs(r, "ast", RA_T, win);
 
-      const ptsBest = ptsBestArr.map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
-      const rebBest = rebBestArr.map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
-      const astBest = astBestArr.map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
+      const ptsDecision = decisionStrongLine(r, "pts", PTS_T, win, 2.5);
+      const rebDecision = decisionStrongLine(r, "reb", RA_T, win, 1.0);
+      const astDecision = decisionStrongLine(r, "ast", RA_T, win, 1.0);
 
       const previewStrength = ptsBestArr.length + rebBestArr.length + astBestArr.length;
       const injuryMatch = matchInjury(team, r.player_name, injuriesByTeam);
@@ -642,9 +673,9 @@ async function load() {
         ptsFull,
         rebFull,
         astFull,
-        ptsBest,
-        rebBest,
-        astBest,
+        ptsDecision,
+        rebDecision,
+        astDecision,
         previewStrength,
         lastLine,
         contextLine,
@@ -685,19 +716,19 @@ async function load() {
             <div class="preview-row">
               <div class="preview-label">PTS</div>
               <div class="preview-pills">
-                ${data.ptsBest || placeholder}
+                <span class="preview-line">${data.ptsDecision || "—"}</span>
               </div>
             </div>
             <div class="preview-row">
               <div class="preview-label">REB</div>
               <div class="preview-pills">
-                ${data.rebBest || placeholder}
+                <span class="preview-line">${data.rebDecision || "—"}</span>
               </div>
             </div>
             <div class="preview-row">
               <div class="preview-label">AST</div>
               <div class="preview-pills">
-                ${data.astBest || placeholder}
+                <span class="preview-line">${data.astDecision || "—"}</span>
               </div>
             </div>
           </div>
