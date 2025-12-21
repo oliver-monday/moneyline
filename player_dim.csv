@@ -1,14 +1,14 @@
 player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_seen_date,last_seen_date
-1966,LeBron James,lebron james,LAL,2025-12-19,2025-12-19
+1966,LeBron James,lebron james,LAL,2025-12-21,2025-12-21
 3202,Kevin Durant,kevin durant,HOU,2025-12-20,2025-12-20
-3468,Russell Westbrook,russell westbrook,SAC,2025-12-19,2025-12-19
+3468,Russell Westbrook,russell westbrook,SAC,2025-12-21,2025-12-21
 3975,Stephen Curry,stephen curry,GS,2025-12-21,2025-12-21
-3978,DeMar DeRozan,demar derozan,SAC,2025-12-19,2025-12-19
-3992,James Harden,james harden,LAC,2025-12-16,2025-12-16
-3995,Jrue Holiday,jrue holiday,POR,2025-12-15,2025-12-15
+3978,DeMar DeRozan,demar derozan,SAC,2025-12-21,2025-12-21
+3992,James Harden,james harden,LAC,2025-12-21,2025-12-21
+3995,Jrue Holiday,jrue holiday,POR,2025-12-21,2025-12-21
 4251,Paul George,paul george,PHI,2025-12-20,2025-12-20
 6430,Jimmy Butler III,jimmy butler iii,GS,2025-12-21,2025-12-21
-6450,Kawhi Leonard,kawhi leonard,LAC,2025-12-19,2025-12-19
+6450,Kawhi Leonard,kawhi leonard,LAC,2025-12-21,2025-12-21
 6478,Nikola Vucevic,nikola vucevic,CHI,2025-12-20,2025-12-20
 6578,Harrison Barnes,harrison barnes,SA,2025-12-20,2025-12-20
 6583,Anthony Davis,anthony davis,DAL,2025-12-21,2025-12-21
@@ -17,7 +17,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 2528210,Tim Hardaway Jr.,tim hardaway jr,DEN,2025-12-20,2025-12-20
 2530530,T.J. McConnell,t j mcconnell,IND,2025-12-21,2025-12-21
 2595516,Norman Powell,norman powell,MIA,2025-12-20,2025-12-20
-2991070,Jerami Grant,jerami grant,POR,2025-12-19,2025-12-19
+2991070,Jerami Grant,jerami grant,POR,2025-12-21,2025-12-21
 2991235,Steven Adams,steven adams,HOU,2025-12-20,2025-12-20
 3032976,Rudy Gobert,rudy gobert,MIN,2025-12-20,2025-12-20
 3032977,Giannis Antetokounmpo,giannis antetokounmpo,MIL,2025-12-04,2025-12-04
@@ -49,11 +49,11 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 3934673,Donte DiVincenzo,donte divincenzo,MIN,2025-12-20,2025-12-20
 3934719,OG Anunoby,og anunoby,NY,2025-12-20,2025-12-20
 3936299,Jamal Murray,jamal murray,DEN,2025-12-20,2025-12-20
-3945274,Luka Doncic,luka doncic,LAL,2025-12-19,2025-12-19
-4017837,Ivica Zubac,ivica zubac,LAC,2025-12-19,2025-12-19
+3945274,Luka Doncic,luka doncic,LAL,2025-12-21,2025-12-21
+4017837,Ivica Zubac,ivica zubac,LAC,2025-12-21,2025-12-21
 4066259,De'Aaron Fox,deaaron fox,SA,2025-12-20,2025-12-20
 4066261,Bam Adebayo,bam adebayo,MIA,2025-12-20,2025-12-20
-4066320,Desmond Bane,desmond bane,ORL,2025-12-19,2025-12-19
+4066320,Desmond Bane,desmond bane,ORL,2025-12-21,2025-12-21
 4066328,Jarrett Allen,jarrett allen,CLE,2025-12-20,2025-12-20
 4066336,Lauri Markkanen,lauri markkanen,UTAH,2025-12-16,2025-12-16
 4066354,Payton Pritchard,payton pritchard,BOS,2025-12-21,2025-12-21
@@ -91,13 +91,13 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4397688,Trey Murphy III,trey murphy iii,NO,2025-12-21,2025-12-21
 4431671,Jaden McDaniels,jaden mcdaniels,MIN,2025-12-20,2025-12-20
 4431678,Tyrese Maxey,tyrese maxey,PHI,2025-12-21,2025-12-21
-4431736,Toumani Camara,toumani camara,POR,2025-12-19,2025-12-19
+4431736,Toumani Camara,toumani camara,POR,2025-12-21,2025-12-21
 4431767,Christian Braun,christian braun,DEN,2025-11-13,2025-11-13
 4432158,Evan Mobley,evan mobley,CLE,2025-12-13,2025-12-13
 4432165,Jalen Suggs,jalen suggs,ORL,2025-12-13,2025-12-13
 4432166,Cade Cunningham,cade cunningham,DET,2025-12-21,2025-12-21
 4432174,Cam Thomas,cam thomas,BKN,2025-12-19,2025-12-19
-4432573,Paolo Banchero,paolo banchero,ORL,2025-12-19,2025-12-19
+4432573,Paolo Banchero,paolo banchero,ORL,2025-12-21,2025-12-21
 4432639,Jabari Smith Jr.,jabari smith jr,HOU,2025-12-20,2025-12-20
 4432810,Isaiah Stewart,isaiah stewart,DET,2025-12-21,2025-12-21
 4432816,LaMelo Ball,lamelo ball,CHA,2025-12-21,2025-12-21
@@ -109,16 +109,16 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4433255,Chet Holmgren,chet holmgren,OKC,2025-12-20,2025-12-20
 4433287,Brandon Miller,brandon miller,CHA,2025-12-21,2025-12-21
 4433621,Jalen Duren,jalen duren,DET,2025-12-21,2025-12-21
-4433627,Keyonte George,keyonte george,UTAH,2025-12-19,2025-12-19
+4433627,Keyonte George,keyonte george,UTAH,2025-12-21,2025-12-21
 4437244,Jalen Green,jalen green,PHX,2025-11-09,2025-11-09
 4566434,Franz Wagner,franz wagner,ORL,2025-12-07,2025-12-07
 4591725,Ryan Rollins,ryan rollins,MIL,2025-12-19,2025-12-19
 4593125,Santi Aldama,santi aldama,MEM,2025-12-21,2025-12-21
 4593803,Jalen Williams,jalen williams,OKC,2025-12-20,2025-12-20
 4594268,Anthony Edwards,anthony edwards,MIN,2025-12-20,2025-12-20
-4594327,Keegan Murray,keegan murray,SAC,2025-12-19,2025-12-19
+4594327,Keegan Murray,keegan murray,SAC,2025-12-21,2025-12-21
 4600663,Zach Edey,zach edey,MEM,2025-12-21,2025-12-21
-4683021,Deni Avdija,deni avdija,POR,2025-12-19,2025-12-19
+4683021,Deni Avdija,deni avdija,POR,2025-12-21,2025-12-21
 4683634,Bennedict Mathurin,bennedict mathurin,IND,2025-12-21,2025-12-21
 4683678,Scoot Henderson,scoot henderson,POR,2025-12-06,2025-12-06
 4684740,Amen Thompson,amen thompson,HOU,2025-12-20,2025-12-20
@@ -132,16 +132,16 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4869780,Derik Queen,derik queen,NO,2025-12-21,2025-12-21
 4871144,Alperen Sengun,alperen sengun,HOU,2025-12-20,2025-12-20
 4871145,Josh Giddey,josh giddey,CHI,2025-12-20,2025-12-20
-4873138,Ace Bailey,ace bailey,UTAH,2025-12-19,2025-12-19
-4898371,Maxime Raynaud,maxime raynaud,SAC,2025-12-19,2025-12-19
+4873138,Ace Bailey,ace bailey,UTAH,2025-12-21,2025-12-21
+4898371,Maxime Raynaud,maxime raynaud,SAC,2025-12-21,2025-12-21
 4900671,Ajay Mitchell,ajay mitchell,OKC,2025-12-20,2025-12-20
 4903027,Cedric Coward,cedric coward,MEM,2025-12-21,2025-12-21
-4914336,Shaedon Sharpe,shaedon sharpe,POR,2025-12-19,2025-12-19
+4914336,Shaedon Sharpe,shaedon sharpe,POR,2025-12-21,2025-12-21
 5037871,Dylan Harper,dylan harper,SA,2025-12-20,2025-12-20
 5041939,Cooper Flagg,cooper flagg,DAL,2025-12-21,2025-12-21
 5061575,Kon Knueppel,kon knueppel,CHA,2025-12-21,2025-12-21
 5104157,Victor Wembanyama,victor wembanyama,SA,2025-12-20,2025-12-20
-5105565,Donovan Clingan,donovan clingan,POR,2025-12-19,2025-12-19
+5105565,Donovan Clingan,donovan clingan,POR,2025-12-21,2025-12-21
 5105623,Kel'el Ware,kelel ware,MIA,2025-12-20,2025-12-20
 5112087,Jaylen Wells,jaylen wells,MEM,2025-12-21,2025-12-21
 5124612,VJ Edgecombe,vj edgecombe,PHI,2025-12-21,2025-12-21
