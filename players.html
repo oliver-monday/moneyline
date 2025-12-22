@@ -298,10 +298,10 @@
       top: calc(100% + 6px);
       left: 0;
       width: 100%;
-      background: #fff;
-      border: 1px solid #ddd;
+      background: #4b4b4b;
+      border: 1px solid #3e3e3e;
       border-radius: 12px;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.35);
       max-height: 240px;
       overflow-y: auto;
       display: none;
@@ -311,9 +311,9 @@
     .control-min .min-select-header {
       padding: 10px 12px;
       font-weight: 400;
-      color: #777;
-      border-bottom: 1px solid #eee;
-      background: #fafafa;
+      color: #cfcfcf;
+      border-bottom: 1px solid #555;
+      background: #3f3f3f;
       position: sticky;
       top: 0;
     }
@@ -321,25 +321,13 @@
       padding: 10px 12px;
       cursor: pointer;
     }
-    .control-min .min-select-option:hover { background: #f3f3f3; }
-    .control-min .min-select-option.selected { background: #111; color: #fff; }
+    .control-min .min-select-option { color: #f3f3f3; }
+    .control-min .min-select-option:hover { background: #5a5a5a; }
+    .control-min .min-select-option.selected { background: #3b82f6; color: #fff; }
     @media (max-width: 520px) {
       body { margin: 12px; }
       input, select { min-width: 140px; }
       .control-min .min-select { min-width: 140px; }
-      .control-min .min-select-menu {
-        background: #4b4b4b;
-        border-color: #3e3e3e;
-        box-shadow: 0 12px 28px rgba(0,0,0,0.35);
-      }
-      .control-min .min-select-header {
-        background: #3f3f3f;
-        color: #cfcfcf;
-        border-bottom-color: #555;
-      }
-      .control-min .min-select-option { color: #f3f3f3; }
-      .control-min .min-select-option:hover { background: #5a5a5a; }
-      .control-min .min-select-option.selected { background: #3b82f6; color: #fff; }
       .controls { flex-direction: column; align-items: stretch; }
       .controls label { width: 100%; }
       .control-search { order: 1; }
