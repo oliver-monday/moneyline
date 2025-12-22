@@ -1,0 +1,121 @@
+name: Injuries Refresh
+
+on:
+  schedule:
+    - cron: "0 20 * * *"
+    - cron: "*/30 22-23 * * *"
+    - cron: "*/30 0-6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: injuries-refresh
+  cancel-in-progress: true
+
+jobs:
+  build:
+    if: ${{ github.event_name != 'push' || github.actor != 'github-actions[bot]' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas numpy requests beautifulsoup4 lxml
+
+      - name: Refresh Rotowire injuries
+        run: python rotowire_injuries_only.py
+
+      - name: Commit injuries artifacts
+        run: |
+          FILES=(
+            "data/injuries_today.json"
+            "logs/injury_log.csv"
+          )
+
+          CHANGED=0
+          for f in "${FILES[@]}"; do
+            if [ -f "$f" ]; then
+              if ! git diff --quiet -- "$f"; then
+                git add "$f"
+                CHANGED=1
+              fi
+            fi
+          done
+
+          if [ "$CHANGED" -eq 0 ]; then
+            echo "No injuries changes; nothing to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git commit -m "Injuries refresh [skip ci]" || exit 0
+
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
+
+      - name: Prepare site files
+        run: |
+          mkdir -p ./site
+          mkdir -p ./site/data
+          mkdir -p ./site/assets
+
+          # Newest dashboard becomes index.html
+          NEWEST=$(ls -t dashboard_*.html | head -n 1)
+          echo "Newest dashboard HTML: $NEWEST"
+          cp "$NEWEST" ./site/index.html
+
+          # Data files
+          cp nba_master.csv ./site/nba_master.csv
+
+          # Branding assets
+          cp NBAGPTlogo.png ./site/NBAGPTlogo.png
+          cp manifest.webmanifest ./site/manifest.webmanifest
+          cp assets/NBAGPTlogo-header.png ./site/assets/NBAGPTlogo-header.png
+
+          # Players page + its data
+          cp players.html ./site/players.html
+          cp player_snapshot.csv ./site/data/player_snapshot.csv
+          cp player_game_log.csv ./site/data/player_game_log.csv
+          cp data/injuries_today.json ./site/data/injuries_today.json
+          cp data/team_opp_allowed.json ./site/data/team_opp_allowed.json
+          cp data/opp_big.json ./site/data/opp_big.json
+
+          echo "===== SITE DIRECTORY CONTENTS ====="
+          ls -al ./site
+          echo "===== SITE/DATA DIRECTORY CONTENTS ====="
+          ls -al ./site/data
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
