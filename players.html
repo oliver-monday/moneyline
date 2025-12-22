@@ -88,8 +88,25 @@
       cursor: pointer;
       margin-bottom: 8px;
       list-style:none;
+      position: relative;
+      padding-right: 30px;
     }
     details.filters-panel summary::-webkit-details-marker { display:none; }
+    details.filters-panel > summary::after {
+      content: "›";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform-origin: 50% 50%;
+      transform: translateY(-50%) rotate(0deg);
+      opacity: 0.45;
+      font-size: 22px;
+      font-weight: 700;
+      transition: transform 0.15s ease;
+    }
+    details.filters-panel[open] > summary::after {
+      transform: translateY(-50%) rotate(90deg);
+    }
     details.postmortem-panel { margin: 10px 0 12px; border: 1px solid #eee; border-radius: 12px; padding: 10px 12px; background:#fff; }
     details.postmortem-panel summary {
       font-weight: 700;
