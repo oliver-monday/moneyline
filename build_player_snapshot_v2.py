@@ -19,6 +19,8 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import json
+import os
 from typing import Dict, List, Tuple
 
 import numpy as np
@@ -27,6 +29,18 @@ import pandas as pd
 
 def season_end_year_for_date(d: dt.date) -> int:
     return d.year + 1 if d.month >= 10 else d.year
+
+
+def normalize_name(s: str) -> str:
+    return " ".join(
+        str(s or "")
+        .lower()
+        .replace("’", "'")
+        .replace("‘", "'")
+        .replace(".", " ")
+        .replace(",", " ")
+        .split()
+    )
 
 
 def safe_min(x: pd.Series) -> float:
@@ -140,6 +154,8 @@ def main():
     ap.add_argument("--asof", default=None, help="Only include games with game_date <= asof (YYYY-MM-DD). Default: today")
     ap.add_argument("--master", default=None, help="Optional nba_master.csv to normalize game_date by game_id")
     ap.add_argument("--windows", default="5,10,20", help="Comma-separated rolling windows (games played)")
+    ap.add_argument("--whitelist", default="playerprops/player_whitelist.csv", help="Optional whitelist CSV to filter active players")
+    ap.add_argument("--injuries", default="data/injuries_today.json", help="Optional injuries JSON for auto-inactive OFS filtering")
     args = ap.parse_args()
 
     df = pd.read_csv(args.inp)
@@ -221,6 +237,60 @@ def main():
     ]
     other_cols = [c for c in out.columns if c not in meta_cols]
     out = out[meta_cols + sorted(other_cols)]
+
+    ofs_names = set()
+    if args.injuries and os.path.exists(args.injuries):
+        try:
+            with open(args.injuries, "r", encoding="utf-8") as f:
+                injuries = json.load(f) or {}
+        except Exception:
+            injuries = {}
+        for team, items in (injuries or {}).items():
+            if not isinstance(items, list):
+                continue
+            for item in items:
+                if not isinstance(item, dict):
+                    continue
+                status = str(item.get("status", "")).strip().upper()
+                details = str(item.get("details", "")).strip().lower()
+                if status == "OFS" or "out for season" in details:
+                    name = normalize_name(item.get("name", ""))
+                    if name:
+                        ofs_names.add(name)
+        if ofs_names:
+            try:
+                with open("data/ofs_today.json", "w", encoding="utf-8") as f:
+                    json.dump(sorted(ofs_names), f, indent=2)
+            except Exception:
+                pass
+
+    if args.whitelist:
+        try:
+            wl = pd.read_csv(args.whitelist)
+        except Exception:
+            wl = None
+        if wl is not None and "player_name" in wl.columns and "team_abbr" in wl.columns:
+            wl = wl.copy()
+            wl["player_name_norm"] = wl["player_name"].map(normalize_name)
+            wl["team_abbr_norm"] = wl["team_abbr"].astype(str).str.upper().str.strip()
+            if "active" not in wl.columns:
+                wl["active"] = 1
+            wl["active"] = pd.to_numeric(wl["active"], errors="coerce").fillna(1).astype(int)
+            out = out.copy()
+            out["player_name_norm"] = out["player_name"].map(normalize_name)
+            out["team_abbr_norm"] = out["last_team_abbrev"].astype(str).str.upper().str.strip()
+            out = out.merge(
+                wl[["player_name_norm", "team_abbr_norm", "active"]],
+                how="left",
+                on=["player_name_norm", "team_abbr_norm"],
+            )
+            name_active = wl.drop_duplicates("player_name_norm")[["player_name_norm", "active"]]
+            out = out.merge(name_active, how="left", on="player_name_norm", suffixes=("", "_name"))
+            active = pd.to_numeric(out["active"], errors="coerce")
+            active = active.fillna(pd.to_numeric(out["active_name"], errors="coerce")).fillna(1).astype(int)
+            out["auto_inactive"] = out["player_name_norm"].isin(ofs_names)
+            out = out[(active == 1) & (~out["auto_inactive"])].copy()
+            out = out.drop(columns=["player_name_norm", "team_abbr_norm", "active", "active_name", "auto_inactive"], errors="ignore")
 
     out.to_csv(args.out, index=False)
     print(f"Wrote snapshot: {args.out} (rows={len(out)})")

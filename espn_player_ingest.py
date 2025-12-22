@@ -285,8 +285,6 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
 
 def load_whitelist(path: str) -> pd.DataFrame:
     df = pd.read_csv(path)
-    if "active" in df.columns:
-        df = df[df["active"].fillna(1).astype(int) == 1].copy()
     if "player_name" not in df.columns or "team_abbr" not in df.columns:
         raise ValueError("Whitelist must have columns: player_name, team_abbr (and optional team_abbr_alt, active).")
     df["player_name"] = df["player_name"].astype(str).str.strip()
@@ -297,6 +295,34 @@ def load_whitelist(path: str) -> pd.DataFrame:
     else:
         df["team_abbr_alt"] = df["team_abbr_alt"].fillna("").astype(str).str.strip()
     return df
+
+def apply_whitelist_active_to_dim(dim_df: pd.DataFrame, whitelist_df: pd.DataFrame) -> pd.DataFrame:
+    if dim_df.empty or "active" not in whitelist_df.columns:
+        return dim_df
+    if "player_name_norm" not in dim_df.columns or "last_seen_team_abbrev" not in dim_df.columns:
+        return dim_df
+
+    wl = whitelist_df.copy()
+    wl["active"] = pd.to_numeric(wl["active"], errors="coerce")
+    active_map: Dict[Tuple[str, str], int] = {}
+    for _, r in wl.iterrows():
+        name_norm = r.get("player_name_norm", "")
+        if not name_norm or pd.isna(r["active"]):
+            continue
+        for team in [r.get("team_abbr", ""), r.get("team_abbr_alt", "")]:
+            team_norm = str(team or "").upper().strip()
+            if team_norm:
+                active_map[(name_norm, team_norm)] = int(r["active"])
+
+    out = dim_df.copy()
+    if "active" not in out.columns:
+        out["active"] = ""
+    def _pick_active(row):
+        key = (row["player_name_norm"], str(row["last_seen_team_abbrev"] or "").upper().strip())
+        return active_map.get(key, row.get("active", ""))
+    out["active"] = out.apply(_pick_active, axis=1)
+    out["active"] = pd.to_numeric(out["active"], errors="coerce").fillna(1).astype(int)
+    return out
 
 def build_whitelist_lookup(df_wl: pd.DataFrame) -> Dict[str, List[Tuple[str, str, str]]]:
     """
@@ -605,6 +631,7 @@ def main():
         return
 
     df_new, dim_new, df_audit = ingest_events(session, event_ids, wl, dim, sleep_s=args.sleep)
+    dim_new = apply_whitelist_active_to_dim(dim_new, wl)
 
     if df_new.empty:
         print("No whitelist players matched in these events. Writing unresolved report and exiting.")
