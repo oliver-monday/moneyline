@@ -1019,11 +1019,16 @@ function matchupPills(oppTeam, stat) {
   if (!opp) return "";
 
   const info = TEAM_OPP && TEAM_OPP[opp];
-  const big = OPP_BIG && OPP_BIG[opp];
+  const big = (OPP_BIG && OPP_BIG[opp]) || null;
+  let bigIsOut = false;
+  if (big && big.player) {
+    const bigInj = matchInjury(opp, big.player, injuriesByTeam);
+    bigIsOut = !!(bigInj && isOutStatus(bigInj.status));
+  }
 
   let tier = "";
   if (stat === "reb") {
-    if (big && big.last) {
+    if (big && big.last && !bigIsOut) {
       tier = "TOUGH";
     } else if (info) {
       const rAllowed = num(info.reb_allowed_rank);
@@ -1049,7 +1054,7 @@ function matchupPills(oppTeam, stat) {
     const cls = tier === "SOFT" ? "pill-soft" : "pill-tough";
     pills.push(`<span class="pill ${cls}">${stat.toUpperCase()}: ${tier}</span>`);
   }
-  if (stat === "reb" && big && big.last) {
+  if (stat === "reb" && big && big.last && !bigIsOut) {
     pills.push(`<span class="pill pill-opp">Opp Big: ${big.last}</span>`);
   }
 
