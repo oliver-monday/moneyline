@@ -302,10 +302,11 @@ def main() -> int:
     master = pd.read_csv(master_path, dtype=str)
     game_map = build_game_map(master, slate_date)
 
+    snapshot_df = None
     if not os.path.exists(snapshot_path):
-        print("[targets] Missing player_snapshot.csv; skipping snapshot.")
-        return 0
-    snapshot_df = pd.read_csv(snapshot_path, dtype=str).fillna("")
+        print("[targets] Missing player_snapshot.csv; writing empty snapshot.")
+    else:
+        snapshot_df = pd.read_csv(snapshot_path, dtype=str).fillna("")
 
     injuries_by_team = {}
     if os.path.exists(injuries_path):
@@ -316,33 +317,34 @@ def main() -> int:
             injuries_by_team = {}
 
     entries = []
-    for _, row in snapshot_df.iterrows():
-        team = str(row.get("last_team_abbrev", "")).strip().upper()
-        if not team or team not in game_map:
-            continue
-        injury = match_injury(team, row.get("player_name", ""), injuries_by_team)
-        status = (injury or {}).get("status", "")
-        if is_out_status(status):
-            continue
+    if snapshot_df is not None:
+        for _, row in snapshot_df.iterrows():
+            team = str(row.get("last_team_abbrev", "")).strip().upper()
+            if not team or team not in game_map:
+                continue
+            injury = match_injury(team, row.get("player_name", ""), injuries_by_team)
+            status = (injury or {}).get("status", "")
+            if is_out_status(status):
+                continue
 
-        targets = collect_targets(row, "10")
-        if not targets:
-            continue
-        opp = game_map[team].get("opp", "")
-        game_id = game_map[team].get("game_id", "")
-        for t in targets:
-            entries.append({
-                "asof_date": slate_date,
-                "player_name": row.get("player_name", ""),
-                "team_abbrev": team,
-                "opp": opp,
-                "game_id": game_id,
-                "stat": t["stat"],
-                "threshold": int(t["t"]),
-                "hits": int(t["hits"]),
-                "window_games": int(t["gp"]),
-                "hit_rate": float(t["rate"]),
-            })
+            targets = collect_targets(row, "10")
+            if not targets:
+                continue
+            opp = game_map[team].get("opp", "")
+            game_id = game_map[team].get("game_id", "")
+            for t in targets:
+                entries.append({
+                    "asof_date": slate_date,
+                    "player_name": row.get("player_name", ""),
+                    "team_abbrev": team,
+                    "opp": opp,
+                    "game_id": game_id,
+                    "stat": t["stat"],
+                    "threshold": int(t["t"]),
+                    "hits": int(t["hits"]),
+                    "window_games": int(t["gp"]),
+                    "hit_rate": float(t["rate"]),
+                })
 
     logs_dir = Path("logs")
     logs_dir.mkdir(parents=True, exist_ok=True)

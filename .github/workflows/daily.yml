@@ -85,6 +85,13 @@ jobs:
         run: |
           python build_targets_postmortem.py
 
+      - name: Debug targets snapshots
+        run: |
+          echo "=== logs/ ==="
+          ls -al logs || true
+          echo "=== data/ ==="
+          ls -al data || true
+
       - name: Upload unresolved players report
         uses: actions/upload-artifact@v4
         with:
