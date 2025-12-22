@@ -161,15 +161,13 @@
       right: 10px;
       top: 50%;
       transform-origin: 50% 50%;
+      transform: translateY(-50%) rotate(0deg);
       opacity: 0.45;
       font-size: 22px;
       font-weight: 700;
       transition: transform 0.15s ease;
     }
-    .card:not([open]) summary::after {
-      transform: translateY(-50%) rotate(0deg);
-    }
-    .card[open] summary::after {
+    .card.is-open summary::after {
       transform: translateY(-50%) rotate(90deg);
     }
     .card-left { min-width: auto; }
@@ -219,15 +217,13 @@
       right: 10px;
       top: 50%;
       transform-origin: 50% 50%;
+      transform: translateY(-50%) rotate(0deg);
       opacity: 0.45;
       font-size: 22px;
       font-weight: 700;
       transition: transform 0.15s ease;
     }
-    .game-group:not([open]) summary::after {
-      transform: translateY(-50%) rotate(0deg);
-    }
-    .game-group[open] summary::after {
+    .game-group.is-open summary::after {
       transform: translateY(-50%) rotate(90deg);
     }
     .game-title { font-size: 20px; font-weight: 700; }
@@ -1192,6 +1188,18 @@ async function load() {
 
   clearComputedCaches();
 
+  function syncDetailsOpenClass(d) {
+    if (!d || d.tagName !== "DETAILS") return;
+    d.classList.toggle("is-open", !!d.open);
+  }
+
+  document.addEventListener("toggle", (e) => {
+    const d = e.target;
+    if (d && d.tagName === "DETAILS" && (d.classList.contains("card") || d.classList.contains("game-group"))) {
+      syncDetailsOpenClass(d);
+    }
+  }, true);
+
   function renderPostmortem(data) {
     if (!postmortemPanel || !postmortemPreview || !postmortemBody) return;
     if (!data || !data.summary) return;
@@ -1617,6 +1625,8 @@ async function load() {
         cards.appendChild(createCard(data));
       });
     }
+
+    document.querySelectorAll("details.card, details.game-group").forEach(syncDetailsOpenClass);
   }
 
   // Default scope = Playing Today already set in HTML
