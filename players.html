@@ -265,10 +265,66 @@
     td.mincol { min-width: 140px; }
     td.statcol { min-width: 300px; }
 
-    .control-min select {
-      min-width: 90px;
-      width: 90px;
+    .control-min .min-select {
+      position: relative;
+      width: 110px;
     }
+    .control-min .min-select-btn {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 34px 10px 12px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      font-size: 16px;
+      background: #fff;
+      color: #111;
+      text-align: left;
+      position: relative;
+      cursor: pointer;
+    }
+    .control-min .min-select-btn::after {
+      content: "";
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid #666;
+      transform: translateY(-35%);
+      pointer-events: none;
+    }
+    .control-min .min-select-menu {
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 0;
+      width: 100%;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+      max-height: 240px;
+      overflow-y: auto;
+      display: none;
+      z-index: 20;
+    }
+    .control-min .min-select.open .min-select-menu { display: block; }
+    .control-min .min-select-header {
+      padding: 10px 12px;
+      font-weight: 600;
+      color: #777;
+      border-bottom: 1px solid #eee;
+      background: #fafafa;
+      position: sticky;
+      top: 0;
+    }
+    .control-min .min-select-option {
+      padding: 10px 12px;
+      cursor: pointer;
+    }
+    .control-min .min-select-option:hover { background: #f3f3f3; }
+    .control-min .min-select-option.selected { background: #111; color: #fff; }
     @media (max-width: 520px) {
       body { margin: 12px; }
       input, select { min-width: 140px; }
@@ -341,57 +397,61 @@
       </label>
 
       <label class="control-min">Minutes
-        <select id="minFilter">
-          <option value="" disabled selected>MINS Avg ≥</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-          <option value="15">15</option>
-          <option value="16">16</option>
-          <option value="17">17</option>
-          <option value="18">18</option>
-          <option value="19">19</option>
-          <option value="20">20</option>
-          <option value="21">21</option>
-          <option value="22">22</option>
-          <option value="23">23</option>
-          <option value="24">24</option>
-          <option value="25">25</option>
-          <option value="26">26</option>
-          <option value="27">27</option>
-          <option value="28">28</option>
-          <option value="29">29</option>
-          <option value="30">30</option>
-          <option value="31">31</option>
-          <option value="32">32</option>
-          <option value="33">33</option>
-          <option value="34">34</option>
-          <option value="35">35</option>
-          <option value="36">36</option>
-          <option value="37">37</option>
-          <option value="38">38</option>
-          <option value="39">39</option>
-          <option value="40">40</option>
-          <option value="41">41</option>
-          <option value="42">42</option>
-          <option value="43">43</option>
-          <option value="44">44</option>
-          <option value="45">45</option>
-          <option value="46">46</option>
-          <option value="47">47</option>
-          <option value="48">48</option>
-        </select>
+        <div class="min-select" id="minSelect">
+          <button class="min-select-btn" type="button" id="minSelectBtn">MINS Avg ≥</button>
+          <div class="min-select-menu" id="minSelectMenu">
+            <div class="min-select-header">MINS Avg ≥</div>
+            <div class="min-select-option" data-value="1">1</div>
+            <div class="min-select-option" data-value="2">2</div>
+            <div class="min-select-option" data-value="3">3</div>
+            <div class="min-select-option" data-value="4">4</div>
+            <div class="min-select-option" data-value="5">5</div>
+            <div class="min-select-option" data-value="6">6</div>
+            <div class="min-select-option" data-value="7">7</div>
+            <div class="min-select-option" data-value="8">8</div>
+            <div class="min-select-option" data-value="9">9</div>
+            <div class="min-select-option" data-value="10">10</div>
+            <div class="min-select-option" data-value="11">11</div>
+            <div class="min-select-option" data-value="12">12</div>
+            <div class="min-select-option" data-value="13">13</div>
+            <div class="min-select-option" data-value="14">14</div>
+            <div class="min-select-option" data-value="15">15</div>
+            <div class="min-select-option" data-value="16">16</div>
+            <div class="min-select-option" data-value="17">17</div>
+            <div class="min-select-option" data-value="18">18</div>
+            <div class="min-select-option" data-value="19">19</div>
+            <div class="min-select-option" data-value="20">20</div>
+            <div class="min-select-option" data-value="21">21</div>
+            <div class="min-select-option" data-value="22">22</div>
+            <div class="min-select-option" data-value="23">23</div>
+            <div class="min-select-option" data-value="24">24</div>
+            <div class="min-select-option" data-value="25">25</div>
+            <div class="min-select-option" data-value="26">26</div>
+            <div class="min-select-option" data-value="27">27</div>
+            <div class="min-select-option" data-value="28">28</div>
+            <div class="min-select-option" data-value="29">29</div>
+            <div class="min-select-option" data-value="30">30</div>
+            <div class="min-select-option" data-value="31">31</div>
+            <div class="min-select-option" data-value="32">32</div>
+            <div class="min-select-option" data-value="33">33</div>
+            <div class="min-select-option" data-value="34">34</div>
+            <div class="min-select-option" data-value="35">35</div>
+            <div class="min-select-option" data-value="36">36</div>
+            <div class="min-select-option" data-value="37">37</div>
+            <div class="min-select-option" data-value="38">38</div>
+            <div class="min-select-option" data-value="39">39</div>
+            <div class="min-select-option" data-value="40">40</div>
+            <div class="min-select-option" data-value="41">41</div>
+            <div class="min-select-option" data-value="42">42</div>
+            <div class="min-select-option" data-value="43">43</div>
+            <div class="min-select-option" data-value="44">44</div>
+            <div class="min-select-option" data-value="45">45</div>
+            <div class="min-select-option" data-value="46">46</div>
+            <div class="min-select-option" data-value="47">47</div>
+            <div class="min-select-option" data-value="48">48</div>
+          </div>
+          <input type="hidden" id="minFilter" value="0" />
+        </div>
       </label>
     </div>
 
@@ -1015,6 +1075,9 @@ async function load() {
   const sortWrap = document.getElementById("sortWrap");
   const stableOnly = document.getElementById("stableOnly");
   const targetsOnly = document.getElementById("targetsOnly");
+  const minSelect = document.getElementById("minSelect");
+  const minSelectBtn = document.getElementById("minSelectBtn");
+  const minSelectMenu = document.getElementById("minSelectMenu");
   const filtersPanel = document.getElementById("filtersPanel");
   if (filtersPanel) {
     if (window.matchMedia("(max-width: 520px)").matches) {
@@ -1026,6 +1089,31 @@ async function load() {
   const cards = document.getElementById("cards");
 
   clearComputedCaches();
+
+  if (minSelect && minSelectBtn && minSelectMenu) {
+    minSelectBtn.addEventListener("click", () => {
+      minSelect.classList.toggle("open");
+    });
+
+    minSelectMenu.addEventListener("click", event => {
+      const option = event.target.closest(".min-select-option");
+      if (!option) return;
+      const value = option.getAttribute("data-value") || "0";
+      minFilter.value = value;
+      minSelectBtn.textContent = value ? String(value) : "MINS Avg ≥";
+      minSelectMenu.querySelectorAll(".min-select-option").forEach(el => {
+        el.classList.toggle("selected", el === option);
+      });
+      minSelect.classList.remove("open");
+      render();
+    });
+
+    document.addEventListener("click", event => {
+      if (!minSelect.contains(event.target)) {
+        minSelect.classList.remove("open");
+      }
+    });
+  }
 
   function render() {
     const win = w.value;
