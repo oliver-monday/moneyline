@@ -168,11 +168,25 @@
       cursor:pointer;
       padding: 12px 14px;
       border-bottom:1px solid #f2f2f2;
+      position: relative;
+      padding-right: 24px;
       display:flex;
       flex-direction:column;
       gap:4px;
     }
     .game-group summary::-webkit-details-marker { display:none; }
+    .game-group summary::after {
+      content: "›";
+      position: absolute;
+      right: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0.35;
+      transition: transform 0.15s ease;
+    }
+    .game-group[open] summary::after {
+      transform: translateY(-50%) rotate(90deg);
+    }
     .game-title { font-size: 20px; font-weight: 700; }
     .game-sub { color:#666; font-size: 16px; }
     .game-cards { display:flex; flex-direction:column; gap: 8px; padding: 12px; }
@@ -297,36 +311,59 @@
       top: calc(100% + 6px);
       left: 0;
       width: 100%;
-      background: #4b4b4b;
-      border: 1px solid #3e3e3e;
+      background: #3a3a3a;
+      border: 1px solid rgba(255,255,255,0.14);
       border-radius: 12px;
       box-shadow: 0 12px 28px rgba(0,0,0,0.35);
-      max-height: 240px;
+      max-height: 260px;
       overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
       display: none;
-      z-index: 20;
+      z-index: 999;
+      padding: 6px 0;
     }
     .control-min .min-select.open .min-select-menu { display: block; }
     .control-min .min-select-header {
-      padding: 10px 12px;
-      font-weight: 400;
-      color: #cfcfcf;
-      border-bottom: 1px solid #555;
-      background: #3f3f3f;
-      position: sticky;
-      top: 0;
+      display: none;
     }
     .control-min .min-select-option {
-      padding: 10px 12px;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 500;
+      color: #f2f2f2;
+      padding: 12px 14px;
       cursor: pointer;
+      border-top: 1px solid rgba(255,255,255,0.10);
     }
-    .control-min .min-select-option { color: #f3f3f3; }
-    .control-min .min-select-option:hover { background: #5a5a5a; }
-    .control-min .min-select-option.selected { background: #3b82f6; color: #fff; }
+    .control-min .min-select-option:first-child { border-top: none; }
+    .control-min .min-select-option:hover { background: rgba(255,255,255,0.08); }
+    .control-min .min-select-option.selected {
+      background: rgba(255,255,255,0.10);
+      position: relative;
+      padding-left: 34px;
+    }
+    .control-min .min-select-option.selected::before {
+      content: "✓";
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff;
+      font-weight: 700;
+    }
     @media (max-width: 520px) {
       body { margin: 12px; }
       input, select { min-width: 140px; }
       .control-min .min-select { min-width: 140px; }
+      .control-min .min-select-menu {
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        top: auto;
+        bottom: 12px;
+        width: auto;
+        max-height: min(60vh, 420px);
+      }
       .controls { flex-direction: column; align-items: stretch; }
       .controls label { width: 100%; }
       .control-search { order: 1; }
