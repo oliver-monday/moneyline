@@ -78,8 +78,12 @@ jobs:
           mkdir -p ./site/assets
 
           # Newest dashboard becomes index.html
-          NEWEST=$(ls -t dashboard_*.html | head -n 1)
-          echo "Newest dashboard HTML: $NEWEST"
+          NEWEST=$(ls dashboard_*.html 2>/dev/null | sort | tail -n 1)
+          if [ -z "$NEWEST" ]; then
+            echo "No dashboard_*.html files found"
+            exit 1
+          fi
+          echo "Using newest dashboard: $NEWEST"
           cp "$NEWEST" ./site/index.html
 
           # Data files
