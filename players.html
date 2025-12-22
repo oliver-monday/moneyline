@@ -357,11 +357,14 @@
       .control-min .min-select { min-width: 140px; }
       .control-min .min-select-menu {
         position: fixed;
-        left: 12px;
-        right: 12px;
+        left: 50% !important;
+        right: auto !important;
         top: auto;
         bottom: 12px;
-        width: auto;
+        width: fit-content;
+        min-width: 220px;
+        max-width: min(320px, calc(100vw - 32px));
+        transform: translateX(-50%) !important;
         max-height: min(60vh, 420px);
       }
       .controls { flex-direction: column; align-items: stretch; }
@@ -372,6 +375,15 @@
       .control-sort { order: 4; }
       .control-layout { order: 5; }
       .control-min { order: 6; }
+    }
+    @supports not (width: fit-content) {
+      @media (max-width: 520px) {
+        .control-min .min-select-menu {
+          width: auto;
+          min-width: 220px;
+          max-width: min(320px, calc(100vw - 32px));
+        }
+      }
     }
   </style>
 </head>
