@@ -9,7 +9,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4251,Paul George,paul george,PHI,2025-12-20,2025-12-20
 6430,Jimmy Butler III,jimmy butler iii,GS,2025-12-21,2025-12-21
 6450,Kawhi Leonard,kawhi leonard,LAC,2025-12-21,2025-12-21
-6478,Nikola Vucevic,nikola vucevic,CHI,2025-12-20,2025-12-20
+6478,Nikola Vucevic,nikola vucevic,CHI,2025-12-21,2025-12-21
 6578,Harrison Barnes,harrison barnes,SA,2025-12-20,2025-12-20
 6583,Anthony Davis,anthony davis,DAL,2025-12-21,2025-12-21
 6589,Draymond Green,draymond green,GS,2025-12-21,2025-12-21
@@ -29,7 +29,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 3064482,Bobby Portis,bobby portis,MIL,2025-12-19,2025-12-19
 3064514,Julius Randle,julius randle,MIN,2025-12-20,2025-12-20
 3078576,Derrick White,derrick white,BOS,2025-12-21,2025-12-21
-3102531,Kristaps Porzingis,kristaps porzingis,ATL,2025-12-20,2025-12-20
+3102531,Kristaps Porzingis,kristaps porzingis,ATL,2025-12-21,2025-12-21
 3112335,Nikola Jokic,nikola jokic,DEN,2025-12-20,2025-12-20
 3133628,Myles Turner,myles turner,MIL,2025-12-19,2025-12-19
 3134907,Kyle Kuzma,kyle kuzma,MIL,2025-12-14,2025-12-14
@@ -61,10 +61,10 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4066457,Austin Reaves,austin reaves,LAL,2025-12-11,2025-12-11
 4222252,Isaiah Hartenstein,isaiah hartenstein,OKC,2025-12-20,2025-12-20
 4277811,Collin Sexton,collin sexton,CHA,2025-12-07,2025-12-07
-4277905,Trae Young,trae young,ATL,2025-12-20,2025-12-20
+4277905,Trae Young,trae young,ATL,2025-12-21,2025-12-21
 4277956,Jordan Poole,jordan poole,NO,2025-12-21,2025-12-21
 4277961,Jaren Jackson Jr.,jaren jackson jr,MEM,2025-12-21,2025-12-21
-4278039,Nickeil Alexander-Walker,nickeil alexander walker,ATL,2025-12-20,2025-12-20
+4278039,Nickeil Alexander-Walker,nickeil alexander walker,ATL,2025-12-21,2025-12-21
 4278067,Nic Claxton,nic claxton,BKN,2025-12-19,2025-12-19
 4278073,Shai Gilgeous-Alexander,shai gilgeous alexander,OKC,2025-12-20,2025-12-20
 4278078,P.J. Washington,p j washington,DAL,2025-12-21,2025-12-21
@@ -76,7 +76,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4395625,RJ Barrett,rj barrett,TOR,2025-11-23,2025-11-23
 4395628,Zion Williamson,zion williamson,NO,2025-12-21,2025-12-21
 4395630,Devin Vassell,devin vassell,SA,2025-12-20,2025-12-20
-4395651,Coby White,coby white,CHI,2025-12-20,2025-12-20
+4395651,Coby White,coby white,CHI,2025-12-21,2025-12-21
 4395712,Andrew Nembhard,andrew nembhard,IND,2025-12-21,2025-12-21
 4395723,Keldon Johnson,keldon johnson,SA,2025-12-20,2025-12-20
 4395724,Immanuel Quickley,immanuel quickley,TOR,2025-12-21,2025-12-21
@@ -84,7 +84,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4396907,Darius Garland,darius garland,CLE,2025-12-20,2025-12-20
 4396909,Aaron Nesmith,aaron nesmith,IND,2025-11-14,2025-11-14
 4396971,Naz Reid,naz reid,MIN,2025-12-20,2025-12-20
-4397002,Ayo Dosunmu,ayo dosunmu,CHI,2025-12-20,2025-12-20
+4397002,Ayo Dosunmu,ayo dosunmu,CHI,2025-12-21,2025-12-21
 4397136,Saddiq Bey,saddiq bey,NO,2025-12-21,2025-12-21
 4397140,Kevin Porter Jr.,kevin porter jr,MIL,2025-12-19,2025-12-19
 4397424,Neemias Queta,neemias queta,BOS,2025-12-21,2025-12-21
@@ -123,15 +123,15 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4683678,Scoot Henderson,scoot henderson,POR,2025-12-06,2025-12-06
 4684740,Amen Thompson,amen thompson,HOU,2025-12-20,2025-12-20
 4684742,Ausar Thompson,ausar thompson,DET,2025-12-21,2025-12-21
-4701230,Jalen Johnson,jalen johnson,ATL,2025-12-20,2025-12-20
+4701230,Jalen Johnson,jalen johnson,ATL,2025-12-21,2025-12-21
 4701232,Mark Williams,mark williams,PHX,2025-12-21,2025-12-21
 4711272,Reed Sheppard,reed sheppard,HOU,2025-12-20,2025-12-20
-4711294,Matas Buzelis,matas buzelis,CHI,2025-12-20,2025-12-20
+4711294,Matas Buzelis,matas buzelis,CHI,2025-12-21,2025-12-21
 4845367,Stephon Castle,stephon castle,SA,2025-12-20,2025-12-20
-4869342,Dyson Daniels,dyson daniels,ATL,2025-12-20,2025-12-20
+4869342,Dyson Daniels,dyson daniels,ATL,2025-12-21,2025-12-21
 4869780,Derik Queen,derik queen,NO,2025-12-21,2025-12-21
 4871144,Alperen Sengun,alperen sengun,HOU,2025-12-20,2025-12-20
-4871145,Josh Giddey,josh giddey,CHI,2025-12-20,2025-12-20
+4871145,Josh Giddey,josh giddey,CHI,2025-12-21,2025-12-21
 4873138,Ace Bailey,ace bailey,UTAH,2025-12-21,2025-12-21
 4898371,Maxime Raynaud,maxime raynaud,SAC,2025-12-21,2025-12-21
 4900671,Ajay Mitchell,ajay mitchell,OKC,2025-12-20,2025-12-20
