@@ -416,9 +416,16 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401810248,2025-12-20,Utah Jazz,UTAH,127,250.0,,Orlando Magic,ORL,128,-310.0,,Salt Lake City,UT,,
 401810249,2025-12-20,Sacramento Kings,SAC,93,145.0,,Portland Trail Blazers,POR,98,-175.0,,Sacramento,CA,,
 401810250,2025-12-20,LA Clippers,LAC,103,105.0,,Los Angeles Lakers,LAL,88,-125.0,,Inglewood,CA,,
-401810251,2025-12-21,Atlanta Hawks,ATL,150,-175.0,,Chicago Bulls,CHI,152,145.0,,Atlanta,GA,N. Dante (Out); K. Porzingis (Out),N. Essengue (OFS)
-401810252,2025-12-21,Brooklyn Nets,BKN,36,130.0,,Toronto Raptors,TOR,34,-155.0,,Brooklyn,NY,H. Highsmith (Out); D. Powell (Out); Cam Thomas (Out),RJ Barrett (Out)
-401810253,2025-12-21,New York Knicks,NY,56,-290.0,,Miami Heat,MIA,57,235.0,,New York,NY,M. McBride (Out); L. Shamet (Out),T. Herro (Out); N. Jovic (Out); P. Larsson (Out); T. Rozier (Out)
-401810254,2025-12-21,Washington Wizards,WSH,0,800.0,,San Antonio Spurs,SA,0,-1350.0,,Washington,DC,M. Bagley (Out); B. Coulibaly (Out); C. Kispert (Out); K. Middleton (Out); Alex Sarr (Out); C. Whitmore (Out),
-401810255,2025-12-21,Minnesota Timberwolves,MIN,0,-625.0,,Milwaukee Bucks,MIL,0,455.0,,Minneapolis,MN,,G. Antetokounmpo (Out); T. Prince (Out)
-401810256,2025-12-21,Sacramento Kings,SAC,0,455.0,,Houston Rockets,HOU,0,-625.0,,Sacramento,CA,D. Eubanks (Out); Z. LaVine (Out); D. Sabonis (Out),D. Finney-Smith (Out); F. VanVleet (Out)
+401810251,2025-12-21,Atlanta Hawks,ATL,150,-175.0,,Chicago Bulls,CHI,152,145.0,,Atlanta,GA,,
+401810252,2025-12-21,Brooklyn Nets,BKN,67,130.0,,Toronto Raptors,TOR,69,-155.0,,Brooklyn,NY,,
+401810253,2025-12-21,New York Knicks,NY,108,-290.0,,Miami Heat,MIA,100,235.0,,New York,NY,,
+401810254,2025-12-21,Washington Wizards,WSH,38,800.0,,San Antonio Spurs,SA,51,-1350.0,,Washington,DC,,
+401810255,2025-12-21,Minnesota Timberwolves,MIN,37,-625.0,,Milwaukee Bucks,MIL,43,455.0,,Minneapolis,MN,,
+401810256,2025-12-21,Sacramento Kings,SAC,0,455.0,,Houston Rockets,HOU,0,-625.0,,Sacramento,CA,,
+401810257,2025-12-22,Cleveland Cavaliers,CLE,0,,,Charlotte Hornets,CHA,0,,,Cleveland,OH,,
+401810258,2025-12-22,Boston Celtics,BOS,0,,,Indiana Pacers,IND,0,,,Boston,MA,,
+401810259,2025-12-22,New Orleans Pelicans,NO,0,,,Dallas Mavericks,DAL,0,,,New Orleans,LA,,
+401810260,2025-12-22,Denver Nuggets,DEN,0,,,Utah Jazz,UTAH,0,,,Denver,CO,,
+401810261,2025-12-22,Oklahoma City Thunder,OKC,0,-1350.0,,Memphis Grizzlies,MEM,0,800.0,,Oklahoma City,OK,,
+401810262,2025-12-22,Golden State Warriors,GS,0,-185.0,,Orlando Magic,ORL,0,154.0,,San Francisco,CA,,
+401810263,2025-12-22,Portland Trail Blazers,POR,0,185.0,,Detroit Pistons,DET,0,-225.0,,Portland,OR,,
