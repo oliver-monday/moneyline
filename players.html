@@ -126,6 +126,25 @@
     .postmortem-section-title { font-weight: 700; font-size: 14px; color:#666; }
     .postmortem-list { margin: 6px 0 0; padding-left: 18px; }
     .postmortem-list li { margin: 2px 0; }
+    details.suggested-panel { margin: 10px 0 12px; border: 1px solid #eee; border-radius: 12px; padding: 10px 12px; background:#fff; }
+    details.suggested-panel summary {
+      font-weight: 700;
+      font-size: 18px;
+      color: #666;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: baseline;
+    }
+    details.suggested-panel summary::-webkit-details-marker { display:none; }
+    .suggested-body { margin-top: 8px; }
+    .suggested-toggle { display:flex; align-items:center; gap:8px; font-weight:600; color:#555; }
+    .suggested-list { margin-top: 8px; }
+    .suggested-row { display:flex; flex-wrap:wrap; gap:8px; font-size: 14px; color:#333; margin: 4px 0; cursor: pointer; }
+    .suggested-sep { color:#aaa; }
+    .suggested-game { margin-top: 8px; }
+    .suggested-game-title { font-weight: 700; font-size: 14px; color:#666; }
+    .suggested-game-items { margin: 6px 0 0 12px; }
     .stable-row{
       display:flex;
       margin-top: 8px;
@@ -587,6 +606,17 @@
     </div>
   </details>
 
+  <details class="suggested-panel" id="suggestedPanel">
+    <summary>Suggested Targets</summary>
+    <div class="suggested-body">
+      <label class="suggested-toggle">
+        <input id="suggestedAllToggle" type="checkbox" />
+        <span>All Targets</span>
+      </label>
+      <div class="suggested-list" id="suggestedList"></div>
+    </div>
+  </details>
+
   <div id="cards"></div>
 
 <script>
@@ -1026,6 +1056,38 @@ function matchupPills(oppTeam, stat) {
   return pills.join(" ");
 }
 
+function matchupTier(oppTeam, stat) {
+  const opp = String(oppTeam || "").toUpperCase();
+  if (!opp) return "";
+
+  const info = TEAM_OPP && TEAM_OPP[opp];
+  const big = OPP_BIG && OPP_BIG[opp];
+
+  if (stat === "reb") {
+    if (big && big.last) {
+      return "TOUGH";
+    } else if (info) {
+      const rAllowed = num(info.reb_allowed_rank);
+      const rDiff = num(info.reb_diff_rank);
+      if ((Number.isFinite(rAllowed) && rAllowed <= 10) || (Number.isFinite(rDiff) && rDiff <= 10)) {
+        return "TOUGH";
+      } else if ((Number.isFinite(rAllowed) && rAllowed >= 21) || (Number.isFinite(rDiff) && rDiff >= 21)) {
+        return "SOFT";
+      }
+    }
+  } else if (stat === "pts") {
+    const rAllowed = info ? num(info.pts_allowed_rank) : NaN;
+    if (Number.isFinite(rAllowed) && rAllowed <= 10) return "TOUGH";
+    if (Number.isFinite(rAllowed) && rAllowed >= 21) return "SOFT";
+  } else if (stat === "ast") {
+    const rAllowed = info ? num(info.ast_allowed_rank) : NaN;
+    if (Number.isFinite(rAllowed) && rAllowed <= 10) return "TOUGH";
+    if (Number.isFinite(rAllowed) && rAllowed >= 21) return "SOFT";
+  }
+
+  return "";
+}
+
 function targetWeight(t) {
   const avg = Number.isFinite(t.avg) ? t.avg : NaN;
   const ratio = Number.isFinite(avg) && avg > 0 ? clamp(t.t / avg, 0.8, 1.4) : 1.0;
@@ -1194,6 +1256,9 @@ async function load() {
   const postmortemPanel = document.getElementById("postmortemPanel");
   const postmortemPreview = document.getElementById("postmortemPreview");
   const postmortemBody = document.getElementById("postmortemBody");
+  const suggestedPanel = document.getElementById("suggestedPanel");
+  const suggestedList = document.getElementById("suggestedList");
+  const suggestedAllToggle = document.getElementById("suggestedAllToggle");
   const filtersPanel = document.getElementById("filtersPanel");
   if (filtersPanel) {
     if (window.matchMedia("(max-width: 520px)").matches) {
@@ -1206,6 +1271,9 @@ async function load() {
 
   clearComputedCaches();
 
+  let cachedSuggested = [];
+  let cachedAllTargets = [];
+
   function syncDetailsOpenClass(d) {
     if (!d || d.tagName !== "DETAILS") return;
     d.classList.toggle("is-open", !!d.open);
@@ -1217,6 +1285,91 @@ async function load() {
       syncDetailsOpenClass(d);
     }
   }, true);
+
+  function targetRowHTML(item) {
+    const stat = String(item.stat || "").toUpperCase();
+    return `
+      <div class="suggested-row" data-player-key="${item.playerKey}" data-game-id="${item.gameId || ""}">
+        <span>${item.playerName}</span>
+        <span class="suggested-sep">·</span>
+        <span>${stat}</span>
+        <span class="suggested-sep">·</span>
+        <span>${item.threshold}+</span>
+        <span class="suggested-sep">·</span>
+        <span>${item.hits}/${item.gp}</span>
+      </div>
+    `;
+  }
+
+  function renderSuggestedDrawer() {
+    if (!suggestedPanel || !suggestedList || !suggestedAllToggle) return;
+    const showAll = suggestedAllToggle.checked;
+    const suggested = cachedSuggested || [];
+    const allTargets = cachedAllTargets || [];
+
+    if (!suggested.length && !allTargets.length) {
+      suggestedPanel.hidden = true;
+      return;
+    }
+    suggestedPanel.hidden = false;
+
+    if (!showAll) {
+      const rows = suggested.slice(0, 6).map(targetRowHTML).join("");
+      suggestedList.innerHTML = rows || "<div class=\"muted\">—</div>";
+      return;
+    }
+
+    const grouped = new Map();
+    for (const item of allTargets) {
+      const key = item.gameKey || "OTHER";
+      if (!grouped.has(key)) grouped.set(key, []);
+      grouped.get(key).push(item);
+    }
+
+    const sections = [];
+    for (const [key, items] of grouped.entries()) {
+      const header = items[0] && items[0].gameLabel ? items[0].gameLabel : key;
+      const rows = items.map(targetRowHTML).join("");
+      sections.push(`
+        <div class="suggested-game">
+          <div class="suggested-game-title">${header}</div>
+          <div class="suggested-game-items">${rows || "<div class=\"muted\">—</div>"}</div>
+        </div>
+      `);
+    }
+    suggestedList.innerHTML = sections.join("") || "<div class=\"muted\">—</div>";
+  }
+
+  function scrollToPlayer(item) {
+    if (!item) return;
+    const playerKey = item.playerKey || "";
+    const card = playerKey ? document.querySelector(`details.card[data-player-key="${playerKey}"]`) : null;
+    if (!card) return;
+    const group = card.closest("details.game-group");
+    if (group && !group.open) {
+      group.open = true;
+      syncDetailsOpenClass(group);
+    }
+    if (!card.open) {
+      card.open = true;
+      syncDetailsOpenClass(card);
+    }
+    card.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  if (suggestedAllToggle) {
+    suggestedAllToggle.addEventListener("change", renderSuggestedDrawer);
+  }
+
+  if (suggestedList) {
+    suggestedList.addEventListener("click", (e) => {
+      const row = e.target.closest(".suggested-row");
+      if (!row) return;
+      const playerKey = row.getAttribute("data-player-key") || "";
+      const item = (cachedSuggested.concat(cachedAllTargets)).find(t => t.playerKey === playerKey);
+      scrollToPlayer(item);
+    });
+  }
 
   function renderPostmortem(data) {
     if (!postmortemPanel || !postmortemPreview || !postmortemBody) return;
@@ -1468,6 +1621,7 @@ async function load() {
 
       const el = document.createElement("details");
       el.className = "card";
+      el.dataset.playerKey = `${normalizeName(data.playerName)}::${data.team}`;
 
       el.innerHTML = `
         <summary>
@@ -1645,6 +1799,67 @@ async function load() {
     }
 
     document.querySelectorAll("details.card, details.game-group").forEach(syncDetailsOpenClass);
+
+    const targetsWin = "10";
+    const bonusForTier = tier => tier === "SOFT" ? 1 : (tier === "TOUGH" ? -1 : 0);
+    const targetItems = [];
+    for (const data of cardDataList) {
+      const targets = targetsMemo(data.row, targetsWin);
+      if (!targets.length) continue;
+      const playerKey = `${normalizeName(data.playerName)}::${data.team}`;
+      const gameId = (data.todayInfo && data.todayInfo.gameId) ? data.todayInfo.gameId : "";
+      const gameKey = gameId || `${data.team}::${data.oppTeam || ""}`;
+      const info = data.todayInfo && data.todayInfo.gameId ? gameInfoById.get(data.todayInfo.gameId) : null;
+      const gameLabel = info
+        ? `${info.awayName || info.awayAbbrev} @ ${info.homeName || info.homeAbbrev}`
+        : (data.oppTeam ? `${data.team} @ ${data.oppTeam}` : data.team);
+      for (const t of targets) {
+        const avg = seasonAvg(data.row, t.stat);
+        const diff = Number.isFinite(avg) ? (t.t - avg) : -Infinity;
+        const tier = matchupTier(data.oppTeam, t.stat);
+        targetItems.push({
+          playerName: data.playerName,
+          team: data.team,
+          opp: data.oppTeam,
+          stat: t.stat,
+          threshold: t.t,
+          hits: t.hits,
+          gp: t.gp,
+          rate: t.rate,
+          diff,
+          matchupBonus: bonusForTier(tier),
+          gameId,
+          gameKey,
+          gameLabel,
+          playerKey,
+        });
+      }
+    }
+
+    targetItems.sort((a, b) => {
+      if (b.rate !== a.rate) return b.rate - a.rate;
+      if (b.gp !== a.gp) return b.gp - a.gp;
+      if (b.matchupBonus !== a.matchupBonus) return b.matchupBonus - a.matchupBonus;
+      if (b.diff !== a.diff) return b.diff - a.diff;
+      return a.playerName.localeCompare(b.playerName);
+    });
+
+    const suggested = [];
+    const seenPlayers = new Set();
+    const gameCounts = new Map();
+    for (const item of targetItems) {
+      if (suggested.length >= 6) break;
+      if (seenPlayers.has(item.playerKey)) continue;
+      const count = gameCounts.get(item.gameKey) || 0;
+      if (count >= 2) continue;
+      suggested.push(item);
+      seenPlayers.add(item.playerKey);
+      gameCounts.set(item.gameKey, count + 1);
+    }
+
+    cachedSuggested = suggested;
+    cachedAllTargets = targetItems;
+    renderSuggestedDrawer();
   }
 
   // Default scope = Playing Today already set in HTML
