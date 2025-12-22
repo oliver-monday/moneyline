@@ -280,23 +280,18 @@
       font-family: inherit;
       font-weight: 400;
       background: #fff;
+      background-image:
+        linear-gradient(45deg, transparent 50%, #666 50%),
+        linear-gradient(135deg, #666 50%, transparent 50%);
+      background-position:
+        calc(100% - 18px) calc(50% - 3px),
+        calc(100% - 12px) calc(50% - 3px);
+      background-size: 6px 6px, 6px 6px;
+      background-repeat: no-repeat;
       color: #111;
       text-align: left;
       position: relative;
       cursor: pointer;
-    }
-    .control-min .min-select-btn::after {
-      content: "";
-      position: absolute;
-      right: 14px;
-      top: 50%;
-      width: 0;
-      height: 0;
-      border-left: 6px solid transparent;
-      border-right: 6px solid transparent;
-      border-top: 6px solid #666;
-      transform: translateY(-35%);
-      pointer-events: none;
     }
     .control-min .min-select-menu {
       position: absolute;
