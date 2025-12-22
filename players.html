@@ -90,6 +90,24 @@
       list-style:none;
     }
     details.filters-panel summary::-webkit-details-marker { display:none; }
+    details.postmortem-panel { margin: 10px 0 12px; border: 1px solid #eee; border-radius: 12px; padding: 10px 12px; background:#fff; }
+    details.postmortem-panel summary {
+      font-weight: 700;
+      font-size: 18px;
+      color: #666;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+    }
+    details.postmortem-panel summary::-webkit-details-marker { display:none; }
+    .postmortem-preview { font-size: 14px; color:#777; font-weight: 600; }
+    .postmortem-body { margin-top: 8px; font-size: 14px; color:#444; }
+    .postmortem-section { margin-top: 8px; }
+    .postmortem-section-title { font-weight: 700; font-size: 14px; color:#666; }
+    .postmortem-list { margin: 6px 0 0; padding-left: 18px; }
+    .postmortem-list li { margin: 2px 0; }
     .stable-row{
       display:flex;
       margin-top: 8px;
@@ -425,6 +443,14 @@
   </div>
 
   <div class="muted" id="meta"></div>
+
+  <details class="postmortem-panel" id="postmortemPanel" hidden>
+    <summary>
+      <span>Yesterday Targets</span>
+      <span class="postmortem-preview" id="postmortemPreview"></span>
+    </summary>
+    <div class="postmortem-body" id="postmortemBody"></div>
+  </details>
 
   <details class="filters-panel" id="filtersPanel" open>
     <summary>Search · Filters</summary>
@@ -1151,6 +1177,9 @@ async function load() {
   const minSelect = document.getElementById("minSelect");
   const minSelectBtn = document.getElementById("minSelectBtn");
   const minSelectMenu = document.getElementById("minSelectMenu");
+  const postmortemPanel = document.getElementById("postmortemPanel");
+  const postmortemPreview = document.getElementById("postmortemPreview");
+  const postmortemBody = document.getElementById("postmortemBody");
   const filtersPanel = document.getElementById("filtersPanel");
   if (filtersPanel) {
     if (window.matchMedia("(max-width: 520px)").matches) {
@@ -1162,6 +1191,52 @@ async function load() {
   const cards = document.getElementById("cards");
 
   clearComputedCaches();
+
+  function renderPostmortem(data) {
+    if (!postmortemPanel || !postmortemPreview || !postmortemBody) return;
+    if (!data || !data.summary) return;
+    const total = data.summary.targets_total || 0;
+    const hits = data.summary.hits || 0;
+    const hitRate = data.summary.hit_rate_pct || 0;
+    const missesCount = (data.closest_misses || []).length;
+    const reachesCount = (data.reaches_hit || []).length;
+
+    if (!total && !missesCount && !reachesCount && !(data.hits || []).length) {
+      postmortemPanel.hidden = true;
+      return;
+    }
+
+    postmortemPanel.hidden = false;
+    postmortemPreview.textContent = `Hit rate: ${hits}/${total} (${hitRate}%) • Closest misses: ${missesCount} • Reaches hit: ${reachesCount}`;
+
+    const hitItems = (data.hits || []).map(item => {
+      const stat = String(item.stat || "").toUpperCase();
+      return `<li>${item.player_name} ${item.team_abbrev} vs ${item.opp || "—"} — ${stat} ${item.threshold}+ (actual ${item.actual})</li>`;
+    }).join("");
+    const missItems = (data.closest_misses || []).map(item => {
+      const stat = String(item.stat || "").toUpperCase();
+      return `<li>${item.player_name} ${item.team_abbrev} vs ${item.opp || "—"} — ${stat} ${item.threshold}+ (actual ${item.actual}, Δ${item.delta})</li>`;
+    }).join("");
+    const reachItems = (data.reaches_hit || []).map(item => {
+      const stat = String(item.stat || "").toUpperCase();
+      return `<li>${item.player_name} ${item.team_abbrev} vs ${item.opp || "—"} — ${stat} ${item.reached_threshold}+ (actual ${item.actual})</li>`;
+    }).join("");
+
+    postmortemBody.innerHTML = `
+      <div class="postmortem-section">
+        <div class="postmortem-section-title">Hits</div>
+        <ul class="postmortem-list">${hitItems || "<li>—</li>"}</ul>
+      </div>
+      <div class="postmortem-section">
+        <div class="postmortem-section-title">Closest Misses</div>
+        <ul class="postmortem-list">${missItems || "<li>—</li>"}</ul>
+      </div>
+      <div class="postmortem-section">
+        <div class="postmortem-section-title">Reaches Hit</div>
+        <ul class="postmortem-list">${reachItems || "<li>—</li>"}</ul>
+      </div>
+    `;
+  }
 
   if (minSelect && minSelectBtn && minSelectMenu) {
     minSelectBtn.addEventListener("click", () => {
@@ -1554,6 +1629,10 @@ async function load() {
   stableOnly.addEventListener("change", render);
   targetsOnly.addEventListener("change", render);
   render();
+
+  fetchJson("./data/targets_postmortem.json")
+    .then(renderPostmortem)
+    .catch(() => {});
 
   Promise.allSettled([
     fetchJson("./data/opp_big.json").then(d => { OPP_BIG = d || {}; }),

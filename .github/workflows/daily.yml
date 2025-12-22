@@ -81,6 +81,10 @@ jobs:
             --out player_snapshot.csv \
             --master nba_master.csv
 
+      - name: Build targets postmortem
+        run: |
+          python build_targets_postmortem.py
+
       - name: Upload unresolved players report
         uses: actions/upload-artifact@v4
         with:
@@ -101,11 +105,21 @@ jobs:
             "data/team_opp_allowed.json"
             "data/opp_big.json"
             "data/injuries_today.json"
+            "data/targets_postmortem.json"
             "logs/injury_log.csv"
           )
 
           CHANGED=0
           for f in "${FILES[@]}"; do
+            if [ -f "$f" ]; then
+              if ! git diff --quiet -- "$f"; then
+                git add "$f"
+                CHANGED=1
+              fi
+            fi
+          done
+
+          for f in logs/targets_snapshot_*.json; do
             if [ -f "$f" ]; then
               if ! git diff --quiet -- "$f"; then
                 git add "$f"
@@ -168,6 +182,7 @@ jobs:
           cp player_snapshot.csv ./site/data/player_snapshot.csv
           cp player_game_log.csv ./site/data/player_game_log.csv
           cp data/injuries_today.json ./site/data/injuries_today.json
+          cp data/targets_postmortem.json ./site/data/targets_postmortem.json
           cp data/team_opp_allowed.json ./site/data/team_opp_allowed.json
           cp data/opp_big.json ./site/data/opp_big.json
 
