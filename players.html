@@ -267,7 +267,7 @@
 
     .control-min .min-select {
       position: relative;
-      width: 110px;
+      width: 180px;
     }
     .control-min .min-select-btn {
       width: 100%;
@@ -276,6 +276,8 @@
       border: 1px solid #ddd;
       border-radius: 12px;
       font-size: 16px;
+      font-family: inherit;
+      font-weight: 600;
       background: #fff;
       color: #111;
       text-align: left;
@@ -328,6 +330,7 @@
     @media (max-width: 520px) {
       body { margin: 12px; }
       input, select { min-width: 140px; }
+      .control-min .min-select { width: 100%; }
       .controls { flex-direction: column; align-items: stretch; }
       .controls label { width: 100%; }
       .control-search { order: 1; }
