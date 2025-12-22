@@ -833,16 +833,18 @@ def build_html(slate, team_results, league_tbl, outfile):
             cursor: pointer;
             list-style: none;
             position: relative;
-            padding-right: 24px;
+            padding-right: 30px;
         }
         .game-details summary::-webkit-details-marker { display: none; }
         .game-details summary::after {
             content: "›";
             position: absolute;
-            right: 6px;
+            right: 10px;
             top: 50%;
             transform: translateY(-50%);
-            opacity: 0.35;
+            opacity: 0.45;
+            font-size: 22px;
+            font-weight: 700;
             transition: transform 0.15s ease;
         }
         .game-details[open] summary::after {
