@@ -322,7 +322,7 @@
 
       <label id="sortWrap" class="control-sort">Sort
         <select id="sort">
-          <option value="min_avg">MIN avg</option>
+          <option value="min_avg">MINS Avg</option>
           <option value="pts_ge20_rate" selected>PTS ≥ 20 hit%</option>
           <option value="pts_ge25_rate">PTS ≥ 25 hit%</option>
           <option value="reb_ge8_rate">REB ≥ 8 hit%</option>
@@ -340,9 +340,10 @@
         </select>
       </label>
 
-      <label class="control-min">MINS avg ≥
-        <select id="minFilter" size="8">
-          <option value="1" selected>1</option>
+      <label class="control-min">Minutes
+        <select id="minFilter">
+          <option value="" disabled selected>MINS Avg ≥</option>
+          <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
