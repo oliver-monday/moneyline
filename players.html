@@ -129,12 +129,13 @@
       list-style: none;
       cursor: pointer;
       display: flex;
+      flex-direction: column;
       gap: 14px;
-      align-items: flex-start;
+      align-items: stretch;
     }
     .card summary::-webkit-details-marker { display:none; }
-    .card-left { min-width: 260px; }
-    .card-right { flex: 1; display: grid; gap: 10px; }
+    .card-left { min-width: auto; }
+    .card-right { width: 100%; display: flex; flex-direction: column; gap: 10px; }
     .preview-row { display:flex; flex-wrap:wrap; gap: 10px; align-items:center; }
     .preview-label { min-width: 42px; color:#666; font-size: 13px; font-weight: 600; }
     .preview-pills { display:flex; flex-wrap:wrap; gap: 6px; }
@@ -175,10 +176,6 @@
     .game-title { font-size: 20px; font-weight: 700; }
     .game-sub { color:#666; font-size: 14px; }
     .game-cards { display:flex; flex-direction:column; gap: 8px; padding: 12px; }
-    @media (max-width: 900px) {
-      .card summary { flex-direction: column; }
-      .card-left { min-width: auto; }
-    }
 
     /* Pills (tints similar vibe to main page green/red) */
     .pills { display:flex; flex-wrap:wrap; gap:10px; }
@@ -208,7 +205,8 @@
       color: #7a2e2e;
     }
     .pill.inline { margin: 0 6px 0 0; }
-    .target-row { display:flex; flex-wrap:wrap; gap:6px; margin:6px 0 2px; }
+    .targets-wrap { display:flex; flex-direction:column; gap:10px; margin:6px 0 2px; }
+    .target-row { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:0; }
     .target-chip {
       background:#e8f7e8;
       border:1px solid #6ac46a;
@@ -1279,17 +1277,18 @@ async function load() {
 
     function createCard(data) {
       const placeholder = `<span class="muted" style="font-size:12px;">—</span>`;
-      const targetChips = (data.targets || [])
+      const targetRows = (data.targets || [])
         .slice(0, 3)
         .map(t => {
           const stat = t.stat.toUpperCase();
           const chip = `<span class="target-chip">Target: ${stat} ${t.t}+ (${t.hits}/${t.gp})</span>`;
-          if (!data.oppTeam) return chip;
+          if (!data.oppTeam) return `<div class="target-row">${chip}</div>`;
           const pills = matchupPills(data.oppTeam, t.stat);
-          return pills ? `${chip} ${pills}` : chip;
+          const row = pills ? `${chip} ${pills}` : chip;
+          return `<div class="target-row">${row}</div>`;
         })
         .join("");
-      const targetRow = targetChips ? `<div class="target-row">${targetChips}</div>` : "";
+      const targetWrap = targetRows ? `<div class="targets-wrap">${targetRows}</div>` : "";
 
       const el = document.createElement("details");
       el.className = "card";
@@ -1302,7 +1301,7 @@ async function load() {
               <span class="teamcode">${data.team}</span>
               ${data.injuryStatus ? `<span class="pill danger inline">${data.injuryStatus}</span>` : ""}
             </div>
-            ${targetRow}
+            ${targetWrap}
             <div class="submeta">${data.lastLine}</div>
             <div class="submeta meta-line">${data.contextLine}</div>
             ${data.loadLine || ""}
