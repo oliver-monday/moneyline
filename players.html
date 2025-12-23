@@ -1363,8 +1363,26 @@ async function load() {
     d.classList.toggle("is-open", !!d.open);
   }
 
+  function populateGameGroup(groupEl) {
+    if (!groupEl || groupEl.dataset.populated === "1") return;
+    const arr = groupEl._players || [];
+    const wrap = groupEl.querySelector(".game-cards");
+    if (!wrap || !arr.length) {
+      groupEl.dataset.populated = "1";
+      return;
+    }
+    const frag = document.createDocumentFragment();
+    arr.forEach(playerData => frag.appendChild(createCard(playerData)));
+    wrap.appendChild(frag);
+    groupEl.dataset.populated = "1";
+    wrap.querySelectorAll("details.card").forEach(syncDetailsOpenClass);
+  }
+
   document.addEventListener("toggle", (e) => {
     const d = e.target;
+    if (d && d.tagName === "DETAILS" && d.classList.contains("game-group") && d.open) {
+      populateGameGroup(d);
+    }
     if (d && d.tagName === "DETAILS" && (
       d.classList.contains("card") ||
       d.classList.contains("game-group") ||
@@ -1438,12 +1456,24 @@ async function load() {
   function scrollToPlayer(item) {
     if (!item) return;
     const playerKey = item.playerKey || "";
-    const card = playerKey ? document.querySelector(`details.card[data-player-key="${playerKey}"]`) : null;
+    let card = playerKey ? document.querySelector(`details.card[data-player-key="${playerKey}"]`) : null;
+    if (!card && item.gameId) {
+      const group2 = document.querySelector(`details.game-group[data-game-id="${item.gameId}"]`);
+      if (group2) {
+        if (!group2.open) {
+          group2.open = true;
+          syncDetailsOpenClass(group2);
+        }
+        populateGameGroup(group2);
+        card = playerKey ? document.querySelector(`details.card[data-player-key="${playerKey}"]`) : null;
+      }
+    }
     if (!card) return;
     const group = card.closest("details.game-group");
     if (group && !group.open) {
       group.open = true;
       syncDetailsOpenClass(group);
+      populateGameGroup(group);
     }
     if (!card.open) {
       card.open = true;
@@ -1805,6 +1835,8 @@ async function load() {
 
         const group = document.createElement("details");
         group.className = "game-group";
+        group.dataset.gameId = info.id;
+        group.dataset.populated = "0";
 
         const summary = document.createElement("summary");
         const title = document.createElement("div");
@@ -1843,7 +1875,7 @@ async function load() {
 
         const wrap = document.createElement("div");
         wrap.className = "game-cards";
-        arr.forEach(playerData => wrap.appendChild(createCard(playerData)));
+        group._players = arr;
         group.appendChild(wrap);
         cards.appendChild(group);
         gameEls.push({ el: group, signal: gameSignal, targetsCount });
@@ -1888,9 +1920,11 @@ async function load() {
         }
       }
     } else {
+      const frag = document.createDocumentFragment();
       cardDataList.forEach(data => {
-        cards.appendChild(createCard(data));
+        frag.appendChild(createCard(data));
       });
+      cards.appendChild(frag);
     }
 
     document.querySelectorAll("details.card, details.game-group, details.suggested-targets, details.suggested-game-group").forEach(syncDetailsOpenClass);
