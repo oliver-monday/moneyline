@@ -87,13 +87,13 @@
       background-repeat: no-repeat;
       padding-right: 34px;
     }
-    details.filters-panel { margin: 12px 0 6px; border: 1px solid #eee; border-radius: 12px; padding: 10px 12px; background:#fff; }
+    details.filters-panel { margin: 12px 0 6px; border: 1px solid #eee; border-radius: 12px; padding: 0; background:#fff; }
     details.filters-panel summary {
       font-weight: 700;
       font-size: 18px;
       color: #777;
       cursor: pointer;
-      margin-bottom: 8px;
+      margin-bottom: 0;
       list-style:none;
       position: relative;
       display: flex;
@@ -102,6 +102,7 @@
       min-height: var(--navRowH);
       padding: var(--summaryPadY) var(--summaryPadX);
       padding-right: var(--summaryPadRight);
+      border-bottom: 1px solid #f2f2f2;
     }
     details.filters-panel summary::-webkit-details-marker { display:none; }
     details.filters-panel > summary::after {
@@ -119,6 +120,9 @@
     details.filters-panel[open] > summary::after {
       transform: translateY(-50%) rotate(90deg);
     }
+    details.filters-panel .controls { padding: 10px 14px 0; }
+    details.filters-panel .stable-row { padding: 0 14px; }
+    details.filters-panel .stable-row:last-of-type { padding-bottom: 12px; }
     details.postmortem-panel { margin: 10px 0 12px; border: 1px solid #eee; border-radius: 12px; padding: 10px 12px; background:#fff; }
     details.postmortem-panel summary {
       font-weight: 700;
