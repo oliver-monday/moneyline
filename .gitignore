@@ -12,3 +12,9 @@ dashboard_*.html
 # macOS
 .DS_Store
 **/.DS_Store
+
+# deprecated backups folder
+_backups/
+
+# old problematic dashboard file
+dashboard_2025-12-02.html

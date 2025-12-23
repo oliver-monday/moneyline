@@ -16,6 +16,7 @@ Features:
 """
 
 import json
+import os
 import pandas as pd
 import numpy as np
 import datetime as dt
@@ -1259,6 +1260,24 @@ def build_html(slate, team_results, league_tbl, outfile):
         block("Best Underdogs", lv.sort_values("dog_pct",ascending=False).head(10), "dog_pct")
         w("</div>")
 
+    dashboard_file = os.path.basename(outfile)
+    w(
+        "<script>"
+        f"window.__DASHBOARD_FILE__ = {json.dumps(dashboard_file)};"
+        "(async function(){"
+        "try{"
+        "const res = await fetch('./data/site_meta.json?ts=' + Date.now(), { cache: 'no-store' });"
+        "if(!res.ok) return;"
+        "const meta = await res.json();"
+        "const newest = meta && meta.newest_dashboard;"
+        "if(!newest) return;"
+        "if(window.__DASHBOARD_FILE__ && newest !== window.__DASHBOARD_FILE__){"
+        "location.replace('./' + newest);"
+        "}"
+        "}catch(e){}"
+        "})();"
+        "</script>"
+    )
     w("</body></html>")
     with open(outfile,"w") as f:
         f.write("\n".join(lines))

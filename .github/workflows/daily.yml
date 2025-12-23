@@ -168,13 +168,29 @@ jobs:
           mkdir -p ./site/assets
 
           # Newest dashboard becomes index.html
-          NEWEST=$(ls dashboard_*.html 2>/dev/null | sort | tail -n 1)
+          export LC_ALL=C
+          NEWEST=$(ls dashboard_*.html 2>/dev/null | sort -V | tail -n 1)
           if [ -z "$NEWEST" ]; then
             echo "No dashboard_*.html files found"
             exit 1
           fi
+          export NEWEST
           echo "Using newest dashboard: $NEWEST"
           cp "$NEWEST" ./site/index.html
+          cp "$NEWEST" "./site/$NEWEST"
+
+          python - <<'PY'
+          import json, datetime, os
+          newest = os.environ.get("NEWEST")
+          meta = {
+            "newest_dashboard": newest,
+            "built_at_utc": datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
+          }
+          os.makedirs("./site/data", exist_ok=True)
+          with open("./site/data/site_meta.json","w",encoding="utf-8") as f:
+            json.dump(meta, f, indent=2, sort_keys=True)
+          print("Wrote site_meta.json:", meta)
+          PY
 
           # Data files
           cp nba_master.csv ./site/nba_master.csv
