@@ -422,9 +422,9 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401810254,2025-12-21,Washington Wizards,WSH,113,800.0,,San Antonio Spurs,SA,124,-1350.0,,Washington,DC,,
 401810255,2025-12-21,Minnesota Timberwolves,MIN,103,-625.0,,Milwaukee Bucks,MIL,100,455.0,,Minneapolis,MN,,
 401810256,2025-12-21,Sacramento Kings,SAC,125,455.0,,Houston Rockets,HOU,124,-625.0,,Sacramento,CA,,
-401810257,2025-12-22,Cleveland Cavaliers,CLE,22,-355.0,,Charlotte Hornets,CHA,17,280.0,,Cleveland,OH,,
-401810258,2025-12-22,Boston Celtics,BOS,0,-600.0,,Indiana Pacers,IND,0,440.0,,Boston,MA,,
-401810259,2025-12-22,New Orleans Pelicans,NO,0,-108.0,,Dallas Mavericks,DAL,0,-112.0,,New Orleans,LA,,
+401810257,2025-12-22,Cleveland Cavaliers,CLE,70,-355.0,,Charlotte Hornets,CHA,63,280.0,,Cleveland,OH,,
+401810258,2025-12-22,Boston Celtics,BOS,30,-600.0,,Indiana Pacers,IND,40,440.0,,Boston,MA,,
+401810259,2025-12-22,New Orleans Pelicans,NO,10,-108.0,,Dallas Mavericks,DAL,4,-112.0,,New Orleans,LA,,
 401810260,2025-12-22,Denver Nuggets,DEN,0,-750.0,,Utah Jazz,UTAH,0,525.0,,Denver,CO,,
 401810261,2025-12-22,Oklahoma City Thunder,OKC,0,-1200.0,,Memphis Grizzlies,MEM,0,750.0,,Oklahoma City,OK,,
 401810262,2025-12-22,Golden State Warriors,GS,0,-230.0,,Orlando Magic,ORL,0,190.0,,San Francisco,CA,,
@@ -433,13 +433,13 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401810265,2025-12-23,Philadelphia 76ers,PHI,0,-425.0,,Brooklyn Nets,BKN,0,330.0,,Philadelphia,PA,,
 401810266,2025-12-23,Atlanta Hawks,ATL,0,-166.0,,Chicago Bulls,CHI,0,140.0,,Atlanta,GA,,
 401810267,2025-12-23,Cleveland Cavaliers,CLE,0,,,New Orleans Pelicans,NO,0,,,Cleveland,OH,E. Mobley (Out); L. Nance (Out); Max Strus (Out),D. Murray (Out)
-401810268,2025-12-23,Indiana Pacers,IND,0,,,Milwaukee Bucks,MIL,0,,,Indianapolis,IN,T. Haliburton (OFS); T. McConnell (Out); A. Nesmith (Out); B. Sheppard (Out); Obi Toppin (Out),
+401810268,2025-12-23,Indiana Pacers,IND,0,-112.0,,Milwaukee Bucks,MIL,0,-108.0,,Indianapolis,IN,T. Haliburton (OFS); T. McConnell (Out); A. Nesmith (Out); B. Sheppard (Out); Obi Toppin (Out),
 401810269,2025-12-23,Miami Heat,MIA,0,-175.0,,Toronto Raptors,TOR,0,145.0,,Miami,FL,,
 401810270,2025-12-23,Dallas Mavericks,DAL,0,,,Denver Nuggets,DEN,0,,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); M. Christie (Out); K. Irving (Out),T. Bates (Out); C. Braun (Out); A. Gordon (Out)
 401810271,2025-12-23,Minnesota Timberwolves,MIN,0,-245.0,,New York Knicks,NY,0,200.0,,Minneapolis,MN,,
-401810272,2025-12-23,San Antonio Spurs,SA,0,220.0,,Oklahoma City Thunder,OKC,0,-270.0,,San Antonio,TX,,T. Sorber (OFS); A. Caruso (Out); O. Dieng (Out); I. Hartenstein (Out); C. Holmgren (Out); N. Topic (Out); J. Williams (Out)
+401810272,2025-12-23,San Antonio Spurs,SA,0,230.0,,Oklahoma City Thunder,OKC,0,-285.0,,San Antonio,TX,,T. Sorber (OFS); A. Caruso (Out); O. Dieng (Out); I. Hartenstein (Out); C. Holmgren (Out); N. Topic (Out); J. Williams (Out)
 401810273,2025-12-23,Phoenix Suns,PHX,0,,,Los Angeles Lakers,LAL,0,,,Phoenix,AZ,,
 401810274,2025-12-23,Utah Jazz,UTAH,0,,,Memphis Grizzlies,MEM,0,,,Salt Lake City,UT,W. Kessler (OFS); Kevin Love (Out); G. Niang (Out),B. Clarke (Out); Zach Edey (Out); Ty Jerome (Out); J. Konchar (Out); Ja Morant (Out); S. Pippen (Out); J. Small (Out); V. Williams (Out)
-401810275,2025-12-23,Portland Trail Blazers,POR,0,,,Orlando Magic,ORL,0,,,Portland,OR,D. Lillard (OFS); S. Henderson (Out); J. Holiday (Out); M. Thybulle (Out); B. Wesley (Out),C. Castleton (Out); M. Wagner (Out); F. Wagner (Out)
+401810275,2025-12-23,Portland Trail Blazers,POR,0,,,Orlando Magic,ORL,0,,,Portland,OR,D. Lillard (OFS); S. Henderson (Out); J. Holiday (Out); M. Thybulle (Out); B. Wesley (Out),C. Castleton (Out); T. da Silva (Out); J. Suggs (Out); M. Wagner (Out); F. Wagner (Out)
 401810276,2025-12-23,Sacramento Kings,SAC,0,,,Detroit Pistons,DET,0,,,Sacramento,CA,,
 401810277,2025-12-23,LA Clippers,LAC,0,220.0,,Houston Rockets,HOU,0,-270.0,,Inglewood,CA,,
