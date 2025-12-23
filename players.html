@@ -1811,66 +1811,70 @@ async function load() {
 
     document.querySelectorAll("details.card, details.game-group, details.suggested-targets").forEach(syncDetailsOpenClass);
 
-    const targetsWin = "10";
-    const bonusForTier = tier => tier === "SOFT" ? 1 : (tier === "TOUGH" ? -1 : 0);
-    const targetItems = [];
-    for (const data of cardDataList) {
-      const targets = targetsMemo(data.row, targetsWin);
-      if (!targets.length) continue;
-      const playerKey = `${normalizeName(data.playerName)}::${data.team}`;
-      const gameId = (data.todayInfo && data.todayInfo.gameId) ? data.todayInfo.gameId : "";
-      const gameKey = gameId || `${data.team}::${data.oppTeam || ""}`;
-      const info = data.todayInfo && data.todayInfo.gameId ? gameInfoById.get(data.todayInfo.gameId) : null;
-      const gameLabel = info
-        ? `${info.awayName || info.awayAbbrev} @ ${info.homeName || info.homeAbbrev}`
-        : (data.oppTeam ? `${data.team} @ ${data.oppTeam}` : data.team);
-      for (const t of targets) {
-        const avg = seasonAvg(data.row, t.stat);
-        const diff = Number.isFinite(avg) ? (t.t - avg) : -Infinity;
-        const tier = matchupTier(data.oppTeam, t.stat);
-        targetItems.push({
-          playerName: data.playerName,
-          team: data.team,
-          opp: data.oppTeam,
-          stat: t.stat,
-          threshold: t.t,
-          hits: t.hits,
-          gp: t.gp,
-          rate: t.rate,
-          diff,
-          matchupBonus: bonusForTier(tier),
-          gameId,
-          gameKey,
-          gameLabel,
-          playerKey,
-        });
+    try {
+      const targetsWin = "10";
+      const bonusForTier = tier => tier === "SOFT" ? 1 : (tier === "TOUGH" ? -1 : 0);
+      const targetItems = [];
+      for (const data of cardDataList) {
+        const targets = targetsMemo(data.row, targetsWin);
+        if (!targets.length) continue;
+        const playerKey = `${normalizeName(data.playerName)}::${data.team}`;
+        const gameId = (data.todayInfo && data.todayInfo.gameId) ? data.todayInfo.gameId : "";
+        const gameKey = gameId || `${data.team}::${data.oppTeam || ""}`;
+        const info = data.todayInfo && data.todayInfo.gameId ? gameInfoById.get(data.todayInfo.gameId) : null;
+        const gameLabel = info
+          ? `${info.awayName || info.awayAbbrev} @ ${info.homeName || info.homeAbbrev}`
+          : (data.oppTeam ? `${data.team} @ ${data.oppTeam}` : data.team);
+        for (const t of targets) {
+          const avg = seasonAvg(data.row, t.stat);
+          const diff = Number.isFinite(avg) ? (t.t - avg) : -Infinity;
+          const tier = matchupTier(data.oppTeam, t.stat);
+          targetItems.push({
+            playerName: data.playerName,
+            team: data.team,
+            opp: data.oppTeam,
+            stat: t.stat,
+            threshold: t.t,
+            hits: t.hits,
+            gp: t.gp,
+            rate: t.rate,
+            diff,
+            matchupBonus: bonusForTier(tier),
+            gameId,
+            gameKey,
+            gameLabel,
+            playerKey,
+          });
+        }
       }
+
+      targetItems.sort((a, b) => {
+        if (b.rate !== a.rate) return b.rate - a.rate;
+        if (b.gp !== a.gp) return b.gp - a.gp;
+        if (b.matchupBonus !== a.matchupBonus) return b.matchupBonus - a.matchupBonus;
+        if (b.diff !== a.diff) return b.diff - a.diff;
+        return a.playerName.localeCompare(b.playerName);
+      });
+
+      const suggested = [];
+      const seenPlayers = new Set();
+      const gameCounts = new Map();
+      for (const item of targetItems) {
+        if (suggested.length >= 6) break;
+        if (seenPlayers.has(item.playerKey)) continue;
+        const count = gameCounts.get(item.gameKey) || 0;
+        if (count >= 2) continue;
+        suggested.push(item);
+        seenPlayers.add(item.playerKey);
+        gameCounts.set(item.gameKey, count + 1);
+      }
+
+      cachedSuggested = suggested;
+      cachedAllTargets = targetItems;
+      renderSuggestedDrawer();
+    } catch (err) {
+      console.warn("Suggested Targets render failed:", err);
     }
-
-    targetItems.sort((a, b) => {
-      if (b.rate !== a.rate) return b.rate - a.rate;
-      if (b.gp !== a.gp) return b.gp - a.gp;
-      if (b.matchupBonus !== a.matchupBonus) return b.matchupBonus - a.matchupBonus;
-      if (b.diff !== a.diff) return b.diff - a.diff;
-      return a.playerName.localeCompare(b.playerName);
-    });
-
-    const suggested = [];
-    const seenPlayers = new Set();
-    const gameCounts = new Map();
-    for (const item of targetItems) {
-      if (suggested.length >= 6) break;
-      if (seenPlayers.has(item.playerKey)) continue;
-      const count = gameCounts.get(item.gameKey) || 0;
-      if (count >= 2) continue;
-      suggested.push(item);
-      seenPlayers.add(item.playerKey);
-      gameCounts.set(item.gameKey, count + 1);
-    }
-
-    cachedSuggested = suggested;
-    cachedAllTargets = targetItems;
-    renderSuggestedDrawer();
   }
 
   // Default scope = Playing Today already set in HTML
