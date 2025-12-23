@@ -18,6 +18,21 @@
   ],
   "PHI": [
     {
+      "name": "D. Barlow",
+      "status": "OUT",
+      "details": "D. Barlow (Out)"
+    },
+    {
+      "name": "V. Edgecombe",
+      "status": "OUT",
+      "details": "V. Edgecombe (Out)"
+    },
+    {
+      "name": "Q. Grimes",
+      "status": "OUT",
+      "details": "Q. Grimes (Out)"
+    },
+    {
       "name": "K. Oubre",
       "status": "OUT",
       "details": "K. Oubre (Out)"
@@ -36,6 +51,11 @@
     }
   ],
   "CHA": [
+    {
+      "name": "R. Kalkbrenner",
+      "status": "OUT",
+      "details": "R. Kalkbrenner (Out)"
+    },
     {
       "name": "M. Plumlee",
       "status": "OUT",
@@ -400,6 +420,11 @@
       "details": "D. Lillard (OFS)"
     },
     {
+      "name": "J. Grant",
+      "status": "OUT",
+      "details": "J. Grant (Out)"
+    },
+    {
       "name": "S. Henderson",
       "status": "OUT",
       "details": "S. Henderson (Out)"
@@ -418,6 +443,11 @@
       "name": "B. Wesley",
       "status": "OUT",
       "details": "B. Wesley (Out)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "OUT",
+      "details": "R. Williams (Out)"
     }
   ],
   "SAC": [
