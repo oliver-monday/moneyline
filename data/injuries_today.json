@@ -84,6 +84,11 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "M. Christie",
+      "status": "OUT",
+      "details": "M. Christie (Out)"
+    },
+    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
@@ -204,6 +209,11 @@
       "details": "N. Topic (Out)"
     },
     {
+      "name": "A. Wiggins",
+      "status": "OUT",
+      "details": "A. Wiggins (Out)"
+    },
+    {
       "name": "J. Williams",
       "status": "OUT",
       "details": "J. Williams (Out)"
@@ -214,6 +224,16 @@
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
+    },
+    {
+      "name": "T. da Silva",
+      "status": "OUT",
+      "details": "T. da Silva (Out)"
+    },
+    {
+      "name": "J. Suggs",
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
     },
     {
       "name": "M. Wagner",
@@ -238,11 +258,23 @@
       "details": "Al Horford (Out)"
     }
   ],
+  "DET": [
+    {
+      "name": "R. Holland",
+      "status": "OUT",
+      "details": "R. Holland (Out)"
+    }
+  ],
   "POR": [
     {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "J. Grant",
+      "status": "OUT",
+      "details": "J. Grant (Out)"
     },
     {
       "name": "S. Henderson",
