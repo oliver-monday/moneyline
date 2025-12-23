@@ -691,6 +691,7 @@ let todayISO = "";
 let teamLastPlayedDate = new Map();
 let TEAM_OPP = {};
 let OPP_BIG = {};
+let injuriesByTeam = {};
 function restLabel(lastDateStr) {
   if (!lastDateStr || !todayISO) return "";
   const diff = dayDiff(todayISO, lastDateStr);
@@ -1030,7 +1031,7 @@ function matchupPills(oppTeam, stat) {
   const big = (OPP_BIG && OPP_BIG[opp]) || null;
   let bigIsOut = false;
   if (big && big.player) {
-    const bigInj = matchInjury(opp, big.player, injuriesByTeam);
+    const bigInj = matchInjury(opp, big.player, injuriesByTeam || {});
     bigIsOut = !!(bigInj && isOutStatus(bigInj.status));
   }
 
@@ -1153,7 +1154,7 @@ async function load() {
   }
 
   // Injuries (best effort)
-  let injuriesByTeam = {};
+  injuriesByTeam = {};
   try {
     const res = await fetch("./data/injuries_today.json", {cache: "no-store"});
     if (res.ok) injuriesByTeam = await res.json();
