@@ -37,6 +37,11 @@
   ],
   "CHA": [
     {
+      "name": "M. Plumlee",
+      "status": "OUT",
+      "details": "M. Plumlee (Out)"
+    },
+    {
       "name": "G. Williams",
       "status": "OUT",
       "details": "G. Williams (Out)"
@@ -73,12 +78,22 @@
   ],
   "NOP": [
     {
+      "name": "H. Jones",
+      "status": "OUT",
+      "details": "H. Jones (Out)"
+    },
+    {
       "name": "D. Murray",
       "status": "OUT",
       "details": "D. Murray (Out)"
     }
   ],
   "CLE": [
+    {
+      "name": "Lonzo Ball",
+      "status": "OUT",
+      "details": "Lonzo Ball (Out)"
+    },
     {
       "name": "E. Mobley",
       "status": "OUT",
@@ -112,6 +127,11 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
+    },
+    {
+      "name": "I. Jackson",
+      "status": "OUT",
+      "details": "I. Jackson (Out)"
     },
     {
       "name": "A. Nesmith",
@@ -229,6 +249,11 @@
       "name": "Joe Ingles",
       "status": "OUT",
       "details": "Joe Ingles (Out)"
+    },
+    {
+      "name": "J. McDaniels",
+      "status": "OUT",
+      "details": "J. McDaniels (Out)"
     }
   ],
   "OKC": [
@@ -238,9 +263,24 @@
       "details": "T. Sorber (OFS)"
     },
     {
+      "name": "O. Dieng",
+      "status": "OUT",
+      "details": "O. Dieng (Out)"
+    },
+    {
+      "name": "A. Mitchell",
+      "status": "OUT",
+      "details": "A. Mitchell (Out)"
+    },
+    {
       "name": "N. Topic",
       "status": "OUT",
       "details": "N. Topic (Out)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ],
   "LAL": [
@@ -261,6 +301,11 @@
     }
   ],
   "PHX": [
+    {
+      "name": "G. Allen",
+      "status": "OUT",
+      "details": "G. Allen (Out)"
+    },
     {
       "name": "J. Green",
       "status": "OUT",
@@ -289,14 +334,19 @@
       "details": "J. Konchar (Out)"
     },
     {
+      "name": "Ja Morant",
+      "status": "OUT",
+      "details": "Ja Morant (Out)"
+    },
+    {
       "name": "S. Pippen",
       "status": "OUT",
       "details": "S. Pippen (Out)"
     },
     {
-      "name": "J. Small",
+      "name": "V. Williams",
       "status": "OUT",
-      "details": "J. Small (Out)"
+      "details": "V. Williams (Out)"
     }
   ],
   "UTA": [
@@ -306,9 +356,19 @@
       "details": "W. Kessler (OFS)"
     },
     {
+      "name": "L. Markkanen",
+      "status": "OUT",
+      "details": "L. Markkanen (Out)"
+    },
+    {
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
+    },
+    {
+      "name": "J. Nurkic",
+      "status": "OUT",
+      "details": "J. Nurkic (Out)"
     }
   ],
   "ORL": [
@@ -316,6 +376,11 @@
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
+    },
+    {
+      "name": "J. Suggs",
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
     },
     {
       "name": "M. Wagner",
