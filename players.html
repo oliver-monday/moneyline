@@ -143,11 +143,56 @@
     .suggested-body { padding: 10px 14px 12px; }
     .suggested-targets .stable-row { margin: 6px 0 10px; }
     .suggested-list { display:flex; flex-direction:column; gap:8px; }
-    .suggested-row { display:flex; align-items:flex-start; gap:10px; flex-wrap:wrap; cursor: pointer; }
-    .suggested-player { font-weight: 800; }
-    .suggested-chips { display:flex; flex-wrap:wrap; gap:8px; }
-    .suggested-game { font-weight: 800; margin: 10px 0 6px; color:#555; }
-    .suggested-indent { padding-left: 12px; }
+    .suggested-row { display:flex; align-items:center; gap:12px; padding:6px 0; cursor: pointer; }
+    .suggested-player {
+      font-weight: 800;
+      color: #111;
+      flex: 0 0 180px;
+      max-width: 180px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .suggested-chips { display:flex; gap:8px; flex: 1 1 auto; min-width: 0; }
+    @media (max-width: 520px) {
+      .suggested-player { flex-basis: 150px; max-width: 150px; }
+    }
+    #suggestedPanel .stable-row { margin-top: 0; }
+    #suggestedPanel .stable-title { color: #444; font-weight: 700; }
+    .suggested-game-group {
+      border-top: 1px solid #eee;
+      padding-top: 8px;
+      margin-top: 8px;
+    }
+    .suggested-game-group:first-child {
+      border-top: 0;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .suggested-game-group summary {
+      cursor: pointer;
+      user-select: none;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 800;
+      color: #666;
+      padding: 6px 0;
+    }
+    .suggested-game-group summary::-webkit-details-marker { display: none; }
+    .suggested-game-group summary::after {
+      content: "›";
+      font-size: 28px;
+      color: #bbb;
+      transform: rotate(0deg);
+      transition: transform 0.15s ease;
+      line-height: 1;
+    }
+    .suggested-game-group.is-open summary::after {
+      transform: rotate(90deg);
+    }
+    .suggested-game-body { padding-left: 10px; }
     .stable-row{
       display:flex;
       margin-top: 8px;
@@ -615,12 +660,14 @@
   <details class="suggested-targets" id="suggestedPanel">
     <summary><strong>Suggested Targets</strong></summary>
     <div class="suggested-body">
-      <label class="stable-row">
-        <input id="suggestedAllToggle" type="checkbox" />
-        <span class="stable-text">
-          <span class="stable-title">All Targets</span>
-        </span>
-      </label>
+      <div class="stable-row suggested-toggle-row">
+        <label class="stable-label">
+          <input id="suggestedAllToggle" type="checkbox" />
+          <span class="stable-text">
+            <span class="stable-title">All Targets</span>
+          </span>
+        </label>
+      </div>
       <div id="suggestedTargetsContent"></div>
     </div>
   </details>
@@ -1295,7 +1342,12 @@ async function load() {
 
   document.addEventListener("toggle", (e) => {
     const d = e.target;
-    if (d && d.tagName === "DETAILS" && (d.classList.contains("card") || d.classList.contains("game-group") || d.classList.contains("suggested-targets"))) {
+    if (d && d.tagName === "DETAILS" && (
+      d.classList.contains("card") ||
+      d.classList.contains("game-group") ||
+      d.classList.contains("suggested-targets") ||
+      d.classList.contains("suggested-game-group")
+    )) {
       syncDetailsOpenClass(d);
     }
   }, true);
@@ -1333,23 +1385,31 @@ async function load() {
       return;
     }
 
-    const grouped = new Map();
-    for (const item of allTargets) {
-      const key = item.gameKey || "OTHER";
-      if (!grouped.has(key)) grouped.set(key, []);
-      grouped.get(key).push(item);
+    const byGame = new Map();
+    for (const t of allTargets) {
+      const key = String(t.gameId || t.gameKey || "Other");
+      if (!byGame.has(key)) {
+        byGame.set(key, { header: String(t.gameLabel || "Other"), items: [] });
+      }
+      byGame.get(key).items.push(t);
     }
 
-    const sections = [];
-    for (const [key, items] of grouped.entries()) {
-      const header = items[0] && items[0].gameLabel ? items[0].gameLabel : key;
-      const rows = items.map(targetRowHTML).join("");
-      sections.push(`
-        <div class="suggested-game">${header}</div>
-        <div class="suggested-list suggested-indent">${rows || "<div class=\"muted\">—</div>"}</div>
+    const chunks = [];
+    for (const [, g] of byGame.entries()) {
+      const rows = g.items.map(targetRowHTML).join("");
+      chunks.push(`
+        <details class="suggested-game-group is-open" open>
+          <summary>${g.header}</summary>
+          <div class="suggested-game-body">
+            ${rows}
+          </div>
+        </details>
       `);
     }
-    suggestedTargetsContent.innerHTML = sections.join("") || "<div class=\"muted\">—</div>";
+
+    suggestedTargetsContent.innerHTML = chunks.join("") || "<div class=\"muted\">—</div>";
+    suggestedTargetsContent.querySelectorAll("details.suggested-game-group").forEach(syncDetailsOpenClass);
+    return;
   }
 
   function scrollToPlayer(item) {
@@ -1810,7 +1870,7 @@ async function load() {
       });
     }
 
-    document.querySelectorAll("details.card, details.game-group, details.suggested-targets").forEach(syncDetailsOpenClass);
+    document.querySelectorAll("details.card, details.game-group, details.suggested-targets, details.suggested-game-group").forEach(syncDetailsOpenClass);
 
     try {
       const targetsWin = "10";
