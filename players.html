@@ -126,25 +126,28 @@
     .postmortem-section-title { font-weight: 700; font-size: 14px; color:#666; }
     .postmortem-list { margin: 6px 0 0; padding-left: 18px; }
     .postmortem-list li { margin: 2px 0; }
-    details.suggested-panel { margin: 10px 0 12px; border: 1px solid #eee; border-radius: 12px; padding: 10px 12px; background:#fff; }
-    details.suggested-panel summary {
+    details.suggested-targets { margin: 10px 0 12px; border: 1px solid #eee; border-radius: 12px; background:#fff; }
+    details.suggested-targets summary {
       font-weight: 700;
       font-size: 18px;
       color: #666;
       cursor: pointer;
       list-style: none;
-      display: flex;
-      align-items: baseline;
+      padding: 12px 14px;
+      border-bottom:1px solid #f2f2f2;
+      position: relative;
+      padding-right: 30px;
     }
-    details.suggested-panel summary::-webkit-details-marker { display:none; }
-    .suggested-body { margin-top: 8px; }
-    .suggested-toggle { display:flex; align-items:center; gap:8px; font-weight:600; color:#555; }
-    .suggested-list { margin-top: 8px; }
-    .suggested-row { display:flex; flex-wrap:wrap; gap:8px; font-size: 14px; color:#333; margin: 4px 0; cursor: pointer; }
-    .suggested-sep { color:#aaa; }
-    .suggested-game { margin-top: 8px; }
-    .suggested-game-title { font-weight: 700; font-size: 14px; color:#666; }
-    .suggested-game-items { margin: 6px 0 0 12px; }
+    details.suggested-targets summary::-webkit-details-marker { display:none; }
+    .suggested-targets summary strong { color: #d97706; }
+    .suggested-body { padding: 10px 14px 12px; }
+    .suggested-targets .stable-row { margin: 6px 0 10px; }
+    .suggested-list { display:flex; flex-direction:column; gap:8px; }
+    .suggested-row { display:flex; align-items:flex-start; gap:10px; flex-wrap:wrap; cursor: pointer; }
+    .suggested-player { font-weight: 800; }
+    .suggested-chips { display:flex; flex-wrap:wrap; gap:8px; }
+    .suggested-game { font-weight: 800; margin: 10px 0 6px; color:#555; }
+    .suggested-indent { padding-left: 12px; }
     .stable-row{
       display:flex;
       margin-top: 8px;
@@ -247,8 +250,10 @@
       flex-direction:column;
       gap:4px;
     }
-    .game-group > summary::-webkit-details-marker { display:none; }
-    .game-group > summary::after {
+    .game-group > summary::-webkit-details-marker,
+    .suggested-targets > summary::-webkit-details-marker { display:none; }
+    .game-group > summary::after,
+    .suggested-targets > summary::after {
       content: "›";
       position: absolute;
       right: 10px;
@@ -260,7 +265,8 @@
       font-weight: 700;
       transition: transform 0.15s ease;
     }
-    .game-group.is-open > summary::after {
+    .game-group.is-open > summary::after,
+    .suggested-targets.is-open > summary::after {
       transform: translateY(-50%) rotate(90deg);
     }
     .game-title { font-size: 20px; font-weight: 700; }
@@ -606,14 +612,16 @@
     </div>
   </details>
 
-  <details class="suggested-panel" id="suggestedPanel">
-    <summary>Suggested Targets</summary>
+  <details class="suggested-targets" id="suggestedPanel">
+    <summary><strong>Suggested Targets</strong></summary>
     <div class="suggested-body">
-      <label class="suggested-toggle">
+      <label class="stable-row">
         <input id="suggestedAllToggle" type="checkbox" />
-        <span>All Targets</span>
+        <span class="stable-text">
+          <span class="stable-title">All Targets</span>
+        </span>
       </label>
-      <div class="suggested-list" id="suggestedList"></div>
+      <div id="suggestedTargetsContent"></div>
     </div>
   </details>
 
@@ -1262,7 +1270,7 @@ async function load() {
   const postmortemPreview = document.getElementById("postmortemPreview");
   const postmortemBody = document.getElementById("postmortemBody");
   const suggestedPanel = document.getElementById("suggestedPanel");
-  const suggestedList = document.getElementById("suggestedList");
+  const suggestedTargetsContent = document.getElementById("suggestedTargetsContent");
   const suggestedAllToggle = document.getElementById("suggestedAllToggle");
   const filtersPanel = document.getElementById("filtersPanel");
   if (filtersPanel) {
@@ -1286,28 +1294,26 @@ async function load() {
 
   document.addEventListener("toggle", (e) => {
     const d = e.target;
-    if (d && d.tagName === "DETAILS" && (d.classList.contains("card") || d.classList.contains("game-group"))) {
+    if (d && d.tagName === "DETAILS" && (d.classList.contains("card") || d.classList.contains("game-group") || d.classList.contains("suggested-targets"))) {
       syncDetailsOpenClass(d);
     }
   }, true);
 
   function targetRowHTML(item) {
     const stat = String(item.stat || "").toUpperCase();
+    const chip = `${stat} ${item.threshold}+ (${item.hits}/${item.gp})`;
     return `
       <div class="suggested-row" data-player-key="${item.playerKey}" data-game-id="${item.gameId || ""}">
-        <span>${item.playerName}</span>
-        <span class="suggested-sep">·</span>
-        <span>${stat}</span>
-        <span class="suggested-sep">·</span>
-        <span>${item.threshold}+</span>
-        <span class="suggested-sep">·</span>
-        <span>${item.hits}/${item.gp}</span>
+        <span class="suggested-player">${item.playerName}</span>
+        <span class="suggested-chips">
+          <span class="target-chip suggested-chip">${chip}</span>
+        </span>
       </div>
     `;
   }
 
   function renderSuggestedDrawer() {
-    if (!suggestedPanel || !suggestedList || !suggestedAllToggle) return;
+    if (!suggestedPanel || !suggestedTargetsContent || !suggestedAllToggle) return;
     const showAll = suggestedAllToggle.checked;
     const suggested = cachedSuggested || [];
     const allTargets = cachedAllTargets || [];
@@ -1320,7 +1326,9 @@ async function load() {
 
     if (!showAll) {
       const rows = suggested.slice(0, 6).map(targetRowHTML).join("");
-      suggestedList.innerHTML = rows || "<div class=\"muted\">—</div>";
+      suggestedTargetsContent.innerHTML = rows
+        ? `<div class="suggested-list">${rows}</div>`
+        : "<div class=\"muted\">—</div>";
       return;
     }
 
@@ -1336,13 +1344,11 @@ async function load() {
       const header = items[0] && items[0].gameLabel ? items[0].gameLabel : key;
       const rows = items.map(targetRowHTML).join("");
       sections.push(`
-        <div class="suggested-game">
-          <div class="suggested-game-title">${header}</div>
-          <div class="suggested-game-items">${rows || "<div class=\"muted\">—</div>"}</div>
-        </div>
+        <div class="suggested-game">${header}</div>
+        <div class="suggested-list suggested-indent">${rows || "<div class=\"muted\">—</div>"}</div>
       `);
     }
-    suggestedList.innerHTML = sections.join("") || "<div class=\"muted\">—</div>";
+    suggestedTargetsContent.innerHTML = sections.join("") || "<div class=\"muted\">—</div>";
   }
 
   function scrollToPlayer(item) {
@@ -1366,8 +1372,8 @@ async function load() {
     suggestedAllToggle.addEventListener("change", renderSuggestedDrawer);
   }
 
-  if (suggestedList) {
-    suggestedList.addEventListener("click", (e) => {
+  if (suggestedTargetsContent) {
+    suggestedTargetsContent.addEventListener("click", (e) => {
       const row = e.target.closest(".suggested-row");
       if (!row) return;
       const playerKey = row.getAttribute("data-player-key") || "";
@@ -1803,7 +1809,7 @@ async function load() {
       });
     }
 
-    document.querySelectorAll("details.card, details.game-group").forEach(syncDetailsOpenClass);
+    document.querySelectorAll("details.card, details.game-group, details.suggested-targets").forEach(syncDetailsOpenClass);
 
     const targetsWin = "10";
     const bonusForTier = tier => tier === "SOFT" ? 1 : (tier === "TOUGH" ? -1 : 0);
