@@ -12,6 +12,13 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <style>
+    :root {
+      --navRowH: calc(18px + 24px);
+      --summaryPadX: 14px;
+      --summaryPadY: 12px;
+      --summaryPadRight: 30px;
+      --chevRight: 10px;
+    }
     body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 16px; }
     .masthead { width: fit-content; max-width: 100%; }
     .brand { display:flex; align-items:center; gap:10px; width: 100%; margin: 0 0 10px; }
@@ -89,14 +96,18 @@
       margin-bottom: 8px;
       list-style:none;
       position: relative;
-      padding: 12px 14px;
-      padding-right: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: var(--navRowH);
+      padding: var(--summaryPadY) var(--summaryPadX);
+      padding-right: var(--summaryPadRight);
     }
     details.filters-panel summary::-webkit-details-marker { display:none; }
     details.filters-panel > summary::after {
       content: "›";
       position: absolute;
-      right: 10px;
+      right: var(--chevRight);
       top: 50%;
       transform-origin: 50% 50%;
       transform: translateY(-50%) rotate(0deg);
@@ -133,10 +144,14 @@
       color: #666;
       cursor: pointer;
       list-style: none;
-      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: var(--navRowH);
+      padding: var(--summaryPadY) var(--summaryPadX);
       border-bottom:1px solid #f2f2f2;
       position: relative;
-      padding-right: 30px;
+      padding-right: var(--summaryPadRight);
     }
     details.suggested-targets summary::-webkit-details-marker { display:none; }
     .suggested-targets summary strong { color: #d97706; }
@@ -287,10 +302,11 @@
     .game-group summary {
       list-style:none;
       cursor:pointer;
-      padding: 12px 14px;
+      padding: var(--summaryPadY) var(--summaryPadX);
       border-bottom:1px solid #f2f2f2;
       position: relative;
-      padding-right: 30px;
+      min-height: var(--navRowH);
+      padding-right: var(--summaryPadRight);
       display:flex;
       flex-direction:column;
       gap:4px;
@@ -301,7 +317,7 @@
     .suggested-targets > summary::after {
       content: "›";
       position: absolute;
-      right: 10px;
+      right: var(--chevRight);
       top: 50%;
       transform-origin: 50% 50%;
       transform: translateY(-50%) rotate(0deg);
@@ -479,6 +495,9 @@
       font-weight: 700;
     }
     @media (max-width: 520px) {
+      :root {
+        --navRowH: calc(18px + 28px);
+      }
       body { margin: 12px; }
       input, select { min-width: 140px; }
       .control-min .min-select { min-width: 140px; }
