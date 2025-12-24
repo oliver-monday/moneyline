@@ -900,6 +900,31 @@ def build_html(slate, team_results, league_tbl, outfile):
             font-weight: 700;
         }
         .market-report .report-none { color: #888; font-size: 14px; }
+        .market-analysis {
+            margin-top: 12px;
+        }
+        .market-analysis-title {
+            font-weight: 700;
+            color: #d97706;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+        .market-analysis-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 14px;
+            color: #444;
+            line-height: 1.35;
+        }
+        .ma-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            align-items: baseline;
+        }
+        .ma-label { font-weight: 700; color: #555; }
+        .ma-value { text-align: right; }
         .game-details summary {
             cursor: pointer;
             list-style: none;
@@ -1016,6 +1041,10 @@ def build_html(slate, team_results, league_tbl, outfile):
     w("<div class='report-preview' id='marketReportSummary'></div>")
     w("</summary>")
     w("<div class='report-body' id='marketReportBody'></div>")
+    w("<div class='market-analysis'>")
+    w("<div class='market-analysis-title'>Market Analysis</div>")
+    w("<div class='market-analysis-grid' id='marketAnalysisGrid'></div>")
+    w("</div>")
     w("</details>")
 
     # ---------- Per-game cards ----------
@@ -1355,6 +1384,15 @@ def build_html(slate, team_results, league_tbl, outfile):
         "const favL=summary.favorites_lost||0;"
         "summaryEl.textContent=`Games: ${games} • Favorites: ${favW}–${favL}`;"
         "const sections=[];"
+        "const analysisGrid=document.getElementById('marketAnalysisGrid');"
+        "if(analysisGrid) analysisGrid.innerHTML='';"
+        "function addMarketAnalysisRow(label, value){"
+        "if(!analysisGrid) return;"
+        "const row=document.createElement('div');"
+        "row.className='ma-row';"
+        "row.innerHTML=`<div class=\\\"ma-label\\\">${label}</div><div class=\\\"ma-value\\\">${value}</div>`;"
+        "analysisGrid.appendChild(row);"
+        "}"
         "function fmtMl(v){"
         "if(v===null||v===undefined||Number.isNaN(v)) return '';"
         "const n=Math.round(v);"
@@ -1400,6 +1438,115 @@ def build_html(slate, team_results, league_tbl, outfile):
         "listSection('Underdog Winners', data.underdogs);"
         "listSection('Coinflips', data.coinflips);"
         "bodyEl.innerHTML=sections.join('');"
+        "const recapGames=[...(data.favorites||[]),...(data.underdogs||[]),...(data.coinflips||[])];"
+        "const tierBuckets={"
+        "'80%+':{w:0,l:0},"
+        "'70s':{w:0,l:0},"
+        "'60s':{w:0,l:0},"
+        "'55-59':{w:0,l:0}"
+        "};"
+        "let tierCount=0;"
+        "for(const g of [...(data.favorites||[]),...(data.underdogs||[])] ){"
+        "const p=g.favorite_prob;"
+        "if(typeof p!=='number' || !isFinite(p)) continue;"
+        "if(p<0.55) continue;"
+        "tierCount++;"
+        "let key=null;"
+        "if(p>=0.80) key='80%+';"
+        "else if(p>=0.70) key='70s';"
+        "else if(p>=0.60) key='60s';"
+        "else key='55-59';"
+        "const favWon=(g.winner_side===g.fav_side);"
+        "if(favWon) tierBuckets[key].w+=1; else tierBuckets[key].l+=1;"
+        "}"
+        "const favTierValue=tierCount?`80%+ ${tierBuckets['80%+'].w}\u2013${tierBuckets['80%+'].l} \u00b7 70s ${tierBuckets['70s'].w}\u2013${tierBuckets['70s'].l} \u00b7 60s ${tierBuckets['60s'].w}\u2013${tierBuckets['60s'].l} \u00b7 55\u201359 ${tierBuckets['55-59'].w}\u2013${tierBuckets['55-59'].l}`:'—';"
+        "console.log('[market-analysis] fav_tiers', tierBuckets);"
+        "addMarketAnalysisRow('Fav tiers', favTierValue);"
+        "let shocksAvail=0; let shocks35=0; let shocks25=0;"
+        "for(const g of recapGames){"
+        "let wp=null;"
+        "if(g.winner_side==='HOME') wp=g.home_prob;"
+        "else if(g.winner_side==='AWAY') wp=g.away_prob;"
+        "if(typeof wp!=='number' || !isFinite(wp)) continue;"
+        "shocksAvail++;"
+        "if(wp<=0.35) shocks35++;"
+        "if(wp<=0.25) shocks25++;"
+        "}"
+        "const shocksValue=shocksAvail?`Shocks: ${shocks35} (\u226435%), ${shocks25} (\u226425%)`:'—';"
+        "console.log('[market-analysis] shocks', {le35:shocks35, le25:shocks25});"
+        "addMarketAnalysisRow('Shocks', shocksValue);"
+        "const teamSignals=window.__TEAM_SIGNALS||null;"
+        "let undervaluedWinners=0; let overvaluedFavLosers=0; let signalAvail=false;"
+        "if(teamSignals){"
+        "signalAvail=true;"
+        "for(const g of recapGames){"
+        "const winnerAbbr=g.winner_abbrev;"
+        "const favAbbr=g.fav_side==='HOME'?g.home_abbrev:(g.fav_side==='AWAY'?g.away_abbrev:null);"
+        "const winnerSig=winnerAbbr?teamSignals[winnerAbbr]:null;"
+        "const favSig=favAbbr?teamSignals[favAbbr]:null;"
+        "if(winnerSig&&String(winnerSig.mispricing||'').toLowerCase().includes('undervalue')) undervaluedWinners++;"
+        "if(favSig&&String(favSig.mispricing||'').toLowerCase().includes('overvalue')&&g.winner_side!==g.fav_side) overvaluedFavLosers++;"
+        "}"
+        "}"
+        "console.log('[market-analysis] mispricing_signal', {undervalued_winners:undervaluedWinners, overvalued_fav_losers:overvaluedFavLosers, available:signalAvail});"
+        "addMarketAnalysisRow('Signal', signalAvail?`undervalued winners ${undervaluedWinners}/${recapGames.length} \u00b7 overvalued fav losses ${overvaluedFavLosers}`:'—');"
+        "let prmAvail=false;"
+        "const prmWin=[]; const prmLoss=[];"
+        "if(teamSignals){"
+        "for(const g of [...(data.favorites||[]),...(data.underdogs||[])] ){"
+        "const favAbbr=g.fav_side==='HOME'?g.home_abbrev:(g.fav_side==='AWAY'?g.away_abbrev:null);"
+        "const favSig=favAbbr?teamSignals[favAbbr]:null;"
+        "if(favSig&&typeof favSig.prm10==='number'&&isFinite(favSig.prm10)){"
+        "prmAvail=true;"
+        "if(g.winner_side===g.fav_side) prmWin.push(favSig.prm10); else prmLoss.push(favSig.prm10);"
+        "}"
+        "}"
+        "}"
+        "function median(arr){"
+        "if(!arr.length) return null;"
+        "const a=[...arr].sort((x,y)=>x-y);"
+        "const mid=Math.floor(a.length/2);"
+        "return a.length%2? a[mid] : (a[mid-1]+a[mid])/2;"
+        "}"
+        "const medWin=median(prmWin);"
+        "const medLoss=median(prmLoss);"
+        "const prmValue=(prmAvail&&medWin!==null&&medLoss!==null)?`fav winners med ${medWin>=0?'+':''}${medWin.toFixed(1)}u vs fav losers med ${medLoss>=0?'+':''}${medLoss.toFixed(1)}u`:'—';"
+        "console.log('[market-analysis] prm_check', {med_win:medWin, med_loss:medLoss, available:prmAvail});"
+        "addMarketAnalysisRow('PRM', prmValue);"
+        "let fatigueAvail=false;"
+        "let b2bW=0,b2bL=0,highW=0,highL=0;"
+        "if(teamSignals){"
+        "fatigueAvail=true;"
+        "for(const g of recapGames){"
+        "const homeSig=teamSignals[g.home_abbrev]||{};"
+        "const awaySig=teamSignals[g.away_abbrev]||{};"
+        "const homeWin=g.winner_side==='HOME';"
+        "const awayWin=g.winner_side==='AWAY';"
+        "if(homeSig.b2b){ if(homeWin) b2bW++; else b2bL++; }"
+        "if(awaySig.b2b){ if(awayWin) b2bW++; else b2bL++; }"
+        "if(homeSig.high_fatigue){ if(homeWin) highW++; else highL++; }"
+        "if(awaySig.high_fatigue){ if(awayWin) highW++; else highL++; }"
+        "}"
+        "}"
+        "console.log('[market-analysis] fatigue', {b2bW,b2bL,highW,highL,available:fatigueAvail});"
+        "addMarketAnalysisRow('Fatigue', fatigueAvail?`B2B ${b2bW}\u2013${b2bL} \u00b7 High fatigue ${highW}\u2013${highL}`:'—');"
+        "let homeW=0,awayW=0,homeDogW=0;"
+        "for(const g of recapGames){"
+        "if(g.winner_side==='HOME') homeW++; else if(g.winner_side==='AWAY') awayW++;"
+        "if(typeof g.home_prob==='number'&&typeof g.away_prob==='number'&&isFinite(g.home_prob)&&isFinite(g.away_prob)){"
+        "if(g.home_prob<g.away_prob && g.winner_side==='HOME') homeDogW++;"
+        "}"
+        "}"
+        "const homeValue=recapGames.length?`Home ${homeW}\u2013${awayW} \u00b7 Home dogs won: ${homeDogW}`:'—';"
+        "console.log('[market-analysis] home_away', {homeW,awayW,homeDogW});"
+        "addMarketAnalysisRow('Home', homeValue);"
+        "let dayType='—';"
+        "if(shocksAvail||signalAvail){"
+        "const signalRich=(shocks35>=4) || (signalAvail && undervaluedWinners>=3);"
+        "dayType=signalRich?'Signal-rich':'Quiet';"
+        "}"
+        "console.log('[market-analysis] day_type', {dayType, shocks35, undervaluedWinners, available:(shocksAvail||signalAvail)});"
+        "addMarketAnalysisRow('Day type', dayType==='—'?'—':`Day type: ${dayType}`);"
         "})"
         ".catch(()=>{ panel.hidden=true; });"
         "})();"
