@@ -1389,7 +1389,7 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
         "const games=summary.games_total||0;"
         "const favW=summary.favorites_won||0;"
         "const favL=summary.favorites_lost||0;"
-        "summaryEl.textContent=`Games: ${games} • Favorites: ${favW}–${favL}`;"
+        "summaryEl.textContent=`Favorites: ${favW} • Underdogs: ${favL}`;"
         "const sections=[];"
         "const analysisGrid=document.getElementById('marketAnalysisGrid');"
         "if(analysisGrid) analysisGrid.innerHTML='';"
