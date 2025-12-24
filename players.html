@@ -1641,13 +1641,16 @@ async function load() {
     const hitRate = data.summary.hit_rate_pct || 0;
     const missesCount = (data.closest_misses || []).length;
     const reachesCount = (data.reaches_hit || []).length;
-
+    const note = String(data.note || "").trim();
+    postmortemPanel.hidden = false;
     if (!total && !missesCount && !reachesCount && !(data.hits || []).length) {
-      postmortemPanel.hidden = true;
+      postmortemPreview.textContent = note
+        ? `Yesterday Targets · ${note}`
+        : "Yesterday Targets · No targets recorded";
+      postmortemBody.innerHTML = `<div class="muted" style="padding:6px 0;">${note || "No targets recorded for this date."}</div>`;
       return;
     }
 
-    postmortemPanel.hidden = false;
     postmortemPreview.textContent = `Hit rate: ${hits}/${total} (${hitRate}%) • Closest misses: ${missesCount} • Reaches hit: ${reachesCount}`;
 
     const hitItems = (data.hits || []).map(item => {
