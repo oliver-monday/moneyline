@@ -134,13 +134,27 @@
       gap: 10px;
       align-items: baseline;
     }
+    .postmortem-title { color: #d97706; font-weight: 700; }
     details.postmortem-panel summary::-webkit-details-marker { display:none; }
     .postmortem-preview { font-size: 14px; color:#777; font-weight: 600; }
     .postmortem-body { margin-top: 8px; font-size: 14px; color:#444; }
     .postmortem-section { margin-top: 8px; }
     .postmortem-section-title { font-weight: 700; font-size: 14px; color:#666; }
-    .postmortem-list { margin: 6px 0 0; padding-left: 18px; }
-    .postmortem-list li { margin: 2px 0; }
+    .pm-group { margin-top: 6px; }
+    .pm-player-row { font-weight: 700; color: #555; margin: 4px 0; }
+    .pm-target-row { margin-left: 14px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+    .pm-reach-pill {
+      background:#e8f7e8;
+      border:1px solid #6ac46a;
+      color:#1f5f1f;
+      border-radius:999px;
+      padding:3px 8px;
+      font-size:12px;
+      font-weight:600;
+      display:inline-flex;
+      align-items:center;
+      white-space: nowrap;
+    }
     details.suggested-targets { margin: 10px 0 12px; border: 1px solid #eee; border-radius: 12px; background:#fff; }
     details.injury-panel { margin: 10px 0 12px; border: 1px solid #eee; border-radius: 12px; background:#fff; }
     details.suggested-targets summary {
@@ -644,7 +658,7 @@
 
   <details class="postmortem-panel" id="postmortemPanel" hidden>
     <summary>
-      <span>Yesterday Targets</span>
+      <span class="postmortem-title">Yesterday Targets</span>
       <span class="postmortem-preview" id="postmortemPreview"></span>
     </summary>
     <div class="postmortem-body" id="postmortemBody"></div>
@@ -1653,32 +1667,102 @@ async function load() {
 
     postmortemPreview.textContent = `Hit rate: ${hits}/${total} (${hitRate}%) • Closest misses: ${missesCount} • Reaches hit: ${reachesCount}`;
 
-    const hitItems = (data.hits || []).map(item => {
-      const stat = String(item.stat || "").toUpperCase();
-      return `<li>${item.player_name} ${item.team_abbrev} vs ${item.opp || "—"} — ${stat} ${item.threshold}+ (actual ${item.actual})</li>`;
-    }).join("");
-    const missItems = (data.closest_misses || []).map(item => {
-      const stat = String(item.stat || "").toUpperCase();
-      return `<li>${item.player_name} ${item.team_abbrev} vs ${item.opp || "—"} — ${stat} ${item.threshold}+ (actual ${item.actual}, Δ${item.delta})</li>`;
-    }).join("");
-    const reachItems = (data.reaches_hit || []).map(item => {
-      const stat = String(item.stat || "").toUpperCase();
-      return `<li>${item.player_name} ${item.team_abbrev} vs ${item.opp || "—"} — ${stat} ${item.reached_threshold}+ (actual ${item.actual})</li>`;
-    }).join("");
+    const hits = data.hits || [];
+    const missesRaw = (data.misses || data.closest_misses || []);
+    const reaches = data.reaches_hit || [];
+
+    function groupByPlayer(items) {
+      const groups = new Map();
+      for (const item of items) {
+        const player = item.player_name || "";
+        const team = item.team_abbrev || "";
+        const opp = item.opp || "—";
+        const key = `${player}||${team}||${opp}`;
+        if (!groups.has(key)) {
+          groups.set(key, { player, team, opp, items: [] });
+        }
+        groups.get(key).items.push(item);
+      }
+      return Array.from(groups.values());
+    }
+
+    function getDelta(item) {
+      if (item == null) return null;
+      const raw = item.delta;
+      if (raw === undefined || raw === null || raw === "") return null;
+      const n = Number(raw);
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function matchReachesForHit(hitItem) {
+      const hitName = normalizeName(hitItem.player_name || "");
+      const hitTeam = String(hitItem.team_abbrev || "").toUpperCase();
+      const hitOpp = String(hitItem.opp || "").toUpperCase();
+      const hitStat = String(hitItem.stat || "").toLowerCase();
+      const hitThreshold = Number(hitItem.threshold);
+      return (reaches || []).filter(r => {
+        const rName = normalizeName(r.player_name || "");
+        const rTeam = String(r.team_abbrev || "").toUpperCase();
+        const rOpp = String(r.opp || "").toUpperCase();
+        const rStat = String(r.stat || "").toLowerCase();
+        const rTarget = Number(r.target_threshold);
+        if (hitName && rName && hitName !== rName) return false;
+        if (hitTeam && rTeam && hitTeam !== rTeam) return false;
+        if (hitOpp && rOpp && hitOpp !== rOpp) return false;
+        if (hitStat && rStat && hitStat !== rStat) return false;
+        if (Number.isFinite(hitThreshold) && Number.isFinite(rTarget) && hitThreshold !== rTarget) return false;
+        return true;
+      });
+    }
+
+    const misses = missesRaw
+      .map(item => ({ ...item, _delta: getDelta(item) }))
+      .sort((a, b) => {
+        if (a._delta == null && b._delta == null) return 0;
+        if (a._delta == null) return 1;
+        if (b._delta == null) return -1;
+        return a._delta - b._delta;
+      });
+
+    function renderSection(title, items, isMisses) {
+      const grouped = groupByPlayer(items);
+      if (!grouped.length) {
+        return `
+          <div class="postmortem-section">
+            <div class="postmortem-section-title">${title}</div>
+            <div class="muted">—</div>
+          </div>
+        `;
+      }
+      const rows = grouped.map(group => {
+        const header = `<div class="pm-player-row">${group.player} ${group.team} vs ${group.opp}</div>`;
+        const targets = group.items.map(item => {
+          const stat = String(item.stat || "").toUpperCase();
+          const threshold = item.threshold || "—";
+          const actual = item.actual ?? "—";
+          const delta = getDelta(item);
+          const deltaText = isMisses && delta != null ? ` Δ${delta}` : "";
+          const reachPills = !isMisses
+            ? matchReachesForHit(item).map(r => {
+                const rStat = String(r.stat || "").toUpperCase();
+                return `<span class="pm-reach-pill">Reached: ${rStat} ${r.reached_threshold}+</span>`;
+              }).join("")
+            : "";
+          return `<div class="pm-target-row">${stat} ${threshold}+ (${actual})${deltaText}${reachPills ? ` ${reachPills}` : ""}</div>`;
+        }).join("");
+        return `<div class="pm-group">${header}${targets}</div>`;
+      }).join("");
+      return `
+        <div class="postmortem-section">
+          <div class="postmortem-section-title">${title}</div>
+          ${rows}
+        </div>
+      `;
+    }
 
     postmortemBody.innerHTML = `
-      <div class="postmortem-section">
-        <div class="postmortem-section-title">Hits</div>
-        <ul class="postmortem-list">${hitItems || "<li>—</li>"}</ul>
-      </div>
-      <div class="postmortem-section">
-        <div class="postmortem-section-title">Closest Misses</div>
-        <ul class="postmortem-list">${missItems || "<li>—</li>"}</ul>
-      </div>
-      <div class="postmortem-section">
-        <div class="postmortem-section-title">Reaches Hit</div>
-        <ul class="postmortem-list">${reachItems || "<li>—</li>"}</ul>
-      </div>
+      ${renderSection("Hits", hits, false)}
+      ${renderSection("Misses", misses, true)}
     `;
   }
 
