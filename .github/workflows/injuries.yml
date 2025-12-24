@@ -77,41 +77,41 @@ jobs:
           git rebase origin/main
           git push origin HEAD:main
 
+      - name: Build dashboard locally (no ingest)
+        run: |
+          python build_matchup_insights.py
+          python build_dashboard.py
+
       - name: Prepare site files
         run: |
           mkdir -p ./site
           mkdir -p ./site/data
           mkdir -p ./site/assets
 
-          # Reuse currently deployed index.html (avoid full dashboard rebuild)
-          PAGES_INDEX_URL="https://oliver-monday.github.io/moneyline/index.html"
-          echo "Fetching current Pages index.html from $PAGES_INDEX_URL"
+          # Newest dashboard becomes index.html
+          export LC_ALL=C
+          NEWEST=$(ls dashboard_*.html 2>/dev/null | sort -V | tail -n 1)
+          if [ -z "$NEWEST" ]; then
+            echo "No dashboard_*.html files found"
+            exit 1
+          fi
+          export NEWEST
+          echo "Using newest dashboard: $NEWEST"
+          cp "$NEWEST" ./site/index.html
+          cp "$NEWEST" "./site/$NEWEST"
 
-          if curl -fsSL "${PAGES_INDEX_URL}?ts=$(date +%s)" -o ./site/index.html; then
-            echo "Fetched Pages index.html"
-          else
-            echo "Failed to fetch Pages index.html; attempting local dashboard_*.html fallback"
-            NEWEST=$(ls dashboard_*.html 2>/dev/null | sort | tail -n 1 || true)
-            if [ -n "$NEWEST" ]; then
-              echo "Using fallback dashboard: $NEWEST"
-              cp "$NEWEST" ./site/index.html
-            else
-              echo "No dashboard_*.html files found and Pages fetch failed"
-              exit 1
-            fi
-          fi
-
-          PAGES_BASE="https://oliver-monday.github.io/moneyline"
-          if curl -fsSL "$PAGES_BASE/data/site_meta.json?ts=$(date +%s)" -o ./site/data/site_meta.json; then
-            echo "Fetched Pages site_meta.json"
-          else
-            echo "No existing site_meta.json on Pages (ok)."
-          fi
-          if curl -fsSL "$PAGES_BASE/data/targets_postmortem.json?ts=$(date +%s)" -o ./site/data/targets_postmortem.json; then
-            echo "Fetched Pages targets_postmortem.json"
-          else
-            echo "No existing targets_postmortem.json on Pages (ok)."
-          fi
+          python - <<'PY'
+          import json, datetime, os
+          newest = os.environ.get("NEWEST")
+          meta = {
+            "newest_dashboard": newest,
+            "built_at_utc": datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
+          }
+          os.makedirs("./site/data", exist_ok=True)
+          with open("./site/data/site_meta.json","w",encoding="utf-8") as f:
+            json.dump(meta, f, indent=2, sort_keys=True)
+          print("Wrote site_meta.json:", meta)
+          PY
 
           # Data files
           cp nba_master.csv ./site/nba_master.csv
@@ -126,7 +126,6 @@ jobs:
           cp player_snapshot.csv ./site/data/player_snapshot.csv
           cp player_game_log.csv ./site/data/player_game_log.csv
           cp data/injuries_today.json ./site/data/injuries_today.json
-          # Postmortem (if present)
           if [ -f data/targets_postmortem.json ]; then
             cp data/targets_postmortem.json ./site/data/targets_postmortem.json
           fi

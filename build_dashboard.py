@@ -770,7 +770,7 @@ def write_injury_files(slate: pd.DataFrame, asof_date: dt.date) -> None:
 
 # ------------ HTML rendering ------------------------------------------
 
-def build_html(slate, team_results, league_tbl, outfile):
+def build_html(slate, team_results, league_tbl, outfile, today_date):
 
     CSS = """
     <style>
@@ -818,6 +818,12 @@ def build_html(slate, team_results, league_tbl, outfile):
             .brand-logo { height: 80px; }
         }
         .page-subtitle { margin: 0 0 18px; }
+        .no-games {
+            font-size: 18px;
+            font-weight: 700;
+            color: #666;
+            margin: 10px 0 16px;
+        }
         @media (max-width: 520px) {
             .brand-text { font-size: clamp(70px, 16vw, 108px); }
             .brand-logo { height: clamp(70px, 16vw, 108px); }
@@ -1028,8 +1034,7 @@ def build_html(slate, team_results, league_tbl, outfile):
     w(CSS)
     w("</head><body>")
 
-    today = slate["game_date"].iloc[0]
-    today_display = pd.Timestamp(today).strftime("%m-%d-%Y")
+    today_display = pd.Timestamp(today_date).strftime("%m-%d-%Y")
     w('<div class="masthead">')
     w('<div class="brand"><div class="brand-text">NBA</div><img class="brand-logo" src="./assets/NBAGPTlogo-header.png" width="80" height="80" decoding="async" fetchpriority="high" alt="NBA GPT logo"><div class="brand-text">GPT</div></div>')
     w('<div class="nav"><a class="active" href="./index.html">Moneylines</a><a href="./players.html">Player Props</a></div>')
@@ -1048,6 +1053,8 @@ def build_html(slate, team_results, league_tbl, outfile):
     w("</details>")
 
     # ---------- Per-game cards ----------
+    if slate.empty:
+        w('<div class="no-games">No Games Today</div>')
     for _, g in slate.iterrows():
 
         home = g["home_team_name"]
@@ -1580,16 +1587,13 @@ def build_html(slate, team_results, league_tbl, outfile):
 def main():
     master = load_master()
     today = dt.date.today()
-    if today not in master["game_date"].unique():
-        today = master["game_date"].max()
     slate = master[master["game_date"] == today]
-    if slate.empty:
-        print("No games for", today); return
     team_results = build_team_results(master)
     league_tbl = league_overview(team_results)
-    write_injury_files(slate, today)
+    if not slate.empty:
+        write_injury_files(slate, today)
     outfile = f"dashboard_{today}.html"
-    build_html(slate, team_results, league_tbl, outfile)
+    build_html(slate, team_results, league_tbl, outfile, today)
     print("Dashboard written →", outfile)
 
 if __name__ == "__main__":
