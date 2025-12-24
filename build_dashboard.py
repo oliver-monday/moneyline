@@ -830,6 +830,56 @@ def build_html(slate, team_results, league_tbl, outfile):
             border-radius: 14px;
             background: #fff;
         }
+        .market-report {
+            border: 1px solid #eee;
+            padding: 12px;
+            margin: 8px 0 12px;
+            border-radius: 14px;
+            background: #fff;
+        }
+        .market-report summary {
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-right: 30px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .market-report summary::-webkit-details-marker { display: none; }
+        .market-report summary::after {
+            content: "›";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.45;
+            font-size: 22px;
+            font-weight: 700;
+            transition: transform 0.15s ease;
+        }
+        .market-report[open] summary::after {
+            transform: translateY(-50%) rotate(90deg);
+        }
+        .market-report .report-line {
+            margin: 6px 0 10px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #666;
+        }
+        .market-report .report-section { margin-top: 8px; }
+        .market-report .report-title {
+            font-weight: 700;
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 4px;
+        }
+        .market-report .report-list {
+            margin: 0;
+            padding-left: 18px;
+            color: #444;
+            font-size: 14px;
+        }
+        .market-report .report-list li { margin: 2px 0; }
         .game-details summary {
             cursor: pointer;
             list-style: none;
@@ -940,6 +990,11 @@ def build_html(slate, team_results, league_tbl, outfile):
     w('<div class="nav"><a class="active" href="./index.html">Moneylines</a><a href="./players.html">Player Props</a></div>')
     w('</div>')
     w(f"<div class=\"muted page-subtitle\">{today_display}</div>")
+    w("<details class='market-report' id='marketReport' open hidden>")
+    w("<summary>Yesterday Market Report</summary>")
+    w("<div class='report-line' id='marketReportSummary'></div>")
+    w("<div class='report-body' id='marketReportBody'></div>")
+    w("</details>")
 
     # ---------- Per-game cards ----------
     for _, g in slate.iterrows():
@@ -1259,6 +1314,53 @@ def build_html(slate, team_results, league_tbl, outfile):
         block("Best Favorites", lv.sort_values("fav_pct",ascending=False).head(10), "fav_pct")
         block("Best Underdogs", lv.sort_values("dog_pct",ascending=False).head(10), "dog_pct")
         w("</div>")
+
+    w(
+        "<script>"
+        "(function(){"
+        "const panel=document.getElementById('marketReport');"
+        "const summaryEl=document.getElementById('marketReportSummary');"
+        "const bodyEl=document.getElementById('marketReportBody');"
+        "if(!panel||!summaryEl||!bodyEl) return;"
+        "fetch('./data/moneyline_postmortem.json?ts=' + Date.now(), { cache: 'no-store' })"
+        ".then(res=>{ if(!res.ok) throw new Error('missing'); return res.json(); })"
+        ".then(data=>{"
+        "const summary=data && data.summary;"
+        "if(!summary || !summary.games_total){ panel.hidden=true; return; }"
+        "panel.hidden=false;"
+        "const games=summary.games_total||0;"
+        "const favW=summary.favorites_won||0;"
+        "const upsets=summary.upsets||0;"
+        "const coin=summary.coinflips_total||0;"
+        "summaryEl.textContent=`Games: ${games} · Favorites: ${favW}–${upsets} · Upsets: ${upsets} · Coinflips: ${coin}`;"
+        "const sections=[];"
+        "function fmtMl(v){"
+        "if(v===null||v===undefined||Number.isNaN(v)) return '';"
+        "const n=Math.round(v);"
+        "return n>0?`+${n}`:`${n}`;"
+        "}"
+        "function fmtItem(it){"
+        "const winner=it.winner_team||'Winner';"
+        "const favorite=it.favorite_team||'Favorite';"
+        "const winnerMl=fmtMl(it.winner_ml);"
+        "const favoriteMl=fmtMl(it.favorite_ml);"
+        "const score=it.final_score||'';"
+        "return `${winner} (ML ${winnerMl}) beat ${favorite} (ML ${favoriteMl}) — ${score}`.trim();"
+        "}"
+        "function listSection(title, items){"
+        "if(!items||!items.length) return;"
+        "const li=items.map(i=>`<li>${fmtItem(i)}</li>`).join('');"
+        "sections.push(`<div class=\\\"report-section\\\"><div class=\\\"report-title\\\">${title}</div><ul class=\\\"report-list\\\">${li}</ul></div>`);"
+        "}"
+        "listSection('Biggest Upsets', data.biggest_upsets);"
+        "listSection('Coinflips', data.coinflips);"
+        "listSection('Big Favorites That Lost', data.big_fav_failures);"
+        "bodyEl.innerHTML=sections.join('');"
+        "})"
+        ".catch(()=>{ panel.hidden=true; });"
+        "})();"
+        "</script>"
+    )
 
     dashboard_file = os.path.basename(outfile)
     w(

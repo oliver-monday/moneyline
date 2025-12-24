@@ -65,6 +65,10 @@ jobs:
           print("Header OK")
           PY
 
+      - name: Build moneyline postmortem
+        run: |
+          python build_moneyline_postmortem.py
+
       # --- Player props ingest (yesterday finals) ---
       - name: Run player props ingest (yesterday)
         run: |
@@ -112,6 +116,7 @@ jobs:
             "data/team_opp_allowed.json"
             "data/opp_big.json"
             "data/injuries_today.json"
+            "data/moneyline_postmortem.json"
             "data/targets_postmortem.json"
             "logs/injury_log.csv"
           )
@@ -205,6 +210,7 @@ jobs:
           cp player_snapshot.csv ./site/data/player_snapshot.csv
           cp player_game_log.csv ./site/data/player_game_log.csv
           cp data/injuries_today.json ./site/data/injuries_today.json
+          cp data/moneyline_postmortem.json ./site/data/moneyline_postmortem.json
           cp data/targets_postmortem.json ./site/data/targets_postmortem.json
           cp data/team_opp_allowed.json ./site/data/team_opp_allowed.json
           cp data/opp_big.json ./site/data/opp_big.json
