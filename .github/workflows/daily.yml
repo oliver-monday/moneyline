@@ -119,7 +119,7 @@ jobs:
           CHANGED=0
           for f in "${FILES[@]}"; do
             if [ -f "$f" ]; then
-              if ! git diff --quiet -- "$f"; then
+              if [ -n "$(git status --porcelain -- "$f")" ]; then
                 git add "$f"
                 CHANGED=1
               fi
@@ -128,7 +128,7 @@ jobs:
 
           for f in logs/targets_snapshot_*.json; do
             if [ -f "$f" ]; then
-              if ! git diff --quiet -- "$f"; then
+              if [ -n "$(git status --porcelain -- "$f")" ]; then
                 git add "$f"
                 CHANGED=1
               fi
