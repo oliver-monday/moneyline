@@ -864,7 +864,7 @@ def build_html(slate, team_results, league_tbl, outfile):
         .market-report .report-title {
             font-size: 18px;
             font-weight: 700;
-            color: #111;
+            color: #d97706;
         }
         .market-report .report-preview {
             font-weight: 600;
@@ -1347,16 +1347,22 @@ def build_html(slate, team_results, league_tbl, outfile):
         "return n>0?`+${n}`:`${n}`;"
         "}"
         "function fmtItem(it){"
-        "const winner=it.winner_team||'Winner';"
-        "const loser=it.loser_team||'Loser';"
-        "const winnerMl=fmtMl(it.winner_ml);"
-        "const loserMl=fmtMl(it.loser_ml);"
-        "const winAbbr=it.winner_abbrev||'';"
-        "const loseAbbr=it.loser_abbrev||'';"
-        "const winScore=it.winner_score!==undefined?it.winner_score:'';"
-        "const loseScore=it.loser_score!==undefined?it.loser_score:'';"
-        "const score=`${winAbbr} ${winScore} - ${loseAbbr} ${loseScore}`.trim();"
-        "return `${winner} (ML ${winnerMl}) beat ${loser} (ML ${loserMl}) — ${score}`.trim();"
+        "const homeAbbr=it.home_abbrev||'';"
+        "const awayAbbr=it.away_abbrev||'';"
+        "const homeScore=it.home_score!==undefined?it.home_score:'';"
+        "const awayScore=it.away_score!==undefined?it.away_score:'';"
+        "function implied(ml){"
+        "if(ml===null||ml===undefined||Number.isNaN(ml)) return null;"
+        "const n=Number(ml);"
+        "if(!Number.isFinite(n)||n===0) return null;"
+        "const p=n<0?(-n)/((-n)+100):100/(n+100);"
+        "return Math.round(p*100);"
+        "}"
+        "const homePct=implied(it.home_ml);"
+        "const awayPct=implied(it.away_ml);"
+        "const hp=homePct===null?'—':`${homePct}%`;"
+        "const ap=awayPct===null?'—':`${awayPct}%`;"
+        "return `${homeAbbr} ${homeScore} (${hp}) — ${awayAbbr} ${awayScore} (${ap})`.trim();"
         "}"
         "function listSection(title, items){"
         "const hasItems=items&&items.length;"
