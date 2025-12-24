@@ -42,7 +42,9 @@ jobs:
           pip install pandas numpy requests beautifulsoup4 lxml
 
       - name: Refresh Rotowire injuries
-        run: python rotowire_injuries_only.py
+        run: |
+          SLATE_DATE="$(TZ=America/Los_Angeles date +%Y-%m-%d)"
+          python rotowire_injuries_only.py --date "$SLATE_DATE"
 
       - name: Commit injuries artifacts
         run: |

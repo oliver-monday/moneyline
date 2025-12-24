@@ -6,6 +6,7 @@ Best-effort only: if scrape fails or yields empty, do not overwrite existing JSO
 
 from __future__ import annotations
 
+import argparse
 import datetime as dt
 import json
 import os
@@ -15,6 +16,7 @@ from typing import Dict, List
 
 import pandas as pd
 import requests
+from zoneinfo import ZoneInfo
 
 ROTOWIRE_URL = "https://www.rotowire.com/basketball/nba-lineups.php"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -138,10 +140,6 @@ def append_injury_log(injuries_today: Dict[str, List[Dict[str, str]]], asof_date
 
 
 def write_injuries_json(injuries_today: Dict[str, List[Dict[str, str]]]) -> bool:
-    if not injuries_today:
-        print("[injuries] Empty injuries set; not overwriting injuries_today.json.")
-        return False
-
     data_dir = Path("data")
     data_dir.mkdir(parents=True, exist_ok=True)
     out_path = data_dir / "injuries_today.json"
@@ -153,21 +151,67 @@ def write_injuries_json(injuries_today: Dict[str, List[Dict[str, str]]]) -> bool
     return True
 
 
+def injuries_count(injuries_today: Dict[str, List[Dict[str, str]]]) -> int:
+    total = 0
+    for items in injuries_today.values():
+        if isinstance(items, list):
+            total += len(items)
+    return total
+
+
+def load_existing(out_path: Path):
+    if not out_path.exists():
+        return None
+    try:
+        with open(out_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return None
+
+
 def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--date", default=None, help="Slate date YYYY-MM-DD (PT). Default: today PT")
+    args = ap.parse_args()
+
+    if args.date:
+        asof_date = args.date
+    else:
+        asof_date = dt.datetime.now(ZoneInfo("America/Los_Angeles")).date().strftime("%Y-%m-%d")
+
     html = fetch_rotowire_html()
     if not html:
         return 0
 
     injuries_today = parse_rotowire_injuries(html)
-    if not injuries_today:
-        print("[injuries] Parsed 0 injuries; not overwriting injuries_today.json.")
-        return 0
+    entry_count = injuries_count(injuries_today)
 
-    wrote = write_injuries_json(injuries_today)
-    if wrote:
-        asof_date = dt.date.today().strftime("%Y-%m-%d")
-        append_injury_log(injuries_today, asof_date)
-        print(f"[injuries] wrote injuries_today.json teams={len(injuries_today)}")
+    built_at_utc = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+    payload = {
+        "asof_date": asof_date,
+        "built_at_utc": built_at_utc,
+        "source": "rotowire",
+        **injuries_today,
+    }
+
+    data_dir = Path("data")
+    data_dir.mkdir(parents=True, exist_ok=True)
+    out_path = data_dir / "injuries_today.json"
+    existing = load_existing(out_path)
+    existing_asof = existing.get("asof_date") if isinstance(existing, dict) else None
+    existing_count = injuries_count(existing) if isinstance(existing, dict) else 0
+
+    guard = False
+    if entry_count == 0 and existing_count > 0 and existing_asof == asof_date:
+        guard = True
+        print(f"[injuries] Guard: computed empty injuries; keeping existing injuries_today.json for asof_date={asof_date}")
+    else:
+        write_injuries_json(payload)
+        if entry_count:
+            append_injury_log(injuries_today, asof_date)
+        print(f"[injuries] wrote injuries_today.json teams={len(injuries_today)} entries={entry_count}")
+
+    print(f"[injuries] asof_date={asof_date} entries={entry_count} guard={guard}")
     return 0
 
 
