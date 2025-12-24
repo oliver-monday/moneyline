@@ -283,6 +283,12 @@
     }
     .injury-right { flex: 0 0 auto; display: flex; align-items: center; gap: 8px; }
     .injury-details { font-size: 12px; color: #888; }
+    .no-games-today {
+      font-size: 18px;
+      font-weight: 700;
+      color: #666;
+      margin: 10px 0 16px;
+    }
     .pill-warn {
       background: #fff4e5 !important;
       border-color: #f3b16a !important;
@@ -784,6 +790,8 @@
       <div id="suggestedTargetsContent"></div>
     </div>
   </details>
+
+  <div id="noGamesTodayBanner" class="no-games-today" hidden>No Games Today</div>
 
   <div id="cards"></div>
 
@@ -1331,10 +1339,9 @@ async function load() {
   const masterText = await fetchText(masterUrl);
   const games = csvToRows(masterText);
 
-  const slateDates = games.map(g => (g.game_date || "").trim()).filter(Boolean);
-  const slateDate = slateDates.includes(todayLocal)
-    ? todayLocal
-    : (slateDates.sort().slice(-1)[0] || todayLocal);
+  const hasGamesToday = games.some(g => (g.game_date || "").trim() === todayLocal);
+  const NO_GAMES_TODAY = !hasGamesToday;
+  const slateDate = todayLocal;
   todayISO = slateDate;
   const todayDisplay = formatMMDDYYYY(slateDate);
 
@@ -1435,6 +1442,7 @@ async function load() {
   const suggestedAllToggle = document.getElementById("suggestedAllToggle");
   const injuryPanel = document.getElementById("injuryPanel");
   const injuryContent = document.getElementById("injuryContent");
+  const noGamesTodayBanner = document.getElementById("noGamesTodayBanner");
   const filtersPanel = document.getElementById("filtersPanel");
   if (filtersPanel) {
     filtersPanel.removeAttribute("open");
@@ -1703,6 +1711,20 @@ async function load() {
     const needle = q.value.trim().toLowerCase();
     const minMin = parseFloat(minFilter.value || "0");
     const minKey = `min_avg_${win}`;
+    const noGamesMode = NO_GAMES_TODAY && scope.value === "today";
+
+    if (noGamesTodayBanner) noGamesTodayBanner.hidden = !noGamesMode;
+    if (suggestedPanel) suggestedPanel.hidden = noGamesMode ? true : false;
+    if (injuryContent && noGamesMode) {
+      injuryContent.innerHTML = `<div class="muted">No games today.</div>`;
+    }
+    if (noGamesMode) {
+      cards.innerHTML = "";
+      if (suggestedTargetsContent) suggestedTargetsContent.innerHTML = "";
+      return;
+    } else if (injuryContent) {
+      renderInjuryReport();
+    }
 
     if (sortWrap) {
       sortWrap.style.display = groupedMode ? "none" : "";
