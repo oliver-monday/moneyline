@@ -1437,11 +1437,7 @@ async function load() {
   const injuryContent = document.getElementById("injuryContent");
   const filtersPanel = document.getElementById("filtersPanel");
   if (filtersPanel) {
-    if (window.matchMedia("(max-width: 520px)").matches) {
-      filtersPanel.removeAttribute("open");
-    } else {
-      filtersPanel.setAttribute("open", "");
-    }
+    filtersPanel.removeAttribute("open");
   }
   const cards = document.getElementById("cards");
 
