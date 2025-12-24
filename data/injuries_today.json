@@ -369,6 +369,11 @@
       "details": "B. Clarke (Out)"
     },
     {
+      "name": "C. Coward",
+      "status": "OUT",
+      "details": "C. Coward (Out)"
+    },
+    {
       "name": "Zach Edey",
       "status": "OUT",
       "details": "Zach Edey (Out)"
@@ -423,9 +428,19 @@
   ],
   "ORL": [
     {
+      "name": "G. Bitadze",
+      "status": "OUT",
+      "details": "G. Bitadze (Out)"
+    },
+    {
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
+    },
+    {
+      "name": "T. da Silva",
+      "status": "OUT",
+      "details": "T. da Silva (Out)"
     },
     {
       "name": "J. Suggs",
@@ -481,6 +496,11 @@
     }
   ],
   "SAC": [
+    {
+      "name": "D. Carter",
+      "status": "OUT",
+      "details": "D. Carter (Out)"
+    },
     {
       "name": "D. Eubanks",
       "status": "OUT",
