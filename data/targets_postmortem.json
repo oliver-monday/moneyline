@@ -1,0 +1,12 @@
+{
+  "asof_date": "2025-12-22",
+  "summary": {
+    "targets_total": 0,
+    "hits": 0,
+    "misses": 0,
+    "hit_rate_pct": 0
+  },
+  "hits": [],
+  "closest_misses": [],
+  "reaches_hit": []
+}
