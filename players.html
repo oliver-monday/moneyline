@@ -142,6 +142,7 @@
     .postmortem-list { margin: 6px 0 0; padding-left: 18px; }
     .postmortem-list li { margin: 2px 0; }
     details.suggested-targets { margin: 10px 0 12px; border: 1px solid #eee; border-radius: 12px; background:#fff; }
+    details.injury-panel { margin: 10px 0 12px; border: 1px solid #eee; border-radius: 12px; background:#fff; }
     details.suggested-targets summary {
       font-weight: 700;
       font-size: 18px;
@@ -157,7 +158,23 @@
       position: relative;
       padding-right: var(--summaryPadRight);
     }
-    details.suggested-targets summary::-webkit-details-marker { display:none; }
+    details.injury-panel summary {
+      font-weight: 700;
+      font-size: 18px;
+      color: #666;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: var(--navRowH);
+      padding: var(--summaryPadY) var(--summaryPadX);
+      border-bottom:1px solid #f2f2f2;
+      position: relative;
+      padding-right: var(--summaryPadRight);
+    }
+    details.suggested-targets summary::-webkit-details-marker,
+    details.injury-panel summary::-webkit-details-marker { display:none; }
     .suggested-targets summary strong { color: #d97706; }
     .suggested-body { padding: 10px 14px 12px; }
     .suggested-targets .stable-row { margin: 6px 0 10px; }
@@ -212,6 +229,70 @@
       transform: rotate(90deg);
     }
     .suggested-game-body { padding-left: 10px; }
+    .injury-body { padding: 10px 14px 12px; }
+    .injury-game {
+      border-top: 1px solid #eee;
+      padding-top: 8px;
+      margin-top: 8px;
+    }
+    .injury-game:first-child {
+      border-top: 0;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .injury-game summary {
+      cursor: pointer;
+      user-select: none;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 800;
+      color: #666;
+      padding: 6px 0;
+    }
+    .injury-game summary::-webkit-details-marker { display: none; }
+    .injury-game summary::after {
+      content: "›";
+      font-size: 28px;
+      color: #bbb;
+      transform: rotate(0deg);
+      transition: transform 0.15s ease;
+      line-height: 1;
+    }
+    .injury-game.is-open summary::after {
+      transform: rotate(90deg);
+    }
+    .injury-game-body { padding-left: 10px; }
+    .injury-team-label { font-weight: 700; color: #777; font-size: 13px; margin: 8px 0 4px; }
+    .injury-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 4px 0;
+      align-items: center;
+    }
+    .injury-name {
+      flex: 1 1 auto;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-weight: 600;
+      color: #111;
+    }
+    .injury-right { flex: 0 0 auto; display: flex; align-items: center; gap: 8px; }
+    .injury-details { font-size: 12px; color: #888; }
+    .pill-warn {
+      background: #fff4e5 !important;
+      border-color: #f3b16a !important;
+      color: #9a5b14;
+    }
+    .pill-outline {
+      background: transparent !important;
+      border-color: #bbb !important;
+      color: #777;
+    }
     .stable-row{
       display:flex;
       margin-top: 8px;
@@ -316,9 +397,11 @@
       gap:4px;
     }
     .game-group > summary::-webkit-details-marker,
-    .suggested-targets > summary::-webkit-details-marker { display:none; }
+    .suggested-targets > summary::-webkit-details-marker,
+    .injury-panel > summary::-webkit-details-marker { display:none; }
     .game-group > summary::after,
-    .suggested-targets > summary::after {
+    .suggested-targets > summary::after,
+    .injury-panel > summary::after {
       content: "›";
       position: absolute;
       right: var(--chevRight);
@@ -331,7 +414,8 @@
       transition: transform 0.15s ease;
     }
     .game-group.is-open > summary::after,
-    .suggested-targets.is-open > summary::after {
+    .suggested-targets.is-open > summary::after,
+    .injury-panel.is-open > summary::after {
       transform: translateY(-50%) rotate(90deg);
     }
     .game-title { font-size: 20px; font-weight: 700; }
@@ -678,6 +762,11 @@
         </span>
       </label>
     </div>
+  </details>
+
+  <details class="injury-panel" id="injuryPanel">
+    <summary>Injury Report</summary>
+    <div class="injury-body" id="injuryContent"></div>
   </details>
 
   <details class="suggested-targets" id="suggestedPanel">
@@ -1343,6 +1432,8 @@ async function load() {
   const suggestedPanel = document.getElementById("suggestedPanel");
   const suggestedTargetsContent = document.getElementById("suggestedTargetsContent");
   const suggestedAllToggle = document.getElementById("suggestedAllToggle");
+  const injuryPanel = document.getElementById("injuryPanel");
+  const injuryContent = document.getElementById("injuryContent");
   const filtersPanel = document.getElementById("filtersPanel");
   if (filtersPanel) {
     if (window.matchMedia("(max-width: 520px)").matches) {
@@ -1369,7 +1460,9 @@ async function load() {
       d.classList.contains("card") ||
       d.classList.contains("game-group") ||
       d.classList.contains("suggested-targets") ||
-      d.classList.contains("suggested-game-group")
+      d.classList.contains("suggested-game-group") ||
+      d.classList.contains("injury-panel") ||
+      d.classList.contains("injury-game")
     )) {
       syncDetailsOpenClass(d);
     }
@@ -1433,6 +1526,75 @@ async function load() {
     suggestedTargetsContent.innerHTML = chunks.join("") || "<div class=\"muted\">—</div>";
     suggestedTargetsContent.querySelectorAll("details.suggested-game-group").forEach(syncDetailsOpenClass);
     return;
+  }
+
+  function injuryStatusClass(status) {
+    const s = String(status || "").toUpperCase();
+    if (s === "OUT" || s === "DOUBTFUL" || s === "OFS") return "pill danger";
+    if (s.startsWith("Q")) return "pill pill-warn";
+    if (s.startsWith("PROB")) return "pill pill-outline";
+    return "pill pill-outline";
+  }
+
+  function renderInjuryReport() {
+    if (!injuryPanel || !injuryContent) return;
+    if (!gamesTodayOrdered || !gamesTodayOrdered.length) {
+      injuryPanel.hidden = true;
+      return;
+    }
+
+    const chunks = [];
+    for (const info of gamesTodayOrdered) {
+      const away = String(info.awayAbbrev || "").toUpperCase();
+      const home = String(info.homeAbbrev || "").toUpperCase();
+      const injAway = (injuriesByTeam && injuriesByTeam[away]) || [];
+      const injHome = (injuriesByTeam && injuriesByTeam[home]) || [];
+      if (!injAway.length && !injHome.length) continue;
+
+      const buildRows = (list) => list.map(item => {
+        const name = String(item.name || "");
+        const status = String(item.status || "");
+        const details = String(item.details || "").trim();
+        const detailsText = details ? `<span class="injury-details">${details}</span>` : "";
+        return `
+          <div class="injury-row">
+            <div class="injury-name">${name}</div>
+            <div class="injury-right">
+              <span class="${injuryStatusClass(status)}">${status}</span>
+              ${detailsText}
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      const awayBlock = injAway.length
+        ? `<div class="injury-team-label">${away}</div>${buildRows(injAway)}`
+        : "";
+      const homeBlock = injHome.length
+        ? `<div class="injury-team-label">${home}</div>${buildRows(injHome)}`
+        : "";
+
+      const header = `${info.awayName || info.awayAbbrev} @ ${info.homeName || info.homeAbbrev}`;
+      chunks.push(`
+        <details class="injury-game is-open" open>
+          <summary>${header}</summary>
+          <div class="injury-game-body">
+            ${awayBlock}
+            ${homeBlock}
+          </div>
+        </details>
+      `);
+    }
+
+    if (!chunks.length) {
+      injuryPanel.hidden = false;
+      injuryContent.innerHTML = `<div class="muted">No injuries reported.</div>`;
+    } else {
+      injuryPanel.hidden = false;
+      injuryContent.innerHTML = chunks.join("");
+      injuryContent.querySelectorAll("details.injury-game").forEach(syncDetailsOpenClass);
+    }
+    syncDetailsOpenClass(injuryPanel);
   }
 
   function scrollToPlayer(item) {
@@ -1975,6 +2137,8 @@ async function load() {
   fetchJson("./data/targets_postmortem.json")
     .then(renderPostmortem)
     .catch(() => {});
+
+  renderInjuryReport();
 
   Promise.allSettled([
     fetchJson("./data/opp_big.json").then(d => { OPP_BIG = d || {}; }),
