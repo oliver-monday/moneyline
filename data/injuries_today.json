@@ -111,6 +111,11 @@
       "name": "D. Murray",
       "status": "OUT",
       "details": "D. Murray (Out)"
+    },
+    {
+      "name": "J. Poole",
+      "status": "OUT",
+      "details": "J. Poole (Out)"
     }
   ],
   "CLE": [
@@ -237,9 +242,29 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "M. Christie",
+      "status": "OUT",
+      "details": "M. Christie (Out)"
+    },
+    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "D. Powell",
+      "status": "OUT",
+      "details": "D. Powell (Out)"
+    },
+    {
+      "name": "K. Thompson",
+      "status": "OUT",
+      "details": "K. Thompson (Out)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     }
   ],
   "NYK": [
