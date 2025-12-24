@@ -842,8 +842,9 @@ def build_html(slate, team_results, league_tbl, outfile):
             list-style: none;
             position: relative;
             padding-right: 30px;
-            font-size: 18px;
-            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
         }
         .market-report summary::-webkit-details-marker { display: none; }
         .market-report summary::after {
@@ -860,14 +861,18 @@ def build_html(slate, team_results, league_tbl, outfile):
         .market-report[open] summary::after {
             transform: translateY(-50%) rotate(90deg);
         }
-        .market-report .report-line {
-            margin: 6px 0 10px;
+        .market-report .report-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #111;
+        }
+        .market-report .report-preview {
             font-weight: 600;
             font-size: 14px;
             color: #666;
         }
         .market-report .report-section { margin-top: 8px; }
-        .market-report .report-title {
+        .market-report .report-section-title {
             font-weight: 700;
             font-size: 14px;
             color: #555;
@@ -880,6 +885,7 @@ def build_html(slate, team_results, league_tbl, outfile):
             font-size: 14px;
         }
         .market-report .report-list li { margin: 2px 0; }
+        .market-report .report-none { color: #888; font-size: 14px; }
         .game-details summary {
             cursor: pointer;
             list-style: none;
@@ -990,9 +996,11 @@ def build_html(slate, team_results, league_tbl, outfile):
     w('<div class="nav"><a class="active" href="./index.html">Moneylines</a><a href="./players.html">Player Props</a></div>')
     w('</div>')
     w(f"<div class=\"muted page-subtitle\">{today_display}</div>")
-    w("<details class='market-report' id='marketReport' open hidden>")
-    w("<summary>Yesterday Market Report</summary>")
-    w("<div class='report-line' id='marketReportSummary'></div>")
+    w("<details class='market-report' id='marketReport' hidden>")
+    w("<summary>")
+    w("<div class='report-title'>Yesterday’s Market Recap</div>")
+    w("<div class='report-preview' id='marketReportSummary'></div>")
+    w("</summary>")
     w("<div class='report-body' id='marketReportBody'></div>")
     w("</details>")
 
@@ -1330,9 +1338,8 @@ def build_html(slate, team_results, league_tbl, outfile):
         "panel.hidden=false;"
         "const games=summary.games_total||0;"
         "const favW=summary.favorites_won||0;"
-        "const upsets=summary.upsets||0;"
-        "const coin=summary.coinflips_total||0;"
-        "summaryEl.textContent=`Games: ${games} · Favorites: ${favW}–${upsets} · Upsets: ${upsets} · Coinflips: ${coin}`;"
+        "const favL=summary.favorites_lost||0;"
+        "summaryEl.textContent=`Games: ${games} • Favorites: ${favW}–${favL}`;"
         "const sections=[];"
         "function fmtMl(v){"
         "if(v===null||v===undefined||Number.isNaN(v)) return '';"
@@ -1341,20 +1348,24 @@ def build_html(slate, team_results, league_tbl, outfile):
         "}"
         "function fmtItem(it){"
         "const winner=it.winner_team||'Winner';"
-        "const favorite=it.favorite_team||'Favorite';"
+        "const loser=it.loser_team||'Loser';"
         "const winnerMl=fmtMl(it.winner_ml);"
-        "const favoriteMl=fmtMl(it.favorite_ml);"
-        "const score=it.final_score||'';"
-        "return `${winner} (ML ${winnerMl}) beat ${favorite} (ML ${favoriteMl}) — ${score}`.trim();"
+        "const loserMl=fmtMl(it.loser_ml);"
+        "const winAbbr=it.winner_abbrev||'';"
+        "const loseAbbr=it.loser_abbrev||'';"
+        "const winScore=it.winner_score!==undefined?it.winner_score:'';"
+        "const loseScore=it.loser_score!==undefined?it.loser_score:'';"
+        "const score=`${winAbbr} ${winScore} - ${loseAbbr} ${loseScore}`.trim();"
+        "return `${winner} (ML ${winnerMl}) beat ${loser} (ML ${loserMl}) — ${score}`.trim();"
         "}"
         "function listSection(title, items){"
-        "if(!items||!items.length) return;"
-        "const li=items.map(i=>`<li>${fmtItem(i)}</li>`).join('');"
-        "sections.push(`<div class=\\\"report-section\\\"><div class=\\\"report-title\\\">${title}</div><ul class=\\\"report-list\\\">${li}</ul></div>`);"
+        "const hasItems=items&&items.length;"
+        "const body=hasItems?`<ul class=\\\"report-list\\\">${items.map(i=>`<li>${fmtItem(i)}</li>`).join('')}</ul>`:`<div class=\\\"report-none\\\">None.</div>`;"
+        "sections.push(`<div class=\\\"report-section\\\"><div class=\\\"report-section-title\\\">${title}</div>${body}</div>`);"
         "}"
-        "listSection('Biggest Upsets', data.biggest_upsets);"
+        "listSection('Favorites', data.favorites);"
+        "listSection('Underdogs', data.underdogs);"
         "listSection('Coinflips', data.coinflips);"
-        "listSection('Big Favorites That Lost', data.big_fav_failures);"
         "bodyEl.innerHTML=sections.join('');"
         "})"
         ".catch(()=>{ panel.hidden=true; });"
