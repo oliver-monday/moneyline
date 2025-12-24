@@ -99,6 +99,18 @@ jobs:
             fi
           fi
 
+          PAGES_BASE="https://oliver-monday.github.io/moneyline"
+          if curl -fsSL "$PAGES_BASE/data/site_meta.json?ts=$(date +%s)" -o ./site/data/site_meta.json; then
+            echo "Fetched Pages site_meta.json"
+          else
+            echo "No existing site_meta.json on Pages (ok)."
+          fi
+          if curl -fsSL "$PAGES_BASE/data/targets_postmortem.json?ts=$(date +%s)" -o ./site/data/targets_postmortem.json; then
+            echo "Fetched Pages targets_postmortem.json"
+          else
+            echo "No existing targets_postmortem.json on Pages (ok)."
+          fi
+
           # Data files
           cp nba_master.csv ./site/nba_master.csv
 
