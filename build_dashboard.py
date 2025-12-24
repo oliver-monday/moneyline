@@ -878,13 +878,27 @@ def build_html(slate, team_results, league_tbl, outfile):
             color: #555;
             margin-bottom: 4px;
         }
-        .market-report .report-list {
-            margin: 0;
-            padding-left: 18px;
+        .market-recap-row {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            column-gap: 10px;
+            align-items: center;
+            margin: 6px 0;
             color: #444;
             font-size: 14px;
         }
-        .market-report .report-list li { margin: 2px 0; }
+        .market-recap-row .away { justify-self: end; }
+        .market-recap-row .home { justify-self: start; }
+        .market-recap-row .at { justify-self: center; color: #888; font-weight: 700; }
+        .market-recap-winner {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: #e9f7ea;
+            border: 1px solid #6bbf6b;
+            color: #1f5a1f;
+            font-weight: 700;
+        }
         .market-report .report-none { color: #888; font-size: 14px; }
         .game-details summary {
             cursor: pointer;
@@ -1362,15 +1376,28 @@ def build_html(slate, team_results, league_tbl, outfile):
         "const awayPct=implied(it.away_ml);"
         "const hp=homePct===null?'—':`${homePct}%`;"
         "const ap=awayPct===null?'—':`${awayPct}%`;"
-        "return `${homeAbbr} ${homeScore} (${hp}) — ${awayAbbr} ${awayScore} (${ap})`.trim();"
+        "const awayText=`${awayAbbr} ${awayScore} (${ap})`.trim();"
+        "const homeText=`${homeAbbr} ${homeScore} (${hp})`.trim();"
+        "let winnerSide=null;"
+        "if(awayScore!==''&&homeScore!==''&&Number.isFinite(Number(awayScore))&&Number.isFinite(Number(homeScore))){"
+        "if(Number(awayScore)>Number(homeScore)) winnerSide='AWAY';"
+        "else if(Number(homeScore)>Number(awayScore)) winnerSide='HOME';"
+        "}"
+        "const awayClass=winnerSide==='AWAY'?'market-recap-winner':'';"
+        "const homeClass=winnerSide==='HOME'?'market-recap-winner':'';"
+        "return `<div class=\\\"market-recap-row\\\">"
+        "<span class=\\\"team-chunk away ${awayClass}\\\">${awayText}</span>"
+        "<span class=\\\"at\\\">@</span>"
+        "<span class=\\\"team-chunk home ${homeClass}\\\">${homeText}</span>"
+        "</div>`;"
         "}"
         "function listSection(title, items){"
         "const hasItems=items&&items.length;"
-        "const body=hasItems?`<ul class=\\\"report-list\\\">${items.map(i=>`<li>${fmtItem(i)}</li>`).join('')}</ul>`:`<div class=\\\"report-none\\\">None.</div>`;"
+        "const body=hasItems?items.map(i=>fmtItem(i)).join(''):`<div class=\\\"report-none\\\">None.</div>`;"
         "sections.push(`<div class=\\\"report-section\\\"><div class=\\\"report-section-title\\\">${title}</div>${body}</div>`);"
         "}"
-        "listSection('Favorites', data.favorites);"
-        "listSection('Underdogs', data.underdogs);"
+        "listSection('Favorite Winners', data.favorites);"
+        "listSection('Underdog Winners', data.underdogs);"
         "listSection('Coinflips', data.coinflips);"
         "bodyEl.innerHTML=sections.join('');"
         "})"
