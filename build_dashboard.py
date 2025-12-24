@@ -1031,7 +1031,7 @@ def build_html(slate, team_results, league_tbl, outfile):
     today = slate["game_date"].iloc[0]
     today_display = pd.Timestamp(today).strftime("%m-%d-%Y")
     w('<div class="masthead">')
-    w('<div class="brand"><img class="brand-logo" src="./assets/NBAGPTlogo-header.png" width="80" height="80" decoding="async" fetchpriority="high" alt="NBA GPT logo"><div class="brand-text">NBA GPT</div></div>')
+    w('<div class="brand"><div class="brand-text">NBA</div><img class="brand-logo" src="./assets/NBAGPTlogo-header.png" width="80" height="80" decoding="async" fetchpriority="high" alt="NBA GPT logo"><div class="brand-text">GPT</div></div>')
     w('<div class="nav"><a class="active" href="./index.html">Moneylines</a><a href="./players.html">Player Props</a></div>')
     w('</div>')
     w(f"<div class=\"muted page-subtitle\">{today_display}</div>")
