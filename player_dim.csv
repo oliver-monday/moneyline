@@ -11,34 +11,34 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 6450,Kawhi Leonard,kawhi leonard,LAC,2025-12-21,2025-12-21,1
 6478,Nikola Vucevic,nikola vucevic,CHI,2025-12-24,2025-12-24,1
 6578,Harrison Barnes,harrison barnes,SA,2025-12-22,2025-12-22,1
-6583,Anthony Davis,anthony davis,DAL,2025-12-23,2025-12-23,1
+6583,Anthony Davis,anthony davis,DAL,2025-12-24,2025-12-24,1
 6589,Draymond Green,draymond green,GS,2025-12-23,2025-12-23,1
 2490149,CJ McCollum,cj mccollum,WSH,2025-12-24,2025-12-24,1
-2528210,Tim Hardaway Jr.,tim hardaway jr,DEN,2025-12-23,2025-12-23,1
+2528210,Tim Hardaway Jr.,tim hardaway jr,DEN,2025-12-24,2025-12-24,1
 2530530,T.J. McConnell,t j mcconnell,IND,2025-12-24,2025-12-24,1
 2595516,Norman Powell,norman powell,MIA,2025-12-24,2025-12-24,1
 2991070,Jerami Grant,jerami grant,POR,2025-12-23,2025-12-23,1
 2991235,Steven Adams,steven adams,HOU,2025-12-22,2025-12-22,1
-3032976,Rudy Gobert,rudy gobert,MIN,2025-12-22,2025-12-22,1
+3032976,Rudy Gobert,rudy gobert,MIN,2025-12-24,2025-12-24,1
 3032977,Giannis Antetokounmpo,giannis antetokounmpo,MIL,2025-12-04,2025-12-04,1
 3059318,Joel Embiid,joel embiid,PHI,2025-12-24,2025-12-24,1
 3059319,Andrew Wiggins,andrew wiggins,MIA,2025-12-24,2025-12-24,1
-3062679,Josh Hart,josh hart,NY,2025-12-21,2025-12-21,1
+3062679,Josh Hart,josh hart,NY,2025-12-24,2025-12-24,1
 3064290,Aaron Gordon,aaron gordon,DEN,2025-11-22,2025-11-22,1
 3064440,Zach LaVine,zach lavine,SAC,2025-12-15,2025-12-15,1
 3064482,Bobby Portis,bobby portis,MIL,2025-12-24,2025-12-24,1
-3064514,Julius Randle,julius randle,MIN,2025-12-22,2025-12-22,1
+3064514,Julius Randle,julius randle,MIN,2025-12-24,2025-12-24,1
 3078576,Derrick White,derrick white,BOS,2025-12-23,2025-12-23,1
 3102531,Kristaps Porzingis,kristaps porzingis,ATL,2025-12-21,2025-12-21,1
-3112335,Nikola Jokic,nikola jokic,DEN,2025-12-23,2025-12-23,1
+3112335,Nikola Jokic,nikola jokic,DEN,2025-12-24,2025-12-24,1
 3133628,Myles Turner,myles turner,MIL,2025-12-24,2025-12-24,1
 3134907,Kyle Kuzma,kyle kuzma,MIL,2025-12-24,2025-12-24,1
 3134908,Jakob Poeltl,jakob poeltl,TOR,2025-12-21,2025-12-21,1
 3135045,Grayson Allen,grayson allen,PHX,2025-12-15,2025-12-15,1
 3136193,Devin Booker,devin booker,PHX,2025-12-21,2025-12-21,1
-3136195,Karl-Anthony Towns,karl anthony towns,NY,2025-12-21,2025-12-21,1
-3138196,Cameron Johnson,cameron johnson,DEN,2025-12-23,2025-12-23,1
-3147657,Mikal Bridges,mikal bridges,NY,2025-12-21,2025-12-21,1
+3136195,Karl-Anthony Towns,karl anthony towns,NY,2025-12-24,2025-12-24,1
+3138196,Cameron Johnson,cameron johnson,DEN,2025-12-24,2025-12-24,1
+3147657,Mikal Bridges,mikal bridges,NY,2025-12-24,2025-12-24,1
 3149673,Pascal Siakam,pascal siakam,IND,2025-12-24,2025-12-24,1
 3155526,Dillon Brooks,dillon brooks,PHX,2025-12-21,2025-12-21,1
 3155942,Domantas Sabonis,domantas sabonis,SAC,2025-11-16,2025-11-16,1
@@ -46,9 +46,9 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 3913176,Brandon Ingram,brandon ingram,TOR,2025-12-24,2025-12-24,1
 3917376,Jaylen Brown,jaylen brown,BOS,2025-12-23,2025-12-23,1
 3934672,Jalen Brunson,jalen brunson,NY,2025-12-21,2025-12-21,1
-3934673,Donte DiVincenzo,donte divincenzo,MIN,2025-12-22,2025-12-22,1
+3934673,Donte DiVincenzo,donte divincenzo,MIN,2025-12-24,2025-12-24,1
 3934719,OG Anunoby,og anunoby,NY,2025-12-21,2025-12-21,1
-3936299,Jamal Murray,jamal murray,DEN,2025-12-23,2025-12-23,1
+3936299,Jamal Murray,jamal murray,DEN,2025-12-24,2025-12-24,1
 3945274,Luka Doncic,luka doncic,LAL,2025-12-21,2025-12-21,1
 4017837,Ivica Zubac,ivica zubac,LAC,2025-12-21,2025-12-21,1
 4066259,De'Aaron Fox,deaaron fox,SA,2025-12-22,2025-12-22,1
@@ -67,7 +67,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4278039,Nickeil Alexander-Walker,nickeil alexander walker,ATL,2025-12-24,2025-12-24,1
 4278067,Nic Claxton,nic claxton,BKN,2025-12-24,2025-12-24,1
 4278073,Shai Gilgeous-Alexander,shai gilgeous alexander,OKC,2025-12-23,2025-12-23,1
-4278078,P.J. Washington,p j washington,DAL,2025-12-23,2025-12-23,1
+4278078,P.J. Washington,p j washington,DAL,2025-12-24,2025-12-24,1
 4278104,Michael Porter Jr.,michael porter jr,BKN,2025-12-24,2025-12-24,1
 4278129,Deandre Ayton,deandre ayton,LAL,2025-12-15,2025-12-15,1
 4278355,Obi Toppin,obi toppin,IND,2025-10-30,2025-10-30,1
@@ -83,7 +83,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4395725,Tyler Herro,tyler herro,MIA,2025-12-24,2025-12-24,1
 4396907,Darius Garland,darius garland,CLE,2025-12-24,2025-12-24,1
 4396909,Aaron Nesmith,aaron nesmith,IND,2025-11-14,2025-11-14,1
-4396971,Naz Reid,naz reid,MIN,2025-12-22,2025-12-22,1
+4396971,Naz Reid,naz reid,MIN,2025-12-24,2025-12-24,1
 4397002,Ayo Dosunmu,ayo dosunmu,CHI,2025-12-24,2025-12-24,1
 4397136,Saddiq Bey,saddiq bey,NO,2025-12-24,2025-12-24,1
 4397140,Kevin Porter Jr.,kevin porter jr,MIL,2025-12-24,2025-12-24,1
@@ -115,7 +115,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4591725,Ryan Rollins,ryan rollins,MIL,2025-12-24,2025-12-24,1
 4593125,Santi Aldama,santi aldama,MEM,2025-12-23,2025-12-23,1
 4593803,Jalen Williams,jalen williams,OKC,2025-12-23,2025-12-23,1
-4594268,Anthony Edwards,anthony edwards,MIN,2025-12-22,2025-12-22,1
+4594268,Anthony Edwards,anthony edwards,MIN,2025-12-24,2025-12-24,1
 4594327,Keegan Murray,keegan murray,SAC,2025-12-22,2025-12-22,1
 4600663,Zach Edey,zach edey,MEM,2025-12-21,2025-12-21,1
 4683021,Deni Avdija,deni avdija,POR,2025-12-23,2025-12-23,1
@@ -138,7 +138,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4903027,Cedric Coward,cedric coward,MEM,2025-12-23,2025-12-23,1
 4914336,Shaedon Sharpe,shaedon sharpe,POR,2025-12-23,2025-12-23,1
 5037871,Dylan Harper,dylan harper,SA,2025-12-22,2025-12-22,1
-5041939,Cooper Flagg,cooper flagg,DAL,2025-12-23,2025-12-23,1
+5041939,Cooper Flagg,cooper flagg,DAL,2025-12-24,2025-12-24,1
 5061575,Kon Knueppel,kon knueppel,CHA,2025-12-24,2025-12-24,1
 5104157,Victor Wembanyama,victor wembanyama,SA,2025-12-22,2025-12-22,1
 5105565,Donovan Clingan,donovan clingan,POR,2025-12-23,2025-12-23,1
