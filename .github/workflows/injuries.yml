@@ -112,6 +112,10 @@ jobs:
           cp player_snapshot.csv ./site/data/player_snapshot.csv
           cp player_game_log.csv ./site/data/player_game_log.csv
           cp data/injuries_today.json ./site/data/injuries_today.json
+          # Postmortem (if present)
+          if [ -f data/targets_postmortem.json ]; then
+            cp data/targets_postmortem.json ./site/data/targets_postmortem.json
+          fi
           cp data/team_opp_allowed.json ./site/data/team_opp_allowed.json
           cp data/opp_big.json ./site/data/opp_big.json
 
