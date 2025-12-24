@@ -148,6 +148,7 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 5144091,Jeremiah Fears,jeremiah fears,NO,2025-12-24,2025-12-24,1
 5160992,Alex Sarr,alex sarr,WSH,2025-12-24,2025-12-24,1
 5174563,Kyshawn George,kyshawn george,WSH,2025-12-24,2025-12-24,1
+1966,LeBron James,lebron james,LAL,2025-12-24,2025-12-24,1
 2490149,CJ McCollum,cj mccollum,WSH,2025-12-24,2025-12-24,1
 2528210,Tim Hardaway Jr.,tim hardaway jr,DEN,2025-12-24,2025-12-24,1
 2530530,T.J. McConnell,t j mcconnell,IND,2025-12-24,2025-12-24,1
@@ -161,27 +162,37 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 3112335,Nikola Jokic,nikola jokic,DEN,2025-12-24,2025-12-24,1
 3133628,Myles Turner,myles turner,MIL,2025-12-24,2025-12-24,1
 3134907,Kyle Kuzma,kyle kuzma,MIL,2025-12-24,2025-12-24,1
+3136193,Devin Booker,devin booker,PHX,2025-12-24,2025-12-24,1
 3136195,Karl-Anthony Towns,karl anthony towns,NY,2025-12-24,2025-12-24,1
 3138196,Cameron Johnson,cameron johnson,DEN,2025-12-24,2025-12-24,1
 3147657,Mikal Bridges,mikal bridges,NY,2025-12-24,2025-12-24,1
 3149673,Pascal Siakam,pascal siakam,IND,2025-12-24,2025-12-24,1
+3155526,Dillon Brooks,dillon brooks,PHX,2025-12-24,2025-12-24,1
 3908809,Donovan Mitchell,donovan mitchell,CLE,2025-12-24,2025-12-24,1
 3913176,Brandon Ingram,brandon ingram,TOR,2025-12-24,2025-12-24,1
 3934673,Donte DiVincenzo,donte divincenzo,MIN,2025-12-24,2025-12-24,1
 3936299,Jamal Murray,jamal murray,DEN,2025-12-24,2025-12-24,1
+4066259,De'Aaron Fox,deaaron fox,SA,2025-12-24,2025-12-24,1
 4066261,Bam Adebayo,bam adebayo,MIA,2025-12-24,2025-12-24,1
 4066328,Jarrett Allen,jarrett allen,CLE,2025-12-24,2025-12-24,1
 4066383,Miles Bridges,miles bridges,CHA,2025-12-24,2025-12-24,1
+4066457,Austin Reaves,austin reaves,LAL,2025-12-24,2025-12-24,1
+4222252,Isaiah Hartenstein,isaiah hartenstein,OKC,2025-12-24,2025-12-24,1
 4251,Paul George,paul george,PHI,2025-12-24,2025-12-24,1
 4277811,Collin Sexton,collin sexton,CHA,2025-12-24,2025-12-24,1
 4277905,Trae Young,trae young,ATL,2025-12-24,2025-12-24,1
 4278039,Nickeil Alexander-Walker,nickeil alexander walker,ATL,2025-12-24,2025-12-24,1
 4278067,Nic Claxton,nic claxton,BKN,2025-12-24,2025-12-24,1
+4278073,Shai Gilgeous-Alexander,shai gilgeous alexander,OKC,2025-12-24,2025-12-24,1
 4278078,P.J. Washington,p j washington,DAL,2025-12-24,2025-12-24,1
 4278104,Michael Porter Jr.,michael porter jr,BKN,2025-12-24,2025-12-24,1
+4278129,Deandre Ayton,deandre ayton,LAL,2025-12-24,2025-12-24,1
+4278585,Collin Gillespie,collin gillespie,PHX,2025-12-24,2025-12-24,1
 4395628,Zion Williamson,zion williamson,NO,2025-12-24,2025-12-24,1
+4395630,Devin Vassell,devin vassell,SA,2025-12-24,2025-12-24,1
 4395651,Coby White,coby white,CHI,2025-12-24,2025-12-24,1
 4395712,Andrew Nembhard,andrew nembhard,IND,2025-12-24,2025-12-24,1
+4395723,Keldon Johnson,keldon johnson,SA,2025-12-24,2025-12-24,1
 4395724,Immanuel Quickley,immanuel quickley,TOR,2025-12-24,2025-12-24,1
 4395725,Tyler Herro,tyler herro,MIA,2025-12-24,2025-12-24,1
 4396907,Darius Garland,darius garland,CLE,2025-12-24,2025-12-24,1
@@ -194,20 +205,27 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 4432816,LaMelo Ball,lamelo ball,CHA,2025-12-24,2025-12-24,1
 4432848,Jaime Jaquez Jr.,jaime jaquez jr,MIA,2025-12-24,2025-12-24,1
 4433134,Scottie Barnes,scottie barnes,TOR,2025-12-24,2025-12-24,1
+4433255,Chet Holmgren,chet holmgren,OKC,2025-12-24,2025-12-24,1
 4433287,Brandon Miller,brandon miller,CHA,2025-12-24,2025-12-24,1
 4591725,Ryan Rollins,ryan rollins,MIL,2025-12-24,2025-12-24,1
+4593803,Jalen Williams,jalen williams,OKC,2025-12-24,2025-12-24,1
 4594268,Anthony Edwards,anthony edwards,MIN,2025-12-24,2025-12-24,1
 4683634,Bennedict Mathurin,bennedict mathurin,IND,2025-12-24,2025-12-24,1
 4701230,Jalen Johnson,jalen johnson,ATL,2025-12-24,2025-12-24,1
+4701232,Mark Williams,mark williams,PHX,2025-12-24,2025-12-24,1
 4711294,Matas Buzelis,matas buzelis,CHI,2025-12-24,2025-12-24,1
+4845367,Stephon Castle,stephon castle,SA,2025-12-24,2025-12-24,1
 4869342,Dyson Daniels,dyson daniels,ATL,2025-12-24,2025-12-24,1
 4869780,Derik Queen,derik queen,NO,2025-12-24,2025-12-24,1
 4871145,Josh Giddey,josh giddey,CHI,2025-12-24,2025-12-24,1
+5037871,Dylan Harper,dylan harper,SA,2025-12-24,2025-12-24,1
 5041939,Cooper Flagg,cooper flagg,DAL,2025-12-24,2025-12-24,1
 5061575,Kon Knueppel,kon knueppel,CHA,2025-12-24,2025-12-24,1
+5104157,Victor Wembanyama,victor wembanyama,SA,2025-12-24,2025-12-24,1
 5105623,Kel'el Ware,kelel ware,MIA,2025-12-24,2025-12-24,1
 5144091,Jeremiah Fears,jeremiah fears,NO,2025-12-24,2025-12-24,1
 5160992,Alex Sarr,alex sarr,WSH,2025-12-24,2025-12-24,1
 5174563,Kyshawn George,kyshawn george,WSH,2025-12-24,2025-12-24,1
 6478,Nikola Vucevic,nikola vucevic,CHI,2025-12-24,2025-12-24,1
+6578,Harrison Barnes,harrison barnes,SA,2025-12-24,2025-12-24,1
 6583,Anthony Davis,anthony davis,DAL,2025-12-24,2025-12-24,1
