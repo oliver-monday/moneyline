@@ -81,14 +81,23 @@ jobs:
           mkdir -p ./site/data
           mkdir -p ./site/assets
 
-          # Newest dashboard becomes index.html
-          NEWEST=$(ls dashboard_*.html 2>/dev/null | sort | tail -n 1)
-          if [ -z "$NEWEST" ]; then
-            echo "No dashboard_*.html files found"
-            exit 1
+          # Reuse currently deployed index.html (avoid full dashboard rebuild)
+          PAGES_INDEX_URL="https://oliver-monday.github.io/moneyline/index.html"
+          echo "Fetching current Pages index.html from $PAGES_INDEX_URL"
+
+          if curl -fsSL "${PAGES_INDEX_URL}?ts=$(date +%s)" -o ./site/index.html; then
+            echo "Fetched Pages index.html"
+          else
+            echo "Failed to fetch Pages index.html; attempting local dashboard_*.html fallback"
+            NEWEST=$(ls dashboard_*.html 2>/dev/null | sort | tail -n 1 || true)
+            if [ -n "$NEWEST" ]; then
+              echo "Using fallback dashboard: $NEWEST"
+              cp "$NEWEST" ./site/index.html
+            else
+              echo "No dashboard_*.html files found and Pages fetch failed"
+              exit 1
+            fi
           fi
-          echo "Using newest dashboard: $NEWEST"
-          cp "$NEWEST" ./site/index.html
 
           # Data files
           cp nba_master.csv ./site/nba_master.csv
