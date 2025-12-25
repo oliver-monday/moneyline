@@ -1786,7 +1786,7 @@ async function load() {
           const threshold = item.threshold || "—";
           const actual = item.actual ?? "—";
           const delta = getDelta(item);
-          const deltaText = isMisses && delta != null ? ` <span class="pm-delta">Δ${delta}</span>` : "";
+          const deltaText = "";
           const isHitsSection = !isMisses;
           const showReaches = isHitsSection;
           let reachPills = "";
