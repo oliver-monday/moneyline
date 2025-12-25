@@ -360,6 +360,8 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
         stat = m["stat"]
         threshold = m["threshold"]
         actual = m["actual"]
+        if actual is None:
+            continue
         if stat == "pts":
             ok = actual >= threshold - 3
         else:

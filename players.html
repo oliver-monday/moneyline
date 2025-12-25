@@ -2384,6 +2384,7 @@ async function load() {
 
       targetItems.sort((a, b) => {
         if (b.score !== a.score) return b.score - a.score;
+        if (b.rate !== a.rate) return b.rate - a.rate;
         if (b.gp !== a.gp) return b.gp - a.gp;
         if (b.matchupBonus !== a.matchupBonus) return b.matchupBonus - a.matchupBonus;
         if (b.diff !== a.diff) return b.diff - a.diff;
