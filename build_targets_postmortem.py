@@ -285,9 +285,29 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
             continue
         stat = entry.get("stat")
         threshold = int(entry.get("threshold", 0) or 0)
+        dnp_flag = str(row.get("dnp", "") or "").strip() in ("1", "true", "True", "YES", "yes")
+        try:
+            minutes_val = float(row.get("minutes", 0) or 0)
+        except Exception:
+            minutes_val = 0.0
+        out_like = dnp_flag or minutes_val == 0
         actual_val = resolve_stat_value(row, stat)
         actual = int(actual_val) if actual_val is not None else 0
         team_norm = str(row.get("team_abbrev", "")).upper().strip()
+        if out_like:
+            misses.append({
+                "player_id": entry.get("player_id"),
+                "player_name": entry.get("player_name", ""),
+                "team_abbrev": team_norm,
+                "opp": entry.get("opp", row.get("opp_abbrev", "")),
+                "stat": stat,
+                "threshold": threshold,
+                "actual": None,
+                "delta": None,
+                "out": True,
+                "status": "OUT",
+            })
+            continue
         total += 1
 
         if actual >= threshold:
@@ -331,7 +351,10 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
                 "actual": actual,
             })
 
-    misses_sorted = sorted(misses, key=lambda x: x["delta"])
+    misses_sorted = sorted(
+        misses,
+        key=lambda x: (x["delta"] is None, x["delta"] if x["delta"] is not None else 0),
+    )
     closest = []
     for m in misses_sorted:
         stat = m["stat"]

@@ -1860,6 +1860,12 @@ async function load() {
                   : `<span class="pm-pill-miss">MISSED</span>`;
               }
             }
+          } else if (isMisses) {
+            const statusFlag = String(item.status || "").toUpperCase();
+            const outFlag = item.out === true || item.dnp === true || statusFlag.includes("OUT");
+            if (outFlag) {
+              statusPill = `<span class="pm-pill-out">OUT</span>`;
+            }
           }
           return `<div class="pm-target-row">${stat} ${threshold}+ (${actual})${deltaText}${reachPills ? ` ${reachPills}` : ""}${statusPill ? ` ${statusPill}` : ""}</div>`;
         }).join("");
