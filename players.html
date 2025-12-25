@@ -134,9 +134,25 @@
       flex-direction: column;
       gap: 4px;
       align-items: flex-start;
+      position: relative;
+      padding-right: 26px;
     }
     .postmortem-title { color: #d97706; font-weight: 700; }
     details.postmortem-panel summary::-webkit-details-marker { display:none; }
+    details.postmortem-panel summary::after {
+      content: "›";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%) rotate(0deg);
+      font-size: 28px;
+      color: #bbb;
+      transition: transform 0.15s ease;
+      line-height: 1;
+    }
+    details.postmortem-panel[open] summary::after {
+      transform: translateY(-50%) rotate(90deg);
+    }
     .postmortem-preview { font-size: 14px; color:#777; font-weight: 600; }
     .postmortem-body { margin-top: 8px; font-size: 14px; color:#444; }
     .postmortem-section { margin-top: 8px; }
@@ -193,7 +209,7 @@
       white-space: nowrap;
     }
     details.suggested-targets { margin: 10px 0 12px; border: 2px solid #f97316; border-radius: 12px; background:#fff; }
-    details.injury-panel { margin: 10px 0 12px; border: 1px solid #eee; border-radius: 12px; background:#fff; }
+    details.injury-panel { margin: 10px 0 12px; border: 1px solid #c93c3c; border-radius: 12px; background:#fff; }
     details.suggested-targets summary {
       font-weight: 700;
       font-size: 18px;
@@ -202,7 +218,8 @@
       list-style: none;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
+      gap: 6px;
       min-height: var(--navRowH);
       padding: var(--summaryPadY) var(--summaryPadX);
       border-bottom:1px solid #f2f2f2;
