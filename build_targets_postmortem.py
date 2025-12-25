@@ -367,6 +367,23 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
     }
 
 
+def build_log_index(game_log_df: pd.DataFrame, target_date: str):
+    if game_log_df.empty:
+        return {}
+    df = game_log_df.copy()
+    df["game_date"] = df["game_date"].astype(str).str.strip()
+    day_logs = df[df["game_date"] == target_date].copy()
+    if day_logs.empty:
+        return {}
+    day_logs["player_name_norm"] = day_logs["player_name"].map(normalize_name)
+    day_logs["team_abbrev_norm"] = day_logs["team_abbrev"].astype(str).str.upper().str.strip()
+    day_logs = day_logs.sort_values("minutes", ascending=False)
+    day_logs = day_logs.drop_duplicates(subset=["player_name_norm", "team_abbrev_norm"], keep="first")
+    return {
+        (r["player_name_norm"], r["team_abbrev_norm"]): r for _, r in day_logs.iterrows()
+    }
+
+
 def main() -> int:
     master_path = "nba_master.csv"
     snapshot_path = "player_snapshot.csv"
@@ -476,9 +493,57 @@ def main() -> int:
     else:
         game_log_df = pd.DataFrame()
 
+    top_targets = []
+    summary_top_total = 0
+    summary_top_hits = 0
+    if snapshot_path and snapshot_path.exists():
+        try:
+            with open(snapshot_path, "r", encoding="utf-8") as f:
+                snap_items = json.load(f) or []
+        except Exception:
+            snap_items = []
+        candidates = []
+        for item in snap_items:
+            if not isinstance(item, dict):
+                continue
+            candidates.append(item)
+        def rank_key(item):
+            rate = item.get("hit_rate")
+            if rate is None:
+                hits = num(item.get("hits")) or 0
+                gp = num(item.get("window_games")) or 0
+                rate = hits / gp if gp else 0
+            gp = num(item.get("window_games")) or 0
+            return (-rate, -gp)
+        candidates = sorted(candidates, key=rank_key)
+        top_targets = candidates[:6]
+
+        log_index = build_log_index(game_log_df, results_date)
+        for item in top_targets:
+            name_norm = normalize_name(item.get("player_name", ""))
+            team_norm = str(item.get("team_abbrev", "")).upper().strip()
+            row = log_index.get((name_norm, team_norm))
+            stat = item.get("stat")
+            threshold = int(item.get("threshold", 0) or 0)
+            actual = None
+            hit = None
+            delta = None
+            if row is not None and stat:
+                actual = int(float(row.get(stat, 0) or 0))
+                hit = actual >= threshold
+                delta = threshold - actual
+            item["actual"] = actual
+            item["hit"] = bool(hit) if hit is not None else False
+            item["delta"] = delta
+        summary_top_total = len(top_targets)
+        summary_top_hits = sum(1 for t in top_targets if t.get("hit"))
+
     postmortem = compute_postmortem(snapshot_entries, game_log_df, results_date)
     postmortem["built_at_utc"] = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
     postmortem["snapshot_file"] = snapshot_path.name if snapshot_path else None
+    postmortem["top_targets"] = top_targets
+    postmortem["summary"]["top_targets_total"] = summary_top_total
+    postmortem["summary"]["top_targets_hits"] = summary_top_hits
     if note:
         postmortem["note"] = note
     data_dir = Path("data")

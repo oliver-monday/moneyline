@@ -879,17 +879,17 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
         }
         .market-report .report-section { margin-top: 8px; }
         .market-report .report-section-title {
-            font-weight: 700;
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 4px;
+            font-weight: 800;
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 6px;
         }
         .market-recap-row {
             display: grid;
             grid-template-columns: 1fr auto 1fr;
             column-gap: 10px;
             align-items: center;
-            margin: 6px 0;
+            margin: 8px 0;
             color: #444;
             font-size: 14px;
         }
@@ -905,14 +905,21 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
             color: #1f5a1f;
             font-weight: 700;
         }
+        .market-recap-block {
+            width: fit-content;
+            max-width: 100%;
+        }
+        @media (min-width: 900px) {
+            .market-recap-block { margin-left: 24px; }
+        }
         .market-report .report-none { color: #888; font-size: 14px; }
         .market-analysis {
             margin-top: 12px;
         }
         .market-analysis-title {
-            font-weight: 700;
-            color: #d97706;
-            font-size: 14px;
+            font-weight: 800;
+            color: #444;
+            font-size: 16px;
             margin-bottom: 6px;
         }
         .market-analysis-grid {
@@ -1111,7 +1118,7 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
     w(f"<div class=\"muted page-subtitle\">{today_display}</div>")
     w("<details class='market-report' id='marketReport' hidden>")
     w("<summary>")
-    w("<div class='report-title'>Yesterday’s Market Recap</div>")
+    w("<div class='report-title'>Yesterday Recap</div>")
     w("<div class='report-preview' id='marketReportSummary'></div>")
     w("</summary>")
     w("<div class='report-body' id='marketReportBody'></div>")
@@ -1511,12 +1518,12 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
         "function listSection(title, items){"
         "const hasItems=items&&items.length;"
         "const body=hasItems?items.map(i=>fmtItem(i)).join(''):`<div class=\\\"report-none\\\">None.</div>`;"
-        "sections.push(`<div class=\\\"report-section\\\"><div class=\\\"report-section-title\\\">${title}</div>${body}</div>`);"
+        "return `<div class=\\\"report-section\\\"><div class=\\\"report-section-title\\\">${title}</div>${body}</div>`;"
         "}"
-        "listSection('Favorite Winners', data.favorites);"
-        "listSection('Underdog Winners', data.underdogs);"
-        "listSection('Coinflips', data.coinflips);"
-        "bodyEl.innerHTML=sections.join('');"
+        "sections.push(listSection('Favorite Winners', data.favorites));"
+        "sections.push(listSection('Underdog Winners', data.underdogs));"
+        "sections.push(listSection('Coinflips', data.coinflips));"
+        "bodyEl.innerHTML=`<div class=\\\"market-recap-block\\\">${sections.join('')}</div>`;"
         "const recapGames=[...(data.favorites||[]),...(data.underdogs||[]),...(data.coinflips||[])];"
         "const tierBuckets={"
         "'80%+':{w:0,l:0},"

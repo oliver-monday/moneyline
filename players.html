@@ -131,18 +131,22 @@
       cursor: pointer;
       list-style: none;
       display: flex;
-      gap: 10px;
-      align-items: baseline;
+      flex-direction: column;
+      gap: 4px;
+      align-items: flex-start;
     }
     .postmortem-title { color: #d97706; font-weight: 700; }
     details.postmortem-panel summary::-webkit-details-marker { display:none; }
     .postmortem-preview { font-size: 14px; color:#777; font-weight: 600; }
     .postmortem-body { margin-top: 8px; font-size: 14px; color:#444; }
     .postmortem-section { margin-top: 8px; }
-    .postmortem-section-title { font-weight: 700; font-size: 14px; color:#666; }
+    .postmortem-section-title { font-weight: 800; font-size: 16px; color:#444; }
+    .postmortem-section-title.hits { color: #1f5f1f; }
+    .postmortem-section-title.misses { color: #7a2e2e; }
     .pm-group { margin-top: 6px; }
     .pm-player-row { font-weight: 700; color: #555; margin: 4px 0; }
     .pm-target-row { margin-left: 14px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+    .pm-delta { color: #7a2e2e; font-weight: 800; }
     .pm-reach-pill {
       background:#e8f7e8;
       border:1px solid #6ac46a;
@@ -658,7 +662,7 @@
 
   <details class="postmortem-panel" id="postmortemPanel" hidden>
     <summary>
-      <span class="postmortem-title">Yesterday Targets</span>
+      <span class="postmortem-title">Yesterday Recap</span>
       <span class="postmortem-preview" id="postmortemPreview"></span>
     </summary>
     <div class="postmortem-body" id="postmortemBody"></div>
@@ -1653,20 +1657,23 @@ async function load() {
     const total = data.summary.targets_total || 0;
     const hits = data.summary.hits || 0;
     const hitRate = data.summary.hit_rate_pct || 0;
+    const topTargetsTotal = data.summary.top_targets_total || 0;
+    const topTargetsHits = data.summary.top_targets_hits || 0;
     const missesCount = (data.closest_misses || []).length;
     const reachesCount = (data.reaches_hit || []).length;
     const note = String(data.note || "").trim();
     postmortemPanel.hidden = false;
     if (!total && !missesCount && !reachesCount && !(data.hits || []).length) {
       postmortemPreview.textContent = note
-        ? `Yesterday Targets · ${note}`
-        : "Yesterday Targets · No targets recorded";
+        ? `Yesterday Recap · ${note}`
+        : "Yesterday Recap · No targets recorded";
       postmortemBody.innerHTML = `<div class="muted" style="padding:6px 0;">${note || "No targets recorded for this date."}</div>`;
       return;
     }
 
-    postmortemPreview.textContent = `Hit rate: ${hits}/${total} (${hitRate}%) • Closest misses: ${missesCount} • Reaches hit: ${reachesCount}`;
+    postmortemPreview.textContent = `Top Targets: ${topTargetsHits}/${topTargetsTotal} • Hit rate: ${hits}/${total} (${hitRate}%) • Closest misses: ${missesCount} • Reaches hit: ${reachesCount}`;
 
+    const topTargets = data.top_targets || [];
     const hitsList = data.hits || [];
     const missesRaw = (data.misses || data.closest_misses || []);
     const reaches = data.reaches_hit || [];
@@ -1725,12 +1732,12 @@ async function load() {
         return a._delta - b._delta;
       });
 
-    function renderSection(title, items, isMisses) {
+    function renderSection(title, items, isMisses, titleClass) {
       const grouped = groupByPlayer(items);
       if (!grouped.length) {
         return `
           <div class="postmortem-section">
-            <div class="postmortem-section-title">${title}</div>
+            <div class="postmortem-section-title ${titleClass || ""}">${title}</div>
             <div class="muted">—</div>
           </div>
         `;
@@ -1742,8 +1749,9 @@ async function load() {
           const threshold = item.threshold || "—";
           const actual = item.actual ?? "—";
           const delta = getDelta(item);
-          const deltaText = isMisses && delta != null ? ` Δ${delta}` : "";
-          const reachPills = !isMisses
+          const deltaText = isMisses && delta != null ? ` <span class="pm-delta">Δ${delta}</span>` : "";
+          const showReaches = !isMisses && item.hit === true;
+          const reachPills = showReaches
             ? matchReachesForHit(item).map(r => {
                 const rStat = String(r.stat || "").toUpperCase();
                 return `<span class="pm-reach-pill">Reached: ${rStat} ${r.reached_threshold}+</span>`;
@@ -1755,15 +1763,16 @@ async function load() {
       }).join("");
       return `
         <div class="postmortem-section">
-          <div class="postmortem-section-title">${title}</div>
+          <div class="postmortem-section-title ${titleClass || ""}">${title}</div>
           ${rows}
         </div>
       `;
     }
 
     postmortemBody.innerHTML = `
-      ${renderSection("Hits", hitsList, false)}
-      ${renderSection("Misses", misses, true)}
+      ${renderSection("Top Targets", topTargets, false)}
+      ${renderSection("Hits", hitsList, false, "hits")}
+      ${renderSection("Misses", misses, true, "misses")}
     `;
   }
 
