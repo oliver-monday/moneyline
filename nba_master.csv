@@ -443,3 +443,8 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401810275,2025-12-23,Portland Trail Blazers,POR,106,105.0,,Orlando Magic,ORL,110,-125.0,,Portland,OR,,
 401810276,2025-12-23,Sacramento Kings,SAC,127,285.0,,Detroit Pistons,DET,136,-360.0,,Sacramento,CA,,
 401810277,2025-12-23,LA Clippers,LAC,128,235.0,,Houston Rockets,HOU,108,-290.0,,Inglewood,CA,,
+401809238,2025-12-25,New York Knicks,NY,0,-218.0,,Cleveland Cavaliers,CLE,0,180.0,,New York,NY,,
+401809239,2025-12-25,Oklahoma City Thunder,OKC,0,-360.0,,San Antonio Spurs,SA,0,295.0,,Oklahoma City,OK,,
+401809240,2025-12-25,Golden State Warriors,GS,0,-325.0,,Dallas Mavericks,DAL,0,260.0,,San Francisco,CA,,
+401809241,2025-12-25,Los Angeles Lakers,LAL,0,114.0,,Houston Rockets,HOU,0,-135.0,,Los Angeles,CA,,
+401809242,2025-12-25,Denver Nuggets,DEN,0,-142.0,,Minnesota Timberwolves,MIN,0,120.0,,Denver,CO,,
