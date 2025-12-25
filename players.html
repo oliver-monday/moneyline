@@ -1714,6 +1714,11 @@ async function load() {
     const normAbbrev = (s) => String(s || "").toUpperCase().trim();
     const normStat = (s) => String(s || "").toLowerCase().trim();
     const toNum = (x) => {
+      if (x === null || x === undefined) return null;
+      if (typeof x === "string") {
+        const s = x.trim();
+        if (!s || s === "—") return null;
+      }
       const n = Number(x);
       return Number.isFinite(n) ? n : null;
     };
@@ -1802,18 +1807,18 @@ async function load() {
           }
           let statusPill = "";
           if (isTopTargets) {
-            const actualNum = toNum(item.actual);
-            const thresholdNum = toNum(item.threshold);
-            if (actualNum != null && thresholdNum != null) {
-              statusPill = actualNum >= thresholdNum
-                ? `<span class="pm-pill-hit">HIT</span>`
-                : `<span class="pm-pill-miss">MISSED</span>`;
+            const statusFlag = String(item.status || "").toUpperCase();
+            const outFlag = item.dnp === true || statusFlag.includes("OUT");
+            if (outFlag) {
+              statusPill = `<span class="pm-pill-out">OUT</span>`;
             } else {
-              const team = normAbbrev(item.team_abbrev || "");
-              const injury = matchInjury(team, item.player_name || "", injuriesByTeam);
-              const status = String((injury && injury.status) || "").toUpperCase();
-              const outLike = status.includes("OUT") || status.includes("OFS") || status.includes("SUSP");
-              statusPill = outLike ? `<span class="pm-pill-out">OUT</span>` : `<span class="pm-pill-out">DNP</span>`;
+              const actualNum = toNum(item.actual);
+              const thresholdNum = toNum(item.threshold);
+              if (actualNum != null && thresholdNum != null) {
+                statusPill = actualNum >= thresholdNum
+                  ? `<span class="pm-pill-hit">HIT</span>`
+                  : `<span class="pm-pill-miss">MISSED</span>`;
+              }
             }
           }
           return `<div class="pm-target-row">${stat} ${threshold}+ (${actual})${deltaText}${reachPills ? ` ${reachPills}` : ""}${statusPill ? ` ${statusPill}` : ""}</div>`;
