@@ -1,5 +1,121 @@
 {
-  "asof_date": "2025-12-24",
-  "built_at_utc": "2025-12-25T03:20:00Z",
-  "source": "rotowire"
+  "asof_date": "2025-12-25",
+  "built_at_utc": "2025-12-25T17:09:51Z",
+  "source": "rotowire",
+  "CLE": [
+    {
+      "name": "L. Nance",
+      "status": "OUT",
+      "details": "L. Nance (Out)"
+    },
+    {
+      "name": "Max Strus",
+      "status": "OUT",
+      "details": "Max Strus (Out)"
+    }
+  ],
+  "NYK": [
+    {
+      "name": "M. McBride",
+      "status": "OUT",
+      "details": "M. McBride (Out)"
+    },
+    {
+      "name": "L. Shamet",
+      "status": "OUT",
+      "details": "L. Shamet (Out)"
+    }
+  ],
+  "OKC": [
+    {
+      "name": "T. Sorber",
+      "status": "OFS",
+      "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "O. Dieng",
+      "status": "OUT",
+      "details": "O. Dieng (Out)"
+    },
+    {
+      "name": "A. Mitchell",
+      "status": "OUT",
+      "details": "A. Mitchell (Out)"
+    },
+    {
+      "name": "N. Topic",
+      "status": "OUT",
+      "details": "N. Topic (Out)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
+    }
+  ],
+  "DAL": [
+    {
+      "name": "Dante Exum",
+      "status": "OFS",
+      "details": "Dante Exum (OFS)"
+    },
+    {
+      "name": "D. Lively",
+      "status": "OFS",
+      "details": "D. Lively (OFS)"
+    },
+    {
+      "name": "K. Irving",
+      "status": "OUT",
+      "details": "K. Irving (Out)"
+    }
+  ],
+  "GSW": [
+    {
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
+    },
+    {
+      "name": "Seth Curry",
+      "status": "OUT",
+      "details": "Seth Curry (Out)"
+    }
+  ],
+  "HOU": [
+    {
+      "name": "F. VanVleet",
+      "status": "OUT",
+      "details": "F. VanVleet (Out)"
+    }
+  ],
+  "LAL": [
+    {
+      "name": "G. Vincent",
+      "status": "OUT",
+      "details": "G. Vincent (Out)"
+    }
+  ],
+  "DEN": [
+    {
+      "name": "T. Bates",
+      "status": "OUT",
+      "details": "T. Bates (Out)"
+    },
+    {
+      "name": "C. Braun",
+      "status": "OUT",
+      "details": "C. Braun (Out)"
+    },
+    {
+      "name": "A. Gordon",
+      "status": "OUT",
+      "details": "A. Gordon (Out)"
+    },
+    {
+      "name": "C. Johnson",
+      "status": "OUT",
+      "details": "C. Johnson (Out)"
+    }
+  ]
 }
