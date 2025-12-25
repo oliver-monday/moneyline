@@ -1,14 +1,32 @@
 {
   "asof_date": "2025-12-23",
   "summary": {
-    "targets_total": 25,
-    "hits": 21,
-    "misses": 4,
+    "targets_total": 55,
+    "hits": 46,
+    "misses": 9,
     "hit_rate_pct": 84,
     "top_targets_total": 6,
-    "top_targets_hits": 3
+    "top_targets_hits": 5
   },
   "hits": [
+    {
+      "player_id": null,
+      "player_name": "Jalen Johnson",
+      "team_abbrev": "ATL",
+      "opp": "CHI",
+      "stat": "ast",
+      "threshold": 8,
+      "actual": 10
+    },
+    {
+      "player_id": null,
+      "player_name": "Jabari Smith Jr.",
+      "team_abbrev": "HOU",
+      "opp": "LAC",
+      "stat": "pts",
+      "threshold": 15,
+      "actual": 16
+    },
     {
       "player_id": null,
       "player_name": "Deni Avdija",
@@ -16,7 +34,61 @@
       "opp": "ORL",
       "stat": "ast",
       "threshold": 6,
-      "actual": 9
+      "actual": 8
+    },
+    {
+      "player_id": null,
+      "player_name": "Kawhi Leonard",
+      "team_abbrev": "LAC",
+      "opp": "HOU",
+      "stat": "reb",
+      "threshold": 6,
+      "actual": 8
+    },
+    {
+      "player_id": null,
+      "player_name": "Kevin Porter Jr.",
+      "team_abbrev": "MIL",
+      "opp": "IND",
+      "stat": "pts",
+      "threshold": 20,
+      "actual": 24
+    },
+    {
+      "player_id": null,
+      "player_name": "Kevin Porter Jr.",
+      "team_abbrev": "MIL",
+      "opp": "IND",
+      "stat": "reb",
+      "threshold": 4,
+      "actual": 6
+    },
+    {
+      "player_id": null,
+      "player_name": "Scottie Barnes",
+      "team_abbrev": "TOR",
+      "opp": "MIA",
+      "stat": "ast",
+      "threshold": 4,
+      "actual": 4
+    },
+    {
+      "player_id": null,
+      "player_name": "Josh Hart",
+      "team_abbrev": "NY",
+      "opp": "MIN",
+      "stat": "pts",
+      "threshold": 10,
+      "actual": 12
+    },
+    {
+      "player_id": null,
+      "player_name": "Kyshawn George",
+      "team_abbrev": "WSH",
+      "opp": "CHA",
+      "stat": "ast",
+      "threshold": 6,
+      "actual": 6
     },
     {
       "player_id": null,
@@ -25,7 +97,16 @@
       "opp": "CLE",
       "stat": "ast",
       "threshold": 4,
-      "actual": 4
+      "actual": 5
+    },
+    {
+      "player_id": null,
+      "player_name": "Norman Powell",
+      "team_abbrev": "MIA",
+      "opp": "TOR",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 6
     },
     {
       "player_id": null,
@@ -34,6 +115,15 @@
       "opp": "DAL",
       "stat": "ast",
       "threshold": 2,
+      "actual": 3
+    },
+    {
+      "player_id": null,
+      "player_name": "Toumani Camara",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "stat": "ast",
+      "threshold": 2,
       "actual": 4
     },
     {
@@ -43,7 +133,7 @@
       "opp": "MIL",
       "stat": "reb",
       "threshold": 2,
-      "actual": 2
+      "actual": 3
     },
     {
       "player_id": null,
@@ -52,16 +142,16 @@
       "opp": "MIL",
       "stat": "ast",
       "threshold": 6,
-      "actual": 7
+      "actual": 6
     },
     {
       "player_id": null,
-      "player_name": "Darius Garland",
-      "team_abbrev": "CLE",
-      "opp": "NO",
-      "stat": "reb",
-      "threshold": 2,
-      "actual": 5
+      "player_name": "Donte DiVincenzo",
+      "team_abbrev": "MIN",
+      "opp": "NY",
+      "stat": "ast",
+      "threshold": 4,
+      "actual": 8
     },
     {
       "player_id": null,
@@ -70,7 +160,25 @@
       "opp": "NO",
       "stat": "ast",
       "threshold": 6,
-      "actual": 10
+      "actual": 8
+    },
+    {
+      "player_id": null,
+      "player_name": "Rudy Gobert",
+      "team_abbrev": "MIN",
+      "opp": "NY",
+      "stat": "reb",
+      "threshold": 12,
+      "actual": 16
+    },
+    {
+      "player_id": null,
+      "player_name": "Andrew Wiggins",
+      "team_abbrev": "MIA",
+      "opp": "TOR",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 2
     },
     {
       "player_id": null,
@@ -79,124 +187,36 @@
       "opp": "ORL",
       "stat": "pts",
       "threshold": 20,
-      "actual": 25
-    },
-    {
-      "player_id": null,
-      "player_name": "Shaedon Sharpe",
-      "team_abbrev": "POR",
-      "opp": "ORL",
-      "stat": "ast",
-      "threshold": 2,
-      "actual": 2
-    },
-    {
-      "player_id": null,
-      "player_name": "Jaylen Wells",
-      "team_abbrev": "MEM",
-      "opp": "UTAH",
-      "stat": "pts",
-      "threshold": 10,
-      "actual": 12
-    },
-    {
-      "player_id": null,
-      "player_name": "Cam Spencer",
-      "team_abbrev": "MEM",
-      "opp": "UTAH",
-      "stat": "pts",
-      "threshold": 10,
-      "actual": 14
-    },
-    {
-      "player_id": null,
-      "player_name": "Cam Spencer",
-      "team_abbrev": "MEM",
-      "opp": "UTAH",
-      "stat": "reb",
-      "threshold": 2,
-      "actual": 5
-    },
-    {
-      "player_id": null,
-      "player_name": "Cam Spencer",
-      "team_abbrev": "MEM",
-      "opp": "UTAH",
-      "stat": "ast",
-      "threshold": 4,
-      "actual": 8
-    },
-    {
-      "player_id": null,
-      "player_name": "Derik Queen",
-      "team_abbrev": "NO",
-      "opp": "CLE",
-      "stat": "reb",
-      "threshold": 6,
-      "actual": 10
-    },
-    {
-      "player_id": null,
-      "player_name": "Derik Queen",
-      "team_abbrev": "NO",
-      "opp": "CLE",
-      "stat": "ast",
-      "threshold": 4,
-      "actual": 6
-    },
-    {
-      "player_id": null,
-      "player_name": "Donovan Clingan",
-      "team_abbrev": "POR",
-      "opp": "ORL",
-      "stat": "reb",
-      "threshold": 10,
-      "actual": 10
-    },
-    {
-      "player_id": null,
-      "player_name": "Cedric Coward",
-      "team_abbrev": "MEM",
-      "opp": "UTAH",
-      "stat": "ast",
-      "threshold": 2,
-      "actual": 6
-    },
-    {
-      "player_id": null,
-      "player_name": "Jeremiah Fears",
-      "team_abbrev": "NO",
-      "opp": "CLE",
-      "stat": "ast",
-      "threshold": 4,
-      "actual": 4
-    },
-    {
-      "player_id": null,
-      "player_name": "Jarrett Allen",
-      "team_abbrev": "CLE",
-      "opp": "NO",
-      "stat": "ast",
-      "threshold": 2,
-      "actual": 2
-    },
-    {
-      "player_id": null,
-      "player_name": "Ausar Thompson",
-      "team_abbrev": "DET",
-      "opp": "SAC",
-      "stat": "pts",
-      "threshold": 10,
-      "actual": 18
+      "actual": 22
     }
   ],
   "closest_misses": [
     {
       "player_id": null,
-      "player_name": "Jaren Jackson Jr.",
-      "team_abbrev": "MEM",
-      "opp": "UTAH",
-      "stat": "ast",
+      "player_name": "Jalen Johnson",
+      "team_abbrev": "ATL",
+      "opp": "CHI",
+      "stat": "reb",
+      "threshold": 10,
+      "actual": 9,
+      "delta": 1
+    },
+    {
+      "player_id": null,
+      "player_name": "Darius Garland",
+      "team_abbrev": "CLE",
+      "opp": "NO",
+      "stat": "reb",
+      "threshold": 2,
+      "actual": 1,
+      "delta": 1
+    },
+    {
+      "player_id": null,
+      "player_name": "Reed Sheppard",
+      "team_abbrev": "HOU",
+      "opp": "LAC",
+      "stat": "reb",
       "threshold": 2,
       "actual": 1,
       "delta": 1
@@ -213,9 +233,19 @@
     },
     {
       "player_id": null,
-      "player_name": "Toumani Camara",
-      "team_abbrev": "POR",
-      "opp": "ORL",
+      "player_name": "Donte DiVincenzo",
+      "team_abbrev": "MIN",
+      "opp": "NY",
+      "stat": "reb",
+      "threshold": 4,
+      "actual": 2,
+      "delta": 2
+    },
+    {
+      "player_id": null,
+      "player_name": "Cedric Coward",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
       "stat": "ast",
       "threshold": 2,
       "actual": 0,
@@ -225,56 +255,60 @@
   "reaches_hit": [
     {
       "player_id": null,
+      "player_name": "Jalen Johnson",
+      "team_abbrev": "ATL",
+      "opp": "CHI",
+      "stat": "ast",
+      "target_threshold": 8,
+      "reached_threshold": 10,
+      "actual": 10
+    },
+    {
+      "player_id": null,
       "player_name": "Deni Avdija",
       "team_abbrev": "POR",
       "opp": "ORL",
       "stat": "ast",
       "target_threshold": 6,
       "reached_threshold": 8,
-      "actual": 9
+      "actual": 8
     },
     {
       "player_id": null,
-      "player_name": "Cameron Johnson",
-      "team_abbrev": "DEN",
-      "opp": "DAL",
-      "stat": "ast",
-      "target_threshold": 2,
-      "reached_threshold": 4,
-      "actual": 4
-    },
-    {
-      "player_id": null,
-      "player_name": "Darius Garland",
-      "team_abbrev": "CLE",
-      "opp": "NO",
+      "player_name": "Kawhi Leonard",
+      "team_abbrev": "LAC",
+      "opp": "HOU",
       "stat": "reb",
-      "target_threshold": 2,
-      "reached_threshold": 4,
-      "actual": 5
-    },
-    {
-      "player_id": null,
-      "player_name": "Darius Garland",
-      "team_abbrev": "CLE",
-      "opp": "NO",
-      "stat": "ast",
       "target_threshold": 6,
-      "reached_threshold": 10,
-      "actual": 10
+      "reached_threshold": 8,
+      "actual": 8
     },
     {
       "player_id": null,
-      "player_name": "Shaedon Sharpe",
-      "team_abbrev": "POR",
-      "opp": "ORL",
-      "stat": "pts",
-      "target_threshold": 20,
-      "reached_threshold": 25,
-      "actual": 25
+      "player_name": "Kevin Porter Jr.",
+      "team_abbrev": "MIL",
+      "opp": "IND",
+      "stat": "reb",
+      "target_threshold": 4,
+      "reached_threshold": 6,
+      "actual": 6
+    },
+    {
+      "player_id": null,
+      "player_name": "Norman Powell",
+      "team_abbrev": "MIA",
+      "opp": "TOR",
+      "stat": "ast",
+      "target_threshold": 2,
+      "reached_threshold": 6,
+      "actual": 6
     }
   ],
+<<<<<<< HEAD
   "built_at_utc": "2025-12-25T10:06:42Z",
+=======
+  "built_at_utc": "2025-12-25T10:29:05Z",
+>>>>>>> e221248 (Codex solution)
   "snapshot_file": "targets_snapshot_2025-12-23.json",
   "top_targets": [
     {
@@ -303,9 +337,9 @@
       "hits": 10,
       "window_games": 10,
       "hit_rate": 1.0,
-      "actual": 14,
+      "actual": 11,
       "hit": true,
-      "delta": -4
+      "delta": -1
     },
     {
       "asof_date": "2025-12-23",
@@ -318,9 +352,9 @@
       "hits": 10,
       "window_games": 10,
       "hit_rate": 1.0,
-      "actual": null,
-      "hit": false,
-      "delta": null
+      "actual": 8,
+      "hit": true,
+      "delta": -2
     },
     {
       "asof_date": "2025-12-23",
@@ -333,9 +367,9 @@
       "hits": 5,
       "window_games": 5,
       "hit_rate": 1.0,
-      "actual": null,
-      "hit": false,
-      "delta": null
+      "actual": 6,
+      "hit": true,
+      "delta": 0
     },
     {
       "asof_date": "2025-12-23",
@@ -348,9 +382,9 @@
       "hits": 9,
       "window_games": 10,
       "hit_rate": 0.9,
-      "actual": 9,
+      "actual": 8,
       "hit": true,
-      "delta": -3
+      "delta": -2
     },
     {
       "asof_date": "2025-12-23",
@@ -363,9 +397,9 @@
       "hits": 9,
       "window_games": 10,
       "hit_rate": 0.9,
-      "actual": null,
+      "actual": 0,
       "hit": false,
-      "delta": null
+      "delta": 10
     }
   ],
   "note": "Using snapshot from 2025-12-23 for results_date 2025-12-23"

@@ -384,13 +384,17 @@ def build_game_log_indexes(game_log_df: pd.DataFrame, target_date: str):
     df = game_log_df.copy()
     df["game_date"] = df["game_date"].astype(str).str.strip()
     day_logs = df[df["game_date"] == target_date].copy()
-    if day_logs.empty:
-        return {}, {}, {}, {}
-    day_logs["player_name_norm"] = day_logs["player_name"].map(normalize_name)
-    day_logs["player_id_norm"] = day_logs["player_id"].astype(str).str.strip()
-    day_logs["game_id_norm"] = day_logs["game_id"].astype(str).str.strip()
-    day_logs["team_abbrev_norm"] = day_logs["team_abbrev"].astype(str).str.upper().str.strip()
-    day_logs["opp_abbrev_norm"] = day_logs["opp_abbrev"].astype(str).str.upper().str.strip()
+    df["player_name_norm"] = df["player_name"].map(normalize_name)
+    df["player_id_norm"] = df["player_id"].astype(str).str.strip()
+    df["game_id_norm"] = df["game_id"].astype(str).str.strip()
+    df["team_abbrev_norm"] = df["team_abbrev"].astype(str).str.upper().str.strip()
+    df["opp_abbrev_norm"] = df["opp_abbrev"].astype(str).str.upper().str.strip()
+    if not day_logs.empty:
+        day_logs["player_name_norm"] = day_logs["player_name"].map(normalize_name)
+        day_logs["player_id_norm"] = day_logs["player_id"].astype(str).str.strip()
+        day_logs["game_id_norm"] = day_logs["game_id"].astype(str).str.strip()
+        day_logs["team_abbrev_norm"] = day_logs["team_abbrev"].astype(str).str.upper().str.strip()
+        day_logs["opp_abbrev_norm"] = day_logs["opp_abbrev"].astype(str).str.upper().str.strip()
     def minutes_val(row):
         for col in ("minutes", "mins", "min", "minutes_raw"):
             if col in row and pd.notna(row[col]):
@@ -403,7 +407,7 @@ def build_game_log_indexes(game_log_df: pd.DataFrame, target_date: str):
     by_name_gid = {}
     by_name_team = {}
     by_name_team_opp = {}
-    for _, row in day_logs.iterrows():
+    for _, row in df.iterrows():
         gid = str(row.get("game_id_norm", "")).strip()
         pid = str(row.get("player_id_norm", "")).strip()
         name = row.get("player_name_norm", "")
@@ -420,6 +424,11 @@ def build_game_log_indexes(game_log_df: pd.DataFrame, target_date: str):
             cur = by_name_gid.get(key)
             if not cur or mval > cur[0]:
                 by_name_gid[key] = (mval, row)
+    for _, row in day_logs.iterrows():
+        name = row.get("player_name_norm", "")
+        team = row.get("team_abbrev_norm", "")
+        opp = row.get("opp_abbrev_norm", "")
+        mval = minutes_val(row)
         if name and team:
             key = (name, team)
             cur = by_name_team.get(key)
