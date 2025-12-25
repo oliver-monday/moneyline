@@ -1,10 +1,10 @@
 {
   "asof_date": "2025-12-23",
   "summary": {
-    "targets_total": 55,
+    "targets_total": 50,
     "hits": 46,
-    "misses": 9,
-    "hit_rate_pct": 84,
+    "misses": 4,
+    "hit_rate_pct": 92,
     "top_targets_total": 6,
     "top_targets_hits": 5
   },
@@ -457,16 +457,6 @@
     },
     {
       "player_id": null,
-      "player_name": "Jerami Grant",
-      "team_abbrev": "POR",
-      "opp": "ORL",
-      "stat": "ast",
-      "threshold": 2,
-      "actual": 0,
-      "delta": 2
-    },
-    {
-      "player_id": null,
       "player_name": "Donte DiVincenzo",
       "team_abbrev": "MIN",
       "opp": "NY",
@@ -477,13 +467,15 @@
     },
     {
       "player_id": null,
-      "player_name": "Cedric Coward",
-      "team_abbrev": "MEM",
-      "opp": "UTAH",
-      "stat": "ast",
-      "threshold": 2,
-      "actual": 0,
-      "delta": 2
+      "player_name": "Dyson Daniels",
+      "team_abbrev": "ATL",
+      "opp": "CHI",
+      "stat": "pts",
+      "threshold": 10,
+      "actual": null,
+      "delta": null,
+      "out": true,
+      "status": "OUT"
     },
     {
       "player_id": null,
@@ -492,8 +484,22 @@
       "opp": "ORL",
       "stat": "reb",
       "threshold": 4,
-      "actual": 0,
-      "delta": 4
+      "actual": null,
+      "delta": null,
+      "out": true,
+      "status": "OUT"
+    },
+    {
+      "player_id": null,
+      "player_name": "Jerami Grant",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": null,
+      "delta": null,
+      "out": true,
+      "status": "OUT"
     },
     {
       "player_id": null,
@@ -502,18 +508,22 @@
       "opp": "TOR",
       "stat": "reb",
       "threshold": 4,
-      "actual": 0,
-      "delta": 4
+      "actual": null,
+      "delta": null,
+      "out": true,
+      "status": "OUT"
     },
     {
       "player_id": null,
-      "player_name": "Dyson Daniels",
-      "team_abbrev": "ATL",
-      "opp": "CHI",
-      "stat": "pts",
-      "threshold": 10,
-      "actual": 0,
-      "delta": 10
+      "player_name": "Cedric Coward",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": null,
+      "delta": null,
+      "out": true,
+      "status": "OUT"
     }
   ],
   "closest_misses": [
@@ -549,32 +559,12 @@
     },
     {
       "player_id": null,
-      "player_name": "Jerami Grant",
-      "team_abbrev": "POR",
-      "opp": "ORL",
-      "stat": "ast",
-      "threshold": 2,
-      "actual": 0,
-      "delta": 2
-    },
-    {
-      "player_id": null,
       "player_name": "Donte DiVincenzo",
       "team_abbrev": "MIN",
       "opp": "NY",
       "stat": "reb",
       "threshold": 4,
       "actual": 2,
-      "delta": 2
-    },
-    {
-      "player_id": null,
-      "player_name": "Cedric Coward",
-      "team_abbrev": "MEM",
-      "opp": "UTAH",
-      "stat": "ast",
-      "threshold": 2,
-      "actual": 0,
       "delta": 2
     }
   ],
@@ -630,7 +620,7 @@
       "actual": 6
     }
   ],
-  "built_at_utc": "2025-12-25T12:58:47Z",
+  "built_at_utc": "2025-12-25T13:36:52Z",
   "snapshot_file": "targets_snapshot_2025-12-23.json",
   "top_targets": [
     {
