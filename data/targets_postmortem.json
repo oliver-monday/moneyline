@@ -6,7 +6,7 @@
     "misses": 4,
     "hit_rate_pct": 84,
     "top_targets_total": 6,
-    "top_targets_hits": 0
+    "top_targets_hits": 3
   },
   "hits": [
     {
@@ -274,7 +274,7 @@
       "actual": 25
     }
   ],
-  "built_at_utc": "2025-12-25T08:35:20Z",
+  "built_at_utc": "2025-12-25T09:12:59Z",
   "snapshot_file": "targets_snapshot_2025-12-23.json",
   "top_targets": [
     {
@@ -288,9 +288,9 @@
       "hits": 10,
       "window_games": 10,
       "hit_rate": 1.0,
-      "actual": null,
-      "hit": false,
-      "delta": null
+      "actual": 2,
+      "hit": true,
+      "delta": 0
     },
     {
       "asof_date": "2025-12-23",
@@ -303,9 +303,9 @@
       "hits": 10,
       "window_games": 10,
       "hit_rate": 1.0,
-      "actual": null,
-      "hit": false,
-      "delta": null
+      "actual": 14,
+      "hit": true,
+      "delta": -4
     },
     {
       "asof_date": "2025-12-23",
@@ -348,9 +348,9 @@
       "hits": 9,
       "window_games": 10,
       "hit_rate": 0.9,
-      "actual": null,
-      "hit": false,
-      "delta": null
+      "actual": 9,
+      "hit": true,
+      "delta": -3
     },
     {
       "asof_date": "2025-12-23",
