@@ -541,6 +541,8 @@ def main() -> int:
     top_targets = []
     summary_top_total = 0
     summary_top_hits = 0
+    log_index = build_log_index(game_log_df, results_date)
+    enriched_found = 0
     if snapshot_path and snapshot_path.exists():
         try:
             with open(snapshot_path, "r", encoding="utf-8") as f:
@@ -568,11 +570,14 @@ def main() -> int:
             pid = str(item.get("player_id", "")).strip()
             gid = str(item.get("game_id", "")).strip()
             name_norm = normalize_name(item.get("player_name", ""))
+            team_norm = str(item.get("team_abbrev", "")).upper().strip()
             row = None
             if pid and gid:
                 row = by_pid_gid.get((pid, gid))
             if row is None and gid and name_norm:
                 row = by_name_gid.get((name_norm, gid))
+            if row is None and name_norm and team_norm:
+                row = log_index.get((name_norm, team_norm))
             stat = item.get("stat")
             threshold = int(item.get("threshold", 0) or 0)
             actual = None
@@ -582,11 +587,13 @@ def main() -> int:
                 actual = int(float(row.get(stat, 0) or 0))
                 hit = actual >= threshold
                 delta = threshold - actual
+                enriched_found += 1
             item["actual"] = actual
             item["hit"] = bool(hit) if hit is not None else False
             item["delta"] = delta
         summary_top_total = len(top_targets)
         summary_top_hits = sum(1 for t in top_targets if t.get("hit"))
+        print(f"[targets] Top targets enriched: {enriched_found}/{summary_top_total} (rows found)")
 
     postmortem = compute_postmortem(snapshot_entries, game_log_df, results_date)
     postmortem["built_at_utc"] = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
