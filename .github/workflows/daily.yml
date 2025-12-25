@@ -212,6 +212,8 @@ jobs:
           cp player_snapshot.csv ./site/data/player_snapshot.csv
           cp player_game_log.csv ./site/data/player_game_log.csv
           cp data/injuries_today.json ./site/data/injuries_today.json
+          cp data/team_signals.json ./site/data/team_signals.json
+          cp data/player_features.json ./site/data/player_features.json
           cp data/moneyline_postmortem.json ./site/data/moneyline_postmortem.json
           cp data/targets_postmortem.json ./site/data/targets_postmortem.json
           cp data/team_opp_allowed.json ./site/data/team_opp_allowed.json

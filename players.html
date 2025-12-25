@@ -241,6 +241,17 @@
       white-space: nowrap;
     }
     .suggested-chips { display:flex; gap:8px; flex: 1 1 auto; min-width: 0; }
+    .suggested-flag {
+      border: 1px solid #d0d0d0;
+      color: #555;
+      border-radius: 999px;
+      padding: 3px 8px;
+      font-size: 11px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+    }
     @media (max-width: 520px) {
       .suggested-player { flex-basis: 150px; max-width: 150px; }
     }
@@ -911,6 +922,8 @@ let teamLastPlayedDate = new Map();
 let TEAM_OPP = {};
 let OPP_BIG = {};
 let injuriesByTeam = {};
+let TEAM_SIGNALS = {};
+let PLAYER_FEATURES = {};
 function restLabel(lastDateStr) {
   if (!lastDateStr || !todayISO) return "";
   const diff = dayDiff(todayISO, lastDateStr);
@@ -1381,6 +1394,28 @@ async function load() {
     injuriesByTeam = {};
   }
 
+  // Team signals + player features (best effort)
+  TEAM_SIGNALS = {};
+  PLAYER_FEATURES = {};
+  try {
+    const res = await fetch("./data/team_signals.json", {cache: "no-store"});
+    if (res.ok) {
+      const data = await res.json();
+      TEAM_SIGNALS = data && data.teams ? data.teams : {};
+    }
+  } catch (err) {
+    TEAM_SIGNALS = {};
+  }
+  try {
+    const res = await fetch("./data/player_features.json", {cache: "no-store"});
+    if (res.ok) {
+      const data = await res.json();
+      PLAYER_FEATURES = data && data.players ? data.players : {};
+    }
+  } catch (err) {
+    PLAYER_FEATURES = {};
+  }
+
   // Matchup context (best effort, non-blocking)
   TEAM_OPP = {};
   OPP_BIG = {};
@@ -1527,11 +1562,16 @@ async function load() {
   function targetRowHTML(item) {
     const stat = String(item.stat || "").toUpperCase();
     const chip = `${stat} ${item.threshold}+ (${item.hits}/${item.gp})`;
+    const flags = [];
+    if (item.highFatigue) flags.push("<span class=\"suggested-flag\">HIGH FATIGUE</span>");
+    if (item.trapRisk) flags.push("<span class=\"suggested-flag\">TRAP RISK</span>");
+    if (item.roleUp) flags.push("<span class=\"suggested-flag\">↑ ROLE</span>");
     return `
       <div class="suggested-row" data-player-key="${item.playerKey}" data-game-id="${item.gameId || ""}">
         <span class="suggested-player">${item.playerName}</span>
         <span class="suggested-chips">
           <span class="target-chip suggested-chip">${chip}</span>
+          ${flags.join("")}
         </span>
       </div>
     `;
@@ -2240,6 +2280,20 @@ async function load() {
     try {
       const targetsWin = "10";
       const bonusForTier = tier => tier === "SOFT" ? 1 : (tier === "TOUGH" ? -1 : 0);
+      const getNum = (v) => {
+        const n = Number(v);
+        return Number.isFinite(n) ? n : null;
+      };
+      const getFeature = (row, key) => {
+        const v = row && row[key];
+        const n = getNum(v);
+        if (n != null) return n;
+        const pid = row && row.player_id ? String(row.player_id) : "";
+        if (pid && PLAYER_FEATURES && PLAYER_FEATURES[pid] && PLAYER_FEATURES[pid][key] != null) {
+          return getNum(PLAYER_FEATURES[pid][key]);
+        }
+        return null;
+      };
       const targetItems = [];
       for (const data of cardDataList) {
         const targets = targetsMemo(data.row, targetsWin);
@@ -2255,6 +2309,50 @@ async function load() {
           const avg = seasonAvg(data.row, t.stat);
           const diff = Number.isFinite(avg) ? (t.t - avg) : -Infinity;
           const tier = matchupTier(data.oppTeam, t.stat);
+          const statKey = String(t.stat || "").toLowerCase();
+          const iqrVal = getFeature(data.row, `${statKey}_iqr_10`);
+          const landmineKey = `${statKey}_landmine_${t.t}_10`;
+          const landmineRate = getFeature(data.row, landmineKey);
+          const trendPP = getFeature(data.row, `share_${statKey}_trend_pp`);
+          const teamSignal = (TEAM_SIGNALS && TEAM_SIGNALS[data.team]) || {};
+          const scheduleStress = getNum(teamSignal.schedule_stress);
+          const b2b = !!teamSignal.b2b;
+          const travelBucket = String(teamSignal.travel_bucket || "");
+
+          let stressPenalty = 0;
+          if (scheduleStress != null && scheduleStress >= 70) stressPenalty -= 0.15;
+          if (b2b) stressPenalty -= 0.10;
+          if (travelBucket === "600+") stressPenalty -= 0.08;
+
+          let volPenalty = 0;
+          if (iqrVal != null) {
+            if (statKey === "pts") {
+              if (iqrVal > 10) volPenalty -= 0.12;
+              else if (iqrVal > 6) volPenalty -= 0.05;
+            } else if (statKey === "reb") {
+              if (iqrVal > 5) volPenalty -= 0.12;
+              else if (iqrVal > 3) volPenalty -= 0.05;
+            } else if (statKey === "ast") {
+              if (iqrVal > 4) volPenalty -= 0.12;
+              else if (iqrVal > 2) volPenalty -= 0.05;
+            }
+          }
+
+          let landminePenalty = 0;
+          if (landmineRate != null) {
+            if (landmineRate >= 0.30) landminePenalty -= 0.12;
+            else if (landmineRate >= 0.20) landminePenalty -= 0.08;
+          }
+
+          let roleBoost = 0;
+          if (trendPP != null) {
+            if (trendPP >= 5) roleBoost += 0.15;
+            else if (trendPP >= 3) roleBoost += 0.10;
+          }
+          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost;
+          const highFatigue = (scheduleStress != null && scheduleStress >= 70) || b2b;
+          const trapRisk = (landmineRate != null && landmineRate >= 0.25) || (iqrVal != null && ((statKey === "pts" && iqrVal > 10) || (statKey === "reb" && iqrVal > 5) || (statKey === "ast" && iqrVal > 4)));
+          const roleUp = trendPP != null && trendPP >= 3;
           targetItems.push({
             playerName: data.playerName,
             team: data.team,
@@ -2264,18 +2362,22 @@ async function load() {
             hits: t.hits,
             gp: t.gp,
             rate: t.rate,
+            score: t.rate + scoreAdj,
             diff,
             matchupBonus: bonusForTier(tier),
             gameId,
             gameKey,
             gameLabel,
             playerKey,
+            highFatigue,
+            trapRisk,
+            roleUp,
           });
         }
       }
 
       targetItems.sort((a, b) => {
-        if (b.rate !== a.rate) return b.rate - a.rate;
+        if (b.score !== a.score) return b.score - a.score;
         if (b.gp !== a.gp) return b.gp - a.gp;
         if (b.matchupBonus !== a.matchupBonus) return b.matchupBonus - a.matchupBonus;
         if (b.diff !== a.diff) return b.diff - a.diff;

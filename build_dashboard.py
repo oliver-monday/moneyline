@@ -434,6 +434,54 @@ def league_overview(team_results):
         })
     return pd.DataFrame(rows)
 
+
+def _travel_bucket(miles):
+    try:
+        m = float(miles)
+    except Exception:
+        return ""
+    if np.isnan(m):
+        return ""
+    if m < 150:
+        return "0-149"
+    if m < 300:
+        return "150-299"
+    if m < 600:
+        return "300-599"
+    return "600+"
+
+
+def build_team_signals_for_slate(slate, team_results, today_date):
+    signals = {}
+    if slate.empty:
+        return signals
+    for _, g in slate.iterrows():
+        venue_city = g.get("venue_city")
+        venue_state = g.get("venue_state")
+        for side in ("home", "away"):
+            team_name = g.get(f"{side}_team_name")
+            team_abbr = str(g.get(f"{side}_team_abbrev") or "").strip().upper()
+            if not team_name or not team_abbr:
+                continue
+            hist = team_results[(team_results["team"] == team_name) & (team_results["game_date"] < today_date)]
+            ss = compute_schedule_stress(hist, today_date, venue_city, venue_state)
+            score = ss.get("score") if isinstance(ss, dict) else np.nan
+            games_7 = ss.get("games_7") if isinstance(ss, dict) else 0
+            travel_miles = ss.get("travel_miles") if isinstance(ss, dict) else np.nan
+            is_b2b = bool(ss.get("is_b2b")) if isinstance(ss, dict) else False
+            window_start = today_date - dt.timedelta(days=4)
+            games_4 = int(hist[(hist["game_date"] >= window_start) & (hist["game_date"] < today_date)].shape[0])
+            signals[team_abbr] = {
+                "schedule_stress": float(score) if pd.notna(score) else None,
+                "high_fatigue": bool(pd.notna(score) and score >= 70),
+                "b2b": is_b2b,
+                "three_in_four": games_4 >= 3,
+                "travel_miles": float(travel_miles) if pd.notna(travel_miles) else None,
+                "travel_bucket": _travel_bucket(travel_miles),
+                "games_last_7": int(games_7) if pd.notna(games_7) else 0,
+            }
+    return signals
+
 def opponent_adjusted_stats(team_df, league_tbl):
     if league_tbl.empty or "ml_pct" not in league_tbl.columns:
         return {
@@ -1731,6 +1779,13 @@ def main():
             team_abbrev_map[away] = away_abbr
     if not slate.empty:
         write_injury_files(slate, today)
+    team_signals = build_team_signals_for_slate(slate, team_results, today)
+    try:
+        os.makedirs("data", exist_ok=True)
+        with open("data/team_signals.json", "w", encoding="utf-8") as f:
+            json.dump({"asof_date": str(today), "teams": team_signals}, f, indent=2)
+    except Exception:
+        pass
     outfile = f"dashboard_{today}.html"
     build_html(slate, team_results, league_tbl, outfile, today, team_abbrev_map)
     print("Dashboard written →", outfile)

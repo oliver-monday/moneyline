@@ -58,6 +58,15 @@ def rate_and_hits_ge(x: pd.Series, thresh: float) -> Tuple[int, float]:
     return hits, float(hits / len(x))
 
 
+def iqr(x: pd.Series) -> float:
+    x = pd.to_numeric(x, errors="coerce").dropna()
+    if len(x) == 0:
+        return float("nan")
+    q75 = np.nanpercentile(x, 75)
+    q25 = np.nanpercentile(x, 25)
+    return float(q75 - q25)
+
+
 def build_windows(df_player: pd.DataFrame, windows: List[int], thresholds: Dict[str, List[float]]) -> Dict[str, float]:
     """df_player sorted desc by game_date and filtered to games played (minutes>0)."""
     out: Dict[str, float] = {}
@@ -192,11 +201,30 @@ def main():
     for c in ["minutes","pts","reb","ast","dnp"]:
         df[c] = pd.to_numeric(df[c], errors="coerce").fillna(0)
 
+    df_played = df[(df["minutes"] > 0) & (df["dnp"] != 1)].copy()
+    team_totals = df_played.groupby(["game_id", "team_abbrev"], as_index=False)[["pts", "reb", "ast"]].sum()
+    team_totals = team_totals.rename(columns={
+        "pts": "team_pts",
+        "reb": "team_reb",
+        "ast": "team_ast",
+    })
+    df_played = df_played.merge(team_totals, on=["game_id", "team_abbrev"], how="left")
+    for stat in ("pts", "reb", "ast"):
+        total_col = f"team_{stat}"
+        share_col = f"share_{stat}"
+        df_played[share_col] = np.where(
+            df_played[total_col] > 0,
+            df_played[stat] / df_played[total_col],
+            np.nan,
+        )
+
     rows = []
     for (pid, pname), g in df.groupby(["player_id","player_name"], sort=False):
         g = g.sort_values("game_date", ascending=False)
 
         gp = g[(g["minutes"] > 0) & (g["dnp"] != 1)].copy().sort_values("game_date", ascending=False)
+        gp_feat = df_played[(df_played["player_id"] == pid) & (df_played["player_name"] == pname)].copy()
+        gp_feat = gp_feat.sort_values("game_date", ascending=False)
         last_row = gp.iloc[0] if len(gp) else g.iloc[0]
         base = {
             "season_end_year": int(season_end),
@@ -220,6 +248,36 @@ def main():
             "games_played_rows": int((g["minutes"] > 0).sum()),
             "dnp_rows": int((g["dnp"] == 1).sum()),
         }
+
+        # Volatility (IQR) over last 10 games played
+        last10 = gp.head(10)
+        base["pts_iqr_10"] = iqr(last10["pts"]) if len(last10) else float("nan")
+        base["reb_iqr_10"] = iqr(last10["reb"]) if len(last10) else float("nan")
+        base["ast_iqr_10"] = iqr(last10["ast"]) if len(last10) else float("nan")
+
+        # Team share trends (last 5 vs last 20)
+        share_l5 = gp_feat.head(5)
+        share_l20 = gp_feat.head(20)
+        for stat in ("pts", "reb", "ast"):
+            col = f"share_{stat}"
+            l5 = float(share_l5[col].mean()) if len(share_l5) else float("nan")
+            l20 = float(share_l20[col].mean()) if len(share_l20) else float("nan")
+            base[f"share_{stat}_l5"] = l5
+            base[f"share_{stat}_l20"] = l20
+            if np.isfinite(l5) and np.isfinite(l20):
+                base[f"share_{stat}_trend_pp"] = (l5 - l20) * 100.0
+            else:
+                base[f"share_{stat}_trend_pp"] = float("nan")
+
+        # Landmine rates (actual == threshold - 1) over last 10 games
+        for stat, thresholds_list in thresholds.items():
+            for t in thresholds_list:
+                tkey = str(int(t)) if float(t).is_integer() else str(t).replace(".", "p")
+                if len(last10):
+                    landmine = (last10[stat] == (t - 1)).mean()
+                else:
+                    landmine = float("nan")
+                base[f"{stat}_landmine_{tkey}_10"] = float(landmine) if np.isfinite(landmine) else float("nan")
 
         base.update(build_windows(gp, windows, thresholds))
         base.update(build_load_metrics(gp, windows))
@@ -291,6 +349,35 @@ def main():
             out["auto_inactive"] = out["player_name_norm"].isin(ofs_names)
             out = out[(active == 1) & (~out["auto_inactive"])].copy()
             out = out.drop(columns=["player_name_norm", "team_abbr_norm", "active", "active_name", "auto_inactive"], errors="ignore")
+
+    features = {}
+    asof_str = asof.strftime("%Y-%m-%d")
+    for _, row in out.iterrows():
+        pid = str(row.get("player_id", "")).strip()
+        if not pid:
+            continue
+        features[pid] = {
+            "player_name": row.get("player_name", ""),
+            "team_abbrev": row.get("last_team_abbrev", ""),
+            "pts_iqr_10": row.get("pts_iqr_10"),
+            "reb_iqr_10": row.get("reb_iqr_10"),
+            "ast_iqr_10": row.get("ast_iqr_10"),
+            "share_pts_l5": row.get("share_pts_l5"),
+            "share_pts_l20": row.get("share_pts_l20"),
+            "share_pts_trend_pp": row.get("share_pts_trend_pp"),
+            "share_reb_l5": row.get("share_reb_l5"),
+            "share_reb_l20": row.get("share_reb_l20"),
+            "share_reb_trend_pp": row.get("share_reb_trend_pp"),
+            "share_ast_l5": row.get("share_ast_l5"),
+            "share_ast_l20": row.get("share_ast_l20"),
+            "share_ast_trend_pp": row.get("share_ast_trend_pp"),
+        }
+    try:
+        os.makedirs("data", exist_ok=True)
+        with open("data/player_features.json", "w", encoding="utf-8") as f:
+            json.dump({"asof_date": asof_str, "players": features}, f, indent=2)
+    except Exception:
+        pass
 
     out.to_csv(args.out, index=False)
     print(f"Wrote snapshot: {args.out} (rows={len(out)})")
