@@ -770,7 +770,7 @@ def write_injury_files(slate: pd.DataFrame, asof_date: dt.date) -> None:
 
 # ------------ HTML rendering ------------------------------------------
 
-def build_html(slate, team_results, league_tbl, outfile, today_date):
+def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev_map):
 
     CSS = """
     <style>
@@ -1095,6 +1095,47 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
         }
     </style>
     """
+
+    # Build team signals for Market Analysis
+    team_signals = {}
+    last_completed = None
+    if not team_results.empty:
+        completed = team_results[team_results["has_result"]]
+        if not completed.empty:
+            last_completed = completed["game_date"].max()
+    if last_completed:
+        try:
+            last_completed_date = dt.datetime.strptime(str(last_completed), "%Y-%m-%d").date()
+        except Exception:
+            last_completed_date = None
+    else:
+        last_completed_date = None
+
+    if last_completed_date and team_abbrev_map:
+        for team_name, abbr in sorted(team_abbrev_map.items()):
+            team_hist = team_results[team_results["team"] == team_name].copy()
+            if team_hist.empty:
+                continue
+            team_hist = team_hist[team_hist["has_result"] & (team_hist["game_date"] <= last_completed_date)]
+            if team_hist.empty:
+                continue
+            team_hist = team_hist.sort_values("game_date")
+            roi_series = team_hist["roi"].dropna().tail(10)
+            prm_score, _ = compute_prm(roi_series)
+            _, _, mispricing = analyze_prm_pattern(roi_series)
+            ss = compute_schedule_stress(team_hist, last_completed_date, None, None)
+            ss_desc = ss.get("desc") if isinstance(ss, dict) else ""
+            ss_score = ss.get("score") if isinstance(ss, dict) else 0
+            b2b = bool(ss.get("is_b2b")) if isinstance(ss, dict) else False
+            high_fatigue = (ss_desc in ("High fatigue", "Severe fatigue spot")) or (ss_score >= 55)
+            team_signals[str(abbr)] = {
+                "prm10": prm_score if pd.notna(prm_score) else None,
+                "mispricing": mispricing,
+                "b2b": b2b,
+                "high_fatigue": high_fatigue,
+                "ss_desc": ss_desc,
+                "ss_score": ss_score,
+            }
 
     lines=[]; w=lines.append
 
@@ -1455,6 +1496,12 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
 
     w(
         "<script>"
+        f"window.__TEAM_SIGNALS_ASOF = {json.dumps(str(last_completed_date) if last_completed_date else '')};"
+        f"window.__TEAM_SIGNALS = {json.dumps(team_signals)};"
+        "</script>"
+    )
+    w(
+        "<script>"
         "(function(){"
         "const panel=document.getElementById('marketReport');"
         "const summaryEl=document.getElementById('marketReportSummary');"
@@ -1672,10 +1719,20 @@ def main():
     slate = master[master["game_date"] == today]
     team_results = build_team_results(master)
     league_tbl = league_overview(team_results)
+    team_abbrev_map = {}
+    for _, r in master.iterrows():
+        home = str(r.get("home_team_name", "")).strip()
+        away = str(r.get("away_team_name", "")).strip()
+        home_abbr = str(r.get("home_team_abbrev", "")).strip().upper()
+        away_abbr = str(r.get("away_team_abbrev", "")).strip().upper()
+        if home and home_abbr:
+            team_abbrev_map[home] = home_abbr
+        if away and away_abbr:
+            team_abbrev_map[away] = away_abbr
     if not slate.empty:
         write_injury_files(slate, today)
     outfile = f"dashboard_{today}.html"
-    build_html(slate, team_results, league_tbl, outfile, today)
+    build_html(slate, team_results, league_tbl, outfile, today, team_abbrev_map)
     print("Dashboard written →", outfile)
 
 if __name__ == "__main__":
