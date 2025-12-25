@@ -597,6 +597,7 @@ def main() -> int:
     indexes = build_game_log_indexes(game_log_df, results_date)
     enriched_found = 0
     failed_samples = []
+    out_count = 0
     if snapshot_path and snapshot_path.exists():
         try:
             with open(snapshot_path, "r", encoding="utf-8") as f:
@@ -627,11 +628,26 @@ def main() -> int:
             hit = None
             delta = None
             if row is not None and stat:
+                dnp_flag = str(row.get("dnp", "") or "").strip() in ("1", "true", "True", "YES", "yes")
+                try:
+                    minutes_val = float(row.get("minutes", 0) or 0)
+                except Exception:
+                    minutes_val = 0.0
+                out_like = dnp_flag or minutes_val == 0
+                if out_like:
+                    item["actual"] = None
+                    item["hit"] = None
+                    item["delta"] = None
+                    item["dnp"] = True
+                    item["status"] = "OUT"
+                    out_count += 1
+                    continue
                 actual_val = resolve_stat_value(row, stat)
                 if actual_val is not None:
                     actual = int(actual_val)
                     hit = actual >= threshold
                     delta = threshold - actual
+                item["dnp"] = False
                 enriched_found += 1
             else:
                 if len(failed_samples) < 3:
@@ -648,6 +664,7 @@ def main() -> int:
         summary_top_total = len(top_targets)
         summary_top_hits = sum(1 for t in top_targets if t.get("hit"))
         print(f"[targets] Top targets enriched: {enriched_found}/{summary_top_total} (rows found)")
+        print(f"[targets] Top targets OUT/DNP: {out_count}")
         if failed_samples:
             print(f"[targets] Top targets missing samples: {failed_samples}")
 
