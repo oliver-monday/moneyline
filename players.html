@@ -392,6 +392,13 @@
     }
     .injury-title { color: #c93c3c; font-weight: 800; }
     .injury-details { font-size: 12px; color: #888; }
+    .date-stamp {
+      font-weight: 800;
+      font-size: 24px;
+      color: #111;
+      width: fit-content;
+      margin: 0 auto 18px;
+    }
     .no-games-today {
       font-size: 18px;
       font-weight: 700;
@@ -749,7 +756,7 @@
     </div>
   </div>
 
-  <div class="muted" id="meta"></div>
+  <div class="date-stamp" id="meta"></div>
 
   <details class="postmortem-panel" id="postmortemPanel" hidden>
     <summary>
@@ -887,7 +894,7 @@
 
   <details class="suggested-targets" id="suggestedPanel">
     <summary>
-      <strong>Suggested Targets</strong>
+      <span>Suggested Targets</span>
       <span id="suggestedCount" class="suggested-count"></span>
     </summary>
     <div class="suggested-body">

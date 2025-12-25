@@ -866,6 +866,13 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
             .brand-logo { height: 80px; }
         }
         .page-subtitle { margin: 0 0 18px; }
+        .date-stamp {
+            font-weight: 800;
+            font-size: 24px;
+            color: #111;
+            width: fit-content;
+            margin: 0 auto 18px;
+        }
         .no-games {
             font-size: 18px;
             font-weight: 700;
@@ -1205,7 +1212,7 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
     w('<div class="brand"><div class="brand-text">NBA</div><img class="brand-logo" src="./assets/NBAGPTlogo-header.png" width="80" height="80" decoding="async" fetchpriority="high" alt="NBA GPT logo"><div class="brand-text">GPT</div></div>')
     w('<div class="nav"><a class="active" href="./index.html">Moneylines</a><a href="./players.html">Player Props</a></div>')
     w('</div>')
-    w(f"<div class=\"muted page-subtitle\">{today_display}</div>")
+    w(f"<div class=\"date-stamp\">{today_display}</div>")
     w("<details class='market-report' id='marketReport' hidden>")
     w("<summary>")
     w("<div class='report-title'>Yesterday Recap</div>")
