@@ -192,7 +192,7 @@
       align-items:center;
       white-space: nowrap;
     }
-    details.suggested-targets { margin: 10px 0 12px; border: 1px solid #eee; border-radius: 12px; background:#fff; }
+    details.suggested-targets { margin: 10px 0 12px; border: 2px solid #f97316; border-radius: 12px; background:#fff; }
     details.injury-panel { margin: 10px 0 12px; border: 1px solid #eee; border-radius: 12px; background:#fff; }
     details.suggested-targets summary {
       font-weight: 700;
@@ -229,6 +229,34 @@
     .suggested-targets summary strong { color: #d97706; }
     .suggested-body { padding: 10px 14px 12px; }
     .suggested-targets .stable-row { margin: 6px 0 10px; }
+    .suggested-count { color:#666; font-weight:700; }
+    details.suggested-subpanel { border-top: 1px solid #eee; padding-top: 8px; margin-top: 8px; }
+    details.suggested-subpanel:first-child { border-top: 0; padding-top: 0; margin-top: 0; }
+    details.suggested-subpanel summary {
+      font-weight: 800;
+      color:#666;
+      cursor: pointer;
+      list-style: none;
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      padding: 6px 0;
+      position: relative;
+      padding-right: 26px;
+    }
+    details.suggested-subpanel summary::-webkit-details-marker { display:none; }
+    details.suggested-subpanel summary::after {
+      content:"›";
+      position:absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%) rotate(0deg);
+      font-size: 28px;
+      color:#bbb;
+      transition: transform .15s ease;
+      line-height: 1;
+    }
+    details.suggested-subpanel.is-open summary::after { transform: translateY(-50%) rotate(90deg); }
     .suggested-list { display:flex; flex-direction:column; gap:8px; }
     .suggested-row { display:flex; align-items:center; gap:12px; padding:6px 0; cursor: pointer; }
     .suggested-player {
@@ -839,17 +867,19 @@
   </details>
 
   <details class="suggested-targets" id="suggestedPanel">
-    <summary><strong>Suggested Targets</strong></summary>
+    <summary>
+      <strong>Suggested Targets</strong>
+      <span id="suggestedCount" class="suggested-count"></span>
+    </summary>
     <div class="suggested-body">
-      <div class="stable-row suggested-toggle-row">
-        <label class="stable-label">
-          <input id="suggestedAllToggle" type="checkbox" />
-          <span class="stable-text">
-            <span class="stable-title">All Targets</span>
-          </span>
-        </label>
-      </div>
-      <div id="suggestedTargetsContent"></div>
+      <details class="suggested-subpanel" id="suggestedTopPanel" open>
+        <summary>Top Targets</summary>
+        <div class="suggested-subbody" id="suggestedTopContent"></div>
+      </details>
+      <details class="suggested-subpanel" id="suggestedAllPanel">
+        <summary>All Targets</summary>
+        <div class="suggested-subbody" id="suggestedAllContent"></div>
+      </details>
     </div>
   </details>
 
@@ -1524,8 +1554,11 @@ async function load() {
   const postmortemPreview = document.getElementById("postmortemPreview");
   const postmortemBody = document.getElementById("postmortemBody");
   const suggestedPanel = document.getElementById("suggestedPanel");
-  const suggestedTargetsContent = document.getElementById("suggestedTargetsContent");
-  const suggestedAllToggle = document.getElementById("suggestedAllToggle");
+  const suggestedCount = document.getElementById("suggestedCount");
+  const suggestedTopContent = document.getElementById("suggestedTopContent");
+  const suggestedAllContent = document.getElementById("suggestedAllContent");
+  const suggestedTopPanel = document.getElementById("suggestedTopPanel");
+  const suggestedAllPanel = document.getElementById("suggestedAllPanel");
   const injuryPanel = document.getElementById("injuryPanel");
   const injuryContent = document.getElementById("injuryContent");
   const noGamesTodayBanner = document.getElementById("noGamesTodayBanner");
@@ -1552,6 +1585,7 @@ async function load() {
       d.classList.contains("game-group") ||
       d.classList.contains("suggested-targets") ||
       d.classList.contains("suggested-game-group") ||
+      d.classList.contains("suggested-subpanel") ||
       d.classList.contains("injury-panel") ||
       d.classList.contains("injury-game")
     )) {
@@ -1577,28 +1611,10 @@ async function load() {
     `;
   }
 
-  function renderSuggestedDrawer() {
-    if (!suggestedPanel || !suggestedTargetsContent || !suggestedAllToggle) return;
-    const showAll = suggestedAllToggle.checked;
-    const suggested = cachedSuggested || [];
-    const allTargets = cachedAllTargets || [];
-
-    if (!suggested.length && !allTargets.length) {
-      suggestedPanel.hidden = true;
-      return;
-    }
-    suggestedPanel.hidden = false;
-
-    if (!showAll) {
-      const rows = suggested.slice(0, 6).map(targetRowHTML).join("");
-      suggestedTargetsContent.innerHTML = rows
-        ? `<div class="suggested-list">${rows}</div>`
-        : "<div class=\"muted\">—</div>";
-      return;
-    }
-
+  function renderSuggestedSection(items, container) {
+    if (!container) return;
     const byGame = new Map();
-    for (const t of allTargets) {
+    for (const t of items) {
       const key = String(t.gameId || t.gameKey || "Other");
       if (!byGame.has(key)) {
         byGame.set(key, { header: String(t.gameLabel || "Other"), items: [] });
@@ -1619,8 +1635,25 @@ async function load() {
       `);
     }
 
-    suggestedTargetsContent.innerHTML = chunks.join("") || "<div class=\"muted\">—</div>";
-    suggestedTargetsContent.querySelectorAll("details.suggested-game-group").forEach(syncDetailsOpenClass);
+    container.innerHTML = chunks.join("") || "<div class=\"muted\">—</div>";
+    container.querySelectorAll("details.suggested-game-group").forEach(syncDetailsOpenClass);
+  }
+
+  function renderSuggestedDrawer() {
+    if (!suggestedPanel || !suggestedTopContent || !suggestedAllContent) return;
+    const suggested = cachedSuggested || [];
+    const allTargets = cachedAllTargets || [];
+
+    if (!suggested.length && !allTargets.length) {
+      suggestedPanel.hidden = true;
+      return;
+    }
+    suggestedPanel.hidden = false;
+    if (suggestedCount) {
+      suggestedCount.textContent = allTargets.length ? ` (n=${allTargets.length})` : "";
+    }
+    renderSuggestedSection(suggested.slice(0, 6), suggestedTopContent);
+    renderSuggestedSection(allTargets, suggestedAllContent);
     return;
   }
 
@@ -1710,12 +1743,8 @@ async function load() {
     card.scrollIntoView({ behavior: "smooth", block: "center" });
   }
 
-  if (suggestedAllToggle) {
-    suggestedAllToggle.addEventListener("change", renderSuggestedDrawer);
-  }
-
-  if (suggestedTargetsContent) {
-    suggestedTargetsContent.addEventListener("click", (e) => {
+  if (suggestedPanel) {
+    suggestedPanel.addEventListener("click", (e) => {
       const row = e.target.closest(".suggested-row");
       if (!row) return;
       const playerKey = row.getAttribute("data-player-key") || "";
@@ -1927,7 +1956,8 @@ async function load() {
     }
     if (noGamesMode) {
       cards.innerHTML = "";
-      if (suggestedTargetsContent) suggestedTargetsContent.innerHTML = "";
+      if (suggestedTopContent) suggestedTopContent.innerHTML = "";
+      if (suggestedAllContent) suggestedAllContent.innerHTML = "";
       return;
     } else if (injuryContent) {
       renderInjuryReport();
@@ -2281,7 +2311,7 @@ async function load() {
       });
     }
 
-    document.querySelectorAll("details.card, details.game-group, details.suggested-targets, details.suggested-game-group").forEach(syncDetailsOpenClass);
+    document.querySelectorAll("details.card, details.game-group, details.suggested-targets, details.suggested-subpanel, details.suggested-game-group").forEach(syncDetailsOpenClass);
 
     try {
       const targetsWin = "10";
