@@ -269,17 +269,9 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
 
     game_log_df = game_log_df.copy()
     game_log_df["game_date"] = game_log_df["game_date"].astype(str).str.strip()
-    day_logs = game_log_df[game_log_df["game_date"] == target_date].copy()
-    if day_logs.empty:
+    indexes = build_game_log_indexes(game_log_df, target_date)
+    if not any(indexes):
         return empty
-
-    day_logs["player_name_norm"] = day_logs["player_name"].map(normalize_name)
-    day_logs["team_abbrev_norm"] = day_logs["team_abbrev"].astype(str).str.upper().str.strip()
-    day_logs = day_logs.sort_values("minutes", ascending=False)
-    day_logs = day_logs.drop_duplicates(subset=["player_name_norm", "team_abbrev_norm"], keep="first")
-    log_index = {
-        (r["player_name_norm"], r["team_abbrev_norm"]): r for _, r in day_logs.iterrows()
-    }
 
     hits = []
     misses = []
@@ -288,15 +280,14 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
     hit_count = 0
 
     for entry in snapshot_entries:
-        name_norm = normalize_name(entry.get("player_name", ""))
-        team_norm = str(entry.get("team_abbrev", "")).upper().strip()
-        key = (name_norm, team_norm)
-        row = log_index.get(key)
+        row = find_game_log_row(entry, indexes)
         if row is None:
             continue
         stat = entry.get("stat")
         threshold = int(entry.get("threshold", 0) or 0)
-        actual = int(float(row.get(stat, 0) or 0))
+        actual_val = resolve_stat_value(row, stat)
+        actual = int(actual_val) if actual_val is not None else 0
+        team_norm = str(row.get("team_abbrev", "")).upper().strip()
         total += 1
 
         if actual >= threshold:
@@ -389,15 +380,17 @@ def build_log_index(game_log_df: pd.DataFrame, target_date: str):
 
 def build_game_log_indexes(game_log_df: pd.DataFrame, target_date: str):
     if game_log_df.empty:
-        return {}, {}
+        return {}, {}, {}, {}
     df = game_log_df.copy()
     df["game_date"] = df["game_date"].astype(str).str.strip()
     day_logs = df[df["game_date"] == target_date].copy()
     if day_logs.empty:
-        return {}, {}
+        return {}, {}, {}, {}
     day_logs["player_name_norm"] = day_logs["player_name"].map(normalize_name)
     day_logs["player_id_norm"] = day_logs["player_id"].astype(str).str.strip()
     day_logs["game_id_norm"] = day_logs["game_id"].astype(str).str.strip()
+    day_logs["team_abbrev_norm"] = day_logs["team_abbrev"].astype(str).str.upper().str.strip()
+    day_logs["opp_abbrev_norm"] = day_logs["opp_abbrev"].astype(str).str.upper().str.strip()
     def minutes_val(row):
         for col in ("minutes", "mins", "min", "minutes_raw"):
             if col in row and pd.notna(row[col]):
@@ -408,10 +401,14 @@ def build_game_log_indexes(game_log_df: pd.DataFrame, target_date: str):
         return 0.0
     by_pid_gid = {}
     by_name_gid = {}
+    by_name_team = {}
+    by_name_team_opp = {}
     for _, row in day_logs.iterrows():
         gid = str(row.get("game_id_norm", "")).strip()
         pid = str(row.get("player_id_norm", "")).strip()
         name = row.get("player_name_norm", "")
+        team = row.get("team_abbrev_norm", "")
+        opp = row.get("opp_abbrev_norm", "")
         mval = minutes_val(row)
         if gid and pid:
             key = (pid, gid)
@@ -423,9 +420,56 @@ def build_game_log_indexes(game_log_df: pd.DataFrame, target_date: str):
             cur = by_name_gid.get(key)
             if not cur or mval > cur[0]:
                 by_name_gid[key] = (mval, row)
+        if name and team:
+            key = (name, team)
+            cur = by_name_team.get(key)
+            if not cur or mval > cur[0]:
+                by_name_team[key] = (mval, row)
+        if name and team and opp:
+            key = (name, team, opp)
+            cur = by_name_team_opp.get(key)
+            if not cur or mval > cur[0]:
+                by_name_team_opp[key] = (mval, row)
     by_pid_gid = {k: v[1] for k, v in by_pid_gid.items()}
     by_name_gid = {k: v[1] for k, v in by_name_gid.items()}
-    return by_pid_gid, by_name_gid
+    by_name_team = {k: v[1] for k, v in by_name_team.items()}
+    by_name_team_opp = {k: v[1] for k, v in by_name_team_opp.items()}
+    return by_pid_gid, by_name_gid, by_name_team, by_name_team_opp
+
+
+def resolve_stat_value(row, stat: str):
+    stat_norm = str(stat or "").lower().strip()
+    candidates = {
+        "pts": ["pts", "points"],
+        "reb": ["reb", "rebounds"],
+        "ast": ["ast", "assists"],
+    }.get(stat_norm, [stat_norm])
+    for col in candidates:
+        if col in row and pd.notna(row[col]):
+            try:
+                return float(row[col])
+            except Exception:
+                continue
+    return None
+
+
+def find_game_log_row(entry, indexes):
+    by_pid_gid, by_name_gid, by_name_team, by_name_team_opp = indexes
+    pid = str(entry.get("player_id", "")).strip()
+    gid = str(entry.get("game_id", "")).strip()
+    name_norm = normalize_name(entry.get("player_name", ""))
+    team_norm = str(entry.get("team_abbrev", "")).upper().strip()
+    opp_norm = str(entry.get("opp", "")).upper().strip()
+    row = None
+    if pid and gid:
+        row = by_pid_gid.get((pid, gid))
+    if row is None and gid and name_norm:
+        row = by_name_gid.get((name_norm, gid))
+    if row is None and name_norm and team_norm and opp_norm:
+        row = by_name_team_opp.get((name_norm, team_norm, opp_norm))
+    if row is None and name_norm and team_norm:
+        row = by_name_team.get((name_norm, team_norm))
+    return row
 
 
 def main() -> int:
@@ -541,8 +585,9 @@ def main() -> int:
     top_targets = []
     summary_top_total = 0
     summary_top_hits = 0
-    log_index = build_log_index(game_log_df, results_date)
+    indexes = build_game_log_indexes(game_log_df, results_date)
     enriched_found = 0
+    failed_samples = []
     if snapshot_path and snapshot_path.exists():
         try:
             with open(snapshot_path, "r", encoding="utf-8") as f:
@@ -565,35 +610,37 @@ def main() -> int:
         candidates = sorted(candidates, key=rank_key)
         top_targets = candidates[:6]
 
-        by_pid_gid, by_name_gid = build_game_log_indexes(game_log_df, results_date)
         for item in top_targets:
-            pid = str(item.get("player_id", "")).strip()
-            gid = str(item.get("game_id", "")).strip()
-            name_norm = normalize_name(item.get("player_name", ""))
-            team_norm = str(item.get("team_abbrev", "")).upper().strip()
-            row = None
-            if pid and gid:
-                row = by_pid_gid.get((pid, gid))
-            if row is None and gid and name_norm:
-                row = by_name_gid.get((name_norm, gid))
-            if row is None and name_norm and team_norm:
-                row = log_index.get((name_norm, team_norm))
+            row = find_game_log_row(item, indexes)
             stat = item.get("stat")
             threshold = int(item.get("threshold", 0) or 0)
             actual = None
             hit = None
             delta = None
             if row is not None and stat:
-                actual = int(float(row.get(stat, 0) or 0))
-                hit = actual >= threshold
-                delta = threshold - actual
+                actual_val = resolve_stat_value(row, stat)
+                if actual_val is not None:
+                    actual = int(actual_val)
+                    hit = actual >= threshold
+                    delta = threshold - actual
                 enriched_found += 1
+            else:
+                if len(failed_samples) < 3:
+                    failed_samples.append({
+                        "player": item.get("player_name", ""),
+                        "team": item.get("team_abbrev", ""),
+                        "opp": item.get("opp", ""),
+                        "stat": stat,
+                        "threshold": threshold,
+                    })
             item["actual"] = actual
             item["hit"] = bool(hit) if hit is not None else False
             item["delta"] = delta
         summary_top_total = len(top_targets)
         summary_top_hits = sum(1 for t in top_targets if t.get("hit"))
         print(f"[targets] Top targets enriched: {enriched_found}/{summary_top_total} (rows found)")
+        if failed_samples:
+            print(f"[targets] Top targets missing samples: {failed_samples}")
 
     postmortem = compute_postmortem(snapshot_entries, game_log_df, results_date)
     postmortem["built_at_utc"] = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
