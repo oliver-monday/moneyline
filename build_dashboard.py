@@ -999,7 +999,7 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
             margin-top: 18px;
             border-radius: 16px;
             border: 1px solid #d97706;
-            background: #d97706;
+            background: #fff;
             padding: 10px 12px;
         }
         .league-overview summary {
@@ -1009,7 +1009,8 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
             padding-right: 30px;
             font-weight: 700;
             font-size: 18px;
-            color: #fff;
+            color: #d97706;
+            padding: 6px 0;
         }
         .league-overview summary::-webkit-details-marker { display: none; }
         .league-overview summary::after {
@@ -1018,19 +1019,20 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
             right: 10px;
             top: 50%;
             transform: translateY(-50%);
-            opacity: 0.8;
+            opacity: 0.7;
             font-size: 22px;
             font-weight: 700;
             transition: transform 0.15s ease;
-            color: #fff;
+            color: #d97706;
         }
         .league-overview[open] summary::after {
             transform: translateY(-50%) rotate(90deg);
         }
         .league-sub {
             margin-top: 10px;
-            border-top: 1px solid rgba(255,255,255,0.3);
-            padding-top: 8px;
+            border: 1px solid #d97706;
+            border-radius: 12px;
+            padding: 8px 10px;
         }
         .league-sub summary {
             cursor: pointer;
@@ -1039,7 +1041,8 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
             padding-right: 30px;
             font-weight: 700;
             font-size: 16px;
-            color: #fff;
+            color: #d97706;
+            padding: 4px 0;
         }
         .league-sub summary::-webkit-details-marker { display: none; }
         .league-sub summary::after {
@@ -1048,18 +1051,18 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
             right: 10px;
             top: 50%;
             transform: translateY(-50%);
-            opacity: 0.8;
+            opacity: 0.7;
             font-size: 20px;
             font-weight: 700;
             transition: transform 0.15s ease;
-            color: #fff;
+            color: #d97706;
         }
         .league-sub[open] summary::after {
             transform: translateY(-50%) rotate(90deg);
         }
         .league-overview .detail-label,
         .league-overview .detail-value {
-            color: #fff;
+            color: #111;
         }
         details { margin-top: 8px; }
         summary { font-weight: bold; color: #111; }
