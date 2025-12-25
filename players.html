@@ -141,12 +141,45 @@
     .postmortem-body { margin-top: 8px; font-size: 14px; color:#444; }
     .postmortem-section { margin-top: 8px; }
     .postmortem-section-title { font-weight: 800; font-size: 16px; color:#444; }
-    .postmortem-section-title.hits { color: #1f5f1f; }
-    .postmortem-section-title.misses { color: #7a2e2e; }
+    .postmortem-section-title.hits { color: #2f8f2f; }
+    .postmortem-section-title.misses { color: #c93c3c; }
     .pm-group { margin-top: 6px; }
     .pm-player-row { font-weight: 700; color: #555; margin: 4px 0; }
     .pm-target-row { margin-left: 14px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
     .pm-delta { color: #7a2e2e; font-weight: 800; }
+    .pm-pill-hit {
+      background:#2f8f2f;
+      color:#fff;
+      border-radius:999px;
+      padding:3px 8px;
+      font-size:11px;
+      font-weight:700;
+      display:inline-flex;
+      align-items:center;
+      white-space:nowrap;
+    }
+    .pm-pill-miss {
+      background:#c93c3c;
+      color:#fff;
+      border-radius:999px;
+      padding:3px 8px;
+      font-size:11px;
+      font-weight:700;
+      display:inline-flex;
+      align-items:center;
+      white-space:nowrap;
+    }
+    .pm-pill-out {
+      background:#e0e0e0;
+      color:#555;
+      border-radius:999px;
+      padding:3px 8px;
+      font-size:11px;
+      font-weight:700;
+      display:inline-flex;
+      align-items:center;
+      white-space:nowrap;
+    }
     .pm-reach-pill {
       background:#e8f7e8;
       border:1px solid #6ac46a;
@@ -1731,7 +1764,7 @@ async function load() {
         return a._delta - b._delta;
       });
 
-    function renderSection(title, items, isMisses, titleClass) {
+    function renderSection(title, items, isMisses, titleClass, isTopTargets) {
       const grouped = groupByPlayer(items);
       if (!grouped.length) {
         return `
@@ -1767,7 +1800,23 @@ async function load() {
               return `<span class="pm-reach-pill">Reached: ${rStat} ${reached}+</span>`;
             }).join("");
           }
-          return `<div class="pm-target-row">${stat} ${threshold}+ (${actual})${deltaText}${reachPills ? ` ${reachPills}` : ""}</div>`;
+          let statusPill = "";
+          if (isTopTargets) {
+            const actualNum = toNum(item.actual);
+            const thresholdNum = toNum(item.threshold);
+            if (actualNum != null && thresholdNum != null) {
+              statusPill = actualNum >= thresholdNum
+                ? `<span class="pm-pill-hit">HIT</span>`
+                : `<span class="pm-pill-miss">MISSED</span>`;
+            } else {
+              const team = normAbbrev(item.team_abbrev || "");
+              const injury = matchInjury(team, item.player_name || "", injuriesByTeam);
+              const status = String((injury && injury.status) || "").toUpperCase();
+              const outLike = status.includes("OUT") || status.includes("OFS") || status.includes("SUSP");
+              statusPill = outLike ? `<span class="pm-pill-out">OUT</span>` : `<span class="pm-pill-out">DNP</span>`;
+            }
+          }
+          return `<div class="pm-target-row">${stat} ${threshold}+ (${actual})${deltaText}${reachPills ? ` ${reachPills}` : ""}${statusPill ? ` ${statusPill}` : ""}</div>`;
         }).join("");
         return `<div class="pm-group">${header}${targets}</div>`;
       }).join("");
@@ -1780,9 +1829,9 @@ async function load() {
     }
 
     postmortemBody.innerHTML = `
-      ${renderSection("Top Targets", topTargets, false)}
-      ${renderSection("Hits", hitsList, false, "hits")}
-      ${renderSection("Misses", misses, true, "misses")}
+      ${renderSection("TOP TARGETS", topTargets, false, "", true)}
+      ${renderSection("HITS", hitsList, false, "hits")}
+      ${renderSection("MISSES", misses, true, "misses")}
     `;
   }
 

@@ -303,6 +303,7 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
             hit_count += 1
             if len(hits) < 20:
                 hits.append({
+                    "player_id": entry.get("player_id"),
                     "player_name": entry.get("player_name", ""),
                     "team_abbrev": team_norm,
                     "opp": entry.get("opp", row.get("opp_abbrev", "")),
@@ -312,6 +313,7 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
                 })
         else:
             misses.append({
+                "player_id": entry.get("player_id"),
                 "player_name": entry.get("player_name", ""),
                 "team_abbrev": team_norm,
                 "opp": entry.get("opp", row.get("opp_abbrev", "")),
@@ -329,6 +331,7 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
                 break
         if reached is not None and len(reaches) < 5:
             reaches.append({
+                "player_id": entry.get("player_id"),
                 "player_name": entry.get("player_name", ""),
                 "team_abbrev": team_norm,
                 "opp": entry.get("opp", row.get("opp_abbrev", "")),
@@ -384,6 +387,47 @@ def build_log_index(game_log_df: pd.DataFrame, target_date: str):
     }
 
 
+def build_game_log_indexes(game_log_df: pd.DataFrame, target_date: str):
+    if game_log_df.empty:
+        return {}, {}
+    df = game_log_df.copy()
+    df["game_date"] = df["game_date"].astype(str).str.strip()
+    day_logs = df[df["game_date"] == target_date].copy()
+    if day_logs.empty:
+        return {}, {}
+    day_logs["player_name_norm"] = day_logs["player_name"].map(normalize_name)
+    day_logs["player_id_norm"] = day_logs["player_id"].astype(str).str.strip()
+    day_logs["game_id_norm"] = day_logs["game_id"].astype(str).str.strip()
+    def minutes_val(row):
+        for col in ("minutes", "mins", "min", "minutes_raw"):
+            if col in row and pd.notna(row[col]):
+                try:
+                    return float(row[col])
+                except Exception:
+                    return 0.0
+        return 0.0
+    by_pid_gid = {}
+    by_name_gid = {}
+    for _, row in day_logs.iterrows():
+        gid = str(row.get("game_id_norm", "")).strip()
+        pid = str(row.get("player_id_norm", "")).strip()
+        name = row.get("player_name_norm", "")
+        mval = minutes_val(row)
+        if gid and pid:
+            key = (pid, gid)
+            cur = by_pid_gid.get(key)
+            if not cur or mval > cur[0]:
+                by_pid_gid[key] = (mval, row)
+        if gid and name:
+            key = (name, gid)
+            cur = by_name_gid.get(key)
+            if not cur or mval > cur[0]:
+                by_name_gid[key] = (mval, row)
+    by_pid_gid = {k: v[1] for k, v in by_pid_gid.items()}
+    by_name_gid = {k: v[1] for k, v in by_name_gid.items()}
+    return by_pid_gid, by_name_gid
+
+
 def main() -> int:
     master_path = "nba_master.csv"
     snapshot_path = "player_snapshot.csv"
@@ -432,6 +476,7 @@ def main() -> int:
             for t in targets:
                 entries.append({
                     "asof_date": slate_date,
+                    "player_id": row.get("player_id", ""),
                     "player_name": row.get("player_name", ""),
                     "team_abbrev": team,
                     "opp": opp,
@@ -518,11 +563,16 @@ def main() -> int:
         candidates = sorted(candidates, key=rank_key)
         top_targets = candidates[:6]
 
-        log_index = build_log_index(game_log_df, results_date)
+        by_pid_gid, by_name_gid = build_game_log_indexes(game_log_df, results_date)
         for item in top_targets:
+            pid = str(item.get("player_id", "")).strip()
+            gid = str(item.get("game_id", "")).strip()
             name_norm = normalize_name(item.get("player_name", ""))
-            team_norm = str(item.get("team_abbrev", "")).upper().strip()
-            row = log_index.get((name_norm, team_norm))
+            row = None
+            if pid and gid:
+                row = by_pid_gid.get((pid, gid))
+            if row is None and gid and name_norm:
+                row = by_name_gid.get((name_norm, gid))
             stat = item.get("stat")
             threshold = int(item.get("threshold", 0) or 0)
             actual = None
