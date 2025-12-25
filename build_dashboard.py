@@ -925,19 +925,20 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
         .market-analysis-grid {
             display: flex;
             flex-direction: column;
-            gap: 6px;
+            gap: 4px;
             font-size: 14px;
             color: #444;
             line-height: 1.35;
         }
         .ma-row {
-            display: flex;
-            justify-content: space-between;
-            gap: 12px;
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            column-gap: 14px;
             align-items: baseline;
+            padding: 4px 0;
         }
         .ma-label { font-weight: 700; color: #555; }
-        .ma-value { text-align: right; }
+        .ma-value { text-align: left; color: #333; }
         .game-details summary {
             cursor: pointer;
             list-style: none;
@@ -1474,9 +1475,11 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
         "if(analysisGrid) analysisGrid.innerHTML='';"
         "function addMarketAnalysisRow(label, value){"
         "if(!analysisGrid) return;"
+        "const v=String(value||'').trim();"
+        "if(!v || v==='—' || v==='-') return;"
         "const row=document.createElement('div');"
         "row.className='ma-row';"
-        "row.innerHTML=`<div class=\\\"ma-label\\\">${label}</div><div class=\\\"ma-value\\\">${value}</div>`;"
+        "row.innerHTML=`<div class=\\\"ma-label\\\">${label}</div><div class=\\\"ma-value\\\">${v}</div>`;"
         "analysisGrid.appendChild(row);"
         "}"
         "function fmtMl(v){"
