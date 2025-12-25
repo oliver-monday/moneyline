@@ -292,16 +292,15 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
 
         if actual >= threshold:
             hit_count += 1
-            if len(hits) < 20:
-                hits.append({
-                    "player_id": entry.get("player_id"),
-                    "player_name": entry.get("player_name", ""),
-                    "team_abbrev": team_norm,
-                    "opp": entry.get("opp", row.get("opp_abbrev", "")),
-                    "stat": stat,
-                    "threshold": threshold,
-                    "actual": actual,
-                })
+            hits.append({
+                "player_id": entry.get("player_id"),
+                "player_name": entry.get("player_name", ""),
+                "team_abbrev": team_norm,
+                "opp": entry.get("opp", row.get("opp_abbrev", "")),
+                "stat": stat,
+                "threshold": threshold,
+                "actual": actual,
+            })
         else:
             misses.append({
                 "player_id": entry.get("player_id"),
@@ -332,8 +331,9 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
                 "actual": actual,
             })
 
+    misses_sorted = sorted(misses, key=lambda x: x["delta"])
     closest = []
-    for m in misses:
+    for m in misses_sorted:
         stat = m["stat"]
         threshold = m["threshold"]
         actual = m["actual"]
@@ -343,7 +343,7 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
             ok = actual >= threshold - 2
         if ok and actual < threshold:
             closest.append(m)
-    closest = sorted(closest, key=lambda x: x["delta"])[:10]
+    closest = closest[:10]
 
     hit_rate = int(round((hit_count / total) * 100)) if total else 0
 
@@ -355,7 +355,8 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
             "misses": max(0, total - hit_count),
             "hit_rate_pct": hit_rate,
         },
-        "hits": hits[:20],
+        "hits": hits,
+        "misses": misses_sorted,
         "closest_misses": closest,
         "reaches_hit": reaches[:5],
     }
