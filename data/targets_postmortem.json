@@ -6,10 +6,11 @@
     "misses": 4,
     "hit_rate_pct": 84,
     "top_targets_total": 6,
-    "top_targets_hits": 3
+    "top_targets_hits": 0
   },
   "hits": [
     {
+      "player_id": null,
       "player_name": "Deni Avdija",
       "team_abbrev": "POR",
       "opp": "ORL",
@@ -18,6 +19,7 @@
       "actual": 9
     },
     {
+      "player_id": null,
       "player_name": "Trey Murphy III",
       "team_abbrev": "NO",
       "opp": "CLE",
@@ -26,6 +28,7 @@
       "actual": 4
     },
     {
+      "player_id": null,
       "player_name": "Cameron Johnson",
       "team_abbrev": "DEN",
       "opp": "DAL",
@@ -34,6 +37,7 @@
       "actual": 4
     },
     {
+      "player_id": null,
       "player_name": "Andrew Nembhard",
       "team_abbrev": "IND",
       "opp": "MIL",
@@ -42,6 +46,7 @@
       "actual": 2
     },
     {
+      "player_id": null,
       "player_name": "Andrew Nembhard",
       "team_abbrev": "IND",
       "opp": "MIL",
@@ -50,6 +55,7 @@
       "actual": 7
     },
     {
+      "player_id": null,
       "player_name": "Darius Garland",
       "team_abbrev": "CLE",
       "opp": "NO",
@@ -58,6 +64,7 @@
       "actual": 5
     },
     {
+      "player_id": null,
       "player_name": "Darius Garland",
       "team_abbrev": "CLE",
       "opp": "NO",
@@ -66,6 +73,7 @@
       "actual": 10
     },
     {
+      "player_id": null,
       "player_name": "Shaedon Sharpe",
       "team_abbrev": "POR",
       "opp": "ORL",
@@ -74,6 +82,7 @@
       "actual": 25
     },
     {
+      "player_id": null,
       "player_name": "Shaedon Sharpe",
       "team_abbrev": "POR",
       "opp": "ORL",
@@ -82,6 +91,7 @@
       "actual": 2
     },
     {
+      "player_id": null,
       "player_name": "Jaylen Wells",
       "team_abbrev": "MEM",
       "opp": "UTAH",
@@ -90,6 +100,7 @@
       "actual": 12
     },
     {
+      "player_id": null,
       "player_name": "Cam Spencer",
       "team_abbrev": "MEM",
       "opp": "UTAH",
@@ -98,6 +109,7 @@
       "actual": 14
     },
     {
+      "player_id": null,
       "player_name": "Cam Spencer",
       "team_abbrev": "MEM",
       "opp": "UTAH",
@@ -106,6 +118,7 @@
       "actual": 5
     },
     {
+      "player_id": null,
       "player_name": "Cam Spencer",
       "team_abbrev": "MEM",
       "opp": "UTAH",
@@ -114,6 +127,7 @@
       "actual": 8
     },
     {
+      "player_id": null,
       "player_name": "Derik Queen",
       "team_abbrev": "NO",
       "opp": "CLE",
@@ -122,6 +136,7 @@
       "actual": 10
     },
     {
+      "player_id": null,
       "player_name": "Derik Queen",
       "team_abbrev": "NO",
       "opp": "CLE",
@@ -130,6 +145,7 @@
       "actual": 6
     },
     {
+      "player_id": null,
       "player_name": "Donovan Clingan",
       "team_abbrev": "POR",
       "opp": "ORL",
@@ -138,6 +154,7 @@
       "actual": 10
     },
     {
+      "player_id": null,
       "player_name": "Cedric Coward",
       "team_abbrev": "MEM",
       "opp": "UTAH",
@@ -146,6 +163,7 @@
       "actual": 6
     },
     {
+      "player_id": null,
       "player_name": "Jeremiah Fears",
       "team_abbrev": "NO",
       "opp": "CLE",
@@ -154,6 +172,7 @@
       "actual": 4
     },
     {
+      "player_id": null,
       "player_name": "Jarrett Allen",
       "team_abbrev": "CLE",
       "opp": "NO",
@@ -162,6 +181,7 @@
       "actual": 2
     },
     {
+      "player_id": null,
       "player_name": "Ausar Thompson",
       "team_abbrev": "DET",
       "opp": "SAC",
@@ -172,6 +192,7 @@
   ],
   "closest_misses": [
     {
+      "player_id": null,
       "player_name": "Jaren Jackson Jr.",
       "team_abbrev": "MEM",
       "opp": "UTAH",
@@ -181,6 +202,7 @@
       "delta": 1
     },
     {
+      "player_id": null,
       "player_name": "Jerami Grant",
       "team_abbrev": "POR",
       "opp": "ORL",
@@ -190,6 +212,7 @@
       "delta": 2
     },
     {
+      "player_id": null,
       "player_name": "Toumani Camara",
       "team_abbrev": "POR",
       "opp": "ORL",
@@ -201,6 +224,7 @@
   ],
   "reaches_hit": [
     {
+      "player_id": null,
       "player_name": "Deni Avdija",
       "team_abbrev": "POR",
       "opp": "ORL",
@@ -210,6 +234,7 @@
       "actual": 9
     },
     {
+      "player_id": null,
       "player_name": "Cameron Johnson",
       "team_abbrev": "DEN",
       "opp": "DAL",
@@ -219,6 +244,7 @@
       "actual": 4
     },
     {
+      "player_id": null,
       "player_name": "Darius Garland",
       "team_abbrev": "CLE",
       "opp": "NO",
@@ -228,6 +254,7 @@
       "actual": 5
     },
     {
+      "player_id": null,
       "player_name": "Darius Garland",
       "team_abbrev": "CLE",
       "opp": "NO",
@@ -237,6 +264,7 @@
       "actual": 10
     },
     {
+      "player_id": null,
       "player_name": "Shaedon Sharpe",
       "team_abbrev": "POR",
       "opp": "ORL",
@@ -246,7 +274,7 @@
       "actual": 25
     }
   ],
-  "built_at_utc": "2025-12-25T08:00:10Z",
+  "built_at_utc": "2025-12-25T08:35:20Z",
   "snapshot_file": "targets_snapshot_2025-12-23.json",
   "top_targets": [
     {
@@ -260,9 +288,9 @@
       "hits": 10,
       "window_games": 10,
       "hit_rate": 1.0,
-      "actual": 2,
-      "hit": true,
-      "delta": 0
+      "actual": null,
+      "hit": false,
+      "delta": null
     },
     {
       "asof_date": "2025-12-23",
@@ -275,9 +303,9 @@
       "hits": 10,
       "window_games": 10,
       "hit_rate": 1.0,
-      "actual": 14,
-      "hit": true,
-      "delta": -4
+      "actual": null,
+      "hit": false,
+      "delta": null
     },
     {
       "asof_date": "2025-12-23",
@@ -320,9 +348,9 @@
       "hits": 9,
       "window_games": 10,
       "hit_rate": 0.9,
-      "actual": 9,
-      "hit": true,
-      "delta": -3
+      "actual": null,
+      "hit": false,
+      "delta": null
     },
     {
       "asof_date": "2025-12-23",

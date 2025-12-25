@@ -1,6 +1,7 @@
 [
   {
     "asof_date": "2025-12-25",
+    "player_id": "4432639",
     "player_name": "Jabari Smith Jr.",
     "team_abbrev": "HOU",
     "opp": "LAL",
@@ -13,6 +14,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "3062679",
     "player_name": "Josh Hart",
     "team_abbrev": "NY",
     "opp": "CLE",
@@ -25,6 +27,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "4432158",
     "player_name": "Evan Mobley",
     "team_abbrev": "CLE",
     "opp": "NY",
@@ -37,6 +40,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "4432158",
     "player_name": "Evan Mobley",
     "team_abbrev": "CLE",
     "opp": "NY",
@@ -49,6 +53,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "4431671",
     "player_name": "Jaden McDaniels",
     "team_abbrev": "MIN",
     "opp": "DEN",
@@ -61,6 +66,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "4431671",
     "player_name": "Jaden McDaniels",
     "team_abbrev": "MIN",
     "opp": "DEN",
@@ -73,6 +79,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "3138196",
     "player_name": "Cameron Johnson",
     "team_abbrev": "DEN",
     "opp": "MIN",
@@ -85,6 +92,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "3934673",
     "player_name": "Donte DiVincenzo",
     "team_abbrev": "MIN",
     "opp": "DEN",
@@ -97,6 +105,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "3934673",
     "player_name": "Donte DiVincenzo",
     "team_abbrev": "MIN",
     "opp": "DEN",
@@ -109,6 +118,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "4396907",
     "player_name": "Darius Garland",
     "team_abbrev": "CLE",
     "opp": "NY",
@@ -121,6 +131,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "4396907",
     "player_name": "Darius Garland",
     "team_abbrev": "CLE",
     "opp": "NY",
@@ -133,6 +144,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "3032976",
     "player_name": "Rudy Gobert",
     "team_abbrev": "MIN",
     "opp": "DEN",
@@ -145,6 +157,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "4396971",
     "player_name": "Naz Reid",
     "team_abbrev": "MIN",
     "opp": "DEN",
@@ -157,6 +170,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "4395630",
     "player_name": "Devin Vassell",
     "team_abbrev": "SA",
     "opp": "OKC",
@@ -169,6 +183,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "4431767",
     "player_name": "Christian Braun",
     "team_abbrev": "DEN",
     "opp": "MIN",
@@ -181,6 +196,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "4711272",
     "player_name": "Reed Sheppard",
     "team_abbrev": "HOU",
     "opp": "LAL",
@@ -193,6 +209,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "4066328",
     "player_name": "Jarrett Allen",
     "team_abbrev": "CLE",
     "opp": "NY",
@@ -205,6 +222,7 @@
   },
   {
     "asof_date": "2025-12-25",
+    "player_id": "4433192",
     "player_name": "Tari Eason",
     "team_abbrev": "HOU",
     "opp": "LAL",

@@ -249,11 +249,6 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401810135,2025-11-23,Oklahoma City Thunder,OKC,122,-1163.0,,Portland Trail Blazers,POR,95,809.0,,Oklahoma City,OK,,
 401810136,2025-11-23,Phoenix Suns,PHX,111,-138.0,,San Antonio Spurs,SA,102,125.0,,Phoenix,AZ,,
 401810137,2025-11-23,Utah Jazz,UTAH,106,333.0,,Los Angeles Lakers,LAL,108,-400.0,,Salt Lake City,UT,,
-401809238,2025-12-25,New York Knicks,NY,0,-218.0,,Cleveland Cavaliers,CLE,0,180.0,,New York,NY,,
-401809239,2025-12-25,Oklahoma City Thunder,OKC,0,-360.0,,San Antonio Spurs,SA,0,295.0,,Oklahoma City,OK,,
-401809240,2025-12-25,Golden State Warriors,GS,0,-325.0,,Dallas Mavericks,DAL,0,260.0,,San Francisco,CA,,
-401809241,2025-12-25,Los Angeles Lakers,LAL,0,114.0,,Houston Rockets,HOU,0,-135.0,,Los Angeles,CA,,
-401809242,2025-12-25,Denver Nuggets,DEN,0,-142.0,,Minnesota Timberwolves,MIN,0,120.0,,Denver,CO,,
 401810138,2025-11-24,Indiana Pacers,IND,117,337.0,,Detroit Pistons,DET,122,-407.0,,Indianapolis,IN,,
 401810139,2025-11-24,Toronto Raptors,TOR,110,-118.0,,Cleveland Cavaliers,CLE,99,107.0,,Toronto,ON,,
 401810140,2025-11-24,Brooklyn Nets,BKN,100,561.0,,New York Knicks,NY,113,-741.0,,Brooklyn,NY,,
@@ -448,3 +443,8 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401810275,2025-12-23,Portland Trail Blazers,POR,106,105.0,,Orlando Magic,ORL,110,-125.0,,Portland,OR,,
 401810276,2025-12-23,Sacramento Kings,SAC,127,285.0,,Detroit Pistons,DET,136,-360.0,,Sacramento,CA,,
 401810277,2025-12-23,LA Clippers,LAC,128,235.0,,Houston Rockets,HOU,108,-290.0,,Inglewood,CA,,
+401809238,2025-12-25,New York Knicks,NY,0,-218.0,,Cleveland Cavaliers,CLE,0,180.0,,New York,NY,M. McBride (Out); L. Shamet (Out),L. Nance (Out); Max Strus (Out)
+401809239,2025-12-25,Oklahoma City Thunder,OKC,0,-360.0,,San Antonio Spurs,SA,0,285.0,,Oklahoma City,OK,T. Sorber (OFS); O. Dieng (Out); A. Mitchell (Out); N. Topic (Out); J. Williams (Out),
+401809240,2025-12-25,Golden State Warriors,GS,0,-340.0,,Dallas Mavericks,DAL,0,270.0,,San Francisco,CA,LJ Cryer (Out); Seth Curry (Out),Dante Exum (OFS); D. Lively (OFS); K. Irving (Out)
+401809241,2025-12-25,Los Angeles Lakers,LAL,0,114.0,,Houston Rockets,HOU,0,-135.0,,Los Angeles,CA,G. Vincent (Out),F. VanVleet (Out)
+401809242,2025-12-25,Denver Nuggets,DEN,0,-142.0,,Minnesota Timberwolves,MIN,0,120.0,,Denver,CO,T. Bates (Out); C. Braun (Out); A. Gordon (Out); C. Johnson (Out),
