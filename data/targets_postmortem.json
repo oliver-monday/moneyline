@@ -188,6 +188,332 @@
       "stat": "pts",
       "threshold": 20,
       "actual": 22
+    },
+    {
+      "player_id": null,
+      "player_name": "Shaedon Sharpe",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 2
+    },
+    {
+      "player_id": null,
+      "player_name": "Jaylen Wells",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
+      "stat": "pts",
+      "threshold": 10,
+      "actual": 12
+    },
+    {
+      "player_id": null,
+      "player_name": "Nic Claxton",
+      "team_abbrev": "BKN",
+      "opp": "PHI",
+      "stat": "reb",
+      "threshold": 8,
+      "actual": 10
+    },
+    {
+      "player_id": null,
+      "player_name": "Jaren Jackson Jr.",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 2
+    },
+    {
+      "player_id": null,
+      "player_name": "Naz Reid",
+      "team_abbrev": "MIN",
+      "opp": "NY",
+      "stat": "reb",
+      "threshold": 6,
+      "actual": 11
+    },
+    {
+      "player_id": null,
+      "player_name": "Cam Spencer",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
+      "stat": "pts",
+      "threshold": 10,
+      "actual": 11
+    },
+    {
+      "player_id": null,
+      "player_name": "Cam Spencer",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
+      "stat": "reb",
+      "threshold": 2,
+      "actual": 3
+    },
+    {
+      "player_id": null,
+      "player_name": "Cam Spencer",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
+      "stat": "ast",
+      "threshold": 4,
+      "actual": 13
+    },
+    {
+      "player_id": null,
+      "player_name": "Derik Queen",
+      "team_abbrev": "NO",
+      "opp": "CLE",
+      "stat": "reb",
+      "threshold": 6,
+      "actual": 7
+    },
+    {
+      "player_id": null,
+      "player_name": "Derik Queen",
+      "team_abbrev": "NO",
+      "opp": "CLE",
+      "stat": "ast",
+      "threshold": 4,
+      "actual": 5
+    },
+    {
+      "player_id": null,
+      "player_name": "Paul George",
+      "team_abbrev": "PHI",
+      "opp": "BKN",
+      "stat": "reb",
+      "threshold": 4,
+      "actual": 4
+    },
+    {
+      "player_id": null,
+      "player_name": "Maxime Raynaud",
+      "team_abbrev": "SAC",
+      "opp": "DET",
+      "stat": "reb",
+      "threshold": 6,
+      "actual": 8
+    },
+    {
+      "player_id": null,
+      "player_name": "Devin Vassell",
+      "team_abbrev": "SA",
+      "opp": "OKC",
+      "stat": "reb",
+      "threshold": 4,
+      "actual": 5
+    },
+    {
+      "player_id": null,
+      "player_name": "Coby White",
+      "team_abbrev": "CHI",
+      "opp": "ATL",
+      "stat": "pts",
+      "threshold": 20,
+      "actual": 24
+    },
+    {
+      "player_id": null,
+      "player_name": "Alex Sarr",
+      "team_abbrev": "WSH",
+      "opp": "CHA",
+      "stat": "reb",
+      "threshold": 8,
+      "actual": 11
+    },
+    {
+      "player_id": null,
+      "player_name": "Donovan Clingan",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "stat": "reb",
+      "threshold": 10,
+      "actual": 14
+    },
+    {
+      "player_id": null,
+      "player_name": "Joel Embiid",
+      "team_abbrev": "PHI",
+      "opp": "BKN",
+      "stat": "reb",
+      "threshold": 6,
+      "actual": 6
+    },
+    {
+      "player_id": null,
+      "player_name": "Joel Embiid",
+      "team_abbrev": "PHI",
+      "opp": "BKN",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 4
+    },
+    {
+      "player_id": null,
+      "player_name": "Kyle Kuzma",
+      "team_abbrev": "MIL",
+      "opp": "IND",
+      "stat": "reb",
+      "threshold": 4,
+      "actual": 7
+    },
+    {
+      "player_id": null,
+      "player_name": "Jeremiah Fears",
+      "team_abbrev": "NO",
+      "opp": "CLE",
+      "stat": "ast",
+      "threshold": 4,
+      "actual": 5
+    },
+    {
+      "player_id": null,
+      "player_name": "Jarrett Allen",
+      "team_abbrev": "CLE",
+      "opp": "NO",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 3
+    },
+    {
+      "player_id": null,
+      "player_name": "Ausar Thompson",
+      "team_abbrev": "DET",
+      "opp": "SAC",
+      "stat": "pts",
+      "threshold": 10,
+      "actual": 19
+    },
+    {
+      "player_id": null,
+      "player_name": "Ausar Thompson",
+      "team_abbrev": "DET",
+      "opp": "SAC",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 2
+    },
+    {
+      "player_id": null,
+      "player_name": "Ayo Dosunmu",
+      "team_abbrev": "CHI",
+      "opp": "ATL",
+      "stat": "reb",
+      "threshold": 2,
+      "actual": 2
+    },
+    {
+      "player_id": null,
+      "player_name": "Tari Eason",
+      "team_abbrev": "HOU",
+      "opp": "LAC",
+      "stat": "reb",
+      "threshold": 4,
+      "actual": 5
+    },
+    {
+      "player_id": null,
+      "player_name": "T.J. McConnell",
+      "team_abbrev": "IND",
+      "opp": "MIL",
+      "stat": "ast",
+      "threshold": 4,
+      "actual": 6
+    }
+  ],
+  "misses": [
+    {
+      "player_id": null,
+      "player_name": "Jalen Johnson",
+      "team_abbrev": "ATL",
+      "opp": "CHI",
+      "stat": "reb",
+      "threshold": 10,
+      "actual": 9,
+      "delta": 1
+    },
+    {
+      "player_id": null,
+      "player_name": "Darius Garland",
+      "team_abbrev": "CLE",
+      "opp": "NO",
+      "stat": "reb",
+      "threshold": 2,
+      "actual": 1,
+      "delta": 1
+    },
+    {
+      "player_id": null,
+      "player_name": "Reed Sheppard",
+      "team_abbrev": "HOU",
+      "opp": "LAC",
+      "stat": "reb",
+      "threshold": 2,
+      "actual": 1,
+      "delta": 1
+    },
+    {
+      "player_id": null,
+      "player_name": "Jerami Grant",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 0,
+      "delta": 2
+    },
+    {
+      "player_id": null,
+      "player_name": "Donte DiVincenzo",
+      "team_abbrev": "MIN",
+      "opp": "NY",
+      "stat": "reb",
+      "threshold": 4,
+      "actual": 2,
+      "delta": 2
+    },
+    {
+      "player_id": null,
+      "player_name": "Cedric Coward",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 0,
+      "delta": 2
+    },
+    {
+      "player_id": null,
+      "player_name": "Jerami Grant",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "stat": "reb",
+      "threshold": 4,
+      "actual": 0,
+      "delta": 4
+    },
+    {
+      "player_id": null,
+      "player_name": "Tyler Herro",
+      "team_abbrev": "MIA",
+      "opp": "TOR",
+      "stat": "reb",
+      "threshold": 4,
+      "actual": 0,
+      "delta": 4
+    },
+    {
+      "player_id": null,
+      "player_name": "Dyson Daniels",
+      "team_abbrev": "ATL",
+      "opp": "CHI",
+      "stat": "pts",
+      "threshold": 10,
+      "actual": 0,
+      "delta": 10
     }
   ],
   "closest_misses": [
@@ -304,7 +630,7 @@
       "actual": 6
     }
   ],
-  "built_at_utc": "2025-12-25T12:47:25Z",
+  "built_at_utc": "2025-12-25T12:58:47Z",
   "snapshot_file": "targets_snapshot_2025-12-23.json",
   "top_targets": [
     {
