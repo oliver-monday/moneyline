@@ -1667,9 +1667,10 @@ async function load() {
 
     postmortemPreview.textContent = `Hit rate: ${hits}/${total} (${hitRate}%) • Closest misses: ${missesCount} • Reaches hit: ${reachesCount}`;
 
-    const hits = data.hits || [];
+    const hitsList = data.hits || [];
     const missesRaw = (data.misses || data.closest_misses || []);
     const reaches = data.reaches_hit || [];
+    const norm = (s) => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 
     function groupByPlayer(items) {
       const groups = new Map();
@@ -1695,13 +1696,13 @@ async function load() {
     }
 
     function matchReachesForHit(hitItem) {
-      const hitName = normalizeName(hitItem.player_name || "");
+      const hitName = norm(hitItem.player_name || "");
       const hitTeam = String(hitItem.team_abbrev || "").toUpperCase();
       const hitOpp = String(hitItem.opp || "").toUpperCase();
       const hitStat = String(hitItem.stat || "").toLowerCase();
       const hitThreshold = Number(hitItem.threshold);
       return (reaches || []).filter(r => {
-        const rName = normalizeName(r.player_name || "");
+        const rName = norm(r.player_name || "");
         const rTeam = String(r.team_abbrev || "").toUpperCase();
         const rOpp = String(r.opp || "").toUpperCase();
         const rStat = String(r.stat || "").toLowerCase();
@@ -1761,7 +1762,7 @@ async function load() {
     }
 
     postmortemBody.innerHTML = `
-      ${renderSection("Hits", hits, false)}
+      ${renderSection("Hits", hitsList, false)}
       ${renderSection("Misses", misses, true)}
     `;
   }
@@ -2241,8 +2242,18 @@ async function load() {
   render();
 
   fetchJson("./data/targets_postmortem.json")
-    .then(renderPostmortem)
-    .catch(() => {});
+    .then((data) => {
+      try {
+        renderPostmortem(data);
+      } catch (e) {
+        console.error("renderPostmortem failed", e);
+      }
+    })
+    .catch((e) => {
+      console.warn("postmortem fetch failed", e);
+      const panel = document.getElementById("postmortemPanel");
+      if (panel) panel.hidden = true;
+    });
 
   renderInjuryReport();
 
