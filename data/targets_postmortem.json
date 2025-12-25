@@ -304,7 +304,7 @@
       "actual": 6
     }
   ],
-  "built_at_utc": "2025-12-25T10:34:06Z",
+  "built_at_utc": "2025-12-25T10:50:12Z",
   "snapshot_file": "targets_snapshot_2025-12-23.json",
   "top_targets": [
     {
@@ -318,6 +318,7 @@
       "hits": 10,
       "window_games": 10,
       "hit_rate": 1.0,
+      "dnp": false,
       "actual": 2,
       "hit": true,
       "delta": 0
@@ -333,6 +334,7 @@
       "hits": 10,
       "window_games": 10,
       "hit_rate": 1.0,
+      "dnp": false,
       "actual": 11,
       "hit": true,
       "delta": -1
@@ -348,6 +350,7 @@
       "hits": 10,
       "window_games": 10,
       "hit_rate": 1.0,
+      "dnp": false,
       "actual": 8,
       "hit": true,
       "delta": -2
@@ -363,6 +366,7 @@
       "hits": 5,
       "window_games": 5,
       "hit_rate": 1.0,
+      "dnp": false,
       "actual": 6,
       "hit": true,
       "delta": 0
@@ -378,6 +382,7 @@
       "hits": 9,
       "window_games": 10,
       "hit_rate": 0.9,
+      "dnp": false,
       "actual": 8,
       "hit": true,
       "delta": -2
@@ -393,9 +398,11 @@
       "hits": 9,
       "window_games": 10,
       "hit_rate": 0.9,
-      "actual": 0,
-      "hit": false,
-      "delta": 10
+      "actual": null,
+      "hit": null,
+      "delta": null,
+      "dnp": true,
+      "status": "OUT"
     }
   ],
   "note": "Using snapshot from 2025-12-23 for results_date 2025-12-23"
