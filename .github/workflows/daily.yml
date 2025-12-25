@@ -24,6 +24,8 @@ jobs:
   build:
     if: ${{ github.event_name != 'push' || github.actor != 'github-actions[bot]' }}
     runs-on: ubuntu-latest
+    env:
+      TZ: America/Los_Angeles
 
     steps:
       - name: Checkout repository

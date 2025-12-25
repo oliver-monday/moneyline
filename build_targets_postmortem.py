@@ -14,6 +14,7 @@ import os
 import re
 from pathlib import Path
 from typing import Dict, List
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 
@@ -166,6 +167,13 @@ def newest_snapshot_date(logs_dir: Path) -> str | None:
     if not dates:
         return None
     return sorted(dates)[-1]
+
+
+def newest_snapshot_path(logs_dir: Path) -> Path | None:
+    date = newest_snapshot_date(logs_dir)
+    if not date:
+        return None
+    return logs_dir / f"targets_snapshot_{date}.json"
 
 
 def build_game_map(master: pd.DataFrame, slate_date: str):
@@ -381,26 +389,17 @@ def main() -> int:
     cutoff = dt.datetime.strptime(slate_date, "%Y-%m-%d").date() - dt.timedelta(days=60)
     prune_old_snapshots(logs_dir, cutoff)
 
-    postmortem_date = determine_postmortem_date_from_game_log(game_log_path)
-    if not postmortem_date:
-        postmortem_date = (
-            dt.datetime.strptime(slate_date, "%Y-%m-%d").date() - dt.timedelta(days=1)
-        ).strftime("%Y-%m-%d")
-
     snapshot_entries = []
     note = None
-    snapshot_path = logs_dir / f"targets_snapshot_{postmortem_date}.json"
-    if not snapshot_path.exists():
-        fallback_date = newest_snapshot_date(logs_dir)
-        if fallback_date:
-            postmortem_date = fallback_date
-            snapshot_path = logs_dir / f"targets_snapshot_{postmortem_date}.json"
-        else:
-            note = f"No targets snapshot found for {postmortem_date}"
-
-    if snapshot_path.exists():
+    snapshot_path = newest_snapshot_path(logs_dir)
+    if snapshot_path and snapshot_path.exists():
+        postmortem_date = snapshot_path.name.replace("targets_snapshot_", "").replace(".json", "")
         with open(snapshot_path, "r", encoding="utf-8") as f:
             snapshot_entries = json.load(f) or []
+    else:
+        pt_today = dt.datetime.now(ZoneInfo("America/Los_Angeles")).date()
+        postmortem_date = (pt_today - dt.timedelta(days=1)).strftime("%Y-%m-%d")
+        note = f"No targets snapshot found for {postmortem_date}"
 
     if os.path.exists(game_log_path):
         game_log_df = pd.read_csv(game_log_path, dtype=str)
@@ -408,6 +407,8 @@ def main() -> int:
         game_log_df = pd.DataFrame()
 
     postmortem = compute_postmortem(snapshot_entries, game_log_df, postmortem_date)
+    postmortem["built_at_utc"] = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+    postmortem["snapshot_file"] = snapshot_path.name if snapshot_path else None
     if note:
         postmortem["note"] = note
     data_dir = Path("data")
@@ -416,6 +417,7 @@ def main() -> int:
         json.dump(postmortem, f, indent=2)
 
     print(f"[targets] snapshot_date={slate_date} entries={len(entries)} postmortem_date={postmortem_date}")
+    print(f"[targets] postmortem_snapshot={postmortem.get('snapshot_file')} total={postmortem.get('summary', {}).get('targets_total')}")
     return 0
 
 
