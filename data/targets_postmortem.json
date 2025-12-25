@@ -4,7 +4,9 @@
     "targets_total": 25,
     "hits": 21,
     "misses": 4,
-    "hit_rate_pct": 84
+    "hit_rate_pct": 84,
+    "top_targets_total": 6,
+    "top_targets_hits": 3
   },
   "hits": [
     {
@@ -244,7 +246,99 @@
       "actual": 25
     }
   ],
-  "built_at_utc": "2025-12-25T02:37:56Z",
+  "built_at_utc": "2025-12-25T02:51:22Z",
   "snapshot_file": "targets_snapshot_2025-12-23.json",
+  "top_targets": [
+    {
+      "asof_date": "2025-12-23",
+      "player_name": "Shaedon Sharpe",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "game_id": "401810275",
+      "stat": "ast",
+      "threshold": 2,
+      "hits": 10,
+      "window_games": 10,
+      "hit_rate": 1.0,
+      "actual": 2,
+      "hit": true,
+      "delta": 0
+    },
+    {
+      "asof_date": "2025-12-23",
+      "player_name": "Cam Spencer",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
+      "game_id": "401810274",
+      "stat": "pts",
+      "threshold": 10,
+      "hits": 10,
+      "window_games": 10,
+      "hit_rate": 1.0,
+      "actual": 14,
+      "hit": true,
+      "delta": -4
+    },
+    {
+      "asof_date": "2025-12-23",
+      "player_name": "Maxime Raynaud",
+      "team_abbrev": "SAC",
+      "opp": "DET",
+      "game_id": "401810276",
+      "stat": "reb",
+      "threshold": 6,
+      "hits": 10,
+      "window_games": 10,
+      "hit_rate": 1.0,
+      "actual": null,
+      "hit": false,
+      "delta": null
+    },
+    {
+      "asof_date": "2025-12-23",
+      "player_name": "Kyshawn George",
+      "team_abbrev": "WSH",
+      "opp": "CHA",
+      "game_id": "401810264",
+      "stat": "ast",
+      "threshold": 6,
+      "hits": 5,
+      "window_games": 5,
+      "hit_rate": 1.0,
+      "actual": null,
+      "hit": false,
+      "delta": null
+    },
+    {
+      "asof_date": "2025-12-23",
+      "player_name": "Deni Avdija",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "game_id": "401810275",
+      "stat": "ast",
+      "threshold": 6,
+      "hits": 9,
+      "window_games": 10,
+      "hit_rate": 0.9,
+      "actual": 9,
+      "hit": true,
+      "delta": -3
+    },
+    {
+      "asof_date": "2025-12-23",
+      "player_name": "Dyson Daniels",
+      "team_abbrev": "ATL",
+      "opp": "CHI",
+      "game_id": "401810266",
+      "stat": "pts",
+      "threshold": 10,
+      "hits": 9,
+      "window_games": 10,
+      "hit_rate": 0.9,
+      "actual": null,
+      "hit": false,
+      "delta": null
+    }
+  ],
   "note": "Using snapshot from 2025-12-23 for results_date 2025-12-23"
 }
