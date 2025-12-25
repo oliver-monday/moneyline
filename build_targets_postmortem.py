@@ -176,6 +176,49 @@ def newest_snapshot_path(logs_dir: Path) -> Path | None:
     return logs_dir / f"targets_snapshot_{date}.json"
 
 
+def latest_final_date_from_master(master_path: str, local_today: dt.date) -> str | None:
+    if not os.path.exists(master_path):
+        return None
+    master = pd.read_csv(master_path, dtype=str)
+    if "game_date" not in master.columns:
+        return None
+    def is_numeric(v: str) -> bool:
+        return str(v or "").strip().isdigit()
+
+    dates = []
+    for _, row in master.iterrows():
+        gd = str(row.get("game_date", "")).strip()
+        if not gd:
+            continue
+        try:
+            gd_date = dt.datetime.strptime(gd, "%Y-%m-%d").date()
+        except Exception:
+            continue
+        if gd_date > local_today:
+            continue
+        scored = is_numeric(row.get("home_score")) and is_numeric(row.get("away_score"))
+        if scored:
+            dates.append(gd)
+    if not dates:
+        return None
+    return sorted(set(dates))[-1]
+
+
+def snapshot_date_at_or_before(logs_dir: Path, target_date: str) -> str | None:
+    pattern = re.compile(r"targets_snapshot_(\d{4}-\d{2}-\d{2})\.json$")
+    candidates = []
+    for path in logs_dir.glob("targets_snapshot_*.json"):
+        m = pattern.match(path.name)
+        if not m:
+            continue
+        snap_date = m.group(1)
+        if snap_date <= target_date:
+            candidates.append(snap_date)
+    if not candidates:
+        return None
+    return sorted(candidates)[-1]
+
+
 def build_game_map(master: pd.DataFrame, slate_date: str):
     games_today = master[master["game_date"].astype(str).str.strip() == slate_date].copy()
     team_map = {}
@@ -330,6 +373,7 @@ def main() -> int:
     game_log_path = "player_game_log.csv"
     injuries_path = "data/injuries_today.json"
 
+    local_today = dt.datetime.now(ZoneInfo("America/Los_Angeles")).date()
     slate_date = determine_slate_date(master_path)
     if not slate_date:
         print("[targets] No slate date found; skipping.")
@@ -386,27 +430,53 @@ def main() -> int:
     logs_dir.mkdir(parents=True, exist_ok=True)
     snapshot_file = logs_dir / f"targets_snapshot_{slate_date}.json"
     write_snapshot(snapshot_file, entries)
-    cutoff = dt.datetime.strptime(slate_date, "%Y-%m-%d").date() - dt.timedelta(days=60)
-    prune_old_snapshots(logs_dir, cutoff)
+    cutoff = local_today - dt.timedelta(days=120)
+    min_keep = local_today - dt.timedelta(days=30)
+    for path in logs_dir.glob("targets_snapshot_*.json"):
+        m = re.match(r"targets_snapshot_(\d{4}-\d{2}-\d{2})\.json$", path.name)
+        if not m:
+            continue
+        try:
+            snap_date = dt.datetime.strptime(m.group(1), "%Y-%m-%d").date()
+        except Exception:
+            continue
+        if snap_date >= min_keep:
+            continue
+        if snap_date < cutoff:
+            try:
+                path.unlink()
+            except Exception:
+                pass
+
+    results_date = determine_postmortem_date_from_game_log(game_log_path)
+    if not results_date:
+        results_date = latest_final_date_from_master(master_path, local_today)
+    if not results_date:
+        results_date = (local_today - dt.timedelta(days=1)).strftime("%Y-%m-%d")
 
     snapshot_entries = []
     note = None
-    snapshot_path = newest_snapshot_path(logs_dir)
+    snapshot_path = logs_dir / f"targets_snapshot_{results_date}.json"
+    if not snapshot_path.exists():
+        fallback_date = snapshot_date_at_or_before(logs_dir, results_date)
+        if fallback_date:
+            snapshot_path = logs_dir / f"targets_snapshot_{fallback_date}.json"
+            results_date = fallback_date
+            note = f"Using snapshot from {fallback_date} for results_date {results_date}"
+        else:
+            snapshot_path = None
+            note = f"No targets snapshot found for {results_date}"
+
     if snapshot_path and snapshot_path.exists():
-        postmortem_date = snapshot_path.name.replace("targets_snapshot_", "").replace(".json", "")
         with open(snapshot_path, "r", encoding="utf-8") as f:
             snapshot_entries = json.load(f) or []
-    else:
-        pt_today = dt.datetime.now(ZoneInfo("America/Los_Angeles")).date()
-        postmortem_date = (pt_today - dt.timedelta(days=1)).strftime("%Y-%m-%d")
-        note = f"No targets snapshot found for {postmortem_date}"
 
     if os.path.exists(game_log_path):
         game_log_df = pd.read_csv(game_log_path, dtype=str)
     else:
         game_log_df = pd.DataFrame()
 
-    postmortem = compute_postmortem(snapshot_entries, game_log_df, postmortem_date)
+    postmortem = compute_postmortem(snapshot_entries, game_log_df, results_date)
     postmortem["built_at_utc"] = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
     postmortem["snapshot_file"] = snapshot_path.name if snapshot_path else None
     if note:
@@ -416,8 +486,11 @@ def main() -> int:
     with open(data_dir / "targets_postmortem.json", "w", encoding="utf-8") as f:
         json.dump(postmortem, f, indent=2)
 
-    print(f"[targets] snapshot_date={slate_date} entries={len(entries)} postmortem_date={postmortem_date}")
-    print(f"[targets] postmortem_snapshot={postmortem.get('snapshot_file')} total={postmortem.get('summary', {}).get('targets_total')}")
+    print(
+        f"[targets] local_today={local_today} slate_date={slate_date} results_date={results_date} "
+        f"snapshot_used={postmortem.get('snapshot_file')} entries={len(entries)} "
+        f"total={postmortem.get('summary', {}).get('targets_total')}"
+    )
     return 0
 
 
