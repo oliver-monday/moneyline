@@ -995,6 +995,72 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
         .pill-red { background: #fbeaea; border-color: #e08b8b; }
         .pill-gray { background: #fff; border-color: #ddd; color: #333; }
         .league-block { margin-top: 30px; }
+        .league-overview {
+            margin-top: 18px;
+            border-radius: 16px;
+            border: 1px solid #d97706;
+            background: #d97706;
+            padding: 10px 12px;
+        }
+        .league-overview summary {
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-right: 30px;
+            font-weight: 700;
+            font-size: 18px;
+            color: #fff;
+        }
+        .league-overview summary::-webkit-details-marker { display: none; }
+        .league-overview summary::after {
+            content: "›";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.8;
+            font-size: 22px;
+            font-weight: 700;
+            transition: transform 0.15s ease;
+            color: #fff;
+        }
+        .league-overview[open] summary::after {
+            transform: translateY(-50%) rotate(90deg);
+        }
+        .league-sub {
+            margin-top: 10px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            padding-top: 8px;
+        }
+        .league-sub summary {
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-right: 30px;
+            font-weight: 700;
+            font-size: 16px;
+            color: #fff;
+        }
+        .league-sub summary::-webkit-details-marker { display: none; }
+        .league-sub summary::after {
+            content: "›";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.8;
+            font-size: 20px;
+            font-weight: 700;
+            transition: transform 0.15s ease;
+            color: #fff;
+        }
+        .league-sub[open] summary::after {
+            transform: translateY(-50%) rotate(90deg);
+        }
+        .league-overview .detail-label,
+        .league-overview .detail-value {
+            color: #fff;
+        }
         details { margin-top: 8px; }
         summary { font-weight: bold; color: #111; }
         .summary-line { margin-top: 4px; margin-bottom: 12px; font-weight: 600; color: #666; }
@@ -1358,20 +1424,23 @@ def build_html(slate, team_results, league_tbl, outfile, today_date):
 
     # --------- League overview ---------
     if not league_tbl.empty:
-        w("<div class='league-block'>"); w("<h2>League Overview</h2>")
         lv=league_tbl
+        w("<details class='league-overview'>")
+        w("<summary>League Overview</summary>")
         def block(title, df, col):
-            w(f"<h3>{title}</h3>")
+            w("<details class='league-sub'>")
+            w(f"<summary>{title}</summary>")
             w("<div class='details-block league-list'>")
-            for i, row in enumerate(df.itertuples(index=False), start=1):
-                w(line(f"{i}.", f"{row.team} {fmt_pct(getattr(row, col))}"))
+            for row in df.itertuples(index=False):
+                w(line(f"{row.team}", f"{fmt_pct(getattr(row, col))}"))
             w("</div>")
+            w("</details>")
         block("Best overall Win %", lv.sort_values("ml_pct",ascending=False).head(10), "ml_pct")
         block("Best Home Teams", lv.sort_values("home_pct",ascending=False).head(10), "home_pct")
         block("Best Away Teams", lv.sort_values("away_pct",ascending=False).head(10), "away_pct")
         block("Best Favorites", lv.sort_values("fav_pct",ascending=False).head(10), "fav_pct")
         block("Best Underdogs", lv.sort_values("dog_pct",ascending=False).head(10), "dog_pct")
-        w("</div>")
+        w("</details>")
 
     w(
         "<script>"
