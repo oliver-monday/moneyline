@@ -1677,7 +1677,25 @@ async function load() {
     const hitsList = data.hits || [];
     const missesRaw = (data.misses || data.closest_misses || []);
     const reaches = data.reaches_hit || [];
-    const norm = (s) => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+    const normalizeName = (s) => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+    const normAbbrev = (s) => String(s || "").toUpperCase().trim();
+    const normStat = (s) => String(s || "").toLowerCase().trim();
+    const toNum = (x) => {
+      const n = Number(x);
+      return Number.isFinite(n) ? n : null;
+    };
+    const reachMap = new Map();
+    for (const r of reaches) {
+      const key = [
+        normalizeName(r.player_name || ""),
+        normAbbrev(r.team_abbrev || ""),
+        normAbbrev(r.opp || ""),
+        normStat(r.stat || ""),
+        String(r.target_threshold || "")
+      ].join("|");
+      if (!reachMap.has(key)) reachMap.set(key, []);
+      reachMap.get(key).push(r);
+    }
 
     function groupByPlayer(items) {
       const groups = new Map();
@@ -1703,17 +1721,17 @@ async function load() {
     }
 
     function matchReachesForHit(hitItem) {
-      const hitName = norm(hitItem.player_name || "");
+      const hitName = normalizeName(hitItem.player_name || "");
       const hitTeam = String(hitItem.team_abbrev || "").toUpperCase();
       const hitOpp = String(hitItem.opp || "").toUpperCase();
       const hitStat = String(hitItem.stat || "").toLowerCase();
-      const hitThreshold = Number(hitItem.threshold);
+      const hitThreshold = toNum(hitItem.threshold);
       return (reaches || []).filter(r => {
-        const rName = norm(r.player_name || "");
+        const rName = normalizeName(r.player_name || "");
         const rTeam = String(r.team_abbrev || "").toUpperCase();
         const rOpp = String(r.opp || "").toUpperCase();
         const rStat = String(r.stat || "").toLowerCase();
-        const rTarget = Number(r.target_threshold);
+        const rTarget = toNum(r.target_threshold);
         if (hitName && rName && hitName !== rName) return false;
         if (hitTeam && rTeam && hitTeam !== rTeam) return false;
         if (hitOpp && rOpp && hitOpp !== rOpp) return false;
@@ -1751,12 +1769,22 @@ async function load() {
           const delta = getDelta(item);
           const deltaText = isMisses && delta != null ? ` <span class="pm-delta">Δ${delta}</span>` : "";
           const showReaches = !isMisses && item.hit === true;
-          const reachPills = showReaches
-            ? matchReachesForHit(item).map(r => {
-                const rStat = String(r.stat || "").toUpperCase();
-                return `<span class="pm-reach-pill">Reached: ${rStat} ${r.reached_threshold}+</span>`;
-              }).join("")
-            : "";
+          let reachPills = "";
+          if (showReaches) {
+            const key = [
+              normalizeName(item.player_name || ""),
+              normAbbrev(item.team_abbrev || ""),
+              normAbbrev(item.opp || ""),
+              normStat(item.stat || ""),
+              String(item.threshold || "")
+            ].join("|");
+            const matches = reachMap.get(key) || [];
+            reachPills = matches.map(r => {
+              const rStat = String(r.stat || item.stat || "").toUpperCase();
+              const reached = r.reached_threshold || r.target_threshold || "";
+              return `<span class="pm-reach-pill">Reached: ${rStat} ${reached}+</span>`;
+            }).join("");
+          }
           return `<div class="pm-target-row">${stat} ${threshold}+ (${actual})${deltaText}${reachPills ? ` ${reachPills}` : ""}</div>`;
         }).join("");
         return `<div class="pm-group">${header}${targets}</div>`;
