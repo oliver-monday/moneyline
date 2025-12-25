@@ -1,14 +1,250 @@
 {
-  "asof_date": "2025-12-25",
+  "asof_date": "2025-12-23",
   "summary": {
-    "targets_total": 0,
-    "hits": 0,
-    "misses": 0,
-    "hit_rate_pct": 0
+    "targets_total": 25,
+    "hits": 21,
+    "misses": 4,
+    "hit_rate_pct": 84
   },
-  "hits": [],
-  "closest_misses": [],
-  "reaches_hit": [],
-  "built_at_utc": "2025-12-25T00:55:20Z",
-  "snapshot_file": "targets_snapshot_2025-12-25.json"
+  "hits": [
+    {
+      "player_name": "Deni Avdija",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "stat": "ast",
+      "threshold": 6,
+      "actual": 9
+    },
+    {
+      "player_name": "Trey Murphy III",
+      "team_abbrev": "NO",
+      "opp": "CLE",
+      "stat": "ast",
+      "threshold": 4,
+      "actual": 4
+    },
+    {
+      "player_name": "Cameron Johnson",
+      "team_abbrev": "DEN",
+      "opp": "DAL",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 4
+    },
+    {
+      "player_name": "Andrew Nembhard",
+      "team_abbrev": "IND",
+      "opp": "MIL",
+      "stat": "reb",
+      "threshold": 2,
+      "actual": 2
+    },
+    {
+      "player_name": "Andrew Nembhard",
+      "team_abbrev": "IND",
+      "opp": "MIL",
+      "stat": "ast",
+      "threshold": 6,
+      "actual": 7
+    },
+    {
+      "player_name": "Darius Garland",
+      "team_abbrev": "CLE",
+      "opp": "NO",
+      "stat": "reb",
+      "threshold": 2,
+      "actual": 5
+    },
+    {
+      "player_name": "Darius Garland",
+      "team_abbrev": "CLE",
+      "opp": "NO",
+      "stat": "ast",
+      "threshold": 6,
+      "actual": 10
+    },
+    {
+      "player_name": "Shaedon Sharpe",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "stat": "pts",
+      "threshold": 20,
+      "actual": 25
+    },
+    {
+      "player_name": "Shaedon Sharpe",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 2
+    },
+    {
+      "player_name": "Jaylen Wells",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
+      "stat": "pts",
+      "threshold": 10,
+      "actual": 12
+    },
+    {
+      "player_name": "Cam Spencer",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
+      "stat": "pts",
+      "threshold": 10,
+      "actual": 14
+    },
+    {
+      "player_name": "Cam Spencer",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
+      "stat": "reb",
+      "threshold": 2,
+      "actual": 5
+    },
+    {
+      "player_name": "Cam Spencer",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
+      "stat": "ast",
+      "threshold": 4,
+      "actual": 8
+    },
+    {
+      "player_name": "Derik Queen",
+      "team_abbrev": "NO",
+      "opp": "CLE",
+      "stat": "reb",
+      "threshold": 6,
+      "actual": 10
+    },
+    {
+      "player_name": "Derik Queen",
+      "team_abbrev": "NO",
+      "opp": "CLE",
+      "stat": "ast",
+      "threshold": 4,
+      "actual": 6
+    },
+    {
+      "player_name": "Donovan Clingan",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "stat": "reb",
+      "threshold": 10,
+      "actual": 10
+    },
+    {
+      "player_name": "Cedric Coward",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 6
+    },
+    {
+      "player_name": "Jeremiah Fears",
+      "team_abbrev": "NO",
+      "opp": "CLE",
+      "stat": "ast",
+      "threshold": 4,
+      "actual": 4
+    },
+    {
+      "player_name": "Jarrett Allen",
+      "team_abbrev": "CLE",
+      "opp": "NO",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 2
+    },
+    {
+      "player_name": "Ausar Thompson",
+      "team_abbrev": "DET",
+      "opp": "SAC",
+      "stat": "pts",
+      "threshold": 10,
+      "actual": 18
+    }
+  ],
+  "closest_misses": [
+    {
+      "player_name": "Jaren Jackson Jr.",
+      "team_abbrev": "MEM",
+      "opp": "UTAH",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 1,
+      "delta": 1
+    },
+    {
+      "player_name": "Jerami Grant",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 0,
+      "delta": 2
+    },
+    {
+      "player_name": "Toumani Camara",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "stat": "ast",
+      "threshold": 2,
+      "actual": 0,
+      "delta": 2
+    }
+  ],
+  "reaches_hit": [
+    {
+      "player_name": "Deni Avdija",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "stat": "ast",
+      "target_threshold": 6,
+      "reached_threshold": 8,
+      "actual": 9
+    },
+    {
+      "player_name": "Cameron Johnson",
+      "team_abbrev": "DEN",
+      "opp": "DAL",
+      "stat": "ast",
+      "target_threshold": 2,
+      "reached_threshold": 4,
+      "actual": 4
+    },
+    {
+      "player_name": "Darius Garland",
+      "team_abbrev": "CLE",
+      "opp": "NO",
+      "stat": "reb",
+      "target_threshold": 2,
+      "reached_threshold": 4,
+      "actual": 5
+    },
+    {
+      "player_name": "Darius Garland",
+      "team_abbrev": "CLE",
+      "opp": "NO",
+      "stat": "ast",
+      "target_threshold": 6,
+      "reached_threshold": 10,
+      "actual": 10
+    },
+    {
+      "player_name": "Shaedon Sharpe",
+      "team_abbrev": "POR",
+      "opp": "ORL",
+      "stat": "pts",
+      "target_threshold": 20,
+      "reached_threshold": 25,
+      "actual": 25
+    }
+  ],
+  "built_at_utc": "2025-12-25T01:38:44Z",
+  "snapshot_file": "targets_snapshot_2025-12-23.json",
+  "note": "Using snapshot from 2025-12-23 for results_date 2025-12-23"
 }
