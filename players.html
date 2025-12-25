@@ -1686,12 +1686,14 @@ async function load() {
     };
     const reachMap = new Map();
     for (const r of reaches) {
+      const oppKey = r.opp || r.opponent || r.opp_abbrev || r.opp_team || "";
+      const thresholdKey = r.target_threshold || r.threshold || r.target || "";
       const key = [
         normalizeName(r.player_name || ""),
         normAbbrev(r.team_abbrev || ""),
-        normAbbrev(r.opp || ""),
+        normAbbrev(oppKey),
         normStat(r.stat || ""),
-        String(r.target_threshold || "")
+        String(thresholdKey)
       ].join("|");
       if (!reachMap.has(key)) reachMap.set(key, []);
       reachMap.get(key).push(r);
@@ -1718,27 +1720,6 @@ async function load() {
       if (raw === undefined || raw === null || raw === "") return null;
       const n = Number(raw);
       return Number.isFinite(n) ? n : null;
-    }
-
-    function matchReachesForHit(hitItem) {
-      const hitName = normalizeName(hitItem.player_name || "");
-      const hitTeam = String(hitItem.team_abbrev || "").toUpperCase();
-      const hitOpp = String(hitItem.opp || "").toUpperCase();
-      const hitStat = String(hitItem.stat || "").toLowerCase();
-      const hitThreshold = toNum(hitItem.threshold);
-      return (reaches || []).filter(r => {
-        const rName = normalizeName(r.player_name || "");
-        const rTeam = String(r.team_abbrev || "").toUpperCase();
-        const rOpp = String(r.opp || "").toUpperCase();
-        const rStat = String(r.stat || "").toLowerCase();
-        const rTarget = toNum(r.target_threshold);
-        if (hitName && rName && hitName !== rName) return false;
-        if (hitTeam && rTeam && hitTeam !== rTeam) return false;
-        if (hitOpp && rOpp && hitOpp !== rOpp) return false;
-        if (hitStat && rStat && hitStat !== rStat) return false;
-        if (Number.isFinite(hitThreshold) && Number.isFinite(rTarget) && hitThreshold !== rTarget) return false;
-        return true;
-      });
     }
 
     const misses = missesRaw
@@ -1768,7 +1749,8 @@ async function load() {
           const actual = item.actual ?? "—";
           const delta = getDelta(item);
           const deltaText = isMisses && delta != null ? ` <span class="pm-delta">Δ${delta}</span>` : "";
-          const showReaches = !isMisses && item.hit === true;
+          const isHitsSection = !isMisses;
+          const showReaches = isHitsSection;
           let reachPills = "";
           if (showReaches) {
             const key = [
@@ -1781,7 +1763,7 @@ async function load() {
             const matches = reachMap.get(key) || [];
             reachPills = matches.map(r => {
               const rStat = String(r.stat || item.stat || "").toUpperCase();
-              const reached = r.reached_threshold || r.target_threshold || "";
+              const reached = r.reached_threshold || r.target_threshold || r.reached || "";
               return `<span class="pm-reach-pill">Reached: ${rStat} ${reached}+</span>`;
             }).join("");
           }
