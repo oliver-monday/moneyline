@@ -901,7 +901,7 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
             background: #fff;
         }
         .market-report {
-            border: 1px solid #000000;
+            border: 1px solid #f97316;
             padding: 12px;
             margin: 8px 0 12px;
             border-radius: 14px;
@@ -982,7 +982,7 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
         }
         .market-analysis-title {
             font-weight: 800;
-            color: #444;
+            color: #f97316;
             font-size: 16px;
             margin-bottom: 6px;
         }
