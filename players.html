@@ -243,7 +243,7 @@
     }
     details.suggested-targets summary::-webkit-details-marker,
     details.injury-panel summary::-webkit-details-marker { display:none; }
-    .suggested-targets summary strong { color: #d97706; }
+    .suggested-targets summary span { color: #d97706; }
     .suggested-body { padding: 10px 14px 12px; }
     .suggested-targets .stable-row { margin: 6px 0 10px; }
     .suggested-count { color:#d97706; font-weight:700; }
@@ -392,12 +392,17 @@
     }
     .injury-title { color: #c93c3c; font-weight: 800; }
     .injury-details { font-size: 12px; color: #888; }
+    .header-block {
+      width: fit-content;
+      max-width: 100%;
+    }
     .date-stamp {
       font-weight: 800;
       font-size: 24px;
       color: #111;
-      width: fit-content;
-      margin: 0 auto 18px;
+      width: 100%;
+      text-align: center;
+      margin: 0 0 18px;
     }
     .no-games-today {
       font-size: 18px;
@@ -744,19 +749,21 @@
   </style>
 </head>
 <body>
-  <div class="masthead">
-    <div class="brand">
-      <div class="brand-text">NBA</div>
-      <img class="brand-logo" src="./assets/NBAGPTlogo-header.png" width="80" height="80" decoding="async" fetchpriority="high" alt="NBA GPT logo">
-      <div class="brand-text">GPT</div>
+  <div class="header-block">
+    <div class="masthead">
+      <div class="brand">
+        <div class="brand-text">NBA</div>
+        <img class="brand-logo" src="./assets/NBAGPTlogo-header.png" width="80" height="80" decoding="async" fetchpriority="high" alt="NBA GPT logo">
+        <div class="brand-text">GPT</div>
+      </div>
+      <div class="nav">
+        <a href="./index.html">Moneylines</a>
+        <a class="active" href="./players.html">Player Props</a>
+      </div>
     </div>
-    <div class="nav">
-      <a href="./index.html">Moneylines</a>
-      <a class="active" href="./players.html">Player Props</a>
-    </div>
-  </div>
 
-  <div class="date-stamp" id="meta"></div>
+    <div class="date-stamp" id="meta"></div>
+  </div>
 
   <details class="postmortem-panel" id="postmortemPanel" hidden>
     <summary>

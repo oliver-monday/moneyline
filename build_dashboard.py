@@ -858,6 +858,7 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
             body { margin: 12px; }
         }
         .masthead { width: fit-content; max-width: 100%; }
+        .header-block { width: fit-content; max-width: 100%; }
         .brand { display:flex; align-items:center; gap:10px; width: 100%; margin: 0 0 10px; }
         .brand-logo { height: 80px; width: auto; object-fit: contain; }
         .brand-text { font-size: 80px; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
@@ -870,8 +871,9 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
             font-weight: 800;
             font-size: 24px;
             color: #111;
-            width: fit-content;
-            margin: 0 auto 18px;
+            width: 100%;
+            text-align: center;
+            margin: 0 0 18px;
         }
         .no-games {
             font-size: 18px;
@@ -1208,11 +1210,13 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
     w("</head><body>")
 
     today_display = pd.Timestamp(today_date).strftime("%m-%d-%Y")
+    w('<div class="header-block">')
     w('<div class="masthead">')
     w('<div class="brand"><div class="brand-text">NBA</div><img class="brand-logo" src="./assets/NBAGPTlogo-header.png" width="80" height="80" decoding="async" fetchpriority="high" alt="NBA GPT logo"><div class="brand-text">GPT</div></div>')
     w('<div class="nav"><a class="active" href="./index.html">Moneylines</a><a href="./players.html">Player Props</a></div>')
     w('</div>')
     w(f"<div class=\"date-stamp\">{today_display}</div>")
+    w('</div>')
     w("<details class='market-report' id='marketReport' hidden>")
     w("<summary>")
     w("<div class='report-title'>Yesterday Recap</div>")
