@@ -439,18 +439,32 @@
       margin-left: 8px;
       white-space: nowrap;
     }
-    .tier-chip {
-      background: #eaf7ef;
-      border: 1px solid #cfe8d7;
-      border-radius: 10px;
-      padding: 4px 8px;
+    .consistency-row {
+      margin-top: 6px;
+    }
+    .consistency-pill {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 4px 10px;
       font-size: 12px;
-      font-weight: 700;
-      color: #2d6b3a;
+      font-weight: 800;
       white-space: nowrap;
     }
-    .tier-chip.selected {
-      border-color: #2d6b3a;
+    .consistency-pill.good {
+      background: #e8f7e8;
+      border: 1px solid #6ac46a;
+      color: #1f5f1f;
+    }
+    .consistency-pill.ok {
+      background: #f2f2f2;
+      border: 1px solid #bdbdbd;
+      color: #555;
+    }
+    .consistency-pill.bad {
+      background: #fdecea;
+      border: 1px solid #e07a7a;
+      color: #a33a3a;
     }
     .stable-row{
       display:flex;
@@ -973,6 +987,18 @@ function fmt(x, d=1) {
   return v.toFixed(d);
 }
 
+function featureNum(row, key) {
+  const raw = row && row[key];
+  const n = Number(raw);
+  if (Number.isFinite(n)) return n;
+  const pid = row && row.player_id ? String(row.player_id) : "";
+  if (pid && PLAYER_FEATURES && PLAYER_FEATURES[pid] && PLAYER_FEATURES[pid][key] != null) {
+    const pn = Number(PLAYER_FEATURES[pid][key]);
+    return Number.isFinite(pn) ? pn : null;
+  }
+  return null;
+}
+
 const PTS_T = [10,15,20,25,30,35];
 const RA_T  = [2,4,6,8,10,12,14];
 
@@ -1406,57 +1432,19 @@ function targetWeight(t) {
   return (t.hits / t.gp) * ratio;
 }
 
-function nearestThresholds(thresholds, avg, count=3) {
-  const vals = Array.from(new Set((thresholds || []).map(Number).filter(Number.isFinite))).sort((a, b) => a - b);
-  if (!vals.length || !Number.isFinite(avg)) return vals.slice(0, count);
-  const safe = vals.reduce((acc, v) => (v <= avg ? v : acc), vals[0]);
-  const upside = vals.find(v => v >= avg) ?? vals[vals.length - 1];
-  let near = vals[0];
-  let bestDiff = Math.abs(vals[0] - avg);
-  for (const v of vals) {
-    const d = Math.abs(v - avg);
-    if (d < bestDiff || (d === bestDiff && v < near)) {
-      bestDiff = d;
-      near = v;
-    }
-  }
-  const out = [];
-  for (const v of [safe, near, upside]) {
-    if (!out.includes(v)) out.push(v);
-  }
-  if (out.length < count) {
-    const rest = vals.filter(v => !out.includes(v));
-    rest.sort((a, b) => Math.abs(a - avg) - Math.abs(b - avg));
-    for (const v of rest) {
-      if (out.length >= count) break;
-      out.push(v);
-    }
-  }
-  return out.slice(0, count);
-}
-
-function buildLadderForStat(statKey, avg) {
-  const key = String(statKey || "").toLowerCase();
-  const thresholds = key === "pts" ? PTS_T : (key === "reb" || key === "ast" ? RA_T : []);
-  return nearestThresholds(thresholds, avg, 3);
-}
-
-function fmtAvg(avg) {
-  return Number.isFinite(avg) ? `Avg: ${avg.toFixed(1)}` : "";
-}
-
-function ladderHTML(statKey, avg, chosenThreshold) {
-  const vals = buildLadderForStat(statKey, avg);
-  if (!vals.length) return "";
-  return vals.map(v => {
-    const selected = Number(v) === Number(chosenThreshold) ? " selected" : "";
-    return `<span class="tier-chip${selected}">${v}+</span>`;
-  }).join("");
+function fmtAvgCore(avg, core) {
+  const avgOk = Number.isFinite(avg);
+  const coreOk = Number.isFinite(core);
+  if (!avgOk && !coreOk) return "";
+  if (avgOk && coreOk) return `Avg: ${avg.toFixed(1)} | Core: ${core.toFixed(1)}`;
+  if (avgOk) return `Avg: ${avg.toFixed(1)}`;
+  return `Core: ${core.toFixed(1)}`;
 }
 
 function formatTargetShort(t) {
-  const avgText = Number.isFinite(t.avg) ? ` · Avg ${t.avg.toFixed(1)}` : "";
-  return `${t.playerName} ${t.stat.toUpperCase()} ${t.t}+ (${t.hits}/${t.gp})${avgText}`;
+  const avgText = fmtAvgCore(t.avg, t.core);
+  const tail = avgText ? ` · ${avgText}` : "";
+  return `${t.playerName} ${t.stat.toUpperCase()} ${t.t}+ (${t.hits}/${t.gp})${tail}`;
 }
 
 function sortVal(r, sortKey, win) {
@@ -1678,8 +1666,7 @@ async function load() {
   function targetRowHTML(item) {
     const stat = String(item.stat || "").toUpperCase();
     const chip = `${stat} ${item.threshold}+ (${item.hits}/${item.gp})`;
-    const avgText = fmtAvg(item.avg);
-    const ladder = ladderHTML(item.stat, item.avg, item.threshold);
+    const avgText = fmtAvgCore(item.avg, item.core);
     const flags = [];
     if (item.highFatigue) flags.push("<span class=\"suggested-flag\">HIGH FATIGUE</span>");
     if (item.trapRisk) flags.push("<span class=\"suggested-flag\">TRAP RISK</span>");
@@ -1690,7 +1677,6 @@ async function load() {
         <span class="suggested-chips">
           <span class="target-chip suggested-chip">${chip}</span>
           ${avgText ? `<span class="avg-anchor">${avgText}</span>` : ""}
-          ${ladder || ""}
           ${flags.join("")}
         </span>
       </div>
@@ -1725,6 +1711,14 @@ async function load() {
     container.querySelectorAll("details.suggested-game-group").forEach(syncDetailsOpenClass);
   }
 
+  function consistencyPillHTML(score) {
+    if (!Number.isFinite(score)) return "";
+    const rounded = Math.round(score);
+    if (rounded >= 70) return `<span class="consistency-pill good">CONSISTENT ${rounded}</span>`;
+    if (rounded >= 45) return `<span class="consistency-pill ok">OK ${rounded}</span>`;
+    return `<span class="consistency-pill bad">VOLATILE ${rounded}</span>`;
+  }
+
   function renderSuggestedDrawer() {
     if (!suggestedPanel || !suggestedTopContent || !suggestedAllContent) return;
     const suggested = cachedSuggested || [];
@@ -1746,20 +1740,7 @@ async function load() {
   function computeSuggestedFromCardData(cardDataList, targetsWin) {
     try {
       const bonusForTier = tier => tier === "SOFT" ? 1 : (tier === "TOUGH" ? -1 : 0);
-      const getNum = (v) => {
-        const n = Number(v);
-        return Number.isFinite(n) ? n : null;
-      };
-      const getFeature = (row, key) => {
-        const v = row && row[key];
-        const n = getNum(v);
-        if (n != null) return n;
-        const pid = row && row.player_id ? String(row.player_id) : "";
-        if (pid && PLAYER_FEATURES && PLAYER_FEATURES[pid] && PLAYER_FEATURES[pid][key] != null) {
-          return getNum(PLAYER_FEATURES[pid][key]);
-        }
-        return null;
-      };
+      const getFeature = (row, key) => featureNum(row, key);
       const targetItems = [];
       for (const data of cardDataList) {
         const targets = targetsMemo(data.row, targetsWin);
@@ -1780,8 +1761,10 @@ async function load() {
           const landmineKey = `${statKey}_landmine_${t.t}_10`;
           const landmineRate = getFeature(data.row, landmineKey);
           const trendPP = getFeature(data.row, `share_${statKey}_trend_pp`);
+          const coreVal = getFeature(data.row, `core_${statKey}_20`);
+          const consistencyScore = getFeature(data.row, "consistency_score");
           const teamSignal = (TEAM_SIGNALS && TEAM_SIGNALS[data.team]) || {};
-          const scheduleStress = getNum(teamSignal.schedule_stress);
+          const scheduleStress = featureNum(teamSignal, "schedule_stress");
           const b2b = !!teamSignal.b2b;
           const travelBucket = String(teamSignal.travel_bucket || "");
 
@@ -1815,7 +1798,12 @@ async function load() {
             if (trendPP >= 5) roleBoost += 0.15;
             else if (trendPP >= 3) roleBoost += 0.10;
           }
-          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost;
+          let consistencyAdj = 0;
+          if (consistencyScore != null) {
+            if (consistencyScore >= 75) consistencyAdj += 0.08;
+            else if (consistencyScore <= 35) consistencyAdj -= 0.08;
+          }
+          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj;
           const highFatigue = (scheduleStress != null && scheduleStress >= 70) || b2b;
           const trapRisk = (landmineRate != null && landmineRate >= 0.25) || (iqrVal != null && ((statKey === "pts" && iqrVal > 10) || (statKey === "reb" && iqrVal > 5) || (statKey === "ast" && iqrVal > 4)));
           const roleUp = trendPP != null && trendPP >= 3;
@@ -1826,6 +1814,7 @@ async function load() {
             stat: t.stat,
             threshold: t.t,
             avg,
+            core: coreVal,
             hits: t.hits,
             gp: t.gp,
             rate: t.rate,
@@ -2309,17 +2298,19 @@ async function load() {
       const rebAvgText = Number.isFinite(rebAvg) ? rebAvg.toFixed(1) : "—";
       const astAvgText = Number.isFinite(astAvg) ? astAvg.toFixed(1) : "—";
 
-        const targets = targetsMemo(r, win);
+      const targets = targetsMemo(r, win);
 
-        const oppTeam = (todayInfo && todayInfo.opp) ? String(todayInfo.opp || "").toUpperCase() : "";
+      const oppTeam = (todayInfo && todayInfo.opp) ? String(todayInfo.opp || "").toUpperCase() : "";
+      const consistencyScore = featureNum(r, "consistency_score");
 
-        return {
+      return {
         row: r,
         team,
         domKey: `${normalizeName(r.player_name)}::${team}`,
         playerName: r.player_name,
         todayInfo,
         oppTeam,
+        consistencyScore,
         minAvg,
         minMinWin,
         ptsBest,
@@ -2355,15 +2346,14 @@ async function load() {
         .map(t => {
           const stat = t.stat.toUpperCase();
           const avgVal = seasonAvg(data.row, t.stat);
-          const avgText = fmtAvg(avgVal);
-          const ladder = ladderHTML(t.stat, avgVal, t.t);
+          const coreVal = featureNum(data.row, `core_${String(t.stat || "").toLowerCase()}_20`);
+          const avgText = fmtAvgCore(avgVal, coreVal);
           const chip = `<span class="target-chip">Target: ${stat} ${t.t}+ (${t.hits}/${t.gp})</span>`;
           const pills = data.oppTeam ? matchupPills(data.oppTeam, t.stat) : "";
           return `
             <div class="target-row" data-stat="${String(t.stat || "").toLowerCase()}">
               ${chip}
               ${avgText ? `<span class="avg-anchor">${avgText}</span>` : ""}
-              ${ladder || ""}
               <span class="matchup-pills">${pills || ""}</span>
             </div>
           `;
@@ -2392,6 +2382,7 @@ async function load() {
             <div class="submeta minsline" style="margin-top:6px;">
               <strong>MINS</strong> ${data.minAvg} <span class="muted">(avg)</span> · ${data.minMinWin} <span class="muted">(min)</span>
             </div>
+            ${data.consistencyScore != null ? `<div class="submeta consistency-row">${consistencyPillHTML(data.consistencyScore)}</div>` : ""}
           </div>
 
           <div class="card-right">
@@ -2466,6 +2457,7 @@ async function load() {
             playerName: p.playerName,
             ...t,
             avg: seasonAvg(p.row, t.stat),
+            core: featureNum(p.row, `core_${String(t.stat || "").toLowerCase()}_20`),
             weight: targetWeight(t),
           });
         }

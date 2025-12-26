@@ -67,6 +67,31 @@ def iqr(x: pd.Series) -> float:
     return float(q75 - q25)
 
 
+def trimmed_mean(x: pd.Series, trim: float = 0.1) -> float:
+    x = pd.to_numeric(x, errors="coerce").dropna()
+    if len(x) == 0:
+        return float("nan")
+    vals = x.values
+    n = len(vals)
+    if n < 10:
+        return float(np.mean(vals))
+    k = int(np.floor(n * trim))
+    if k == 0:
+        return float(np.mean(vals))
+    vals = np.sort(vals)
+    if n > 2 * k:
+        vals = vals[k:-k]
+    return float(np.mean(vals)) if len(vals) else float("nan")
+
+
+def consistency_score(iqr_val: float, scale: float) -> float:
+    if not np.isfinite(iqr_val) or not scale:
+        return float("nan")
+    ratio = min(iqr_val / scale, 2.0)
+    score = 100.0 * (1.0 - (ratio / 2.0))
+    return float(np.clip(score, 0, 100))
+
+
 def build_windows(df_player: pd.DataFrame, windows: List[int], thresholds: Dict[str, List[float]]) -> Dict[str, float]:
     """df_player sorted desc by game_date and filtered to games played (minutes>0)."""
     out: Dict[str, float] = {}
@@ -255,6 +280,29 @@ def main():
         base["reb_iqr_10"] = iqr(last10["reb"]) if len(last10) else float("nan")
         base["ast_iqr_10"] = iqr(last10["ast"]) if len(last10) else float("nan")
 
+        # Core averages (last 20 games played)
+        last20 = gp.head(20)
+        for stat in ("pts", "reb", "ast"):
+            if len(last20):
+                med = float(np.nanmedian(last20[stat]))
+                tmean = trimmed_mean(last20[stat], trim=0.1)
+                if np.isfinite(med) and np.isfinite(tmean):
+                    base[f"core_{stat}_20"] = float(0.5 * med + 0.5 * tmean)
+                else:
+                    base[f"core_{stat}_20"] = float("nan")
+            else:
+                base[f"core_{stat}_20"] = float("nan")
+
+        # Consistency score (0-100) from IQRs
+        pts_cons = consistency_score(base.get("pts_iqr_10"), 10)
+        reb_cons = consistency_score(base.get("reb_iqr_10"), 5)
+        ast_cons = consistency_score(base.get("ast_iqr_10"), 4)
+        base["consistency_pts_score"] = pts_cons
+        base["consistency_reb_score"] = reb_cons
+        base["consistency_ast_score"] = ast_cons
+        cons_vals = [v for v in (pts_cons, reb_cons, ast_cons) if np.isfinite(v)]
+        base["consistency_score"] = float(np.mean(cons_vals)) if cons_vals else float("nan")
+
         # Team share trends (last 5 vs last 20)
         share_l5 = gp_feat.head(5)
         share_l20 = gp_feat.head(20)
@@ -362,6 +410,13 @@ def main():
             "pts_iqr_10": row.get("pts_iqr_10"),
             "reb_iqr_10": row.get("reb_iqr_10"),
             "ast_iqr_10": row.get("ast_iqr_10"),
+            "core_pts_20": row.get("core_pts_20"),
+            "core_reb_20": row.get("core_reb_20"),
+            "core_ast_20": row.get("core_ast_20"),
+            "consistency_score": row.get("consistency_score"),
+            "consistency_pts_score": row.get("consistency_pts_score"),
+            "consistency_reb_score": row.get("consistency_reb_score"),
+            "consistency_ast_score": row.get("consistency_ast_score"),
             "share_pts_l5": row.get("share_pts_l5"),
             "share_pts_l20": row.get("share_pts_l20"),
             "share_pts_trend_pp": row.get("share_pts_trend_pp"),
