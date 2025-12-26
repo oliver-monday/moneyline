@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-26",
-  "built_at_utc": "2025-12-26T17:09:14Z",
+  "built_at_utc": "2025-12-26T20:20:10Z",
   "source": "rotowire",
   "MIA": [
     {
@@ -62,11 +62,6 @@
       "name": "E. Ndiaye",
       "status": "OFS",
       "details": "E. Ndiaye (OFS)"
-    },
-    {
-      "name": "M. Gueye",
-      "status": "QUES",
-      "details": "M. Gueye (Ques)"
     },
     {
       "name": "K. Porzingis",
@@ -270,6 +265,21 @@
   ],
   "PHI": [
     {
+      "name": "D. Barlow",
+      "status": "PROB",
+      "details": "D. Barlow (Prob)"
+    },
+    {
+      "name": "V. Edgecombe",
+      "status": "PROB",
+      "details": "V. Edgecombe (Prob)"
+    },
+    {
+      "name": "Q. Grimes",
+      "status": "PROB",
+      "details": "Q. Grimes (Prob)"
+    },
+    {
       "name": "K. Oubre",
       "status": "OUT",
       "details": "K. Oubre (Out)"
@@ -280,24 +290,9 @@
       "details": "T. Watford (Out)"
     },
     {
-      "name": "V. Edgecombe",
-      "status": "QUES",
-      "details": "V. Edgecombe (Ques)"
-    },
-    {
-      "name": "D. Barlow",
-      "status": "QUES",
-      "details": "D. Barlow (Ques)"
-    },
-    {
       "name": "J. Embiid",
       "status": "QUES",
       "details": "J. Embiid (Ques)"
-    },
-    {
-      "name": "Q. Grimes",
-      "status": "QUES",
-      "details": "Q. Grimes (Ques)"
     },
     {
       "name": "N. Essengue",
@@ -335,8 +330,8 @@
     },
     {
       "name": "J. Poole",
-      "status": "QUES",
-      "details": "J. Poole (Ques)"
+      "status": "PROB",
+      "details": "J. Poole (Prob)"
     },
     {
       "name": "H. Jones",
@@ -350,6 +345,11 @@
     }
   ],
   "NOP": [
+    {
+      "name": "J. Poole",
+      "status": "PROB",
+      "details": "J. Poole (Prob)"
+    },
     {
       "name": "H. Jones",
       "status": "OUT",
@@ -373,9 +373,9 @@
       "details": "T. Prince (Out)"
     },
     {
-      "name": "G. Trent",
-      "status": "QUES",
-      "details": "G. Trent (Ques)"
+      "name": "Gary Trent",
+      "status": "OUT",
+      "details": "Gary Trent (Out)"
     },
     {
       "name": "J. Morant",
@@ -495,8 +495,8 @@
     },
     {
       "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "status": "PROB",
+      "details": "R. Williams (Prob)"
     },
     {
       "name": "J. Grant",
@@ -529,6 +529,11 @@
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "PROB",
+      "details": "R. Williams (Prob)"
     },
     {
       "name": "J. Grant",
