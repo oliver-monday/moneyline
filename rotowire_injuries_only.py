@@ -113,6 +113,10 @@ def parse_rotowire_injuries(html: str) -> Dict[str, List[Dict[str, str]]]:
         ):
             name = re.sub(r"<.*?>", "", player_html).strip()
             status_raw = re.sub(r"<.*?>", "", status_html).strip()
+            if not status_raw:
+                m = re.search(r"\(([^)]+)\)", status_html)
+                if m:
+                    status_raw = m.group(1).strip()
             if not name or not status_raw:
                 continue
 
@@ -125,6 +129,7 @@ def parse_rotowire_injuries(html: str) -> Dict[str, List[Dict[str, str]]]:
                     "ofs",
                     "doubt",
                     "question",
+                    "ques",
                     "prob",
                     "day-to-day",
                     "dtd",
@@ -193,6 +198,16 @@ def parse_rotowire_injuries(html: str) -> Dict[str, List[Dict[str, str]]]:
             key = (e.get("name", "").strip(), e.get("status", "").strip())
             deduped[key] = e
         injuries_today[team] = list(deduped.values())
+
+    # Debug counts
+    counts = {}
+    total = 0
+    for entries in injuries_today.values():
+        for e in entries:
+            total += 1
+            counts[e.get("status", "")] = counts.get(e.get("status", ""), 0) + 1
+    print(f"[injuries] kept={total}")
+    print(f"[injuries] status_counts={counts}")
 
     return injuries_today
 
