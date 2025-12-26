@@ -16,6 +16,7 @@ from typing import Dict, List
 
 import pandas as pd
 import requests
+from bs4 import BeautifulSoup
 from zoneinfo import ZoneInfo
 
 ROTOWIRE_URL = "https://www.rotowire.com/basketball/nba-lineups.php"
@@ -65,6 +66,33 @@ def fetch_rotowire_html() -> str | None:
 
 def parse_rotowire_injuries(html: str) -> Dict[str, List[Dict[str, str]]]:
     injuries_today: Dict[str, List[Dict[str, str]]] = {}
+    team_abbrevs = {
+        "ATL","BOS","BKN","CHA","CHI","CLE","DAL","DEN","DET","GSW","HOU","IND",
+        "LAC","LAL","MEM","MIA","MIL","MIN","NOP","NYK","OKC","ORL","PHI","PHX",
+        "POR","SAC","SAS","TOR","UTA","WAS",
+    }
+
+    def normalize_status_raw(raw: str) -> tuple[str, str]:
+        t = (raw or "").strip().lower()
+        if "out for season" in t or "ofs" in t:
+            return "OFS", "OFS"
+        if "out" in t:
+            return "OUT", "Out"
+        if "doubt" in t:
+            return "DOUBT", "Doubt"
+        if "question" in t or t.startswith("ques"):
+            return "QUES", "Ques"
+        if "prob" in t:
+            return "PROB", "Prob"
+        if "gtd" in t or "game-time" in t:
+            return "GTD", "GTD"
+        if "day-to-day" in t or "dtd" in t:
+            return "DTD", "DTD"
+        if "rest" in t:
+            return "REST", "Rest"
+        if "susp" in t:
+            return "SUSP", "Susp"
+        return _short_status(raw), raw.strip()
 
     team_block_pattern = re.compile(
         r'data-team="([A-Z]{2,3})"[^>]*>On/Off Court Stats</button>(.*?)</ul>',
@@ -117,6 +145,54 @@ def parse_rotowire_injuries(html: str) -> Dict[str, List[Dict[str, str]]]:
         if entries:
             deduped = {(e["name"].strip(), e["status"].strip(), e["details"].strip()): e for e in entries}
             injuries_today[team] = list(deduped.values())
+
+    # Second pass: scrape "May Not Play" style statuses from the full page.
+    soup = BeautifulSoup(html, "lxml")
+    status_pattern = re.compile(
+        r"^(prob|ques|question|doubt|gtd|day-to-day|dtd|out|ofs|rest|susp)",
+        re.IGNORECASE,
+    )
+    for s in soup.find_all(string=status_pattern):
+        status_raw = str(s).strip()
+        if not status_raw:
+            continue
+        status_code, status_display = normalize_status_raw(status_raw)
+        if not status_code:
+            continue
+
+        el = s.parent
+        row = el.find_parent(lambda tag: tag.find("a") is not None)
+        if not row:
+            continue
+        name_tag = row.find("a")
+        name = name_tag.get_text(strip=True) if name_tag else ""
+        if not name:
+            continue
+
+        team = ""
+        for ancestor in [row] + list(row.parents):
+            for text in ancestor.stripped_strings:
+                txt = str(text).strip().upper()
+                if txt in team_abbrevs:
+                    team = txt
+                    break
+            if team:
+                break
+        if not team:
+            continue
+
+        details = f"{name} ({status_display})"
+        injuries_today.setdefault(team, []).append(
+            {"name": name, "status": status_code, "details": details}
+        )
+
+    # De-dupe per team by (name,status).
+    for team, entries in list(injuries_today.items()):
+        deduped = {}
+        for e in entries:
+            key = (e.get("name", "").strip(), e.get("status", "").strip())
+            deduped[key] = e
+        injuries_today[team] = list(deduped.values())
 
     return injuries_today
 
