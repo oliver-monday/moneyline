@@ -869,9 +869,18 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
         .page-subtitle { margin: 0 0 18px; }
         .date-stamp {
             font-weight: 800;
-            font-size: 22px;
+            font-size: clamp(16px, 3vw, 22px);
             color: #000000;
-            width: 100%;
+            width: calc((100% - 12px) / 2);
+            box-sizing: border-box;
+            padding: 12px 16px;
+            border: 1px solid #fff;
+            border-radius: 14px;
+            background: #fff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
             margin: 0 0 18px;
         }
         .no-games {
@@ -884,6 +893,10 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
             .brand-text { font-size: clamp(70px, 16vw, 108px); }
             .brand-logo { height: clamp(70px, 16vw, 108px); }
             .masthead { width: 100%; }
+            .date-stamp {
+                padding: 14px 16px;
+                border-radius: 16px;
+            }
         }
         .game-card {
             border: 1px solid #eee;
