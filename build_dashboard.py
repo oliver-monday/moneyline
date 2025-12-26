@@ -934,7 +934,7 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
         .market-report .report-title {
             font-size: 18px;
             font-weight: 700;
-            color: #d97706;
+            color: #000000;
         }
         .market-report .report-preview {
             font-weight: 600;
@@ -1227,7 +1227,7 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
     w('</div>')
     w("<details class='market-report' id='marketReport' hidden>")
     w("<summary>")
-    w("<div class='report-title'>Yesterday Recap</div>")
+    w("<div class='report-title'>👀 Yesterday Recap</div>")
     w("<div class='report-preview' id='marketReportSummary'></div>")
     w("</summary>")
     w("<div class='report-body' id='marketReportBody'></div>")
