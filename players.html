@@ -409,7 +409,14 @@
       width: 100%;
       text-align: center;
       margin: 0 0 18px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      column-gap: 10px;
+      align-items: center;
     }
+    .date-day { justify-self: end; }
+    .date-bullet { justify-self: center; }
+    .date-value { justify-self: start; }
     .no-games-today {
       font-size: 18px;
       font-weight: 700;
@@ -1171,7 +1178,7 @@ function teamRestLabel(teamAbbrev) {
   return restDays === 0 ? "B2B" : `${restDays}d`;
 }
 
-function formatMMDDYYYY(iso) {
+function formatDateStampHTML(iso) {
   if (!iso) return "";
   const parts = iso.split("-");
   if (parts.length !== 3) return iso;
@@ -1179,8 +1186,9 @@ function formatMMDDYYYY(iso) {
   const d = new Date(`${yyyy}-${mm}-${dd}T00:00:00`);
   const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   const dayLabel = Number.isFinite(d.getTime()) ? days[d.getDay()] : "";
-  const dateLabel = `${mm}-${dd}-${yyyy}`;
-  return dayLabel ? `${dayLabel} • ${dateLabel}` : dateLabel;
+  const dateLabel = `${mm}-${dd}-${yyyy.slice(2)}`;
+  if (!dayLabel) return dateLabel;
+  return `<span class="date-day">${dayLabel}</span><span class="date-bullet">•</span><span class="date-value">${dateLabel}</span>`;
 }
 
 function normalizeName(s) {
@@ -1502,7 +1510,7 @@ async function load() {
   const NO_GAMES_TODAY = !hasGamesToday;
   const slateDate = todayLocal;
   todayISO = slateDate;
-  const todayDisplay = formatMMDDYYYY(slateDate);
+  const todayDisplay = formatDateStampHTML(slateDate);
 
   teamLastPlayedDate = new Map();
   const isNumeric = v => /^\d+$/.test(String(v || "").trim());
@@ -1579,7 +1587,7 @@ async function load() {
   }
   
   const meta = document.getElementById("meta");
-  meta.textContent = todayDisplay;
+  meta.innerHTML = todayDisplay;
 
   const q = document.getElementById("q");
   const scope = document.getElementById("scope");

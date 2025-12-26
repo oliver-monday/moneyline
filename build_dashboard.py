@@ -874,7 +874,14 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
             width: 100%;
             text-align: center;
             margin: 0 0 18px;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            column-gap: 10px;
+            align-items: center;
         }
+        .date-day { justify-self: end; }
+        .date-bullet { justify-self: center; }
+        .date-value { justify-self: start; }
         .no-games {
             font-size: 18px;
             font-weight: 700;
@@ -1209,13 +1216,14 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
     w(CSS)
     w("</head><body>")
 
-    today_display = pd.Timestamp(today_date).strftime("%A • %m-%d-%Y")
+    today_day = pd.Timestamp(today_date).strftime("%A")
+    today_short = pd.Timestamp(today_date).strftime("%m-%d-%y")
     w('<div class="header-block">')
     w('<div class="masthead">')
     w('<div class="brand"><div class="brand-text">NBA</div><img class="brand-logo" src="./assets/NBAGPTlogo-header.png" width="80" height="80" decoding="async" fetchpriority="high" alt="NBA GPT logo"><div class="brand-text">GPT</div></div>')
     w('<div class="nav"><a class="active" href="./index.html">Moneylines</a><a href="./players.html">Player Props</a></div>')
     w('</div>')
-    w(f"<div class=\"date-stamp\">{today_display}</div>")
+    w(f"<div class=\"date-stamp\"><span class=\"date-day\">{today_day}</span><span class=\"date-bullet\">•</span><span class=\"date-value\">{today_short}</span></div>")
     w('</div>')
     w("<details class='market-report' id='marketReport' hidden>")
     w("<summary>")
