@@ -433,6 +433,25 @@
       border-color: #bbb !important;
       color: #777;
     }
+    .avg-anchor {
+      font-size: 12px;
+      color: #777;
+      margin-left: 8px;
+      white-space: nowrap;
+    }
+    .tier-chip {
+      background: #eaf7ef;
+      border: 1px solid #cfe8d7;
+      border-radius: 10px;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #2d6b3a;
+      white-space: nowrap;
+    }
+    .tier-chip.selected {
+      border-color: #2d6b3a;
+    }
     .stable-row{
       display:flex;
       margin-top: 8px;
@@ -1387,8 +1406,57 @@ function targetWeight(t) {
   return (t.hits / t.gp) * ratio;
 }
 
+function nearestThresholds(thresholds, avg, count=3) {
+  const vals = Array.from(new Set((thresholds || []).map(Number).filter(Number.isFinite))).sort((a, b) => a - b);
+  if (!vals.length || !Number.isFinite(avg)) return vals.slice(0, count);
+  const safe = vals.reduce((acc, v) => (v <= avg ? v : acc), vals[0]);
+  const upside = vals.find(v => v >= avg) ?? vals[vals.length - 1];
+  let near = vals[0];
+  let bestDiff = Math.abs(vals[0] - avg);
+  for (const v of vals) {
+    const d = Math.abs(v - avg);
+    if (d < bestDiff || (d === bestDiff && v < near)) {
+      bestDiff = d;
+      near = v;
+    }
+  }
+  const out = [];
+  for (const v of [safe, near, upside]) {
+    if (!out.includes(v)) out.push(v);
+  }
+  if (out.length < count) {
+    const rest = vals.filter(v => !out.includes(v));
+    rest.sort((a, b) => Math.abs(a - avg) - Math.abs(b - avg));
+    for (const v of rest) {
+      if (out.length >= count) break;
+      out.push(v);
+    }
+  }
+  return out.slice(0, count);
+}
+
+function buildLadderForStat(statKey, avg) {
+  const key = String(statKey || "").toLowerCase();
+  const thresholds = key === "pts" ? PTS_T : (key === "reb" || key === "ast" ? RA_T : []);
+  return nearestThresholds(thresholds, avg, 3);
+}
+
+function fmtAvg(avg) {
+  return Number.isFinite(avg) ? `Avg: ${avg.toFixed(1)}` : "";
+}
+
+function ladderHTML(statKey, avg, chosenThreshold) {
+  const vals = buildLadderForStat(statKey, avg);
+  if (!vals.length) return "";
+  return vals.map(v => {
+    const selected = Number(v) === Number(chosenThreshold) ? " selected" : "";
+    return `<span class="tier-chip${selected}">${v}+</span>`;
+  }).join("");
+}
+
 function formatTargetShort(t) {
-  return `${t.playerName} ${t.stat.toUpperCase()} ${t.t}+ (${t.hits}/${t.gp})`;
+  const avgText = Number.isFinite(t.avg) ? ` · Avg ${t.avg.toFixed(1)}` : "";
+  return `${t.playerName} ${t.stat.toUpperCase()} ${t.t}+ (${t.hits}/${t.gp})${avgText}`;
 }
 
 function sortVal(r, sortKey, win) {
@@ -1610,6 +1678,8 @@ async function load() {
   function targetRowHTML(item) {
     const stat = String(item.stat || "").toUpperCase();
     const chip = `${stat} ${item.threshold}+ (${item.hits}/${item.gp})`;
+    const avgText = fmtAvg(item.avg);
+    const ladder = ladderHTML(item.stat, item.avg, item.threshold);
     const flags = [];
     if (item.highFatigue) flags.push("<span class=\"suggested-flag\">HIGH FATIGUE</span>");
     if (item.trapRisk) flags.push("<span class=\"suggested-flag\">TRAP RISK</span>");
@@ -1619,6 +1689,8 @@ async function load() {
         <span class="suggested-player">${item.playerName}</span>
         <span class="suggested-chips">
           <span class="target-chip suggested-chip">${chip}</span>
+          ${avgText ? `<span class="avg-anchor">${avgText}</span>` : ""}
+          ${ladder || ""}
           ${flags.join("")}
         </span>
       </div>
@@ -1753,6 +1825,7 @@ async function load() {
             opp: data.oppTeam,
             stat: t.stat,
             threshold: t.t,
+            avg,
             hits: t.hits,
             gp: t.gp,
             rate: t.rate,
@@ -2236,11 +2309,11 @@ async function load() {
       const rebAvgText = Number.isFinite(rebAvg) ? rebAvg.toFixed(1) : "—";
       const astAvgText = Number.isFinite(astAvg) ? astAvg.toFixed(1) : "—";
 
-      const targets = targetsMemo(r, win);
+        const targets = targetsMemo(r, win);
 
-      const oppTeam = (todayInfo && todayInfo.opp) ? String(todayInfo.opp || "").toUpperCase() : "";
+        const oppTeam = (todayInfo && todayInfo.opp) ? String(todayInfo.opp || "").toUpperCase() : "";
 
-      return {
+        return {
         row: r,
         team,
         domKey: `${normalizeName(r.player_name)}::${team}`,
@@ -2261,8 +2334,8 @@ async function load() {
         targets,
         loadLine,
         injuryStatus,
-      };
-    });
+        };
+      });
     CARD_DATA_BY_KEY = new Map();
     for (const data of cardDataList) {
       CARD_DATA_BY_KEY.set(data.domKey, data);
@@ -2281,11 +2354,16 @@ async function load() {
         .slice(0, 3)
         .map(t => {
           const stat = t.stat.toUpperCase();
+          const avgVal = seasonAvg(data.row, t.stat);
+          const avgText = fmtAvg(avgVal);
+          const ladder = ladderHTML(t.stat, avgVal, t.t);
           const chip = `<span class="target-chip">Target: ${stat} ${t.t}+ (${t.hits}/${t.gp})</span>`;
           const pills = data.oppTeam ? matchupPills(data.oppTeam, t.stat) : "";
           return `
             <div class="target-row" data-stat="${String(t.stat || "").toLowerCase()}">
               ${chip}
+              ${avgText ? `<span class="avg-anchor">${avgText}</span>` : ""}
+              ${ladder || ""}
               <span class="matchup-pills">${pills || ""}</span>
             </div>
           `;
@@ -2383,14 +2461,15 @@ async function load() {
         const targetEntries = [];
         for (const p of arr) {
           if (isOut(p.row, p.injuryStatus)) continue;
-          for (const t of (p.targets || [])) {
-            targetEntries.push({
-              playerName: p.playerName,
-              ...t,
-              weight: targetWeight(t),
-            });
-          }
+        for (const t of (p.targets || [])) {
+          targetEntries.push({
+            playerName: p.playerName,
+            ...t,
+            avg: seasonAvg(p.row, t.stat),
+            weight: targetWeight(t),
+          });
         }
+      }
         const targetsCount = targetEntries.length;
         const gameSignal = targetEntries.reduce((sum, t) => sum + (t.weight || 0), 0);
         if (targetsCount) {
