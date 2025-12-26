@@ -426,8 +426,12 @@
       color: #777;
     }
     .avg-anchor {
+      display: inline-flex;
+      align-items: center;
       font-size: 12px;
-      color: #777;
+      font-weight: 600;
+      color: #555;
+      line-height: 1;
       margin-left: 8px;
       white-space: nowrap;
     }
@@ -1706,8 +1710,8 @@ async function load() {
     if (!Number.isFinite(score)) return "";
     const rounded = Math.round(score);
     if (rounded >= 70) return `<span class="consistency-pill good">CONSISTENT ${rounded}</span>`;
-    if (rounded >= 45) return `<span class="consistency-pill ok">OK ${rounded}</span>`;
-    return `<span class="consistency-pill bad">VOLATILE ${rounded}</span>`;
+    if (rounded >= 45) return `<span class="consistency-pill ok">CONSISTENCY OK ${rounded}</span>`;
+    return `<span class="consistency-pill bad">INCONSISTENT ${rounded}</span>`;
   }
 
   function renderSuggestedDrawer() {
