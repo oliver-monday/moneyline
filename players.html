@@ -799,9 +799,10 @@
       .control-search { order: 1; }
       .control-scope { order: 2; }
       .control-window { order: 3; }
-      .control-sort { order: 4; }
-      .control-layout { order: 5; }
-      .control-min { order: 6; }
+      .control-metric { order: 4; }
+      .control-sort { order: 5; }
+      .control-layout { order: 6; }
+      .control-min { order: 7; }
     }
     @supports not (width: fit-content) {
       @media (max-width: 520px) {
@@ -881,6 +882,14 @@
           <option value="10" selected>Last 10</option>
           <option value="20">Last 20</option>
           <option value="SEASON">Season</option>
+        </select>
+      </label>
+
+      <label class="control-metric">Metric window
+        <select id="metricWin">
+          <option value="10" selected>L10</option>
+          <option value="20">L20</option>
+          <option value="season">Season</option>
         </select>
       </label>
 
@@ -1019,6 +1028,52 @@ function featureNum(row, key) {
   return null;
 }
 
+function metricLabelFor(win) {
+  if (win === "20") return "L20";
+  if (win === "season") return "Season";
+  return "L10";
+}
+
+function metricSuffix(win) {
+  return win === "season" ? "season" : win;
+}
+
+function coreKeyCandidates(statKey, win) {
+  const suffix = metricSuffix(win);
+  return [`core_${statKey}_${suffix}`, `${statKey}_core_${suffix}`];
+}
+
+function getCoreVal(row, statKey, win) {
+  const keys = coreKeyCandidates(statKey, win);
+  for (const k of keys) {
+    const v = featureNum(row, k);
+    if (v != null) return v;
+  }
+  return null;
+}
+
+function getConsistencyVal(row, win) {
+  const suffix = metricSuffix(win);
+  const v = featureNum(row, `consistency_${suffix}`);
+  if (v != null) return v;
+  return featureNum(row, "consistency_score");
+}
+
+function getDnpRate(row, win) {
+  const suffix = metricSuffix(win);
+  return featureNum(row, `dnp_rate_${suffix}`);
+}
+
+function getMinutesIqr(row, win) {
+  const suffix = metricSuffix(win);
+  return featureNum(row, `minutes_iqr_${suffix}`);
+}
+
+function getIqr(row, statKey, win) {
+  const suffix = metricSuffix(win);
+  return featureNum(row, `${statKey}_iqr_${suffix}`);
+}
+
 const PTS_T = [10,15,20,25,30,35];
 const RA_T  = [2,4,6,8,10,12,14];
 
@@ -1065,6 +1120,8 @@ let _targetsCache = new Map();
 let _matchupRerendered = false;
 let CARD_DATA_BY_KEY = new Map();
 let _currentCardDataList = [];
+let _metricWin = "10";
+let _metricLabel = "L10";
 
 function playerKey(r) {
   const key = seasonKey(r);
@@ -1451,17 +1508,18 @@ function targetWeight(t) {
   return (t.hits / t.gp) * ratio;
 }
 
-function fmtAvgCore(avg, core) {
+function fmtAvgCore(avg, core, label) {
   const avgOk = Number.isFinite(avg);
   const coreOk = Number.isFinite(core);
   if (!avgOk && !coreOk) return "";
-  if (avgOk && coreOk) return `Avg: ${avg.toFixed(1)} | Core: ${core.toFixed(1)}`;
+  const coreLabel = label ? `Core(${label})` : "Core";
+  if (avgOk && coreOk) return `Avg: ${avg.toFixed(1)} | ${coreLabel}: ${core.toFixed(1)}`;
   if (avgOk) return `Avg: ${avg.toFixed(1)}`;
-  return `Core: ${core.toFixed(1)}`;
+  return `${coreLabel}: ${core.toFixed(1)}`;
 }
 
 function formatTargetShort(t) {
-  const avgText = fmtAvgCore(t.avg, t.core);
+  const avgText = fmtAvgCore(t.avg, t.core, _metricLabel);
   const tail = avgText ? ` · ${avgText}` : "";
   return `${t.playerName} ${t.stat.toUpperCase()} ${t.t}+ (${t.hits}/${t.gp})${tail}`;
 }
@@ -1621,6 +1679,7 @@ async function load() {
   const q = document.getElementById("q");
   const scope = document.getElementById("scope");
   const w = document.getElementById("w");
+  const metricWin = document.getElementById("metricWin");
   const sort = document.getElementById("sort");
   const minFilter = document.getElementById("minFilter");
   const layout = document.getElementById("layout");
@@ -1647,6 +1706,11 @@ async function load() {
     filtersPanel.removeAttribute("open");
   }
   const cards = document.getElementById("cards");
+
+  if (metricWin) {
+    const saved = localStorage.getItem("metricWin");
+    if (saved) metricWin.value = saved;
+  }
 
   clearComputedCaches();
 
@@ -1685,11 +1749,12 @@ async function load() {
   function targetRowHTML(item) {
     const stat = String(item.stat || "").toUpperCase();
     const chip = `${stat} ${item.threshold}+ (${item.hits}/${item.gp})`;
-    const avgText = fmtAvgCore(item.avg, item.core);
+    const avgText = fmtAvgCore(item.avg, item.core, _metricLabel);
     const flags = [];
     if (item.highFatigue) flags.push("<span class=\"suggested-flag\">HIGH FATIGUE</span>");
     if (item.trapRisk) flags.push("<span class=\"suggested-flag\">TRAP RISK</span>");
     if (item.roleUp) flags.push("<span class=\"suggested-flag\">↑ ROLE</span>");
+    if (item.injuryRisk) flags.push("<span class=\"suggested-flag\">INJURY RISK</span>");
     return `
       <div class="suggested-row" data-player-key="${item.playerKey}" data-game-id="${item.gameId || ""}">
         <span class="suggested-player">${item.playerName}</span>
@@ -1758,18 +1823,20 @@ async function load() {
     return;
   }
 
-  function computeSuggestedFromCardData(cardDataList, targetsWin) {
+  function computeSuggestedFromCardData(cardDataList, targetsWin, metricWinVal) {
     try {
       const bonusForTier = tier => tier === "SOFT" ? 1 : (tier === "TOUGH" ? -1 : 0);
-      const getFeature = (row, key) => featureNum(row, key);
-      const targetItems = [];
-      for (const data of cardDataList) {
-        const targets = targetsMemo(data.row, targetsWin);
-        if (!targets.length) continue;
-        const playerKey = `${normalizeName(data.playerName)}::${data.team}`;
-        const gameId = (data.todayInfo && data.todayInfo.gameId) ? data.todayInfo.gameId : "";
-        const gameKey = gameId || `${data.team}::${data.oppTeam || ""}`;
-        const info = data.todayInfo && data.todayInfo.gameId ? gameInfoById.get(data.todayInfo.gameId) : null;
+          const getFeature = (row, key) => featureNum(row, key);
+          const targetItems = [];
+          for (const data of cardDataList) {
+            const targets = targetsMemo(data.row, targetsWin);
+            if (!targets.length) continue;
+            const inj = String(data.injuryStatus || "").toUpperCase();
+            if (inj === "OUT" || inj === "OFS" || inj === "SUSP") continue;
+            const playerKey = `${normalizeName(data.playerName)}::${data.team}`;
+            const gameId = (data.todayInfo && data.todayInfo.gameId) ? data.todayInfo.gameId : "";
+            const gameKey = gameId || `${data.team}::${data.oppTeam || ""}`;
+            const info = data.todayInfo && data.todayInfo.gameId ? gameInfoById.get(data.todayInfo.gameId) : null;
         const gameLabel = info
           ? `${info.awayName || info.awayAbbrev} @ ${info.homeName || info.homeAbbrev}`
           : (data.oppTeam ? `${data.team} @ ${data.oppTeam}` : data.team);
@@ -1778,12 +1845,20 @@ async function load() {
           const diff = Number.isFinite(avg) ? (t.t - avg) : -Infinity;
           const tier = matchupTier(data.oppTeam, t.stat);
           const statKey = String(t.stat || "").toLowerCase();
-          const iqrVal = getFeature(data.row, `${statKey}_iqr_10`);
-          const landmineKey = `${statKey}_landmine_${t.t}_10`;
+          const iqrVal = getIqr(data.row, statKey, metricWinVal);
+          const landmineKey = `${statKey}_landmine_${t.t}_${metricSuffix(metricWinVal)}`;
           const landmineRate = getFeature(data.row, landmineKey);
           const trendPP = getFeature(data.row, `share_${statKey}_trend_pp`);
-          const coreVal = getFeature(data.row, `core_${statKey}_20`);
-          const consistencyScore = getFeature(data.row, "consistency_score");
+          const coreWin = getCoreVal(data.row, statKey, metricWinVal);
+          const coreSeason = getCoreVal(data.row, statKey, "season");
+          const consWin = getConsistencyVal(data.row, metricWinVal);
+          const consSeason = getConsistencyVal(data.row, "season");
+          const coreUsed = (metricWinVal === "season")
+            ? coreSeason
+            : (Number.isFinite(coreWin) && Number.isFinite(coreSeason) ? (0.7 * coreWin + 0.3 * coreSeason) : (coreWin != null ? coreWin : coreSeason));
+          const consUsed = (metricWinVal === "season")
+            ? consSeason
+            : (Number.isFinite(consWin) && Number.isFinite(consSeason) ? (0.7 * consWin + 0.3 * consSeason) : (consWin != null ? consWin : consSeason));
           const teamSignal = (TEAM_SIGNALS && TEAM_SIGNALS[data.team]) || {};
           const scheduleStress = featureNum(teamSignal, "schedule_stress");
           const b2b = !!teamSignal.b2b;
@@ -1814,17 +1889,43 @@ async function load() {
             else if (landmineRate >= 0.20) landminePenalty -= 0.08;
           }
 
+          let injuryPenalty = 0;
+          const injuryRisk = ["PROB","QUES","GTD","DTD"].some(tag => inj.startsWith(tag));
+          if (injuryRisk) injuryPenalty -= 0.12;
+
+          let dnpPenalty = 0;
+          const dnpRate = getDnpRate(data.row, metricWinVal);
+          if (dnpRate != null) {
+            if (dnpRate >= 0.30) dnpPenalty -= 0.12;
+            else if (dnpRate >= 0.20) dnpPenalty -= 0.08;
+          }
+
+          let minutesPenalty = 0;
+          const minIqr = getMinutesIqr(data.row, metricWinVal);
+          if (minIqr != null) {
+            if (minIqr >= 8) minutesPenalty -= 0.08;
+            else if (minIqr >= 6) minutesPenalty -= 0.05;
+          }
+
           let roleBoost = 0;
           if (trendPP != null) {
             if (trendPP >= 5) roleBoost += 0.15;
             else if (trendPP >= 3) roleBoost += 0.10;
           }
+          let roleInstability = 0;
+          if (trendPP != null && Math.abs(trendPP) >= 5) roleInstability -= 0.04;
+
           let consistencyAdj = 0;
-          if (consistencyScore != null) {
-            if (consistencyScore >= 75) consistencyAdj += 0.08;
-            else if (consistencyScore <= 35) consistencyAdj -= 0.08;
+          if (consUsed != null) {
+            if (consUsed >= 75) consistencyAdj += 0.08;
+            else if (consUsed <= 35) consistencyAdj -= 0.08;
           }
-          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj;
+          let landmineCons = 0;
+          if (landmineRate != null) {
+            if (landmineRate >= 0.30) landmineCons -= 0.05;
+            else if (landmineRate >= 0.20) landmineCons -= 0.03;
+          }
+          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty;
           const highFatigue = (scheduleStress != null && scheduleStress >= 70) || b2b;
           const trapRisk = (landmineRate != null && landmineRate >= 0.25) || (iqrVal != null && ((statKey === "pts" && iqrVal > 10) || (statKey === "reb" && iqrVal > 5) || (statKey === "ast" && iqrVal > 4)));
           const roleUp = trendPP != null && trendPP >= 3;
@@ -1835,7 +1936,7 @@ async function load() {
             stat: t.stat,
             threshold: t.t,
             avg,
-            core: coreVal,
+            core: coreWin,
             hits: t.hits,
             gp: t.gp,
             rate: t.rate,
@@ -1849,6 +1950,7 @@ async function load() {
             highFatigue,
             trapRisk,
             roleUp,
+            injuryRisk,
           });
         }
       }
@@ -2198,6 +2300,9 @@ async function load() {
 
   function render() {
     const win = w.value;
+    const metricWinVal = metricWin ? metricWin.value : "10";
+    _metricWin = metricWinVal;
+    _metricLabel = metricLabelFor(metricWinVal);
     const layoutMode = layout.value;
     const groupedMode = layoutMode === "grouped" && scope.value === "today";
     const needle = q.value.trim().toLowerCase();
@@ -2331,7 +2436,7 @@ async function load() {
       const targets = targetsMemo(r, win);
 
       const oppTeam = (todayInfo && todayInfo.opp) ? String(todayInfo.opp || "").toUpperCase() : "";
-      const consistencyScore = featureNum(r, "consistency_score");
+      const consistencyScore = getConsistencyVal(r, metricWinVal);
 
       return {
         row: r,
@@ -2376,8 +2481,9 @@ async function load() {
         .map(t => {
           const stat = t.stat.toUpperCase();
           const avgVal = seasonAvg(data.row, t.stat);
-          const coreVal = featureNum(data.row, `core_${String(t.stat || "").toLowerCase()}_20`);
-          const avgText = fmtAvgCore(avgVal, coreVal);
+          const statKey = String(t.stat || "").toLowerCase();
+          const coreVal = getCoreVal(data.row, statKey, metricWinVal);
+          const avgText = fmtAvgCore(avgVal, coreVal, _metricLabel);
           const chip = `<span class="target-chip">Target: ${stat} ${t.t}+ (${t.hits}/${t.gp})</span>`;
           const pills = data.oppTeam ? matchupPills(data.oppTeam, t.stat) : "";
           return `
@@ -2487,7 +2593,7 @@ async function load() {
             playerName: p.playerName,
             ...t,
             avg: seasonAvg(p.row, t.stat),
-            core: featureNum(p.row, `core_${String(t.stat || "").toLowerCase()}_20`),
+            core: getCoreVal(p.row, String(t.stat || "").toLowerCase(), metricWinVal),
             weight: targetWeight(t),
           });
         }
@@ -2566,7 +2672,7 @@ async function load() {
 
     document.querySelectorAll("details.card, details.game-group, details.suggested-targets, details.suggested-subpanel, details.suggested-game-group").forEach(syncDetailsOpenClass);
 
-    computeSuggestedFromCardData(cardDataList, "10");
+    computeSuggestedFromCardData(cardDataList, "10", metricWinVal);
     applyMatchupContextToCards();
   }
 
@@ -2585,6 +2691,12 @@ async function load() {
   }
 
   // Default scope = Playing Today already set in HTML
+  if (metricWin) {
+    metricWin.addEventListener("change", () => {
+      localStorage.setItem("metricWin", metricWin.value);
+      render();
+    });
+  }
   q.addEventListener("input", render);
   scope.addEventListener("change", render);
   w.addEventListener("change", render);
@@ -2618,7 +2730,7 @@ async function load() {
     if (!_matchupRerendered && (Object.keys(OPP_BIG).length || Object.keys(TEAM_OPP).length)) {
       _matchupRerendered = true;
       applyMatchupContextToCards();
-      computeSuggestedFromCardData(_currentCardDataList, "10");
+      computeSuggestedFromCardData(_currentCardDataList, "10", _metricWin);
     }
   }).catch(() => {});
 }

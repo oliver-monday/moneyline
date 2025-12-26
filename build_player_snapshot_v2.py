@@ -92,6 +92,17 @@ def consistency_score(iqr_val: float, scale: float) -> float:
     return float(np.clip(score, 0, 100))
 
 
+def core_avg(series: pd.Series) -> float:
+    series = pd.to_numeric(series, errors="coerce").dropna()
+    if len(series) == 0:
+        return float("nan")
+    med = float(np.nanmedian(series))
+    tmean = trimmed_mean(series, trim=0.1)
+    if np.isfinite(med) and np.isfinite(tmean):
+        return float(0.5 * med + 0.5 * tmean)
+    return float("nan")
+
+
 def build_windows(df_player: pd.DataFrame, windows: List[int], thresholds: Dict[str, List[float]]) -> Dict[str, float]:
     """df_player sorted desc by game_date and filtered to games played (minutes>0)."""
     out: Dict[str, float] = {}
@@ -280,28 +291,28 @@ def main():
         base["reb_iqr_10"] = iqr(last10["reb"]) if len(last10) else float("nan")
         base["ast_iqr_10"] = iqr(last10["ast"]) if len(last10) else float("nan")
 
-        # Core averages (last 20 games played)
+        # Multi-window core averages + volatility
         last20 = gp.head(20)
+        season_gp = gp
         for stat in ("pts", "reb", "ast"):
-            if len(last20):
-                med = float(np.nanmedian(last20[stat]))
-                tmean = trimmed_mean(last20[stat], trim=0.1)
-                if np.isfinite(med) and np.isfinite(tmean):
-                    base[f"core_{stat}_20"] = float(0.5 * med + 0.5 * tmean)
-                else:
-                    base[f"core_{stat}_20"] = float("nan")
-            else:
-                base[f"core_{stat}_20"] = float("nan")
+            base[f"{stat}_core_10"] = core_avg(last10[stat]) if len(last10) else float("nan")
+            base[f"{stat}_core_20"] = core_avg(last20[stat]) if len(last20) else float("nan")
+            base[f"{stat}_core_season"] = core_avg(season_gp[stat]) if len(season_gp) else float("nan")
+            base[f"core_{stat}_10"] = base[f"{stat}_core_10"]
+            base[f"core_{stat}_20"] = base[f"{stat}_core_20"]
+            base[f"core_{stat}_season"] = base[f"{stat}_core_season"]
+            base[f"{stat}_iqr_20"] = iqr(last20[stat]) if len(last20) else float("nan")
+            base[f"{stat}_iqr_season"] = iqr(season_gp[stat]) if len(season_gp) else float("nan")
 
-        # Consistency score (0-100) from IQRs
-        pts_cons = consistency_score(base.get("pts_iqr_10"), 10)
-        reb_cons = consistency_score(base.get("reb_iqr_10"), 5)
-        ast_cons = consistency_score(base.get("ast_iqr_10"), 4)
-        base["consistency_pts_score"] = pts_cons
-        base["consistency_reb_score"] = reb_cons
-        base["consistency_ast_score"] = ast_cons
-        cons_vals = [v for v in (pts_cons, reb_cons, ast_cons) if np.isfinite(v)]
-        base["consistency_score"] = float(np.mean(cons_vals)) if cons_vals else float("nan")
+        # Minutes stability + DNP rate
+        base["minutes_iqr_10"] = iqr(last10["minutes"]) if len(last10) else float("nan")
+        base["minutes_iqr_20"] = iqr(last20["minutes"]) if len(last20) else float("nan")
+        base["minutes_iqr_season"] = iqr(season_gp["minutes"]) if len(season_gp) else float("nan")
+        last10_all = g.head(10)
+        last20_all = g.head(20)
+        base["dnp_rate_10"] = float(((last10_all["dnp"] == 1) | (last10_all["minutes"] == 0)).mean()) if len(last10_all) else float("nan")
+        base["dnp_rate_20"] = float(((last20_all["dnp"] == 1) | (last20_all["minutes"] == 0)).mean()) if len(last20_all) else float("nan")
+        base["dnp_rate_season"] = float(((g["dnp"] == 1) | (g["minutes"] == 0)).mean()) if len(g) else float("nan")
 
         # Team share trends (last 5 vs last 20)
         share_l5 = gp_feat.head(5)
@@ -317,15 +328,83 @@ def main():
             else:
                 base[f"share_{stat}_trend_pp"] = float("nan")
 
-        # Landmine rates (actual == threshold - 1) over last 10 games
+        # Landmine rates (actual == threshold - 1) over last 10/20/season games
         for stat, thresholds_list in thresholds.items():
             for t in thresholds_list:
                 tkey = str(int(t)) if float(t).is_integer() else str(t).replace(".", "p")
-                if len(last10):
-                    landmine = (last10[stat] == (t - 1)).mean()
-                else:
-                    landmine = float("nan")
-                base[f"{stat}_landmine_{tkey}_10"] = float(landmine) if np.isfinite(landmine) else float("nan")
+                landmine10 = (last10[stat] == (t - 1)).mean() if len(last10) else float("nan")
+                landmine20 = (last20[stat] == (t - 1)).mean() if len(last20) else float("nan")
+                landmine_season = (season_gp[stat] == (t - 1)).mean() if len(season_gp) else float("nan")
+                base[f"{stat}_landmine_{tkey}_10"] = float(landmine10) if np.isfinite(landmine10) else float("nan")
+                base[f"{stat}_landmine_{tkey}_20"] = float(landmine20) if np.isfinite(landmine20) else float("nan")
+                base[f"{stat}_landmine_{tkey}_season"] = float(landmine_season) if np.isfinite(landmine_season) else float("nan")
+
+        # Consistency scores (0-100) for 10/20/season
+        def window_consistency(tag: str, pts_iqr_val, reb_iqr_val, ast_iqr_val, min_iqr_val, dnp_rate_val, landmine_avg):
+            parts = []
+            for val, scale in ((pts_iqr_val, 10), (reb_iqr_val, 5), (ast_iqr_val, 4)):
+                if np.isfinite(val):
+                    parts.append(min(val / scale, 2.0) / 2.0)
+            vol_norm = float(np.mean(parts)) if parts else float("nan")
+            min_norm = min(min_iqr_val / 8.0, 2.0) / 2.0 if np.isfinite(min_iqr_val) else float("nan")
+            dnp_norm = dnp_rate_val if np.isfinite(dnp_rate_val) else float("nan")
+            land_norm = landmine_avg if np.isfinite(landmine_avg) else float("nan")
+            weights = [0.4, 0.2, 0.2, 0.2]
+            comps = [vol_norm, min_norm, dnp_norm, land_norm]
+            total = 0.0
+            wsum = 0.0
+            for w, c in zip(weights, comps):
+                if np.isfinite(c):
+                    total += w * c
+                    wsum += w
+            if wsum == 0:
+                return float("nan")
+            score = 100.0 - float(np.clip(total / wsum * 100.0, 0, 100))
+            return score
+
+        def landmine_avg_for(tag: str):
+            vals = []
+            for stat, thresholds_list in thresholds.items():
+                for t in thresholds_list:
+                    tkey = str(int(t)) if float(t).is_integer() else str(t).replace(".", "p")
+                    key = f\"{stat}_landmine_{tkey}_{tag}\"
+                    v = base.get(key)
+                    if np.isfinite(v):
+                        vals.append(v)
+            return float(np.mean(vals)) if vals else float("nan")
+
+        landmine_avg_10 = landmine_avg_for("10")
+        landmine_avg_20 = landmine_avg_for("20")
+        landmine_avg_season = landmine_avg_for("season")
+
+        base["consistency_10"] = window_consistency(
+            "10",
+            base.get("pts_iqr_10"),
+            base.get("reb_iqr_10"),
+            base.get("ast_iqr_10"),
+            base.get("minutes_iqr_10"),
+            base.get("dnp_rate_10"),
+            landmine_avg_10,
+        )
+        base["consistency_20"] = window_consistency(
+            "20",
+            base.get("pts_iqr_20"),
+            base.get("reb_iqr_20"),
+            base.get("ast_iqr_20"),
+            base.get("minutes_iqr_20"),
+            base.get("dnp_rate_20"),
+            landmine_avg_20,
+        )
+        base["consistency_season"] = window_consistency(
+            "season",
+            base.get("pts_iqr_season"),
+            base.get("reb_iqr_season"),
+            base.get("ast_iqr_season"),
+            base.get("minutes_iqr_season"),
+            base.get("dnp_rate_season"),
+            landmine_avg_season,
+        )
+        base["consistency_score"] = base.get("consistency_10")
 
         base.update(build_windows(gp, windows, thresholds))
         base.update(build_load_metrics(gp, windows))
@@ -408,15 +487,42 @@ def main():
             "player_name": row.get("player_name", ""),
             "team_abbrev": row.get("last_team_abbrev", ""),
             "pts_iqr_10": row.get("pts_iqr_10"),
+            "pts_iqr_20": row.get("pts_iqr_20"),
+            "pts_iqr_season": row.get("pts_iqr_season"),
             "reb_iqr_10": row.get("reb_iqr_10"),
+            "reb_iqr_20": row.get("reb_iqr_20"),
+            "reb_iqr_season": row.get("reb_iqr_season"),
             "ast_iqr_10": row.get("ast_iqr_10"),
+            "ast_iqr_20": row.get("ast_iqr_20"),
+            "ast_iqr_season": row.get("ast_iqr_season"),
+            "minutes_iqr_10": row.get("minutes_iqr_10"),
+            "minutes_iqr_20": row.get("minutes_iqr_20"),
+            "minutes_iqr_season": row.get("minutes_iqr_season"),
+            "dnp_rate_10": row.get("dnp_rate_10"),
+            "dnp_rate_20": row.get("dnp_rate_20"),
+            "dnp_rate_season": row.get("dnp_rate_season"),
             "core_pts_20": row.get("core_pts_20"),
             "core_reb_20": row.get("core_reb_20"),
             "core_ast_20": row.get("core_ast_20"),
+            "core_pts_10": row.get("core_pts_10"),
+            "core_reb_10": row.get("core_reb_10"),
+            "core_ast_10": row.get("core_ast_10"),
+            "core_pts_season": row.get("core_pts_season"),
+            "core_reb_season": row.get("core_reb_season"),
+            "core_ast_season": row.get("core_ast_season"),
+            "pts_core_10": row.get("pts_core_10"),
+            "pts_core_20": row.get("pts_core_20"),
+            "pts_core_season": row.get("pts_core_season"),
+            "reb_core_10": row.get("reb_core_10"),
+            "reb_core_20": row.get("reb_core_20"),
+            "reb_core_season": row.get("reb_core_season"),
+            "ast_core_10": row.get("ast_core_10"),
+            "ast_core_20": row.get("ast_core_20"),
+            "ast_core_season": row.get("ast_core_season"),
             "consistency_score": row.get("consistency_score"),
-            "consistency_pts_score": row.get("consistency_pts_score"),
-            "consistency_reb_score": row.get("consistency_reb_score"),
-            "consistency_ast_score": row.get("consistency_ast_score"),
+            "consistency_10": row.get("consistency_10"),
+            "consistency_20": row.get("consistency_20"),
+            "consistency_season": row.get("consistency_season"),
             "share_pts_l5": row.get("share_pts_l5"),
             "share_pts_l20": row.get("share_pts_l20"),
             "share_pts_trend_pp": row.get("share_pts_trend_pp"),
