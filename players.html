@@ -249,7 +249,7 @@
     }
     details.suggested-targets summary::-webkit-details-marker,
     details.injury-panel summary::-webkit-details-marker { display:none; }
-    .suggested-targets summary span { color: #d97706; }
+    .suggested-targets summary span { color: #2f8f2f; }
     .suggested-body { padding: 10px 14px 12px; }
     .suggested-targets .stable-row { margin: 6px 0 10px; }
     .suggested-count { color:#2f8f2f; font-weight:700; }
@@ -923,6 +923,13 @@ function localYYYYMMDD() {
   return `${yyyy}-${mm}-${dd}`;
 }
 
+function normalizeGameDate(val) {
+  const s = String(val || "").trim();
+  if (!s) return "";
+  const m = s.match(/\d{4}-\d{2}-\d{2}/);
+  return m ? m[0] : s;
+}
+
 function clamp(x, lo, hi) {
   return Math.max(lo, Math.min(hi, x));
 }
@@ -1453,7 +1460,7 @@ async function load() {
   // Master (today's teams)
   const games = csvToRows(masterText);
 
-  const hasGamesToday = games.some(g => (g.game_date || "").trim() === todayLocal);
+  const hasGamesToday = games.some(g => normalizeGameDate(g.game_date) === todayLocal);
   const NO_GAMES_TODAY = !hasGamesToday;
   const slateDate = todayLocal;
   todayISO = slateDate;
@@ -1489,7 +1496,7 @@ async function load() {
   // Determine teams playing today
   const teamsToday = new Set();
   for (const g of games) {
-    if ((g.game_date || "").trim() === slateDate) {
+    if (normalizeGameDate(g.game_date) === slateDate) {
       if (g.home_team_abbrev) teamsToday.add(g.home_team_abbrev.trim().toUpperCase());
       if (g.away_team_abbrev) teamsToday.add(g.away_team_abbrev.trim().toUpperCase());
     }
@@ -1500,7 +1507,7 @@ async function load() {
   const gameInfoById = new Map();
   const gamesTodayOrdered = [];
   for (const g of games) {
-    if ((g.game_date || "").trim() === slateDate) {
+    if (normalizeGameDate(g.game_date) === slateDate) {
       const home = (g.home_team_abbrev || "").trim().toUpperCase();
       const away = (g.away_team_abbrev || "").trim().toUpperCase();
       if (home && away) {
