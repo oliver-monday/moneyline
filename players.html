@@ -778,6 +778,36 @@
     <div class="date-stamp" id="meta"></div>
   </div>
 
+  <details class="postmortem-panel" id="postmortemPanel" hidden>
+    <summary>
+      <span class="postmortem-title">👀 Yesterday Recap</span>
+      <span class="postmortem-preview" id="postmortemPreview"></span>
+    </summary>
+    <div class="postmortem-body" id="postmortemBody"></div>
+  </details>
+
+  <details class="injury-panel" id="injuryPanel">
+    <summary><span class="injury-title">🚫 Injury Report</span></summary>
+    <div class="injury-body" id="injuryContent"></div>
+  </details>
+
+  <details class="suggested-targets" id="suggestedPanel">
+    <summary>
+      <span>✅ Suggested Targets</span>
+      <span id="suggestedCount" class="suggested-count"></span>
+    </summary>
+    <div class="suggested-body">
+      <details class="suggested-subpanel" id="suggestedTopPanel" open>
+        <summary>Top Targets</summary>
+        <div class="suggested-subbody" id="suggestedTopContent"></div>
+      </details>
+      <details class="suggested-subpanel" id="suggestedAllPanel">
+        <summary>All Targets</summary>
+        <div class="suggested-subbody" id="suggestedAllContent"></div>
+      </details>
+    </div>
+  </details>
+
   <details class="filters-panel" id="filtersPanel">
     <summary>🔎 Search · Filters</summary>
     <div class="controls">
@@ -853,36 +883,6 @@
           <span class="stable-title">Targets only</span>
         </span>
       </label>
-    </div>
-  </details>
-
-  <details class="postmortem-panel" id="postmortemPanel" hidden>
-    <summary>
-      <span class="postmortem-title">👀 Yesterday Recap</span>
-      <span class="postmortem-preview" id="postmortemPreview"></span>
-    </summary>
-    <div class="postmortem-body" id="postmortemBody"></div>
-  </details>
-
-  <details class="injury-panel" id="injuryPanel">
-    <summary><span class="injury-title">🚫 Injury Report</span></summary>
-    <div class="injury-body" id="injuryContent"></div>
-  </details>
-
-  <details class="suggested-targets" id="suggestedPanel">
-    <summary>
-      <span>✅ Suggested Targets</span>
-      <span id="suggestedCount" class="suggested-count"></span>
-    </summary>
-    <div class="suggested-body">
-      <details class="suggested-subpanel" id="suggestedTopPanel" open>
-        <summary>Top Targets</summary>
-        <div class="suggested-subbody" id="suggestedTopContent"></div>
-      </details>
-      <details class="suggested-subpanel" id="suggestedAllPanel">
-        <summary>All Targets</summary>
-        <div class="suggested-subbody" id="suggestedAllContent"></div>
-      </details>
     </div>
   </details>
 
