@@ -1170,7 +1170,11 @@ function formatMMDDYYYY(iso) {
   const parts = iso.split("-");
   if (parts.length !== 3) return iso;
   const [yyyy, mm, dd] = parts;
-  return `${mm}-${dd}-${yyyy}`;
+  const d = new Date(`${yyyy}-${mm}-${dd}T00:00:00`);
+  const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  const dayLabel = Number.isFinite(d.getTime()) ? days[d.getDay()] : "";
+  const dateLabel = `${mm}-${dd}-${yyyy}`;
+  return dayLabel ? `${dayLabel} • ${dateLabel}` : dateLabel;
 }
 
 function normalizeName(s) {

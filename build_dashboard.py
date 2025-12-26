@@ -1209,7 +1209,7 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
     w(CSS)
     w("</head><body>")
 
-    today_display = pd.Timestamp(today_date).strftime("%m-%d-%Y")
+    today_display = pd.Timestamp(today_date).strftime("%A • %m-%d-%Y")
     w('<div class="header-block">')
     w('<div class="masthead">')
     w('<div class="brand"><div class="brand-text">NBA</div><img class="brand-logo" src="./assets/NBAGPTlogo-header.png" width="80" height="80" decoding="async" fetchpriority="high" alt="NBA GPT logo"><div class="brand-text">GPT</div></div>')
