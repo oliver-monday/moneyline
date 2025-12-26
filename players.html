@@ -1539,13 +1539,52 @@ function sortVal(r, sortKey, win) {
   return -1e9;
 }
 
+function countInjuryEntries(data) {
+  if (!data || typeof data !== "object") return 0;
+  let n = 0;
+  for (const [k, v] of Object.entries(data)) {
+    if (k.length !== 3) continue;
+    if (!Array.isArray(v)) continue;
+    n += v.length;
+  }
+  return n;
+}
+
+function hasNonOutStatus(data) {
+  if (!data || typeof data !== "object") return false;
+  for (const [k, v] of Object.entries(data)) {
+    if (k.length !== 3) continue;
+    if (!Array.isArray(v)) continue;
+    for (const item of v) {
+      const s = String(item && item.status || "").toUpperCase();
+      if (!s) continue;
+      if (s !== "OUT" && s !== "OFS") return true;
+    }
+  }
+  return false;
+}
+
+async function ensureFreshInjuries(data) {
+  if (!data || typeof data !== "object") return data;
+  const baseCount = countInjuryEntries(data);
+  if (!baseCount || hasNonOutStatus(data)) return data;
+  try {
+    const url = `https://raw.githubusercontent.com/oliver-monday/moneyline/main/data/injuries_today.json?ts=${Date.now()}`;
+    const alt = await fetchJson(url);
+    if (hasNonOutStatus(alt) || countInjuryEntries(alt) > baseCount) return alt;
+  } catch (err) {
+    // Best effort fallback only.
+  }
+  return data;
+}
+
 async function load() {
   const todayLocal = localYYYYMMDD();
 
   // Snapshot + master in parallel
   const snapshotUrl = "./data/player_snapshot.csv";
   const masterUrl = "./nba_master.csv";
-  const [
+  let [
     snapshotText,
     masterText,
     injuriesData,
@@ -1558,6 +1597,7 @@ async function load() {
     fetchJson("./data/team_signals.json").catch(() => ({})),
     fetchJson("./data/player_features.json").catch(() => ({})),
   ]);
+  injuriesData = await ensureFreshInjuries(injuriesData);
 
   const players = csvToRows(snapshotText);
 
