@@ -31,13 +31,19 @@ def _short_status(s: str) -> str:
     if "out" in t:
         return "OUT"
     if "doubt" in t:
-        return "OUT"
+        return "DOUBT"
     if "question" in t:
-        return "Q"
+        return "QUES"
     if "prob" in t:
         return "PROB"
-    if "day" in t or "dtd" in t:
+    if "day-to-day" in t or "dtd" in t:
         return "DTD"
+    if "gtd" in t or "game-time" in t:
+        return "GTD"
+    if "rest" in t:
+        return "REST"
+    if "susp" in t:
+        return "SUSP"
     return s.strip().upper()
 
 
@@ -83,12 +89,25 @@ def parse_rotowire_injuries(html: str) -> Dict[str, List[Dict[str, str]]]:
                 continue
 
             status_lower = status_raw.lower()
-            if not (
-                status_lower in ("out", "doubtful", "questionable")
-                or "rest" in status_lower
-                or "out for season" in status_lower
-                or status_raw.upper() == "OFS"
-            ):
+            keep = any(
+                key in status_lower
+                for key in (
+                    "out",
+                    "out for season",
+                    "ofs",
+                    "doubt",
+                    "question",
+                    "prob",
+                    "day-to-day",
+                    "dtd",
+                    "gtd",
+                    "game-time",
+                    "rest",
+                    "susp",
+                    "ill",
+                )
+            ) or status_raw.upper() == "OFS"
+            if not keep:
                 continue
 
             status = _short_status(status_raw)
