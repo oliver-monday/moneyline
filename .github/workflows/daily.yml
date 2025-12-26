@@ -168,11 +168,26 @@ jobs:
           python build_matchup_insights.py
           python build_dashboard.py
 
+      - name: Rebuild targets postmortem (sanity)
+        run: |
+          python build_targets_postmortem.py
+          echo "===== targets_postmortem.json (head) ====="
+          python - <<'PY'
+          import json
+          p="data/targets_postmortem.json"
+          with open(p,"r",encoding="utf-8") as f:
+            j=json.load(f)
+          print("asof_date:", j.get("asof_date"))
+          s=j.get("summary",{}) or {}
+          print("targets_total:", s.get("targets_total"), "hits:", s.get("hits_total"), "misses:", s.get("misses_total"))
+          PY
+
       - name: Prepare site files
         run: |
           mkdir -p ./site
           mkdir -p ./site/data
           mkdir -p ./site/assets
+          mkdir -p ./site/data/targets_logs
 
           # Newest dashboard becomes index.html
           export LC_ALL=C
@@ -218,6 +233,42 @@ jobs:
           cp data/targets_postmortem.json ./site/data/targets_postmortem.json
           cp data/team_opp_allowed.json ./site/data/team_opp_allowed.json
           cp data/opp_big.json ./site/data/opp_big.json
+          if [ -d data/history ]; then
+            cp -R data/history ./site/data/history
+          fi
+          if ls logs/targets_snapshot_*.json >/dev/null 2>&1; then
+            cp logs/targets_snapshot_*.json ./site/data/targets_logs/
+          fi
+
+          POST_DATE=$(python - <<'PY'
+          import json
+          try:
+            with open('data/targets_postmortem.json','r',encoding='utf-8') as f:
+              print(json.load(f).get('asof_date',''))
+          except Exception:
+            print('')
+          PY
+          )
+          if [ -z "$POST_DATE" ]; then
+            POST_DATE=$(date -u +%F)
+          fi
+          mkdir -p "./site/data/history/${POST_DATE}"
+          for f in \
+            data/targets_postmortem.json \
+            data/moneyline_postmortem.json \
+            data/injuries_today.json \
+            data/team_signals.json \
+            data/player_features.json \
+            data/team_opp_allowed.json; do
+            if [ -f "$f" ]; then
+              cp "$f" "./site/data/history/${POST_DATE}/"
+            fi
+          done
+          if [ -f "logs/targets_snapshot_${POST_DATE}.json" ]; then
+            cp "logs/targets_snapshot_${POST_DATE}.json" "./site/data/history/${POST_DATE}/targets_snapshot_${POST_DATE}.json"
+          else
+            echo "Warning: logs/targets_snapshot_${POST_DATE}.json not found"
+          fi
 
           echo "===== SITE DIRECTORY CONTENTS ====="
           ls -al ./site

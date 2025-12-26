@@ -611,6 +611,8 @@ def main() -> int:
     if snapshot_path and snapshot_path.exists():
         with open(snapshot_path, "r", encoding="utf-8") as f:
             snapshot_entries = json.load(f) or []
+    else:
+        print(f"[targets] WARNING: snapshot missing for results_date={results_date}")
 
     if os.path.exists(game_log_path):
         game_log_df = pd.read_csv(game_log_path, dtype=str)
@@ -705,6 +707,10 @@ def main() -> int:
     data_dir = Path("data")
     data_dir.mkdir(parents=True, exist_ok=True)
     with open(data_dir / "targets_postmortem.json", "w", encoding="utf-8") as f:
+        json.dump(postmortem, f, indent=2)
+    history_dir = data_dir / "history" / "targets_postmortem"
+    history_dir.mkdir(parents=True, exist_ok=True)
+    with open(history_dir / f"targets_postmortem_{results_date}.json", "w", encoding="utf-8") as f:
         json.dump(postmortem, f, indent=2)
 
     print(
