@@ -450,10 +450,10 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401809242,2025-12-25,Denver Nuggets,DEN,142,-105.0,,Minnesota Timberwolves,MIN,138,-115.0,,Denver,CO,,
 401810278,2025-12-26,Atlanta Hawks,ATL,0,-155.0,,Miami Heat,MIA,0,130.0,,Atlanta,GA,N. Dante (OFS); E. Ndiaye (OFS); K. Porzingis (Out),B. Adebayo (Out); T. Herro (Out); T. Rozier (Out)
 401810279,2025-12-26,Orlando Magic,ORL,0,-230.0,,Charlotte Hornets,CHA,0,190.0,,Orlando,FL,G. Bitadze (Out); J. Suggs (Out); M. Wagner (Out); F. Wagner (Out),R. Kalkbrenner (Out); M. Plumlee (Out); G. Williams (Out)
-401810280,2025-12-26,Washington Wizards,WSH,0,260.0,,Toronto Raptors,TOR,0,-325.0,,Washington,DC,C. Kispert (Out); C. Whitmore (Out),RJ Barrett (Out); J. Poeltl (Out)
+401810280,2025-12-26,Washington Wizards,WSH,0,260.0,,Toronto Raptors,TOR,0,-325.0,,Washington,DC,C. Kispert (Out); C. Whitmore (Out),RJ Barrett (Out); C. Murray-Boyles (Out); J. Poeltl (Out)
 401810281,2025-12-26,Indiana Pacers,IND,0,260.0,,Boston Celtics,BOS,0,-325.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); A. Nesmith (Out); B. Sheppard (Out); Obi Toppin (Out),C. Boucher (Out); J. Tatum (Out)
 401810282,2025-12-26,Chicago Bulls,CHI,0,-105.0,,Philadelphia 76ers,PHI,0,-115.0,,Chicago,IL,N. Essengue (OFS),K. Oubre (Out); T. Watford (Out)
-401810283,2025-12-26,Memphis Grizzlies,MEM,0,-180.0,,Milwaukee Bucks,MIL,0,150.0,,Memphis,TN,B. Clarke (Out); Zach Edey (Out); Ty Jerome (Out); J. Konchar (Out); S. Pippen (Out); V. Williams (Out),G. Antetokounmpo (Out); T. Prince (Out); Gary Trent (Out)
+401810283,2025-12-26,Memphis Grizzlies,MEM,0,-205.0,,Milwaukee Bucks,MIL,0,170.0,,Memphis,TN,B. Clarke (Out); Zach Edey (Out); Ty Jerome (Out); J. Konchar (Out); S. Pippen (Out); V. Williams (Out),G. Antetokounmpo (Out); T. Prince (Out); Gary Trent (Out)
 401810284,2025-12-26,New Orleans Pelicans,NO,0,164.0,,Phoenix Suns,PHX,0,-198.0,,New Orleans,LA,H. Jones (Out); D. Murray (Out),G. Allen (Out); J. Green (Out)
 401810285,2025-12-26,Utah Jazz,UTAH,0,320.0,,Detroit Pistons,DET,0,-410.0,,Salt Lake City,UT,W. Kessler (OFS); G. Niang (Out),
 401810286,2025-12-26,Portland Trail Blazers,POR,0,124.0,,LA Clippers,LAC,0,-148.0,,Portland,OR,D. Lillard (OFS); J. Grant (Out); S. Henderson (Out); J. Holiday (Out); M. Thybulle (Out); B. Wesley (Out),B. Beal (OFS); D. Jones (Out); Chris Paul (Out); I. Zubac (Out)
