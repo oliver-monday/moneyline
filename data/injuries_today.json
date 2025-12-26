@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-25",
-  "built_at_utc": "2025-12-26T01:49:59Z",
+  "built_at_utc": "2025-12-26T02:48:26Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -139,6 +139,11 @@
       "details": "F. VanVleet (Out)"
     },
     {
+      "name": "A. Reaves",
+      "status": "OUT",
+      "details": "A. Reaves (Out)"
+    },
+    {
       "name": "J. Hayes",
       "status": "OUT",
       "details": "J. Hayes (Out)"
@@ -156,17 +161,17 @@
       "details": "J. Hayes (Out)"
     },
     {
+      "name": "A. Reaves",
+      "status": "OUT",
+      "details": "A. Reaves (Out)"
+    },
+    {
       "name": "G. Vincent",
       "status": "OUT",
       "details": "G. Vincent (Out)"
     }
   ],
   "DEN": [
-    {
-      "name": "J. Valanciunas",
-      "status": "PROB",
-      "details": "J. Valanciunas (Prob)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -216,11 +221,6 @@
     }
   ],
   "MIN": [
-    {
-      "name": "J. Valanciunas",
-      "status": "PROB",
-      "details": "J. Valanciunas (Prob)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
