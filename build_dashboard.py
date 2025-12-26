@@ -869,8 +869,8 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
         .page-subtitle { margin: 0 0 18px; }
         .date-stamp {
             font-weight: 800;
-            font-size: 24px;
-            color: #111;
+            font-size: 22px;
+            color: #000000;
             width: 100%;
             text-align: center;
             margin: 0 0 18px;
@@ -885,7 +885,7 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
         .no-games {
             font-size: 18px;
             font-weight: 700;
-            color: #666;
+            color: #5a5a5a;
             margin: 10px 0 16px;
         }
         @media (max-width: 520px) {
@@ -901,7 +901,7 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
             background: #fff;
         }
         .market-report {
-            border: 1px solid #eee;
+            border: 1px solid #000000;
             padding: 12px;
             margin: 8px 0 12px;
             border-radius: 14px;
