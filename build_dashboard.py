@@ -934,7 +934,7 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
         .market-report .report-title {
             font-size: 18px;
             font-weight: 700;
-            color: #000000;
+            color: #f97316;
         }
         .market-report .report-preview {
             font-weight: 600;
