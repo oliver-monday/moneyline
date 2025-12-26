@@ -283,7 +283,7 @@
     #suggestedAllPanel > summary { color: #2f8f2f; }
     #suggestedTopPanel > summary { color: #2f8f2f; }
     .suggested-list { display:flex; flex-direction:column; gap:8px; }
-    .suggested-row { display:flex; align-items:center; gap:12px; padding:6px 0; cursor: pointer; }
+    .suggested-row { display:flex; align-items:flex-start; gap:12px; padding:6px 0; cursor: pointer; }
     .suggested-player {
       font-weight: 800;
       color: #111;
@@ -293,7 +293,7 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-    .suggested-chips { display:flex; flex-wrap:wrap; gap:8px; flex: 1 1 auto; min-width: 0; }
+    .suggested-chips { display:flex; flex-direction:column; gap:6px; flex: 1 1 auto; min-width: 0; }
     .suggested-chip { white-space: nowrap; }
     .suggested-meta { display:flex; flex-wrap:wrap; gap:8px; min-width: 0; }
     .suggested-flag {
