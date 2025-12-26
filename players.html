@@ -209,7 +209,7 @@
       white-space: nowrap;
     }
     details.suggested-targets { margin: 10px 0 12px; border: 2px solid #f97316; border-radius: 12px; background:#fff; }
-    details.injury-panel { margin: 10px 0 12px; border: 1px solid #c93c3c; border-radius: 12px; background:#fff; }
+    details.injury-panel { margin: 10px 0 12px; border: 2px solid #c93c3c; border-radius: 12px; background:#fff; }
     details.suggested-targets summary {
       font-weight: 700;
       font-size: 18px;
@@ -778,16 +778,8 @@
     <div class="date-stamp" id="meta"></div>
   </div>
 
-  <details class="postmortem-panel" id="postmortemPanel" hidden>
-    <summary>
-      <span class="postmortem-title">Yesterday Recap</span>
-      <span class="postmortem-preview" id="postmortemPreview"></span>
-    </summary>
-    <div class="postmortem-body" id="postmortemBody"></div>
-  </details>
-
   <details class="filters-panel" id="filtersPanel">
-    <summary>Search · Filters</summary>
+    <summary>🔎 Search · Filters</summary>
     <div class="controls">
       <label class="control-search">Search
         <input id="q" type="text" placeholder="ex: Cade, Jokic" />
@@ -907,14 +899,22 @@
     </div>
   </details>
 
+  <details class="postmortem-panel" id="postmortemPanel" hidden>
+    <summary>
+      <span class="postmortem-title">🧮 Yesterday Recap</span>
+      <span class="postmortem-preview" id="postmortemPreview"></span>
+    </summary>
+    <div class="postmortem-body" id="postmortemBody"></div>
+  </details>
+
   <details class="injury-panel" id="injuryPanel">
-    <summary><span class="injury-title">Injury Report</span></summary>
+    <summary><span class="injury-title">🤕 Injury Report</span></summary>
     <div class="injury-body" id="injuryContent"></div>
   </details>
 
   <details class="suggested-targets" id="suggestedPanel">
     <summary>
-      <span>Suggested Targets</span>
+      <span>✅ Suggested Targets</span>
       <span id="suggestedCount" class="suggested-count"></span>
     </summary>
     <div class="suggested-body">
