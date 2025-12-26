@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-26",
-  "built_at_utc": "2025-12-26T22:26:22Z",
+  "built_at_utc": "2025-12-26T23:21:37Z",
   "source": "rotowire",
   "MIA": [
     {
@@ -196,16 +196,6 @@
   ],
   "TOR": [
     {
-      "name": "S. Barnes",
-      "status": "QUES",
-      "details": "S. Barnes (Ques)"
-    },
-    {
-      "name": "C. Murray-Boyles",
-      "status": "QUES",
-      "details": "C. Murray-Boyles (Ques)"
-    },
-    {
       "name": "RJ Barrett",
       "status": "OUT",
       "details": "RJ Barrett (Out)"
@@ -214,11 +204,6 @@
       "name": "J. Poeltl",
       "status": "OUT",
       "details": "J. Poeltl (Out)"
-    },
-    {
-      "name": "J. Champagnie",
-      "status": "QUES",
-      "details": "J. Champagnie (Ques)"
     },
     {
       "name": "C. Kispert",
@@ -233,11 +218,6 @@
   ],
   "WAS": [
     {
-      "name": "J. Champagnie",
-      "status": "QUES",
-      "details": "J. Champagnie (Ques)"
-    },
-    {
       "name": "C. Kispert",
       "status": "OUT",
       "details": "C. Kispert (Out)"
@@ -249,21 +229,6 @@
     }
   ],
   "PHI": [
-    {
-      "name": "D. Barlow",
-      "status": "PROB",
-      "details": "D. Barlow (Prob)"
-    },
-    {
-      "name": "V. Edgecombe",
-      "status": "PROB",
-      "details": "V. Edgecombe (Prob)"
-    },
-    {
-      "name": "Q. Grimes",
-      "status": "PROB",
-      "details": "Q. Grimes (Prob)"
-    },
     {
       "name": "J. Embiid",
       "status": "QUES",
@@ -283,11 +248,6 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "P. Williams",
-      "status": "QUES",
-      "details": "P. Williams (Ques)"
     }
   ],
   "CHI": [
@@ -295,19 +255,9 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "P. Williams",
-      "status": "QUES",
-      "details": "P. Williams (Ques)"
     }
   ],
   "PHX": [
-    {
-      "name": "K. Brea",
-      "status": "QUES",
-      "details": "K. Brea (Ques)"
-    },
     {
       "name": "G. Allen",
       "status": "OUT",

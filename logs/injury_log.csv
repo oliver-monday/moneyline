@@ -333,6 +333,16 @@ asof_date,team_abbrev,player_name,status,details,source
 2025-12-26,MIA,P. Larsson,PROB,P. Larsson (Prob),rotowire
 2025-12-26,CHA,T. da Silva,PROB,T. da Silva (Prob),rotowire
 2025-12-26,ORL,T. da Silva,PROB,T. da Silva (Prob),rotowire
+2025-12-26,TOR,S. Barnes,QUES,S. Barnes (Ques),rotowire
+2025-12-26,TOR,C. Murray-Boyles,QUES,C. Murray-Boyles (Ques),rotowire
+2025-12-26,TOR,J. Champagnie,QUES,J. Champagnie (Ques),rotowire
+2025-12-26,WAS,J. Champagnie,QUES,J. Champagnie (Ques),rotowire
+2025-12-26,PHI,D. Barlow,PROB,D. Barlow (Prob),rotowire
+2025-12-26,PHI,V. Edgecombe,PROB,V. Edgecombe (Prob),rotowire
+2025-12-26,PHI,Q. Grimes,PROB,Q. Grimes (Prob),rotowire
+2025-12-26,PHI,P. Williams,QUES,P. Williams (Ques),rotowire
+2025-12-26,CHI,P. Williams,QUES,P. Williams (Ques),rotowire
+2025-12-26,PHX,K. Brea,QUES,K. Brea (Ques),rotowire
 2025-12-26,MIA,B. Adebayo,OUT,B. Adebayo (Out),rotowire
 2025-12-26,MIA,T. Herro,OUT,T. Herro (Out),rotowire
 2025-12-26,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
@@ -367,27 +377,17 @@ asof_date,team_abbrev,player_name,status,details,source
 2025-12-26,ORL,J. Suggs,OUT,J. Suggs (Out),rotowire
 2025-12-26,ORL,M. Wagner,OUT,M. Wagner (Out),rotowire
 2025-12-26,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
-2025-12-26,TOR,S. Barnes,QUES,S. Barnes (Ques),rotowire
-2025-12-26,TOR,C. Murray-Boyles,QUES,C. Murray-Boyles (Ques),rotowire
 2025-12-26,TOR,RJ Barrett,OUT,RJ Barrett (Out),rotowire
 2025-12-26,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
-2025-12-26,TOR,J. Champagnie,QUES,J. Champagnie (Ques),rotowire
 2025-12-26,TOR,C. Kispert,OUT,C. Kispert (Out),rotowire
 2025-12-26,TOR,C. Whitmore,OUT,C. Whitmore (Out),rotowire
-2025-12-26,WAS,J. Champagnie,QUES,J. Champagnie (Ques),rotowire
 2025-12-26,WAS,C. Kispert,OUT,C. Kispert (Out),rotowire
 2025-12-26,WAS,C. Whitmore,OUT,C. Whitmore (Out),rotowire
-2025-12-26,PHI,D. Barlow,PROB,D. Barlow (Prob),rotowire
-2025-12-26,PHI,V. Edgecombe,PROB,V. Edgecombe (Prob),rotowire
-2025-12-26,PHI,Q. Grimes,PROB,Q. Grimes (Prob),rotowire
 2025-12-26,PHI,J. Embiid,QUES,J. Embiid (Ques),rotowire
 2025-12-26,PHI,K. Oubre,OUT,K. Oubre (Out),rotowire
 2025-12-26,PHI,T. Watford,OUT,T. Watford (Out),rotowire
 2025-12-26,PHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
-2025-12-26,PHI,P. Williams,QUES,P. Williams (Ques),rotowire
 2025-12-26,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
-2025-12-26,CHI,P. Williams,QUES,P. Williams (Ques),rotowire
-2025-12-26,PHX,K. Brea,QUES,K. Brea (Ques),rotowire
 2025-12-26,PHX,G. Allen,OUT,G. Allen (Out),rotowire
 2025-12-26,PHX,J. Green,OUT,J. Green (Out),rotowire
 2025-12-26,PHX,J. Poole,PROB,J. Poole (Prob),rotowire
