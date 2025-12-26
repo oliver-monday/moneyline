@@ -1034,6 +1034,8 @@ function isOut(r, injuryStatus) {
 let _stableCache = new Map();
 let _targetsCache = new Map();
 let _matchupRerendered = false;
+let CARD_DATA_BY_KEY = new Map();
+let _currentCardDataList = [];
 
 function playerKey(r) {
   const key = seasonKey(r);
@@ -1436,9 +1438,23 @@ function sortVal(r, sortKey, win) {
 async function load() {
   const todayLocal = localYYYYMMDD();
 
-  // Snapshot (players)
+  // Snapshot + master in parallel
   const snapshotUrl = "./data/player_snapshot.csv";
-  const snapshotText = await fetchText(snapshotUrl);
+  const masterUrl = "./nba_master.csv";
+  const [
+    snapshotText,
+    masterText,
+    injuriesData,
+    teamSignalsData,
+    playerFeaturesData,
+  ] = await Promise.all([
+    fetchText(snapshotUrl),
+    fetchText(masterUrl),
+    fetchJson("./data/injuries_today.json").catch(() => ({})),
+    fetchJson("./data/team_signals.json").catch(() => ({})),
+    fetchJson("./data/player_features.json").catch(() => ({})),
+  ]);
+
   const players = csvToRows(snapshotText);
 
   // Best-effort season fallback from game log if SEASON columns missing
@@ -1467,43 +1483,17 @@ async function load() {
   }
 
   // Injuries (best effort)
-  injuriesByTeam = {};
-  try {
-    const res = await fetch("./data/injuries_today.json", {cache: "no-store"});
-    if (res.ok) injuriesByTeam = await res.json();
-  } catch (err) {
-    injuriesByTeam = {};
-  }
+  injuriesByTeam = injuriesData && typeof injuriesData === "object" ? injuriesData : {};
 
   // Team signals + player features (best effort)
-  TEAM_SIGNALS = {};
-  PLAYER_FEATURES = {};
-  try {
-    const res = await fetch("./data/team_signals.json", {cache: "no-store"});
-    if (res.ok) {
-      const data = await res.json();
-      TEAM_SIGNALS = data && data.teams ? data.teams : {};
-    }
-  } catch (err) {
-    TEAM_SIGNALS = {};
-  }
-  try {
-    const res = await fetch("./data/player_features.json", {cache: "no-store"});
-    if (res.ok) {
-      const data = await res.json();
-      PLAYER_FEATURES = data && data.players ? data.players : {};
-    }
-  } catch (err) {
-    PLAYER_FEATURES = {};
-  }
+  TEAM_SIGNALS = teamSignalsData && teamSignalsData.teams ? teamSignalsData.teams : {};
+  PLAYER_FEATURES = playerFeaturesData && playerFeaturesData.players ? playerFeaturesData.players : {};
 
   // Matchup context (best effort, non-blocking)
   TEAM_OPP = {};
   OPP_BIG = {};
 
   // Master (today's teams)
-  const masterUrl = "./nba_master.csv";
-  const masterText = await fetchText(masterUrl);
   const games = csvToRows(masterText);
 
   const hasGamesToday = games.some(g => (g.game_date || "").trim() === todayLocal);
@@ -1641,6 +1631,15 @@ async function load() {
       d.classList.contains("injury-game")
     )) {
       syncDetailsOpenClass(d);
+      if (d.classList.contains("card") && d.open && d.dataset.hydrated !== "1") {
+        const key = d.dataset.playerKey || "";
+        const data = CARD_DATA_BY_KEY.get(key);
+        const body = d.querySelector(".expand-body");
+        if (data && body) {
+          body.innerHTML = buildExpandedHTML(data, w.value);
+          d.dataset.hydrated = "1";
+        }
+      }
     }
   }, true);
 
@@ -1706,6 +1705,161 @@ async function load() {
     renderSuggestedSection(suggested.slice(0, 6), suggestedTopContent);
     renderSuggestedSection(allTargets, suggestedAllContent);
     return;
+  }
+
+  function computeSuggestedFromCardData(cardDataList, targetsWin) {
+    try {
+      const bonusForTier = tier => tier === "SOFT" ? 1 : (tier === "TOUGH" ? -1 : 0);
+      const getNum = (v) => {
+        const n = Number(v);
+        return Number.isFinite(n) ? n : null;
+      };
+      const getFeature = (row, key) => {
+        const v = row && row[key];
+        const n = getNum(v);
+        if (n != null) return n;
+        const pid = row && row.player_id ? String(row.player_id) : "";
+        if (pid && PLAYER_FEATURES && PLAYER_FEATURES[pid] && PLAYER_FEATURES[pid][key] != null) {
+          return getNum(PLAYER_FEATURES[pid][key]);
+        }
+        return null;
+      };
+      const targetItems = [];
+      for (const data of cardDataList) {
+        const targets = targetsMemo(data.row, targetsWin);
+        if (!targets.length) continue;
+        const playerKey = `${normalizeName(data.playerName)}::${data.team}`;
+        const gameId = (data.todayInfo && data.todayInfo.gameId) ? data.todayInfo.gameId : "";
+        const gameKey = gameId || `${data.team}::${data.oppTeam || ""}`;
+        const info = data.todayInfo && data.todayInfo.gameId ? gameInfoById.get(data.todayInfo.gameId) : null;
+        const gameLabel = info
+          ? `${info.awayName || info.awayAbbrev} @ ${info.homeName || info.homeAbbrev}`
+          : (data.oppTeam ? `${data.team} @ ${data.oppTeam}` : data.team);
+        for (const t of targets) {
+          const avg = seasonAvg(data.row, t.stat);
+          const diff = Number.isFinite(avg) ? (t.t - avg) : -Infinity;
+          const tier = matchupTier(data.oppTeam, t.stat);
+          const statKey = String(t.stat || "").toLowerCase();
+          const iqrVal = getFeature(data.row, `${statKey}_iqr_10`);
+          const landmineKey = `${statKey}_landmine_${t.t}_10`;
+          const landmineRate = getFeature(data.row, landmineKey);
+          const trendPP = getFeature(data.row, `share_${statKey}_trend_pp`);
+          const teamSignal = (TEAM_SIGNALS && TEAM_SIGNALS[data.team]) || {};
+          const scheduleStress = getNum(teamSignal.schedule_stress);
+          const b2b = !!teamSignal.b2b;
+          const travelBucket = String(teamSignal.travel_bucket || "");
+
+          let stressPenalty = 0;
+          if (scheduleStress != null && scheduleStress >= 70) stressPenalty -= 0.15;
+          if (b2b) stressPenalty -= 0.10;
+          if (travelBucket === "600+") stressPenalty -= 0.08;
+
+          let volPenalty = 0;
+          if (iqrVal != null) {
+            if (statKey === "pts") {
+              if (iqrVal > 10) volPenalty -= 0.12;
+              else if (iqrVal > 6) volPenalty -= 0.05;
+            } else if (statKey === "reb") {
+              if (iqrVal > 5) volPenalty -= 0.12;
+              else if (iqrVal > 3) volPenalty -= 0.05;
+            } else if (statKey === "ast") {
+              if (iqrVal > 4) volPenalty -= 0.12;
+              else if (iqrVal > 2) volPenalty -= 0.05;
+            }
+          }
+
+          let landminePenalty = 0;
+          if (landmineRate != null) {
+            if (landmineRate >= 0.30) landminePenalty -= 0.12;
+            else if (landmineRate >= 0.20) landminePenalty -= 0.08;
+          }
+
+          let roleBoost = 0;
+          if (trendPP != null) {
+            if (trendPP >= 5) roleBoost += 0.15;
+            else if (trendPP >= 3) roleBoost += 0.10;
+          }
+          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost;
+          const highFatigue = (scheduleStress != null && scheduleStress >= 70) || b2b;
+          const trapRisk = (landmineRate != null && landmineRate >= 0.25) || (iqrVal != null && ((statKey === "pts" && iqrVal > 10) || (statKey === "reb" && iqrVal > 5) || (statKey === "ast" && iqrVal > 4)));
+          const roleUp = trendPP != null && trendPP >= 3;
+          targetItems.push({
+            playerName: data.playerName,
+            team: data.team,
+            opp: data.oppTeam,
+            stat: t.stat,
+            threshold: t.t,
+            hits: t.hits,
+            gp: t.gp,
+            rate: t.rate,
+            score: t.rate + scoreAdj,
+            diff,
+            matchupBonus: bonusForTier(tier),
+            gameId,
+            gameKey,
+            gameLabel,
+            playerKey,
+            highFatigue,
+            trapRisk,
+            roleUp,
+          });
+        }
+      }
+
+      targetItems.sort((a, b) => {
+        if (b.score !== a.score) return b.score - a.score;
+        if (b.rate !== a.rate) return b.rate - a.rate;
+        if (b.gp !== a.gp) return b.gp - a.gp;
+        if (b.matchupBonus !== a.matchupBonus) return b.matchupBonus - a.matchupBonus;
+        if (b.diff !== a.diff) return b.diff - a.diff;
+        return a.playerName.localeCompare(b.playerName);
+      });
+
+      const suggested = [];
+      const seenPlayers = new Set();
+      const gameCounts = new Map();
+      for (const item of targetItems) {
+        if (suggested.length >= 6) break;
+        if (seenPlayers.has(item.playerKey)) continue;
+        const count = gameCounts.get(item.gameKey) || 0;
+        if (count >= 2) continue;
+        suggested.push(item);
+        seenPlayers.add(item.playerKey);
+        gameCounts.set(item.gameKey, count + 1);
+      }
+
+      cachedSuggested = suggested;
+      cachedAllTargets = targetItems;
+      renderSuggestedDrawer();
+    } catch (err) {
+      console.warn("Suggested Targets render failed:", err);
+    }
+  }
+
+  function buildExpandedHTML(data, win) {
+    const ptsMin = fmt(data.row[`pts_min_${win}`], 0);
+    const rebMin = fmt(data.row[`reb_min_${win}`], 0);
+    const astMin = fmt(data.row[`ast_min_${win}`], 0);
+    const ptsFull = PTS_T.map(t => hitPill(data.row, "pts", t, win)).join("");
+    const rebFull = RA_T.map(t => hitPill(data.row, "reb", t, win)).join("");
+    const astFull = RA_T.map(t => hitPill(data.row, "ast", t, win)).join("");
+
+    return `
+      <div class="matrixhdr">
+        <div><strong>PTS</strong> · Avg ${data.ptsAvgText} • min in window: ${ptsMin}</div>
+      </div>
+      <div class="pills">${ptsFull}</div>
+
+      <div class="matrixhdr">
+        <div><strong>REB</strong> · Avg ${data.rebAvgText} • min in window: ${rebMin}</div>
+      </div>
+      <div class="pills">${rebFull}</div>
+
+      <div class="matrixhdr">
+        <div><strong>AST</strong> · Avg ${data.astAvgText} • min in window: ${astMin}</div>
+      </div>
+      <div class="pills">${astFull}</div>
+    `;
   }
 
   function injuryStatusClass(status) {
@@ -2004,6 +2158,8 @@ async function load() {
       cards.innerHTML = "";
       if (suggestedTopContent) suggestedTopContent.innerHTML = "";
       if (suggestedAllContent) suggestedAllContent.innerHTML = "";
+      CARD_DATA_BY_KEY = new Map();
+      _currentCardDataList = [];
       return;
     } else if (injuryContent) {
       renderInjuryReport();
@@ -2094,14 +2250,6 @@ async function load() {
       const minAvg = fmt(r[`min_avg_${win}`]);
       const minMinWin = fmt(r[`min_min_${win}`]);
 
-      const ptsMin = fmt(r[`pts_min_${win}`], 0);
-      const rebMin = fmt(r[`reb_min_${win}`], 0);
-      const astMin = fmt(r[`ast_min_${win}`], 0);
-
-      const ptsFull = PTS_T.map(t => hitPill(r, "pts", t, win)).join("");
-      const rebFull = RA_T.map(t => hitPill(r, "reb", t, win)).join("");
-      const astFull = RA_T.map(t => hitPill(r, "ast", t, win)).join("");
-
       const ptsBestArr = bestLegs(r, "pts", PTS_T, win);
       const rebBestArr = bestLegs(r, "reb", RA_T, win);
       const astBestArr = bestLegs(r, "ast", RA_T, win);
@@ -2131,17 +2279,12 @@ async function load() {
       return {
         row: r,
         team,
+        domKey: `${normalizeName(r.player_name)}::${team}`,
         playerName: r.player_name,
         todayInfo,
         oppTeam,
         minAvg,
         minMinWin,
-        ptsMin,
-        rebMin,
-        astMin,
-        ptsFull,
-        rebFull,
-        astFull,
         ptsBest,
         rebBest,
         astBest,
@@ -2156,6 +2299,11 @@ async function load() {
         injuryStatus,
       };
     });
+    CARD_DATA_BY_KEY = new Map();
+    for (const data of cardDataList) {
+      CARD_DATA_BY_KEY.set(data.domKey, data);
+    }
+    _currentCardDataList = cardDataList;
 
     if (!groupedMode) {
       cardDataList.sort((a, b) => sortVal(b.row, sortKey, win) - sortVal(a.row, sortKey, win));
@@ -2170,17 +2318,22 @@ async function load() {
         .map(t => {
           const stat = t.stat.toUpperCase();
           const chip = `<span class="target-chip">Target: ${stat} ${t.t}+ (${t.hits}/${t.gp})</span>`;
-          if (!data.oppTeam) return `<div class="target-row">${chip}</div>`;
-          const pills = matchupPills(data.oppTeam, t.stat);
-          const row = pills ? `${chip} ${pills}` : chip;
-          return `<div class="target-row">${row}</div>`;
+          const pills = data.oppTeam ? matchupPills(data.oppTeam, t.stat) : "";
+          return `
+            <div class="target-row" data-stat="${String(t.stat || "").toLowerCase()}">
+              ${chip}
+              <span class="matchup-pills">${pills || ""}</span>
+            </div>
+          `;
         })
         .join("");
       const targetWrap = targetRows ? `<div class="targets-wrap">${targetRows}</div>` : "";
 
       const el = document.createElement("details");
       el.className = "card";
-      el.dataset.playerKey = `${normalizeName(data.playerName)}::${data.team}`;
+      el.dataset.playerKey = data.domKey;
+      el.dataset.oppTeam = data.oppTeam || "";
+      el.dataset.hydrated = "0";
 
       el.innerHTML = `
         <summary>
@@ -2225,20 +2378,7 @@ async function load() {
         </summary>
 
         <div class="expand-body">
-          <div class="matrixhdr">
-            <div><strong>PTS</strong> · Avg ${data.ptsAvgText} • min in window: ${data.ptsMin}</div>
-          </div>
-          <div class="pills">${data.ptsFull}</div>
-
-          <div class="matrixhdr">
-            <div><strong>REB</strong> · Avg ${data.rebAvgText} • min in window: ${data.rebMin}</div>
-          </div>
-          <div class="pills">${data.rebFull}</div>
-
-          <div class="matrixhdr">
-            <div><strong>AST</strong> · Avg ${data.astAvgText} • min in window: ${data.astMin}</div>
-          </div>
-          <div class="pills">${data.astFull}</div>
+          <div class="expand-placeholder muted" style="font-size:12px;">(Open to load full matrix)</div>
         </div>
       `;
       return el;
@@ -2352,140 +2492,31 @@ async function load() {
         }
       }
     } else {
+      const frag = document.createDocumentFragment();
       cardDataList.forEach(data => {
-        cards.appendChild(createCard(data));
+        frag.appendChild(createCard(data));
       });
+      cards.appendChild(frag);
     }
 
     document.querySelectorAll("details.card, details.game-group, details.suggested-targets, details.suggested-subpanel, details.suggested-game-group").forEach(syncDetailsOpenClass);
 
-    try {
-      const targetsWin = "10";
-      const bonusForTier = tier => tier === "SOFT" ? 1 : (tier === "TOUGH" ? -1 : 0);
-      const getNum = (v) => {
-        const n = Number(v);
-        return Number.isFinite(n) ? n : null;
-      };
-      const getFeature = (row, key) => {
-        const v = row && row[key];
-        const n = getNum(v);
-        if (n != null) return n;
-        const pid = row && row.player_id ? String(row.player_id) : "";
-        if (pid && PLAYER_FEATURES && PLAYER_FEATURES[pid] && PLAYER_FEATURES[pid][key] != null) {
-          return getNum(PLAYER_FEATURES[pid][key]);
-        }
-        return null;
-      };
-      const targetItems = [];
-      for (const data of cardDataList) {
-        const targets = targetsMemo(data.row, targetsWin);
-        if (!targets.length) continue;
-        const playerKey = `${normalizeName(data.playerName)}::${data.team}`;
-        const gameId = (data.todayInfo && data.todayInfo.gameId) ? data.todayInfo.gameId : "";
-        const gameKey = gameId || `${data.team}::${data.oppTeam || ""}`;
-        const info = data.todayInfo && data.todayInfo.gameId ? gameInfoById.get(data.todayInfo.gameId) : null;
-        const gameLabel = info
-          ? `${info.awayName || info.awayAbbrev} @ ${info.homeName || info.homeAbbrev}`
-          : (data.oppTeam ? `${data.team} @ ${data.oppTeam}` : data.team);
-        for (const t of targets) {
-          const avg = seasonAvg(data.row, t.stat);
-          const diff = Number.isFinite(avg) ? (t.t - avg) : -Infinity;
-          const tier = matchupTier(data.oppTeam, t.stat);
-          const statKey = String(t.stat || "").toLowerCase();
-          const iqrVal = getFeature(data.row, `${statKey}_iqr_10`);
-          const landmineKey = `${statKey}_landmine_${t.t}_10`;
-          const landmineRate = getFeature(data.row, landmineKey);
-          const trendPP = getFeature(data.row, `share_${statKey}_trend_pp`);
-          const teamSignal = (TEAM_SIGNALS && TEAM_SIGNALS[data.team]) || {};
-          const scheduleStress = getNum(teamSignal.schedule_stress);
-          const b2b = !!teamSignal.b2b;
-          const travelBucket = String(teamSignal.travel_bucket || "");
+    computeSuggestedFromCardData(cardDataList, "10");
+    applyMatchupContextToCards();
+  }
 
-          let stressPenalty = 0;
-          if (scheduleStress != null && scheduleStress >= 70) stressPenalty -= 0.15;
-          if (b2b) stressPenalty -= 0.10;
-          if (travelBucket === "600+") stressPenalty -= 0.08;
-
-          let volPenalty = 0;
-          if (iqrVal != null) {
-            if (statKey === "pts") {
-              if (iqrVal > 10) volPenalty -= 0.12;
-              else if (iqrVal > 6) volPenalty -= 0.05;
-            } else if (statKey === "reb") {
-              if (iqrVal > 5) volPenalty -= 0.12;
-              else if (iqrVal > 3) volPenalty -= 0.05;
-            } else if (statKey === "ast") {
-              if (iqrVal > 4) volPenalty -= 0.12;
-              else if (iqrVal > 2) volPenalty -= 0.05;
-            }
-          }
-
-          let landminePenalty = 0;
-          if (landmineRate != null) {
-            if (landmineRate >= 0.30) landminePenalty -= 0.12;
-            else if (landmineRate >= 0.20) landminePenalty -= 0.08;
-          }
-
-          let roleBoost = 0;
-          if (trendPP != null) {
-            if (trendPP >= 5) roleBoost += 0.15;
-            else if (trendPP >= 3) roleBoost += 0.10;
-          }
-          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost;
-          const highFatigue = (scheduleStress != null && scheduleStress >= 70) || b2b;
-          const trapRisk = (landmineRate != null && landmineRate >= 0.25) || (iqrVal != null && ((statKey === "pts" && iqrVal > 10) || (statKey === "reb" && iqrVal > 5) || (statKey === "ast" && iqrVal > 4)));
-          const roleUp = trendPP != null && trendPP >= 3;
-          targetItems.push({
-            playerName: data.playerName,
-            team: data.team,
-            opp: data.oppTeam,
-            stat: t.stat,
-            threshold: t.t,
-            hits: t.hits,
-            gp: t.gp,
-            rate: t.rate,
-            score: t.rate + scoreAdj,
-            diff,
-            matchupBonus: bonusForTier(tier),
-            gameId,
-            gameKey,
-            gameLabel,
-            playerKey,
-            highFatigue,
-            trapRisk,
-            roleUp,
-          });
-        }
-      }
-
-      targetItems.sort((a, b) => {
-        if (b.score !== a.score) return b.score - a.score;
-        if (b.rate !== a.rate) return b.rate - a.rate;
-        if (b.gp !== a.gp) return b.gp - a.gp;
-        if (b.matchupBonus !== a.matchupBonus) return b.matchupBonus - a.matchupBonus;
-        if (b.diff !== a.diff) return b.diff - a.diff;
-        return a.playerName.localeCompare(b.playerName);
+  function applyMatchupContextToCards() {
+    const cards = document.querySelectorAll("details.card");
+    cards.forEach(card => {
+      const opp = String(card.dataset.oppTeam || "").toUpperCase();
+      if (!opp) return;
+      card.querySelectorAll(".target-row").forEach(row => {
+        const stat = String(row.dataset.stat || "").toLowerCase();
+        const wrap = row.querySelector(".matchup-pills");
+        if (!wrap) return;
+        wrap.innerHTML = matchupPills(opp, stat) || "";
       });
-
-      const suggested = [];
-      const seenPlayers = new Set();
-      const gameCounts = new Map();
-      for (const item of targetItems) {
-        if (suggested.length >= 6) break;
-        if (seenPlayers.has(item.playerKey)) continue;
-        const count = gameCounts.get(item.gameKey) || 0;
-        if (count >= 2) continue;
-        suggested.push(item);
-        seenPlayers.add(item.playerKey);
-        gameCounts.set(item.gameKey, count + 1);
-      }
-
-      cachedSuggested = suggested;
-      cachedAllTargets = targetItems;
-      renderSuggestedDrawer();
-    } catch (err) {
-      console.warn("Suggested Targets render failed:", err);
-    }
+    });
   }
 
   // Default scope = Playing Today already set in HTML
@@ -2521,7 +2552,8 @@ async function load() {
   ]).then(() => {
     if (!_matchupRerendered && (Object.keys(OPP_BIG).length || Object.keys(TEAM_OPP).length)) {
       _matchupRerendered = true;
-      render();
+      applyMatchupContextToCards();
+      computeSuggestedFromCardData(_currentCardDataList, "10");
     }
   }).catch(() => {});
 }
