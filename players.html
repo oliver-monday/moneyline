@@ -293,7 +293,9 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-    .suggested-chips { display:flex; gap:8px; flex: 1 1 auto; min-width: 0; }
+    .suggested-chips { display:flex; flex-wrap:wrap; gap:8px; flex: 1 1 auto; min-width: 0; }
+    .suggested-chip { white-space: nowrap; }
+    .suggested-meta { display:flex; flex-wrap:wrap; gap:8px; min-width: 0; }
     .suggested-flag {
       border: 1px solid #d0d0d0;
       color: #555;
@@ -307,6 +309,7 @@
     }
     @media (max-width: 520px) {
       .suggested-player { flex-basis: 150px; max-width: 150px; }
+      .suggested-meta { flex-basis: 100%; }
     }
     #suggestedPanel .stable-row { margin-top: 0; }
     #suggestedPanel .stable-title { color: #444; font-weight: 700; }
@@ -1686,8 +1689,10 @@ async function load() {
         <span class="suggested-player">${item.playerName}</span>
         <span class="suggested-chips">
           <span class="target-chip suggested-chip">${chip}</span>
-          ${avgText ? `<span class="avg-anchor">${avgText}</span>` : ""}
-          ${flags.join("")}
+          <span class="suggested-meta">
+            ${avgText ? `<span class="avg-anchor">${avgText}</span>` : ""}
+            ${flags.join("")}
+          </span>
         </span>
       </div>
     `;
