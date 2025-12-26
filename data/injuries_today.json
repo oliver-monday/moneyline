@@ -1,27 +1,12 @@
 {
   "asof_date": "2025-12-26",
-  "built_at_utc": "2025-12-26T20:23:01Z",
+  "built_at_utc": "2025-12-26T22:26:22Z",
   "source": "rotowire",
   "MIA": [
     {
-      "name": "K. Johnson",
-      "status": "PROB",
-      "details": "K. Johnson (Prob)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "PROB",
-      "details": "N. Jovic (Prob)"
-    },
-    {
-      "name": "P. Larsson",
-      "status": "PROB",
-      "details": "P. Larsson (Prob)"
-    },
-    {
       "name": "B. Adebayo",
-      "status": "DOUBT",
-      "details": "B. Adebayo (Doubt)"
+      "status": "OUT",
+      "details": "B. Adebayo (Out)"
     },
     {
       "name": "T. Herro",
@@ -167,19 +152,14 @@
       "details": "G. Williams (Out)"
     },
     {
-      "name": "T. da Silva",
-      "status": "PROB",
-      "details": "T. da Silva (Prob)"
-    },
-    {
       "name": "G. Bitadze",
-      "status": "QUES",
-      "details": "G. Bitadze (Ques)"
+      "status": "OUT",
+      "details": "G. Bitadze (Out)"
     },
     {
       "name": "J. Suggs",
-      "status": "DOUBT",
-      "details": "J. Suggs (Doubt)"
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
     },
     {
       "name": "M. Wagner",
@@ -194,14 +174,14 @@
   ],
   "ORL": [
     {
-      "name": "T. da Silva",
-      "status": "PROB",
-      "details": "T. da Silva (Prob)"
+      "name": "G. Bitadze",
+      "status": "OUT",
+      "details": "G. Bitadze (Out)"
     },
     {
       "name": "J. Suggs",
-      "status": "DOUBT",
-      "details": "J. Suggs (Doubt)"
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
     },
     {
       "name": "M. Wagner",
@@ -216,16 +196,6 @@
   ],
   "TOR": [
     {
-      "name": "RJ Barrett",
-      "status": "OUT",
-      "details": "RJ Barrett (Out)"
-    },
-    {
-      "name": "J. Poeltl",
-      "status": "OUT",
-      "details": "J. Poeltl (Out)"
-    },
-    {
       "name": "S. Barnes",
       "status": "QUES",
       "details": "S. Barnes (Ques)"
@@ -234,6 +204,16 @@
       "name": "C. Murray-Boyles",
       "status": "QUES",
       "details": "C. Murray-Boyles (Ques)"
+    },
+    {
+      "name": "RJ Barrett",
+      "status": "OUT",
+      "details": "RJ Barrett (Out)"
+    },
+    {
+      "name": "J. Poeltl",
+      "status": "OUT",
+      "details": "J. Poeltl (Out)"
     },
     {
       "name": "J. Champagnie",
@@ -252,6 +232,11 @@
     }
   ],
   "WAS": [
+    {
+      "name": "J. Champagnie",
+      "status": "QUES",
+      "details": "J. Champagnie (Ques)"
+    },
     {
       "name": "C. Kispert",
       "status": "OUT",
@@ -280,6 +265,11 @@
       "details": "Q. Grimes (Prob)"
     },
     {
+      "name": "J. Embiid",
+      "status": "QUES",
+      "details": "J. Embiid (Ques)"
+    },
+    {
       "name": "K. Oubre",
       "status": "OUT",
       "details": "K. Oubre (Out)"
@@ -288,11 +278,6 @@
       "name": "T. Watford",
       "status": "OUT",
       "details": "T. Watford (Out)"
-    },
-    {
-      "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
     },
     {
       "name": "N. Essengue",
@@ -310,9 +295,19 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
+    },
+    {
+      "name": "P. Williams",
+      "status": "QUES",
+      "details": "P. Williams (Ques)"
     }
   ],
   "PHX": [
+    {
+      "name": "K. Brea",
+      "status": "QUES",
+      "details": "K. Brea (Ques)"
+    },
     {
       "name": "G. Allen",
       "status": "OUT",
@@ -322,11 +317,6 @@
       "name": "J. Green",
       "status": "OUT",
       "details": "J. Green (Out)"
-    },
-    {
-      "name": "K. Brea",
-      "status": "QUES",
-      "details": "K. Brea (Ques)"
     },
     {
       "name": "J. Poole",
@@ -420,6 +410,16 @@
   ],
   "MEM": [
     {
+      "name": "C. Coward",
+      "status": "QUES",
+      "details": "C. Coward (Ques)"
+    },
+    {
+      "name": "J. Morant",
+      "status": "QUES",
+      "details": "J. Morant (Ques)"
+    },
+    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -448,6 +448,23 @@
       "name": "V. Williams",
       "status": "OUT",
       "details": "V. Williams (Out)"
+    }
+  ],
+  "DET": [
+    {
+      "name": "R. Holland",
+      "status": "QUES",
+      "details": "R. Holland (Ques)"
+    },
+    {
+      "name": "W. Kessler",
+      "status": "OFS",
+      "details": "W. Kessler (OFS)"
+    },
+    {
+      "name": "G. Niang",
+      "status": "OUT",
+      "details": "G. Niang (Out)"
     }
   ],
   "UTA": [
@@ -564,23 +581,6 @@
       "name": "B. Wesley",
       "status": "OUT",
       "details": "B. Wesley (Out)"
-    }
-  ],
-  "DET": [
-    {
-      "name": "R. Holland",
-      "status": "QUES",
-      "details": "R. Holland (Ques)"
-    },
-    {
-      "name": "W. Kessler",
-      "status": "OFS",
-      "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "G. Niang",
-      "status": "OUT",
-      "details": "G. Niang (Out)"
     }
   ]
 }
