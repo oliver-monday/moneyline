@@ -226,6 +226,12 @@
       position: relative;
       padding-right: var(--summaryPadRight);
     }
+    details.suggested-targets:not([open]) summary,
+    details.injury-panel:not([open]) summary,
+    details.filters-panel:not([open]) summary,
+    details.postmortem-panel:not([open]) summary {
+      border-bottom: none;
+    }
     details.injury-panel summary {
       font-weight: 700;
       font-size: 18px;
