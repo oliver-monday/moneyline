@@ -1912,8 +1912,11 @@ async function load() {
   function injuryStatusClass(status) {
     const s = String(status || "").toUpperCase();
     if (s === "OUT" || s === "DOUBTFUL" || s === "OFS") return "pill danger";
+    if (s === "DOUBT") return "pill danger";
     if (s.startsWith("Q")) return "pill pill-warn";
     if (s.startsWith("PROB")) return "pill pill-outline";
+    if (s === "DTD" || s === "GTD") return "pill pill-warn";
+    if (s === "REST" || s === "SUSP") return "pill pill-outline";
     return "pill pill-outline";
   }
 
@@ -1934,7 +1937,13 @@ async function load() {
 
       const buildRows = (list) => list.map(item => {
         const name = String(item.name || "");
-        const status = String(item.status || "");
+        let status = String(item.status || "").trim();
+        if (!status) {
+          const details = String(item.details || "");
+          const m = details.match(/\(([^)]+)\)/);
+          status = m ? m[1] : "";
+        }
+        status = status.toUpperCase();
         return `
           <div class="injury-row">
             <div class="injury-name">${name}</div>
