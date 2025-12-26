@@ -367,7 +367,7 @@ def main():
             for stat, thresholds_list in thresholds.items():
                 for t in thresholds_list:
                     tkey = str(int(t)) if float(t).is_integer() else str(t).replace(".", "p")
-                    key = f\"{stat}_landmine_{tkey}_{tag}\"
+                    key = f"{stat}_landmine_{tkey}_{tag}"
                     v = base.get(key)
                     if np.isfinite(v):
                         vals.append(v)
