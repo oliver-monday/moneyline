@@ -1082,6 +1082,11 @@ let teamLastPlayedDate = new Map();
 let TEAM_OPP = {};
 let OPP_BIG = {};
 let injuriesByTeam = {};
+const INJ_TEAM_ALIAS = {
+  UTAH: "UTA",
+  NO: "NOP",
+  WSH: "WAS",
+};
 let TEAM_SIGNALS = {};
 let PLAYER_FEATURES = {};
 function restLabel(lastDateStr) {
@@ -1306,7 +1311,9 @@ function abbrevMatch(injNorm, playerNorm) {
 }
 
 function matchInjury(team, playerName, injuriesByTeam) {
-  const list = (injuriesByTeam && injuriesByTeam[team]) || [];
+  const teamKey = String(team || "").toUpperCase();
+  const alias = INJ_TEAM_ALIAS[teamKey];
+  const list = (injuriesByTeam && (injuriesByTeam[teamKey] || (alias && injuriesByTeam[alias]))) || [];
   const target = normalizeName(playerName);
   let best = null;
   for (const item of list) {
@@ -1547,7 +1554,7 @@ async function load() {
   ] = await Promise.all([
     fetchText(snapshotUrl),
     fetchText(masterUrl),
-    fetchJson("./data/injuries_today.json").catch(() => ({})),
+    fetchJson(`./data/injuries_today.json?ts=${Date.now()}`).catch(() => ({})),
     fetchJson("./data/team_signals.json").catch(() => ({})),
     fetchJson("./data/player_features.json").catch(() => ({})),
   ]);
@@ -2033,8 +2040,10 @@ async function load() {
     for (const info of gamesTodayOrdered) {
       const away = String(info.awayAbbrev || "").toUpperCase();
       const home = String(info.homeAbbrev || "").toUpperCase();
-      const injAway = (injuriesByTeam && injuriesByTeam[away]) || [];
-      const injHome = (injuriesByTeam && injuriesByTeam[home]) || [];
+      const awayAlias = INJ_TEAM_ALIAS[away];
+      const homeAlias = INJ_TEAM_ALIAS[home];
+      const injAway = (injuriesByTeam && (injuriesByTeam[away] || (awayAlias && injuriesByTeam[awayAlias]))) || [];
+      const injHome = (injuriesByTeam && (injuriesByTeam[home] || (homeAlias && injuriesByTeam[homeAlias]))) || [];
       if (!injAway.length && !injHome.length) continue;
 
       const buildRows = (list) => list.map(item => {
