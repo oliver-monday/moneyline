@@ -1626,8 +1626,8 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
         w("</div></div>")
         w("</div>")   # end two-col
         w("</div>")   # end team-card
-            w("</details>")
-            w("</div>")  # end game-card
+        w("</details>")
+        w("</div>")  # end game-card
 
     # --------- League overview ---------
     if not league_tbl.empty:
