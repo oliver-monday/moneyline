@@ -1089,6 +1089,8 @@ const INJ_TEAM_ALIAS = {
 };
 let WHITELIST_BY_TEAM = new Map();
 let WHITELIST_ALL = new Set();
+let FEATURE_PID_BY_TEAM_KEY = new Map();
+let KEY_OUTS = new Map();
 let TEAM_SIGNALS = {};
 let PLAYER_FEATURES = {};
 function restLabel(lastDateStr) {
@@ -1112,7 +1114,8 @@ function seasonKey(row) {
 }
 
 function isOutStatus(status) {
-  return String(status || "").trim().toUpperCase() === "OUT";
+  const s = String(status || "").trim().toUpperCase();
+  return s === "OUT" || s === "OFS" || s === "SUSP";
 }
 
 function isOut(r, injuryStatus) {
@@ -1294,6 +1297,17 @@ function normalizeName(s) {
     .trim();
 }
 
+function nameKey(name) {
+  const norm = normalizeName(name);
+  if (!norm) return "";
+  const parts = norm.split(" ").filter(Boolean);
+  if (!parts.length) return "";
+  const last = parts[parts.length - 1];
+  const first = parts[0] ? parts[0][0] : "";
+  if (!first || !last) return "";
+  return `${first}_${last}`;
+}
+
 function tokens(normName) {
   return (normName || "").split(" ").filter(Boolean);
 }
@@ -1359,6 +1373,93 @@ function isWhitelistedInTeam(playerName, teamKey) {
       }
     }
   }
+  return false;
+}
+
+function buildFeaturePidIndex() {
+  FEATURE_PID_BY_TEAM_KEY = new Map();
+  if (!PLAYER_FEATURES) return;
+  for (const [pid, info] of Object.entries(PLAYER_FEATURES)) {
+    const team = String(info && info.team_abbrev || "").toUpperCase();
+    const key = nameKey(info && info.player_name);
+    if (!team || !key) continue;
+    let map = FEATURE_PID_BY_TEAM_KEY.get(team);
+    if (!map) {
+      map = new Map();
+      FEATURE_PID_BY_TEAM_KEY.set(team, map);
+    }
+    if (!map.has(key)) map.set(key, pid);
+  }
+}
+
+function featurePidFor(team, playerName) {
+  const teamKey = String(team || "").toUpperCase();
+  const alias = INJ_TEAM_ALIAS[teamKey];
+  const key = nameKey(playerName);
+  if (!key) return "";
+  const map = FEATURE_PID_BY_TEAM_KEY.get(teamKey) || (alias && FEATURE_PID_BY_TEAM_KEY.get(alias));
+  return map && map.get(key) ? String(map.get(key)) : "";
+}
+
+function computeKeyOuts() {
+  KEY_OUTS = new Map();
+  if (!injuriesByTeam || !PLAYER_FEATURES) return;
+  for (const [teamRaw, list] of Object.entries(injuriesByTeam)) {
+    if (!Array.isArray(list)) continue;
+    const team = String(teamRaw || "").toUpperCase();
+    if (!team) continue;
+    const outs = [];
+    for (const item of list) {
+      const status = String(item && item.status || "").toUpperCase();
+      if (!(status === "OUT" || status === "OFS" || status === "SUSP" || status === "DOUBT" || status === "DOUBTFUL")) continue;
+      const pid = featurePidFor(team, item && item.name);
+      if (!pid) continue;
+      const info = PLAYER_FEATURES[pid] || {};
+      const ptsShare = featureNum(info, "share_pts_l20") || 0;
+      const astShare = featureNum(info, "share_ast_l20") || 0;
+      const rebShare = featureNum(info, "share_reb_l20") || 0;
+      const impact = (0.6 * ptsShare) + (0.2 * astShare) + (0.2 * rebShare);
+      outs.push({
+        pid,
+        name: String(item && item.name || ""),
+        status,
+        impact,
+        share_reb_l20: rebShare,
+      });
+    }
+    if (!outs.length) continue;
+    outs.sort((a, b) => (b.impact || 0) - (a.impact || 0));
+    const selected = outs.filter((o, i) => (o.impact >= 0.20) || i < 2);
+    if (selected.length) KEY_OUTS.set(team, selected);
+  }
+}
+
+function hasRoleOpportunity(teamAbbrev, pid, statKey, row) {
+  if (!teamAbbrev || !pid) return false;
+  const team = String(teamAbbrev).toUpperCase();
+  const alias = INJ_TEAM_ALIAS[team];
+  const outs = KEY_OUTS.get(team) || (alias && KEY_OUTS.get(alias));
+  if (!outs || !outs.length) return false;
+  if (outs.some(o => String(o.pid) === String(pid))) return false;
+
+  const trend = featureNum(row, `share_${statKey}_trend_pp`);
+  const shareL20 = featureNum(row, `share_${statKey}_l20`);
+
+  const thresholds = {
+    pts: { trend: 3, share: 0.22 },
+    ast: { trend: 3, share: 0.22 },
+    reb: { trend: 2, share: 0.18 },
+  };
+  const cfg = thresholds[statKey] || thresholds.pts;
+  let shareCut = cfg.share;
+
+  if (statKey === "reb") {
+    const missingBig = outs.some(o => (o.share_reb_l20 || 0) >= 0.18);
+    if (missingBig) shareCut = 0.14;
+  }
+
+  if (trend != null && trend >= cfg.trend) return true;
+  if (shareL20 != null && shareL20 >= shareCut) return true;
   return false;
 }
 
@@ -1679,6 +1780,8 @@ async function load() {
   // Team signals + player features (best effort)
   TEAM_SIGNALS = teamSignalsData && teamSignalsData.teams ? teamSignalsData.teams : {};
   PLAYER_FEATURES = playerFeaturesData && playerFeaturesData.players ? playerFeaturesData.players : {};
+  buildFeaturePidIndex();
+  computeKeyOuts();
 
   // Matchup context (best effort, non-blocking)
   TEAM_OPP = {};
@@ -1849,6 +1952,7 @@ async function load() {
     if (item.trapRisk) flags.push("<span class=\"suggested-flag\">TRAP RISK</span>");
     if (item.roleUp) flags.push("<span class=\"suggested-flag\">↑ ROLE</span>");
     if (item.injuryRisk) flags.push("<span class=\"suggested-flag\">INJURY RISK</span>");
+    if (item.roleOpportunity) flags.push("<span class=\"suggested-flag\">ROLE ↑ OPPORTUNITY</span>");
     return `
       <div class="suggested-row" data-player-key="${item.playerKey}" data-game-id="${item.gameId || ""}">
         <span class="suggested-player">${item.playerName}</span>
@@ -1926,8 +2030,9 @@ async function load() {
             const targets = targetsMemo(data.row, targetsWin);
             if (!targets.length) continue;
             const inj = String(data.injuryStatus || "").toUpperCase();
-            if (inj === "OUT" || inj === "OFS" || inj === "SUSP") continue;
+            if (isOutStatus(inj)) continue;
             const playerKey = `${normalizeName(data.playerName)}::${data.team}`;
+            const pid = String(data.row && data.row.player_id || "");
             const gameId = (data.todayInfo && data.todayInfo.gameId) ? data.todayInfo.gameId : "";
             const gameKey = gameId || `${data.team}::${data.oppTeam || ""}`;
             const info = data.todayInfo && data.todayInfo.gameId ? gameInfoById.get(data.todayInfo.gameId) : null;
@@ -1984,8 +2089,12 @@ async function load() {
           }
 
           let injuryPenalty = 0;
-          const injuryRisk = ["PROB","QUES","GTD","DTD"].some(tag => inj.startsWith(tag));
-          if (injuryRisk) injuryPenalty -= 0.12;
+          const injHard = isOutStatus(inj);
+          const injSevereRisk = ["QUES","GTD","DTD","DOUBT"].some(tag => inj.startsWith(tag));
+          const injMildRisk = ["PROB","REST"].some(tag => inj.startsWith(tag));
+          const injuryRisk = injSevereRisk || injMildRisk;
+          if (injSevereRisk) injuryPenalty -= 0.18;
+          else if (injMildRisk) injuryPenalty -= 0.10;
 
           let dnpPenalty = 0;
           const dnpRate = getDnpRate(data.row, metricWinVal);
@@ -2019,7 +2128,9 @@ async function load() {
             if (landmineRate >= 0.30) landmineCons -= 0.05;
             else if (landmineRate >= 0.20) landmineCons -= 0.03;
           }
-          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty;
+          const roleOpportunity = hasRoleOpportunity(data.team, pid, statKey, data.row);
+          const oppBoost = roleOpportunity ? 0.10 : 0;
+          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty + oppBoost;
           const highFatigue = (scheduleStress != null && scheduleStress >= 70) || b2b;
           const trapRisk = (landmineRate != null && landmineRate >= 0.25) || (iqrVal != null && ((statKey === "pts" && iqrVal > 10) || (statKey === "reb" && iqrVal > 5) || (statKey === "ast" && iqrVal > 4)));
           const roleUp = trendPP != null && trendPP >= 3;
@@ -2045,6 +2156,7 @@ async function load() {
             trapRisk,
             roleUp,
             injuryRisk,
+            roleOpportunity,
           });
         }
       }
