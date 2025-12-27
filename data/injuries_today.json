@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-26",
-  "built_at_utc": "2025-12-26T23:34:03Z",
+  "built_at_utc": "2025-12-27T00:38:16Z",
   "source": "rotowire",
   "MIA": [
     {
@@ -201,6 +201,11 @@
       "details": "RJ Barrett (Out)"
     },
     {
+      "name": "C. Murray-Boyles",
+      "status": "OUT",
+      "details": "C. Murray-Boyles (Out)"
+    },
+    {
       "name": "J. Poeltl",
       "status": "OUT",
       "details": "J. Poeltl (Out)"
@@ -229,11 +234,6 @@
     }
   ],
   "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
-    },
     {
       "name": "K. Oubre",
       "status": "OUT",
@@ -269,11 +269,6 @@
       "details": "J. Green (Out)"
     },
     {
-      "name": "J. Poole",
-      "status": "PROB",
-      "details": "J. Poole (Prob)"
-    },
-    {
       "name": "H. Jones",
       "status": "OUT",
       "details": "H. Jones (Out)"
@@ -285,11 +280,6 @@
     }
   ],
   "NOP": [
-    {
-      "name": "J. Poole",
-      "status": "PROB",
-      "details": "J. Poole (Prob)"
-    },
     {
       "name": "H. Jones",
       "status": "OUT",
@@ -318,16 +308,6 @@
       "details": "Gary Trent (Out)"
     },
     {
-      "name": "J. Morant",
-      "status": "QUES",
-      "details": "J. Morant (Ques)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "QUES",
-      "details": "C. Coward (Ques)"
-    },
-    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -346,6 +326,11 @@
       "name": "J. Konchar",
       "status": "OUT",
       "details": "J. Konchar (Out)"
+    },
+    {
+      "name": "J. Landale",
+      "status": "OUT",
+      "details": "J. Landale (Out)"
     },
     {
       "name": "S. Pippen",
@@ -360,16 +345,6 @@
   ],
   "MEM": [
     {
-      "name": "C. Coward",
-      "status": "QUES",
-      "details": "C. Coward (Ques)"
-    },
-    {
-      "name": "J. Morant",
-      "status": "QUES",
-      "details": "J. Morant (Ques)"
-    },
-    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -388,6 +363,11 @@
       "name": "J. Konchar",
       "status": "OUT",
       "details": "J. Konchar (Out)"
+    },
+    {
+      "name": "J. Landale",
+      "status": "OUT",
+      "details": "J. Landale (Out)"
     },
     {
       "name": "S. Pippen",
