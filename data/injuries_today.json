@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-27",
-  "built_at_utc": "2025-12-27T22:25:03Z",
+  "built_at_utc": "2025-12-27T23:21:39Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -103,16 +103,6 @@
   ],
   "PHX": [
     {
-      "name": "R. Dunn",
-      "status": "QUES",
-      "details": "R. Dunn (Ques)"
-    },
-    {
-      "name": "M. Williams",
-      "status": "QUES",
-      "details": "M. Williams (Ques)"
-    },
-    {
       "name": "G. Allen",
       "status": "OUT",
       "details": "G. Allen (Out)"
@@ -121,6 +111,11 @@
       "name": "Koby Brea",
       "status": "OUT",
       "details": "Koby Brea (Out)"
+    },
+    {
+      "name": "Ryan Dunn",
+      "status": "OUT",
+      "details": "Ryan Dunn (Out)"
     },
     {
       "name": "J. Green",
@@ -226,24 +221,19 @@
   ],
   "NYK": [
     {
-      "name": "M. McBride",
-      "status": "QUES",
-      "details": "M. McBride (Ques)"
-    },
-    {
       "name": "Josh Hart",
       "status": "OUT",
       "details": "Josh Hart (Out)"
     },
     {
+      "name": "M. McBride",
+      "status": "OUT",
+      "details": "M. McBride (Out)"
+    },
+    {
       "name": "L. Shamet",
       "status": "OUT",
       "details": "L. Shamet (Out)"
-    },
-    {
-      "name": "T. Young",
-      "status": "PROB",
-      "details": "T. Young (Prob)"
     },
     {
       "name": "N. Dante",
@@ -271,11 +261,6 @@
       "name": "E. Ndiaye",
       "status": "OFS",
       "details": "E. Ndiaye (OFS)"
-    },
-    {
-      "name": "T. Young",
-      "status": "PROB",
-      "details": "T. Young (Prob)"
     },
     {
       "name": "K. Porzingis",
@@ -393,11 +378,6 @@
       "details": "Obi Toppin (Out)"
     },
     {
-      "name": "K. Ware",
-      "status": "PROB",
-      "details": "K. Ware (Prob)"
-    },
-    {
       "name": "B. Adebayo",
       "status": "OUT",
       "details": "B. Adebayo (Out)"
@@ -414,11 +394,6 @@
     }
   ],
   "MIA": [
-    {
-      "name": "K. Ware",
-      "status": "PROB",
-      "details": "K. Ware (Prob)"
-    },
     {
       "name": "B. Adebayo",
       "status": "OUT",
@@ -447,22 +422,12 @@
       "details": "C. Johnson (Out)"
     },
     {
-      "name": "R. Dillingham",
-      "status": "QUES",
-      "details": "R. Dillingham (Ques)"
-    },
-    {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
     }
   ],
   "MIN": [
-    {
-      "name": "R. Dillingham",
-      "status": "QUES",
-      "details": "R. Dillingham (Ques)"
-    },
     {
       "name": "T. Shannon",
       "status": "OUT",
