@@ -448,12 +448,21 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401809240,2025-12-25,Golden State Warriors,GS,126,-310.0,,Dallas Mavericks,DAL,116,250.0,,San Francisco,CA,,
 401809241,2025-12-25,Los Angeles Lakers,LAL,96,105.0,,Houston Rockets,HOU,119,-125.0,,Los Angeles,CA,,
 401809242,2025-12-25,Denver Nuggets,DEN,142,-105.0,,Minnesota Timberwolves,MIN,138,-115.0,,Denver,CO,,
-401810278,2025-12-26,Atlanta Hawks,ATL,111,-148.0,,Miami Heat,MIA,126,124.0,,Atlanta,GA,N. Dante (OFS); E. Ndiaye (OFS),T. Rozier (Out)
-401810279,2025-12-26,Orlando Magic,ORL,105,-230.0,,Charlotte Hornets,CHA,120,190.0,,Orlando,FL,G. Bitadze (Out); J. Suggs (Out); M. Wagner (Out); F. Wagner (Out),
-401810280,2025-12-26,Washington Wizards,WSH,138,260.0,,Toronto Raptors,TOR,117,-325.0,,Washington,DC,C. Whitmore (Out),
-401810281,2025-12-26,Indiana Pacers,IND,122,270.0,,Boston Celtics,BOS,140,-340.0,,Indianapolis,IN,T. Haliburton (OFS); Obi Toppin (Out),J. Tatum (Out)
-401810282,2025-12-26,Chicago Bulls,CHI,109,105.0,,Philadelphia 76ers,PHI,102,-125.0,,Chicago,IL,N. Essengue (OFS),
-401810283,2025-12-26,Memphis Grizzlies,MEM,125,-185.0,,Milwaukee Bucks,MIL,104,154.0,,Memphis,TN,B. Clarke (Out); Zach Edey (Out); Ty Jerome (Out); J. Konchar (Out); S. Pippen (Out),G. Antetokounmpo (Out); T. Prince (Out)
-401810284,2025-12-26,New Orleans Pelicans,NO,108,164.0,,Phoenix Suns,PHX,115,-198.0,,New Orleans,LA,D. Murray (Out),J. Green (Out)
-401810285,2025-12-26,Utah Jazz,UTAH,111,320.0,,Detroit Pistons,DET,103,-410.0,,Salt Lake City,UT,W. Kessler (OFS); G. Niang (Out),
-401810286,2025-12-26,Portland Trail Blazers,POR,62,110.0,,LA Clippers,LAC,56,-130.0,,Portland,OR,D. Lillard (OFS); J. Grant (Out); S. Henderson (Out); J. Holiday (Out); M. Thybulle (Out); B. Wesley (Out),B. Beal (OFS); D. Jones (Out); Chris Paul (Out); I. Zubac (Out)
+401810278,2025-12-26,Atlanta Hawks,ATL,111,-148.0,,Miami Heat,MIA,126,124.0,,Atlanta,GA,,
+401810279,2025-12-26,Orlando Magic,ORL,105,-230.0,,Charlotte Hornets,CHA,120,190.0,,Orlando,FL,,
+401810280,2025-12-26,Washington Wizards,WSH,138,260.0,,Toronto Raptors,TOR,117,-325.0,,Washington,DC,,
+401810281,2025-12-26,Indiana Pacers,IND,122,270.0,,Boston Celtics,BOS,140,-340.0,,Indianapolis,IN,,
+401810282,2025-12-26,Chicago Bulls,CHI,109,105.0,,Philadelphia 76ers,PHI,102,-125.0,,Chicago,IL,,
+401810283,2025-12-26,Memphis Grizzlies,MEM,125,-185.0,,Milwaukee Bucks,MIL,104,154.0,,Memphis,TN,,
+401810284,2025-12-26,New Orleans Pelicans,NO,108,164.0,,Phoenix Suns,PHX,115,-198.0,,New Orleans,LA,,
+401810285,2025-12-26,Utah Jazz,UTAH,131,320.0,,Detroit Pistons,DET,129,-410.0,,Salt Lake City,UT,,
+401810286,2025-12-26,Portland Trail Blazers,POR,103,110.0,,LA Clippers,LAC,119,-130.0,,Portland,OR,,
+401810287,2025-12-27,Sacramento Kings,SAC,0,130.0,,Dallas Mavericks,DAL,0,-155.0,,Sacramento,CA,D. Eubanks (Out); Z. LaVine (Out); K. Murray (Out); D. Sabonis (Out),Dante Exum (OFS); D. Lively (OFS); K. Irving (Out)
+401810288,2025-12-27,Orlando Magic,ORL,0,164.0,,Denver Nuggets,DEN,0,-198.0,,Orlando,FL,G. Bitadze (Out); M. Wagner (Out),T. Bates (Out); C. Braun (Out); A. Gordon (Out); C. Johnson (Out)
+401810289,2025-12-27,New Orleans Pelicans,NO,0,185.0,,Phoenix Suns,PHX,0,-225.0,,New Orleans,LA,D. Murray (Out),J. Green (Out)
+401810290,2025-12-27,Atlanta Hawks,ATL,0,200.0,,New York Knicks,NY,0,-245.0,,Atlanta,GA,N. Dante (OFS); E. Ndiaye (OFS),Josh Hart (Out); L. Shamet (Out)
+401810291,2025-12-27,Miami Heat,MIA,0,-345.0,,Indiana Pacers,IND,0,275.0,,Miami,FL,T. Rozier (Out),T. Haliburton (OFS); Obi Toppin (Out)
+401810292,2025-12-27,Chicago Bulls,CHI,0,-185.0,,Milwaukee Bucks,MIL,0,154.0,,Chicago,IL,N. Essengue (OFS),G. Antetokounmpo (Out); T. Prince (Out)
+401810293,2025-12-27,Houston Rockets,HOU,0,-175.0,,Cleveland Cavaliers,CLE,0,145.0,,Houston,TX,F. VanVleet (Out),L. Nance (Out); Max Strus (Out)
+401810294,2025-12-27,Minnesota Timberwolves,MIN,0,-440.0,,Brooklyn Nets,BKN,0,340.0,,Minneapolis,MN,T. Shannon (Out),H. Highsmith (Out)
+401810295,2025-12-27,San Antonio Spurs,SA,0,-1350.0,,Utah Jazz,UTAH,0,800.0,,San Antonio,TX,,W. Kessler (OFS); G. Niang (Out)
