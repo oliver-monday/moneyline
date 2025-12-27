@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-26",
-  "built_at_utc": "2025-12-27T00:59:09Z",
+  "built_at_utc": "2025-12-27T02:45:21Z",
   "source": "rotowire",
   "MIA": [
     {
@@ -136,6 +136,11 @@
     }
   ],
   "CHA": [
+    {
+      "name": "K. Knueppel",
+      "status": "QUES",
+      "details": "K. Knueppel (Ques)"
+    },
     {
       "name": "R. Kalkbrenner",
       "status": "OUT",
@@ -380,23 +385,6 @@
       "details": "V. Williams (Out)"
     }
   ],
-  "DET": [
-    {
-      "name": "R. Holland",
-      "status": "QUES",
-      "details": "R. Holland (Ques)"
-    },
-    {
-      "name": "W. Kessler",
-      "status": "OFS",
-      "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "G. Niang",
-      "status": "OUT",
-      "details": "G. Niang (Out)"
-    }
-  ],
   "UTA": [
     {
       "name": "W. Kessler",
@@ -431,19 +419,9 @@
       "details": "I. Zubac (Out)"
     },
     {
-      "name": "K. Murray",
-      "status": "PROB",
-      "details": "K. Murray (Prob)"
-    },
-    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "PROB",
-      "details": "R. Williams (Prob)"
     },
     {
       "name": "J. Grant",
@@ -478,16 +456,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "K. Murray",
-      "status": "PROB",
-      "details": "K. Murray (Prob)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "PROB",
-      "details": "R. Williams (Prob)"
-    },
-    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
@@ -511,6 +479,18 @@
       "name": "B. Wesley",
       "status": "OUT",
       "details": "B. Wesley (Out)"
+    }
+  ],
+  "DET": [
+    {
+      "name": "W. Kessler",
+      "status": "OFS",
+      "details": "W. Kessler (OFS)"
+    },
+    {
+      "name": "G. Niang",
+      "status": "OUT",
+      "details": "G. Niang (Out)"
     }
   ]
 }
