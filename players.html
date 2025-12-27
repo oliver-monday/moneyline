@@ -1087,6 +1087,8 @@ const INJ_TEAM_ALIAS = {
   NO: "NOP",
   WSH: "WAS",
 };
+let WHITELIST_BY_TEAM = new Map();
+let WHITELIST_ALL = new Set();
 let TEAM_SIGNALS = {};
 let PLAYER_FEATURES = {};
 function restLabel(lastDateStr) {
@@ -1330,6 +1332,15 @@ function matchInjury(team, playerName, injuriesByTeam) {
     }
   }
   return best;
+}
+
+function isWhitelistedInTeam(playerName, teamKey) {
+  const norm = normalizeName(playerName);
+  if (!norm) return false;
+  const t = String(teamKey || "").toUpperCase();
+  const alias = INJ_TEAM_ALIAS[t];
+  const set = WHITELIST_BY_TEAM.get(t) || (alias && WHITELIST_BY_TEAM.get(alias));
+  return !!(set && set.has(norm));
 }
 
 function isStableMinutes(r, win) {
@@ -1600,6 +1611,23 @@ async function load() {
   injuriesData = await ensureFreshInjuries(injuriesData);
 
   const players = csvToRows(snapshotText);
+
+  WHITELIST_BY_TEAM = new Map();
+  WHITELIST_ALL = new Set();
+  for (const r of players) {
+    const name = String(r.player_name || "").trim();
+    const team = String(r.last_team_abbrev || r.team_abbrev || "").trim().toUpperCase();
+    if (!name || !team) continue;
+    const norm = normalizeName(name);
+    if (!norm) continue;
+    let set = WHITELIST_BY_TEAM.get(team);
+    if (!set) {
+      set = new Set();
+      WHITELIST_BY_TEAM.set(team, set);
+    }
+    set.add(norm);
+    WHITELIST_ALL.add(norm);
+  }
 
   // Best-effort season fallback from game log if SEASON columns missing
   const needsSeason = players.length && !Object.prototype.hasOwnProperty.call(players[0], "gp_SEASON");
@@ -2082,8 +2110,10 @@ async function load() {
       const home = String(info.homeAbbrev || "").toUpperCase();
       const awayAlias = INJ_TEAM_ALIAS[away];
       const homeAlias = INJ_TEAM_ALIAS[home];
-      const injAway = (injuriesByTeam && (injuriesByTeam[away] || (awayAlias && injuriesByTeam[awayAlias]))) || [];
-      const injHome = (injuriesByTeam && (injuriesByTeam[home] || (homeAlias && injuriesByTeam[homeAlias]))) || [];
+      const injAwayRaw = (injuriesByTeam && (injuriesByTeam[away] || (awayAlias && injuriesByTeam[awayAlias]))) || [];
+      const injHomeRaw = (injuriesByTeam && (injuriesByTeam[home] || (homeAlias && injuriesByTeam[homeAlias]))) || [];
+      const injAway = injAwayRaw.filter(item => isWhitelistedInTeam(item && item.name, away));
+      const injHome = injHomeRaw.filter(item => isWhitelistedInTeam(item && item.name, home));
       if (!injAway.length && !injHome.length) continue;
 
       const buildRows = (list) => list.map(item => {
