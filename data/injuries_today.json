@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-27",
-  "built_at_utc": "2025-12-27T20:20:28Z",
+  "built_at_utc": "2025-12-27T22:25:03Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -15,18 +15,18 @@
     },
     {
       "name": "A. Davis",
-      "status": "QUES",
-      "details": "A. Davis (Ques)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "QUES",
-      "details": "B. Williams (Ques)"
+      "status": "OUT",
+      "details": "A. Davis (Out)"
     },
     {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "B. Williams",
+      "status": "OUT",
+      "details": "B. Williams (Out)"
     },
     {
       "name": "Fantasy Home",
@@ -50,8 +50,8 @@
     },
     {
       "name": "D. Carter",
-      "status": "QUES",
-      "details": "D. Carter (Ques)"
+      "status": "OUT",
+      "details": "D. Carter (Out)"
     },
     {
       "name": "D. Eubanks",
@@ -77,8 +77,8 @@
   "SAC": [
     {
       "name": "D. Carter",
-      "status": "QUES",
-      "details": "D. Carter (Ques)"
+      "status": "OUT",
+      "details": "D. Carter (Out)"
     },
     {
       "name": "D. Eubanks",
@@ -173,18 +173,18 @@
     },
     {
       "name": "G. Bitadze",
-      "status": "QUES",
-      "details": "G. Bitadze (Ques)"
-    },
-    {
-      "name": "J. Suggs",
-      "status": "DOUBT",
-      "details": "J. Suggs (Doubt)"
+      "status": "OUT",
+      "details": "G. Bitadze (Out)"
     },
     {
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
+    },
+    {
+      "name": "J. Suggs",
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
     },
     {
       "name": "M. Wagner",
@@ -200,18 +200,18 @@
   "ORL": [
     {
       "name": "G. Bitadze",
-      "status": "QUES",
-      "details": "G. Bitadze (Ques)"
-    },
-    {
-      "name": "J. Suggs",
-      "status": "DOUBT",
-      "details": "J. Suggs (Doubt)"
+      "status": "OUT",
+      "details": "G. Bitadze (Out)"
     },
     {
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
+    },
+    {
+      "name": "J. Suggs",
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
     },
     {
       "name": "M. Wagner",
