@@ -20,10 +20,17 @@ import os
 import pandas as pd
 import numpy as np
 import datetime as dt
+from zoneinfo import ZoneInfo
 from pathlib import Path
 import re
 
 MASTER_PATH = Path("nba_master.csv")
+TIME_COLS = [
+    "game_time_pt","start_time_pt","tipoff_pt",
+    "game_time","start_time","tipoff",
+    "game_datetime_utc","start_time_utc",
+    "commence_time_utc","commence_time",
+]
 
 ML_BUCKETS = [
     (-10000, -300, "Big favorite (≤ -300)"),
@@ -236,6 +243,64 @@ def american_to_prob(odds):
     if o > 0:
         return 100 / (o + 100)
     return None
+
+def _format_pt_label(dt_pt):
+    hour = dt_pt.hour % 12
+    if hour == 0:
+        hour = 12
+    return hour * 60 + dt_pt.minute, f"{hour}:{dt_pt.minute:02d} PT"
+
+def parse_time_label(val):
+    if val is None:
+        return None, "TBD"
+    s = str(val).strip()
+    if not s:
+        return None, "TBD"
+
+    dt_val = pd.to_datetime(s, utc=True, errors="coerce")
+    if pd.notna(dt_val):
+        try:
+            dt_pt = dt_val.tz_convert(ZoneInfo("America/Los_Angeles"))
+        except Exception:
+            dt_pt = dt_val.tz_convert("America/Los_Angeles")
+        return _format_pt_label(dt_pt)
+
+    m = re.search(r"(\d{1,2})[:.](\d{2})\s*([AP]M)?\s*(ET|PT)\b", s, re.I)
+    if m:
+        hour = int(m.group(1))
+        minute = int(m.group(2))
+        ampm = (m.group(3) or "").upper()
+        tz = (m.group(4) or "").upper()
+        if ampm:
+            if hour == 12:
+                hour = 0
+            if ampm == "PM":
+                hour += 12
+        if tz == "ET":
+            hour = (hour - 3) % 24
+        return _format_pt_label(dt.datetime(2000, 1, 1, hour, minute))
+
+    m = re.search(r"^\s*(\d{1,2})[:.](\d{2})\s*([AP]M)?\s*$", s, re.I)
+    if m:
+        hour = int(m.group(1))
+        minute = int(m.group(2))
+        ampm = (m.group(3) or "").upper()
+        if ampm:
+            if hour == 12:
+                hour = 0
+            if ampm == "PM":
+                hour += 12
+        return _format_pt_label(dt.datetime(2000, 1, 1, hour, minute))
+
+    return None, "TBD"
+
+def time_label_for_row(row):
+    for col in TIME_COLS:
+        if col in row:
+            mins, label = parse_time_label(row.get(col))
+            if label != "TBD" or mins is not None:
+                return mins, label
+    return None, "TBD"
 
 def fmt_odds(odds):
     if pd.isna(odds):
@@ -883,6 +948,13 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
             white-space: nowrap;
             margin: 0 0 18px;
         }
+        .time-break {
+            margin: 14px 0 8px;
+            font-size: 18px;
+            font-weight: 800;
+            color: #2f5d86;
+            letter-spacing: 0.2px;
+        }
         .no-games {
             font-size: 18px;
             font-weight: 700;
@@ -1245,11 +1317,22 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
     # ---------- Per-game cards ----------
     if slate.empty:
         w('<div class="no-games">No Games Today</div>')
-    for _, g in slate.iterrows():
+    else:
+        game_rows = []
+        for _, g in slate.iterrows():
+            sort_min, label = time_label_for_row(g)
+            game_rows.append((sort_min, label, g))
+        game_rows.sort(key=lambda x: (x[0] is None, x[0] if x[0] is not None else 9999))
 
-        home = g["home_team_name"]
-        away = g["away_team_name"]
-        home_ml = g["home_ml"]; away_ml = g["away_ml"]
+        last_label = None
+        for sort_min, label, g in game_rows:
+            if label != last_label:
+                w(f"<div class='time-break'>{label}</div>")
+                last_label = label
+
+            home = g["home_team_name"]
+            away = g["away_team_name"]
+            home_ml = g["home_ml"]; away_ml = g["away_ml"]
 
         home_prob = american_to_prob(home_ml)
         away_prob = american_to_prob(away_ml)
@@ -1543,8 +1626,8 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
         w("</div></div>")
         w("</div>")   # end two-col
         w("</div>")   # end team-card
-        w("</details>")
-        w("</div>")  # end game-card
+            w("</details>")
+            w("</div>")  # end game-card
 
     # --------- League overview ---------
     if not league_tbl.empty:
@@ -1808,6 +1891,21 @@ def main():
         os.makedirs("data", exist_ok=True)
         with open("data/team_signals.json", "w", encoding="utf-8") as f:
             json.dump({"asof_date": str(today), "teams": team_signals}, f, indent=2)
+    except Exception:
+        pass
+    try:
+        game_times = {}
+        for _, r in slate.iterrows():
+            gid = r.get("game_id")
+            if not gid:
+                continue
+            sort_min, label = time_label_for_row(r)
+            game_times[str(gid)] = {
+                "time_label": label,
+                "sort_minutes": sort_min,
+            }
+        with open("data/game_times.json", "w", encoding="utf-8") as f:
+            json.dump({"asof_date": str(today), "games": game_times}, f, indent=2)
     except Exception:
         pass
     outfile = f"dashboard_{today}.html"

@@ -577,6 +577,13 @@
     .game-group { border: 1px solid #eee; border-radius: 16px; margin: 12px 0; background:#fff; }
     .game-group.game-signal-high { background: #e8f7e8; border-color: #6ac46a; }
     .game-group.game-signal-low { background: #fbeaea; border-color: #e08b8b; }
+    .time-break {
+      margin: 14px 0 8px;
+      font-size: 18px;
+      font-weight: 800;
+      color: #2f5d86;
+      letter-spacing: 0.2px;
+    }
     .game-group summary {
       list-style:none;
       cursor:pointer;
@@ -1091,6 +1098,7 @@ let WHITELIST_BY_TEAM = new Map();
 let WHITELIST_ALL = new Set();
 let FEATURE_PID_BY_TEAM_KEY = new Map();
 let KEY_OUTS = new Map();
+let GAME_TIMES_BY_ID = {};
 let TEAM_SIGNALS = {};
 let PLAYER_FEATURES = {};
 function restLabel(lastDateStr) {
@@ -1721,12 +1729,14 @@ async function load() {
     injuriesData,
     teamSignalsData,
     playerFeaturesData,
+    gameTimesData,
   ] = await Promise.all([
     fetchText(snapshotUrl),
     fetchText(masterUrl),
     fetchJson(`./data/injuries_today.json?ts=${Date.now()}`).catch(() => ({})),
     fetchJson("./data/team_signals.json").catch(() => ({})),
     fetchJson("./data/player_features.json").catch(() => ({})),
+    fetchJson(`./data/game_times.json?ts=${Date.now()}`).catch(() => ({})),
   ]);
   injuriesData = await ensureFreshInjuries(injuriesData);
 
@@ -1780,6 +1790,7 @@ async function load() {
   // Team signals + player features (best effort)
   TEAM_SIGNALS = teamSignalsData && teamSignalsData.teams ? teamSignalsData.teams : {};
   PLAYER_FEATURES = playerFeaturesData && playerFeaturesData.players ? playerFeaturesData.players : {};
+  GAME_TIMES_BY_ID = gameTimesData && gameTimesData.games ? gameTimesData.games : {};
   buildFeaturePidIndex();
   computeKeyOuts();
 
@@ -2778,9 +2789,36 @@ async function load() {
         }
       }
 
-      for (const info of gamesTodayOrdered) {
+      const hasGameTimes = GAME_TIMES_BY_ID && Object.keys(GAME_TIMES_BY_ID).length;
+      const gameOrder = hasGameTimes
+        ? gamesTodayOrdered.map(info => {
+            const t = GAME_TIMES_BY_ID[info.id] || {};
+            const label = String(t.time_label || "TBD");
+            const sortMin = Number.isFinite(t.sort_minutes) ? t.sort_minutes : null;
+            return { info, label, sortMin };
+          }).sort((a, b) => {
+            const aKey = a.sortMin == null ? 1 : 0;
+            const bKey = b.sortMin == null ? 1 : 0;
+            if (aKey !== bKey) return aKey - bKey;
+            if (a.sortMin != null && b.sortMin != null && a.sortMin !== b.sortMin) {
+              return a.sortMin - b.sortMin;
+            }
+            return 0;
+          })
+        : gamesTodayOrdered.map(info => ({ info, label: null, sortMin: null }));
+
+      let lastTimeLabel = null;
+      for (const entry of gameOrder) {
+        const info = entry.info;
         const arr = playersByGame.get(info.id);
         if (!arr || !arr.length) continue;
+        if (hasGameTimes && entry.label && entry.label !== lastTimeLabel) {
+          const timeDiv = document.createElement("div");
+          timeDiv.className = "time-break";
+          timeDiv.textContent = entry.label;
+          cards.appendChild(timeDiv);
+          lastTimeLabel = entry.label;
+        }
         arr.sort((a, b) => {
           if (b.previewStrength !== a.previewStrength) return b.previewStrength - a.previewStrength;
           return String(a.playerName).localeCompare(String(b.playerName));

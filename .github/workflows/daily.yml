@@ -229,6 +229,7 @@ jobs:
           cp data/injuries_today.json ./site/data/injuries_today.json
           cp data/team_signals.json ./site/data/team_signals.json
           cp data/player_features.json ./site/data/player_features.json
+          cp data/game_times.json ./site/data/game_times.json
           cp data/moneyline_postmortem.json ./site/data/moneyline_postmortem.json
           cp data/targets_postmortem.json ./site/data/targets_postmortem.json
           cp data/team_opp_allowed.json ./site/data/team_opp_allowed.json
@@ -259,6 +260,7 @@ jobs:
             data/injuries_today.json \
             data/team_signals.json \
             data/player_features.json \
+            data/game_times.json \
             data/team_opp_allowed.json; do
             if [ -f "$f" ]; then
               cp "$f" "./site/data/history/${POST_DATE}/"
