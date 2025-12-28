@@ -246,10 +246,11 @@ def american_to_prob(odds):
     return None
 
 def _format_pt_label(dt_pt):
+    sort_minutes = (dt_pt.hour * 60) + dt_pt.minute
     hour = dt_pt.hour % 12
     if hour == 0:
         hour = 12
-    return hour * 60 + dt_pt.minute, f"{hour}:{dt_pt.minute:02d} PT"
+    return sort_minutes, f"{hour}:{dt_pt.minute:02d} PT"
 
 def parse_time_label(val):
     if val is None:
