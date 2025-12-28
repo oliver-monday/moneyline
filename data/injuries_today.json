@@ -1,13 +1,8 @@
 {
   "asof_date": "2025-12-28",
-  "built_at_utc": "2025-12-28T17:09:10Z",
+  "built_at_utc": "2025-12-28T20:20:52Z",
   "source": "rotowire",
   "PHI": [
-    {
-      "name": "P. George",
-      "status": "PROB",
-      "details": "P. George (Prob)"
-    },
     {
       "name": "J. Embiid",
       "status": "OUT",
@@ -88,11 +83,6 @@
   ],
   "GSW": [
     {
-      "name": "B. Podziemski",
-      "status": "PROB",
-      "details": "B. Podziemski (Prob)"
-    },
-    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
@@ -103,14 +93,9 @@
       "details": "D. Melton (Out)"
     },
     {
-      "name": "R. Barrett",
-      "status": "QUES",
-      "details": "R. Barrett (Ques)"
-    },
-    {
       "name": "C. Murray-Boyles",
-      "status": "DOUBT",
-      "details": "C. Murray-Boyles (Doubt)"
+      "status": "OUT",
+      "details": "C. Murray-Boyles (Out)"
     },
     {
       "name": "J. Poeltl",
@@ -120,14 +105,9 @@
   ],
   "TOR": [
     {
-      "name": "R. Barrett",
-      "status": "QUES",
-      "details": "R. Barrett (Ques)"
-    },
-    {
       "name": "C. Murray-Boyles",
-      "status": "DOUBT",
-      "details": "C. Murray-Boyles (Doubt)"
+      "status": "OUT",
+      "details": "C. Murray-Boyles (Out)"
     },
     {
       "name": "J. Poeltl",
@@ -256,14 +236,14 @@
       "details": "V. Williams (Out)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
       "name": "M. Branham",
       "status": "QUES",
       "details": "M. Branham (Ques)"
+    },
+    {
+      "name": "K. George",
+      "status": "OUT",
+      "details": "K. George (Out)"
     },
     {
       "name": "C. Kispert",
@@ -284,8 +264,8 @@
     },
     {
       "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
+      "status": "OUT",
+      "details": "K. George (Out)"
     },
     {
       "name": "C. Kispert",
@@ -306,8 +286,13 @@
     },
     {
       "name": "C. Christie",
+      "status": "PROB",
+      "details": "C. Christie (Prob)"
+    },
+    {
+      "name": "J. Collins",
       "status": "QUES",
-      "details": "C. Christie (Ques)"
+      "details": "J. Collins (Ques)"
     },
     {
       "name": "B. Bogdanovic",
@@ -358,8 +343,8 @@
     },
     {
       "name": "J. Hayes",
-      "status": "DOUBT",
-      "details": "J. Hayes (Doubt)"
+      "status": "OUT",
+      "details": "J. Hayes (Out)"
     },
     {
       "name": "A. Reaves",
@@ -380,8 +365,8 @@
     },
     {
       "name": "J. Hayes",
-      "status": "DOUBT",
-      "details": "J. Hayes (Doubt)"
+      "status": "OUT",
+      "details": "J. Hayes (Out)"
     },
     {
       "name": "A. Reaves",
@@ -396,14 +381,19 @@
   ],
   "DET": [
     {
+      "name": "J. Collins",
+      "status": "QUES",
+      "details": "J. Collins (Ques)"
+    },
+    {
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
     },
     {
       "name": "C. Christie",
-      "status": "QUES",
-      "details": "C. Christie (Ques)"
+      "status": "PROB",
+      "details": "C. Christie (Prob)"
     },
     {
       "name": "B. Bogdanovic",
