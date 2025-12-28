@@ -150,7 +150,13 @@ def determine_postmortem_date_from_game_log(path: str = "player_game_log.csv") -
         return None
     if "game_date" not in df.columns:
         return None
-    dates = [str(x).strip() for x in df["game_date"] if str(x).strip()]
+    dates = []
+    for x in df["game_date"]:
+        s = str(x).strip()
+        if not s:
+            continue
+        m = re.search(r"\d{4}-\d{2}-\d{2}", s)
+        dates.append(m.group(0) if m else s)
     if not dates:
         return None
     return sorted(set(dates))[-1]
@@ -408,7 +414,7 @@ def build_game_log_indexes(game_log_df: pd.DataFrame, target_date: str):
     if game_log_df.empty:
         return {}, {}, {}, {}
     df = game_log_df.copy()
-    df["game_date"] = df["game_date"].astype(str).str.strip()
+    df["game_date"] = df["game_date"].astype(str).str.strip().str.extract(r"(\d{4}-\d{2}-\d{2})", expand=False)
     day_logs = df[df["game_date"] == target_date].copy()
     df["player_name_norm"] = df["player_name"].map(normalize_name)
     df["player_id_norm"] = df["player_id"].astype(str).str.strip()
@@ -594,6 +600,12 @@ def main() -> int:
         results_date = latest_final_date_from_master(master_path, local_today)
     if not results_date:
         results_date = (local_today - dt.timedelta(days=1)).strftime("%Y-%m-%d")
+    try:
+        res_date_obj = dt.datetime.strptime(results_date, "%Y-%m-%d").date()
+        if res_date_obj >= local_today:
+            results_date = (local_today - dt.timedelta(days=1)).strftime("%Y-%m-%d")
+    except Exception:
+        pass
 
     snapshot_entries = []
     note = None
