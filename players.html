@@ -626,6 +626,52 @@
       pointer-events: auto;
       transform: translateY(0);
     }
+    .slip-panel { border: 1px solid #eee; border-radius: 12px; margin: 10px 0 12px; background:#fff; }
+    .slip-panel summary {
+      cursor: pointer;
+      list-style: none;
+      position: relative;
+      padding: 12px 14px;
+      padding-right: var(--summaryPadRight);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 800;
+      color: #444;
+    }
+    .slip-panel summary::-webkit-details-marker { display: none; }
+    .slip-panel summary::after {
+      content: "›";
+      position: absolute;
+      right: var(--chevRight);
+      top: 50%;
+      transform: translateY(-50%) rotate(0deg);
+      opacity: 0.45;
+      font-size: 22px;
+      font-weight: 700;
+      transition: transform 0.15s ease;
+    }
+    .slip-panel[open] summary::after { transform: translateY(-50%) rotate(90deg); }
+    .slip-body { padding: 10px 14px 12px; }
+    .slip-actions { display: flex; gap: 8px; margin-bottom: 10px; }
+    .slip-actions button {
+      padding: 6px 10px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      background: #f8f8f8;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .slip-item { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
+    .slip-name { font-weight: 700; color: #333; }
+    .slip-remove {
+      margin-left: auto;
+      border: 0;
+      background: transparent;
+      font-size: 16px;
+      cursor: pointer;
+      color: #888;
+    }
     .game-group summary {
       list-style:none;
       cursor:pointer;
@@ -705,6 +751,10 @@
       display:inline-flex;
       align-items:center;
       gap:6px;
+    }
+    .slip-selected {
+      border-color: #2a7a2a;
+      box-shadow: 0 0 0 2px rgba(42, 122, 42, 0.12);
     }
     .pill-soft {
       border-color:#6ac46a !important;
@@ -890,13 +940,13 @@
   </details>
 
   <details class="injury-panel" id="injuryPanel">
-    <summary><span class="injury-title">🚫 Injury Report 🥵</span></summary>
+    <summary><span class="injury-title">🥵 Injury Report 🚫</span></summary>
     <div class="injury-body" id="injuryContent"></div>
   </details>
 
   <details class="suggested-targets" id="suggestedPanel">
     <summary>
-      <span>✅ Suggested Targets 🤑</span>
+      <span>🤑 Suggested Targets ✅</span>
       <span id="suggestedCount" class="suggested-count"></span>
     </summary>
     <div class="suggested-body">
@@ -908,6 +958,17 @@
         <summary>All Targets</summary>
         <div class="suggested-subbody" id="suggestedAllContent"></div>
       </details>
+    </div>
+  </details>
+
+  <details class="slip-panel" id="slipDrawer">
+    <summary><span id="slipSummary">Slip (0/6)</span></summary>
+    <div class="slip-body">
+      <div class="slip-actions">
+        <button type="button" id="slipCopy">Copy Slip</button>
+        <button type="button" id="slipClear">Clear</button>
+      </div>
+      <div id="slipList" class="slip-list"></div>
     </div>
   </details>
 
@@ -1360,6 +1421,115 @@ function nameKey(name) {
   return `${first}_${last}`;
 }
 
+const SLIP_KEY = "nbagpt_slip_v01";
+const SLIP_MAX = 6;
+let slipLegs = [];
+
+function normTeam(s) {
+  return String(s || "").trim().toUpperCase();
+}
+
+function normStat(s) {
+  return String(s || "").trim().toUpperCase();
+}
+
+function parseThreshold(val) {
+  const n = Number(val);
+  return Number.isFinite(n) ? n : val;
+}
+
+function legKey(leg) {
+  const pid = String(leg.player_id || "").trim();
+  const nameKeyPart = pid ? pid : normalizeName(leg.player_name || "");
+  return `${nameKeyPart}|${normTeam(leg.team_abbrev)}|${normStat(leg.stat)}|${leg.threshold}`;
+}
+
+function loadSlip() {
+  try {
+    const raw = localStorage.getItem(SLIP_KEY);
+    const parsed = raw ? JSON.parse(raw) : [];
+    if (Array.isArray(parsed)) slipLegs = parsed;
+    else slipLegs = [];
+  } catch (err) {
+    slipLegs = [];
+  }
+}
+
+function saveSlip() {
+  try {
+    localStorage.setItem(SLIP_KEY, JSON.stringify(slipLegs));
+  } catch (err) {
+    // ignore
+  }
+}
+
+function updateSlipSelected() {
+  const items = document.querySelectorAll('[data-slip-leg="1"]');
+  items.forEach(el => {
+    const leg = legFromEl(el);
+    if (!leg) return;
+    const key = legKey(leg);
+    const found = slipLegs.some(l => legKey(l) === key);
+    el.classList.toggle("slip-selected", found);
+  });
+}
+
+function renderSlip() {
+  const slipSummary = document.getElementById("slipSummary");
+  const slipList = document.getElementById("slipList");
+  if (slipSummary) slipSummary.textContent = `Slip (${slipLegs.length}/${SLIP_MAX})`;
+  if (!slipList) return;
+  if (!slipLegs.length) {
+    slipList.innerHTML = `<div class="muted">No legs yet.</div>`;
+    updateSlipSelected();
+    return;
+  }
+  const rows = slipLegs.map((leg) => {
+    const stat = normStat(leg.stat);
+    const thr = leg.threshold;
+    const key = legKey(leg);
+    return `
+      <div class="slip-item">
+        <span class="slip-name">${leg.player_name} (${normTeam(leg.team_abbrev)})</span>
+        <span class="target-chip">${stat} ${thr}+</span>
+        <button class="slip-remove" data-slip-remove="${key}" aria-label="Remove">×</button>
+      </div>
+    `;
+  }).join("");
+  slipList.innerHTML = rows;
+  updateSlipSelected();
+}
+
+function legFromEl(el) {
+  const node = el.closest('[data-slip-leg="1"]');
+  if (!node) return null;
+  const player_name = node.getAttribute("data-player-name") || "";
+  const team_abbrev = node.getAttribute("data-team") || "";
+  const stat = node.getAttribute("data-stat") || "";
+  const threshold = parseThreshold(node.getAttribute("data-threshold"));
+  if (!player_name || !team_abbrev || !stat || threshold == null) return null;
+  return {
+    player_id: node.getAttribute("data-player-id") || "",
+    player_name,
+    team_abbrev,
+    stat,
+    threshold,
+  };
+}
+
+function toggleLeg(leg) {
+  const key = legKey(leg);
+  const idx = slipLegs.findIndex(l => legKey(l) === key);
+  if (idx >= 0) {
+    slipLegs.splice(idx, 1);
+  } else {
+    if (slipLegs.length >= SLIP_MAX) return;
+    slipLegs.push({ ...leg, key });
+  }
+  saveSlip();
+  renderSlip();
+}
+
 function tokens(normName) {
   return (normName || "").split(" ").filter(Boolean);
 }
@@ -1535,12 +1705,25 @@ function pillClass(hits, gp) {
   return "";
 }
 
+function escAttr(s) {
+  return String(s || "").replace(/"/g, "&quot;");
+}
+
+function slipAttrsFromRow(r, stat, t) {
+  const pid = r && r.player_id ? String(r.player_id) : "";
+  const name = r && r.player_name ? String(r.player_name) : "";
+  const team = r && (r.last_team_abbrev || r.team_abbrev) ? String(r.last_team_abbrev || r.team_abbrev) : "";
+  const statUp = String(stat || "").toUpperCase();
+  return `data-slip-leg="1" data-player-id="${escAttr(pid)}" data-player-name="${escAttr(name)}" data-team="${escAttr(team)}" data-stat="${escAttr(statUp)}" data-threshold="${escAttr(t)}"`;
+}
+
 function hitPill(r, stat, t, win) {
   const hits = parseInt(r[`${stat}_ge${t}_hits_${win}`] || "0", 10);
   const gp = parseInt(r[`gp_${win}`] || "0", 10);
   const cls = pillClass(hits, gp);
   const text = gp ? `${t}+ : ${hits}/${gp}` : `${t}+ : —`;
-  return `<span class="pill ${cls}">${text}</span>`;
+  const attrs = slipAttrsFromRow(r, stat, t);
+  return `<span class="pill ${cls}" ${attrs}>${text}</span>`;
 }
 
 function bestLegs(r, stat, thresholds, win) {
@@ -1568,9 +1751,10 @@ function bestLegs(r, stat, thresholds, win) {
   return out.sort((a, b) => b.t - a.t);
 }
 
-function legPillHTML(t, hits, gp) {
+function legPillHTML(r, stat, t, hits, gp) {
   const cls = pillClass(hits, gp);
-  return `<span class="pill ${cls}">${t}+ : ${hits}/${gp}</span>`;
+  const attrs = slipAttrsFromRow(r, stat, t);
+  return `<span class="pill ${cls}" ${attrs}>${t}+ : ${hits}/${gp}</span>`;
 }
 
 function seasonAvg(r, stat) {
@@ -2009,11 +2193,13 @@ async function load() {
     if (item.roleUp) flags.push("<span class=\"suggested-flag\">↑ ROLE</span>");
     if (item.injuryRisk) flags.push("<span class=\"suggested-flag\">INJURY RISK</span>");
     if (item.roleOpportunity) flags.push("<span class=\"suggested-flag\">ROLE ↑ OPPORTUNITY</span>");
+    const pid = item.playerId || "";
+    const team = item.team || "";
     return `
       <div class="suggested-row" data-player-key="${item.playerKey}" data-game-id="${item.gameId || ""}">
         <span class="suggested-player">${item.playerName}</span>
         <span class="suggested-chips">
-          <span class="target-chip suggested-chip">${chip}</span>
+          <span class="target-chip suggested-chip" data-slip-leg="1" data-player-id="${escAttr(pid)}" data-player-name="${escAttr(item.playerName)}" data-team="${escAttr(team)}" data-stat="${escAttr(stat)}" data-threshold="${escAttr(item.threshold)}">${chip}</span>
           <span class="suggested-meta">
             ${avgText ? `<span class="avg-anchor">${avgText}</span>` : ""}
             ${flags.join("")}
@@ -2074,6 +2260,7 @@ async function load() {
     }
     renderSuggestedSection(suggested.slice(0, 6), suggestedTopContent);
     renderSuggestedSection(allTargets, suggestedAllContent);
+    updateSlipSelected();
     return;
   }
 
@@ -2192,6 +2379,7 @@ async function load() {
           const roleUp = trendPP != null && trendPP >= 3;
           targetItems.push({
             playerName: data.playerName,
+            playerId: pid,
             team: data.team,
             opp: data.oppTeam,
             stat: t.stat,
@@ -2681,9 +2869,9 @@ async function load() {
       const rebBestArr = bestLegs(r, "reb", RA_T, win);
       const astBestArr = bestLegs(r, "ast", RA_T, win);
 
-      const ptsBest = ptsBestArr.map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
-      const rebBest = rebBestArr.map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
-      const astBest = astBestArr.map(x => legPillHTML(x.t, x.hits, x.gp)).join("");
+      const ptsBest = ptsBestArr.map(x => legPillHTML(r, "pts", x.t, x.hits, x.gp)).join("");
+      const rebBest = rebBestArr.map(x => legPillHTML(r, "reb", x.t, x.hits, x.gp)).join("");
+      const astBest = astBestArr.map(x => legPillHTML(r, "ast", x.t, x.hits, x.gp)).join("");
 
       const previewStrength = ptsBestArr.length + rebBestArr.length + astBestArr.length;
       const injuryMatch = matchInjury(team, r.player_name, injuriesByTeam);
@@ -2750,7 +2938,8 @@ async function load() {
           const statKey = String(t.stat || "").toLowerCase();
           const coreVal = getCoreVal(data.row, statKey, metricWinVal);
           const avgText = fmtAvgCore(avgVal, coreVal, _metricLabel);
-          const chip = `<span class="target-chip">Target: ${stat} ${t.t}+ (${t.hits}/${t.gp})</span>`;
+          const attrs = slipAttrsFromRow(data.row, t.stat, t.t);
+          const chip = `<span class="target-chip" ${attrs}>Target: ${stat} ${t.t}+ (${t.hits}/${t.gp})</span>`;
           const pills = data.oppTeam ? matchupPills(data.oppTeam, t.stat) : "";
           return `
             <div class="target-row" data-stat="${String(t.stat || "").toLowerCase()}">
@@ -2975,6 +3164,7 @@ async function load() {
 
     computeSuggestedFromCardData(cardDataList, "10", metricWinVal);
     applyMatchupContextToCards();
+    updateSlipSelected();
   }
 
   function applyMatchupContextToCards() {
@@ -3007,6 +3197,72 @@ async function load() {
   stableOnly.addEventListener("change", render);
   targetsOnly.addEventListener("change", render);
   render();
+
+  const slipDrawer = document.getElementById("slipDrawer");
+  const slipCopy = document.getElementById("slipCopy");
+  const slipClear = document.getElementById("slipClear");
+  const slipList = document.getElementById("slipList");
+  loadSlip();
+  renderSlip();
+
+  document.addEventListener("click", (e) => {
+    const el = e.target.closest('[data-slip-leg="1"]');
+    if (!el) return;
+    e.preventDefault();
+    e.stopPropagation();
+    const leg = legFromEl(el);
+    if (!leg) return;
+    toggleLeg(leg);
+  });
+
+  if (slipList) {
+    slipList.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-slip-remove]");
+      if (!btn) return;
+      e.preventDefault();
+      const key = btn.getAttribute("data-slip-remove");
+      const idx = slipLegs.findIndex(l => legKey(l) === key);
+      if (idx >= 0) {
+        slipLegs.splice(idx, 1);
+        saveSlip();
+        renderSlip();
+      }
+    });
+  }
+
+  if (slipCopy) {
+    slipCopy.addEventListener("click", async () => {
+      if (!slipLegs.length) return;
+      const lines = slipLegs.map((leg) => {
+        return `${leg.player_name} (${normTeam(leg.team_abbrev)}) ${normStat(leg.stat)} ${leg.threshold}+`;
+      }).join("\n");
+      try {
+        await navigator.clipboard.writeText(lines);
+      } catch (err) {
+        const ta = document.createElement("textarea");
+        ta.value = lines;
+        ta.style.position = "fixed";
+        ta.style.left = "-9999px";
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand("copy");
+        } catch (err2) {
+          // ignore
+        }
+        document.body.removeChild(ta);
+      }
+    });
+  }
+
+  if (slipClear) {
+    slipClear.addEventListener("click", () => {
+      if (!slipLegs.length) return;
+      slipLegs = [];
+      saveSlip();
+      renderSlip();
+    });
+  }
 
   const backToTop = document.getElementById("backToTop");
   if (backToTop) {
