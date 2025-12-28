@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-27",
-  "built_at_utc": "2025-12-28T03:00:56Z",
+  "built_at_utc": "2025-12-28T03:29:22Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -270,12 +270,22 @@
       "details": "Gary Trent (Out)"
     },
     {
+      "name": "Z. Collins",
+      "status": "QUES",
+      "details": "Z. Collins (Ques)"
+    },
+    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
     }
   ],
   "CHI": [
+    {
+      "name": "Z. Collins",
+      "status": "QUES",
+      "details": "Z. Collins (Ques)"
+    },
     {
       "name": "N. Essengue",
       "status": "OFS",
