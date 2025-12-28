@@ -47,6 +47,7 @@ from urllib3.util.retry import Retry
 USER_AGENT = "Mozilla/5.0 (compatible; moneyline/1.0; +https://oliver-monday.github.io/moneyline/)"
 SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard"
 SUMMARY_URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary"
+DEBUG_TPM = True
 
 # --------------------------------------------------------------------
 # Helpers
@@ -226,6 +227,16 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
                 if key and key not in label_to_idx_norm:
                     label_to_idx_norm[key] = i
 
+            global DEBUG_TPM
+            if DEBUG_TPM:
+                try:
+                    first_athlete = athletes[0].get("athlete", {}).get("displayName") if athletes else ""
+                    print("[DEBUG_TPM] labels:", labels)
+                    print("[DEBUG_TPM] label_keys:", list(label_to_idx.keys()))
+                    print("[DEBUG_TPM] first_athlete:", first_athlete)
+                except Exception:
+                    pass
+
             def get_stat(stats_list: List[str], key: str) -> Optional[str]:
                 idx = label_to_idx.get(key.upper())
                 if idx is None:
@@ -248,16 +259,27 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
                 reb_raw = get_stat(stats_list, "REB")
                 ast_raw = get_stat(stats_list, "AST")
                 tpm_raw = None
+                matched_key = "NONE"
                 for key in ("3PM", "3PT", "FG3M", "3FGM", "3PTM", "3P", "3PA_MADE"):
                     tpm_raw = get_stat(stats_list, key)
                     if tpm_raw is not None:
+                        matched_key = key
                         break
                 if tpm_raw is None:
                     for lab, idx in label_to_idx_norm.items():
                         if lab.startswith(("3PT", "3PM", "FG3M")):
                             if idx < len(stats_list):
                                 tpm_raw = stats_list[idx]
+                                matched_key = f"norm:{lab}"
                                 break
+
+                if DEBUG_TPM:
+                    try:
+                        print(f"[DEBUG_TPM] tpm_match={matched_key} raw={tpm_raw}")
+                        print("[DEBUG_TPM] stats_list:", stats_list[:8])
+                    except Exception:
+                        pass
+                    DEBUG_TPM = False
 
                 # DNP signal: ESPN sometimes includes "didNotPlay" or MIN="--"
                 did_not_play = bool(a.get("didNotPlay") or a.get("didNotDress") or a.get("notActive") or False)
@@ -708,6 +730,8 @@ def main():
             print(f"[ingest] rows={len(df_merged)} tpm_nonzero={tpm_nonzero} sample_tpm={sample_name}:{sample_tpm}")
         else:
             print(f"[ingest] rows={len(df_merged)} tpm_nonzero={tpm_nonzero}")
+        if tpm_nonzero == 0 and args.mode == "yesterday":
+            print("[DEBUG_TPM] tpm_nonzero=0 — likely label mismatch; re-run after inspecting labels output.")
     except Exception:
         pass
 
