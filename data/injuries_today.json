@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-28",
-  "built_at_utc": "2025-12-28T22:26:07Z",
+  "built_at_utc": "2025-12-28T23:21:57Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -39,9 +39,19 @@
       "details": "Fantasy Football (Rest)"
     },
     {
+      "name": "I. Hartenstein",
+      "status": "QUES",
+      "details": "I. Hartenstein (Ques)"
+    },
+    {
       "name": "I. Joe",
       "status": "QUES",
       "details": "I. Joe (Ques)"
+    },
+    {
+      "name": "A. Mitchell",
+      "status": "QUES",
+      "details": "A. Mitchell (Ques)"
     },
     {
       "name": "T. Sorber",
@@ -66,9 +76,19 @@
   ],
   "OKC": [
     {
+      "name": "I. Hartenstein",
+      "status": "QUES",
+      "details": "I. Hartenstein (Ques)"
+    },
+    {
       "name": "I. Joe",
       "status": "QUES",
       "details": "I. Joe (Ques)"
+    },
+    {
+      "name": "A. Mitchell",
+      "status": "QUES",
+      "details": "A. Mitchell (Ques)"
     },
     {
       "name": "T. Sorber",
