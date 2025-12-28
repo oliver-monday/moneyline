@@ -218,13 +218,21 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
             labels = grp.get("labels") or []
             athletes = grp.get("athletes") or []
 
-            # Build label index map
+            # Build label index maps (exact + normalized)
             label_to_idx = {str(lab).upper(): i for i, lab in enumerate(labels)}
+            label_to_idx_norm = {}
+            for i, lab in enumerate(labels):
+                key = "".join(ch for ch in str(lab).upper() if ch.isalnum())
+                if key and key not in label_to_idx_norm:
+                    label_to_idx_norm[key] = i
 
             def get_stat(stats_list: List[str], key: str) -> Optional[str]:
                 idx = label_to_idx.get(key.upper())
                 if idx is None:
-                    return None
+                    norm = "".join(ch for ch in str(key).upper() if ch.isalnum())
+                    idx = label_to_idx_norm.get(norm)
+                    if idx is None:
+                        return None
                 if idx >= len(stats_list):
                     return None
                 return stats_list[idx]
@@ -244,6 +252,12 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
                     tpm_raw = get_stat(stats_list, key)
                     if tpm_raw is not None:
                         break
+                if tpm_raw is None:
+                    for lab, idx in label_to_idx_norm.items():
+                        if lab.startswith(("3PT", "3PM", "FG3M")):
+                            if idx < len(stats_list):
+                                tpm_raw = stats_list[idx]
+                                break
 
                 # DNP signal: ESPN sometimes includes "didNotPlay" or MIN="--"
                 did_not_play = bool(a.get("didNotPlay") or a.get("didNotDress") or a.get("notActive") or False)
