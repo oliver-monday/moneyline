@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-28",
-  "built_at_utc": "2025-12-28T20:20:52Z",
+  "built_at_utc": "2025-12-28T22:26:07Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -39,6 +39,11 @@
       "details": "Fantasy Football (Rest)"
     },
     {
+      "name": "I. Joe",
+      "status": "QUES",
+      "details": "I. Joe (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
@@ -60,6 +65,11 @@
     }
   ],
   "OKC": [
+    {
+      "name": "I. Joe",
+      "status": "QUES",
+      "details": "I. Joe (Ques)"
+    },
     {
       "name": "T. Sorber",
       "status": "OFS",
@@ -201,11 +211,6 @@
   ],
   "MEM": [
     {
-      "name": "J. Landale",
-      "status": "QUES",
-      "details": "J. Landale (Ques)"
-    },
-    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -226,6 +231,11 @@
       "details": "J. Konchar (Out)"
     },
     {
+      "name": "J. Landale",
+      "status": "OUT",
+      "details": "J. Landale (Out)"
+    },
+    {
       "name": "S. Pippen",
       "status": "OUT",
       "details": "S. Pippen (Out)"
@@ -234,11 +244,6 @@
       "name": "V. Williams",
       "status": "OUT",
       "details": "V. Williams (Out)"
-    },
-    {
-      "name": "M. Branham",
-      "status": "QUES",
-      "details": "M. Branham (Ques)"
     },
     {
       "name": "K. George",
@@ -257,11 +262,6 @@
     }
   ],
   "WAS": [
-    {
-      "name": "M. Branham",
-      "status": "QUES",
-      "details": "M. Branham (Ques)"
-    },
     {
       "name": "K. George",
       "status": "OUT",
@@ -313,8 +313,8 @@
   "SAC": [
     {
       "name": "D. Carter",
-      "status": "QUES",
-      "details": "D. Carter (Ques)"
+      "status": "OUT",
+      "details": "D. Carter (Out)"
     },
     {
       "name": "D. Eubanks",
