@@ -265,6 +265,23 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
                     except ValueError:
                         return 0
 
+                def parse_tpm(x: Optional[str]) -> int:
+                    if x is None:
+                        return 0
+                    s = str(x).strip()
+                    if s in ("", "--", "—", "–"):
+                        return 0
+                    if "-" in s:
+                        left = s.split("-", 1)[0].strip()
+                        try:
+                            return int(float(left))
+                        except ValueError:
+                            return 0
+                    try:
+                        return int(float(s))
+                    except ValueError:
+                        return 0
+
                 row = {
                     "team_id": team_id,
                     "team_abbrev": team_abbrev,
@@ -276,7 +293,7 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
                     "pts": to_int(pts_raw),
                     "reb": to_int(reb_raw),
                     "ast": to_int(ast_raw),
-                    "tpm": to_int(tpm_raw),
+                    "tpm": parse_tpm(tpm_raw),
                     "dnp": dnp,
                 }
                 # Filter out empty athlete ids (rare)
@@ -666,6 +683,19 @@ def main():
     df_audit.to_csv(args.audit, index=False)
 
     unresolved = write_unresolved(wl, dim_new, args.unresolved)
+
+    try:
+        tpm_vals = pd.to_numeric(df_merged.get("tpm"), errors="coerce").fillna(0)
+        tpm_nonzero = int((tpm_vals > 0).sum())
+        sample = df_merged.loc[tpm_vals > 0].head(1)
+        if not sample.empty:
+            sample_name = sample["player_name"].iloc[0]
+            sample_tpm = sample["tpm"].iloc[0]
+            print(f"[ingest] rows={len(df_merged)} tpm_nonzero={tpm_nonzero} sample_tpm={sample_name}:{sample_tpm}")
+        else:
+            print(f"[ingest] rows={len(df_merged)} tpm_nonzero={tpm_nonzero}")
+    except Exception:
+        pass
 
     print(f"Upserted {len(df_new)} new rows → {args.out} (total now {len(df_merged)})")
     print(f"Updated dim → {args.dim} (total now {len(dim_new)})")
