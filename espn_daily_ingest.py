@@ -104,6 +104,7 @@ USER_AGENT = (
 MASTER_COLUMNS = [
     "game_id",
     "game_date",
+    "game_time_utc",
     "home_team_name",
     "home_team_abbrev",
     "home_score",
@@ -358,6 +359,7 @@ def parse_scoreboard(date_obj: dt.date, data: Dict[str, Any]) -> List[Dict[str, 
         row = {
             "game_id": str(game_id),
             "game_date": date_obj.strftime("%Y-%m-%d"),
+            "game_time_utc": comp.get("date") or ev.get("date"),
 
             "home_team_name": home_info["name"],
             "home_team_abbrev": home_info["abbrev"],

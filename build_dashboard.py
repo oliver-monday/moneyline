@@ -28,6 +28,7 @@ MASTER_PATH = Path("nba_master.csv")
 TIME_COLS = [
     "game_time_pt","start_time_pt","tipoff_pt",
     "game_time","start_time","tipoff",
+    "game_time_utc",
     "game_datetime_utc","start_time_utc",
     "commence_time_utc","commence_time",
 ]
