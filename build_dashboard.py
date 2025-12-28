@@ -951,11 +951,13 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
             margin: 0 0 18px;
         }
         .time-break {
-            margin: 14px 0 8px;
+            margin: 12px 0;
             font-size: 18px;
             font-weight: 800;
             color: #2f5d86;
             letter-spacing: 0.2px;
+            padding: 10px 0 6px;
+            border-bottom: 2px solid #2f5d86;
         }
         .no-games {
             font-size: 18px;
