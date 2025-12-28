@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-27",
-  "built_at_utc": "2025-12-27T23:21:39Z",
+  "built_at_utc": "2025-12-28T01:07:48Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -172,11 +172,6 @@
       "details": "G. Bitadze (Out)"
     },
     {
-      "name": "C. Castleton",
-      "status": "OUT",
-      "details": "C. Castleton (Out)"
-    },
-    {
       "name": "J. Suggs",
       "status": "OUT",
       "details": "J. Suggs (Out)"
@@ -197,11 +192,6 @@
       "name": "G. Bitadze",
       "status": "OUT",
       "details": "G. Bitadze (Out)"
-    },
-    {
-      "name": "C. Castleton",
-      "status": "OUT",
-      "details": "C. Castleton (Out)"
     },
     {
       "name": "J. Suggs",
@@ -270,24 +260,14 @@
   ],
   "MIL": [
     {
-      "name": "G. Antetokounmpo",
-      "status": "QUES",
-      "details": "G. Antetokounmpo (Ques)"
-    },
-    {
-      "name": "G. Trent",
-      "status": "QUES",
-      "details": "G. Trent (Ques)"
-    },
-    {
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
     },
     {
-      "name": "J. Giddey",
-      "status": "QUES",
-      "details": "J. Giddey (Ques)"
+      "name": "Gary Trent",
+      "status": "OUT",
+      "details": "Gary Trent (Out)"
     },
     {
       "name": "N. Essengue",
@@ -300,19 +280,9 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "J. Giddey",
-      "status": "QUES",
-      "details": "J. Giddey (Ques)"
     }
   ],
   "CLE": [
-    {
-      "name": "D. Garland",
-      "status": "PROB",
-      "details": "D. Garland (Prob)"
-    },
     {
       "name": "L. Nance",
       "status": "OUT",
@@ -325,8 +295,8 @@
     },
     {
       "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
+      "status": "OUT",
+      "details": "A. Sengun (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -337,8 +307,8 @@
   "HOU": [
     {
       "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
+      "status": "OUT",
+      "details": "A. Sengun (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -351,11 +321,6 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
-    },
-    {
-      "name": "A. Nesmith",
-      "status": "QUES",
-      "details": "A. Nesmith (Ques)"
     },
     {
       "name": "I. Jackson",
