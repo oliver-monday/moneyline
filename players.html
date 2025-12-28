@@ -584,6 +584,35 @@
       color: #2f5d86;
       letter-spacing: 0.2px;
     }
+    .time-group {
+      border: 0;
+      margin: 12px 0;
+      background: transparent;
+    }
+    .time-group summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 18px;
+      font-weight: 800;
+      color: #2f5d86;
+      padding: 10px 0 6px;
+      border-bottom: 2px solid #2f5d86;
+    }
+    .time-group summary::-webkit-details-marker { display: none; }
+    .time-group summary::after {
+      content: "›";
+      font-size: 22px;
+      color: #2f5d86;
+      opacity: 0.6;
+      transform: rotate(0deg);
+      transition: transform 0.15s ease;
+      line-height: 1;
+    }
+    .time-group.is-open summary::after { transform: rotate(90deg); }
+    .time-group-body { padding: 8px 0 4px; }
     .game-group summary {
       list-style:none;
       cursor:pointer;
@@ -841,20 +870,20 @@
 
   <details class="postmortem-panel" id="postmortemPanel" hidden>
     <summary>
-      <span class="postmortem-title">👀 Yesterday Recap</span>
+      <span class="postmortem-title">🏀 Yesterday Recap 👀</span>
       <span class="postmortem-preview" id="postmortemPreview"></span>
     </summary>
     <div class="postmortem-body" id="postmortemBody"></div>
   </details>
 
   <details class="injury-panel" id="injuryPanel">
-    <summary><span class="injury-title">🚫 Injury Report</span></summary>
+    <summary><span class="injury-title">🚫 Injury Report 🥵</span></summary>
     <div class="injury-body" id="injuryContent"></div>
   </details>
 
   <details class="suggested-targets" id="suggestedPanel">
     <summary>
-      <span>✅ Suggested Targets</span>
+      <span>✅ Suggested Targets 🤑</span>
       <span id="suggestedCount" class="suggested-count"></span>
     </summary>
     <div class="suggested-body">
@@ -1939,7 +1968,8 @@ async function load() {
       d.classList.contains("suggested-game-group") ||
       d.classList.contains("suggested-subpanel") ||
       d.classList.contains("injury-panel") ||
-      d.classList.contains("injury-game")
+      d.classList.contains("injury-game") ||
+      d.classList.contains("time-group")
     )) {
       syncDetailsOpenClass(d);
       if (d.classList.contains("card") && d.open && d.dataset.hydrated !== "1") {
@@ -2808,15 +2838,23 @@ async function load() {
         : gamesTodayOrdered.map(info => ({ info, label: null, sortMin: null }));
 
       let lastTimeLabel = null;
+      let timeWrap = null;
       for (const entry of gameOrder) {
         const info = entry.info;
         const arr = playersByGame.get(info.id);
         if (!arr || !arr.length) continue;
         if (hasGameTimes && entry.label && entry.label !== lastTimeLabel) {
-          const timeDiv = document.createElement("div");
-          timeDiv.className = "time-break";
-          timeDiv.textContent = entry.label;
-          cards.appendChild(timeDiv);
+          const timeGroup = document.createElement("details");
+          timeGroup.className = "time-group is-open";
+          timeGroup.open = true;
+          const summary = document.createElement("summary");
+          summary.textContent = entry.label;
+          const body = document.createElement("div");
+          body.className = "time-group-body";
+          timeGroup.appendChild(summary);
+          timeGroup.appendChild(body);
+          cards.appendChild(timeGroup);
+          timeWrap = body;
           lastTimeLabel = entry.label;
         }
         arr.sort((a, b) => {
@@ -2868,7 +2906,7 @@ async function load() {
         wrap.className = "game-cards";
         arr.forEach(playerData => wrap.appendChild(createCard(playerData)));
         group.appendChild(wrap);
-        cards.appendChild(group);
+        (timeWrap || cards).appendChild(group);
         gameEls.push({ el: group, signal: gameSignal, targetsCount });
       }
 
@@ -2918,7 +2956,7 @@ async function load() {
       cards.appendChild(frag);
     }
 
-    document.querySelectorAll("details.card, details.game-group, details.suggested-targets, details.suggested-subpanel, details.suggested-game-group").forEach(syncDetailsOpenClass);
+    document.querySelectorAll("details.card, details.game-group, details.time-group, details.suggested-targets, details.suggested-subpanel, details.suggested-game-group").forEach(syncDetailsOpenClass);
 
     computeSuggestedFromCardData(cardDataList, "10", metricWinVal);
     applyMatchupContextToCards();
