@@ -457,12 +457,12 @@ game_id,game_date,home_team_name,home_team_abbrev,home_score,home_ml,home_spread
 401810284,2025-12-26,New Orleans Pelicans,NO,108,164.0,,Phoenix Suns,PHX,115,-198.0,,New Orleans,LA,,
 401810285,2025-12-26,Utah Jazz,UTAH,131,320.0,,Detroit Pistons,DET,129,-410.0,,Salt Lake City,UT,,
 401810286,2025-12-26,Portland Trail Blazers,POR,103,110.0,,LA Clippers,LAC,119,-130.0,,Portland,OR,,
-401810287,2025-12-27,Sacramento Kings,SAC,0,130.0,,Dallas Mavericks,DAL,0,-155.0,,Sacramento,CA,D. Eubanks (Out); Z. LaVine (Out); K. Murray (Out); D. Sabonis (Out),Dante Exum (OFS); D. Lively (OFS); K. Irving (Out)
-401810288,2025-12-27,Orlando Magic,ORL,0,164.0,,Denver Nuggets,DEN,0,-198.0,,Orlando,FL,G. Bitadze (Out); M. Wagner (Out),T. Bates (Out); C. Braun (Out); A. Gordon (Out); C. Johnson (Out)
-401810289,2025-12-27,New Orleans Pelicans,NO,0,185.0,,Phoenix Suns,PHX,0,-225.0,,New Orleans,LA,D. Murray (Out),J. Green (Out)
-401810290,2025-12-27,Atlanta Hawks,ATL,0,200.0,,New York Knicks,NY,0,-245.0,,Atlanta,GA,N. Dante (OFS); E. Ndiaye (OFS),Josh Hart (Out); L. Shamet (Out)
-401810291,2025-12-27,Miami Heat,MIA,0,-345.0,,Indiana Pacers,IND,0,275.0,,Miami,FL,T. Rozier (Out),T. Haliburton (OFS); Obi Toppin (Out)
-401810292,2025-12-27,Chicago Bulls,CHI,0,-185.0,,Milwaukee Bucks,MIL,0,154.0,,Chicago,IL,N. Essengue (OFS),G. Antetokounmpo (Out); T. Prince (Out)
-401810293,2025-12-27,Houston Rockets,HOU,0,-175.0,,Cleveland Cavaliers,CLE,0,145.0,,Houston,TX,F. VanVleet (Out),L. Nance (Out); Max Strus (Out)
-401810294,2025-12-27,Minnesota Timberwolves,MIN,0,-440.0,,Brooklyn Nets,BKN,0,340.0,,Minneapolis,MN,T. Shannon (Out),H. Highsmith (Out)
-401810295,2025-12-27,San Antonio Spurs,SA,0,-1350.0,,Utah Jazz,UTAH,0,800.0,,San Antonio,TX,,W. Kessler (OFS); G. Niang (Out)
+401810287,2025-12-27,Sacramento Kings,SAC,113,120.0,,Dallas Mavericks,DAL,107,-142.0,,Sacramento,CA,D. Carter (Out); D. Eubanks (Out); Z. LaVine (Out); K. Murray (Out); D. Sabonis (Out),Dante Exum (OFS); D. Lively (OFS); A. Davis (Out); K. Irving (Out); B. Williams (Out)
+401810288,2025-12-27,Orlando Magic,ORL,127,142.0,,Denver Nuggets,DEN,126,-170.0,,Orlando,FL,G. Bitadze (Out); J. Suggs (Out); M. Wagner (Out); F. Wagner (Out),T. Bates (Out); C. Braun (Out); A. Gordon (Out); C. Johnson (Out)
+401810289,2025-12-27,New Orleans Pelicans,NO,114,154.0,,Phoenix Suns,PHX,123,-185.0,,New Orleans,LA,H. Jones (Out); D. Murray (Out),G. Allen (Out); Koby Brea (Out); Ryan Dunn (Out); J. Green (Out)
+401810290,2025-12-27,Atlanta Hawks,ATL,125,185.0,,New York Knicks,NY,128,-225.0,,Atlanta,GA,N. Dante (OFS); E. Ndiaye (OFS); K. Porzingis (Out),Josh Hart (Out); M. McBride (Out); L. Shamet (Out)
+401810291,2025-12-27,Miami Heat,MIA,142,-270.0,,Indiana Pacers,IND,116,220.0,,Miami,FL,B. Adebayo (Out); T. Herro (Out); T. Rozier (Out),T. Haliburton (OFS); I. Jackson (Out); T. McConnell (Out); B. Sheppard (Out); Obi Toppin (Out)
+401810292,2025-12-27,Chicago Bulls,CHI,103,-125.0,,Milwaukee Bucks,MIL,112,105.0,,Chicago,IL,N. Essengue (OFS),T. Prince (Out); Gary Trent (Out)
+401810293,2025-12-27,Houston Rockets,HOU,117,-135.0,,Cleveland Cavaliers,CLE,100,114.0,,Houston,TX,A. Sengun (Out); F. VanVleet (Out),L. Nance (Out); Max Strus (Out)
+401810294,2025-12-27,Minnesota Timberwolves,MIN,107,-650.0,,Brooklyn Nets,BKN,123,470.0,,Minneapolis,MN,T. Shannon (Out),H. Highsmith (Out); C. Johnson (Out)
+401810295,2025-12-27,San Antonio Spurs,SA,114,-800.0,,Utah Jazz,UTAH,127,550.0,,San Antonio,TX,D. Fox (Out),W. Kessler (OFS); Ace Bailey (Out); Kevin Love (Out); G. Niang (Out)
