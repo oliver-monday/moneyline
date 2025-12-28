@@ -239,6 +239,11 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
                 pts_raw = get_stat(stats_list, "PTS")
                 reb_raw = get_stat(stats_list, "REB")
                 ast_raw = get_stat(stats_list, "AST")
+                tpm_raw = None
+                for key in ("3PM", "3PT", "FG3M", "3FGM", "3PTM", "3P", "3PA_MADE"):
+                    tpm_raw = get_stat(stats_list, key)
+                    if tpm_raw is not None:
+                        break
 
                 # DNP signal: ESPN sometimes includes "didNotPlay" or MIN="--"
                 did_not_play = bool(a.get("didNotPlay") or a.get("didNotDress") or a.get("notActive") or False)
@@ -271,6 +276,7 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
                     "pts": to_int(pts_raw),
                     "reb": to_int(reb_raw),
                     "ast": to_int(ast_raw),
+                    "tpm": to_int(tpm_raw),
                     "dnp": dnp,
                 }
                 # Filter out empty athlete ids (rare)
@@ -647,7 +653,7 @@ def main():
     # Stable column order
     col_order = [
         "season_end_year","game_id","game_date","team_abbrev","opp_abbrev","home_away",
-        "player_id","player_name","started","minutes","minutes_raw","pts","reb","ast","dnp",
+        "player_id","player_name","started","minutes","minutes_raw","pts","reb","ast","tpm","dnp",
         "team_hint_ok","ingested_at"
     ]
     for c in col_order:

@@ -105,6 +105,7 @@ def core_avg(series: pd.Series) -> float:
 
 def build_windows(df_player: pd.DataFrame, windows: List[int], thresholds: Dict[str, List[float]]) -> Dict[str, float]:
     """df_player sorted desc by game_date and filtered to games played (minutes>0)."""
+    stat_col = {"pts": "pts", "reb": "reb", "ast": "ast", "3pt": "tpm"}
     out: Dict[str, float] = {}
     for w in windows:
         d = df_player.head(w)
@@ -125,13 +126,14 @@ def build_windows(df_player: pd.DataFrame, windows: List[int], thresholds: Dict[
             out[f"min_ge{tkey}_hits_{w}"] = hits
             out[f"min_ge{tkey}_rate_{w}"] = rate
 
-        for stat in ("pts", "reb", "ast"):
-            out[f"{stat}_min_{w}"] = safe_min(d[stat]) if gp else float("nan")
+        for stat in ("pts", "reb", "ast", "3pt"):
+            col = stat_col.get(stat, stat)
+            out[f"{stat}_min_{w}"] = safe_min(d[col]) if gp else float("nan")
 
             for t in thresholds.get(stat, []):
                 tkey = str(int(t)) if float(t).is_integer() else str(t).replace(".", "p")
                 if gp:
-                    hits, rate = rate_and_hits_ge(d[stat], t)
+                    hits, rate = rate_and_hits_ge(d[col], t)
                 else:
                     hits, rate = 0, float("nan")
                 out[f"{stat}_ge{tkey}_hits_{w}"] = hits
@@ -232,9 +234,12 @@ def main():
         "pts": [10, 15, 20, 25, 30, 35],
         "reb": [2, 4, 6, 8, 10, 12, 14],
         "ast": [2, 4, 6, 8, 10, 12, 14],
+        "3pt": [1, 2, 3, 4, 5, 6],
     }
 
-    for c in ["minutes","pts","reb","ast","dnp"]:
+    if "tpm" not in df.columns:
+        df["tpm"] = 0
+    for c in ["minutes","pts","reb","ast","tpm","dnp"]:
         df[c] = pd.to_numeric(df[c], errors="coerce").fillna(0)
 
     df_played = df[(df["minutes"] > 0) & (df["dnp"] != 1)].copy()
@@ -277,9 +282,11 @@ def main():
             "season_avg_pts": float(gp["pts"].mean()) if len(gp) else float("nan"),
             "season_avg_reb": float(gp["reb"].mean()) if len(gp) else float("nan"),
             "season_avg_ast": float(gp["ast"].mean()) if len(gp) else float("nan"),
+            "season_avg_3pt": float(gp["tpm"].mean()) if len(gp) else float("nan"),
             "pts_avg_season": float(gp["pts"].mean()) if len(gp) else float("nan"),
             "reb_avg_season": float(gp["reb"].mean()) if len(gp) else float("nan"),
             "ast_avg_season": float(gp["ast"].mean()) if len(gp) else float("nan"),
+            "3pt_avg_season": float(gp["tpm"].mean()) if len(gp) else float("nan"),
             "games_total_rows": int(len(g)),
             "games_played_rows": int((g["minutes"] > 0).sum()),
             "dnp_rows": int((g["dnp"] == 1).sum()),
@@ -330,6 +337,8 @@ def main():
 
         # Landmine rates (actual == threshold - 1) over last 10/20/season games
         for stat, thresholds_list in thresholds.items():
+            if stat == "3pt":
+                continue
             for t in thresholds_list:
                 tkey = str(int(t)) if float(t).is_integer() else str(t).replace(".", "p")
                 landmine10 = (last10[stat] == (t - 1)).mean() if len(last10) else float("nan")
@@ -365,6 +374,8 @@ def main():
         def landmine_avg_for(tag: str):
             vals = []
             for stat, thresholds_list in thresholds.items():
+                if stat == "3pt":
+                    continue
                 for t in thresholds_list:
                     tkey = str(int(t)) if float(t).is_integer() else str(t).replace(".", "p")
                     key = f"{stat}_landmine_{tkey}_{tag}"

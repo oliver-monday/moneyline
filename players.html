@@ -977,7 +977,7 @@
   </details>
 
   <details class="filters-panel" id="filtersPanel">
-    <summary>🔎 Search · Filters</summary>
+    <summary>🔎 Search · Filters 🔍</summary>
     <div class="controls">
       <label class="control-search">Search
         <input id="q" type="text" placeholder="ex: Cade, Jokic" />
@@ -1192,6 +1192,7 @@ function getIqr(row, statKey, win) {
 
 const PTS_T = [10,15,20,25,30,35];
 const RA_T  = [2,4,6,8,10,12,14];
+const TPM_T = [1,2,3,4,5,6];
 
 let todayISO = "";
 let teamLastPlayedDate = new Map();
@@ -1272,10 +1273,10 @@ function stableMemo(r, win) {
 function targetsMemo(r, win) {
   if (isOut(r)) return [];
   const key = playerKey(r);
-  if (!key) return collectTargets(r, win, PTS_T, RA_T);
+  if (!key) return collectTargets(r, win, PTS_T, RA_T, TPM_T);
   const cacheKey = `${key}::${win}`;
   if (_targetsCache.has(cacheKey)) return _targetsCache.get(cacheKey);
-  const val = collectTargets(r, win, PTS_T, RA_T);
+  const val = collectTargets(r, win, PTS_T, RA_T, TPM_T);
   _targetsCache.set(cacheKey, val);
   return val;
 }
@@ -1311,9 +1312,12 @@ function computeSeasonStats(logRows) {
         rebMin: Infinity,
         astSum: 0,
         astMin: Infinity,
+        tpmSum: 0,
+        tpmMin: Infinity,
         ptsHits: initHits(PTS_T),
         rebHits: initHits(RA_T),
         astHits: initHits(RA_T),
+        tpmHits: initHits(TPM_T),
       };
       map.set(key, s);
     }
@@ -1347,6 +1351,13 @@ function computeSeasonStats(logRows) {
       if (ast < s.astMin) s.astMin = ast;
       for (const t of RA_T) if (ast >= t) s.astHits[t] += 1;
     }
+
+    const tpm = num(g.tpm);
+    if (Number.isFinite(tpm)) {
+      s.tpmSum += tpm;
+      if (tpm < s.tpmMin) s.tpmMin = tpm;
+      for (const t of TPM_T) if (tpm >= t) s.tpmHits[t] += 1;
+    }
   }
   return map;
 }
@@ -1365,6 +1376,9 @@ function applySeasonStats(players, seasonMap) {
     r.pts_min_SEASON = Number.isFinite(s.ptsMin) ? s.ptsMin : "";
     r.reb_min_SEASON = Number.isFinite(s.rebMin) ? s.rebMin : "";
     r.ast_min_SEASON = Number.isFinite(s.astMin) ? s.astMin : "";
+    r["3pt_min_SEASON"] = Number.isFinite(s.tpmMin) ? s.tpmMin : "";
+    r.season_avg_3pt = s.tpmSum / s.gp;
+    r["3pt_avg_season"] = s.tpmSum / s.gp;
 
     for (const t of PTS_T) {
       const hits = s.ptsHits[t] || 0;
@@ -1379,6 +1393,11 @@ function applySeasonStats(players, seasonMap) {
       const ah = s.astHits[t] || 0;
       r[`ast_ge${t}_hits_SEASON`] = ah;
       r[`ast_ge${t}_rate_SEASON`] = s.gp ? ah / s.gp : "";
+    }
+    for (const t of TPM_T) {
+      const th = s.tpmHits[t] || 0;
+      r[`3pt_ge${t}_hits_SEASON`] = th;
+      r[`3pt_ge${t}_rate_SEASON`] = s.gp ? th / s.gp : "";
     }
   }
 }
@@ -1789,15 +1808,17 @@ function decisionTarget(r, stat, thresholds, win, band) {
   return { stat, ...best, perfect: best.rate === 1, avg };
 }
 
-function collectTargets(r, win, ptsT, raT) {
+function collectTargets(r, win, ptsT, raT, tpmT) {
   if (isOut(r)) return [];
   const targets = [];
   const pts = decisionTarget(r, "pts", ptsT, win, 2.5);
   const reb = decisionTarget(r, "reb", raT, win, 1.0);
   const ast = decisionTarget(r, "ast", raT, win, 1.0);
+  const tpm = decisionTarget(r, "3pt", tpmT, win, 0.5);
   if (pts) targets.push(pts);
   if (reb) targets.push(reb);
   if (ast) targets.push(ast);
+  if (tpm) targets.push(tpm);
   return targets;
 }
 
@@ -2443,9 +2464,11 @@ async function load() {
     const ptsMin = fmt(data.row[`pts_min_${win}`], 0);
     const rebMin = fmt(data.row[`reb_min_${win}`], 0);
     const astMin = fmt(data.row[`ast_min_${win}`], 0);
+    const tpmMin = fmt(data.row[`3pt_min_${win}`], 0);
     const ptsFull = PTS_T.map(t => hitPill(data.row, "pts", t, win)).join("");
     const rebFull = RA_T.map(t => hitPill(data.row, "reb", t, win)).join("");
     const astFull = RA_T.map(t => hitPill(data.row, "ast", t, win)).join("");
+    const tpmFull = TPM_T.map(t => hitPill(data.row, "3pt", t, win)).join("");
 
     return `
       <div class="matrixhdr">
@@ -2462,6 +2485,11 @@ async function load() {
         <div><strong>AST</strong> · Avg ${data.astAvgText} • min in window: ${astMin}</div>
       </div>
       <div class="pills">${astFull}</div>
+
+      <div class="matrixhdr">
+        <div><strong>3PT</strong> · Avg ${data.tpmAvgText} • min in window: ${tpmMin}</div>
+      </div>
+      <div class="pills">${tpmFull}</div>
     `;
   }
 
@@ -2873,12 +2901,14 @@ async function load() {
       const ptsBestArr = bestLegs(r, "pts", PTS_T, win);
       const rebBestArr = bestLegs(r, "reb", RA_T, win);
       const astBestArr = bestLegs(r, "ast", RA_T, win);
+      const tpmBestArr = bestLegs(r, "3pt", TPM_T, win);
 
       const ptsBest = ptsBestArr.map(x => legPillHTML(r, "pts", x.t, x.hits, x.gp)).join("");
       const rebBest = rebBestArr.map(x => legPillHTML(r, "reb", x.t, x.hits, x.gp)).join("");
       const astBest = astBestArr.map(x => legPillHTML(r, "ast", x.t, x.hits, x.gp)).join("");
+      const tpmBest = tpmBestArr.map(x => legPillHTML(r, "3pt", x.t, x.hits, x.gp)).join("");
 
-      const previewStrength = ptsBestArr.length + rebBestArr.length + astBestArr.length;
+      const previewStrength = ptsBestArr.length + rebBestArr.length + astBestArr.length + tpmBestArr.length;
       const injuryMatch = matchInjury(team, r.player_name, injuriesByTeam);
       const injuryStatus = injuryMatch && injuryMatch.status
         ? String(injuryMatch.status).toUpperCase()
@@ -2888,9 +2918,11 @@ async function load() {
       const ptsAvg = seasonAvg(r, "pts");
       const rebAvg = seasonAvg(r, "reb");
       const astAvg = seasonAvg(r, "ast");
+      const tpmAvg = seasonAvg(r, "3pt");
       const ptsAvgText = Number.isFinite(ptsAvg) ? ptsAvg.toFixed(1) : "—";
       const rebAvgText = Number.isFinite(rebAvg) ? rebAvg.toFixed(1) : "—";
       const astAvgText = Number.isFinite(astAvg) ? astAvg.toFixed(1) : "—";
+      const tpmAvgText = Number.isFinite(tpmAvg) ? tpmAvg.toFixed(1) : "—";
 
       const targets = targetsMemo(r, win);
 
@@ -2910,12 +2942,14 @@ async function load() {
         ptsBest,
         rebBest,
         astBest,
+        tpmBest,
         previewStrength,
         lastLine,
         contextLine,
         ptsAvgText,
         rebAvgText,
         astAvgText,
+        tpmAvgText,
         targets,
         loadLine,
         injuryStatus,
@@ -3001,6 +3035,13 @@ async function load() {
                 <div class="statlabel">AST</div>
                 <div class="statavg">Avg ${data.astAvgText}</div>
                 <div class="pills">${data.astBest || placeholder}</div>
+              </div>
+            </div>
+            <div>
+              <div class="statline">
+                <div class="statlabel">3PT</div>
+                <div class="statavg">Avg ${data.tpmAvgText}</div>
+                <div class="pills">${data.tpmBest || placeholder}</div>
               </div>
             </div>
           </div>

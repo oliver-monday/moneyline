@@ -20,6 +20,7 @@ import pandas as pd
 
 PTS_T = [10, 15, 20, 25, 30, 35]
 RA_T = [2, 4, 6, 8, 10, 12, 14]
+TPM_T = [1, 2, 3, 4, 5, 6]
 
 
 def num(x):
@@ -119,12 +120,15 @@ def collect_targets(row: Dict[str, str], win: str):
     pts = decision_target(row, "pts", PTS_T, win, 2.5)
     reb = decision_target(row, "reb", RA_T, win, 1.0)
     ast = decision_target(row, "ast", RA_T, win, 1.0)
+    tpm = decision_target(row, "3pt", TPM_T, win, 0.5)
     if pts:
         targets.append(pts)
     if reb:
         targets.append(reb)
     if ast:
         targets.append(ast)
+    if tpm:
+        targets.append(tpm)
     return targets
 
 
@@ -339,7 +343,12 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
                 "delta": threshold - actual,
             })
 
-        incs = [5, 10] if stat == "pts" else [2, 4]
+        if stat == "pts":
+            incs = [5, 10]
+        elif stat == "3pt":
+            incs = [1, 2]
+        else:
+            incs = [2, 4]
         reached = None
         for inc in reversed(incs):
             if actual >= threshold + inc:
@@ -484,6 +493,7 @@ def resolve_stat_value(row, stat: str):
         "pts": ["pts", "points"],
         "reb": ["reb", "rebounds"],
         "ast": ["ast", "assists"],
+        "3pt": ["tpm", "3pm", "3pt", "fg3m", "3fgm"],
     }.get(stat_norm, [stat_norm])
     for col in candidates:
         if col in row and pd.notna(row[col]):
