@@ -636,8 +636,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-weight: 800;
-      color: #444;
+      font-weight: 700;
+      font-size: 18px;
+      color: #5a3a8a;
     }
     .slip-panel summary::-webkit-details-marker { display: none; }
     .slip-panel summary::after {
@@ -662,15 +663,16 @@
       font-weight: 700;
       cursor: pointer;
     }
+    #slipClear { color: #c93c3c; }
     .slip-item { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
     .slip-name { font-weight: 700; color: #333; }
     .slip-remove {
-      margin-left: auto;
+      margin-left: 2px;
       border: 0;
       background: transparent;
       font-size: 16px;
       cursor: pointer;
-      color: #888;
+      color: #c93c3c;
     }
     .game-group summary {
       list-style:none;
@@ -754,6 +756,8 @@
     }
     .slip-selected {
       border-color: #2a7a2a;
+      border-width: 2px;
+      font-weight: 700;
       box-shadow: 0 0 0 2px rgba(42, 122, 42, 0.12);
     }
     .pill-soft {
@@ -2557,6 +2561,7 @@ async function load() {
 
   if (suggestedPanel) {
     suggestedPanel.addEventListener("click", (e) => {
+      if (e.target.closest('[data-slip-leg="1"]')) return;
       const row = e.target.closest(".suggested-row");
       if (!row) return;
       const playerKey = row.getAttribute("data-player-key") || "";
