@@ -950,6 +950,25 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
             white-space: nowrap;
             margin: 0 0 18px;
         }
+        .time-group {
+            border: 0;
+            margin: 12px 0;
+            background: transparent;
+        }
+        .time-group > summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 18px;
+            font-weight: 800;
+            color: #2f5d86;
+            padding: 10px 0 6px;
+            border-bottom: 2px solid #2f5d86;
+        }
+        .time-group > summary::-webkit-details-marker { display: none; }
+        .time-group-body { padding: 8px 0 4px; }
         .time-break {
             margin: 12px 0;
             font-size: 18px;
@@ -1329,9 +1348,15 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
         game_rows.sort(key=lambda x: (x[0] is None, x[0] if x[0] is not None else 9999))
 
         last_label = None
-        for sort_min, label, g in game_rows:
+        time_wrap_open = False
+        for idx, (sort_min, label, g) in enumerate(game_rows):
             if label != last_label:
-                w(f"<div class='time-break'>{label}</div>")
+                if time_wrap_open:
+                    w("</div></details>")
+                w("<details class='time-group' open>")
+                w(f"<summary>{label}</summary>")
+                w("<div class='time-group-body'>")
+                time_wrap_open = True
                 last_label = label
 
             home = g["home_team_name"]
@@ -1632,6 +1657,11 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
             w("</div>")   # end team-card
             w("</details>")
             w("</div>")  # end game-card
+
+            next_label = game_rows[idx + 1][1] if idx + 1 < len(game_rows) else None
+            if time_wrap_open and (next_label is None or next_label != label):
+                w("</div></details>")
+                time_wrap_open = False
 
     # --------- League overview ---------
     if not league_tbl.empty:
