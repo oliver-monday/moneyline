@@ -53,7 +53,7 @@ jobs:
           import pandas as pd, sys
 
           expected = [
-            "game_id","game_date","home_team_name","home_team_abbrev","home_score","home_ml","home_spread",
+            "game_id","game_date","game_time_utc","home_team_name","home_team_abbrev","home_score","home_ml","home_spread",
             "away_team_name","away_team_abbrev","away_score","away_ml","away_spread","venue_city","venue_state",
             "home_injuries","away_injuries"
           ]
