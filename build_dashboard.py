@@ -969,6 +969,29 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
         }
         .time-group > summary::-webkit-details-marker { display: none; }
         .time-group-body { padding: 8px 0 4px; }
+        .back-to-top {
+            position: fixed;
+            right: 16px;
+            bottom: 16px;
+            z-index: 50;
+            background: #f2f2f2;
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 999px;
+            padding: 10px 12px;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(6px);
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
         .time-break {
             margin: 12px 0;
             font-size: 18px;
@@ -1336,6 +1359,7 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
     w("<div class='market-analysis-grid' id='marketAnalysisGrid'></div>")
     w("</div>")
     w("</details>")
+    w('<button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Back to Top</button>')
 
     # ---------- Per-game cards ----------
     if slate.empty:
@@ -1875,6 +1899,13 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
         "})"
         ".catch(()=>{ panel.hidden=true; });"
         "})();"
+        "const backToTop=document.getElementById('backToTop');"
+        "if(backToTop){"
+        "const update=()=>{const show=window.scrollY>400;backToTop.classList.toggle('visible',show);};"
+        "backToTop.addEventListener('click',()=>{window.scrollTo({top:0,behavior:'smooth'});});"
+        "window.addEventListener('scroll',update,{passive:true});"
+        "update();"
+        "}"
         "</script>"
     )
 
