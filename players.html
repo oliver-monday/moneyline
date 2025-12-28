@@ -589,29 +589,19 @@
       margin: 12px 0;
       background: transparent;
     }
-    .time-group summary {
+    .time-group > summary {
       cursor: pointer;
       list-style: none;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       font-size: 18px;
       font-weight: 800;
       color: #2f5d86;
       padding: 10px 0 6px;
       border-bottom: 2px solid #2f5d86;
     }
-    .time-group summary::-webkit-details-marker { display: none; }
-    .time-group summary::after {
-      content: "›";
-      font-size: 22px;
-      color: #2f5d86;
-      opacity: 0.6;
-      transform: rotate(0deg);
-      transition: transform 0.15s ease;
-      line-height: 1;
-    }
-    .time-group.is-open summary::after { transform: rotate(90deg); }
+    .time-group > summary::-webkit-details-marker { display: none; }
     .time-group-body { padding: 8px 0 4px; }
     .game-group summary {
       list-style:none;
