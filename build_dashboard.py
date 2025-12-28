@@ -296,7 +296,7 @@ def parse_time_label(val):
 
 def time_label_for_row(row):
     for col in TIME_COLS:
-        if col in row:
+        if col in row.index:
             mins, label = parse_time_label(row.get(col))
             if label != "TBD" or mins is not None:
                 return mins, label
@@ -1334,300 +1334,300 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
             away = g["away_team_name"]
             home_ml = g["home_ml"]; away_ml = g["away_ml"]
 
-        home_prob = american_to_prob(home_ml)
-        away_prob = american_to_prob(away_ml)
+            home_prob = american_to_prob(home_ml)
+            away_prob = american_to_prob(away_ml)
 
-        hist_home = team_results[(team_results["team"]==home)&(team_results["game_date"]<g["game_date"])]
-        hist_away = team_results[(team_results["team"]==away)&(team_results["game_date"]<g["game_date"])]
+            hist_home = team_results[(team_results["team"]==home)&(team_results["game_date"]<g["game_date"])]
+            hist_away = team_results[(team_results["team"]==away)&(team_results["game_date"]<g["game_date"])]
 
-        home_sum = summarize_team(hist_home)
-        away_sum = summarize_team(hist_away)
+            home_sum = summarize_team(hist_home)
+            away_sum = summarize_team(hist_away)
 
-        bucket_home = pick_bucket(home_ml)
-        bucket_away = pick_bucket(away_ml)
+            bucket_home = pick_bucket(home_ml)
+            bucket_away = pick_bucket(away_ml)
 
-        bucket_home_stats = summarize_bucket(hist_home, bucket_home)
-        bucket_away_stats = summarize_bucket(hist_away, bucket_away)
+            bucket_home_stats = summarize_bucket(hist_home, bucket_home)
+            bucket_away_stats = summarize_bucket(hist_away, bucket_away)
 
-        oppH = opponent_adjusted_stats(hist_home, league_tbl)
-        oppA = opponent_adjusted_stats(hist_away, league_tbl)
+            oppH = opponent_adjusted_stats(hist_home, league_tbl)
+            oppA = opponent_adjusted_stats(hist_away, league_tbl)
 
-        formH = recent_form(hist_home)
-        formA = recent_form(hist_away)
+            formH = recent_form(hist_home)
+            formA = recent_form(hist_away)
 
-        # Form Index
-        home_form_score, home_form_desc = compute_form_index(formH["last10_pct"], oppH["vs_strong_pct"], oppH["vs_weak_pct"])
-        away_form_score, away_form_desc = compute_form_index(formA["last10_pct"], oppA["vs_strong_pct"], oppA["vs_weak_pct"])
+            # Form Index
+            home_form_score, home_form_desc = compute_form_index(formH["last10_pct"], oppH["vs_strong_pct"], oppH["vs_weak_pct"])
+            away_form_score, away_form_desc = compute_form_index(formA["last10_pct"], oppA["vs_strong_pct"], oppA["vs_weak_pct"])
 
-        # === NEW: Mismatch Index ===
-        home_mis_score, home_mis_desc = compute_mismatch_index(home_form_score, away_form_score)
-        away_mis_score, away_mis_desc = compute_mismatch_index(away_form_score, home_form_score)
+            # === NEW: Mismatch Index ===
+            home_mis_score, home_mis_desc = compute_mismatch_index(home_form_score, away_form_score)
+            away_mis_score, away_mis_desc = compute_mismatch_index(away_form_score, home_form_score)
 
-        home_is_fav = home_ml < 0; home_is_dog = home_ml > 0
-        away_is_fav = away_ml < 0; away_is_dog = away_ml > 0
+            home_is_fav = home_ml < 0; home_is_dog = home_ml > 0
+            away_is_fav = away_ml < 0; away_is_dog = away_ml > 0
 
-        # --- PRM: Performance Relative to Market (last 10 ROI) ---
-        home_last10_roi = hist_home.sort_values("game_date")["roi"].tail(10)
-        away_last10_roi = hist_away.sort_values("game_date")["roi"].tail(10)
+            # --- PRM: Performance Relative to Market (last 10 ROI) ---
+            home_last10_roi = hist_home.sort_values("game_date")["roi"].tail(10)
+            away_last10_roi = hist_away.sort_values("game_date")["roi"].tail(10)
 
-        home_prm_score, home_prm_desc = compute_prm(home_last10_roi)
-        away_prm_score, away_prm_desc = compute_prm(away_last10_roi)
+            home_prm_score, home_prm_desc = compute_prm(home_last10_roi)
+            away_prm_score, away_prm_desc = compute_prm(away_last10_roi)
 
-        # PRM pattern analysis (undervalued/overvalued counts + market signal)
-        home_underval, home_overval, home_prm_signal = analyze_prm_pattern(home_last10_roi)
-        away_underval, away_overval, away_prm_signal = analyze_prm_pattern(away_last10_roi)
+            # PRM pattern analysis (undervalued/overvalued counts + market signal)
+            home_underval, home_overval, home_prm_signal = analyze_prm_pattern(home_last10_roi)
+            away_underval, away_overval, away_prm_signal = analyze_prm_pattern(away_last10_roi)
 
-        # Schedule Stress Index (home & away)
-        today_date = g["game_date"]
-        venue_city = g.get("venue_city")
-        venue_state = g.get("venue_state")
+            # Schedule Stress Index (home & away)
+            today_date = g["game_date"]
+            venue_city = g.get("venue_city")
+            venue_state = g.get("venue_state")
 
-        home_ss = compute_schedule_stress(hist_home, today_date, venue_city, venue_state)
-        away_ss = compute_schedule_stress(hist_away, today_date, venue_city, venue_state)
+            home_ss = compute_schedule_stress(hist_home, today_date, venue_city, venue_state)
+            away_ss = compute_schedule_stress(hist_away, today_date, venue_city, venue_state)
 
-        # Injuries
-        home_inj = g.get("home_injuries")
-        away_inj = g.get("away_injuries")
+            # Injuries
+            home_inj = g.get("home_injuries")
+            away_inj = g.get("away_injuries")
 
-        # Summary line (using tricodes)
-        away_abbr=g.get("away_team_abbrev",""); home_abbr=g.get("home_team_abbrev","")
-        summary_line=f"{away_abbr} {fmt_odds(away_ml)} ({fmt_pct(away_prob)}) | {home_abbr} {fmt_odds(home_ml)} ({fmt_pct(home_prob)})"
+            # Summary line (using tricodes)
+            away_abbr=g.get("away_team_abbrev",""); home_abbr=g.get("home_team_abbrev","")
+            summary_line=f"{away_abbr} {fmt_odds(away_ml)} ({fmt_pct(away_prob)}) | {home_abbr} {fmt_odds(home_ml)} ({fmt_pct(home_prob)})"
 
-        # === Confidence classification (NEW) ===
-        confidence_level = "neutral"
+            # === Confidence classification (NEW) ===
+            confidence_level = "neutral"
 
-        # A high-confidence favorite:
-        # - strong mismatch advantage
-        # - good form
-        # - modest schedule disadvantage
-        if (home_mis_score >= 20 and home_form_score >= 60 and home_ss["score"] <= 40):
-            confidence_level = "high"
-        elif (away_mis_score >= 20 and away_form_score >= 60 and away_ss["score"] <= 40):
-            confidence_level = "high"
+            # A high-confidence favorite:
+            # - strong mismatch advantage
+            # - good form
+            # - modest schedule disadvantage
+            if (home_mis_score >= 20 and home_form_score >= 60 and home_ss["score"] <= 40):
+                confidence_level = "high"
+            elif (away_mis_score >= 20 and away_form_score >= 60 and away_ss["score"] <= 40):
+                confidence_level = "high"
 
-        # AVOID conditions:
-        if (abs(home_mis_score) < 10 and abs(away_mis_score) < 10):
-            confidence_level = "stay-away"
-        elif (home_ss["score"] >= 70 or away_ss["score"] >= 70):
-            confidence_level = "stay-away"
+            # AVOID conditions:
+            if (abs(home_mis_score) < 10 and abs(away_mis_score) < 10):
+                confidence_level = "stay-away"
+            elif (home_ss["score"] >= 70 or away_ss["score"] >= 70):
+                confidence_level = "stay-away"
 
-        card_class = "game-card"
-        if confidence_level == "high":
-            card_class += " game-high"
-        elif confidence_level == "stay-away":
-            card_class += " game-avoid"
+            card_class = "game-card"
+            if confidence_level == "high":
+                card_class += " game-high"
+            elif confidence_level == "stay-away":
+                card_class += " game-avoid"
 
-        w(f"<div class='{card_class}'>")
-        w("<details class='game-details'>")
-        w("<summary>")
-        w(f"<div class='game-title'>{away} @ {home}</div>")
-        w(f"<div class='summary-line'>{summary_line}</div>")
-        w("</summary>")
+            w(f"<div class='{card_class}'>")
+            w("<details class='game-details'>")
+            w("<summary>")
+            w(f"<div class='game-title'>{away} @ {home}</div>")
+            w(f"<div class='summary-line'>{summary_line}</div>")
+            w("</summary>")
 
-        # ---------------- HOME TEAM ----------------
-        w("<div class='team-card'>")
-        w(f"<div class='subheader'>{home.upper()} (HOME)</div>")
-        w("<div class='two-col'>")
-        w("<div class='col'><div class='details-block'>")
-        
-        # LEFT column items go below:
-
-        w(line("Record:", f"{home_sum['ml_record']} ({fmt_pct(home_sum['ml_win_pct'])})"))
-        w(line("As favorite:", f"{home_sum['fav_record']} ({fmt_pct(home_sum['fav_win_pct'])})", highlight=home_is_fav))
-        w(line("As underdog:", f"{home_sum['dog_record']} ({fmt_pct(home_sum['dog_win_pct'])})", highlight=home_is_dog))
-        w(line("Home:", f"{home_sum['home_record']} ({fmt_pct(home_sum['home_win_pct'])})", highlight=True))
-        w(line("Away:", f"{home_sum['away_record']} ({fmt_pct(home_sum['away_win_pct'])})"))
-        w(line("As home favorite:", f"{home_sum['home_fav_record']} ({fmt_pct(home_sum['home_fav_win_pct'])})", highlight=home_is_fav))
-        w(line("As home underdog:", f"{home_sum['home_dog_record']} ({fmt_pct(home_sum['home_dog_win_pct'])})", highlight=home_is_dog))
-
-        if bucket_home:
-            b=bucket_home_stats
-            w(line(f"{bucket_home}:", f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])})"))
-
-        w(line("ROI all ML bets:", f"{home_sum['roi_units']:+0.1f}u ({fmt_pct(home_sum['roi_pct'])})"))
-        w(line("ROI as favorite:", f"{home_sum['fav_roi_units']:+0.1f}u ({fmt_pct(home_sum['fav_roi_pct'])})"))
-        w(line("ROI as underdog:", f"{home_sum['dog_roi_units']:+0.1f}u ({fmt_pct(home_sum['dog_roi_pct'])})"))
-
-        w(line("Vs strong opps:", f"{oppH['vs_strong_record']} ({fmt_pct(oppH['vs_strong_pct'])})"))
-        w(line("Vs weak opps:", f"{oppH['vs_weak_record']} ({fmt_pct(oppH['vs_weak_pct'])})"))
-
-        w("</div></div>")
-        w("<div class='col'><div class='details-block'>")
-        
-        # RIGHT column items go below:
-
-        w(line("Recent form:", f"Last 5: {fmt_pct(formH['last5_pct'])}"))
-        w(line("", f"Last 10: {fmt_pct(formH['last10_pct'])}"))
-        w(line("", f"Streak: {fmt_streak(formH['streak'])}"))
-
-        # === Insert Form Index at bottom ===
-        if pd.isna(home_form_score):
-            w(line("Form index:", "— (insufficient sample)"))
-        else:
-            w(line("Form index:", f"{home_form_score:0.0f} ({home_form_desc})"))
-
-        # === NEW: Insert Mismatch Index right after Form Index ===
-        if pd.isna(home_mis_score):
-            w(line("Mismatch index:", "— (insufficient sample)"))
-        else:
-            w(line("Mismatch index:", f"{home_mis_score:+0.0f} ({home_mis_desc})"))
-
-        # === PRM: Performance Relative to Market (full block) ===
-        if pd.isna(home_prm_score):
-            w(line("PRM last 10:", "— (insufficient sample)"))
-        else:
-            w(line("PRM last 10:", f"{home_prm_score:+0.1f}u"))
-            w(line("Mispricing trend:", f"undervalued in {home_underval} of last 10"))
-            w(line("Market signal:", home_prm_signal))
-
-        # ---- Schedule Stress (home) ----
-        if pd.isna(home_ss["score"]):
-            w(line("Schedule stress:", "— (insufficient sample)"))
-        else:
-            w(line("Schedule stress:", f"{home_ss['score']:0.0f} ({home_ss['desc']})"))
-
-            # Rest line
-            if home_ss["is_b2b"]:
-                rest_text = "<span class='pill pill-red'>B2B</span>"
-            else:
-                rest_text = f"{home_ss['rest_days']} days"
-            w(line("Rest:", rest_text))
-
-            # Games last 7 days
-            w(line("Games last 7 days:", str(home_ss["games_7"])))
-
-            # Travel miles
-            if np.isnan(home_ss["travel_miles"]):
-                travel_text = "n/a"
-            else:
-                travel_text = f"{home_ss['travel_miles']:0.0f} miles"
-            w(line("Travel:", travel_text))
-
-            # Road stretch
-            # Only show road stretch if meaningful
-            if home_ss["road_streak"] >= 1:
-                if home_ss["road_streak"] == 1:
-                    w(line("Road stretch:", "1 straight road game"))
-                else:
-                    w(line("Road stretch:", f"{home_ss['road_streak']} straight road games"))
-
-            # Homestand indicator (only show if meaningful)
-            if home_ss["home_streak"] >= 2:
-                if home_ss["home_streak"] == 2:
-                    w(line("Home stand:", "2 straight home games"))
-                else:
-                    w(line("Home stand:", f"{home_ss['home_streak']} straight home games"))
+            # ---------------- HOME TEAM ----------------
+            w("<div class='team-card'>")
+            w(f"<div class='subheader'>{home.upper()} (HOME)</div>")
+            w("<div class='two-col'>")
+            w("<div class='col'><div class='details-block'>")
             
-            # --- Injury Report (home) ---
-            if home_inj and isinstance(home_inj, str) and home_inj.strip():
-                parts = [x.strip() for x in home_inj.split(";") if x.strip()]
+            # LEFT column items go below:
+
+            w(line("Record:", f"{home_sum['ml_record']} ({fmt_pct(home_sum['ml_win_pct'])})"))
+            w(line("As favorite:", f"{home_sum['fav_record']} ({fmt_pct(home_sum['fav_win_pct'])})", highlight=home_is_fav))
+            w(line("As underdog:", f"{home_sum['dog_record']} ({fmt_pct(home_sum['dog_win_pct'])})", highlight=home_is_dog))
+            w(line("Home:", f"{home_sum['home_record']} ({fmt_pct(home_sum['home_win_pct'])})", highlight=True))
+            w(line("Away:", f"{home_sum['away_record']} ({fmt_pct(home_sum['away_win_pct'])})"))
+            w(line("As home favorite:", f"{home_sum['home_fav_record']} ({fmt_pct(home_sum['home_fav_win_pct'])})", highlight=home_is_fav))
+            w(line("As home underdog:", f"{home_sum['home_dog_record']} ({fmt_pct(home_sum['home_dog_win_pct'])})", highlight=home_is_dog))
+
+            if bucket_home:
+                b=bucket_home_stats
+                w(line(f"{bucket_home}:", f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])})"))
+
+            w(line("ROI all ML bets:", f"{home_sum['roi_units']:+0.1f}u ({fmt_pct(home_sum['roi_pct'])})"))
+            w(line("ROI as favorite:", f"{home_sum['fav_roi_units']:+0.1f}u ({fmt_pct(home_sum['fav_roi_pct'])})"))
+            w(line("ROI as underdog:", f"{home_sum['dog_roi_units']:+0.1f}u ({fmt_pct(home_sum['dog_roi_pct'])})"))
+
+            w(line("Vs strong opps:", f"{oppH['vs_strong_record']} ({fmt_pct(oppH['vs_strong_pct'])})"))
+            w(line("Vs weak opps:", f"{oppH['vs_weak_record']} ({fmt_pct(oppH['vs_weak_pct'])})"))
+
+            w("</div></div>")
+            w("<div class='col'><div class='details-block'>")
+            
+            # RIGHT column items go below:
+
+            w(line("Recent form:", f"Last 5: {fmt_pct(formH['last5_pct'])}"))
+            w(line("", f"Last 10: {fmt_pct(formH['last10_pct'])}"))
+            w(line("", f"Streak: {fmt_streak(formH['streak'])}"))
+
+            # === Insert Form Index at bottom ===
+            if pd.isna(home_form_score):
+                w(line("Form index:", "— (insufficient sample)"))
+            else:
+                w(line("Form index:", f"{home_form_score:0.0f} ({home_form_desc})"))
+
+            # === NEW: Insert Mismatch Index right after Form Index ===
+            if pd.isna(home_mis_score):
+                w(line("Mismatch index:", "— (insufficient sample)"))
+            else:
+                w(line("Mismatch index:", f"{home_mis_score:+0.0f} ({home_mis_desc})"))
+
+            # === PRM: Performance Relative to Market (full block) ===
+            if pd.isna(home_prm_score):
+                w(line("PRM last 10:", "— (insufficient sample)"))
+            else:
+                w(line("PRM last 10:", f"{home_prm_score:+0.1f}u"))
+                w(line("Mispricing trend:", f"undervalued in {home_underval} of last 10"))
+                w(line("Market signal:", home_prm_signal))
+
+            # ---- Schedule Stress (home) ----
+            if pd.isna(home_ss["score"]):
+                w(line("Schedule stress:", "— (insufficient sample)"))
+            else:
+                w(line("Schedule stress:", f"{home_ss['score']:0.0f} ({home_ss['desc']})"))
+
+                # Rest line
+                if home_ss["is_b2b"]:
+                    rest_text = "<span class='pill pill-red'>B2B</span>"
+                else:
+                    rest_text = f"{home_ss['rest_days']} days"
+                w(line("Rest:", rest_text))
+
+                # Games last 7 days
+                w(line("Games last 7 days:", str(home_ss["games_7"])))
+
+                # Travel miles
+                if np.isnan(home_ss["travel_miles"]):
+                    travel_text = "n/a"
+                else:
+                    travel_text = f"{home_ss['travel_miles']:0.0f} miles"
+                w(line("Travel:", travel_text))
+
+                # Road stretch
+                # Only show road stretch if meaningful
+                if home_ss["road_streak"] >= 1:
+                    if home_ss["road_streak"] == 1:
+                        w(line("Road stretch:", "1 straight road game"))
+                    else:
+                        w(line("Road stretch:", f"{home_ss['road_streak']} straight road games"))
+
+                # Homestand indicator (only show if meaningful)
+                if home_ss["home_streak"] >= 2:
+                    if home_ss["home_streak"] == 2:
+                        w(line("Home stand:", "2 straight home games"))
+                    else:
+                        w(line("Home stand:", f"{home_ss['home_streak']} straight home games"))
+                
+                # --- Injury Report (home) ---
+                if home_inj and isinstance(home_inj, str) and home_inj.strip():
+                    parts = [x.strip() for x in home_inj.split(";") if x.strip()]
+                    for i, part in enumerate(parts):
+                        w(line("Injuries:" if i == 0 else "", part))
+
+            w("</div></div>")
+            w("</div>")   # end two-col
+            w("</div>")   # end team-card
+
+            # ---------------- AWAY TEAM ----------------
+            w("<div class='team-card'>")
+            w(f"<div class='subheader'>{away.upper()} (AWAY)</div>")
+            w("<div class='two-col'>")
+            w("<div class='col'><div class='details-block'>")
+            
+            # LEFT column items go below:
+
+            w(line("Record:", f"{away_sum['ml_record']} ({fmt_pct(away_sum['ml_win_pct'])})"))
+            w(line("As favorite:", f"{away_sum['fav_record']} ({fmt_pct(away_sum['fav_win_pct'])})", highlight=away_is_fav))
+            w(line("As underdog:", f"{away_sum['dog_record']} ({fmt_pct(away_sum['dog_win_pct'])})", highlight=away_is_dog))
+            w(line("Home:", f"{away_sum['home_record']} ({fmt_pct(away_sum['home_win_pct'])})"))
+            w(line("Away:", f"{away_sum['away_record']} ({fmt_pct(away_sum['away_win_pct'])})", highlight=True))
+            w(line("As away favorite:", f"{away_sum['away_fav_record']} ({fmt_pct(away_sum['away_fav_win_pct'])})", highlight=away_is_fav))
+            w(line("As away underdog:", f"{away_sum['away_dog_record']} ({fmt_pct(away_sum['away_dog_win_pct'])})", highlight=away_is_dog))
+
+            if bucket_away:
+                b=bucket_away_stats
+                w(line(f"{bucket_away}:", f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])})"))
+
+            w(line("ROI all ML bets:", f"{away_sum['roi_units']:+0.1f}u ({fmt_pct(away_sum['roi_pct'])})"))
+            w(line("ROI as favorite:", f"{away_sum['fav_roi_units']:+0.1f}u ({fmt_pct(away_sum['fav_roi_pct'])})"))
+            w(line("ROI as underdog:", f"{away_sum['dog_roi_units']:+0.1f}u ({fmt_pct(away_sum['dog_roi_pct'])})"))
+
+            w(line("Vs strong opps:", f"{oppA['vs_strong_record']} ({fmt_pct(oppA['vs_strong_pct'])})"))
+            w(line("Vs weak opps:", f"{oppA['vs_weak_record']} ({fmt_pct(oppA['vs_weak_pct'])})"))
+
+            w("</div></div>")
+            w("<div class='col'><div class='details-block'>")
+            
+            # RIGHT column items go below:
+
+            w(line("Recent form:", f"Last 5: {fmt_pct(formA['last5_pct'])}"))
+            w(line("", f"Last 10: {fmt_pct(formA['last10_pct'])}"))
+            w(line("", f"Streak: {fmt_streak(formA['streak'])}"))
+
+            # === Form Index (away) ===
+            if pd.isna(away_form_score):
+                w(line("Form index:", "— (insufficient sample)"))
+            else:
+                w(line("Form index:", f"{away_form_score:0.0f} ({away_form_desc})"))
+
+            # === Mismatch Index (away) ===
+            if pd.isna(away_mis_score):
+                w(line("Mismatch index:", "— (insufficient sample)"))
+            else:
+                w(line("Mismatch index:", f"{away_mis_score:+0.0f} ({away_mis_desc})"))
+
+            # === PRM: Performance Relative to Market (full block) ===
+            if pd.isna(away_prm_score):
+                w(line("PRM last 10:", "— (insufficient sample)"))
+            else:
+                w(line("PRM last 10:", f"{away_prm_score:+0.1f}u"))
+                w(line("Mispricing trend:", f"undervalued in {away_underval} of last 10"))
+                w(line("Market signal:", away_prm_signal))
+
+            # ---- Schedule Stress (away) ----
+            if pd.isna(away_ss["score"]):
+                w(line("Schedule stress:", "— (insufficient sample)"))
+            else:
+                w(line("Schedule stress:", f"{away_ss['score']:0.0f} ({away_ss['desc']})"))
+
+                if away_ss["is_b2b"]:
+                    rest_text = "<span class='pill pill-red'>B2B</span>"
+                else:
+                    rest_text = f"{away_ss['rest_days']} days"
+                w(line("Rest:", rest_text))
+
+                w(line("Games last 7 days:", str(away_ss["games_7"])))
+
+                if np.isnan(away_ss["travel_miles"]):
+                    travel_text = "n/a"
+                else:
+                    travel_text = f"{away_ss['travel_miles']:0.0f} miles"
+                w(line("Travel:", travel_text))
+
+                # Only show road stretch if meaningful
+                if away_ss["road_streak"] >= 1:
+                    if away_ss["road_streak"] == 1:
+                        w(line("Road stretch:", "1 straight road game"))
+                    else:
+                        w(line("Road stretch:", f"{away_ss['road_streak']} straight road games"))
+
+                if away_ss["home_streak"] >= 2:
+                    if away_ss["home_streak"] == 2:
+                        w(line("Home stand:", "2 straight home games"))
+                    else:
+                        w(line("Home stand:", f"{away_ss['home_streak']} straight home games"))
+
+            # --- Injury Report (away) ---
+            if away_inj and isinstance(away_inj, str) and away_inj.strip():
+                parts = [x.strip() for x in away_inj.split(";") if x.strip()]
                 for i, part in enumerate(parts):
                     w(line("Injuries:" if i == 0 else "", part))
 
-        w("</div></div>")
-        w("</div>")   # end two-col
-        w("</div>")   # end team-card
-
-        # ---------------- AWAY TEAM ----------------
-        w("<div class='team-card'>")
-        w(f"<div class='subheader'>{away.upper()} (AWAY)</div>")
-        w("<div class='two-col'>")
-        w("<div class='col'><div class='details-block'>")
-        
-        # LEFT column items go below:
-
-        w(line("Record:", f"{away_sum['ml_record']} ({fmt_pct(away_sum['ml_win_pct'])})"))
-        w(line("As favorite:", f"{away_sum['fav_record']} ({fmt_pct(away_sum['fav_win_pct'])})", highlight=away_is_fav))
-        w(line("As underdog:", f"{away_sum['dog_record']} ({fmt_pct(away_sum['dog_win_pct'])})", highlight=away_is_dog))
-        w(line("Home:", f"{away_sum['home_record']} ({fmt_pct(away_sum['home_win_pct'])})"))
-        w(line("Away:", f"{away_sum['away_record']} ({fmt_pct(away_sum['away_win_pct'])})", highlight=True))
-        w(line("As away favorite:", f"{away_sum['away_fav_record']} ({fmt_pct(away_sum['away_fav_win_pct'])})", highlight=away_is_fav))
-        w(line("As away underdog:", f"{away_sum['away_dog_record']} ({fmt_pct(away_sum['away_dog_win_pct'])})", highlight=away_is_dog))
-
-        if bucket_away:
-            b=bucket_away_stats
-            w(line(f"{bucket_away}:", f"{b['bucket_record']} ({fmt_pct(b['bucket_win_pct'])})"))
-
-        w(line("ROI all ML bets:", f"{away_sum['roi_units']:+0.1f}u ({fmt_pct(away_sum['roi_pct'])})"))
-        w(line("ROI as favorite:", f"{away_sum['fav_roi_units']:+0.1f}u ({fmt_pct(away_sum['fav_roi_pct'])})"))
-        w(line("ROI as underdog:", f"{away_sum['dog_roi_units']:+0.1f}u ({fmt_pct(away_sum['dog_roi_pct'])})"))
-
-        w(line("Vs strong opps:", f"{oppA['vs_strong_record']} ({fmt_pct(oppA['vs_strong_pct'])})"))
-        w(line("Vs weak opps:", f"{oppA['vs_weak_record']} ({fmt_pct(oppA['vs_weak_pct'])})"))
-
-        w("</div></div>")
-        w("<div class='col'><div class='details-block'>")
-        
-        # RIGHT column items go below:
-
-        w(line("Recent form:", f"Last 5: {fmt_pct(formA['last5_pct'])}"))
-        w(line("", f"Last 10: {fmt_pct(formA['last10_pct'])}"))
-        w(line("", f"Streak: {fmt_streak(formA['streak'])}"))
-
-        # === Form Index (away) ===
-        if pd.isna(away_form_score):
-            w(line("Form index:", "— (insufficient sample)"))
-        else:
-            w(line("Form index:", f"{away_form_score:0.0f} ({away_form_desc})"))
-
-        # === Mismatch Index (away) ===
-        if pd.isna(away_mis_score):
-            w(line("Mismatch index:", "— (insufficient sample)"))
-        else:
-            w(line("Mismatch index:", f"{away_mis_score:+0.0f} ({away_mis_desc})"))
-
-        # === PRM: Performance Relative to Market (full block) ===
-        if pd.isna(away_prm_score):
-            w(line("PRM last 10:", "— (insufficient sample)"))
-        else:
-            w(line("PRM last 10:", f"{away_prm_score:+0.1f}u"))
-            w(line("Mispricing trend:", f"undervalued in {away_underval} of last 10"))
-            w(line("Market signal:", away_prm_signal))
-
-        # ---- Schedule Stress (away) ----
-        if pd.isna(away_ss["score"]):
-            w(line("Schedule stress:", "— (insufficient sample)"))
-        else:
-            w(line("Schedule stress:", f"{away_ss['score']:0.0f} ({away_ss['desc']})"))
-
-            if away_ss["is_b2b"]:
-                rest_text = "<span class='pill pill-red'>B2B</span>"
-            else:
-                rest_text = f"{away_ss['rest_days']} days"
-            w(line("Rest:", rest_text))
-
-            w(line("Games last 7 days:", str(away_ss["games_7"])))
-
-            if np.isnan(away_ss["travel_miles"]):
-                travel_text = "n/a"
-            else:
-                travel_text = f"{away_ss['travel_miles']:0.0f} miles"
-            w(line("Travel:", travel_text))
-
-            # Only show road stretch if meaningful
-            if away_ss["road_streak"] >= 1:
-                if away_ss["road_streak"] == 1:
-                    w(line("Road stretch:", "1 straight road game"))
-                else:
-                    w(line("Road stretch:", f"{away_ss['road_streak']} straight road games"))
-
-            if away_ss["home_streak"] >= 2:
-                if away_ss["home_streak"] == 2:
-                    w(line("Home stand:", "2 straight home games"))
-                else:
-                    w(line("Home stand:", f"{away_ss['home_streak']} straight home games"))
-
-        # --- Injury Report (away) ---
-        if away_inj and isinstance(away_inj, str) and away_inj.strip():
-            parts = [x.strip() for x in away_inj.split(";") if x.strip()]
-            for i, part in enumerate(parts):
-                w(line("Injuries:" if i == 0 else "", part))
-
-        w("</div></div>")
-        w("</div>")   # end two-col
-        w("</div>")   # end team-card
-        w("</details>")
-        w("</div>")  # end game-card
+            w("</div></div>")
+            w("</div>")   # end two-col
+            w("</div>")   # end team-card
+            w("</details>")
+            w("</div>")  # end game-card
 
     # --------- League overview ---------
     if not league_tbl.empty:
