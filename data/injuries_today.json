@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-28",
-  "built_at_utc": "2025-12-28T23:21:57Z",
+  "built_at_utc": "2025-12-29T01:05:50Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -118,14 +118,19 @@
       "details": "Seth Curry (Out)"
     },
     {
+      "name": "Al Horford",
+      "status": "OUT",
+      "details": "Al Horford (Out)"
+    },
+    {
       "name": "D. Melton",
       "status": "OUT",
       "details": "D. Melton (Out)"
     },
     {
       "name": "C. Murray-Boyles",
-      "status": "OUT",
-      "details": "C. Murray-Boyles (Out)"
+      "status": "QUES",
+      "details": "C. Murray-Boyles (Ques)"
     },
     {
       "name": "J. Poeltl",
@@ -136,8 +141,8 @@
   "TOR": [
     {
       "name": "C. Murray-Boyles",
-      "status": "OUT",
-      "details": "C. Murray-Boyles (Out)"
+      "status": "QUES",
+      "details": "C. Murray-Boyles (Ques)"
     },
     {
       "name": "J. Poeltl",
@@ -231,6 +236,11 @@
   ],
   "MEM": [
     {
+      "name": "K. Caldwell-Pope",
+      "status": "DOUBT",
+      "details": "K. Caldwell-Pope (Doubt)"
+    },
+    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -310,14 +320,14 @@
       "details": "C. Christie (Prob)"
     },
     {
-      "name": "J. Collins",
-      "status": "QUES",
-      "details": "J. Collins (Ques)"
-    },
-    {
       "name": "B. Bogdanovic",
       "status": "OUT",
       "details": "B. Bogdanovic (Out)"
+    },
+    {
+      "name": "J. Collins",
+      "status": "OUT",
+      "details": "J. Collins (Out)"
     },
     {
       "name": "Chris Paul",
@@ -357,11 +367,6 @@
       "details": "D. Sabonis (Out)"
     },
     {
-      "name": "D. Timme",
-      "status": "QUES",
-      "details": "D. Timme (Ques)"
-    },
-    {
       "name": "J. Hayes",
       "status": "OUT",
       "details": "J. Hayes (Out)"
@@ -378,11 +383,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "D. Timme",
-      "status": "QUES",
-      "details": "D. Timme (Ques)"
-    },
     {
       "name": "J. Hayes",
       "status": "OUT",
@@ -401,11 +401,6 @@
   ],
   "DET": [
     {
-      "name": "J. Collins",
-      "status": "QUES",
-      "details": "J. Collins (Ques)"
-    },
-    {
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
@@ -419,6 +414,11 @@
       "name": "B. Bogdanovic",
       "status": "OUT",
       "details": "B. Bogdanovic (Out)"
+    },
+    {
+      "name": "J. Collins",
+      "status": "OUT",
+      "details": "J. Collins (Out)"
     },
     {
       "name": "Chris Paul",
