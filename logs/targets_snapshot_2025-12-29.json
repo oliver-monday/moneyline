@@ -404,19 +404,6 @@
   },
   {
     "asof_date": "2025-12-29",
-    "player_id": "4593803.0",
-    "player_name": "Jalen Williams",
-    "team_abbrev": "OKC",
-    "opp": "ATL",
-    "game_id": "401810310",
-    "stat": "3pt",
-    "threshold": 1,
-    "hits": 8,
-    "window_games": 10,
-    "hit_rate": 0.8
-  },
-  {
-    "asof_date": "2025-12-29",
     "player_id": "6583.0",
     "player_name": "Anthony Davis",
     "team_abbrev": "DAL",
