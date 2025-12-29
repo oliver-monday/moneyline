@@ -48,9 +48,9 @@ from urllib3.util.retry import Retry
 USER_AGENT = "Mozilla/5.0 (compatible; moneyline/1.0; +https://oliver-monday.github.io/moneyline/)"
 SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard"
 SUMMARY_URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary"
-DEBUG_TPM = True
+DEBUG_TPM = False
 DEBUG_TPM_SAMPLES = 0
-DEBUG_TPM_SCAN = True
+DEBUG_TPM_SCAN = False
 DEBUG_TPM_SCAN_COUNT = 0
 
 # --------------------------------------------------------------------
@@ -232,14 +232,6 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
                     label_to_idx_norm[key] = i
 
             global DEBUG_TPM
-            if DEBUG_TPM:
-                try:
-                    first_athlete = athletes[0].get("athlete", {}).get("displayName") if athletes else ""
-                    print("[DEBUG_TPM] labels:", labels)
-                    print("[DEBUG_TPM] label_keys:", list(label_to_idx.keys()))
-                    print("[DEBUG_TPM] first_athlete:", first_athlete)
-                except Exception:
-                    pass
 
             def get_stat(stats_list: List[str], key: str) -> Optional[str]:
                 idx = label_to_idx.get(key.upper())
@@ -277,14 +269,6 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
                                 matched_key = f"norm:{lab}"
                                 break
 
-                if DEBUG_TPM:
-                    try:
-                        print(f"[DEBUG_TPM] tpm_match={matched_key} raw={tpm_raw}")
-                        print("[DEBUG_TPM] stats_list:", stats_list[:8])
-                    except Exception:
-                        pass
-                    DEBUG_TPM = False
-
                 # DNP signal: ESPN sometimes includes "didNotPlay" or MIN="--"
                 did_not_play = bool(a.get("didNotPlay") or a.get("didNotDress") or a.get("notActive") or False)
                 if min_raw is None:
@@ -317,20 +301,6 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
                         s = re.split(r"[-/]", s, 1)[0]
                     m = re.search(r"\d+", s)
                     return int(m.group(0)) if m else 0
-
-                global DEBUG_TPM_SCAN, DEBUG_TPM_SCAN_COUNT
-                if DEBUG_TPM_SCAN:
-                    try:
-                        scan_s = str(tpm_raw or "").strip()
-                        if scan_s and scan_s not in ("--", "—", "–"):
-                            seps = [c for c in scan_s if (not c.isdigit() and not c.isspace())]
-                            codepoints = [f"U+{ord(c):04X}" for c in seps]
-                            print(f"[DEBUG_TPM] raw={tpm_raw!r} seps={codepoints}")
-                            DEBUG_TPM_SCAN_COUNT += 1
-                            if DEBUG_TPM_SCAN_COUNT >= 10:
-                                DEBUG_TPM_SCAN = False
-                    except Exception:
-                        DEBUG_TPM_SCAN = False
 
                 tpm_val = parse_tpm(tpm_raw)
                 if os.environ.get("DEBUG_TPM") == "1":
