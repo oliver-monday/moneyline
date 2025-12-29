@@ -37,6 +37,7 @@ import datetime as dt
 import time
 import re
 import unicodedata
+import os
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 import pandas as pd
@@ -48,6 +49,7 @@ USER_AGENT = "Mozilla/5.0 (compatible; moneyline/1.0; +https://oliver-monday.git
 SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard"
 SUMMARY_URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary"
 DEBUG_TPM = True
+DEBUG_TPM_SAMPLES = 0
 
 # --------------------------------------------------------------------
 # Helpers
@@ -307,16 +309,21 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
                     s = str(x).strip()
                     if s in ("", "--", "—", "–"):
                         return 0
-                    if "-" in s:
-                        left = s.split("-", 1)[0].strip()
+                    s = s.replace("–", "-").replace("—", "-")
+                    m = re.search(r"^\s*(\d+)", s)
+                    if m:
                         try:
-                            return int(float(left))
+                            return int(m.group(1))
                         except ValueError:
                             return 0
-                    try:
-                        return int(float(s))
-                    except ValueError:
-                        return 0
+                    return 0
+
+                tpm_val = parse_tpm(tpm_raw)
+                if os.environ.get("DEBUG_TPM") == "1":
+                    global DEBUG_TPM_SAMPLES
+                    if tpm_val > 0 and DEBUG_TPM_SAMPLES < 5:
+                        print(f"[DEBUG_TPM] {athlete_name} 3PT raw={tpm_raw!r} parsed={tpm_val}")
+                        DEBUG_TPM_SAMPLES += 1
 
                 row = {
                     "team_id": team_id,
@@ -329,7 +336,7 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
                     "pts": to_int(pts_raw),
                     "reb": to_int(reb_raw),
                     "ast": to_int(ast_raw),
-                    "tpm": parse_tpm(tpm_raw),
+                    "tpm": tpm_val,
                     "dnp": dnp,
                 }
                 # Filter out empty athlete ids (rare)
