@@ -411,6 +411,35 @@
       width: fit-content;
       max-width: 100%;
     }
+    .season-perf {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      background: #f9fbfd;
+      padding: 10px 12px;
+      width: calc((100% - 12px) / 2);
+      box-sizing: border-box;
+      margin: 0 0 18px;
+    }
+    .season-perf-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #333;
+      margin-bottom: 6px;
+    }
+    .season-perf-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13px;
+      color: #555;
+      padding: 2px 0;
+    }
+    .season-perf-value {
+      font-weight: 700;
+      color: #333;
+      white-space: nowrap;
+    }
     .date-stamp {
       font-weight: 800;
       font-size: clamp(16px, 3vw, 22px);
@@ -431,6 +460,9 @@
       .date-stamp {
         padding: 14px 16px;
         border-radius: 16px;
+      }
+      .season-perf {
+        width: 100%;
       }
     }
     .no-games-today {
@@ -933,6 +965,13 @@
     </div>
 
     <div class="date-stamp" id="meta"></div>
+    <div class="season-perf" id="seasonPerf" hidden>
+      <div class="season-perf-title">Season Performance</div>
+      <div class="season-perf-row"><span>Top Targets</span><span class="season-perf-value" id="seasonPerfTop">—</span></div>
+      <div class="season-perf-row"><span>All Targets</span><span class="season-perf-value" id="seasonPerfAll">—</span></div>
+      <div class="season-perf-row"><span>Days tracked</span><span class="season-perf-value" id="seasonPerfDays">—</span></div>
+      <div class="season-perf-row"><span>Last updated</span><span class="season-perf-value" id="seasonPerfUpdated">—</span></div>
+    </div>
   </div>
 
   <details class="postmortem-panel" id="postmortemPanel" hidden>
@@ -2770,6 +2809,62 @@ async function load() {
     `;
   }
 
+  function seasonEndYearFromDateStr(dateStr) {
+    const m = String(dateStr || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    if (!m) return null;
+    const year = Number(m[1]);
+    const month = Number(m[2]);
+    if (!year || !month) return null;
+    return month >= 7 ? year + 1 : year;
+  }
+
+  function renderSeasonPerformance(summary, fallbackDate) {
+    const panel = document.getElementById("seasonPerf");
+    if (!panel || !summary) return;
+    const top = summary.top_targets || {};
+    const allTargets = summary.all_targets || {};
+    const topHits = Number(top.hits || 0);
+    const topTotal = Number(top.total || 0);
+    const allHits = Number(allTargets.hits || 0);
+    const allTotal = Number(allTargets.total || 0);
+    const pct = (h, t) => (t ? `${h}/${t} (${Math.round((h / t) * 100)}%)` : "—");
+    const daysTracked = Number(summary.days_tracked || 0);
+    const updated = summary.end_date || fallbackDate || "";
+    const topEl = document.getElementById("seasonPerfTop");
+    const allEl = document.getElementById("seasonPerfAll");
+    const daysEl = document.getElementById("seasonPerfDays");
+    const updatedEl = document.getElementById("seasonPerfUpdated");
+    if (topEl) topEl.textContent = pct(topHits, topTotal);
+    if (allEl) allEl.textContent = pct(allHits, allTotal);
+    if (daysEl) daysEl.textContent = daysTracked ? String(daysTracked) : "—";
+    if (updatedEl) updatedEl.textContent = updated || "—";
+    panel.hidden = false;
+  }
+
+  function loadSeasonPerformance(postmortem) {
+    const panel = document.getElementById("seasonPerf");
+    if (!panel) return;
+    const asof = postmortem && postmortem.asof_date;
+    const season = postmortem && postmortem.season_end_year
+      ? Number(postmortem.season_end_year)
+      : seasonEndYearFromDateStr(asof);
+    if (!asof || !season) {
+      panel.hidden = true;
+      return;
+    }
+    fetchJson(`./data/perf/summary_season_${season}.json`)
+      .then((summary) => {
+        if (!summary) {
+          panel.hidden = true;
+          return;
+        }
+        renderSeasonPerformance(summary, asof);
+      })
+      .catch(() => {
+        panel.hidden = true;
+      });
+  }
+
   if (minSelect && minSelectBtn && minSelectMenu) {
     minSelectBtn.addEventListener("click", () => {
       minSelect.classList.toggle("open");
@@ -3345,6 +3440,7 @@ async function load() {
     .then((data) => {
       try {
         renderPostmortem(data);
+        loadSeasonPerformance(data);
       } catch (e) {
         console.error("renderPostmortem failed", e);
       }
@@ -3353,6 +3449,8 @@ async function load() {
       console.warn("postmortem fetch failed", e);
       const panel = document.getElementById("postmortemPanel");
       if (panel) panel.hidden = true;
+      const perfPanel = document.getElementById("seasonPerf");
+      if (perfPanel) perfPanel.hidden = true;
     });
 
   renderInjuryReport();

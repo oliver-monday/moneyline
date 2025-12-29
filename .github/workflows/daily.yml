@@ -195,6 +195,10 @@ jobs:
           print("targets_total:", s.get("targets_total"), "hits:", s.get("hits_total"), "misses:", s.get("misses_total"))
           PY
 
+      - name: Build performance ledger
+        run: |
+          python build_perf_daily.py
+
       - name: Prepare site files
         run: |
           mkdir -p ./site
@@ -247,6 +251,9 @@ jobs:
           cp data/targets_postmortem.json ./site/data/targets_postmortem.json
           cp data/team_opp_allowed.json ./site/data/team_opp_allowed.json
           cp data/opp_big.json ./site/data/opp_big.json
+          if [ -d data/perf ]; then
+            cp -R data/perf ./site/data/perf
+          fi
           if [ -d data/history ]; then
             cp -R data/history ./site/data/history
           fi
