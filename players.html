@@ -451,10 +451,21 @@
       border-radius: 14px;
       background: #fff;
       display: inline-flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       white-space: nowrap;
       margin: 0 0 18px;
+      gap: 4px;
+    }
+    .date-sub {
+      font-size: 12px;
+      font-weight: 600;
+      color: #777;
+    }
+    .games-left-value {
+      color: #d97706;
+      font-weight: 800;
     }
     @media (max-width: 520px) {
       .date-stamp {
@@ -964,7 +975,10 @@
       </div>
     </div>
 
-    <div class="date-stamp" id="meta"></div>
+    <div class="date-stamp" id="meta">
+      <div id="metaDate"></div>
+      <div class="date-sub" id="gamesLeft"></div>
+    </div>
     <div class="season-perf" id="seasonPerf" hidden>
       <div class="season-perf-title">Season Performance</div>
       <div class="season-perf-row"><span>Top Targets</span><span class="season-perf-value" id="seasonPerfTop">—</span></div>
@@ -2176,7 +2190,15 @@ async function load() {
   }
   
   const meta = document.getElementById("meta");
-  meta.textContent = todayDisplay;
+  const metaDate = document.getElementById("metaDate");
+  const gamesLeftEl = document.getElementById("gamesLeft");
+  if (metaDate) metaDate.textContent = todayDisplay;
+  const totalGames = 1231;
+  const gamesPlayed = Array.isArray(games) ? games.length : 0;
+  const gamesLeft = Math.max(0, totalGames - gamesPlayed);
+  if (gamesLeftEl) {
+    gamesLeftEl.innerHTML = `Games Left: <span class="games-left-value">${gamesLeft}</span>`;
+  }
 
   const q = document.getElementById("q");
   const scope = document.getElementById("scope");
