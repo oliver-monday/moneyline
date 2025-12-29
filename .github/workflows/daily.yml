@@ -108,6 +108,12 @@ jobs:
       # --- Commit updated CSVs (stateful inputs) ---
       - name: Commit updated CSVs
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git fetch origin main
+          git rebase --autostash origin/main
+
           # Stage the CSVs we expect might change (only if they exist)
           FILES=(
             "nba_master.csv"
@@ -118,6 +124,9 @@ jobs:
             "data/team_opp_allowed.json"
             "data/opp_big.json"
             "data/injuries_today.json"
+            "data/player_features.json"
+            "data/team_signals.json"
+            "data/game_times.json"
             "data/moneyline_postmortem.json"
             "data/targets_postmortem.json"
             "logs/injury_log.csv"
@@ -142,18 +151,22 @@ jobs:
             fi
           done
 
+          if [ -d "data/history" ]; then
+            if [ -n "$(git status --porcelain -- "data/history")" ]; then
+              git add data/history
+              CHANGED=1
+            fi
+          fi
+
           if [ "$CHANGED" -eq 0 ]; then
             echo "No tracked CSV changes; nothing to commit."
             exit 0
           fi
 
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git status --porcelain
 
           git commit -m "Daily data refresh [skip ci]" || exit 0
 
-          git fetch origin main
-          git rebase origin/main
           git push origin HEAD:main
 
       - name: Upload Rotowire debug HTML
