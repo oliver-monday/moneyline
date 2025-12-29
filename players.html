@@ -416,7 +416,7 @@
       border-radius: 12px;
       background: #f9fbfd;
       padding: 10px 12px;
-      width: calc((100% - 12px) / 2);
+      width: 100%;
       box-sizing: border-box;
       margin: 0 0 18px;
     }
@@ -425,6 +425,12 @@
       font-weight: 800;
       color: #333;
       margin-bottom: 6px;
+      text-align: center;
+    }
+    .season-perf-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 24px;
     }
     .season-perf-row {
       display: flex;
@@ -435,6 +441,10 @@
       color: #555;
       padding: 2px 0;
     }
+    .season-perf-right {
+      justify-content: flex-end;
+      text-align: right;
+    }
     .season-perf-value {
       font-weight: 700;
       color: #333;
@@ -444,7 +454,7 @@
       font-weight: 800;
       font-size: clamp(16px, 3vw, 22px);
       color: #000000;
-      width: calc((100% - 12px) / 2);
+      width: 100%;
       box-sizing: border-box;
       padding: 12px 16px;
       border: 1px solid #fff;
@@ -457,6 +467,7 @@
       white-space: nowrap;
       margin: 0 0 18px;
       gap: 4px;
+      text-align: center;
     }
     .date-sub {
       font-size: 12px;
@@ -474,6 +485,13 @@
       }
       .season-perf {
         width: 100%;
+      }
+      .season-perf-grid {
+        grid-template-columns: 1fr;
+      }
+      .season-perf-right {
+        justify-content: flex-start;
+        text-align: left;
       }
     }
     .no-games-today {
@@ -981,10 +999,12 @@
     </div>
     <div class="season-perf" id="seasonPerf" hidden>
       <div class="season-perf-title">Season Performance</div>
-      <div class="season-perf-row"><span>Top Targets</span><span class="season-perf-value" id="seasonPerfTop">—</span></div>
-      <div class="season-perf-row"><span>All Targets</span><span class="season-perf-value" id="seasonPerfAll">—</span></div>
-      <div class="season-perf-row"><span>Days tracked</span><span class="season-perf-value" id="seasonPerfDays">—</span></div>
-      <div class="season-perf-row"><span>Last updated</span><span class="season-perf-value" id="seasonPerfUpdated">—</span></div>
+      <div class="season-perf-grid">
+        <div class="season-perf-row"><span>Top Targets</span><span class="season-perf-value" id="seasonPerfTop">—</span></div>
+        <div class="season-perf-row season-perf-right"><span>Days tracked</span><span class="season-perf-value" id="seasonPerfDays">—</span></div>
+        <div class="season-perf-row"><span>All Targets</span><span class="season-perf-value" id="seasonPerfAll">—</span></div>
+        <div class="season-perf-row season-perf-right"><span>Last updated</span><span class="season-perf-value" id="seasonPerfUpdated">—</span></div>
+      </div>
     </div>
   </div>
 
