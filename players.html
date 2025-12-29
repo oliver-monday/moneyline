@@ -486,12 +486,9 @@
       .season-perf {
         width: 100%;
       }
-      .season-perf-grid {
-        grid-template-columns: 1fr;
-      }
       .season-perf-right {
-        justify-content: flex-start;
-        text-align: left;
+        justify-content: flex-end;
+        text-align: right;
       }
     }
     .no-games-today {
@@ -1000,10 +997,10 @@
     <div class="season-perf" id="seasonPerf" hidden>
       <div class="season-perf-title">Season Performance</div>
       <div class="season-perf-grid">
-        <div class="season-perf-row"><span>Top Targets</span><span class="season-perf-value" id="seasonPerfTop">—</span></div>
+        <div class="season-perf-row"><span>As Of</span><span class="season-perf-value" id="seasonPerfUpdated">—</span></div>
         <div class="season-perf-row season-perf-right"><span>Days tracked</span><span class="season-perf-value" id="seasonPerfDays">—</span></div>
-        <div class="season-perf-row"><span>All Targets</span><span class="season-perf-value" id="seasonPerfAll">—</span></div>
-        <div class="season-perf-row season-perf-right"><span>Last updated</span><span class="season-perf-value" id="seasonPerfUpdated">—</span></div>
+        <div class="season-perf-row"><span>Top Targets</span><span class="season-perf-value" id="seasonPerfTop">—</span></div>
+        <div class="season-perf-row season-perf-right"><span>All Targets</span><span class="season-perf-value" id="seasonPerfAll">—</span></div>
       </div>
     </div>
   </div>
@@ -2217,7 +2214,7 @@ async function load() {
   const gamesPlayed = Array.isArray(games) ? games.length : 0;
   const gamesLeft = Math.max(0, totalGames - gamesPlayed);
   if (gamesLeftEl) {
-    gamesLeftEl.innerHTML = `Games Left: <span class="games-left-value">${gamesLeft}</span>`;
+    gamesLeftEl.innerHTML = `Games Today: <span class="games-left-value">${gamesPlayed}</span> • Games Left: <span class="games-left-value">${gamesLeft}</span>`;
   }
 
   const q = document.getElementById("q");
