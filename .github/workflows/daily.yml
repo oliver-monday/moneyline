@@ -98,6 +98,10 @@ jobs:
           echo "=== data/ ==="
           ls -al data || true
 
+      - name: Build performance ledger
+        run: |
+          python build_perf_daily.py
+
       - name: Upload unresolved players report
         uses: actions/upload-artifact@v4
         with:
@@ -157,6 +161,12 @@ jobs:
               CHANGED=1
             fi
           fi
+          if [ -d "data/perf" ]; then
+            if [ -n "$(git status --porcelain -- "data/perf")" ]; then
+              git add data/perf
+              CHANGED=1
+            fi
+          fi
 
           if [ "$CHANGED" -eq 0 ]; then
             echo "No tracked CSV changes; nothing to commit."
@@ -194,10 +204,6 @@ jobs:
           s=j.get("summary",{}) or {}
           print("targets_total:", s.get("targets_total"), "hits:", s.get("hits_total"), "misses:", s.get("misses_total"))
           PY
-
-      - name: Build performance ledger
-        run: |
-          python build_perf_daily.py
 
       - name: Prepare site files
         run: |
