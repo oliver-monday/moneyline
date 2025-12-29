@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-28",
-  "built_at_utc": "2025-12-29T01:05:50Z",
+  "built_at_utc": "2025-12-29T03:01:06Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -237,8 +237,8 @@
   "MEM": [
     {
       "name": "K. Caldwell-Pope",
-      "status": "DOUBT",
-      "details": "K. Caldwell-Pope (Doubt)"
+      "status": "QUES",
+      "details": "K. Caldwell-Pope (Ques)"
     },
     {
       "name": "B. Clarke",
@@ -313,11 +313,6 @@
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
-    },
-    {
-      "name": "C. Christie",
-      "status": "PROB",
-      "details": "C. Christie (Prob)"
     },
     {
       "name": "B. Bogdanovic",
@@ -404,11 +399,6 @@
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
-    },
-    {
-      "name": "C. Christie",
-      "status": "PROB",
-      "details": "C. Christie (Prob)"
     },
     {
       "name": "B. Bogdanovic",
