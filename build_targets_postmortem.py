@@ -605,9 +605,9 @@ def main() -> int:
             except Exception:
                 pass
 
-    results_date = determine_postmortem_date_from_game_log(game_log_path)
+    results_date = latest_final_date_from_master(master_path, local_today)
     if not results_date:
-        results_date = latest_final_date_from_master(master_path, local_today)
+        results_date = determine_postmortem_date_from_game_log(game_log_path)
     if not results_date:
         results_date = (local_today - dt.timedelta(days=1)).strftime("%Y-%m-%d")
     try:
@@ -621,11 +621,12 @@ def main() -> int:
     note = None
     snapshot_path = logs_dir / f"targets_snapshot_{results_date}.json"
     if not snapshot_path.exists():
+        original_results_date = results_date
         fallback_date = snapshot_date_at_or_before(logs_dir, results_date)
         if fallback_date:
             snapshot_path = logs_dir / f"targets_snapshot_{fallback_date}.json"
             results_date = fallback_date
-            note = f"Using snapshot from {fallback_date} for results_date {results_date}"
+            note = f"Using snapshot from {fallback_date} for results_date {original_results_date}"
         else:
             snapshot_path = None
             note = f"No targets snapshot found for {results_date}"
