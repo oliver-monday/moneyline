@@ -967,7 +967,7 @@
 
   <details class="slip-panel" id="slipDrawer">
     <summary>
-      <span class="slip-title">😈 Slip 🔮 <span id="slipSummaryCount">(0/6)</span></span>
+      <span class="slip-title">😈 Slip Stash 🔮 <span id="slipSummaryCount">(0/6)</span></span>
     </summary>
     <div class="slip-body">
       <div class="slip-actions">
@@ -2471,25 +2471,33 @@ async function load() {
     const rebFull = RA_T.map(t => hitPill(data.row, "reb", t, win)).join("");
     const astFull = RA_T.map(t => hitPill(data.row, "ast", t, win)).join("");
     const tpmFull = TPM_T.map(t => hitPill(data.row, "3pt", t, win)).join("");
+    const ptsAvg = seasonAvg(data.row, "pts");
+    const rebAvg = seasonAvg(data.row, "reb");
+    const astAvg = seasonAvg(data.row, "ast");
+    const tpmAvg = seasonAvg(data.row, "3pt");
+    const ptsHeader = fmtAvgCore(ptsAvg, getCoreVal(data.row, "pts", _metricWin), _metricLabel) || `Avg ${data.ptsAvgText}`;
+    const rebHeader = fmtAvgCore(rebAvg, getCoreVal(data.row, "reb", _metricWin), _metricLabel) || `Avg ${data.rebAvgText}`;
+    const astHeader = fmtAvgCore(astAvg, getCoreVal(data.row, "ast", _metricWin), _metricLabel) || `Avg ${data.astAvgText}`;
+    const tpmHeader = fmtAvgCore(tpmAvg, getCoreVal(data.row, "3pt", _metricWin), _metricLabel) || `Avg ${data.tpmAvgText}`;
 
     return `
       <div class="matrixhdr">
-        <div><strong>PTS</strong> · Avg ${data.ptsAvgText} • min in window: ${ptsMin}</div>
+        <div><strong>PTS</strong> · ${ptsHeader} • min in window: ${ptsMin}</div>
       </div>
       <div class="pills">${ptsFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>REB</strong> · Avg ${data.rebAvgText} • min in window: ${rebMin}</div>
+        <div><strong>REB</strong> · ${rebHeader} • min in window: ${rebMin}</div>
       </div>
       <div class="pills">${rebFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>AST</strong> · Avg ${data.astAvgText} • min in window: ${astMin}</div>
+        <div><strong>AST</strong> · ${astHeader} • min in window: ${astMin}</div>
       </div>
       <div class="pills">${astFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>3PT</strong> · Avg ${data.tpmAvgText} • min in window: ${tpmMin}</div>
+        <div><strong>3PT</strong> · ${tpmHeader} • min in window: ${tpmMin}</div>
       </div>
       <div class="pills">${tpmFull}</div>
     `;
@@ -2925,6 +2933,10 @@ async function load() {
       const rebAvgText = Number.isFinite(rebAvg) ? rebAvg.toFixed(1) : "—";
       const astAvgText = Number.isFinite(astAvg) ? astAvg.toFixed(1) : "—";
       const tpmAvgText = Number.isFinite(tpmAvg) ? tpmAvg.toFixed(1) : "—";
+      const ptsCoreText = fmtAvgCore(ptsAvg, getCoreVal(r, "pts", metricWinVal), _metricLabel) || `Avg ${ptsAvgText}`;
+      const rebCoreText = fmtAvgCore(rebAvg, getCoreVal(r, "reb", metricWinVal), _metricLabel) || `Avg ${rebAvgText}`;
+      const astCoreText = fmtAvgCore(astAvg, getCoreVal(r, "ast", metricWinVal), _metricLabel) || `Avg ${astAvgText}`;
+      const tpmCoreText = fmtAvgCore(tpmAvg, getCoreVal(r, "3pt", metricWinVal), _metricLabel) || `Avg ${tpmAvgText}`;
 
       const targets = targetsMemo(r, win);
 
@@ -2952,6 +2964,10 @@ async function load() {
         rebAvgText,
         astAvgText,
         tpmAvgText,
+        ptsCoreText,
+        rebCoreText,
+        astCoreText,
+        tpmCoreText,
         targets,
         loadLine,
         injuryStatus,
@@ -3021,28 +3037,28 @@ async function load() {
             <div>
               <div class="statline">
                 <div class="statlabel">PTS</div>
-                <div class="statavg">Avg ${data.ptsAvgText}</div>
+                <div class="statavg">${data.ptsCoreText}</div>
                 <div class="pills">${data.ptsBest || placeholder}</div>
               </div>
             </div>
             <div>
               <div class="statline">
                 <div class="statlabel">REB</div>
-                <div class="statavg">Avg ${data.rebAvgText}</div>
+                <div class="statavg">${data.rebCoreText}</div>
                 <div class="pills">${data.rebBest || placeholder}</div>
               </div>
             </div>
             <div>
               <div class="statline">
                 <div class="statlabel">AST</div>
-                <div class="statavg">Avg ${data.astAvgText}</div>
+                <div class="statavg">${data.astCoreText}</div>
                 <div class="pills">${data.astBest || placeholder}</div>
               </div>
             </div>
             <div>
               <div class="statline">
                 <div class="statlabel">3PT</div>
-                <div class="statavg">Avg ${data.tpmAvgText}</div>
+                <div class="statavg">${data.tpmCoreText}</div>
                 <div class="pills">${data.tpmBest || placeholder}</div>
               </div>
             </div>
