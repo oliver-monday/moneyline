@@ -615,6 +615,7 @@ def ingest_events(
                 "pts": int(r["pts"]),
                 "reb": int(r["reb"]),
                 "ast": int(r["ast"]),
+                "tpm": int(r.get("tpm", 0)),
                 "dnp": int(r["dnp"]),
                 "ingested_at": ingested_at,
                 "team_hint_ok": "" if team_hint_ok is None else int(team_hint_ok),
@@ -742,15 +743,17 @@ def main():
     unresolved = write_unresolved(wl, dim_new, args.unresolved)
 
     try:
+        tpm_new = pd.to_numeric(df_new.get("tpm"), errors="coerce").fillna(0)
+        tpm_new_nonzero = int((tpm_new > 0).sum())
         tpm_vals = pd.to_numeric(df_merged.get("tpm"), errors="coerce").fillna(0)
         tpm_nonzero = int((tpm_vals > 0).sum())
         sample = df_merged.loc[tpm_vals > 0].head(1)
         if not sample.empty:
             sample_name = sample["player_name"].iloc[0]
             sample_tpm = sample["tpm"].iloc[0]
-            print(f"[ingest] rows={len(df_merged)} tpm_nonzero={tpm_nonzero} sample_tpm={sample_name}:{sample_tpm}")
+            print(f"[ingest] rows={len(df_merged)} tpm_nonzero={tpm_nonzero} tpm_new_nonzero={tpm_new_nonzero} sample_tpm={sample_name}:{sample_tpm}")
         else:
-            print(f"[ingest] rows={len(df_merged)} tpm_nonzero={tpm_nonzero}")
+            print(f"[ingest] rows={len(df_merged)} tpm_nonzero={tpm_nonzero} tpm_new_nonzero={tpm_new_nonzero}")
     except Exception:
         pass
 
