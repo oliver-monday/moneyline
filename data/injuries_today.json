@@ -1,17 +1,17 @@
 {
   "asof_date": "2025-12-29",
-  "built_at_utc": "2025-12-29T17:10:14Z",
+  "built_at_utc": "2025-12-29T20:22:08Z",
   "source": "rotowire",
   "PHX": [
-    {
-      "name": "R. Dunn",
-      "status": "QUES",
-      "details": "R. Dunn (Ques)"
-    },
     {
       "name": "G. Allen",
       "status": "OUT",
       "details": "G. Allen (Out)"
+    },
+    {
+      "name": "Ryan Dunn",
+      "status": "OUT",
+      "details": "Ryan Dunn (Out)"
     },
     {
       "name": "J. Green",
@@ -45,18 +45,18 @@
     },
     {
       "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
-      "name": "K. Middleton",
-      "status": "QUES",
-      "details": "K. Middleton (Ques)"
+      "status": "OUT",
+      "details": "K. George (Out)"
     },
     {
       "name": "C. Kispert",
-      "status": "QUES",
-      "details": "C. Kispert (Ques)"
+      "status": "OUT",
+      "details": "C. Kispert (Out)"
+    },
+    {
+      "name": "K. Middleton",
+      "status": "OUT",
+      "details": "K. Middleton (Out)"
     },
     {
       "name": "C. Whitmore",
@@ -67,18 +67,18 @@
   "WAS": [
     {
       "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
+      "status": "OUT",
+      "details": "K. George (Out)"
     },
     {
       "name": "C. Kispert",
-      "status": "QUES",
-      "details": "C. Kispert (Ques)"
+      "status": "OUT",
+      "details": "C. Kispert (Out)"
     },
     {
       "name": "K. Middleton",
-      "status": "QUES",
-      "details": "K. Middleton (Ques)"
+      "status": "OUT",
+      "details": "K. Middleton (Out)"
     },
     {
       "name": "C. Whitmore",
@@ -206,19 +206,9 @@
   ],
   "GSW": [
     {
-      "name": "L. Cryer",
-      "status": "QUES",
-      "details": "L. Cryer (Ques)"
-    },
-    {
-      "name": "D. Melton",
+      "name": "J. Butler",
       "status": "PROB",
-      "details": "D. Melton (Prob)"
-    },
-    {
-      "name": "S. Curry",
-      "status": "QUES",
-      "details": "S. Curry (Ques)"
+      "details": "J. Butler (Prob)"
     },
     {
       "name": "Seth Curry",
@@ -231,12 +221,22 @@
       "details": "Al Horford (Out)"
     },
     {
+      "name": "Z. Williams",
+      "status": "PROB",
+      "details": "Z. Williams (Prob)"
+    },
+    {
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
     }
   ],
   "BKN": [
+    {
+      "name": "Z. Williams",
+      "status": "PROB",
+      "details": "Z. Williams (Prob)"
+    },
     {
       "name": "H. Highsmith",
       "status": "OUT",
@@ -253,6 +253,11 @@
       "name": "J. Suggs",
       "status": "DOUBT",
       "details": "J. Suggs (Doubt)"
+    },
+    {
+      "name": "C. Castleton",
+      "status": "OUT",
+      "details": "C. Castleton (Out)"
     },
     {
       "name": "M. Wagner",
@@ -300,8 +305,13 @@
   "NYK": [
     {
       "name": "M. McBride",
+      "status": "PROB",
+      "details": "M. McBride (Prob)"
+    },
+    {
+      "name": "T. Kolek",
       "status": "QUES",
-      "details": "M. McBride (Ques)"
+      "details": "T. Kolek (Ques)"
     },
     {
       "name": "Josh Hart",
@@ -358,11 +368,6 @@
       "details": "T. Shannon (Out)"
     },
     {
-      "name": "J. Giddey",
-      "status": "PROB",
-      "details": "J. Giddey (Prob)"
-    },
-    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
@@ -376,6 +381,11 @@
       "name": "T. Flowers",
       "status": "OUT",
       "details": "T. Flowers (Out)"
+    },
+    {
+      "name": "L. Olbrich",
+      "status": "OUT",
+      "details": "L. Olbrich (Out)"
     }
   ],
   "CHI": [
@@ -385,11 +395,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Giddey",
-      "status": "PROB",
-      "details": "J. Giddey (Prob)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
@@ -398,6 +403,11 @@
       "name": "T. Flowers",
       "status": "OUT",
       "details": "T. Flowers (Out)"
+    },
+    {
+      "name": "L. Olbrich",
+      "status": "OUT",
+      "details": "L. Olbrich (Out)"
     }
   ],
   "IND": [
@@ -407,24 +417,14 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "J. Huff",
-      "status": "QUES",
-      "details": "J. Huff (Ques)"
-    },
-    {
-      "name": "T. McConnell",
-      "status": "QUES",
-      "details": "T. McConnell (Ques)"
-    },
-    {
-      "name": "B. Sheppard",
-      "status": "QUES",
-      "details": "B. Sheppard (Ques)"
-    },
-    {
       "name": "I. Jackson",
       "status": "OUT",
       "details": "I. Jackson (Out)"
+    },
+    {
+      "name": "B. Sheppard",
+      "status": "OUT",
+      "details": "B. Sheppard (Out)"
     },
     {
       "name": "Obi Toppin",
@@ -433,8 +433,8 @@
     },
     {
       "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
+      "status": "OUT",
+      "details": "A. Sengun (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -445,8 +445,8 @@
   "HOU": [
     {
       "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
+      "status": "OUT",
+      "details": "A. Sengun (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -490,11 +490,6 @@
       "details": "E. Ndiaye (OFS)"
     },
     {
-      "name": "T. Young",
-      "status": "QUES",
-      "details": "T. Young (Ques)"
-    },
-    {
       "name": "J. Johnson",
       "status": "OUT",
       "details": "J. Johnson (Out)"
@@ -505,9 +500,9 @@
       "details": "K. Porzingis (Out)"
     },
     {
-      "name": "I. Hartenstein",
-      "status": "QUES",
-      "details": "I. Hartenstein (Ques)"
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     },
     {
       "name": "T. Sorber",
@@ -515,29 +510,29 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "O. Dieng",
-      "status": "QUES",
-      "details": "O. Dieng (Ques)"
-    },
-    {
-      "name": "I. Joe",
-      "status": "QUES",
-      "details": "I. Joe (Ques)"
-    },
-    {
       "name": "A. Mitchell",
       "status": "QUES",
       "details": "A. Mitchell (Ques)"
     },
     {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
+      "name": "O. Dieng",
+      "status": "OUT",
+      "details": "O. Dieng (Out)"
+    },
+    {
+      "name": "I. Hartenstein",
+      "status": "OUT",
+      "details": "I. Hartenstein (Out)"
     },
     {
       "name": "N. Topic",
       "status": "OUT",
       "details": "N. Topic (Out)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ],
   "OKC": [
@@ -547,34 +542,29 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "O. Dieng",
-      "status": "QUES",
-      "details": "O. Dieng (Ques)"
-    },
-    {
-      "name": "I. Hartenstein",
-      "status": "QUES",
-      "details": "I. Hartenstein (Ques)"
-    },
-    {
-      "name": "I. Joe",
-      "status": "QUES",
-      "details": "I. Joe (Ques)"
-    },
-    {
       "name": "A. Mitchell",
       "status": "QUES",
       "details": "A. Mitchell (Ques)"
     },
     {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
+      "name": "O. Dieng",
+      "status": "OUT",
+      "details": "O. Dieng (Out)"
+    },
+    {
+      "name": "I. Hartenstein",
+      "status": "OUT",
+      "details": "I. Hartenstein (Out)"
     },
     {
       "name": "N. Topic",
       "status": "OUT",
       "details": "N. Topic (Out)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ],
   "DAL": [
@@ -589,14 +579,14 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "B. Williams",
+      "status": "PROB",
+      "details": "B. Williams (Prob)"
+    },
+    {
       "name": "A. Davis",
       "status": "QUES",
       "details": "A. Davis (Ques)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "QUES",
-      "details": "B. Williams (Ques)"
     },
     {
       "name": "K. Irving",
