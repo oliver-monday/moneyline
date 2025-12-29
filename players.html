@@ -427,6 +427,15 @@
       margin-bottom: 6px;
       text-align: center;
     }
+    .season-perf-sub {
+      font-size: 13px;
+      color: #777;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+    .season-perf-sub .season-perf-value {
+      color: #777;
+    }
     .season-perf-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -996,9 +1005,8 @@
     </div>
     <div class="season-perf" id="seasonPerf" hidden>
       <div class="season-perf-title">Season Performance</div>
+      <div class="season-perf-sub" id="seasonPerfSub"></div>
       <div class="season-perf-grid">
-        <div class="season-perf-row"><span>As Of</span><span class="season-perf-value" id="seasonPerfUpdated">—</span></div>
-        <div class="season-perf-row season-perf-right"><span>Days tracked</span><span class="season-perf-value" id="seasonPerfDays">—</span></div>
         <div class="season-perf-row"><span>Top Targets</span><span class="season-perf-value" id="seasonPerfTop">—</span></div>
         <div class="season-perf-row season-perf-right"><span>All Targets</span><span class="season-perf-value" id="seasonPerfAll">—</span></div>
       </div>
@@ -2212,9 +2220,10 @@ async function load() {
   if (metaDate) metaDate.textContent = todayDisplay;
   const totalGames = 1231;
   const gamesPlayed = Array.isArray(games) ? games.length : 0;
+  const gamesTodayCount = Array.isArray(gamesTodayOrdered) ? gamesTodayOrdered.length : 0;
   const gamesLeft = Math.max(0, totalGames - gamesPlayed);
   if (gamesLeftEl) {
-    gamesLeftEl.innerHTML = `Games Today: <span class="games-left-value">${gamesPlayed}</span> • Games Left: <span class="games-left-value">${gamesLeft}</span>`;
+    gamesLeftEl.innerHTML = `Games Today: <span class="games-left-value">${gamesTodayCount}</span> • Games Left: <span class="games-left-value">${gamesLeft}</span>`;
   }
 
   const q = document.getElementById("q");
@@ -2871,12 +2880,14 @@ async function load() {
     const updated = summary.end_date || fallbackDate || "";
     const topEl = document.getElementById("seasonPerfTop");
     const allEl = document.getElementById("seasonPerfAll");
-    const daysEl = document.getElementById("seasonPerfDays");
-    const updatedEl = document.getElementById("seasonPerfUpdated");
+    const subEl = document.getElementById("seasonPerfSub");
     if (topEl) topEl.textContent = pct(topHits, topTotal);
     if (allEl) allEl.textContent = pct(allHits, allTotal);
-    if (daysEl) daysEl.textContent = daysTracked ? String(daysTracked) : "—";
-    if (updatedEl) updatedEl.textContent = updated || "—";
+    if (subEl) {
+      const daysText = daysTracked ? String(daysTracked) : "—";
+      const asofText = updated || "—";
+      subEl.innerHTML = `As Of <span class="season-perf-value">${asofText}</span> | Days Tracked <span class="season-perf-value">${daysText}</span>`;
+    }
     panel.hidden = false;
   }
 
