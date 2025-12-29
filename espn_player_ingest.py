@@ -50,6 +50,8 @@ SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/s
 SUMMARY_URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary"
 DEBUG_TPM = True
 DEBUG_TPM_SAMPLES = 0
+DEBUG_TPM_SCAN = True
+DEBUG_TPM_SCAN_COUNT = 0
 
 # --------------------------------------------------------------------
 # Helpers
@@ -309,14 +311,26 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
                     s = str(x).strip()
                     if s in ("", "--", "—", "–"):
                         return 0
-                    s = s.replace("–", "-").replace("—", "-")
-                    m = re.search(r"^\s*(\d+)", s)
-                    if m:
-                        try:
-                            return int(m.group(1))
-                        except ValueError:
-                            return 0
-                    return 0
+                    for ch in ("\u2010", "\u2011", "\u2012", "\u2013", "\u2014", "\u2212"):
+                        s = s.replace(ch, "-")
+                    if "-" in s or "/" in s:
+                        s = re.split(r"[-/]", s, 1)[0]
+                    m = re.search(r"\d+", s)
+                    return int(m.group(0)) if m else 0
+
+                global DEBUG_TPM_SCAN, DEBUG_TPM_SCAN_COUNT
+                if DEBUG_TPM_SCAN:
+                    try:
+                        scan_s = str(tpm_raw or "").strip()
+                        if scan_s and scan_s not in ("--", "—", "–"):
+                            seps = [c for c in scan_s if (not c.isdigit() and not c.isspace())]
+                            codepoints = [f"U+{ord(c):04X}" for c in seps]
+                            print(f"[DEBUG_TPM] raw={tpm_raw!r} seps={codepoints}")
+                            DEBUG_TPM_SCAN_COUNT += 1
+                            if DEBUG_TPM_SCAN_COUNT >= 10:
+                                DEBUG_TPM_SCAN = False
+                    except Exception:
+                        DEBUG_TPM_SCAN = False
 
                 tpm_val = parse_tpm(tpm_raw)
                 if os.environ.get("DEBUG_TPM") == "1":
@@ -737,8 +751,6 @@ def main():
             print(f"[ingest] rows={len(df_merged)} tpm_nonzero={tpm_nonzero} sample_tpm={sample_name}:{sample_tpm}")
         else:
             print(f"[ingest] rows={len(df_merged)} tpm_nonzero={tpm_nonzero}")
-        if tpm_nonzero == 0 and args.mode == "yesterday":
-            print("[DEBUG_TPM] tpm_nonzero=0 — likely label mismatch; re-run after inspecting labels output.")
     except Exception:
         pass
 
