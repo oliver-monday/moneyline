@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-29",
-  "built_at_utc": "2025-12-29T22:26:17Z",
+  "built_at_utc": "2025-12-29T23:22:01Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -88,19 +88,9 @@
   ],
   "MIL": [
     {
-      "name": "G. Trent",
-      "status": "QUES",
-      "details": "G. Trent (Ques)"
-    },
-    {
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
-    },
-    {
-      "name": "S. James",
-      "status": "QUES",
-      "details": "S. James (Ques)"
     },
     {
       "name": "R. Kalkbrenner",
@@ -124,11 +114,6 @@
     }
   ],
   "CHA": [
-    {
-      "name": "S. James",
-      "status": "QUES",
-      "details": "S. James (Ques)"
-    },
     {
       "name": "R. Kalkbrenner",
       "status": "OUT",
@@ -206,11 +191,6 @@
   ],
   "GSW": [
     {
-      "name": "J. Butler",
-      "status": "PROB",
-      "details": "J. Butler (Prob)"
-    },
-    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
@@ -221,22 +201,12 @@
       "details": "Al Horford (Out)"
     },
     {
-      "name": "Z. Williams",
-      "status": "PROB",
-      "details": "Z. Williams (Prob)"
-    },
-    {
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
     }
   ],
   "BKN": [
-    {
-      "name": "Z. Williams",
-      "status": "PROB",
-      "details": "Z. Williams (Prob)"
-    },
     {
       "name": "H. Highsmith",
       "status": "OUT",
@@ -245,19 +215,14 @@
   ],
   "ORL": [
     {
-      "name": "G. Bitadze",
-      "status": "QUES",
-      "details": "G. Bitadze (Ques)"
-    },
-    {
-      "name": "J. Suggs",
-      "status": "DOUBT",
-      "details": "J. Suggs (Doubt)"
-    },
-    {
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
+    },
+    {
+      "name": "J. Suggs",
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
     },
     {
       "name": "M. Wagner",
@@ -268,11 +233,6 @@
       "name": "F. Wagner",
       "status": "OUT",
       "details": "F. Wagner (Out)"
-    },
-    {
-      "name": "C. Murray-Boyles",
-      "status": "QUES",
-      "details": "C. Murray-Boyles (Ques)"
     },
     {
       "name": "RJ Barrett",
@@ -286,11 +246,6 @@
     }
   ],
   "TOR": [
-    {
-      "name": "C. Murray-Boyles",
-      "status": "QUES",
-      "details": "C. Murray-Boyles (Ques)"
-    },
     {
       "name": "RJ Barrett",
       "status": "OUT",
