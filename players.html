@@ -966,7 +966,9 @@
   </details>
 
   <details class="slip-panel" id="slipDrawer">
-    <summary><span id="slipSummary">😈 Slip 🔮 (0/6)</span></summary>
+    <summary>
+      <span class="slip-title">😈 Slip 🔮 <span id="slipSummaryCount">(0/6)</span></span>
+    </summary>
     <div class="slip-body">
       <div class="slip-actions">
         <button type="button" id="slipCopy">Copy Slip</button>
@@ -1498,9 +1500,9 @@ function updateSlipSelected() {
 }
 
 function renderSlip() {
-  const slipSummary = document.getElementById("slipSummary");
+  const slipSummary = document.getElementById("slipSummaryCount");
   const slipList = document.getElementById("slipList");
-  if (slipSummary) slipSummary.textContent = `Slip (${slipLegs.length}/${SLIP_MAX})`;
+  if (slipSummary) slipSummary.textContent = `(${slipLegs.length}/${SLIP_MAX})`;
   if (!slipList) return;
   if (!slipLegs.length) {
     slipList.innerHTML = `<div class="muted">No legs yet.</div>`;
