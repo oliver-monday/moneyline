@@ -313,6 +313,7 @@ def main():
         base["pts_iqr_10"] = iqr(last10["pts"]) if len(last10) else float("nan")
         base["reb_iqr_10"] = iqr(last10["reb"]) if len(last10) else float("nan")
         base["ast_iqr_10"] = iqr(last10["ast"]) if len(last10) else float("nan")
+        base["3pt_iqr_10"] = iqr(last10["tpm"]) if len(last10) else float("nan")
 
         # Multi-window core averages + volatility
         last20 = gp.head(20)
@@ -326,6 +327,44 @@ def main():
             base[f"core_{stat}_season"] = base[f"{stat}_core_season"]
             base[f"{stat}_iqr_20"] = iqr(last20[stat]) if len(last20) else float("nan")
             base[f"{stat}_iqr_season"] = iqr(season_gp[stat]) if len(season_gp) else float("nan")
+
+        base["3pt_core_10"] = core_avg(last10["tpm"]) if len(last10) else float("nan")
+        base["3pt_core_20"] = core_avg(last20["tpm"]) if len(last20) else float("nan")
+        base["3pt_core_season"] = core_avg(season_gp["tpm"]) if len(season_gp) else float("nan")
+        base["core_3pt_10"] = base["3pt_core_10"]
+        base["core_3pt_20"] = base["3pt_core_20"]
+        base["core_3pt_season"] = base["3pt_core_season"]
+        base["3pt_iqr_20"] = iqr(last20["tpm"]) if len(last20) else float("nan")
+        base["3pt_iqr_season"] = iqr(season_gp["tpm"]) if len(season_gp) else float("nan")
+
+        base["tpm_mean_10"] = float(last10["tpm"].mean()) if len(last10) else float("nan")
+        base["tpm_mean_20"] = float(last20["tpm"].mean()) if len(last20) else float("nan")
+        base["tpm_mean_season"] = float(season_gp["tpm"].mean()) if len(season_gp) else float("nan")
+        base["tpm_nonzero_rate_10"] = float((last10["tpm"] > 0).mean()) if len(last10) else float("nan")
+        base["tpm_nonzero_rate_20"] = float((last20["tpm"] > 0).mean()) if len(last20) else float("nan")
+        base["tpm_nonzero_rate_season"] = float((season_gp["tpm"] > 0).mean()) if len(season_gp) else float("nan")
+
+        gp10 = int(len(last10))
+        gp20 = int(len(last20))
+        gpSeason = int(len(season_gp))
+        base["threept_eligible_10"] = bool(
+            gp10 >= 7 and (
+                (np.isfinite(base["tpm_mean_10"]) and base["tpm_mean_10"] >= 1.0) or
+                (np.isfinite(base["tpm_nonzero_rate_10"]) and base["tpm_nonzero_rate_10"] >= 0.60)
+            )
+        )
+        base["threept_eligible_20"] = bool(
+            gp20 >= 14 and (
+                (np.isfinite(base["tpm_mean_20"]) and base["tpm_mean_20"] >= 1.0) or
+                (np.isfinite(base["tpm_nonzero_rate_20"]) and base["tpm_nonzero_rate_20"] >= 0.60)
+            )
+        )
+        base["threept_eligible_season"] = bool(
+            gpSeason >= 25 and (
+                (np.isfinite(base["tpm_mean_season"]) and base["tpm_mean_season"] >= 0.9) or
+                (np.isfinite(base["tpm_nonzero_rate_season"]) and base["tpm_nonzero_rate_season"] >= 0.55)
+            )
+        )
 
         # Minutes stability + DNP rate
         base["minutes_iqr_10"] = iqr(last10["minutes"]) if len(last10) else float("nan")
@@ -432,6 +471,12 @@ def main():
             landmine_avg_season,
         )
         base["consistency_score"] = base.get("consistency_10")
+        base["consistency_3pt_10"] = consistency_score(base.get("3pt_iqr_10"), 2.0)
+        base["consistency_3pt_20"] = consistency_score(base.get("3pt_iqr_20"), 2.0)
+        base["consistency_3pt_season"] = consistency_score(base.get("3pt_iqr_season"), 2.0)
+        base["consistency_tier_3pt_10"] = consistency_tier(base.get("consistency_3pt_10"))
+        base["consistency_tier_3pt_20"] = consistency_tier(base.get("consistency_3pt_20"))
+        base["consistency_tier_3pt_season"] = consistency_tier(base.get("consistency_3pt_season"))
         base["consistency_tier_10"] = consistency_tier(base.get("consistency_10"))
         base["consistency_tier_20"] = consistency_tier(base.get("consistency_20"))
         base["consistency_tier_season"] = consistency_tier(base.get("consistency_season"))
@@ -511,6 +556,7 @@ def main():
     features = {}
     asof_str = asof.strftime("%Y-%m-%d")
     tier_counts = {}
+    threept_counts = {"eligible": 0, "ineligible": 0}
     for _, row in out.iterrows():
         pid = str(row.get("player_id", "")).strip()
         if not pid:
@@ -518,6 +564,10 @@ def main():
         tier = str(row.get("consistency_tier", "")).strip()
         if tier:
             tier_counts[tier] = tier_counts.get(tier, 0) + 1
+        if bool(row.get("threept_eligible_10")):
+            threept_counts["eligible"] += 1
+        else:
+            threept_counts["ineligible"] += 1
         features[pid] = {
             "player_name": row.get("player_name", ""),
             "team_abbrev": row.get("last_team_abbrev", ""),
@@ -562,6 +612,21 @@ def main():
             "consistency_tier_10": row.get("consistency_tier_10"),
             "consistency_tier_20": row.get("consistency_tier_20"),
             "consistency_tier_season": row.get("consistency_tier_season"),
+            "consistency_3pt_10": row.get("consistency_3pt_10"),
+            "consistency_3pt_20": row.get("consistency_3pt_20"),
+            "consistency_3pt_season": row.get("consistency_3pt_season"),
+            "consistency_tier_3pt_10": row.get("consistency_tier_3pt_10"),
+            "consistency_tier_3pt_20": row.get("consistency_tier_3pt_20"),
+            "consistency_tier_3pt_season": row.get("consistency_tier_3pt_season"),
+            "threept_eligible_10": row.get("threept_eligible_10"),
+            "threept_eligible_20": row.get("threept_eligible_20"),
+            "threept_eligible_season": row.get("threept_eligible_season"),
+            "tpm_mean_10": row.get("tpm_mean_10"),
+            "tpm_mean_20": row.get("tpm_mean_20"),
+            "tpm_mean_season": row.get("tpm_mean_season"),
+            "tpm_nonzero_rate_10": row.get("tpm_nonzero_rate_10"),
+            "tpm_nonzero_rate_20": row.get("tpm_nonzero_rate_20"),
+            "tpm_nonzero_rate_season": row.get("tpm_nonzero_rate_season"),
             "share_pts_l5": row.get("share_pts_l5"),
             "share_pts_l20": row.get("share_pts_l20"),
             "share_pts_trend_pp": row.get("share_pts_trend_pp"),
@@ -580,6 +645,8 @@ def main():
         pass
     if tier_counts:
         print(f"[consistency] tiers={tier_counts}")
+    if threept_counts["eligible"] or threept_counts["ineligible"]:
+        print(f"[3pt] eligibility_10={threept_counts}")
 
     out.to_csv(args.out, index=False)
     print(f"Wrote snapshot: {args.out} (rows={len(out)})")

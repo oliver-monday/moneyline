@@ -1244,6 +1244,25 @@ function featureNum(row, key) {
   return null;
 }
 
+function featureBool(row, key) {
+  const raw = row && row[key];
+  if (raw === true || raw === false) return raw;
+  if (raw != null) {
+    const s = String(raw).toLowerCase().trim();
+    if (s === "true" || s === "1") return true;
+    if (s === "false" || s === "0") return false;
+  }
+  const pid = row && row.player_id ? String(row.player_id) : "";
+  if (pid && PLAYER_FEATURES && PLAYER_FEATURES[pid] && PLAYER_FEATURES[pid][key] != null) {
+    const pv = PLAYER_FEATURES[pid][key];
+    if (pv === true || pv === false) return pv;
+    const s = String(pv).toLowerCase().trim();
+    if (s === "true" || s === "1") return true;
+    if (s === "false" || s === "0") return false;
+  }
+  return null;
+}
+
 function metricLabelFor(win) {
   if (win === "20") return "L20";
   if (win === "season") return "Season";
@@ -1273,6 +1292,37 @@ function getConsistencyVal(row, win) {
   const v = featureNum(row, `consistency_${suffix}`);
   if (v != null) return v;
   return featureNum(row, "consistency_score");
+}
+
+function getConsistencyValStat(row, statKey, win) {
+  if (statKey === "3pt") {
+    const suffix = metricSuffix(win);
+    const v = featureNum(row, `consistency_3pt_${suffix}`);
+    if (v != null) return v;
+  }
+  return getConsistencyVal(row, win);
+}
+
+function getThreeptEligible(row, win) {
+  const suffix = metricSuffix(win);
+  const v = featureBool(row, `threept_eligible_${suffix}`);
+  return v;
+}
+
+function fmtAvgCore3pt(avg, core, label, eligible, tierScore) {
+  const base = fmtAvgCore(avg, core, label);
+  if (eligible === false) {
+    const coreLabel = label ? `Core(${label})` : "Core";
+    const avgPart = Number.isFinite(avg) ? `Avg: ${avg.toFixed(1)}` : "";
+    const parts = [];
+    if (avgPart) parts.push(avgPart);
+    parts.push(`${coreLabel}: —`);
+    parts.push("Low 3PT volume");
+    return parts.join(" | ");
+  }
+  if (!base) return "";
+  const tier = consistencyTierLabel(tierScore);
+  return tier ? `${base} | ${tier}` : base;
 }
 
 function getDnpRate(row, win) {
@@ -2019,7 +2069,10 @@ function fmtAvgCore(avg, core, label) {
 }
 
 function formatTargetShort(t) {
-  const avgText = fmtAvgCore(t.avg, t.core, _metricLabel);
+  const statKey = String(t.stat || "").toLowerCase();
+  const avgText = statKey === "3pt"
+    ? fmtAvgCore3pt(t.avg, t.core, _metricLabel, t.threeptEligible, t.threeptCons)
+    : fmtAvgCore(t.avg, t.core, _metricLabel);
   const tail = avgText ? ` · ${avgText}` : "";
   return `${t.playerName} ${t.stat.toUpperCase()} ${t.t}+ (${t.hits}/${t.gp})${tail}`;
 }
@@ -2332,8 +2385,11 @@ async function load() {
 
   function targetRowHTML(item) {
     const stat = String(item.stat || "").toUpperCase();
+    const statKey = String(item.stat || "").toLowerCase();
     const chip = `${stat} ${item.threshold}+ (${item.hits}/${item.gp})`;
-    const avgText = fmtAvgCore(item.avg, item.core, _metricLabel);
+    const avgText = statKey === "3pt"
+      ? fmtAvgCore3pt(item.avg, item.core, _metricLabel, item.threeptEligible, item.threeptCons)
+      : fmtAvgCore(item.avg, item.core, _metricLabel);
     const flags = [];
     if (item.highFatigue) flags.push("<span class=\"suggested-flag\">HIGH FATIGUE</span>");
     if (item.trapRisk) flags.push("<span class=\"suggested-flag\">TRAP RISK</span>");
@@ -2457,8 +2513,9 @@ async function load() {
           const trendPP = getFeature(data.row, `share_${statKey}_trend_pp`);
           const coreWin = getCoreVal(data.row, statKey, metricWinVal);
           const coreSeason = getCoreVal(data.row, statKey, "season");
-          const consWin = getConsistencyVal(data.row, metricWinVal);
-          const consSeason = getConsistencyVal(data.row, "season");
+          const consWin = getConsistencyValStat(data.row, statKey, metricWinVal);
+          const consSeason = getConsistencyValStat(data.row, statKey, "season");
+          const threeptEligible = statKey === "3pt" ? getThreeptEligible(data.row, metricWinVal) : null;
           const coreUsed = (metricWinVal === "season")
             ? coreSeason
             : (Number.isFinite(coreWin) && Number.isFinite(coreSeason) ? (0.7 * coreWin + 0.3 * coreSeason) : (coreWin != null ? coreWin : coreSeason));
@@ -2527,12 +2584,19 @@ async function load() {
 
           let consistencyAdj = 0;
           if (consUsed != null) {
-            if (consUsed < 50) consistencyAdj -= 0.08;
-            else if (consUsed <= 64) consistencyAdj += 0.00;
-            else if (consUsed <= 72) consistencyAdj += 0.03;
-            else if (consUsed <= 78) consistencyAdj += 0.06;
-            else if (consUsed <= 84) consistencyAdj += 0.08;
-            else consistencyAdj += 0.10;
+            if (statKey === "3pt" && threeptEligible === false) {
+              consistencyAdj = 0;
+            } else {
+              let baseAdj = 0;
+              if (consUsed < 50) baseAdj -= 0.08;
+              else if (consUsed <= 64) baseAdj += 0.00;
+              else if (consUsed <= 72) baseAdj += 0.03;
+              else if (consUsed <= 78) baseAdj += 0.06;
+              else if (consUsed <= 84) baseAdj += 0.08;
+              else baseAdj += 0.10;
+              const damp = statKey === "3pt" ? 0.75 : 1;
+              consistencyAdj = baseAdj * damp;
+            }
           }
           let landmineCons = 0;
           if (landmineRate != null) {
@@ -2569,6 +2633,8 @@ async function load() {
             roleUp,
             injuryRisk,
             roleOpportunity,
+            threeptEligible,
+            threeptCons: consWin,
           });
         }
       }
@@ -2619,7 +2685,13 @@ async function load() {
     const ptsHeader = fmtAvgCore(ptsAvg, getCoreVal(data.row, "pts", _metricWin), _metricLabel) || `Avg ${data.ptsAvgText}`;
     const rebHeader = fmtAvgCore(rebAvg, getCoreVal(data.row, "reb", _metricWin), _metricLabel) || `Avg ${data.rebAvgText}`;
     const astHeader = fmtAvgCore(astAvg, getCoreVal(data.row, "ast", _metricWin), _metricLabel) || `Avg ${data.astAvgText}`;
-    const tpmHeader = fmtAvgCore(tpmAvg, getCoreVal(data.row, "3pt", _metricWin), _metricLabel) || `Avg ${data.tpmAvgText}`;
+    const tpmHeader = fmtAvgCore3pt(
+      tpmAvg,
+      getCoreVal(data.row, "3pt", _metricWin),
+      _metricLabel,
+      getThreeptEligible(data.row, _metricWin),
+      getConsistencyValStat(data.row, "3pt", _metricWin)
+    ) || `Avg ${data.tpmAvgText}`;
 
     return `
       <div class="matrixhdr">
@@ -3158,7 +3230,13 @@ async function load() {
       const ptsCoreText = fmtAvgCore(ptsAvg, getCoreVal(r, "pts", metricWinVal), _metricLabel) || `Avg ${ptsAvgText}`;
       const rebCoreText = fmtAvgCore(rebAvg, getCoreVal(r, "reb", metricWinVal), _metricLabel) || `Avg ${rebAvgText}`;
       const astCoreText = fmtAvgCore(astAvg, getCoreVal(r, "ast", metricWinVal), _metricLabel) || `Avg ${astAvgText}`;
-      const tpmCoreText = fmtAvgCore(tpmAvg, getCoreVal(r, "3pt", metricWinVal), _metricLabel) || `Avg ${tpmAvgText}`;
+      const tpmCoreText = fmtAvgCore3pt(
+        tpmAvg,
+        getCoreVal(r, "3pt", metricWinVal),
+        _metricLabel,
+        getThreeptEligible(r, metricWinVal),
+        getConsistencyValStat(r, "3pt", metricWinVal)
+      ) || `Avg ${tpmAvgText}`;
 
       const targets = targetsMemo(r, win);
 
@@ -3216,7 +3294,9 @@ async function load() {
           const avgVal = seasonAvg(data.row, t.stat);
           const statKey = String(t.stat || "").toLowerCase();
           const coreVal = getCoreVal(data.row, statKey, metricWinVal);
-          const avgText = fmtAvgCore(avgVal, coreVal, _metricLabel);
+          const avgText = statKey === "3pt"
+            ? fmtAvgCore3pt(avgVal, coreVal, _metricLabel, getThreeptEligible(data.row, metricWinVal), getConsistencyValStat(data.row, "3pt", metricWinVal))
+            : fmtAvgCore(avgVal, coreVal, _metricLabel);
           const attrs = slipAttrsFromRow(data.row, t.stat, t.t);
           const chip = `<span class="target-chip" ${attrs}>Target: ${stat} ${t.t}+ (${t.hits}/${t.gp})</span>`;
           const pills = data.oppTeam ? matchupPills(data.oppTeam, t.stat) : "";
@@ -3365,11 +3445,16 @@ async function load() {
         for (const p of arr) {
           if (isOut(p.row, p.injuryStatus)) continue;
         for (const t of (p.targets || [])) {
+          const statKey = String(t.stat || "").toLowerCase();
+          const threeptEligible = statKey === "3pt" ? getThreeptEligible(p.row, metricWinVal) : null;
+          const threeptCons = statKey === "3pt" ? getConsistencyValStat(p.row, "3pt", metricWinVal) : null;
           targetEntries.push({
             playerName: p.playerName,
             ...t,
             avg: seasonAvg(p.row, t.stat),
             core: getCoreVal(p.row, String(t.stat || "").toLowerCase(), metricWinVal),
+            threeptEligible,
+            threeptCons,
             weight: targetWeight(t),
           });
         }
