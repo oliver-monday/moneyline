@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-29",
-  "built_at_utc": "2025-12-30T01:00:47Z",
+  "built_at_utc": "2025-12-30T02:50:34Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -93,6 +93,11 @@
       "details": "T. Prince (Out)"
     },
     {
+      "name": "M. Bridges",
+      "status": "QUES",
+      "details": "M. Bridges (Ques)"
+    },
+    {
       "name": "R. Kalkbrenner",
       "status": "OUT",
       "details": "R. Kalkbrenner (Out)"
@@ -114,6 +119,11 @@
     }
   ],
   "CHA": [
+    {
+      "name": "M. Bridges",
+      "status": "QUES",
+      "details": "M. Bridges (Ques)"
+    },
     {
       "name": "R. Kalkbrenner",
       "status": "OUT",
@@ -137,6 +147,11 @@
   ],
   "DEN": [
     {
+      "name": "N. Jokic",
+      "status": "QUES",
+      "details": "N. Jokic (Ques)"
+    },
+    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -157,6 +172,11 @@
       "details": "C. Johnson (Out)"
     },
     {
+      "name": "P. Larsson",
+      "status": "QUES",
+      "details": "P. Larsson (Ques)"
+    },
+    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
@@ -168,6 +188,11 @@
     }
   ],
   "MIA": [
+    {
+      "name": "P. Larsson",
+      "status": "QUES",
+      "details": "P. Larsson (Ques)"
+    },
     {
       "name": "T. Herro",
       "status": "OUT",
@@ -204,6 +229,11 @@
     }
   ],
   "ORL": [
+    {
+      "name": "J. Isaac",
+      "status": "QUES",
+      "details": "J. Isaac (Ques)"
+    },
     {
       "name": "C. Castleton",
       "status": "OUT",
@@ -303,6 +333,16 @@
       "details": "T. Shannon (Out)"
     },
     {
+      "name": "J. Giddey",
+      "status": "QUES",
+      "details": "J. Giddey (Ques)"
+    },
+    {
+      "name": "C. White",
+      "status": "QUES",
+      "details": "C. White (Ques)"
+    },
+    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
@@ -328,6 +368,16 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
+    },
+    {
+      "name": "J. Giddey",
+      "status": "QUES",
+      "details": "J. Giddey (Ques)"
+    },
+    {
+      "name": "C. White",
+      "status": "QUES",
+      "details": "C. White (Ques)"
     },
     {
       "name": "Z. Collins",
@@ -367,6 +417,11 @@
       "details": "Obi Toppin (Out)"
     },
     {
+      "name": "S. Adams",
+      "status": "QUES",
+      "details": "S. Adams (Ques)"
+    },
+    {
       "name": "A. Sengun",
       "status": "OUT",
       "details": "A. Sengun (Out)"
@@ -378,6 +433,11 @@
     }
   ],
   "HOU": [
+    {
+      "name": "S. Adams",
+      "status": "QUES",
+      "details": "S. Adams (Ques)"
+    },
     {
       "name": "A. Sengun",
       "status": "OUT",
@@ -492,14 +552,9 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "B. Williams",
-      "status": "PROB",
-      "details": "B. Williams (Prob)"
-    },
-    {
       "name": "A. Davis",
-      "status": "QUES",
-      "details": "A. Davis (Ques)"
+      "status": "OUT",
+      "details": "A. Davis (Out)"
     },
     {
       "name": "K. Irving",
@@ -507,19 +562,9 @@
       "details": "K. Irving (Out)"
     },
     {
-      "name": "K. Murray",
-      "status": "QUES",
-      "details": "K. Murray (Ques)"
-    },
-    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
     },
     {
       "name": "J. Grant",
@@ -535,6 +580,11 @@
       "name": "J. Holiday",
       "status": "OUT",
       "details": "J. Holiday (Out)"
+    },
+    {
+      "name": "K. Murray",
+      "status": "OUT",
+      "details": "K. Murray (Out)"
     },
     {
       "name": "M. Thybulle",
@@ -554,16 +604,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "K. Murray",
-      "status": "QUES",
-      "details": "K. Murray (Ques)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
-    },
-    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
@@ -577,6 +617,11 @@
       "name": "J. Holiday",
       "status": "OUT",
       "details": "J. Holiday (Out)"
+    },
+    {
+      "name": "K. Murray",
+      "status": "OUT",
+      "details": "K. Murray (Out)"
     },
     {
       "name": "M. Thybulle",
