@@ -885,7 +885,7 @@ def write_injury_files(slate: pd.DataFrame, asof_date: dt.date) -> None:
 
 # ------------ HTML rendering ------------------------------------------
 
-def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev_map):
+def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev_map, games_played):
 
     CSS = """
     <style>
@@ -938,17 +938,29 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
             font-weight: 800;
             font-size: clamp(16px, 3vw, 22px);
             color: #000000;
-            width: calc((100% - 12px) / 2);
+            width: 100%;
             box-sizing: border-box;
             padding: 12px 16px;
             border: 1px solid #fff;
             border-radius: 14px;
             background: #fff;
             display: inline-flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             white-space: nowrap;
             margin: 0 0 18px;
+            gap: 4px;
+            text-align: center;
+        }
+        .date-sub {
+            font-size: 12px;
+            font-weight: 600;
+            color: #777;
+        }
+        .games-left-value {
+            color: #d97706;
+            font-weight: 800;
         }
         .time-group {
             border: 0;
@@ -1346,7 +1358,13 @@ def build_html(slate, team_results, league_tbl, outfile, today_date, team_abbrev
     w('<div class="brand"><div class="brand-text">NBA</div><img class="brand-logo" src="./assets/NBAGPTlogo-header.png" width="80" height="80" decoding="async" fetchpriority="high" alt="NBA GPT logo"><div class="brand-text">GPT</div></div>')
     w('<div class="nav"><a class="active" href="./index.html">Moneylines</a><a href="./players.html">Player Props</a></div>')
     w('</div>')
-    w(f"<div class=\"date-stamp\">{today_day} • {today_short}</div>")
+    games_today = int(len(slate))
+    total_games = 1231
+    games_left = max(0, total_games - int(games_played))
+    w("<div class=\"date-stamp\">")
+    w(f"<div>{today_day} • {today_short}</div>")
+    w(f"<div class=\"date-sub\">Games Today: <span class=\"games-left-value\">{games_today}</span> • Games Left: <span class=\"games-left-value\">{games_left}</span></div>")
+    w("</div>")
     w('</div>')
     w("<details class='market-report' id='marketReport' hidden>")
     w("<summary>")
@@ -1974,7 +1992,7 @@ def main():
     except Exception:
         pass
     outfile = f"dashboard_{today}.html"
-    build_html(slate, team_results, league_tbl, outfile, today, team_abbrev_map)
+    build_html(slate, team_results, league_tbl, outfile, today, team_abbrev_map, len(master))
     print("Dashboard written →", outfile)
 
 if __name__ == "__main__":
