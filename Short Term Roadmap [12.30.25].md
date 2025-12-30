@@ -9,7 +9,7 @@ Phase 2 — Trajectories / Trend overlay
 	•	Trajectories (keep open): Core/Consistency trends (L10–L20, L10–Season) → future “TREND ↑/↓”
 
 Phase 3 — Immediate ROI (strengthen Suggested Targets signal)
-	1.	Opponent pace + implied totals environment (derive implied team totals from spread/ML; bump PTS/AST/REB confidence)
+	1.	Opponent pace + implied totals environment (derive implied team totals from spread/ML/OU(over/under); bump PTS/AST/REB confidence)
 	2.	Stress score (0–100) from rest/travel/load (single numeric penalty/boost used everywhere)
 	3.	Volatility + landmine rate (IQR/std + “finished within 1 of line” %) → trap warnings + ranking boost for stable floors
 	4.	Usage proxy via team-share trends (player share of team PTS/REB/AST; last 5 vs last 20 trend)
