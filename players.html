@@ -2379,12 +2379,29 @@ async function load() {
     container.querySelectorAll("details.suggested-game-group").forEach(syncDetailsOpenClass);
   }
 
+  function consistencyTierLabel(score) {
+    if (!Number.isFinite(score)) return "";
+    if (score < 50) return "Inconsistent";
+    if (score <= 64) return "Consistency OK";
+    if (score <= 72) return "Solid Consistency";
+    if (score <= 78) return "Consistent";
+    if (score <= 84) return "Very Consistent";
+    return "Elite Consistency";
+  }
+
+  function consistencyTierClass(score) {
+    if (!Number.isFinite(score)) return "";
+    if (score < 50) return "bad";
+    if (score <= 72) return "ok";
+    return "good";
+  }
+
   function consistencyPillHTML(score) {
     if (!Number.isFinite(score)) return "";
     const rounded = Math.round(score);
-    if (rounded >= 70) return `<span class="consistency-pill good">CONSISTENT ${rounded}</span>`;
-    if (rounded >= 45) return `<span class="consistency-pill ok">CONSISTENCY OK ${rounded}</span>`;
-    return `<span class="consistency-pill bad">INCONSISTENT ${rounded}</span>`;
+    const label = consistencyTierLabel(rounded);
+    const cls = consistencyTierClass(rounded);
+    return `<span class="consistency-pill ${cls}">${label.toUpperCase()} ${rounded}</span>`;
   }
 
   function renderSuggestedDrawer() {
@@ -2505,8 +2522,12 @@ async function load() {
 
           let consistencyAdj = 0;
           if (consUsed != null) {
-            if (consUsed >= 75) consistencyAdj += 0.08;
-            else if (consUsed <= 35) consistencyAdj -= 0.08;
+            if (consUsed < 50) consistencyAdj -= 0.08;
+            else if (consUsed <= 64) consistencyAdj += 0.00;
+            else if (consUsed <= 72) consistencyAdj += 0.03;
+            else if (consUsed <= 78) consistencyAdj += 0.06;
+            else if (consUsed <= 84) consistencyAdj += 0.08;
+            else consistencyAdj += 0.10;
           }
           let landmineCons = 0;
           if (landmineRate != null) {

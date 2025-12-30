@@ -92,6 +92,22 @@ def consistency_score(iqr_val: float, scale: float) -> float:
     return float(np.clip(score, 0, 100))
 
 
+def consistency_tier(score: float) -> str:
+    if not np.isfinite(score):
+        return ""
+    if score < 50:
+        return "Inconsistent"
+    if score <= 64:
+        return "Consistency OK"
+    if score <= 72:
+        return "Solid Consistency"
+    if score <= 78:
+        return "Consistent"
+    if score <= 84:
+        return "Very Consistent"
+    return "Elite Consistency"
+
+
 def core_avg(series: pd.Series) -> float:
     series = pd.to_numeric(series, errors="coerce").dropna()
     if len(series) == 0:
@@ -416,6 +432,10 @@ def main():
             landmine_avg_season,
         )
         base["consistency_score"] = base.get("consistency_10")
+        base["consistency_tier_10"] = consistency_tier(base.get("consistency_10"))
+        base["consistency_tier_20"] = consistency_tier(base.get("consistency_20"))
+        base["consistency_tier_season"] = consistency_tier(base.get("consistency_season"))
+        base["consistency_tier"] = base.get("consistency_tier_10")
 
         base.update(build_windows(gp, windows, thresholds))
         base.update(build_load_metrics(gp, windows))
@@ -490,10 +510,14 @@ def main():
 
     features = {}
     asof_str = asof.strftime("%Y-%m-%d")
+    tier_counts = {}
     for _, row in out.iterrows():
         pid = str(row.get("player_id", "")).strip()
         if not pid:
             continue
+        tier = str(row.get("consistency_tier", "")).strip()
+        if tier:
+            tier_counts[tier] = tier_counts.get(tier, 0) + 1
         features[pid] = {
             "player_name": row.get("player_name", ""),
             "team_abbrev": row.get("last_team_abbrev", ""),
@@ -534,6 +558,10 @@ def main():
             "consistency_10": row.get("consistency_10"),
             "consistency_20": row.get("consistency_20"),
             "consistency_season": row.get("consistency_season"),
+            "consistency_tier": row.get("consistency_tier"),
+            "consistency_tier_10": row.get("consistency_tier_10"),
+            "consistency_tier_20": row.get("consistency_tier_20"),
+            "consistency_tier_season": row.get("consistency_tier_season"),
             "share_pts_l5": row.get("share_pts_l5"),
             "share_pts_l20": row.get("share_pts_l20"),
             "share_pts_trend_pp": row.get("share_pts_trend_pp"),
@@ -550,6 +578,8 @@ def main():
             json.dump({"asof_date": asof_str, "players": features}, f, indent=2)
     except Exception:
         pass
+    if tier_counts:
+        print(f"[consistency] tiers={tier_counts}")
 
     out.to_csv(args.out, index=False)
     print(f"Wrote snapshot: {args.out} (rows={len(out)})")
