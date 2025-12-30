@@ -405,8 +405,13 @@
       font-weight: 700;
       color: #111;
     }
+    .injury-summary {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
     .injury-title { color: #c93c3c; font-weight: 800; }
-    .injury-asof {
+    .injury-sub {
       font-size: 12px;
       font-weight: 600;
       color: #777;
@@ -1028,8 +1033,10 @@
 
   <details class="injury-panel" id="injuryPanel">
     <summary>
-      <span class="injury-title">🥵 Injury Report 🚫</span>
-      <span class="injury-asof" id="injuryAsof"></span>
+      <div class="injury-summary">
+        <span class="injury-title">🥵 Injury Report 🚫</span>
+        <div class="injury-sub" id="injurySub"></div>
+      </div>
     </summary>
     <div class="injury-body" id="injuryContent"></div>
   </details>
@@ -1287,6 +1294,7 @@ let teamLastPlayedDate = new Map();
 let TEAM_OPP = {};
 let OPP_BIG = {};
 let injuriesByTeam = {};
+let injuryBuiltAt = "";
 const INJ_TEAM_ALIAS = {
   UTAH: "UTA",
   NO: "NOP",
@@ -2091,12 +2099,7 @@ async function load() {
     fetchJson(`./data/game_times.json?ts=${Date.now()}`).catch(() => ({})),
   ]);
   injuriesData = await ensureFreshInjuries(injuriesData);
-
-  const injuryAsof = document.getElementById("injuryAsof");
-  const injuryTime = formatTimePT(injuriesData && injuriesData.built_at_utc);
-  if (injuryAsof) {
-    injuryAsof.textContent = injuryTime ? `As of: ${injuryTime} PT` : "";
-  }
+  injuryBuiltAt = (injuriesData && injuriesData.built_at_utc) || "";
 
   const players = csvToRows(snapshotText);
 
@@ -2633,6 +2636,14 @@ async function load() {
       return;
     }
 
+    const injurySub = document.getElementById("injurySub");
+    const statusCounts = {};
+    const countStatus = (status) => {
+      const key = String(status || "").toUpperCase().trim();
+      if (!key) return;
+      statusCounts[key] = (statusCounts[key] || 0) + 1;
+    };
+
     const chunks = [];
     for (const info of gamesTodayOrdered) {
       const away = String(info.awayAbbrev || "").toUpperCase();
@@ -2654,6 +2665,7 @@ async function load() {
           status = m ? m[1] : "";
         }
         status = status.toUpperCase();
+        countStatus(status);
         return `
           <div class="injury-row">
             <div class="injury-name">${name}</div>
@@ -2679,6 +2691,20 @@ async function load() {
           </div>
         </details>
       `);
+    }
+
+    const orderedStatuses = ["OUT", "QUES", "PROB", "DOUBT", "GTD", "DTD", "REST", "SUSP", "OFS"];
+    const parts = [];
+    for (const key of orderedStatuses) {
+      const val = statusCounts[key] || 0;
+      if (val > 0) parts.push(`${key}: ${val}`);
+    }
+    const injuryTime = formatTimePT(injuryBuiltAt);
+    if (injurySub) {
+      const timeText = injuryTime ? `As of: ${injuryTime} PT` : "";
+      injurySub.textContent = parts.length
+        ? `${parts.join(" • ")}${timeText ? " • " + timeText : ""}`
+        : timeText;
     }
 
     if (!chunks.length) {
