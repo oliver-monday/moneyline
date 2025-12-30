@@ -183,19 +183,6 @@
   },
   {
     "asof_date": "2025-12-30",
-    "player_id": "3064440.0",
-    "player_name": "Zach LaVine",
-    "team_abbrev": "SAC",
-    "opp": "LAC",
-    "game_id": "401810316",
-    "stat": "reb",
-    "threshold": 2,
-    "hits": 8,
-    "window_games": 10,
-    "hit_rate": 0.8
-  },
-  {
-    "asof_date": "2025-12-30",
     "player_id": "4898371.0",
     "player_name": "Maxime Raynaud",
     "team_abbrev": "SAC",
