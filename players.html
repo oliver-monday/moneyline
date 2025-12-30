@@ -406,6 +406,11 @@
       color: #111;
     }
     .injury-title { color: #c93c3c; font-weight: 800; }
+    .injury-asof {
+      font-size: 12px;
+      font-weight: 600;
+      color: #777;
+    }
     .injury-details { font-size: 12px; color: #888; }
     .header-block {
       width: fit-content;
@@ -1022,7 +1027,10 @@
   </details>
 
   <details class="injury-panel" id="injuryPanel">
-    <summary><span class="injury-title">🥵 Injury Report 🚫</span></summary>
+    <summary>
+      <span class="injury-title">🥵 Injury Report 🚫</span>
+      <span class="injury-asof" id="injuryAsof"></span>
+    </summary>
     <div class="injury-body" id="injuryContent"></div>
   </details>
 
@@ -2036,6 +2044,17 @@ function hasNonOutStatus(data) {
   return false;
 }
 
+function formatTimePT(isoStr) {
+  if (!isoStr) return "";
+  const d = new Date(isoStr);
+  if (Number.isNaN(d.getTime())) return "";
+  return d.toLocaleTimeString("en-US", {
+    timeZone: "America/Los_Angeles",
+    hour: "numeric",
+    minute: "2-digit",
+  });
+}
+
 async function ensureFreshInjuries(data) {
   if (!data || typeof data !== "object") return data;
   const baseCount = countInjuryEntries(data);
@@ -2072,6 +2091,12 @@ async function load() {
     fetchJson(`./data/game_times.json?ts=${Date.now()}`).catch(() => ({})),
   ]);
   injuriesData = await ensureFreshInjuries(injuriesData);
+
+  const injuryAsof = document.getElementById("injuryAsof");
+  const injuryTime = formatTimePT(injuriesData && injuriesData.built_at_utc);
+  if (injuryAsof) {
+    injuryAsof.textContent = injuryTime ? `As of: ${injuryTime} PT` : "";
+  }
 
   const players = csvToRows(snapshotText);
 
