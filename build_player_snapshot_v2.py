@@ -469,7 +469,10 @@ def main():
 
         base["tpm_mean_10"] = float(last10["tpm"].mean()) if len(last10) else float("nan")
         base["tpm_mean_20"] = float(last20["tpm"].mean()) if len(last20) else float("nan")
-        base["team_tpm_mean_20"] = float(last20["team_tpm"].mean()) if len(last20) else float("nan")
+        if "team_tpm" in gp_feat.columns:
+            base["team_tpm_mean_20"] = float(gp_feat.head(20)["team_tpm"].mean()) if len(gp_feat) else float("nan")
+        else:
+            base["team_tpm_mean_20"] = float("nan")
         base["tpm_mean_season"] = float(season_gp["tpm"].mean()) if len(season_gp) else float("nan")
         base["tpm_nonzero_rate_10"] = float((last10["tpm"] > 0).mean()) if len(last10) else float("nan")
         base["tpm_nonzero_rate_20"] = float((last20["tpm"] > 0).mean()) if len(last20) else float("nan")
