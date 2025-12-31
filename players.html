@@ -494,7 +494,7 @@
       color: #333;
       white-space: nowrap;
     }
-    .season-perf-metric {
+    .season-perf-pct {
       color: #d97706;
     }
     .date-stamp {
@@ -1128,8 +1128,8 @@
       <div class="season-perf-title">Season Performance</div>
       <div class="season-perf-sub" id="seasonPerfSub"></div>
       <div class="season-perf-grid">
-        <div class="season-perf-row"><span>Top Targets</span><span class="season-perf-value season-perf-metric" id="seasonPerfTop">—</span></div>
-        <div class="season-perf-row season-perf-right"><span>All Targets</span><span class="season-perf-value season-perf-metric" id="seasonPerfAll">—</span></div>
+        <div class="season-perf-row"><span>Top Targets</span><span class="season-perf-value" id="seasonPerfTop">—</span></div>
+        <div class="season-perf-row season-perf-right"><span>All Targets</span><span class="season-perf-value" id="seasonPerfAll">—</span></div>
       </div>
     </div>
   </div>
@@ -3801,7 +3801,11 @@ async function load() {
     const topTotal = Number(top.total || 0);
     const allHits = Number(allTargets.hits || 0);
     const allTotal = Number(allTargets.total || 0);
-    const pct = (h, t) => (t ? `${h}/${t} (${Math.round((h / t) * 100)}%)` : "—");
+    const pct = (h, t) => {
+      if (!t) return "—";
+      const rate = Math.round((h / t) * 100);
+      return `${h}/${t} (<span class="season-perf-pct">${rate}%</span>)`;
+    };
     const daysTracked = Number(summary.days_tracked || 0);
     const updated = summary.end_date || fallbackDate || "";
     const topEl = document.getElementById("seasonPerfTop");
