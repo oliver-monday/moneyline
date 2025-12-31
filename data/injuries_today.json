@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-31",
-  "built_at_utc": "2025-12-31T10:59:04Z",
+  "built_at_utc": "2025-12-31T17:09:27Z",
   "source": "rotowire",
   "GSW": [
     {
@@ -29,19 +29,9 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "K. Knueppel",
-      "status": "PROB",
-      "details": "K. Knueppel (Prob)"
-    },
-    {
       "name": "M. Bridges",
-      "status": "QUES",
-      "details": "M. Bridges (Ques)"
-    },
-    {
-      "name": "P. Connaughton",
-      "status": "QUES",
-      "details": "P. Connaughton (Ques)"
+      "status": "OUT",
+      "details": "M. Bridges (Out)"
     },
     {
       "name": "R. Kalkbrenner",
@@ -61,19 +51,9 @@
   ],
   "CHA": [
     {
-      "name": "K. Knueppel",
-      "status": "PROB",
-      "details": "K. Knueppel (Prob)"
-    },
-    {
       "name": "M. Bridges",
-      "status": "QUES",
-      "details": "M. Bridges (Ques)"
-    },
-    {
-      "name": "P. Connaughton",
-      "status": "QUES",
-      "details": "P. Connaughton (Ques)"
+      "status": "OUT",
+      "details": "M. Bridges (Out)"
     },
     {
       "name": "R. Kalkbrenner",
@@ -106,11 +86,6 @@
       "name": "N. Dante",
       "status": "OFS",
       "details": "N. Dante (OFS)"
-    },
-    {
-      "name": "E. Ndiaye",
-      "status": "OFS",
-      "details": "E. Ndiaye (OFS)"
     }
   ],
   "ATL": [
@@ -118,11 +93,6 @@
       "name": "N. Dante",
       "status": "OFS",
       "details": "N. Dante (OFS)"
-    },
-    {
-      "name": "E. Ndiaye",
-      "status": "OFS",
-      "details": "E. Ndiaye (OFS)"
     },
     {
       "name": "T. Young",
