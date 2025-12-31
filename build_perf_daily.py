@@ -26,6 +26,135 @@ def safe_int(x: Any) -> Optional[int]:
         return None
 
 
+def safe_float(x: Any) -> Optional[float]:
+    try:
+        if x is None or x == "":
+            return None
+        return float(x)
+    except Exception:
+        return None
+
+
+def parse_bool(x: Any) -> Optional[bool]:
+    if isinstance(x, bool):
+        return x
+    s = str(x or "").strip().lower()
+    if s in {"true", "1", "yes", "y"}:
+        return True
+    if s in {"false", "0", "no", "n"}:
+        return False
+    return None
+
+
+def init_counter() -> Dict[str, Any]:
+    return {"total": 0, "hits": 0, "hit_rate": None, "out_count": 0}
+
+
+def add_record(counter: Dict[str, Any], hit: bool, out_flag: bool) -> None:
+    if out_flag:
+        counter["out_count"] += 1
+        return
+    counter["total"] += 1
+    if hit:
+        counter["hits"] += 1
+
+
+def finalize_counter(counter: Dict[str, Any]) -> Dict[str, Any]:
+    total = counter.get("total", 0) or 0
+    hits = counter.get("hits", 0) or 0
+    counter["hit_rate"] = (hits / total) if total else None
+    return counter
+
+
+def iter_group_records(post: Dict[str, Any], group: str):
+    if group == "top_targets":
+        for item in post.get("top_targets") or []:
+            hit = item.get("hit") is True
+            out_flag = out_like(item)
+            yield item, hit, out_flag
+    else:
+        for item in post.get("hits") or []:
+            hit = True
+            out_flag = out_like(item)
+            yield item, hit, out_flag
+        for item in post.get("misses") or []:
+            hit = False
+            out_flag = out_like(item) or item.get("out") is True
+            yield item, hit, out_flag
+
+
+def build_group_aggregates(post: Dict[str, Any], group: str) -> Dict[str, Any]:
+    totals = init_counter()
+    by_stat: Dict[str, Dict[str, Any]] = {}
+    by_threshold: Dict[str, Dict[str, Dict[str, Any]]] = {}
+    by_trap: Dict[str, Dict[str, Any]] = {}
+    by_b2b: Dict[str, Dict[str, Any]] = {}
+    by_share: Dict[str, Dict[str, Any]] = {}
+    by_home: Dict[str, Dict[str, Any]] = {}
+
+    for item, hit, out_flag in iter_group_records(post, group):
+        add_record(totals, hit, out_flag)
+        stat = str(item.get("stat") or "").lower().strip()
+        if stat:
+            by_stat.setdefault(stat, init_counter())
+            add_record(by_stat[stat], hit, out_flag)
+        threshold = safe_int(item.get("threshold"))
+        if stat and threshold is not None:
+            by_threshold.setdefault(stat, {})
+            if str(threshold) not in by_threshold[stat]:
+                by_threshold[stat][str(threshold)] = init_counter()
+            add_record(by_threshold[stat][str(threshold)], hit, out_flag)
+        trap = parse_bool(item.get("trap_risk"))
+        if trap is not None:
+            key = "true" if trap else "false"
+            by_trap.setdefault(key, init_counter())
+            add_record(by_trap[key], hit, out_flag)
+        b2b = parse_bool(item.get("is_b2b"))
+        if b2b is not None:
+            key = "true" if b2b else "false"
+            by_b2b.setdefault(key, init_counter())
+            add_record(by_b2b[key], hit, out_flag)
+        share_dir = str(item.get("share_trend_dir") or "").upper().strip()
+        if share_dir in {"UP", "FLAT", "DOWN"}:
+            by_share.setdefault(share_dir, init_counter())
+            add_record(by_share[share_dir], hit, out_flag)
+        is_home = parse_bool(item.get("is_home_game"))
+        if is_home is not None:
+            key = "true" if is_home else "false"
+            by_home.setdefault(key, init_counter())
+            add_record(by_home[key], hit, out_flag)
+
+    totals = finalize_counter(totals)
+    by_stat = {k: finalize_counter(v) for k, v in by_stat.items()}
+    for stat, buckets in by_threshold.items():
+        by_threshold[stat] = {k: finalize_counter(v) for k, v in buckets.items()}
+    by_trap = {k: finalize_counter(v) for k, v in by_trap.items()}
+    by_b2b = {k: finalize_counter(v) for k, v in by_b2b.items()}
+    by_share = {k: finalize_counter(v) for k, v in by_share.items()}
+    by_home = {k: finalize_counter(v) for k, v in by_home.items()}
+
+    return {
+        "totals": totals,
+        "by_stat": by_stat,
+        "by_threshold": by_threshold,
+        "by_trap_risk": by_trap,
+        "by_b2b": by_b2b,
+        "by_share_trend_dir": by_share,
+        "by_home_game": by_home,
+    }
+
+
+def build_learning_payload(post: Dict[str, Any], asof: str, season_end_year: int) -> Dict[str, Any]:
+    return {
+        "asof_date": asof,
+        "season_end_year": season_end_year,
+        "groups": {
+            "top_targets": build_group_aggregates(post, "top_targets"),
+            "all_targets": build_group_aggregates(post, "all_targets"),
+        },
+    }
+
+
 def out_like(item: Dict[str, Any]) -> bool:
     status = str(item.get("status", "")).upper().strip()
     if item.get("dnp") is True or item.get("out") is True:
@@ -145,6 +274,12 @@ def write_json_if_changed(path: str, payload: Dict[str, Any]) -> None:
             pass
     with open(path, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2, sort_keys=True)
+
+
+def write_json_pretty(path: str, payload: Dict[str, Any]) -> None:
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
 
 
 def collect_daily_files(season_dir: str) -> List[str]:
@@ -365,6 +500,10 @@ def main() -> None:
     if snapshot_path:
         legs_path = os.path.join("data", "perf", f"season_{season_end_year}", "legs", f"{asof}.csv")
         write_legs_csv(snapshot_path, post, legs_path, asof, season_end_year)
+
+    learning_payload = build_learning_payload(post, asof, season_end_year)
+    learning_path = os.path.join("data", "perf", f"season_{season_end_year}", "learning", f"{asof}.json")
+    write_json_pretty(learning_path, learning_payload)
 
     # summaries + index
     season_summary = summarize_season(season_end_year)

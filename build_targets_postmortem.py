@@ -12,6 +12,7 @@ import datetime as dt
 import json
 import os
 import re
+from bisect import bisect_left
 from pathlib import Path
 from typing import Dict, List
 from zoneinfo import ZoneInfo
@@ -21,6 +22,16 @@ import pandas as pd
 PTS_T = [10, 15, 20, 25, 30, 35]
 RA_T = [2, 4, 6, 8, 10, 12, 14]
 TPM_T = [1, 2, 3, 4, 5, 6]
+LEARNING_FIELDS = [
+    "is_home_game",
+    "rest_days",
+    "is_b2b",
+    "share_trend_pp",
+    "share_trend_dir",
+    "iqr_10",
+    "landmine_rate_10",
+    "trap_risk",
+]
 
 
 def num(x):
@@ -29,6 +40,100 @@ def num(x):
     except Exception:
         return None
     return v
+
+
+def trend_dir_from_pp(pp: float | None, thresh: float = 2.0) -> str | None:
+    if pp is None or not isinstance(pp, (int, float)):
+        return None
+    if pp >= thresh:
+        return "UP"
+    if pp <= -thresh:
+        return "DOWN"
+    return "FLAT"
+
+
+def compute_trap_risk(stat: str, iqr_val: float | None, landmine_rate: float | None) -> bool | None:
+    stat_norm = str(stat or "").lower().strip()
+    if stat_norm not in {"pts", "reb", "ast"}:
+        return None
+    if landmine_rate is not None and landmine_rate >= 0.25:
+        return True
+    if iqr_val is None:
+        return False
+    if stat_norm == "pts" and iqr_val > 10:
+        return True
+    if stat_norm == "reb" and iqr_val > 5:
+        return True
+    if stat_norm == "ast" and iqr_val > 4:
+        return True
+    return False
+
+
+def build_last_game_lookup(game_log_df: pd.DataFrame) -> Dict[str, List[dt.date]]:
+    if game_log_df.empty:
+        return {}
+    df = game_log_df.copy()
+    if "game_date" not in df.columns or "player_id" not in df.columns:
+        return {}
+    df["game_date"] = pd.to_datetime(df["game_date"], errors="coerce").dt.date
+    df = df[df["game_date"].notna()].copy()
+    df["player_id"] = df["player_id"].astype(str).str.strip()
+    dates_map: Dict[str, List[dt.date]] = {}
+    for pid, group in df.groupby("player_id"):
+        dates = sorted(set(group["game_date"].tolist()))
+        if dates:
+            dates_map[str(pid)] = dates
+    return dates_map
+
+
+def rest_info_for_player(pid: str, slate_date: dt.date, dates_map: Dict[str, List[dt.date]]):
+    if not pid or pid not in dates_map:
+        return None, None
+    dates = dates_map.get(pid, [])
+    if not dates:
+        return None, None
+    idx = bisect_left(dates, slate_date)
+    if idx <= 0:
+        return None, None
+    last_date = dates[idx - 1]
+    diff_days = (slate_date - last_date).days
+    rest_days = max(0, diff_days - 1)
+    return rest_days, rest_days == 0
+
+
+def share_trend_from_row(row: Dict[str, str], stat: str) -> tuple[float | None, str | None]:
+    stat_norm = str(stat or "").lower().strip()
+    key = f"share_{stat_norm}_trend_pp" if stat_norm != "3pt" else "share_3pt_trend_pp"
+    pp = num(row.get(key))
+    if pp is None:
+        return None, None
+    return pp, trend_dir_from_pp(pp)
+
+
+def learning_fields_from_row(row: Dict[str, str], stat: str, threshold: int, team: str, game_map, rest_map, slate_date: dt.date):
+    is_home = None
+    if team in game_map:
+        is_home = bool(game_map[team].get("is_home"))
+    pid = str(row.get("player_id", "")).strip()
+    rest_days, is_b2b = rest_info_for_player(pid, slate_date, rest_map)
+    share_pp, share_dir = share_trend_from_row(row, stat)
+    iqr_key = f"{stat}_iqr_10"
+    iqr_val = num(row.get(iqr_key))
+    landmine_rate = None
+    if str(stat or "").lower().strip() in {"pts", "reb", "ast"}:
+        lm_key = f"{stat}_landmine_{threshold}_10"
+        landmine_rate = num(row.get(lm_key))
+    trap_risk = compute_trap_risk(stat, iqr_val, landmine_rate)
+    return {
+        "is_home_game": is_home,
+        "rest_days": rest_days,
+        "is_b2b": is_b2b,
+        "share_trend_pp": share_pp,
+        "share_trend_dir": share_dir,
+        "iqr_10": iqr_val,
+        "landmine_rate_10": landmine_rate,
+        "trap_risk": trap_risk,
+    }
 
 
 def normalize_name(s: str) -> str:
@@ -238,8 +343,8 @@ def build_game_map(master: pd.DataFrame, slate_date: str):
         if not home or not away:
             continue
         game_id = str(g.get("game_id", "")).strip()
-        team_map[home] = {"opp": away, "game_id": game_id}
-        team_map[away] = {"opp": home, "game_id": game_id}
+        team_map[home] = {"opp": away, "game_id": game_id, "is_home": True}
+        team_map[away] = {"opp": home, "game_id": game_id, "is_home": False}
     return team_map
 
 
@@ -293,6 +398,7 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
         row = find_game_log_row(entry, indexes)
         if row is None:
             continue
+        learning = {k: entry.get(k) for k in LEARNING_FIELDS if k in entry}
         stat = entry.get("stat")
         threshold = int(entry.get("threshold", 0) or 0)
         dnp_flag = str(row.get("dnp", "") or "").strip() in ("1", "true", "True", "YES", "yes")
@@ -305,7 +411,7 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
         actual = int(actual_val) if actual_val is not None else 0
         team_norm = str(row.get("team_abbrev", "")).upper().strip()
         if out_like:
-            misses.append({
+            miss_item = {
                 "player_id": entry.get("player_id"),
                 "player_name": entry.get("player_name", ""),
                 "team_abbrev": team_norm,
@@ -316,13 +422,15 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
                 "delta": None,
                 "out": True,
                 "status": "OUT",
-            })
+            }
+            miss_item.update(learning)
+            misses.append(miss_item)
             continue
         total += 1
 
         if actual >= threshold:
             hit_count += 1
-            hits.append({
+            hit_item = {
                 "player_id": entry.get("player_id"),
                 "player_name": entry.get("player_name", ""),
                 "team_abbrev": team_norm,
@@ -330,9 +438,11 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
                 "stat": stat,
                 "threshold": threshold,
                 "actual": actual,
-            })
+            }
+            hit_item.update(learning)
+            hits.append(hit_item)
         else:
-            misses.append({
+            miss_item = {
                 "player_id": entry.get("player_id"),
                 "player_name": entry.get("player_name", ""),
                 "team_abbrev": team_norm,
@@ -341,7 +451,9 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
                 "threshold": threshold,
                 "actual": actual,
                 "delta": threshold - actual,
-            })
+            }
+            miss_item.update(learning)
+            misses.append(miss_item)
 
         if stat == "pts":
             incs = [5, 10]
@@ -553,6 +665,16 @@ def main() -> int:
             injuries_by_team = {}
 
     entries = []
+    if os.path.exists(game_log_path):
+        game_log_df = pd.read_csv(game_log_path, dtype=str)
+    else:
+        game_log_df = pd.DataFrame()
+    slate_date_obj = None
+    try:
+        slate_date_obj = dt.datetime.strptime(slate_date, "%Y-%m-%d").date()
+    except Exception:
+        slate_date_obj = None
+    rest_map = build_last_game_lookup(game_log_df) if slate_date_obj else {}
     if snapshot_df is not None:
         for _, row in snapshot_df.iterrows():
             team = str(row.get("last_team_abbrev", "")).strip().upper()
@@ -569,6 +691,10 @@ def main() -> int:
             opp = game_map[team].get("opp", "")
             game_id = game_map[team].get("game_id", "")
             for t in targets:
+                learning = (
+                    learning_fields_from_row(row, t["stat"], int(t["t"]), team, game_map, rest_map, slate_date_obj)
+                    if slate_date_obj else {}
+                )
                 entries.append({
                     "asof_date": slate_date,
                     "player_id": row.get("player_id", ""),
@@ -581,6 +707,7 @@ def main() -> int:
                     "hits": int(t["hits"]),
                     "window_games": int(t["gp"]),
                     "hit_rate": float(t["rate"]),
+                    **learning,
                 })
 
     logs_dir = Path("logs")
@@ -637,11 +764,6 @@ def main() -> int:
     else:
         print(f"[targets] WARNING: snapshot missing for results_date={results_date}")
 
-    if os.path.exists(game_log_path):
-        game_log_df = pd.read_csv(game_log_path, dtype=str)
-    else:
-        game_log_df = pd.DataFrame()
-
     top_targets = []
     summary_top_total = 0
     summary_top_hits = 0
@@ -670,6 +792,32 @@ def main() -> int:
             return (-rate, -gp)
         candidates = sorted(candidates, key=rank_key)
         top_targets = candidates[:6]
+        learning_index = {}
+        for item in snap_items:
+            if not isinstance(item, dict):
+                continue
+            key = (
+                str(item.get("player_id", "")).strip(),
+                str(item.get("stat", "")).strip(),
+                str(item.get("threshold", "")).strip(),
+                str(item.get("game_id", "")).strip(),
+                str(item.get("team_abbrev", "")).strip(),
+            )
+            learning_index[key] = item
+        for item in top_targets:
+            key = (
+                str(item.get("player_id", "")).strip(),
+                str(item.get("stat", "")).strip(),
+                str(item.get("threshold", "")).strip(),
+                str(item.get("game_id", "")).strip(),
+                str(item.get("team_abbrev", "")).strip(),
+            )
+            src = learning_index.get(key)
+            if not src:
+                continue
+            for field in LEARNING_FIELDS:
+                if field not in item and field in src:
+                    item[field] = src.get(field)
 
         for item in top_targets:
             row = find_game_log_row(item, indexes)

@@ -159,6 +159,11 @@
     .postmortem-section-title { font-weight: 800; font-size: 16px; color:#444; }
     .postmortem-section-title.hits { color: #2f8f2f; }
     .postmortem-section-title.misses { color: #c93c3c; }
+    .postmortem-insights { border-top: 1px dashed #e6e6e6; padding-top: 8px; margin-top: 10px; }
+    .pm-insights-row { margin-top: 6px; color:#555; font-weight:600; display:flex; flex-wrap:wrap; gap:10px; }
+    .pm-insights-table { width:100%; border-collapse: collapse; margin-top: 6px; font-size: 13px; }
+    .pm-insights-table th, .pm-insights-table td { text-align:left; padding:4px 6px; border-bottom: 1px solid #eee; }
+    .pm-insights-chip { display:inline-flex; align-items:center; gap:4px; padding:2px 6px; border:1px solid #ddd; border-radius:999px; font-size:11px; font-weight:700; color:#666; background:#fafafa; }
     .pm-group { margin-top: 6px; }
     .pm-player-row { font-weight: 700; color: #555; margin: 4px 0; }
     .pm-target-row { margin-left: 14px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
@@ -3679,7 +3684,89 @@ async function load() {
       ${renderSection("TOP TARGETS", topTargets, false, "", true)}
       ${renderSection("HITS", hitsList, false, "hits")}
       ${renderSection("MISSES", misses, true, "misses")}
+      <div class="postmortem-section postmortem-insights" id="postmortemInsights" hidden>
+        <div class="postmortem-section-title">Postmortem Insights</div>
+        <div id="postmortemInsightsBody"></div>
+      </div>
     `;
+    loadPostmortemInsights(data);
+  }
+
+  function formatRate(counter) {
+    if (!counter) return "—";
+    const total = Number(counter.total || 0);
+    const hits = Number(counter.hits || 0);
+    if (!total) return "—";
+    return `${hits}/${total} (${Math.round((hits / total) * 100)}%)`;
+  }
+
+  function loadPostmortemInsights(postmortem) {
+    const container = document.getElementById("postmortemInsights");
+    const body = document.getElementById("postmortemInsightsBody");
+    if (!container || !body) return;
+    const asof = postmortem && postmortem.asof_date;
+    const season = postmortem && postmortem.season_end_year
+      ? Number(postmortem.season_end_year)
+      : seasonEndYearFromDateStr(asof);
+    if (!asof || !season) {
+      container.hidden = true;
+      return;
+    }
+    fetchJson(`./data/perf/season_${season}/learning/${asof}.json`)
+      .then((learning) => {
+        if (!learning || !learning.groups) {
+          container.hidden = true;
+          return;
+        }
+        const top = learning.groups.top_targets || {};
+        const all = learning.groups.all_targets || {};
+        const topTotals = top.totals || {};
+        const allTotals = all.totals || {};
+        const statRows = ["pts", "reb", "ast", "3pt"];
+        const rowHtml = statRows.map((stat) => {
+          const topStat = (top.by_stat || {})[stat];
+          const allStat = (all.by_stat || {})[stat];
+          return `
+            <tr>
+              <td>${stat.toUpperCase()}</td>
+              <td>${formatRate(topStat)}</td>
+              <td>${formatRate(allStat)}</td>
+            </tr>
+          `;
+        }).join("");
+        const trapTop = (top.by_trap_risk || {})["true"];
+        const trapAll = (all.by_trap_risk || {})["true"];
+        const b2bTop = (top.by_b2b || {})["true"];
+        const b2bAll = (all.by_b2b || {})["true"];
+        const shareDirs = ["UP", "FLAT", "DOWN"];
+        const shareTop = top.by_share_trend_dir || {};
+        const shareAll = all.by_share_trend_dir || {};
+        const shareHtml = shareDirs.map((dir) => {
+          return `<span class="pm-insights-chip">${dir} · T ${formatRate(shareTop[dir])} | A ${formatRate(shareAll[dir])}</span>`;
+        }).join("");
+
+        body.innerHTML = `
+          <div class="pm-insights-row">
+            <span>Top Targets: ${formatRate(topTotals)}</span>
+            <span>All Targets: ${formatRate(allTotals)}</span>
+          </div>
+          <table class="pm-insights-table">
+            <thead>
+              <tr><th>Stat</th><th>Top</th><th>All</th></tr>
+            </thead>
+            <tbody>${rowHtml}</tbody>
+          </table>
+          <div class="pm-insights-row">
+            <span class="pm-insights-chip">Trap Risk · T ${formatRate(trapTop)} | A ${formatRate(trapAll)}</span>
+            <span class="pm-insights-chip">B2B · T ${formatRate(b2bTop)} | A ${formatRate(b2bAll)}</span>
+          </div>
+          <div class="pm-insights-row">${shareHtml || "—"}</div>
+        `;
+        container.hidden = false;
+      })
+      .catch(() => {
+        container.hidden = true;
+      });
   }
 
   function seasonEndYearFromDateStr(dateStr) {

@@ -106,6 +106,7 @@
 - You can run: “compare v1 preset vs v2-tuned preset over last 30 days” and see metrics.
 - Harness is fast enough to run locally + in CI for PR checks.
 
+**Exit criterion:** M3 must be green + repeatable before any agent is allowed to propose changes (M5+).
 ---
 
 ### M4 — “Agentic analyst” v1: daily performance reasoning & recommendations
@@ -134,6 +135,11 @@
 ### M5 — Agent proposes config changes safely (no code edits yet)
 **Why:** Tight feedback loop without letting an LLM refactor your codebase.
 
+**Gate (must be true before M5 proceeds):**
+- M3 evaluation harness exists and runs end-to-end (replay → metrics → report).
+- CI can execute the eval on a fixed dataset deterministically.
+- No “agent proposes changes” work happens without an eval baseline to score deltas.
+
 **Deliverables**
 - Build a small “apply recommendations” tool:
   - takes `recommendations.json`
@@ -154,6 +160,11 @@
 
 ### M6 — Agent opens PRs for small code changes (guardrailed)
 **Why:** This is “real agentic dev,” but must be constrained.
+
+**Guardrails (strict at first):**
+- PR scope allowlist: configs + docs only (no ingest scripts, workflows, or build pipelines initially).
+- Explicit file-path allowlist enforced by CI (agent cannot touch files outside allowed paths).
+- All PRs must include eval output diffs + rollback plan; no silent changes.
 
 **Deliverables**
 - Define boundaries:
@@ -226,6 +237,9 @@ All “learning” surfaces as a PR + eval delta.
 
 4) **Single-writer strategy.**  
 Stop daily JSON conflicts by design, not heroics.
+
+5) **Evaluation-first.** 
+No proposals/PRs without an eval harness baseline and measured deltas.
 
 ---
 
