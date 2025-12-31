@@ -10,7 +10,15 @@
     "threshold": 4,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 2.1858752660388947,
+    "share_trend_dir": "UP",
+    "iqr_10": 1.0,
+    "landmine_rate_10": 0.1,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -23,7 +31,15 @@
     "threshold": 6,
     "hits": 9,
     "window_games": 10,
-    "hit_rate": 0.9
+    "hit_rate": 0.9,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 4.79277466339178,
+    "share_trend_dir": "UP",
+    "iqr_10": 2.5,
+    "landmine_rate_10": 0.1,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -36,7 +52,15 @@
     "threshold": 8,
     "hits": 9,
     "window_games": 10,
-    "hit_rate": 0.9
+    "hit_rate": 0.9,
+    "is_home_game": true,
+    "rest_days": 2,
+    "is_b2b": false,
+    "share_trend_pp": -1.1552193660109622,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 2.75,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -49,7 +73,15 @@
     "threshold": 4,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 0.892507986905311,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 2.0,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -62,7 +94,15 @@
     "threshold": 10,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": -2.5229308758177056,
+    "share_trend_dir": "DOWN",
+    "iqr_10": 3.5,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -75,7 +115,15 @@
     "threshold": 6,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 0.8133659206692678,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 2.75,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -88,7 +136,15 @@
     "threshold": 4,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 1.481793588328556,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 1.75,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -101,7 +157,15 @@
     "threshold": 10,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 5,
+    "is_b2b": false,
+    "share_trend_pp": -2.3934866234543217,
+    "share_trend_dir": "DOWN",
+    "iqr_10": 3.75,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -114,7 +178,15 @@
     "threshold": 2,
     "hits": 9,
     "window_games": 10,
-    "hit_rate": 0.9
+    "hit_rate": 0.9,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": -1.2650078958069133,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 2.0,
+    "landmine_rate_10": 0.1,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -127,7 +199,15 @@
     "threshold": 1,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": -1.7417435505670813,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 0.0,
+    "landmine_rate_10": null,
+    "trap_risk": null
   },
   {
     "asof_date": "2025-12-31",
@@ -140,7 +220,15 @@
     "threshold": 2,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 0.31773088023088203,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 1.5,
+    "landmine_rate_10": null,
+    "trap_risk": null
   },
   {
     "asof_date": "2025-12-31",
@@ -153,7 +241,15 @@
     "threshold": 2,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 0.5148358738722811,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 1.75,
+    "landmine_rate_10": 0.2,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -166,7 +262,15 @@
     "threshold": 4,
     "hits": 9,
     "window_games": 10,
-    "hit_rate": 0.9
+    "hit_rate": 0.9,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 1.2170819568580264,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 1.75,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -179,7 +283,15 @@
     "threshold": 4,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 4.891667164787964,
+    "share_trend_dir": "UP",
+    "iqr_10": 2.0,
+    "landmine_rate_10": 0.1,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -192,7 +304,15 @@
     "threshold": 3,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": -2.5191181367652,
+    "share_trend_dir": "DOWN",
+    "iqr_10": 1.0,
+    "landmine_rate_10": null,
+    "trap_risk": null
   },
   {
     "asof_date": "2025-12-31",
@@ -205,7 +325,15 @@
     "threshold": 4,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": -0.13348402696506528,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 1.0,
+    "landmine_rate_10": 0.1,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -218,7 +346,15 @@
     "threshold": 15,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": -0.3925072164249199,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 9.5,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -231,7 +367,15 @@
     "threshold": 6,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 0.5667195606424286,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 3.75,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -244,7 +388,15 @@
     "threshold": 10,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 3.2950776001902717,
+    "share_trend_dir": "UP",
+    "iqr_10": 5.0,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -257,7 +409,15 @@
     "threshold": 20,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 0.11086000840925259,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 4.5,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -270,7 +430,15 @@
     "threshold": 2,
     "hits": 9,
     "window_games": 10,
-    "hit_rate": 0.9
+    "hit_rate": 0.9,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": -2.1862012785925824,
+    "share_trend_dir": "DOWN",
+    "iqr_10": 1.75,
+    "landmine_rate_10": 0.1,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -283,7 +451,15 @@
     "threshold": 2,
     "hits": 9,
     "window_games": 10,
-    "hit_rate": 0.9
+    "hit_rate": 0.9,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 2.6492882117882086,
+    "share_trend_dir": "UP",
+    "iqr_10": 2.0,
+    "landmine_rate_10": null,
+    "trap_risk": null
   },
   {
     "asof_date": "2025-12-31",
@@ -296,7 +472,15 @@
     "threshold": 4,
     "hits": 9,
     "window_games": 10,
-    "hit_rate": 0.9
+    "hit_rate": 0.9,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": -0.05718774235329571,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 1.75,
+    "landmine_rate_10": 0.1,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -309,7 +493,15 @@
     "threshold": 2,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 1.5209254252006852,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 2.0,
+    "landmine_rate_10": 0.2,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -322,7 +514,15 @@
     "threshold": 1,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 0.4270092652445587,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 0.75,
+    "landmine_rate_10": null,
+    "trap_risk": null
   },
   {
     "asof_date": "2025-12-31",
@@ -335,7 +535,15 @@
     "threshold": 2,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": -1.3491435035552668,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 1.0,
+    "landmine_rate_10": null,
+    "trap_risk": null
   },
   {
     "asof_date": "2025-12-31",
@@ -348,7 +556,15 @@
     "threshold": 6,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 1.0331315831981351,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 2.5,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -361,7 +577,15 @@
     "threshold": 2,
     "hits": 9,
     "window_games": 10,
-    "hit_rate": 0.9
+    "hit_rate": 0.9,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 0.662528647822766,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 1.0,
+    "landmine_rate_10": null,
+    "trap_risk": null
   },
   {
     "asof_date": "2025-12-31",
@@ -374,7 +598,15 @@
     "threshold": 4,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 2,
+    "is_b2b": false,
+    "share_trend_pp": -2.5398376721737876,
+    "share_trend_dir": "DOWN",
+    "iqr_10": 0.0,
+    "landmine_rate_10": 0.1,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -387,7 +619,15 @@
     "threshold": 10,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 2.668495490159775,
+    "share_trend_dir": "UP",
+    "iqr_10": 3.75,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -400,7 +640,15 @@
     "threshold": 4,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 17,
+    "is_b2b": false,
+    "share_trend_pp": -0.14087363314854717,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 2.5,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -413,7 +661,15 @@
     "threshold": 2,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 17,
+    "is_b2b": false,
+    "share_trend_pp": 3.982661945897234,
+    "share_trend_dir": "UP",
+    "iqr_10": 1.0,
+    "landmine_rate_10": null,
+    "trap_risk": null
   },
   {
     "asof_date": "2025-12-31",
@@ -426,7 +682,15 @@
     "threshold": 4,
     "hits": 9,
     "window_games": 10,
-    "hit_rate": 0.9
+    "hit_rate": 0.9,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 1.3086387500214873,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 2.75,
+    "landmine_rate_10": 0.0,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -439,7 +703,15 @@
     "threshold": 2,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 4.870778731072847,
+    "share_trend_dir": "UP",
+    "iqr_10": 0.0,
+    "landmine_rate_10": null,
+    "trap_risk": null
   },
   {
     "asof_date": "2025-12-31",
@@ -452,7 +724,15 @@
     "threshold": 1,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": -1.9932698020933337,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 1.0,
+    "landmine_rate_10": null,
+    "trap_risk": null
   },
   {
     "asof_date": "2025-12-31",
@@ -465,7 +745,15 @@
     "threshold": 1,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": -3.6833259619637326,
+    "share_trend_dir": "DOWN",
+    "iqr_10": 0.75,
+    "landmine_rate_10": null,
+    "trap_risk": null
   },
   {
     "asof_date": "2025-12-31",
@@ -478,7 +766,15 @@
     "threshold": 2,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": -0.33508738713109654,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 1.75,
+    "landmine_rate_10": 0.1,
+    "trap_risk": false
   },
   {
     "asof_date": "2025-12-31",
@@ -491,7 +787,15 @@
     "threshold": 1,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": -2.215263902763903,
+    "share_trend_dir": "DOWN",
+    "iqr_10": 1.0,
+    "landmine_rate_10": null,
+    "trap_risk": null
   },
   {
     "asof_date": "2025-12-31",
@@ -504,7 +808,15 @@
     "threshold": 1,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": -0.048072096985139756,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 0.0,
+    "landmine_rate_10": null,
+    "trap_risk": null
   },
   {
     "asof_date": "2025-12-31",
@@ -517,7 +829,15 @@
     "threshold": 1,
     "hits": 9,
     "window_games": 10,
-    "hit_rate": 0.9
+    "hit_rate": 0.9,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 8.911785110314524,
+    "share_trend_dir": "UP",
+    "iqr_10": 1.75,
+    "landmine_rate_10": null,
+    "trap_risk": null
   },
   {
     "asof_date": "2025-12-31",
@@ -530,6 +850,14 @@
     "threshold": 4,
     "hits": 8,
     "window_games": 10,
-    "hit_rate": 0.8
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 0,
+    "is_b2b": true,
+    "share_trend_pp": 1.4852478267178781,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 1.75,
+    "landmine_rate_10": 0.2,
+    "trap_risk": false
   }
 ]
