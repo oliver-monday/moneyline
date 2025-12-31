@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-31",
-  "built_at_utc": "2025-12-31T17:09:27Z",
+  "built_at_utc": "2025-12-31T20:21:01Z",
   "source": "rotowire",
   "GSW": [
     {
@@ -78,14 +78,14 @@
       "details": "T. Shannon (Out)"
     },
     {
-      "name": "T. Young",
-      "status": "QUES",
-      "details": "T. Young (Ques)"
-    },
-    {
       "name": "N. Dante",
       "status": "OFS",
       "details": "N. Dante (OFS)"
+    },
+    {
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     }
   ],
   "ATL": [
@@ -95,31 +95,26 @@
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "T. Young",
-      "status": "QUES",
-      "details": "T. Young (Ques)"
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     }
   ],
   "ORL": [
     {
-      "name": "D. Bane",
-      "status": "QUES",
-      "details": "D. Bane (Ques)"
-    },
-    {
-      "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
-    },
-    {
-      "name": "J. Suggs",
-      "status": "QUES",
-      "details": "J. Suggs (Ques)"
-    },
-    {
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
+    },
+    {
+      "name": "J. Howard",
+      "status": "OUT",
+      "details": "J. Howard (Out)"
+    },
+    {
+      "name": "J. Isaac",
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
     },
     {
       "name": "M. Wagner",
@@ -135,16 +130,6 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
-    },
-    {
-      "name": "T. McConnell",
-      "status": "PROB",
-      "details": "T. McConnell (Prob)"
-    },
-    {
-      "name": "B. Sheppard",
-      "status": "QUES",
-      "details": "B. Sheppard (Ques)"
     },
     {
       "name": "I. Jackson",
@@ -164,16 +149,6 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "T. McConnell",
-      "status": "PROB",
-      "details": "T. McConnell (Prob)"
-    },
-    {
-      "name": "B. Sheppard",
-      "status": "QUES",
-      "details": "B. Sheppard (Ques)"
-    },
-    {
       "name": "I. Jackson",
       "status": "OUT",
       "details": "I. Jackson (Out)"
@@ -186,14 +161,9 @@
   ],
   "PHX": [
     {
-      "name": "R. Dunn",
-      "status": "QUES",
-      "details": "R. Dunn (Ques)"
-    },
-    {
       "name": "G. Allen",
-      "status": "DOUBT",
-      "details": "G. Allen (Doubt)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "J. Green",
@@ -201,9 +171,9 @@
       "details": "J. Green (Out)"
     },
     {
-      "name": "S. Merrill",
-      "status": "PROB",
-      "details": "S. Merrill (Prob)"
+      "name": "D. Hunter",
+      "status": "OUT",
+      "details": "D. Hunter (Out)"
     },
     {
       "name": "L. Nance",
@@ -218,9 +188,9 @@
   ],
   "CLE": [
     {
-      "name": "S. Merrill",
-      "status": "PROB",
-      "details": "S. Merrill (Prob)"
+      "name": "D. Hunter",
+      "status": "OUT",
+      "details": "D. Hunter (Out)"
     },
     {
       "name": "L. Nance",
@@ -324,16 +294,6 @@
   ],
   "NYK": [
     {
-      "name": "T. Kolek",
-      "status": "PROB",
-      "details": "T. Kolek (Prob)"
-    },
-    {
-      "name": "A. Hukporti",
-      "status": "QUES",
-      "details": "A. Hukporti (Ques)"
-    },
-    {
       "name": "Josh Hart",
       "status": "OUT",
       "details": "Josh Hart (Out)"
@@ -416,11 +376,6 @@
     }
   ],
   "WAS": [
-    {
-      "name": "M. Branham",
-      "status": "QUES",
-      "details": "M. Branham (Ques)"
-    },
     {
       "name": "K. George",
       "status": "OUT",
