@@ -130,6 +130,7 @@ jobs:
             "data/injuries_today.json"
             "data/player_features.json"
             "data/team_signals.json"
+            "data/team_game_log.csv"
             "data/game_times.json"
             "data/moneyline_postmortem.json"
             "data/targets_postmortem.json"
