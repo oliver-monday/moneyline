@@ -1,8 +1,8 @@
-# NBA GPT - ROADMAP
+# NBA GPT v1 - ROADMAP
 
 ## FEATURES:
 1 — Immediate ROI (strengthen Suggested Targets signal)
-	•	Opponent pace + implied totals environment (derive implied team totals from spread/ML/OU(over/under); bump PTS/AST/REB confidence) [parked until spreads/OU ingest/backfill work is done]
+	•	Opponent pace + implied totals environment (derive implied team totals from spread/ML/OU(over/under); bump PTS/AST/REB confidence) [*parked until spreads/OU ingest/backfill work is done*]
 	•	Stress score (0–100) from rest/travel/load (single numeric penalty/boost used everywhere)
 	•	Usage proxy via team-share trends (player share of team PTS/REB/AST; last 5 vs last 20 trend)
 
