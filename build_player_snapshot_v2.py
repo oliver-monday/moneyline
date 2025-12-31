@@ -119,6 +119,58 @@ def core_avg(series: pd.Series) -> float:
     return float("nan")
 
 
+CORE_TREND_EPS = 0.5
+CORE_TREND_Z_THRESH = 0.60
+CONS_TREND_DELTA_THRESH = 6.0
+
+
+def trend_dir_from_z(z: float, thresh: float = CORE_TREND_Z_THRESH) -> str:
+    if not np.isfinite(z):
+        return "na"
+    if z >= thresh:
+        return "up"
+    if z <= -thresh:
+        return "down"
+    return "flat"
+
+
+def trend_dir_from_delta(delta: float, thresh: float = CONS_TREND_DELTA_THRESH) -> str:
+    if not np.isfinite(delta):
+        return "na"
+    if delta >= thresh:
+        return "up"
+    if delta <= -thresh:
+        return "down"
+    return "flat"
+
+
+def trend_summary_dir(a: str, b: str) -> str:
+    if a == "na" or b == "na":
+        return "na"
+    if a == b:
+        return a
+    return "flat"
+
+
+def core_trend(core_10, core_base, iqr_base, gate_ok: bool) -> Tuple[float, str]:
+    if not gate_ok:
+        return float("nan"), "na"
+    if not (np.isfinite(core_10) and np.isfinite(core_base) and np.isfinite(iqr_base)):
+        return float("nan"), "na"
+    denom = max(float(iqr_base), CORE_TREND_EPS)
+    z = float(core_10 - core_base) / denom
+    return z, trend_dir_from_z(z)
+
+
+def cons_trend(cons_10, cons_base, gate_ok: bool) -> Tuple[float, str]:
+    if not gate_ok:
+        return float("nan"), "na"
+    if not (np.isfinite(cons_10) and np.isfinite(cons_base)):
+        return float("nan"), "na"
+    delta = float(cons_10 - cons_base)
+    return delta, trend_dir_from_delta(delta)
+
+
 def build_windows(df_player: pd.DataFrame, windows: List[int], thresholds: Dict[str, List[float]]) -> Dict[str, float]:
     """df_player sorted desc by game_date and filtered to games played (minutes>0)."""
     stat_col = {"pts": "pts", "reb": "reb", "ast": "ast", "3pt": "tpm"}
@@ -482,6 +534,46 @@ def main():
         base["consistency_tier_season"] = consistency_tier(base.get("consistency_season"))
         base["consistency_tier"] = base.get("consistency_tier_10")
 
+        gp_ok_10_20 = gp10 >= 7 and gp20 >= 14
+        gp_ok_10_season = gp10 >= 7 and gpSeason >= 25
+        for stat in ("pts", "reb", "ast", "3pt"):
+            core10 = base.get(f"{stat}_core_10")
+            core20 = base.get(f"{stat}_core_20")
+            coreSeason = base.get(f"{stat}_core_season")
+            iqr20 = base.get(f"{stat}_iqr_20")
+            iqrSeason = base.get(f"{stat}_iqr_season")
+            gate_10_20 = gp_ok_10_20
+            gate_10_season = gp_ok_10_season
+            if stat == "3pt":
+                if not (base.get("threept_eligible_10") and base.get("threept_eligible_20")):
+                    gate_10_20 = False
+                if not (base.get("threept_eligible_10") and base.get("threept_eligible_season")):
+                    gate_10_season = False
+
+            z_10_20, dir_10_20 = core_trend(core10, core20, iqr20, gate_10_20)
+            z_10_season, dir_10_season = core_trend(core10, coreSeason, iqrSeason, gate_10_season)
+            base[f"trend_core_z_{stat}_10_20"] = z_10_20
+            base[f"trend_core_z_{stat}_10_season"] = z_10_season
+            base[f"trend_core_dir_{stat}_10_20"] = dir_10_20
+            base[f"trend_core_dir_{stat}_10_season"] = dir_10_season
+            base[f"trend_core_summary_dir_{stat}"] = trend_summary_dir(dir_10_20, dir_10_season)
+
+            if stat == "3pt":
+                cons10 = base.get("consistency_3pt_10")
+                cons20 = base.get("consistency_3pt_20")
+                consSeason = base.get("consistency_3pt_season")
+            else:
+                cons10 = base.get("consistency_10")
+                cons20 = base.get("consistency_20")
+                consSeason = base.get("consistency_season")
+            d_10_20, cons_dir_10_20 = cons_trend(cons10, cons20, gate_10_20)
+            d_10_season, cons_dir_10_season = cons_trend(cons10, consSeason, gate_10_season)
+            base[f"trend_cons_delta_{stat}_10_20"] = d_10_20
+            base[f"trend_cons_delta_{stat}_10_season"] = d_10_season
+            base[f"trend_cons_dir_{stat}_10_20"] = cons_dir_10_20
+            base[f"trend_cons_dir_{stat}_10_season"] = cons_dir_10_season
+            base[f"trend_cons_summary_dir_{stat}"] = trend_summary_dir(cons_dir_10_20, cons_dir_10_season)
+
         base.update(build_windows(gp, windows, thresholds))
         base.update(build_load_metrics(gp, windows))
         rows.append(base)
@@ -637,12 +729,24 @@ def main():
             "share_ast_l20": row.get("share_ast_l20"),
             "share_ast_trend_pp": row.get("share_ast_trend_pp"),
         }
+        for stat in ("pts", "reb", "ast", "3pt"):
+            features[pid][f"trend_core_summary_dir_{stat}"] = row.get(f"trend_core_summary_dir_{stat}")
+            features[pid][f"trend_cons_summary_dir_{stat}"] = row.get(f"trend_cons_summary_dir_{stat}")
+            for suffix in ("10_20", "10_season"):
+                features[pid][f"trend_core_z_{stat}_{suffix}"] = row.get(f"trend_core_z_{stat}_{suffix}")
+                features[pid][f"trend_core_dir_{stat}_{suffix}"] = row.get(f"trend_core_dir_{stat}_{suffix}")
+                features[pid][f"trend_cons_delta_{stat}_{suffix}"] = row.get(f"trend_cons_delta_{stat}_{suffix}")
+                features[pid][f"trend_cons_dir_{stat}_{suffix}"] = row.get(f"trend_cons_dir_{stat}_{suffix}")
     try:
         os.makedirs("data", exist_ok=True)
         with open("data/player_features.json", "w", encoding="utf-8") as f:
             json.dump({"asof_date": asof_str, "players": features}, f, indent=2)
     except Exception:
         pass
+    if "trend_core_summary_dir_pts" in out.columns:
+        counts = out["trend_core_summary_dir_pts"].fillna("na").value_counts()
+        summary_counts = {k: int(v) for k, v in counts.items()}
+        print(f"[trend] core_summary_pts={summary_counts}")
     if tier_counts:
         print(f"[consistency] tiers={tier_counts}")
     if threept_counts["eligible"] or threept_counts["ineligible"]:
