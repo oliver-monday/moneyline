@@ -157,6 +157,7 @@
     .postmortem-body { margin-top: 8px; font-size: 14px; color:#444; }
     .postmortem-section { margin-top: 8px; }
     .postmortem-section-title { font-weight: 800; font-size: 16px; color:#444; }
+    .postmortem-section-title.insights { color: #f97316; }
     .postmortem-section-title.hits { color: #2f8f2f; }
     .postmortem-section-title.misses { color: #c93c3c; }
     .postmortem-insights { border-top: 1px dashed #e6e6e6; padding-top: 8px; margin-top: 10px; }
@@ -164,6 +165,12 @@
     .pm-insights-table { width:100%; border-collapse: collapse; margin-top: 6px; font-size: 13px; }
     .pm-insights-table th, .pm-insights-table td { text-align:left; padding:4px 6px; border-bottom: 1px solid #eee; }
     .pm-insights-chip { display:inline-flex; align-items:center; gap:4px; padding:2px 6px; border:1px solid #ddd; border-radius:999px; font-size:11px; font-weight:700; color:#666; background:#fafafa; }
+    @media (min-width: 900px) {
+      .pm-insights-table { width: 520px; table-layout: fixed; }
+      .pm-insights-table th:nth-child(1), .pm-insights-table td:nth-child(1) { width: 90px; }
+      .pm-insights-table th:nth-child(2), .pm-insights-table td:nth-child(2) { width: 170px; }
+      .pm-insights-table th:nth-child(3), .pm-insights-table td:nth-child(3) { width: 170px; }
+    }
     .pm-group { margin-top: 6px; }
     .pm-player-row { font-weight: 700; color: #555; margin: 4px 0; }
     .pm-target-row { margin-left: 14px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
@@ -3685,7 +3692,7 @@ async function load() {
       ${renderSection("HITS", hitsList, false, "hits")}
       ${renderSection("MISSES", misses, true, "misses")}
       <div class="postmortem-section postmortem-insights" id="postmortemInsights" hidden>
-        <div class="postmortem-section-title">Postmortem Insights</div>
+        <div class="postmortem-section-title insights">Postmortem Insights</div>
         <div id="postmortemInsightsBody"></div>
       </div>
     `;

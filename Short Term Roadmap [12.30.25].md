@@ -8,6 +8,11 @@
 	• Basic Trend v0 overlay failed to produce much/any signal.
 	• Dedicate time to build a robust Trajectory feature
 
+ - Postmortem Learning v0.1
+	• Rolling last 7/14 days + “best/worst tags” summary
+	• Add sample-size gating styling (e.g., fade chips when total < 3), so you don’t overreact to T 0/1.
+	• Add a tiny “lift vs baseline” later (e.g., UP: +22pp vs All) once you’ve got a week+ of data.
+
  — Reach Mode (make “Reached” meaningful) [Parked - med. priority, until baseline selection engine = maximum robustness]
 	•	Reach Mode (med priority): pre-game flag “reach” candidates (meaningful “Reached” tag)
 	•	Next-tier increments spec:
