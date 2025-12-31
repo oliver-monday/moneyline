@@ -894,6 +894,19 @@
       color:#777;
       margin-top:2px;
     }
+    .split-pill{
+      border:1px solid currentColor;
+      border-radius:999px;
+      font-size:11px;
+      font-weight:700;
+      padding:2px 6px;
+      margin-left:6px;
+      display:inline-flex;
+      align-items:center;
+      white-space:nowrap;
+    }
+    .split-plus{ color:#2e7d32; }
+    .split-minus{ color:#c62828; }
 
     /* Slightly tighter player column */
     td.player { min-width: 220px; }
@@ -1336,6 +1349,20 @@ function splitUsable(row, win, statKey) {
 function splitCoreZ(row, win, statKey) {
   const suffix = metricSuffix(win);
   return featureNum(row, `split_core_z_${statKey}_${suffix}`);
+}
+
+function splitPillHTML(row, statKey, win, isHomeToday) {
+  if (isHomeToday == null) return "";
+  if (!splitUsable(row, win, statKey)) return "";
+  if (statKey === "3pt" && getThreeptEligible(row, win) === false) return "";
+  const z = splitCoreZ(row, win, statKey);
+  if (!Number.isFinite(z)) return "";
+  const adv = isHomeToday ? z : -z;
+  const labelBase = isHomeToday ? "HOME" : "AWAY";
+  const thresh = 0.35;
+  if (adv >= thresh) return `<span class="split-pill split-plus">${labelBase}+</span>`;
+  if (adv <= -thresh) return `<span class="split-pill split-minus">${labelBase}-</span>`;
+  return "";
 }
 
 function trendKey(kind, statKey, tag) {
@@ -2843,6 +2870,13 @@ async function load() {
     const rebTrendMark = trendSummaryArrow(data.row, null, "core", "reb");
     const astTrendMark = trendSummaryArrow(data.row, null, "core", "ast");
     const tpmTrendMark = trendSummaryArrow(data.row, null, "core", "3pt");
+    const isHomeToday = data.todayInfo && data.todayInfo.ha
+      ? (data.todayInfo.ha === "H" ? true : (data.todayInfo.ha === "A" ? false : null))
+      : null;
+    const ptsSplitPill = splitPillHTML(data.row, "pts", win, isHomeToday);
+    const rebSplitPill = splitPillHTML(data.row, "reb", win, isHomeToday);
+    const astSplitPill = splitPillHTML(data.row, "ast", win, isHomeToday);
+    const tpmSplitPill = splitPillHTML(data.row, "3pt", win, isHomeToday);
     const ptsHeader = fmtAvgCore(ptsAvg, getCoreVal(data.row, "pts", _metricWin), _metricLabel, ptsTrendMark) || `Avg ${data.ptsAvgText}`;
     const rebHeader = fmtAvgCore(rebAvg, getCoreVal(data.row, "reb", _metricWin), _metricLabel, rebTrendMark) || `Avg ${data.rebAvgText}`;
     const astHeader = fmtAvgCore(astAvg, getCoreVal(data.row, "ast", _metricWin), _metricLabel, astTrendMark) || `Avg ${data.astAvgText}`;
@@ -2861,25 +2895,25 @@ async function load() {
 
     return `
       <div class="matrixhdr">
-        <div><strong>PTS</strong> · ${ptsHeader} • min in window: ${ptsMin}</div>
+        <div><strong>PTS</strong> · ${ptsHeader} • min in window: ${ptsMin} ${ptsSplitPill}</div>
         ${ptsTrendLine}
       </div>
       <div class="pills">${ptsFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>REB</strong> · ${rebHeader} • min in window: ${rebMin}</div>
+        <div><strong>REB</strong> · ${rebHeader} • min in window: ${rebMin} ${rebSplitPill}</div>
         ${rebTrendLine}
       </div>
       <div class="pills">${rebFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>AST</strong> · ${astHeader} • min in window: ${astMin}</div>
+        <div><strong>AST</strong> · ${astHeader} • min in window: ${astMin} ${astSplitPill}</div>
         ${astTrendLine}
       </div>
       <div class="pills">${astFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>3PT</strong> · ${tpmHeader} • min in window: ${tpmMin}</div>
+        <div><strong>3PT</strong> · ${tpmHeader} • min in window: ${tpmMin} ${tpmSplitPill}</div>
         ${tpmTrendLine}
       </div>
       <div class="pills">${tpmFull}</div>
