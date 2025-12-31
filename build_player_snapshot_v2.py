@@ -412,6 +412,7 @@ def main():
             "last_pts": float(last_row["pts"]) if len(gp) else float("nan"),
             "last_reb": float(last_row["reb"]) if len(gp) else float("nan"),
             "last_ast": float(last_row["ast"]) if len(gp) else float("nan"),
+            "last_3pt": float(last_row["tpm"]) if len(gp) else float("nan"),
             "last_min": float(last_row["minutes"]) if len(gp) else float("nan"),
             "season_avg_pts": float(gp["pts"].mean()) if len(gp) else float("nan"),
             "season_avg_reb": float(gp["reb"].mean()) if len(gp) else float("nan"),

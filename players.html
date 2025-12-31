@@ -494,6 +494,9 @@
       color: #333;
       white-space: nowrap;
     }
+    .season-perf-metric {
+      color: #d97706;
+    }
     .date-stamp {
       font-weight: 800;
       font-size: clamp(16px, 3vw, 22px);
@@ -1121,8 +1124,8 @@
       <div class="season-perf-title">Season Performance</div>
       <div class="season-perf-sub" id="seasonPerfSub"></div>
       <div class="season-perf-grid">
-        <div class="season-perf-row"><span>Top Targets</span><span class="season-perf-value" id="seasonPerfTop">—</span></div>
-        <div class="season-perf-row season-perf-right"><span>All Targets</span><span class="season-perf-value" id="seasonPerfAll">—</span></div>
+        <div class="season-perf-row"><span>Top Targets</span><span class="season-perf-value season-perf-metric" id="seasonPerfTop">—</span></div>
+        <div class="season-perf-row season-perf-right"><span>All Targets</span><span class="season-perf-value season-perf-metric" id="seasonPerfAll">—</span></div>
       </div>
     </div>
   </div>
@@ -3933,9 +3936,13 @@ async function load() {
       const lastPts = num(r.last_pts);
       const lastReb = num(r.last_reb);
       const lastAst = num(r.last_ast);
-      const lastStats = (Number.isFinite(lastPts) && Number.isFinite(lastReb) && Number.isFinite(lastAst))
-        ? `(PTS ${fmt(lastPts, 0)} · REB ${fmt(lastReb, 0)} · AST ${fmt(lastAst, 0)})`
-        : "";
+      const lastTpm = num(r.last_3pt);
+      let lastStats = "";
+      if (Number.isFinite(lastPts) && Number.isFinite(lastReb) && Number.isFinite(lastAst)) {
+        lastStats = Number.isFinite(lastTpm)
+          ? `(PTS ${fmt(lastPts, 0)} · REB ${fmt(lastReb, 0)} · AST ${fmt(lastAst, 0)} · 3PT ${fmt(lastTpm, 0)})`
+          : `(PTS ${fmt(lastPts, 0)} · REB ${fmt(lastReb, 0)} · AST ${fmt(lastAst, 0)})`;
+      }
       const lastLine = [lastStr, lastStats].filter(Boolean).join(" ");
 
       const restVal = teamRestLabel(team) || restLabel(last);
