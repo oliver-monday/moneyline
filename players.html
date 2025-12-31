@@ -2758,17 +2758,20 @@ async function load() {
       : fmtAvgCore(item.avg, item.core, _metricLabel, trendMark);
     const flags = [];
     if (item.highFatigue) flags.push("<span class=\"suggested-flag\">HIGH FATIGUE</span>");
-    if (item.trapRisk) flags.push("<span class=\"suggested-flag injury-risk\">TRAP RISK</span>");
     if (item.roleUp) flags.push(`<span class="suggested-flag">${item.roleTag || "↑ ROLE"}</span>`);
+    if (item.shareTag) {
+      const cls = item.shareDir === "down" ? "share-down" : "share-up";
+      const pp = Number.isFinite(item.sharePP) ? item.sharePP : null;
+      const sign = pp != null && pp >= 0 ? "+" : "";
+      const title = pp != null ? `Team share trend (L5 vs L20): ${sign}${pp.toFixed(1)}pp` : "";
+      flags.push(`<span class="suggested-flag ${cls}" ${title ? `title="${title}"` : ""}>${item.shareTag}</span>`);
+    }
+    if (item.splitTag) flags.push(`<span class="suggested-flag">${item.splitTag}</span>`);
+    if (item.trapRisk) flags.push("<span class=\"suggested-flag injury-risk\">TRAP RISK</span>");
     if (item.injuryRisk) flags.push("<span class=\"suggested-flag injury-risk\">INJURY RISK</span>");
     if (item.roleOpportunity) flags.push("<span class=\"suggested-flag\">ROLE ↑ OPPORTUNITY</span>");
     if (item.stressTier === "HIGH") flags.push("<span class=\"suggested-flag injury-risk\">HIGH STRESS</span>");
     if (item.stressTier === "EXTREME") flags.push("<span class=\"suggested-flag injury-risk\">EXTREME STRESS</span>");
-    if (item.splitTag) flags.push(`<span class="suggested-flag">${item.splitTag}</span>`);
-    if (item.shareTag) {
-      const cls = item.shareDir === "down" ? "share-down" : "share-up";
-      flags.push(`<span class="suggested-flag ${cls}">${item.shareTag}</span>`);
-    }
     const pid = item.playerId || "";
     const team = item.team || "";
     return `
@@ -2842,6 +2845,8 @@ async function load() {
           let trapRiskFlagged = 0;
           const stressCounts = { LOW: 0, MED: 0, HIGH: 0, EXTREME: 0, b2b: 0, heavyTravel: 0, brutalTravel: 0, highLoad: 0 };
           const roleCounts = { total: 0, confirmed: 0, unconfirmed: 0 };
+          let shareTargetsUp = 0;
+          let shareTargetsDown = 0;
           const getFeature = (row, key) => featureNum(row, key);
           const targetItems = [];
           for (const data of cardDataList) {
@@ -3003,8 +3008,10 @@ async function load() {
           }
           let shareAdj = 0;
           let shareTag = "";
-          let shareDir = "";
+          let shareDir = null;
+          let sharePP = null;
           if (shareTrend && shareTrend.eligible) {
+            sharePP = Number.isFinite(shareTrend.trendPP) ? shareTrend.trendPP : null;
             if (shareTrend.dir === "up") {
               shareAdj = statKey === "pts" ? 0.03 : 0.02;
               shareTag = "SHARE↑";
@@ -3015,6 +3022,8 @@ async function load() {
               shareDir = "down";
             }
           }
+          if (shareDir === "up") shareTargetsUp += 1;
+          else if (shareDir === "down") shareTargetsDown += 1;
           let stressTierPenalty = 0;
           if (stressTier === "HIGH") stressTierPenalty = -0.04;
           else if (stressTier === "EXTREME") stressTierPenalty = -0.08;
@@ -3065,6 +3074,7 @@ async function load() {
             splitTag,
             shareTag,
             shareDir,
+            sharePP,
             stressTier,
             threeptEligible,
             threeptCons: consWin,
@@ -3104,6 +3114,9 @@ async function load() {
       console.log(`[stress] flagged=${JSON.stringify(flagged)} comps=${JSON.stringify(comps)}`);
       if (roleCounts.total) {
         console.log(`[role_confirm] role=${roleCounts.total} confirmed=${roleCounts.confirmed} unconfirmed=${roleCounts.unconfirmed}`);
+      }
+      if (shareTargetsUp || shareTargetsDown) {
+        console.log(`[share_targets] up=${shareTargetsUp} down=${shareTargetsDown} total=${shareTargetsUp + shareTargetsDown}`);
       }
       renderSuggestedDrawer();
     } catch (err) {
