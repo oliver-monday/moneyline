@@ -538,10 +538,8 @@
         text-align: right;
       }
       .suggested-meta .avg-anchor { white-space: normal; }
-      .suggested-meta .consistency-break { display: block; flex-basis: 100%; height: 0; }
+      .suggested-meta .consistency-chunk { flex-basis: 100%; white-space: nowrap; }
     }
-    .suggested-meta .consistency-break { display: none; }
-    .suggested-meta .consistency-inline { white-space: nowrap; }
     .no-games-today {
       font-size: 18px;
       font-weight: 700;
@@ -2869,13 +2867,14 @@ async function load() {
     const avgText = statKey === "3pt"
       ? fmtAvgCore3pt(item.avg, item.core, _metricLabel, item.threeptEligible, item.threeptCons, trendMark)
       : fmtAvgCore(item.avg, item.core, _metricLabel, trendMark);
-    let avgHtml = avgText;
+    let avgMain = avgText;
+    let avgCons = "";
     if (avgText && /Consistency/i.test(avgText)) {
       const parts = avgText.split(" | ");
-      if (parts.length > 1) {
-        const tail = parts[parts.length - 1];
-        const head = parts.slice(0, -1).join(" | ");
-        avgHtml = `${head} <span class="consistency-break"></span><span class="consistency-inline">${tail}</span>`;
+      const consIndex = parts.findIndex(p => /Consistency/i.test(p));
+      if (consIndex !== -1) {
+        avgMain = parts.slice(0, consIndex).join(" | ");
+        avgCons = parts.slice(consIndex).join(" | ");
       }
     }
     const flags = [];
@@ -2916,7 +2915,8 @@ async function load() {
         <span class="suggested-chips">
           <span class="target-chip suggested-chip" data-slip-leg="1" data-player-id="${escAttr(pid)}" data-player-name="${escAttr(item.playerName)}" data-team="${escAttr(team)}" data-stat="${escAttr(stat)}" data-threshold="${escAttr(item.threshold)}">${chip}</span>
           <span class="suggested-meta">
-            ${avgHtml ? `<span class="avg-anchor">${avgHtml}</span>` : ""}
+            ${avgMain ? `<span class="avg-anchor">${avgMain}</span>` : ""}
+            ${avgCons ? `<span class="avg-anchor consistency-chunk">${avgCons}</span>` : ""}
             ${flags.join("")}
           </span>
         </span>
