@@ -312,6 +312,14 @@
       border-color: #c93c3c;
       color: #fff;
     }
+    .suggested-flag.share-up {
+      border-color: #6ac46a;
+      color: #1f5f1f;
+    }
+    .suggested-flag.share-down {
+      border-color: #e08b8b;
+      color: #7a2e2e;
+    }
     .suggested-chips .target-chip,
     .targets-wrap .target-chip {
       display: inline-flex;
@@ -907,6 +915,19 @@
     }
     .split-plus{ color:#2e7d32; }
     .split-minus{ color:#c62828; }
+    .share-pill{
+      border:1px solid currentColor;
+      border-radius:999px;
+      font-size:11px;
+      font-weight:700;
+      padding:2px 6px;
+      margin-left:6px;
+      display:inline-flex;
+      align-items:center;
+      white-space:nowrap;
+    }
+    .share-up{ color:#2e7d32; }
+    .share-down{ color:#c62828; }
     .split-delta{
       border:1px solid #d0d0d0;
       border-radius:999px;
@@ -1394,6 +1415,29 @@ function splitDeltaTokenHTML(row, statKey, win, isPlayingToday) {
   const precision = statKey === "3pt" ? 2 : 1;
   const cls = label === "H" ? "split-delta-home" : "split-delta-away";
   return `<span class="split-delta ${cls}">Split: ${label}+${delta.toFixed(precision)}</span>`;
+}
+
+function getShareTrend(row, statKey) {
+  if (statKey === "3pt") return null;
+  const eligible = featureBool(row, `share_${statKey}_trend_eligible`);
+  const trendPP = featureNum(row, `share_${statKey}_trend_pp`);
+  if (!eligible || !Number.isFinite(trendPP)) {
+    return { eligible: false, trendPP: trendPP, dir: "flat" };
+  }
+  let dir = "flat";
+  if (trendPP >= 3.0) dir = "up";
+  else if (trendPP <= -3.0) dir = "down";
+  return { eligible: true, trendPP, dir };
+}
+
+function sharePillHTML(row, statKey) {
+  const trend = getShareTrend(row, statKey);
+  if (!trend || !trend.eligible) return "";
+  if (trend.dir !== "up" && trend.dir !== "down") return "";
+  const arrow = trend.dir === "up" ? "↑" : "↓";
+  const sign = trend.trendPP >= 0 ? "+" : "";
+  const title = `Team share trend (L5 vs L20): ${sign}${trend.trendPP.toFixed(1)}pp`;
+  return `<span class="share-pill share-${trend.dir}" title="${title}">SHARE${arrow}</span>`;
 }
 
 function trendKey(kind, statKey, tag) {
@@ -2721,6 +2765,10 @@ async function load() {
     if (item.stressTier === "HIGH") flags.push("<span class=\"suggested-flag injury-risk\">HIGH STRESS</span>");
     if (item.stressTier === "EXTREME") flags.push("<span class=\"suggested-flag injury-risk\">EXTREME STRESS</span>");
     if (item.splitTag) flags.push(`<span class="suggested-flag">${item.splitTag}</span>`);
+    if (item.shareTag) {
+      const cls = item.shareDir === "down" ? "share-down" : "share-up";
+      flags.push(`<span class="suggested-flag ${cls}">${item.shareTag}</span>`);
+    }
     const pid = item.playerId || "";
     const team = item.team || "";
     return `
@@ -2819,6 +2867,7 @@ async function load() {
           const landmineKey = `${statKey}_landmine_${t.t}_${metricSuffix(metricWinVal)}`;
           const landmineRate = getFeature(data.row, landmineKey);
           const trendPP = getFeature(data.row, `share_${statKey}_trend_pp`);
+          const shareTrend = getShareTrend(data.row, statKey);
           const coreWin = getCoreVal(data.row, statKey, metricWinVal);
           const coreSeason = getCoreVal(data.row, statKey, "season");
           const consWin = getConsistencyValStat(data.row, statKey, metricWinVal);
@@ -2932,12 +2981,26 @@ async function load() {
               splitAdj = -splitAdjWeight;
             }
           }
+          let shareAdj = 0;
+          let shareTag = "";
+          let shareDir = "";
+          if (shareTrend && shareTrend.eligible) {
+            if (shareTrend.dir === "up") {
+              shareAdj = statKey === "pts" ? 0.03 : 0.02;
+              shareTag = "SHARE↑";
+              shareDir = "up";
+            } else if (shareTrend.dir === "down") {
+              shareAdj = -0.02;
+              shareTag = "SHARE↓";
+              shareDir = "down";
+            }
+          }
           let stressTierPenalty = 0;
           if (stressTier === "HIGH") stressTierPenalty = -0.04;
           else if (stressTier === "EXTREME") stressTierPenalty = -0.08;
           const roleOpportunity = hasRoleOpportunity(data.team, pid, statKey, data.row);
           const oppBoost = roleOpportunity ? 0.10 : 0;
-          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty + oppBoost + splitAdj + stressTierPenalty;
+          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty + oppBoost + splitAdj + stressTierPenalty + shareAdj;
           const highFatigue = (scheduleStress != null && scheduleStress >= 70) || b2b;
           const gpOk = Number.isFinite(t.gp) && t.gp >= minTrapGp;
           let trapRisk = false;
@@ -2979,6 +3042,8 @@ async function load() {
             injuryRisk,
             roleOpportunity,
             splitTag,
+            shareTag,
+            shareDir,
             stressTier,
             threeptEligible,
             threeptCons: consWin,
@@ -3051,6 +3116,9 @@ async function load() {
     const rebSplitDelta = splitDeltaTokenHTML(data.row, "reb", win, isPlayingToday);
     const astSplitDelta = splitDeltaTokenHTML(data.row, "ast", win, isPlayingToday);
     const tpmSplitDelta = splitDeltaTokenHTML(data.row, "3pt", win, isPlayingToday);
+    const ptsSharePill = sharePillHTML(data.row, "pts");
+    const rebSharePill = sharePillHTML(data.row, "reb");
+    const astSharePill = sharePillHTML(data.row, "ast");
     const ptsHeader = fmtAvgCore(ptsAvg, getCoreVal(data.row, "pts", _metricWin), _metricLabel, ptsTrendMark) || `Avg ${data.ptsAvgText}`;
     const rebHeader = fmtAvgCore(rebAvg, getCoreVal(data.row, "reb", _metricWin), _metricLabel, rebTrendMark) || `Avg ${data.rebAvgText}`;
     const astHeader = fmtAvgCore(astAvg, getCoreVal(data.row, "ast", _metricWin), _metricLabel, astTrendMark) || `Avg ${data.astAvgText}`;
@@ -3069,19 +3137,19 @@ async function load() {
 
     return `
       <div class="matrixhdr">
-        <div><strong>PTS</strong> · ${ptsHeader} • min in window: ${ptsMin} ${ptsSplitPill} ${ptsSplitDelta}</div>
+        <div><strong>PTS</strong> · ${ptsHeader} • min in window: ${ptsMin} ${ptsSplitPill} ${ptsSplitDelta} ${ptsSharePill}</div>
         ${ptsTrendLine}
       </div>
       <div class="pills">${ptsFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>REB</strong> · ${rebHeader} • min in window: ${rebMin} ${rebSplitPill} ${rebSplitDelta}</div>
+        <div><strong>REB</strong> · ${rebHeader} • min in window: ${rebMin} ${rebSplitPill} ${rebSplitDelta} ${rebSharePill}</div>
         ${rebTrendLine}
       </div>
       <div class="pills">${rebFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>AST</strong> · ${astHeader} • min in window: ${astMin} ${astSplitPill} ${astSplitDelta}</div>
+        <div><strong>AST</strong> · ${astHeader} • min in window: ${astMin} ${astSplitPill} ${astSplitDelta} ${astSharePill}</div>
         ${astTrendLine}
       </div>
       <div class="pills">${astFull}</div>

@@ -119,6 +119,16 @@ def core_avg(series: pd.Series) -> float:
     return float("nan")
 
 
+def normalize_game_id(val) -> str:
+    s = str(val).strip()
+    if not s or s.lower() == "nan":
+        return ""
+    try:
+        return str(int(float(s)))
+    except Exception:
+        return s
+
+
 SPLIT_EPS = 0.5
 
 
@@ -306,7 +316,10 @@ def main():
     df = df[df["game_date"] <= asof].copy()
 
     season_end = args.season_end_year or season_end_year_for_date(asof)
-    df = df[df["season_end_year"].astype(int) == int(season_end)].copy()
+    df["game_id"] = df["game_id"].map(normalize_game_id)
+    df["team_abbrev"] = df["team_abbrev"].astype(str).str.upper().str.strip()
+    df["season_end_year"] = pd.to_numeric(df["season_end_year"], errors="coerce").fillna(0).astype(int)
+    df = df[df["season_end_year"] == int(season_end)].copy()
 
     windows = [int(x.strip()) for x in args.windows.split(",") if x.strip()]
     windows = sorted(list(dict.fromkeys(windows)))
@@ -324,19 +337,34 @@ def main():
         df[c] = pd.to_numeric(df[c], errors="coerce").fillna(0)
 
     df_played = df[(df["minutes"] > 0) & (df["dnp"] != 1)].copy()
-    team_totals = df_played.groupby(["game_id", "team_abbrev"], as_index=False)[["pts", "reb", "ast"]].sum()
-    team_totals = team_totals.rename(columns={
-        "pts": "team_pts",
-        "reb": "team_reb",
-        "ast": "team_ast",
-    })
-    df_played = df_played.merge(team_totals, on=["game_id", "team_abbrev"], how="left")
+    team_log_path = os.path.join("data", "team_game_log.csv")
+    team_totals = None
+    if os.path.exists(team_log_path):
+        team_totals = pd.read_csv(team_log_path)
+        for col in ["season_end_year","game_id","team_abbrev"]:
+            if col not in team_totals.columns:
+                team_totals[col] = ""
+        team_totals["season_end_year"] = pd.to_numeric(team_totals["season_end_year"], errors="coerce").fillna(0).astype(int)
+        team_totals["game_id"] = team_totals["game_id"].map(normalize_game_id)
+        team_totals["team_abbrev"] = team_totals["team_abbrev"].astype(str).str.upper().str.strip()
+        keep_cols = ["season_end_year","game_id","team_abbrev","team_pts","team_reb","team_ast","team_tpm"]
+        team_totals = team_totals[keep_cols].copy()
+    if team_totals is not None and not team_totals.empty:
+        df_played = df_played.merge(team_totals, on=["season_end_year","game_id","team_abbrev"], how="left")
+        missing_team_totals = int(df_played[["team_pts","team_reb","team_ast"]].isna().any(axis=1).sum())
+        if missing_team_totals:
+            print(f"[share] missing_team_totals_rows={missing_team_totals}")
+    else:
+        df_played["team_pts"] = float("nan")
+        df_played["team_reb"] = float("nan")
+        df_played["team_ast"] = float("nan")
+        print("[share] missing_team_totals_rows=all")
     for stat in ("pts", "reb", "ast"):
         total_col = f"team_{stat}"
         share_col = f"share_{stat}"
         df_played[share_col] = np.where(
             df_played[total_col] > 0,
-            df_played[stat] / df_played[total_col],
+            np.clip(df_played[stat] / df_played[total_col], 0, 1),
             np.nan,
         )
 
@@ -476,6 +504,7 @@ def main():
             l20 = float(share_l20[col].mean()) if len(share_l20) else float("nan")
             base[f"share_{stat}_l5"] = l5
             base[f"share_{stat}_l20"] = l20
+            base[f"share_{stat}_trend_eligible"] = bool(len(share_l5) >= 4 and len(share_l20) >= 12)
             if np.isfinite(l5) and np.isfinite(l20):
                 base[f"share_{stat}_trend_pp"] = (l5 - l20) * 100.0
             else:
@@ -761,12 +790,15 @@ def main():
             "share_pts_l5": row.get("share_pts_l5"),
             "share_pts_l20": row.get("share_pts_l20"),
             "share_pts_trend_pp": row.get("share_pts_trend_pp"),
+            "share_pts_trend_eligible": row.get("share_pts_trend_eligible"),
             "share_reb_l5": row.get("share_reb_l5"),
             "share_reb_l20": row.get("share_reb_l20"),
             "share_reb_trend_pp": row.get("share_reb_trend_pp"),
+            "share_reb_trend_eligible": row.get("share_reb_trend_eligible"),
             "share_ast_l5": row.get("share_ast_l5"),
             "share_ast_l20": row.get("share_ast_l20"),
             "share_ast_trend_pp": row.get("share_ast_trend_pp"),
+            "share_ast_trend_eligible": row.get("share_ast_trend_eligible"),
         }
         for win in ("10", "20", "season"):
             features[pid][f"gp_home_{win}"] = row.get(f"gp_home_{win}")
@@ -802,6 +834,26 @@ def main():
         counts = out["trend_core_summary_dir_pts"].fillna("na").value_counts()
         summary_counts = {k: int(v) for k, v in counts.items()}
         print(f"[trend] core_summary_pts={summary_counts}")
+    try:
+        share_stats = {}
+        share_up = {}
+        share_down = {}
+        share_flat = {}
+        for stat in ("pts", "reb", "ast"):
+            elig_col = f"share_{stat}_trend_eligible"
+            trend_col = f"share_{stat}_trend_pp"
+            if elig_col not in out.columns or trend_col not in out.columns:
+                continue
+            elig = out[elig_col].fillna(False).astype(bool)
+            trends = pd.to_numeric(out[trend_col], errors="coerce")
+            share_stats[stat] = int(elig.sum())
+            share_up[stat] = int((elig & (trends >= 3.0)).sum())
+            share_down[stat] = int((elig & (trends <= -3.0)).sum())
+            share_flat[stat] = int((elig & (trends > -3.0) & (trends < 3.0)).sum())
+        if share_stats:
+            print(f"[share] eligible={share_stats} up={share_up} down={share_down} flat={share_flat}")
+    except Exception:
+        pass
     if tier_counts:
         print(f"[consistency] tiers={tier_counts}")
     if threept_counts["eligible"] or threept_counts["ineligible"]:
