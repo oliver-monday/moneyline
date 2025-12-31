@@ -1,13 +1,8 @@
 {
   "asof_date": "2025-12-30",
-  "built_at_utc": "2025-12-30T23:21:11Z",
+  "built_at_utc": "2025-12-31T01:02:13Z",
   "source": "rotowire",
   "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
-    },
     {
       "name": "K. Oubre",
       "status": "OUT",
@@ -37,11 +32,6 @@
       "name": "Fantasy Football",
       "status": "REST",
       "details": "Fantasy Football (Rest)"
-    },
-    {
-      "name": "J. Landale",
-      "status": "QUES",
-      "details": "J. Landale (Ques)"
     },
     {
       "name": "K. Caldwell-Pope",
@@ -80,11 +70,6 @@
     }
   ],
   "MEM": [
-    {
-      "name": "J. Landale",
-      "status": "QUES",
-      "details": "J. Landale (Ques)"
-    },
     {
       "name": "K. Caldwell-Pope",
       "status": "OUT",
@@ -133,11 +118,6 @@
       "details": "J. Tatum (Out)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
@@ -163,11 +143,6 @@
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
     },
     {
       "name": "Ace Bailey",
