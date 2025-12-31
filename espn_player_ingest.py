@@ -827,8 +827,12 @@ def main():
     season_end_year = args.season_end_year or season_end_year_for_date(today)
 
     # Load inputs/outputs
-    wl = load_whitelist(args.whitelist)
-    dim = load_dim(args.dim)
+    if args.mode == "backfill_team":
+        wl = pd.DataFrame(columns=["player_name","team_abbr","team_abbr_alt"])
+        dim = pd.DataFrame()
+    else:
+        wl = load_whitelist(args.whitelist)
+        dim = load_dim(args.dim)
     df_old = load_game_log(args.out)
     team_old = load_team_game_log(args.team_out)
 
