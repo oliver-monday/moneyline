@@ -1418,15 +1418,15 @@ function splitDeltaTokenHTML(row, statKey, win, isPlayingToday) {
 }
 
 function getShareTrend(row, statKey) {
-  if (statKey === "3pt") return null;
   const eligible = featureBool(row, `share_${statKey}_trend_eligible`);
   const trendPP = featureNum(row, `share_${statKey}_trend_pp`);
   if (!eligible || !Number.isFinite(trendPP)) {
     return { eligible: false, trendPP: trendPP, dir: "flat" };
   }
+  const thresh = statKey === "3pt" ? 5.0 : 3.0;
   let dir = "flat";
-  if (trendPP >= 3.0) dir = "up";
-  else if (trendPP <= -3.0) dir = "down";
+  if (trendPP >= thresh) dir = "up";
+  else if (trendPP <= -thresh) dir = "down";
   return { eligible: true, trendPP, dir };
 }
 
@@ -2845,8 +2845,8 @@ async function load() {
           let trapRiskFlagged = 0;
           const stressCounts = { LOW: 0, MED: 0, HIGH: 0, EXTREME: 0, b2b: 0, heavyTravel: 0, brutalTravel: 0, highLoad: 0 };
           const roleCounts = { total: 0, confirmed: 0, unconfirmed: 0 };
-          let shareTargetsUp = 0;
-          let shareTargetsDown = 0;
+          const shareTargetsUp = { pts: 0, reb: 0, ast: 0, "3pt": 0 };
+          const shareTargetsDown = { pts: 0, reb: 0, ast: 0, "3pt": 0 };
           const getFeature = (row, key) => featureNum(row, key);
           const targetItems = [];
           for (const data of cardDataList) {
@@ -3013,17 +3013,19 @@ async function load() {
           if (shareTrend && shareTrend.eligible) {
             sharePP = Number.isFinite(shareTrend.trendPP) ? shareTrend.trendPP : null;
             if (shareTrend.dir === "up") {
-              shareAdj = statKey === "pts" ? 0.03 : 0.02;
+              if (statKey === "pts") shareAdj = 0.03;
+              else if (statKey === "3pt") shareAdj = 0.015;
+              else shareAdj = 0.02;
               shareTag = "SHARE↑";
               shareDir = "up";
             } else if (shareTrend.dir === "down") {
-              shareAdj = -0.02;
+              shareAdj = statKey === "3pt" ? -0.015 : -0.02;
               shareTag = "SHARE↓";
               shareDir = "down";
             }
           }
-          if (shareDir === "up") shareTargetsUp += 1;
-          else if (shareDir === "down") shareTargetsDown += 1;
+          if (shareDir === "up" && shareTargetsUp[statKey] != null) shareTargetsUp[statKey] += 1;
+          else if (shareDir === "down" && shareTargetsDown[statKey] != null) shareTargetsDown[statKey] += 1;
           let stressTierPenalty = 0;
           if (stressTier === "HIGH") stressTierPenalty = -0.04;
           else if (stressTier === "EXTREME") stressTierPenalty = -0.08;
@@ -3115,8 +3117,10 @@ async function load() {
       if (roleCounts.total) {
         console.log(`[role_confirm] role=${roleCounts.total} confirmed=${roleCounts.confirmed} unconfirmed=${roleCounts.unconfirmed}`);
       }
-      if (shareTargetsUp || shareTargetsDown) {
-        console.log(`[share_targets] up=${shareTargetsUp} down=${shareTargetsDown} total=${shareTargetsUp + shareTargetsDown}`);
+      const shareTotal = Object.values(shareTargetsUp).reduce((a, b) => a + b, 0) +
+        Object.values(shareTargetsDown).reduce((a, b) => a + b, 0);
+      if (shareTotal) {
+        console.log(`[share_targets] up=${JSON.stringify(shareTargetsUp)} down=${JSON.stringify(shareTargetsDown)} total=${shareTotal}`);
       }
       renderSuggestedDrawer();
     } catch (err) {
@@ -3156,6 +3160,7 @@ async function load() {
     const ptsSharePill = sharePillHTML(data.row, "pts");
     const rebSharePill = sharePillHTML(data.row, "reb");
     const astSharePill = sharePillHTML(data.row, "ast");
+    const tpmSharePill = sharePillHTML(data.row, "3pt");
     const ptsHeader = fmtAvgCore(ptsAvg, getCoreVal(data.row, "pts", _metricWin), _metricLabel, ptsTrendMark) || `Avg ${data.ptsAvgText}`;
     const rebHeader = fmtAvgCore(rebAvg, getCoreVal(data.row, "reb", _metricWin), _metricLabel, rebTrendMark) || `Avg ${data.rebAvgText}`;
     const astHeader = fmtAvgCore(astAvg, getCoreVal(data.row, "ast", _metricWin), _metricLabel, astTrendMark) || `Avg ${data.astAvgText}`;
@@ -3192,7 +3197,7 @@ async function load() {
       <div class="pills">${astFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>3PT</strong> · ${tpmHeader} • min in window: ${tpmMin} ${tpmSplitPill} ${tpmSplitDelta}</div>
+        <div><strong>3PT</strong> · ${tpmHeader} • min in window: ${tpmMin} ${tpmSplitPill} ${tpmSplitDelta} ${tpmSharePill}</div>
         ${tpmTrendLine}
       </div>
       <div class="pills">${tpmFull}</div>

@@ -352,19 +352,28 @@ def main():
     if team_totals is not None and not team_totals.empty:
         df_played = df_played.merge(team_totals, on=["season_end_year","game_id","team_abbrev"], how="left")
         missing_team_totals = int(df_played[["team_pts","team_reb","team_ast"]].isna().any(axis=1).sum())
+        missing_team_tpm = int(df_played["team_tpm"].isna().sum()) if "team_tpm" in df_played.columns else 0
         if missing_team_totals:
             print(f"[share] missing_team_totals_rows={missing_team_totals}")
+        if missing_team_tpm:
+            print(f"[share] missing_team_tpm_rows={missing_team_tpm}")
     else:
         df_played["team_pts"] = float("nan")
         df_played["team_reb"] = float("nan")
         df_played["team_ast"] = float("nan")
+        df_played["team_tpm"] = float("nan")
         print("[share] missing_team_totals_rows=all")
-    for stat in ("pts", "reb", "ast"):
-        total_col = f"team_{stat}"
+    for stat in ("pts", "reb", "ast", "3pt"):
+        if stat == "3pt":
+            total_col = "team_tpm"
+            stat_col = "tpm"
+        else:
+            total_col = f"team_{stat}"
+            stat_col = stat
         share_col = f"share_{stat}"
         df_played[share_col] = np.where(
             df_played[total_col] > 0,
-            np.clip(df_played[stat] / df_played[total_col], 0, 1),
+            np.clip(df_played[stat_col] / df_played[total_col], 0, 1),
             np.nan,
         )
 
@@ -432,6 +441,7 @@ def main():
 
         base["tpm_mean_10"] = float(last10["tpm"].mean()) if len(last10) else float("nan")
         base["tpm_mean_20"] = float(last20["tpm"].mean()) if len(last20) else float("nan")
+        base["team_tpm_mean_20"] = float(last20["team_tpm"].mean()) if len(last20) else float("nan")
         base["tpm_mean_season"] = float(season_gp["tpm"].mean()) if len(season_gp) else float("nan")
         base["tpm_nonzero_rate_10"] = float((last10["tpm"] > 0).mean()) if len(last10) else float("nan")
         base["tpm_nonzero_rate_20"] = float((last20["tpm"] > 0).mean()) if len(last20) else float("nan")
@@ -498,13 +508,21 @@ def main():
         # Team share trends (last 5 vs last 20)
         share_l5 = gp_feat.head(5)
         share_l20 = gp_feat.head(20)
-        for stat in ("pts", "reb", "ast"):
+        for stat in ("pts", "reb", "ast", "3pt"):
             col = f"share_{stat}"
             l5 = float(share_l5[col].mean()) if len(share_l5) else float("nan")
             l20 = float(share_l20[col].mean()) if len(share_l20) else float("nan")
             base[f"share_{stat}_l5"] = l5
             base[f"share_{stat}_l20"] = l20
-            base[f"share_{stat}_trend_eligible"] = bool(len(share_l5) >= 4 and len(share_l20) >= 12)
+            if stat == "3pt":
+                team_ok = np.isfinite(base.get("team_tpm_mean_20")) and base.get("team_tpm_mean_20") >= 8
+                player_ok = (
+                    (np.isfinite(base.get("tpm_mean_20")) and base.get("tpm_mean_20") >= 1.0) or
+                    (np.isfinite(base.get("tpm_nonzero_rate_20")) and base.get("tpm_nonzero_rate_20") >= 0.60)
+                )
+                base[f"share_{stat}_trend_eligible"] = bool(len(share_l5) >= 4 and len(share_l20) >= 12 and team_ok and player_ok)
+            else:
+                base[f"share_{stat}_trend_eligible"] = bool(len(share_l5) >= 4 and len(share_l20) >= 12)
             if np.isfinite(l5) and np.isfinite(l20):
                 base[f"share_{stat}_trend_pp"] = (l5 - l20) * 100.0
             else:
@@ -799,6 +817,10 @@ def main():
             "share_ast_l20": row.get("share_ast_l20"),
             "share_ast_trend_pp": row.get("share_ast_trend_pp"),
             "share_ast_trend_eligible": row.get("share_ast_trend_eligible"),
+            "share_3pt_l5": row.get("share_3pt_l5"),
+            "share_3pt_l20": row.get("share_3pt_l20"),
+            "share_3pt_trend_pp": row.get("share_3pt_trend_pp"),
+            "share_3pt_trend_eligible": row.get("share_3pt_trend_eligible"),
         }
         for win in ("10", "20", "season"):
             features[pid][f"gp_home_{win}"] = row.get(f"gp_home_{win}")
@@ -839,7 +861,7 @@ def main():
         share_up = {}
         share_down = {}
         share_flat = {}
-        for stat in ("pts", "reb", "ast"):
+        for stat in ("pts", "reb", "ast", "3pt"):
             elig_col = f"share_{stat}_trend_eligible"
             trend_col = f"share_{stat}_trend_pp"
             if elig_col not in out.columns or trend_col not in out.columns:
@@ -847,9 +869,10 @@ def main():
             elig = out[elig_col].fillna(False).astype(bool)
             trends = pd.to_numeric(out[trend_col], errors="coerce")
             share_stats[stat] = int(elig.sum())
-            share_up[stat] = int((elig & (trends >= 3.0)).sum())
-            share_down[stat] = int((elig & (trends <= -3.0)).sum())
-            share_flat[stat] = int((elig & (trends > -3.0) & (trends < 3.0)).sum())
+            thresh = 5.0 if stat == "3pt" else 3.0
+            share_up[stat] = int((elig & (trends >= thresh)).sum())
+            share_down[stat] = int((elig & (trends <= -thresh)).sum())
+            share_flat[stat] = int((elig & (trends > -thresh) & (trends < thresh)).sum())
         if share_stats:
             print(f"[share] eligible={share_stats} up={share_up} down={share_down} flat={share_flat}")
     except Exception:
