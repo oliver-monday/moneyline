@@ -1309,6 +1309,31 @@ function getThreeptEligible(row, win) {
   return v;
 }
 
+function consistencyTierLabel(score) {
+  if (!Number.isFinite(score)) return "";
+  if (score < 50) return "Inconsistent";
+  if (score <= 64) return "Consistency OK";
+  if (score <= 72) return "Solid Consistency";
+  if (score <= 78) return "Consistent";
+  if (score <= 84) return "Very Consistent";
+  return "Elite Consistency";
+}
+
+function consistencyTierClass(score) {
+  if (!Number.isFinite(score)) return "";
+  if (score < 50) return "bad";
+  if (score <= 72) return "ok";
+  return "good";
+}
+
+function consistencyPillHTML(score) {
+  if (!Number.isFinite(score)) return "";
+  const rounded = Math.round(score);
+  const label = consistencyTierLabel(rounded);
+  const cls = consistencyTierClass(rounded);
+  return `<span class="consistency-pill ${cls}">${label.toUpperCase()} ${rounded}</span>`;
+}
+
 function fmtAvgCore3pt(avg, core, label, eligible, tierScore) {
   const base = fmtAvgCore(avg, core, label);
   if (eligible === false) {
@@ -2438,31 +2463,6 @@ async function load() {
 
     container.innerHTML = chunks.join("") || "<div class=\"muted\">—</div>";
     container.querySelectorAll("details.suggested-game-group").forEach(syncDetailsOpenClass);
-  }
-
-  function consistencyTierLabel(score) {
-    if (!Number.isFinite(score)) return "";
-    if (score < 50) return "Inconsistent";
-    if (score <= 64) return "Consistency OK";
-    if (score <= 72) return "Solid Consistency";
-    if (score <= 78) return "Consistent";
-    if (score <= 84) return "Very Consistent";
-    return "Elite Consistency";
-  }
-
-  function consistencyTierClass(score) {
-    if (!Number.isFinite(score)) return "";
-    if (score < 50) return "bad";
-    if (score <= 72) return "ok";
-    return "good";
-  }
-
-  function consistencyPillHTML(score) {
-    if (!Number.isFinite(score)) return "";
-    const rounded = Math.round(score);
-    const label = consistencyTierLabel(rounded);
-    const cls = consistencyTierClass(rounded);
-    return `<span class="consistency-pill ${cls}">${label.toUpperCase()} ${rounded}</span>`;
   }
 
   function renderSuggestedDrawer() {
