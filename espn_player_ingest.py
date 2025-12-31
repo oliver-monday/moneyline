@@ -5,6 +5,7 @@ ESPN NBA player props ingest (PTS/REB/AST + minutes) for a whitelist.
 Outputs (CSV):
   - player_dim.csv (auto-built ESPN athlete_id map)
   - player_game_log.csv (one row per player per game)
+  - data/team_game_log.csv (one row per team per game, totals)
   - player_unresolved.csv (whitelist names not yet matched to an ESPN athlete_id)
 
 Designed to be "seamless" with your existing moneyline workflow:
@@ -28,6 +29,9 @@ Usage examples:
 
   # Ingest yesterday
   python espn_player_ingest.py --mode yesterday
+
+  # Backfill team totals only
+  python espn_player_ingest.py --mode backfill_team --master nba_master.csv
 """
 
 from __future__ import annotations
@@ -329,6 +333,76 @@ def parse_boxscore_players(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]
 
     return rows
 
+def parse_boxscore_teams(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """
+    Parse ESPN summary boxscore JSON into team total rows with:
+      team_id, team_abbrev, pts, reb, ast, tpm
+    """
+    rows: List[Dict[str, Any]] = []
+    box = summary_json.get("boxscore") or {}
+    teams_blocks = box.get("teams") or []
+
+    def norm_key(s: str) -> str:
+        return "".join(ch for ch in str(s or "").lower() if ch.isalnum())
+
+    def extract_stat(stats_list: List[Dict[str, Any]], keys: List[str]) -> Optional[str]:
+        key_norms = [norm_key(k) for k in keys]
+        for stat in stats_list:
+            name = stat.get("name") or stat.get("label") or stat.get("shortDisplayName") or stat.get("displayName") or ""
+            n = norm_key(name)
+            for k in key_norms:
+                if n == k or k in n or n in k:
+                    return stat.get("displayValue") or stat.get("value")
+        return None
+
+    def to_int(x: Optional[str]) -> int:
+        if x is None:
+            return 0
+        s = str(x).strip()
+        if s in ("", "--", "—", "–"):
+            return 0
+        m = re.search(r"\d+", s)
+        return int(m.group(0)) if m else 0
+
+    def parse_tpm(x: Optional[str]) -> int:
+        if x is None:
+            return 0
+        s = str(x).strip()
+        if s in ("", "--", "—", "–"):
+            return 0
+        for ch in ("\u2010", "\u2011", "\u2012", "\u2013", "\u2014", "\u2212"):
+            s = s.replace(ch, "-")
+        if "-" in s or "/" in s:
+            s = re.split(r"[-/]", s, 1)[0]
+        m = re.search(r"\d+", s)
+        return int(m.group(0)) if m else 0
+
+    for team_block in teams_blocks:
+        team = team_block.get("team") or {}
+        team_id = str(team.get("id") or "")
+        team_abbrev = team.get("abbreviation") or team.get("shortDisplayName") or ""
+        stats_list = team_block.get("statistics") or team_block.get("stats") or []
+        if not stats_list:
+            continue
+
+        pts_raw = extract_stat(stats_list, ["pts", "points"])
+        reb_raw = extract_stat(stats_list, ["reb", "rebounds", "totalrebounds"])
+        ast_raw = extract_stat(stats_list, ["ast", "assists"])
+        tpm_raw = extract_stat(stats_list, ["3pm", "3pt", "fg3m", "3fgm", "3ptm", "3p"])
+
+        row = {
+            "team_id": team_id,
+            "team_abbrev": team_abbrev,
+            "pts": to_int(pts_raw),
+            "reb": to_int(reb_raw),
+            "ast": to_int(ast_raw),
+            "tpm": parse_tpm(tpm_raw),
+        }
+        if team_id or team_abbrev:
+            rows.append(row)
+
+    return rows
+
 # --------------------------------------------------------------------
 # Whitelist matching + persistence
 # --------------------------------------------------------------------
@@ -441,6 +515,24 @@ def upsert_game_log(df_old: pd.DataFrame, df_new: pd.DataFrame) -> pd.DataFrame:
     ).reset_index(drop=True)
     return merged
 
+def load_team_game_log(path: str) -> pd.DataFrame:
+    if not pd.io.common.file_exists(path):
+        return pd.DataFrame()
+    return pd.read_csv(path)
+
+def upsert_team_game_log(df_old: pd.DataFrame, df_new: pd.DataFrame) -> pd.DataFrame:
+    if df_old is None or df_old.empty:
+        merged = df_new.copy()
+    else:
+        merged = pd.concat([df_old, df_new], ignore_index=True)
+    if merged.empty:
+        return merged
+    merged["ingested_at"] = merged["ingested_at"].fillna("")
+    merged = merged.sort_values("ingested_at").drop_duplicates(
+        subset=["season_end_year","game_id","team_abbrev"], keep="last"
+    ).reset_index(drop=True)
+    return merged
+
 def read_master_game_ids(master_path: str, season_end_year: int) -> List[str]:
     df = pd.read_csv(master_path)
     required = {"game_id","game_date","home_score","away_score"}
@@ -499,18 +591,20 @@ def ingest_events(
     whitelist_df: pd.DataFrame,
     dim_df: pd.DataFrame,
     sleep_s: float = 0.25,
-) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    team_only: bool = False,
+) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     """
-    Returns: (df_new_game_log_rows, df_new_dim, df_match_audit)
+    Returns: (df_new_game_log_rows, df_new_dim, df_match_audit, df_team_game_log_rows)
     """
-    wl_lookup = build_whitelist_lookup(whitelist_df)
+    wl_lookup = {} if team_only else build_whitelist_lookup(whitelist_df)
 
     # Fast allowlist by resolved IDs if any exist
-    resolved_ids = set(dim_df["player_id"].dropna().astype(str).tolist()) if not dim_df.empty else set()
+    resolved_ids = set() if team_only else (set(dim_df["player_id"].dropna().astype(str).tolist()) if not dim_df.empty else set())
 
     new_rows: List[Dict[str, Any]] = []
     dim_updates: List[Dict[str, Any]] = []
     audit_rows: List[Dict[str, Any]] = []
+    team_rows: List[Dict[str, Any]] = []
 
     for i, event_id in enumerate(event_ids, start=1):
         try:
@@ -522,10 +616,41 @@ def ingest_events(
         game_date, team_map = infer_game_meta_from_summary(summary)
         season_end = season_end_year_for_date(game_date)
 
-        parsed = parse_boxscore_players(summary)
-        if not parsed:
+        team_totals = parse_boxscore_teams(summary)
+        ingested_at = dt.datetime.utcnow().isoformat(timespec="seconds") + "Z"
+        for t in team_totals:
+            team_abbrev = str(t.get("team_abbrev") or "").upper().strip()
+            if not team_abbrev:
+                continue
+            team_id = str(t.get("team_id") or "")
+            home_away = infer_home_away(team_abbrev, team_map)
+            opp_abbrev, _ = opponent_for_team(team_abbrev, team_map)
+            pts_val = int(t.get("pts", 0))
+            if pts_val == 0 and team_id and team_id in team_map:
+                score_raw = team_map[team_id].get("score")
+                try:
+                    score_int = int(float(score_raw))
+                except Exception:
+                    score_int = 0
+                if score_int > 0:
+                    pts_val = score_int
+            team_rows.append({
+                "season_end_year": season_end,
+                "game_id": str(event_id),
+                "game_date": str(game_date),
+                "team_abbrev": team_abbrev,
+                "opp_abbrev": (opp_abbrev or "").upper(),
+                "is_home": 1 if home_away == "H" else 0,
+                "team_pts": pts_val,
+                "team_reb": int(t.get("reb", 0)),
+                "team_ast": int(t.get("ast", 0)),
+                "team_tpm": int(t.get("tpm", 0)),
+                "ingested_at": ingested_at,
+            })
+
+        parsed = [] if team_only else parse_boxscore_players(summary)
+        if not parsed and not team_only:
             print(f"[WARN] event {event_id}: no boxscore players parsed")
-            continue
 
         for r in parsed:
             athlete_id = str(r["athlete_id"])
@@ -569,7 +694,6 @@ def ingest_events(
             })
 
             # Game log row
-            ingested_at = dt.datetime.utcnow().isoformat(timespec="seconds") + "Z"
             new_rows.append({
                 "season_end_year": season_end,
                 "game_id": str(event_id),
@@ -609,8 +733,9 @@ def ingest_events(
     df_new = pd.DataFrame(new_rows)
     df_audit = pd.DataFrame(audit_rows)
     df_dim_new = upsert_dim(dim_df, dim_updates)
+    df_team_new = pd.DataFrame(team_rows)
 
-    return df_new, df_dim_new, df_audit
+    return df_new, df_dim_new, df_audit, df_team_new
 
 def write_unresolved(whitelist_df: pd.DataFrame, dim_df: pd.DataFrame, out_path: str) -> pd.DataFrame:
     """
@@ -630,11 +755,12 @@ def write_unresolved(whitelist_df: pd.DataFrame, dim_df: pd.DataFrame, out_path:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--mode", choices=["backfill","date","yesterday"], default="backfill",
-                        help="backfill: use nba_master to enumerate completed games; date: ingest a single date via scoreboard; yesterday: ingest yesterday's finals")
+    parser.add_argument("--mode", choices=["backfill","backfill_team","date","yesterday"], default="backfill",
+                        help="backfill: use nba_master to enumerate completed games; backfill_team: write team totals only; date: ingest a single date via scoreboard; yesterday: ingest yesterday's finals")
     parser.add_argument("--master", default="nba_master.csv", help="nba_master.csv path (used in backfill mode)")
     parser.add_argument("--whitelist", default="player_whitelist.csv", help="Whitelist CSV path (names+teams)")
     parser.add_argument("--out", default="player_game_log.csv", help="Output player game log CSV path")
+    parser.add_argument("--team-out", default="data/team_game_log.csv", help="Output team game log CSV path")
     parser.add_argument("--dim", default="player_dim.csv", help="Output player dim CSV path")
     parser.add_argument("--unresolved", default="player_unresolved.csv", help="Output unresolved whitelist CSV path")
     parser.add_argument("--audit", default="player_match_audit.csv", help="Output match audit CSV path (optional)")
@@ -652,12 +778,13 @@ def main():
     wl = load_whitelist(args.whitelist)
     dim = load_dim(args.dim)
     df_old = load_game_log(args.out)
+    team_old = load_team_game_log(args.team_out)
 
     session = build_session()
 
     event_ids: List[str] = []
 
-    if args.mode == "backfill":
+    if args.mode in ("backfill","backfill_team"):
         if not pd.io.common.file_exists(args.master):
             raise SystemExit(f"Backfill mode requires --master file, but not found: {args.master}")
         event_ids = read_master_game_ids(args.master, season_end_year)
@@ -681,56 +808,92 @@ def main():
         print("No events to ingest. Exiting.")
         return
 
-    df_new, dim_new, df_audit = ingest_events(session, event_ids, wl, dim, sleep_s=args.sleep)
+    df_new, dim_new, df_audit, df_team_new = ingest_events(
+        session,
+        event_ids,
+        wl,
+        dim,
+        sleep_s=args.sleep,
+        team_only=(args.mode == "backfill_team"),
+    )
     dim_new = apply_whitelist_active_to_dim(dim_new, wl)
 
-    if df_new.empty:
-        print("No whitelist players matched in these events. Writing unresolved report and exiting.")
-        unresolved = write_unresolved(wl, dim_new, args.unresolved)
-        print(f"Unresolved players: {len(unresolved)} → {args.unresolved}")
-        dim_new.to_csv(args.dim, index=False)
-        return
-
-    # Upsert game log
-    df_merged = upsert_game_log(df_old, df_new)
-
-    # Write outputs
-    # Stable column order
-    col_order = [
-        "season_end_year","game_id","game_date","team_abbrev","opp_abbrev","home_away",
-        "player_id","player_name","started","minutes","minutes_raw","pts","reb","ast","tpm","dnp",
-        "team_hint_ok","ingested_at"
-    ]
-    for c in col_order:
-        if c not in df_merged.columns:
-            df_merged[c] = ""
-
-    df_merged = df_merged[col_order].copy()
-    df_merged.to_csv(args.out, index=False)
-    dim_new.to_csv(args.dim, index=False)
-    df_audit.to_csv(args.audit, index=False)
-
-    unresolved = write_unresolved(wl, dim_new, args.unresolved)
-
-    try:
-        tpm_new = pd.to_numeric(df_new.get("tpm"), errors="coerce").fillna(0)
-        tpm_new_nonzero = int((tpm_new > 0).sum())
-        tpm_vals = pd.to_numeric(df_merged.get("tpm"), errors="coerce").fillna(0)
-        tpm_nonzero = int((tpm_vals > 0).sum())
-        sample = df_merged.loc[tpm_vals > 0].head(1)
-        if not sample.empty:
-            sample_name = sample["player_name"].iloc[0]
-            sample_tpm = sample["tpm"].iloc[0]
-            print(f"[ingest] rows={len(df_merged)} tpm_nonzero={tpm_nonzero} tpm_new_nonzero={tpm_new_nonzero} sample_tpm={sample_name}:{sample_tpm}")
+    if args.mode != "backfill_team":
+        if df_new.empty:
+            print("No whitelist players matched in these events. Writing unresolved report and exiting.")
+            unresolved = write_unresolved(wl, dim_new, args.unresolved)
+            print(f"Unresolved players: {len(unresolved)} → {args.unresolved}")
+            dim_new.to_csv(args.dim, index=False)
         else:
-            print(f"[ingest] rows={len(df_merged)} tpm_nonzero={tpm_nonzero} tpm_new_nonzero={tpm_new_nonzero}")
-    except Exception:
-        pass
+            # Upsert player game log
+            df_merged = upsert_game_log(df_old, df_new)
 
-    print(f"Upserted {len(df_new)} new rows → {args.out} (total now {len(df_merged)})")
-    print(f"Updated dim → {args.dim} (total now {len(dim_new)})")
-    print(f"Match audit → {args.audit} (rows {len(df_audit)})")
-    print(f"Unresolved whitelist → {args.unresolved} (rows {len(unresolved)})")
+            # Write outputs
+            # Stable column order
+            col_order = [
+                "season_end_year","game_id","game_date","team_abbrev","opp_abbrev","home_away",
+                "player_id","player_name","started","minutes","minutes_raw","pts","reb","ast","tpm","dnp",
+                "team_hint_ok","ingested_at"
+            ]
+            for c in col_order:
+                if c not in df_merged.columns:
+                    df_merged[c] = ""
+
+            df_merged = df_merged[col_order].copy()
+            df_merged.to_csv(args.out, index=False)
+            dim_new.to_csv(args.dim, index=False)
+            df_audit.to_csv(args.audit, index=False)
+
+            unresolved = write_unresolved(wl, dim_new, args.unresolved)
+
+            try:
+                tpm_new = pd.to_numeric(df_new.get("tpm"), errors="coerce").fillna(0)
+                tpm_new_nonzero = int((tpm_new > 0).sum())
+                tpm_vals = pd.to_numeric(df_merged.get("tpm"), errors="coerce").fillna(0)
+                tpm_nonzero = int((tpm_vals > 0).sum())
+                sample = df_merged.loc[tpm_vals > 0].head(1)
+                if not sample.empty:
+                    sample_name = sample["player_name"].iloc[0]
+                    sample_tpm = sample["tpm"].iloc[0]
+                    print(f"[ingest] rows={len(df_merged)} tpm_nonzero={tpm_nonzero} tpm_new_nonzero={tpm_new_nonzero} sample_tpm={sample_name}:{sample_tpm}")
+                else:
+                    print(f"[ingest] rows={len(df_merged)} tpm_nonzero={tpm_nonzero} tpm_new_nonzero={tpm_new_nonzero}")
+            except Exception:
+                pass
+
+            print(f"Upserted {len(df_new)} new rows → {args.out} (total now {len(df_merged)})")
+            print(f"Updated dim → {args.dim} (total now {len(dim_new)})")
+            print(f"Match audit → {args.audit} (rows {len(df_audit)})")
+            print(f"Unresolved whitelist → {args.unresolved} (rows {len(unresolved)})")
+
+    # Upsert team game log (always when team rows exist)
+    if not df_team_new.empty:
+        team_merged = upsert_team_game_log(team_old, df_team_new)
+        team_dir = os.path.dirname(args.team_out)
+        if team_dir:
+            os.makedirs(team_dir, exist_ok=True)
+        team_cols = [
+            "season_end_year","game_id","game_date","team_abbrev","opp_abbrev","is_home",
+            "team_pts","team_reb","team_ast","team_tpm","ingested_at"
+        ]
+        for c in team_cols:
+            if c not in team_merged.columns:
+                team_merged[c] = ""
+        team_merged = team_merged[team_cols].copy()
+        team_merged.to_csv(args.team_out, index=False)
+
+        pts_vals = pd.to_numeric(team_merged["team_pts"], errors="coerce")
+        reb_vals = pd.to_numeric(team_merged["team_reb"], errors="coerce")
+        ast_vals = pd.to_numeric(team_merged["team_ast"], errors="coerce")
+        tpm_vals = pd.to_numeric(team_merged["team_tpm"], errors="coerce")
+        missing_totals = int((pts_vals.isna() | reb_vals.isna() | ast_vals.isna() | tpm_vals.isna()).sum())
+        all_pts_nonzero = bool((pts_vals.fillna(0) > 0).all()) if len(pts_vals) else False
+        tpm_min = int(tpm_vals.fillna(0).min()) if len(tpm_vals) else 0
+        print(f"[team_ingest] rows={len(team_merged)} missing_totals={missing_totals}")
+        print(f"[team_ingest] pts_all_nonzero={all_pts_nonzero} tpm_min={tpm_min} reb_null={int(reb_vals.isna().sum())} ast_null={int(ast_vals.isna().sum())}")
+
+    if args.mode == "backfill_team":
+        print(f"Team ingest only mode complete → {args.team_out}")
 
 if __name__ == "__main__":
     main()
