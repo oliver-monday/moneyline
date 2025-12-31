@@ -488,11 +488,11 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810315,2025-12-30,2025-12-31T03:30Z,Los Angeles Lakers,LAL,106,124.0,,Detroit Pistons,DET,128,-148.0,,Los Angeles,CA,,
 401810316,2025-12-30,2025-12-31T04:00Z,LA Clippers,LAC,131,-375.0,,Sacramento Kings,SAC,90,295.0,,Inglewood,CA,,
 401810317,2025-12-31,2025-12-31T18:00Z,Charlotte Hornets,CHA,125,230.0,,Golden State Warriors,GS,132,-285.0,,Charlotte,NC,M. Bridges (Out); R. Kalkbrenner (Out); M. Plumlee (Out); G. Williams (Out),Seth Curry (Out)
-401810318,2025-12-31,2025-12-31T20:00Z,Atlanta Hawks,ATL,54,170.0,,Minnesota Timberwolves,MIN,35,-205.0,,Atlanta,GA,N. Dante (OFS); Trae Young (Out),T. Shannon (Out)
-401810319,2025-12-31,2025-12-31T20:00Z,Indiana Pacers,IND,39,160.0,,Orlando Magic,ORL,39,-192.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); Obi Toppin (Out),C. Castleton (Out); J. Howard (Out); J. Isaac (Out); M. Wagner (Out); F. Wagner (Out)
-401810320,2025-12-31,2025-12-31T20:30Z,Cleveland Cavaliers,CLE,18,-258.0,,Phoenix Suns,PHX,8,210.0,,Cleveland,OH,D. Hunter (Out); L. Nance (Out); Max Strus (Out),G. Allen (Out); J. Green (Out)
+401810318,2025-12-31,2025-12-31T20:00Z,Atlanta Hawks,ATL,90,170.0,,Minnesota Timberwolves,MIN,69,-205.0,,Atlanta,GA,N. Dante (OFS); Trae Young (Out),T. Shannon (Out)
+401810319,2025-12-31,2025-12-31T20:00Z,Indiana Pacers,IND,73,160.0,,Orlando Magic,ORL,72,-192.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); Obi Toppin (Out),C. Castleton (Out); J. Howard (Out); J. Isaac (Out); M. Wagner (Out); F. Wagner (Out)
+401810320,2025-12-31,2025-12-31T20:30Z,Cleveland Cavaliers,CLE,66,-258.0,,Phoenix Suns,PHX,54,210.0,,Cleveland,OH,D. Hunter (Out); L. Nance (Out); Max Strus (Out),G. Allen (Out); J. Green (Out)
 401810321,2025-12-31,2026-01-01T00:00Z,Chicago Bulls,CHI,0,-130.0,,New Orleans Pelicans,NO,0,110.0,,Chicago,IL,N. Essengue (OFS); Z. Collins (Out); T. Flowers (Out); J. Giddey (Out); E. Miller (Out); L. Olbrich (Out); Coby White (Out),J. Alvarado (Out); H. Jones (Out); D. Murray (Out)
-401810322,2025-12-31,2026-01-01T00:00Z,San Antonio Spurs,SA,0,-142.0,,New York Knicks,NY,0,120.0,,San Antonio,TX,D. Vassell (Out),Josh Hart (Out); M. Robinson (Out); L. Shamet (Out)
+401810322,2025-12-31,2026-01-01T00:00Z,San Antonio Spurs,SA,0,-135.0,,New York Knicks,NY,0,114.0,,San Antonio,TX,D. Vassell (Out),Josh Hart (Out); M. Robinson (Out); L. Shamet (Out)
 401810323,2025-12-31,2026-01-01T00:30Z,Toronto Raptors,TOR,0,-258.0,,Denver Nuggets,DEN,0,210.0,,Toronto,ON,J. Poeltl (Out),T. Bates (Out); C. Braun (Out); A. Gordon (Out); C. Johnson (Out); N. Jokic (Out)
 401810324,2025-12-31,2026-01-01T01:00Z,Milwaukee Bucks,MIL,0,-500.0,,Washington Wizards,WSH,0,380.0,,Milwaukee,WI,T. Prince (Out),K. George (Out); C. Kispert (Out); C. Whitmore (Out)
 401810325,2025-12-31,2026-01-01T01:00Z,Oklahoma City Thunder,OKC,0,-1100.0,,Portland Trail Blazers,POR,0,700.0,,Oklahoma City,OK,T. Sorber (OFS); O. Dieng (Out); I. Hartenstein (Out); N. Topic (Out); J. Williams (Out),D. Lillard (OFS); J. Grant (Out); S. Henderson (Out); J. Holiday (Out); M. Thybulle (Out); B. Wesley (Out)
