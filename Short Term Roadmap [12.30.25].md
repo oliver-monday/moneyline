@@ -4,10 +4,6 @@
  — Immediate ROI (strengthen Suggested Targets signal)["bundles" remaining...]
 	•	Opponent pace + implied totals environment (derive implied team totals from spread/ML/OU(over/under); bump PTS/AST/REB confidence) [parked until spreads/OU ingest/backfill work is done]
 
- — Postmortem learning (turn daily results into tuning)
-	•	Postmortem learning loop: “what worked yesterday” (hit-rate by stat, threshold, chip conditions)
-	•	Postmortem-driven auto-tune (bias thresholds down under stress; promote archetypes that “reach” often)
-
  - Trajectory Engine v1 [Parked - med. priority]
 	• Basic Trend v0 overlay failed to produce much/any signal.
 	• Dedicate time to build a robust Trajectory feature
@@ -54,6 +50,10 @@
 			- Role Confirmation: Usage proxy via team-share trends … + ROLE✓ / ROLE? confirmation layer
 		•	MINs-adjusted everything v0
 		•	B2B calibrated to actual player performance (not just conventional wisdom ie B2B=underperformance risk)
+
+	• Postmortem learning (turn daily results into tuning)
+		•	Postmortem learning loop: “what worked yesterday” (hit-rate by stat, threshold, chip conditions)
+		•	Postmortem-driven auto-tune (bias thresholds down under stress; promote archetypes that “reach” often)
 
 	•	Create Documentation for internal use:
 		• ReadMe.md - holistic project overview
