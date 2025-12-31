@@ -1324,6 +1324,20 @@ function featureStrByPlayerId(playerId, key) {
   return null;
 }
 
+function splitUsable(row, win, statKey) {
+  const suffix = metricSuffix(win);
+  const key = (statKey === "3pt") ? `split_usable_3pt_${suffix}` : `split_usable_${suffix}`;
+  const v = featureBool(row, key);
+  if (v !== null) return v;
+  const n = featureNum(row, key);
+  return Number.isFinite(n) ? n > 0 : null;
+}
+
+function splitCoreZ(row, win, statKey) {
+  const suffix = metricSuffix(win);
+  return featureNum(row, `split_core_z_${statKey}_${suffix}`);
+}
+
 function trendKey(kind, statKey, tag) {
   if (tag === "summary") return `trend_${kind}_summary_dir_${statKey}`;
   return `trend_${kind}_dir_${statKey}_${tag}`;
@@ -2526,6 +2540,7 @@ async function load() {
     if (item.roleUp) flags.push("<span class=\"suggested-flag\">↑ ROLE</span>");
     if (item.injuryRisk) flags.push("<span class=\"suggested-flag injury-risk\">INJURY RISK</span>");
     if (item.roleOpportunity) flags.push("<span class=\"suggested-flag\">ROLE ↑ OPPORTUNITY</span>");
+    if (item.splitTag) flags.push(`<span class="suggested-flag">${item.splitTag}</span>`);
     const pid = item.playerId || "";
     const team = item.team || "";
     return `
@@ -2592,6 +2607,8 @@ async function load() {
   function computeSuggestedFromCardData(cardDataList, targetsWin, metricWinVal) {
     try {
       const bonusForTier = tier => tier === "SOFT" ? 1 : (tier === "TOUGH" ? -1 : 0);
+          const splitZThresh = 0.35;
+          const splitAdjWeight = 0.03;
           const minTrapGp = (metricWinVal === "season") ? 20 : (metricWinVal === "20" ? 12 : 8);
           let trapRiskTotal = 0;
           let trapRiskFlagged = 0;
@@ -2607,6 +2624,8 @@ async function load() {
             const gameId = (data.todayInfo && data.todayInfo.gameId) ? data.todayInfo.gameId : "";
             const gameKey = gameId || `${data.team}::${data.oppTeam || ""}`;
             const info = data.todayInfo && data.todayInfo.gameId ? gameInfoById.get(data.todayInfo.gameId) : null;
+            const haToday = data.todayInfo && data.todayInfo.ha;
+            const isHomeToday = haToday === "H" ? true : (haToday === "A" ? false : null);
         const gameLabel = info
           ? `${info.awayName || info.awayAbbrev} @ ${info.homeName || info.homeAbbrev}`
           : (data.oppTeam ? `${data.team} @ ${data.oppTeam}` : data.team);
@@ -2624,6 +2643,8 @@ async function load() {
           const consWin = getConsistencyValStat(data.row, statKey, metricWinVal);
           const consSeason = getConsistencyValStat(data.row, statKey, "season");
           const threeptEligible = statKey === "3pt" ? getThreeptEligible(data.row, metricWinVal) : null;
+          const splitUsableVal = splitUsable(data.row, metricWinVal, statKey);
+          const splitZ = splitCoreZ(data.row, metricWinVal, statKey);
           const coreUsed = (metricWinVal === "season")
             ? coreSeason
             : (Number.isFinite(coreWin) && Number.isFinite(coreSeason) ? (0.7 * coreWin + 0.3 * coreSeason) : (coreWin != null ? coreWin : coreSeason));
@@ -2711,9 +2732,20 @@ async function load() {
             if (landmineRate >= 0.30) landmineCons -= 0.05;
             else if (landmineRate >= 0.20) landmineCons -= 0.03;
           }
+          let splitAdj = 0;
+          let splitTag = "";
+          if (splitUsableVal && isHomeToday != null && Number.isFinite(splitZ)) {
+            const advZ = isHomeToday ? splitZ : -splitZ;
+            if (advZ >= splitZThresh) {
+              splitAdj = splitAdjWeight;
+              splitTag = isHomeToday ? "HOME+" : "AWAY+";
+            } else if (advZ <= -splitZThresh) {
+              splitAdj = -splitAdjWeight;
+            }
+          }
           const roleOpportunity = hasRoleOpportunity(data.team, pid, statKey, data.row);
           const oppBoost = roleOpportunity ? 0.10 : 0;
-          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty + oppBoost;
+          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty + oppBoost + splitAdj;
           const highFatigue = (scheduleStress != null && scheduleStress >= 70) || b2b;
           const gpOk = Number.isFinite(t.gp) && t.gp >= minTrapGp;
           let trapRisk = false;
@@ -2754,6 +2786,7 @@ async function load() {
             roleUp,
             injuryRisk,
             roleOpportunity,
+            splitTag,
             threeptEligible,
             threeptCons: consWin,
           });

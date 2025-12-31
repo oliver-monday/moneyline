@@ -119,6 +119,19 @@ def core_avg(series: pd.Series) -> float:
     return float("nan")
 
 
+SPLIT_EPS = 0.5
+
+
+def split_core_stats(df: pd.DataFrame, stat_col: str) -> Tuple[float, float, int, int]:
+    if df is None or df.empty:
+        return float("nan"), float("nan"), 0, 0
+    home = df[df["home_away"] == "H"]
+    away = df[df["home_away"] == "A"]
+    core_home = core_avg(home[stat_col]) if len(home) else float("nan")
+    core_away = core_avg(away[stat_col]) if len(away) else float("nan")
+    return core_home, core_away, int(len(home)), int(len(away))
+
+
 CORE_TREND_EPS = 0.5
 CORE_TREND_Z_THRESH = 0.60
 CONS_TREND_DELTA_THRESH = 6.0
@@ -417,6 +430,32 @@ def main():
                 (np.isfinite(base["tpm_nonzero_rate_season"]) and base["tpm_nonzero_rate_season"] >= 0.55)
             )
         )
+
+        split_windows = {"10": last10, "20": last20, "season": season_gp}
+        for win, df_win in split_windows.items():
+            if win == "10":
+                gp_ok = gp10 >= 7
+            elif win == "20":
+                gp_ok = gp20 >= 14
+            else:
+                gp_ok = gpSeason >= 25
+            core_home, core_away, gp_home, gp_away = split_core_stats(df_win, "pts")
+            base[f"gp_home_{win}"] = gp_home
+            base[f"gp_away_{win}"] = gp_away
+            base[f"split_usable_{win}"] = bool(gp_ok and gp_home >= 4 and gp_away >= 4)
+            base[f"split_usable_3pt_{win}"] = bool(base[f"split_usable_{win}"] and base.get(f"threept_eligible_{win}"))
+            for stat, col in (("pts", "pts"), ("reb", "reb"), ("ast", "ast"), ("3pt", "tpm")):
+                home_core, away_core, _, _ = split_core_stats(df_win, col)
+                base[f"core_home_{stat}_{win}"] = home_core
+                base[f"core_away_{stat}_{win}"] = away_core
+                delta = float(home_core - away_core) if np.isfinite(home_core) and np.isfinite(away_core) else float("nan")
+                base[f"split_core_delta_{stat}_{win}"] = delta
+                iqr_key = f"{stat}_iqr_{win}" if win != "season" else f"{stat}_iqr_season"
+                iqr_val = base.get(iqr_key)
+                if not np.isfinite(iqr_val):
+                    iqr_val = base.get(f"{stat}_iqr_season")
+                denom = max(float(iqr_val), SPLIT_EPS) if np.isfinite(iqr_val) else SPLIT_EPS
+                base[f"split_core_z_{stat}_{win}"] = delta / denom if np.isfinite(delta) else float("nan")
 
         # Minutes stability + DNP rate
         base["minutes_iqr_10"] = iqr(last10["minutes"]) if len(last10) else float("nan")
@@ -729,6 +768,16 @@ def main():
             "share_ast_l20": row.get("share_ast_l20"),
             "share_ast_trend_pp": row.get("share_ast_trend_pp"),
         }
+        for win in ("10", "20", "season"):
+            features[pid][f"gp_home_{win}"] = row.get(f"gp_home_{win}")
+            features[pid][f"gp_away_{win}"] = row.get(f"gp_away_{win}")
+            features[pid][f"split_usable_{win}"] = row.get(f"split_usable_{win}")
+            features[pid][f"split_usable_3pt_{win}"] = row.get(f"split_usable_3pt_{win}")
+            for stat in ("pts", "reb", "ast", "3pt"):
+                features[pid][f"core_home_{stat}_{win}"] = row.get(f"core_home_{stat}_{win}")
+                features[pid][f"core_away_{stat}_{win}"] = row.get(f"core_away_{stat}_{win}")
+                features[pid][f"split_core_delta_{stat}_{win}"] = row.get(f"split_core_delta_{stat}_{win}")
+                features[pid][f"split_core_z_{stat}_{win}"] = row.get(f"split_core_z_{stat}_{win}")
         for stat in ("pts", "reb", "ast", "3pt"):
             features[pid][f"trend_core_summary_dir_{stat}"] = row.get(f"trend_core_summary_dir_{stat}")
             features[pid][f"trend_cons_summary_dir_{stat}"] = row.get(f"trend_cons_summary_dir_{stat}")
@@ -743,6 +792,12 @@ def main():
             json.dump({"asof_date": asof_str, "players": features}, f, indent=2)
     except Exception:
         pass
+    if "split_usable_10" in out.columns:
+        usable_10 = int(pd.to_numeric(out["split_usable_10"], errors="coerce").fillna(0).astype(int).sum())
+        usable_3pt_10 = 0
+        if "split_usable_3pt_10" in out.columns:
+            usable_3pt_10 = int(pd.to_numeric(out["split_usable_3pt_10"], errors="coerce").fillna(0).astype(int).sum())
+        print(f"[splits] usable_10={usable_10} usable_3pt_10={usable_3pt_10}")
     if "trend_core_summary_dir_pts" in out.columns:
         counts = out["trend_core_summary_dir_pts"].fillna("na").value_counts()
         summary_counts = {k: int(v) for k, v in counts.items()}

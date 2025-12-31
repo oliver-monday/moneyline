@@ -1,9 +1,8 @@
 1 — Immediate ROI (strengthen Suggested Targets signal)
-	•	Opponent pace + implied totals environment (derive implied team totals from spread/ML/OU(over/under); bump PTS/AST/REB confidence)
+	•	Opponent pace + implied totals environment (derive implied team totals from spread/ML/OU(over/under); bump PTS/AST/REB confidence) [parked until spreads/OU ingest/backfill work is done]
 	•	Stress score (0–100) from rest/travel/load (single numeric penalty/boost used everywhere)
-	•	Volatility + landmine rate (IQR/std + “finished within 1 of line” %) → trap warnings + ranking boost for stable floors
 	•	Usage proxy via team-share trends (player share of team PTS/REB/AST; last 5 vs last 20 trend)
-	•	Home/Away splits (floor + hit-rate split with sample gating)
+
 
 2 - Trajectory Engine v1 (Parked - med. priority)
 	• Basic Trend v0 overlay failed to produce much/any signal.
@@ -44,6 +43,8 @@ Resolved (implemented + functioning live)
 		-3PT is integrated everywhere props exist (thresholds 1–6).
 	•	Trend overlay v0: Core/Consistency trends 
 		 (L10–L20,L10–Season) → future “TREND ↑/↓” (no signal, move on to Trajectory Engine)
+	•	Trap Risk: Volatility + landmine rate (IQR/std + “finished within 1 of line” %) → trap warnings + ranking boost for stable floors
+	•	Home/Away splits (floor + hit-rate split with sample gating)
 
 Parked (low priority context only)
 	•	Durability upgrades (low priority): data contracts + validation
