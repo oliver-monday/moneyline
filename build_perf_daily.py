@@ -115,6 +115,8 @@ def build_group_aggregates(post: Dict[str, Any], group: str) -> Dict[str, Any]:
             by_b2b.setdefault(key, init_counter())
             add_record(by_b2b[key], hit, out_flag)
         share_dir = str(item.get("share_trend_dir") or "").upper().strip()
+        if share_dir in {"NEUTRAL", "↔"}:
+            share_dir = "FLAT"
         if share_dir in {"UP", "FLAT", "DOWN"}:
             by_share.setdefault(share_dir, init_counter())
             add_record(by_share[share_dir], hit, out_flag)

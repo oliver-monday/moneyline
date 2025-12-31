@@ -42,6 +42,16 @@ def num(x):
     return v
 
 
+def normalize_pid(value) -> str:
+    s = str(value or "").strip()
+    if not s:
+        return ""
+    try:
+        return str(int(float(s)))
+    except Exception:
+        return s
+
+
 def trend_dir_from_pp(pp: float | None, thresh: float = 2.0) -> str | None:
     if pp is None or not isinstance(pp, (int, float)):
         return None
@@ -77,16 +87,17 @@ def build_last_game_lookup(game_log_df: pd.DataFrame) -> Dict[str, List[dt.date]
         return {}
     df["game_date"] = pd.to_datetime(df["game_date"], errors="coerce").dt.date
     df = df[df["game_date"].notna()].copy()
-    df["player_id"] = df["player_id"].astype(str).str.strip()
+    df["player_id"] = df["player_id"].map(normalize_pid)
     dates_map: Dict[str, List[dt.date]] = {}
     for pid, group in df.groupby("player_id"):
         dates = sorted(set(group["game_date"].tolist()))
         if dates:
-            dates_map[str(pid)] = dates
+            dates_map[normalize_pid(pid)] = dates
     return dates_map
 
 
 def rest_info_for_player(pid: str, slate_date: dt.date, dates_map: Dict[str, List[dt.date]]):
+    pid = normalize_pid(pid)
     if not pid or pid not in dates_map:
         return None, None
     dates = dates_map.get(pid, [])
@@ -119,7 +130,7 @@ def load_player_features(path: str = "data/player_features.json") -> Dict[str, D
     except Exception:
         return {}
     if isinstance(data, dict):
-        return {str(k).strip(): v for k, v in data.items() if isinstance(v, dict)}
+        return {normalize_pid(k): v for k, v in data.items() if isinstance(v, dict)}
     return {}
 
 
@@ -130,7 +141,7 @@ def build_snapshot_row_map(snapshot_df: pd.DataFrame) -> Dict[str, Dict[str, obj
         return {}
     out = {}
     for _, row in snapshot_df.iterrows():
-        pid = str(row.get("player_id", "")).strip()
+        pid = normalize_pid(row.get("player_id", ""))
         if not pid:
             continue
         out[pid] = row.to_dict()
@@ -141,7 +152,7 @@ def enrich_learning_fields(entry: Dict[str, object], row: Dict[str, object] | No
                            features_map: Dict[str, Dict[str, object]],
                            snapshot_map: Dict[str, Dict[str, object]]):
     updated = {}
-    pid = str(entry.get("player_id", "")).strip()
+    pid = normalize_pid(entry.get("player_id", ""))
     stat = str(entry.get("stat", "")).lower().strip()
     threshold = int(entry.get("threshold", 0) or 0)
     if entry.get("is_home_game") is None:
@@ -888,7 +899,7 @@ def main() -> int:
             if not isinstance(item, dict):
                 continue
             key = (
-                str(item.get("player_id", "")).strip(),
+                normalize_pid(item.get("player_id", "")),
                 str(item.get("stat", "")).strip(),
                 str(item.get("threshold", "")).strip(),
                 str(item.get("game_id", "")).strip(),
@@ -897,7 +908,7 @@ def main() -> int:
             learning_index[key] = item
         for item in top_targets:
             key = (
-                str(item.get("player_id", "")).strip(),
+                normalize_pid(item.get("player_id", "")),
                 str(item.get("stat", "")).strip(),
                 str(item.get("threshold", "")).strip(),
                 str(item.get("game_id", "")).strip(),
