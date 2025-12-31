@@ -487,9 +487,9 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810314,2025-12-30,2025-12-31T02:00Z,Utah Jazz,UTAH,119,240.0,,Boston Celtics,BOS,129,-298.0,,Salt Lake City,UT,,
 401810315,2025-12-30,2025-12-31T03:30Z,Los Angeles Lakers,LAL,106,124.0,,Detroit Pistons,DET,128,-148.0,,Los Angeles,CA,,
 401810316,2025-12-30,2025-12-31T04:00Z,LA Clippers,LAC,131,-375.0,,Sacramento Kings,SAC,90,295.0,,Inglewood,CA,,
-401810317,2025-12-31,2025-12-31T18:00Z,Charlotte Hornets,CHA,122,230.0,,Golden State Warriors,GS,130,-285.0,,Charlotte,NC,M. Bridges (Out); R. Kalkbrenner (Out); M. Plumlee (Out); G. Williams (Out),Seth Curry (Out)
-401810318,2025-12-31,2025-12-31T20:00Z,Atlanta Hawks,ATL,22,170.0,,Minnesota Timberwolves,MIN,20,-205.0,,Atlanta,GA,N. Dante (OFS); Trae Young (Out),T. Shannon (Out)
-401810319,2025-12-31,2025-12-31T20:00Z,Indiana Pacers,IND,6,160.0,,Orlando Magic,ORL,14,-192.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); Obi Toppin (Out),C. Castleton (Out); J. Howard (Out); J. Isaac (Out); M. Wagner (Out); F. Wagner (Out)
+401810317,2025-12-31,2025-12-31T18:00Z,Charlotte Hornets,CHA,125,230.0,,Golden State Warriors,GS,132,-285.0,,Charlotte,NC,M. Bridges (Out); R. Kalkbrenner (Out); M. Plumlee (Out); G. Williams (Out),Seth Curry (Out)
+401810318,2025-12-31,2025-12-31T20:00Z,Atlanta Hawks,ATL,33,170.0,,Minnesota Timberwolves,MIN,26,-205.0,,Atlanta,GA,N. Dante (OFS); Trae Young (Out),T. Shannon (Out)
+401810319,2025-12-31,2025-12-31T20:00Z,Indiana Pacers,IND,14,160.0,,Orlando Magic,ORL,21,-192.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); Obi Toppin (Out),C. Castleton (Out); J. Howard (Out); J. Isaac (Out); M. Wagner (Out); F. Wagner (Out)
 401810320,2025-12-31,2025-12-31T20:30Z,Cleveland Cavaliers,CLE,0,-258.0,,Phoenix Suns,PHX,0,210.0,,Cleveland,OH,D. Hunter (Out); L. Nance (Out); Max Strus (Out),G. Allen (Out); J. Green (Out)
 401810321,2025-12-31,2026-01-01T00:00Z,Chicago Bulls,CHI,0,-130.0,,New Orleans Pelicans,NO,0,110.0,,Chicago,IL,N. Essengue (OFS); Z. Collins (Out); T. Flowers (Out); J. Giddey (Out); E. Miller (Out); L. Olbrich (Out); Coby White (Out),J. Alvarado (Out); H. Jones (Out); D. Murray (Out)
 401810322,2025-12-31,2026-01-01T00:00Z,San Antonio Spurs,SA,0,-142.0,,New York Knicks,NY,0,120.0,,San Antonio,TX,D. Vassell (Out),Josh Hart (Out); M. Robinson (Out); L. Shamet (Out)
