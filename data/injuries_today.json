@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-31",
-  "built_at_utc": "2025-12-31T22:26:47Z",
+  "built_at_utc": "2025-12-31T23:21:56Z",
   "source": "rotowire",
   "GSW": [
     {
@@ -309,22 +309,12 @@
       "details": "L. Shamet (Out)"
     },
     {
-      "name": "S. Castle",
-      "status": "QUES",
-      "details": "S. Castle (Ques)"
-    },
-    {
       "name": "D. Vassell",
       "status": "OUT",
       "details": "D. Vassell (Out)"
     }
   ],
   "SAS": [
-    {
-      "name": "S. Castle",
-      "status": "QUES",
-      "details": "S. Castle (Ques)"
-    },
     {
       "name": "D. Vassell",
       "status": "OUT",

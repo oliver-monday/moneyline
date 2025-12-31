@@ -849,6 +849,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2025-12-31,NYK,T. Kolek,PROB,T. Kolek (Prob),rotowire
 2025-12-31,NYK,A. Hukporti,QUES,A. Hukporti (Ques),rotowire
 2025-12-31,WAS,M. Branham,QUES,M. Branham (Ques),rotowire
+2025-12-31,NYK,S. Castle,QUES,S. Castle (Ques),rotowire
+2025-12-31,SAS,S. Castle,QUES,S. Castle (Ques),rotowire
 2025-12-31,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
 2025-12-31,GSW,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2025-12-31,GSW,Fantasy Football,REST,Fantasy Football (Rest),rotowire
@@ -904,9 +906,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2025-12-31,NYK,Josh Hart,OUT,Josh Hart (Out),rotowire
 2025-12-31,NYK,M. Robinson,OUT,M. Robinson (Out),rotowire
 2025-12-31,NYK,L. Shamet,OUT,L. Shamet (Out),rotowire
-2025-12-31,NYK,S. Castle,QUES,S. Castle (Ques),rotowire
 2025-12-31,NYK,D. Vassell,OUT,D. Vassell (Out),rotowire
-2025-12-31,SAS,S. Castle,QUES,S. Castle (Ques),rotowire
 2025-12-31,SAS,D. Vassell,OUT,D. Vassell (Out),rotowire
 2025-12-31,DEN,J. Strawther,PROB,J. Strawther (Prob),rotowire
 2025-12-31,DEN,T. Bates,OUT,T. Bates (Out),rotowire
