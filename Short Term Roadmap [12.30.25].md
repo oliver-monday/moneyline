@@ -5,6 +5,7 @@
 	•	Opponent pace + implied totals environment (derive implied team totals from spread/ML/OU(over/under); bump PTS/AST/REB confidence) [*parked until spreads/OU ingest/backfill work is done*]
 	•	Usage proxy via team-share trends (player share of team PTS/REB/AST; last 5 vs last 20 trend)
 	•	MINs-adjusted everything?
+	•	B2B calibrated to actual player performance (not just conventional wisdom ie B2B=underperformance risk)
 
 2 - Trajectory Engine v1 (Parked - med. priority)
 	• Basic Trend v0 overlay failed to produce much/any signal.
@@ -52,7 +53,7 @@
 	•	Home/Away splits (floor + hit-rate split with sample gating)
 	•	Create Documentation for internal use: doc(s) that show detailed “under the hood” explanations for how core site features/metrics/wiring work (primarily everything that feeds into Target selection criteria/process).
     		- Reference dict/list/table for all tags etc. what they mean, how they’re computed, where they are wired to, + current weights/expected impact
-	•	Stress score (0–100) from rest/travel/load (single numeric penalty/boost used everywhere)
+	•	Stress score (0–100) from rest/travel/load (single numeric penalty/boost used everywhere). [v0 -> v1.1 recalibration]
 
 ## Parked (low priority context only)
 	•	Durability upgrades (low priority): data contracts + validation

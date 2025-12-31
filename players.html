@@ -1561,6 +1561,7 @@ let KEY_OUTS = new Map();
 let GAME_TIMES_BY_ID = {};
 let TEAM_SIGNALS = {};
 let PLAYER_FEATURES = {};
+let PLAYER_VENUE_SEQ = new Map();
 function restLabel(lastDateStr) {
   if (!lastDateStr || !todayISO) return "";
   const diff = dayDiff(todayISO, lastDateStr);
@@ -1579,22 +1580,49 @@ function restInfoFromLabel(restVal) {
 }
 
 function computeRestPoints(restDays, isB2B) {
-  if (isB2B) return 25;
+  if (isB2B) return 35;
   if (!Number.isFinite(restDays)) return 0;
   if (restDays === 1) return 10;
-  if (restDays >= 3) return -5;
   return 0;
 }
 
-function computeTravelPoints(travel) {
-  const t = String(travel || "").trim();
-  if (!t) return 0;
-  const tokens = t.split(/\s+/).filter(Boolean);
-  const awayCount = tokens.filter(tok => tok.startsWith("@")).length;
-  if (awayCount <= 0) return 0;
-  if (awayCount === 1) return 6;
-  if (awayCount === 2) return 12;
-  return 18;
+function computeTravelPoints(venueSeq) {
+  const seq = Array.isArray(venueSeq)
+    ? venueSeq.map(v => String(v || "").toUpperCase()).filter(v => v === "H" || v === "A")
+    : [];
+  if (!seq.length) {
+    return { points: 0, heavy: false, brutal: false, homeRecovery: false };
+  }
+  const awayCount = seq.filter(v => v === "A").length;
+  const homeCount = seq.filter(v => v === "H").length;
+  let maxAwayStreak = 0;
+  let maxHomeStreak = 0;
+  let curAway = 0;
+  let curHome = 0;
+  for (const v of seq) {
+    if (v === "A") {
+      curAway += 1;
+      curHome = 0;
+    } else {
+      curHome += 1;
+      curAway = 0;
+    }
+    if (curAway > maxAwayStreak) maxAwayStreak = curAway;
+    if (curHome > maxHomeStreak) maxHomeStreak = curHome;
+  }
+  let points = 0;
+  let brutal = false;
+  let heavy = false;
+  if (maxAwayStreak >= 4 || awayCount === 5) {
+    points = 25;
+    brutal = true;
+  } else if (maxAwayStreak >= 3 || awayCount >= 4) {
+    points = 15;
+    heavy = true;
+  }
+  const homeRecovery = maxHomeStreak >= 4 && homeCount >= 4;
+  if (homeRecovery) points -= 5;
+  return { points, heavy, brutal, homeRecovery };
 }
 
 function computeLoadPoints(loadLabel, loadDelta) {
@@ -1608,16 +1636,27 @@ function computeLoadPoints(loadLabel, loadDelta) {
   return 0;
 }
 
-function computeStress(restDays, isB2B, travel, loadLabel, loadDelta) {
+function computeStress(restDays, isB2B, venueSeq, loadLabel, loadDelta) {
   const restPoints = computeRestPoints(restDays, isB2B);
-  const travelPoints = computeTravelPoints(travel);
+  const travelInfo = computeTravelPoints(venueSeq);
+  const travelPoints = travelInfo.points;
   const loadPoints = computeLoadPoints(loadLabel, loadDelta);
-  const score = clamp(40 + restPoints + travelPoints + loadPoints, 0, 100);
+  const score = clamp(restPoints + travelPoints + loadPoints, 0, 100);
   let tier = "LOW";
-  if (score >= 75) tier = "EXTREME";
-  else if (score >= 60) tier = "HIGH";
-  else if (score >= 40) tier = "MED";
-  return { score, tier };
+  if (score >= 65) tier = "EXTREME";
+  else if (score >= 50) tier = "HIGH";
+  else if (score >= 35) tier = "MED";
+  const loadPointsHigh = loadPoints >= 25;
+  return {
+    score,
+    tier,
+    meta: {
+      b2b: !!isB2B,
+      heavyTravel: travelInfo.heavy,
+      brutalTravel: travelInfo.brutal,
+      highLoad: loadPointsHigh,
+    },
+  };
 }
 
 function isDnp(v) {
@@ -1761,6 +1800,28 @@ function computeSeasonStats(logRows) {
     }
   }
   return map;
+}
+
+function buildVenueSeqMap(logRows) {
+  const map = new Map();
+  for (const g of logRows) {
+    const pid = String(g.player_id || "").trim();
+    if (!pid || isDnp(g.dnp)) continue;
+    const mins = num(g.minutes);
+    if (!Number.isFinite(mins) || mins <= 0) continue;
+    const ha = String(g.home_away || "").trim().toUpperCase();
+    if (ha !== "H" && ha !== "A") continue;
+    const date = normalizeGameDate(g.game_date);
+    if (!date) continue;
+    if (!map.has(pid)) map.set(pid, []);
+    map.get(pid).push({ date, ha });
+  }
+  const out = new Map();
+  for (const [pid, entries] of map.entries()) {
+    entries.sort((a, b) => b.date.localeCompare(a.date));
+    out.set(pid, entries.slice(0, 5).map(e => e.ha));
+  }
+  return out;
 }
 
 function applySeasonStats(players, seasonMap) {
@@ -2412,6 +2473,23 @@ async function load() {
   injuryBuiltAt = (injuriesData && injuriesData.built_at_utc) || "";
 
   const players = csvToRows(snapshotText);
+  let logText = null;
+  let logRows = null;
+  try {
+    const res = await fetch("./data/player_game_log.csv", {cache: "no-store"});
+    if (res.ok) logText = await res.text();
+  } catch (err) {
+    logText = null;
+  }
+  if (!logText) {
+    try {
+      const res = await fetch("./player_game_log.csv", {cache: "no-store"});
+      if (res.ok) logText = await res.text();
+    } catch (err) {
+      logText = null;
+    }
+  }
+  if (logText) logRows = csvToRows(logText);
 
   WHITELIST_BY_TEAM = new Map();
   WHITELIST_ALL = new Set();
@@ -2432,28 +2510,11 @@ async function load() {
 
   // Best-effort season fallback from game log if SEASON columns missing
   const needsSeason = players.length && !Object.prototype.hasOwnProperty.call(players[0], "gp_SEASON");
-  if (needsSeason) {
-    let logText = null;
-    try {
-      const res = await fetch("./data/player_game_log.csv", {cache: "no-store"});
-      if (res.ok) logText = await res.text();
-    } catch (err) {
-      logText = null;
-    }
-    if (!logText) {
-      try {
-        const res = await fetch("./player_game_log.csv", {cache: "no-store"});
-        if (res.ok) logText = await res.text();
-      } catch (err) {
-        logText = null;
-      }
-    }
-    if (logText) {
-      const logs = csvToRows(logText);
-      const seasonMap = computeSeasonStats(logs);
-      applySeasonStats(players, seasonMap);
-    }
+  if (needsSeason && logRows) {
+    const seasonMap = computeSeasonStats(logRows);
+    applySeasonStats(players, seasonMap);
   }
+  PLAYER_VENUE_SEQ = logRows ? buildVenueSeqMap(logRows) : new Map();
 
   // Injuries (best effort)
   injuriesByTeam = injuriesData && typeof injuriesData === "object" ? injuriesData : {};
@@ -2723,7 +2784,7 @@ async function load() {
           const minTrapGp = (metricWinVal === "season") ? 20 : (metricWinVal === "20" ? 12 : 8);
           let trapRiskTotal = 0;
           let trapRiskFlagged = 0;
-          const stressCounts = { LOW: 0, MED: 0, HIGH: 0, EXTREME: 0 };
+          const stressCounts = { LOW: 0, MED: 0, HIGH: 0, EXTREME: 0, b2b: 0, heavyTravel: 0, brutalTravel: 0, highLoad: 0 };
           const getFeature = (row, key) => featureNum(row, key);
           const targetItems = [];
           for (const data of cardDataList) {
@@ -2759,6 +2820,12 @@ async function load() {
           const splitZ = splitCoreZ(data.row, metricWinVal, statKey);
           const stressTier = data.stressTier || "LOW";
           if (stressCounts[stressTier] != null) stressCounts[stressTier] += 1;
+          if (data.stressMeta) {
+            if (data.stressMeta.b2b) stressCounts.b2b += 1;
+            if (data.stressMeta.heavyTravel) stressCounts.heavyTravel += 1;
+            if (data.stressMeta.brutalTravel) stressCounts.brutalTravel += 1;
+            if (data.stressMeta.highLoad) stressCounts.highLoad += 1;
+          }
           const coreUsed = (metricWinVal === "season")
             ? coreSeason
             : (Number.isFinite(coreWin) && Number.isFinite(coreSeason) ? (0.7 * coreWin + 0.3 * coreSeason) : (coreWin != null ? coreWin : coreSeason));
@@ -2858,8 +2925,8 @@ async function load() {
             }
           }
           let stressTierPenalty = 0;
-          if (stressTier === "HIGH") stressTierPenalty = -0.02;
-          else if (stressTier === "EXTREME") stressTierPenalty = -0.04;
+          if (stressTier === "HIGH") stressTierPenalty = -0.04;
+          else if (stressTier === "EXTREME") stressTierPenalty = -0.08;
           const roleOpportunity = hasRoleOpportunity(data.team, pid, statKey, data.row);
           const oppBoost = roleOpportunity ? 0.10 : 0;
           const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty + oppBoost + splitAdj + stressTierPenalty;
@@ -2938,7 +3005,9 @@ async function load() {
       if (trapRiskTotal) {
         console.log(`[trapRisk] flagged=${trapRiskFlagged} total=${trapRiskTotal}`);
       }
-      console.log(`[stress] tiers=${JSON.stringify(stressCounts)}`);
+      const flagged = { HIGH: stressCounts.HIGH, EXTREME: stressCounts.EXTREME };
+      const comps = { b2b: stressCounts.b2b, heavyTravel: stressCounts.heavyTravel, brutalTravel: stressCounts.brutalTravel, highLoad: stressCounts.highLoad };
+      console.log(`[stress] flagged=${JSON.stringify(flagged)} comps=${JSON.stringify(comps)}`);
       renderSuggestedDrawer();
     } catch (err) {
       console.warn("Suggested Targets render failed:", err);
@@ -3492,8 +3561,13 @@ async function load() {
         : "";
       const loadText = `<span class="meta-chunk meta-chunk-load"><span class="meta-label"><strong>Load:</strong></span> <span class="meta-value">${loadValue}</span></span>`;
       const restInfo = restInfoFromLabel(restVal);
-      const stress = computeStress(restInfo.restDays, restInfo.isB2B, travel, loadLabel, loadScoreVal);
-      const stressText = `<span class="meta-chunk"><span class="meta-label"><strong>Stress:</strong></span> <span class="meta-value">${stress.tier} (${Math.round(stress.score)})</span></span>`;
+      const pid = String(r.player_id || "").trim();
+      const venueSeq = pid && PLAYER_VENUE_SEQ.has(pid) ? PLAYER_VENUE_SEQ.get(pid) : [];
+      const stress = computeStress(restInfo.restDays, restInfo.isB2B, venueSeq, loadLabel, loadScoreVal);
+      const stressValue = (stress.tier === "HIGH" || stress.tier === "EXTREME")
+        ? `<span class="pill danger inline">${stress.tier} ${Math.round(stress.score)}</span>`
+        : `${Math.round(stress.score)}`;
+      const stressText = `<span class="meta-chunk"><span class="meta-label"><strong>Stress:</strong></span> <span class="meta-value">${stressValue}</span></span>`;
       const dot = `<span class="meta-sep muted">·</span>`;
       const contextParts = [restStr, travelText];
       if (!loadIsPill) contextParts.push(loadText);
@@ -3582,6 +3656,7 @@ async function load() {
         loadLine,
         stressScore: stress.score,
         stressTier: stress.tier,
+        stressMeta: stress.meta,
         injuryStatus,
         };
       });
