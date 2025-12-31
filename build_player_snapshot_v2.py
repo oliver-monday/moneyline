@@ -339,6 +339,7 @@ def main():
     df_played = df[(df["minutes"] > 0) & (df["dnp"] != 1)].copy()
     team_log_path = os.path.join("data", "team_game_log.csv")
     team_totals = None
+    team_b2b = None
     if os.path.exists(team_log_path):
         team_totals = pd.read_csv(team_log_path)
         for col in ["season_end_year","game_id","team_abbrev"]:
@@ -347,8 +348,13 @@ def main():
         team_totals["season_end_year"] = pd.to_numeric(team_totals["season_end_year"], errors="coerce").fillna(0).astype(int)
         team_totals["game_id"] = team_totals["game_id"].map(normalize_game_id)
         team_totals["team_abbrev"] = team_totals["team_abbrev"].astype(str).str.upper().str.strip()
-        keep_cols = ["season_end_year","game_id","team_abbrev","team_pts","team_reb","team_ast","team_tpm"]
+        team_totals["game_date"] = pd.to_datetime(team_totals.get("game_date"), errors="coerce").dt.date
+        keep_cols = ["season_end_year","game_id","team_abbrev","game_date","team_pts","team_reb","team_ast","team_tpm"]
         team_totals = team_totals[keep_cols].copy()
+        team_b2b = team_totals[["season_end_year","game_id","team_abbrev","game_date"]].dropna(subset=["game_date"]).copy()
+        team_b2b = team_b2b.sort_values(["team_abbrev","game_date"]).copy()
+        prev_dates = team_b2b.groupby("team_abbrev")["game_date"].shift(1)
+        team_b2b["b2b_flag"] = (team_b2b["game_date"] - prev_dates == dt.timedelta(days=1)).astype(int)
     if team_totals is not None and not team_totals.empty:
         df_played = df_played.merge(team_totals, on=["season_end_year","game_id","team_abbrev"], how="left")
         missing_team_totals = int(df_played[["team_pts","team_reb","team_ast"]].isna().any(axis=1).sum())
@@ -363,6 +369,15 @@ def main():
         df_played["team_ast"] = float("nan")
         df_played["team_tpm"] = float("nan")
         print("[share] missing_team_totals_rows=all")
+    if team_b2b is not None and not team_b2b.empty:
+        df = df.merge(team_b2b[["season_end_year","game_id","team_abbrev","b2b_flag"]], on=["season_end_year","game_id","team_abbrev"], how="left")
+        missing_b2b = int(df["b2b_flag"].isna().sum())
+        if missing_b2b:
+            print(f"[b2b] missing_team_join_rows={missing_b2b}")
+        df["b2b_flag"] = df["b2b_flag"].fillna(0).astype(int)
+    else:
+        df["b2b_flag"] = 0
+        print("[b2b] missing_team_join_rows=all")
     for stat in ("pts", "reb", "ast", "3pt"):
         if stat == "3pt":
             total_col = "team_tpm"
@@ -431,6 +446,23 @@ def main():
         else:
             base["mins_trend"] = float("nan")
         base["mins_trend_eligible"] = bool(len(mv_l5) >= 4 and len(mv_l20) >= 12)
+
+        mv_b2b = mv[mv["b2b_flag"] == 1]
+        mv_nob2b = mv[mv["b2b_flag"] == 0]
+        base["b2b_gp"] = int(len(mv_b2b))
+        base["nob2b_gp"] = int(len(mv_nob2b))
+        base["b2b_eligible"] = bool(base["b2b_gp"] >= 6 and base["nob2b_gp"] >= 12)
+        if len(mv_b2b) and len(mv_nob2b):
+            base["b2b_mins_delta"] = float(mv_b2b["minutes"].mean() - mv_nob2b["minutes"].mean())
+        else:
+            base["b2b_mins_delta"] = float("nan")
+        for stat, col in (("pts","pts"), ("reb","reb"), ("ast","ast"), ("tpm","tpm")):
+            if len(mv_b2b) and len(mv_nob2b):
+                pm_b2b = mv_b2b[col] / mv_b2b["minutes"]
+                pm_nob2b = mv_nob2b[col] / mv_nob2b["minutes"]
+                base[f"b2b_{stat}_pm_delta"] = float(pm_b2b.mean() - pm_nob2b.mean())
+            else:
+                base[f"b2b_{stat}_pm_delta"] = float("nan")
 
         for stat, col in (("pts","pts"), ("reb","reb"), ("ast","ast"), ("tpm","tpm")):
             if len(mv):
@@ -796,6 +828,14 @@ def main():
             "mins_l20": row.get("mins_l20"),
             "mins_trend": row.get("mins_trend"),
             "mins_trend_eligible": row.get("mins_trend_eligible"),
+            "b2b_gp": row.get("b2b_gp"),
+            "nob2b_gp": row.get("nob2b_gp"),
+            "b2b_eligible": row.get("b2b_eligible"),
+            "b2b_mins_delta": row.get("b2b_mins_delta"),
+            "b2b_pts_pm_delta": row.get("b2b_pts_pm_delta"),
+            "b2b_reb_pm_delta": row.get("b2b_reb_pm_delta"),
+            "b2b_ast_pm_delta": row.get("b2b_ast_pm_delta"),
+            "b2b_tpm_pm_delta": row.get("b2b_tpm_pm_delta"),
             "dnp_rate_10": row.get("dnp_rate_10"),
             "dnp_rate_20": row.get("dnp_rate_20"),
             "dnp_rate_season": row.get("dnp_rate_season"),
@@ -937,6 +977,14 @@ def main():
                 pm_eligible["3pt" if stat == "tpm" else stat] = int(out[col].fillna(False).astype(bool).sum())
         if pm_eligible:
             print(f"[minadj] mins_eligible={mins_eligible} pm_eligible={pm_eligible}")
+    except Exception:
+        pass
+    try:
+        if "b2b_eligible" in out.columns:
+            elig = out["b2b_eligible"].fillna(False).astype(bool)
+            eligible_players = int(elig.sum())
+            ineligible_players = int((~elig).sum())
+            print(f"[b2b] eligible_players={eligible_players} ineligible_players={ineligible_players}")
     except Exception:
         pass
     if tier_counts:

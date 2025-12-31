@@ -941,6 +941,19 @@
     }
     .minadj-up{ color:#2e7d32; }
     .minadj-down{ color:#c62828; }
+    .b2b-pill{
+      border:1px solid currentColor;
+      border-radius:999px;
+      font-size:11px;
+      font-weight:700;
+      padding:2px 6px;
+      margin-left:6px;
+      display:inline-flex;
+      align-items:center;
+      white-space:nowrap;
+    }
+    .b2b-up{ color:#2e7d32; }
+    .b2b-down{ color:#c62828; }
     .split-delta{
       border:1px solid #d0d0d0;
       border-radius:999px;
@@ -1485,6 +1498,36 @@ function pmTrendPillHTML(row, statKey) {
   const title = `Per-minute trend (L5 vs L20): ${sign}${trend.toFixed(3)}`;
   const arrow = dir === "up" ? "↑" : "↓";
   return `<span class="minadj-pill minadj-${dir}" title="${title}">PM${arrow}</span>`;
+}
+
+function b2bPillHTML(row, statKey, isB2BToday) {
+  if (!isB2BToday) return "";
+  const eligible = featureBool(row, "b2b_eligible");
+  if (!eligible) return "";
+  const key = statKey === "3pt" ? "tpm" : statKey;
+  const delta = featureNum(row, `b2b_${key}_pm_delta`);
+  if (!Number.isFinite(delta)) return "";
+  let thresh = 0.0;
+  if (statKey === "pts") thresh = 0.05;
+  else if (statKey === "reb") thresh = 0.02;
+  else if (statKey === "ast") thresh = 0.02;
+  else if (statKey === "3pt") thresh = 0.015;
+  let dir = "";
+  if (delta >= thresh) dir = "up";
+  else if (delta <= -thresh) dir = "down";
+  if (!dir) return "";
+  const minsDelta = featureNum(row, "b2b_mins_delta");
+  const b2bGp = featureNum(row, "b2b_gp");
+  const nob2bGp = featureNum(row, "nob2b_gp");
+  const sign = delta >= 0 ? "+" : "";
+  const minsSign = Number.isFinite(minsDelta) && minsDelta >= 0 ? "+" : "";
+  const titleParts = [
+    `B2B ΔPM: ${sign}${delta.toFixed(3)}`,
+    Number.isFinite(minsDelta) ? `ΔMIN: ${minsSign}${minsDelta.toFixed(1)}` : "",
+    (Number.isFinite(b2bGp) && Number.isFinite(nob2bGp)) ? `(n=${b2bGp} vs ${nob2bGp})` : "",
+  ].filter(Boolean);
+  const title = titleParts.join(" • ");
+  return `<span class="b2b-pill b2b-${dir}" title="${title}">B2B${dir === "up" ? "+" : "-"}</span>`;
 }
 
 function trendKey(kind, statKey, tag) {
@@ -2813,6 +2856,20 @@ async function load() {
       const title = pp != null ? `Team share trend (L5 vs L20): ${sign}${pp.toFixed(1)}pp` : "";
       flags.push(`<span class="suggested-flag ${cls}" ${title ? `title="${title}"` : ""}>${item.shareTag}</span>`);
     }
+    if (item.b2bTag) {
+      const cls = item.b2bDir === "down" ? "b2b-down" : "b2b-up";
+      const delta = Number.isFinite(item.b2bDelta) ? item.b2bDelta : null;
+      const minsDelta = Number.isFinite(item.b2bMinsDelta) ? item.b2bMinsDelta : null;
+      const sign = delta != null && delta >= 0 ? "+" : "";
+      const minsSign = minsDelta != null && minsDelta >= 0 ? "+" : "";
+      const titleParts = [
+        delta != null ? `B2B ΔPM: ${sign}${delta.toFixed(3)}` : "",
+        minsDelta != null ? `ΔMIN: ${minsSign}${minsDelta.toFixed(1)}` : "",
+        (Number.isFinite(item.b2bGp) && Number.isFinite(item.nob2bGp)) ? `(n=${item.b2bGp} vs ${item.nob2bGp})` : "",
+      ].filter(Boolean);
+      const title = titleParts.join(" • ");
+      flags.push(`<span class="suggested-flag ${cls}" ${title ? `title="${title}"` : ""}>${item.b2bTag}</span>`);
+    }
     if (item.splitTag) flags.push(`<span class="suggested-flag">${item.splitTag}</span>`);
     if (item.trapRisk) flags.push("<span class=\"suggested-flag injury-risk\">TRAP RISK</span>");
     if (item.injuryRisk) flags.push("<span class=\"suggested-flag injury-risk\">INJURY RISK</span>");
@@ -2894,6 +2951,9 @@ async function load() {
           const roleCounts = { total: 0, confirmed: 0, unconfirmed: 0 };
           const shareTargetsUp = { pts: 0, reb: 0, ast: 0, "3pt": 0 };
           const shareTargetsDown = { pts: 0, reb: 0, ast: 0, "3pt": 0 };
+          let b2bShownPlus = 0;
+          let b2bShownMinus = 0;
+          const b2bEligiblePlayers = new Set();
           let minsDownCount = 0;
           let pmUpCount = 0;
           let pmDownCount = 0;
@@ -2924,6 +2984,7 @@ async function load() {
           const landmineRate = getFeature(data.row, landmineKey);
           const trendPP = getFeature(data.row, `share_${statKey}_trend_pp`);
           const shareTrend = getShareTrend(data.row, statKey);
+          const isB2BToday = data.isB2BToday === true;
           const coreWin = getCoreVal(data.row, statKey, metricWinVal);
           const coreSeason = getCoreVal(data.row, statKey, "season");
           const consWin = getConsistencyValStat(data.row, statKey, metricWinVal);
@@ -2947,12 +3008,10 @@ async function load() {
             : (Number.isFinite(consWin) && Number.isFinite(consSeason) ? (0.7 * consWin + 0.3 * consSeason) : (consWin != null ? consWin : consSeason));
           const teamSignal = (TEAM_SIGNALS && TEAM_SIGNALS[data.team]) || {};
           const scheduleStress = featureNum(teamSignal, "schedule_stress");
-          const b2b = !!teamSignal.b2b;
           const travelBucket = String(teamSignal.travel_bucket || "");
 
           let stressPenalty = 0;
           if (scheduleStress != null && scheduleStress >= 70) stressPenalty -= 0.15;
-          if (b2b) stressPenalty -= 0.10;
           if (travelBucket === "600+") stressPenalty -= 0.08;
 
           let volPenalty = 0;
@@ -3076,6 +3135,39 @@ async function load() {
           }
           if (shareDir === "up" && shareTargetsUp[statKey] != null) shareTargetsUp[statKey] += 1;
           else if (shareDir === "down" && shareTargetsDown[statKey] != null) shareTargetsDown[statKey] += 1;
+          const b2bEligible = featureBool(data.row, "b2b_eligible");
+          const b2bGp = featureNum(data.row, "b2b_gp");
+          const nob2bGp = featureNum(data.row, "nob2b_gp");
+          const b2bMinsDelta = featureNum(data.row, "b2b_mins_delta");
+          const b2bKey = statKey === "3pt" ? "tpm" : statKey;
+          const b2bDelta = featureNum(data.row, `b2b_${b2bKey}_pm_delta`);
+          let b2bAdj = 0;
+          let b2bTag = "";
+          let b2bDir = "";
+          if (isB2BToday && b2bEligible && Number.isFinite(b2bDelta)) {
+            let thresh = 0.0;
+            if (statKey === "pts") thresh = 0.05;
+            else if (statKey === "reb") thresh = 0.02;
+            else if (statKey === "ast") thresh = 0.02;
+            else if (statKey === "3pt") thresh = 0.015;
+            if (b2bDelta >= thresh) {
+              b2bAdj = 0.01;
+              b2bTag = "B2B+";
+              b2bDir = "up";
+            } else if (b2bDelta <= -thresh) {
+              b2bAdj = -0.01;
+              b2bTag = "B2B-";
+              b2bDir = "down";
+            }
+          }
+          if (isB2BToday && b2bEligible && Number.isFinite(b2bMinsDelta) && b2bMinsDelta <= -2.0) {
+            b2bAdj -= 0.01;
+          }
+          if (isB2BToday && b2bEligible) {
+            b2bEligiblePlayers.add(playerKey);
+          }
+          if (b2bDir === "up") b2bShownPlus += 1;
+          else if (b2bDir === "down") b2bShownMinus += 1;
           const minsEligible = featureBool(data.row, "mins_trend_eligible");
           const minsTrend = featureNum(data.row, "mins_trend");
           let minsAdj = 0;
@@ -3106,8 +3198,8 @@ async function load() {
           else if (stressTier === "EXTREME") stressTierPenalty = -0.08;
           const roleOpportunity = hasRoleOpportunity(data.team, pid, statKey, data.row);
           const oppBoost = roleOpportunity ? 0.10 : 0;
-          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty + oppBoost + splitAdj + stressTierPenalty + shareAdj + minsAdj + pmAdj;
-          const highFatigue = (scheduleStress != null && scheduleStress >= 70) || b2b;
+          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty + oppBoost + splitAdj + stressTierPenalty + shareAdj + minsAdj + pmAdj + b2bAdj;
+          const highFatigue = (scheduleStress != null && scheduleStress >= 70);
           const gpOk = Number.isFinite(t.gp) && t.gp >= minTrapGp;
           let trapRisk = false;
           if (gpOk) {
@@ -3152,6 +3244,12 @@ async function load() {
             shareTag,
             shareDir,
             sharePP,
+            b2bTag,
+            b2bDir,
+            b2bDelta,
+            b2bMinsDelta,
+            b2bGp,
+            nob2bGp,
             stressTier,
             threeptEligible,
             threeptCons: consWin,
@@ -3200,6 +3298,9 @@ async function load() {
       if (minsDownCount || pmUpCount || pmDownCount) {
         console.log(`[minadj_targets] minsDown=${minsDownCount} pmUp=${pmUpCount} pmDown=${pmDownCount}`);
       }
+      if (b2bShownPlus || b2bShownMinus || b2bEligiblePlayers.size) {
+        console.log(`[b2b_targets] shown_plus=${b2bShownPlus} shown_minus=${b2bShownMinus} eligible_b2b_players=${b2bEligiblePlayers.size}`);
+      }
       renderSuggestedDrawer();
     } catch (err) {
       console.warn("Suggested Targets render failed:", err);
@@ -3239,6 +3340,10 @@ async function load() {
     const rebSharePill = sharePillHTML(data.row, "reb");
     const astSharePill = sharePillHTML(data.row, "ast");
     const tpmSharePill = sharePillHTML(data.row, "3pt");
+    const ptsB2bPill = b2bPillHTML(data.row, "pts", data.isB2BToday === true);
+    const rebB2bPill = b2bPillHTML(data.row, "reb", data.isB2BToday === true);
+    const astB2bPill = b2bPillHTML(data.row, "ast", data.isB2BToday === true);
+    const tpmB2bPill = b2bPillHTML(data.row, "3pt", data.isB2BToday === true);
     const minsPill = minsTrendPillHTML(data.row);
     const ptsPmPill = pmTrendPillHTML(data.row, "pts");
     const rebPmPill = pmTrendPillHTML(data.row, "reb");
@@ -3262,25 +3367,25 @@ async function load() {
 
     return `
       <div class="matrixhdr">
-        <div><strong>PTS</strong> · ${ptsHeader} • min in window: ${ptsMin} ${ptsSplitPill} ${ptsSplitDelta} ${ptsSharePill} ${minsPill} ${ptsPmPill}</div>
+        <div><strong>PTS</strong> · ${ptsHeader} • min in window: ${ptsMin} ${ptsSplitPill} ${ptsSplitDelta} ${ptsSharePill} ${minsPill} ${ptsPmPill} ${ptsB2bPill}</div>
         ${ptsTrendLine}
       </div>
       <div class="pills">${ptsFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>REB</strong> · ${rebHeader} • min in window: ${rebMin} ${rebSplitPill} ${rebSplitDelta} ${rebSharePill} ${minsPill} ${rebPmPill}</div>
+        <div><strong>REB</strong> · ${rebHeader} • min in window: ${rebMin} ${rebSplitPill} ${rebSplitDelta} ${rebSharePill} ${minsPill} ${rebPmPill} ${rebB2bPill}</div>
         ${rebTrendLine}
       </div>
       <div class="pills">${rebFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>AST</strong> · ${astHeader} • min in window: ${astMin} ${astSplitPill} ${astSplitDelta} ${astSharePill} ${minsPill} ${astPmPill}</div>
+        <div><strong>AST</strong> · ${astHeader} • min in window: ${astMin} ${astSplitPill} ${astSplitDelta} ${astSharePill} ${minsPill} ${astPmPill} ${astB2bPill}</div>
         ${astTrendLine}
       </div>
       <div class="pills">${astFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>3PT</strong> · ${tpmHeader} • min in window: ${tpmMin} ${tpmSplitPill} ${tpmSplitDelta} ${tpmSharePill} ${minsPill} ${tpmPmPill}</div>
+        <div><strong>3PT</strong> · ${tpmHeader} • min in window: ${tpmMin} ${tpmSplitPill} ${tpmSplitDelta} ${tpmSharePill} ${minsPill} ${tpmPmPill} ${tpmB2bPill}</div>
         ${tpmTrendLine}
       </div>
       <div class="pills">${tpmFull}</div>
@@ -3765,6 +3870,7 @@ async function load() {
         : "";
       const loadText = `<span class="meta-chunk meta-chunk-load"><span class="meta-label"><strong>Load:</strong></span> <span class="meta-value">${loadValue}</span></span>`;
       const restInfo = restInfoFromLabel(restVal);
+      const isB2BToday = restInfo.isB2B;
       const venueSeq = pid && PLAYER_VENUE_SEQ.has(pid) ? PLAYER_VENUE_SEQ.get(pid) : [];
       const stress = computeStress(restInfo.restDays, restInfo.isB2B, venueSeq, loadLabel, loadScoreVal);
       const stressValue = (stress.tier === "HIGH" || stress.tier === "EXTREME")
@@ -3860,6 +3966,7 @@ async function load() {
         stressScore: stress.score,
         stressTier: stress.tier,
         stressMeta: stress.meta,
+        isB2BToday,
         injuryStatus,
         };
       });
