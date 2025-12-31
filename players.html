@@ -1625,6 +1625,14 @@ function computeTravelPoints(venueSeq) {
   return { points, heavy, brutal, homeRecovery };
 }
 
+function formatVenueSeq(venueSeq) {
+  const seq = Array.isArray(venueSeq)
+    ? venueSeq.map(v => String(v || "").toUpperCase()).filter(v => v === "H" || v === "A")
+    : [];
+  if (!seq.length) return "";
+  return seq.map(v => (v === "H" ? "vs" : "@")).join(" ");
+}
+
 function computeLoadPoints(loadLabel, loadDelta) {
   if (Number.isFinite(loadDelta)) {
     return clamp((Math.abs(loadDelta) / 6.0) * 30.0, 0, 30);
@@ -3555,7 +3563,9 @@ async function load() {
           : labelText;
         loadIsPill = loadLabel === "HIGH";
       }
-      const travel = String(r.travel_last3 || "").trim();
+      const travel = (pid && PLAYER_VENUE_SEQ.has(pid))
+        ? formatVenueSeq(PLAYER_VENUE_SEQ.get(pid))
+        : String(r.travel_last3 || "").trim();
       const travelText = travel
         ? `<span class="meta-chunk meta-travel"><span class="meta-label"><strong>Travel:</strong></span> <span class="meta-value">${travel}</span></span>`
         : "";
