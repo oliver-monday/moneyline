@@ -137,7 +137,7 @@ def build_snapshot_row_map(snapshot_df: pd.DataFrame) -> Dict[str, Dict[str, obj
     return out
 
 
-def enrich_learning_fields(entry: Dict[str, object], row: Dict[str, object], rest_map, target_date: dt.date,
+def enrich_learning_fields(entry: Dict[str, object], row: Dict[str, object] | None, rest_map, target_date: dt.date,
                            features_map: Dict[str, Dict[str, object]],
                            snapshot_map: Dict[str, Dict[str, object]]):
     updated = {}
@@ -484,7 +484,8 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str,
             target_date_obj = dt.datetime.strptime(target_date, "%Y-%m-%d").date()
         except Exception:
             target_date_obj = dt.date.today()
-        extra = enrich_learning_fields(entry, row, rest_map, target_date_obj, features_map or {}, snapshot_map or {})
+        row_dict = row.to_dict() if hasattr(row, "to_dict") else row
+        extra = enrich_learning_fields(entry, row_dict, rest_map, target_date_obj, features_map or {}, snapshot_map or {})
         if extra:
             learning.update(extra)
         stat = entry.get("stat")
