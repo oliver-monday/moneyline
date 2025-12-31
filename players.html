@@ -3811,8 +3811,8 @@ async function load() {
     const topEl = document.getElementById("seasonPerfTop");
     const allEl = document.getElementById("seasonPerfAll");
     const subEl = document.getElementById("seasonPerfSub");
-    if (topEl) topEl.textContent = pct(topHits, topTotal);
-    if (allEl) allEl.textContent = pct(allHits, allTotal);
+    if (topEl) topEl.innerHTML = pct(topHits, topTotal);
+    if (allEl) allEl.innerHTML = pct(allHits, allTotal);
     if (subEl) {
       const daysText = daysTracked ? String(daysTracked) : "—";
       const asofText = updated || "—";
