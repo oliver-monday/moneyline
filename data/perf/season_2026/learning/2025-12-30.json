@@ -175,10 +175,49 @@
           }
         }
       },
-      "by_trap_risk": {},
-      "by_b2b": {},
+      "by_trap_risk": {
+        "false": {
+          "total": 17,
+          "hits": 14,
+          "hit_rate": 0.8235294117647058,
+          "out_count": 0
+        },
+        "true": {
+          "total": 2,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "out_count": 0
+        }
+      },
+      "by_b2b": {
+        "false": {
+          "total": 18,
+          "hits": 13,
+          "hit_rate": 0.7222222222222222,
+          "out_count": 0
+        },
+        "true": {
+          "total": 4,
+          "hits": 2,
+          "hit_rate": 0.5,
+          "out_count": 0
+        }
+      },
       "by_share_trend_dir": {},
-      "by_home_game": {}
+      "by_home_game": {
+        "false": {
+          "total": 11,
+          "hits": 8,
+          "hit_rate": 0.7272727272727273,
+          "out_count": 0
+        },
+        "true": {
+          "total": 11,
+          "hits": 7,
+          "hit_rate": 0.6363636363636364,
+          "out_count": 0
+        }
+      }
     }
   }
 }

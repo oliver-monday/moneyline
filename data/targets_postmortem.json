@@ -16,7 +16,15 @@
       "opp": "UTAH",
       "stat": "ast",
       "threshold": 4,
-      "actual": 10
+      "actual": 10,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 3.75,
+      "landmine_rate_10": 0.1,
+      "trap_risk": false
     },
     {
       "player_id": "4066336.0",
@@ -25,7 +33,15 @@
       "opp": "BOS",
       "stat": "reb",
       "threshold": 6,
-      "actual": 9
+      "actual": 9,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 1.0,
+      "landmine_rate_10": 0.1,
+      "trap_risk": false
     },
     {
       "player_id": "4433627.0",
@@ -34,7 +50,15 @@
       "opp": "BOS",
       "stat": "reb",
       "threshold": 4,
-      "actual": 6
+      "actual": 6,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 1.75,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false
     },
     {
       "player_id": "3078576.0",
@@ -43,7 +67,15 @@
       "opp": "UTAH",
       "stat": "reb",
       "threshold": 4,
-      "actual": 7
+      "actual": 7,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 0.75,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false
     },
     {
       "player_id": "4066354.0",
@@ -52,7 +84,15 @@
       "opp": "UTAH",
       "stat": "reb",
       "threshold": 4,
-      "actual": 4
+      "actual": 4,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 1.0,
+      "landmine_rate_10": 0.1,
+      "trap_risk": false
     },
     {
       "player_id": "5124612.0",
@@ -61,7 +101,15 @@
       "opp": "MEM",
       "stat": "3pt",
       "threshold": 2,
-      "actual": 5
+      "actual": 5,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 1.75,
+      "landmine_rate_10": null,
+      "trap_risk": null
     },
     {
       "player_id": "4593125.0",
@@ -70,7 +118,15 @@
       "opp": "PHI",
       "stat": "reb",
       "threshold": 6,
-      "actual": 6
+      "actual": 6,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 3.25,
+      "landmine_rate_10": 0.1,
+      "trap_risk": false
     },
     {
       "player_id": "4593125.0",
@@ -79,7 +135,15 @@
       "opp": "PHI",
       "stat": "ast",
       "threshold": 2,
-      "actual": 2
+      "actual": 2,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 1.0,
+      "landmine_rate_10": 0.1,
+      "trap_risk": false
     },
     {
       "player_id": "4898371.0",
@@ -88,7 +152,15 @@
       "opp": "LAC",
       "stat": "pts",
       "threshold": 10,
-      "actual": 12
+      "actual": 12,
+      "is_home_game": false,
+      "rest_days": 0,
+      "is_b2b": true,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 4.75,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false
     },
     {
       "player_id": "4898371.0",
@@ -97,7 +169,15 @@
       "opp": "LAC",
       "stat": "reb",
       "threshold": 6,
-      "actual": 12
+      "actual": 12,
+      "is_home_game": false,
+      "rest_days": 0,
+      "is_b2b": true,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 3.5,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false
     },
     {
       "player_id": "5112087.0",
@@ -106,7 +186,15 @@
       "opp": "PHI",
       "stat": "pts",
       "threshold": 10,
-      "actual": 14
+      "actual": 14,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 3.5,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false
     },
     {
       "player_id": "4433083.0",
@@ -115,7 +203,15 @@
       "opp": "PHI",
       "stat": "ast",
       "threshold": 4,
-      "actual": 5
+      "actual": 5,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 2.75,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false
     },
     {
       "player_id": "3059318.0",
@@ -124,7 +220,15 @@
       "opp": "MEM",
       "stat": "reb",
       "threshold": 6,
-      "actual": 10
+      "actual": 10,
+      "is_home_game": false,
+      "rest_days": 2,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 3.75,
+      "landmine_rate_10": 0.1,
+      "trap_risk": false
     },
     {
       "player_id": "3059318.0",
@@ -133,7 +237,15 @@
       "opp": "MEM",
       "stat": "ast",
       "threshold": 2,
-      "actual": 8
+      "actual": 8,
+      "is_home_game": false,
+      "rest_days": 2,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 2.0,
+      "landmine_rate_10": 0.2,
+      "trap_risk": false
     },
     {
       "player_id": "4903027.0",
@@ -142,7 +254,15 @@
       "opp": "PHI",
       "stat": "ast",
       "threshold": 2,
-      "actual": 4
+      "actual": 4,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 1.0,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false
     }
   ],
   "misses": [
@@ -154,7 +274,15 @@
       "stat": "reb",
       "threshold": 6,
       "actual": 5,
-      "delta": 1
+      "delta": 1,
+      "is_home_game": true,
+      "rest_days": 0,
+      "is_b2b": true,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 3.75,
+      "landmine_rate_10": 0.2,
+      "trap_risk": false
     },
     {
       "player_id": "3917376.0",
@@ -164,7 +292,15 @@
       "stat": "3pt",
       "threshold": 2,
       "actual": 1,
-      "delta": 1
+      "delta": 1,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 0.75,
+      "landmine_rate_10": null,
+      "trap_risk": null
     },
     {
       "player_id": "3078576.0",
@@ -174,7 +310,15 @@
       "stat": "3pt",
       "threshold": 3,
       "actual": 2,
-      "delta": 1
+      "delta": 1,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 2.75,
+      "landmine_rate_10": null,
+      "trap_risk": null
     },
     {
       "player_id": "4433083.0",
@@ -184,7 +328,15 @@
       "stat": "reb",
       "threshold": 2,
       "actual": 1,
-      "delta": 1
+      "delta": 1,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 1.5,
+      "landmine_rate_10": 0.2,
+      "trap_risk": false
     },
     {
       "player_id": "4433083.0",
@@ -194,7 +346,15 @@
       "stat": "pts",
       "threshold": 10,
       "actual": 7,
-      "delta": 3
+      "delta": 3,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 10.25,
+      "landmine_rate_10": 0.0,
+      "trap_risk": true
     },
     {
       "player_id": "4278129.0",
@@ -204,7 +364,15 @@
       "stat": "reb",
       "threshold": 8,
       "actual": 2,
-      "delta": 6
+      "delta": 6,
+      "is_home_game": true,
+      "rest_days": 0,
+      "is_b2b": true,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 7.25,
+      "landmine_rate_10": 0.0,
+      "trap_risk": true
     },
     {
       "player_id": "3917376.0",
@@ -214,7 +382,15 @@
       "stat": "pts",
       "threshold": 30,
       "actual": 23,
-      "delta": 7
+      "delta": 7,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 0.75,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false
     }
   ],
   "closest_misses": [
@@ -226,7 +402,15 @@
       "stat": "reb",
       "threshold": 6,
       "actual": 5,
-      "delta": 1
+      "delta": 1,
+      "is_home_game": true,
+      "rest_days": 0,
+      "is_b2b": true,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 3.75,
+      "landmine_rate_10": 0.2,
+      "trap_risk": false
     },
     {
       "player_id": "3917376.0",
@@ -236,7 +420,15 @@
       "stat": "3pt",
       "threshold": 2,
       "actual": 1,
-      "delta": 1
+      "delta": 1,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 0.75,
+      "landmine_rate_10": null,
+      "trap_risk": null
     },
     {
       "player_id": "3078576.0",
@@ -246,7 +438,15 @@
       "stat": "3pt",
       "threshold": 3,
       "actual": 2,
-      "delta": 1
+      "delta": 1,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 2.75,
+      "landmine_rate_10": null,
+      "trap_risk": null
     },
     {
       "player_id": "4433083.0",
@@ -256,7 +456,15 @@
       "stat": "reb",
       "threshold": 2,
       "actual": 1,
-      "delta": 1
+      "delta": 1,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 1.5,
+      "landmine_rate_10": 0.2,
+      "trap_risk": false
     },
     {
       "player_id": "4433083.0",
@@ -266,7 +474,15 @@
       "stat": "pts",
       "threshold": 10,
       "actual": 7,
-      "delta": 3
+      "delta": 3,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": null,
+      "share_trend_dir": null,
+      "iqr_10": 10.25,
+      "landmine_rate_10": 0.0,
+      "trap_risk": true
     }
   ],
   "reaches_hit": [
@@ -321,7 +537,7 @@
       "actual": 5
     }
   ],
-  "built_at_utc": "2025-12-31T19:59:22Z",
+  "built_at_utc": "2025-12-31T20:23:54Z",
   "snapshot_file": "targets_snapshot_2025-12-30.json",
   "top_targets": [
     {
