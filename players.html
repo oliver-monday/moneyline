@@ -1569,6 +1569,57 @@ function restLabel(lastDateStr) {
   return restDays === 0 ? "B2B" : `${restDays}d`;
 }
 
+function restInfoFromLabel(restVal) {
+  const label = String(restVal || "").trim().toUpperCase();
+  if (!label) return { restDays: null, isB2B: false };
+  if (label === "B2B") return { restDays: 0, isB2B: true };
+  const m = label.match(/^(\d+)D$/);
+  if (m) return { restDays: Number(m[1]), isB2B: false };
+  return { restDays: null, isB2B: false };
+}
+
+function computeRestPoints(restDays, isB2B) {
+  if (isB2B) return 25;
+  if (!Number.isFinite(restDays)) return 0;
+  if (restDays === 1) return 10;
+  if (restDays >= 3) return -5;
+  return 0;
+}
+
+function computeTravelPoints(travel) {
+  const t = String(travel || "").trim();
+  if (!t) return 0;
+  const tokens = t.split(/\s+/).filter(Boolean);
+  const awayCount = tokens.filter(tok => tok.startsWith("@")).length;
+  if (awayCount <= 0) return 0;
+  if (awayCount === 1) return 6;
+  if (awayCount === 2) return 12;
+  return 18;
+}
+
+function computeLoadPoints(loadLabel, loadDelta) {
+  if (Number.isFinite(loadDelta)) {
+    return clamp((Math.abs(loadDelta) / 6.0) * 30.0, 0, 30);
+  }
+  const label = String(loadLabel || "").trim().toUpperCase();
+  if (label === "HIGH") return 25;
+  if (label === "MED") return 15;
+  if (label === "LOW") return 5;
+  return 0;
+}
+
+function computeStress(restDays, isB2B, travel, loadLabel, loadDelta) {
+  const restPoints = computeRestPoints(restDays, isB2B);
+  const travelPoints = computeTravelPoints(travel);
+  const loadPoints = computeLoadPoints(loadLabel, loadDelta);
+  const score = clamp(40 + restPoints + travelPoints + loadPoints, 0, 100);
+  let tier = "LOW";
+  if (score >= 75) tier = "EXTREME";
+  else if (score >= 60) tier = "HIGH";
+  else if (score >= 40) tier = "MED";
+  return { score, tier };
+}
+
 function isDnp(v) {
   const s = String(v || "").trim().toLowerCase();
   if (!s) return false;
@@ -2598,6 +2649,8 @@ async function load() {
     if (item.roleUp) flags.push("<span class=\"suggested-flag\">↑ ROLE</span>");
     if (item.injuryRisk) flags.push("<span class=\"suggested-flag injury-risk\">INJURY RISK</span>");
     if (item.roleOpportunity) flags.push("<span class=\"suggested-flag\">ROLE ↑ OPPORTUNITY</span>");
+    if (item.stressTier === "HIGH") flags.push("<span class=\"suggested-flag injury-risk\">HIGH STRESS</span>");
+    if (item.stressTier === "EXTREME") flags.push("<span class=\"suggested-flag injury-risk\">EXTREME STRESS</span>");
     if (item.splitTag) flags.push(`<span class="suggested-flag">${item.splitTag}</span>`);
     const pid = item.playerId || "";
     const team = item.team || "";
@@ -2670,6 +2723,7 @@ async function load() {
           const minTrapGp = (metricWinVal === "season") ? 20 : (metricWinVal === "20" ? 12 : 8);
           let trapRiskTotal = 0;
           let trapRiskFlagged = 0;
+          const stressCounts = { LOW: 0, MED: 0, HIGH: 0, EXTREME: 0 };
           const getFeature = (row, key) => featureNum(row, key);
           const targetItems = [];
           for (const data of cardDataList) {
@@ -2703,6 +2757,8 @@ async function load() {
           const threeptEligible = statKey === "3pt" ? getThreeptEligible(data.row, metricWinVal) : null;
           const splitUsableVal = splitUsable(data.row, metricWinVal, statKey);
           const splitZ = splitCoreZ(data.row, metricWinVal, statKey);
+          const stressTier = data.stressTier || "LOW";
+          if (stressCounts[stressTier] != null) stressCounts[stressTier] += 1;
           const coreUsed = (metricWinVal === "season")
             ? coreSeason
             : (Number.isFinite(coreWin) && Number.isFinite(coreSeason) ? (0.7 * coreWin + 0.3 * coreSeason) : (coreWin != null ? coreWin : coreSeason));
@@ -2801,6 +2857,9 @@ async function load() {
               splitAdj = -splitAdjWeight;
             }
           }
+          let stressPenalty = 0;
+          if (stressTier === "HIGH") stressPenalty = -0.02;
+          else if (stressTier === "EXTREME") stressPenalty = -0.04;
           const roleOpportunity = hasRoleOpportunity(data.team, pid, statKey, data.row);
           const oppBoost = roleOpportunity ? 0.10 : 0;
           const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty + oppBoost + splitAdj;
@@ -2845,6 +2904,7 @@ async function load() {
             injuryRisk,
             roleOpportunity,
             splitTag,
+            stressTier,
             threeptEligible,
             threeptCons: consWin,
           });
@@ -2878,6 +2938,7 @@ async function load() {
       if (trapRiskTotal) {
         console.log(`[trapRisk] flagged=${trapRiskFlagged} total=${trapRiskTotal}`);
       }
+      console.log(`[stress] tiers=${JSON.stringify(stressCounts)}`);
       renderSuggestedDrawer();
     } catch (err) {
       console.warn("Suggested Targets render failed:", err);
@@ -3430,9 +3491,13 @@ async function load() {
         ? `<span class="meta-chunk meta-travel"><span class="meta-label"><strong>Travel:</strong></span> <span class="meta-value">${travel}</span></span>`
         : "";
       const loadText = `<span class="meta-chunk meta-chunk-load"><span class="meta-label"><strong>Load:</strong></span> <span class="meta-value">${loadValue}</span></span>`;
+      const restInfo = restInfoFromLabel(restVal);
+      const stress = computeStress(restInfo.restDays, restInfo.isB2B, travel, loadLabel, loadScoreVal);
+      const stressText = `<span class="meta-chunk"><span class="meta-label"><strong>Stress:</strong></span> <span class="meta-value">${stress.tier} (${Math.round(stress.score)})</span></span>`;
       const dot = `<span class="meta-sep muted">·</span>`;
       const contextParts = [restStr, travelText];
       if (!loadIsPill) contextParts.push(loadText);
+      contextParts.push(stressText);
       const contextLine = contextParts
         .filter(Boolean)
         .map((part, i) => (i ? `${dot}${part}` : part))
@@ -3515,6 +3580,8 @@ async function load() {
         tpmCoreText,
         targets,
         loadLine,
+        stressScore: stress.score,
+        stressTier: stress.tier,
         injuryStatus,
         };
       });
