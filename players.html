@@ -2592,6 +2592,9 @@ async function load() {
   function computeSuggestedFromCardData(cardDataList, targetsWin, metricWinVal) {
     try {
       const bonusForTier = tier => tier === "SOFT" ? 1 : (tier === "TOUGH" ? -1 : 0);
+          const minTrapGp = (metricWinVal === "season") ? 20 : (metricWinVal === "20" ? 12 : 8);
+          let trapRiskTotal = 0;
+          let trapRiskFlagged = 0;
           const getFeature = (row, key) => featureNum(row, key);
           const targetItems = [];
           for (const data of cardDataList) {
@@ -2712,7 +2715,20 @@ async function load() {
           const oppBoost = roleOpportunity ? 0.10 : 0;
           const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty + oppBoost;
           const highFatigue = (scheduleStress != null && scheduleStress >= 70) || b2b;
-          const trapRisk = (landmineRate != null && landmineRate >= 0.25) || (iqrVal != null && ((statKey === "pts" && iqrVal > 10) || (statKey === "reb" && iqrVal > 5) || (statKey === "ast" && iqrVal > 4)));
+          const gpOk = Number.isFinite(t.gp) && t.gp >= minTrapGp;
+          let trapRisk = false;
+          if (gpOk) {
+            if (statKey === "3pt") {
+              if (threeptEligible !== false) {
+                trapRisk = (landmineRate != null && landmineRate >= 0.25) || (iqrVal != null && iqrVal > 2);
+              }
+            } else {
+              trapRisk = (landmineRate != null && landmineRate >= 0.25) ||
+                (iqrVal != null && ((statKey === "pts" && iqrVal > 10) || (statKey === "reb" && iqrVal > 5) || (statKey === "ast" && iqrVal > 4)));
+            }
+          }
+          trapRiskTotal += 1;
+          if (trapRisk) trapRiskFlagged += 1;
           const roleUp = trendPP != null && trendPP >= 3;
           targetItems.push({
             playerName: data.playerName,
@@ -2768,6 +2784,9 @@ async function load() {
 
       cachedSuggested = suggested;
       cachedAllTargets = targetItems;
+      if (trapRiskTotal) {
+        console.log(`[trapRisk] flagged=${trapRiskFlagged} total=${trapRiskTotal}`);
+      }
       renderSuggestedDrawer();
     } catch (err) {
       console.warn("Suggested Targets render failed:", err);
