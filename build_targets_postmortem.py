@@ -924,8 +924,17 @@ def main() -> int:
                 if field not in item and field in src:
                     item[field] = src.get(field)
 
+        try:
+            results_date_obj = dt.datetime.strptime(results_date, "%Y-%m-%d").date()
+        except Exception:
+            results_date_obj = dt.date.today()
+        rest_map_postmortem = build_last_game_lookup(game_log_df)
         for item in top_targets:
             row = find_game_log_row(item, indexes)
+            row_dict = row.to_dict() if hasattr(row, "to_dict") else row
+            extra = enrich_learning_fields(item, row_dict, rest_map_postmortem, results_date_obj, features_map, snapshot_row_map)
+            if extra:
+                item.update({k: v for k, v in extra.items() if v is not None})
             stat = item.get("stat")
             threshold = int(item.get("threshold", 0) or 0)
             actual = None
