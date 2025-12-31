@@ -2857,12 +2857,12 @@ async function load() {
               splitAdj = -splitAdjWeight;
             }
           }
-          let stressPenalty = 0;
-          if (stressTier === "HIGH") stressPenalty = -0.02;
-          else if (stressTier === "EXTREME") stressPenalty = -0.04;
+          let stressTierPenalty = 0;
+          if (stressTier === "HIGH") stressTierPenalty = -0.02;
+          else if (stressTier === "EXTREME") stressTierPenalty = -0.04;
           const roleOpportunity = hasRoleOpportunity(data.team, pid, statKey, data.row);
           const oppBoost = roleOpportunity ? 0.10 : 0;
-          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty + oppBoost + splitAdj;
+          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty + oppBoost + splitAdj + stressTierPenalty;
           const highFatigue = (scheduleStress != null && scheduleStress >= 70) || b2b;
           const gpOk = Number.isFinite(t.gp) && t.gp >= minTrapGp;
           let trapRisk = false;
