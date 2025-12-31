@@ -2759,7 +2759,7 @@ async function load() {
     const flags = [];
     if (item.highFatigue) flags.push("<span class=\"suggested-flag\">HIGH FATIGUE</span>");
     if (item.trapRisk) flags.push("<span class=\"suggested-flag injury-risk\">TRAP RISK</span>");
-    if (item.roleUp) flags.push("<span class=\"suggested-flag\">↑ ROLE</span>");
+    if (item.roleUp) flags.push(`<span class="suggested-flag">${item.roleTag || "↑ ROLE"}</span>`);
     if (item.injuryRisk) flags.push("<span class=\"suggested-flag injury-risk\">INJURY RISK</span>");
     if (item.roleOpportunity) flags.push("<span class=\"suggested-flag\">ROLE ↑ OPPORTUNITY</span>");
     if (item.stressTier === "HIGH") flags.push("<span class=\"suggested-flag injury-risk\">HIGH STRESS</span>");
@@ -2841,6 +2841,7 @@ async function load() {
           let trapRiskTotal = 0;
           let trapRiskFlagged = 0;
           const stressCounts = { LOW: 0, MED: 0, HIGH: 0, EXTREME: 0, b2b: 0, heavyTravel: 0, brutalTravel: 0, highLoad: 0 };
+          const roleCounts = { total: 0, confirmed: 0, unconfirmed: 0 };
           const getFeature = (row, key) => featureNum(row, key);
           const targetItems = [];
           for (const data of cardDataList) {
@@ -2948,6 +2949,25 @@ async function load() {
           }
           let roleInstability = 0;
           if (trendPP != null && Math.abs(trendPP) >= 5) roleInstability -= 0.04;
+          const hasRole = trendPP != null && trendPP >= 3;
+          let roleConfirm = null;
+          let roleTag = "";
+          if (hasRole) {
+            roleCounts.total += 1;
+            if (shareTrend && shareTrend.dir === "up") {
+              roleConfirm = "confirmed";
+              roleCounts.confirmed += 1;
+              roleTag = "↑ ROLE✓";
+              roleBoost *= 1.35;
+            } else if (shareTrend && shareTrend.dir === "down") {
+              roleConfirm = "unconfirmed";
+              roleCounts.unconfirmed += 1;
+              roleTag = "↑ ROLE?";
+              roleBoost *= 0.35;
+            } else {
+              roleTag = "↑ ROLE";
+            }
+          }
 
           let consistencyAdj = 0;
           if (consUsed != null) {
@@ -3039,6 +3059,7 @@ async function load() {
             highFatigue,
             trapRisk,
             roleUp,
+            roleTag,
             injuryRisk,
             roleOpportunity,
             splitTag,
@@ -3081,6 +3102,9 @@ async function load() {
       const flagged = { HIGH: stressCounts.HIGH, EXTREME: stressCounts.EXTREME };
       const comps = { b2b: stressCounts.b2b, heavyTravel: stressCounts.heavyTravel, brutalTravel: stressCounts.brutalTravel, highLoad: stressCounts.highLoad };
       console.log(`[stress] flagged=${JSON.stringify(flagged)} comps=${JSON.stringify(comps)}`);
+      if (roleCounts.total) {
+        console.log(`[role_confirm] role=${roleCounts.total} confirmed=${roleCounts.confirmed} unconfirmed=${roleCounts.unconfirmed}`);
+      }
       renderSuggestedDrawer();
     } catch (err) {
       console.warn("Suggested Targets render failed:", err);
