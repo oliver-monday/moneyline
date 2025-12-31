@@ -420,6 +420,34 @@ def main():
         # Multi-window core averages + volatility
         last20 = gp.head(20)
         season_gp = gp
+
+        mv = gp[(gp["minutes"] >= 10)].copy()
+        mv_l5 = mv.head(5)
+        mv_l20 = mv.head(20)
+        base["mins_l5"] = float(mv_l5["minutes"].mean()) if len(mv_l5) else float("nan")
+        base["mins_l20"] = float(mv_l20["minutes"].mean()) if len(mv_l20) else float("nan")
+        if np.isfinite(base["mins_l5"]) and np.isfinite(base["mins_l20"]):
+            base["mins_trend"] = base["mins_l5"] - base["mins_l20"]
+        else:
+            base["mins_trend"] = float("nan")
+        base["mins_trend_eligible"] = bool(len(mv_l5) >= 4 and len(mv_l20) >= 12)
+
+        for stat, col in (("pts","pts"), ("reb","reb"), ("ast","ast"), ("tpm","tpm")):
+            if len(mv):
+                pm = mv[col] / mv["minutes"]
+                pm_l5 = pm.head(5)
+                pm_l20 = pm.head(20)
+                base[f"{stat}_pm_l5"] = float(pm_l5.mean()) if len(pm_l5) else float("nan")
+                base[f"{stat}_pm_l20"] = float(pm_l20.mean()) if len(pm_l20) else float("nan")
+                if np.isfinite(base[f"{stat}_pm_l5"]) and np.isfinite(base[f"{stat}_pm_l20"]):
+                    base[f"{stat}_pm_trend"] = base[f"{stat}_pm_l5"] - base[f"{stat}_pm_l20"]
+                else:
+                    base[f"{stat}_pm_trend"] = float("nan")
+            else:
+                base[f"{stat}_pm_l5"] = float("nan")
+                base[f"{stat}_pm_l20"] = float("nan")
+                base[f"{stat}_pm_trend"] = float("nan")
+            base[f"{stat}_pm_trend_eligible"] = bool(len(mv_l5) >= 4 and len(mv_l20) >= 12)
         for stat in ("pts", "reb", "ast"):
             base[f"{stat}_core_10"] = core_avg(last10[stat]) if len(last10) else float("nan")
             base[f"{stat}_core_20"] = core_avg(last20[stat]) if len(last20) else float("nan")
@@ -761,6 +789,10 @@ def main():
             "minutes_iqr_10": row.get("minutes_iqr_10"),
             "minutes_iqr_20": row.get("minutes_iqr_20"),
             "minutes_iqr_season": row.get("minutes_iqr_season"),
+            "mins_l5": row.get("mins_l5"),
+            "mins_l20": row.get("mins_l20"),
+            "mins_trend": row.get("mins_trend"),
+            "mins_trend_eligible": row.get("mins_trend_eligible"),
             "dnp_rate_10": row.get("dnp_rate_10"),
             "dnp_rate_20": row.get("dnp_rate_20"),
             "dnp_rate_season": row.get("dnp_rate_season"),
@@ -821,6 +853,22 @@ def main():
             "share_3pt_l20": row.get("share_3pt_l20"),
             "share_3pt_trend_pp": row.get("share_3pt_trend_pp"),
             "share_3pt_trend_eligible": row.get("share_3pt_trend_eligible"),
+            "pts_pm_l5": row.get("pts_pm_l5"),
+            "pts_pm_l20": row.get("pts_pm_l20"),
+            "pts_pm_trend": row.get("pts_pm_trend"),
+            "pts_pm_trend_eligible": row.get("pts_pm_trend_eligible"),
+            "reb_pm_l5": row.get("reb_pm_l5"),
+            "reb_pm_l20": row.get("reb_pm_l20"),
+            "reb_pm_trend": row.get("reb_pm_trend"),
+            "reb_pm_trend_eligible": row.get("reb_pm_trend_eligible"),
+            "ast_pm_l5": row.get("ast_pm_l5"),
+            "ast_pm_l20": row.get("ast_pm_l20"),
+            "ast_pm_trend": row.get("ast_pm_trend"),
+            "ast_pm_trend_eligible": row.get("ast_pm_trend_eligible"),
+            "tpm_pm_l5": row.get("tpm_pm_l5"),
+            "tpm_pm_l20": row.get("tpm_pm_l20"),
+            "tpm_pm_trend": row.get("tpm_pm_trend"),
+            "tpm_pm_trend_eligible": row.get("tpm_pm_trend_eligible"),
         }
         for win in ("10", "20", "season"):
             features[pid][f"gp_home_{win}"] = row.get(f"gp_home_{win}")
@@ -875,6 +923,17 @@ def main():
             share_flat[stat] = int((elig & (trends > -thresh) & (trends < thresh)).sum())
         if share_stats:
             print(f"[share] eligible={share_stats} up={share_up} down={share_down} flat={share_flat}")
+    except Exception:
+        pass
+    try:
+        mins_eligible = int(out.get("mins_trend_eligible", pd.Series(dtype=bool)).fillna(False).astype(bool).sum()) if "mins_trend_eligible" in out.columns else 0
+        pm_eligible = {}
+        for stat in ("pts", "reb", "ast", "tpm"):
+            col = f"{stat}_pm_trend_eligible"
+            if col in out.columns:
+                pm_eligible["3pt" if stat == "tpm" else stat] = int(out[col].fillna(False).astype(bool).sum())
+        if pm_eligible:
+            print(f"[minadj] mins_eligible={mins_eligible} pm_eligible={pm_eligible}")
     except Exception:
         pass
     if tier_counts:

@@ -3,7 +3,7 @@
 ## FEATURES:
 1 — Immediate ROI (strengthen Suggested Targets signal)
 	•	Opponent pace + implied totals environment (derive implied team totals from spread/ML/OU(over/under); bump PTS/AST/REB confidence) [*parked until spreads/OU ingest/backfill work is done*]
-	•	MINs-adjusted everything?
+	
 	•	B2B calibrated to actual player performance (not just conventional wisdom ie B2B=underperformance risk)
 
 2 - Trajectory Engine v1 (Parked - med. priority)
@@ -43,17 +43,21 @@
 	•	Market-facing UX (you’ll use it more, faster feedback loop)
 	•	One-click “Copy slip” parlay string (Suggested Targets → copyable text)
 	•	Parlay Builder mode (2–6 legs) (pin legs + naive hit prob)
-	•	Correlation guardrails (warn on bad combos; tag correlated legs)
-	•	3PT wired into Core/Consistency
+
+	•Suggested Targets signal strengthening:
+		•	3PT wired into Core/Consistency
 		-3PT is integrated everywhere props exist (thresholds 1–6).
-	•	Trend overlay v0: Core/Consistency trends 
+		•	Trend overlay v0: Core/Consistency trends 
 		 (L10–L20,L10–Season) → future “TREND ↑/↓” (no signal, move on to Trajectory Engine)
-	•	Trap Risk: Volatility + landmine rate (IQR/std + “finished within 1 of line” %) → trap warnings + ranking boost for stable floors
-	•	Home/Away splits (floor + hit-rate split with sample gating)
+		•	Trap Risk: Volatility + landmine rate (IQR/std + “finished within 1 of line” %) → trap warnings + ranking boost for stable floors
+		•	Home/Away splits (floor + hit-rate split with sample gating)
+		•	Stress score (0–100) from rest/travel/load (single numeric penalty/boost used everywhere). [v0 -> v1.1 recalibration]	
+	•	Usage proxy via team-share trends (player share of team PTS/REB/AST; last 5 vs last 20 trend)
+	•	MINs-adjusted everything v0
+
 	•	Create Documentation for internal use: doc(s) that show detailed “under the hood” explanations for how core site features/metrics/wiring work (primarily everything that feeds into Target selection criteria/process).
     		- Reference dict/list/table for all tags etc. what they mean, how they’re computed, where they are wired to, + current weights/expected impact
-	•	Stress score (0–100) from rest/travel/load (single numeric penalty/boost used everywhere). [v0 -> v1.1 recalibration]
-	•	Usage proxy via team-share trends (player share of team PTS/REB/AST; last 5 vs last 20 trend)
+
 
 ## Parked (low priority context only)
 	•	Durability upgrades (low priority): data contracts + validation

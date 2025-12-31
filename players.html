@@ -928,6 +928,19 @@
     }
     .share-up{ color:#2e7d32; }
     .share-down{ color:#c62828; }
+    .minadj-pill{
+      border:1px solid currentColor;
+      border-radius:999px;
+      font-size:11px;
+      font-weight:700;
+      padding:2px 6px;
+      margin-left:6px;
+      display:inline-flex;
+      align-items:center;
+      white-space:nowrap;
+    }
+    .minadj-up{ color:#2e7d32; }
+    .minadj-down{ color:#c62828; }
     .split-delta{
       border:1px solid #d0d0d0;
       border-radius:999px;
@@ -1438,6 +1451,40 @@ function sharePillHTML(row, statKey) {
   const sign = trend.trendPP >= 0 ? "+" : "";
   const title = `Team share trend (L5 vs L20): ${sign}${trend.trendPP.toFixed(1)}pp`;
   return `<span class="share-pill share-${trend.dir}" title="${title}">SHARE${arrow}</span>`;
+}
+
+function minsTrendPillHTML(row) {
+  const eligible = featureBool(row, "mins_trend_eligible");
+  const trend = featureNum(row, "mins_trend");
+  if (!eligible || !Number.isFinite(trend)) return "";
+  let dir = "";
+  if (trend >= 2.0) dir = "up";
+  else if (trend <= -2.0) dir = "down";
+  if (!dir) return "";
+  const sign = trend >= 0 ? "+" : "";
+  const title = `Minutes trend (L5 vs L20): ${sign}${trend.toFixed(1)}`;
+  const arrow = dir === "up" ? "↑" : "↓";
+  return `<span class="minadj-pill minadj-${dir}" title="${title}">MINS${arrow}</span>`;
+}
+
+function pmTrendPillHTML(row, statKey) {
+  const pmKey = statKey === "3pt" ? "tpm" : statKey;
+  const eligible = featureBool(row, `${pmKey}_pm_trend_eligible`);
+  const trend = featureNum(row, `${pmKey}_pm_trend`);
+  if (!eligible || !Number.isFinite(trend)) return "";
+  let thresh = 0.0;
+  if (statKey === "pts") thresh = 0.05;
+  else if (statKey === "reb") thresh = 0.02;
+  else if (statKey === "ast") thresh = 0.02;
+  else if (statKey === "3pt") thresh = 0.015;
+  let dir = "";
+  if (trend >= thresh) dir = "up";
+  else if (trend <= -thresh) dir = "down";
+  if (!dir) return "";
+  const sign = trend >= 0 ? "+" : "";
+  const title = `Per-minute trend (L5 vs L20): ${sign}${trend.toFixed(3)}`;
+  const arrow = dir === "up" ? "↑" : "↓";
+  return `<span class="minadj-pill minadj-${dir}" title="${title}">PM${arrow}</span>`;
 }
 
 function trendKey(kind, statKey, tag) {
@@ -2847,6 +2894,9 @@ async function load() {
           const roleCounts = { total: 0, confirmed: 0, unconfirmed: 0 };
           const shareTargetsUp = { pts: 0, reb: 0, ast: 0, "3pt": 0 };
           const shareTargetsDown = { pts: 0, reb: 0, ast: 0, "3pt": 0 };
+          let minsDownCount = 0;
+          let pmUpCount = 0;
+          let pmDownCount = 0;
           const getFeature = (row, key) => featureNum(row, key);
           const targetItems = [];
           for (const data of cardDataList) {
@@ -3026,12 +3076,37 @@ async function load() {
           }
           if (shareDir === "up" && shareTargetsUp[statKey] != null) shareTargetsUp[statKey] += 1;
           else if (shareDir === "down" && shareTargetsDown[statKey] != null) shareTargetsDown[statKey] += 1;
+          const minsEligible = featureBool(data.row, "mins_trend_eligible");
+          const minsTrend = featureNum(data.row, "mins_trend");
+          let minsAdj = 0;
+          if (minsEligible && Number.isFinite(minsTrend) && minsTrend <= -2.0) {
+            minsAdj = -0.01;
+            minsDownCount += 1;
+          }
+          const pmKey = statKey === "3pt" ? "tpm" : statKey;
+          const pmEligible = featureBool(data.row, `${pmKey}_pm_trend_eligible`);
+          const pmTrend = featureNum(data.row, `${pmKey}_pm_trend`);
+          let pmAdj = 0;
+          if (pmEligible && Number.isFinite(pmTrend)) {
+            let thresh = 0.0;
+            if (statKey === "pts") thresh = 0.05;
+            else if (statKey === "reb") thresh = 0.02;
+            else if (statKey === "ast") thresh = 0.02;
+            else if (statKey === "3pt") thresh = 0.015;
+            if (pmTrend >= thresh) {
+              pmAdj = 0.01;
+              pmUpCount += 1;
+            } else if (pmTrend <= -thresh) {
+              pmAdj = -0.01;
+              pmDownCount += 1;
+            }
+          }
           let stressTierPenalty = 0;
           if (stressTier === "HIGH") stressTierPenalty = -0.04;
           else if (stressTier === "EXTREME") stressTierPenalty = -0.08;
           const roleOpportunity = hasRoleOpportunity(data.team, pid, statKey, data.row);
           const oppBoost = roleOpportunity ? 0.10 : 0;
-          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty + oppBoost + splitAdj + stressTierPenalty + shareAdj;
+          const scoreAdj = stressPenalty + volPenalty + landminePenalty + roleBoost + consistencyAdj + landmineCons + dnpPenalty + minutesPenalty + roleInstability + injuryPenalty + oppBoost + splitAdj + stressTierPenalty + shareAdj + minsAdj + pmAdj;
           const highFatigue = (scheduleStress != null && scheduleStress >= 70) || b2b;
           const gpOk = Number.isFinite(t.gp) && t.gp >= minTrapGp;
           let trapRisk = false;
@@ -3122,6 +3197,9 @@ async function load() {
       if (shareTotal) {
         console.log(`[share_targets] up=${JSON.stringify(shareTargetsUp)} down=${JSON.stringify(shareTargetsDown)} total=${shareTotal}`);
       }
+      if (minsDownCount || pmUpCount || pmDownCount) {
+        console.log(`[minadj_targets] minsDown=${minsDownCount} pmUp=${pmUpCount} pmDown=${pmDownCount}`);
+      }
       renderSuggestedDrawer();
     } catch (err) {
       console.warn("Suggested Targets render failed:", err);
@@ -3161,6 +3239,11 @@ async function load() {
     const rebSharePill = sharePillHTML(data.row, "reb");
     const astSharePill = sharePillHTML(data.row, "ast");
     const tpmSharePill = sharePillHTML(data.row, "3pt");
+    const minsPill = minsTrendPillHTML(data.row);
+    const ptsPmPill = pmTrendPillHTML(data.row, "pts");
+    const rebPmPill = pmTrendPillHTML(data.row, "reb");
+    const astPmPill = pmTrendPillHTML(data.row, "ast");
+    const tpmPmPill = pmTrendPillHTML(data.row, "3pt");
     const ptsHeader = fmtAvgCore(ptsAvg, getCoreVal(data.row, "pts", _metricWin), _metricLabel, ptsTrendMark) || `Avg ${data.ptsAvgText}`;
     const rebHeader = fmtAvgCore(rebAvg, getCoreVal(data.row, "reb", _metricWin), _metricLabel, rebTrendMark) || `Avg ${data.rebAvgText}`;
     const astHeader = fmtAvgCore(astAvg, getCoreVal(data.row, "ast", _metricWin), _metricLabel, astTrendMark) || `Avg ${data.astAvgText}`;
@@ -3179,25 +3262,25 @@ async function load() {
 
     return `
       <div class="matrixhdr">
-        <div><strong>PTS</strong> · ${ptsHeader} • min in window: ${ptsMin} ${ptsSplitPill} ${ptsSplitDelta} ${ptsSharePill}</div>
+        <div><strong>PTS</strong> · ${ptsHeader} • min in window: ${ptsMin} ${ptsSplitPill} ${ptsSplitDelta} ${ptsSharePill} ${minsPill} ${ptsPmPill}</div>
         ${ptsTrendLine}
       </div>
       <div class="pills">${ptsFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>REB</strong> · ${rebHeader} • min in window: ${rebMin} ${rebSplitPill} ${rebSplitDelta} ${rebSharePill}</div>
+        <div><strong>REB</strong> · ${rebHeader} • min in window: ${rebMin} ${rebSplitPill} ${rebSplitDelta} ${rebSharePill} ${minsPill} ${rebPmPill}</div>
         ${rebTrendLine}
       </div>
       <div class="pills">${rebFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>AST</strong> · ${astHeader} • min in window: ${astMin} ${astSplitPill} ${astSplitDelta} ${astSharePill}</div>
+        <div><strong>AST</strong> · ${astHeader} • min in window: ${astMin} ${astSplitPill} ${astSplitDelta} ${astSharePill} ${minsPill} ${astPmPill}</div>
         ${astTrendLine}
       </div>
       <div class="pills">${astFull}</div>
 
       <div class="matrixhdr">
-        <div><strong>3PT</strong> · ${tpmHeader} • min in window: ${tpmMin} ${tpmSplitPill} ${tpmSplitDelta} ${tpmSharePill}</div>
+        <div><strong>3PT</strong> · ${tpmHeader} • min in window: ${tpmMin} ${tpmSplitPill} ${tpmSplitDelta} ${tpmSharePill} ${minsPill} ${tpmPmPill}</div>
         ${tpmTrendLine}
       </div>
       <div class="pills">${tpmFull}</div>
