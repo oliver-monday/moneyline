@@ -80,6 +80,47 @@ jobs:
             --dim player_dim.csv \
             --sleep 0.25
 
+      - name: Backfill team totals if incomplete
+        run: |
+          RUN_BACKFILL=$(python - <<'PY'
+          import datetime as dt
+          import os
+          import pandas as pd
+
+          def season_end_year_for_date(d):
+              return d.year + 1 if d.month >= 10 else d.year
+
+          master = "nba_master.csv"
+          if not os.path.exists(master):
+              print(0)
+              raise SystemExit(0)
+          df = pd.read_csv(master)
+          if "game_date" not in df.columns or "game_id" not in df.columns:
+              print(0)
+              raise SystemExit(0)
+          df["game_date"] = pd.to_datetime(df["game_date"], errors="coerce").dt.date
+          df = df[df["game_date"].notna()].copy()
+          season_end = season_end_year_for_date(dt.date.today())
+          df = df[df["game_date"].map(season_end_year_for_date) == season_end].copy()
+          df = df[df["home_score"].notna() & df["away_score"].notna()].copy()
+          expected = len(df["game_id"].dropna().astype(str).unique()) * 2
+          actual = 0
+          path = "data/team_game_log.csv"
+          if os.path.exists(path):
+              try:
+                  with open(path, "r", encoding="utf-8") as f:
+                      actual = max(0, sum(1 for _ in f) - 1)
+              except Exception:
+                  actual = 0
+          print(1 if actual < expected else 0)
+          PY
+          )
+          if [ "$RUN_BACKFILL" -eq 1 ]; then
+            python espn_player_ingest.py --mode backfill_team --master nba_master.csv
+          else
+            echo "Team totals backfill not needed."
+          fi
+
       - name: Build player snapshot (threshold floors)
         run: |
           python build_player_snapshot_v2.py \

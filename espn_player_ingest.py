@@ -532,19 +532,47 @@ def upsert_game_log(df_old: pd.DataFrame, df_new: pd.DataFrame) -> pd.DataFrame:
 def load_team_game_log(path: str) -> pd.DataFrame:
     if not pd.io.common.file_exists(path):
         return pd.DataFrame()
-    return pd.read_csv(path)
+    df = pd.read_csv(path, dtype=str)
+    return normalize_team_log_keys(df)
+
+def normalize_team_log_keys(df: pd.DataFrame) -> pd.DataFrame:
+    if df is None or df.empty:
+        return pd.DataFrame() if df is None else df
+    out = df.copy()
+    for col in ["season_end_year","game_id","team_abbrev"]:
+        if col not in out.columns:
+            out[col] = ""
+    out["team_abbrev"] = out["team_abbrev"].astype(str).str.upper().str.strip()
+    out["season_end_year"] = pd.to_numeric(out["season_end_year"], errors="coerce").fillna(0).astype(int)
+
+    def norm_game_id(v: Any) -> str:
+        s = str(v).strip()
+        if not s or s.lower() == "nan":
+            return ""
+        try:
+            return str(int(float(s)))
+        except Exception:
+            return s
+
+    out["game_id"] = out["game_id"].map(norm_game_id)
+    return out
 
 def upsert_team_game_log(df_old: pd.DataFrame, df_new: pd.DataFrame) -> pd.DataFrame:
-    if df_old is None or df_old.empty:
-        merged = df_new.copy()
+    old_norm = normalize_team_log_keys(df_old)
+    new_norm = normalize_team_log_keys(df_new)
+    if old_norm is None or old_norm.empty:
+        merged = new_norm.copy()
     else:
-        merged = pd.concat([df_old, df_new], ignore_index=True)
+        merged = pd.concat([old_norm, new_norm], ignore_index=True)
     if merged.empty:
         return merged
     merged["ingested_at"] = merged["ingested_at"].fillna("")
     merged = merged.sort_values("ingested_at").drop_duplicates(
         subset=["season_end_year","game_id","team_abbrev"], keep="last"
     ).reset_index(drop=True)
+    for col in ("team_pts","team_reb","team_ast","team_tpm"):
+        if col in merged.columns:
+            merged[col] = pd.to_numeric(merged[col], errors="coerce").fillna(0).astype(int)
     return merged
 
 def read_master_game_ids(master_path: str, season_end_year: int) -> List[str]:
