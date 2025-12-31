@@ -59,8 +59,6 @@
 		• ReadMe.md - holistic project overview
 		• Suggested Targets Engine.md - feature logic/wiring/architecture explainer 
 
-
-
 ## Parked (low priority context only)
 	•	Durability upgrades (low priority): data contracts + validation
 	•	Durability upgrades (low priority): “single source of truth” mapping table for stat aliases / keys
@@ -72,7 +70,6 @@
 			•	Selection Target generation becomes a result of daily Reasoning over entire/discrete dataset(s), not just a hardcoded rubric that returns outputs -> more "alive" and tapped into the flow of the shifting sands/trajectories of an NBA season.
 				• UI becomes a simple LLM-style interface; perhaps user can adjust some directional parameters (ex: risk appetite: Conservative/Neutral/Degen) and/or Chat-input any eyeball/gut feeling observations / ad-hoc instructions (ex: "Player X looks like he's playing through an undiagnosed injury" -> stay away/temporary blacklist; "I'm only interested in X,Y,Z Players / Players on XYZ Teams", etc) -> CTA="Generate Targets" -> Think/Reason -> agent makes Custom Selections.
 	•	ChatGPT (Dojo) roadmap design [condensed - see "NBA GPT v2 - "Agentic" Roadmap.md" for details]:
-			•	ChatGPT (Dojo) roadmap design [condensed - see "NBA GPT v2 - "Agentic" Roadmap.md" for details]:
 			• **v2 North Star:** NBA GPT becomes *agent-assisted + data-driven* (targets feel “alive”), with a “Generate Targets” UI steered by user directives (risk appetite + filters + notes), while keeping execution deterministic:
 				• **Pre-req (reduce repo chaos):** implement a **single-writer strategy** so automation doesn’t collide with your manual work (automation writes to `data` branch / PRs / releases—`main` updates via PR merge).
 				• **Config-first engine:** convert the v1 hardcoded rubric into a **versioned, tunable config** (weights, gates, thresholds, stat rules) + presets (**Conservative / Neutral / Degen**) that reproduce v1 outputs under a “v1-equivalent” preset.

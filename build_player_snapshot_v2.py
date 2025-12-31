@@ -356,7 +356,8 @@ def main():
         prev_dates = team_b2b.groupby("team_abbrev")["game_date"].shift(1)
         team_b2b["b2b_flag"] = (team_b2b["game_date"] - prev_dates == dt.timedelta(days=1)).astype(int)
     if team_totals is not None and not team_totals.empty:
-        df_played = df_played.merge(team_totals, on=["season_end_year","game_id","team_abbrev"], how="left")
+        team_totals_merge = team_totals.drop(columns=["game_date"], errors="ignore")
+        df_played = df_played.merge(team_totals_merge, on=["season_end_year","game_id","team_abbrev"], how="left")
         missing_team_totals = int(df_played[["team_pts","team_reb","team_ast"]].isna().any(axis=1).sum())
         missing_team_tpm = int(df_played["team_tpm"].isna().sum()) if "team_tpm" in df_played.columns else 0
         if missing_team_totals:
