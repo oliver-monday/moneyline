@@ -101,6 +101,84 @@ def rest_info_for_player(pid: str, slate_date: dt.date, dates_map: Dict[str, Lis
     return rest_days, rest_days == 0
 
 
+def extract_home_flag(row: Dict[str, str]) -> bool | None:
+    ha = str(row.get("home_away", "")).strip().upper()
+    if ha in {"H", "HOME"}:
+        return True
+    if ha in {"A", "AWAY"}:
+        return False
+    return None
+
+
+def load_player_features(path: str = "data/player_features.json") -> Dict[str, Dict[str, object]]:
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f) or {}
+    except Exception:
+        return {}
+    if isinstance(data, dict):
+        return {str(k).strip(): v for k, v in data.items() if isinstance(v, dict)}
+    return {}
+
+
+def build_snapshot_row_map(snapshot_df: pd.DataFrame) -> Dict[str, Dict[str, object]]:
+    if snapshot_df is None or snapshot_df.empty:
+        return {}
+    if "player_id" not in snapshot_df.columns:
+        return {}
+    out = {}
+    for _, row in snapshot_df.iterrows():
+        pid = str(row.get("player_id", "")).strip()
+        if not pid:
+            continue
+        out[pid] = row.to_dict()
+    return out
+
+
+def enrich_learning_fields(entry: Dict[str, object], row: Dict[str, object], rest_map, target_date: dt.date,
+                           features_map: Dict[str, Dict[str, object]],
+                           snapshot_map: Dict[str, Dict[str, object]]):
+    updated = {}
+    pid = str(entry.get("player_id", "")).strip()
+    stat = str(entry.get("stat", "")).lower().strip()
+    threshold = int(entry.get("threshold", 0) or 0)
+    if entry.get("is_home_game") is None:
+        home_flag = extract_home_flag(row or {})
+        if home_flag is not None:
+            updated["is_home_game"] = home_flag
+    if entry.get("rest_days") is None or entry.get("is_b2b") is None:
+        rest_days, is_b2b = rest_info_for_player(pid, target_date, rest_map)
+        if entry.get("rest_days") is None:
+            updated["rest_days"] = rest_days
+        if entry.get("is_b2b") is None:
+            updated["is_b2b"] = is_b2b
+    if entry.get("share_trend_pp") is None or entry.get("share_trend_dir") is None:
+        feat = features_map.get(pid, {}) if pid else {}
+        key = f"share_{stat}_trend_pp" if stat and stat != "3pt" else "share_3pt_trend_pp"
+        pp = num(feat.get(key))
+        if entry.get("share_trend_pp") is None:
+            updated["share_trend_pp"] = pp
+        if entry.get("share_trend_dir") is None:
+            updated["share_trend_dir"] = trend_dir_from_pp(pp)
+    iqr_val = entry.get("iqr_10")
+    landmine_rate = entry.get("landmine_rate_10")
+    if (iqr_val is None or landmine_rate is None) and pid:
+        snap = snapshot_map.get(pid, {})
+        if iqr_val is None and stat:
+            iqr_val = num(snap.get(f"{stat}_iqr_10"))
+        if landmine_rate is None and stat in {"pts", "reb", "ast"}:
+            landmine_rate = num(snap.get(f"{stat}_landmine_{threshold}_10"))
+    if entry.get("iqr_10") is None:
+        updated["iqr_10"] = iqr_val
+    if entry.get("landmine_rate_10") is None:
+        updated["landmine_rate_10"] = landmine_rate
+    if entry.get("trap_risk") is None:
+        updated["trap_risk"] = compute_trap_risk(stat, iqr_val, landmine_rate)
+    return updated
+
+
 def share_trend_from_row(row: Dict[str, str], stat: str) -> tuple[float | None, str | None]:
     stat_norm = str(stat or "").lower().strip()
     key = f"share_{stat_norm}_trend_pp" if stat_norm != "3pt" else "share_3pt_trend_pp"
@@ -371,7 +449,9 @@ def prune_old_snapshots(logs_dir: Path, cutoff: dt.date) -> None:
                 pass
 
 
-def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[str, object]:
+def compute_postmortem(snapshot_entries, game_log_df, target_date: str,
+                       features_map: Dict[str, Dict[str, object]] | None = None,
+                       snapshot_map: Dict[str, Dict[str, object]] | None = None) -> Dict[str, object]:
     empty = {
         "asof_date": target_date,
         "summary": {"targets_total": 0, "hits": 0, "misses": 0, "hit_rate_pct": 0},
@@ -384,6 +464,7 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
 
     game_log_df = game_log_df.copy()
     game_log_df["game_date"] = game_log_df["game_date"].astype(str).str.strip()
+    rest_map = build_last_game_lookup(game_log_df)
     indexes = build_game_log_indexes(game_log_df, target_date)
     if not any(indexes):
         return empty
@@ -399,6 +480,13 @@ def compute_postmortem(snapshot_entries, game_log_df, target_date: str) -> Dict[
         if row is None:
             continue
         learning = {k: entry.get(k) for k in LEARNING_FIELDS if k in entry}
+        try:
+            target_date_obj = dt.datetime.strptime(target_date, "%Y-%m-%d").date()
+        except Exception:
+            target_date_obj = dt.date.today()
+        extra = enrich_learning_fields(entry, row, rest_map, target_date_obj, features_map or {}, snapshot_map or {})
+        if extra:
+            learning.update(extra)
         stat = entry.get("stat")
         threshold = int(entry.get("threshold", 0) or 0)
         dnp_flag = str(row.get("dnp", "") or "").strip() in ("1", "true", "True", "YES", "yes")
@@ -669,6 +757,8 @@ def main() -> int:
         game_log_df = pd.read_csv(game_log_path, dtype=str)
     else:
         game_log_df = pd.DataFrame()
+    features_map = load_player_features()
+    snapshot_row_map = build_snapshot_row_map(snapshot_df) if snapshot_df is not None else {}
     slate_date_obj = None
     try:
         slate_date_obj = dt.datetime.strptime(slate_date, "%Y-%m-%d").date()
@@ -867,7 +957,7 @@ def main() -> int:
         if failed_samples:
             print(f"[targets] Top targets missing samples: {failed_samples}")
 
-    postmortem = compute_postmortem(snapshot_entries, game_log_df, results_date)
+    postmortem = compute_postmortem(snapshot_entries, game_log_df, results_date, features_map, snapshot_row_map)
     postmortem["built_at_utc"] = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
     postmortem["snapshot_file"] = snapshot_path.name if snapshot_path else None
     postmortem["top_targets"] = top_targets
