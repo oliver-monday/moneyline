@@ -710,14 +710,14 @@
     .time-group-body { padding: 8px 0 4px; }
     .back-to-top {
       position: fixed;
-      right: 20px;
-      bottom: 20px;
+      right: 26px;
+      bottom: 26px;
       z-index: 50;
       background: #f2f2f2;
-      color: #333;
-      border: 2px solid #ddd;
+      color: #d97706;
+      border: 2px solid #d97706;
       border-radius: 999px;
-      padding: 10px 12px;
+      padding: 12px 14px;
       font-size: 13px;
       font-weight: 700;
       cursor: pointer;
@@ -730,6 +730,10 @@
       opacity: 1;
       pointer-events: auto;
       transform: translateY(0);
+    }
+    .back-to-top .arrow {
+      color: #000;
+      font-weight: 900;
     }
     .slip-panel { border: 2px solid #714ea6; border-radius: 12px; margin: 10px 0 12px; background:#fff; }
     .slip-panel summary {
@@ -1268,7 +1272,7 @@
 
   <div id="cards"></div>
 
-<button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Back to Top</button>
+<button id="backToTop" class="back-to-top" aria-label="Back to top"><span class="arrow">↑</span> Back to Top</button>
 
 <script>
 async function fetchText(url) {
