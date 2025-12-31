@@ -2522,7 +2522,7 @@ async function load() {
       : fmtAvgCore(item.avg, item.core, _metricLabel, trendMark);
     const flags = [];
     if (item.highFatigue) flags.push("<span class=\"suggested-flag\">HIGH FATIGUE</span>");
-    if (item.trapRisk) flags.push("<span class=\"suggested-flag\">TRAP RISK</span>");
+    if (item.trapRisk) flags.push("<span class=\"suggested-flag injury-risk\">TRAP RISK</span>");
     if (item.roleUp) flags.push("<span class=\"suggested-flag\">↑ ROLE</span>");
     if (item.injuryRisk) flags.push("<span class=\"suggested-flag injury-risk\">INJURY RISK</span>");
     if (item.roleOpportunity) flags.push("<span class=\"suggested-flag\">ROLE ↑ OPPORTUNITY</span>");
