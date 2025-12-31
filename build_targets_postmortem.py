@@ -130,6 +130,9 @@ def load_player_features(path: str = "data/player_features.json") -> Dict[str, D
     except Exception:
         return {}
     if isinstance(data, dict):
+        if "players" in data and isinstance(data.get("players"), dict):
+            players = data.get("players") or {}
+            return {normalize_pid(k): v for k, v in players.items() if isinstance(v, dict)}
         return {normalize_pid(k): v for k, v in data.items() if isinstance(v, dict)}
     return {}
 

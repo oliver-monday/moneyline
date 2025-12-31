@@ -203,7 +203,26 @@
           "out_count": 0
         }
       },
-      "by_share_trend_dir": {},
+      "by_share_trend_dir": {
+        "FLAT": {
+          "total": 9,
+          "hits": 6,
+          "hit_rate": 0.6666666666666666,
+          "out_count": 0
+        },
+        "UP": {
+          "total": 9,
+          "hits": 8,
+          "hit_rate": 0.8888888888888888,
+          "out_count": 0
+        },
+        "DOWN": {
+          "total": 4,
+          "hits": 1,
+          "hit_rate": 0.25,
+          "out_count": 0
+        }
+      },
       "by_home_game": {
         "false": {
           "total": 11,
