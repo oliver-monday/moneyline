@@ -377,6 +377,7 @@ def parse_boxscore_teams(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]:
         m = re.search(r"\d+", s)
         return int(m.group(0)) if m else 0
 
+    debug_stats_printed = False
     for team_block in teams_blocks:
         team = team_block.get("team") or {}
         team_id = str(team.get("id") or "")
@@ -388,7 +389,20 @@ def parse_boxscore_teams(summary_json: Dict[str, Any]) -> List[Dict[str, Any]]:
         pts_raw = extract_stat(stats_list, ["pts", "points"])
         reb_raw = extract_stat(stats_list, ["reb", "rebounds", "totalrebounds"])
         ast_raw = extract_stat(stats_list, ["ast", "assists"])
-        tpm_raw = extract_stat(stats_list, ["3pm", "3pt", "fg3m", "3fgm", "3ptm", "3p"])
+        tpm_raw = extract_stat(stats_list, [
+            "3pt", "3pm", "fg3m", "3fgm", "3ptm", "3p", "fg3",
+            "threepointfieldgoalsmade", "threepointfieldgoals",
+            "threepointfieldgoalsmadeattempts", "fg3m-a", "3ptfg",
+        ])
+        if tpm_raw is None and not debug_stats_printed:
+            labels = []
+            for stat in stats_list:
+                labels.append(
+                    stat.get("name") or stat.get("label") or stat.get("shortDisplayName")
+                    or stat.get("displayName") or ""
+                )
+            print(f"[team_tpm_debug] available_stats={labels}")
+            debug_stats_printed = True
 
         row = {
             "team_id": team_id,
@@ -626,14 +640,24 @@ def ingest_events(
             home_away = infer_home_away(team_abbrev, team_map)
             opp_abbrev, _ = opponent_for_team(team_abbrev, team_map)
             pts_val = int(t.get("pts", 0))
-            if pts_val == 0 and team_id and team_id in team_map:
+            score_int = 0
+            if team_id and team_id in team_map:
                 score_raw = team_map[team_id].get("score")
                 try:
                     score_int = int(float(score_raw))
                 except Exception:
                     score_int = 0
-                if score_int > 0:
-                    pts_val = score_int
+            if score_int <= 0:
+                for tid, meta in team_map.items():
+                    if str(meta.get("abbrev","")).upper() == team_abbrev:
+                        score_raw = meta.get("score")
+                        try:
+                            score_int = int(float(score_raw))
+                        except Exception:
+                            score_int = 0
+                        break
+            if score_int > 0:
+                pts_val = score_int
             team_rows.append({
                 "season_end_year": season_end,
                 "game_id": str(event_id),
@@ -880,6 +904,8 @@ def main():
             if c not in team_merged.columns:
                 team_merged[c] = ""
         team_merged = team_merged[team_cols].copy()
+        for col in ("team_pts","team_reb","team_ast","team_tpm"):
+            team_merged[col] = pd.to_numeric(team_merged[col], errors="coerce").fillna(0).astype(int)
         team_merged.to_csv(args.team_out, index=False)
 
         pts_vals = pd.to_numeric(team_merged["team_pts"], errors="coerce")
