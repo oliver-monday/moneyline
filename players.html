@@ -881,6 +881,13 @@
       margin-top:6px;
       margin-bottom:6px;
     }
+    .trend{
+      font-weight:700;
+      margin-left:4px;
+    }
+    .trend-up{ color:#2e7d32; }
+    .trend-down{ color:#c62828; }
+    .trend-flat{ color:#8a8a8a; }
     .trendline{
       flex-basis:100%;
       font-size:12px;
@@ -1330,27 +1337,31 @@ function trendDir(row, playerId, kind, statKey, tag) {
   return String(val).toLowerCase();
 }
 
-function trendArrow(dir, naPlaceholder) {
+function trendMarkup(dir, opts) {
+  const options = opts || {};
   const d = String(dir || "").toLowerCase();
-  if (d === "up") return "↑";
-  if (d === "down") return "↓";
-  if (d === "flat") return "→";
-  if (d === "na") return naPlaceholder || "";
-  return "";
+  if (d === "na" || !d) return options.naPlaceholder || "";
+  if (d === "flat" && options.hideFlat) return "";
+  let symbol = "";
+  if (d === "up") symbol = "↑";
+  else if (d === "down") symbol = "↓";
+  else if (d === "flat") symbol = "↔";
+  if (!symbol) return "";
+  return `<span class="trend trend-${d}">${symbol}</span>`;
 }
 
-function trendSummaryArrow(row, playerId, kind, statKey) {
+function trendSummaryArrow(row, playerId, kind, statKey, opts) {
   const dir = trendDir(row, playerId, kind, statKey, "summary");
   if (!dir) return "";
-  return trendArrow(dir, "");
+  return trendMarkup(dir, opts);
 }
 
 function trendLineHTML(row, playerId, kind, statKey, label) {
   const dir20 = trendDir(row, playerId, kind, statKey, "10_20");
   const dirSeason = trendDir(row, playerId, kind, statKey, "10_season");
   if (!dir20 || !dirSeason) return "";
-  const arrow20 = trendArrow(dir20, "—");
-  const arrowSeason = trendArrow(dirSeason, "—");
+  const arrow20 = trendMarkup(dir20, { naPlaceholder: "—" });
+  const arrowSeason = trendMarkup(dirSeason, { naPlaceholder: "—" });
   return `<div class="trendline">${label} vs L20: ${arrow20} · vs Season: ${arrowSeason}</div>`;
 }
 
@@ -2505,7 +2516,7 @@ async function load() {
     const stat = String(item.stat || "").toUpperCase();
     const statKey = String(item.stat || "").toLowerCase();
     const chip = `${stat} ${item.threshold}+ (${item.hits}/${item.gp})`;
-    const trendMark = trendSummaryArrow(null, item.playerId, "core", statKey);
+    const trendMark = trendSummaryArrow(null, item.playerId, "core", statKey, { hideFlat: true });
     const avgText = statKey === "3pt"
       ? fmtAvgCore3pt(item.avg, item.core, _metricLabel, item.threeptEligible, item.threeptCons, trendMark)
       : fmtAvgCore(item.avg, item.core, _metricLabel, trendMark);
