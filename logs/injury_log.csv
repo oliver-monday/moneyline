@@ -782,6 +782,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2025-12-30,MEM,J. Landale,QUES,J. Landale (Ques),rotowire
 2025-12-30,BOS,K. George,QUES,K. George (Ques),rotowire
 2025-12-30,UTA,K. George,QUES,K. George (Ques),rotowire
+2025-12-30,SAC,J. Collins,QUES,J. Collins (Ques),rotowire
+2025-12-30,LAC,J. Collins,QUES,J. Collins (Ques),rotowire
 2025-12-30,PHI,K. Oubre,OUT,K. Oubre (Out),rotowire
 2025-12-30,PHI,T. Watford,OUT,T. Watford (Out),rotowire
 2025-12-30,PHI,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
@@ -819,13 +821,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2025-12-30,LAL,G. Vincent,OUT,G. Vincent (Out),rotowire
 2025-12-30,SAC,Z. LaVine,OUT,Z. LaVine (Out),rotowire
 2025-12-30,SAC,D. Sabonis,OUT,D. Sabonis (Out),rotowire
-2025-12-30,SAC,J. Collins,QUES,J. Collins (Ques),rotowire
 2025-12-30,SAC,B. Beal,OFS,B. Beal (OFS),rotowire
 2025-12-30,SAC,B. Bogdanovic,OUT,B. Bogdanovic (Out),rotowire
 2025-12-30,SAC,Chris Paul,OUT,Chris Paul (Out),rotowire
 2025-12-30,SAC,I. Zubac,OUT,I. Zubac (Out),rotowire
 2025-12-30,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
-2025-12-30,LAC,J. Collins,QUES,J. Collins (Ques),rotowire
 2025-12-30,LAC,B. Bogdanovic,OUT,B. Bogdanovic (Out),rotowire
 2025-12-30,LAC,Chris Paul,OUT,Chris Paul (Out),rotowire
 2025-12-30,LAC,I. Zubac,OUT,I. Zubac (Out),rotowire
