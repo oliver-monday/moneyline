@@ -942,10 +942,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2025-12-31,OKC,N. Topic,OUT,N. Topic (Out),rotowire
 2025-12-31,OKC,J. Williams,OUT,J. Williams (Out),rotowire
 2026-01-01,MIA,S. Fontecchio,QUES,S. Fontecchio (Ques),rotowire
-2026-01-01,HOU,S. Adams,QUES,S. Adams (Ques),rotowire
-2026-01-01,HOU,C. Capela,QUES,C. Capela (Ques),rotowire
 2026-01-01,HOU,T. Eason,QUES,T. Eason (Ques),rotowire
 2026-01-01,HOU,A. Sengun,QUES,A. Sengun (Ques),rotowire
+2026-01-01,HOU,S. Adams,OUT,S. Adams (Out),rotowire
+2026-01-01,HOU,C. Capela,OUT,C. Capela (Out),rotowire
 2026-01-01,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
 2026-01-01,HOU,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-01-01,HOU,Fantasy Football,REST,Fantasy Football (Rest),rotowire

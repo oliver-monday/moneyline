@@ -1,27 +1,22 @@
 {
   "asof_date": "2026-01-01",
-  "built_at_utc": "2026-01-01T20:22:01Z",
+  "built_at_utc": "2026-01-01T22:26:22Z",
   "source": "rotowire",
   "HOU": [
-    {
-      "name": "S. Adams",
-      "status": "QUES",
-      "details": "S. Adams (Ques)"
-    },
-    {
-      "name": "C. Capela",
-      "status": "QUES",
-      "details": "C. Capela (Ques)"
-    },
-    {
-      "name": "T. Eason",
-      "status": "QUES",
-      "details": "T. Eason (Ques)"
-    },
     {
       "name": "A. Sengun",
       "status": "QUES",
       "details": "A. Sengun (Ques)"
+    },
+    {
+      "name": "S. Adams",
+      "status": "OUT",
+      "details": "S. Adams (Out)"
+    },
+    {
+      "name": "C. Capela",
+      "status": "OUT",
+      "details": "C. Capela (Out)"
     },
     {
       "name": "F. VanVleet",
