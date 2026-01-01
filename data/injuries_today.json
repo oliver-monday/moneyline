@@ -1,13 +1,8 @@
 {
   "asof_date": "2026-01-01",
-  "built_at_utc": "2026-01-01T22:26:22Z",
+  "built_at_utc": "2026-01-01T23:22:43Z",
   "source": "rotowire",
   "HOU": [
-    {
-      "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
-    },
     {
       "name": "S. Adams",
       "status": "OUT",
@@ -185,11 +180,6 @@
     }
   ],
   "BOS": [
-    {
-      "name": "C. Boucher",
-      "status": "QUES",
-      "details": "C. Boucher (Ques)"
-    },
     {
       "name": "J. Tatum",
       "status": "OUT",

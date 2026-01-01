@@ -944,6 +944,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-01,MIA,S. Fontecchio,QUES,S. Fontecchio (Ques),rotowire
 2026-01-01,HOU,T. Eason,QUES,T. Eason (Ques),rotowire
 2026-01-01,HOU,A. Sengun,QUES,A. Sengun (Ques),rotowire
+2026-01-01,BOS,C. Boucher,QUES,C. Boucher (Ques),rotowire
 2026-01-01,HOU,S. Adams,OUT,S. Adams (Out),rotowire
 2026-01-01,HOU,C. Capela,OUT,C. Capela (Out),rotowire
 2026-01-01,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
@@ -975,7 +976,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-01,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
 2026-01-01,DAL,D. Russell,QUES,D. Russell (Ques),rotowire
 2026-01-01,DAL,K. Irving,OUT,K. Irving (Out),rotowire
-2026-01-01,BOS,C. Boucher,QUES,C. Boucher (Ques),rotowire
 2026-01-01,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
 2026-01-01,BOS,Z. LaVine,OUT,Z. LaVine (Out),rotowire
 2026-01-01,BOS,D. Sabonis,OUT,D. Sabonis (Out),rotowire
