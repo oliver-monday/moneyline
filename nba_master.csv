@@ -487,12 +487,17 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810314,2025-12-30,2025-12-31T02:00Z,Utah Jazz,UTAH,119,240.0,,Boston Celtics,BOS,129,-298.0,,Salt Lake City,UT,,
 401810315,2025-12-30,2025-12-31T03:30Z,Los Angeles Lakers,LAL,106,124.0,,Detroit Pistons,DET,128,-148.0,,Los Angeles,CA,,
 401810316,2025-12-30,2025-12-31T04:00Z,LA Clippers,LAC,131,-375.0,,Sacramento Kings,SAC,90,295.0,,Inglewood,CA,,
-401810317,2025-12-31,2025-12-31T18:00Z,Charlotte Hornets,CHA,125,230.0,,Golden State Warriors,GS,132,-285.0,,Charlotte,NC,M. Bridges (Out); R. Kalkbrenner (Out); M. Plumlee (Out); G. Williams (Out),Seth Curry (Out)
-401810318,2025-12-31,2025-12-31T20:00Z,Atlanta Hawks,ATL,126,170.0,,Minnesota Timberwolves,MIN,102,-205.0,,Atlanta,GA,N. Dante (OFS); Trae Young (Out),T. Shannon (Out)
-401810319,2025-12-31,2025-12-31T20:00Z,Indiana Pacers,IND,110,160.0,,Orlando Magic,ORL,112,-192.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); Obi Toppin (Out),C. Castleton (Out); J. Howard (Out); J. Isaac (Out); M. Wagner (Out); F. Wagner (Out)
-401810320,2025-12-31,2025-12-31T20:30Z,Cleveland Cavaliers,CLE,129,-258.0,,Phoenix Suns,PHX,113,210.0,,Cleveland,OH,D. Hunter (Out); L. Nance (Out); Max Strus (Out),G. Allen (Out); J. Green (Out)
-401810321,2025-12-31,2026-01-01T00:00Z,Chicago Bulls,CHI,0,-122.0,,New Orleans Pelicans,NO,0,102.0,,Chicago,IL,N. Essengue (OFS); Z. Collins (Out); T. Flowers (Out); J. Giddey (Out); E. Miller (Out); L. Olbrich (Out); Coby White (Out),J. Alvarado (Out); H. Jones (Out); D. Murray (Out)
-401810322,2025-12-31,2026-01-01T00:00Z,San Antonio Spurs,SA,0,-162.0,,New York Knicks,NY,0,136.0,,San Antonio,TX,D. Vassell (Out),Josh Hart (Out); M. Robinson (Out); L. Shamet (Out)
-401810323,2025-12-31,2026-01-01T00:30Z,Toronto Raptors,TOR,0,-258.0,,Denver Nuggets,DEN,0,210.0,,Toronto,ON,J. Poeltl (Out),T. Bates (Out); C. Braun (Out); A. Gordon (Out); C. Johnson (Out); N. Jokic (Out)
-401810324,2025-12-31,2026-01-01T01:00Z,Milwaukee Bucks,MIL,0,-520.0,,Washington Wizards,WSH,0,390.0,,Milwaukee,WI,T. Prince (Out),K. George (Out); C. Kispert (Out); C. Whitmore (Out)
-401810325,2025-12-31,2026-01-01T01:00Z,Oklahoma City Thunder,OKC,0,-1100.0,,Portland Trail Blazers,POR,0,700.0,,Oklahoma City,OK,T. Sorber (OFS); O. Dieng (Out); I. Hartenstein (Out); N. Topic (Out); J. Williams (Out),D. Lillard (OFS); J. Grant (Out); S. Henderson (Out); J. Holiday (Out); M. Thybulle (Out); B. Wesley (Out)
+401810317,2025-12-31,2025-12-31T18:00Z,Charlotte Hornets,CHA,125,230.0,,Golden State Warriors,GS,132,-285.0,,Charlotte,NC,,
+401810318,2025-12-31,2025-12-31T20:00Z,Atlanta Hawks,ATL,126,170.0,,Minnesota Timberwolves,MIN,102,-205.0,,Atlanta,GA,,
+401810319,2025-12-31,2025-12-31T20:00Z,Indiana Pacers,IND,110,160.0,,Orlando Magic,ORL,112,-192.0,,Indianapolis,IN,,
+401810320,2025-12-31,2025-12-31T20:30Z,Cleveland Cavaliers,CLE,129,-258.0,,Phoenix Suns,PHX,113,210.0,,Cleveland,OH,,
+401810321,2025-12-31,2026-01-01T00:00Z,Chicago Bulls,CHI,134,-122.0,,New Orleans Pelicans,NO,118,102.0,,Chicago,IL,,
+401810322,2025-12-31,2026-01-01T00:00Z,San Antonio Spurs,SA,0,-162.0,,New York Knicks,NY,0,136.0,,San Antonio,TX,,
+401810323,2025-12-31,2026-01-01T00:30Z,Toronto Raptors,TOR,103,-258.0,,Denver Nuggets,DEN,106,210.0,,Toronto,ON,,
+401810324,2025-12-31,2026-01-01T01:00Z,Milwaukee Bucks,MIL,113,-520.0,,Washington Wizards,WSH,114,390.0,,Milwaukee,WI,,
+401810325,2025-12-31,2026-01-01T01:00Z,Oklahoma City Thunder,OKC,124,-1100.0,,Portland Trail Blazers,POR,95,700.0,,Oklahoma City,OK,,
+401810326,2026-01-01,2026-01-01T23:00Z,Brooklyn Nets,BKN,0,360.0,,Houston Rockets,HOU,0,-470.0,,Brooklyn,NY,Egor Demin (Out); H. Highsmith (Out),F. VanVleet (Out)
+401810327,2026-01-01,2026-01-02T00:00Z,Detroit Pistons,DET,0,-205.0,,Miami Heat,MIA,0,170.0,,Detroit,MI,C. LeVert (Out),T. Herro (Out); P. Larsson (Out); T. Rozier (Out)
+401810328,2026-01-01,2026-01-02T01:30Z,Dallas Mavericks,DAL,0,105.0,,Philadelphia 76ers,PHI,0,-125.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); K. Irving (Out),K. Oubre (Out); T. Watford (Out)
+401810329,2026-01-01,2026-01-02T03:00Z,Sacramento Kings,SAC,0,320.0,,Boston Celtics,BOS,0,-410.0,,Sacramento,CA,Z. LaVine (Out); D. Sabonis (Out),J. Tatum (Out)
+401810330,2026-01-01,2026-01-02T03:30Z,LA Clippers,LAC,0,-600.0,,Utah Jazz,UTAH,0,440.0,,Inglewood,CA,B. Beal (OFS); B. Bogdanovic (Out); Chris Paul (Out); I. Zubac (Out),W. Kessler (OFS); Ace Bailey (Out); Kevin Love (Out); G. Niang (Out); J. Nurkic (Out)
