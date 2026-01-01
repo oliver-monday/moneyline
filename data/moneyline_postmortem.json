@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-31",
-  "built_at_utc": "2026-01-01T08:40:36Z",
+  "built_at_utc": "2026-01-01T08:45:47Z",
   "coinflips": [],
   "favorites": [
     {
@@ -120,6 +120,35 @@
       "winner_team": "Orlando Magic"
     },
     {
+      "abs_prob_diff": 0.19459179712770092,
+      "away_abbrev": "NY",
+      "away_ml": 136.0,
+      "away_prob": 0.423728813559322,
+      "away_score": 132,
+      "away_team": "New York Knicks",
+      "dog_side": "AWAY",
+      "fav_side": "HOME",
+      "favorite_prob": 0.6183206106870229,
+      "game_id": 401810322,
+      "home_abbrev": "SA",
+      "home_ml": -162.0,
+      "home_prob": 0.6183206106870229,
+      "home_score": 134,
+      "home_team": "San Antonio Spurs",
+      "is_coinflip": false,
+      "loser_abbrev": "NY",
+      "loser_ml": 136.0,
+      "loser_score": 132,
+      "loser_side": "AWAY",
+      "loser_team": "New York Knicks",
+      "underdog_prob": 0.423728813559322,
+      "winner_abbrev": "SA",
+      "winner_ml": -162.0,
+      "winner_score": 134,
+      "winner_side": "HOME",
+      "winner_team": "San Antonio Spurs"
+    },
+    {
       "abs_prob_diff": 0.05450004459905455,
       "away_abbrev": "NO",
       "away_ml": 102.0,
@@ -152,8 +181,8 @@
   "summary": {
     "coinflips_total": 0,
     "favorites_lost": 3,
-    "favorites_won": 5,
-    "games_total": 8
+    "favorites_won": 6,
+    "games_total": 9
   },
   "underdogs": [
     {
