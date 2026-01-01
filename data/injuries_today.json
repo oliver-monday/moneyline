@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-01",
-  "built_at_utc": "2026-01-01T17:11:22Z",
+  "built_at_utc": "2026-01-01T20:22:01Z",
   "source": "rotowire",
   "HOU": [
     {
@@ -49,11 +49,6 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "M. Porter",
-      "status": "QUES",
-      "details": "M. Porter (Ques)"
-    },
-    {
       "name": "Egor Demin",
       "status": "OUT",
       "details": "Egor Demin (Out)"
@@ -67,15 +62,15 @@
       "name": "T. Mann",
       "status": "OUT",
       "details": "T. Mann (Out)"
+    },
+    {
+      "name": "M. Porter",
+      "status": "OUT",
+      "details": "M. Porter (Out)"
     }
   ],
   "BKN": [
     {
-      "name": "M. Porter",
-      "status": "QUES",
-      "details": "M. Porter (Ques)"
-    },
-    {
       "name": "Egor Demin",
       "status": "OUT",
       "details": "Egor Demin (Out)"
@@ -89,14 +84,14 @@
       "name": "T. Mann",
       "status": "OUT",
       "details": "T. Mann (Out)"
+    },
+    {
+      "name": "M. Porter",
+      "status": "OUT",
+      "details": "M. Porter (Out)"
     }
   ],
   "MIA": [
-    {
-      "name": "S. Fontecchio",
-      "status": "QUES",
-      "details": "S. Fontecchio (Ques)"
-    },
     {
       "name": "T. Herro",
       "status": "OUT",
@@ -114,8 +109,8 @@
     },
     {
       "name": "T. Harris",
-      "status": "DOUBT",
-      "details": "T. Harris (Doubt)"
+      "status": "OUT",
+      "details": "T. Harris (Out)"
     },
     {
       "name": "C. LeVert",
@@ -126,8 +121,8 @@
   "DET": [
     {
       "name": "T. Harris",
-      "status": "DOUBT",
-      "details": "T. Harris (Doubt)"
+      "status": "OUT",
+      "details": "T. Harris (Out)"
     },
     {
       "name": "C. LeVert",
@@ -162,6 +157,11 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "D. Russell",
+      "status": "QUES",
+      "details": "D. Russell (Ques)"
+    },
+    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
@@ -177,6 +177,11 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
+    },
+    {
+      "name": "D. Russell",
+      "status": "QUES",
+      "details": "D. Russell (Ques)"
     },
     {
       "name": "K. Irving",
@@ -225,24 +230,24 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
-      "name": "L. Markkanen",
-      "status": "QUES",
-      "details": "L. Markkanen (Ques)"
-    },
-    {
       "name": "Ace Bailey",
       "status": "OUT",
       "details": "Ace Bailey (Out)"
     },
     {
+      "name": "K. George",
+      "status": "OUT",
+      "details": "K. George (Out)"
+    },
+    {
       "name": "Kevin Love",
       "status": "OUT",
       "details": "Kevin Love (Out)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "OUT",
+      "details": "L. Markkanen (Out)"
     },
     {
       "name": "G. Niang",
