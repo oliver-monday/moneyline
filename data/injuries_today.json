@@ -1,6 +1,6 @@
 {
   "asof_date": "2025-12-31",
-  "built_at_utc": "2025-12-31T23:21:56Z",
+  "built_at_utc": "2026-01-01T01:07:56Z",
   "source": "rotowire",
   "GSW": [
     {
@@ -323,11 +323,6 @@
   ],
   "DEN": [
     {
-      "name": "J. Strawther",
-      "status": "PROB",
-      "details": "J. Strawther (Prob)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -399,11 +394,6 @@
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "K. Murray",
-      "status": "QUES",
-      "details": "K. Murray (Ques)"
     },
     {
       "name": "J. Grant",

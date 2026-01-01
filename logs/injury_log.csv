@@ -851,6 +851,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2025-12-31,WAS,M. Branham,QUES,M. Branham (Ques),rotowire
 2025-12-31,NYK,S. Castle,QUES,S. Castle (Ques),rotowire
 2025-12-31,SAS,S. Castle,QUES,S. Castle (Ques),rotowire
+2025-12-31,DEN,J. Strawther,PROB,J. Strawther (Prob),rotowire
+2025-12-31,POR,K. Murray,QUES,K. Murray (Ques),rotowire
 2025-12-31,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
 2025-12-31,GSW,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2025-12-31,GSW,Fantasy Football,REST,Fantasy Football (Rest),rotowire
@@ -908,7 +910,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2025-12-31,NYK,L. Shamet,OUT,L. Shamet (Out),rotowire
 2025-12-31,NYK,D. Vassell,OUT,D. Vassell (Out),rotowire
 2025-12-31,SAS,D. Vassell,OUT,D. Vassell (Out),rotowire
-2025-12-31,DEN,J. Strawther,PROB,J. Strawther (Prob),rotowire
 2025-12-31,DEN,T. Bates,OUT,T. Bates (Out),rotowire
 2025-12-31,DEN,C. Braun,OUT,C. Braun (Out),rotowire
 2025-12-31,DEN,A. Gordon,OUT,A. Gordon (Out),rotowire
@@ -922,7 +923,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2025-12-31,WAS,T. Prince,OUT,T. Prince (Out),rotowire
 2025-12-31,MIL,T. Prince,OUT,T. Prince (Out),rotowire
 2025-12-31,POR,D. Lillard,OFS,D. Lillard (OFS),rotowire
-2025-12-31,POR,K. Murray,QUES,K. Murray (Ques),rotowire
 2025-12-31,POR,J. Grant,OUT,J. Grant (Out),rotowire
 2025-12-31,POR,S. Henderson,OUT,S. Henderson (Out),rotowire
 2025-12-31,POR,J. Holiday,OUT,J. Holiday (Out),rotowire
