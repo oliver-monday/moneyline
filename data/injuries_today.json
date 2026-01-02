@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-02",
-  "built_at_utc": "2026-01-02T20:20:56Z",
+  "built_at_utc": "2026-01-02T22:26:44Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -315,11 +315,6 @@
       "details": "B. Wesley (Out)"
     },
     {
-      "name": "T. Murphy",
-      "status": "QUES",
-      "details": "T. Murphy (Ques)"
-    },
-    {
       "name": "Saddiq Bey",
       "status": "OUT",
       "details": "Saddiq Bey (Out)"
@@ -328,6 +323,11 @@
       "name": "H. Jones",
       "status": "OUT",
       "details": "H. Jones (Out)"
+    },
+    {
+      "name": "T. Murphy",
+      "status": "OUT",
+      "details": "T. Murphy (Out)"
     },
     {
       "name": "D. Murray",
@@ -342,11 +342,6 @@
   ],
   "NOP": [
     {
-      "name": "T. Murphy",
-      "status": "QUES",
-      "details": "T. Murphy (Ques)"
-    },
-    {
       "name": "Saddiq Bey",
       "status": "OUT",
       "details": "Saddiq Bey (Out)"
@@ -355,6 +350,11 @@
       "name": "H. Jones",
       "status": "OUT",
       "details": "H. Jones (Out)"
+    },
+    {
+      "name": "T. Murphy",
+      "status": "OUT",
+      "details": "T. Murphy (Out)"
     },
     {
       "name": "D. Murray",
@@ -394,11 +394,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "L. Olbrich",
-      "status": "QUES",
-      "details": "L. Olbrich (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
@@ -417,6 +412,11 @@
       "name": "E. Miller",
       "status": "OUT",
       "details": "E. Miller (Out)"
+    },
+    {
+      "name": "L. Olbrich",
+      "status": "OUT",
+      "details": "L. Olbrich (Out)"
     },
     {
       "name": "Coby White",
@@ -431,11 +431,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "L. Olbrich",
-      "status": "QUES",
-      "details": "L. Olbrich (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
@@ -454,6 +449,11 @@
       "name": "E. Miller",
       "status": "OUT",
       "details": "E. Miller (Out)"
+    },
+    {
+      "name": "L. Olbrich",
+      "status": "OUT",
+      "details": "L. Olbrich (Out)"
     },
     {
       "name": "Coby White",
@@ -646,13 +646,13 @@
   "MEM": [
     {
       "name": "K. Caldwell-Pope",
-      "status": "QUES",
-      "details": "K. Caldwell-Pope (Ques)"
+      "status": "PROB",
+      "details": "K. Caldwell-Pope (Prob)"
     },
     {
       "name": "J. Wells",
-      "status": "QUES",
-      "details": "J. Wells (Ques)"
+      "status": "PROB",
+      "details": "J. Wells (Prob)"
     },
     {
       "name": "B. Clarke",
