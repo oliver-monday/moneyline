@@ -1,0 +1,35 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-01,2026,Cooper Flagg,DAL,PHI,ast,4,HIT,7,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Kevin Durant,HOU,BKN,reb,4,HIT,5,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Kevin Durant,HOU,BKN,3pt,2,HIT,2,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,James Harden,LAC,UTAH,3pt,3,MISSED,1,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Jabari Smith Jr.,HOU,BKN,pts,15,MISSED,14,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Jabari Smith Jr.,HOU,BKN,reb,6,HIT,6,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Jabari Smith Jr.,HOU,BKN,ast,2,MISSED,1,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Jabari Smith Jr.,HOU,BKN,3pt,2,HIT,2,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Keyonte George,UTAH,LAC,reb,4,,,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Keyonte George,UTAH,LAC,ast,6,,,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Jaylen Brown,BOS,SAC,pts,30,MISSED,29,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Jaylen Brown,BOS,SAC,ast,4,HIT,4,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Jaylen Brown,BOS,SAC,3pt,2,MISSED,1,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Keegan Murray,SAC,BOS,3pt,1,HIT,1,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Lauri Markkanen,UTAH,LAC,reb,6,,,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Derrick White,BOS,SAC,reb,4,HIT,5,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,VJ Edgecombe,PHI,DAL,3pt,2,HIT,3,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,DeMar DeRozan,SAC,BOS,reb,4,HIT,5,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Payton Pritchard,BOS,SAC,reb,4,MISSED,3,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Michael Porter Jr.,BKN,HOU,pts,25,,,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Michael Porter Jr.,BKN,HOU,3pt,4,,,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,P.J. Washington,DAL,PHI,3pt,1,HIT,1,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Norman Powell,MIA,DET,ast,2,HIT,2,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Tyler Herro,MIA,DET,reb,4,,,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Tyler Herro,MIA,DET,ast,2,,,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Zach LaVine,SAC,BOS,reb,2,,,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Andrew Wiggins,MIA,DET,ast,2,MISSED,1,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Andrew Wiggins,MIA,DET,3pt,2,MISSED,1,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Maxime Raynaud,SAC,BOS,pts,10,HIT,12,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Maxime Raynaud,SAC,BOS,reb,6,HIT,8,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Joel Embiid,PHI,DAL,reb,6,MISSED,4,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Anthony Davis,DAL,PHI,ast,2,HIT,2,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Reed Sheppard,HOU,BKN,reb,2,HIT,2,,targets_snapshot_2026-01-01.json
+2026-01-01,2026,Ace Bailey,UTAH,LAC,3pt,1,MISSED,,,targets_snapshot_2026-01-01.json

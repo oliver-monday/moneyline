@@ -496,8 +496,18 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810323,2025-12-31,2026-01-01T00:30Z,Toronto Raptors,TOR,103,-258.0,,Denver Nuggets,DEN,106,210.0,,Toronto,ON,,
 401810324,2025-12-31,2026-01-01T01:00Z,Milwaukee Bucks,MIL,113,-520.0,,Washington Wizards,WSH,114,390.0,,Milwaukee,WI,,
 401810325,2025-12-31,2026-01-01T01:00Z,Oklahoma City Thunder,OKC,124,-1100.0,,Portland Trail Blazers,POR,95,700.0,,Oklahoma City,OK,,
-401810326,2026-01-01,2026-01-01T23:00Z,Brooklyn Nets,BKN,0,380.0,,Houston Rockets,HOU,0,-500.0,,Brooklyn,NY,Egor Demin (Out); H. Highsmith (Out),F. VanVleet (Out)
-401810327,2026-01-01,2026-01-02T00:00Z,Detroit Pistons,DET,0,-205.0,,Miami Heat,MIA,0,170.0,,Detroit,MI,C. LeVert (Out),T. Herro (Out); P. Larsson (Out); T. Rozier (Out)
-401810328,2026-01-01,2026-01-02T01:30Z,Dallas Mavericks,DAL,0,114.0,,Philadelphia 76ers,PHI,0,-135.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); K. Irving (Out),K. Oubre (Out); T. Watford (Out)
-401810329,2026-01-01,2026-01-02T03:00Z,Sacramento Kings,SAC,0,320.0,,Boston Celtics,BOS,0,-410.0,,Sacramento,CA,Z. LaVine (Out); D. Sabonis (Out),J. Tatum (Out)
-401810330,2026-01-01,2026-01-02T03:30Z,LA Clippers,LAC,0,-675.0,,Utah Jazz,UTAH,0,490.0,,Inglewood,CA,B. Beal (OFS); B. Bogdanovic (Out); Chris Paul (Out); I. Zubac (Out),W. Kessler (OFS); Ace Bailey (Out); Kevin Love (Out); G. Niang (Out); J. Nurkic (Out)
+401810326,2026-01-01,2026-01-01T23:00Z,Brooklyn Nets,BKN,96,380.0,,Houston Rockets,HOU,120,-500.0,,Brooklyn,NY,,
+401810327,2026-01-01,2026-01-02T00:00Z,Detroit Pistons,DET,112,-205.0,,Miami Heat,MIA,118,170.0,,Detroit,MI,,
+401810328,2026-01-01,2026-01-02T01:30Z,Dallas Mavericks,DAL,108,114.0,,Philadelphia 76ers,PHI,123,-135.0,,Dallas,TX,,
+401810329,2026-01-01,2026-01-02T03:00Z,Sacramento Kings,SAC,106,320.0,,Boston Celtics,BOS,120,-410.0,,Sacramento,CA,,
+401810330,2026-01-01,2026-01-02T03:30Z,LA Clippers,LAC,118,-675.0,,Utah Jazz,UTAH,101,490.0,,Inglewood,CA,,
+401810331,2026-01-02,2026-01-03T00:00Z,Indiana Pacers,IND,0,190.0,,San Antonio Spurs,SA,0,-230.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); Obi Toppin (Out),D. Vassell (Out); V. Wembanyama (Out)
+401810332,2026-01-02,2026-01-03T00:00Z,Washington Wizards,WSH,0,-102.0,,Brooklyn Nets,BKN,0,-118.0,,Washington,DC,K. George (Out); C. Kispert (Out); C. Whitmore (Out),H. Highsmith (Out)
+401810333,2026-01-02,2026-01-03T00:30Z,Cleveland Cavaliers,CLE,0,-800.0,,Denver Nuggets,DEN,0,550.0,,Cleveland,OH,L. Nance (Out); Max Strus (Out),T. Bates (Out); C. Braun (Out); A. Gordon (Out); C. Johnson (Out); N. Jokic (Out); J. Valanciunas (Out)
+401810334,2026-01-02,2026-01-03T00:30Z,New York Knicks,NY,0,-310.0,,Atlanta Hawks,ATL,0,250.0,,New York,NY,Josh Hart (Out); L. Shamet (Out),N. Dante (OFS)
+401810335,2026-01-02,2026-01-03T01:00Z,Chicago Bulls,CHI,0,160.0,,Orlando Magic,ORL,0,-192.0,,Chicago,IL,N. Essengue (OFS); Z. Collins (Out); T. Flowers (Out); J. Giddey (Out); Coby White (Out),C. Castleton (Out); M. Wagner (Out); F. Wagner (Out)
+401810336,2026-01-02,2026-01-03T01:00Z,Milwaukee Bucks,MIL,0,-245.0,,Charlotte Hornets,CHA,0,200.0,,Milwaukee,WI,T. Prince (Out),R. Kalkbrenner (Out); M. Plumlee (Out); G. Williams (Out)
+401810337,2026-01-02,2026-01-03T01:00Z,New Orleans Pelicans,NO,0,-102.0,,Portland Trail Blazers,POR,0,-118.0,,New Orleans,LA,H. Jones (Out); D. Murray (Out),D. Lillard (OFS); J. Grant (Out); S. Henderson (Out); J. Holiday (Out); M. Thybulle (Out); B. Wesley (Out)
+401810338,2026-01-02,2026-01-03T02:00Z,Phoenix Suns,PHX,0,-650.0,,Sacramento Kings,SAC,0,470.0,,Phoenix,AZ,J. Green (Out),D. Sabonis (Out)
+401810339,2026-01-02,2026-01-03T03:00Z,Golden State Warriors,GS,0,300.0,,Oklahoma City Thunder,OKC,0,-380.0,,San Francisco,CA,Seth Curry (Out); D. Green (Out),T. Sorber (OFS); O. Dieng (Out); I. Hartenstein (Out); N. Topic (Out); J. Williams (Out)
+401810340,2026-01-02,2026-01-03T03:30Z,Los Angeles Lakers,LAL,0,-180.0,,Memphis Grizzlies,MEM,0,150.0,,Los Angeles,CA,R. Hachimura (Out); A. Reaves (Out); A. Thiero (Out); G. Vincent (Out),B. Clarke (Out); Zach Edey (Out); Ty Jerome (Out); J. Konchar (Out); S. Pippen (Out); V. Williams (Out)
