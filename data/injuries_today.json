@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-01",
-  "built_at_utc": "2026-01-02T01:02:20Z",
+  "built_at_utc": "2026-01-02T02:53:18Z",
   "source": "rotowire",
   "HOU": [
     {
@@ -98,6 +98,11 @@
       "details": "T. Rozier (Out)"
     },
     {
+      "name": "J. Duren",
+      "status": "QUES",
+      "details": "J. Duren (Ques)"
+    },
+    {
       "name": "T. Harris",
       "status": "OUT",
       "details": "T. Harris (Out)"
@@ -109,6 +114,11 @@
     }
   ],
   "DET": [
+    {
+      "name": "J. Duren",
+      "status": "QUES",
+      "details": "J. Duren (Ques)"
+    },
     {
       "name": "T. Harris",
       "status": "OUT",
