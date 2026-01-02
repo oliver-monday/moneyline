@@ -1,17 +1,17 @@
 {
   "asof_date": "2026-01-01",
-  "built_at_utc": "2026-01-02T02:53:18Z",
+  "built_at_utc": "2026-01-02T03:23:07Z",
   "source": "rotowire",
   "HOU": [
     {
       "name": "S. Adams",
-      "status": "OUT",
-      "details": "S. Adams (Out)"
+      "status": "QUES",
+      "details": "S. Adams (Ques)"
     },
     {
       "name": "C. Capela",
-      "status": "OUT",
-      "details": "C. Capela (Out)"
+      "status": "QUES",
+      "details": "C. Capela (Ques)"
     },
     {
       "name": "F. VanVleet",
@@ -39,58 +39,58 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "Egor Demin",
-      "status": "OUT",
-      "details": "Egor Demin (Out)"
+      "name": "E. Demin",
+      "status": "QUES",
+      "details": "E. Demin (Ques)"
+    },
+    {
+      "name": "T. Mann",
+      "status": "QUES",
+      "details": "T. Mann (Ques)"
+    },
+    {
+      "name": "M. Porter",
+      "status": "QUES",
+      "details": "M. Porter (Ques)"
     },
     {
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
-    },
-    {
-      "name": "T. Mann",
-      "status": "OUT",
-      "details": "T. Mann (Out)"
-    },
-    {
-      "name": "M. Porter",
-      "status": "OUT",
-      "details": "M. Porter (Out)"
     }
   ],
   "BKN": [
     {
-      "name": "Egor Demin",
-      "status": "OUT",
-      "details": "Egor Demin (Out)"
+      "name": "E. Demin",
+      "status": "QUES",
+      "details": "E. Demin (Ques)"
+    },
+    {
+      "name": "T. Mann",
+      "status": "QUES",
+      "details": "T. Mann (Ques)"
+    },
+    {
+      "name": "M. Porter",
+      "status": "QUES",
+      "details": "M. Porter (Ques)"
     },
     {
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
-    },
-    {
-      "name": "T. Mann",
-      "status": "OUT",
-      "details": "T. Mann (Out)"
-    },
-    {
-      "name": "M. Porter",
-      "status": "OUT",
-      "details": "M. Porter (Out)"
     }
   ],
   "MIA": [
     {
       "name": "T. Herro",
-      "status": "OUT",
-      "details": "T. Herro (Out)"
+      "status": "DOUBT",
+      "details": "T. Herro (Doubt)"
     },
     {
       "name": "P. Larsson",
-      "status": "OUT",
-      "details": "P. Larsson (Out)"
+      "status": "QUES",
+      "details": "P. Larsson (Ques)"
     },
     {
       "name": "T. Rozier",
@@ -104,13 +104,13 @@
     },
     {
       "name": "T. Harris",
-      "status": "OUT",
-      "details": "T. Harris (Out)"
+      "status": "QUES",
+      "details": "T. Harris (Ques)"
     },
     {
       "name": "C. LeVert",
-      "status": "OUT",
-      "details": "C. LeVert (Out)"
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
     }
   ],
   "DET": [
@@ -121,13 +121,13 @@
     },
     {
       "name": "T. Harris",
-      "status": "OUT",
-      "details": "T. Harris (Out)"
+      "status": "QUES",
+      "details": "T. Harris (Ques)"
     },
     {
       "name": "C. LeVert",
-      "status": "OUT",
-      "details": "C. LeVert (Out)"
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
     }
   ],
   "PHI": [
