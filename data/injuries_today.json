@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-02",
-  "built_at_utc": "2026-01-02T22:26:44Z",
+  "built_at_utc": "2026-01-02T23:21:56Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -39,11 +39,6 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "T. McConnell",
-      "status": "PROB",
-      "details": "T. McConnell (Prob)"
-    },
-    {
       "name": "I. Jackson",
       "status": "OUT",
       "details": "I. Jackson (Out)"
@@ -61,11 +56,6 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "T. McConnell",
-      "status": "PROB",
-      "details": "T. McConnell (Prob)"
-    },
-    {
       "name": "I. Jackson",
       "status": "OUT",
       "details": "I. Jackson (Out)"
@@ -77,11 +67,6 @@
     }
   ],
   "BKN": [
-    {
-      "name": "T. Mann",
-      "status": "PROB",
-      "details": "T. Mann (Prob)"
-    },
     {
       "name": "N. Claxton",
       "status": "OUT",
@@ -246,14 +231,14 @@
       "details": "K. Towns (Ques)"
     },
     {
-      "name": "M. Robinson",
-      "status": "QUES",
-      "details": "M. Robinson (Ques)"
-    },
-    {
       "name": "Josh Hart",
       "status": "OUT",
       "details": "Josh Hart (Out)"
+    },
+    {
+      "name": "M. Robinson",
+      "status": "OUT",
+      "details": "M. Robinson (Out)"
     },
     {
       "name": "L. Shamet",
@@ -263,11 +248,6 @@
   ],
   "NYK": [
     {
-      "name": "M. Robinson",
-      "status": "QUES",
-      "details": "M. Robinson (Ques)"
-    },
-    {
       "name": "K. Towns",
       "status": "QUES",
       "details": "K. Towns (Ques)"
@@ -276,6 +256,11 @@
       "name": "Josh Hart",
       "status": "OUT",
       "details": "Josh Hart (Out)"
+    },
+    {
+      "name": "M. Robinson",
+      "status": "OUT",
+      "details": "M. Robinson (Out)"
     },
     {
       "name": "L. Shamet",
