@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-01",
-  "built_at_utc": "2026-01-01T23:22:43Z",
+  "built_at_utc": "2026-01-02T01:02:20Z",
   "source": "rotowire",
   "HOU": [
     {
@@ -122,11 +122,6 @@
   ],
   "PHI": [
     {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
-    {
       "name": "K. Oubre",
       "status": "OUT",
       "details": "K. Oubre (Out)"
@@ -147,14 +142,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "D. Russell",
-      "status": "QUES",
-      "details": "D. Russell (Ques)"
-    },
-    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "D. Russell",
+      "status": "OUT",
+      "details": "D. Russell (Out)"
     }
   ],
   "DAL": [
@@ -169,14 +164,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "D. Russell",
-      "status": "QUES",
-      "details": "D. Russell (Ques)"
-    },
-    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "D. Russell",
+      "status": "OUT",
+      "details": "D. Russell (Out)"
     }
   ],
   "BOS": [
