@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-02",
-  "built_at_utc": "2026-01-03T06:00:39Z",
+  "built_at_utc": "2026-01-03T07:49:52Z",
   "coinflips": [],
   "favorites": [
     {
@@ -153,7 +153,7 @@
       "away_abbrev": "MEM",
       "away_ml": 170.0,
       "away_prob": 0.37037037037037035,
-      "away_score": 116,
+      "away_score": 121,
       "away_team": "Memphis Grizzlies",
       "dog_side": "AWAY",
       "fav_side": "HOME",
@@ -162,18 +162,18 @@
       "home_abbrev": "LAL",
       "home_ml": -205.0,
       "home_prob": 0.6721311475409836,
-      "home_score": 126,
+      "home_score": 128,
       "home_team": "Los Angeles Lakers",
       "is_coinflip": false,
       "loser_abbrev": "MEM",
       "loser_ml": 170.0,
-      "loser_score": 116,
+      "loser_score": 121,
       "loser_side": "AWAY",
       "loser_team": "Memphis Grizzlies",
       "underdog_prob": 0.37037037037037035,
       "winner_abbrev": "LAL",
       "winner_ml": -205.0,
-      "winner_score": 126,
+      "winner_score": 128,
       "winner_side": "HOME",
       "winner_team": "Los Angeles Lakers"
     },
