@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-02",
-  "built_at_utc": "2026-01-03T00:58:23Z",
+  "built_at_utc": "2026-01-03T02:44:38Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -526,19 +526,14 @@
       "details": "J. Williams (Out)"
     },
     {
-      "name": "A. Horford",
-      "status": "PROB",
-      "details": "A. Horford (Prob)"
-    },
-    {
       "name": "L. Cryer",
       "status": "QUES",
       "details": "L. Cryer (Ques)"
     },
     {
-      "name": "J. Kuminga",
-      "status": "QUES",
-      "details": "J. Kuminga (Ques)"
+      "name": "A. Horford",
+      "status": "PROB",
+      "details": "A. Horford (Prob)"
     },
     {
       "name": "J. Butler",
@@ -559,6 +554,11 @@
       "name": "D. Green",
       "status": "OUT",
       "details": "D. Green (Out)"
+    },
+    {
+      "name": "J. Kuminga",
+      "status": "OUT",
+      "details": "J. Kuminga (Out)"
     },
     {
       "name": "D. Melton",
@@ -578,11 +578,6 @@
       "details": "A. Horford (Prob)"
     },
     {
-      "name": "J. Kuminga",
-      "status": "QUES",
-      "details": "J. Kuminga (Ques)"
-    },
-    {
       "name": "J. Butler",
       "status": "OUT",
       "details": "J. Butler (Out)"
@@ -603,22 +598,17 @@
       "details": "D. Green (Out)"
     },
     {
+      "name": "J. Kuminga",
+      "status": "OUT",
+      "details": "J. Kuminga (Out)"
+    },
+    {
       "name": "D. Melton",
       "status": "OUT",
       "details": "D. Melton (Out)"
     }
   ],
   "MEM": [
-    {
-      "name": "K. Caldwell-Pope",
-      "status": "PROB",
-      "details": "K. Caldwell-Pope (Prob)"
-    },
-    {
-      "name": "J. Wells",
-      "status": "PROB",
-      "details": "J. Wells (Prob)"
-    },
     {
       "name": "B. Clarke",
       "status": "OUT",
@@ -650,11 +640,6 @@
       "details": "V. Williams (Out)"
     },
     {
-      "name": "J. Vanderbilt",
-      "status": "PROB",
-      "details": "J. Vanderbilt (Prob)"
-    },
-    {
       "name": "R. Hachimura",
       "status": "OUT",
       "details": "R. Hachimura (Out)"
@@ -676,11 +661,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "J. Vanderbilt",
-      "status": "PROB",
-      "details": "J. Vanderbilt (Prob)"
-    },
     {
       "name": "R. Hachimura",
       "status": "OUT",
