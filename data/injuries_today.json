@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-03",
-  "built_at_utc": "2026-01-03T19:19:43Z",
+  "built_at_utc": "2026-01-03T20:20:31Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -44,14 +44,14 @@
       "details": "N. Jovic (Prob)"
     },
     {
-      "name": "P. Larsson",
-      "status": "QUES",
-      "details": "P. Larsson (Ques)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
+    },
+    {
+      "name": "P. Larsson",
+      "status": "OUT",
+      "details": "P. Larsson (Out)"
     },
     {
       "name": "T. Rozier",
@@ -76,14 +76,14 @@
       "details": "N. Jovic (Prob)"
     },
     {
-      "name": "P. Larsson",
-      "status": "QUES",
-      "details": "P. Larsson (Ques)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
+    },
+    {
+      "name": "P. Larsson",
+      "status": "OUT",
+      "details": "P. Larsson (Out)"
     },
     {
       "name": "T. Rozier",
