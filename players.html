@@ -775,8 +775,10 @@
       cursor: pointer;
     }
     #slipClear { color: #c93c3c; }
-    .slip-item { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
+    .slip-item { display: flex; align-items: center; gap: 8px; margin: 6px 0; cursor: grab; }
     .slip-name { font-weight: 700; color: #333; }
+    .slip-divider { height: 1px; background: #714ea6; margin: 10px 0; opacity: 0.7; }
+    .slip-item.dragging { opacity: 0.55; }
     .slip-remove {
       margin-left: 2px;
       border: 0;
@@ -1173,11 +1175,12 @@
 
   <details class="slip-panel" id="slipDrawer">
     <summary>
-      <span class="slip-title">😈 Slip Stash 🔮 <span id="slipSummaryCount">(0/6)</span></span>
+      <span class="slip-title">😈 Slip Stash 🔮</span>
     </summary>
     <div class="slip-body">
       <div class="slip-actions">
-        <button type="button" id="slipCopy">Copy Slip</button>
+        <button type="button" id="slipCopyTop">Copy Top 5</button>
+        <button type="button" id="slipCopyAll">Copy All</button>
         <button type="button" id="slipClear">Clear</button>
       </div>
       <div id="slipList" class="slip-list"></div>
@@ -2076,7 +2079,7 @@ function nameKey(name) {
 }
 
 const SLIP_KEY = "nbagpt_slip_v01";
-const SLIP_MAX = 6;
+const SLIP_MAX = 25;
 let slipLegs = [];
 
 function normTeam(s) {
@@ -2129,21 +2132,21 @@ function updateSlipSelected() {
 }
 
 function renderSlip() {
-  const slipSummary = document.getElementById("slipSummaryCount");
   const slipList = document.getElementById("slipList");
-  if (slipSummary) slipSummary.textContent = `(${slipLegs.length}/${SLIP_MAX})`;
   if (!slipList) return;
   if (!slipLegs.length) {
     slipList.innerHTML = `<div class="muted">No legs yet.</div>`;
     updateSlipSelected();
     return;
   }
-  const rows = slipLegs.map((leg) => {
+  const rows = slipLegs.map((leg, idx) => {
     const stat = normStat(leg.stat);
     const thr = leg.threshold;
     const key = legKey(leg);
+    const divider = idx === 5 ? `<div class="slip-divider"></div>` : "";
     return `
-      <div class="slip-item">
+      ${divider}
+      <div class="slip-item" draggable="true" data-slip-key="${key}">
         <span class="slip-name">${leg.player_name} (${normTeam(leg.team_abbrev)})</span>
         <span class="target-chip">${stat} ${thr}+</span>
         <button class="slip-remove" data-slip-remove="${key}" aria-label="Remove">×</button>
@@ -4397,7 +4400,8 @@ async function load() {
   render();
 
   const slipDrawer = document.getElementById("slipDrawer");
-  const slipCopy = document.getElementById("slipCopy");
+  const slipCopyTop = document.getElementById("slipCopyTop");
+  const slipCopyAll = document.getElementById("slipCopyAll");
   const slipClear = document.getElementById("slipClear");
   const slipList = document.getElementById("slipList");
   loadSlip();
@@ -4426,30 +4430,73 @@ async function load() {
         renderSlip();
       }
     });
+    let dragKey = "";
+    slipList.addEventListener("dragstart", (e) => {
+      const item = e.target.closest(".slip-item");
+      if (!item) return;
+      dragKey = item.getAttribute("data-slip-key") || "";
+      item.classList.add("dragging");
+      e.dataTransfer.effectAllowed = "move";
+    });
+    slipList.addEventListener("dragend", (e) => {
+      const item = e.target.closest(".slip-item");
+      if (item) item.classList.remove("dragging");
+      dragKey = "";
+    });
+    slipList.addEventListener("dragover", (e) => {
+      const item = e.target.closest(".slip-item");
+      if (!item) return;
+      e.preventDefault();
+      e.dataTransfer.dropEffect = "move";
+    });
+    slipList.addEventListener("drop", (e) => {
+      const target = e.target.closest(".slip-item");
+      if (!target) return;
+      e.preventDefault();
+      const targetKey = target.getAttribute("data-slip-key") || "";
+      if (!dragKey || !targetKey || dragKey === targetKey) return;
+      const fromIdx = slipLegs.findIndex(l => legKey(l) === dragKey);
+      const toIdx = slipLegs.findIndex(l => legKey(l) === targetKey);
+      if (fromIdx < 0 || toIdx < 0) return;
+      const [moved] = slipLegs.splice(fromIdx, 1);
+      slipLegs.splice(toIdx, 0, moved);
+      saveSlip();
+      renderSlip();
+    });
   }
 
-  if (slipCopy) {
-    slipCopy.addEventListener("click", async () => {
-      if (!slipLegs.length) return;
-      const lines = slipLegs.map((leg) => {
-        return `${leg.player_name} (${normTeam(leg.team_abbrev)}) ${normStat(leg.stat)} ${leg.threshold}+`;
-      }).join("\n");
+  async function copySlipLines(legs) {
+    if (!legs.length) return;
+    const lines = legs.map((leg) => {
+      return `${leg.player_name} (${normTeam(leg.team_abbrev)}) ${normStat(leg.stat)} ${leg.threshold}+`;
+    }).join("\n");
+    try {
+      await navigator.clipboard.writeText(lines);
+    } catch (err) {
+      const ta = document.createElement("textarea");
+      ta.value = lines;
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.select();
       try {
-        await navigator.clipboard.writeText(lines);
-      } catch (err) {
-        const ta = document.createElement("textarea");
-        ta.value = lines;
-        ta.style.position = "fixed";
-        ta.style.left = "-9999px";
-        document.body.appendChild(ta);
-        ta.select();
-        try {
-          document.execCommand("copy");
-        } catch (err2) {
-          // ignore
-        }
-        document.body.removeChild(ta);
+        document.execCommand("copy");
+      } catch (err2) {
+        // ignore
       }
+      document.body.removeChild(ta);
+    }
+  }
+
+  if (slipCopyTop) {
+    slipCopyTop.addEventListener("click", () => {
+      copySlipLines(slipLegs.slice(0, 5));
+    });
+  }
+
+  if (slipCopyAll) {
+    slipCopyAll.addEventListener("click", () => {
+      copySlipLines(slipLegs);
     });
   }
 
