@@ -511,11 +511,11 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810338,2026-01-02,2026-01-03T02:00Z,Phoenix Suns,PHX,129,-750.0,,Sacramento Kings,SAC,102,525.0,,Phoenix,AZ,,
 401810339,2026-01-02,2026-01-03T03:00Z,Golden State Warriors,GS,94,500.0,,Oklahoma City Thunder,OKC,131,-700.0,,San Francisco,CA,,
 401810340,2026-01-02,2026-01-03T03:30Z,Los Angeles Lakers,LAL,128,-205.0,,Memphis Grizzlies,MEM,121,170.0,,Los Angeles,CA,,
-401810341,2026-01-03,2026-01-03T22:00Z,Miami Heat,MIA,0,114.0,,Minnesota Timberwolves,MIN,0,-135.0,,Miami,FL,T. Herro (Out); T. Rozier (Out),T. Shannon (Out)
-401810342,2026-01-03,2026-01-04T00:30Z,New York Knicks,NY,0,-162.0,,Philadelphia 76ers,PHI,0,136.0,,New York,NY,Josh Hart (Out),K. Oubre (Out); T. Watford (Out)
+401810341,2026-01-03,2026-01-03T22:00Z,Miami Heat,MIA,0,124.0,,Minnesota Timberwolves,MIN,0,-148.0,,Miami,FL,T. Herro (Out); T. Rozier (Out),T. Shannon (Out)
+401810342,2026-01-03,2026-01-04T00:30Z,New York Knicks,NY,0,-155.0,,Philadelphia 76ers,PHI,0,130.0,,New York,NY,Josh Hart (Out),K. Oubre (Out); T. Watford (Out)
 401810343,2026-01-03,2026-01-04T00:30Z,Toronto Raptors,TOR,0,-162.0,,Atlanta Hawks,ATL,0,136.0,,Toronto,ON,J. Poeltl (Out),N. Dante (OFS)
 401810344,2026-01-03,2026-01-04T01:00Z,Chicago Bulls,CHI,0,-125.0,,Charlotte Hornets,CHA,0,105.0,,Chicago,IL,N. Essengue (OFS); Z. Collins (Out); J. Giddey (Out); Coby White (Out),M. Plumlee (Out); G. Williams (Out)
-401810345,2026-01-03,2026-01-04T01:00Z,San Antonio Spurs,SA,0,-375.0,,Portland Trail Blazers,POR,0,295.0,,San Antonio,TX,D. Vassell (Out),D. Lillard (OFS); S. Henderson (Out); J. Holiday (Out); M. Thybulle (Out); B. Wesley (Out)
-401810346,2026-01-03,2026-01-04T01:30Z,Dallas Mavericks,DAL,0,260.0,,Houston Rockets,HOU,0,-325.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); K. Irving (Out),F. VanVleet (Out)
+401810345,2026-01-03,2026-01-04T01:00Z,San Antonio Spurs,SA,0,-360.0,,Portland Trail Blazers,POR,0,285.0,,San Antonio,TX,D. Vassell (Out),D. Lillard (OFS); S. Henderson (Out); J. Holiday (Out); M. Thybulle (Out); B. Wesley (Out)
+401810346,2026-01-03,2026-01-04T01:30Z,Dallas Mavericks,DAL,0,270.0,,Houston Rockets,HOU,0,-340.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); K. Irving (Out),F. VanVleet (Out)
 401810347,2026-01-03,2026-01-04T03:00Z,Golden State Warriors,GS,0,-625.0,,Utah Jazz,UTAH,0,455.0,,San Francisco,CA,Seth Curry (Out),W. Kessler (OFS); Ace Bailey (Out); G. Niang (Out)
-401810348,2026-01-03,2026-01-04T03:30Z,LA Clippers,LAC,0,-122.0,,Boston Celtics,BOS,0,102.0,,Inglewood,CA,B. Beal (OFS); B. Bogdanovic (Out); Chris Paul (Out),J. Tatum (Out)
+401810348,2026-01-03,2026-01-04T03:30Z,LA Clippers,LAC,0,-118.0,,Boston Celtics,BOS,0,-102.0,,Inglewood,CA,B. Beal (OFS); B. Bogdanovic (Out); Chris Paul (Out),J. Tatum (Out)
