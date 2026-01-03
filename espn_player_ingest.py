@@ -813,7 +813,7 @@ def main():
     parser.add_argument("--mode", choices=["backfill","backfill_team","date","yesterday"], default="backfill",
                         help="backfill: use nba_master to enumerate completed games; backfill_team: write team totals only; date: ingest a single date via scoreboard; yesterday: ingest yesterday's finals")
     parser.add_argument("--master", default="nba_master.csv", help="nba_master.csv path (used in backfill mode)")
-    parser.add_argument("--whitelist", default="player_whitelist.csv", help="Whitelist CSV path (names+teams)")
+    parser.add_argument("--whitelist", default="playerprops/player_whitelist.csv", help="Whitelist CSV path (names+teams)")
     parser.add_argument("--out", default="player_game_log.csv", help="Output player game log CSV path")
     parser.add_argument("--team-out", default="data/team_game_log.csv", help="Output team game log CSV path")
     parser.add_argument("--dim", default="player_dim.csv", help="Output player dim CSV path")
