@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-02",
-  "built_at_utc": "2026-01-02T23:21:56Z",
+  "built_at_utc": "2026-01-03T00:58:23Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -122,16 +122,6 @@
   ],
   "DEN": [
     {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "J. Strawther",
-      "status": "PROB",
-      "details": "J. Strawther (Prob)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -162,19 +152,9 @@
       "details": "J. Valanciunas (Out)"
     },
     {
-      "name": "D. Wade",
-      "status": "QUES",
-      "details": "D. Wade (Ques)"
-    },
-    {
-      "name": "D. Hunter",
-      "status": "PROB",
-      "details": "D. Hunter (Prob)"
-    },
-    {
       "name": "S. Merrill",
-      "status": "QUES",
-      "details": "S. Merrill (Ques)"
+      "status": "OUT",
+      "details": "S. Merrill (Out)"
     },
     {
       "name": "L. Nance",
@@ -185,23 +165,18 @@
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
+    },
+    {
+      "name": "Dean Wade",
+      "status": "OUT",
+      "details": "Dean Wade (Out)"
     }
   ],
   "CLE": [
     {
-      "name": "D. Hunter",
-      "status": "PROB",
-      "details": "D. Hunter (Prob)"
-    },
-    {
       "name": "S. Merrill",
-      "status": "QUES",
-      "details": "S. Merrill (Ques)"
-    },
-    {
-      "name": "D. Wade",
-      "status": "QUES",
-      "details": "D. Wade (Ques)"
+      "status": "OUT",
+      "details": "S. Merrill (Out)"
     },
     {
       "name": "L. Nance",
@@ -212,6 +187,11 @@
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
+    },
+    {
+      "name": "Dean Wade",
+      "status": "OUT",
+      "details": "Dean Wade (Out)"
     }
   ],
   "ATL": [
@@ -226,11 +206,6 @@
       "details": "Trae Young (Out)"
     },
     {
-      "name": "K. Towns",
-      "status": "QUES",
-      "details": "K. Towns (Ques)"
-    },
-    {
       "name": "Josh Hart",
       "status": "OUT",
       "details": "Josh Hart (Out)"
@@ -244,15 +219,15 @@
       "name": "L. Shamet",
       "status": "OUT",
       "details": "L. Shamet (Out)"
+    },
+    {
+      "name": "K. Towns",
+      "status": "OUT",
+      "details": "K. Towns (Out)"
     }
   ],
   "NYK": [
     {
-      "name": "K. Towns",
-      "status": "QUES",
-      "details": "K. Towns (Ques)"
-    },
-    {
       "name": "Josh Hart",
       "status": "OUT",
       "details": "Josh Hart (Out)"
@@ -266,6 +241,11 @@
       "name": "L. Shamet",
       "status": "OUT",
       "details": "L. Shamet (Out)"
+    },
+    {
+      "name": "K. Towns",
+      "status": "OUT",
+      "details": "K. Towns (Out)"
     }
   ],
   "POR": [
@@ -353,11 +333,6 @@
     }
   ],
   "ORL": [
-    {
-      "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
-    },
     {
       "name": "C. Castleton",
       "status": "OUT",
@@ -448,14 +423,9 @@
   ],
   "CHA": [
     {
-      "name": "M. Bridges",
-      "status": "PROB",
-      "details": "M. Bridges (Prob)"
-    },
-    {
       "name": "M. Diabate",
-      "status": "QUES",
-      "details": "M. Diabate (Ques)"
+      "status": "OUT",
+      "details": "M. Diabate (Out)"
     },
     {
       "name": "R. Kalkbrenner",
@@ -473,9 +443,9 @@
       "details": "G. Williams (Out)"
     },
     {
-      "name": "G. Antetokounmpo",
-      "status": "PROB",
-      "details": "G. Antetokounmpo (Prob)"
+      "name": "G. Harris",
+      "status": "OUT",
+      "details": "G. Harris (Out)"
     },
     {
       "name": "T. Prince",
@@ -485,9 +455,9 @@
   ],
   "MIL": [
     {
-      "name": "G. Antetokounmpo",
-      "status": "PROB",
-      "details": "G. Antetokounmpo (Prob)"
+      "name": "G. Harris",
+      "status": "OUT",
+      "details": "G. Harris (Out)"
     },
     {
       "name": "T. Prince",
@@ -508,8 +478,8 @@
     },
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "J. Green",
@@ -520,8 +490,8 @@
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "J. Green",
@@ -566,6 +536,11 @@
       "details": "L. Cryer (Ques)"
     },
     {
+      "name": "J. Kuminga",
+      "status": "QUES",
+      "details": "J. Kuminga (Ques)"
+    },
+    {
       "name": "J. Butler",
       "status": "OUT",
       "details": "J. Butler (Out)"
@@ -601,6 +576,11 @@
       "name": "A. Horford",
       "status": "PROB",
       "details": "A. Horford (Prob)"
+    },
+    {
+      "name": "J. Kuminga",
+      "status": "QUES",
+      "details": "J. Kuminga (Ques)"
     },
     {
       "name": "J. Butler",
