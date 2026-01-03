@@ -1,7 +1,7 @@
 {
-  "built_at_utc": "2026-01-03T05:00:16Z",
+  "built_at_utc": "2026-01-03T06:00:51Z",
   "date": "2026-01-01",
-  "git_sha": "f8d2fe070447ca1ee88ee0073dda12f0b8266a91",
+  "git_sha": "0f3203b37e2de22ce2e11e275c076bb895fb65b2",
   "props": {
     "all_targets": {
       "hit_rate": 0.64,
