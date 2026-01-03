@@ -2,9 +2,8 @@ name: Daily NBA Dashboard Refresh
 
 on:
   schedule:
-    - cron: "0 12 * * *"   # 7:00 AM ET (12:00 UTC)
-    - cron: "10 8 * * *"   # 12:10 AM PT (08:10 UTC)
     - cron: "15 8 * * *"   # 12:15 AM PT (08:15 UTC)
+    - cron: "0 14 * * *"   # 6:00 AM PT (14:00 UTC)
   workflow_dispatch:
   push:
     paths:
