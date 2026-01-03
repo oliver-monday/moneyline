@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-03",
-  "built_at_utc": "2026-01-03T21:01:36Z",
+  "built_at_utc": "2026-01-03T22:25:33Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -171,19 +171,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "T. Flowers",
-      "status": "QUES",
-      "details": "T. Flowers (Ques)"
-    },
-    {
-      "name": "L. Olbrich",
-      "status": "QUES",
-      "details": "L. Olbrich (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
+    },
+    {
+      "name": "T. Flowers",
+      "status": "OUT",
+      "details": "T. Flowers (Out)"
     },
     {
       "name": "J. Giddey",
@@ -203,19 +198,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "T. Flowers",
-      "status": "QUES",
-      "details": "T. Flowers (Ques)"
-    },
-    {
-      "name": "L. Olbrich",
-      "status": "QUES",
-      "details": "L. Olbrich (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
+    },
+    {
+      "name": "T. Flowers",
+      "status": "OUT",
+      "details": "T. Flowers (Out)"
     },
     {
       "name": "J. Giddey",
@@ -373,9 +363,9 @@
       "details": "L. Cryer (Ques)"
     },
     {
-      "name": "D. Melton",
+      "name": "W. Richard",
       "status": "PROB",
-      "details": "D. Melton (Prob)"
+      "details": "W. Richard (Prob)"
     },
     {
       "name": "J. Kuminga",
@@ -383,14 +373,14 @@
       "details": "J. Kuminga (Ques)"
     },
     {
-      "name": "A. Horford",
-      "status": "DOUBT",
-      "details": "A. Horford (Doubt)"
-    },
-    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "Al Horford",
+      "status": "OUT",
+      "details": "Al Horford (Out)"
     }
   ],
   "GSW": [
@@ -400,9 +390,9 @@
       "details": "L. Cryer (Ques)"
     },
     {
-      "name": "D. Melton",
+      "name": "W. Richard",
       "status": "PROB",
-      "details": "D. Melton (Prob)"
+      "details": "W. Richard (Prob)"
     },
     {
       "name": "J. Butler",
@@ -420,14 +410,14 @@
       "details": "J. Kuminga (Ques)"
     },
     {
-      "name": "A. Horford",
-      "status": "DOUBT",
-      "details": "A. Horford (Doubt)"
-    },
-    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "Al Horford",
+      "status": "OUT",
+      "details": "Al Horford (Out)"
     }
   ],
   "BOS": [
