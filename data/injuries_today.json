@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-03",
-  "built_at_utc": "2026-01-03T22:25:33Z",
+  "built_at_utc": "2026-01-03T23:21:39Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -29,6 +29,11 @@
       "details": "Fantasy Football (Rest)"
     },
     {
+      "name": "J. Jaquez",
+      "status": "QUES",
+      "details": "J. Jaquez (Ques)"
+    },
+    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
@@ -45,6 +50,11 @@
     }
   ],
   "MIA": [
+    {
+      "name": "J. Jaquez",
+      "status": "QUES",
+      "details": "J. Jaquez (Ques)"
+    },
     {
       "name": "T. Herro",
       "status": "OUT",
