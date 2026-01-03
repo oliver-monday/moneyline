@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-02",
-  "built_at_utc": "2026-01-03T02:44:38Z",
+  "built_at_utc": "2026-01-03T03:15:28Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -334,6 +334,11 @@
   ],
   "ORL": [
     {
+      "name": "J. Suggs",
+      "status": "QUES",
+      "details": "J. Suggs (Ques)"
+    },
+    {
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
@@ -531,11 +536,6 @@
       "details": "L. Cryer (Ques)"
     },
     {
-      "name": "A. Horford",
-      "status": "PROB",
-      "details": "A. Horford (Prob)"
-    },
-    {
       "name": "J. Butler",
       "status": "OUT",
       "details": "J. Butler (Out)"
@@ -571,11 +571,6 @@
       "name": "L. Cryer",
       "status": "QUES",
       "details": "L. Cryer (Ques)"
-    },
-    {
-      "name": "A. Horford",
-      "status": "PROB",
-      "details": "A. Horford (Prob)"
     },
     {
       "name": "J. Butler",

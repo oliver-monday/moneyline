@@ -1022,6 +1022,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-02,MEM,J. Wells,PROB,J. Wells (Prob),rotowire
 2026-01-02,MEM,J. Vanderbilt,PROB,J. Vanderbilt (Prob),rotowire
 2026-01-02,LAL,J. Vanderbilt,PROB,J. Vanderbilt (Prob),rotowire
+2026-01-02,OKC,A. Horford,PROB,A. Horford (Prob),rotowire
+2026-01-02,GSW,A. Horford,PROB,A. Horford (Prob),rotowire
 2026-01-02,SAS,D. Vassell,OUT,D. Vassell (Out),rotowire
 2026-01-02,SAS,V. Wembanyama,OUT,V. Wembanyama (Out),rotowire
 2026-01-02,SAS,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
@@ -1082,6 +1084,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-02,NOP,T. Murphy,OUT,T. Murphy (Out),rotowire
 2026-01-02,NOP,D. Murray,OUT,D. Murray (Out),rotowire
 2026-01-02,NOP,D. Queen,OUT,D. Queen (Out),rotowire
+2026-01-02,ORL,J. Suggs,QUES,J. Suggs (Ques),rotowire
 2026-01-02,ORL,C. Castleton,OUT,C. Castleton (Out),rotowire
 2026-01-02,ORL,M. Wagner,OUT,M. Wagner (Out),rotowire
 2026-01-02,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
@@ -1119,7 +1122,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-02,OKC,N. Topic,OUT,N. Topic (Out),rotowire
 2026-01-02,OKC,J. Williams,OUT,J. Williams (Out),rotowire
 2026-01-02,OKC,L. Cryer,QUES,L. Cryer (Ques),rotowire
-2026-01-02,OKC,A. Horford,PROB,A. Horford (Prob),rotowire
 2026-01-02,OKC,J. Butler,OUT,J. Butler (Out),rotowire
 2026-01-02,OKC,S. Curry,OUT,S. Curry (Out),rotowire
 2026-01-02,OKC,Seth Curry,OUT,Seth Curry (Out),rotowire
@@ -1127,7 +1129,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-02,OKC,J. Kuminga,OUT,J. Kuminga (Out),rotowire
 2026-01-02,OKC,D. Melton,OUT,D. Melton (Out),rotowire
 2026-01-02,GSW,L. Cryer,QUES,L. Cryer (Ques),rotowire
-2026-01-02,GSW,A. Horford,PROB,A. Horford (Prob),rotowire
 2026-01-02,GSW,J. Butler,OUT,J. Butler (Out),rotowire
 2026-01-02,GSW,S. Curry,OUT,S. Curry (Out),rotowire
 2026-01-02,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
