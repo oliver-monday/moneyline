@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-03",
-  "built_at_utc": "2026-01-03T18:26:03Z",
+  "built_at_utc": "2026-01-03T19:19:43Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -177,13 +177,13 @@
   "CHA": [
     {
       "name": "M. Diabate",
-      "status": "QUES",
-      "details": "M. Diabate (Ques)"
+      "status": "OUT",
+      "details": "M. Diabate (Out)"
     },
     {
       "name": "R. Kalkbrenner",
-      "status": "QUES",
-      "details": "R. Kalkbrenner (Ques)"
+      "status": "OUT",
+      "details": "R. Kalkbrenner (Out)"
     },
     {
       "name": "M. Plumlee",
@@ -320,8 +320,8 @@
   "HOU": [
     {
       "name": "S. Adams",
-      "status": "QUES",
-      "details": "S. Adams (Ques)"
+      "status": "OUT",
+      "details": "S. Adams (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -368,19 +368,9 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
       "name": "L. Markkanen",
-      "status": "QUES",
-      "details": "L. Markkanen (Ques)"
-    },
-    {
-      "name": "J. Nurkic",
-      "status": "QUES",
-      "details": "J. Nurkic (Ques)"
+      "status": "PROB",
+      "details": "L. Markkanen (Prob)"
     },
     {
       "name": "Ace Bailey",
@@ -391,6 +381,11 @@
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
+    },
+    {
+      "name": "J. Nurkic",
+      "status": "OUT",
+      "details": "J. Nurkic (Out)"
     },
     {
       "name": "S. Curry",

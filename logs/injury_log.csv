@@ -1154,6 +1154,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-03,PHI,M. Robinson,QUES,M. Robinson (Ques),rotowire
 2026-01-03,NYK,M. Robinson,QUES,M. Robinson (Ques),rotowire
 2026-01-03,ATL,T. Young,QUES,T. Young (Ques),rotowire
+2026-01-03,UTA,K. George,QUES,K. George (Ques),rotowire
 2026-01-03,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
 2026-01-03,MIN,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-01-03,MIN,Fantasy Football,REST,Fantasy Football (Rest),rotowire
@@ -1184,8 +1185,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-03,ATL,Trae Young,OUT,Trae Young (Out),rotowire
 2026-01-03,ATL,J. Poeltl,OUT,J. Poeltl (Out),rotowire
 2026-01-03,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
-2026-01-03,CHA,M. Diabate,QUES,M. Diabate (Ques),rotowire
-2026-01-03,CHA,R. Kalkbrenner,QUES,R. Kalkbrenner (Ques),rotowire
+2026-01-03,CHA,M. Diabate,OUT,M. Diabate (Out),rotowire
+2026-01-03,CHA,R. Kalkbrenner,OUT,R. Kalkbrenner (Out),rotowire
 2026-01-03,CHA,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-01-03,CHA,G. Williams,OUT,G. Williams (Out),rotowire
 2026-01-03,CHA,N. Essengue,OFS,N. Essengue (OFS),rotowire
@@ -1211,7 +1212,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-03,POR,V. Wembanyama,OUT,V. Wembanyama (Out),rotowire
 2026-01-03,SAS,D. Vassell,OUT,D. Vassell (Out),rotowire
 2026-01-03,SAS,V. Wembanyama,OUT,V. Wembanyama (Out),rotowire
-2026-01-03,HOU,S. Adams,QUES,S. Adams (Ques),rotowire
+2026-01-03,HOU,S. Adams,OUT,S. Adams (Out),rotowire
 2026-01-03,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
 2026-01-03,HOU,Dante Exum,OFS,Dante Exum (OFS),rotowire
 2026-01-03,HOU,D. Lively,OFS,D. Lively (OFS),rotowire
@@ -1220,11 +1221,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-03,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
 2026-01-03,DAL,K. Irving,OUT,K. Irving (Out),rotowire
 2026-01-03,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
-2026-01-03,UTA,K. George,QUES,K. George (Ques),rotowire
-2026-01-03,UTA,L. Markkanen,QUES,L. Markkanen (Ques),rotowire
-2026-01-03,UTA,J. Nurkic,QUES,J. Nurkic (Ques),rotowire
+2026-01-03,UTA,L. Markkanen,PROB,L. Markkanen (Prob),rotowire
 2026-01-03,UTA,Ace Bailey,OUT,Ace Bailey (Out),rotowire
 2026-01-03,UTA,G. Niang,OUT,G. Niang (Out),rotowire
+2026-01-03,UTA,J. Nurkic,OUT,J. Nurkic (Out),rotowire
 2026-01-03,UTA,S. Curry,QUES,S. Curry (Ques),rotowire
 2026-01-03,UTA,J. Butler,QUES,J. Butler (Ques),rotowire
 2026-01-03,UTA,L. Cryer,QUES,L. Cryer (Ques),rotowire
