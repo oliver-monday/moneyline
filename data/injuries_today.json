@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-03",
-  "built_at_utc": "2026-01-03T20:20:31Z",
+  "built_at_utc": "2026-01-03T21:01:36Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -29,21 +29,6 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "B. Adebayo",
-      "status": "PROB",
-      "details": "B. Adebayo (Prob)"
-    },
-    {
-      "name": "J. Jaquez",
-      "status": "PROB",
-      "details": "J. Jaquez (Prob)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "PROB",
-      "details": "N. Jovic (Prob)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
@@ -60,21 +45,6 @@
     }
   ],
   "MIA": [
-    {
-      "name": "B. Adebayo",
-      "status": "PROB",
-      "details": "B. Adebayo (Prob)"
-    },
-    {
-      "name": "J. Jaquez",
-      "status": "PROB",
-      "details": "J. Jaquez (Prob)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "PROB",
-      "details": "N. Jovic (Prob)"
-    },
     {
       "name": "T. Herro",
       "status": "OUT",
