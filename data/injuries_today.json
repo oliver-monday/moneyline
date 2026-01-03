@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-03",
-  "built_at_utc": "2026-01-03T14:41:25Z",
+  "built_at_utc": "2026-01-03T17:08:58Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -157,6 +157,11 @@
       "details": "N. Dante (OFS)"
     },
     {
+      "name": "K. Porzingis",
+      "status": "QUES",
+      "details": "K. Porzingis (Ques)"
+    },
+    {
       "name": "T. Young",
       "status": "QUES",
       "details": "T. Young (Ques)"
@@ -206,11 +211,6 @@
       "details": "T. Flowers (Ques)"
     },
     {
-      "name": "E. Miller",
-      "status": "QUES",
-      "details": "E. Miller (Ques)"
-    },
-    {
       "name": "L. Olbrich",
       "status": "QUES",
       "details": "L. Olbrich (Ques)"
@@ -243,11 +243,6 @@
       "details": "T. Flowers (Ques)"
     },
     {
-      "name": "E. Miller",
-      "status": "QUES",
-      "details": "E. Miller (Ques)"
-    },
-    {
       "name": "L. Olbrich",
       "status": "QUES",
       "details": "L. Olbrich (Ques)"
@@ -278,6 +273,11 @@
       "name": "J. Grant",
       "status": "QUES",
       "details": "J. Grant (Ques)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "QUES",
+      "details": "R. Williams (Ques)"
     },
     {
       "name": "S. Henderson",
@@ -413,14 +413,19 @@
       "details": "L. Cryer (Ques)"
     },
     {
+      "name": "D. Melton",
+      "status": "PROB",
+      "details": "D. Melton (Prob)"
+    },
+    {
       "name": "J. Kuminga",
       "status": "QUES",
       "details": "J. Kuminga (Ques)"
     },
     {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
+      "name": "A. Horford",
+      "status": "DOUBT",
+      "details": "A. Horford (Doubt)"
     },
     {
       "name": "Seth Curry",
@@ -433,6 +438,11 @@
       "name": "L. Cryer",
       "status": "QUES",
       "details": "L. Cryer (Ques)"
+    },
+    {
+      "name": "D. Melton",
+      "status": "PROB",
+      "details": "D. Melton (Prob)"
     },
     {
       "name": "J. Butler",
@@ -450,9 +460,9 @@
       "details": "J. Kuminga (Ques)"
     },
     {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
+      "name": "A. Horford",
+      "status": "DOUBT",
+      "details": "A. Horford (Doubt)"
     },
     {
       "name": "Seth Curry",
