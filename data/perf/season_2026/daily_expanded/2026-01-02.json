@@ -4,16 +4,16 @@
   "git_sha": "706d5311403afa7139ab674c8bf7494ea4b98c8b",
   "props": {
     "all_targets": {
-      "hit_rate": 0.6829268292682927,
-      "hits": 28,
-      "total": 41
+      "hit_rate": null,
+      "hits": 0,
+      "total": 0
     },
-    "closest_misses": 9,
-    "reaches_hit": 5,
+    "closest_misses": null,
+    "reaches_hit": null,
     "top_targets": {
-      "hit_rate": 0.6666666666666666,
-      "hits": 4,
-      "total": 6
+      "hit_rate": null,
+      "hits": 0,
+      "total": 0
     }
   },
   "season_end_year": 2026,
