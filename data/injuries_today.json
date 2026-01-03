@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-03",
-  "built_at_utc": "2026-01-03T17:08:58Z",
+  "built_at_utc": "2026-01-03T18:26:03Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -113,41 +113,31 @@
       "details": "K. Towns (Ques)"
     },
     {
-      "name": "M. Robinson",
-      "status": "QUES",
-      "details": "M. Robinson (Ques)"
-    },
-    {
-      "name": "L. Shamet",
-      "status": "DOUBT",
-      "details": "L. Shamet (Doubt)"
-    },
-    {
       "name": "Josh Hart",
       "status": "OUT",
       "details": "Josh Hart (Out)"
+    },
+    {
+      "name": "L. Shamet",
+      "status": "OUT",
+      "details": "L. Shamet (Out)"
     }
   ],
   "NYK": [
-    {
-      "name": "M. Robinson",
-      "status": "QUES",
-      "details": "M. Robinson (Ques)"
-    },
     {
       "name": "K. Towns",
       "status": "QUES",
       "details": "K. Towns (Ques)"
     },
     {
-      "name": "L. Shamet",
-      "status": "DOUBT",
-      "details": "L. Shamet (Doubt)"
-    },
-    {
       "name": "Josh Hart",
       "status": "OUT",
       "details": "Josh Hart (Out)"
+    },
+    {
+      "name": "L. Shamet",
+      "status": "OUT",
+      "details": "L. Shamet (Out)"
     }
   ],
   "ATL": [
@@ -157,14 +147,19 @@
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "K. Porzingis",
-      "status": "QUES",
-      "details": "K. Porzingis (Ques)"
+      "name": "L. Kennard",
+      "status": "OUT",
+      "details": "L. Kennard (Out)"
     },
     {
-      "name": "T. Young",
-      "status": "QUES",
-      "details": "T. Young (Ques)"
+      "name": "K. Porzingis",
+      "status": "OUT",
+      "details": "K. Porzingis (Out)"
+    },
+    {
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     },
     {
       "name": "J. Poeltl",
@@ -271,13 +266,8 @@
     },
     {
       "name": "J. Grant",
-      "status": "QUES",
-      "details": "J. Grant (Ques)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "status": "OUT",
+      "details": "J. Grant (Out)"
     },
     {
       "name": "S. Henderson",
@@ -300,26 +290,31 @@
       "details": "B. Wesley (Out)"
     },
     {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
+      "name": "R. Williams",
+      "status": "OUT",
+      "details": "R. Williams (Out)"
     },
     {
       "name": "D. Vassell",
       "status": "OUT",
       "details": "D. Vassell (Out)"
+    },
+    {
+      "name": "V. Wembanyama",
+      "status": "OUT",
+      "details": "V. Wembanyama (Out)"
     }
   ],
   "SAS": [
     {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
-    },
-    {
       "name": "D. Vassell",
       "status": "OUT",
       "details": "D. Vassell (Out)"
+    },
+    {
+      "name": "V. Wembanyama",
+      "status": "OUT",
+      "details": "V. Wembanyama (Out)"
     }
   ],
   "HOU": [
