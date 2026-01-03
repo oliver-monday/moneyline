@@ -284,17 +284,17 @@ def write_json_pretty(path: str, payload: Dict[str, Any]) -> None:
         json.dump(payload, f, indent=2)
 
 
-def collect_daily_files(season_dir: str) -> List[str]:
-    daily_dir = os.path.join(season_dir, "daily")
+def collect_daily_files(season_dir: str, daily_subdir: str = "daily") -> List[str]:
+    daily_dir = os.path.join(season_dir, daily_subdir)
     if not os.path.isdir(daily_dir):
         return []
     files = [os.path.join(daily_dir, f) for f in os.listdir(daily_dir) if f.endswith(".json")]
     return sorted(files)
 
 
-def summarize_season(season_end_year: int) -> Dict[str, Any]:
+def summarize_season(season_end_year: int, daily_subdir: str = "daily") -> Dict[str, Any]:
     season_dir = os.path.join("data", "perf", f"season_{season_end_year}")
-    daily_files = collect_daily_files(season_dir)
+    daily_files = collect_daily_files(season_dir, daily_subdir)
     totals_top_hits = totals_top_total = 0
     totals_all_hits = totals_all_total = 0
     dates = []
@@ -514,6 +514,21 @@ def main() -> None:
     write_json_if_changed(os.path.join("data", "perf", "summary_all_time.json"), all_time)
     index = build_index()
     write_json_if_changed(os.path.join("data", "perf", "index.json"), index)
+
+    expanded_post = load_json("data/targets_postmortem_expanded.json")
+    if expanded_post:
+        expanded_asof = parse_asof_date(expanded_post)
+        try:
+            expanded_date = dt.datetime.strptime(expanded_asof, "%Y-%m-%d").date()
+        except Exception:
+            expanded_date = asof_date
+            expanded_asof = expanded_date.isoformat()
+        expanded_season = int(expanded_post.get("season_end_year") or season_end_year_for_date(expanded_date))
+        expanded_payload = build_daily_payload(expanded_post, expanded_asof, expanded_season)
+        expanded_daily_path = os.path.join("data", "perf", f"season_{expanded_season}", "daily_expanded", f"{expanded_asof}.json")
+        write_json_if_changed(expanded_daily_path, expanded_payload)
+        expanded_summary = summarize_season(expanded_season, "daily_expanded")
+        write_json_if_changed(os.path.join("data", "perf", f"summary_season_{expanded_season}_expanded.json"), expanded_summary)
 
     print(f"[perf] date={asof} season={season_end_year} daily={daily_path}")
 

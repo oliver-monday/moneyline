@@ -48,6 +48,7 @@ import pandas as pd
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from zoneinfo import ZoneInfo
 
 USER_AGENT = "Mozilla/5.0 (compatible; moneyline/1.0; +https://oliver-monday.github.io/moneyline/)"
 SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard"
@@ -186,7 +187,9 @@ def infer_game_meta_from_summary(summary_json: Dict[str, Any]) -> Tuple[dt.date,
     date_iso = comp0.get("date") or header.get("gameDate") or ""
     try:
         game_dt = dt.datetime.fromisoformat(date_iso.replace("Z", "+00:00"))
-        game_date = game_dt.date()
+        if game_dt.tzinfo is None:
+            game_dt = game_dt.replace(tzinfo=dt.timezone.utc)
+        game_date = game_dt.astimezone(ZoneInfo("America/Los_Angeles")).date()
     except Exception:
         game_date = dt.date.today()
 

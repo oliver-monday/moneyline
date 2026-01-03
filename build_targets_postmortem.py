@@ -8,6 +8,7 @@ Outputs:
 
 from __future__ import annotations
 
+import argparse
 import datetime as dt
 import json
 import os
@@ -228,6 +229,34 @@ def learning_fields_from_row(row: Dict[str, str], stat: str, threshold: int, tea
     }
 
 
+def is_stable_minutes_v1(row: Dict[str, str]) -> bool:
+    avg = num(row.get("min_avg_10") or row.get("minutes_mean_10"))
+    rate24 = num(row.get("min_ge24_rate_10"))
+    iqr10 = num(row.get("minutes_iqr_10"))
+    dnp10 = num(row.get("dnp_rate_10"))
+    if not all(v is not None for v in (avg, rate24, iqr10, dnp10)):
+        return False
+    return (avg >= 30) and (rate24 >= 0.80) and (iqr10 <= 6) and (dnp10 <= 0.05)
+
+
+def consistency_tier_for_stat(row: Dict[str, str], stat: str) -> str:
+    stat_norm = str(stat or "").lower().strip()
+    if stat_norm == "3pt":
+        key = "consistency_tier_3pt_10"
+    else:
+        key = "consistency_tier_10"
+    raw = str(row.get(key, "")).strip()
+    return raw.upper()
+
+
+def is_consistency_allowed_top(entry: Dict[str, str], snapshot_map: Dict[str, Dict[str, object]]) -> bool:
+    pid = normalize_pid(entry.get("player_id", ""))
+    row = snapshot_map.get(pid, {}) if pid else {}
+    tier = consistency_tier_for_stat(row, entry.get("stat"))
+    allowed = {"CONSISTENT", "VERY CONSISTENT", "ELITE CONSISTENCY"}
+    return tier in allowed
+
+
 def normalize_name(s: str) -> str:
     return " ".join(
         str(s or "")
@@ -363,8 +392,18 @@ def determine_postmortem_date_from_game_log(path: str = "player_game_log.csv") -
     return sorted(set(dates))[-1]
 
 
-def newest_snapshot_date(logs_dir: Path) -> str | None:
-    pattern = re.compile(r"targets_snapshot_(\d{4}-\d{2}-\d{2})\.json$")
+def snapshot_filename(date_str: str, preset: str) -> str:
+    suffix = "" if preset == "baseline" else "_expanded"
+    return f"targets_snapshot{suffix}_{date_str}.json"
+
+
+def snapshot_pattern(preset: str) -> re.Pattern:
+    suffix = "" if preset == "baseline" else "_expanded"
+    return re.compile(rf"targets_snapshot{suffix}_(\d{{4}}-\d{{2}}-\d{{2}})\.json$")
+
+
+def newest_snapshot_date(logs_dir: Path, preset: str) -> str | None:
+    pattern = snapshot_pattern(preset)
     dates = []
     for path in logs_dir.glob("targets_snapshot_*.json"):
         m = pattern.match(path.name)
@@ -376,11 +415,11 @@ def newest_snapshot_date(logs_dir: Path) -> str | None:
     return sorted(dates)[-1]
 
 
-def newest_snapshot_path(logs_dir: Path) -> Path | None:
-    date = newest_snapshot_date(logs_dir)
+def newest_snapshot_path(logs_dir: Path, preset: str) -> Path | None:
+    date = newest_snapshot_date(logs_dir, preset)
     if not date:
         return None
-    return logs_dir / f"targets_snapshot_{date}.json"
+    return logs_dir / snapshot_filename(date, preset)
 
 
 def latest_final_date_from_master(master_path: str, local_today: dt.date) -> str | None:
@@ -411,8 +450,8 @@ def latest_final_date_from_master(master_path: str, local_today: dt.date) -> str
     return sorted(set(dates))[-1]
 
 
-def snapshot_date_at_or_before(logs_dir: Path, target_date: str) -> str | None:
-    pattern = re.compile(r"targets_snapshot_(\d{4}-\d{2}-\d{2})\.json$")
+def snapshot_date_at_or_before(logs_dir: Path, target_date: str, preset: str) -> str | None:
+    pattern = snapshot_pattern(preset)
     candidates = []
     for path in logs_dir.glob("targets_snapshot_*.json"):
         m = pattern.match(path.name)
@@ -739,16 +778,22 @@ def find_game_log_row(entry, indexes):
 
 
 def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--date", default=None, help="Slate date YYYY-MM-DD (PT). Default: today PT")
+    ap.add_argument("--preset", default="baseline", choices=["baseline", "expanded"], help="Preset: baseline or expanded")
+    args = ap.parse_args()
+
     master_path = "nba_master.csv"
     snapshot_path = "player_snapshot.csv"
     game_log_path = "player_game_log.csv"
     injuries_path = "data/injuries_today.json"
 
     local_today = dt.datetime.now(ZoneInfo("America/Los_Angeles")).date()
-    slate_date = determine_slate_date(master_path)
+    slate_date = args.date or determine_slate_date(master_path)
     if not slate_date:
         print("[targets] No slate date found; skipping.")
         return 0
+    preset = args.preset
 
     master = pd.read_csv(master_path, dtype=str)
     game_map = build_game_map(master, slate_date)
@@ -785,6 +830,8 @@ def main() -> int:
             team = str(row.get("last_team_abbrev", "")).strip().upper()
             if not team or team not in game_map:
                 continue
+            if preset == "baseline" and not is_stable_minutes_v1(row):
+                continue
             injury = match_injury(team, row.get("player_name", ""), injuries_by_team)
             status = (injury or {}).get("status", "")
             if is_out_status(status):
@@ -817,12 +864,12 @@ def main() -> int:
 
     logs_dir = Path("logs")
     logs_dir.mkdir(parents=True, exist_ok=True)
-    snapshot_file = logs_dir / f"targets_snapshot_{slate_date}.json"
+    snapshot_file = logs_dir / snapshot_filename(slate_date, preset)
     write_snapshot(snapshot_file, entries)
     cutoff = local_today - dt.timedelta(days=120)
     min_keep = local_today - dt.timedelta(days=30)
     for path in logs_dir.glob("targets_snapshot_*.json"):
-        m = re.match(r"targets_snapshot_(\d{4}-\d{2}-\d{2})\.json$", path.name)
+        m = snapshot_pattern(preset).match(path.name)
         if not m:
             continue
         try:
@@ -851,12 +898,12 @@ def main() -> int:
 
     snapshot_entries = []
     note = None
-    snapshot_path = logs_dir / f"targets_snapshot_{results_date}.json"
+    snapshot_path = logs_dir / snapshot_filename(results_date, preset)
     if not snapshot_path.exists():
         original_results_date = results_date
-        fallback_date = snapshot_date_at_or_before(logs_dir, results_date)
+        fallback_date = snapshot_date_at_or_before(logs_dir, results_date, preset)
         if fallback_date:
-            snapshot_path = logs_dir / f"targets_snapshot_{fallback_date}.json"
+            snapshot_path = logs_dir / snapshot_filename(fallback_date, preset)
             results_date = fallback_date
             note = f"Using snapshot from {fallback_date} for results_date {original_results_date}"
         else:
@@ -896,6 +943,8 @@ def main() -> int:
             gp = num(item.get("window_games")) or 0
             return (-rate, -gp)
         candidates = sorted(candidates, key=rank_key)
+        if preset == "baseline":
+            candidates = [c for c in candidates if is_consistency_allowed_top(c, snapshot_row_map)]
         top_targets = candidates[:6]
         learning_index = {}
         for item in snap_items:
@@ -984,6 +1033,7 @@ def main() -> int:
     postmortem = compute_postmortem(snapshot_entries, game_log_df, results_date, features_map, snapshot_row_map)
     postmortem["built_at_utc"] = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
     postmortem["snapshot_file"] = snapshot_path.name if snapshot_path else None
+    postmortem["preset"] = preset
     postmortem["top_targets"] = top_targets
     postmortem["summary"]["top_targets_total"] = summary_top_total
     postmortem["summary"]["top_targets_hits"] = summary_top_hits
@@ -991,15 +1041,16 @@ def main() -> int:
         postmortem["note"] = note
     data_dir = Path("data")
     data_dir.mkdir(parents=True, exist_ok=True)
-    with open(data_dir / "targets_postmortem.json", "w", encoding="utf-8") as f:
+    out_name = "targets_postmortem.json" if preset == "baseline" else "targets_postmortem_expanded.json"
+    with open(data_dir / out_name, "w", encoding="utf-8") as f:
         json.dump(postmortem, f, indent=2)
-    history_dir = data_dir / "history" / "targets_postmortem"
+    history_dir = data_dir / "history" / ("targets_postmortem" if preset == "baseline" else "targets_postmortem_expanded")
     history_dir.mkdir(parents=True, exist_ok=True)
     with open(history_dir / f"targets_postmortem_{results_date}.json", "w", encoding="utf-8") as f:
         json.dump(postmortem, f, indent=2)
 
     print(
-        f"[targets] local_today={local_today} slate_date={slate_date} results_date={results_date} "
+        f"[targets] preset={preset} local_today={local_today} slate_date={slate_date} results_date={results_date} "
         f"snapshot_used={postmortem.get('snapshot_file')} entries={len(entries)} "
         f"total={postmortem.get('summary', {}).get('targets_total')}"
     )

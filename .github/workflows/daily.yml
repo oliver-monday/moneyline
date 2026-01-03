@@ -131,7 +131,8 @@ jobs:
 
       - name: Build targets postmortem
         run: |
-          python build_targets_postmortem.py
+          python build_targets_postmortem.py --preset baseline
+          python build_targets_postmortem.py --preset expanded
 
       - name: Debug targets snapshots
         run: |
@@ -236,7 +237,8 @@ jobs:
 
       - name: Rebuild targets postmortem (sanity)
         run: |
-          python build_targets_postmortem.py
+          python build_targets_postmortem.py --preset baseline
+          python build_targets_postmortem.py --preset expanded
           echo "===== targets_postmortem.json (head) ====="
           python - <<'PY'
           import json

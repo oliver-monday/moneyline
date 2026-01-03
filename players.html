@@ -618,6 +618,14 @@
     .stable-title{ font-weight: 700; }
     .stable-text{ display:flex; flex-direction:column; align-items:flex-start; }
     .stable-hint{ color:#666; font-size: 12px; }
+    .stable-select{
+      margin-left: auto;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 4px 8px;
+      font-size: 12px;
+      background: #fff;
+    }
 
     /* Cards */
     #cards { margin-top: 12px; }
@@ -1256,11 +1264,23 @@
 
     <div class="stable-row">
       <label class="stable-label">
-        <input id="stableOnly" type="checkbox" />
-        <span class="stable-text">
+        <input id="stableOnly" type="checkbox" checked />
+          <span class="stable-text">
           <span class="stable-title">Stable minutes only</span>
-          <span class="stable-hint">(avg≥30, min≥24, 24+ ≥80%)</span>
+          <span class="stable-hint">(avg≥30, 24+≥80%, min IQR≤6, DNP≤5%)</span>
         </span>
+      </label>
+    </div>
+    <div class="stable-row">
+      <label class="stable-label">
+        <span class="stable-text">
+          <span class="stable-title">Mode</span>
+          <span class="stable-hint">Baseline vs Expanded</span>
+        </span>
+        <select id="targetMode" class="stable-select">
+          <option value="baseline" selected>Baseline</option>
+          <option value="expanded">Expanded</option>
+        </select>
       </label>
     </div>
     <div class="stable-row">
@@ -1664,6 +1684,16 @@ function consistencyPillHTML(score) {
   const label = consistencyTierLabel(rounded);
   const cls = consistencyTierClass(rounded);
   return `<span class="consistency-pill ${cls}">${label.toUpperCase()} ${rounded}</span>`;
+}
+
+function consistencyTierForStat(row, statKey) {
+  const key = statKey === "3pt" ? "consistency_tier_3pt_10" : "consistency_tier_10";
+  const val = featureStr(row, key);
+  return val ? String(val).trim().toUpperCase() : "";
+}
+
+function isConsistencyTopAllowed(tier) {
+  return tier === "CONSISTENT" || tier === "VERY CONSISTENT" || tier === "ELITE CONSISTENCY";
 }
 
 function fmtAvgCore3pt(avg, core, label, eligible, tierScore, trendMark) {
@@ -2343,15 +2373,14 @@ function hasRoleOpportunity(teamAbbrev, pid, statKey, row) {
 }
 
 function isStableMinutes(r, win) {
-  const avg = num(r[`min_avg_${win}`]);
-  const minv = num(r[`min_min_${win}`]);
-  const r24 = num(r[`min_ge24_rate_${win}`]);
-
-  if (!Number.isFinite(avg) || !Number.isFinite(minv) || !Number.isFinite(r24)) {
-    return win === "SEASON" ? false : true;
+  const avg = num(r["min_avg_10"]);
+  const r24 = num(r["min_ge24_rate_10"]);
+  const iqr = num(r["minutes_iqr_10"]);
+  const dnp = num(r["dnp_rate_10"]);
+  if (!Number.isFinite(avg) || !Number.isFinite(r24) || !Number.isFinite(iqr) || !Number.isFinite(dnp)) {
+    return false;
   }
-
-  return (avg >= 30) && (minv >= 24) && (r24 >= 0.8);
+  return (avg >= 30) && (r24 >= 0.8) && (iqr <= 6) && (dnp <= 0.05);
 }
 
 function pillClass(hits, gp) {
@@ -2807,6 +2836,7 @@ async function load() {
   const sortWrap = document.getElementById("sortWrap");
   const stableOnly = document.getElementById("stableOnly");
   const targetsOnly = document.getElementById("targetsOnly");
+  const targetMode = document.getElementById("targetMode");
   const minSelect = document.getElementById("minSelect");
   const minSelectBtn = document.getElementById("minSelectBtn");
   const minSelectMenu = document.getElementById("minSelectMenu");
@@ -2980,9 +3010,20 @@ async function load() {
     return;
   }
 
+  function syncStableMinutesToggle() {
+    if (!stableOnly) return;
+    if (!targetMode || targetMode.value !== "expanded") {
+      stableOnly.checked = true;
+      stableOnly.disabled = true;
+    } else {
+      stableOnly.disabled = false;
+    }
+  }
+
   function computeSuggestedFromCardData(cardDataList, targetsWin, metricWinVal) {
     try {
       const bonusForTier = tier => tier === "SOFT" ? 1 : (tier === "TOUGH" ? -1 : 0);
+      const mode = targetMode ? targetMode.value : "baseline";
           const splitZThresh = 0.35;
           const splitAdjWeight = 0.03;
           const minTrapGp = (metricWinVal === "season") ? 20 : (metricWinVal === "20" ? 12 : 8);
@@ -3001,6 +3042,7 @@ async function load() {
           const getFeature = (row, key) => featureNum(row, key);
           const targetItems = [];
           for (const data of cardDataList) {
+            if (mode === "baseline" && !isStableMinutes(data.row, "10")) continue;
             const targets = targetsMemo(data.row, targetsWin);
             if (!targets.length) continue;
             const inj = String(data.injuryStatus || "").toUpperCase();
@@ -3030,6 +3072,7 @@ async function load() {
           const coreSeason = getCoreVal(data.row, statKey, "season");
           const consWin = getConsistencyValStat(data.row, statKey, metricWinVal);
           const consSeason = getConsistencyValStat(data.row, statKey, "season");
+          const consTier = consistencyTierForStat(data.row, statKey);
           const threeptEligible = statKey === "3pt" ? getThreeptEligible(data.row, metricWinVal) : null;
           const splitUsableVal = splitUsable(data.row, metricWinVal, statKey);
           const splitZ = splitCoreZ(data.row, metricWinVal, statKey);
@@ -3294,6 +3337,8 @@ async function load() {
             stressTier,
             threeptEligible,
             threeptCons: consWin,
+            consistencyTier: consTier,
+            consistencyTopOk: consTier ? isConsistencyTopAllowed(consTier) : false,
           });
         }
       }
@@ -3308,9 +3353,12 @@ async function load() {
       });
 
       const suggested = [];
+      const topPool = mode === "baseline"
+        ? targetItems.filter(item => item.consistencyTopOk)
+        : targetItems;
       const seenPlayers = new Set();
       const gameCounts = new Map();
-      for (const item of targetItems) {
+      for (const item of topPool) {
         if (suggested.length >= 6) break;
         if (seenPlayers.has(item.playerKey)) continue;
         const count = gameCounts.get(item.gameKey) || 0;
@@ -4397,6 +4445,14 @@ async function load() {
   layout.addEventListener("change", render);
   stableOnly.addEventListener("change", render);
   targetsOnly.addEventListener("change", render);
+  if (targetMode) {
+    targetMode.addEventListener("change", () => {
+      syncStableMinutesToggle();
+      render();
+      loadPostmortemForMode();
+    });
+  }
+  syncStableMinutesToggle();
   render();
 
   const slipDrawer = document.getElementById("slipDrawer");
@@ -4522,22 +4578,43 @@ async function load() {
     updateBackToTop();
   }
 
-  fetchJson("./data/targets_postmortem.json")
-    .then((data) => {
-      try {
-        renderPostmortem(data);
-        loadSeasonPerformance(data);
-      } catch (e) {
-        console.error("renderPostmortem failed", e);
+  async function loadPostmortemForMode() {
+    const mode = targetMode ? targetMode.value : "baseline";
+    const baseUrl = "./data/targets_postmortem.json";
+    const expandedUrl = "./data/targets_postmortem_expanded.json";
+    try {
+      const data = mode === "expanded" ? await fetchJson(expandedUrl) : await fetchJson(baseUrl);
+      if (mode === "expanded" && (!data || !data.summary)) {
+        throw new Error("expanded missing");
       }
-    })
-    .catch((e) => {
-      console.warn("postmortem fetch failed", e);
-      const panel = document.getElementById("postmortemPanel");
-      if (panel) panel.hidden = true;
-      const perfPanel = document.getElementById("seasonPerf");
-      if (perfPanel) perfPanel.hidden = true;
-    });
+      renderPostmortem(data);
+      loadSeasonPerformance(data);
+    } catch (e) {
+      if (mode === "expanded") {
+        try {
+          const fallback = await fetchJson(baseUrl);
+          if (fallback && !fallback.note) {
+            fallback.note = "Expanded artifacts not available";
+          }
+          renderPostmortem(fallback);
+          loadSeasonPerformance(fallback);
+        } catch (err) {
+          const panel = document.getElementById("postmortemPanel");
+          if (panel) panel.hidden = true;
+          const perfPanel = document.getElementById("seasonPerf");
+          if (perfPanel) perfPanel.hidden = true;
+        }
+      } else {
+        console.warn("postmortem fetch failed", e);
+        const panel = document.getElementById("postmortemPanel");
+        if (panel) panel.hidden = true;
+        const perfPanel = document.getElementById("seasonPerf");
+        if (perfPanel) perfPanel.hidden = true;
+      }
+    }
+  }
+
+  loadPostmortemForMode();
 
   renderInjuryReport();
 

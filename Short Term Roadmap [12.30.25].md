@@ -2,7 +2,7 @@
 
 ## FEATURES:
  — Immediate ROI (strengthen Suggested Targets signal)["bundles" remaining...]
-	•	Opponent pace + implied totals environment (derive implied team totals from spread/ML/OU(over/under); bump PTS/AST/REB confidence) [parked until spreads/OU ingest/backfill work is done]
+	• Opponent pace + implied totals environment (derive implied team totals from spread/ML/OU(over/under); bump PTS/AST/REB confidence) [parked until spreads/OU ingest/backfill work is done]
 
  - Trajectory Engine v1 [Parked - med. priority]
 	• Basic Trend v0 overlay failed to produce much/any signal.
@@ -13,21 +13,25 @@
 	• Add sample-size gating styling (e.g., fade chips when total < 3), so you don’t overreact to T 0/1.
 	• Add a tiny “lift vs baseline” later (e.g., UP: +22pp vs All) once you’ve got a week+ of data.
 
- — Reach Mode (make “Reached” meaningful) [Parked - med. priority, until baseline selection engine = maximum robustness]
-	•	Reach Mode (med priority): pre-game flag “reach” candidates (meaningful “Reached” tag)
-	•	Next-tier increments spec:
-	•	PTS: +5
-	•	REB/AST: +2 and +4
-	•	3PT: +1 and +2
-
  — Minutes & game-script realism
-	•	Blowout sensitivity / minutes-stability 2.0 (discount/adjust confidence when big-fav blowouts clip minutes)
+	• Blowout sensitivity / minutes-stability 2.0 (discount/adjust confidence when big-fav blowouts clip minutes)
+
+ — Wire in actual odds
+	• this will replace/upgrade our proxy rubric that boosts stat tiers closer to/above players' avgs, given baseline assumption being that high conf tier too far below avg = miniscule odds/consistency priced in/not great R/R
+	• not out to disprove assumption, just build towards surfacing true edge where it may exist / we can find it.
+	• https://the-odds-api.com ?
 
  — Cross-cutting overlay
-	•	Model-free “market alignment” on props day-of (stability tags: big favorite + healthy rotation; clustering in high implied totals)
+	• Model-free “market alignment” on props day-of (stability tags: big favorite + healthy rotation; clustering in high implied totals)
 
  — Defensive matchup depth (optional complexity)
-	•	Defense-by-position lite (proxy-based; stepping stone before true positional tables)
+	• Defense-by-position lite (proxy-based; stepping stone before true positional tables)
+
+ — Reach Mode (make “Reached” meaningful) [Parked - med. priority, until baseline selection engine = maximum robustness/repeatable success/profitability]
+	• Next-tier increments spec:
+		•	PTS: +5
+		•	REB/AST: +2 and +4
+		•	3PT: +1 and +2
 
 ## HOUSEKEEPING:
 
