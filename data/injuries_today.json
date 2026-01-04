@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-04",
-  "built_at_utc": "2026-01-04T18:26:26Z",
+  "built_at_utc": "2026-01-04T19:19:48Z",
   "source": "rotowire",
   "DET": [
     {
@@ -408,22 +408,12 @@
       "details": "T. Prince (Out)"
     },
     {
-      "name": "Z. LaVine",
-      "status": "QUES",
-      "details": "Z. LaVine (Ques)"
-    },
-    {
       "name": "D. Sabonis",
       "status": "OUT",
       "details": "D. Sabonis (Out)"
     }
   ],
   "SAC": [
-    {
-      "name": "Z. LaVine",
-      "status": "QUES",
-      "details": "Z. LaVine (Ques)"
-    },
     {
       "name": "D. Sabonis",
       "status": "OUT",
