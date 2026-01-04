@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-03",
-  "built_at_utc": "2026-01-04T01:08:37Z",
+  "built_at_utc": "2026-01-04T03:03:33Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -166,6 +166,11 @@
       "details": "G. Williams (Out)"
     },
     {
+      "name": "J. Smith",
+      "status": "QUES",
+      "details": "J. Smith (Ques)"
+    },
+    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
@@ -196,6 +201,11 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "QUES",
+      "details": "J. Smith (Ques)"
     },
     {
       "name": "Z. Collins",
@@ -279,6 +289,11 @@
   ],
   "HOU": [
     {
+      "name": "A. Sengun",
+      "status": "QUES",
+      "details": "A. Sengun (Ques)"
+    },
+    {
       "name": "S. Adams",
       "status": "OUT",
       "details": "S. Adams (Out)"
@@ -287,6 +302,11 @@
       "name": "F. VanVleet",
       "status": "OUT",
       "details": "F. VanVleet (Out)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "QUES",
+      "details": "P. Washington (Ques)"
     },
     {
       "name": "Dante Exum",
@@ -316,6 +336,11 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "P. Washington",
+      "status": "QUES",
+      "details": "P. Washington (Ques)"
+    },
+    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
@@ -326,11 +351,6 @@
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "L. Markkanen",
-      "status": "PROB",
-      "details": "L. Markkanen (Prob)"
     },
     {
       "name": "Ace Bailey",
@@ -348,29 +368,9 @@
       "details": "J. Nurkic (Out)"
     },
     {
-      "name": "S. Curry",
-      "status": "QUES",
-      "details": "S. Curry (Ques)"
-    },
-    {
-      "name": "J. Butler",
-      "status": "QUES",
-      "details": "J. Butler (Ques)"
-    },
-    {
       "name": "L. Cryer",
       "status": "QUES",
       "details": "L. Cryer (Ques)"
-    },
-    {
-      "name": "W. Richard",
-      "status": "PROB",
-      "details": "W. Richard (Prob)"
-    },
-    {
-      "name": "J. Kuminga",
-      "status": "QUES",
-      "details": "J. Kuminga (Ques)"
     },
     {
       "name": "Seth Curry",
@@ -388,26 +388,6 @@
       "name": "L. Cryer",
       "status": "QUES",
       "details": "L. Cryer (Ques)"
-    },
-    {
-      "name": "W. Richard",
-      "status": "PROB",
-      "details": "W. Richard (Prob)"
-    },
-    {
-      "name": "J. Butler",
-      "status": "QUES",
-      "details": "J. Butler (Ques)"
-    },
-    {
-      "name": "S. Curry",
-      "status": "QUES",
-      "details": "S. Curry (Ques)"
-    },
-    {
-      "name": "J. Kuminga",
-      "status": "QUES",
-      "details": "J. Kuminga (Ques)"
     },
     {
       "name": "Seth Curry",
