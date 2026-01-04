@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-04",
-  "built_at_utc": "2026-01-04T17:09:22Z",
+  "built_at_utc": "2026-01-04T18:26:26Z",
   "source": "rotowire",
   "DET": [
     {
@@ -39,19 +39,9 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "D. Wade",
-      "status": "QUES",
-      "details": "D. Wade (Ques)"
-    },
-    {
       "name": "J. Allen",
-      "status": "QUES",
-      "details": "J. Allen (Ques)"
-    },
-    {
-      "name": "S. Merrill",
-      "status": "QUES",
-      "details": "S. Merrill (Ques)"
+      "status": "OUT",
+      "details": "J. Allen (Out)"
     },
     {
       "name": "L. Nance",
@@ -62,23 +52,18 @@
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
+    },
+    {
+      "name": "Dean Wade",
+      "status": "OUT",
+      "details": "Dean Wade (Out)"
     }
   ],
   "CLE": [
     {
       "name": "J. Allen",
-      "status": "QUES",
-      "details": "J. Allen (Ques)"
-    },
-    {
-      "name": "S. Merrill",
-      "status": "QUES",
-      "details": "S. Merrill (Ques)"
-    },
-    {
-      "name": "D. Wade",
-      "status": "QUES",
-      "details": "D. Wade (Ques)"
+      "status": "OUT",
+      "details": "J. Allen (Out)"
     },
     {
       "name": "L. Nance",
@@ -89,6 +74,11 @@
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
+    },
+    {
+      "name": "Dean Wade",
+      "status": "OUT",
+      "details": "Dean Wade (Out)"
     }
   ],
   "IND": [
@@ -192,11 +182,6 @@
       "details": "J. Valanciunas (Out)"
     },
     {
-      "name": "M. Porter",
-      "status": "PROB",
-      "details": "M. Porter (Prob)"
-    },
-    {
       "name": "N. Claxton",
       "status": "OUT",
       "details": "N. Claxton (Out)"
@@ -208,11 +193,6 @@
     }
   ],
   "BKN": [
-    {
-      "name": "M. Porter",
-      "status": "PROB",
-      "details": "M. Porter (Prob)"
-    },
     {
       "name": "N. Claxton",
       "status": "OUT",
@@ -251,19 +231,29 @@
       "details": "D. Murray (Out)"
     },
     {
-      "name": "J. Jaquez",
+      "name": "T. Herro",
       "status": "QUES",
-      "details": "J. Jaquez (Ques)"
+      "details": "T. Herro (Ques)"
+    },
+    {
+      "name": "B. Adebayo",
+      "status": "PROB",
+      "details": "B. Adebayo (Prob)"
     },
     {
       "name": "P. Larsson",
-      "status": "QUES",
-      "details": "P. Larsson (Ques)"
+      "status": "PROB",
+      "details": "P. Larsson (Prob)"
     },
     {
-      "name": "T. Herro",
+      "name": "N. Jovic",
+      "status": "QUES",
+      "details": "N. Jovic (Ques)"
+    },
+    {
+      "name": "J. Jaquez",
       "status": "DOUBT",
-      "details": "T. Herro (Doubt)"
+      "details": "J. Jaquez (Doubt)"
     },
     {
       "name": "T. Rozier",
@@ -273,19 +263,29 @@
   ],
   "MIA": [
     {
-      "name": "J. Jaquez",
-      "status": "QUES",
-      "details": "J. Jaquez (Ques)"
+      "name": "B. Adebayo",
+      "status": "PROB",
+      "details": "B. Adebayo (Prob)"
     },
     {
       "name": "P. Larsson",
-      "status": "QUES",
-      "details": "P. Larsson (Ques)"
+      "status": "PROB",
+      "details": "P. Larsson (Prob)"
     },
     {
       "name": "T. Herro",
+      "status": "QUES",
+      "details": "T. Herro (Ques)"
+    },
+    {
+      "name": "N. Jovic",
+      "status": "QUES",
+      "details": "N. Jovic (Ques)"
+    },
+    {
+      "name": "J. Jaquez",
       "status": "DOUBT",
-      "details": "T. Herro (Doubt)"
+      "details": "J. Jaquez (Doubt)"
     },
     {
       "name": "T. Rozier",
