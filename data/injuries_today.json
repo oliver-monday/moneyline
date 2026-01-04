@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-03",
-  "built_at_utc": "2026-01-03T23:21:39Z",
+  "built_at_utc": "2026-01-04T01:08:37Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -29,19 +29,19 @@
       "details": "Fantasy Football (Rest)"
     },
     {
+      "name": "T. Herro",
+      "status": "DOUBT",
+      "details": "T. Herro (Doubt)"
+    },
+    {
       "name": "J. Jaquez",
       "status": "QUES",
       "details": "J. Jaquez (Ques)"
     },
     {
-      "name": "T. Herro",
-      "status": "OUT",
-      "details": "T. Herro (Out)"
-    },
-    {
       "name": "P. Larsson",
-      "status": "OUT",
-      "details": "P. Larsson (Out)"
+      "status": "QUES",
+      "details": "P. Larsson (Ques)"
     },
     {
       "name": "T. Rozier",
@@ -51,19 +51,19 @@
   ],
   "MIA": [
     {
+      "name": "T. Herro",
+      "status": "DOUBT",
+      "details": "T. Herro (Doubt)"
+    },
+    {
       "name": "J. Jaquez",
       "status": "QUES",
       "details": "J. Jaquez (Ques)"
     },
     {
-      "name": "T. Herro",
-      "status": "OUT",
-      "details": "T. Herro (Out)"
-    },
-    {
       "name": "P. Larsson",
-      "status": "OUT",
-      "details": "P. Larsson (Out)"
+      "status": "QUES",
+      "details": "P. Larsson (Ques)"
     },
     {
       "name": "T. Rozier",
@@ -73,11 +73,6 @@
   ],
   "PHI": [
     {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
-    {
       "name": "K. Oubre",
       "status": "OUT",
       "details": "K. Oubre (Out)"
@@ -86,11 +81,6 @@
       "name": "T. Watford",
       "status": "OUT",
       "details": "T. Watford (Out)"
-    },
-    {
-      "name": "K. Towns",
-      "status": "QUES",
-      "details": "K. Towns (Ques)"
     },
     {
       "name": "Josh Hart",
@@ -104,11 +94,6 @@
     }
   ],
   "NYK": [
-    {
-      "name": "K. Towns",
-      "status": "QUES",
-      "details": "K. Towns (Ques)"
-    },
     {
       "name": "Josh Hart",
       "status": "OUT",
@@ -169,6 +154,11 @@
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
+    },
+    {
+      "name": "T. Salaun",
+      "status": "OUT",
+      "details": "T. Salaun (Out)"
     },
     {
       "name": "G. Williams",
