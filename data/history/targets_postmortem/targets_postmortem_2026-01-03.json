@@ -643,7 +643,7 @@
       "actual": 4
     }
   ],
-  "built_at_utc": "2026-01-04T08:48:17Z",
+  "built_at_utc": "2026-01-04T14:10:42Z",
   "snapshot_file": "targets_snapshot_2026-01-03.json",
   "preset": "baseline",
   "top_targets": [
@@ -724,6 +724,31 @@
     },
     {
       "asof_date": "2026-01-03",
+      "player_id": "5124612.0",
+      "player_name": "VJ Edgecombe",
+      "team_abbrev": "PHI",
+      "opp": "NY",
+      "game_id": "401810342",
+      "stat": "3pt",
+      "threshold": 2,
+      "hits": 9,
+      "window_games": 10,
+      "hit_rate": 0.9,
+      "is_home_game": false,
+      "rest_days": 0,
+      "is_b2b": true,
+      "share_trend_pp": 3.1345239727592675,
+      "share_trend_dir": "UP",
+      "iqr_10": 1.0,
+      "landmine_rate_10": null,
+      "trap_risk": null,
+      "dnp": false,
+      "actual": 4,
+      "hit": true,
+      "delta": -2
+    },
+    {
+      "asof_date": "2026-01-03",
       "player_id": "3078576.0",
       "player_name": "Derrick White",
       "team_abbrev": "BOS",
@@ -771,31 +796,6 @@
       "actual": 5,
       "hit": true,
       "delta": -1
-    },
-    {
-      "asof_date": "2026-01-03",
-      "player_id": "3032976.0",
-      "player_name": "Rudy Gobert",
-      "team_abbrev": "MIN",
-      "opp": "MIA",
-      "game_id": "401810341",
-      "stat": "reb",
-      "threshold": 10,
-      "hits": 9,
-      "window_games": 10,
-      "hit_rate": 0.9,
-      "is_home_game": false,
-      "rest_days": 2,
-      "is_b2b": false,
-      "share_trend_pp": -0.18134097018555617,
-      "share_trend_dir": "FLAT",
-      "iqr_10": 4.25,
-      "landmine_rate_10": 0.0,
-      "trap_risk": false,
-      "dnp": false,
-      "actual": 12,
-      "hit": true,
-      "delta": -2
     }
   ]
 }
