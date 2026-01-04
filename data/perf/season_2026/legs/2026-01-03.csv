@@ -1,0 +1,29 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-03,2026,Deni Avdija,POR,SA,ast,8,HIT,10,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Cooper Flagg,DAL,HOU,reb,6,HIT,7,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Cooper Flagg,DAL,HOU,ast,4,HIT,6,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Mikal Bridges,NY,PHI,ast,4,HIT,6,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Mikal Bridges,NY,PHI,3pt,2,HIT,2,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Jalen Johnson,ATL,TOR,ast,8,HIT,9,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Keyonte George,UTAH,GS,reb,4,MISSED,2,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Keyonte George,UTAH,GS,ast,6,HIT,9,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,VJ Edgecombe,PHI,NY,3pt,2,HIT,4,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Jabari Smith Jr.,HOU,DAL,pts,15,MISSED,7,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Jabari Smith Jr.,HOU,DAL,reb,6,HIT,9,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Jabari Smith Jr.,HOU,DAL,3pt,2,MISSED,1,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Derrick White,BOS,LAC,reb,4,HIT,4,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Lauri Markkanen,UTAH,GS,reb,6,HIT,6,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Toumani Camara,POR,SA,ast,2,MISSED,1,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Stephen Curry,GS,UTAH,ast,4,HIT,5,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Jimmy Butler III,GS,UTAH,ast,4,HIT,7,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Josh Hart,NY,PHI,pts,10,,,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Norman Powell,MIA,MIN,ast,2,MISSED,1,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Immanuel Quickley,TOR,ATL,reb,4,MISSED,2,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Donte DiVincenzo,MIN,MIA,reb,4,HIT,8,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Donte DiVincenzo,MIN,MIA,ast,4,HIT,4,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Donte DiVincenzo,MIN,MIA,3pt,3,MISSED,1,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Rudy Gobert,MIN,MIA,reb,10,HIT,12,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Shaedon Sharpe,POR,SA,pts,20,MISSED,6,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Shaedon Sharpe,POR,SA,reb,4,MISSED,3,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Nikola Vucevic,CHI,CHA,pts,15,HIT,28,,targets_snapshot_2026-01-03.json
+2026-01-03,2026,Devin Vassell,SA,POR,reb,4,,,,targets_snapshot_2026-01-03.json
