@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-04",
-  "built_at_utc": "2026-01-04T22:26:27Z",
+  "built_at_utc": "2026-01-04T23:22:10Z",
   "source": "rotowire",
   "DET": [
     {
@@ -305,8 +305,8 @@
     },
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "J. Green",
@@ -317,8 +317,8 @@
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "J. Green",
