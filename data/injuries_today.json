@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-04",
-  "built_at_utc": "2026-01-04T21:01:32Z",
+  "built_at_utc": "2026-01-04T22:26:27Z",
   "source": "rotowire",
   "DET": [
     {
@@ -191,16 +191,6 @@
   ],
   "NOP": [
     {
-      "name": "T. Murphy",
-      "status": "QUES",
-      "details": "T. Murphy (Ques)"
-    },
-    {
-      "name": "D. Queen",
-      "status": "QUES",
-      "details": "D. Queen (Ques)"
-    },
-    {
       "name": "Saddiq Bey",
       "status": "OUT",
       "details": "Saddiq Bey (Out)"
@@ -217,28 +207,13 @@
     },
     {
       "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
-    },
-    {
-      "name": "B. Adebayo",
-      "status": "PROB",
-      "details": "B. Adebayo (Prob)"
-    },
-    {
-      "name": "P. Larsson",
-      "status": "PROB",
-      "details": "P. Larsson (Prob)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "QUES",
-      "details": "N. Jovic (Ques)"
+      "status": "DOUBT",
+      "details": "T. Herro (Doubt)"
     },
     {
       "name": "J. Jaquez",
-      "status": "DOUBT",
-      "details": "J. Jaquez (Doubt)"
+      "status": "OUT",
+      "details": "J. Jaquez (Out)"
     },
     {
       "name": "T. Rozier",
@@ -248,29 +223,14 @@
   ],
   "MIA": [
     {
-      "name": "B. Adebayo",
-      "status": "PROB",
-      "details": "B. Adebayo (Prob)"
-    },
-    {
-      "name": "P. Larsson",
-      "status": "PROB",
-      "details": "P. Larsson (Prob)"
-    },
-    {
       "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "QUES",
-      "details": "N. Jovic (Ques)"
+      "status": "DOUBT",
+      "details": "T. Herro (Doubt)"
     },
     {
       "name": "J. Jaquez",
-      "status": "DOUBT",
-      "details": "J. Jaquez (Doubt)"
+      "status": "OUT",
+      "details": "J. Jaquez (Out)"
     },
     {
       "name": "T. Rozier",
