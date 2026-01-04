@@ -1264,6 +1264,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-04,BKN,M. Porter,PROB,M. Porter (Prob),rotowire
 2026-01-04,MIL,Z. LaVine,QUES,Z. LaVine (Ques),rotowire
 2026-01-04,SAC,Z. LaVine,QUES,Z. LaVine (Ques),rotowire
+2026-01-04,DEN,J. Murray,PROB,J. Murray (Prob),rotowire
+2026-01-04,DEN,C. Braun,QUES,C. Braun (Ques),rotowire
+2026-01-04,DEN,A. Gordon,QUES,A. Gordon (Ques),rotowire
+2026-01-04,MIN,T. Vukcevic,QUES,T. Vukcevic (Ques),rotowire
+2026-01-04,WAS,T. Vukcevic,QUES,T. Vukcevic (Ques),rotowire
 2026-01-04,DET,J. Duren,OUT,J. Duren (Out),rotowire
 2026-01-04,DET,T. Harris,OUT,T. Harris (Out),rotowire
 2026-01-04,DET,C. LeVert,OUT,C. LeVert (Out),rotowire
@@ -1289,9 +1294,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-04,ORL,J. Suggs,OUT,J. Suggs (Out),rotowire
 2026-01-04,ORL,M. Wagner,OUT,M. Wagner (Out),rotowire
 2026-01-04,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
-2026-01-04,DEN,J. Murray,PROB,J. Murray (Prob),rotowire
-2026-01-04,DEN,C. Braun,QUES,C. Braun (Ques),rotowire
-2026-01-04,DEN,A. Gordon,QUES,A. Gordon (Ques),rotowire
 2026-01-04,DEN,T. Bates,OUT,T. Bates (Out),rotowire
 2026-01-04,DEN,C. Johnson,OUT,C. Johnson (Out),rotowire
 2026-01-04,DEN,N. Jokic,OUT,N. Jokic (Out),rotowire
@@ -1318,10 +1320,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-04,MIA,J. Jaquez,DOUBT,J. Jaquez (Doubt),rotowire
 2026-01-04,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-01-04,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
-2026-01-04,MIN,T. Vukcevic,QUES,T. Vukcevic (Ques),rotowire
 2026-01-04,MIN,K. George,OUT,K. George (Out),rotowire
 2026-01-04,MIN,C. Whitmore,OUT,C. Whitmore (Out),rotowire
-2026-01-04,WAS,T. Vukcevic,QUES,T. Vukcevic (Ques),rotowire
 2026-01-04,WAS,K. George,OUT,K. George (Out),rotowire
 2026-01-04,WAS,C. Whitmore,OUT,C. Whitmore (Out),rotowire
 2026-01-04,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire

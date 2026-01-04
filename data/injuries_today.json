@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-04",
-  "built_at_utc": "2026-01-04T19:19:48Z",
+  "built_at_utc": "2026-01-04T20:21:20Z",
   "source": "rotowire",
   "DET": [
     {
@@ -147,21 +147,6 @@
   ],
   "DEN": [
     {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "C. Braun",
-      "status": "QUES",
-      "details": "C. Braun (Ques)"
-    },
-    {
-      "name": "A. Gordon",
-      "status": "QUES",
-      "details": "A. Gordon (Ques)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -300,11 +285,6 @@
       "details": "T. Shannon (Out)"
     },
     {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
-    },
-    {
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
@@ -316,11 +296,6 @@
     }
   ],
   "WAS": [
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
-    },
     {
       "name": "K. George",
       "status": "OUT",
