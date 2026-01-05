@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-05",
-  "built_at_utc": "2026-01-05T18:30:02Z",
+  "built_at_utc": "2026-01-05T19:24:35Z",
   "source": "rotowire",
   "NYK": [
     {
@@ -162,8 +162,18 @@
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
+      "status": "PROB",
+      "details": "G. Allen (Prob)"
+    },
+    {
+      "name": "M. Williams",
+      "status": "PROB",
+      "details": "M. Williams (Prob)"
+    },
+    {
+      "name": "J. Bouyea",
+      "status": "OUT",
+      "details": "J. Bouyea (Out)"
     },
     {
       "name": "J. Green",
@@ -206,13 +216,13 @@
   "CHA": [
     {
       "name": "M. Diabate",
-      "status": "QUES",
-      "details": "M. Diabate (Ques)"
+      "status": "PROB",
+      "details": "M. Diabate (Prob)"
     },
     {
       "name": "K. Knueppel",
-      "status": "QUES",
-      "details": "K. Knueppel (Ques)"
+      "status": "PROB",
+      "details": "K. Knueppel (Prob)"
     },
     {
       "name": "B. Miller",
@@ -221,8 +231,8 @@
     },
     {
       "name": "T. Salaun",
-      "status": "QUES",
-      "details": "T. Salaun (Ques)"
+      "status": "PROB",
+      "details": "T. Salaun (Prob)"
     },
     {
       "name": "R. Kalkbrenner",
@@ -240,19 +250,14 @@
       "details": "G. Williams (Out)"
     },
     {
-      "name": "I. Hartenstein",
-      "status": "QUES",
-      "details": "I. Hartenstein (Ques)"
-    },
-    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "J. Williams",
-      "status": "DOUBT",
-      "details": "J. Williams (Doubt)"
+      "name": "A. Caruso",
+      "status": "OUT",
+      "details": "A. Caruso (Out)"
     },
     {
       "name": "O. Dieng",
@@ -260,26 +265,31 @@
       "details": "O. Dieng (Out)"
     },
     {
+      "name": "I. Hartenstein",
+      "status": "OUT",
+      "details": "I. Hartenstein (Out)"
+    },
+    {
       "name": "N. Topic",
       "status": "OUT",
       "details": "N. Topic (Out)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ],
   "OKC": [
     {
-      "name": "I. Hartenstein",
-      "status": "QUES",
-      "details": "I. Hartenstein (Ques)"
-    },
-    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "J. Williams",
-      "status": "DOUBT",
-      "details": "J. Williams (Doubt)"
+      "name": "A. Caruso",
+      "status": "OUT",
+      "details": "A. Caruso (Out)"
     },
     {
       "name": "O. Dieng",
@@ -287,9 +297,19 @@
       "details": "O. Dieng (Out)"
     },
     {
+      "name": "I. Hartenstein",
+      "status": "OUT",
+      "details": "I. Hartenstein (Out)"
+    },
+    {
       "name": "N. Topic",
       "status": "OUT",
       "details": "N. Topic (Out)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ],
   "DEN": [
