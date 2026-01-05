@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-05",
-  "built_at_utc": "2026-01-05T17:14:22Z",
+  "built_at_utc": "2026-01-05T18:30:02Z",
   "source": "rotowire",
   "NYK": [
     {
@@ -34,6 +34,16 @@
       "details": "Fantasy Football (Rest)"
     },
     {
+      "name": "C. Cunningham",
+      "status": "PROB",
+      "details": "C. Cunningham (Prob)"
+    },
+    {
+      "name": "D. Robinson",
+      "status": "PROB",
+      "details": "D. Robinson (Prob)"
+    },
+    {
       "name": "C. LeVert",
       "status": "QUES",
       "details": "C. LeVert (Ques)"
@@ -50,6 +60,16 @@
     }
   ],
   "DET": [
+    {
+      "name": "C. Cunningham",
+      "status": "PROB",
+      "details": "C. Cunningham (Prob)"
+    },
+    {
+      "name": "D. Robinson",
+      "status": "PROB",
+      "details": "D. Robinson (Prob)"
+    },
     {
       "name": "C. LeVert",
       "status": "QUES",
@@ -185,11 +205,6 @@
   ],
   "CHA": [
     {
-      "name": "B. Miller",
-      "status": "PROB",
-      "details": "B. Miller (Prob)"
-    },
-    {
       "name": "M. Diabate",
       "status": "QUES",
       "details": "M. Diabate (Ques)"
@@ -198,6 +213,11 @@
       "name": "K. Knueppel",
       "status": "QUES",
       "details": "K. Knueppel (Ques)"
+    },
+    {
+      "name": "B. Miller",
+      "status": "PROB",
+      "details": "B. Miller (Prob)"
     },
     {
       "name": "T. Salaun",
@@ -247,14 +267,14 @@
   ],
   "OKC": [
     {
-      "name": "T. Sorber",
-      "status": "OFS",
-      "details": "T. Sorber (OFS)"
-    },
-    {
       "name": "I. Hartenstein",
       "status": "QUES",
       "details": "I. Hartenstein (Ques)"
+    },
+    {
+      "name": "T. Sorber",
+      "status": "OFS",
+      "details": "T. Sorber (OFS)"
     },
     {
       "name": "J. Williams",
@@ -279,6 +299,21 @@
       "details": "T. Bates (Out)"
     },
     {
+      "name": "C. Braun",
+      "status": "OUT",
+      "details": "C. Braun (Out)"
+    },
+    {
+      "name": "A. Gordon",
+      "status": "OUT",
+      "details": "A. Gordon (Out)"
+    },
+    {
+      "name": "T. Hardaway",
+      "status": "OUT",
+      "details": "T. Hardaway (Out)"
+    },
+    {
       "name": "C. Johnson",
       "status": "OUT",
       "details": "C. Johnson (Out)"
@@ -287,6 +322,11 @@
       "name": "N. Jokic",
       "status": "OUT",
       "details": "N. Jokic (Out)"
+    },
+    {
+      "name": "J. Murray",
+      "status": "OUT",
+      "details": "J. Murray (Out)"
     },
     {
       "name": "J. Valanciunas",
@@ -327,6 +367,11 @@
     }
   ],
   "GSW": [
+    {
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
+    },
     {
       "name": "Seth Curry",
       "status": "OUT",
