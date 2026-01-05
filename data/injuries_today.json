@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-05",
-  "built_at_utc": "2026-01-05T19:24:35Z",
+  "built_at_utc": "2026-01-05T20:23:53Z",
   "source": "rotowire",
   "NYK": [
     {
@@ -398,6 +398,11 @@
       "details": "Seth Curry (Out)"
     },
     {
+      "name": "J. Harden",
+      "status": "QUES",
+      "details": "J. Harden (Ques)"
+    },
+    {
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
@@ -428,6 +433,11 @@
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
+    },
+    {
+      "name": "J. Harden",
+      "status": "QUES",
+      "details": "J. Harden (Ques)"
     },
     {
       "name": "Y. Niederhauser",
@@ -462,11 +472,6 @@
       "details": "A. Bailey (Ques)"
     },
     {
-      "name": "J. Nurkic",
-      "status": "QUES",
-      "details": "J. Nurkic (Ques)"
-    },
-    {
       "name": "Kevin Love",
       "status": "OUT",
       "details": "Kevin Love (Out)"
@@ -483,8 +488,8 @@
     },
     {
       "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "status": "PROB",
+      "details": "R. Williams (Prob)"
     },
     {
       "name": "J. Grant",
@@ -520,8 +525,8 @@
     },
     {
       "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "status": "PROB",
+      "details": "R. Williams (Prob)"
     },
     {
       "name": "J. Grant",
