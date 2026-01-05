@@ -1,0 +1,15 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-04,2026,Desmond Bane,ORL,IND,reb,4,HIT,6,,targets_snapshot_2026-01-04.json
+2026-01-04,2026,Michael Porter Jr.,BKN,DEN,pts,25,HIT,27,,targets_snapshot_2026-01-04.json
+2026-01-04,2026,Michael Porter Jr.,BKN,DEN,3pt,4,MISSED,2,,targets_snapshot_2026-01-04.json
+2026-01-04,2026,LeBron James,LAL,MEM,3pt,1,HIT,2,,targets_snapshot_2026-01-04.json
+2026-01-04,2026,Santi Aldama,MEM,LAL,reb,6,HIT,10,,targets_snapshot_2026-01-04.json
+2026-01-04,2026,Santi Aldama,MEM,LAL,ast,2,HIT,7,,targets_snapshot_2026-01-04.json
+2026-01-04,2026,Andrew Nembhard,IND,ORL,reb,2,MISSED,1,,targets_snapshot_2026-01-04.json
+2026-01-04,2026,Donte DiVincenzo,MIN,WSH,reb,4,HIT,4,,targets_snapshot_2026-01-04.json
+2026-01-04,2026,Donte DiVincenzo,MIN,WSH,ast,4,MISSED,3,,targets_snapshot_2026-01-04.json
+2026-01-04,2026,Darius Garland,CLE,DET,pts,15,HIT,16,,targets_snapshot_2026-01-04.json
+2026-01-04,2026,Darius Garland,CLE,DET,ast,6,HIT,6,,targets_snapshot_2026-01-04.json
+2026-01-04,2026,Darius Garland,CLE,DET,3pt,2,MISSED,0,,targets_snapshot_2026-01-04.json
+2026-01-04,2026,Tim Hardaway Jr.,DEN,BKN,reb,2,HIT,2,,targets_snapshot_2026-01-04.json
+2026-01-04,2026,Jaylen Wells,MEM,LAL,pts,10,HIT,23,,targets_snapshot_2026-01-04.json
