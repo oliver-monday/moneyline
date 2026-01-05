@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-05",
-  "built_at_utc": "2026-01-05T21:09:27Z",
+  "built_at_utc": "2026-01-05T22:27:44Z",
   "source": "rotowire",
   "NYK": [
     {
@@ -45,8 +45,8 @@
     },
     {
       "name": "C. LeVert",
-      "status": "QUES",
-      "details": "C. LeVert (Ques)"
+      "status": "DOUBT",
+      "details": "C. LeVert (Doubt)"
     },
     {
       "name": "J. Duren",
@@ -72,8 +72,8 @@
     },
     {
       "name": "C. LeVert",
-      "status": "QUES",
-      "details": "C. LeVert (Ques)"
+      "status": "DOUBT",
+      "details": "C. LeVert (Doubt)"
     },
     {
       "name": "J. Duren",
