@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-05",
-  "built_at_utc": "2026-01-05T22:27:44Z",
+  "built_at_utc": "2026-01-05T23:22:51Z",
   "source": "rotowire",
   "NYK": [
     {
@@ -93,11 +93,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "C. White",
-      "status": "PROB",
-      "details": "C. White (Prob)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
@@ -137,11 +132,6 @@
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "L. Kennard",
-      "status": "QUES",
-      "details": "L. Kennard (Ques)"
-    },
-    {
       "name": "Trae Young",
       "status": "OUT",
       "details": "Trae Young (Out)"
@@ -161,11 +151,6 @@
   ],
   "PHX": [
     {
-      "name": "G. Allen",
-      "status": "PROB",
-      "details": "G. Allen (Prob)"
-    },
-    {
       "name": "M. Williams",
       "status": "PROB",
       "details": "M. Williams (Prob)"
@@ -181,11 +166,6 @@
       "details": "J. Green (Out)"
     },
     {
-      "name": "S. Adams",
-      "status": "QUES",
-      "details": "S. Adams (Ques)"
-    },
-    {
       "name": "A. Sengun",
       "status": "OUT",
       "details": "A. Sengun (Out)"
@@ -197,11 +177,6 @@
     }
   ],
   "HOU": [
-    {
-      "name": "S. Adams",
-      "status": "QUES",
-      "details": "S. Adams (Ques)"
-    },
     {
       "name": "A. Sengun",
       "status": "OUT",
@@ -445,14 +420,14 @@
       "details": "B. Beal (OFS)"
     },
     {
-      "name": "J. Harden",
-      "status": "QUES",
-      "details": "J. Harden (Ques)"
-    },
-    {
       "name": "Y. Niederhauser",
       "status": "QUES",
       "details": "Y. Niederhauser (Ques)"
+    },
+    {
+      "name": "J. Harden",
+      "status": "QUES",
+      "details": "J. Harden (Ques)"
     },
     {
       "name": "B. Bogdanovic",
