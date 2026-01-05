@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-04",
-  "built_at_utc": "2026-01-05T03:05:39Z",
+  "built_at_utc": "2026-01-05T03:46:43Z",
   "source": "rotowire",
   "DET": [
     {
@@ -269,9 +269,19 @@
   ],
   "OKC": [
     {
+      "name": "I. Hartenstein",
+      "status": "QUES",
+      "details": "I. Hartenstein (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "DOUBT",
+      "details": "J. Williams (Doubt)"
     },
     {
       "name": "O. Dieng",
@@ -279,24 +289,14 @@
       "details": "O. Dieng (Out)"
     },
     {
-      "name": "I. Hartenstein",
-      "status": "OUT",
-      "details": "I. Hartenstein (Out)"
-    },
-    {
       "name": "N. Topic",
       "status": "OUT",
       "details": "N. Topic (Out)"
     },
     {
-      "name": "J. Williams",
-      "status": "OUT",
-      "details": "J. Williams (Out)"
-    },
-    {
       "name": "G. Allen",
-      "status": "OUT",
-      "details": "G. Allen (Out)"
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
     },
     {
       "name": "J. Green",
@@ -307,8 +307,8 @@
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "OUT",
-      "details": "G. Allen (Out)"
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
     },
     {
       "name": "J. Green",
@@ -323,6 +323,11 @@
       "details": "T. Prince (Out)"
     },
     {
+      "name": "K. Murray",
+      "status": "QUES",
+      "details": "K. Murray (Ques)"
+    },
+    {
       "name": "D. Sabonis",
       "status": "OUT",
       "details": "D. Sabonis (Out)"
@@ -330,12 +335,22 @@
   ],
   "SAC": [
     {
+      "name": "K. Murray",
+      "status": "QUES",
+      "details": "K. Murray (Ques)"
+    },
+    {
       "name": "D. Sabonis",
       "status": "OUT",
       "details": "D. Sabonis (Out)"
     }
   ],
   "MEM": [
+    {
+      "name": "C. Coward",
+      "status": "QUES",
+      "details": "C. Coward (Ques)"
+    },
     {
       "name": "B. Clarke",
       "status": "OUT",
