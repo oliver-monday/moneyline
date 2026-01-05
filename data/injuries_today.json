@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-05",
-  "built_at_utc": "2026-01-05T14:50:12Z",
+  "built_at_utc": "2026-01-05T17:14:22Z",
   "source": "rotowire",
   "NYK": [
     {
@@ -74,8 +74,8 @@
     },
     {
       "name": "C. White",
-      "status": "QUES",
-      "details": "C. White (Ques)"
+      "status": "PROB",
+      "details": "C. White (Prob)"
     },
     {
       "name": "Z. Collins",
@@ -185,6 +185,11 @@
   ],
   "CHA": [
     {
+      "name": "B. Miller",
+      "status": "PROB",
+      "details": "B. Miller (Prob)"
+    },
+    {
       "name": "M. Diabate",
       "status": "QUES",
       "details": "M. Diabate (Ques)"
@@ -193,11 +198,6 @@
       "name": "K. Knueppel",
       "status": "QUES",
       "details": "K. Knueppel (Ques)"
-    },
-    {
-      "name": "B. Miller",
-      "status": "PROB",
-      "details": "B. Miller (Prob)"
     },
     {
       "name": "T. Salaun",

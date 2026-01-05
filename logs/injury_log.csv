@@ -1372,7 +1372,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-05,DET,J. Duren,OUT,J. Duren (Out),rotowire
 2026-01-05,DET,T. Harris,OUT,T. Harris (Out),rotowire
 2026-01-05,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
-2026-01-05,CHI,C. White,QUES,C. White (Ques),rotowire
+2026-01-05,CHI,C. White,PROB,C. White (Prob),rotowire
 2026-01-05,CHI,Z. Collins,OUT,Z. Collins (Out),rotowire
 2026-01-05,CHI,T. Flowers,OUT,T. Flowers (Out),rotowire
 2026-01-05,CHI,J. Giddey,OUT,J. Giddey (Out),rotowire
@@ -1392,9 +1392,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-05,HOU,S. Adams,QUES,S. Adams (Ques),rotowire
 2026-01-05,HOU,A. Sengun,OUT,A. Sengun (Out),rotowire
 2026-01-05,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
+2026-01-05,CHA,B. Miller,PROB,B. Miller (Prob),rotowire
 2026-01-05,CHA,M. Diabate,QUES,M. Diabate (Ques),rotowire
 2026-01-05,CHA,K. Knueppel,QUES,K. Knueppel (Ques),rotowire
-2026-01-05,CHA,B. Miller,PROB,B. Miller (Prob),rotowire
 2026-01-05,CHA,T. Salaun,QUES,T. Salaun (Ques),rotowire
 2026-01-05,CHA,R. Kalkbrenner,OUT,R. Kalkbrenner (Out),rotowire
 2026-01-05,CHA,M. Plumlee,OUT,M. Plumlee (Out),rotowire
