@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-05",
-  "built_at_utc": "2026-01-05T20:23:53Z",
+  "built_at_utc": "2026-01-05T21:09:27Z",
   "source": "rotowire",
   "NYK": [
     {
@@ -255,6 +255,11 @@
       "details": "T. Sorber (OFS)"
     },
     {
+      "name": "B. Barnhizer",
+      "status": "OUT",
+      "details": "B. Barnhizer (Out)"
+    },
+    {
       "name": "A. Caruso",
       "status": "OUT",
       "details": "A. Caruso (Out)"
@@ -285,6 +290,11 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "B. Barnhizer",
+      "status": "OUT",
+      "details": "B. Barnhizer (Out)"
     },
     {
       "name": "A. Caruso",
