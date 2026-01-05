@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-04",
-  "built_at_utc": "2026-01-04T23:22:10Z",
+  "built_at_utc": "2026-01-05T01:07:18Z",
   "source": "rotowire",
   "DET": [
     {
@@ -274,16 +274,6 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "I. Joe",
-      "status": "QUES",
-      "details": "I. Joe (Ques)"
-    },
-    {
-      "name": "C. Wallace",
-      "status": "QUES",
-      "details": "C. Wallace (Ques)"
-    },
-    {
       "name": "O. Dieng",
       "status": "OUT",
       "details": "O. Dieng (Out)"
@@ -327,16 +317,6 @@
     }
   ],
   "MIL": [
-    {
-      "name": "G. Antetokounmpo",
-      "status": "PROB",
-      "details": "G. Antetokounmpo (Prob)"
-    },
-    {
-      "name": "G. Harris",
-      "status": "QUES",
-      "details": "G. Harris (Ques)"
-    },
     {
       "name": "T. Prince",
       "status": "OUT",
