@@ -6,7 +6,7 @@
     "misses": 4,
     "hit_rate_pct": 71,
     "top_targets_total": 6,
-    "top_targets_hits": 5
+    "top_targets_hits": 6
   },
   "hits": [
     {
@@ -380,35 +380,10 @@
       "actual": 23
     }
   ],
-  "built_at_utc": "2026-01-05T08:54:59Z",
+  "built_at_utc": "2026-01-05T14:15:37Z",
   "snapshot_file": "targets_snapshot_2026-01-04.json",
   "preset": "baseline",
   "top_targets": [
-    {
-      "asof_date": "2026-01-04",
-      "player_id": "4278104.0",
-      "player_name": "Michael Porter Jr.",
-      "team_abbrev": "BKN",
-      "opp": "DEN",
-      "game_id": "401810351",
-      "stat": "3pt",
-      "threshold": 4,
-      "hits": 9,
-      "window_games": 10,
-      "hit_rate": 0.9,
-      "is_home_game": true,
-      "rest_days": 4,
-      "is_b2b": false,
-      "share_trend_pp": 5.627454588754905,
-      "share_trend_dir": "UP",
-      "iqr_10": 0.75,
-      "landmine_rate_10": null,
-      "trap_risk": null,
-      "dnp": false,
-      "actual": 2,
-      "hit": false,
-      "delta": 2
-    },
     {
       "asof_date": "2026-01-04",
       "player_id": "4593125.0",
@@ -533,6 +508,31 @@
       "actual": 27,
       "hit": true,
       "delta": -2
+    },
+    {
+      "asof_date": "2026-01-04",
+      "player_id": "4593125.0",
+      "player_name": "Santi Aldama",
+      "team_abbrev": "MEM",
+      "opp": "LAL",
+      "game_id": "401810356",
+      "stat": "reb",
+      "threshold": 6,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 2.9502599935306737,
+      "share_trend_dir": "UP",
+      "iqr_10": 3.0,
+      "landmine_rate_10": 0.1,
+      "trap_risk": false,
+      "dnp": false,
+      "actual": 10,
+      "hit": true,
+      "delta": -4
     }
   ]
 }

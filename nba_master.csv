@@ -527,8 +527,8 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810354,2026-01-04,2026-01-05T01:00Z,Phoenix Suns,PHX,108,310.0,,Oklahoma City Thunder,OKC,105,-395.0,,Phoenix,AZ,,
 401810355,2026-01-04,2026-01-05T02:00Z,Sacramento Kings,SAC,98,200.0,,Milwaukee Bucks,MIL,115,-245.0,,Sacramento,CA,,
 401810356,2026-01-04,2026-01-05T02:30Z,Los Angeles Lakers,LAL,120,-230.0,,Memphis Grizzlies,MEM,114,190.0,,Los Angeles,CA,,
-401810357,2026-01-05,2026-01-06T00:00Z,Detroit Pistons,DET,0,124.0,,New York Knicks,NY,0,-148.0,,Detroit,MI,J. Duren (Out); T. Harris (Out),Josh Hart (Out); L. Shamet (Out)
-401810358,2026-01-05,2026-01-06T00:30Z,Boston Celtics,BOS,0,-520.0,,Chicago Bulls,CHI,0,390.0,,Boston,MA,J. Tatum (Out),N. Essengue (OFS); Z. Collins (Out); T. Flowers (Out); J. Giddey (Out); J. Smith (Out)
+401810357,2026-01-05,2026-01-06T00:00Z,Detroit Pistons,DET,0,114.0,,New York Knicks,NY,0,-135.0,,Detroit,MI,J. Duren (Out); T. Harris (Out),Josh Hart (Out); L. Shamet (Out)
+401810358,2026-01-05,2026-01-06T00:30Z,Boston Celtics,BOS,0,-550.0,,Chicago Bulls,CHI,0,410.0,,Boston,MA,J. Tatum (Out),N. Essengue (OFS); Z. Collins (Out); T. Flowers (Out); J. Giddey (Out); J. Smith (Out)
 401810359,2026-01-05,2026-01-06T00:30Z,Toronto Raptors,TOR,0,-162.0,,Atlanta Hawks,ATL,0,136.0,,Toronto,ON,J. Poeltl (Out),N. Dante (OFS); Trae Young (Out)
 401810360,2026-01-05,2026-01-06T01:00Z,Houston Rockets,HOU,0,-325.0,,Phoenix Suns,PHX,0,260.0,,Houston,TX,A. Sengun (Out); F. VanVleet (Out),J. Green (Out)
 401810361,2026-01-05,2026-01-06T01:00Z,Oklahoma City Thunder,OKC,0,-1100.0,,Charlotte Hornets,CHA,0,700.0,,Oklahoma City,OK,T. Sorber (OFS); O. Dieng (Out); N. Topic (Out),R. Kalkbrenner (Out); M. Plumlee (Out); G. Williams (Out)
