@@ -1,8 +1,13 @@
 {
   "asof_date": "2026-01-04",
-  "built_at_utc": "2026-01-05T01:07:18Z",
+  "built_at_utc": "2026-01-05T03:05:39Z",
   "source": "rotowire",
   "DET": [
+    {
+      "name": "C. LeVert",
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
+    },
     {
       "name": "J. Duren",
       "status": "OUT",
@@ -12,11 +17,6 @@
       "name": "T. Harris",
       "status": "OUT",
       "details": "T. Harris (Out)"
-    },
-    {
-      "name": "C. LeVert",
-      "status": "OUT",
-      "details": "C. LeVert (Out)"
     },
     {
       "name": "Fantasy Home",
@@ -40,45 +40,45 @@
     },
     {
       "name": "J. Allen",
-      "status": "OUT",
-      "details": "J. Allen (Out)"
+      "status": "QUES",
+      "details": "J. Allen (Ques)"
     },
     {
       "name": "L. Nance",
-      "status": "OUT",
-      "details": "L. Nance (Out)"
+      "status": "DOUBT",
+      "details": "L. Nance (Doubt)"
+    },
+    {
+      "name": "D. Wade",
+      "status": "QUES",
+      "details": "D. Wade (Ques)"
     },
     {
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
-    },
-    {
-      "name": "Dean Wade",
-      "status": "OUT",
-      "details": "Dean Wade (Out)"
     }
   ],
   "CLE": [
     {
       "name": "J. Allen",
-      "status": "OUT",
-      "details": "J. Allen (Out)"
+      "status": "QUES",
+      "details": "J. Allen (Ques)"
     },
     {
       "name": "L. Nance",
-      "status": "OUT",
-      "details": "L. Nance (Out)"
+      "status": "DOUBT",
+      "details": "L. Nance (Doubt)"
+    },
+    {
+      "name": "D. Wade",
+      "status": "QUES",
+      "details": "D. Wade (Ques)"
     },
     {
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
-    },
-    {
-      "name": "Dean Wade",
-      "status": "OUT",
-      "details": "Dean Wade (Out)"
     }
   ],
   "IND": [
@@ -89,8 +89,8 @@
     },
     {
       "name": "I. Jackson",
-      "status": "OUT",
-      "details": "I. Jackson (Out)"
+      "status": "QUES",
+      "details": "I. Jackson (Ques)"
     },
     {
       "name": "B. Mathurin",
@@ -109,18 +109,18 @@
     },
     {
       "name": "J. Suggs",
-      "status": "OUT",
-      "details": "J. Suggs (Out)"
+      "status": "QUES",
+      "details": "J. Suggs (Ques)"
     },
     {
       "name": "M. Wagner",
-      "status": "OUT",
-      "details": "M. Wagner (Out)"
+      "status": "QUES",
+      "details": "M. Wagner (Ques)"
     },
     {
       "name": "F. Wagner",
-      "status": "OUT",
-      "details": "F. Wagner (Out)"
+      "status": "QUES",
+      "details": "F. Wagner (Ques)"
     }
   ],
   "ORL": [
@@ -131,18 +131,18 @@
     },
     {
       "name": "J. Suggs",
-      "status": "OUT",
-      "details": "J. Suggs (Out)"
+      "status": "QUES",
+      "details": "J. Suggs (Ques)"
     },
     {
       "name": "M. Wagner",
-      "status": "OUT",
-      "details": "M. Wagner (Out)"
+      "status": "QUES",
+      "details": "M. Wagner (Ques)"
     },
     {
       "name": "F. Wagner",
-      "status": "OUT",
-      "details": "F. Wagner (Out)"
+      "status": "QUES",
+      "details": "F. Wagner (Ques)"
     }
   ],
   "DEN": [
@@ -168,37 +168,37 @@
     },
     {
       "name": "N. Claxton",
-      "status": "OUT",
-      "details": "N. Claxton (Out)"
+      "status": "PROB",
+      "details": "N. Claxton (Prob)"
     },
     {
       "name": "H. Highsmith",
-      "status": "OUT",
-      "details": "H. Highsmith (Out)"
+      "status": "DOUBT",
+      "details": "H. Highsmith (Doubt)"
     }
   ],
   "BKN": [
     {
       "name": "N. Claxton",
-      "status": "OUT",
-      "details": "N. Claxton (Out)"
+      "status": "PROB",
+      "details": "N. Claxton (Prob)"
     },
     {
       "name": "H. Highsmith",
-      "status": "OUT",
-      "details": "H. Highsmith (Out)"
+      "status": "DOUBT",
+      "details": "H. Highsmith (Doubt)"
     }
   ],
   "NOP": [
     {
-      "name": "Saddiq Bey",
-      "status": "OUT",
-      "details": "Saddiq Bey (Out)"
+      "name": "S. Bey",
+      "status": "QUES",
+      "details": "S. Bey (Ques)"
     },
     {
       "name": "H. Jones",
-      "status": "OUT",
-      "details": "H. Jones (Out)"
+      "status": "QUES",
+      "details": "H. Jones (Ques)"
     },
     {
       "name": "D. Murray",
@@ -207,13 +207,13 @@
     },
     {
       "name": "T. Herro",
-      "status": "DOUBT",
-      "details": "T. Herro (Doubt)"
+      "status": "QUES",
+      "details": "T. Herro (Ques)"
     },
     {
       "name": "J. Jaquez",
-      "status": "OUT",
-      "details": "J. Jaquez (Out)"
+      "status": "QUES",
+      "details": "J. Jaquez (Ques)"
     },
     {
       "name": "T. Rozier",
@@ -224,13 +224,13 @@
   "MIA": [
     {
       "name": "T. Herro",
-      "status": "DOUBT",
-      "details": "T. Herro (Doubt)"
+      "status": "QUES",
+      "details": "T. Herro (Ques)"
     },
     {
       "name": "J. Jaquez",
-      "status": "OUT",
-      "details": "J. Jaquez (Out)"
+      "status": "QUES",
+      "details": "J. Jaquez (Ques)"
     },
     {
       "name": "T. Rozier",
@@ -246,8 +246,8 @@
     },
     {
       "name": "K. George",
-      "status": "OUT",
-      "details": "K. George (Out)"
+      "status": "QUES",
+      "details": "K. George (Ques)"
     },
     {
       "name": "C. Whitmore",
@@ -258,8 +258,8 @@
   "WAS": [
     {
       "name": "K. George",
-      "status": "OUT",
-      "details": "K. George (Out)"
+      "status": "QUES",
+      "details": "K. George (Ques)"
     },
     {
       "name": "C. Whitmore",
@@ -337,16 +337,6 @@
   ],
   "MEM": [
     {
-      "name": "S. Aldama",
-      "status": "QUES",
-      "details": "S. Aldama (Ques)"
-    },
-    {
-      "name": "J. Morant",
-      "status": "QUES",
-      "details": "J. Morant (Ques)"
-    },
-    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -365,6 +355,11 @@
       "name": "J. Konchar",
       "status": "OUT",
       "details": "J. Konchar (Out)"
+    },
+    {
+      "name": "Ja Morant",
+      "status": "OUT",
+      "details": "Ja Morant (Out)"
     },
     {
       "name": "S. Pippen",
