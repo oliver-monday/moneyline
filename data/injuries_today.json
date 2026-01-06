@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-06",
-  "built_at_utc": "2026-01-06T14:48:05Z",
+  "built_at_utc": "2026-01-06T17:15:09Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -94,8 +94,8 @@
   "ORL": [
     {
       "name": "J. Suggs",
-      "status": "DOUBT",
-      "details": "J. Suggs (Doubt)"
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
     },
     {
       "name": "M. Wagner",
@@ -197,23 +197,8 @@
   "MIA": [
     {
       "name": "J. Jaquez",
-      "status": "QUES",
-      "details": "J. Jaquez (Ques)"
-    },
-    {
-      "name": "K. Johnson",
-      "status": "PROB",
-      "details": "K. Johnson (Prob)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "PROB",
-      "details": "N. Jovic (Prob)"
-    },
-    {
-      "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
+      "status": "OUT",
+      "details": "J. Jaquez (Out)"
     },
     {
       "name": "T. Rozier",

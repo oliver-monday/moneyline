@@ -1468,6 +1468,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-05,POR,J. Holiday,OUT,J. Holiday (Out),rotowire
 2026-01-05,POR,M. Thybulle,OUT,M. Thybulle (Out),rotowire
 2026-01-05,POR,B. Wesley,OUT,B. Wesley (Out),rotowire
+2026-01-06,MIA,K. Johnson,PROB,K. Johnson (Prob),rotowire
+2026-01-06,MIA,N. Jovic,PROB,N. Jovic (Prob),rotowire
+2026-01-06,MIA,T. Herro,QUES,T. Herro (Ques),rotowire
 2026-01-06,CLE,J. Allen,QUES,J. Allen (Ques),rotowire
 2026-01-06,CLE,D. Wade,QUES,D. Wade (Ques),rotowire
 2026-01-06,CLE,D. Mitchell,OUT,D. Mitchell (Out),rotowire
@@ -1483,7 +1486,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-06,IND,I. Jackson,OUT,I. Jackson (Out),rotowire
 2026-01-06,IND,B. Mathurin,OUT,B. Mathurin (Out),rotowire
 2026-01-06,IND,Obi Toppin,OUT,Obi Toppin (Out),rotowire
-2026-01-06,ORL,J. Suggs,DOUBT,J. Suggs (Doubt),rotowire
+2026-01-06,ORL,J. Suggs,OUT,J. Suggs (Out),rotowire
 2026-01-06,ORL,M. Wagner,OUT,M. Wagner (Out),rotowire
 2026-01-06,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
 2026-01-06,ORL,K. George,OUT,K. George (Out),rotowire
@@ -1502,10 +1505,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-06,NOP,H. Jones,QUES,H. Jones (Ques),rotowire
 2026-01-06,NOP,Saddiq Bey,OUT,Saddiq Bey (Out),rotowire
 2026-01-06,NOP,D. Murray,OUT,D. Murray (Out),rotowire
-2026-01-06,MIA,J. Jaquez,QUES,J. Jaquez (Ques),rotowire
-2026-01-06,MIA,K. Johnson,PROB,K. Johnson (Prob),rotowire
-2026-01-06,MIA,N. Jovic,PROB,N. Jovic (Prob),rotowire
-2026-01-06,MIA,T. Herro,QUES,T. Herro (Ques),rotowire
+2026-01-06,MIA,J. Jaquez,OUT,J. Jaquez (Out),rotowire
 2026-01-06,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-01-06,MIA,T. Shannon,OUT,T. Shannon (Out),rotowire
 2026-01-06,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
