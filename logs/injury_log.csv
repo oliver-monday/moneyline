@@ -1471,8 +1471,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-06,MIA,K. Johnson,PROB,K. Johnson (Prob),rotowire
 2026-01-06,MIA,N. Jovic,PROB,N. Jovic (Prob),rotowire
 2026-01-06,MIA,T. Herro,QUES,T. Herro (Ques),rotowire
-2026-01-06,CLE,J. Allen,QUES,J. Allen (Ques),rotowire
+2026-01-06,CLE,J. Allen,PROB,J. Allen (Prob),rotowire
 2026-01-06,CLE,D. Wade,QUES,D. Wade (Ques),rotowire
+2026-01-06,CLE,J. Tyson,QUES,J. Tyson (Ques),rotowire
 2026-01-06,CLE,D. Mitchell,OUT,D. Mitchell (Out),rotowire
 2026-01-06,CLE,L. Nance,OUT,L. Nance (Out),rotowire
 2026-01-06,CLE,Max Strus,OUT,Max Strus (Out),rotowire
@@ -1507,7 +1508,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-06,NOP,D. Murray,OUT,D. Murray (Out),rotowire
 2026-01-06,MIA,J. Jaquez,OUT,J. Jaquez (Out),rotowire
 2026-01-06,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
+2026-01-06,MIA,A. Edwards,QUES,A. Edwards (Ques),rotowire
 2026-01-06,MIA,T. Shannon,OUT,T. Shannon (Out),rotowire
+2026-01-06,MIN,A. Edwards,QUES,A. Edwards (Ques),rotowire
 2026-01-06,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
 2026-01-06,SAS,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
 2026-01-06,SAS,D. Vassell,OUT,D. Vassell (Out),rotowire
