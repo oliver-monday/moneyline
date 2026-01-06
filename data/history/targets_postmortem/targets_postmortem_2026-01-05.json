@@ -557,7 +557,7 @@
       "actual": 2
     }
   ],
-  "built_at_utc": "2026-01-06T08:52:26Z",
+  "built_at_utc": "2026-01-06T14:14:08Z",
   "snapshot_file": "targets_snapshot_2026-01-05.json",
   "preset": "baseline",
   "top_targets": [
@@ -584,31 +584,6 @@
       "actual": null,
       "hit": false,
       "delta": null
-    },
-    {
-      "asof_date": "2026-01-05",
-      "player_id": "5124612.0",
-      "player_name": "VJ Edgecombe",
-      "team_abbrev": "PHI",
-      "opp": "DEN",
-      "game_id": "401810362",
-      "stat": "3pt",
-      "threshold": 2,
-      "hits": 9,
-      "window_games": 10,
-      "hit_rate": 0.9,
-      "is_home_game": true,
-      "rest_days": 1,
-      "is_b2b": false,
-      "share_trend_pp": 1.6639357374651524,
-      "share_trend_dir": "FLAT",
-      "iqr_10": 1.5,
-      "landmine_rate_10": null,
-      "trap_risk": null,
-      "dnp": false,
-      "actual": 5,
-      "hit": true,
-      "delta": -3
     },
     {
       "asof_date": "2026-01-05",
@@ -708,6 +683,31 @@
       "actual": 6,
       "hit": true,
       "delta": -2
+    },
+    {
+      "asof_date": "2026-01-05",
+      "player_id": "4683021.0",
+      "player_name": "Deni Avdija",
+      "team_abbrev": "POR",
+      "opp": "UTAH",
+      "game_id": "401810364",
+      "stat": "ast",
+      "threshold": 8,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 4.22532640467424,
+      "share_trend_dir": "UP",
+      "iqr_10": 2.5,
+      "landmine_rate_10": 0.1,
+      "trap_risk": false,
+      "dnp": false,
+      "actual": 9,
+      "hit": true,
+      "delta": -1
     }
   ]
 }

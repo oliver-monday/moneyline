@@ -535,9 +535,9 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810362,2026-01-05,2026-01-06T01:30Z,Philadelphia 76ers,PHI,124,-600.0,,Denver Nuggets,DEN,125,440.0,,Philadelphia,PA,,
 401810363,2026-01-05,2026-01-06T03:00Z,LA Clippers,LAC,103,-120.0,,Golden State Warriors,GS,102,100.0,,Inglewood,CA,,
 401810364,2026-01-05,2026-01-06T03:00Z,Portland Trail Blazers,POR,137,-238.0,,Utah Jazz,UTAH,117,195.0,,Portland,OR,,
-401810365,2026-01-06,2026-01-07T00:00Z,Indiana Pacers,IND,0,180.0,,Cleveland Cavaliers,CLE,0,-218.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); B. Mathurin (Out); Obi Toppin (Out),D. Mitchell (Out); L. Nance (Out); Max Strus (Out)
-401810366,2026-01-06,2026-01-07T00:00Z,Washington Wizards,WSH,0,225.0,,Orlando Magic,ORL,0,-278.0,,Washington,DC,K. George (Out); C. Kispert (Out); C. Whitmore (Out),M. Wagner (Out); F. Wagner (Out)
+401810365,2026-01-06,2026-01-07T00:00Z,Indiana Pacers,IND,0,170.0,,Cleveland Cavaliers,CLE,0,-205.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); B. Mathurin (Out); Obi Toppin (Out),D. Mitchell (Out); L. Nance (Out); Max Strus (Out)
+401810366,2026-01-06,2026-01-07T00:00Z,Washington Wizards,WSH,0,240.0,,Orlando Magic,ORL,0,-298.0,,Washington,DC,K. George (Out); C. Kispert (Out); C. Whitmore (Out),M. Wagner (Out); F. Wagner (Out)
 401810367,2026-01-06,2026-01-07T01:00Z,Memphis Grizzlies,MEM,0,190.0,,San Antonio Spurs,SA,0,-230.0,,Memphis,TN,B. Clarke (Out); C. Coward (Out); Zach Edey (Out); Ty Jerome (Out); J. Konchar (Out); S. Pippen (Out),D. Vassell (Out)
-401810368,2026-01-06,2026-01-07T01:00Z,Minnesota Timberwolves,MIN,0,-218.0,,Miami Heat,MIA,0,180.0,,Minneapolis,MN,T. Shannon (Out),T. Rozier (Out)
-401810369,2026-01-06,2026-01-07T01:00Z,New Orleans Pelicans,NO,0,185.0,,Los Angeles Lakers,LAL,0,-225.0,,New Orleans,LA,Saddiq Bey (Out); D. Murray (Out),R. Hachimura (Out); A. Reaves (Out); A. Thiero (Out)
+401810368,2026-01-06,2026-01-07T01:00Z,Minnesota Timberwolves,MIN,0,-230.0,,Miami Heat,MIA,0,190.0,,Minneapolis,MN,T. Shannon (Out),T. Rozier (Out)
+401810369,2026-01-06,2026-01-07T01:00Z,New Orleans Pelicans,NO,0,190.0,,Los Angeles Lakers,LAL,0,-230.0,,New Orleans,LA,Saddiq Bey (Out); D. Murray (Out),R. Hachimura (Out); A. Reaves (Out); A. Thiero (Out)
 401810370,2026-01-06,2026-01-07T04:00Z,Sacramento Kings,SAC,0,180.0,,Dallas Mavericks,DAL,0,-218.0,,Sacramento,CA,K. Murray (Out); D. Sabonis (Out),Dante Exum (OFS); D. Lively (OFS); K. Irving (Out)
