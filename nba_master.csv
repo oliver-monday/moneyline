@@ -527,11 +527,17 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810354,2026-01-04,2026-01-05T01:00Z,Phoenix Suns,PHX,108,310.0,,Oklahoma City Thunder,OKC,105,-395.0,,Phoenix,AZ,,
 401810355,2026-01-04,2026-01-05T02:00Z,Sacramento Kings,SAC,98,200.0,,Milwaukee Bucks,MIL,115,-245.0,,Sacramento,CA,,
 401810356,2026-01-04,2026-01-05T02:30Z,Los Angeles Lakers,LAL,120,-230.0,,Memphis Grizzlies,MEM,114,190.0,,Los Angeles,CA,,
-401810357,2026-01-05,2026-01-06T00:00Z,Detroit Pistons,DET,0,114.0,,New York Knicks,NY,0,-135.0,,Detroit,MI,J. Duren (Out); T. Harris (Out),Josh Hart (Out); L. Shamet (Out)
-401810358,2026-01-05,2026-01-06T00:30Z,Boston Celtics,BOS,0,-550.0,,Chicago Bulls,CHI,0,410.0,,Boston,MA,J. Tatum (Out),N. Essengue (OFS); Z. Collins (Out); T. Flowers (Out); J. Giddey (Out); J. Smith (Out)
-401810359,2026-01-05,2026-01-06T00:30Z,Toronto Raptors,TOR,0,-162.0,,Atlanta Hawks,ATL,0,136.0,,Toronto,ON,J. Poeltl (Out),N. Dante (OFS); Trae Young (Out)
-401810360,2026-01-05,2026-01-06T01:00Z,Houston Rockets,HOU,0,-325.0,,Phoenix Suns,PHX,0,260.0,,Houston,TX,A. Sengun (Out); F. VanVleet (Out),J. Green (Out)
-401810361,2026-01-05,2026-01-06T01:00Z,Oklahoma City Thunder,OKC,0,-1100.0,,Charlotte Hornets,CHA,0,700.0,,Oklahoma City,OK,T. Sorber (OFS); O. Dieng (Out); N. Topic (Out),R. Kalkbrenner (Out); M. Plumlee (Out); G. Williams (Out)
-401810362,2026-01-05,2026-01-06T01:30Z,Philadelphia 76ers,PHI,0,-600.0,,Denver Nuggets,DEN,0,440.0,,Philadelphia,PA,K. Oubre (Out); T. Watford (Out),T. Bates (Out); C. Johnson (Out); N. Jokic (Out); J. Valanciunas (Out)
-401810363,2026-01-05,2026-01-06T03:00Z,LA Clippers,LAC,0,-120.0,,Golden State Warriors,GS,0,100.0,,Inglewood,CA,B. Beal (OFS); B. Bogdanovic (Out); D. Jones (Out); Chris Paul (Out),Seth Curry (Out)
-401810364,2026-01-05,2026-01-06T03:00Z,Portland Trail Blazers,POR,0,-238.0,,Utah Jazz,UTAH,0,195.0,,Portland,OR,D. Lillard (OFS); J. Grant (Out); S. Henderson (Out); J. Holiday (Out); M. Thybulle (Out); B. Wesley (Out),W. Kessler (OFS); Kevin Love (Out); G. Niang (Out)
+401810357,2026-01-05,2026-01-06T00:00Z,Detroit Pistons,DET,121,114.0,,New York Knicks,NY,90,-135.0,,Detroit,MI,,
+401810358,2026-01-05,2026-01-06T00:30Z,Boston Celtics,BOS,115,-550.0,,Chicago Bulls,CHI,101,410.0,,Boston,MA,,
+401810359,2026-01-05,2026-01-06T00:30Z,Toronto Raptors,TOR,118,-162.0,,Atlanta Hawks,ATL,100,136.0,,Toronto,ON,,
+401810360,2026-01-05,2026-01-06T01:00Z,Houston Rockets,HOU,100,-325.0,,Phoenix Suns,PHX,97,260.0,,Houston,TX,,
+401810361,2026-01-05,2026-01-06T01:00Z,Oklahoma City Thunder,OKC,97,-1100.0,,Charlotte Hornets,CHA,124,700.0,,Oklahoma City,OK,,
+401810362,2026-01-05,2026-01-06T01:30Z,Philadelphia 76ers,PHI,124,-600.0,,Denver Nuggets,DEN,125,440.0,,Philadelphia,PA,,
+401810363,2026-01-05,2026-01-06T03:00Z,LA Clippers,LAC,103,-120.0,,Golden State Warriors,GS,102,100.0,,Inglewood,CA,,
+401810364,2026-01-05,2026-01-06T03:00Z,Portland Trail Blazers,POR,137,-238.0,,Utah Jazz,UTAH,117,195.0,,Portland,OR,,
+401810365,2026-01-06,2026-01-07T00:00Z,Indiana Pacers,IND,0,180.0,,Cleveland Cavaliers,CLE,0,-218.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); B. Mathurin (Out); Obi Toppin (Out),D. Mitchell (Out); L. Nance (Out); Max Strus (Out)
+401810366,2026-01-06,2026-01-07T00:00Z,Washington Wizards,WSH,0,225.0,,Orlando Magic,ORL,0,-278.0,,Washington,DC,K. George (Out); C. Kispert (Out); C. Whitmore (Out),M. Wagner (Out); F. Wagner (Out)
+401810367,2026-01-06,2026-01-07T01:00Z,Memphis Grizzlies,MEM,0,190.0,,San Antonio Spurs,SA,0,-230.0,,Memphis,TN,B. Clarke (Out); C. Coward (Out); Zach Edey (Out); Ty Jerome (Out); J. Konchar (Out); S. Pippen (Out),D. Vassell (Out)
+401810368,2026-01-06,2026-01-07T01:00Z,Minnesota Timberwolves,MIN,0,-218.0,,Miami Heat,MIA,0,180.0,,Minneapolis,MN,T. Shannon (Out),T. Rozier (Out)
+401810369,2026-01-06,2026-01-07T01:00Z,New Orleans Pelicans,NO,0,185.0,,Los Angeles Lakers,LAL,0,-225.0,,New Orleans,LA,Saddiq Bey (Out); D. Murray (Out),R. Hachimura (Out); A. Reaves (Out); A. Thiero (Out)
+401810370,2026-01-06,2026-01-07T04:00Z,Sacramento Kings,SAC,0,180.0,,Dallas Mavericks,DAL,0,-218.0,,Sacramento,CA,K. Murray (Out); D. Sabonis (Out),Dante Exum (OFS); D. Lively (OFS); K. Irving (Out)

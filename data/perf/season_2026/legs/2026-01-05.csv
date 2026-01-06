@@ -1,0 +1,27 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-05,2026,Deni Avdija,POR,UTAH,ast,8,HIT,9,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,VJ Edgecombe,PHI,DEN,pts,15,HIT,17,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,VJ Edgecombe,PHI,DEN,3pt,2,HIT,5,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Jamal Murray,DEN,PHI,reb,4,,,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Keyonte George,UTAH,POR,reb,4,HIT,4,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Keyonte George,UTAH,POR,ast,6,MISSED,4,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Keyonte George,UTAH,POR,3pt,3,MISSED,1,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Mikal Bridges,NY,DET,ast,4,MISSED,1,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Mikal Bridges,NY,DET,3pt,2,HIT,2,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Jalen Johnson,ATL,TOR,ast,8,MISSED,7,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Lauri Markkanen,UTAH,POR,reb,6,MISSED,4,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Jabari Smith Jr.,HOU,PHX,reb,6,HIT,7,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Jabari Smith Jr.,HOU,PHX,3pt,2,HIT,3,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Derrick White,BOS,CHI,reb,4,HIT,6,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Shai Gilgeous-Alexander,OKC,CHA,ast,6,HIT,6,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Jimmy Butler III,GS,LAC,ast,4,MISSED,2,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Stephen Curry,GS,LAC,ast,4,HIT,6,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Josh Hart,NY,DET,pts,10,,,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Immanuel Quickley,TOR,ATL,reb,4,MISSED,3,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Dillon Brooks,PHX,HOU,3pt,2,MISSED,1,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Tim Hardaway Jr.,DEN,PHI,pts,15,,,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Tim Hardaway Jr.,DEN,PHI,reb,2,,,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Tim Hardaway Jr.,DEN,PHI,3pt,3,,,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Nikola Vucevic,CHI,BOS,pts,15,HIT,15,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Donovan Clingan,POR,UTAH,pts,10,HIT,12,,targets_snapshot_2026-01-05.json
+2026-01-05,2026,Donovan Clingan,POR,UTAH,3pt,1,HIT,2,,targets_snapshot_2026-01-05.json
