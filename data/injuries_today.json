@@ -1,17 +1,17 @@
 {
   "asof_date": "2026-01-05",
-  "built_at_utc": "2026-01-06T02:52:35Z",
+  "built_at_utc": "2026-01-06T03:21:43Z",
   "source": "rotowire",
   "NYK": [
+    {
+      "name": "L. Shamet",
+      "status": "DOUBT",
+      "details": "L. Shamet (Doubt)"
+    },
     {
       "name": "Josh Hart",
       "status": "OUT",
       "details": "Josh Hart (Out)"
-    },
-    {
-      "name": "L. Shamet",
-      "status": "OUT",
-      "details": "L. Shamet (Out)"
     },
     {
       "name": "Fantasy Home",
@@ -34,6 +34,11 @@
       "details": "Fantasy Football (Rest)"
     },
     {
+      "name": "C. LeVert",
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
+    },
+    {
       "name": "J. Duren",
       "status": "OUT",
       "details": "J. Duren (Out)"
@@ -42,15 +47,15 @@
       "name": "T. Harris",
       "status": "OUT",
       "details": "T. Harris (Out)"
-    },
-    {
-      "name": "C. LeVert",
-      "status": "OUT",
-      "details": "C. LeVert (Out)"
     }
   ],
   "DET": [
     {
+      "name": "C. LeVert",
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
+    },
+    {
       "name": "J. Duren",
       "status": "OUT",
       "details": "J. Duren (Out)"
@@ -59,11 +64,6 @@
       "name": "T. Harris",
       "status": "OUT",
       "details": "T. Harris (Out)"
-    },
-    {
-      "name": "C. LeVert",
-      "status": "OUT",
-      "details": "C. LeVert (Out)"
     }
   ],
   "CHI": [
@@ -73,24 +73,24 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "T. Flowers",
+      "status": "QUES",
+      "details": "T. Flowers (Ques)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "QUES",
+      "details": "J. Smith (Ques)"
+    },
+    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
     },
     {
-      "name": "T. Flowers",
-      "status": "OUT",
-      "details": "T. Flowers (Out)"
-    },
-    {
       "name": "J. Giddey",
       "status": "OUT",
       "details": "J. Giddey (Out)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "OUT",
-      "details": "J. Smith (Out)"
     },
     {
       "name": "J. Tatum",
@@ -112,21 +112,21 @@
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "Trae Young",
-      "status": "OUT",
-      "details": "Trae Young (Out)"
+      "name": "T. Young",
+      "status": "QUES",
+      "details": "T. Young (Ques)"
     },
     {
       "name": "J. Poeltl",
-      "status": "OUT",
-      "details": "J. Poeltl (Out)"
+      "status": "DOUBT",
+      "details": "J. Poeltl (Doubt)"
     }
   ],
   "TOR": [
     {
       "name": "J. Poeltl",
-      "status": "OUT",
-      "details": "J. Poeltl (Out)"
+      "status": "DOUBT",
+      "details": "J. Poeltl (Doubt)"
     }
   ],
   "PHX": [
