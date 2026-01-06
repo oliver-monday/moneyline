@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-05",
-  "built_at_utc": "2026-01-05T23:22:51Z",
+  "built_at_utc": "2026-01-06T01:01:49Z",
   "source": "rotowire",
   "NYK": [
     {
@@ -34,21 +34,6 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "C. Cunningham",
-      "status": "PROB",
-      "details": "C. Cunningham (Prob)"
-    },
-    {
-      "name": "D. Robinson",
-      "status": "PROB",
-      "details": "D. Robinson (Prob)"
-    },
-    {
-      "name": "C. LeVert",
-      "status": "DOUBT",
-      "details": "C. LeVert (Doubt)"
-    },
-    {
       "name": "J. Duren",
       "status": "OUT",
       "details": "J. Duren (Out)"
@@ -57,25 +42,15 @@
       "name": "T. Harris",
       "status": "OUT",
       "details": "T. Harris (Out)"
+    },
+    {
+      "name": "C. LeVert",
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     }
   ],
   "DET": [
     {
-      "name": "C. Cunningham",
-      "status": "PROB",
-      "details": "C. Cunningham (Prob)"
-    },
-    {
-      "name": "D. Robinson",
-      "status": "PROB",
-      "details": "D. Robinson (Prob)"
-    },
-    {
-      "name": "C. LeVert",
-      "status": "DOUBT",
-      "details": "C. LeVert (Doubt)"
-    },
-    {
       "name": "J. Duren",
       "status": "OUT",
       "details": "J. Duren (Out)"
@@ -84,6 +59,11 @@
       "name": "T. Harris",
       "status": "OUT",
       "details": "T. Harris (Out)"
+    },
+    {
+      "name": "C. LeVert",
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     }
   ],
   "CHI": [
@@ -151,11 +131,6 @@
   ],
   "PHX": [
     {
-      "name": "M. Williams",
-      "status": "PROB",
-      "details": "M. Williams (Prob)"
-    },
-    {
       "name": "J. Bouyea",
       "status": "OUT",
       "details": "J. Bouyea (Out)"
@@ -189,26 +164,6 @@
     }
   ],
   "CHA": [
-    {
-      "name": "M. Diabate",
-      "status": "PROB",
-      "details": "M. Diabate (Prob)"
-    },
-    {
-      "name": "K. Knueppel",
-      "status": "PROB",
-      "details": "K. Knueppel (Prob)"
-    },
-    {
-      "name": "B. Miller",
-      "status": "PROB",
-      "details": "B. Miller (Prob)"
-    },
-    {
-      "name": "T. Salaun",
-      "status": "PROB",
-      "details": "T. Salaun (Prob)"
-    },
     {
       "name": "R. Kalkbrenner",
       "status": "OUT",
@@ -339,11 +294,6 @@
       "details": "J. Valanciunas (Out)"
     },
     {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
-    {
       "name": "K. Oubre",
       "status": "OUT",
       "details": "K. Oubre (Out)"
@@ -355,11 +305,6 @@
     }
   ],
   "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
     {
       "name": "K. Oubre",
       "status": "OUT",
@@ -394,8 +339,8 @@
     },
     {
       "name": "Y. Niederhauser",
-      "status": "QUES",
-      "details": "Y. Niederhauser (Ques)"
+      "status": "PROB",
+      "details": "Y. Niederhauser (Prob)"
     },
     {
       "name": "B. Bogdanovic",
@@ -421,8 +366,8 @@
     },
     {
       "name": "Y. Niederhauser",
-      "status": "QUES",
-      "details": "Y. Niederhauser (Ques)"
+      "status": "PROB",
+      "details": "Y. Niederhauser (Prob)"
     },
     {
       "name": "J. Harden",
