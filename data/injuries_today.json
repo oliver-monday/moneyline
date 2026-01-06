@@ -1,23 +1,8 @@
 {
   "asof_date": "2026-01-06",
-  "built_at_utc": "2026-01-06T22:28:02Z",
+  "built_at_utc": "2026-01-06T23:23:36Z",
   "source": "rotowire",
   "CLE": [
-    {
-      "name": "J. Allen",
-      "status": "PROB",
-      "details": "J. Allen (Prob)"
-    },
-    {
-      "name": "D. Wade",
-      "status": "QUES",
-      "details": "D. Wade (Ques)"
-    },
-    {
-      "name": "J. Tyson",
-      "status": "QUES",
-      "details": "J. Tyson (Ques)"
-    },
     {
       "name": "D. Mitchell",
       "status": "OUT",
