@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-07",
-  "built_at_utc": "2026-01-07T19:24:40Z",
+  "built_at_utc": "2026-01-07T20:23:12Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -715,11 +715,6 @@
       "details": "A. Thiero (Out)"
     },
     {
-      "name": "D. Vassell",
-      "status": "QUES",
-      "details": "D. Vassell (Ques)"
-    },
-    {
       "name": "V. Wembanyama",
       "status": "QUES",
       "details": "V. Wembanyama (Ques)"
@@ -728,15 +723,15 @@
       "name": "H. Ingram",
       "status": "OUT",
       "details": "H. Ingram (Out)"
+    },
+    {
+      "name": "D. Vassell",
+      "status": "OUT",
+      "details": "D. Vassell (Out)"
     }
   ],
   "SAS": [
     {
-      "name": "D. Vassell",
-      "status": "QUES",
-      "details": "D. Vassell (Ques)"
-    },
-    {
       "name": "V. Wembanyama",
       "status": "QUES",
       "details": "V. Wembanyama (Ques)"
@@ -745,6 +740,11 @@
       "name": "H. Ingram",
       "status": "OUT",
       "details": "H. Ingram (Out)"
+    },
+    {
+      "name": "D. Vassell",
+      "status": "OUT",
+      "details": "D. Vassell (Out)"
     }
   ],
   "MIL": [
@@ -764,6 +764,11 @@
       "details": "G. Payton (Ques)"
     },
     {
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
+    },
+    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
@@ -779,6 +784,11 @@
       "name": "G. Payton",
       "status": "QUES",
       "details": "G. Payton (Ques)"
+    },
+    {
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
     },
     {
       "name": "Seth Curry",
@@ -808,11 +818,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "K. Murray",
-      "status": "DOUBT",
-      "details": "K. Murray (Doubt)"
-    },
-    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
@@ -826,6 +831,11 @@
       "name": "J. Holiday",
       "status": "OUT",
       "details": "J. Holiday (Out)"
+    },
+    {
+      "name": "K. Murray",
+      "status": "OUT",
+      "details": "K. Murray (Out)"
     },
     {
       "name": "M. Thybulle",
@@ -845,11 +855,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "K. Murray",
-      "status": "DOUBT",
-      "details": "K. Murray (Doubt)"
-    },
-    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
@@ -863,6 +868,11 @@
       "name": "J. Holiday",
       "status": "OUT",
       "details": "J. Holiday (Out)"
+    },
+    {
+      "name": "K. Murray",
+      "status": "OUT",
+      "details": "K. Murray (Out)"
     },
     {
       "name": "M. Thybulle",
