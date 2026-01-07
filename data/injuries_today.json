@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-07",
-  "built_at_utc": "2026-01-07T20:23:12Z",
+  "built_at_utc": "2026-01-07T21:10:06Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -17,6 +17,11 @@
       "name": "T. Hardaway",
       "status": "PROB",
       "details": "T. Hardaway (Prob)"
+    },
+    {
+      "name": "S. Jones",
+      "status": "PROB",
+      "details": "S. Jones (Prob)"
     },
     {
       "name": "J. Murray",
@@ -755,8 +760,8 @@
     },
     {
       "name": "D. Green",
-      "status": "QUES",
-      "details": "D. Green (Ques)"
+      "status": "PROB",
+      "details": "D. Green (Prob)"
     },
     {
       "name": "G. Payton",
@@ -777,8 +782,8 @@
   "GSW": [
     {
       "name": "D. Green",
-      "status": "QUES",
-      "details": "D. Green (Ques)"
+      "status": "PROB",
+      "details": "D. Green (Prob)"
     },
     {
       "name": "G. Payton",
