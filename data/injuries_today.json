@@ -1,13 +1,8 @@
 {
   "asof_date": "2026-01-07",
-  "built_at_utc": "2026-01-07T18:29:53Z",
+  "built_at_utc": "2026-01-07T19:24:40Z",
   "source": "rotowire",
   "DEN": [
-    {
-      "name": "J. Pickett",
-      "status": "PROB",
-      "details": "J. Pickett (Prob)"
-    },
     {
       "name": "C. Braun",
       "status": "PROB",
@@ -27,6 +22,11 @@
       "name": "J. Murray",
       "status": "PROB",
       "details": "J. Murray (Prob)"
+    },
+    {
+      "name": "J. Pickett",
+      "status": "PROB",
+      "details": "J. Pickett (Prob)"
     },
     {
       "name": "T. Bates",
@@ -146,6 +146,16 @@
       "name": "T. Harris",
       "status": "OUT",
       "details": "T. Harris (Out)"
+    },
+    {
+      "name": "B. Klintman",
+      "status": "OUT",
+      "details": "B. Klintman (Out)"
+    },
+    {
+      "name": "W. Moore",
+      "status": "OUT",
+      "details": "W. Moore (Out)"
     }
   ],
   "DET": [
@@ -173,6 +183,16 @@
       "name": "T. Harris",
       "status": "OUT",
       "details": "T. Harris (Out)"
+    },
+    {
+      "name": "B. Klintman",
+      "status": "OUT",
+      "details": "B. Klintman (Out)"
+    },
+    {
+      "name": "W. Moore",
+      "status": "OUT",
+      "details": "W. Moore (Out)"
     }
   ],
   "WAS": [
@@ -230,6 +250,11 @@
     }
   ],
   "TOR": [
+    {
+      "name": "C. Hepburn",
+      "status": "OUT",
+      "details": "C. Hepburn (Out)"
+    },
     {
       "name": "J. Poeltl",
       "status": "OUT",
@@ -571,14 +596,29 @@
       "details": "J. Morant (Ques)"
     },
     {
-      "name": "C. Coward",
+      "name": "J. Jackson",
+      "status": "PROB",
+      "details": "J. Jackson (Prob)"
+    },
+    {
+      "name": "S. Aldama",
       "status": "QUES",
-      "details": "C. Coward (Ques)"
+      "details": "S. Aldama (Ques)"
+    },
+    {
+      "name": "V. Williams",
+      "status": "QUES",
+      "details": "V. Williams (Ques)"
     },
     {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
+    },
+    {
+      "name": "C. Coward",
+      "status": "OUT",
+      "details": "C. Coward (Out)"
     },
     {
       "name": "Zach Edey",
@@ -603,9 +643,14 @@
   ],
   "MEM": [
     {
-      "name": "C. Coward",
+      "name": "J. Jackson",
+      "status": "PROB",
+      "details": "J. Jackson (Prob)"
+    },
+    {
+      "name": "S. Aldama",
       "status": "QUES",
-      "details": "C. Coward (Ques)"
+      "details": "S. Aldama (Ques)"
     },
     {
       "name": "J. Morant",
@@ -613,9 +658,19 @@
       "details": "J. Morant (Ques)"
     },
     {
+      "name": "V. Williams",
+      "status": "QUES",
+      "details": "V. Williams (Ques)"
+    },
+    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
+    },
+    {
+      "name": "C. Coward",
+      "status": "OUT",
+      "details": "C. Coward (Out)"
     },
     {
       "name": "Zach Edey",
@@ -640,9 +695,9 @@
   ],
   "LAL": [
     {
-      "name": "G. Vincent",
-      "status": "PROB",
-      "details": "G. Vincent (Prob)"
+      "name": "L. James",
+      "status": "QUES",
+      "details": "L. James (Ques)"
     },
     {
       "name": "R. Hachimura",
@@ -665,6 +720,11 @@
       "details": "D. Vassell (Ques)"
     },
     {
+      "name": "V. Wembanyama",
+      "status": "QUES",
+      "details": "V. Wembanyama (Ques)"
+    },
+    {
       "name": "H. Ingram",
       "status": "OUT",
       "details": "H. Ingram (Out)"
@@ -675,6 +735,11 @@
       "name": "D. Vassell",
       "status": "QUES",
       "details": "D. Vassell (Ques)"
+    },
+    {
+      "name": "V. Wembanyama",
+      "status": "QUES",
+      "details": "V. Wembanyama (Ques)"
     },
     {
       "name": "H. Ingram",
