@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-06",
-  "built_at_utc": "2026-01-06T23:23:36Z",
+  "built_at_utc": "2026-01-07T01:02:32Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -132,11 +132,6 @@
   ],
   "LAL": [
     {
-      "name": "G. Vincent",
-      "status": "DOUBT",
-      "details": "G. Vincent (Doubt)"
-    },
-    {
       "name": "R. Hachimura",
       "status": "OUT",
       "details": "R. Hachimura (Out)"
@@ -152,9 +147,9 @@
       "details": "A. Thiero (Out)"
     },
     {
-      "name": "H. Jones",
-      "status": "QUES",
-      "details": "H. Jones (Ques)"
+      "name": "G. Vincent",
+      "status": "OUT",
+      "details": "G. Vincent (Out)"
     },
     {
       "name": "Saddiq Bey",
@@ -168,11 +163,6 @@
     }
   ],
   "NOP": [
-    {
-      "name": "H. Jones",
-      "status": "QUES",
-      "details": "H. Jones (Ques)"
-    },
     {
       "name": "Saddiq Bey",
       "status": "OUT",
@@ -196,22 +186,12 @@
       "details": "T. Rozier (Out)"
     },
     {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
     }
   ],
   "MIN": [
-    {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
     {
       "name": "T. Shannon",
       "status": "OUT",
@@ -220,24 +200,9 @@
   ],
   "SAS": [
     {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
-    },
-    {
       "name": "D. Vassell",
       "status": "OUT",
       "details": "D. Vassell (Out)"
-    },
-    {
-      "name": "V. Williams",
-      "status": "PROB",
-      "details": "V. Williams (Prob)"
-    },
-    {
-      "name": "J. Morant",
-      "status": "DOUBT",
-      "details": "J. Morant (Doubt)"
     },
     {
       "name": "B. Clarke",
@@ -263,6 +228,11 @@
       "name": "J. Konchar",
       "status": "OUT",
       "details": "J. Konchar (Out)"
+    },
+    {
+      "name": "Ja Morant",
+      "status": "OUT",
+      "details": "Ja Morant (Out)"
     },
     {
       "name": "S. Pippen",
@@ -272,16 +242,6 @@
   ],
   "MEM": [
     {
-      "name": "V. Williams",
-      "status": "PROB",
-      "details": "V. Williams (Prob)"
-    },
-    {
-      "name": "J. Morant",
-      "status": "DOUBT",
-      "details": "J. Morant (Doubt)"
-    },
-    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -305,6 +265,11 @@
       "name": "J. Konchar",
       "status": "OUT",
       "details": "J. Konchar (Out)"
+    },
+    {
+      "name": "Ja Morant",
+      "status": "OUT",
+      "details": "Ja Morant (Out)"
     },
     {
       "name": "S. Pippen",
