@@ -1,27 +1,32 @@
 {
   "asof_date": "2026-01-07",
-  "built_at_utc": "2026-01-07T17:17:03Z",
+  "built_at_utc": "2026-01-07T18:29:53Z",
   "source": "rotowire",
   "DEN": [
     {
+      "name": "J. Pickett",
+      "status": "PROB",
+      "details": "J. Pickett (Prob)"
+    },
+    {
       "name": "C. Braun",
-      "status": "QUES",
-      "details": "C. Braun (Ques)"
+      "status": "PROB",
+      "details": "C. Braun (Prob)"
     },
     {
       "name": "A. Gordon",
-      "status": "QUES",
-      "details": "A. Gordon (Ques)"
+      "status": "PROB",
+      "details": "A. Gordon (Prob)"
     },
     {
       "name": "T. Hardaway",
-      "status": "QUES",
-      "details": "T. Hardaway (Ques)"
+      "status": "PROB",
+      "details": "T. Hardaway (Prob)"
     },
     {
       "name": "J. Murray",
-      "status": "QUES",
-      "details": "J. Murray (Ques)"
+      "status": "PROB",
+      "details": "J. Murray (Prob)"
     },
     {
       "name": "T. Bates",
@@ -93,14 +98,9 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "Y. Kawamura",
-      "status": "QUES",
-      "details": "Y. Kawamura (Ques)"
-    },
-    {
       "name": "M. Buzelis",
-      "status": "QUES",
-      "details": "M. Buzelis (Ques)"
+      "status": "PROB",
+      "details": "M. Buzelis (Prob)"
     },
     {
       "name": "C. White",
@@ -124,8 +124,8 @@
     },
     {
       "name": "C. Cunningham",
-      "status": "PROB",
-      "details": "C. Cunningham (Prob)"
+      "status": "QUES",
+      "details": "C. Cunningham (Ques)"
     },
     {
       "name": "D. Robinson",
@@ -150,11 +150,6 @@
   ],
   "DET": [
     {
-      "name": "C. Cunningham",
-      "status": "PROB",
-      "details": "C. Cunningham (Prob)"
-    },
-    {
       "name": "C. LeVert",
       "status": "PROB",
       "details": "C. LeVert (Prob)"
@@ -163,6 +158,11 @@
       "name": "D. Robinson",
       "status": "PROB",
       "details": "D. Robinson (Prob)"
+    },
+    {
+      "name": "C. Cunningham",
+      "status": "QUES",
+      "details": "C. Cunningham (Ques)"
     },
     {
       "name": "J. Duren",
@@ -177,19 +177,19 @@
   ],
   "WAS": [
     {
-      "name": "C. Kispert",
-      "status": "PROB",
-      "details": "C. Kispert (Prob)"
-    },
-    {
-      "name": "K. Middleton",
-      "status": "QUES",
-      "details": "K. Middleton (Ques)"
-    },
-    {
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
+    },
+    {
+      "name": "C. McCollum",
+      "status": "OUT",
+      "details": "C. McCollum (Out)"
+    },
+    {
+      "name": "K. Middleton",
+      "status": "OUT",
+      "details": "K. Middleton (Out)"
     },
     {
       "name": "C. Whitmore",
@@ -198,35 +198,35 @@
     },
     {
       "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
+      "status": "PROB",
+      "details": "J. Embiid (Prob)"
     },
     {
       "name": "K. Oubre",
-      "status": "QUES",
-      "details": "K. Oubre (Ques)"
+      "status": "PROB",
+      "details": "K. Oubre (Prob)"
     },
     {
       "name": "T. Watford",
-      "status": "QUES",
-      "details": "T. Watford (Ques)"
+      "status": "PROB",
+      "details": "T. Watford (Prob)"
     }
   ],
   "PHI": [
     {
       "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
+      "status": "PROB",
+      "details": "J. Embiid (Prob)"
     },
     {
       "name": "K. Oubre",
-      "status": "QUES",
-      "details": "K. Oubre (Ques)"
+      "status": "PROB",
+      "details": "K. Oubre (Prob)"
     },
     {
       "name": "T. Watford",
-      "status": "QUES",
-      "details": "T. Watford (Ques)"
+      "status": "PROB",
+      "details": "T. Watford (Prob)"
     }
   ],
   "TOR": [
@@ -237,8 +237,8 @@
     },
     {
       "name": "B. Miller",
-      "status": "PROB",
-      "details": "B. Miller (Prob)"
+      "status": "QUES",
+      "details": "B. Miller (Ques)"
     },
     {
       "name": "M. Diabate",
@@ -247,8 +247,8 @@
     },
     {
       "name": "T. Salaun",
-      "status": "QUES",
-      "details": "T. Salaun (Ques)"
+      "status": "PROB",
+      "details": "T. Salaun (Prob)"
     },
     {
       "name": "R. Kalkbrenner",
@@ -273,14 +273,14 @@
       "details": "M. Diabate (Prob)"
     },
     {
-      "name": "B. Miller",
+      "name": "T. Salaun",
       "status": "PROB",
-      "details": "B. Miller (Prob)"
+      "details": "T. Salaun (Prob)"
     },
     {
-      "name": "T. Salaun",
+      "name": "B. Miller",
       "status": "QUES",
-      "details": "T. Salaun (Ques)"
+      "details": "B. Miller (Ques)"
     },
     {
       "name": "R. Kalkbrenner",
@@ -300,24 +300,29 @@
   ],
   "NOP": [
     {
-      "name": "S. Bey",
-      "status": "QUES",
-      "details": "S. Bey (Ques)"
-    },
-    {
       "name": "H. Jones",
       "status": "QUES",
       "details": "H. Jones (Ques)"
     },
     {
+      "name": "T. Murphy",
+      "status": "QUES",
+      "details": "T. Murphy (Ques)"
+    },
+    {
+      "name": "J. Alvarado",
+      "status": "OUT",
+      "details": "J. Alvarado (Out)"
+    },
+    {
+      "name": "Saddiq Bey",
+      "status": "OUT",
+      "details": "Saddiq Bey (Out)"
+    },
+    {
       "name": "D. Murray",
       "status": "OUT",
       "details": "D. Murray (Out)"
-    },
-    {
-      "name": "T. Young",
-      "status": "QUES",
-      "details": "T. Young (Ques)"
     },
     {
       "name": "O. Okongwu",
@@ -328,6 +333,11 @@
       "name": "N. Dante",
       "status": "OFS",
       "details": "N. Dante (OFS)"
+    },
+    {
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     }
   ],
   "ATL": [
@@ -342,9 +352,9 @@
       "details": "O. Okongwu (Ques)"
     },
     {
-      "name": "T. Young",
-      "status": "QUES",
-      "details": "T. Young (Ques)"
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     }
   ],
   "ORL": [
@@ -399,8 +409,8 @@
     },
     {
       "name": "J. Harden",
-      "status": "QUES",
-      "details": "J. Harden (Ques)"
+      "status": "PROB",
+      "details": "J. Harden (Prob)"
     },
     {
       "name": "B. Bogdanovic",
