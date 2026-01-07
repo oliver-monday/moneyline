@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-07",
-  "built_at_utc": "2026-01-07T14:49:00Z",
+  "built_at_utc": "2026-01-07T17:17:03Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -182,6 +182,11 @@
       "details": "C. Kispert (Prob)"
     },
     {
+      "name": "K. Middleton",
+      "status": "QUES",
+      "details": "K. Middleton (Ques)"
+    },
+    {
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
@@ -315,6 +320,11 @@
       "details": "T. Young (Ques)"
     },
     {
+      "name": "O. Okongwu",
+      "status": "QUES",
+      "details": "O. Okongwu (Ques)"
+    },
+    {
       "name": "N. Dante",
       "status": "OFS",
       "details": "N. Dante (OFS)"
@@ -325,6 +335,11 @@
       "name": "N. Dante",
       "status": "OFS",
       "details": "N. Dante (OFS)"
+    },
+    {
+      "name": "O. Okongwu",
+      "status": "QUES",
+      "details": "O. Okongwu (Ques)"
     },
     {
       "name": "T. Young",
@@ -447,6 +462,11 @@
       "details": "G. Niang (Out)"
     },
     {
+      "name": "S. Gilgeous-Alexander",
+      "status": "QUES",
+      "details": "S. Gilgeous-Alexander (Ques)"
+    },
+    {
       "name": "B. Barnhizer",
       "status": "QUES",
       "details": "B. Barnhizer (Ques)"
@@ -492,6 +512,11 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "S. Gilgeous-Alexander",
+      "status": "QUES",
+      "details": "S. Gilgeous-Alexander (Ques)"
     },
     {
       "name": "A. Caruso",
@@ -628,6 +653,11 @@
       "name": "D. Vassell",
       "status": "QUES",
       "details": "D. Vassell (Ques)"
+    },
+    {
+      "name": "H. Ingram",
+      "status": "OUT",
+      "details": "H. Ingram (Out)"
     }
   ],
   "SAS": [
@@ -635,6 +665,11 @@
       "name": "D. Vassell",
       "status": "QUES",
       "details": "D. Vassell (Ques)"
+    },
+    {
+      "name": "H. Ingram",
+      "status": "OUT",
+      "details": "H. Ingram (Out)"
     }
   ],
   "MIL": [
