@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-07",
-  "built_at_utc": "2026-01-07T21:10:06Z",
+  "built_at_utc": "2026-01-07T22:27:25Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -103,16 +103,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "M. Buzelis",
-      "status": "PROB",
-      "details": "M. Buzelis (Prob)"
-    },
-    {
-      "name": "C. White",
-      "status": "QUES",
-      "details": "C. White (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
@@ -126,6 +116,11 @@
       "name": "J. Smith",
       "status": "OUT",
       "details": "J. Smith (Out)"
+    },
+    {
+      "name": "Coby White",
+      "status": "OUT",
+      "details": "Coby White (Out)"
     },
     {
       "name": "C. Cunningham",
@@ -602,8 +597,8 @@
     },
     {
       "name": "J. Jackson",
-      "status": "PROB",
-      "details": "J. Jackson (Prob)"
+      "status": "QUES",
+      "details": "J. Jackson (Ques)"
     },
     {
       "name": "S. Aldama",
@@ -648,14 +643,14 @@
   ],
   "MEM": [
     {
-      "name": "J. Jackson",
-      "status": "PROB",
-      "details": "J. Jackson (Prob)"
-    },
-    {
       "name": "S. Aldama",
       "status": "QUES",
       "details": "S. Aldama (Ques)"
+    },
+    {
+      "name": "J. Jackson",
+      "status": "QUES",
+      "details": "J. Jackson (Ques)"
     },
     {
       "name": "J. Morant",

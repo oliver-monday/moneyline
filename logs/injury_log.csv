@@ -1546,6 +1546,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-07,NOP,T. Young,QUES,T. Young (Ques),rotowire
 2026-01-07,ATL,T. Young,QUES,T. Young (Ques),rotowire
 2026-01-07,LAL,G. Vincent,PROB,G. Vincent (Prob),rotowire
+2026-01-07,CHI,M. Buzelis,PROB,M. Buzelis (Prob),rotowire
+2026-01-07,CHI,C. White,QUES,C. White (Ques),rotowire
 2026-01-07,DEN,C. Braun,PROB,C. Braun (Prob),rotowire
 2026-01-07,DEN,A. Gordon,PROB,A. Gordon (Prob),rotowire
 2026-01-07,DEN,T. Hardaway,PROB,T. Hardaway (Prob),rotowire
@@ -1563,11 +1565,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-07,BOS,J. Minott,OUT,J. Minott (Out),rotowire
 2026-01-07,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
 2026-01-07,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
-2026-01-07,CHI,M. Buzelis,PROB,M. Buzelis (Prob),rotowire
-2026-01-07,CHI,C. White,QUES,C. White (Ques),rotowire
 2026-01-07,CHI,Z. Collins,OUT,Z. Collins (Out),rotowire
 2026-01-07,CHI,J. Giddey,OUT,J. Giddey (Out),rotowire
 2026-01-07,CHI,J. Smith,OUT,J. Smith (Out),rotowire
+2026-01-07,CHI,Coby White,OUT,Coby White (Out),rotowire
 2026-01-07,CHI,C. Cunningham,QUES,C. Cunningham (Ques),rotowire
 2026-01-07,CHI,D. Robinson,PROB,D. Robinson (Prob),rotowire
 2026-01-07,CHI,C. LeVert,PROB,C. LeVert (Prob),rotowire
@@ -1657,7 +1658,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-07,PHX,J. Bouyea,OUT,J. Bouyea (Out),rotowire
 2026-01-07,PHX,J. Green,OUT,J. Green (Out),rotowire
 2026-01-07,PHX,J. Morant,QUES,J. Morant (Ques),rotowire
-2026-01-07,PHX,J. Jackson,PROB,J. Jackson (Prob),rotowire
+2026-01-07,PHX,J. Jackson,QUES,J. Jackson (Ques),rotowire
 2026-01-07,PHX,S. Aldama,QUES,S. Aldama (Ques),rotowire
 2026-01-07,PHX,V. Williams,QUES,V. Williams (Ques),rotowire
 2026-01-07,PHX,B. Clarke,OUT,B. Clarke (Out),rotowire
@@ -1666,8 +1667,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-07,PHX,Ty Jerome,OUT,Ty Jerome (Out),rotowire
 2026-01-07,PHX,J. Konchar,OUT,J. Konchar (Out),rotowire
 2026-01-07,PHX,S. Pippen,OUT,S. Pippen (Out),rotowire
-2026-01-07,MEM,J. Jackson,PROB,J. Jackson (Prob),rotowire
 2026-01-07,MEM,S. Aldama,QUES,S. Aldama (Ques),rotowire
+2026-01-07,MEM,J. Jackson,QUES,J. Jackson (Ques),rotowire
 2026-01-07,MEM,J. Morant,QUES,J. Morant (Ques),rotowire
 2026-01-07,MEM,V. Williams,QUES,V. Williams (Ques),rotowire
 2026-01-07,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire
