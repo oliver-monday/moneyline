@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-01-06",
-  "built_at_utc": "2026-01-07T01:02:32Z",
+  "built_at_utc": "2026-01-07T02:52:50Z",
   "source": "rotowire",
   "CLE": [
     {
       "name": "D. Mitchell",
-      "status": "OUT",
-      "details": "D. Mitchell (Out)"
+      "status": "PROB",
+      "details": "D. Mitchell (Prob)"
+    },
+    {
+      "name": "D. Wade",
+      "status": "QUES",
+      "details": "D. Wade (Ques)"
     },
     {
       "name": "L. Nance",
@@ -45,8 +50,8 @@
     },
     {
       "name": "I. Jackson",
-      "status": "OUT",
-      "details": "I. Jackson (Out)"
+      "status": "QUES",
+      "details": "I. Jackson (Ques)"
     },
     {
       "name": "B. Mathurin",
@@ -67,8 +72,8 @@
     },
     {
       "name": "I. Jackson",
-      "status": "OUT",
-      "details": "I. Jackson (Out)"
+      "status": "QUES",
+      "details": "I. Jackson (Ques)"
     },
     {
       "name": "B. Mathurin",
@@ -84,28 +89,28 @@
   "ORL": [
     {
       "name": "J. Suggs",
-      "status": "OUT",
-      "details": "J. Suggs (Out)"
+      "status": "DOUBT",
+      "details": "J. Suggs (Doubt)"
     },
     {
       "name": "M. Wagner",
-      "status": "OUT",
-      "details": "M. Wagner (Out)"
+      "status": "QUES",
+      "details": "M. Wagner (Ques)"
     },
     {
       "name": "F. Wagner",
-      "status": "OUT",
-      "details": "F. Wagner (Out)"
+      "status": "QUES",
+      "details": "F. Wagner (Ques)"
+    },
+    {
+      "name": "C. Kispert",
+      "status": "PROB",
+      "details": "C. Kispert (Prob)"
     },
     {
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
-    },
-    {
-      "name": "C. Kispert",
-      "status": "OUT",
-      "details": "C. Kispert (Out)"
     },
     {
       "name": "C. Whitmore",
@@ -115,14 +120,14 @@
   ],
   "WAS": [
     {
+      "name": "C. Kispert",
+      "status": "PROB",
+      "details": "C. Kispert (Prob)"
+    },
+    {
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
-    },
-    {
-      "name": "C. Kispert",
-      "status": "OUT",
-      "details": "C. Kispert (Out)"
     },
     {
       "name": "C. Whitmore",
@@ -289,14 +294,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
-    },
-    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     },
     {
       "name": "K. Murray",
