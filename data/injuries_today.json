@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-07",
-  "built_at_utc": "2026-01-07T08:49:48Z",
+  "built_at_utc": "2026-01-07T14:49:00Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -333,6 +333,11 @@
     }
   ],
   "ORL": [
+    {
+      "name": "C. Castleton",
+      "status": "OUT",
+      "details": "C. Castleton (Out)"
+    },
     {
       "name": "J. Suggs",
       "status": "OUT",
