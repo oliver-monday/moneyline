@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-08",
-  "built_at_utc": "2026-01-08T17:18:35Z",
+  "built_at_utc": "2026-01-08T18:26:01Z",
   "source": "rotowire",
   "IND": [
     {
@@ -49,14 +49,24 @@
       "details": "Fantasy Football (Rest)"
     },
     {
+      "name": "L. Ball",
+      "status": "PROB",
+      "details": "L. Ball (Prob)"
+    },
+    {
       "name": "B. Miller",
-      "status": "QUES",
-      "details": "B. Miller (Ques)"
+      "status": "PROB",
+      "details": "B. Miller (Prob)"
+    },
+    {
+      "name": "T. Salaun",
+      "status": "PROB",
+      "details": "T. Salaun (Prob)"
     },
     {
       "name": "R. Kalkbrenner",
-      "status": "DOUBT",
-      "details": "R. Kalkbrenner (Doubt)"
+      "status": "OUT",
+      "details": "R. Kalkbrenner (Out)"
     },
     {
       "name": "M. Plumlee",
@@ -71,14 +81,24 @@
   ],
   "CHA": [
     {
+      "name": "L. Ball",
+      "status": "PROB",
+      "details": "L. Ball (Prob)"
+    },
+    {
       "name": "B. Miller",
-      "status": "QUES",
-      "details": "B. Miller (Ques)"
+      "status": "PROB",
+      "details": "B. Miller (Prob)"
+    },
+    {
+      "name": "T. Salaun",
+      "status": "PROB",
+      "details": "T. Salaun (Prob)"
     },
     {
       "name": "R. Kalkbrenner",
-      "status": "DOUBT",
-      "details": "R. Kalkbrenner (Doubt)"
+      "status": "OUT",
+      "details": "R. Kalkbrenner (Out)"
     },
     {
       "name": "M. Plumlee",
@@ -103,19 +123,14 @@
       "details": "T. Rozier (Out)"
     },
     {
-      "name": "C. White",
-      "status": "PROB",
-      "details": "C. White (Prob)"
-    },
-    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Smith",
+      "name": "K. Huerter",
       "status": "QUES",
-      "details": "J. Smith (Ques)"
+      "details": "K. Huerter (Ques)"
     },
     {
       "name": "Z. Collins",
@@ -126,6 +141,11 @@
       "name": "J. Giddey",
       "status": "OUT",
       "details": "J. Giddey (Out)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OUT",
+      "details": "J. Smith (Out)"
     }
   ],
   "CHI": [
@@ -135,14 +155,9 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Smith",
+      "name": "K. Huerter",
       "status": "QUES",
-      "details": "J. Smith (Ques)"
-    },
-    {
-      "name": "C. White",
-      "status": "PROB",
-      "details": "C. White (Prob)"
+      "details": "K. Huerter (Ques)"
     },
     {
       "name": "Z. Collins",
@@ -153,6 +168,11 @@
       "name": "J. Giddey",
       "status": "OUT",
       "details": "J. Giddey (Out)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OUT",
+      "details": "J. Smith (Out)"
     }
   ],
   "CLE": [
@@ -162,9 +182,19 @@
       "details": "J. Tyson (Prob)"
     },
     {
+      "name": "D. Garland",
+      "status": "QUES",
+      "details": "D. Garland (Ques)"
+    },
+    {
       "name": "L. Nance",
       "status": "QUES",
       "details": "L. Nance (Ques)"
+    },
+    {
+      "name": "C. Livingston",
+      "status": "OUT",
+      "details": "C. Livingston (Out)"
     },
     {
       "name": "Max Strus",
@@ -177,12 +207,22 @@
       "details": "Dean Wade (Out)"
     },
     {
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
+    },
+    {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
     }
   ],
   "MIN": [
+    {
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
+    },
     {
       "name": "T. Shannon",
       "status": "OUT",
