@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-01-08",
-  "built_at_utc": "2026-01-08T14:51:05Z",
+  "built_at_utc": "2026-01-08T17:18:35Z",
   "source": "rotowire",
   "IND": [
     {
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
+    },
+    {
+      "name": "A. Nembhard",
+      "status": "QUES",
+      "details": "A. Nembhard (Ques)"
     },
     {
       "name": "I. Jackson",
@@ -45,13 +50,13 @@
     },
     {
       "name": "B. Miller",
-      "status": "OUT",
-      "details": "B. Miller (Out)"
+      "status": "QUES",
+      "details": "B. Miller (Ques)"
     },
     {
       "name": "R. Kalkbrenner",
-      "status": "OUT",
-      "details": "R. Kalkbrenner (Out)"
+      "status": "DOUBT",
+      "details": "R. Kalkbrenner (Doubt)"
     },
     {
       "name": "M. Plumlee",
@@ -66,14 +71,14 @@
   ],
   "CHA": [
     {
-      "name": "R. Kalkbrenner",
-      "status": "OUT",
-      "details": "R. Kalkbrenner (Out)"
+      "name": "B. Miller",
+      "status": "QUES",
+      "details": "B. Miller (Ques)"
     },
     {
-      "name": "B. Miller",
-      "status": "OUT",
-      "details": "B. Miller (Out)"
+      "name": "R. Kalkbrenner",
+      "status": "DOUBT",
+      "details": "R. Kalkbrenner (Doubt)"
     },
     {
       "name": "M. Plumlee",
@@ -99,8 +104,8 @@
     },
     {
       "name": "C. White",
-      "status": "QUES",
-      "details": "C. White (Ques)"
+      "status": "PROB",
+      "details": "C. White (Prob)"
     },
     {
       "name": "N. Essengue",
@@ -136,8 +141,8 @@
     },
     {
       "name": "C. White",
-      "status": "QUES",
-      "details": "C. White (Ques)"
+      "status": "PROB",
+      "details": "C. White (Prob)"
     },
     {
       "name": "Z. Collins",
@@ -151,11 +156,6 @@
     }
   ],
   "CLE": [
-    {
-      "name": "C. Livingston",
-      "status": "QUES",
-      "details": "C. Livingston (Ques)"
-    },
     {
       "name": "J. Tyson",
       "status": "PROB",
@@ -221,9 +221,9 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "Kevin Love",
-      "status": "OUT",
-      "details": "Kevin Love (Out)"
+      "name": "K. Love",
+      "status": "QUES",
+      "details": "K. Love (Ques)"
     },
     {
       "name": "G. Niang",
@@ -238,9 +238,9 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "Kevin Love",
-      "status": "OUT",
-      "details": "Kevin Love (Out)"
+      "name": "K. Love",
+      "status": "QUES",
+      "details": "K. Love (Ques)"
     },
     {
       "name": "G. Niang",
