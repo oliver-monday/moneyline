@@ -1,23 +1,8 @@
 {
   "asof_date": "2026-01-07",
-  "built_at_utc": "2026-01-07T23:23:21Z",
+  "built_at_utc": "2026-01-08T01:02:15Z",
   "source": "rotowire",
   "DEN": [
-    {
-      "name": "C. Braun",
-      "status": "PROB",
-      "details": "C. Braun (Prob)"
-    },
-    {
-      "name": "T. Hardaway",
-      "status": "PROB",
-      "details": "T. Hardaway (Prob)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -113,16 +98,6 @@
       "details": "C. Cunningham (Out)"
     },
     {
-      "name": "D. Robinson",
-      "status": "PROB",
-      "details": "D. Robinson (Prob)"
-    },
-    {
-      "name": "C. LeVert",
-      "status": "PROB",
-      "details": "C. LeVert (Prob)"
-    },
-    {
       "name": "J. Duren",
       "status": "OUT",
       "details": "J. Duren (Out)"
@@ -144,16 +119,6 @@
     }
   ],
   "DET": [
-    {
-      "name": "C. LeVert",
-      "status": "PROB",
-      "details": "C. LeVert (Prob)"
-    },
-    {
-      "name": "D. Robinson",
-      "status": "PROB",
-      "details": "D. Robinson (Prob)"
-    },
     {
       "name": "C. Cunningham",
       "status": "OUT",
@@ -205,18 +170,6 @@
       "name": "C. Whitmore",
       "status": "OUT",
       "details": "C. Whitmore (Out)"
-    },
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    }
-  ],
-  "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
     }
   ],
   "TOR": [
@@ -427,11 +380,6 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "A. Bailey",
-      "status": "QUES",
-      "details": "A. Bailey (Ques)"
-    },
-    {
       "name": "Kevin Love",
       "status": "OUT",
       "details": "Kevin Love (Out)"
@@ -440,16 +388,6 @@
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
-    },
-    {
-      "name": "S. Gilgeous-Alexander",
-      "status": "QUES",
-      "details": "S. Gilgeous-Alexander (Ques)"
-    },
-    {
-      "name": "B. Barnhizer",
-      "status": "QUES",
-      "details": "B. Barnhizer (Ques)"
     },
     {
       "name": "T. Sorber",
@@ -484,19 +422,9 @@
   ],
   "OKC": [
     {
-      "name": "B. Barnhizer",
-      "status": "QUES",
-      "details": "B. Barnhizer (Ques)"
-    },
-    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "S. Gilgeous-Alexander",
-      "status": "QUES",
-      "details": "S. Gilgeous-Alexander (Ques)"
     },
     {
       "name": "A. Caruso",
@@ -536,26 +464,6 @@
       "details": "J. Green (Out)"
     },
     {
-      "name": "J. Morant",
-      "status": "QUES",
-      "details": "J. Morant (Ques)"
-    },
-    {
-      "name": "J. Jackson",
-      "status": "QUES",
-      "details": "J. Jackson (Ques)"
-    },
-    {
-      "name": "S. Aldama",
-      "status": "QUES",
-      "details": "S. Aldama (Ques)"
-    },
-    {
-      "name": "V. Williams",
-      "status": "QUES",
-      "details": "V. Williams (Ques)"
-    },
-    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -581,33 +489,23 @@
       "details": "J. Konchar (Out)"
     },
     {
+      "name": "Ja Morant",
+      "status": "OUT",
+      "details": "Ja Morant (Out)"
+    },
+    {
       "name": "S. Pippen",
       "status": "OUT",
       "details": "S. Pippen (Out)"
+    },
+    {
+      "name": "V. Williams",
+      "status": "OUT",
+      "details": "V. Williams (Out)"
     }
   ],
   "MEM": [
     {
-      "name": "S. Aldama",
-      "status": "QUES",
-      "details": "S. Aldama (Ques)"
-    },
-    {
-      "name": "J. Jackson",
-      "status": "QUES",
-      "details": "J. Jackson (Ques)"
-    },
-    {
-      "name": "J. Morant",
-      "status": "QUES",
-      "details": "J. Morant (Ques)"
-    },
-    {
-      "name": "V. Williams",
-      "status": "QUES",
-      "details": "V. Williams (Ques)"
-    },
-    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -633,21 +531,31 @@
       "details": "J. Konchar (Out)"
     },
     {
+      "name": "Ja Morant",
+      "status": "OUT",
+      "details": "Ja Morant (Out)"
+    },
+    {
       "name": "S. Pippen",
       "status": "OUT",
       "details": "S. Pippen (Out)"
+    },
+    {
+      "name": "V. Williams",
+      "status": "OUT",
+      "details": "V. Williams (Out)"
     }
   ],
   "LAL": [
     {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
-    },
-    {
       "name": "R. Hachimura",
       "status": "OUT",
       "details": "R. Hachimura (Out)"
+    },
+    {
+      "name": "L. James",
+      "status": "OUT",
+      "details": "L. James (Out)"
     },
     {
       "name": "A. Reaves",
@@ -704,11 +612,6 @@
       "details": "D. Green (Prob)"
     },
     {
-      "name": "G. Payton",
-      "status": "QUES",
-      "details": "G. Payton (Ques)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -717,6 +620,11 @@
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "G. Payton",
+      "status": "OUT",
+      "details": "G. Payton (Out)"
     }
   ],
   "GSW": [
@@ -726,11 +634,6 @@
       "details": "D. Green (Prob)"
     },
     {
-      "name": "G. Payton",
-      "status": "QUES",
-      "details": "G. Payton (Ques)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -739,6 +642,11 @@
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "G. Payton",
+      "status": "OUT",
+      "details": "G. Payton (Out)"
     }
   ],
   "HOU": [
