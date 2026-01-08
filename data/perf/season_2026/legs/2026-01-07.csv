@@ -1,0 +1,29 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-07,2026,Tyrese Maxey,PHI,WSH,3pt,4,HIT,4,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,VJ Edgecombe,PHI,WSH,pts,15,MISSED,13,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,VJ Edgecombe,PHI,WSH,3pt,2,MISSED,1,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Deni Avdija,POR,HOU,ast,8,MISSED,2,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Keyonte George,UTAH,OKC,reb,4,HIT,7,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Keyonte George,UTAH,OKC,ast,6,HIT,11,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Jamal Murray,DEN,BOS,reb,4,HIT,8,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Derrick White,BOS,DEN,reb,4,HIT,4,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Mikal Bridges,NY,LAC,3pt,2,MISSED,1,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Jabari Smith Jr.,HOU,POR,reb,6,MISSED,4,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Jabari Smith Jr.,HOU,POR,3pt,2,MISSED,1,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Stephen Curry,GS,MIL,ast,4,HIT,7,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Paul George,PHI,WSH,3pt,2,HIT,4,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Michael Porter Jr.,BKN,ORL,pts,25,HIT,34,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Michael Porter Jr.,BKN,ORL,3pt,4,HIT,8,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Jaren Jackson Jr.,MEM,PHX,3pt,2,MISSED,0,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Paolo Banchero,ORL,BKN,ast,4,HIT,6,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Josh Hart,NY,LAC,pts,10,,,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,LeBron James,LAL,SA,pts,20,,,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Joel Embiid,PHI,WSH,reb,6,HIT,7,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,CJ McCollum,WSH,PHI,ast,4,,,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Nikola Vucevic,CHI,DET,pts,15,HIT,20,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Dillon Brooks,PHX,MEM,3pt,2,HIT,5,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Devin Vassell,SA,LAL,reb,4,,,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Tim Hardaway Jr.,DEN,BOS,reb,2,HIT,2,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Donovan Clingan,POR,HOU,pts,10,HIT,12,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Donovan Clingan,POR,HOU,reb,10,MISSED,7,,targets_snapshot_2026-01-07.json
+2026-01-07,2026,Donovan Clingan,POR,HOU,3pt,1,HIT,2,,targets_snapshot_2026-01-07.json
