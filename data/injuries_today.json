@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-08",
-  "built_at_utc": "2026-01-08T18:26:01Z",
+  "built_at_utc": "2026-01-08T19:24:28Z",
   "source": "rotowire",
   "IND": [
     {
@@ -114,8 +114,8 @@
   "MIA": [
     {
       "name": "J. Jaquez",
-      "status": "QUES",
-      "details": "J. Jaquez (Ques)"
+      "status": "PROB",
+      "details": "J. Jaquez (Prob)"
     },
     {
       "name": "T. Rozier",
@@ -242,8 +242,8 @@
     },
     {
       "name": "B. Williams",
-      "status": "QUES",
-      "details": "B. Williams (Ques)"
+      "status": "PROB",
+      "details": "B. Williams (Prob)"
     },
     {
       "name": "P. Washington",

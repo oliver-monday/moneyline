@@ -1744,7 +1744,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-08,CHA,R. Kalkbrenner,OUT,R. Kalkbrenner (Out),rotowire
 2026-01-08,CHA,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-01-08,CHA,G. Williams,OUT,G. Williams (Out),rotowire
-2026-01-08,MIA,J. Jaquez,QUES,J. Jaquez (Ques),rotowire
+2026-01-08,MIA,J. Jaquez,PROB,J. Jaquez (Prob),rotowire
 2026-01-08,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-01-08,MIA,N. Essengue,OFS,N. Essengue (OFS),rotowire
 2026-01-08,MIA,K. Huerter,QUES,K. Huerter (Ques),rotowire
@@ -1768,7 +1768,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-08,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
 2026-01-08,DAL,Dante Exum,OFS,Dante Exum (OFS),rotowire
 2026-01-08,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
-2026-01-08,DAL,B. Williams,QUES,B. Williams (Ques),rotowire
+2026-01-08,DAL,B. Williams,PROB,B. Williams (Prob),rotowire
 2026-01-08,DAL,P. Washington,DOUBT,P. Washington (Doubt),rotowire
 2026-01-08,DAL,K. Irving,OUT,K. Irving (Out),rotowire
 2026-01-08,DAL,W. Kessler,OFS,W. Kessler (OFS),rotowire
