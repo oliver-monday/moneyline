@@ -1,8 +1,13 @@
 {
   "asof_date": "2026-01-07",
-  "built_at_utc": "2026-01-08T01:02:15Z",
+  "built_at_utc": "2026-01-08T02:52:21Z",
   "source": "rotowire",
   "DEN": [
+    {
+      "name": "S. Jones",
+      "status": "QUES",
+      "details": "S. Jones (Ques)"
+    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -152,16 +157,6 @@
       "details": "K. George (Out)"
     },
     {
-      "name": "C. Kispert",
-      "status": "OUT",
-      "details": "C. Kispert (Out)"
-    },
-    {
-      "name": "C. McCollum",
-      "status": "OUT",
-      "details": "C. McCollum (Out)"
-    },
-    {
       "name": "K. Middleton",
       "status": "OUT",
       "details": "K. Middleton (Out)"
@@ -170,9 +165,19 @@
       "name": "C. Whitmore",
       "status": "OUT",
       "details": "C. Whitmore (Out)"
+    },
+    {
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     }
   ],
   "TOR": [
+    {
+      "name": "B. Ingram",
+      "status": "QUES",
+      "details": "B. Ingram (Ques)"
+    },
     {
       "name": "C. Hepburn",
       "status": "OUT",
@@ -258,14 +263,19 @@
       "details": "N. Dante (OFS)"
     },
     {
+      "name": "C. Kispert",
+      "status": "OUT",
+      "details": "C. Kispert (Out)"
+    },
+    {
+      "name": "C. McCollum",
+      "status": "OUT",
+      "details": "C. McCollum (Out)"
+    },
+    {
       "name": "O. Okongwu",
       "status": "OUT",
       "details": "O. Okongwu (Out)"
-    },
-    {
-      "name": "Trae Young",
-      "status": "OUT",
-      "details": "Trae Young (Out)"
     }
   ],
   "ATL": [
@@ -275,14 +285,19 @@
       "details": "N. Dante (OFS)"
     },
     {
+      "name": "C. Kispert",
+      "status": "OUT",
+      "details": "C. Kispert (Out)"
+    },
+    {
+      "name": "C. McCollum",
+      "status": "OUT",
+      "details": "C. McCollum (Out)"
+    },
+    {
       "name": "O. Okongwu",
       "status": "OUT",
       "details": "O. Okongwu (Out)"
-    },
-    {
-      "name": "Trae Young",
-      "status": "OUT",
-      "details": "Trae Young (Out)"
     }
   ],
   "ORL": [
@@ -568,11 +583,6 @@
       "details": "A. Thiero (Out)"
     },
     {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
-    },
-    {
       "name": "H. Ingram",
       "status": "OUT",
       "details": "H. Ingram (Out)"
@@ -584,11 +594,6 @@
     }
   ],
   "SAS": [
-    {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
-    },
     {
       "name": "H. Ingram",
       "status": "OUT",
@@ -607,11 +612,6 @@
       "details": "T. Prince (Out)"
     },
     {
-      "name": "D. Green",
-      "status": "PROB",
-      "details": "D. Green (Prob)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -628,11 +628,6 @@
     }
   ],
   "GSW": [
-    {
-      "name": "D. Green",
-      "status": "PROB",
-      "details": "D. Green (Prob)"
-    },
     {
       "name": "LJ Cryer",
       "status": "OUT",
