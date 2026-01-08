@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-08",
-  "built_at_utc": "2026-01-08T19:24:28Z",
+  "built_at_utc": "2026-01-08T20:22:55Z",
   "source": "rotowire",
   "IND": [
     {
@@ -256,14 +256,19 @@
       "details": "K. Irving (Out)"
     },
     {
+      "name": "J. Nurkic",
+      "status": "QUES",
+      "details": "J. Nurkic (Ques)"
+    },
+    {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "K. Love",
+      "name": "A. Bailey",
       "status": "QUES",
-      "details": "K. Love (Ques)"
+      "details": "A. Bailey (Ques)"
     },
     {
       "name": "G. Niang",
@@ -278,9 +283,14 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "K. Love",
+      "name": "A. Bailey",
       "status": "QUES",
-      "details": "K. Love (Ques)"
+      "details": "A. Bailey (Ques)"
+    },
+    {
+      "name": "J. Nurkic",
+      "status": "QUES",
+      "details": "J. Nurkic (Ques)"
     },
     {
       "name": "G. Niang",

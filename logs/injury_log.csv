@@ -1725,6 +1725,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-08,UTA,Kevin Love,OUT,Kevin Love (Out),rotowire
 2026-01-08,MIA,C. White,PROB,C. White (Prob),rotowire
 2026-01-08,CHI,C. White,PROB,C. White (Prob),rotowire
+2026-01-08,DAL,K. Love,QUES,K. Love (Ques),rotowire
+2026-01-08,UTA,K. Love,QUES,K. Love (Ques),rotowire
 2026-01-08,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-01-08,IND,A. Nembhard,QUES,A. Nembhard (Ques),rotowire
 2026-01-08,IND,I. Jackson,OUT,I. Jackson (Out),rotowire
@@ -1771,9 +1773,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-08,DAL,B. Williams,PROB,B. Williams (Prob),rotowire
 2026-01-08,DAL,P. Washington,DOUBT,P. Washington (Doubt),rotowire
 2026-01-08,DAL,K. Irving,OUT,K. Irving (Out),rotowire
+2026-01-08,DAL,J. Nurkic,QUES,J. Nurkic (Ques),rotowire
 2026-01-08,DAL,W. Kessler,OFS,W. Kessler (OFS),rotowire
-2026-01-08,DAL,K. Love,QUES,K. Love (Ques),rotowire
+2026-01-08,DAL,A. Bailey,QUES,A. Bailey (Ques),rotowire
 2026-01-08,DAL,G. Niang,OUT,G. Niang (Out),rotowire
 2026-01-08,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
-2026-01-08,UTA,K. Love,QUES,K. Love (Ques),rotowire
+2026-01-08,UTA,A. Bailey,QUES,A. Bailey (Ques),rotowire
+2026-01-08,UTA,J. Nurkic,QUES,J. Nurkic (Ques),rotowire
 2026-01-08,UTA,G. Niang,OUT,G. Niang (Out),rotowire
