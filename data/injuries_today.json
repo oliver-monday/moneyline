@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-09",
-  "built_at_utc": "2026-01-09T20:22:27Z",
+  "built_at_utc": "2026-01-09T21:01:50Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -646,13 +646,13 @@
     },
     {
       "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
+      "status": "PROB",
+      "details": "L. James (Prob)"
     },
     {
       "name": "R. Hachimura",
-      "status": "QUES",
-      "details": "R. Hachimura (Ques)"
+      "status": "OUT",
+      "details": "R. Hachimura (Out)"
     },
     {
       "name": "A. Reaves",
@@ -667,14 +667,14 @@
   ],
   "LAL": [
     {
-      "name": "R. Hachimura",
-      "status": "QUES",
-      "details": "R. Hachimura (Ques)"
+      "name": "L. James",
+      "status": "PROB",
+      "details": "L. James (Prob)"
     },
     {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
+      "name": "R. Hachimura",
+      "status": "OUT",
+      "details": "R. Hachimura (Out)"
     },
     {
       "name": "A. Reaves",
