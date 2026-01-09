@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-09",
-  "built_at_utc": "2026-01-09T21:01:50Z",
+  "built_at_utc": "2026-01-09T22:27:43Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -73,11 +73,6 @@
       "details": "J. Embiid (Prob)"
     },
     {
-      "name": "J. Richardson",
-      "status": "QUES",
-      "details": "J. Richardson (Ques)"
-    },
-    {
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
@@ -99,11 +94,6 @@
     }
   ],
   "ORL": [
-    {
-      "name": "J. Richardson",
-      "status": "QUES",
-      "details": "J. Richardson (Ques)"
-    },
     {
       "name": "C. Castleton",
       "status": "OUT",
@@ -369,6 +359,11 @@
       "details": "K. Porzingis (Ques)"
     },
     {
+      "name": "Z. Risacher",
+      "status": "QUES",
+      "details": "Z. Risacher (Ques)"
+    },
+    {
       "name": "C. Kispert",
       "status": "OUT",
       "details": "C. Kispert (Out)"
@@ -571,11 +566,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "J. Holiday",
-      "status": "DOUBT",
-      "details": "J. Holiday (Doubt)"
-    },
-    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
@@ -584,6 +574,11 @@
       "name": "S. Henderson",
       "status": "OUT",
       "details": "S. Henderson (Out)"
+    },
+    {
+      "name": "J. Holiday",
+      "status": "OUT",
+      "details": "J. Holiday (Out)"
     },
     {
       "name": "K. Murray",
@@ -608,11 +603,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "J. Holiday",
-      "status": "DOUBT",
-      "details": "J. Holiday (Doubt)"
-    },
-    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
@@ -621,6 +611,11 @@
       "name": "S. Henderson",
       "status": "OUT",
       "details": "S. Henderson (Out)"
+    },
+    {
+      "name": "J. Holiday",
+      "status": "OUT",
+      "details": "J. Holiday (Out)"
     },
     {
       "name": "K. Murray",
