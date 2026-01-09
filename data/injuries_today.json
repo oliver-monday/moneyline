@@ -1,17 +1,12 @@
 {
   "asof_date": "2026-01-08",
-  "built_at_utc": "2026-01-08T23:20:31Z",
+  "built_at_utc": "2026-01-09T01:03:04Z",
   "source": "rotowire",
   "IND": [
     {
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
     },
     {
       "name": "I. Jackson",
@@ -22,6 +17,11 @@
       "name": "B. Mathurin",
       "status": "OUT",
       "details": "B. Mathurin (Out)"
+    },
+    {
+      "name": "A. Nembhard",
+      "status": "OUT",
+      "details": "A. Nembhard (Out)"
     },
     {
       "name": "Obi Toppin",
@@ -83,11 +83,6 @@
   ],
   "MIA": [
     {
-      "name": "J. Jaquez",
-      "status": "PROB",
-      "details": "J. Jaquez (Prob)"
-    },
-    {
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
@@ -147,21 +142,6 @@
   ],
   "CLE": [
     {
-      "name": "J. Tyson",
-      "status": "PROB",
-      "details": "J. Tyson (Prob)"
-    },
-    {
-      "name": "D. Garland",
-      "status": "QUES",
-      "details": "D. Garland (Ques)"
-    },
-    {
-      "name": "L. Nance",
-      "status": "QUES",
-      "details": "L. Nance (Ques)"
-    },
-    {
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
@@ -172,22 +152,12 @@
       "details": "Dean Wade (Out)"
     },
     {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
     }
   ],
   "MIN": [
-    {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
     {
       "name": "T. Shannon",
       "status": "OUT",
@@ -206,24 +176,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "B. Williams",
-      "status": "PROB",
-      "details": "B. Williams (Prob)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
-    },
-    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
     },
     {
-      "name": "J. Nurkic",
-      "status": "QUES",
-      "details": "J. Nurkic (Ques)"
+      "name": "P. Washington",
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     },
     {
       "name": "W. Kessler",
@@ -231,14 +191,19 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "A. Bailey",
-      "status": "QUES",
-      "details": "A. Bailey (Ques)"
+      "name": "Ace Bailey",
+      "status": "OUT",
+      "details": "Ace Bailey (Out)"
     },
     {
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
+    },
+    {
+      "name": "J. Nurkic",
+      "status": "OUT",
+      "details": "J. Nurkic (Out)"
     }
   ],
   "UTA": [
@@ -248,19 +213,19 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "A. Bailey",
-      "status": "QUES",
-      "details": "A. Bailey (Ques)"
-    },
-    {
-      "name": "J. Nurkic",
-      "status": "QUES",
-      "details": "J. Nurkic (Ques)"
+      "name": "Ace Bailey",
+      "status": "OUT",
+      "details": "Ace Bailey (Out)"
     },
     {
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
+    },
+    {
+      "name": "J. Nurkic",
+      "status": "OUT",
+      "details": "J. Nurkic (Out)"
     }
   ]
 }
