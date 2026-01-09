@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-09",
-  "built_at_utc": "2026-01-09T19:24:30Z",
+  "built_at_utc": "2026-01-09T20:22:27Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -364,14 +364,19 @@
       "details": "N. Dante (OFS)"
     },
     {
+      "name": "K. Porzingis",
+      "status": "QUES",
+      "details": "K. Porzingis (Ques)"
+    },
+    {
       "name": "C. Kispert",
-      "status": "DOUBT",
-      "details": "C. Kispert (Doubt)"
+      "status": "OUT",
+      "details": "C. Kispert (Out)"
     },
     {
       "name": "C. McCollum",
-      "status": "DOUBT",
-      "details": "C. McCollum (Doubt)"
+      "status": "OUT",
+      "details": "C. McCollum (Out)"
     },
     {
       "name": "J. Murray",
@@ -522,11 +527,6 @@
       "details": "D. Sabonis (Out)"
     },
     {
-      "name": "G. Payton",
-      "status": "PROB",
-      "details": "G. Payton (Prob)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -538,11 +538,6 @@
     }
   ],
   "GSW": [
-    {
-      "name": "G. Payton",
-      "status": "PROB",
-      "details": "G. Payton (Prob)"
-    },
     {
       "name": "LJ Cryer",
       "status": "OUT",
