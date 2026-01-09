@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-09",
-  "built_at_utc": "2026-01-09T18:28:53Z",
+  "built_at_utc": "2026-01-09T19:24:30Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -384,11 +384,6 @@
       "details": "C. Braun (Prob)"
     },
     {
-      "name": "S. Jones",
-      "status": "QUES",
-      "details": "S. Jones (Ques)"
-    },
-    {
       "name": "B. Brown",
       "status": "PROB",
       "details": "B. Brown (Prob)"
@@ -397,6 +392,11 @@
       "name": "A. Gordon",
       "status": "PROB",
       "details": "A. Gordon (Prob)"
+    },
+    {
+      "name": "S. Jones",
+      "status": "DOUBT",
+      "details": "S. Jones (Doubt)"
     },
     {
       "name": "T. Bates",
@@ -442,8 +442,8 @@
     },
     {
       "name": "S. Jones",
-      "status": "QUES",
-      "details": "S. Jones (Ques)"
+      "status": "DOUBT",
+      "details": "S. Jones (Doubt)"
     },
     {
       "name": "T. Bates",
