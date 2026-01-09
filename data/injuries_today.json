@@ -1,17 +1,17 @@
 {
   "asof_date": "2026-01-09",
-  "built_at_utc": "2026-01-09T14:48:09Z",
+  "built_at_utc": "2026-01-09T17:15:19Z",
   "source": "rotowire",
   "TOR": [
-    {
-      "name": "S. Barnes",
-      "status": "QUES",
-      "details": "S. Barnes (Ques)"
-    },
     {
       "name": "B. Ingram",
       "status": "QUES",
       "details": "B. Ingram (Ques)"
+    },
+    {
+      "name": "S. Barnes",
+      "status": "DOUBT",
+      "details": "S. Barnes (Doubt)"
     },
     {
       "name": "J. Poeltl",
@@ -186,14 +186,14 @@
       "details": "Chris Paul (Out)"
     },
     {
-      "name": "M. Porter",
-      "status": "PROB",
-      "details": "M. Porter (Prob)"
-    },
-    {
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
+    },
+    {
+      "name": "E. Liddell",
+      "status": "OUT",
+      "details": "E. Liddell (Out)"
     },
     {
       "name": "Ben Saraf",
@@ -203,14 +203,14 @@
   ],
   "BKN": [
     {
-      "name": "M. Porter",
-      "status": "PROB",
-      "details": "M. Porter (Prob)"
-    },
-    {
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
+    },
+    {
+      "name": "E. Liddell",
+      "status": "OUT",
+      "details": "E. Liddell (Out)"
     },
     {
       "name": "Ben Saraf",

@@ -1783,8 +1783,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-08,UTA,Ace Bailey,OUT,Ace Bailey (Out),rotowire
 2026-01-08,UTA,G. Niang,OUT,G. Niang (Out),rotowire
 2026-01-08,UTA,J. Nurkic,OUT,J. Nurkic (Out),rotowire
-2026-01-09,TOR,S. Barnes,QUES,S. Barnes (Ques),rotowire
+2026-01-09,LAC,M. Porter,PROB,M. Porter (Prob),rotowire
+2026-01-09,BKN,M. Porter,PROB,M. Porter (Prob),rotowire
 2026-01-09,TOR,B. Ingram,QUES,B. Ingram (Ques),rotowire
+2026-01-09,TOR,S. Barnes,DOUBT,S. Barnes (Doubt),rotowire
 2026-01-09,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
 2026-01-09,TOR,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-01-09,TOR,Fantasy Football,REST,Fantasy Football (Rest),rotowire
@@ -1815,11 +1817,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-09,LAC,B. Bogdanovic,OUT,B. Bogdanovic (Out),rotowire
 2026-01-09,LAC,D. Jones,OUT,D. Jones (Out),rotowire
 2026-01-09,LAC,Chris Paul,OUT,Chris Paul (Out),rotowire
-2026-01-09,LAC,M. Porter,PROB,M. Porter (Prob),rotowire
 2026-01-09,LAC,H. Highsmith,OUT,H. Highsmith (Out),rotowire
+2026-01-09,LAC,E. Liddell,OUT,E. Liddell (Out),rotowire
 2026-01-09,LAC,Ben Saraf,OUT,Ben Saraf (Out),rotowire
-2026-01-09,BKN,M. Porter,PROB,M. Porter (Prob),rotowire
 2026-01-09,BKN,H. Highsmith,OUT,H. Highsmith (Out),rotowire
+2026-01-09,BKN,E. Liddell,OUT,E. Liddell (Out),rotowire
 2026-01-09,BKN,Ben Saraf,OUT,Ben Saraf (Out),rotowire
 2026-01-09,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-01-09,OKC,A. Caruso,QUES,A. Caruso (Ques),rotowire
