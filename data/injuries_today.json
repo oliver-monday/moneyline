@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-09",
-  "built_at_utc": "2026-01-09T17:15:19Z",
+  "built_at_utc": "2026-01-09T18:28:53Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -12,6 +12,11 @@
       "name": "S. Barnes",
       "status": "DOUBT",
       "details": "S. Barnes (Doubt)"
+    },
+    {
+      "name": "C. Hepburn",
+      "status": "OUT",
+      "details": "C. Hepburn (Out)"
     },
     {
       "name": "J. Poeltl",
@@ -64,13 +69,18 @@
   "PHI": [
     {
       "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
+      "status": "PROB",
+      "details": "J. Embiid (Prob)"
     },
     {
       "name": "J. Richardson",
       "status": "QUES",
       "details": "J. Richardson (Ques)"
+    },
+    {
+      "name": "C. Castleton",
+      "status": "OUT",
+      "details": "C. Castleton (Out)"
     },
     {
       "name": "J. Suggs",
@@ -95,6 +105,11 @@
       "details": "J. Richardson (Ques)"
     },
     {
+      "name": "C. Castleton",
+      "status": "OUT",
+      "details": "C. Castleton (Out)"
+    },
+    {
       "name": "J. Suggs",
       "status": "OUT",
       "details": "J. Suggs (Out)"
@@ -117,11 +132,6 @@
       "details": "T. Murphy (Ques)"
     },
     {
-      "name": "H. Jones",
-      "status": "DOUBT",
-      "details": "H. Jones (Doubt)"
-    },
-    {
       "name": "J. Alvarado",
       "status": "OUT",
       "details": "J. Alvarado (Out)"
@@ -132,31 +142,36 @@
       "details": "Saddiq Bey (Out)"
     },
     {
+      "name": "H. Jones",
+      "status": "OUT",
+      "details": "H. Jones (Out)"
+    },
+    {
       "name": "D. Murray",
       "status": "OUT",
       "details": "D. Murray (Out)"
     },
     {
-      "name": "T. Young",
-      "status": "DOUBT",
-      "details": "T. Young (Doubt)"
-    },
-    {
       "name": "C. Whitmore",
       "status": "OUT",
       "details": "C. Whitmore (Out)"
+    },
+    {
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     }
   ],
   "WAS": [
     {
-      "name": "T. Young",
-      "status": "DOUBT",
-      "details": "T. Young (Doubt)"
-    },
-    {
       "name": "C. Whitmore",
       "status": "OUT",
       "details": "C. Whitmore (Out)"
+    },
+    {
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     }
   ],
   "LAC": [
@@ -453,6 +468,11 @@
   ],
   "NYK": [
     {
+      "name": "G. Yabusele",
+      "status": "QUES",
+      "details": "G. Yabusele (Ques)"
+    },
+    {
       "name": "Josh Hart",
       "status": "OUT",
       "details": "Josh Hart (Out)"
@@ -487,6 +507,11 @@
   ],
   "SAC": [
     {
+      "name": "I. Stevens",
+      "status": "QUES",
+      "details": "I. Stevens (Ques)"
+    },
+    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
@@ -502,6 +527,11 @@
       "details": "G. Payton (Prob)"
     },
     {
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
+    },
+    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
@@ -512,6 +542,11 @@
       "name": "G. Payton",
       "status": "PROB",
       "details": "G. Payton (Prob)"
+    },
+    {
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
     },
     {
       "name": "Seth Curry",
