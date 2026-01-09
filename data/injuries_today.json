@@ -1,22 +1,22 @@
 {
   "asof_date": "2026-01-09",
-  "built_at_utc": "2026-01-09T22:27:43Z",
+  "built_at_utc": "2026-01-09T23:22:52Z",
   "source": "rotowire",
   "TOR": [
     {
-      "name": "B. Ingram",
-      "status": "QUES",
-      "details": "B. Ingram (Ques)"
-    },
-    {
       "name": "S. Barnes",
-      "status": "DOUBT",
-      "details": "S. Barnes (Doubt)"
+      "status": "OUT",
+      "details": "S. Barnes (Out)"
     },
     {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "B. Ingram",
+      "status": "OUT",
+      "details": "B. Ingram (Out)"
     },
     {
       "name": "J. Poeltl",
@@ -78,6 +78,11 @@
       "details": "C. Castleton (Out)"
     },
     {
+      "name": "T. da Silva",
+      "status": "OUT",
+      "details": "T. da Silva (Out)"
+    },
+    {
       "name": "J. Suggs",
       "status": "OUT",
       "details": "J. Suggs (Out)"
@@ -100,6 +105,11 @@
       "details": "C. Castleton (Out)"
     },
     {
+      "name": "T. da Silva",
+      "status": "OUT",
+      "details": "T. da Silva (Out)"
+    },
+    {
       "name": "J. Suggs",
       "status": "OUT",
       "details": "J. Suggs (Out)"
@@ -116,11 +126,6 @@
     }
   ],
   "NOP": [
-    {
-      "name": "T. Murphy",
-      "status": "QUES",
-      "details": "T. Murphy (Ques)"
-    },
     {
       "name": "J. Alvarado",
       "status": "OUT",
@@ -307,14 +312,14 @@
   ],
   "MEM": [
     {
-      "name": "C. Coward",
-      "status": "QUES",
-      "details": "C. Coward (Ques)"
-    },
-    {
       "name": "V. Williams",
       "status": "QUES",
       "details": "V. Williams (Ques)"
+    },
+    {
+      "name": "C. Coward",
+      "status": "QUES",
+      "details": "C. Coward (Ques)"
     },
     {
       "name": "J. Konchar",
@@ -375,8 +380,8 @@
     },
     {
       "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
+      "status": "QUES",
+      "details": "J. Murray (Ques)"
     },
     {
       "name": "C. Braun",
@@ -437,8 +442,8 @@
     },
     {
       "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
+      "status": "QUES",
+      "details": "J. Murray (Ques)"
     },
     {
       "name": "S. Jones",
@@ -506,11 +511,6 @@
     }
   ],
   "SAC": [
-    {
-      "name": "I. Stevens",
-      "status": "QUES",
-      "details": "I. Stevens (Ques)"
-    },
     {
       "name": "K. Murray",
       "status": "OUT",
