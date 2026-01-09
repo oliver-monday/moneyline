@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-08",
-  "built_at_utc": "2026-01-09T02:52:55Z",
+  "built_at_utc": "2026-01-09T03:22:55Z",
   "source": "rotowire",
   "IND": [
     {
@@ -79,65 +79,6 @@
       "name": "G. Williams",
       "status": "OUT",
       "details": "G. Williams (Out)"
-    }
-  ],
-  "MIA": [
-    {
-      "name": "T. Rozier",
-      "status": "OUT",
-      "details": "T. Rozier (Out)"
-    },
-    {
-      "name": "N. Essengue",
-      "status": "OFS",
-      "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "Z. Collins",
-      "status": "OUT",
-      "details": "Z. Collins (Out)"
-    },
-    {
-      "name": "J. Giddey",
-      "status": "OUT",
-      "details": "J. Giddey (Out)"
-    },
-    {
-      "name": "K. Huerter",
-      "status": "OUT",
-      "details": "K. Huerter (Out)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "OUT",
-      "details": "J. Smith (Out)"
-    }
-  ],
-  "CHI": [
-    {
-      "name": "N. Essengue",
-      "status": "OFS",
-      "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "Z. Collins",
-      "status": "OUT",
-      "details": "Z. Collins (Out)"
-    },
-    {
-      "name": "J. Giddey",
-      "status": "OUT",
-      "details": "J. Giddey (Out)"
-    },
-    {
-      "name": "K. Huerter",
-      "status": "OUT",
-      "details": "K. Huerter (Out)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "OUT",
-      "details": "J. Smith (Out)"
     }
   ],
   "CLE": [
