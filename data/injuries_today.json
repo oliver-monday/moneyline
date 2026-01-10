@@ -1,8 +1,13 @@
 {
   "asof_date": "2026-01-09",
-  "built_at_utc": "2026-01-10T01:00:43Z",
+  "built_at_utc": "2026-01-10T02:46:30Z",
   "source": "rotowire",
   "TOR": [
+    {
+      "name": "R. Barrett",
+      "status": "QUES",
+      "details": "R. Barrett (Ques)"
+    },
     {
       "name": "S. Barnes",
       "status": "OUT",
@@ -228,6 +233,11 @@
       "details": "J. Williams (Out)"
     },
     {
+      "name": "K. Caldwell-Pope",
+      "status": "DOUBT",
+      "details": "K. Caldwell-Pope (Doubt)"
+    },
+    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -259,6 +269,11 @@
     }
   ],
   "MEM": [
+    {
+      "name": "K. Caldwell-Pope",
+      "status": "DOUBT",
+      "details": "K. Caldwell-Pope (Doubt)"
+    },
     {
       "name": "B. Clarke",
       "status": "OUT",
@@ -317,31 +332,6 @@
       "details": "Z. Risacher (Out)"
     },
     {
-      "name": "J. Murray",
-      "status": "QUES",
-      "details": "J. Murray (Ques)"
-    },
-    {
-      "name": "C. Braun",
-      "status": "PROB",
-      "details": "C. Braun (Prob)"
-    },
-    {
-      "name": "B. Brown",
-      "status": "PROB",
-      "details": "B. Brown (Prob)"
-    },
-    {
-      "name": "A. Gordon",
-      "status": "PROB",
-      "details": "A. Gordon (Prob)"
-    },
-    {
-      "name": "S. Jones",
-      "status": "DOUBT",
-      "details": "S. Jones (Doubt)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -355,6 +345,16 @@
       "name": "N. Jokic",
       "status": "OUT",
       "details": "N. Jokic (Out)"
+    },
+    {
+      "name": "S. Jones",
+      "status": "OUT",
+      "details": "S. Jones (Out)"
+    },
+    {
+      "name": "J. Murray",
+      "status": "OUT",
+      "details": "J. Murray (Out)"
     },
     {
       "name": "J. Valanciunas",
@@ -364,31 +364,6 @@
   ],
   "DEN": [
     {
-      "name": "C. Braun",
-      "status": "PROB",
-      "details": "C. Braun (Prob)"
-    },
-    {
-      "name": "B. Brown",
-      "status": "PROB",
-      "details": "B. Brown (Prob)"
-    },
-    {
-      "name": "A. Gordon",
-      "status": "PROB",
-      "details": "A. Gordon (Prob)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "QUES",
-      "details": "J. Murray (Ques)"
-    },
-    {
-      "name": "S. Jones",
-      "status": "DOUBT",
-      "details": "S. Jones (Doubt)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -402,6 +377,16 @@
       "name": "N. Jokic",
       "status": "OUT",
       "details": "N. Jokic (Out)"
+    },
+    {
+      "name": "S. Jones",
+      "status": "OUT",
+      "details": "S. Jones (Out)"
+    },
+    {
+      "name": "J. Murray",
+      "status": "OUT",
+      "details": "J. Murray (Out)"
     },
     {
       "name": "J. Valanciunas",
@@ -460,22 +445,12 @@
       "details": "D. Sabonis (Out)"
     },
     {
-      "name": "LJ Cryer",
-      "status": "OUT",
-      "details": "LJ Cryer (Out)"
-    },
-    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
     }
   ],
   "GSW": [
-    {
-      "name": "LJ Cryer",
-      "status": "OUT",
-      "details": "LJ Cryer (Out)"
-    },
     {
       "name": "Seth Curry",
       "status": "OUT",
@@ -578,11 +553,6 @@
       "details": "T. Prince (Out)"
     },
     {
-      "name": "L. James",
-      "status": "PROB",
-      "details": "L. James (Prob)"
-    },
-    {
       "name": "R. Hachimura",
       "status": "OUT",
       "details": "R. Hachimura (Out)"
@@ -599,11 +569,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "L. James",
-      "status": "PROB",
-      "details": "L. James (Prob)"
-    },
     {
       "name": "R. Hachimura",
       "status": "OUT",
