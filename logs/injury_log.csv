@@ -1793,6 +1793,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-09,ORL,J. Richardson,QUES,J. Richardson (Ques),rotowire
 2026-01-09,NOP,T. Murphy,QUES,T. Murphy (Ques),rotowire
 2026-01-09,SAC,I. Stevens,QUES,I. Stevens (Ques),rotowire
+2026-01-09,PHI,J. Embiid,PROB,J. Embiid (Prob),rotowire
+2026-01-09,LAC,K. Leonard,QUES,K. Leonard (Ques),rotowire
+2026-01-09,OKC,A. Caruso,QUES,A. Caruso (Ques),rotowire
+2026-01-09,OKC,C. Coward,QUES,C. Coward (Ques),rotowire
+2026-01-09,OKC,V. Williams,QUES,V. Williams (Ques),rotowire
+2026-01-09,MEM,V. Williams,QUES,V. Williams (Ques),rotowire
+2026-01-09,MEM,C. Coward,QUES,C. Coward (Ques),rotowire
 2026-01-09,TOR,S. Barnes,OUT,S. Barnes (Out),rotowire
 2026-01-09,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-01-09,TOR,B. Ingram,OUT,B. Ingram (Out),rotowire
@@ -1803,12 +1810,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-09,TOR,J. Tatum,OUT,J. Tatum (Out),rotowire
 2026-01-09,BOS,J. Minott,OUT,J. Minott (Out),rotowire
 2026-01-09,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
-2026-01-09,PHI,J. Embiid,PROB,J. Embiid (Prob),rotowire
-2026-01-09,PHI,C. Castleton,OUT,C. Castleton (Out),rotowire
-2026-01-09,PHI,T. da Silva,OUT,T. da Silva (Out),rotowire
-2026-01-09,PHI,J. Suggs,OUT,J. Suggs (Out),rotowire
-2026-01-09,PHI,M. Wagner,OUT,M. Wagner (Out),rotowire
-2026-01-09,PHI,F. Wagner,OUT,F. Wagner (Out),rotowire
 2026-01-09,ORL,C. Castleton,OUT,C. Castleton (Out),rotowire
 2026-01-09,ORL,T. da Silva,OUT,T. da Silva (Out),rotowire
 2026-01-09,ORL,J. Suggs,OUT,J. Suggs (Out),rotowire
@@ -1823,7 +1824,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-09,WAS,C. Whitmore,OUT,C. Whitmore (Out),rotowire
 2026-01-09,WAS,Trae Young,OUT,Trae Young (Out),rotowire
 2026-01-09,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
-2026-01-09,LAC,K. Leonard,QUES,K. Leonard (Ques),rotowire
 2026-01-09,LAC,B. Bogdanovic,OUT,B. Bogdanovic (Out),rotowire
 2026-01-09,LAC,D. Jones,OUT,D. Jones (Out),rotowire
 2026-01-09,LAC,Chris Paul,OUT,Chris Paul (Out),rotowire
@@ -1834,34 +1834,29 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-09,BKN,E. Liddell,OUT,E. Liddell (Out),rotowire
 2026-01-09,BKN,Ben Saraf,OUT,Ben Saraf (Out),rotowire
 2026-01-09,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
-2026-01-09,OKC,A. Caruso,QUES,A. Caruso (Ques),rotowire
 2026-01-09,OKC,S. Gilgeous-Alexander,OUT,S. Gilgeous-Alexander (Out),rotowire
 2026-01-09,OKC,I. Hartenstein,OUT,I. Hartenstein (Out),rotowire
 2026-01-09,OKC,C. Holmgren,OUT,C. Holmgren (Out),rotowire
 2026-01-09,OKC,N. Topic,OUT,N. Topic (Out),rotowire
 2026-01-09,OKC,C. Wallace,OUT,C. Wallace (Out),rotowire
 2026-01-09,OKC,J. Williams,OUT,J. Williams (Out),rotowire
-2026-01-09,OKC,C. Coward,QUES,C. Coward (Ques),rotowire
-2026-01-09,OKC,V. Williams,QUES,V. Williams (Ques),rotowire
-2026-01-09,OKC,J. Konchar,DOUBT,J. Konchar (Doubt),rotowire
 2026-01-09,OKC,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-01-09,OKC,Zach Edey,OUT,Zach Edey (Out),rotowire
 2026-01-09,OKC,Ty Jerome,OUT,Ty Jerome (Out),rotowire
+2026-01-09,OKC,J. Konchar,OUT,J. Konchar (Out),rotowire
 2026-01-09,OKC,Ja Morant,OUT,Ja Morant (Out),rotowire
 2026-01-09,OKC,S. Pippen,OUT,S. Pippen (Out),rotowire
-2026-01-09,MEM,V. Williams,QUES,V. Williams (Ques),rotowire
-2026-01-09,MEM,C. Coward,QUES,C. Coward (Ques),rotowire
-2026-01-09,MEM,J. Konchar,DOUBT,J. Konchar (Doubt),rotowire
 2026-01-09,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-01-09,MEM,Zach Edey,OUT,Zach Edey (Out),rotowire
 2026-01-09,MEM,Ty Jerome,OUT,Ty Jerome (Out),rotowire
+2026-01-09,MEM,J. Konchar,OUT,J. Konchar (Out),rotowire
 2026-01-09,MEM,Ja Morant,OUT,Ja Morant (Out),rotowire
 2026-01-09,MEM,S. Pippen,OUT,S. Pippen (Out),rotowire
 2026-01-09,ATL,N. Dante,OFS,N. Dante (OFS),rotowire
-2026-01-09,ATL,K. Porzingis,QUES,K. Porzingis (Ques),rotowire
-2026-01-09,ATL,Z. Risacher,QUES,Z. Risacher (Ques),rotowire
 2026-01-09,ATL,C. Kispert,OUT,C. Kispert (Out),rotowire
 2026-01-09,ATL,C. McCollum,OUT,C. McCollum (Out),rotowire
+2026-01-09,ATL,K. Porzingis,OUT,K. Porzingis (Out),rotowire
+2026-01-09,ATL,Z. Risacher,OUT,Z. Risacher (Out),rotowire
 2026-01-09,ATL,J. Murray,QUES,J. Murray (Ques),rotowire
 2026-01-09,ATL,C. Braun,PROB,C. Braun (Prob),rotowire
 2026-01-09,ATL,B. Brown,PROB,B. Brown (Prob),rotowire
@@ -1880,9 +1875,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-09,DEN,C. Johnson,OUT,C. Johnson (Out),rotowire
 2026-01-09,DEN,N. Jokic,OUT,N. Jokic (Out),rotowire
 2026-01-09,DEN,J. Valanciunas,OUT,J. Valanciunas (Out),rotowire
-2026-01-09,NYK,G. Yabusele,QUES,G. Yabusele (Ques),rotowire
 2026-01-09,NYK,Josh Hart,OUT,Josh Hart (Out),rotowire
 2026-01-09,NYK,L. Shamet,OUT,L. Shamet (Out),rotowire
+2026-01-09,NYK,G. Yabusele,OUT,G. Yabusele (Out),rotowire
 2026-01-09,NYK,J. Bouyea,OUT,J. Bouyea (Out),rotowire
 2026-01-09,NYK,J. Green,OUT,J. Green (Out),rotowire
 2026-01-09,PHX,J. Bouyea,OUT,J. Bouyea (Out),rotowire
@@ -1919,3 +1914,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-09,LAL,R. Hachimura,OUT,R. Hachimura (Out),rotowire
 2026-01-09,LAL,A. Reaves,OUT,A. Reaves (Out),rotowire
 2026-01-09,LAL,A. Thiero,OUT,A. Thiero (Out),rotowire
+2026-01-09,PHI,C. Castleton,OUT,C. Castleton (Out),rotowire
+2026-01-09,PHI,T. da Silva,OUT,T. da Silva (Out),rotowire
+2026-01-09,PHI,J. Suggs,OUT,J. Suggs (Out),rotowire
+2026-01-09,PHI,M. Wagner,OUT,M. Wagner (Out),rotowire
+2026-01-09,PHI,F. Wagner,OUT,F. Wagner (Out),rotowire

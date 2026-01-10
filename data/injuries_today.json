@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-09",
-  "built_at_utc": "2026-01-09T23:22:52Z",
+  "built_at_utc": "2026-01-10T01:00:43Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -64,38 +64,6 @@
       "name": "J. Tatum",
       "status": "OUT",
       "details": "J. Tatum (Out)"
-    }
-  ],
-  "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
-    {
-      "name": "C. Castleton",
-      "status": "OUT",
-      "details": "C. Castleton (Out)"
-    },
-    {
-      "name": "T. da Silva",
-      "status": "OUT",
-      "details": "T. da Silva (Out)"
-    },
-    {
-      "name": "J. Suggs",
-      "status": "OUT",
-      "details": "J. Suggs (Out)"
-    },
-    {
-      "name": "M. Wagner",
-      "status": "OUT",
-      "details": "M. Wagner (Out)"
-    },
-    {
-      "name": "F. Wagner",
-      "status": "OUT",
-      "details": "F. Wagner (Out)"
     }
   ],
   "ORL": [
@@ -176,11 +144,6 @@
       "details": "B. Beal (OFS)"
     },
     {
-      "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
-    },
-    {
       "name": "B. Bogdanovic",
       "status": "OUT",
       "details": "B. Bogdanovic (Out)"
@@ -235,11 +198,6 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "A. Caruso",
-      "status": "QUES",
-      "details": "A. Caruso (Ques)"
-    },
-    {
       "name": "S. Gilgeous-Alexander",
       "status": "OUT",
       "details": "S. Gilgeous-Alexander (Out)"
@@ -270,21 +228,6 @@
       "details": "J. Williams (Out)"
     },
     {
-      "name": "C. Coward",
-      "status": "QUES",
-      "details": "C. Coward (Ques)"
-    },
-    {
-      "name": "V. Williams",
-      "status": "QUES",
-      "details": "V. Williams (Ques)"
-    },
-    {
-      "name": "J. Konchar",
-      "status": "DOUBT",
-      "details": "J. Konchar (Doubt)"
-    },
-    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -298,6 +241,11 @@
       "name": "Ty Jerome",
       "status": "OUT",
       "details": "Ty Jerome (Out)"
+    },
+    {
+      "name": "J. Konchar",
+      "status": "OUT",
+      "details": "J. Konchar (Out)"
     },
     {
       "name": "Ja Morant",
@@ -312,21 +260,6 @@
   ],
   "MEM": [
     {
-      "name": "V. Williams",
-      "status": "QUES",
-      "details": "V. Williams (Ques)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "QUES",
-      "details": "C. Coward (Ques)"
-    },
-    {
-      "name": "J. Konchar",
-      "status": "DOUBT",
-      "details": "J. Konchar (Doubt)"
-    },
-    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -340,6 +273,11 @@
       "name": "Ty Jerome",
       "status": "OUT",
       "details": "Ty Jerome (Out)"
+    },
+    {
+      "name": "J. Konchar",
+      "status": "OUT",
+      "details": "J. Konchar (Out)"
     },
     {
       "name": "Ja Morant",
@@ -359,16 +297,6 @@
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "K. Porzingis",
-      "status": "QUES",
-      "details": "K. Porzingis (Ques)"
-    },
-    {
-      "name": "Z. Risacher",
-      "status": "QUES",
-      "details": "Z. Risacher (Ques)"
-    },
-    {
       "name": "C. Kispert",
       "status": "OUT",
       "details": "C. Kispert (Out)"
@@ -377,6 +305,16 @@
       "name": "C. McCollum",
       "status": "OUT",
       "details": "C. McCollum (Out)"
+    },
+    {
+      "name": "K. Porzingis",
+      "status": "OUT",
+      "details": "K. Porzingis (Out)"
+    },
+    {
+      "name": "Z. Risacher",
+      "status": "OUT",
+      "details": "Z. Risacher (Out)"
     },
     {
       "name": "J. Murray",
@@ -473,11 +411,6 @@
   ],
   "NYK": [
     {
-      "name": "G. Yabusele",
-      "status": "QUES",
-      "details": "G. Yabusele (Ques)"
-    },
-    {
       "name": "Josh Hart",
       "status": "OUT",
       "details": "Josh Hart (Out)"
@@ -486,6 +419,11 @@
       "name": "L. Shamet",
       "status": "OUT",
       "details": "L. Shamet (Out)"
+    },
+    {
+      "name": "G. Yabusele",
+      "status": "OUT",
+      "details": "G. Yabusele (Out)"
     },
     {
       "name": "J. Bouyea",
@@ -680,6 +618,33 @@
       "name": "A. Thiero",
       "status": "OUT",
       "details": "A. Thiero (Out)"
+    }
+  ],
+  "PHI": [
+    {
+      "name": "C. Castleton",
+      "status": "OUT",
+      "details": "C. Castleton (Out)"
+    },
+    {
+      "name": "T. da Silva",
+      "status": "OUT",
+      "details": "T. da Silva (Out)"
+    },
+    {
+      "name": "J. Suggs",
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
+    },
+    {
+      "name": "M. Wagner",
+      "status": "OUT",
+      "details": "M. Wagner (Out)"
+    },
+    {
+      "name": "F. Wagner",
+      "status": "OUT",
+      "details": "F. Wagner (Out)"
     }
   ]
 }
