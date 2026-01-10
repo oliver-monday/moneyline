@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-10",
-  "built_at_utc": "2026-01-10T17:09:12Z",
+  "built_at_utc": "2026-01-10T18:26:40Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -34,6 +34,11 @@
       "details": "Fantasy Football (Rest)"
     },
     {
+      "name": "C. Livingston",
+      "status": "OUT",
+      "details": "C. Livingston (Out)"
+    },
+    {
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
@@ -45,6 +50,11 @@
     }
   ],
   "CLE": [
+    {
+      "name": "C. Livingston",
+      "status": "OUT",
+      "details": "C. Livingston (Out)"
+    },
     {
       "name": "Max Strus",
       "status": "OUT",
@@ -127,6 +137,11 @@
       "details": "B. Beal (OFS)"
     },
     {
+      "name": "K. Leonard",
+      "status": "QUES",
+      "details": "K. Leonard (Ques)"
+    },
+    {
       "name": "B. Bogdanovic",
       "status": "OUT",
       "details": "B. Bogdanovic (Out)"
@@ -160,6 +175,11 @@
       "name": "T. Harris",
       "status": "OUT",
       "details": "T. Harris (Out)"
+    },
+    {
+      "name": "W. Moore",
+      "status": "OUT",
+      "details": "W. Moore (Out)"
     }
   ],
   "DET": [
@@ -182,6 +202,11 @@
       "name": "T. Harris",
       "status": "OUT",
       "details": "T. Harris (Out)"
+    },
+    {
+      "name": "W. Moore",
+      "status": "OUT",
+      "details": "W. Moore (Out)"
     }
   ],
   "SAS": [
@@ -197,8 +222,8 @@
     },
     {
       "name": "J. Minott",
-      "status": "QUES",
-      "details": "J. Minott (Ques)"
+      "status": "OUT",
+      "details": "J. Minott (Out)"
     },
     {
       "name": "J. Tatum",
@@ -209,8 +234,8 @@
   "BOS": [
     {
       "name": "J. Minott",
-      "status": "QUES",
-      "details": "J. Minott (Ques)"
+      "status": "OUT",
+      "details": "J. Minott (Out)"
     },
     {
       "name": "J. Tatum",
@@ -317,6 +342,11 @@
       "name": "G. Williams",
       "status": "PROB",
       "details": "G. Williams (Prob)"
+    },
+    {
+      "name": "P. Connaughton",
+      "status": "QUES",
+      "details": "P. Connaughton (Ques)"
     },
     {
       "name": "M. Plumlee",
