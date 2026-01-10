@@ -1,0 +1,22 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-09,2026,Tyrese Maxey,PHI,ORL,3pt,4,MISSED,3,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,VJ Edgecombe,PHI,ORL,3pt,2,MISSED,0,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Deni Avdija,POR,HOU,ast,8,MISSED,6,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Jamal Murray,DEN,ATL,reb,4,MISSED,,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Kevin Durant,HOU,POR,ast,4,HIT,4,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Kevin Durant,HOU,POR,3pt,2,HIT,4,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Derrick White,BOS,TOR,reb,4,MISSED,3,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Paolo Banchero,ORL,PHI,ast,4,HIT,7,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Jabari Smith Jr.,HOU,POR,3pt,2,MISSED,0,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Stephen Curry,GS,SAC,ast,4,HIT,10,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Michael Porter Jr.,BKN,LAC,pts,25,MISSED,18,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Michael Porter Jr.,BKN,LAC,3pt,4,MISSED,0,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,LeBron James,LAL,MIL,pts,20,HIT,26,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Josh Hart,NY,PHX,pts,10,,,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Joel Embiid,PHI,ORL,reb,6,HIT,9,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Immanuel Quickley,TOR,BOS,pts,15,HIT,17,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,CJ McCollum,WSH,NO,ast,4,,,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Tim Hardaway Jr.,DEN,ATL,reb,2,HIT,2,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Tim Hardaway Jr.,DEN,ATL,3pt,3,MISSED,2,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Donovan Clingan,POR,HOU,pts,10,MISSED,8,,targets_snapshot_2026-01-09.json
+2026-01-09,2026,Donovan Clingan,POR,HOU,3pt,1,MISSED,0,,targets_snapshot_2026-01-09.json
