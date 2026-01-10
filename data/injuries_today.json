@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-10",
-  "built_at_utc": "2026-01-10T18:26:40Z",
+  "built_at_utc": "2026-01-10T19:19:33Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -328,21 +328,6 @@
     }
   ],
   "CHA": [
-    {
-      "name": "R. Kalkbrenner",
-      "status": "PROB",
-      "details": "R. Kalkbrenner (Prob)"
-    },
-    {
-      "name": "T. Salaun",
-      "status": "PROB",
-      "details": "T. Salaun (Prob)"
-    },
-    {
-      "name": "G. Williams",
-      "status": "PROB",
-      "details": "G. Williams (Prob)"
-    },
     {
       "name": "P. Connaughton",
       "status": "QUES",

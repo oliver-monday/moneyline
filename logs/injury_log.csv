@@ -1925,6 +1925,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-09,PHI,F. Wagner,OUT,F. Wagner (Out),rotowire
 2026-01-10,MIN,A. Edwards,QUES,A. Edwards (Ques),rotowire
 2026-01-10,MIN,J. Randle,QUES,J. Randle (Ques),rotowire
+2026-01-10,CHA,R. Kalkbrenner,PROB,R. Kalkbrenner (Prob),rotowire
+2026-01-10,CHA,T. Salaun,PROB,T. Salaun (Prob),rotowire
+2026-01-10,CHA,G. Williams,PROB,G. Williams (Prob),rotowire
 2026-01-10,MIN,M. Conley,OUT,M. Conley (Out),rotowire
 2026-01-10,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
 2026-01-10,MIN,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
@@ -1984,9 +1987,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-10,CHI,J. Smith,QUES,J. Smith (Ques),rotowire
 2026-01-10,CHI,Z. Collins,OUT,Z. Collins (Out),rotowire
 2026-01-10,CHI,J. Giddey,OUT,J. Giddey (Out),rotowire
-2026-01-10,CHA,R. Kalkbrenner,PROB,R. Kalkbrenner (Prob),rotowire
-2026-01-10,CHA,T. Salaun,PROB,T. Salaun (Prob),rotowire
-2026-01-10,CHA,G. Williams,PROB,G. Williams (Prob),rotowire
 2026-01-10,CHA,P. Connaughton,QUES,P. Connaughton (Ques),rotowire
 2026-01-10,CHA,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-01-10,CHA,J. Nurkic,QUES,J. Nurkic (Ques),rotowire
