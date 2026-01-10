@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-10",
-  "built_at_utc": "2026-01-10T22:26:10Z",
+  "built_at_utc": "2026-01-10T23:22:06Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -68,19 +68,9 @@
   ],
   "MIA": [
     {
-      "name": "J. Jaquez",
-      "status": "QUES",
-      "details": "J. Jaquez (Ques)"
-    },
-    {
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
     },
     {
       "name": "T. Haliburton",
@@ -108,11 +98,6 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
     },
     {
       "name": "I. Jackson",
@@ -158,13 +143,8 @@
     },
     {
       "name": "C. Cunningham",
-      "status": "QUES",
-      "details": "C. Cunningham (Ques)"
-    },
-    {
-      "name": "I. Stewart",
-      "status": "QUES",
-      "details": "I. Stewart (Ques)"
+      "status": "OUT",
+      "details": "C. Cunningham (Out)"
     },
     {
       "name": "J. Duren",
@@ -180,18 +160,18 @@
       "name": "W. Moore",
       "status": "OUT",
       "details": "W. Moore (Out)"
+    },
+    {
+      "name": "I. Stewart",
+      "status": "OUT",
+      "details": "I. Stewart (Out)"
     }
   ],
   "DET": [
     {
       "name": "C. Cunningham",
-      "status": "QUES",
-      "details": "C. Cunningham (Ques)"
-    },
-    {
-      "name": "I. Stewart",
-      "status": "QUES",
-      "details": "I. Stewart (Ques)"
+      "status": "OUT",
+      "details": "C. Cunningham (Out)"
     },
     {
       "name": "J. Duren",
@@ -207,6 +187,11 @@
       "name": "W. Moore",
       "status": "OUT",
       "details": "W. Moore (Out)"
+    },
+    {
+      "name": "I. Stewart",
+      "status": "OUT",
+      "details": "I. Stewart (Out)"
     }
   ],
   "SAS": [
@@ -280,14 +265,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Smith",
-      "status": "PROB",
-      "details": "J. Smith (Prob)"
-    },
-    {
       "name": "K. Huerter",
       "status": "QUES",
       "details": "K. Huerter (Ques)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "PROB",
+      "details": "J. Smith (Prob)"
     },
     {
       "name": "Z. Collins",
@@ -307,14 +292,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Smith",
-      "status": "PROB",
-      "details": "J. Smith (Prob)"
-    },
-    {
       "name": "K. Huerter",
       "status": "QUES",
       "details": "K. Huerter (Ques)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "PROB",
+      "details": "J. Smith (Prob)"
     },
     {
       "name": "Z. Collins",
