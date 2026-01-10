@@ -1,18 +1,8 @@
 {
   "asof_date": "2026-01-10",
-  "built_at_utc": "2026-01-10T14:41:21Z",
+  "built_at_utc": "2026-01-10T17:09:12Z",
   "source": "rotowire",
   "MIN": [
-    {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
-      "name": "J. Randle",
-      "status": "QUES",
-      "details": "J. Randle (Ques)"
-    },
     {
       "name": "M. Conley",
       "status": "OUT",
@@ -67,6 +57,11 @@
     }
   ],
   "MIA": [
+    {
+      "name": "J. Jaquez",
+      "status": "QUES",
+      "details": "J. Jaquez (Ques)"
+    },
     {
       "name": "T. Rozier",
       "status": "OUT",
@@ -152,6 +147,11 @@
       "details": "C. Cunningham (Ques)"
     },
     {
+      "name": "I. Stewart",
+      "status": "QUES",
+      "details": "I. Stewart (Ques)"
+    },
+    {
       "name": "J. Duren",
       "status": "OUT",
       "details": "J. Duren (Out)"
@@ -167,6 +167,11 @@
       "name": "C. Cunningham",
       "status": "QUES",
       "details": "C. Cunningham (Ques)"
+    },
+    {
+      "name": "I. Stewart",
+      "status": "QUES",
+      "details": "I. Stewart (Ques)"
     },
     {
       "name": "J. Duren",
