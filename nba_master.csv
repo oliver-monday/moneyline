@@ -567,9 +567,9 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810394,2026-01-09,2026-01-10T03:00Z,Golden State Warriors,GS,137,-800.0,,Sacramento Kings,SAC,103,550.0,,San Francisco,CA,,
 401810395,2026-01-09,2026-01-10T03:00Z,Portland Trail Blazers,POR,111,210.0,,Houston Rockets,HOU,105,-258.0,,Portland,OR,,
 401810396,2026-01-09,2026-01-10T03:30Z,Los Angeles Lakers,LAL,101,-162.0,,Milwaukee Bucks,MIL,105,136.0,,Los Angeles,CA,,
-401810397,2026-01-10,2026-01-10T18:00Z,Cleveland Cavaliers,CLE,0,-162.0,,Minnesota Timberwolves,MIN,0,136.0,,Cleveland,OH,Max Strus (Out); Dean Wade (Out),M. Conley (Out); T. Shannon (Out)
-401810398,2026-01-10,2026-01-11T00:00Z,Indiana Pacers,IND,0,245.0,,Miami Heat,MIA,0,-305.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); B. Mathurin (Out); Obi Toppin (Out),T. Rozier (Out)
-401810399,2026-01-10,2026-01-11T00:30Z,Detroit Pistons,DET,0,-265.0,,LA Clippers,LAC,0,215.0,,Detroit,MI,J. Duren (Out); T. Harris (Out),B. Beal (OFS); B. Bogdanovic (Out); D. Jones (Out); Chris Paul (Out)
-401810400,2026-01-10,2026-01-11T01:00Z,Boston Celtics,BOS,0,-112.0,,San Antonio Spurs,SA,0,-108.0,,Boston,MA,J. Tatum (Out),D. Vassell (Out)
-401810401,2026-01-10,2026-01-11T01:00Z,Chicago Bulls,CHI,0,-162.0,,Dallas Mavericks,DAL,0,136.0,,Chicago,IL,N. Essengue (OFS); Z. Collins (Out); J. Giddey (Out),Dante Exum (OFS); D. Lively (OFS); A. Davis (Out); K. Irving (Out); P. Washington (Out); B. Williams (Out)
+401810397,2026-01-10,2026-01-10T18:00Z,Cleveland Cavaliers,CLE,0,-175.0,,Minnesota Timberwolves,MIN,0,145.0,,Cleveland,OH,Max Strus (Out); Dean Wade (Out),M. Conley (Out); T. Shannon (Out)
+401810398,2026-01-10,2026-01-11T00:00Z,Indiana Pacers,IND,0,250.0,,Miami Heat,MIA,0,-310.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); B. Mathurin (Out); Obi Toppin (Out),T. Rozier (Out)
+401810399,2026-01-10,2026-01-11T00:30Z,Detroit Pistons,DET,0,-238.0,,LA Clippers,LAC,0,195.0,,Detroit,MI,J. Duren (Out); T. Harris (Out),B. Beal (OFS); B. Bogdanovic (Out); D. Jones (Out); Chris Paul (Out)
+401810400,2026-01-10,2026-01-11T01:00Z,Boston Celtics,BOS,0,-105.0,,San Antonio Spurs,SA,0,-115.0,,Boston,MA,J. Tatum (Out),D. Vassell (Out)
+401810401,2026-01-10,2026-01-11T01:00Z,Chicago Bulls,CHI,0,-148.0,,Dallas Mavericks,DAL,0,124.0,,Chicago,IL,N. Essengue (OFS); Z. Collins (Out); J. Giddey (Out),Dante Exum (OFS); D. Lively (OFS); A. Davis (Out); K. Irving (Out); P. Washington (Out); B. Williams (Out)
 401810402,2026-01-10,2026-01-11T02:30Z,Utah Jazz,UTAH,0,154.0,,Charlotte Hornets,CHA,0,-185.0,,Salt Lake City,UT,W. Kessler (OFS); Ace Bailey (Out); L. Markkanen (Out); G. Niang (Out),M. Plumlee (Out)
