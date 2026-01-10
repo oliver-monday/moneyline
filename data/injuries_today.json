@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-10",
-  "built_at_utc": "2026-01-10T19:19:33Z",
+  "built_at_utc": "2026-01-10T20:20:18Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -280,14 +280,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "J. Smith",
+      "status": "PROB",
+      "details": "J. Smith (Prob)"
+    },
+    {
       "name": "K. Huerter",
       "status": "QUES",
       "details": "K. Huerter (Ques)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "QUES",
-      "details": "J. Smith (Ques)"
     },
     {
       "name": "Z. Collins",
@@ -307,14 +307,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "J. Smith",
+      "status": "PROB",
+      "details": "J. Smith (Prob)"
+    },
+    {
       "name": "K. Huerter",
       "status": "QUES",
       "details": "K. Huerter (Ques)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "QUES",
-      "details": "J. Smith (Ques)"
     },
     {
       "name": "Z. Collins",
@@ -339,11 +339,6 @@
       "details": "M. Plumlee (Out)"
     },
     {
-      "name": "J. Nurkic",
-      "status": "QUES",
-      "details": "J. Nurkic (Ques)"
-    },
-    {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
@@ -362,6 +357,11 @@
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
+    },
+    {
+      "name": "J. Nurkic",
+      "status": "OUT",
+      "details": "J. Nurkic (Out)"
     }
   ],
   "UTA": [
@@ -371,11 +371,6 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "J. Nurkic",
-      "status": "QUES",
-      "details": "J. Nurkic (Ques)"
-    },
-    {
       "name": "Ace Bailey",
       "status": "OUT",
       "details": "Ace Bailey (Out)"
@@ -389,6 +384,11 @@
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
+    },
+    {
+      "name": "J. Nurkic",
+      "status": "OUT",
+      "details": "J. Nurkic (Out)"
     }
   ]
 }
