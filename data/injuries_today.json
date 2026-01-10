@@ -1,32 +1,32 @@
 {
   "asof_date": "2026-01-09",
-  "built_at_utc": "2026-01-10T02:46:30Z",
+  "built_at_utc": "2026-01-10T03:17:01Z",
   "source": "rotowire",
   "TOR": [
+    {
+      "name": "S. Barnes",
+      "status": "QUES",
+      "details": "S. Barnes (Ques)"
+    },
     {
       "name": "R. Barrett",
       "status": "QUES",
       "details": "R. Barrett (Ques)"
     },
     {
-      "name": "S. Barnes",
-      "status": "OUT",
-      "details": "S. Barnes (Out)"
+      "name": "B. Ingram",
+      "status": "QUES",
+      "details": "B. Ingram (Ques)"
+    },
+    {
+      "name": "J. Poeltl",
+      "status": "QUES",
+      "details": "J. Poeltl (Ques)"
     },
     {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
-    },
-    {
-      "name": "B. Ingram",
-      "status": "OUT",
-      "details": "B. Ingram (Out)"
-    },
-    {
-      "name": "J. Poeltl",
-      "status": "OUT",
-      "details": "J. Poeltl (Out)"
     },
     {
       "name": "Fantasy Home",
@@ -101,18 +101,18 @@
   "NOP": [
     {
       "name": "J. Alvarado",
-      "status": "OUT",
-      "details": "J. Alvarado (Out)"
+      "status": "QUES",
+      "details": "J. Alvarado (Ques)"
     },
     {
-      "name": "Saddiq Bey",
-      "status": "OUT",
-      "details": "Saddiq Bey (Out)"
+      "name": "S. Bey",
+      "status": "QUES",
+      "details": "S. Bey (Ques)"
     },
     {
       "name": "H. Jones",
-      "status": "OUT",
-      "details": "H. Jones (Out)"
+      "status": "QUES",
+      "details": "H. Jones (Ques)"
     },
     {
       "name": "D. Murray",
@@ -120,26 +120,26 @@
       "details": "D. Murray (Out)"
     },
     {
+      "name": "T. Young",
+      "status": "DOUBT",
+      "details": "T. Young (Doubt)"
+    },
+    {
       "name": "C. Whitmore",
       "status": "OUT",
       "details": "C. Whitmore (Out)"
-    },
-    {
-      "name": "Trae Young",
-      "status": "OUT",
-      "details": "Trae Young (Out)"
     }
   ],
   "WAS": [
     {
+      "name": "T. Young",
+      "status": "DOUBT",
+      "details": "T. Young (Doubt)"
+    },
+    {
       "name": "C. Whitmore",
       "status": "OUT",
       "details": "C. Whitmore (Out)"
-    },
-    {
-      "name": "Trae Young",
-      "status": "OUT",
-      "details": "Trae Young (Out)"
     }
   ],
   "LAC": [
