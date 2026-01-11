@@ -2004,20 +2004,20 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-11,NOP,S. Bey,DOUBT,S. Bey (Doubt),rotowire
 2026-01-11,SAS,M. Conley,PROB,M. Conley (Prob),rotowire
 2026-01-11,MIN,M. Conley,PROB,M. Conley (Prob),rotowire
+2026-01-11,NOP,T. da Silva,QUES,T. da Silva (Ques),rotowire
+2026-01-11,NOP,J. Isaac,QUES,J. Isaac (Ques),rotowire
+2026-01-11,ORL,T. da Silva,QUES,T. da Silva (Ques),rotowire
+2026-01-11,ORL,J. Isaac,QUES,J. Isaac (Ques),rotowire
 2026-01-11,NOP,J. Alvarado,OUT,J. Alvarado (Out),rotowire
 2026-01-11,NOP,Saddiq Bey,OUT,Saddiq Bey (Out),rotowire
 2026-01-11,NOP,H. Jones,OUT,H. Jones (Out),rotowire
 2026-01-11,NOP,D. Murray,OUT,D. Murray (Out),rotowire
 2026-01-11,NOP,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-01-11,NOP,Fantasy Football,REST,Fantasy Football (Rest),rotowire
-2026-01-11,NOP,T. da Silva,QUES,T. da Silva (Ques),rotowire
-2026-01-11,NOP,J. Isaac,QUES,J. Isaac (Ques),rotowire
 2026-01-11,NOP,W. Carter,OUT,W. Carter (Out),rotowire
 2026-01-11,NOP,C. Castleton,OUT,C. Castleton (Out),rotowire
 2026-01-11,NOP,J. Suggs,OUT,J. Suggs (Out),rotowire
 2026-01-11,NOP,F. Wagner,OUT,F. Wagner (Out),rotowire
-2026-01-11,ORL,T. da Silva,QUES,T. da Silva (Ques),rotowire
-2026-01-11,ORL,J. Isaac,QUES,J. Isaac (Ques),rotowire
 2026-01-11,ORL,W. Carter,OUT,W. Carter (Out),rotowire
 2026-01-11,ORL,C. Castleton,OUT,C. Castleton (Out),rotowire
 2026-01-11,ORL,J. Suggs,OUT,J. Suggs (Out),rotowire
@@ -2068,11 +2068,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-11,TOR,RJ Barrett,OUT,RJ Barrett (Out),rotowire
 2026-01-11,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-01-11,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
+2026-01-11,SAS,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
 2026-01-11,SAS,D. Vassell,OUT,D. Vassell (Out),rotowire
 2026-01-11,SAS,A. Edwards,QUES,A. Edwards (Ques),rotowire
 2026-01-11,SAS,T. Shannon,OUT,T. Shannon (Out),rotowire
 2026-01-11,MIN,A. Edwards,QUES,A. Edwards (Ques),rotowire
 2026-01-11,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
+2026-01-11,MIA,T. Herro,QUES,T. Herro (Ques),rotowire
 2026-01-11,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-01-11,MIA,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-01-11,MIA,I. Hartenstein,OUT,I. Hartenstein (Out),rotowire

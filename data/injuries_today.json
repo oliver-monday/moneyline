@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-11",
-  "built_at_utc": "2026-01-11T18:26:24Z",
+  "built_at_utc": "2026-01-11T19:19:53Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -44,16 +44,6 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "T. da Silva",
-      "status": "QUES",
-      "details": "T. da Silva (Ques)"
-    },
-    {
-      "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
-    },
-    {
       "name": "W. Carter",
       "status": "OUT",
       "details": "W. Carter (Out)"
@@ -75,16 +65,6 @@
     }
   ],
   "ORL": [
-    {
-      "name": "T. da Silva",
-      "status": "QUES",
-      "details": "T. da Silva (Ques)"
-    },
-    {
-      "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
-    },
     {
       "name": "W. Carter",
       "status": "OUT",
@@ -350,6 +330,11 @@
   ],
   "SAS": [
     {
+      "name": "V. Wembanyama",
+      "status": "QUES",
+      "details": "V. Wembanyama (Ques)"
+    },
+    {
       "name": "D. Vassell",
       "status": "OUT",
       "details": "D. Vassell (Out)"
@@ -378,6 +363,11 @@
     }
   ],
   "MIA": [
+    {
+      "name": "T. Herro",
+      "status": "QUES",
+      "details": "T. Herro (Ques)"
+    },
     {
       "name": "T. Rozier",
       "status": "OUT",
