@@ -2010,6 +2010,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-11,ORL,J. Isaac,QUES,J. Isaac (Ques),rotowire
 2026-01-11,BKN,J. Konchar,QUES,J. Konchar (Ques),rotowire
 2026-01-11,MEM,J. Konchar,QUES,J. Konchar (Ques),rotowire
+2026-01-11,NYK,J. Hart,QUES,J. Hart (Ques),rotowire
 2026-01-11,NOP,J. Alvarado,OUT,J. Alvarado (Out),rotowire
 2026-01-11,NOP,Saddiq Bey,OUT,Saddiq Bey (Out),rotowire
 2026-01-11,NOP,H. Jones,OUT,H. Jones (Out),rotowire
@@ -2038,9 +2039,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-11,MEM,Ty Jerome,OUT,Ty Jerome (Out),rotowire
 2026-01-11,MEM,Ja Morant,OUT,Ja Morant (Out),rotowire
 2026-01-11,MEM,S. Pippen,OUT,S. Pippen (Out),rotowire
-2026-01-11,NYK,J. Hart,QUES,J. Hart (Ques),rotowire
-2026-01-11,NYK,G. Yabusele,QUES,G. Yabusele (Ques),rotowire
 2026-01-11,NYK,L. Shamet,OUT,L. Shamet (Out),rotowire
+2026-01-11,NYK,G. Yabusele,OUT,G. Yabusele (Out),rotowire
 2026-01-11,NYK,J. Holiday,PROB,J. Holiday (Prob),rotowire
 2026-01-11,NYK,D. Lillard,OFS,D. Lillard (OFS),rotowire
 2026-01-11,NYK,R. Williams,PROB,R. Williams (Prob),rotowire
