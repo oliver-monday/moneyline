@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-11",
-  "built_at_utc": "2026-01-11T21:01:17Z",
+  "built_at_utc": "2026-01-11T22:25:59Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -172,19 +172,9 @@
       "details": "G. Yabusele (Out)"
     },
     {
-      "name": "J. Holiday",
-      "status": "PROB",
-      "details": "J. Holiday (Prob)"
-    },
-    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "PROB",
-      "details": "R. Williams (Prob)"
     },
     {
       "name": "J. Grant",
@@ -219,16 +209,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "J. Holiday",
-      "status": "PROB",
-      "details": "J. Holiday (Prob)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "PROB",
-      "details": "R. Williams (Prob)"
-    },
-    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
@@ -261,16 +241,6 @@
       "details": "J. Embiid (Out)"
     },
     {
-      "name": "B. Ingram",
-      "status": "QUES",
-      "details": "B. Ingram (Ques)"
-    },
-    {
-      "name": "S. Barnes",
-      "status": "QUES",
-      "details": "S. Barnes (Ques)"
-    },
-    {
       "name": "RJ Barrett",
       "status": "OUT",
       "details": "RJ Barrett (Out)"
@@ -279,6 +249,11 @@
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "B. Ingram",
+      "status": "OUT",
+      "details": "B. Ingram (Out)"
     },
     {
       "name": "J. Poeltl",
@@ -288,16 +263,6 @@
   ],
   "TOR": [
     {
-      "name": "S. Barnes",
-      "status": "QUES",
-      "details": "S. Barnes (Ques)"
-    },
-    {
-      "name": "B. Ingram",
-      "status": "QUES",
-      "details": "B. Ingram (Ques)"
-    },
-    {
       "name": "RJ Barrett",
       "status": "OUT",
       "details": "RJ Barrett (Out)"
@@ -306,6 +271,11 @@
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "B. Ingram",
+      "status": "OUT",
+      "details": "B. Ingram (Out)"
     },
     {
       "name": "J. Poeltl",
