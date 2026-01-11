@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-10",
-  "built_at_utc": "2026-01-10T23:22:06Z",
+  "built_at_utc": "2026-01-11T01:08:13Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -122,11 +122,6 @@
       "details": "B. Beal (OFS)"
     },
     {
-      "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
-    },
-    {
       "name": "B. Bogdanovic",
       "status": "OUT",
       "details": "B. Bogdanovic (Out)"
@@ -196,14 +191,14 @@
   ],
   "SAS": [
     {
-      "name": "J. Champagnie",
-      "status": "QUES",
-      "details": "J. Champagnie (Ques)"
-    },
-    {
       "name": "D. Vassell",
       "status": "OUT",
       "details": "D. Vassell (Out)"
+    },
+    {
+      "name": "Sam Hauser",
+      "status": "OUT",
+      "details": "Sam Hauser (Out)"
     },
     {
       "name": "J. Minott",
@@ -217,6 +212,11 @@
     }
   ],
   "BOS": [
+    {
+      "name": "Sam Hauser",
+      "status": "OUT",
+      "details": "Sam Hauser (Out)"
+    },
     {
       "name": "J. Minott",
       "status": "OUT",
@@ -265,16 +265,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "PROB",
-      "details": "J. Smith (Prob)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
@@ -292,16 +282,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "PROB",
-      "details": "J. Smith (Prob)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
@@ -315,8 +295,8 @@
   "CHA": [
     {
       "name": "P. Connaughton",
-      "status": "QUES",
-      "details": "P. Connaughton (Ques)"
+      "status": "OUT",
+      "details": "P. Connaughton (Out)"
     },
     {
       "name": "M. Plumlee",
