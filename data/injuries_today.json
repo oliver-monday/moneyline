@@ -1,17 +1,17 @@
 {
   "asof_date": "2026-01-11",
-  "built_at_utc": "2026-01-11T14:41:35Z",
+  "built_at_utc": "2026-01-11T17:08:54Z",
   "source": "rotowire",
   "NOP": [
-    {
-      "name": "S. Bey",
-      "status": "DOUBT",
-      "details": "S. Bey (Doubt)"
-    },
     {
       "name": "J. Alvarado",
       "status": "OUT",
       "details": "J. Alvarado (Out)"
+    },
+    {
+      "name": "Saddiq Bey",
+      "status": "OUT",
+      "details": "Saddiq Bey (Out)"
     },
     {
       "name": "H. Jones",
@@ -49,6 +49,16 @@
       "details": "T. da Silva (Ques)"
     },
     {
+      "name": "W. Carter",
+      "status": "QUES",
+      "details": "W. Carter (Ques)"
+    },
+    {
+      "name": "J. Isaac",
+      "status": "QUES",
+      "details": "J. Isaac (Ques)"
+    },
+    {
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
@@ -65,6 +75,16 @@
     }
   ],
   "ORL": [
+    {
+      "name": "W. Carter",
+      "status": "QUES",
+      "details": "W. Carter (Ques)"
+    },
+    {
+      "name": "J. Isaac",
+      "status": "QUES",
+      "details": "J. Isaac (Ques)"
+    },
     {
       "name": "T. da Silva",
       "status": "QUES",
@@ -336,8 +356,8 @@
     },
     {
       "name": "M. Conley",
-      "status": "QUES",
-      "details": "M. Conley (Ques)"
+      "status": "PROB",
+      "details": "M. Conley (Prob)"
     },
     {
       "name": "T. Shannon",
@@ -348,8 +368,8 @@
   "MIN": [
     {
       "name": "M. Conley",
-      "status": "QUES",
-      "details": "M. Conley (Ques)"
+      "status": "PROB",
+      "details": "M. Conley (Prob)"
     },
     {
       "name": "T. Shannon",
