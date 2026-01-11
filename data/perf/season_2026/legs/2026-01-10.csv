@@ -1,0 +1,9 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-10,2026,Keyonte George,UTAH,CHA,ast,6,MISSED,5,,targets_snapshot_2026-01-10.json
+2026-01-10,2026,Cooper Flagg,DAL,CHI,reb,6,MISSED,1,,targets_snapshot_2026-01-10.json
+2026-01-10,2026,Cooper Flagg,DAL,CHI,ast,4,MISSED,2,,targets_snapshot_2026-01-10.json
+2026-01-10,2026,Derrick White,BOS,SA,reb,4,HIT,9,,targets_snapshot_2026-01-10.json
+2026-01-10,2026,Jaylen Brown,BOS,SA,reb,6,HIT,8,,targets_snapshot_2026-01-10.json
+2026-01-10,2026,Darius Garland,CLE,MIN,pts,15,HIT,22,,targets_snapshot_2026-01-10.json
+2026-01-10,2026,Darius Garland,CLE,MIN,ast,6,HIT,6,,targets_snapshot_2026-01-10.json
+2026-01-10,2026,Devin Vassell,SA,BOS,reb,4,,,,targets_snapshot_2026-01-10.json

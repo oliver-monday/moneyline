@@ -148,80 +148,49 @@ player_id,player_name_canonical,player_name_norm,last_seen_team_abbrev,first_see
 5144091,Jeremiah Fears,jeremiah fears,NO,2026-01-09,2026-01-09,1
 5160992,Alex Sarr,alex sarr,WSH,2026-01-09,2026-01-09,1
 5174563,Kyshawn George,kyshawn george,WSH,2026-01-09,2026-01-09,1
-1966,LeBron James,lebron james,LAL,2026-01-09,2026-01-09,1
-2528210,Tim Hardaway Jr.,tim hardaway jr,DEN,2026-01-09,2026-01-09,1
-2991070,Jerami Grant,jerami grant,POR,2026-01-09,2026-01-09,1
-2991235,Steven Adams,steven adams,HOU,2026-01-09,2026-01-09,1
-3032977,Giannis Antetokounmpo,giannis antetokounmpo,MIL,2026-01-09,2026-01-09,1
-3059318,Joel Embiid,joel embiid,PHI,2026-01-09,2026-01-09,1
-3064290,Aaron Gordon,aaron gordon,DEN,2026-01-09,2026-01-09,1
-3064440,Zach LaVine,zach lavine,SAC,2026-01-09,2026-01-09,1
-3064482,Bobby Portis,bobby portis,MIL,2026-01-09,2026-01-09,1
-3078576,Derrick White,derrick white,BOS,2026-01-09,2026-01-09,1
-3102531,Kristaps Porzingis,kristaps porzingis,ATL,2026-01-09,2026-01-09,1
-3133628,Myles Turner,myles turner,MIL,2026-01-09,2026-01-09,1
-3134907,Kyle Kuzma,kyle kuzma,MIL,2026-01-09,2026-01-09,1
-3135045,Grayson Allen,grayson allen,PHX,2026-01-09,2026-01-09,1
-3136193,Devin Booker,devin booker,PHX,2026-01-09,2026-01-09,1
-3136195,Karl-Anthony Towns,karl anthony towns,NY,2026-01-09,2026-01-09,1
-3147657,Mikal Bridges,mikal bridges,NY,2026-01-09,2026-01-09,1
-3155526,Dillon Brooks,dillon brooks,PHX,2026-01-09,2026-01-09,1
-3202,Kevin Durant,kevin durant,HOU,2026-01-09,2026-01-09,1
-3468,Russell Westbrook,russell westbrook,SAC,2026-01-09,2026-01-09,1
-3917376,Jaylen Brown,jaylen brown,BOS,2026-01-09,2026-01-09,1
-3934672,Jalen Brunson,jalen brunson,NY,2026-01-09,2026-01-09,1
-3934719,OG Anunoby,og anunoby,NY,2026-01-09,2026-01-09,1
-3936299,Jamal Murray,jamal murray,DEN,2026-01-09,2026-01-09,1
-3945274,Luka Doncic,luka doncic,LAL,2026-01-09,2026-01-09,1
-3975,Stephen Curry,stephen curry,GS,2026-01-09,2026-01-09,1
-3978,DeMar DeRozan,demar derozan,SAC,2026-01-09,2026-01-09,1
-3992,James Harden,james harden,LAC,2026-01-09,2026-01-09,1
-3995,Jrue Holiday,jrue holiday,POR,2026-01-09,2026-01-09,1
-4017837,Ivica Zubac,ivica zubac,LAC,2026-01-09,2026-01-09,1
-4066320,Desmond Bane,desmond bane,ORL,2026-01-09,2026-01-09,1
-4066354,Payton Pritchard,payton pritchard,BOS,2026-01-09,2026-01-09,1
-4251,Paul George,paul george,PHI,2026-01-09,2026-01-09,1
-4277956,Jordan Poole,jordan poole,NO,2026-01-09,2026-01-09,1
-4277961,Jaren Jackson Jr.,jaren jackson jr,MEM,2026-01-09,2026-01-09,1
-4278039,Nickeil Alexander-Walker,nickeil alexander walker,ATL,2026-01-09,2026-01-09,1
-4278067,Nic Claxton,nic claxton,BKN,2026-01-09,2026-01-09,1
-4278104,Michael Porter Jr.,michael porter jr,BKN,2026-01-09,2026-01-09,1
-4278129,Deandre Ayton,deandre ayton,LAL,2026-01-09,2026-01-09,1
-4278585,Collin Gillespie,collin gillespie,PHX,2026-01-09,2026-01-09,1
-4395625,RJ Barrett,rj barrett,TOR,2026-01-09,2026-01-09,1
-4395628,Zion Williamson,zion williamson,NO,2026-01-09,2026-01-09,1
-4395724,Immanuel Quickley,immanuel quickley,TOR,2026-01-09,2026-01-09,1
-4397140,Kevin Porter Jr.,kevin porter jr,MIL,2026-01-09,2026-01-09,1
-4397424,Neemias Queta,neemias queta,BOS,2026-01-09,2026-01-09,1
-4397688,Trey Murphy III,trey murphy iii,NO,2026-01-09,2026-01-09,1
-4431678,Tyrese Maxey,tyrese maxey,PHI,2026-01-09,2026-01-09,1
-4431736,Toumani Camara,toumani camara,POR,2026-01-09,2026-01-09,1
-4431767,Christian Braun,christian braun,DEN,2026-01-09,2026-01-09,1
-4432174,Cam Thomas,cam thomas,BKN,2026-01-09,2026-01-09,1
-4432573,Paolo Banchero,paolo banchero,ORL,2026-01-09,2026-01-09,1
-4432639,Jabari Smith Jr.,jabari smith jr,HOU,2026-01-09,2026-01-09,1
-4433083,Cam Spencer,cam spencer,MEM,2026-01-09,2026-01-09,1
-4433192,Tari Eason,tari eason,HOU,2026-01-09,2026-01-09,1
-4591725,Ryan Rollins,ryan rollins,MIL,2026-01-09,2026-01-09,1
-4593125,Santi Aldama,santi aldama,MEM,2026-01-09,2026-01-09,1
-4593803,Jalen Williams,jalen williams,OKC,2026-01-09,2026-01-09,1
-4683021,Deni Avdija,deni avdija,POR,2026-01-09,2026-01-09,1
-4684740,Amen Thompson,amen thompson,HOU,2026-01-09,2026-01-09,1
-4701230,Jalen Johnson,jalen johnson,ATL,2026-01-09,2026-01-09,1
-4701232,Mark Williams,mark williams,PHX,2026-01-09,2026-01-09,1
-4711272,Reed Sheppard,reed sheppard,HOU,2026-01-09,2026-01-09,1
-4869342,Dyson Daniels,dyson daniels,ATL,2026-01-09,2026-01-09,1
-4869780,Derik Queen,derik queen,NO,2026-01-09,2026-01-09,1
-4898371,Maxime Raynaud,maxime raynaud,SAC,2026-01-09,2026-01-09,1
-4900671,Ajay Mitchell,ajay mitchell,OKC,2026-01-09,2026-01-09,1
-4903027,Cedric Coward,cedric coward,MEM,2026-01-09,2026-01-09,1
-4914336,Shaedon Sharpe,shaedon sharpe,POR,2026-01-09,2026-01-09,1
-5105565,Donovan Clingan,donovan clingan,POR,2026-01-09,2026-01-09,1
-5112087,Jaylen Wells,jaylen wells,MEM,2026-01-09,2026-01-09,1
-5124612,VJ Edgecombe,vj edgecombe,PHI,2026-01-09,2026-01-09,1
-5144091,Jeremiah Fears,jeremiah fears,NO,2026-01-09,2026-01-09,1
-5160992,Alex Sarr,alex sarr,WSH,2026-01-09,2026-01-09,1
-5174563,Kyshawn George,kyshawn george,WSH,2026-01-09,2026-01-09,1
-6430,Jimmy Butler III,jimmy butler iii,GS,2026-01-09,2026-01-09,1
-6450,Kawhi Leonard,kawhi leonard,LAC,2026-01-09,2026-01-09,1
-6589,Draymond Green,draymond green,GS,2026-01-09,2026-01-09,1
+2530530,T.J. McConnell,t j mcconnell,IND,2026-01-10,2026-01-10,1
+2595516,Norman Powell,norman powell,MIA,2026-01-10,2026-01-10,1
+3032976,Rudy Gobert,rudy gobert,MIN,2026-01-10,2026-01-10,1
+3059319,Andrew Wiggins,andrew wiggins,MIA,2026-01-10,2026-01-10,1
+3064514,Julius Randle,julius randle,MIN,2026-01-10,2026-01-10,1
+3078576,Derrick White,derrick white,BOS,2026-01-10,2026-01-10,1
+3149673,Pascal Siakam,pascal siakam,IND,2026-01-10,2026-01-10,1
+3908809,Donovan Mitchell,donovan mitchell,CLE,2026-01-10,2026-01-10,1
+3917376,Jaylen Brown,jaylen brown,BOS,2026-01-10,2026-01-10,1
+3934673,Donte DiVincenzo,donte divincenzo,MIN,2026-01-10,2026-01-10,1
+3992,James Harden,james harden,LAC,2026-01-10,2026-01-10,1
+4017837,Ivica Zubac,ivica zubac,LAC,2026-01-10,2026-01-10,1
+4066259,De'Aaron Fox,deaaron fox,SA,2026-01-10,2026-01-10,1
+4066261,Bam Adebayo,bam adebayo,MIA,2026-01-10,2026-01-10,1
+4066328,Jarrett Allen,jarrett allen,CLE,2026-01-10,2026-01-10,1
+4066336,Lauri Markkanen,lauri markkanen,UTAH,2026-01-10,2026-01-10,1
+4066354,Payton Pritchard,payton pritchard,BOS,2026-01-10,2026-01-10,1
+4066383,Miles Bridges,miles bridges,CHA,2026-01-10,2026-01-10,1
+4277811,Collin Sexton,collin sexton,CHA,2026-01-10,2026-01-10,1
+4395651,Coby White,coby white,CHI,2026-01-10,2026-01-10,1
+4395712,Andrew Nembhard,andrew nembhard,IND,2026-01-10,2026-01-10,1
+4395723,Keldon Johnson,keldon johnson,SA,2026-01-10,2026-01-10,1
+4395725,Tyler Herro,tyler herro,MIA,2026-01-10,2026-01-10,1
+4396907,Darius Garland,darius garland,CLE,2026-01-10,2026-01-10,1
+4396909,Aaron Nesmith,aaron nesmith,IND,2026-01-10,2026-01-10,1
+4396971,Naz Reid,naz reid,MIN,2026-01-10,2026-01-10,1
+4397002,Ayo Dosunmu,ayo dosunmu,CHI,2026-01-10,2026-01-10,1
+4397424,Neemias Queta,neemias queta,BOS,2026-01-10,2026-01-10,1
+4431671,Jaden McDaniels,jaden mcdaniels,MIN,2026-01-10,2026-01-10,1
+4432158,Evan Mobley,evan mobley,CLE,2026-01-10,2026-01-10,1
+4432816,LaMelo Ball,lamelo ball,CHA,2026-01-10,2026-01-10,1
+4432848,Jaime Jaquez Jr.,jaime jaquez jr,MIA,2026-01-10,2026-01-10,1
+4433287,Brandon Miller,brandon miller,CHA,2026-01-10,2026-01-10,1
+4433627,Keyonte George,keyonte george,UTAH,2026-01-10,2026-01-10,1
+4594268,Anthony Edwards,anthony edwards,MIN,2026-01-10,2026-01-10,1
+4684742,Ausar Thompson,ausar thompson,DET,2026-01-10,2026-01-10,1
+4711294,Matas Buzelis,matas buzelis,CHI,2026-01-10,2026-01-10,1
+4845367,Stephon Castle,stephon castle,SA,2026-01-10,2026-01-10,1
+5037871,Dylan Harper,dylan harper,SA,2026-01-10,2026-01-10,1
+5041939,Cooper Flagg,cooper flagg,DAL,2026-01-10,2026-01-10,1
+5061575,Kon Knueppel,kon knueppel,CHA,2026-01-10,2026-01-10,1
+5104157,Victor Wembanyama,victor wembanyama,SA,2026-01-10,2026-01-10,1
+5105623,Kel'el Ware,kelel ware,MIA,2026-01-10,2026-01-10,1
+6450,Kawhi Leonard,kawhi leonard,LAC,2026-01-10,2026-01-10,1
+6478,Nikola Vucevic,nikola vucevic,CHI,2026-01-10,2026-01-10,1
+6578,Harrison Barnes,harrison barnes,SA,2026-01-10,2026-01-10,1
