@@ -2008,6 +2008,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-11,NOP,J. Isaac,QUES,J. Isaac (Ques),rotowire
 2026-01-11,ORL,T. da Silva,QUES,T. da Silva (Ques),rotowire
 2026-01-11,ORL,J. Isaac,QUES,J. Isaac (Ques),rotowire
+2026-01-11,BKN,J. Konchar,QUES,J. Konchar (Ques),rotowire
+2026-01-11,MEM,J. Konchar,QUES,J. Konchar (Ques),rotowire
 2026-01-11,NOP,J. Alvarado,OUT,J. Alvarado (Out),rotowire
 2026-01-11,NOP,Saddiq Bey,OUT,Saddiq Bey (Out),rotowire
 2026-01-11,NOP,H. Jones,OUT,H. Jones (Out),rotowire
@@ -2026,13 +2028,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-11,BKN,M. Porter,OUT,M. Porter (Out),rotowire
 2026-01-11,BKN,D. Powell,OUT,D. Powell (Out),rotowire
 2026-01-11,BKN,Z. Williams,OUT,Z. Williams (Out),rotowire
-2026-01-11,BKN,J. Konchar,QUES,J. Konchar (Ques),rotowire
 2026-01-11,BKN,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-01-11,BKN,Zach Edey,OUT,Zach Edey (Out),rotowire
 2026-01-11,BKN,Ty Jerome,OUT,Ty Jerome (Out),rotowire
 2026-01-11,BKN,Ja Morant,OUT,Ja Morant (Out),rotowire
 2026-01-11,BKN,S. Pippen,OUT,S. Pippen (Out),rotowire
-2026-01-11,MEM,J. Konchar,QUES,J. Konchar (Ques),rotowire
 2026-01-11,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-01-11,MEM,Zach Edey,OUT,Zach Edey (Out),rotowire
 2026-01-11,MEM,Ty Jerome,OUT,Ty Jerome (Out),rotowire
