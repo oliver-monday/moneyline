@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-11",
-  "built_at_utc": "2026-01-11T17:08:54Z",
+  "built_at_utc": "2026-01-11T18:26:24Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -49,14 +49,14 @@
       "details": "T. da Silva (Ques)"
     },
     {
-      "name": "W. Carter",
-      "status": "QUES",
-      "details": "W. Carter (Ques)"
-    },
-    {
       "name": "J. Isaac",
       "status": "QUES",
       "details": "J. Isaac (Ques)"
+    },
+    {
+      "name": "W. Carter",
+      "status": "OUT",
+      "details": "W. Carter (Out)"
     },
     {
       "name": "C. Castleton",
@@ -76,9 +76,9 @@
   ],
   "ORL": [
     {
-      "name": "W. Carter",
+      "name": "T. da Silva",
       "status": "QUES",
-      "details": "W. Carter (Ques)"
+      "details": "T. da Silva (Ques)"
     },
     {
       "name": "J. Isaac",
@@ -86,9 +86,9 @@
       "details": "J. Isaac (Ques)"
     },
     {
-      "name": "T. da Silva",
-      "status": "QUES",
-      "details": "T. da Silva (Ques)"
+      "name": "W. Carter",
+      "status": "OUT",
+      "details": "W. Carter (Out)"
     },
     {
       "name": "C. Castleton",
@@ -208,8 +208,8 @@
     },
     {
       "name": "J. Holiday",
-      "status": "QUES",
-      "details": "J. Holiday (Ques)"
+      "status": "PROB",
+      "details": "J. Holiday (Prob)"
     },
     {
       "name": "D. Lillard",
@@ -218,8 +218,8 @@
     },
     {
       "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "status": "PROB",
+      "details": "R. Williams (Prob)"
     },
     {
       "name": "J. Grant",
@@ -255,13 +255,13 @@
     },
     {
       "name": "J. Holiday",
-      "status": "QUES",
-      "details": "J. Holiday (Ques)"
+      "status": "PROB",
+      "details": "J. Holiday (Prob)"
     },
     {
       "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "status": "PROB",
+      "details": "R. Williams (Prob)"
     },
     {
       "name": "J. Grant",
@@ -292,8 +292,8 @@
   "PHI": [
     {
       "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     },
     {
       "name": "B. Ingram",
@@ -355,26 +355,26 @@
       "details": "D. Vassell (Out)"
     },
     {
-      "name": "M. Conley",
-      "status": "PROB",
-      "details": "M. Conley (Prob)"
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
     },
     {
       "name": "T. Shannon",
-      "status": "DOUBT",
-      "details": "T. Shannon (Doubt)"
+      "status": "OUT",
+      "details": "T. Shannon (Out)"
     }
   ],
   "MIN": [
     {
-      "name": "M. Conley",
-      "status": "PROB",
-      "details": "M. Conley (Prob)"
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
     },
     {
       "name": "T. Shannon",
-      "status": "DOUBT",
-      "details": "T. Shannon (Doubt)"
+      "status": "OUT",
+      "details": "T. Shannon (Out)"
     }
   ],
   "MIA": [
