@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-11",
-  "built_at_utc": "2026-01-11T22:25:59Z",
+  "built_at_utc": "2026-01-11T23:21:59Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -241,6 +241,11 @@
       "details": "J. Embiid (Out)"
     },
     {
+      "name": "P. George",
+      "status": "OUT",
+      "details": "P. George (Out)"
+    },
+    {
       "name": "RJ Barrett",
       "status": "OUT",
       "details": "RJ Barrett (Out)"
@@ -285,19 +290,9 @@
   ],
   "SAS": [
     {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
-    },
-    {
       "name": "D. Vassell",
       "status": "OUT",
       "details": "D. Vassell (Out)"
-    },
-    {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
     },
     {
       "name": "T. Shannon",
@@ -307,11 +302,6 @@
   ],
   "MIN": [
     {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
@@ -319,9 +309,9 @@
   ],
   "MIA": [
     {
-      "name": "T. Herro",
+      "name": "N. Powell",
       "status": "QUES",
-      "details": "T. Herro (Ques)"
+      "details": "N. Powell (Ques)"
     },
     {
       "name": "T. Rozier",
