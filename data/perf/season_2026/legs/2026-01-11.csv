@@ -1,0 +1,18 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-11,2026,VJ Edgecombe,PHI,TOR,ast,4,HIT,4,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Deni Avdija,POR,NY,ast,6,MISSED,4,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Deni Avdija,POR,NY,3pt,2,MISSED,1,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Kevin Durant,HOU,SAC,ast,4,HIT,6,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Kevin Durant,HOU,SAC,3pt,2,HIT,4,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Toumani Camara,POR,NY,ast,2,HIT,2,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Paolo Banchero,ORL,NO,ast,4,HIT,8,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Stephen Curry,GS,ATL,ast,4,HIT,5,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Josh Hart,NY,POR,pts,10,HIT,18,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Immanuel Quickley,TOR,PHI,pts,15,HIT,20,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,CJ McCollum,WSH,PHX,ast,4,,,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Ryan Rollins,MIL,DEN,reb,4,HIT,6,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Ryan Rollins,MIL,DEN,3pt,2,MISSED,0,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Jalen Williams,OKC,MIA,ast,6,MISSED,4,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Devin Vassell,SA,MIN,reb,4,,,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Tim Hardaway Jr.,DEN,MIL,reb,2,HIT,2,,targets_snapshot_2026-01-11.json
+2026-01-11,2026,Tim Hardaway Jr.,DEN,MIL,3pt,3,HIT,5,,targets_snapshot_2026-01-11.json
