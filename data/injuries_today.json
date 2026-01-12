@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-11",
-  "built_at_utc": "2026-01-12T01:05:29Z",
+  "built_at_utc": "2026-01-12T03:00:46Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -163,23 +163,28 @@
   "NYK": [
     {
       "name": "L. Shamet",
-      "status": "OUT",
-      "details": "L. Shamet (Out)"
+      "status": "DOUBT",
+      "details": "L. Shamet (Doubt)"
     },
     {
       "name": "G. Yabusele",
-      "status": "OUT",
-      "details": "G. Yabusele (Out)"
+      "status": "QUES",
+      "details": "G. Yabusele (Ques)"
+    },
+    {
+      "name": "D. Avdija",
+      "status": "QUES",
+      "details": "D. Avdija (Ques)"
+    },
+    {
+      "name": "J. Grant",
+      "status": "DOUBT",
+      "details": "J. Grant (Doubt)"
     },
     {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "J. Grant",
-      "status": "OUT",
-      "details": "J. Grant (Out)"
     },
     {
       "name": "S. Henderson",
@@ -204,14 +209,19 @@
   ],
   "POR": [
     {
-      "name": "D. Lillard",
-      "status": "OFS",
-      "details": "D. Lillard (OFS)"
+      "name": "D. Avdija",
+      "status": "QUES",
+      "details": "D. Avdija (Ques)"
     },
     {
       "name": "J. Grant",
-      "status": "OUT",
-      "details": "J. Grant (Out)"
+      "status": "DOUBT",
+      "details": "J. Grant (Doubt)"
+    },
+    {
+      "name": "D. Lillard",
+      "status": "OFS",
+      "details": "D. Lillard (OFS)"
     },
     {
       "name": "S. Henderson",
@@ -237,8 +247,8 @@
   "PHI": [
     {
       "name": "J. Embiid",
-      "status": "OUT",
-      "details": "J. Embiid (Out)"
+      "status": "QUES",
+      "details": "J. Embiid (Ques)"
     },
     {
       "name": "P. George",
@@ -471,6 +481,11 @@
       "details": "N. Dante (OFS)"
     },
     {
+      "name": "L. Kennard",
+      "status": "QUES",
+      "details": "L. Kennard (Ques)"
+    },
+    {
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
@@ -494,11 +509,6 @@
     }
   ],
   "HOU": [
-    {
-      "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
-    },
     {
       "name": "Tari Eason",
       "status": "OUT",
