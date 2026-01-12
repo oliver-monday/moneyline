@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-12",
-  "built_at_utc": "2026-01-12T21:01:28Z",
+  "built_at_utc": "2026-01-12T22:24:50Z",
   "source": "rotowire",
   "UTA": [
     {
@@ -232,8 +232,8 @@
     },
     {
       "name": "M. Cisse",
-      "status": "QUES",
-      "details": "M. Cisse (Ques)"
+      "status": "PROB",
+      "details": "M. Cisse (Prob)"
     },
     {
       "name": "P. Washington",
@@ -269,8 +269,8 @@
     },
     {
       "name": "M. Cisse",
-      "status": "QUES",
-      "details": "M. Cisse (Ques)"
+      "status": "PROB",
+      "details": "M. Cisse (Prob)"
     },
     {
       "name": "D. Gafford",
@@ -349,14 +349,14 @@
       "details": "M. Bridges (Prob)"
     },
     {
-      "name": "P. Connaughton",
-      "status": "QUES",
-      "details": "P. Connaughton (Ques)"
-    },
-    {
       "name": "C. Sexton",
       "status": "QUES",
       "details": "C. Sexton (Ques)"
+    },
+    {
+      "name": "P. Connaughton",
+      "status": "OUT",
+      "details": "P. Connaughton (Out)"
     },
     {
       "name": "M. Plumlee",
