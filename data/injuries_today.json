@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-12",
-  "built_at_utc": "2026-01-12T17:15:21Z",
+  "built_at_utc": "2026-01-12T18:29:52Z",
   "source": "rotowire",
   "UTA": [
     {
@@ -147,51 +147,51 @@
       "details": "B. Ingram (Ques)"
     },
     {
-      "name": "R. Barrett",
-      "status": "QUES",
-      "details": "R. Barrett (Ques)"
-    },
-    {
-      "name": "J. Walter",
-      "status": "QUES",
-      "details": "J. Walter (Ques)"
-    },
-    {
-      "name": "J. Poeltl",
-      "status": "DOUBT",
-      "details": "J. Poeltl (Doubt)"
+      "name": "RJ Barrett",
+      "status": "OUT",
+      "details": "RJ Barrett (Out)"
     },
     {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "J. Poeltl",
+      "status": "OUT",
+      "details": "J. Poeltl (Out)"
+    },
+    {
+      "name": "J. Walter",
+      "status": "OUT",
+      "details": "J. Walter (Out)"
     }
   ],
   "TOR": [
-    {
-      "name": "R. Barrett",
-      "status": "QUES",
-      "details": "R. Barrett (Ques)"
-    },
     {
       "name": "B. Ingram",
       "status": "QUES",
       "details": "B. Ingram (Ques)"
     },
     {
-      "name": "J. Walter",
-      "status": "QUES",
-      "details": "J. Walter (Ques)"
-    },
-    {
-      "name": "J. Poeltl",
-      "status": "DOUBT",
-      "details": "J. Poeltl (Doubt)"
+      "name": "RJ Barrett",
+      "status": "OUT",
+      "details": "RJ Barrett (Out)"
     },
     {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "J. Poeltl",
+      "status": "OUT",
+      "details": "J. Poeltl (Out)"
+    },
+    {
+      "name": "J. Walter",
+      "status": "OUT",
+      "details": "J. Walter (Out)"
     }
   ],
   "BKN": [
@@ -214,6 +214,11 @@
       "name": "Z. Williams",
       "status": "OUT",
       "details": "Z. Williams (Out)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "QUES",
+      "details": "D. Gafford (Ques)"
     },
     {
       "name": "Dante Exum",
@@ -266,6 +271,11 @@
       "name": "M. Cisse",
       "status": "QUES",
       "details": "M. Cisse (Ques)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "QUES",
+      "details": "D. Gafford (Ques)"
     },
     {
       "name": "P. Washington",
