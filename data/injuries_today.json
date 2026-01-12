@@ -1,22 +1,12 @@
 {
   "asof_date": "2026-01-12",
-  "built_at_utc": "2026-01-12T14:52:28Z",
+  "built_at_utc": "2026-01-12T17:15:21Z",
   "source": "rotowire",
   "UTA": [
     {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "J. Nurkic",
-      "status": "PROB",
-      "details": "J. Nurkic (Prob)"
-    },
-    {
-      "name": "A. Bailey",
-      "status": "QUES",
-      "details": "A. Bailey (Ques)"
     },
     {
       "name": "G. Niang",
@@ -148,28 +138,28 @@
     },
     {
       "name": "P. George",
-      "status": "OUT",
-      "details": "P. George (Out)"
+      "status": "QUES",
+      "details": "P. George (Ques)"
     },
     {
       "name": "B. Ingram",
-      "status": "OUT",
-      "details": "B. Ingram (Out)"
+      "status": "QUES",
+      "details": "B. Ingram (Ques)"
     },
     {
-      "name": "RJ Barrett",
-      "status": "OUT",
-      "details": "RJ Barrett (Out)"
-    },
-    {
-      "name": "J. Poeltl",
-      "status": "OUT",
-      "details": "J. Poeltl (Out)"
+      "name": "R. Barrett",
+      "status": "QUES",
+      "details": "R. Barrett (Ques)"
     },
     {
       "name": "J. Walter",
       "status": "QUES",
       "details": "J. Walter (Ques)"
+    },
+    {
+      "name": "J. Poeltl",
+      "status": "DOUBT",
+      "details": "J. Poeltl (Doubt)"
     },
     {
       "name": "C. Hepburn",
@@ -179,51 +169,51 @@
   ],
   "TOR": [
     {
+      "name": "R. Barrett",
+      "status": "QUES",
+      "details": "R. Barrett (Ques)"
+    },
+    {
+      "name": "B. Ingram",
+      "status": "QUES",
+      "details": "B. Ingram (Ques)"
+    },
+    {
       "name": "J. Walter",
       "status": "QUES",
       "details": "J. Walter (Ques)"
     },
     {
-      "name": "RJ Barrett",
-      "status": "OUT",
-      "details": "RJ Barrett (Out)"
+      "name": "J. Poeltl",
+      "status": "DOUBT",
+      "details": "J. Poeltl (Doubt)"
     },
     {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
-    },
-    {
-      "name": "B. Ingram",
-      "status": "OUT",
-      "details": "B. Ingram (Out)"
-    },
-    {
-      "name": "J. Poeltl",
-      "status": "OUT",
-      "details": "J. Poeltl (Out)"
     }
   ],
   "BKN": [
     {
-      "name": "Z. Williams",
-      "status": "QUES",
-      "details": "Z. Williams (Ques)"
-    },
-    {
-      "name": "M. Porter",
-      "status": "PROB",
-      "details": "M. Porter (Prob)"
-    },
-    {
-      "name": "D. Powell",
-      "status": "QUES",
-      "details": "D. Powell (Ques)"
+      "name": "Egor Demin",
+      "status": "OUT",
+      "details": "Egor Demin (Out)"
     },
     {
       "name": "H. Highsmith",
-      "status": "DOUBT",
-      "details": "H. Highsmith (Doubt)"
+      "status": "OUT",
+      "details": "H. Highsmith (Out)"
+    },
+    {
+      "name": "Cam Thomas",
+      "status": "OUT",
+      "details": "Cam Thomas (Out)"
+    },
+    {
+      "name": "Z. Williams",
+      "status": "OUT",
+      "details": "Z. Williams (Out)"
     },
     {
       "name": "Dante Exum",
