@@ -2140,6 +2140,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-12,BKN,D. Powell,QUES,D. Powell (Ques),rotowire
 2026-01-12,PHI,R. Barrett,QUES,R. Barrett (Ques),rotowire
 2026-01-12,TOR,R. Barrett,QUES,R. Barrett (Ques),rotowire
+2026-01-12,BOS,A. Nembhard,QUES,A. Nembhard (Ques),rotowire
+2026-01-12,IND,A. Nembhard,QUES,A. Nembhard (Ques),rotowire
 2026-01-12,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
 2026-01-12,UTA,G. Niang,OUT,G. Niang (Out),rotowire
 2026-01-12,UTA,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
@@ -2152,13 +2154,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-12,BOS,J. Brown,DOUBT,J. Brown (Doubt),rotowire
 2026-01-12,BOS,J. Minott,OUT,J. Minott (Out),rotowire
 2026-01-12,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
-2026-01-12,BOS,A. Nembhard,QUES,A. Nembhard (Ques),rotowire
 2026-01-12,BOS,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-01-12,BOS,I. Jackson,OUT,I. Jackson (Out),rotowire
 2026-01-12,BOS,B. Mathurin,OUT,B. Mathurin (Out),rotowire
 2026-01-12,BOS,Obi Toppin,OUT,Obi Toppin (Out),rotowire
 2026-01-12,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
-2026-01-12,IND,A. Nembhard,QUES,A. Nembhard (Ques),rotowire
 2026-01-12,IND,I. Jackson,OUT,I. Jackson (Out),rotowire
 2026-01-12,IND,B. Mathurin,OUT,B. Mathurin (Out),rotowire
 2026-01-12,IND,Obi Toppin,OUT,Obi Toppin (Out),rotowire

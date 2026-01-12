@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-12",
-  "built_at_utc": "2026-01-12T22:24:50Z",
+  "built_at_utc": "2026-01-12T23:19:23Z",
   "source": "rotowire",
   "UTA": [
     {
@@ -78,11 +78,6 @@
       "details": "J. Tatum (Out)"
     },
     {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
-    },
-    {
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
@@ -108,11 +103,6 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
     },
     {
       "name": "I. Jackson",
