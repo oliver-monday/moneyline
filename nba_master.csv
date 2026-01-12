@@ -583,9 +583,9 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810410,2026-01-11,2026-01-12T01:00Z,Phoenix Suns,PHX,112,-800.0,,Washington Wizards,WSH,93,550.0,,Phoenix,AZ,,
 401810411,2026-01-11,2026-01-12T01:30Z,Golden State Warriors,GS,111,-218.0,,Atlanta Hawks,ATL,124,180.0,,San Francisco,CA,,
 401810412,2026-01-11,2026-01-12T02:00Z,Sacramento Kings,SAC,111,455.0,,Houston Rockets,HOU,98,-625.0,,Sacramento,CA,,
-401810413,2026-01-12,2026-01-13T00:00Z,Cleveland Cavaliers,CLE,0,-750.0,,Utah Jazz,UTAH,0,525.0,,Cleveland,OH,Max Strus (Out); Dean Wade (Out),W. Kessler (OFS); G. Niang (Out)
-401810414,2026-01-12,2026-01-13T00:30Z,Indiana Pacers,IND,0,180.0,,Boston Celtics,BOS,0,-218.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); B. Mathurin (Out); Obi Toppin (Out),J. Minott (Out); J. Tatum (Out)
-401810415,2026-01-12,2026-01-13T00:30Z,Toronto Raptors,TOR,0,124.0,,Philadelphia 76ers,PHI,0,-148.0,,Toronto,ON,RJ Barrett (Out); C. Hepburn (Out); B. Ingram (Out); J. Poeltl (Out),P. George (Out)
-401810416,2026-01-12,2026-01-13T01:30Z,Dallas Mavericks,DAL,0,-180.0,,Brooklyn Nets,BKN,0,150.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); A. Davis (Out); K. Irving (Out),
+401810413,2026-01-12,2026-01-13T00:00Z,Cleveland Cavaliers,CLE,0,-700.0,,Utah Jazz,UTAH,0,500.0,,Cleveland,OH,Max Strus (Out); Dean Wade (Out),W. Kessler (OFS); G. Niang (Out)
+401810414,2026-01-12,2026-01-13T00:30Z,Indiana Pacers,IND,0,190.0,,Boston Celtics,BOS,0,-230.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); B. Mathurin (Out); Obi Toppin (Out),J. Minott (Out); J. Tatum (Out)
+401810415,2026-01-12,2026-01-13T00:30Z,Toronto Raptors,TOR,0,130.0,,Philadelphia 76ers,PHI,0,-155.0,,Toronto,ON,RJ Barrett (Out); C. Hepburn (Out); B. Ingram (Out); J. Poeltl (Out),P. George (Out)
+401810416,2026-01-12,2026-01-13T01:30Z,Dallas Mavericks,DAL,0,-170.0,,Brooklyn Nets,BKN,0,142.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); A. Davis (Out); K. Irving (Out),
 401810417,2026-01-12,2026-01-13T03:00Z,Sacramento Kings,SAC,0,300.0,,Los Angeles Lakers,LAL,0,-380.0,,Sacramento,CA,K. Murray (Out); D. Sabonis (Out); D. Schroder (Out),A. Reaves (Out); A. Thiero (Out)
 401810418,2026-01-12,2026-01-13T03:30Z,LA Clippers,LAC,0,-185.0,,Charlotte Hornets,CHA,0,154.0,,Inglewood,CA,B. Beal (OFS); B. Bogdanovic (Out); D. Jones (Out); Chris Paul (Out),M. Plumlee (Out)
