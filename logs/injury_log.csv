@@ -2033,6 +2033,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-11,DEN,A. Gordon,PROB,A. Gordon (Prob),rotowire
 2026-01-11,DEN,S. Jones,QUES,S. Jones (Ques),rotowire
 2026-01-11,HOU,A. Sengun,QUES,A. Sengun (Ques),rotowire
+2026-01-11,ATL,L. Kennard,QUES,L. Kennard (Ques),rotowire
 2026-01-11,NOP,J. Alvarado,QUES,J. Alvarado (Ques),rotowire
 2026-01-11,NOP,S. Bey,QUES,S. Bey (Ques),rotowire
 2026-01-11,NOP,H. Jones,QUES,H. Jones (Ques),rotowire
@@ -2090,8 +2091,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-11,TOR,B. Ingram,OUT,B. Ingram (Out),rotowire
 2026-01-11,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
 2026-01-11,SAS,D. Vassell,OUT,D. Vassell (Out),rotowire
-2026-01-11,SAS,T. Shannon,OUT,T. Shannon (Out),rotowire
-2026-01-11,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
+2026-01-11,SAS,T. Shannon,QUES,T. Shannon (Ques),rotowire
+2026-01-11,MIN,T. Shannon,QUES,T. Shannon (Ques),rotowire
 2026-01-11,MIA,N. Powell,OUT,N. Powell (Out),rotowire
 2026-01-11,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-01-11,MIA,T. Sorber,OFS,T. Sorber (OFS),rotowire
@@ -2120,7 +2121,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-11,PHX,J. Bouyea,OUT,J. Bouyea (Out),rotowire
 2026-01-11,PHX,J. Green,OUT,J. Green (Out),rotowire
 2026-01-11,ATL,N. Dante,OFS,N. Dante (OFS),rotowire
-2026-01-11,ATL,L. Kennard,QUES,L. Kennard (Ques),rotowire
+2026-01-11,ATL,A. Newell,QUES,A. Newell (Ques),rotowire
 2026-01-11,ATL,K. Porzingis,OUT,K. Porzingis (Out),rotowire
 2026-01-11,ATL,Z. Risacher,OUT,Z. Risacher (Out),rotowire
 2026-01-11,ATL,Seth Curry,OUT,Seth Curry (Out),rotowire

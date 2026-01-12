@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-11",
-  "built_at_utc": "2026-01-12T03:00:46Z",
+  "built_at_utc": "2026-01-12T03:29:55Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -316,15 +316,15 @@
     },
     {
       "name": "T. Shannon",
-      "status": "OUT",
-      "details": "T. Shannon (Out)"
+      "status": "QUES",
+      "details": "T. Shannon (Ques)"
     }
   ],
   "MIN": [
     {
       "name": "T. Shannon",
-      "status": "OUT",
-      "details": "T. Shannon (Out)"
+      "status": "QUES",
+      "details": "T. Shannon (Ques)"
     }
   ],
   "MIA": [
@@ -481,9 +481,9 @@
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "L. Kennard",
+      "name": "A. Newell",
       "status": "QUES",
-      "details": "L. Kennard (Ques)"
+      "details": "A. Newell (Ques)"
     },
     {
       "name": "K. Porzingis",
