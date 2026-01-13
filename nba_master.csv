@@ -590,8 +590,8 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810417,2026-01-12,2026-01-13T03:00Z,Sacramento Kings,SAC,124,300.0,,Los Angeles Lakers,LAL,112,-380.0,,Sacramento,CA,,
 401810418,2026-01-12,2026-01-13T03:30Z,LA Clippers,LAC,117,-185.0,,Charlotte Hornets,CHA,109,154.0,,Inglewood,CA,,
 401810419,2026-01-13,2026-01-14T00:30Z,Miami Heat,MIA,0,-115.0,,Phoenix Suns,PHX,0,-105.0,,Miami,FL,T. Rozier (Out),J. Bouyea (Out); J. Green (Out)
-401810420,2026-01-13,2026-01-14T01:00Z,Houston Rockets,HOU,0,-600.0,,Chicago Bulls,CHI,0,440.0,,Houston,TX,Tari Eason (Out); D. Finney-Smith (Out); F. VanVleet (Out),N. Essengue (OFS); Z. Collins (Out); J. Giddey (Out); Coby White (Out)
-401810421,2026-01-13,2026-01-14T01:00Z,Milwaukee Bucks,MIL,0,-155.0,,Minnesota Timberwolves,MIN,0,130.0,,Milwaukee,WI,T. Prince (Out),A. Edwards (Out); R. Gobert (Out); T. Shannon (Out)
+401810420,2026-01-13,2026-01-14T01:00Z,Houston Rockets,HOU,0,-575.0,,Chicago Bulls,CHI,0,425.0,,Houston,TX,Tari Eason (Out); D. Finney-Smith (Out); F. VanVleet (Out),N. Essengue (OFS); Z. Collins (Out); J. Giddey (Out); Coby White (Out)
+401810421,2026-01-13,2026-01-14T01:00Z,Milwaukee Bucks,MIL,0,-148.0,,Minnesota Timberwolves,MIN,0,124.0,,Milwaukee,WI,T. Prince (Out),A. Edwards (Out); R. Gobert (Out); T. Shannon (Out)
 401810422,2026-01-13,2026-01-14T01:00Z,New Orleans Pelicans,NO,0,120.0,,Denver Nuggets,DEN,0,-142.0,,New Orleans,LA,J. Alvarado (Out); H. Jones (Out); D. Murray (Out),T. Bates (Out); C. Braun (Out); C. Johnson (Out); N. Jokic (Out); J. Valanciunas (Out)
 401810423,2026-01-13,2026-01-14T01:00Z,Oklahoma City Thunder,OKC,0,-278.0,,San Antonio Spurs,SA,0,225.0,,Oklahoma City,OK,T. Sorber (OFS); I. Hartenstein (Out); N. Topic (Out),D. Vassell (Out)
 401810424,2026-01-13,2026-01-14T03:30Z,Los Angeles Lakers,LAL,0,130.0,,Atlanta Hawks,ATL,0,-155.0,,Los Angeles,CA,A. Reaves (Out); A. Thiero (Out),N. Dante (OFS); K. Porzingis (Out)
