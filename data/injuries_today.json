@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-13",
-  "built_at_utc": "2026-01-13T19:24:55Z",
+  "built_at_utc": "2026-01-13T20:23:27Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -245,6 +245,11 @@
       "details": "D. Vassell (Out)"
     },
     {
+      "name": "L. Dort",
+      "status": "QUES",
+      "details": "L. Dort (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
@@ -265,6 +270,11 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "L. Dort",
+      "status": "QUES",
+      "details": "L. Dort (Ques)"
     },
     {
       "name": "I. Hartenstein",
