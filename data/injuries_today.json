@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-13",
-  "built_at_utc": "2026-01-13T22:29:11Z",
+  "built_at_utc": "2026-01-13T23:22:09Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -34,22 +34,12 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
-    },
-    {
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
     }
   ],
   "MIA": [
-    {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
-    },
     {
       "name": "T. Rozier",
       "status": "OUT",
@@ -216,26 +206,26 @@
       "details": "T. Shannon (Out)"
     },
     {
-      "name": "M. Turner",
-      "status": "QUES",
-      "details": "M. Turner (Ques)"
-    },
-    {
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
+    },
+    {
+      "name": "M. Turner",
+      "status": "OUT",
+      "details": "M. Turner (Out)"
     }
   ],
   "MIL": [
     {
-      "name": "M. Turner",
-      "status": "QUES",
-      "details": "M. Turner (Ques)"
-    },
-    {
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
+    },
+    {
+      "name": "M. Turner",
+      "status": "OUT",
+      "details": "M. Turner (Out)"
     }
   ],
   "SAS": [
