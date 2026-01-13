@@ -1,0 +1,11 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-12,2026,VJ Edgecombe,PHI,TOR,ast,4,HIT,8,,targets_snapshot_2026-01-12.json
+2026-01-12,2026,Derrick White,BOS,IND,reb,4,HIT,4,,targets_snapshot_2026-01-12.json
+2026-01-12,2026,Jaylen Brown,BOS,IND,reb,6,MISSED,,,targets_snapshot_2026-01-12.json
+2026-01-12,2026,Cooper Flagg,DAL,BKN,reb,6,MISSED,5,,targets_snapshot_2026-01-12.json
+2026-01-12,2026,Cooper Flagg,DAL,BKN,ast,4,HIT,5,,targets_snapshot_2026-01-12.json
+2026-01-12,2026,Immanuel Quickley,TOR,PHI,pts,15,HIT,18,,targets_snapshot_2026-01-12.json
+2026-01-12,2026,Immanuel Quickley,TOR,PHI,3pt,2,HIT,2,,targets_snapshot_2026-01-12.json
+2026-01-12,2026,LeBron James,LAL,SAC,pts,20,HIT,22,,targets_snapshot_2026-01-12.json
+2026-01-12,2026,Darius Garland,CLE,UTAH,ast,6,HIT,8,,targets_snapshot_2026-01-12.json
+2026-01-12,2026,Miles Bridges,CHA,LAC,reb,6,HIT,6,,targets_snapshot_2026-01-12.json
