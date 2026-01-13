@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-13",
-  "built_at_utc": "2026-01-13T08:50:35Z",
+  "built_at_utc": "2026-01-13T14:51:42Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -304,6 +304,11 @@
       "details": "K. Porzingis (Out)"
     },
     {
+      "name": "L. Doncic",
+      "status": "QUES",
+      "details": "L. Doncic (Ques)"
+    },
+    {
       "name": "A. Reaves",
       "status": "OUT",
       "details": "A. Reaves (Out)"
@@ -315,6 +320,11 @@
     }
   ],
   "LAL": [
+    {
+      "name": "L. Doncic",
+      "status": "QUES",
+      "details": "L. Doncic (Ques)"
+    },
     {
       "name": "A. Reaves",
       "status": "OUT",
