@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-12",
-  "built_at_utc": "2026-01-12T23:19:23Z",
+  "built_at_utc": "2026-01-13T00:58:35Z",
   "source": "rotowire",
   "UTA": [
     {
@@ -58,14 +58,9 @@
   ],
   "BOS": [
     {
-      "name": "S. Hauser",
-      "status": "QUES",
-      "details": "S. Hauser (Ques)"
-    },
-    {
       "name": "J. Brown",
-      "status": "DOUBT",
-      "details": "J. Brown (Doubt)"
+      "status": "OUT",
+      "details": "J. Brown (Out)"
     },
     {
       "name": "J. Minott",
@@ -120,49 +115,7 @@
       "details": "Obi Toppin (Out)"
     }
   ],
-  "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
-    },
-    {
-      "name": "P. George",
-      "status": "QUES",
-      "details": "P. George (Ques)"
-    },
-    {
-      "name": "B. Ingram",
-      "status": "QUES",
-      "details": "B. Ingram (Ques)"
-    },
-    {
-      "name": "RJ Barrett",
-      "status": "OUT",
-      "details": "RJ Barrett (Out)"
-    },
-    {
-      "name": "C. Hepburn",
-      "status": "OUT",
-      "details": "C. Hepburn (Out)"
-    },
-    {
-      "name": "J. Poeltl",
-      "status": "OUT",
-      "details": "J. Poeltl (Out)"
-    },
-    {
-      "name": "J. Walter",
-      "status": "OUT",
-      "details": "J. Walter (Out)"
-    }
-  ],
   "TOR": [
-    {
-      "name": "B. Ingram",
-      "status": "QUES",
-      "details": "B. Ingram (Ques)"
-    },
     {
       "name": "RJ Barrett",
       "status": "OUT",
@@ -206,11 +159,6 @@
       "details": "Z. Williams (Out)"
     },
     {
-      "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
-    },
-    {
       "name": "Dante Exum",
       "status": "OFS",
       "details": "Dante Exum (OFS)"
@@ -221,29 +169,29 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "M. Cisse",
-      "status": "PROB",
-      "details": "M. Cisse (Prob)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "DOUBT",
-      "details": "B. Williams (Doubt)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
     },
     {
+      "name": "D. Gafford",
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
+    },
+    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "OUT",
+      "details": "P. Washington (Out)"
+    },
+    {
+      "name": "B. Williams",
+      "status": "OUT",
+      "details": "B. Williams (Out)"
     }
   ],
   "DAL": [
@@ -258,34 +206,29 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "M. Cisse",
-      "status": "PROB",
-      "details": "M. Cisse (Prob)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "DOUBT",
-      "details": "B. Williams (Doubt)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
     },
     {
+      "name": "D. Gafford",
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
+    },
+    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "OUT",
+      "details": "P. Washington (Out)"
+    },
+    {
+      "name": "B. Williams",
+      "status": "OUT",
+      "details": "B. Williams (Out)"
     }
   ],
   "LAL": [
@@ -404,6 +347,28 @@
       "name": "Chris Paul",
       "status": "OUT",
       "details": "Chris Paul (Out)"
+    }
+  ],
+  "PHI": [
+    {
+      "name": "RJ Barrett",
+      "status": "OUT",
+      "details": "RJ Barrett (Out)"
+    },
+    {
+      "name": "C. Hepburn",
+      "status": "OUT",
+      "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "J. Poeltl",
+      "status": "OUT",
+      "details": "J. Poeltl (Out)"
+    },
+    {
+      "name": "J. Walter",
+      "status": "OUT",
+      "details": "J. Walter (Out)"
     }
   ]
 }
