@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-13",
-  "built_at_utc": "2026-01-13T17:17:50Z",
+  "built_at_utc": "2026-01-13T18:28:58Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -99,8 +99,8 @@
     },
     {
       "name": "S. Bey",
-      "status": "QUES",
-      "details": "S. Bey (Ques)"
+      "status": "PROB",
+      "details": "S. Bey (Prob)"
     },
     {
       "name": "J. Alvarado",
@@ -121,8 +121,8 @@
   "NOP": [
     {
       "name": "S. Bey",
-      "status": "QUES",
-      "details": "S. Bey (Ques)"
+      "status": "PROB",
+      "details": "S. Bey (Prob)"
     },
     {
       "name": "J. Alvarado",
@@ -148,8 +148,8 @@
     },
     {
       "name": "J. Phillips",
-      "status": "PROB",
-      "details": "J. Phillips (Prob)"
+      "status": "QUES",
+      "details": "J. Phillips (Ques)"
     },
     {
       "name": "Z. Collins",
