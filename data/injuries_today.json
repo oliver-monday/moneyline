@@ -1,13 +1,8 @@
 {
   "asof_date": "2026-01-14",
-  "built_at_utc": "2026-01-14T17:19:17Z",
+  "built_at_utc": "2026-01-14T18:30:36Z",
   "source": "rotowire",
   "TOR": [
-    {
-      "name": "G. Temple",
-      "status": "QUES",
-      "details": "G. Temple (Ques)"
-    },
     {
       "name": "S. Mamukelashvili",
       "status": "QUES",
@@ -17,6 +12,11 @@
       "name": "I. Quickley",
       "status": "QUES",
       "details": "I. Quickley (Ques)"
+    },
+    {
+      "name": "G. Temple",
+      "status": "QUES",
+      "details": "G. Temple (Ques)"
     },
     {
       "name": "RJ Barrett",
@@ -131,6 +131,11 @@
       "name": "J. Embiid",
       "status": "PROB",
       "details": "J. Embiid (Prob)"
+    },
+    {
+      "name": "K. Oubre",
+      "status": "PROB",
+      "details": "K. Oubre (Prob)"
     }
   ],
   "PHI": [
@@ -148,6 +153,11 @@
       "name": "P. George",
       "status": "PROB",
       "details": "P. George (Prob)"
+    },
+    {
+      "name": "K. Oubre",
+      "status": "PROB",
+      "details": "K. Oubre (Prob)"
     }
   ],
   "BKN": [
@@ -202,8 +212,8 @@
     },
     {
       "name": "L. Markkanen",
-      "status": "QUES",
-      "details": "L. Markkanen (Ques)"
+      "status": "DOUBT",
+      "details": "L. Markkanen (Doubt)"
     },
     {
       "name": "Kevin Love",
@@ -239,6 +249,11 @@
       "name": "J. Giddey",
       "status": "OUT",
       "details": "J. Giddey (Out)"
+    },
+    {
+      "name": "Y. Kawamura",
+      "status": "OUT",
+      "details": "Y. Kawamura (Out)"
     }
   ],
   "CHI": [
@@ -266,6 +281,11 @@
       "name": "J. Giddey",
       "status": "OUT",
       "details": "J. Giddey (Out)"
+    },
+    {
+      "name": "Y. Kawamura",
+      "status": "OUT",
+      "details": "Y. Kawamura (Out)"
     }
   ],
   "DEN": [
