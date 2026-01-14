@@ -1,12 +1,22 @@
 {
   "asof_date": "2026-01-14",
-  "built_at_utc": "2026-01-14T14:50:47Z",
+  "built_at_utc": "2026-01-14T17:19:17Z",
   "source": "rotowire",
   "TOR": [
+    {
+      "name": "G. Temple",
+      "status": "QUES",
+      "details": "G. Temple (Ques)"
+    },
     {
       "name": "S. Mamukelashvili",
       "status": "QUES",
       "details": "S. Mamukelashvili (Ques)"
+    },
+    {
+      "name": "I. Quickley",
+      "status": "QUES",
+      "details": "I. Quickley (Ques)"
     },
     {
       "name": "RJ Barrett",
@@ -186,14 +196,14 @@
   ],
   "UTA": [
     {
-      "name": "E. Harkless",
-      "status": "QUES",
-      "details": "E. Harkless (Ques)"
-    },
-    {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "QUES",
+      "details": "L. Markkanen (Ques)"
     },
     {
       "name": "Kevin Love",
@@ -206,14 +216,19 @@
       "details": "G. Niang (Out)"
     },
     {
-      "name": "Coby White",
-      "status": "OUT",
-      "details": "Coby White (Out)"
+      "name": "C. White",
+      "status": "PROB",
+      "details": "C. White (Prob)"
     },
     {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
+    },
+    {
+      "name": "J. Phillips",
+      "status": "QUES",
+      "details": "J. Phillips (Ques)"
     },
     {
       "name": "Z. Collins",
@@ -224,11 +239,6 @@
       "name": "J. Giddey",
       "status": "OUT",
       "details": "J. Giddey (Out)"
-    },
-    {
-      "name": "J. Phillips",
-      "status": "OUT",
-      "details": "J. Phillips (Out)"
     }
   ],
   "CHI": [
@@ -238,6 +248,16 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "C. White",
+      "status": "PROB",
+      "details": "C. White (Prob)"
+    },
+    {
+      "name": "J. Phillips",
+      "status": "QUES",
+      "details": "J. Phillips (Ques)"
+    },
+    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
@@ -246,28 +266,18 @@
       "name": "J. Giddey",
       "status": "OUT",
       "details": "J. Giddey (Out)"
-    },
-    {
-      "name": "J. Phillips",
-      "status": "OUT",
-      "details": "J. Phillips (Out)"
-    },
-    {
-      "name": "Coby White",
-      "status": "OUT",
-      "details": "Coby White (Out)"
     }
   ],
   "DEN": [
     {
+      "name": "C. Braun",
+      "status": "QUES",
+      "details": "C. Braun (Ques)"
+    },
+    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
-    },
-    {
-      "name": "C. Braun",
-      "status": "OUT",
-      "details": "C. Braun (Out)"
     },
     {
       "name": "C. Johnson",
