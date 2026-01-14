@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-14",
-  "built_at_utc": "2026-01-14T18:30:36Z",
+  "built_at_utc": "2026-01-14T19:24:05Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -172,14 +172,14 @@
       "details": "Z. Williams (Out)"
     },
     {
-      "name": "H. Jones",
-      "status": "QUES",
-      "details": "H. Jones (Ques)"
-    },
-    {
       "name": "J. Alvarado",
       "status": "OUT",
       "details": "J. Alvarado (Out)"
+    },
+    {
+      "name": "H. Jones",
+      "status": "OUT",
+      "details": "H. Jones (Out)"
     },
     {
       "name": "D. Murray",
@@ -189,14 +189,14 @@
   ],
   "NOP": [
     {
-      "name": "H. Jones",
-      "status": "QUES",
-      "details": "H. Jones (Ques)"
-    },
-    {
       "name": "J. Alvarado",
       "status": "OUT",
       "details": "J. Alvarado (Out)"
+    },
+    {
+      "name": "H. Jones",
+      "status": "OUT",
+      "details": "H. Jones (Out)"
     },
     {
       "name": "D. Murray",
@@ -224,11 +224,6 @@
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
-    },
-    {
-      "name": "C. White",
-      "status": "PROB",
-      "details": "C. White (Prob)"
     },
     {
       "name": "N. Essengue",
@@ -263,11 +258,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "C. White",
-      "status": "PROB",
-      "details": "C. White (Prob)"
-    },
-    {
       "name": "J. Phillips",
       "status": "QUES",
       "details": "J. Phillips (Ques)"
@@ -290,14 +280,34 @@
   ],
   "DEN": [
     {
-      "name": "C. Braun",
+      "name": "A. Gordon",
+      "status": "PROB",
+      "details": "A. Gordon (Prob)"
+    },
+    {
+      "name": "S. Jones",
+      "status": "PROB",
+      "details": "S. Jones (Prob)"
+    },
+    {
+      "name": "B. Brown",
       "status": "QUES",
-      "details": "C. Braun (Ques)"
+      "details": "B. Brown (Ques)"
+    },
+    {
+      "name": "J. Murray",
+      "status": "QUES",
+      "details": "J. Murray (Ques)"
     },
     {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
+    },
+    {
+      "name": "C. Braun",
+      "status": "OUT",
+      "details": "C. Braun (Out)"
     },
     {
       "name": "C. Johnson",
@@ -388,6 +398,11 @@
     }
   ],
   "NYK": [
+    {
+      "name": "A. Hukporti",
+      "status": "QUES",
+      "details": "A. Hukporti (Ques)"
+    },
     {
       "name": "L. Shamet",
       "status": "OUT",
