@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-13",
-  "built_at_utc": "2026-01-14T02:58:59Z",
+  "built_at_utc": "2026-01-14T03:28:40Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -284,11 +284,6 @@
       "details": "Z. Risacher (Out)"
     },
     {
-      "name": "L. Doncic",
-      "status": "QUES",
-      "details": "L. Doncic (Ques)"
-    },
-    {
       "name": "J. Hayes",
       "status": "OUT",
       "details": "J. Hayes (Out)"
@@ -305,11 +300,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "L. Doncic",
-      "status": "QUES",
-      "details": "L. Doncic (Ques)"
-    },
     {
       "name": "J. Hayes",
       "status": "OUT",
