@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-13",
-  "built_at_utc": "2026-01-14T01:04:26Z",
+  "built_at_utc": "2026-01-14T02:58:59Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -34,12 +34,22 @@
       "details": "Fantasy Football (Rest)"
     },
     {
+      "name": "D. Mitchell",
+      "status": "QUES",
+      "details": "D. Mitchell (Ques)"
+    },
+    {
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
     }
   ],
   "MIA": [
+    {
+      "name": "D. Mitchell",
+      "status": "QUES",
+      "details": "D. Mitchell (Ques)"
+    },
     {
       "name": "T. Rozier",
       "status": "OUT",
@@ -279,11 +289,6 @@
       "details": "L. Doncic (Ques)"
     },
     {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
-    },
-    {
       "name": "J. Hayes",
       "status": "OUT",
       "details": "J. Hayes (Out)"
@@ -304,11 +309,6 @@
       "name": "L. Doncic",
       "status": "QUES",
       "details": "L. Doncic (Ques)"
-    },
-    {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
     },
     {
       "name": "J. Hayes",
@@ -333,14 +333,14 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "J. Grant",
-      "status": "DOUBT",
-      "details": "J. Grant (Doubt)"
-    },
-    {
       "name": "D. Avdija",
       "status": "OUT",
       "details": "D. Avdija (Out)"
+    },
+    {
+      "name": "J. Grant",
+      "status": "OUT",
+      "details": "J. Grant (Out)"
     },
     {
       "name": "S. Henderson",
