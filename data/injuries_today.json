@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-13",
-  "built_at_utc": "2026-01-13T23:22:09Z",
+  "built_at_utc": "2026-01-14T01:04:26Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -48,21 +48,6 @@
   ],
   "DEN": [
     {
-      "name": "A. Gordon",
-      "status": "PROB",
-      "details": "A. Gordon (Prob)"
-    },
-    {
-      "name": "S. Jones",
-      "status": "PROB",
-      "details": "S. Jones (Prob)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "QUES",
-      "details": "J. Murray (Ques)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -88,11 +73,6 @@
       "details": "J. Valanciunas (Out)"
     },
     {
-      "name": "S. Bey",
-      "status": "PROB",
-      "details": "S. Bey (Prob)"
-    },
-    {
       "name": "J. Alvarado",
       "status": "OUT",
       "details": "J. Alvarado (Out)"
@@ -109,11 +89,6 @@
     }
   ],
   "NOP": [
-    {
-      "name": "S. Bey",
-      "status": "PROB",
-      "details": "S. Bey (Prob)"
-    },
     {
       "name": "J. Alvarado",
       "status": "OUT",
@@ -137,11 +112,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Phillips",
-      "status": "QUES",
-      "details": "J. Phillips (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
@@ -150,6 +120,11 @@
       "name": "J. Giddey",
       "status": "OUT",
       "details": "J. Giddey (Out)"
+    },
+    {
+      "name": "J. Phillips",
+      "status": "OUT",
+      "details": "J. Phillips (Out)"
     },
     {
       "name": "Coby White",
