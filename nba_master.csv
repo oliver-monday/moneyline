@@ -589,10 +589,17 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810416,2026-01-12,2026-01-13T01:30Z,Dallas Mavericks,DAL,113,-170.0,,Brooklyn Nets,BKN,105,142.0,,Dallas,TX,,
 401810417,2026-01-12,2026-01-13T03:00Z,Sacramento Kings,SAC,124,300.0,,Los Angeles Lakers,LAL,112,-380.0,,Sacramento,CA,,
 401810418,2026-01-12,2026-01-13T03:30Z,LA Clippers,LAC,117,-185.0,,Charlotte Hornets,CHA,109,154.0,,Inglewood,CA,,
-401810419,2026-01-13,2026-01-14T00:30Z,Miami Heat,MIA,0,-115.0,,Phoenix Suns,PHX,0,-105.0,,Miami,FL,T. Rozier (Out),J. Bouyea (Out); J. Green (Out)
-401810420,2026-01-13,2026-01-14T01:00Z,Houston Rockets,HOU,0,-575.0,,Chicago Bulls,CHI,0,425.0,,Houston,TX,Tari Eason (Out); D. Finney-Smith (Out); F. VanVleet (Out),N. Essengue (OFS); Z. Collins (Out); J. Giddey (Out); Coby White (Out)
-401810421,2026-01-13,2026-01-14T01:00Z,Milwaukee Bucks,MIL,0,-148.0,,Minnesota Timberwolves,MIN,0,124.0,,Milwaukee,WI,T. Prince (Out),A. Edwards (Out); R. Gobert (Out); T. Shannon (Out)
-401810422,2026-01-13,2026-01-14T01:00Z,New Orleans Pelicans,NO,0,120.0,,Denver Nuggets,DEN,0,-142.0,,New Orleans,LA,J. Alvarado (Out); H. Jones (Out); D. Murray (Out),T. Bates (Out); C. Braun (Out); C. Johnson (Out); N. Jokic (Out); J. Valanciunas (Out)
-401810423,2026-01-13,2026-01-14T01:00Z,Oklahoma City Thunder,OKC,0,-278.0,,San Antonio Spurs,SA,0,225.0,,Oklahoma City,OK,T. Sorber (OFS); I. Hartenstein (Out); N. Topic (Out),D. Vassell (Out)
-401810424,2026-01-13,2026-01-14T03:30Z,Los Angeles Lakers,LAL,0,130.0,,Atlanta Hawks,ATL,0,-155.0,,Los Angeles,CA,A. Reaves (Out); A. Thiero (Out),N. Dante (OFS); K. Porzingis (Out)
-401810425,2026-01-13,2026-01-14T04:00Z,Golden State Warriors,GS,0,-440.0,,Portland Trail Blazers,POR,0,340.0,,San Francisco,CA,Seth Curry (Out),D. Lillard (OFS); D. Avdija (Out); S. Henderson (Out); K. Murray (Out); M. Thybulle (Out); B. Wesley (Out)
+401810419,2026-01-13,2026-01-14T00:30Z,Miami Heat,MIA,127,-115.0,,Phoenix Suns,PHX,121,-105.0,,Miami,FL,,
+401810420,2026-01-13,2026-01-14T01:00Z,Houston Rockets,HOU,119,-575.0,,Chicago Bulls,CHI,113,425.0,,Houston,TX,,
+401810421,2026-01-13,2026-01-14T01:00Z,Milwaukee Bucks,MIL,106,-148.0,,Minnesota Timberwolves,MIN,139,124.0,,Milwaukee,WI,,
+401810422,2026-01-13,2026-01-14T01:00Z,New Orleans Pelicans,NO,116,120.0,,Denver Nuggets,DEN,122,-142.0,,New Orleans,LA,,
+401810423,2026-01-13,2026-01-14T01:00Z,Oklahoma City Thunder,OKC,119,-278.0,,San Antonio Spurs,SA,98,225.0,,Oklahoma City,OK,,
+401810424,2026-01-13,2026-01-14T03:30Z,Los Angeles Lakers,LAL,141,130.0,,Atlanta Hawks,ATL,116,-155.0,,Los Angeles,CA,,
+401810425,2026-01-13,2026-01-14T04:00Z,Golden State Warriors,GS,119,-440.0,,Portland Trail Blazers,POR,97,340.0,,San Francisco,CA,,
+401810426,2026-01-14,2026-01-15T00:00Z,Indiana Pacers,IND,0,120.0,,Toronto Raptors,TOR,0,-142.0,,Indianapolis,IN,T. Haliburton (OFS); I. Jackson (Out); B. Mathurin (Out); Obi Toppin (Out),RJ Barrett (Out); C. Hepburn (Out); J. Poeltl (Out); J. Walter (Out)
+401810427,2026-01-14,2026-01-15T00:00Z,Philadelphia 76ers,PHI,0,-115.0,,Cleveland Cavaliers,CLE,0,-105.0,,Philadelphia,PA,,C. Livingston (Out); Max Strus (Out); Dean Wade (Out)
+401810428,2026-01-14,2026-01-15T01:00Z,Chicago Bulls,CHI,0,-135.0,,Utah Jazz,UTAH,0,114.0,,Chicago,IL,N. Essengue (OFS); Z. Collins (Out); J. Giddey (Out); J. Phillips (Out); Coby White (Out),W. Kessler (OFS); Kevin Love (Out); G. Niang (Out)
+401810429,2026-01-14,2026-01-15T01:00Z,New Orleans Pelicans,NO,0,105.0,,Brooklyn Nets,BKN,0,-125.0,,New Orleans,LA,J. Alvarado (Out); D. Murray (Out),H. Highsmith (Out); Z. Williams (Out)
+401810430,2026-01-14,2026-01-15T02:30Z,Dallas Mavericks,DAL,0,-110.0,,Denver Nuggets,DEN,0,-110.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); A. Davis (Out); K. Irving (Out),T. Bates (Out); C. Braun (Out); C. Johnson (Out); N. Jokic (Out); J. Valanciunas (Out)
+401810431,2026-01-14,2026-01-15T03:00Z,Sacramento Kings,SAC,0,380.0,,New York Knicks,NY,0,-500.0,,Sacramento,CA,K. Murray (Out); D. Sabonis (Out); D. Schroder (Out),L. Shamet (Out)
+401810432,2026-01-14,2026-01-15T03:30Z,LA Clippers,LAC,0,-650.0,,Washington Wizards,WSH,0,470.0,,Inglewood,CA,B. Beal (OFS); B. Bogdanovic (Out); D. Jones (Out); Chris Paul (Out),C. Whitmore (Out); Trae Young (Out)
