@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-14",
-  "built_at_utc": "2026-01-14T19:24:05Z",
+  "built_at_utc": "2026-01-14T20:19:59Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -211,14 +211,14 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "L. Markkanen",
-      "status": "DOUBT",
-      "details": "L. Markkanen (Doubt)"
-    },
-    {
       "name": "Kevin Love",
       "status": "OUT",
       "details": "Kevin Love (Out)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "OUT",
+      "details": "L. Markkanen (Out)"
     },
     {
       "name": "G. Niang",
