@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-14",
-  "built_at_utc": "2026-01-14T20:19:59Z",
+  "built_at_utc": "2026-01-14T21:01:40Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -458,11 +458,6 @@
       "details": "K. Leonard (Ques)"
     },
     {
-      "name": "I. Zubac",
-      "status": "QUES",
-      "details": "I. Zubac (Ques)"
-    },
-    {
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
@@ -481,6 +476,11 @@
       "name": "Chris Paul",
       "status": "OUT",
       "details": "Chris Paul (Out)"
+    },
+    {
+      "name": "I. Zubac",
+      "status": "OUT",
+      "details": "I. Zubac (Out)"
     }
   ],
   "LAC": [
@@ -495,11 +495,6 @@
       "details": "K. Leonard (Ques)"
     },
     {
-      "name": "I. Zubac",
-      "status": "QUES",
-      "details": "I. Zubac (Ques)"
-    },
-    {
       "name": "B. Bogdanovic",
       "status": "OUT",
       "details": "B. Bogdanovic (Out)"
@@ -513,6 +508,11 @@
       "name": "Chris Paul",
       "status": "OUT",
       "details": "Chris Paul (Out)"
+    },
+    {
+      "name": "I. Zubac",
+      "status": "OUT",
+      "details": "I. Zubac (Out)"
     }
   ]
 }
