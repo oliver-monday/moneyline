@@ -2293,7 +2293,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-13,POR,B. Wesley,OUT,B. Wesley (Out),rotowire
 2026-01-13,POR,Seth Curry,OUT,Seth Curry (Out),rotowire
 2026-01-13,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
-2026-01-14,UTA,E. Harkless,QUES,E. Harkless (Ques),rotowire
 2026-01-14,UTA,Coby White,OUT,Coby White (Out),rotowire
 2026-01-14,CHI,Coby White,OUT,Coby White (Out),rotowire
 2026-01-14,UTA,C. White,PROB,C. White (Prob),rotowire
@@ -2335,6 +2334,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-14,NOP,H. Jones,OUT,H. Jones (Out),rotowire
 2026-01-14,NOP,D. Murray,OUT,D. Murray (Out),rotowire
 2026-01-14,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
+2026-01-14,UTA,E. Harkless,OUT,E. Harkless (Out),rotowire
 2026-01-14,UTA,Kevin Love,OUT,Kevin Love (Out),rotowire
 2026-01-14,UTA,L. Markkanen,OUT,L. Markkanen (Out),rotowire
 2026-01-14,UTA,G. Niang,OUT,G. Niang (Out),rotowire
