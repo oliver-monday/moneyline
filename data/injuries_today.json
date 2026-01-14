@@ -1,23 +1,8 @@
 {
   "asof_date": "2026-01-14",
-  "built_at_utc": "2026-01-14T22:29:26Z",
+  "built_at_utc": "2026-01-14T23:20:14Z",
   "source": "rotowire",
   "TOR": [
-    {
-      "name": "S. Mamukelashvili",
-      "status": "QUES",
-      "details": "S. Mamukelashvili (Ques)"
-    },
-    {
-      "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
-    },
-    {
-      "name": "G. Temple",
-      "status": "QUES",
-      "details": "G. Temple (Ques)"
-    },
     {
       "name": "RJ Barrett",
       "status": "OUT",
@@ -29,9 +14,24 @@
       "details": "C. Hepburn (Out)"
     },
     {
+      "name": "S. Mamukelashvili",
+      "status": "OUT",
+      "details": "S. Mamukelashvili (Out)"
+    },
+    {
       "name": "J. Poeltl",
       "status": "OUT",
       "details": "J. Poeltl (Out)"
+    },
+    {
+      "name": "I. Quickley",
+      "status": "OUT",
+      "details": "I. Quickley (Out)"
+    },
+    {
+      "name": "G. Temple",
+      "status": "OUT",
+      "details": "G. Temple (Out)"
     },
     {
       "name": "J. Walter",
@@ -118,11 +118,6 @@
       "details": "Dean Wade (Out)"
     },
     {
-      "name": "V. Edgecombe",
-      "status": "PROB",
-      "details": "V. Edgecombe (Prob)"
-    },
-    {
       "name": "P. George",
       "status": "PROB",
       "details": "P. George (Prob)"
@@ -131,20 +126,10 @@
       "name": "J. Embiid",
       "status": "PROB",
       "details": "J. Embiid (Prob)"
-    },
-    {
-      "name": "K. Oubre",
-      "status": "PROB",
-      "details": "K. Oubre (Prob)"
     }
   ],
   "PHI": [
     {
-      "name": "V. Edgecombe",
-      "status": "PROB",
-      "details": "V. Edgecombe (Prob)"
-    },
-    {
       "name": "J. Embiid",
       "status": "PROB",
       "details": "J. Embiid (Prob)"
@@ -153,11 +138,6 @@
       "name": "P. George",
       "status": "PROB",
       "details": "P. George (Prob)"
-    },
-    {
-      "name": "K. Oubre",
-      "status": "PROB",
-      "details": "K. Oubre (Prob)"
     }
   ],
   "BKN": [
@@ -236,11 +216,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Phillips",
-      "status": "QUES",
-      "details": "J. Phillips (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
@@ -254,6 +229,11 @@
       "name": "Y. Kawamura",
       "status": "OUT",
       "details": "Y. Kawamura (Out)"
+    },
+    {
+      "name": "J. Phillips",
+      "status": "OUT",
+      "details": "J. Phillips (Out)"
     }
   ],
   "CHI": [
@@ -263,11 +243,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Phillips",
-      "status": "QUES",
-      "details": "J. Phillips (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
@@ -281,6 +256,11 @@
       "name": "Y. Kawamura",
       "status": "OUT",
       "details": "Y. Kawamura (Out)"
+    },
+    {
+      "name": "J. Phillips",
+      "status": "OUT",
+      "details": "J. Phillips (Out)"
     }
   ],
   "DEN": [
