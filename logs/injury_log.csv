@@ -2401,6 +2401,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-14,LAC,D. Jones,OUT,D. Jones (Out),rotowire
 2026-01-14,LAC,Chris Paul,OUT,Chris Paul (Out),rotowire
 2026-01-14,LAC,I. Zubac,OUT,I. Zubac (Out),rotowire
+2026-01-15,UTA,Kevin Love,OUT,Kevin Love (Out),rotowire
 2026-01-15,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-01-15,MEM,Zach Edey,OUT,Zach Edey (Out),rotowire
 2026-01-15,MEM,Ty Jerome,OUT,Ty Jerome (Out),rotowire
@@ -2452,9 +2453,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-15,MIL,D. Vassell,OUT,D. Vassell (Out),rotowire
 2026-01-15,SAS,D. Vassell,OUT,D. Vassell (Out),rotowire
 2026-01-15,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
+2026-01-15,UTA,K. Love,QUES,K. Love (Ques),rotowire
+2026-01-15,UTA,L. Markkanen,QUES,L. Markkanen (Ques),rotowire
 2026-01-15,UTA,E. Harkless,OUT,E. Harkless (Out),rotowire
-2026-01-15,UTA,Kevin Love,OUT,Kevin Love (Out),rotowire
-2026-01-15,UTA,L. Markkanen,OUT,L. Markkanen (Out),rotowire
 2026-01-15,UTA,G. Niang,OUT,G. Niang (Out),rotowire
 2026-01-15,UTA,C. Flagg,QUES,C. Flagg (Ques),rotowire
 2026-01-15,UTA,M. Christie,OUT,M. Christie (Out),rotowire
@@ -2471,7 +2472,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-15,DAL,A. Davis,OUT,A. Davis (Out),rotowire
 2026-01-15,DAL,K. Irving,OUT,K. Irving (Out),rotowire
 2026-01-15,NYK,J. Brunson,QUES,J. Brunson (Ques),rotowire
-2026-01-15,NYK,L. Shamet,OUT,L. Shamet (Out),rotowire
+2026-01-15,NYK,L. Shamet,DOUBT,L. Shamet (Doubt),rotowire
 2026-01-15,NYK,Seth Curry,OUT,Seth Curry (Out),rotowire
 2026-01-15,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
 2026-01-15,ATL,N. Dante,OFS,N. Dante (OFS),rotowire
