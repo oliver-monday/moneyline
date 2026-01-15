@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-15",
-  "built_at_utc": "2026-01-15T14:49:18Z",
+  "built_at_utc": "2026-01-15T17:24:01Z",
   "source": "rotowire",
   "MEM": [
     {
@@ -73,6 +73,11 @@
   ],
   "PHX": [
     {
+      "name": "D. Brooks",
+      "status": "PROB",
+      "details": "D. Brooks (Prob)"
+    },
+    {
       "name": "R. O'Neale",
       "status": "PROB",
       "details": "R. O'Neale (Prob)"
@@ -111,11 +116,6 @@
       "name": "I. Stewart",
       "status": "PROB",
       "details": "I. Stewart (Prob)"
-    },
-    {
-      "name": "W. Moore",
-      "status": "OUT",
-      "details": "W. Moore (Out)"
     }
   ],
   "DET": [
@@ -133,11 +133,6 @@
       "name": "I. Stewart",
       "status": "PROB",
       "details": "I. Stewart (Prob)"
-    },
-    {
-      "name": "W. Moore",
-      "status": "OUT",
-      "details": "W. Moore (Out)"
     }
   ],
   "OKC": [
@@ -315,8 +310,8 @@
     },
     {
       "name": "M. Christie",
-      "status": "OUT",
-      "details": "M. Christie (Out)"
+      "status": "QUES",
+      "details": "M. Christie (Ques)"
     },
     {
       "name": "D. Gafford",
@@ -351,6 +346,16 @@
       "details": "Dante Exum (OFS)"
     },
     {
+      "name": "D. Lively",
+      "status": "OFS",
+      "details": "D. Lively (OFS)"
+    },
+    {
+      "name": "M. Christie",
+      "status": "QUES",
+      "details": "M. Christie (Ques)"
+    },
+    {
       "name": "C. Flagg",
       "status": "QUES",
       "details": "C. Flagg (Ques)"
@@ -359,16 +364,6 @@
       "name": "D. Gafford",
       "status": "QUES",
       "details": "D. Gafford (Ques)"
-    },
-    {
-      "name": "D. Lively",
-      "status": "OFS",
-      "details": "D. Lively (OFS)"
-    },
-    {
-      "name": "M. Christie",
-      "status": "OUT",
-      "details": "M. Christie (Out)"
     },
     {
       "name": "A. Davis",
@@ -384,8 +379,13 @@
   "NYK": [
     {
       "name": "J. Brunson",
+      "status": "DOUBT",
+      "details": "J. Brunson (Doubt)"
+    },
+    {
+      "name": "M. Robinson",
       "status": "QUES",
-      "details": "J. Brunson (Ques)"
+      "details": "M. Robinson (Ques)"
     },
     {
       "name": "L. Shamet",
