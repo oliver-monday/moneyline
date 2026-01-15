@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-15",
-  "built_at_utc": "2026-01-15T17:24:01Z",
+  "built_at_utc": "2026-01-15T18:33:49Z",
   "source": "rotowire",
   "MEM": [
     {
@@ -54,6 +54,11 @@
       "details": "C. Castleton (Out)"
     },
     {
+      "name": "J. Howard",
+      "status": "OUT",
+      "details": "J. Howard (Out)"
+    },
+    {
       "name": "J. Suggs",
       "status": "OUT",
       "details": "J. Suggs (Out)"
@@ -66,6 +71,11 @@
       "details": "C. Castleton (Out)"
     },
     {
+      "name": "J. Howard",
+      "status": "OUT",
+      "details": "J. Howard (Out)"
+    },
+    {
       "name": "J. Suggs",
       "status": "OUT",
       "details": "J. Suggs (Out)"
@@ -73,24 +83,14 @@
   ],
   "PHX": [
     {
-      "name": "D. Brooks",
-      "status": "PROB",
-      "details": "D. Brooks (Prob)"
-    },
-    {
-      "name": "R. O'Neale",
-      "status": "PROB",
-      "details": "R. O'Neale (Prob)"
-    },
-    {
-      "name": "D. Booker",
-      "status": "QUES",
-      "details": "D. Booker (Ques)"
-    },
-    {
       "name": "N. Hayes-Davis",
       "status": "QUES",
       "details": "N. Hayes-Davis (Ques)"
+    },
+    {
+      "name": "D. Booker",
+      "status": "OUT",
+      "details": "D. Booker (Out)"
     },
     {
       "name": "J. Bouyea",
@@ -201,24 +201,14 @@
       "details": "J. Tatum (Out)"
     },
     {
-      "name": "T. Herro",
-      "status": "PROB",
-      "details": "T. Herro (Prob)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "PROB",
-      "details": "N. Jovic (Prob)"
-    },
-    {
       "name": "J. Jaquez",
-      "status": "QUES",
-      "details": "J. Jaquez (Ques)"
+      "status": "OUT",
+      "details": "J. Jaquez (Out)"
     },
     {
       "name": "D. Mitchell",
-      "status": "DOUBT",
-      "details": "D. Mitchell (Doubt)"
+      "status": "OUT",
+      "details": "D. Mitchell (Out)"
     },
     {
       "name": "T. Rozier",
@@ -228,24 +218,14 @@
   ],
   "MIA": [
     {
-      "name": "T. Herro",
-      "status": "PROB",
-      "details": "T. Herro (Prob)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "PROB",
-      "details": "N. Jovic (Prob)"
-    },
-    {
       "name": "J. Jaquez",
-      "status": "QUES",
-      "details": "J. Jaquez (Ques)"
+      "status": "OUT",
+      "details": "J. Jaquez (Out)"
     },
     {
       "name": "D. Mitchell",
-      "status": "DOUBT",
-      "details": "D. Mitchell (Doubt)"
+      "status": "OUT",
+      "details": "D. Mitchell (Out)"
     },
     {
       "name": "T. Rozier",
@@ -258,6 +238,11 @@
       "name": "G. Antetokounmpo",
       "status": "PROB",
       "details": "G. Antetokounmpo (Prob)"
+    },
+    {
+      "name": "K. Kuzma",
+      "status": "QUES",
+      "details": "K. Kuzma (Ques)"
     },
     {
       "name": "T. Prince",
@@ -304,19 +289,9 @@
       "details": "G. Niang (Out)"
     },
     {
-      "name": "C. Flagg",
-      "status": "QUES",
-      "details": "C. Flagg (Ques)"
-    },
-    {
       "name": "M. Christie",
       "status": "QUES",
       "details": "M. Christie (Ques)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
     },
     {
       "name": "Dante Exum",
@@ -327,6 +302,16 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
+    },
+    {
+      "name": "C. Flagg",
+      "status": "DOUBT",
+      "details": "C. Flagg (Doubt)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "DOUBT",
+      "details": "D. Gafford (Doubt)"
     },
     {
       "name": "A. Davis",
@@ -357,13 +342,13 @@
     },
     {
       "name": "C. Flagg",
-      "status": "QUES",
-      "details": "C. Flagg (Ques)"
+      "status": "DOUBT",
+      "details": "C. Flagg (Doubt)"
     },
     {
       "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
+      "status": "DOUBT",
+      "details": "D. Gafford (Doubt)"
     },
     {
       "name": "A. Davis",
