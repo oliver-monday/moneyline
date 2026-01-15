@@ -1,8 +1,13 @@
 {
   "asof_date": "2026-01-14",
-  "built_at_utc": "2026-01-15T01:00:20Z",
+  "built_at_utc": "2026-01-15T02:52:54Z",
   "source": "rotowire",
   "TOR": [
+    {
+      "name": "J. Battle",
+      "status": "QUES",
+      "details": "J. Battle (Ques)"
+    },
     {
       "name": "RJ Barrett",
       "status": "OUT",
@@ -103,6 +108,16 @@
   ],
   "CLE": [
     {
+      "name": "D. Garland",
+      "status": "QUES",
+      "details": "D. Garland (Ques)"
+    },
+    {
+      "name": "S. Merrill",
+      "status": "QUES",
+      "details": "S. Merrill (Ques)"
+    },
+    {
       "name": "C. Livingston",
       "status": "OUT",
       "details": "C. Livingston (Out)"
@@ -116,6 +131,18 @@
       "name": "Dean Wade",
       "status": "OUT",
       "details": "Dean Wade (Out)"
+    },
+    {
+      "name": "D. Barlow",
+      "status": "QUES",
+      "details": "D. Barlow (Ques)"
+    }
+  ],
+  "PHI": [
+    {
+      "name": "D. Barlow",
+      "status": "QUES",
+      "details": "D. Barlow (Ques)"
     }
   ],
   "BKN": [
@@ -243,26 +270,6 @@
   ],
   "DEN": [
     {
-      "name": "A. Gordon",
-      "status": "PROB",
-      "details": "A. Gordon (Prob)"
-    },
-    {
-      "name": "S. Jones",
-      "status": "PROB",
-      "details": "S. Jones (Prob)"
-    },
-    {
-      "name": "B. Brown",
-      "status": "QUES",
-      "details": "B. Brown (Ques)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "QUES",
-      "details": "J. Murray (Ques)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -342,11 +349,6 @@
   ],
   "NYK": [
     {
-      "name": "A. Hukporti",
-      "status": "QUES",
-      "details": "A. Hukporti (Ques)"
-    },
-    {
       "name": "L. Shamet",
       "status": "OUT",
       "details": "L. Shamet (Out)"
@@ -396,9 +398,9 @@
       "details": "Trae Young (Out)"
     },
     {
-      "name": "K. Leonard",
+      "name": "J. Collins",
       "status": "QUES",
-      "details": "K. Leonard (Ques)"
+      "details": "J. Collins (Ques)"
     },
     {
       "name": "B. Beal",
@@ -433,9 +435,9 @@
       "details": "B. Beal (OFS)"
     },
     {
-      "name": "K. Leonard",
+      "name": "J. Collins",
       "status": "QUES",
-      "details": "K. Leonard (Ques)"
+      "details": "J. Collins (Ques)"
     },
     {
       "name": "B. Bogdanovic",
