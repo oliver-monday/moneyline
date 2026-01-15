@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-15",
-  "built_at_utc": "2026-01-15T20:23:33Z",
+  "built_at_utc": "2026-01-15T21:10:45Z",
   "source": "rotowire",
   "MEM": [
     {
@@ -388,19 +388,19 @@
   ],
   "NYK": [
     {
-      "name": "M. Robinson",
+      "name": "L. Shamet",
       "status": "QUES",
-      "details": "M. Robinson (Ques)"
+      "details": "L. Shamet (Ques)"
     },
     {
       "name": "J. Brunson",
-      "status": "DOUBT",
-      "details": "J. Brunson (Doubt)"
+      "status": "OUT",
+      "details": "J. Brunson (Out)"
     },
     {
-      "name": "L. Shamet",
-      "status": "DOUBT",
-      "details": "L. Shamet (Doubt)"
+      "name": "M. Robinson",
+      "status": "OUT",
+      "details": "M. Robinson (Out)"
     },
     {
       "name": "Seth Curry",
@@ -423,13 +423,13 @@
     },
     {
       "name": "M. Gueye",
-      "status": "QUES",
-      "details": "M. Gueye (Ques)"
+      "status": "PROB",
+      "details": "M. Gueye (Prob)"
     },
     {
       "name": "L. Kennard",
-      "status": "QUES",
-      "details": "L. Kennard (Ques)"
+      "status": "PROB",
+      "details": "L. Kennard (Prob)"
     },
     {
       "name": "K. Porzingis",
@@ -532,8 +532,8 @@
     },
     {
       "name": "J. Hayes",
-      "status": "QUES",
-      "details": "J. Hayes (Ques)"
+      "status": "OUT",
+      "details": "J. Hayes (Out)"
     },
     {
       "name": "A. Reaves",
@@ -549,8 +549,8 @@
   "LAL": [
     {
       "name": "J. Hayes",
-      "status": "QUES",
-      "details": "J. Hayes (Ques)"
+      "status": "OUT",
+      "details": "J. Hayes (Out)"
     },
     {
       "name": "A. Reaves",
