@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-15",
-  "built_at_utc": "2026-01-15T21:10:45Z",
+  "built_at_utc": "2026-01-15T22:28:45Z",
   "source": "rotowire",
   "MEM": [
     {
@@ -517,13 +517,13 @@
   "CHA": [
     {
       "name": "M. Diabate",
-      "status": "QUES",
-      "details": "M. Diabate (Ques)"
+      "status": "PROB",
+      "details": "M. Diabate (Prob)"
     },
     {
       "name": "C. Sexton",
-      "status": "QUES",
-      "details": "C. Sexton (Ques)"
+      "status": "PROB",
+      "details": "C. Sexton (Prob)"
     },
     {
       "name": "M. Plumlee",
