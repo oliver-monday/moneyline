@@ -604,11 +604,11 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810431,2026-01-14,2026-01-15T03:00Z,Sacramento Kings,SAC,112,380.0,,New York Knicks,NY,101,-500.0,,Sacramento,CA,,
 401810432,2026-01-14,2026-01-15T03:30Z,LA Clippers,LAC,119,-675.0,,Washington Wizards,WSH,105,490.0,,Inglewood,CA,,
 401810433,2026-01-15,2026-01-15T19:00Z,Orlando Magic,ORL,0,-205.0,,Memphis Grizzlies,MEM,0,170.0,,Berlin,,C. Castleton (Out); J. Suggs (Out),B. Clarke (Out); Zach Edey (Out); Ty Jerome (Out); Ja Morant (Out); S. Pippen (Out)
-401810434,2026-01-15,2026-01-16T00:00Z,Detroit Pistons,DET,0,-278.0,,Phoenix Suns,PHX,0,225.0,,Detroit,MI,W. Moore (Out),J. Bouyea (Out); J. Green (Out)
+401810434,2026-01-15,2026-01-16T00:00Z,Detroit Pistons,DET,0,-245.0,,Phoenix Suns,PHX,0,200.0,,Detroit,MI,W. Moore (Out),J. Bouyea (Out); J. Green (Out)
 401810435,2026-01-15,2026-01-16T00:30Z,Miami Heat,MIA,0,105.0,,Boston Celtics,BOS,0,-125.0,,Miami,FL,T. Rozier (Out),J. Minott (Out); J. Tatum (Out)
 401810436,2026-01-15,2026-01-16T00:30Z,Houston Rockets,HOU,0,142.0,,Oklahoma City Thunder,OKC,0,-170.0,,Houston,TX,Tari Eason (Out); D. Finney-Smith (Out); F. VanVleet (Out),T. Sorber (OFS); I. Hartenstein (Out); N. Topic (Out)
 401810437,2026-01-15,2026-01-16T01:00Z,San Antonio Spurs,SA,0,-290.0,,Milwaukee Bucks,MIL,0,235.0,,San Antonio,TX,D. Vassell (Out),T. Prince (Out)
 401810438,2026-01-15,2026-01-16T01:30Z,Dallas Mavericks,DAL,0,-105.0,,Utah Jazz,UTAH,0,-115.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); M. Christie (Out); A. Davis (Out); K. Irving (Out),W. Kessler (OFS); E. Harkless (Out); Kevin Love (Out); L. Markkanen (Out); G. Niang (Out)
 401810439,2026-01-15,2026-01-16T03:00Z,Golden State Warriors,GS,0,-290.0,,New York Knicks,NY,0,235.0,,San Francisco,CA,Seth Curry (Out),L. Shamet (Out)
 401810440,2026-01-15,2026-01-16T03:00Z,Portland Trail Blazers,POR,0,145.0,,Atlanta Hawks,ATL,0,-175.0,,Portland,OR,D. Lillard (OFS); S. Henderson (Out); K. Murray (Out); M. Thybulle (Out); B. Wesley (Out),N. Dante (OFS); K. Porzingis (Out); Z. Risacher (Out)
-401810441,2026-01-15,2026-01-16T03:30Z,Los Angeles Lakers,LAL,0,-205.0,,Charlotte Hornets,CHA,0,170.0,,Los Angeles,CA,A. Reaves (Out); A. Thiero (Out),M. Plumlee (Out)
+401810441,2026-01-15,2026-01-16T03:30Z,Los Angeles Lakers,LAL,0,-180.0,,Charlotte Hornets,CHA,0,150.0,,Los Angeles,CA,A. Reaves (Out); A. Thiero (Out),M. Plumlee (Out)

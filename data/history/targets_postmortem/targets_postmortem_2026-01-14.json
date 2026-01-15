@@ -6,7 +6,7 @@
     "misses": 4,
     "hit_rate_pct": 64,
     "top_targets_total": 6,
-    "top_targets_hits": 3
+    "top_targets_hits": 4
   },
   "hits": [
     {
@@ -295,7 +295,7 @@
       "actual": 4
     }
   ],
-  "built_at_utc": "2026-01-15T08:52:21Z",
+  "built_at_utc": "2026-01-15T14:16:03Z",
   "snapshot_file": "targets_snapshot_2026-01-14.json",
   "preset": "baseline",
   "top_targets": [
@@ -323,31 +323,6 @@
       "actual": 3,
       "hit": true,
       "delta": -1
-    },
-    {
-      "asof_date": "2026-01-14",
-      "player_id": "5041939.0",
-      "player_name": "Cooper Flagg",
-      "team_abbrev": "DAL",
-      "opp": "DEN",
-      "game_id": "401810430",
-      "stat": "ast",
-      "threshold": 4,
-      "hits": 9,
-      "window_games": 10,
-      "hit_rate": 0.9,
-      "is_home_game": true,
-      "rest_days": 1,
-      "is_b2b": false,
-      "share_trend_pp": 2.699682064670983,
-      "share_trend_dir": "UP",
-      "iqr_10": 2.75,
-      "landmine_rate_10": 0.0,
-      "trap_risk": false,
-      "dnp": false,
-      "actual": 1,
-      "hit": false,
-      "delta": 3
     },
     {
       "asof_date": "2026-01-14",
@@ -427,28 +402,53 @@
     },
     {
       "asof_date": "2026-01-14",
-      "player_id": "5041939.0",
-      "player_name": "Cooper Flagg",
-      "team_abbrev": "DAL",
-      "opp": "DEN",
-      "game_id": "401810430",
-      "stat": "reb",
-      "threshold": 6,
+      "player_id": "3147657.0",
+      "player_name": "Mikal Bridges",
+      "team_abbrev": "NY",
+      "opp": "SAC",
+      "game_id": "401810431",
+      "stat": "ast",
+      "threshold": 4,
       "hits": 8,
       "window_games": 10,
       "hit_rate": 0.8,
-      "is_home_game": true,
-      "rest_days": 1,
+      "is_home_game": false,
+      "rest_days": 2,
       "is_b2b": false,
-      "share_trend_pp": -1.1454469316863614,
+      "share_trend_pp": 0.5411327241875513,
       "share_trend_dir": "FLAT",
-      "iqr_10": 1.75,
+      "iqr_10": 2.0,
       "landmine_rate_10": 0.1,
       "trap_risk": false,
       "dnp": false,
       "actual": 1,
       "hit": false,
-      "delta": 5
+      "delta": 3
+    },
+    {
+      "asof_date": "2026-01-14",
+      "player_id": "3147657.0",
+      "player_name": "Mikal Bridges",
+      "team_abbrev": "NY",
+      "opp": "SAC",
+      "game_id": "401810431",
+      "stat": "3pt",
+      "threshold": 2,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": false,
+      "rest_days": 2,
+      "is_b2b": false,
+      "share_trend_pp": -0.7701979393155839,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 0.75,
+      "landmine_rate_10": null,
+      "trap_risk": null,
+      "dnp": false,
+      "actual": 2,
+      "hit": true,
+      "delta": 0
     }
   ]
 }
