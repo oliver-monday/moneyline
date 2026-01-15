@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-15",
-  "built_at_utc": "2026-01-15T22:28:45Z",
+  "built_at_utc": "2026-01-15T23:24:10Z",
   "source": "rotowire",
   "MEM": [
     {
@@ -83,11 +83,6 @@
   ],
   "PHX": [
     {
-      "name": "N. Hayes-Davis",
-      "status": "QUES",
-      "details": "N. Hayes-Davis (Ques)"
-    },
-    {
       "name": "D. Booker",
       "status": "OUT",
       "details": "D. Booker (Out)"
@@ -103,21 +98,6 @@
       "details": "J. Green (Out)"
     },
     {
-      "name": "T. Harris",
-      "status": "PROB",
-      "details": "T. Harris (Prob)"
-    },
-    {
-      "name": "J. Duren",
-      "status": "PROB",
-      "details": "J. Duren (Prob)"
-    },
-    {
-      "name": "I. Stewart",
-      "status": "PROB",
-      "details": "I. Stewart (Prob)"
-    },
-    {
       "name": "W. Moore",
       "status": "OUT",
       "details": "W. Moore (Out)"
@@ -129,21 +109,6 @@
     }
   ],
   "DET": [
-    {
-      "name": "J. Duren",
-      "status": "PROB",
-      "details": "J. Duren (Prob)"
-    },
-    {
-      "name": "T. Harris",
-      "status": "PROB",
-      "details": "T. Harris (Prob)"
-    },
-    {
-      "name": "I. Stewart",
-      "status": "PROB",
-      "details": "I. Stewart (Prob)"
-    },
     {
       "name": "W. Moore",
       "status": "OUT",
