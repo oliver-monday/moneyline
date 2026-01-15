@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-14",
-  "built_at_utc": "2026-01-14T23:20:14Z",
+  "built_at_utc": "2026-01-15T01:00:20Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -116,28 +116,6 @@
       "name": "Dean Wade",
       "status": "OUT",
       "details": "Dean Wade (Out)"
-    },
-    {
-      "name": "P. George",
-      "status": "PROB",
-      "details": "P. George (Prob)"
-    },
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    }
-  ],
-  "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
-    {
-      "name": "P. George",
-      "status": "PROB",
-      "details": "P. George (Prob)"
     }
   ],
   "BKN": [
@@ -310,11 +288,6 @@
       "details": "J. Valanciunas (Out)"
     },
     {
-      "name": "P. Washington",
-      "status": "QUES",
-      "details": "P. Washington (Ques)"
-    },
-    {
       "name": "Dante Exum",
       "status": "OFS",
       "details": "Dante Exum (OFS)"
@@ -325,14 +298,9 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "B. Williams",
-      "status": "QUES",
-      "details": "B. Williams (Ques)"
-    },
-    {
       "name": "M. Christie",
-      "status": "DOUBT",
-      "details": "M. Christie (Doubt)"
+      "status": "OUT",
+      "details": "M. Christie (Out)"
     },
     {
       "name": "A. Davis",
@@ -357,19 +325,9 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "P. Washington",
-      "status": "QUES",
-      "details": "P. Washington (Ques)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "QUES",
-      "details": "B. Williams (Ques)"
-    },
-    {
       "name": "M. Christie",
-      "status": "DOUBT",
-      "details": "M. Christie (Doubt)"
+      "status": "OUT",
+      "details": "M. Christie (Out)"
     },
     {
       "name": "A. Davis",
