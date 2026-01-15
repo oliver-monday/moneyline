@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-14",
-  "built_at_utc": "2026-01-15T02:52:54Z",
+  "built_at_utc": "2026-01-15T03:23:33Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -349,6 +349,11 @@
   ],
   "NYK": [
     {
+      "name": "J. Brunson",
+      "status": "QUES",
+      "details": "J. Brunson (Ques)"
+    },
+    {
       "name": "L. Shamet",
       "status": "OUT",
       "details": "L. Shamet (Out)"
@@ -398,11 +403,6 @@
       "details": "Trae Young (Out)"
     },
     {
-      "name": "J. Collins",
-      "status": "QUES",
-      "details": "J. Collins (Ques)"
-    },
-    {
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
@@ -411,6 +411,11 @@
       "name": "B. Bogdanovic",
       "status": "OUT",
       "details": "B. Bogdanovic (Out)"
+    },
+    {
+      "name": "J. Collins",
+      "status": "OUT",
+      "details": "J. Collins (Out)"
     },
     {
       "name": "D. Jones",
@@ -435,14 +440,14 @@
       "details": "B. Beal (OFS)"
     },
     {
-      "name": "J. Collins",
-      "status": "QUES",
-      "details": "J. Collins (Ques)"
-    },
-    {
       "name": "B. Bogdanovic",
       "status": "OUT",
       "details": "B. Bogdanovic (Out)"
+    },
+    {
+      "name": "J. Collins",
+      "status": "OUT",
+      "details": "J. Collins (Out)"
     },
     {
       "name": "D. Jones",
