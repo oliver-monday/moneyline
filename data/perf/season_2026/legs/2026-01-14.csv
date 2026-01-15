@@ -1,0 +1,14 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-14,2026,Trey Murphy III,NO,BKN,pts,20,HIT,34,,targets_snapshot_2026-01-14.json
+2026-01-14,2026,Trey Murphy III,NO,BKN,3pt,3,HIT,5,,targets_snapshot_2026-01-14.json
+2026-01-14,2026,Cooper Flagg,DAL,DEN,reb,6,MISSED,1,,targets_snapshot_2026-01-14.json
+2026-01-14,2026,Cooper Flagg,DAL,DEN,ast,4,MISSED,1,,targets_snapshot_2026-01-14.json
+2026-01-14,2026,Mikal Bridges,NY,SAC,ast,4,MISSED,1,,targets_snapshot_2026-01-14.json
+2026-01-14,2026,Mikal Bridges,NY,SAC,3pt,2,HIT,2,,targets_snapshot_2026-01-14.json
+2026-01-14,2026,Immanuel Quickley,TOR,IND,pts,15,MISSED,,,targets_snapshot_2026-01-14.json
+2026-01-14,2026,Immanuel Quickley,TOR,IND,3pt,2,MISSED,,,targets_snapshot_2026-01-14.json
+2026-01-14,2026,Josh Hart,NY,SAC,pts,10,HIT,10,,targets_snapshot_2026-01-14.json
+2026-01-14,2026,Saddiq Bey,NO,BKN,pts,15,MISSED,12,,targets_snapshot_2026-01-14.json
+2026-01-14,2026,Darius Garland,CLE,PHI,ast,6,HIT,7,,targets_snapshot_2026-01-14.json
+2026-01-14,2026,Tim Hardaway Jr.,DEN,DAL,reb,2,HIT,3,,targets_snapshot_2026-01-14.json
+2026-01-14,2026,Tim Hardaway Jr.,DEN,DAL,3pt,3,HIT,4,,targets_snapshot_2026-01-14.json
