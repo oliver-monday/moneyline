@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-15",
-  "built_at_utc": "2026-01-15T19:29:27Z",
+  "built_at_utc": "2026-01-15T20:23:33Z",
   "source": "rotowire",
   "MEM": [
     {
@@ -121,6 +121,11 @@
       "name": "W. Moore",
       "status": "OUT",
       "details": "W. Moore (Out)"
+    },
+    {
+      "name": "Paul Reed",
+      "status": "OUT",
+      "details": "Paul Reed (Out)"
     }
   ],
   "DET": [
@@ -143,6 +148,11 @@
       "name": "W. Moore",
       "status": "OUT",
       "details": "W. Moore (Out)"
+    },
+    {
+      "name": "Paul Reed",
+      "status": "OUT",
+      "details": "Paul Reed (Out)"
     }
   ],
   "OKC": [
@@ -432,19 +442,19 @@
       "details": "Z. Risacher (Out)"
     },
     {
+      "name": "J. Grant",
+      "status": "PROB",
+      "details": "J. Grant (Prob)"
+    },
+    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "J. Grant",
-      "status": "QUES",
-      "details": "J. Grant (Ques)"
-    },
-    {
       "name": "D. Avdija",
-      "status": "DOUBT",
-      "details": "D. Avdija (Doubt)"
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
     },
     {
       "name": "S. Henderson",
@@ -475,13 +485,13 @@
     },
     {
       "name": "J. Grant",
-      "status": "QUES",
-      "details": "J. Grant (Ques)"
+      "status": "PROB",
+      "details": "J. Grant (Prob)"
     },
     {
       "name": "D. Avdija",
-      "status": "DOUBT",
-      "details": "D. Avdija (Doubt)"
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
     },
     {
       "name": "S. Henderson",
