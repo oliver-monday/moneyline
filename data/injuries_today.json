@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-16",
-  "built_at_utc": "2026-01-16T22:27:49Z",
+  "built_at_utc": "2026-01-16T23:22:39Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -44,11 +44,6 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "K. Jones",
-      "status": "QUES",
-      "details": "K. Jones (Ques)"
-    },
-    {
       "name": "I. Jackson",
       "status": "OUT",
       "details": "I. Jackson (Out)"
@@ -69,11 +64,6 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
-    },
-    {
-      "name": "K. Jones",
-      "status": "QUES",
-      "details": "K. Jones (Ques)"
     },
     {
       "name": "I. Jackson",
@@ -118,16 +108,6 @@
       "details": "Dean Wade (Out)"
     },
     {
-      "name": "P. George",
-      "status": "PROB",
-      "details": "P. George (Prob)"
-    },
-    {
-      "name": "D. Barlow",
-      "status": "QUES",
-      "details": "D. Barlow (Ques)"
-    },
-    {
       "name": "J. Embiid",
       "status": "PROB",
       "details": "J. Embiid (Prob)"
@@ -138,16 +118,6 @@
       "name": "J. Embiid",
       "status": "PROB",
       "details": "J. Embiid (Prob)"
-    },
-    {
-      "name": "P. George",
-      "status": "PROB",
-      "details": "P. George (Prob)"
-    },
-    {
-      "name": "D. Barlow",
-      "status": "QUES",
-      "details": "D. Barlow (Ques)"
     }
   ],
   "CHI": [
@@ -155,16 +125,6 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "K. Huerter",
-      "status": "PROB",
-      "details": "K. Huerter (Prob)"
-    },
-    {
-      "name": "J. Phillips",
-      "status": "QUES",
-      "details": "J. Phillips (Ques)"
     },
     {
       "name": "Z. Collins",
@@ -236,21 +196,6 @@
       "details": "Chris Paul (Out)"
     },
     {
-      "name": "S. Mamukelashvili",
-      "status": "PROB",
-      "details": "S. Mamukelashvili (Prob)"
-    },
-    {
-      "name": "G. Temple",
-      "status": "PROB",
-      "details": "G. Temple (Prob)"
-    },
-    {
-      "name": "I. Quickley",
-      "status": "DOUBT",
-      "details": "I. Quickley (Doubt)"
-    },
-    {
       "name": "RJ Barrett",
       "status": "OUT",
       "details": "RJ Barrett (Out)"
@@ -269,6 +214,11 @@
       "name": "J. Poeltl",
       "status": "OUT",
       "details": "J. Poeltl (Out)"
+    },
+    {
+      "name": "I. Quickley",
+      "status": "OUT",
+      "details": "I. Quickley (Out)"
     },
     {
       "name": "J. Walter",
@@ -278,21 +228,6 @@
   ],
   "TOR": [
     {
-      "name": "S. Mamukelashvili",
-      "status": "PROB",
-      "details": "S. Mamukelashvili (Prob)"
-    },
-    {
-      "name": "G. Temple",
-      "status": "PROB",
-      "details": "G. Temple (Prob)"
-    },
-    {
-      "name": "I. Quickley",
-      "status": "DOUBT",
-      "details": "I. Quickley (Doubt)"
-    },
-    {
       "name": "RJ Barrett",
       "status": "OUT",
       "details": "RJ Barrett (Out)"
@@ -311,6 +246,11 @@
       "name": "J. Poeltl",
       "status": "OUT",
       "details": "J. Poeltl (Out)"
+    },
+    {
+      "name": "I. Quickley",
+      "status": "OUT",
+      "details": "I. Quickley (Out)"
     },
     {
       "name": "J. Walter",
