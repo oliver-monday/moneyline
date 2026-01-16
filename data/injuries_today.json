@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-16",
-  "built_at_utc": "2026-01-16T18:29:38Z",
+  "built_at_utc": "2026-01-16T19:23:18Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -325,16 +325,6 @@
       "details": "T. Eason (Ques)"
     },
     {
-      "name": "D. Finney-Smith",
-      "status": "QUES",
-      "details": "D. Finney-Smith (Ques)"
-    },
-    {
-      "name": "S. Adams",
-      "status": "QUES",
-      "details": "S. Adams (Ques)"
-    },
-    {
       "name": "F. VanVleet",
       "status": "OUT",
       "details": "F. VanVleet (Out)"
@@ -345,16 +335,6 @@
       "name": "T. Eason",
       "status": "QUES",
       "details": "T. Eason (Ques)"
-    },
-    {
-      "name": "D. Finney-Smith",
-      "status": "QUES",
-      "details": "D. Finney-Smith (Ques)"
-    },
-    {
-      "name": "S. Adams",
-      "status": "QUES",
-      "details": "S. Adams (Ques)"
     },
     {
       "name": "F. VanVleet",
@@ -390,8 +370,8 @@
     },
     {
       "name": "D. Sabonis",
-      "status": "QUES",
-      "details": "D. Sabonis (Ques)"
+      "status": "PROB",
+      "details": "D. Sabonis (Prob)"
     },
     {
       "name": "K. Murray",
@@ -407,8 +387,8 @@
   "SAC": [
     {
       "name": "D. Sabonis",
-      "status": "QUES",
-      "details": "D. Sabonis (Ques)"
+      "status": "PROB",
+      "details": "D. Sabonis (Prob)"
     },
     {
       "name": "K. Murray",
