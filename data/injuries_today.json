@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-16",
-  "built_at_utc": "2026-01-16T19:23:18Z",
+  "built_at_utc": "2026-01-16T20:20:39Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -44,6 +44,11 @@
       "details": "T. Haliburton (OFS)"
     },
     {
+      "name": "K. Jones",
+      "status": "QUES",
+      "details": "K. Jones (Ques)"
+    },
+    {
       "name": "I. Jackson",
       "status": "OUT",
       "details": "I. Jackson (Out)"
@@ -64,6 +69,11 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
+    },
+    {
+      "name": "K. Jones",
+      "status": "QUES",
+      "details": "K. Jones (Ques)"
     },
     {
       "name": "I. Jackson",
