@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-15",
-  "built_at_utc": "2026-01-16T02:54:31Z",
+  "built_at_utc": "2026-01-16T03:22:38Z",
   "source": "rotowire",
   "MEM": [
     {
@@ -84,52 +84,52 @@
   "PHX": [
     {
       "name": "D. Booker",
-      "status": "OUT",
-      "details": "D. Booker (Out)"
+      "status": "QUES",
+      "details": "D. Booker (Ques)"
     },
     {
       "name": "J. Bouyea",
-      "status": "OUT",
-      "details": "J. Bouyea (Out)"
+      "status": "QUES",
+      "details": "J. Bouyea (Ques)"
     },
     {
       "name": "J. Green",
-      "status": "OUT",
-      "details": "J. Green (Out)"
+      "status": "DOUBT",
+      "details": "J. Green (Doubt)"
     },
     {
       "name": "W. Moore",
-      "status": "OUT",
-      "details": "W. Moore (Out)"
+      "status": "QUES",
+      "details": "W. Moore (Ques)"
     },
     {
-      "name": "Paul Reed",
-      "status": "OUT",
-      "details": "Paul Reed (Out)"
+      "name": "P. Reed",
+      "status": "QUES",
+      "details": "P. Reed (Ques)"
     }
   ],
   "DET": [
     {
       "name": "W. Moore",
-      "status": "OUT",
-      "details": "W. Moore (Out)"
+      "status": "QUES",
+      "details": "W. Moore (Ques)"
     },
     {
-      "name": "Paul Reed",
-      "status": "OUT",
-      "details": "Paul Reed (Out)"
+      "name": "P. Reed",
+      "status": "QUES",
+      "details": "P. Reed (Ques)"
     }
   ],
   "OKC": [
     {
+      "name": "I. Hartenstein",
+      "status": "DOUBT",
+      "details": "I. Hartenstein (Doubt)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "I. Hartenstein",
-      "status": "OUT",
-      "details": "I. Hartenstein (Out)"
     },
     {
       "name": "N. Topic",
@@ -137,14 +137,14 @@
       "details": "N. Topic (Out)"
     },
     {
-      "name": "Tari Eason",
-      "status": "OUT",
-      "details": "Tari Eason (Out)"
+      "name": "T. Eason",
+      "status": "QUES",
+      "details": "T. Eason (Ques)"
     },
     {
       "name": "D. Finney-Smith",
-      "status": "OUT",
-      "details": "D. Finney-Smith (Out)"
+      "status": "QUES",
+      "details": "D. Finney-Smith (Ques)"
     },
     {
       "name": "F. VanVleet",
@@ -154,14 +154,14 @@
   ],
   "HOU": [
     {
-      "name": "Tari Eason",
-      "status": "OUT",
-      "details": "Tari Eason (Out)"
+      "name": "T. Eason",
+      "status": "QUES",
+      "details": "T. Eason (Ques)"
     },
     {
       "name": "D. Finney-Smith",
-      "status": "OUT",
-      "details": "D. Finney-Smith (Out)"
+      "status": "QUES",
+      "details": "D. Finney-Smith (Ques)"
     },
     {
       "name": "F. VanVleet",
