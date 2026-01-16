@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-16",
-  "built_at_utc": "2026-01-16T17:15:56Z",
+  "built_at_utc": "2026-01-16T18:29:38Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -201,11 +201,6 @@
       "details": "J. Collins (Ques)"
     },
     {
-      "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
-    },
-    {
       "name": "I. Zubac",
       "status": "QUES",
       "details": "I. Zubac (Ques)"
@@ -221,34 +216,39 @@
       "details": "D. Jones (Out)"
     },
     {
+      "name": "K. Leonard",
+      "status": "OUT",
+      "details": "K. Leonard (Out)"
+    },
+    {
       "name": "Chris Paul",
       "status": "OUT",
       "details": "Chris Paul (Out)"
     },
     {
-      "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
-    },
-    {
       "name": "S. Mamukelashvili",
-      "status": "QUES",
-      "details": "S. Mamukelashvili (Ques)"
+      "status": "PROB",
+      "details": "S. Mamukelashvili (Prob)"
     },
     {
       "name": "G. Temple",
-      "status": "QUES",
-      "details": "G. Temple (Ques)"
+      "status": "PROB",
+      "details": "G. Temple (Prob)"
     },
     {
-      "name": "J. Battle",
+      "name": "I. Quickley",
       "status": "DOUBT",
-      "details": "J. Battle (Doubt)"
+      "details": "I. Quickley (Doubt)"
     },
     {
       "name": "RJ Barrett",
       "status": "OUT",
       "details": "RJ Barrett (Out)"
+    },
+    {
+      "name": "J. Battle",
+      "status": "OUT",
+      "details": "J. Battle (Out)"
     },
     {
       "name": "C. Hepburn",
@@ -269,28 +269,28 @@
   "TOR": [
     {
       "name": "S. Mamukelashvili",
-      "status": "QUES",
-      "details": "S. Mamukelashvili (Ques)"
-    },
-    {
-      "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
+      "status": "PROB",
+      "details": "S. Mamukelashvili (Prob)"
     },
     {
       "name": "G. Temple",
-      "status": "QUES",
-      "details": "G. Temple (Ques)"
+      "status": "PROB",
+      "details": "G. Temple (Prob)"
     },
     {
-      "name": "J. Battle",
+      "name": "I. Quickley",
       "status": "DOUBT",
-      "details": "J. Battle (Doubt)"
+      "details": "I. Quickley (Doubt)"
     },
     {
       "name": "RJ Barrett",
       "status": "OUT",
       "details": "RJ Barrett (Out)"
+    },
+    {
+      "name": "J. Battle",
+      "status": "OUT",
+      "details": "J. Battle (Out)"
     },
     {
       "name": "C. Hepburn",
@@ -330,6 +330,11 @@
       "details": "D. Finney-Smith (Ques)"
     },
     {
+      "name": "S. Adams",
+      "status": "QUES",
+      "details": "S. Adams (Ques)"
+    },
+    {
       "name": "F. VanVleet",
       "status": "OUT",
       "details": "F. VanVleet (Out)"
@@ -345,6 +350,11 @@
       "name": "D. Finney-Smith",
       "status": "QUES",
       "details": "D. Finney-Smith (Ques)"
+    },
+    {
+      "name": "S. Adams",
+      "status": "QUES",
+      "details": "S. Adams (Ques)"
     },
     {
       "name": "F. VanVleet",
