@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-16",
-  "built_at_utc": "2026-01-16T21:01:37Z",
+  "built_at_utc": "2026-01-16T22:27:49Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -384,6 +384,11 @@
       "details": "D. Sabonis (Prob)"
     },
     {
+      "name": "K. Ellis",
+      "status": "QUES",
+      "details": "K. Ellis (Ques)"
+    },
+    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
@@ -399,6 +404,11 @@
       "name": "D. Sabonis",
       "status": "PROB",
       "details": "D. Sabonis (Prob)"
+    },
+    {
+      "name": "K. Ellis",
+      "status": "QUES",
+      "details": "K. Ellis (Ques)"
     },
     {
       "name": "K. Murray",
