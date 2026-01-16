@@ -1,8 +1,13 @@
 {
   "asof_date": "2026-01-15",
-  "built_at_utc": "2026-01-15T23:24:10Z",
+  "built_at_utc": "2026-01-16T01:03:03Z",
   "source": "rotowire",
   "MEM": [
+    {
+      "name": "J. Morant",
+      "status": "QUES",
+      "details": "J. Morant (Ques)"
+    },
     {
       "name": "B. Clarke",
       "status": "OUT",
@@ -17,11 +22,6 @@
       "name": "Ty Jerome",
       "status": "OUT",
       "details": "Ty Jerome (Out)"
-    },
-    {
-      "name": "Ja Morant",
-      "status": "OUT",
-      "details": "Ja Morant (Out)"
     },
     {
       "name": "S. Pippen",
@@ -49,36 +49,36 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "C. Castleton",
-      "status": "OUT",
-      "details": "C. Castleton (Out)"
-    },
-    {
       "name": "J. Howard",
-      "status": "OUT",
-      "details": "J. Howard (Out)"
+      "status": "QUES",
+      "details": "J. Howard (Ques)"
     },
     {
       "name": "J. Suggs",
+      "status": "QUES",
+      "details": "J. Suggs (Ques)"
+    },
+    {
+      "name": "C. Castleton",
       "status": "OUT",
-      "details": "J. Suggs (Out)"
+      "details": "C. Castleton (Out)"
     }
   ],
   "ORL": [
     {
-      "name": "C. Castleton",
-      "status": "OUT",
-      "details": "C. Castleton (Out)"
-    },
-    {
       "name": "J. Howard",
-      "status": "OUT",
-      "details": "J. Howard (Out)"
+      "status": "QUES",
+      "details": "J. Howard (Ques)"
     },
     {
       "name": "J. Suggs",
+      "status": "QUES",
+      "details": "J. Suggs (Ques)"
+    },
+    {
+      "name": "C. Castleton",
       "status": "OUT",
-      "details": "J. Suggs (Out)"
+      "details": "C. Castleton (Out)"
     }
   ],
   "PHX": [
@@ -125,11 +125,6 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "L. Dort",
-      "status": "QUES",
-      "details": "L. Dort (Ques)"
     },
     {
       "name": "I. Hartenstein",
@@ -220,16 +215,6 @@
   ],
   "MIL": [
     {
-      "name": "G. Antetokounmpo",
-      "status": "PROB",
-      "details": "G. Antetokounmpo (Prob)"
-    },
-    {
-      "name": "K. Kuzma",
-      "status": "QUES",
-      "details": "K. Kuzma (Ques)"
-    },
-    {
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
@@ -269,16 +254,6 @@
       "details": "G. Niang (Out)"
     },
     {
-      "name": "P. Washington",
-      "status": "QUES",
-      "details": "P. Washington (Ques)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
-    },
-    {
       "name": "Dante Exum",
       "status": "OFS",
       "details": "Dante Exum (OFS)"
@@ -290,13 +265,8 @@
     },
     {
       "name": "M. Christie",
-      "status": "DOUBT",
-      "details": "M. Christie (Doubt)"
-    },
-    {
-      "name": "C. Flagg",
-      "status": "DOUBT",
-      "details": "C. Flagg (Doubt)"
+      "status": "OUT",
+      "details": "M. Christie (Out)"
     },
     {
       "name": "A. Davis",
@@ -304,9 +274,24 @@
       "details": "A. Davis (Out)"
     },
     {
+      "name": "C. Flagg",
+      "status": "OUT",
+      "details": "C. Flagg (Out)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
+    },
+    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     }
   ],
   "DAL": [
@@ -321,24 +306,9 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "QUES",
-      "details": "P. Washington (Ques)"
-    },
-    {
       "name": "M. Christie",
-      "status": "DOUBT",
-      "details": "M. Christie (Doubt)"
-    },
-    {
-      "name": "C. Flagg",
-      "status": "DOUBT",
-      "details": "C. Flagg (Doubt)"
+      "status": "OUT",
+      "details": "M. Christie (Out)"
     },
     {
       "name": "A. Davis",
@@ -346,9 +316,24 @@
       "details": "A. Davis (Out)"
     },
     {
+      "name": "C. Flagg",
+      "status": "OUT",
+      "details": "C. Flagg (Out)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
+    },
+    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     }
   ],
   "NYK": [
