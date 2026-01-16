@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-15",
-  "built_at_utc": "2026-01-16T01:03:03Z",
+  "built_at_utc": "2026-01-16T02:54:31Z",
   "source": "rotowire",
   "MEM": [
     {
@@ -338,11 +338,6 @@
   ],
   "NYK": [
     {
-      "name": "L. Shamet",
-      "status": "QUES",
-      "details": "L. Shamet (Ques)"
-    },
-    {
       "name": "J. Brunson",
       "status": "OUT",
       "details": "J. Brunson (Out)"
@@ -372,16 +367,6 @@
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "M. Gueye",
-      "status": "PROB",
-      "details": "M. Gueye (Prob)"
-    },
-    {
-      "name": "L. Kennard",
-      "status": "PROB",
-      "details": "L. Kennard (Prob)"
-    },
-    {
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
@@ -390,11 +375,6 @@
       "name": "Z. Risacher",
       "status": "OUT",
       "details": "Z. Risacher (Out)"
-    },
-    {
-      "name": "J. Grant",
-      "status": "PROB",
-      "details": "J. Grant (Prob)"
     },
     {
       "name": "D. Lillard",
@@ -434,11 +414,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "J. Grant",
-      "status": "PROB",
-      "details": "J. Grant (Prob)"
-    },
-    {
       "name": "D. Avdija",
       "status": "OUT",
       "details": "D. Avdija (Out)"
@@ -465,16 +440,6 @@
     }
   ],
   "CHA": [
-    {
-      "name": "M. Diabate",
-      "status": "PROB",
-      "details": "M. Diabate (Prob)"
-    },
-    {
-      "name": "C. Sexton",
-      "status": "PROB",
-      "details": "C. Sexton (Prob)"
-    },
     {
       "name": "M. Plumlee",
       "status": "OUT",
