@@ -1,0 +1,26 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-15,2026,Amen Thompson,HOU,OKC,pts,20,MISSED,13,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Derrick White,BOS,MIA,reb,4,HIT,6,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Kevin Durant,HOU,OKC,pts,25,MISSED,19,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Kevin Durant,HOU,OKC,ast,4,MISSED,3,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Kevin Durant,HOU,OKC,3pt,2,MISSED,0,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Luka Doncic,LAL,CHA,ast,8,MISSED,4,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Paolo Banchero,ORL,MEM,ast,4,HIT,4,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Keyonte George,UTAH,DAL,ast,6,MISSED,3,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Jabari Smith Jr.,HOU,OKC,reb,6,HIT,10,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Dyson Daniels,ATL,POR,pts,10,HIT,10,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Dyson Daniels,ATL,POR,reb,6,MISSED,5,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Dyson Daniels,ATL,POR,ast,6,MISSED,1,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Toumani Camara,POR,ATL,ast,2,MISSED,1,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Mikal Bridges,NY,GS,3pt,2,HIT,3,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Nickeil Alexander-Walker,ATL,POR,3pt,3,MISSED,2,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Ryan Rollins,MIL,SA,reb,4,HIT,7,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Stephen Curry,GS,NY,ast,4,HIT,7,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Josh Hart,NY,GS,pts,10,MISSED,5,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,LeBron James,LAL,CHA,pts,20,HIT,29,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Jimmy Butler III,GS,NY,ast,4,HIT,4,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Brandon Miller,CHA,LAL,reb,4,MISSED,2,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Jalen Williams,OKC,HOU,reb,4,HIT,5,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Devin Vassell,SA,MIL,reb,4,,,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Miles Bridges,CHA,LAL,reb,6,HIT,8,,targets_snapshot_2026-01-15.json
+2026-01-15,2026,Santi Aldama,MEM,ORL,reb,6,MISSED,5,,targets_snapshot_2026-01-15.json
