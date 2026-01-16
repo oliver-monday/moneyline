@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-16",
-  "built_at_utc": "2026-01-16T14:48:01Z",
+  "built_at_utc": "2026-01-16T17:15:56Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -165,11 +165,6 @@
       "name": "J. Giddey",
       "status": "OUT",
       "details": "J. Giddey (Out)"
-    },
-    {
-      "name": "Y. Kawamura",
-      "status": "OUT",
-      "details": "Y. Kawamura (Out)"
     },
     {
       "name": "H. Highsmith",
