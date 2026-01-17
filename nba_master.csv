@@ -618,12 +618,12 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810445,2026-01-16,2026-01-17T00:30Z,Toronto Raptors,TOR,117,105.0,,LA Clippers,LAC,121,-125.0,,Toronto,ON,,
 401810446,2026-01-16,2026-01-17T02:30Z,Houston Rockets,HOU,110,-170.0,,Minnesota Timberwolves,MIN,105,142.0,,Houston,TX,,
 401810447,2026-01-16,2026-01-17T03:00Z,Sacramento Kings,SAC,128,-270.0,,Washington Wizards,WSH,115,220.0,,Sacramento,CA,,
-401810448,2026-01-17,2026-01-17T22:00Z,Dallas Mavericks,DAL,0,-185.0,,Utah Jazz,UTAH,0,154.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); A. Davis (Out); K. Irving (Out),W. Kessler (OFS); L. Markkanen (Out); G. Niang (Out)
+401810448,2026-01-17,2026-01-17T22:00Z,Dallas Mavericks,DAL,0,-162.0,,Utah Jazz,UTAH,0,136.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); A. Davis (Out); K. Irving (Out),W. Kessler (OFS); L. Markkanen (Out); G. Niang (Out)
 401810449,2026-01-17,2026-01-18T00:30Z,Atlanta Hawks,ATL,0,136.0,,Boston Celtics,BOS,0,-162.0,,Atlanta,GA,N. Dante (OFS); K. Porzingis (Out); Z. Risacher (Out),J. Minott (Out); J. Tatum (Out)
-401810450,2026-01-17,2026-01-18T00:30Z,Detroit Pistons,DET,0,-700.0,,Indiana Pacers,IND,0,500.0,,Detroit,MI,,T. Haliburton (OFS); B. Mathurin (Out); Obi Toppin (Out)
-401810451,2026-01-17,2026-01-18T00:30Z,New York Knicks,NY,0,-170.0,,Phoenix Suns,PHX,0,142.0,,New York,NY,,J. Bouyea (Out); J. Green (Out)
-401810452,2026-01-17,2026-01-18T01:00Z,Miami Heat,MIA,0,310.0,,Oklahoma City Thunder,OKC,0,-395.0,,Miami,FL,J. Jaquez (Out); D. Mitchell (Out); T. Rozier (Out),T. Sorber (OFS); I. Hartenstein (Out); N. Topic (Out)
-401810453,2026-01-17,2026-01-18T01:00Z,San Antonio Spurs,SA,0,-250.0,,Minnesota Timberwolves,MIN,0,205.0,,San Antonio,TX,D. Vassell (Out),T. Shannon (Out)
-401810454,2026-01-17,2026-01-18T01:30Z,Golden State Warriors,GS,0,-245.0,,Charlotte Hornets,CHA,0,200.0,,San Francisco,CA,Seth Curry (Out); Gui Santos (Out),M. Plumlee (Out)
+401810450,2026-01-17,2026-01-18T00:30Z,Detroit Pistons,DET,0,-675.0,,Indiana Pacers,IND,0,490.0,,Detroit,MI,,T. Haliburton (OFS); B. Mathurin (Out); Obi Toppin (Out)
+401810451,2026-01-17,2026-01-18T00:30Z,New York Knicks,NY,0,-162.0,,Phoenix Suns,PHX,0,136.0,,New York,NY,,J. Bouyea (Out); J. Green (Out)
+401810452,2026-01-17,2026-01-18T01:00Z,Miami Heat,MIA,0,340.0,,Oklahoma City Thunder,OKC,0,-440.0,,Miami,FL,J. Jaquez (Out); D. Mitchell (Out); T. Rozier (Out),T. Sorber (OFS); I. Hartenstein (Out); N. Topic (Out)
+401810453,2026-01-17,2026-01-18T01:00Z,San Antonio Spurs,SA,0,-238.0,,Minnesota Timberwolves,MIN,0,195.0,,San Antonio,TX,D. Vassell (Out),T. Shannon (Out)
+401810454,2026-01-17,2026-01-18T01:30Z,Golden State Warriors,GS,0,-278.0,,Charlotte Hornets,CHA,0,225.0,,San Francisco,CA,Seth Curry (Out); Gui Santos (Out),M. Plumlee (Out)
 401810455,2026-01-17,2026-01-18T02:00Z,Denver Nuggets,DEN,0,-650.0,,Washington Wizards,WSH,0,470.0,,Denver,CO,T. Bates (Out); C. Braun (Out); C. Johnson (Out); N. Jokic (Out); J. Valanciunas (Out),C. Whitmore (OFS); B. Coulibaly (Out); Trae Young (Out)
 401810456,2026-01-17,2026-01-18T03:00Z,Portland Trail Blazers,POR,0,-155.0,,Los Angeles Lakers,LAL,0,130.0,,Portland,OR,D. Lillard (OFS); S. Henderson (Out); K. Murray (Out); M. Thybulle (Out); B. Wesley (Out),L. Doncic (Out); A. Reaves (Out); A. Thiero (Out)
