@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-01-17",
-  "built_at_utc": "2026-01-17T18:25:55Z",
+  "built_at_utc": "2026-01-17T19:19:16Z",
   "source": "rotowire",
   "UTA": [
     {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
+    },
+    {
+      "name": "E. Harkless",
+      "status": "OUT",
+      "details": "E. Harkless (Out)"
     },
     {
       "name": "L. Markkanen",
@@ -293,14 +298,14 @@
   ],
   "NYK": [
     {
-      "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
-    },
-    {
       "name": "J. Brunson",
       "status": "QUES",
       "details": "J. Brunson (Ques)"
+    },
+    {
+      "name": "J. Hart",
+      "status": "QUES",
+      "details": "J. Hart (Ques)"
     }
   ],
   "OKC": [
@@ -374,9 +379,9 @@
   ],
   "MIN": [
     {
-      "name": "A. Edwards",
+      "name": "R. Gobert",
       "status": "QUES",
-      "details": "A. Edwards (Ques)"
+      "details": "R. Gobert (Ques)"
     },
     {
       "name": "T. Shannon",
