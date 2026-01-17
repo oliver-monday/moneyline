@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-16",
-  "built_at_utc": "2026-01-17T01:00:11Z",
+  "built_at_utc": "2026-01-17T02:45:12Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -113,6 +113,11 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
+    },
+    {
+      "name": "P. Williams",
+      "status": "QUES",
+      "details": "P. Williams (Ques)"
     },
     {
       "name": "Z. Collins",
@@ -253,9 +258,9 @@
       "details": "T. Shannon (Out)"
     },
     {
-      "name": "T. Eason",
-      "status": "QUES",
-      "details": "T. Eason (Ques)"
+      "name": "Tari Eason",
+      "status": "OUT",
+      "details": "Tari Eason (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -265,9 +270,9 @@
   ],
   "HOU": [
     {
-      "name": "T. Eason",
-      "status": "QUES",
-      "details": "T. Eason (Ques)"
+      "name": "Tari Eason",
+      "status": "OUT",
+      "details": "Tari Eason (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -302,14 +307,9 @@
       "details": "Trae Young (Out)"
     },
     {
-      "name": "D. Sabonis",
-      "status": "PROB",
-      "details": "D. Sabonis (Prob)"
-    },
-    {
-      "name": "K. Ellis",
-      "status": "QUES",
-      "details": "K. Ellis (Ques)"
+      "name": "Keon Ellis",
+      "status": "OUT",
+      "details": "Keon Ellis (Out)"
     },
     {
       "name": "K. Murray",
@@ -324,14 +324,9 @@
   ],
   "SAC": [
     {
-      "name": "D. Sabonis",
-      "status": "PROB",
-      "details": "D. Sabonis (Prob)"
-    },
-    {
-      "name": "K. Ellis",
-      "status": "QUES",
-      "details": "K. Ellis (Ques)"
+      "name": "Keon Ellis",
+      "status": "OUT",
+      "details": "Keon Ellis (Out)"
     },
     {
       "name": "K. Murray",
