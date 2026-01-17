@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-17",
-  "built_at_utc": "2026-01-17T22:25:55Z",
+  "built_at_utc": "2026-01-17T23:21:43Z",
   "source": "rotowire",
   "UTA": [
     {
@@ -148,14 +148,14 @@
       "details": "J. Tatum (Out)"
     },
     {
-      "name": "D. Daniels",
-      "status": "QUES",
-      "details": "D. Daniels (Ques)"
-    },
-    {
       "name": "N. Dante",
       "status": "OFS",
       "details": "N. Dante (OFS)"
+    },
+    {
+      "name": "D. Daniels",
+      "status": "OUT",
+      "details": "D. Daniels (Out)"
     },
     {
       "name": "K. Porzingis",
@@ -176,8 +176,8 @@
     },
     {
       "name": "D. Daniels",
-      "status": "QUES",
-      "details": "D. Daniels (Ques)"
+      "status": "OUT",
+      "details": "D. Daniels (Out)"
     },
     {
       "name": "K. Porzingis",
@@ -195,11 +195,6 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
-    },
-    {
-      "name": "I. Jackson",
-      "status": "QUES",
-      "details": "I. Jackson (Ques)"
     },
     {
       "name": "B. Mathurin",
@@ -276,11 +271,6 @@
   ],
   "PHX": [
     {
-      "name": "D. Booker",
-      "status": "QUES",
-      "details": "D. Booker (Ques)"
-    },
-    {
       "name": "J. Bouyea",
       "status": "OUT",
       "details": "J. Bouyea (Out)"
@@ -292,25 +282,25 @@
     },
     {
       "name": "J. Brunson",
-      "status": "QUES",
-      "details": "J. Brunson (Ques)"
+      "status": "OUT",
+      "details": "J. Brunson (Out)"
     },
     {
-      "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
+      "name": "Josh Hart",
+      "status": "OUT",
+      "details": "Josh Hart (Out)"
     }
   ],
   "NYK": [
     {
       "name": "J. Brunson",
-      "status": "QUES",
-      "details": "J. Brunson (Ques)"
+      "status": "OUT",
+      "details": "J. Brunson (Out)"
     },
     {
-      "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
+      "name": "Josh Hart",
+      "status": "OUT",
+      "details": "Josh Hart (Out)"
     }
   ],
   "OKC": [
@@ -331,13 +321,8 @@
     },
     {
       "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "QUES",
-      "details": "N. Jovic (Ques)"
+      "status": "OUT",
+      "details": "T. Herro (Out)"
     },
     {
       "name": "J. Jaquez",
@@ -358,13 +343,8 @@
   "MIA": [
     {
       "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "QUES",
-      "details": "N. Jovic (Ques)"
+      "status": "OUT",
+      "details": "T. Herro (Out)"
     },
     {
       "name": "J. Jaquez",
