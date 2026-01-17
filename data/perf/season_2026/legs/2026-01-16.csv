@@ -1,0 +1,4 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-16,2026,Trey Murphy III,NO,IND,pts,20,HIT,22,,targets_snapshot_2026-01-16.json
+2026-01-16,2026,Trey Murphy III,NO,IND,3pt,3,HIT,5,,targets_snapshot_2026-01-16.json
+2026-01-16,2026,Brandon Ingram,TOR,LAC,reb,6,HIT,6,,targets_snapshot_2026-01-16.json
