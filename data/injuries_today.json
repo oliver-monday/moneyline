@@ -1,13 +1,8 @@
 {
   "asof_date": "2026-01-17",
-  "built_at_utc": "2026-01-17T17:08:47Z",
+  "built_at_utc": "2026-01-17T18:25:55Z",
   "source": "rotowire",
   "UTA": [
-    {
-      "name": "E. Harkless",
-      "status": "QUES",
-      "details": "E. Harkless (Ques)"
-    },
     {
       "name": "W. Kessler",
       "status": "OFS",
@@ -128,14 +123,14 @@
   ],
   "BOS": [
     {
-      "name": "P. Pritchard",
-      "status": "DOUBT",
-      "details": "P. Pritchard (Doubt)"
-    },
-    {
       "name": "J. Minott",
       "status": "OUT",
       "details": "J. Minott (Out)"
+    },
+    {
+      "name": "P. Pritchard",
+      "status": "OUT",
+      "details": "P. Pritchard (Out)"
     },
     {
       "name": "J. Tatum",
@@ -202,6 +197,26 @@
       "details": "B. Mathurin (Out)"
     },
     {
+      "name": "T. McConnell",
+      "status": "OUT",
+      "details": "T. McConnell (Out)"
+    },
+    {
+      "name": "A. Nembhard",
+      "status": "OUT",
+      "details": "A. Nembhard (Out)"
+    },
+    {
+      "name": "A. Nesmith",
+      "status": "OUT",
+      "details": "A. Nesmith (Out)"
+    },
+    {
+      "name": "P. Siakam",
+      "status": "OUT",
+      "details": "P. Siakam (Out)"
+    },
+    {
       "name": "Obi Toppin",
       "status": "OUT",
       "details": "Obi Toppin (Out)"
@@ -218,8 +233,8 @@
     },
     {
       "name": "P. Reed",
-      "status": "QUES",
-      "details": "P. Reed (Ques)"
+      "status": "PROB",
+      "details": "P. Reed (Prob)"
     },
     {
       "name": "W. Moore",
@@ -234,14 +249,14 @@
       "details": "C. Cunningham (Prob)"
     },
     {
+      "name": "P. Reed",
+      "status": "PROB",
+      "details": "P. Reed (Prob)"
+    },
+    {
       "name": "A. Thompson",
       "status": "PROB",
       "details": "A. Thompson (Prob)"
-    },
-    {
-      "name": "P. Reed",
-      "status": "QUES",
-      "details": "P. Reed (Ques)"
     },
     {
       "name": "W. Moore",
@@ -310,6 +325,11 @@
       "details": "T. Herro (Ques)"
     },
     {
+      "name": "N. Jovic",
+      "status": "QUES",
+      "details": "N. Jovic (Ques)"
+    },
+    {
       "name": "J. Jaquez",
       "status": "OUT",
       "details": "J. Jaquez (Out)"
@@ -330,6 +350,11 @@
       "name": "T. Herro",
       "status": "QUES",
       "details": "T. Herro (Ques)"
+    },
+    {
+      "name": "N. Jovic",
+      "status": "QUES",
+      "details": "N. Jovic (Ques)"
     },
     {
       "name": "J. Jaquez",
