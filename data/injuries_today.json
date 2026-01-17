@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-17",
-  "built_at_utc": "2026-01-17T19:19:16Z",
+  "built_at_utc": "2026-01-17T20:20:39Z",
   "source": "rotowire",
   "UTA": [
     {
@@ -44,11 +44,6 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "M. Christie",
-      "status": "PROB",
-      "details": "M. Christie (Prob)"
-    },
-    {
       "name": "Dante Exum",
       "status": "OFS",
       "details": "Dante Exum (OFS)"
@@ -59,24 +54,29 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "C. Flagg",
-      "status": "DOUBT",
-      "details": "C. Flagg (Doubt)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
     },
     {
+      "name": "C. Flagg",
+      "status": "OUT",
+      "details": "C. Flagg (Out)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
+    },
+    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "D. Russell",
+      "status": "OUT",
+      "details": "D. Russell (Out)"
     },
     {
       "name": "P. Washington",
@@ -96,29 +96,29 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "M. Christie",
-      "status": "PROB",
-      "details": "M. Christie (Prob)"
-    },
-    {
-      "name": "C. Flagg",
-      "status": "DOUBT",
-      "details": "C. Flagg (Doubt)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
     },
     {
+      "name": "C. Flagg",
+      "status": "OUT",
+      "details": "C. Flagg (Out)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
+    },
+    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "D. Russell",
+      "status": "OUT",
+      "details": "D. Russell (Out)"
     },
     {
       "name": "P. Washington",
@@ -414,8 +414,8 @@
   "CHA": [
     {
       "name": "M. Diabate",
-      "status": "QUES",
-      "details": "M. Diabate (Ques)"
+      "status": "OUT",
+      "details": "M. Diabate (Out)"
     },
     {
       "name": "M. Plumlee",
@@ -452,19 +452,14 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "K. Middleton",
-      "status": "PROB",
-      "details": "K. Middleton (Prob)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
-    },
-    {
       "name": "B. Coulibaly",
       "status": "OUT",
       "details": "B. Coulibaly (Out)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "OUT",
+      "details": "T. Vukcevic (Out)"
     },
     {
       "name": "Trae Young",
