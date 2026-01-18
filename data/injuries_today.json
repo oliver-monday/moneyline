@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-18",
-  "built_at_utc": "2026-01-18T21:01:33Z",
+  "built_at_utc": "2026-01-18T22:25:57Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -113,19 +113,19 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "P. Williams",
-      "status": "QUES",
-      "details": "P. Williams (Ques)"
-    },
-    {
-      "name": "J. Giddey",
-      "status": "DOUBT",
-      "details": "J. Giddey (Doubt)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
+    },
+    {
+      "name": "J. Giddey",
+      "status": "OUT",
+      "details": "J. Giddey (Out)"
+    },
+    {
+      "name": "P. Williams",
+      "status": "OUT",
+      "details": "P. Williams (Out)"
     }
   ],
   "CHI": [
@@ -135,19 +135,19 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "P. Williams",
-      "status": "QUES",
-      "details": "P. Williams (Ques)"
-    },
-    {
-      "name": "J. Giddey",
-      "status": "DOUBT",
-      "details": "J. Giddey (Doubt)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
+    },
+    {
+      "name": "J. Giddey",
+      "status": "OUT",
+      "details": "J. Giddey (Out)"
+    },
+    {
+      "name": "P. Williams",
+      "status": "OUT",
+      "details": "P. Williams (Out)"
     }
   ],
   "NOP": [
@@ -290,11 +290,6 @@
   ],
   "POR": [
     {
-      "name": "J. Grant",
-      "status": "DOUBT",
-      "details": "J. Grant (Doubt)"
-    },
-    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
@@ -305,19 +300,29 @@
       "details": "D. Avdija (Ques)"
     },
     {
+      "name": "J. Grant",
+      "status": "DOUBT",
+      "details": "J. Grant (Doubt)"
+    },
+    {
+      "name": "J. Holiday",
+      "status": "DOUBT",
+      "details": "J. Holiday (Doubt)"
+    },
+    {
       "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "status": "DOUBT",
+      "details": "R. Williams (Doubt)"
     },
     {
       "name": "S. Henderson",
-      "status": "DOUBT",
-      "details": "S. Henderson (Doubt)"
+      "status": "OUT",
+      "details": "S. Henderson (Out)"
     },
     {
       "name": "K. Murray",
-      "status": "DOUBT",
-      "details": "K. Murray (Doubt)"
+      "status": "OUT",
+      "details": "K. Murray (Out)"
     },
     {
       "name": "M. Thybulle",
@@ -333,11 +338,6 @@
       "name": "Keon Ellis",
       "status": "OUT",
       "details": "Keon Ellis (Out)"
-    },
-    {
-      "name": "K. Murray",
-      "status": "OUT",
-      "details": "K. Murray (Out)"
     },
     {
       "name": "I. Stevens",
@@ -399,19 +399,9 @@
       "details": "L. Doncic (Ques)"
     },
     {
-      "name": "M. Smart",
+      "name": "L. James",
       "status": "QUES",
-      "details": "M. Smart (Ques)"
-    },
-    {
-      "name": "D. Ayton",
-      "status": "QUES",
-      "details": "D. Ayton (Ques)"
-    },
-    {
-      "name": "J. Hayes",
-      "status": "QUES",
-      "details": "J. Hayes (Ques)"
+      "details": "L. James (Ques)"
     },
     {
       "name": "A. Reaves",
@@ -426,24 +416,14 @@
   ],
   "LAL": [
     {
-      "name": "D. Ayton",
-      "status": "QUES",
-      "details": "D. Ayton (Ques)"
-    },
-    {
       "name": "L. Doncic",
       "status": "QUES",
       "details": "L. Doncic (Ques)"
     },
     {
-      "name": "J. Hayes",
+      "name": "L. James",
       "status": "QUES",
-      "details": "J. Hayes (Ques)"
-    },
-    {
-      "name": "M. Smart",
-      "status": "QUES",
-      "details": "M. Smart (Ques)"
+      "details": "L. James (Ques)"
     },
     {
       "name": "A. Reaves",
