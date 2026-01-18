@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-18",
-  "built_at_utc": "2026-01-18T19:20:08Z",
+  "built_at_utc": "2026-01-18T20:20:52Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -192,8 +192,8 @@
   "CHA": [
     {
       "name": "M. Diabate",
-      "status": "QUES",
-      "details": "M. Diabate (Ques)"
+      "status": "PROB",
+      "details": "M. Diabate (Prob)"
     },
     {
       "name": "M. Plumlee",
@@ -201,14 +201,34 @@
       "details": "M. Plumlee (Out)"
     },
     {
-      "name": "C. Braun",
+      "name": "G. Williams",
+      "status": "OUT",
+      "details": "G. Williams (Out)"
+    },
+    {
+      "name": "J. Murray",
+      "status": "PROB",
+      "details": "J. Murray (Prob)"
+    },
+    {
+      "name": "A. Gordon",
       "status": "QUES",
-      "details": "C. Braun (Ques)"
+      "details": "A. Gordon (Ques)"
+    },
+    {
+      "name": "B. Brown",
+      "status": "PROB",
+      "details": "B. Brown (Prob)"
     },
     {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
+    },
+    {
+      "name": "C. Braun",
+      "status": "OUT",
+      "details": "C. Braun (Out)"
     },
     {
       "name": "C. Johnson",
@@ -228,14 +248,29 @@
   ],
   "DEN": [
     {
-      "name": "C. Braun",
+      "name": "B. Brown",
+      "status": "PROB",
+      "details": "B. Brown (Prob)"
+    },
+    {
+      "name": "J. Murray",
+      "status": "PROB",
+      "details": "J. Murray (Prob)"
+    },
+    {
+      "name": "A. Gordon",
       "status": "QUES",
-      "details": "C. Braun (Ques)"
+      "details": "A. Gordon (Ques)"
     },
     {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
+    },
+    {
+      "name": "C. Braun",
+      "status": "OUT",
+      "details": "C. Braun (Out)"
     },
     {
       "name": "C. Johnson",
@@ -325,8 +360,8 @@
   "TOR": [
     {
       "name": "J. Battle",
-      "status": "QUES",
-      "details": "J. Battle (Ques)"
+      "status": "PROB",
+      "details": "J. Battle (Prob)"
     },
     {
       "name": "I. Quickley",
