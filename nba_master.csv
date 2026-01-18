@@ -629,7 +629,7 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810456,2026-01-17,2026-01-18T03:00Z,Portland Trail Blazers,POR,132,-155.0,,Los Angeles Lakers,LAL,116,130.0,,Portland,OR,,
 401810457,2026-01-18,2026-01-18T17:00Z,Memphis Grizzlies,MEM,0,142.0,,Orlando Magic,ORL,0,-170.0,,London,,B. Clarke (Out); Zach Edey (Out); Ty Jerome (Out); S. Pippen (Out),C. Castleton (Out); J. Suggs (Out)
 401810458,2026-01-18,2026-01-19T00:00Z,Chicago Bulls,CHI,0,-245.0,,Brooklyn Nets,BKN,0,200.0,,Chicago,IL,N. Essengue (OFS); Z. Collins (Out),H. Highsmith (Out); M. Porter (Out); D. Powell (Out); Z. Williams (Out)
-401810459,2026-01-18,2026-01-19T00:00Z,Houston Rockets,HOU,0,-700.0,,New Orleans Pelicans,NO,0,500.0,,Houston,TX,F. VanVleet (Out),J. Alvarado (Out); H. Jones (Out); D. Murray (Out)
-401810460,2026-01-18,2026-01-19T01:00Z,Denver Nuggets,DEN,0,-135.0,,Charlotte Hornets,CHA,0,114.0,,Denver,CO,T. Bates (Out); C. Johnson (Out); N. Jokic (Out); J. Valanciunas (Out),M. Plumlee (Out)
-401810461,2026-01-18,2026-01-19T02:00Z,Sacramento Kings,SAC,0,-142.0,,Portland Trail Blazers,POR,0,120.0,,Sacramento,CA,K. Murray (Out); I. Stevens (Out),D. Lillard (OFS); M. Thybulle (Out); B. Wesley (Out)
-401810462,2026-01-18,2026-01-19T02:30Z,Los Angeles Lakers,LAL,0,-122.0,,Toronto Raptors,TOR,0,102.0,,Los Angeles,CA,A. Reaves (Out); A. Thiero (Out),RJ Barrett (Out); C. Hepburn (Out); J. Poeltl (Out); J. Walter (Out)
+401810459,2026-01-18,2026-01-19T00:00Z,Houston Rockets,HOU,0,-750.0,,New Orleans Pelicans,NO,0,525.0,,Houston,TX,F. VanVleet (Out),J. Alvarado (Out); H. Jones (Out); D. Murray (Out)
+401810460,2026-01-18,2026-01-19T01:00Z,Denver Nuggets,DEN,0,-120.0,,Charlotte Hornets,CHA,0,100.0,,Denver,CO,T. Bates (Out); C. Johnson (Out); N. Jokic (Out); J. Valanciunas (Out),M. Plumlee (Out)
+401810461,2026-01-18,2026-01-19T02:00Z,Sacramento Kings,SAC,0,-148.0,,Portland Trail Blazers,POR,0,124.0,,Sacramento,CA,K. Murray (Out); I. Stevens (Out),D. Lillard (OFS); M. Thybulle (Out); B. Wesley (Out)
+401810462,2026-01-18,2026-01-19T02:30Z,Los Angeles Lakers,LAL,0,105.0,,Toronto Raptors,TOR,0,-125.0,,Los Angeles,CA,A. Reaves (Out); A. Thiero (Out),RJ Barrett (Out); C. Hepburn (Out); J. Poeltl (Out); J. Walter (Out)
