@@ -1,0 +1,20 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-17,2026,Derrick White,BOS,ATL,reb,4,HIT,5,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Toumani Camara,POR,LAL,ast,2,MISSED,1,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Dyson Daniels,ATL,BOS,pts,10,,,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Dyson Daniels,ATL,BOS,reb,6,,,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Pascal Siakam,IND,DET,reb,6,MISSED,,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,OG Anunoby,NY,PHX,pts,15,HIT,21,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Mikal Bridges,NY,PHX,3pt,2,HIT,3,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Nickeil Alexander-Walker,ATL,BOS,reb,4,MISSED,2,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Josh Hart,NY,PHX,pts,10,,,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Stephen Curry,GS,CHA,ast,4,HIT,5,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Cooper Flagg,DAL,UTAH,ast,4,,,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Aaron Nesmith,IND,DET,reb,4,MISSED,,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Jimmy Butler III,GS,CHA,ast,4,MISSED,,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Shaedon Sharpe,POR,LAL,ast,2,HIT,4,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Jalen Williams,OKC,MIA,reb,4,MISSED,3,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Tim Hardaway Jr.,DEN,WSH,reb,2,HIT,2,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Tim Hardaway Jr.,DEN,WSH,3pt,3,HIT,5,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Devin Vassell,SA,MIN,reb,4,,,,targets_snapshot_2026-01-17.json
+2026-01-17,2026,Miles Bridges,CHA,GS,reb,6,MISSED,4,,targets_snapshot_2026-01-17.json

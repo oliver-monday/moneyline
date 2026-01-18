@@ -1,0 +1,264 @@
+{
+  "asof_date": "2026-01-17",
+  "season_end_year": 2026,
+  "groups": {
+    "top_targets": {
+      "totals": {
+        "total": 5,
+        "hits": 3,
+        "hit_rate": 0.6,
+        "out_count": 1
+      },
+      "by_stat": {
+        "ast": {
+          "total": 1,
+          "hits": 1,
+          "hit_rate": 1.0,
+          "out_count": 0
+        },
+        "reb": {
+          "total": 3,
+          "hits": 2,
+          "hit_rate": 0.6666666666666666,
+          "out_count": 1
+        },
+        "pts": {
+          "total": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "out_count": 0
+        }
+      },
+      "by_threshold": {
+        "ast": {
+          "4": {
+            "total": 1,
+            "hits": 1,
+            "hit_rate": 1.0,
+            "out_count": 0
+          }
+        },
+        "reb": {
+          "2": {
+            "total": 1,
+            "hits": 1,
+            "hit_rate": 1.0,
+            "out_count": 0
+          },
+          "4": {
+            "total": 2,
+            "hits": 1,
+            "hit_rate": 0.5,
+            "out_count": 1
+          }
+        },
+        "pts": {
+          "10": {
+            "total": 1,
+            "hits": 0,
+            "hit_rate": 0.0,
+            "out_count": 0
+          }
+        }
+      },
+      "by_trap_risk": {
+        "false": {
+          "total": 5,
+          "hits": 3,
+          "hit_rate": 0.6,
+          "out_count": 1
+        }
+      },
+      "by_b2b": {
+        "false": {
+          "total": 5,
+          "hits": 3,
+          "hit_rate": 0.6,
+          "out_count": 0
+        },
+        "true": {
+          "total": 0,
+          "hits": 0,
+          "hit_rate": null,
+          "out_count": 1
+        }
+      },
+      "by_share_trend_dir": {
+        "UP": {
+          "total": 1,
+          "hits": 1,
+          "hit_rate": 1.0,
+          "out_count": 0
+        },
+        "FLAT": {
+          "total": 4,
+          "hits": 2,
+          "hit_rate": 0.5,
+          "out_count": 1
+        }
+      },
+      "by_home_game": {
+        "true": {
+          "total": 4,
+          "hits": 2,
+          "hit_rate": 0.5,
+          "out_count": 0
+        },
+        "false": {
+          "total": 1,
+          "hits": 1,
+          "hit_rate": 1.0,
+          "out_count": 1
+        }
+      }
+    },
+    "all_targets": {
+      "totals": {
+        "total": 11,
+        "hits": 7,
+        "hit_rate": 0.6363636363636364,
+        "out_count": 3
+      },
+      "by_stat": {
+        "reb": {
+          "total": 5,
+          "hits": 2,
+          "hit_rate": 0.4,
+          "out_count": 2
+        },
+        "pts": {
+          "total": 1,
+          "hits": 1,
+          "hit_rate": 1.0,
+          "out_count": 0
+        },
+        "3pt": {
+          "total": 2,
+          "hits": 2,
+          "hit_rate": 1.0,
+          "out_count": 0
+        },
+        "ast": {
+          "total": 3,
+          "hits": 2,
+          "hit_rate": 0.6666666666666666,
+          "out_count": 1
+        }
+      },
+      "by_threshold": {
+        "reb": {
+          "4": {
+            "total": 3,
+            "hits": 1,
+            "hit_rate": 0.3333333333333333,
+            "out_count": 1
+          },
+          "2": {
+            "total": 1,
+            "hits": 1,
+            "hit_rate": 1.0,
+            "out_count": 0
+          },
+          "6": {
+            "total": 1,
+            "hits": 0,
+            "hit_rate": 0.0,
+            "out_count": 1
+          }
+        },
+        "pts": {
+          "15": {
+            "total": 1,
+            "hits": 1,
+            "hit_rate": 1.0,
+            "out_count": 0
+          }
+        },
+        "3pt": {
+          "2": {
+            "total": 1,
+            "hits": 1,
+            "hit_rate": 1.0,
+            "out_count": 0
+          },
+          "3": {
+            "total": 1,
+            "hits": 1,
+            "hit_rate": 1.0,
+            "out_count": 0
+          }
+        },
+        "ast": {
+          "4": {
+            "total": 1,
+            "hits": 1,
+            "hit_rate": 1.0,
+            "out_count": 1
+          },
+          "2": {
+            "total": 2,
+            "hits": 1,
+            "hit_rate": 0.5,
+            "out_count": 0
+          }
+        }
+      },
+      "by_trap_risk": {
+        "false": {
+          "total": 9,
+          "hits": 5,
+          "hit_rate": 0.5555555555555556,
+          "out_count": 3
+        }
+      },
+      "by_b2b": {
+        "false": {
+          "total": 11,
+          "hits": 7,
+          "hit_rate": 0.6363636363636364,
+          "out_count": 1
+        },
+        "true": {
+          "total": 0,
+          "hits": 0,
+          "hit_rate": null,
+          "out_count": 2
+        }
+      },
+      "by_share_trend_dir": {
+        "FLAT": {
+          "total": 6,
+          "hits": 4,
+          "hit_rate": 0.6666666666666666,
+          "out_count": 3
+        },
+        "UP": {
+          "total": 4,
+          "hits": 3,
+          "hit_rate": 0.75,
+          "out_count": 0
+        },
+        "DOWN": {
+          "total": 1,
+          "hits": 0,
+          "hit_rate": 0.0,
+          "out_count": 0
+        }
+      },
+      "by_home_game": {
+        "false": {
+          "total": 3,
+          "hits": 1,
+          "hit_rate": 0.3333333333333333,
+          "out_count": 2
+        },
+        "true": {
+          "total": 8,
+          "hits": 6,
+          "hit_rate": 0.75,
+          "out_count": 1
+        }
+      }
+    }
+  }
+}
