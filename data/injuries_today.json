@@ -1,22 +1,27 @@
 {
   "asof_date": "2026-01-18",
-  "built_at_utc": "2026-01-18T14:40:38Z",
+  "built_at_utc": "2026-01-18T17:09:03Z",
   "source": "rotowire",
   "ORL": [
-    {
-      "name": "J. Howard",
-      "status": "QUES",
-      "details": "J. Howard (Ques)"
-    },
     {
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
     },
     {
+      "name": "J. Howard",
+      "status": "OUT",
+      "details": "J. Howard (Out)"
+    },
+    {
       "name": "J. Suggs",
       "status": "OUT",
       "details": "J. Suggs (Out)"
+    },
+    {
+      "name": "M. Wagner",
+      "status": "OUT",
+      "details": "M. Wagner (Out)"
     },
     {
       "name": "Fantasy Home",
@@ -37,16 +42,6 @@
       "name": "Fantasy Football",
       "status": "REST",
       "details": "Fantasy Football (Rest)"
-    },
-    {
-      "name": "J. Morant",
-      "status": "PROB",
-      "details": "J. Morant (Prob)"
-    },
-    {
-      "name": "S. Aldama",
-      "status": "QUES",
-      "details": "S. Aldama (Ques)"
     },
     {
       "name": "B. Clarke",
@@ -70,16 +65,6 @@
     }
   ],
   "MEM": [
-    {
-      "name": "J. Morant",
-      "status": "PROB",
-      "details": "J. Morant (Prob)"
-    },
-    {
-      "name": "S. Aldama",
-      "status": "QUES",
-      "details": "S. Aldama (Ques)"
-    },
     {
       "name": "B. Clarke",
       "status": "OUT",
