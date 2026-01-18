@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-17",
-  "built_at_utc": "2026-01-18T03:01:15Z",
+  "built_at_utc": "2026-01-18T03:28:12Z",
   "source": "rotowire",
   "UTA": [
     {
@@ -198,28 +198,28 @@
     },
     {
       "name": "B. Mathurin",
-      "status": "OUT",
-      "details": "B. Mathurin (Out)"
+      "status": "DOUBT",
+      "details": "B. Mathurin (Doubt)"
     },
     {
       "name": "T. McConnell",
-      "status": "OUT",
-      "details": "T. McConnell (Out)"
+      "status": "QUES",
+      "details": "T. McConnell (Ques)"
     },
     {
       "name": "A. Nembhard",
-      "status": "OUT",
-      "details": "A. Nembhard (Out)"
+      "status": "QUES",
+      "details": "A. Nembhard (Ques)"
     },
     {
       "name": "A. Nesmith",
-      "status": "OUT",
-      "details": "A. Nesmith (Out)"
+      "status": "PROB",
+      "details": "A. Nesmith (Prob)"
     },
     {
       "name": "P. Siakam",
-      "status": "OUT",
-      "details": "P. Siakam (Out)"
+      "status": "PROB",
+      "details": "P. Siakam (Prob)"
     },
     {
       "name": "Obi Toppin",
@@ -233,8 +233,8 @@
     },
     {
       "name": "W. Moore",
-      "status": "OUT",
-      "details": "W. Moore (Out)"
+      "status": "QUES",
+      "details": "W. Moore (Ques)"
     }
   ],
   "DET": [
@@ -245,42 +245,42 @@
     },
     {
       "name": "W. Moore",
-      "status": "OUT",
-      "details": "W. Moore (Out)"
+      "status": "QUES",
+      "details": "W. Moore (Ques)"
     }
   ],
   "PHX": [
     {
       "name": "J. Bouyea",
-      "status": "OUT",
-      "details": "J. Bouyea (Out)"
+      "status": "QUES",
+      "details": "J. Bouyea (Ques)"
     },
     {
       "name": "J. Green",
-      "status": "OUT",
-      "details": "J. Green (Out)"
+      "status": "DOUBT",
+      "details": "J. Green (Doubt)"
     },
     {
       "name": "J. Brunson",
-      "status": "OUT",
-      "details": "J. Brunson (Out)"
+      "status": "QUES",
+      "details": "J. Brunson (Ques)"
     },
     {
-      "name": "Josh Hart",
-      "status": "OUT",
-      "details": "Josh Hart (Out)"
+      "name": "J. Hart",
+      "status": "QUES",
+      "details": "J. Hart (Ques)"
     }
   ],
   "NYK": [
     {
       "name": "J. Brunson",
-      "status": "OUT",
-      "details": "J. Brunson (Out)"
+      "status": "QUES",
+      "details": "J. Brunson (Ques)"
     },
     {
-      "name": "Josh Hart",
-      "status": "OUT",
-      "details": "Josh Hart (Out)"
+      "name": "J. Hart",
+      "status": "QUES",
+      "details": "J. Hart (Ques)"
     }
   ],
   "OKC": [
