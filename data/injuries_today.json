@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-17",
-  "built_at_utc": "2026-01-17T23:21:43Z",
+  "built_at_utc": "2026-01-18T01:07:27Z",
   "source": "rotowire",
   "UTA": [
     {
@@ -227,42 +227,12 @@
       "details": "Obi Toppin (Out)"
     },
     {
-      "name": "C. Cunningham",
-      "status": "PROB",
-      "details": "C. Cunningham (Prob)"
-    },
-    {
-      "name": "A. Thompson",
-      "status": "PROB",
-      "details": "A. Thompson (Prob)"
-    },
-    {
-      "name": "P. Reed",
-      "status": "PROB",
-      "details": "P. Reed (Prob)"
-    },
-    {
       "name": "W. Moore",
       "status": "OUT",
       "details": "W. Moore (Out)"
     }
   ],
   "DET": [
-    {
-      "name": "C. Cunningham",
-      "status": "PROB",
-      "details": "C. Cunningham (Prob)"
-    },
-    {
-      "name": "P. Reed",
-      "status": "PROB",
-      "details": "P. Reed (Prob)"
-    },
-    {
-      "name": "A. Thompson",
-      "status": "PROB",
-      "details": "A. Thompson (Prob)"
-    },
     {
       "name": "W. Moore",
       "status": "OUT",
@@ -365,18 +335,13 @@
   "MIN": [
     {
       "name": "R. Gobert",
-      "status": "QUES",
-      "details": "R. Gobert (Ques)"
+      "status": "OUT",
+      "details": "R. Gobert (Out)"
     },
     {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
-    },
-    {
-      "name": "S. Castle",
-      "status": "QUES",
-      "details": "S. Castle (Ques)"
     },
     {
       "name": "D. Vassell",
@@ -385,11 +350,6 @@
     }
   ],
   "SAS": [
-    {
-      "name": "S. Castle",
-      "status": "QUES",
-      "details": "S. Castle (Ques)"
-    },
     {
       "name": "D. Vassell",
       "status": "OUT",
