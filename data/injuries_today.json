@@ -1,27 +1,27 @@
 {
   "asof_date": "2026-01-18",
-  "built_at_utc": "2026-01-18T20:20:52Z",
+  "built_at_utc": "2026-01-18T21:01:33Z",
   "source": "rotowire",
   "ORL": [
     {
       "name": "C. Castleton",
-      "status": "OUT",
-      "details": "C. Castleton (Out)"
+      "status": "QUES",
+      "details": "C. Castleton (Ques)"
     },
     {
       "name": "J. Howard",
-      "status": "OUT",
-      "details": "J. Howard (Out)"
+      "status": "QUES",
+      "details": "J. Howard (Ques)"
     },
     {
       "name": "J. Suggs",
-      "status": "OUT",
-      "details": "J. Suggs (Out)"
+      "status": "QUES",
+      "details": "J. Suggs (Ques)"
     },
     {
       "name": "M. Wagner",
-      "status": "OUT",
-      "details": "M. Wagner (Out)"
+      "status": "PROB",
+      "details": "M. Wagner (Prob)"
     },
     {
       "name": "Fantasy Home",
@@ -44,6 +44,11 @@
       "details": "Fantasy Football (Rest)"
     },
     {
+      "name": "T. Jerome",
+      "status": "QUES",
+      "details": "T. Jerome (Ques)"
+    },
+    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -52,11 +57,6 @@
       "name": "Zach Edey",
       "status": "OUT",
       "details": "Zach Edey (Out)"
-    },
-    {
-      "name": "Ty Jerome",
-      "status": "OUT",
-      "details": "Ty Jerome (Out)"
     },
     {
       "name": "S. Pippen",
@@ -66,6 +66,11 @@
   ],
   "MEM": [
     {
+      "name": "T. Jerome",
+      "status": "QUES",
+      "details": "T. Jerome (Ques)"
+    },
+    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -74,11 +79,6 @@
       "name": "Zach Edey",
       "status": "OUT",
       "details": "Zach Edey (Out)"
-    },
-    {
-      "name": "Ty Jerome",
-      "status": "OUT",
-      "details": "Ty Jerome (Out)"
     },
     {
       "name": "S. Pippen",
@@ -290,6 +290,11 @@
   ],
   "POR": [
     {
+      "name": "J. Grant",
+      "status": "DOUBT",
+      "details": "J. Grant (Doubt)"
+    },
+    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
@@ -325,9 +330,9 @@
       "details": "B. Wesley (Out)"
     },
     {
-      "name": "K. Ellis",
-      "status": "QUES",
-      "details": "K. Ellis (Ques)"
+      "name": "Keon Ellis",
+      "status": "OUT",
+      "details": "Keon Ellis (Out)"
     },
     {
       "name": "K. Murray",
@@ -342,9 +347,9 @@
   ],
   "SAC": [
     {
-      "name": "K. Ellis",
-      "status": "QUES",
-      "details": "K. Ellis (Ques)"
+      "name": "Keon Ellis",
+      "status": "OUT",
+      "details": "Keon Ellis (Out)"
     },
     {
       "name": "K. Murray",
