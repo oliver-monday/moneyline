@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-18",
-  "built_at_utc": "2026-01-18T22:25:57Z",
+  "built_at_utc": "2026-01-18T23:22:30Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -167,9 +167,9 @@
       "details": "D. Murray (Out)"
     },
     {
-      "name": "T. Eason",
-      "status": "QUES",
-      "details": "T. Eason (Ques)"
+      "name": "Tari Eason",
+      "status": "OUT",
+      "details": "Tari Eason (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -179,9 +179,9 @@
   ],
   "HOU": [
     {
-      "name": "T. Eason",
-      "status": "QUES",
-      "details": "T. Eason (Ques)"
+      "name": "Tari Eason",
+      "status": "OUT",
+      "details": "Tari Eason (Out)"
     },
     {
       "name": "F. VanVleet",
