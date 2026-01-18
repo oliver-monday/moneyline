@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-18",
-  "built_at_utc": "2026-01-18T08:44:32Z",
+  "built_at_utc": "2026-01-18T14:40:38Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -278,6 +278,11 @@
       "name": "D. Avdija",
       "status": "QUES",
       "details": "D. Avdija (Ques)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "QUES",
+      "details": "R. Williams (Ques)"
     },
     {
       "name": "S. Henderson",
