@@ -1,27 +1,27 @@
 {
   "asof_date": "2026-01-17",
-  "built_at_utc": "2026-01-18T01:07:27Z",
+  "built_at_utc": "2026-01-18T03:01:15Z",
   "source": "rotowire",
   "UTA": [
+    {
+      "name": "E. Harkless",
+      "status": "QUES",
+      "details": "E. Harkless (Ques)"
+    },
     {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "E. Harkless",
-      "status": "OUT",
-      "details": "E. Harkless (Out)"
-    },
-    {
       "name": "L. Markkanen",
-      "status": "OUT",
-      "details": "L. Markkanen (Out)"
+      "status": "QUES",
+      "details": "L. Markkanen (Ques)"
     },
     {
       "name": "G. Niang",
-      "status": "OUT",
-      "details": "G. Niang (Out)"
+      "status": "DOUBT",
+      "details": "G. Niang (Doubt)"
     },
     {
       "name": "Fantasy Home",
@@ -49,9 +49,29 @@
       "details": "Dante Exum (OFS)"
     },
     {
+      "name": "C. Flagg",
+      "status": "QUES",
+      "details": "C. Flagg (Ques)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "QUES",
+      "details": "D. Gafford (Ques)"
+    },
+    {
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
+    },
+    {
+      "name": "D. Russell",
+      "status": "QUES",
+      "details": "D. Russell (Ques)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "QUES",
+      "details": "P. Washington (Ques)"
     },
     {
       "name": "A. Davis",
@@ -59,29 +79,9 @@
       "details": "A. Davis (Out)"
     },
     {
-      "name": "C. Flagg",
-      "status": "OUT",
-      "details": "C. Flagg (Out)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "OUT",
-      "details": "D. Gafford (Out)"
-    },
-    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
-    },
-    {
-      "name": "D. Russell",
-      "status": "OUT",
-      "details": "D. Russell (Out)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "OUT",
-      "details": "P. Washington (Out)"
     }
   ],
   "DAL": [
@@ -91,9 +91,29 @@
       "details": "Dante Exum (OFS)"
     },
     {
+      "name": "C. Flagg",
+      "status": "QUES",
+      "details": "C. Flagg (Ques)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "QUES",
+      "details": "D. Gafford (Ques)"
+    },
+    {
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
+    },
+    {
+      "name": "D. Russell",
+      "status": "QUES",
+      "details": "D. Russell (Ques)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "QUES",
+      "details": "P. Washington (Ques)"
     },
     {
       "name": "A. Davis",
@@ -101,46 +121,26 @@
       "details": "A. Davis (Out)"
     },
     {
-      "name": "C. Flagg",
-      "status": "OUT",
-      "details": "C. Flagg (Out)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "OUT",
-      "details": "D. Gafford (Out)"
-    },
-    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
-    },
-    {
-      "name": "D. Russell",
-      "status": "OUT",
-      "details": "D. Russell (Out)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "OUT",
-      "details": "P. Washington (Out)"
     }
   ],
   "BOS": [
     {
       "name": "C. Boucher",
-      "status": "OUT",
-      "details": "C. Boucher (Out)"
+      "status": "QUES",
+      "details": "C. Boucher (Ques)"
     },
     {
       "name": "J. Minott",
-      "status": "OUT",
-      "details": "J. Minott (Out)"
+      "status": "QUES",
+      "details": "J. Minott (Ques)"
     },
     {
       "name": "P. Pritchard",
-      "status": "OUT",
-      "details": "P. Pritchard (Out)"
+      "status": "QUES",
+      "details": "P. Pritchard (Ques)"
     },
     {
       "name": "J. Tatum",
@@ -148,46 +148,46 @@
       "details": "J. Tatum (Out)"
     },
     {
+      "name": "D. Daniels",
+      "status": "QUES",
+      "details": "D. Daniels (Ques)"
+    },
+    {
       "name": "N. Dante",
       "status": "OFS",
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "D. Daniels",
-      "status": "OUT",
-      "details": "D. Daniels (Out)"
-    },
-    {
       "name": "K. Porzingis",
-      "status": "OUT",
-      "details": "K. Porzingis (Out)"
+      "status": "QUES",
+      "details": "K. Porzingis (Ques)"
     },
     {
       "name": "Z. Risacher",
-      "status": "OUT",
-      "details": "Z. Risacher (Out)"
+      "status": "QUES",
+      "details": "Z. Risacher (Ques)"
     }
   ],
   "ATL": [
     {
+      "name": "D. Daniels",
+      "status": "QUES",
+      "details": "D. Daniels (Ques)"
+    },
+    {
       "name": "N. Dante",
       "status": "OFS",
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "D. Daniels",
-      "status": "OUT",
-      "details": "D. Daniels (Out)"
-    },
-    {
       "name": "K. Porzingis",
-      "status": "OUT",
-      "details": "K. Porzingis (Out)"
+      "status": "QUES",
+      "details": "K. Porzingis (Ques)"
     },
     {
       "name": "Z. Risacher",
-      "status": "OUT",
-      "details": "Z. Risacher (Out)"
+      "status": "QUES",
+      "details": "Z. Risacher (Ques)"
     }
   ],
   "IND": [
@@ -227,12 +227,22 @@
       "details": "Obi Toppin (Out)"
     },
     {
+      "name": "T. Harris",
+      "status": "QUES",
+      "details": "T. Harris (Ques)"
+    },
+    {
       "name": "W. Moore",
       "status": "OUT",
       "details": "W. Moore (Out)"
     }
   ],
   "DET": [
+    {
+      "name": "T. Harris",
+      "status": "QUES",
+      "details": "T. Harris (Ques)"
+    },
     {
       "name": "W. Moore",
       "status": "OUT",
@@ -278,6 +288,11 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "QUES",
+      "details": "J. Williams (Ques)"
     },
     {
       "name": "I. Hartenstein",
@@ -334,6 +349,11 @@
   ],
   "MIN": [
     {
+      "name": "N. Reid",
+      "status": "QUES",
+      "details": "N. Reid (Ques)"
+    },
+    {
       "name": "R. Gobert",
       "status": "OUT",
       "details": "R. Gobert (Out)"
@@ -368,6 +388,11 @@
       "details": "M. Plumlee (Out)"
     },
     {
+      "name": "J. Butler",
+      "status": "QUES",
+      "details": "J. Butler (Ques)"
+    },
+    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
@@ -379,6 +404,11 @@
     }
   ],
   "GSW": [
+    {
+      "name": "J. Butler",
+      "status": "QUES",
+      "details": "J. Butler (Ques)"
+    },
     {
       "name": "Seth Curry",
       "status": "OUT",
@@ -412,21 +442,6 @@
       "details": "Trae Young (Out)"
     },
     {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "A. Gordon",
-      "status": "PROB",
-      "details": "A. Gordon (Prob)"
-    },
-    {
-      "name": "B. Brown",
-      "status": "PROB",
-      "details": "B. Brown (Prob)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -453,21 +468,6 @@
     }
   ],
   "DEN": [
-    {
-      "name": "B. Brown",
-      "status": "PROB",
-      "details": "B. Brown (Prob)"
-    },
-    {
-      "name": "A. Gordon",
-      "status": "PROB",
-      "details": "A. Gordon (Prob)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -497,8 +497,8 @@
   "LAL": [
     {
       "name": "D. Ayton",
-      "status": "QUES",
-      "details": "D. Ayton (Ques)"
+      "status": "OUT",
+      "details": "D. Ayton (Out)"
     },
     {
       "name": "L. Doncic",
@@ -521,19 +521,9 @@
       "details": "A. Thiero (Out)"
     },
     {
-      "name": "J. Holiday",
-      "status": "PROB",
-      "details": "J. Holiday (Prob)"
-    },
-    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "J. Grant",
-      "status": "PROB",
-      "details": "J. Grant (Prob)"
     },
     {
       "name": "D. Avdija",
@@ -566,16 +556,6 @@
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "J. Grant",
-      "status": "PROB",
-      "details": "J. Grant (Prob)"
-    },
-    {
-      "name": "J. Holiday",
-      "status": "PROB",
-      "details": "J. Holiday (Prob)"
     },
     {
       "name": "D. Avdija",
