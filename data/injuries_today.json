@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-18",
-  "built_at_utc": "2026-01-19T01:06:42Z",
+  "built_at_utc": "2026-01-19T03:01:18Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -167,6 +167,11 @@
       "details": "D. Murray (Out)"
     },
     {
+      "name": "S. Adams",
+      "status": "QUES",
+      "details": "S. Adams (Ques)"
+    },
+    {
       "name": "Tari Eason",
       "status": "OUT",
       "details": "Tari Eason (Out)"
@@ -178,6 +183,11 @@
     }
   ],
   "HOU": [
+    {
+      "name": "S. Adams",
+      "status": "QUES",
+      "details": "S. Adams (Ques)"
+    },
     {
       "name": "Tari Eason",
       "status": "OUT",
@@ -334,16 +344,6 @@
   ],
   "TOR": [
     {
-      "name": "J. Battle",
-      "status": "PROB",
-      "details": "J. Battle (Prob)"
-    },
-    {
-      "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
-    },
-    {
       "name": "RJ Barrett",
       "status": "OUT",
       "details": "RJ Barrett (Out)"
@@ -364,16 +364,6 @@
       "details": "J. Walter (Out)"
     },
     {
-      "name": "L. Doncic",
-      "status": "QUES",
-      "details": "L. Doncic (Ques)"
-    },
-    {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
-    },
-    {
       "name": "A. Reaves",
       "status": "OUT",
       "details": "A. Reaves (Out)"
@@ -385,16 +375,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "L. Doncic",
-      "status": "QUES",
-      "details": "L. Doncic (Ques)"
-    },
-    {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
-    },
     {
       "name": "A. Reaves",
       "status": "OUT",
