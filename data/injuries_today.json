@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-19",
-  "built_at_utc": "2026-01-19T14:52:38Z",
+  "built_at_utc": "2026-01-19T17:15:14Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -29,14 +29,14 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "D. Daniels",
-      "status": "QUES",
-      "details": "D. Daniels (Ques)"
-    },
-    {
       "name": "N. Dante",
       "status": "OFS",
       "details": "N. Dante (OFS)"
+    },
+    {
+      "name": "R. Dennis",
+      "status": "OUT",
+      "details": "R. Dennis (Out)"
     },
     {
       "name": "K. Porzingis",
@@ -56,9 +56,9 @@
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "D. Daniels",
-      "status": "QUES",
-      "details": "D. Daniels (Ques)"
+      "name": "R. Dennis",
+      "status": "OUT",
+      "details": "R. Dennis (Out)"
     },
     {
       "name": "K. Porzingis",
@@ -103,11 +103,6 @@
       "details": "D. Garland (Out)"
     },
     {
-      "name": "C. Livingston",
-      "status": "OUT",
-      "details": "C. Livingston (Out)"
-    },
-    {
       "name": "S. Merrill",
       "status": "OUT",
       "details": "S. Merrill (Out)"
@@ -128,11 +123,6 @@
       "name": "D. Garland",
       "status": "OUT",
       "details": "D. Garland (Out)"
-    },
-    {
-      "name": "C. Livingston",
-      "status": "OUT",
-      "details": "C. Livingston (Out)"
     },
     {
       "name": "S. Merrill",
@@ -290,6 +280,11 @@
       "details": "I. Collier (Ques)"
     },
     {
+      "name": "B. Sensabaugh",
+      "status": "QUES",
+      "details": "B. Sensabaugh (Ques)"
+    },
+    {
       "name": "E. Harkless",
       "status": "OUT",
       "details": "E. Harkless (Out)"
@@ -374,57 +369,52 @@
     },
     {
       "name": "D. Powell",
-      "status": "OUT",
-      "details": "D. Powell (Out)"
+      "status": "PROB",
+      "details": "D. Powell (Prob)"
     },
     {
       "name": "M. Porter",
-      "status": "OUT",
-      "details": "M. Porter (Out)"
-    },
-    {
-      "name": "H. Highsmith",
-      "status": "OUT",
-      "details": "H. Highsmith (Out)"
+      "status": "PROB",
+      "details": "M. Porter (Prob)"
     },
     {
       "name": "Z. Williams",
-      "status": "OUT",
-      "details": "Z. Williams (Out)"
+      "status": "QUES",
+      "details": "Z. Williams (Ques)"
+    },
+    {
+      "name": "H. Highsmith",
+      "status": "DOUBT",
+      "details": "H. Highsmith (Doubt)"
     }
   ],
   "BKN": [
     {
-      "name": "H. Highsmith",
-      "status": "OUT",
-      "details": "H. Highsmith (Out)"
-    },
-    {
       "name": "M. Porter",
-      "status": "OUT",
-      "details": "M. Porter (Out)"
+      "status": "PROB",
+      "details": "M. Porter (Prob)"
     },
     {
       "name": "D. Powell",
-      "status": "OUT",
-      "details": "D. Powell (Out)"
+      "status": "PROB",
+      "details": "D. Powell (Prob)"
     },
     {
       "name": "Z. Williams",
-      "status": "OUT",
-      "details": "Z. Williams (Out)"
+      "status": "QUES",
+      "details": "Z. Williams (Ques)"
+    },
+    {
+      "name": "H. Highsmith",
+      "status": "DOUBT",
+      "details": "H. Highsmith (Doubt)"
     }
   ],
   "BOS": [
     {
       "name": "C. Boucher",
-      "status": "QUES",
-      "details": "C. Boucher (Ques)"
-    },
-    {
-      "name": "P. Pritchard",
-      "status": "QUES",
-      "details": "P. Pritchard (Ques)"
+      "status": "PROB",
+      "details": "C. Boucher (Prob)"
     },
     {
       "name": "J. Minott",
@@ -435,6 +425,18 @@
       "name": "J. Tatum",
       "status": "OUT",
       "details": "J. Tatum (Out)"
+    },
+    {
+      "name": "R. Holland",
+      "status": "QUES",
+      "details": "R. Holland (Ques)"
+    }
+  ],
+  "DET": [
+    {
+      "name": "R. Holland",
+      "status": "QUES",
+      "details": "R. Holland (Ques)"
     }
   ],
   "MIA": [
