@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-19",
-  "built_at_utc": "2026-01-19T17:15:14Z",
+  "built_at_utc": "2026-01-19T18:29:13Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -358,56 +358,51 @@
       "details": "D. Booker (Ques)"
     },
     {
-      "name": "J. Bouyea",
-      "status": "QUES",
-      "details": "J. Bouyea (Ques)"
-    },
-    {
       "name": "J. Green",
       "status": "QUES",
       "details": "J. Green (Ques)"
     },
     {
-      "name": "D. Powell",
-      "status": "PROB",
-      "details": "D. Powell (Prob)"
-    },
-    {
-      "name": "M. Porter",
-      "status": "PROB",
-      "details": "M. Porter (Prob)"
-    },
-    {
-      "name": "Z. Williams",
-      "status": "QUES",
-      "details": "Z. Williams (Ques)"
+      "name": "Egor Demin",
+      "status": "OUT",
+      "details": "Egor Demin (Out)"
     },
     {
       "name": "H. Highsmith",
-      "status": "DOUBT",
-      "details": "H. Highsmith (Doubt)"
+      "status": "OUT",
+      "details": "H. Highsmith (Out)"
+    },
+    {
+      "name": "D. Sharpe",
+      "status": "OUT",
+      "details": "D. Sharpe (Out)"
+    },
+    {
+      "name": "Cam Thomas",
+      "status": "OUT",
+      "details": "Cam Thomas (Out)"
     }
   ],
   "BKN": [
     {
-      "name": "M. Porter",
-      "status": "PROB",
-      "details": "M. Porter (Prob)"
-    },
-    {
-      "name": "D. Powell",
-      "status": "PROB",
-      "details": "D. Powell (Prob)"
-    },
-    {
-      "name": "Z. Williams",
-      "status": "QUES",
-      "details": "Z. Williams (Ques)"
+      "name": "Egor Demin",
+      "status": "OUT",
+      "details": "Egor Demin (Out)"
     },
     {
       "name": "H. Highsmith",
-      "status": "DOUBT",
-      "details": "H. Highsmith (Doubt)"
+      "status": "OUT",
+      "details": "H. Highsmith (Out)"
+    },
+    {
+      "name": "D. Sharpe",
+      "status": "OUT",
+      "details": "D. Sharpe (Out)"
+    },
+    {
+      "name": "Cam Thomas",
+      "status": "OUT",
+      "details": "Cam Thomas (Out)"
     }
   ],
   "BOS": [
