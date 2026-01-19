@@ -2852,6 +2852,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-19,BKN,Z. Williams,QUES,Z. Williams (Ques),rotowire
 2026-01-19,OKC,D. Wade,PROB,D. Wade (Prob),rotowire
 2026-01-19,CLE,D. Wade,PROB,D. Wade (Prob),rotowire
+2026-01-19,UTA,I. Collier,QUES,I. Collier (Ques),rotowire
 2026-01-19,MIL,T. Prince,OUT,T. Prince (Out),rotowire
 2026-01-19,MIL,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-01-19,MIL,Fantasy Football,REST,Fantasy Football (Rest),rotowire
@@ -2899,11 +2900,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-19,NYK,J. Brunson,QUES,J. Brunson (Ques),rotowire
 2026-01-19,NYK,J. Hart,QUES,J. Hart (Ques),rotowire
 2026-01-19,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
-2026-01-19,UTA,I. Collier,QUES,I. Collier (Ques),rotowire
-2026-01-19,UTA,B. Sensabaugh,QUES,B. Sensabaugh (Ques),rotowire
 2026-01-19,UTA,E. Harkless,OUT,E. Harkless (Out),rotowire
 2026-01-19,UTA,L. Markkanen,OUT,L. Markkanen (Out),rotowire
 2026-01-19,UTA,G. Niang,OUT,G. Niang (Out),rotowire
+2026-01-19,UTA,B. Sensabaugh,OUT,B. Sensabaugh (Out),rotowire
 2026-01-19,UTA,D. Vassell,OUT,D. Vassell (Out),rotowire
 2026-01-19,SAS,D. Vassell,OUT,D. Vassell (Out),rotowire
 2026-01-19,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire

@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-19",
-  "built_at_utc": "2026-01-19T19:23:21Z",
+  "built_at_utc": "2026-01-19T20:22:21Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -265,16 +265,6 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "I. Collier",
-      "status": "QUES",
-      "details": "I. Collier (Ques)"
-    },
-    {
-      "name": "B. Sensabaugh",
-      "status": "QUES",
-      "details": "B. Sensabaugh (Ques)"
-    },
-    {
       "name": "E. Harkless",
       "status": "OUT",
       "details": "E. Harkless (Out)"
@@ -288,6 +278,11 @@
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
+    },
+    {
+      "name": "B. Sensabaugh",
+      "status": "OUT",
+      "details": "B. Sensabaugh (Out)"
     },
     {
       "name": "D. Vassell",
