@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-18",
-  "built_at_utc": "2026-01-18T23:22:30Z",
+  "built_at_utc": "2026-01-19T01:06:42Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -191,11 +191,6 @@
   ],
   "CHA": [
     {
-      "name": "M. Diabate",
-      "status": "PROB",
-      "details": "M. Diabate (Prob)"
-    },
-    {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
@@ -206,21 +201,6 @@
       "details": "G. Williams (Out)"
     },
     {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "A. Gordon",
-      "status": "QUES",
-      "details": "A. Gordon (Ques)"
-    },
-    {
-      "name": "B. Brown",
-      "status": "PROB",
-      "details": "B. Brown (Prob)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -229,6 +209,11 @@
       "name": "C. Braun",
       "status": "OUT",
       "details": "C. Braun (Out)"
+    },
+    {
+      "name": "A. Gordon",
+      "status": "OUT",
+      "details": "A. Gordon (Out)"
     },
     {
       "name": "C. Johnson",
@@ -248,21 +233,6 @@
   ],
   "DEN": [
     {
-      "name": "B. Brown",
-      "status": "PROB",
-      "details": "B. Brown (Prob)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "A. Gordon",
-      "status": "QUES",
-      "details": "A. Gordon (Ques)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -271,6 +241,11 @@
       "name": "C. Braun",
       "status": "OUT",
       "details": "C. Braun (Out)"
+    },
+    {
+      "name": "A. Gordon",
+      "status": "OUT",
+      "details": "A. Gordon (Out)"
     },
     {
       "name": "C. Johnson",
@@ -295,29 +270,19 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "D. Avdija",
-      "status": "QUES",
-      "details": "D. Avdija (Ques)"
-    },
-    {
       "name": "J. Grant",
-      "status": "DOUBT",
-      "details": "J. Grant (Doubt)"
-    },
-    {
-      "name": "J. Holiday",
-      "status": "DOUBT",
-      "details": "J. Holiday (Doubt)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "DOUBT",
-      "details": "R. Williams (Doubt)"
+      "status": "OUT",
+      "details": "J. Grant (Out)"
     },
     {
       "name": "S. Henderson",
       "status": "OUT",
       "details": "S. Henderson (Out)"
+    },
+    {
+      "name": "J. Holiday",
+      "status": "OUT",
+      "details": "J. Holiday (Out)"
     },
     {
       "name": "K. Murray",
@@ -333,6 +298,11 @@
       "name": "B. Wesley",
       "status": "OUT",
       "details": "B. Wesley (Out)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "OUT",
+      "details": "R. Williams (Out)"
     },
     {
       "name": "Keon Ellis",
