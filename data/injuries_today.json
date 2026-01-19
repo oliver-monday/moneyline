@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-19",
-  "built_at_utc": "2026-01-19T20:22:21Z",
+  "built_at_utc": "2026-01-19T21:01:27Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -207,8 +207,8 @@
     },
     {
       "name": "C. Flagg",
-      "status": "QUES",
-      "details": "C. Flagg (Ques)"
+      "status": "PROB",
+      "details": "C. Flagg (Prob)"
     },
     {
       "name": "A. Davis",
@@ -234,28 +234,6 @@
       "name": "P. Washington",
       "status": "OUT",
       "details": "P. Washington (Out)"
-    },
-    {
-      "name": "J. Brunson",
-      "status": "QUES",
-      "details": "J. Brunson (Ques)"
-    },
-    {
-      "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
-    }
-  ],
-  "NYK": [
-    {
-      "name": "J. Brunson",
-      "status": "QUES",
-      "details": "J. Brunson (Ques)"
-    },
-    {
-      "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
     }
   ],
   "UTA": [
