@@ -2850,6 +2850,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-19,BKN,M. Porter,PROB,M. Porter (Prob),rotowire
 2026-01-19,BKN,D. Powell,PROB,D. Powell (Prob),rotowire
 2026-01-19,BKN,Z. Williams,QUES,Z. Williams (Ques),rotowire
+2026-01-19,OKC,D. Wade,PROB,D. Wade (Prob),rotowire
+2026-01-19,CLE,D. Wade,PROB,D. Wade (Prob),rotowire
 2026-01-19,MIL,T. Prince,OUT,T. Prince (Out),rotowire
 2026-01-19,MIL,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-01-19,MIL,Fantasy Football,REST,Fantasy Football (Rest),rotowire
@@ -2865,11 +2867,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-19,OKC,I. Hartenstein,OUT,I. Hartenstein (Out),rotowire
 2026-01-19,OKC,N. Topic,OUT,N. Topic (Out),rotowire
 2026-01-19,OKC,J. Williams,OUT,J. Williams (Out),rotowire
-2026-01-19,OKC,D. Wade,PROB,D. Wade (Prob),rotowire
 2026-01-19,OKC,D. Garland,OUT,D. Garland (Out),rotowire
 2026-01-19,OKC,S. Merrill,OUT,S. Merrill (Out),rotowire
 2026-01-19,OKC,Max Strus,OUT,Max Strus (Out),rotowire
-2026-01-19,CLE,D. Wade,PROB,D. Wade (Prob),rotowire
 2026-01-19,CLE,D. Garland,OUT,D. Garland (Out),rotowire
 2026-01-19,CLE,S. Merrill,OUT,S. Merrill (Out),rotowire
 2026-01-19,CLE,Max Strus,OUT,Max Strus (Out),rotowire

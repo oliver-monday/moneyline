@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-19",
-  "built_at_utc": "2026-01-19T18:29:13Z",
+  "built_at_utc": "2026-01-19T19:23:21Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -93,11 +93,6 @@
       "details": "J. Williams (Out)"
     },
     {
-      "name": "D. Wade",
-      "status": "PROB",
-      "details": "D. Wade (Prob)"
-    },
-    {
       "name": "D. Garland",
       "status": "OUT",
       "details": "D. Garland (Out)"
@@ -114,11 +109,6 @@
     }
   ],
   "CLE": [
-    {
-      "name": "D. Wade",
-      "status": "PROB",
-      "details": "D. Wade (Prob)"
-    },
     {
       "name": "D. Garland",
       "status": "OUT",
