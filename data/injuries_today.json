@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-19",
-  "built_at_utc": "2026-01-19T21:01:27Z",
+  "built_at_utc": "2026-01-19T22:28:15Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -34,11 +34,6 @@
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "R. Dennis",
-      "status": "OUT",
-      "details": "R. Dennis (Out)"
-    },
-    {
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
@@ -56,11 +51,6 @@
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "R. Dennis",
-      "status": "OUT",
-      "details": "R. Dennis (Out)"
-    },
-    {
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
@@ -73,9 +63,19 @@
   ],
   "OKC": [
     {
+      "name": "A. Caruso",
+      "status": "QUES",
+      "details": "A. Caruso (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "QUES",
+      "details": "J. Williams (Ques)"
     },
     {
       "name": "I. Hartenstein",
@@ -206,11 +206,6 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "C. Flagg",
-      "status": "PROB",
-      "details": "C. Flagg (Prob)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
@@ -292,14 +287,14 @@
       "details": "Obi Toppin (Out)"
     },
     {
-      "name": "P. George",
-      "status": "QUES",
-      "details": "P. George (Ques)"
-    },
-    {
       "name": "J. Embiid",
       "status": "QUES",
       "details": "J. Embiid (Ques)"
+    },
+    {
+      "name": "P. George",
+      "status": "OUT",
+      "details": "P. George (Out)"
     }
   ],
   "PHI": [
@@ -310,8 +305,8 @@
     },
     {
       "name": "P. George",
-      "status": "QUES",
-      "details": "P. George (Ques)"
+      "status": "OUT",
+      "details": "P. George (Out)"
     }
   ],
   "PHX": [
@@ -420,8 +415,8 @@
     },
     {
       "name": "D. Green",
-      "status": "PROB",
-      "details": "D. Green (Prob)"
+      "status": "QUES",
+      "details": "D. Green (Ques)"
     },
     {
       "name": "Seth Curry",
@@ -442,8 +437,8 @@
   "GSW": [
     {
       "name": "D. Green",
-      "status": "PROB",
-      "details": "D. Green (Prob)"
+      "status": "QUES",
+      "details": "D. Green (Ques)"
     },
     {
       "name": "Seth Curry",
