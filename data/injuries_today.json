@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-20",
-  "built_at_utc": "2026-01-20T20:41:37Z",
+  "built_at_utc": "2026-01-20T21:11:33Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -344,9 +344,14 @@
       "details": "J. Walter (Out)"
     },
     {
+      "name": "W. Richard",
+      "status": "QUES",
+      "details": "W. Richard (Ques)"
+    },
+    {
       "name": "D. Green",
-      "status": "PROB",
-      "details": "D. Green (Prob)"
+      "status": "QUES",
+      "details": "D. Green (Ques)"
     },
     {
       "name": "J. Butler",
@@ -354,24 +359,19 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "D. Melton",
-      "status": "PROB",
-      "details": "D. Melton (Prob)"
-    },
-    {
       "name": "G. Santos",
       "status": "QUES",
       "details": "G. Santos (Ques)"
     },
     {
-      "name": "A. Horford",
-      "status": "DOUBT",
-      "details": "A. Horford (Doubt)"
-    },
-    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "Al Horford",
+      "status": "OUT",
+      "details": "Al Horford (Out)"
     }
   ],
   "GSW": [
@@ -382,13 +382,13 @@
     },
     {
       "name": "D. Green",
-      "status": "PROB",
-      "details": "D. Green (Prob)"
+      "status": "QUES",
+      "details": "D. Green (Ques)"
     },
     {
-      "name": "D. Melton",
-      "status": "PROB",
-      "details": "D. Melton (Prob)"
+      "name": "W. Richard",
+      "status": "QUES",
+      "details": "W. Richard (Ques)"
     },
     {
       "name": "G. Santos",
@@ -396,17 +396,22 @@
       "details": "G. Santos (Ques)"
     },
     {
-      "name": "A. Horford",
-      "status": "DOUBT",
-      "details": "A. Horford (Doubt)"
-    },
-    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "Al Horford",
+      "status": "OUT",
+      "details": "Al Horford (Out)"
     }
   ],
   "MIA": [
+    {
+      "name": "K. Ware",
+      "status": "QUES",
+      "details": "K. Ware (Ques)"
+    },
     {
       "name": "T. Herro",
       "status": "OUT",
