@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-01-20",
-  "built_at_utc": "2026-01-20T17:19:53Z",
+  "built_at_utc": "2026-01-20T18:33:15Z",
   "source": "rotowire",
   "PHX": [
     {
-      "name": "J. Green",
-      "status": "PROB",
-      "details": "J. Green (Prob)"
+      "name": "M. Williams",
+      "status": "QUES",
+      "details": "M. Williams (Ques)"
     },
     {
       "name": "Fantasy Home",
@@ -30,25 +30,25 @@
     },
     {
       "name": "P. George",
-      "status": "PROB",
-      "details": "P. George (Prob)"
+      "status": "QUES",
+      "details": "P. George (Ques)"
     },
     {
       "name": "J. Embiid",
-      "status": "DOUBT",
-      "details": "J. Embiid (Doubt)"
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     }
   ],
   "PHI": [
     {
       "name": "P. George",
-      "status": "PROB",
-      "details": "P. George (Prob)"
+      "status": "QUES",
+      "details": "P. George (Ques)"
     },
     {
       "name": "J. Embiid",
-      "status": "DOUBT",
-      "details": "J. Embiid (Doubt)"
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     }
   ],
   "LAC": [
@@ -176,11 +176,6 @@
       "details": "L. Markkanen (Ques)"
     },
     {
-      "name": "E. Harkless",
-      "status": "QUES",
-      "details": "E. Harkless (Ques)"
-    },
-    {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
@@ -194,14 +189,14 @@
       "name": "G. Niang",
       "status": "DOUBT",
       "details": "G. Niang (Doubt)"
+    },
+    {
+      "name": "E. Harkless",
+      "status": "OUT",
+      "details": "E. Harkless (Out)"
     }
   ],
   "UTA": [
-    {
-      "name": "E. Harkless",
-      "status": "QUES",
-      "details": "E. Harkless (Ques)"
-    },
     {
       "name": "W. Kessler",
       "status": "OFS",
@@ -221,6 +216,11 @@
       "name": "G. Niang",
       "status": "DOUBT",
       "details": "G. Niang (Doubt)"
+    },
+    {
+      "name": "E. Harkless",
+      "status": "OUT",
+      "details": "E. Harkless (Out)"
     }
   ],
   "LAL": [
