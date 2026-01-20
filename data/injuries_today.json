@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-19",
-  "built_at_utc": "2026-01-20T02:56:00Z",
+  "built_at_utc": "2026-01-20T03:26:06Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -302,50 +302,50 @@
   "PHX": [
     {
       "name": "J. Green",
-      "status": "OUT",
-      "details": "J. Green (Out)"
+      "status": "PROB",
+      "details": "J. Green (Prob)"
     },
     {
-      "name": "Egor Demin",
-      "status": "OUT",
-      "details": "Egor Demin (Out)"
+      "name": "E. Demin",
+      "status": "PROB",
+      "details": "E. Demin (Prob)"
+    },
+    {
+      "name": "D. Sharpe",
+      "status": "QUES",
+      "details": "D. Sharpe (Ques)"
+    },
+    {
+      "name": "C. Thomas",
+      "status": "PROB",
+      "details": "C. Thomas (Prob)"
     },
     {
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
-    },
-    {
-      "name": "D. Sharpe",
-      "status": "OUT",
-      "details": "D. Sharpe (Out)"
-    },
-    {
-      "name": "Cam Thomas",
-      "status": "OUT",
-      "details": "Cam Thomas (Out)"
     }
   ],
   "BKN": [
     {
-      "name": "Egor Demin",
-      "status": "OUT",
-      "details": "Egor Demin (Out)"
+      "name": "E. Demin",
+      "status": "PROB",
+      "details": "E. Demin (Prob)"
+    },
+    {
+      "name": "D. Sharpe",
+      "status": "QUES",
+      "details": "D. Sharpe (Ques)"
+    },
+    {
+      "name": "C. Thomas",
+      "status": "PROB",
+      "details": "C. Thomas (Prob)"
     },
     {
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
-    },
-    {
-      "name": "D. Sharpe",
-      "status": "OUT",
-      "details": "D. Sharpe (Out)"
-    },
-    {
-      "name": "Cam Thomas",
-      "status": "OUT",
-      "details": "Cam Thomas (Out)"
     }
   ],
   "BOS": [
