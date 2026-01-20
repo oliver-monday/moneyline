@@ -1,0 +1,13 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-19,2026,VJ Edgecombe,PHI,IND,ast,4,HIT,4,,targets_snapshot_2026-01-19.json
+2026-01-19,2026,Kevin Porter Jr.,MIL,ATL,reb,4,HIT,6,,targets_snapshot_2026-01-19.json
+2026-01-19,2026,Derrick White,BOS,DET,reb,4,HIT,9,,targets_snapshot_2026-01-19.json
+2026-01-19,2026,OG Anunoby,NY,DAL,pts,15,MISSED,9,,targets_snapshot_2026-01-19.json
+2026-01-19,2026,Dyson Daniels,ATL,MIL,pts,10,HIT,17,,targets_snapshot_2026-01-19.json
+2026-01-19,2026,Dyson Daniels,ATL,MIL,reb,6,HIT,9,,targets_snapshot_2026-01-19.json
+2026-01-19,2026,Mikal Bridges,NY,DAL,3pt,2,MISSED,1,,targets_snapshot_2026-01-19.json
+2026-01-19,2026,Ryan Rollins,MIL,ATL,reb,4,MISSED,3,,targets_snapshot_2026-01-19.json
+2026-01-19,2026,Josh Hart,NY,DAL,pts,10,MISSED,8,,targets_snapshot_2026-01-19.json
+2026-01-19,2026,Cooper Flagg,DAL,NY,ast,4,MISSED,3,,targets_snapshot_2026-01-19.json
+2026-01-19,2026,Stephen Curry,GS,MIA,ast,4,HIT,11,,targets_snapshot_2026-01-19.json
+2026-01-19,2026,Devin Vassell,SA,UTAH,reb,4,,,,targets_snapshot_2026-01-19.json

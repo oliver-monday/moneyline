@@ -633,12 +633,19 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810460,2026-01-18,2026-01-19T01:00Z,Denver Nuggets,DEN,87,-120.0,,Charlotte Hornets,CHA,110,100.0,,Denver,CO,,
 401810461,2026-01-18,2026-01-19T02:00Z,Sacramento Kings,SAC,110,-148.0,,Portland Trail Blazers,POR,117,124.0,,Sacramento,CA,,
 401810462,2026-01-18,2026-01-19T02:30Z,Los Angeles Lakers,LAL,110,105.0,,Toronto Raptors,TOR,93,-125.0,,Los Angeles,CA,,
-401809247,2026-01-19,2026-01-19T18:00Z,Atlanta Hawks,ATL,0,-130.0,,Milwaukee Bucks,MIL,0,110.0,,Atlanta,GA,N. Dante (OFS); K. Porzingis (Out); Z. Risacher (Out),T. Prince (Out)
-401809248,2026-01-19,2026-01-19T19:30Z,Cleveland Cavaliers,CLE,0,190.0,,Oklahoma City Thunder,OKC,0,-230.0,,Cleveland,OH,D. Garland (Out); C. Livingston (Out); S. Merrill (Out); Max Strus (Out),T. Sorber (OFS); I. Hartenstein (Out); N. Topic (Out); J. Williams (Out)
-401810463,2026-01-19,2026-01-19T20:00Z,Washington Wizards,WSH,0,225.0,,LA Clippers,LAC,0,-278.0,,Washington,DC,C. Whitmore (OFS); B. Coulibaly (Out); T. Vukcevic (Out); Trae Young (Out),B. Beal (OFS); B. Bogdanovic (Out); D. Jones (Out); K. Leonard (Out); Chris Paul (Out)
-401809249,2026-01-19,2026-01-19T22:00Z,New York Knicks,NY,0,-410.0,,Dallas Mavericks,DAL,0,320.0,,New York,NY,,Dante Exum (OFS); D. Lively (OFS); A. Davis (Out); D. Gafford (Out); K. Irving (Out); D. Russell (Out); P. Washington (Out)
-401810466,2026-01-19,2026-01-19T22:00Z,San Antonio Spurs,SA,0,-1000.0,,Utah Jazz,UTAH,0,650.0,,San Antonio,TX,D. Vassell (Out),W. Kessler (OFS); E. Harkless (Out); L. Markkanen (Out); G. Niang (Out)
-401810464,2026-01-19,2026-01-20T00:00Z,Philadelphia 76ers,PHI,0,-325.0,,Indiana Pacers,IND,0,260.0,,Philadelphia,PA,,T. Haliburton (OFS); B. Mathurin (Out); Obi Toppin (Out)
-401810465,2026-01-19,2026-01-20T00:30Z,Brooklyn Nets,BKN,0,260.0,,Phoenix Suns,PHX,0,-325.0,,Brooklyn,NY,H. Highsmith (Out); M. Porter (Out); D. Powell (Out); Z. Williams (Out),
-401809250,2026-01-19,2026-01-20T01:00Z,Detroit Pistons,DET,0,-155.0,,Boston Celtics,BOS,0,130.0,,Detroit,MI,,J. Minott (Out); J. Tatum (Out)
-401810467,2026-01-19,2026-01-20T03:00Z,Golden State Warriors,GS,0,-218.0,,Miami Heat,MIA,0,180.0,,San Francisco,CA,Seth Curry (Out); D. Melton (Out); Gui Santos (Out),T. Herro (Out); T. Rozier (Out)
+401809247,2026-01-19,2026-01-19T18:00Z,Atlanta Hawks,ATL,110,-130.0,,Milwaukee Bucks,MIL,112,110.0,,Atlanta,GA,,
+401809248,2026-01-19,2026-01-19T19:30Z,Cleveland Cavaliers,CLE,104,190.0,,Oklahoma City Thunder,OKC,136,-230.0,,Cleveland,OH,,
+401810463,2026-01-19,2026-01-19T20:00Z,Washington Wizards,WSH,106,225.0,,LA Clippers,LAC,110,-278.0,,Washington,DC,,
+401809249,2026-01-19,2026-01-19T22:00Z,New York Knicks,NY,97,-410.0,,Dallas Mavericks,DAL,114,320.0,,New York,NY,,
+401810466,2026-01-19,2026-01-19T22:00Z,San Antonio Spurs,SA,123,-1000.0,,Utah Jazz,UTAH,110,650.0,,San Antonio,TX,,
+401810464,2026-01-19,2026-01-20T00:00Z,Philadelphia 76ers,PHI,113,-325.0,,Indiana Pacers,IND,104,260.0,,Philadelphia,PA,,
+401810465,2026-01-19,2026-01-20T00:30Z,Brooklyn Nets,BKN,117,260.0,,Phoenix Suns,PHX,126,-325.0,,Brooklyn,NY,,
+401809250,2026-01-19,2026-01-20T01:00Z,Detroit Pistons,DET,104,-155.0,,Boston Celtics,BOS,103,130.0,,Detroit,MI,,
+401810467,2026-01-19,2026-01-20T03:00Z,Golden State Warriors,GS,135,-218.0,,Miami Heat,MIA,112,180.0,,San Francisco,CA,,
+401810468,2026-01-20,2026-01-21T00:00Z,Philadelphia 76ers,PHI,0,-118.0,,Phoenix Suns,PHX,0,-102.0,,Philadelphia,PA,,
+401810469,2026-01-20,2026-01-21T01:00Z,Chicago Bulls,CHI,0,-162.0,,LA Clippers,LAC,0,136.0,,Chicago,IL,N. Essengue (OFS); Z. Collins (Out),B. Beal (OFS); B. Bogdanovic (Out); D. Jones (Out); K. Leonard (Out); Chris Paul (Out)
+401810470,2026-01-20,2026-01-21T01:00Z,Houston Rockets,HOU,0,-175.0,,San Antonio Spurs,SA,0,145.0,,Houston,TX,S. Adams (Out); F. VanVleet (Out),
+401810471,2026-01-20,2026-01-21T02:00Z,Utah Jazz,UTAH,0,400.0,,Minnesota Timberwolves,MIN,0,-535.0,,Salt Lake City,UT,W. Kessler (OFS),T. Shannon (Out)
+401810472,2026-01-20,2026-01-21T03:00Z,Denver Nuggets,DEN,0,124.0,,Los Angeles Lakers,LAL,0,-148.0,,Denver,CO,T. Bates (Out); C. Braun (Out); C. Johnson (Out); N. Jokic (Out); J. Valanciunas (Out),A. Reaves (Out); A. Thiero (Out)
+401810473,2026-01-20,2026-01-21T03:00Z,Golden State Warriors,GS,0,-155.0,,Toronto Raptors,TOR,0,130.0,,San Francisco,CA,Seth Curry (Out),RJ Barrett (Out); C. Hepburn (Out); C. Murray-Boyles (Out); J. Poeltl (Out); J. Walter (Out)
+401810474,2026-01-20,2026-01-21T03:00Z,Sacramento Kings,SAC,0,124.0,,Miami Heat,MIA,0,-148.0,,Sacramento,CA,K. Murray (Out),T. Herro (Out); T. Rozier (Out)
