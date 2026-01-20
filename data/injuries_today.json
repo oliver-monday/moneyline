@@ -1,44 +1,7 @@
 {
   "asof_date": "2026-01-20",
-  "built_at_utc": "2026-01-20T22:28:37Z",
+  "built_at_utc": "2026-01-20T23:25:54Z",
   "source": "rotowire",
-  "PHX": [
-    {
-      "name": "M. Williams",
-      "status": "QUES",
-      "details": "M. Williams (Ques)"
-    },
-    {
-      "name": "Fantasy Home",
-      "status": "REST",
-      "details": "Fantasy Home (Rest)"
-    },
-    {
-      "name": "Fantasy Home",
-      "status": "OUT",
-      "details": "Fantasy Home (Out)"
-    },
-    {
-      "name": "Fantasy Home",
-      "status": "PROB",
-      "details": "Fantasy Home (Prob)"
-    },
-    {
-      "name": "Fantasy Football",
-      "status": "REST",
-      "details": "Fantasy Football (Rest)"
-    },
-    {
-      "name": "P. George",
-      "status": "QUES",
-      "details": "P. George (Ques)"
-    },
-    {
-      "name": "J. Embiid",
-      "status": "OUT",
-      "details": "J. Embiid (Out)"
-    }
-  ],
   "PHI": [
     {
       "name": "P. George",
@@ -83,24 +46,24 @@
       "details": "Chris Paul (Out)"
     },
     {
-      "name": "J. Giddey",
-      "status": "QUES",
-      "details": "J. Giddey (Ques)"
-    },
-    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "P. Williams",
-      "status": "QUES",
-      "details": "P. Williams (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
+    },
+    {
+      "name": "J. Giddey",
+      "status": "OUT",
+      "details": "J. Giddey (Out)"
+    },
+    {
+      "name": "P. Williams",
+      "status": "OUT",
+      "details": "P. Williams (Out)"
     }
   ],
   "CHI": [
@@ -110,19 +73,19 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Giddey",
-      "status": "QUES",
-      "details": "J. Giddey (Ques)"
-    },
-    {
-      "name": "P. Williams",
-      "status": "QUES",
-      "details": "P. Williams (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
+    },
+    {
+      "name": "J. Giddey",
+      "status": "OUT",
+      "details": "J. Giddey (Out)"
+    },
+    {
+      "name": "P. Williams",
+      "status": "OUT",
+      "details": "P. Williams (Out)"
     }
   ],
   "SAS": [
@@ -181,6 +144,11 @@
       "details": "E. Harkless (Out)"
     },
     {
+      "name": "Kevin Love",
+      "status": "OUT",
+      "details": "Kevin Love (Out)"
+    },
+    {
       "name": "L. Markkanen",
       "status": "OUT",
       "details": "L. Markkanen (Out)"
@@ -206,6 +174,11 @@
       "name": "E. Harkless",
       "status": "OUT",
       "details": "E. Harkless (Out)"
+    },
+    {
+      "name": "Kevin Love",
+      "status": "OUT",
+      "details": "Kevin Love (Out)"
     },
     {
       "name": "L. Markkanen",
@@ -433,6 +406,38 @@
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    }
+  ],
+  "PHX": [
+    {
+      "name": "Fantasy Home",
+      "status": "REST",
+      "details": "Fantasy Home (Rest)"
+    },
+    {
+      "name": "Fantasy Home",
+      "status": "OUT",
+      "details": "Fantasy Home (Out)"
+    },
+    {
+      "name": "Fantasy Home",
+      "status": "PROB",
+      "details": "Fantasy Home (Prob)"
+    },
+    {
+      "name": "Fantasy Football",
+      "status": "REST",
+      "details": "Fantasy Football (Rest)"
+    },
+    {
+      "name": "P. George",
+      "status": "QUES",
+      "details": "P. George (Ques)"
+    },
+    {
+      "name": "J. Embiid",
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     }
   ]
 }
