@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-20",
-  "built_at_utc": "2026-01-20T14:55:58Z",
+  "built_at_utc": "2026-01-20T17:19:53Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -30,15 +30,25 @@
     },
     {
       "name": "P. George",
-      "status": "QUES",
-      "details": "P. George (Ques)"
+      "status": "PROB",
+      "details": "P. George (Prob)"
+    },
+    {
+      "name": "J. Embiid",
+      "status": "DOUBT",
+      "details": "J. Embiid (Doubt)"
     }
   ],
   "PHI": [
     {
       "name": "P. George",
-      "status": "QUES",
-      "details": "P. George (Ques)"
+      "status": "PROB",
+      "details": "P. George (Prob)"
+    },
+    {
+      "name": "J. Embiid",
+      "status": "DOUBT",
+      "details": "J. Embiid (Doubt)"
     }
   ],
   "LAC": [
@@ -334,14 +344,19 @@
       "details": "J. Walter (Out)"
     },
     {
-      "name": "D. Melton",
-      "status": "PROB",
-      "details": "D. Melton (Prob)"
-    },
-    {
       "name": "D. Green",
       "status": "PROB",
       "details": "D. Green (Prob)"
+    },
+    {
+      "name": "J. Butler",
+      "status": "OFS",
+      "details": "J. Butler (OFS)"
+    },
+    {
+      "name": "D. Melton",
+      "status": "PROB",
+      "details": "D. Melton (Prob)"
     },
     {
       "name": "G. Santos",
@@ -349,9 +364,9 @@
       "details": "G. Santos (Ques)"
     },
     {
-      "name": "J. Butler",
-      "status": "OFS",
-      "details": "J. Butler (OFS)"
+      "name": "A. Horford",
+      "status": "DOUBT",
+      "details": "A. Horford (Doubt)"
     },
     {
       "name": "Seth Curry",
@@ -361,6 +376,11 @@
   ],
   "GSW": [
     {
+      "name": "J. Butler",
+      "status": "OFS",
+      "details": "J. Butler (OFS)"
+    },
+    {
       "name": "D. Green",
       "status": "PROB",
       "details": "D. Green (Prob)"
@@ -376,9 +396,9 @@
       "details": "G. Santos (Ques)"
     },
     {
-      "name": "J. Butler",
-      "status": "OFS",
-      "details": "J. Butler (OFS)"
+      "name": "A. Horford",
+      "status": "DOUBT",
+      "details": "A. Horford (Doubt)"
     },
     {
       "name": "Seth Curry",
