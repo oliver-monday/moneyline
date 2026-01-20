@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-20",
-  "built_at_utc": "2026-01-20T08:53:13Z",
+  "built_at_utc": "2026-01-20T14:55:58Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -335,8 +335,8 @@
     },
     {
       "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
+      "status": "PROB",
+      "details": "D. Melton (Prob)"
     },
     {
       "name": "D. Green",
@@ -350,8 +350,8 @@
     },
     {
       "name": "J. Butler",
-      "status": "DOUBT",
-      "details": "J. Butler (Doubt)"
+      "status": "OFS",
+      "details": "J. Butler (OFS)"
     },
     {
       "name": "Seth Curry",
@@ -367,8 +367,8 @@
     },
     {
       "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
+      "status": "PROB",
+      "details": "D. Melton (Prob)"
     },
     {
       "name": "G. Santos",
@@ -377,8 +377,8 @@
     },
     {
       "name": "J. Butler",
-      "status": "DOUBT",
-      "details": "J. Butler (Doubt)"
+      "status": "OFS",
+      "details": "J. Butler (OFS)"
     },
     {
       "name": "Seth Curry",
