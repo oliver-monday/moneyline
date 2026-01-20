@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-20",
-  "built_at_utc": "2026-01-20T20:15:52Z",
+  "built_at_utc": "2026-01-20T20:41:37Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -128,8 +128,8 @@
   "SAS": [
     {
       "name": "D. Vassell",
-      "status": "DOUBT",
-      "details": "D. Vassell (Doubt)"
+      "status": "OUT",
+      "details": "D. Vassell (Out)"
     },
     {
       "name": "T. Eason",
