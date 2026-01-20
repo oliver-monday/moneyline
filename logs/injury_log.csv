@@ -2867,6 +2867,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-19,BOS,R. Holland,QUES,R. Holland (Ques),rotowire
 2026-01-19,DET,R. Holland,QUES,R. Holland (Ques),rotowire
 2026-01-19,MIA,D. Mitchell,PROB,D. Mitchell (Prob),rotowire
+2026-01-19,MIA,J. Jaquez,PROB,J. Jaquez (Prob),rotowire
 2026-01-19,MIL,T. Prince,OUT,T. Prince (Out),rotowire
 2026-01-19,MIL,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-01-19,MIL,Fantasy Football,REST,Fantasy Football (Rest),rotowire
@@ -2915,10 +2916,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-19,UTA,D. Vassell,DOUBT,D. Vassell (Doubt),rotowire
 2026-01-19,SAS,D. Vassell,DOUBT,D. Vassell (Doubt),rotowire
 2026-01-19,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
-2026-01-19,IND,B. Mathurin,OUT,B. Mathurin (Out),rotowire
+2026-01-19,IND,B. Mathurin,DOUBT,B. Mathurin (Doubt),rotowire
 2026-01-19,IND,Obi Toppin,OUT,Obi Toppin (Out),rotowire
-2026-01-19,IND,P. George,OUT,P. George (Out),rotowire
-2026-01-19,PHI,P. George,OUT,P. George (Out),rotowire
+2026-01-19,IND,P. George,QUES,P. George (Ques),rotowire
+2026-01-19,PHI,P. George,QUES,P. George (Ques),rotowire
 2026-01-19,PHX,J. Green,OUT,J. Green (Out),rotowire
 2026-01-19,PHX,Egor Demin,OUT,Egor Demin (Out),rotowire
 2026-01-19,PHX,H. Highsmith,OUT,H. Highsmith (Out),rotowire
@@ -2930,7 +2931,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-19,BKN,Cam Thomas,OUT,Cam Thomas (Out),rotowire
 2026-01-19,BOS,J. Minott,OUT,J. Minott (Out),rotowire
 2026-01-19,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
-2026-01-19,MIA,J. Jaquez,PROB,J. Jaquez (Prob),rotowire
+2026-01-19,BOS,I. Jones,OUT,I. Jones (Out),rotowire
+2026-01-19,DET,I. Jones,OUT,I. Jones (Out),rotowire
 2026-01-19,MIA,T. Herro,OUT,T. Herro (Out),rotowire
 2026-01-19,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-01-19,MIA,Seth Curry,OUT,Seth Curry (Out),rotowire

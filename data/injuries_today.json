@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-19",
-  "built_at_utc": "2026-01-20T01:01:42Z",
+  "built_at_utc": "2026-01-20T02:56:00Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -278,8 +278,8 @@
     },
     {
       "name": "B. Mathurin",
-      "status": "OUT",
-      "details": "B. Mathurin (Out)"
+      "status": "DOUBT",
+      "details": "B. Mathurin (Doubt)"
     },
     {
       "name": "Obi Toppin",
@@ -288,15 +288,15 @@
     },
     {
       "name": "P. George",
-      "status": "OUT",
-      "details": "P. George (Out)"
+      "status": "QUES",
+      "details": "P. George (Ques)"
     }
   ],
   "PHI": [
     {
       "name": "P. George",
-      "status": "OUT",
-      "details": "P. George (Out)"
+      "status": "QUES",
+      "details": "P. George (Ques)"
     }
   ],
   "PHX": [
@@ -358,14 +358,21 @@
       "name": "J. Tatum",
       "status": "OUT",
       "details": "J. Tatum (Out)"
+    },
+    {
+      "name": "I. Jones",
+      "status": "OUT",
+      "details": "I. Jones (Out)"
+    }
+  ],
+  "DET": [
+    {
+      "name": "I. Jones",
+      "status": "OUT",
+      "details": "I. Jones (Out)"
     }
   ],
   "MIA": [
-    {
-      "name": "J. Jaquez",
-      "status": "PROB",
-      "details": "J. Jaquez (Prob)"
-    },
     {
       "name": "T. Herro",
       "status": "OUT",
