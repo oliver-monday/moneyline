@@ -642,10 +642,10 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810465,2026-01-19,2026-01-20T00:30Z,Brooklyn Nets,BKN,117,260.0,,Phoenix Suns,PHX,126,-325.0,,Brooklyn,NY,,
 401809250,2026-01-19,2026-01-20T01:00Z,Detroit Pistons,DET,104,-155.0,,Boston Celtics,BOS,103,130.0,,Detroit,MI,,
 401810467,2026-01-19,2026-01-20T03:00Z,Golden State Warriors,GS,135,-218.0,,Miami Heat,MIA,112,180.0,,San Francisco,CA,,
-401810468,2026-01-20,2026-01-21T00:00Z,Philadelphia 76ers,PHI,0,-118.0,,Phoenix Suns,PHX,0,-102.0,,Philadelphia,PA,,
+401810468,2026-01-20,2026-01-21T00:00Z,Philadelphia 76ers,PHI,0,-122.0,,Phoenix Suns,PHX,0,102.0,,Philadelphia,PA,,
 401810469,2026-01-20,2026-01-21T01:00Z,Chicago Bulls,CHI,0,-162.0,,LA Clippers,LAC,0,136.0,,Chicago,IL,N. Essengue (OFS); Z. Collins (Out),B. Beal (OFS); B. Bogdanovic (Out); D. Jones (Out); K. Leonard (Out); Chris Paul (Out)
-401810470,2026-01-20,2026-01-21T01:00Z,Houston Rockets,HOU,0,-175.0,,San Antonio Spurs,SA,0,145.0,,Houston,TX,S. Adams (Out); F. VanVleet (Out),
-401810471,2026-01-20,2026-01-21T02:00Z,Utah Jazz,UTAH,0,400.0,,Minnesota Timberwolves,MIN,0,-535.0,,Salt Lake City,UT,W. Kessler (OFS),T. Shannon (Out)
+401810470,2026-01-20,2026-01-21T01:00Z,Houston Rockets,HOU,0,-166.0,,San Antonio Spurs,SA,0,140.0,,Houston,TX,S. Adams (Out); F. VanVleet (Out),
+401810471,2026-01-20,2026-01-21T02:00Z,Utah Jazz,UTAH,0,425.0,,Minnesota Timberwolves,MIN,0,-575.0,,Salt Lake City,UT,W. Kessler (OFS),T. Shannon (Out)
 401810472,2026-01-20,2026-01-21T03:00Z,Denver Nuggets,DEN,0,124.0,,Los Angeles Lakers,LAL,0,-148.0,,Denver,CO,T. Bates (Out); C. Braun (Out); C. Johnson (Out); N. Jokic (Out); J. Valanciunas (Out),A. Reaves (Out); A. Thiero (Out)
-401810473,2026-01-20,2026-01-21T03:00Z,Golden State Warriors,GS,0,-155.0,,Toronto Raptors,TOR,0,130.0,,San Francisco,CA,Seth Curry (Out),RJ Barrett (Out); C. Hepburn (Out); C. Murray-Boyles (Out); J. Poeltl (Out); J. Walter (Out)
+401810473,2026-01-20,2026-01-21T03:00Z,Golden State Warriors,GS,0,-155.0,,Toronto Raptors,TOR,0,130.0,,San Francisco,CA,J. Butler (OFS); Seth Curry (Out),RJ Barrett (Out); C. Hepburn (Out); C. Murray-Boyles (Out); J. Poeltl (Out); J. Walter (Out)
 401810474,2026-01-20,2026-01-21T03:00Z,Sacramento Kings,SAC,0,124.0,,Miami Heat,MIA,0,-148.0,,Sacramento,CA,K. Murray (Out),T. Herro (Out); T. Rozier (Out)
