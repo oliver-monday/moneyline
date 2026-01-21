@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-21",
-  "built_at_utc": "2026-01-21T14:56:03Z",
+  "built_at_utc": "2026-01-21T17:45:21Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -122,11 +122,6 @@
   ],
   "BKN": [
     {
-      "name": "D. Sharpe",
-      "status": "QUES",
-      "details": "D. Sharpe (Ques)"
-    },
-    {
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
@@ -144,6 +139,11 @@
       "details": "H. Jones (Ques)"
     },
     {
+      "name": "Z. Williamson",
+      "status": "QUES",
+      "details": "Z. Williamson (Ques)"
+    },
+    {
       "name": "J. Alvarado",
       "status": "OUT",
       "details": "J. Alvarado (Out)"
@@ -159,6 +159,11 @@
       "name": "H. Jones",
       "status": "QUES",
       "details": "H. Jones (Ques)"
+    },
+    {
+      "name": "Z. Williamson",
+      "status": "QUES",
+      "details": "Z. Williamson (Ques)"
     },
     {
       "name": "J. Alvarado",
