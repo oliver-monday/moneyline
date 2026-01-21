@@ -3087,12 +3087,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-21,OKC,N. Topic,OUT,N. Topic (Out),rotowire
 2026-01-21,OKC,A. Wiggins,OUT,A. Wiggins (Out),rotowire
 2026-01-21,OKC,J. Williams,OUT,J. Williams (Out),rotowire
-2026-01-21,OKC,M. Turner,QUES,M. Turner (Ques),rotowire
-2026-01-21,OKC,K. Porter,QUES,K. Porter (Ques),rotowire
+2026-01-21,OKC,K. Porter,OUT,K. Porter (Out),rotowire
 2026-01-21,OKC,T. Prince,OUT,T. Prince (Out),rotowire
-2026-01-21,MIL,K. Porter,QUES,K. Porter (Ques),rotowire
-2026-01-21,MIL,M. Turner,QUES,M. Turner (Ques),rotowire
+2026-01-21,OKC,M. Turner,OUT,M. Turner (Out),rotowire
+2026-01-21,MIL,K. Porter,OUT,K. Porter (Out),rotowire
 2026-01-21,MIL,T. Prince,OUT,T. Prince (Out),rotowire
+2026-01-21,MIL,M. Turner,OUT,M. Turner (Out),rotowire
 2026-01-21,TOR,R. Barrett,QUES,R. Barrett (Ques),rotowire
 2026-01-21,TOR,C. Murray-Boyles,QUES,C. Murray-Boyles (Ques),rotowire
 2026-01-21,TOR,J. Poeltl,QUES,J. Poeltl (Ques),rotowire

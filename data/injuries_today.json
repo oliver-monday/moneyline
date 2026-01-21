@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-21",
-  "built_at_utc": "2026-01-21T18:39:17Z",
+  "built_at_utc": "2026-01-21T19:32:03Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -292,36 +292,36 @@
       "details": "J. Williams (Out)"
     },
     {
-      "name": "M. Turner",
-      "status": "QUES",
-      "details": "M. Turner (Ques)"
-    },
-    {
       "name": "K. Porter",
-      "status": "QUES",
-      "details": "K. Porter (Ques)"
+      "status": "OUT",
+      "details": "K. Porter (Out)"
     },
     {
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
+    },
+    {
+      "name": "M. Turner",
+      "status": "OUT",
+      "details": "M. Turner (Out)"
     }
   ],
   "MIL": [
     {
       "name": "K. Porter",
-      "status": "QUES",
-      "details": "K. Porter (Ques)"
-    },
-    {
-      "name": "M. Turner",
-      "status": "QUES",
-      "details": "M. Turner (Ques)"
+      "status": "OUT",
+      "details": "K. Porter (Out)"
     },
     {
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
+    },
+    {
+      "name": "M. Turner",
+      "status": "OUT",
+      "details": "M. Turner (Out)"
     }
   ],
   "TOR": [
