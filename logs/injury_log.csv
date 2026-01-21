@@ -3040,6 +3040,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-21,CLE,T. Mann,QUES,T. Mann (Ques),rotowire
 2026-01-21,CHA,T. Salaun,PROB,T. Salaun (Prob),rotowire
 2026-01-21,CHA,T. Mann,QUES,T. Mann (Ques),rotowire
+2026-01-21,IND,J. Brown,PROB,J. Brown (Prob),rotowire
+2026-01-21,BOS,J. Brown,PROB,J. Brown (Prob),rotowire
 2026-01-21,CLE,D. Garland,OUT,D. Garland (Out),rotowire
 2026-01-21,CLE,S. Merrill,OUT,S. Merrill (Out),rotowire
 2026-01-21,CLE,Max Strus,OUT,Max Strus (Out),rotowire
@@ -3052,15 +3054,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-21,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-01-21,IND,B. Mathurin,OUT,B. Mathurin (Out),rotowire
 2026-01-21,IND,Obi Toppin,OUT,Obi Toppin (Out),rotowire
-2026-01-21,IND,J. Brown,PROB,J. Brown (Prob),rotowire
 2026-01-21,IND,J. Minott,OUT,J. Minott (Out),rotowire
 2026-01-21,IND,J. Tatum,OUT,J. Tatum (Out),rotowire
-2026-01-21,BOS,J. Brown,PROB,J. Brown (Prob),rotowire
 2026-01-21,BOS,J. Minott,OUT,J. Minott (Out),rotowire
 2026-01-21,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
 2026-01-21,BKN,H. Highsmith,OUT,H. Highsmith (Out),rotowire
-2026-01-21,DET,C. Cunningham,QUES,C. Cunningham (Ques),rotowire
-2026-01-21,DET,C. LeVert,QUES,C. LeVert (Ques),rotowire
+2026-01-21,DET,C. Cunningham,OUT,C. Cunningham (Out),rotowire
+2026-01-21,DET,C. LeVert,OUT,C. LeVert (Out),rotowire
 2026-01-21,DET,Z. Williamson,QUES,Z. Williamson (Ques),rotowire
 2026-01-21,DET,J. Alvarado,OUT,J. Alvarado (Out),rotowire
 2026-01-21,DET,H. Jones,OUT,H. Jones (Out),rotowire

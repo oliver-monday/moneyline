@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-21",
-  "built_at_utc": "2026-01-21T22:32:08Z",
+  "built_at_utc": "2026-01-21T23:28:27Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -78,11 +78,6 @@
       "details": "Obi Toppin (Out)"
     },
     {
-      "name": "J. Brown",
-      "status": "PROB",
-      "details": "J. Brown (Prob)"
-    },
-    {
       "name": "J. Minott",
       "status": "OUT",
       "details": "J. Minott (Out)"
@@ -94,11 +89,6 @@
     }
   ],
   "BOS": [
-    {
-      "name": "J. Brown",
-      "status": "PROB",
-      "details": "J. Brown (Prob)"
-    },
     {
       "name": "J. Minott",
       "status": "OUT",
@@ -120,13 +110,13 @@
   "DET": [
     {
       "name": "C. Cunningham",
-      "status": "QUES",
-      "details": "C. Cunningham (Ques)"
+      "status": "OUT",
+      "details": "C. Cunningham (Out)"
     },
     {
       "name": "C. LeVert",
-      "status": "QUES",
-      "details": "C. LeVert (Ques)"
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     },
     {
       "name": "Z. Williamson",
