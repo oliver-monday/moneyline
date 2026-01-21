@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-21",
-  "built_at_utc": "2026-01-21T17:45:21Z",
+  "built_at_utc": "2026-01-21T18:39:17Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -44,6 +44,11 @@
       "details": "T. Salaun (Prob)"
     },
     {
+      "name": "T. Mann",
+      "status": "QUES",
+      "details": "T. Mann (Ques)"
+    },
+    {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
@@ -59,6 +64,11 @@
       "name": "T. Salaun",
       "status": "PROB",
       "details": "T. Salaun (Prob)"
+    },
+    {
+      "name": "T. Mann",
+      "status": "QUES",
+      "details": "T. Mann (Ques)"
     },
     {
       "name": "M. Plumlee",
@@ -129,14 +139,14 @@
   ],
   "DET": [
     {
+      "name": "C. Cunningham",
+      "status": "QUES",
+      "details": "C. Cunningham (Ques)"
+    },
+    {
       "name": "C. LeVert",
       "status": "QUES",
       "details": "C. LeVert (Ques)"
-    },
-    {
-      "name": "H. Jones",
-      "status": "QUES",
-      "details": "H. Jones (Ques)"
     },
     {
       "name": "Z. Williamson",
@@ -147,6 +157,11 @@
       "name": "J. Alvarado",
       "status": "OUT",
       "details": "J. Alvarado (Out)"
+    },
+    {
+      "name": "H. Jones",
+      "status": "OUT",
+      "details": "H. Jones (Out)"
     },
     {
       "name": "D. Murray",
@@ -156,11 +171,6 @@
   ],
   "NOP": [
     {
-      "name": "H. Jones",
-      "status": "QUES",
-      "details": "H. Jones (Ques)"
-    },
-    {
       "name": "Z. Williamson",
       "status": "QUES",
       "details": "Z. Williamson (Ques)"
@@ -169,6 +179,11 @@
       "name": "J. Alvarado",
       "status": "OUT",
       "details": "J. Alvarado (Out)"
+    },
+    {
+      "name": "H. Jones",
+      "status": "OUT",
+      "details": "H. Jones (Out)"
     },
     {
       "name": "D. Murray",
@@ -194,8 +209,8 @@
     },
     {
       "name": "S. Aldama",
-      "status": "QUES",
-      "details": "S. Aldama (Ques)"
+      "status": "DOUBT",
+      "details": "S. Aldama (Doubt)"
     },
     {
       "name": "B. Clarke",
@@ -221,8 +236,8 @@
   "MEM": [
     {
       "name": "S. Aldama",
-      "status": "QUES",
-      "details": "S. Aldama (Ques)"
+      "status": "DOUBT",
+      "details": "S. Aldama (Doubt)"
     },
     {
       "name": "B. Clarke",
@@ -252,11 +267,6 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
-    },
-    {
       "name": "A. Caruso",
       "status": "OUT",
       "details": "A. Caruso (Out)"
@@ -270,6 +280,11 @@
       "name": "N. Topic",
       "status": "OUT",
       "details": "N. Topic (Out)"
+    },
+    {
+      "name": "A. Wiggins",
+      "status": "OUT",
+      "details": "A. Wiggins (Out)"
     },
     {
       "name": "J. Williams",
