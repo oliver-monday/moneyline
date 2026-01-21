@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-20",
-  "built_at_utc": "2026-01-21T01:03:57Z",
+  "built_at_utc": "2026-01-21T02:54:22Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -193,21 +193,6 @@
       "details": "A. Thiero (Out)"
     },
     {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "A. Gordon",
-      "status": "PROB",
-      "details": "A. Gordon (Prob)"
-    },
-    {
-      "name": "T. Hardaway",
-      "status": "PROB",
-      "details": "T. Hardaway (Prob)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -234,21 +219,6 @@
     }
   ],
   "DEN": [
-    {
-      "name": "A. Gordon",
-      "status": "PROB",
-      "details": "A. Gordon (Prob)"
-    },
-    {
-      "name": "T. Hardaway",
-      "status": "PROB",
-      "details": "T. Hardaway (Prob)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -302,19 +272,9 @@
       "details": "J. Walter (Out)"
     },
     {
-      "name": "D. Green",
-      "status": "QUES",
-      "details": "D. Green (Ques)"
-    },
-    {
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
-    },
-    {
-      "name": "G. Santos",
-      "status": "QUES",
-      "details": "G. Santos (Ques)"
     },
     {
       "name": "Seth Curry",
@@ -334,16 +294,6 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "D. Green",
-      "status": "QUES",
-      "details": "D. Green (Ques)"
-    },
-    {
-      "name": "G. Santos",
-      "status": "QUES",
-      "details": "G. Santos (Ques)"
-    },
-    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
@@ -356,11 +306,6 @@
   ],
   "MIA": [
     {
-      "name": "K. Ware",
-      "status": "QUES",
-      "details": "K. Ware (Ques)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
@@ -369,6 +314,11 @@
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
+    },
+    {
+      "name": "K. Ware",
+      "status": "OUT",
+      "details": "K. Ware (Out)"
     },
     {
       "name": "K. Murray",
