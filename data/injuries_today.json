@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-21",
-  "built_at_utc": "2026-01-21T20:28:38Z",
+  "built_at_utc": "2026-01-21T21:17:47Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -326,24 +326,9 @@
   ],
   "TOR": [
     {
-      "name": "R. Barrett",
-      "status": "QUES",
-      "details": "R. Barrett (Ques)"
-    },
-    {
-      "name": "C. Murray-Boyles",
-      "status": "QUES",
-      "details": "C. Murray-Boyles (Ques)"
-    },
-    {
-      "name": "J. Poeltl",
-      "status": "QUES",
-      "details": "J. Poeltl (Ques)"
-    },
-    {
-      "name": "J. Walter",
-      "status": "QUES",
-      "details": "J. Walter (Ques)"
+      "name": "RJ Barrett",
+      "status": "OUT",
+      "details": "RJ Barrett (Out)"
     },
     {
       "name": "C. Hepburn",
@@ -351,16 +336,51 @@
       "details": "C. Hepburn (Out)"
     },
     {
-      "name": "K. Murray",
+      "name": "C. Murray-Boyles",
       "status": "OUT",
-      "details": "K. Murray (Out)"
-    }
-  ],
-  "SAC": [
+      "details": "C. Murray-Boyles (Out)"
+    },
+    {
+      "name": "J. Poeltl",
+      "status": "OUT",
+      "details": "J. Poeltl (Out)"
+    },
+    {
+      "name": "J. Walter",
+      "status": "OUT",
+      "details": "J. Walter (Out)"
+    },
+    {
+      "name": "P. Achiuwa",
+      "status": "QUES",
+      "details": "P. Achiuwa (Ques)"
+    },
     {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "D. Sabonis",
+      "status": "OUT",
+      "details": "D. Sabonis (Out)"
+    }
+  ],
+  "SAC": [
+    {
+      "name": "P. Achiuwa",
+      "status": "QUES",
+      "details": "P. Achiuwa (Ques)"
+    },
+    {
+      "name": "K. Murray",
+      "status": "OUT",
+      "details": "K. Murray (Out)"
+    },
+    {
+      "name": "D. Sabonis",
+      "status": "OUT",
+      "details": "D. Sabonis (Out)"
     }
   ]
 }
