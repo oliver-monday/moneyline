@@ -1,17 +1,17 @@
 {
   "asof_date": "2026-01-20",
-  "built_at_utc": "2026-01-20T23:25:54Z",
+  "built_at_utc": "2026-01-21T01:03:57Z",
   "source": "rotowire",
   "PHI": [
-    {
-      "name": "P. George",
-      "status": "QUES",
-      "details": "P. George (Ques)"
-    },
     {
       "name": "J. Embiid",
       "status": "OUT",
       "details": "J. Embiid (Out)"
+    },
+    {
+      "name": "P. George",
+      "status": "OUT",
+      "details": "P. George (Out)"
     }
   ],
   "LAC": [
@@ -19,11 +19,6 @@
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
-    },
-    {
-      "name": "C. Christie",
-      "status": "QUES",
-      "details": "C. Christie (Ques)"
     },
     {
       "name": "B. Bogdanovic",
@@ -95,11 +90,6 @@
       "details": "D. Vassell (Out)"
     },
     {
-      "name": "T. Eason",
-      "status": "QUES",
-      "details": "T. Eason (Ques)"
-    },
-    {
       "name": "S. Adams",
       "status": "OUT",
       "details": "S. Adams (Out)"
@@ -111,11 +101,6 @@
     }
   ],
   "HOU": [
-    {
-      "name": "T. Eason",
-      "status": "QUES",
-      "details": "T. Eason (Ques)"
-    },
     {
       "name": "S. Adams",
       "status": "OUT",
@@ -317,11 +302,6 @@
       "details": "J. Walter (Out)"
     },
     {
-      "name": "W. Richard",
-      "status": "QUES",
-      "details": "W. Richard (Ques)"
-    },
-    {
       "name": "D. Green",
       "status": "QUES",
       "details": "D. Green (Ques)"
@@ -357,11 +337,6 @@
       "name": "D. Green",
       "status": "QUES",
       "details": "D. Green (Ques)"
-    },
-    {
-      "name": "W. Richard",
-      "status": "QUES",
-      "details": "W. Richard (Ques)"
     },
     {
       "name": "G. Santos",
@@ -430,14 +405,14 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "P. George",
-      "status": "QUES",
-      "details": "P. George (Ques)"
-    },
-    {
       "name": "J. Embiid",
       "status": "OUT",
       "details": "J. Embiid (Out)"
+    },
+    {
+      "name": "P. George",
+      "status": "OUT",
+      "details": "P. George (Out)"
     }
   ]
 }

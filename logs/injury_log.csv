@@ -2954,10 +2954,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-20,GSW,D. Melton,PROB,D. Melton (Prob),rotowire
 2026-01-20,GSW,A. Horford,DOUBT,A. Horford (Doubt),rotowire
 2026-01-20,PHX,M. Williams,QUES,M. Williams (Ques),rotowire
-2026-01-20,PHI,P. George,QUES,P. George (Ques),rotowire
-2026-01-20,PHI,J. Embiid,OUT,J. Embiid (Out),rotowire
-2026-01-20,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-01-20,LAC,C. Christie,QUES,C. Christie (Ques),rotowire
+2026-01-20,SAS,T. Eason,QUES,T. Eason (Ques),rotowire
+2026-01-20,HOU,T. Eason,QUES,T. Eason (Ques),rotowire
+2026-01-20,TOR,W. Richard,QUES,W. Richard (Ques),rotowire
+2026-01-20,GSW,W. Richard,QUES,W. Richard (Ques),rotowire
+2026-01-20,PHI,J. Embiid,OUT,J. Embiid (Out),rotowire
+2026-01-20,PHI,P. George,OUT,P. George (Out),rotowire
+2026-01-20,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-01-20,LAC,B. Bogdanovic,OUT,B. Bogdanovic (Out),rotowire
 2026-01-20,LAC,D. Jones,OUT,D. Jones (Out),rotowire
 2026-01-20,LAC,K. Leonard,OUT,K. Leonard (Out),rotowire
@@ -2971,10 +2975,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-20,CHI,J. Giddey,OUT,J. Giddey (Out),rotowire
 2026-01-20,CHI,P. Williams,OUT,P. Williams (Out),rotowire
 2026-01-20,SAS,D. Vassell,OUT,D. Vassell (Out),rotowire
-2026-01-20,SAS,T. Eason,QUES,T. Eason (Ques),rotowire
 2026-01-20,SAS,S. Adams,OUT,S. Adams (Out),rotowire
 2026-01-20,SAS,F. VanVleet,OUT,F. VanVleet (Out),rotowire
-2026-01-20,HOU,T. Eason,QUES,T. Eason (Ques),rotowire
 2026-01-20,HOU,S. Adams,OUT,S. Adams (Out),rotowire
 2026-01-20,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
 2026-01-20,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
@@ -3013,7 +3015,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-20,TOR,C. Murray-Boyles,OUT,C. Murray-Boyles (Out),rotowire
 2026-01-20,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
 2026-01-20,TOR,J. Walter,OUT,J. Walter (Out),rotowire
-2026-01-20,TOR,W. Richard,QUES,W. Richard (Ques),rotowire
 2026-01-20,TOR,D. Green,QUES,D. Green (Ques),rotowire
 2026-01-20,TOR,J. Butler,OFS,J. Butler (OFS),rotowire
 2026-01-20,TOR,G. Santos,QUES,G. Santos (Ques),rotowire
@@ -3021,7 +3022,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-20,TOR,Al Horford,OUT,Al Horford (Out),rotowire
 2026-01-20,GSW,J. Butler,OFS,J. Butler (OFS),rotowire
 2026-01-20,GSW,D. Green,QUES,D. Green (Ques),rotowire
-2026-01-20,GSW,W. Richard,QUES,W. Richard (Ques),rotowire
 2026-01-20,GSW,G. Santos,QUES,G. Santos (Ques),rotowire
 2026-01-20,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
 2026-01-20,GSW,Al Horford,OUT,Al Horford (Out),rotowire
@@ -3032,5 +3032,5 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-20,SAC,K. Murray,OUT,K. Murray (Out),rotowire
 2026-01-20,PHX,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-01-20,PHX,Fantasy Football,REST,Fantasy Football (Rest),rotowire
-2026-01-20,PHX,P. George,QUES,P. George (Ques),rotowire
 2026-01-20,PHX,J. Embiid,OUT,J. Embiid (Out),rotowire
+2026-01-20,PHX,P. George,OUT,P. George (Out),rotowire
