@@ -1,7 +1,7 @@
 {
-  "last_updated_utc": "2026-01-20T14:22:00Z",
+  "last_updated_utc": "2026-01-21T08:54:57Z",
   "latest_by_season": {
-    "2026": "2026-01-19"
+    "2026": "2026-01-20"
   },
   "paths": {
     "summary_all_time": "data/perf/summary_all_time.json",
