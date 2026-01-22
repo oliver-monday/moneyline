@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-22",
-  "built_at_utc": "2026-01-22T19:29:31Z",
+  "built_at_utc": "2026-01-22T20:25:34Z",
   "source": "rotowire",
   "CHA": [
     {
@@ -172,14 +172,14 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "M. Bagley",
-      "status": "QUES",
-      "details": "M. Bagley (Ques)"
-    },
-    {
       "name": "A. Johnson",
       "status": "QUES",
       "details": "A. Johnson (Ques)"
+    },
+    {
+      "name": "M. Bagley",
+      "status": "OUT",
+      "details": "M. Bagley (Out)"
     },
     {
       "name": "B. Coulibaly",
@@ -204,14 +204,14 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "M. Bagley",
-      "status": "QUES",
-      "details": "M. Bagley (Ques)"
-    },
-    {
       "name": "A. Johnson",
       "status": "QUES",
       "details": "A. Johnson (Ques)"
+    },
+    {
+      "name": "M. Bagley",
+      "status": "OUT",
+      "details": "M. Bagley (Out)"
     },
     {
       "name": "B. Coulibaly",
@@ -354,14 +354,14 @@
   ],
   "SAS": [
     {
-      "name": "L. Kornet",
-      "status": "QUES",
-      "details": "L. Kornet (Ques)"
-    },
-    {
       "name": "J. Sochan",
       "status": "QUES",
       "details": "J. Sochan (Ques)"
+    },
+    {
+      "name": "L. Kornet",
+      "status": "OUT",
+      "details": "L. Kornet (Out)"
     },
     {
       "name": "D. Vassell",
@@ -497,9 +497,14 @@
   ],
   "MIA": [
     {
-      "name": "K. Ware",
+      "name": "D. Mitchell",
       "status": "QUES",
-      "details": "K. Ware (Ques)"
+      "details": "D. Mitchell (Ques)"
+    },
+    {
+      "name": "N. Powell",
+      "status": "PROB",
+      "details": "N. Powell (Prob)"
     },
     {
       "name": "T. Herro",
@@ -510,6 +515,11 @@
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
+    },
+    {
+      "name": "K. Ware",
+      "status": "OUT",
+      "details": "K. Ware (Out)"
     },
     {
       "name": "S. Cissoko",
