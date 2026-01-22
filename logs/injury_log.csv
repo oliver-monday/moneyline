@@ -3107,7 +3107,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-21,SAC,K. Murray,OUT,K. Murray (Out),rotowire
 2026-01-21,SAC,D. Sabonis,OUT,D. Sabonis (Out),rotowire
 2026-01-22,CHA,K. Simpson,QUES,K. Simpson (Ques),rotowire
-2026-01-22,CHA,G. Williams,QUES,G. Williams (Ques),rotowire
 2026-01-22,DEN,K. Middleton,QUES,K. Middleton (Ques),rotowire
 2026-01-22,WAS,K. Middleton,QUES,K. Middleton (Ques),rotowire
 2026-01-22,CHA,B. Miller,PROB,B. Miller (Prob),rotowire
@@ -3115,14 +3114,17 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-22,CHA,Tre Mann,OUT,Tre Mann (Out),rotowire
 2026-01-22,CHA,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-01-22,CHA,KJ Simpson,OUT,KJ Simpson (Out),rotowire
+2026-01-22,CHA,G. Williams,OUT,G. Williams (Out),rotowire
 2026-01-22,CHA,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-01-22,CHA,Fantasy Football,REST,Fantasy Football (Rest),rotowire
 2026-01-22,CHA,C. Castleton,OUT,C. Castleton (Out),rotowire
 2026-01-22,CHA,J. Suggs,OUT,J. Suggs (Out),rotowire
+2026-01-22,CHA,F. Wagner,OUT,F. Wagner (Out),rotowire
 2026-01-22,ORL,C. Castleton,OUT,C. Castleton (Out),rotowire
 2026-01-22,ORL,J. Suggs,OUT,J. Suggs (Out),rotowire
-2026-01-22,HOU,A. Holiday,QUES,A. Holiday (Ques),rotowire
+2026-01-22,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
 2026-01-22,HOU,S. Adams,OUT,S. Adams (Out),rotowire
+2026-01-22,HOU,A. Holiday,OUT,A. Holiday (Out),rotowire
 2026-01-22,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
 2026-01-22,HOU,P. George,QUES,P. George (Ques),rotowire
 2026-01-22,HOU,J. Embiid,PROB,J. Embiid (Prob),rotowire
@@ -3167,7 +3169,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-22,CHI,J. Giddey,PROB,J. Giddey (Prob),rotowire
 2026-01-22,CHI,P. Williams,QUES,P. Williams (Ques),rotowire
 2026-01-22,CHI,Z. Collins,OUT,Z. Collins (Out),rotowire
+2026-01-22,CHI,J. Randle,QUES,J. Randle (Ques),rotowire
 2026-01-22,CHI,T. Shannon,OUT,T. Shannon (Out),rotowire
+2026-01-22,MIN,J. Randle,QUES,J. Randle (Ques),rotowire
 2026-01-22,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
 2026-01-22,SAS,L. Kornet,QUES,L. Kornet (Ques),rotowire
 2026-01-22,SAS,J. Sochan,QUES,J. Sochan (Ques),rotowire
