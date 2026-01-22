@@ -1,17 +1,22 @@
 {
   "asof_date": "2026-01-22",
-  "built_at_utc": "2026-01-22T14:55:05Z",
+  "built_at_utc": "2026-01-22T17:20:18Z",
   "source": "rotowire",
   "CHA": [
+    {
+      "name": "K. Simpson",
+      "status": "QUES",
+      "details": "K. Simpson (Ques)"
+    },
+    {
+      "name": "G. Williams",
+      "status": "QUES",
+      "details": "G. Williams (Ques)"
+    },
     {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
-    },
-    {
-      "name": "KJ Simpson",
-      "status": "OUT",
-      "details": "KJ Simpson (Out)"
     },
     {
       "name": "Fantasy Home",
@@ -34,26 +39,26 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "J. Suggs",
-      "status": "QUES",
-      "details": "J. Suggs (Ques)"
-    },
-    {
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
+    },
+    {
+      "name": "J. Suggs",
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
     }
   ],
   "ORL": [
     {
-      "name": "J. Suggs",
-      "status": "QUES",
-      "details": "J. Suggs (Ques)"
-    },
-    {
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
+    },
+    {
+      "name": "J. Suggs",
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
     }
   ],
   "HOU": [
@@ -296,8 +301,8 @@
     },
     {
       "name": "J. Giddey",
-      "status": "QUES",
-      "details": "J. Giddey (Ques)"
+      "status": "PROB",
+      "details": "J. Giddey (Prob)"
     },
     {
       "name": "P. Williams",
@@ -327,6 +332,11 @@
       "name": "L. Kornet",
       "status": "QUES",
       "details": "L. Kornet (Ques)"
+    },
+    {
+      "name": "J. Sochan",
+      "status": "QUES",
+      "details": "J. Sochan (Ques)"
     },
     {
       "name": "D. Vassell",
