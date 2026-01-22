@@ -1,0 +1,14 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-21,2026,Trey Murphy III,NO,DET,pts,20,MISSED,17,,targets_snapshot_2026-01-21.json
+2026-01-21,2026,Trey Murphy III,NO,DET,3pt,3,MISSED,2,,targets_snapshot_2026-01-21.json
+2026-01-21,2026,Derrick White,BOS,IND,reb,4,HIT,5,,targets_snapshot_2026-01-21.json
+2026-01-21,2026,DeMar DeRozan,SAC,TOR,ast,4,MISSED,2,,targets_snapshot_2026-01-21.json
+2026-01-21,2026,OG Anunoby,NY,BKN,pts,15,MISSED,5,,targets_snapshot_2026-01-21.json
+2026-01-21,2026,Mikal Bridges,NY,BKN,3pt,2,MISSED,1,,targets_snapshot_2026-01-21.json
+2026-01-21,2026,Dyson Daniels,ATL,MEM,pts,10,MISSED,3,,targets_snapshot_2026-01-21.json
+2026-01-21,2026,Dyson Daniels,ATL,MEM,reb,6,HIT,7,,targets_snapshot_2026-01-21.json
+2026-01-21,2026,Nickeil Alexander-Walker,ATL,MEM,reb,4,MISSED,2,,targets_snapshot_2026-01-21.json
+2026-01-21,2026,Evan Mobley,CLE,CHA,ast,4,MISSED,0,,targets_snapshot_2026-01-21.json
+2026-01-21,2026,Russell Westbrook,SAC,TOR,pts,15,HIT,23,,targets_snapshot_2026-01-21.json
+2026-01-21,2026,Russell Westbrook,SAC,TOR,ast,6,MISSED,3,,targets_snapshot_2026-01-21.json
+2026-01-21,2026,Ryan Rollins,MIL,OKC,reb,4,MISSED,3,,targets_snapshot_2026-01-21.json

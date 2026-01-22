@@ -649,10 +649,18 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810472,2026-01-20,2026-01-21T03:00Z,Denver Nuggets,DEN,107,124.0,,Los Angeles Lakers,LAL,115,-148.0,,Denver,CO,,
 401810473,2026-01-20,2026-01-21T03:00Z,Golden State Warriors,GS,127,-155.0,,Toronto Raptors,TOR,145,130.0,,San Francisco,CA,,
 401810474,2026-01-20,2026-01-21T03:00Z,Sacramento Kings,SAC,117,124.0,,Miami Heat,MIA,130,-148.0,,Sacramento,CA,,
-401810475,2026-01-21,2026-01-22T00:00Z,Charlotte Hornets,CHA,0,124.0,,Cleveland Cavaliers,CLE,0,-148.0,,Charlotte,NC,M. Plumlee (Out); KJ Simpson (Out),D. Garland (Out); S. Merrill (Out); Max Strus (Out)
-401810476,2026-01-21,2026-01-22T00:30Z,Boston Celtics,BOS,0,-470.0,,Indiana Pacers,IND,0,360.0,,Boston,MA,J. Minott (Out); J. Tatum (Out),T. Haliburton (OFS); B. Mathurin (Out); Obi Toppin (Out)
-401810477,2026-01-21,2026-01-22T00:30Z,New York Knicks,NY,0,-535.0,,Brooklyn Nets,BKN,0,400.0,,New York,NY,,H. Highsmith (Out)
-401810478,2026-01-21,2026-01-22T01:00Z,Memphis Grizzlies,MEM,0,-125.0,,Atlanta Hawks,ATL,0,105.0,,Memphis,TN,B. Clarke (Out); Zach Edey (Out); Ty Jerome (Out); S. Pippen (Out),N. Dante (OFS); K. Porzingis (Out); Z. Risacher (Out)
-401810479,2026-01-21,2026-01-22T01:00Z,New Orleans Pelicans,NO,0,310.0,,Detroit Pistons,DET,0,-395.0,,New Orleans,LA,J. Alvarado (Out); D. Murray (Out),
-401810480,2026-01-21,2026-01-22T02:30Z,Milwaukee Bucks,MIL,0,310.0,,Oklahoma City Thunder,OKC,0,-395.0,,Milwaukee,WI,T. Prince (Out),T. Sorber (OFS); A. Caruso (Out); I. Hartenstein (Out); N. Topic (Out); J. Williams (Out)
-401810481,2026-01-21,2026-01-22T03:00Z,Sacramento Kings,SAC,0,160.0,,Toronto Raptors,TOR,0,-192.0,,Sacramento,CA,K. Murray (Out),C. Hepburn (Out)
+401810475,2026-01-21,2026-01-22T00:00Z,Charlotte Hornets,CHA,87,124.0,,Cleveland Cavaliers,CLE,94,-148.0,,Charlotte,NC,,
+401810476,2026-01-21,2026-01-22T00:30Z,Boston Celtics,BOS,119,-470.0,,Indiana Pacers,IND,104,360.0,,Boston,MA,,
+401810477,2026-01-21,2026-01-22T00:30Z,New York Knicks,NY,120,-535.0,,Brooklyn Nets,BKN,66,400.0,,New York,NY,,
+401810478,2026-01-21,2026-01-22T01:00Z,Memphis Grizzlies,MEM,122,-125.0,,Atlanta Hawks,ATL,124,105.0,,Memphis,TN,,
+401810479,2026-01-21,2026-01-22T01:00Z,New Orleans Pelicans,NO,104,310.0,,Detroit Pistons,DET,112,-395.0,,New Orleans,LA,,
+401810480,2026-01-21,2026-01-22T02:30Z,Milwaukee Bucks,MIL,102,310.0,,Oklahoma City Thunder,OKC,122,-395.0,,Milwaukee,WI,,
+401810481,2026-01-21,2026-01-22T03:00Z,Sacramento Kings,SAC,109,160.0,,Toronto Raptors,TOR,122,-192.0,,Sacramento,CA,,
+401810482,2026-01-22,2026-01-23T00:00Z,Orlando Magic,ORL,0,-250.0,,Charlotte Hornets,CHA,0,205.0,,Orlando,FL,C. Castleton (Out),M. Plumlee (Out); KJ Simpson (Out)
+401810483,2026-01-22,2026-01-23T00:00Z,Philadelphia 76ers,PHI,0,110.0,,Houston Rockets,HOU,0,-130.0,,Philadelphia,PA,,S. Adams (Out); F. VanVleet (Out)
+401810484,2026-01-22,2026-01-23T00:00Z,Washington Wizards,WSH,0,185.0,,Denver Nuggets,DEN,0,-225.0,,Washington,DC,C. Whitmore (OFS); T. Vukcevic (Out); Trae Young (Out),T. Bates (Out); C. Braun (Out); C. Johnson (Out); N. Jokic (Out)
+401810485,2026-01-22,2026-01-23T00:30Z,Dallas Mavericks,DAL,0,150.0,,Golden State Warriors,GS,0,-185.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); A. Davis (Out); K. Irving (Out),J. Butler (OFS); Seth Curry (Out)
+401810486,2026-01-22,2026-01-23T01:00Z,Minnesota Timberwolves,MIN,0,-375.0,,Chicago Bulls,CHI,0,295.0,,Minneapolis,MN,T. Shannon (Out),N. Essengue (OFS); Z. Collins (Out)
+401810487,2026-01-22,2026-01-23T02:00Z,Utah Jazz,UTAH,0,470.0,,San Antonio Spurs,SA,0,-650.0,,Salt Lake City,UT,W. Kessler (OFS); E. Harkless (Out); L. Markkanen (Out); G. Niang (Out),D. Vassell (Out)
+401810488,2026-01-22,2026-01-23T03:00Z,LA Clippers,LAC,0,-112.0,,Los Angeles Lakers,LAL,0,-108.0,,Inglewood,CA,B. Beal (OFS); B. Bogdanovic (Out); D. Jones (Out); Chris Paul (Out),A. Reaves (Out); A. Thiero (Out)
+401810489,2026-01-22,2026-01-23T03:00Z,Portland Trail Blazers,POR,0,-120.0,,Miami Heat,MIA,0,100.0,,Portland,OR,D. Lillard (OFS); S. Henderson (Out); K. Murray (Out); M. Thybulle (Out); B. Wesley (Out),T. Herro (Out); T. Rozier (Out)
