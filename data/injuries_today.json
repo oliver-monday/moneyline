@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-21",
-  "built_at_utc": "2026-01-21T23:28:27Z",
+  "built_at_utc": "2026-01-22T01:03:48Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -78,6 +78,11 @@
       "details": "Obi Toppin (Out)"
     },
     {
+      "name": "J. Brown",
+      "status": "QUES",
+      "details": "J. Brown (Ques)"
+    },
+    {
       "name": "J. Minott",
       "status": "OUT",
       "details": "J. Minott (Out)"
@@ -89,6 +94,11 @@
     }
   ],
   "BOS": [
+    {
+      "name": "J. Brown",
+      "status": "QUES",
+      "details": "J. Brown (Ques)"
+    },
     {
       "name": "J. Minott",
       "status": "OUT",
@@ -119,11 +129,6 @@
       "details": "C. LeVert (Out)"
     },
     {
-      "name": "Z. Williamson",
-      "status": "QUES",
-      "details": "Z. Williamson (Ques)"
-    },
-    {
       "name": "J. Alvarado",
       "status": "OUT",
       "details": "J. Alvarado (Out)"
@@ -140,11 +145,6 @@
     }
   ],
   "NOP": [
-    {
-      "name": "Z. Williamson",
-      "status": "QUES",
-      "details": "Z. Williamson (Ques)"
-    },
     {
       "name": "J. Alvarado",
       "status": "OUT",
@@ -179,8 +179,8 @@
     },
     {
       "name": "S. Aldama",
-      "status": "DOUBT",
-      "details": "S. Aldama (Doubt)"
+      "status": "OUT",
+      "details": "S. Aldama (Out)"
     },
     {
       "name": "B. Clarke",
@@ -206,8 +206,8 @@
   "MEM": [
     {
       "name": "S. Aldama",
-      "status": "DOUBT",
-      "details": "S. Aldama (Doubt)"
+      "status": "OUT",
+      "details": "S. Aldama (Out)"
     },
     {
       "name": "B. Clarke",
