@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-22",
-  "built_at_utc": "2026-01-22T20:25:34Z",
+  "built_at_utc": "2026-01-22T21:12:15Z",
   "source": "rotowire",
   "CHA": [
     {
@@ -497,14 +497,14 @@
   ],
   "MIA": [
     {
-      "name": "D. Mitchell",
-      "status": "QUES",
-      "details": "D. Mitchell (Ques)"
-    },
-    {
       "name": "N. Powell",
       "status": "PROB",
       "details": "N. Powell (Prob)"
+    },
+    {
+      "name": "D. Mitchell",
+      "status": "QUES",
+      "details": "D. Mitchell (Ques)"
     },
     {
       "name": "T. Herro",
