@@ -1,22 +1,32 @@
 {
   "asof_date": "2026-01-22",
-  "built_at_utc": "2026-01-22T17:20:18Z",
+  "built_at_utc": "2026-01-22T18:29:37Z",
   "source": "rotowire",
   "CHA": [
     {
-      "name": "K. Simpson",
-      "status": "QUES",
-      "details": "K. Simpson (Ques)"
+      "name": "B. Miller",
+      "status": "PROB",
+      "details": "B. Miller (Prob)"
     },
     {
-      "name": "G. Williams",
+      "name": "L. Ball",
       "status": "QUES",
-      "details": "G. Williams (Ques)"
+      "details": "L. Ball (Ques)"
+    },
+    {
+      "name": "Tre Mann",
+      "status": "OUT",
+      "details": "Tre Mann (Out)"
     },
     {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
+    },
+    {
+      "name": "KJ Simpson",
+      "status": "OUT",
+      "details": "KJ Simpson (Out)"
     },
     {
       "name": "Fantasy Home",
@@ -142,16 +152,6 @@
       "details": "N. Jokic (Out)"
     },
     {
-      "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
-    },
-    {
-      "name": "K. Middleton",
-      "status": "QUES",
-      "details": "K. Middleton (Ques)"
-    },
-    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
@@ -165,6 +165,11 @@
       "name": "A. Johnson",
       "status": "QUES",
       "details": "A. Johnson (Ques)"
+    },
+    {
+      "name": "B. Coulibaly",
+      "status": "OUT",
+      "details": "B. Coulibaly (Out)"
     },
     {
       "name": "T. Vukcevic",
@@ -189,19 +194,14 @@
       "details": "M. Bagley (Ques)"
     },
     {
-      "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
-    },
-    {
       "name": "A. Johnson",
       "status": "QUES",
       "details": "A. Johnson (Ques)"
     },
     {
-      "name": "K. Middleton",
-      "status": "QUES",
-      "details": "K. Middleton (Ques)"
+      "name": "B. Coulibaly",
+      "status": "OUT",
+      "details": "B. Coulibaly (Out)"
     },
     {
       "name": "T. Vukcevic",
@@ -231,11 +231,6 @@
       "details": "Seth Curry (Out)"
     },
     {
-      "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
-    },
-    {
       "name": "Dante Exum",
       "status": "OFS",
       "details": "Dante Exum (OFS)"
@@ -249,6 +244,11 @@
       "name": "M. Cisse",
       "status": "QUES",
       "details": "M. Cisse (Ques)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "DOUBT",
+      "details": "D. Gafford (Doubt)"
     },
     {
       "name": "A. Davis",
@@ -279,8 +279,8 @@
     },
     {
       "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
+      "status": "DOUBT",
+      "details": "D. Gafford (Doubt)"
     },
     {
       "name": "A. Davis",
