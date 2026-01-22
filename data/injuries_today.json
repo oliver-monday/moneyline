@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-21",
-  "built_at_utc": "2026-01-22T01:03:48Z",
+  "built_at_utc": "2026-01-22T02:59:34Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -68,6 +68,11 @@
       "details": "T. Haliburton (OFS)"
     },
     {
+      "name": "Q. Jackson",
+      "status": "QUES",
+      "details": "Q. Jackson (Ques)"
+    },
+    {
       "name": "B. Mathurin",
       "status": "OUT",
       "details": "B. Mathurin (Out)"
@@ -76,11 +81,6 @@
       "name": "Obi Toppin",
       "status": "OUT",
       "details": "Obi Toppin (Out)"
-    },
-    {
-      "name": "J. Brown",
-      "status": "QUES",
-      "details": "J. Brown (Ques)"
     },
     {
       "name": "J. Minott",
@@ -94,11 +94,6 @@
     }
   ],
   "BOS": [
-    {
-      "name": "J. Brown",
-      "status": "QUES",
-      "details": "J. Brown (Ques)"
-    },
     {
       "name": "J. Minott",
       "status": "OUT",
@@ -129,6 +124,11 @@
       "details": "C. LeVert (Out)"
     },
     {
+      "name": "Z. Williamson",
+      "status": "QUES",
+      "details": "Z. Williamson (Ques)"
+    },
+    {
       "name": "J. Alvarado",
       "status": "OUT",
       "details": "J. Alvarado (Out)"
@@ -145,6 +145,11 @@
     }
   ],
   "NOP": [
+    {
+      "name": "Z. Williamson",
+      "status": "QUES",
+      "details": "Z. Williamson (Ques)"
+    },
     {
       "name": "J. Alvarado",
       "status": "OUT",
@@ -321,11 +326,6 @@
       "details": "J. Walter (Out)"
     },
     {
-      "name": "P. Achiuwa",
-      "status": "QUES",
-      "details": "P. Achiuwa (Ques)"
-    },
-    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
@@ -337,11 +337,6 @@
     }
   ],
   "SAC": [
-    {
-      "name": "P. Achiuwa",
-      "status": "QUES",
-      "details": "P. Achiuwa (Ques)"
-    },
     {
       "name": "K. Murray",
       "status": "OUT",
