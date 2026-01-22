@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-22",
-  "built_at_utc": "2026-01-22T21:12:15Z",
+  "built_at_utc": "2026-01-22T22:30:09Z",
   "source": "rotowire",
   "CHA": [
     {
@@ -172,11 +172,6 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "A. Johnson",
-      "status": "QUES",
-      "details": "A. Johnson (Ques)"
-    },
-    {
       "name": "M. Bagley",
       "status": "OUT",
       "details": "M. Bagley (Out)"
@@ -202,11 +197,6 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "A. Johnson",
-      "status": "QUES",
-      "details": "A. Johnson (Ques)"
     },
     {
       "name": "M. Bagley",
@@ -257,8 +247,8 @@
     },
     {
       "name": "M. Cisse",
-      "status": "QUES",
-      "details": "M. Cisse (Ques)"
+      "status": "PROB",
+      "details": "M. Cisse (Prob)"
     },
     {
       "name": "D. Gafford",
@@ -289,8 +279,8 @@
     },
     {
       "name": "M. Cisse",
-      "status": "QUES",
-      "details": "M. Cisse (Ques)"
+      "status": "PROB",
+      "details": "M. Cisse (Prob)"
     },
     {
       "name": "D. Gafford",
@@ -498,13 +488,13 @@
   "MIA": [
     {
       "name": "N. Powell",
-      "status": "PROB",
-      "details": "N. Powell (Prob)"
+      "status": "QUES",
+      "details": "N. Powell (Ques)"
     },
     {
       "name": "D. Mitchell",
-      "status": "QUES",
-      "details": "D. Mitchell (Ques)"
+      "status": "DOUBT",
+      "details": "D. Mitchell (Doubt)"
     },
     {
       "name": "T. Herro",
