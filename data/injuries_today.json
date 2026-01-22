@@ -1,18 +1,8 @@
 {
   "asof_date": "2026-01-22",
-  "built_at_utc": "2026-01-22T22:30:09Z",
+  "built_at_utc": "2026-01-22T23:24:21Z",
   "source": "rotowire",
   "CHA": [
-    {
-      "name": "B. Miller",
-      "status": "PROB",
-      "details": "B. Miller (Prob)"
-    },
-    {
-      "name": "L. Ball",
-      "status": "QUES",
-      "details": "L. Ball (Ques)"
-    },
     {
       "name": "Tre Mann",
       "status": "OUT",
@@ -127,26 +117,6 @@
   ],
   "DEN": [
     {
-      "name": "A. Gordon",
-      "status": "PROB",
-      "details": "A. Gordon (Prob)"
-    },
-    {
-      "name": "T. Hardaway",
-      "status": "PROB",
-      "details": "T. Hardaway (Prob)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "J. Valanciunas",
-      "status": "QUES",
-      "details": "J. Valanciunas (Ques)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -226,11 +196,6 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "G. Payton",
-      "status": "QUES",
-      "details": "G. Payton (Ques)"
-    },
-    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
@@ -246,19 +211,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "M. Cisse",
-      "status": "PROB",
-      "details": "M. Cisse (Prob)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
     },
     {
       "name": "K. Irving",
@@ -278,19 +238,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "M. Cisse",
-      "status": "PROB",
-      "details": "M. Cisse (Prob)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
     },
     {
       "name": "K. Irving",
@@ -320,22 +275,12 @@
       "details": "Z. Collins (Out)"
     },
     {
-      "name": "J. Randle",
-      "status": "QUES",
-      "details": "J. Randle (Ques)"
-    },
-    {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
     }
   ],
   "MIN": [
-    {
-      "name": "J. Randle",
-      "status": "QUES",
-      "details": "J. Randle (Ques)"
-    },
     {
       "name": "T. Shannon",
       "status": "OUT",
