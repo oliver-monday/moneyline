@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-23",
-  "built_at_utc": "2026-01-23T20:23:44Z",
+  "built_at_utc": "2026-01-23T21:10:05Z",
   "source": "rotowire",
   "HOU": [
     {
@@ -480,9 +480,9 @@
       "details": "J. Holiday (Ques)"
     },
     {
-      "name": "D. Avdija",
-      "status": "PROB",
-      "details": "D. Avdija (Prob)"
+      "name": "J. Grant",
+      "status": "QUES",
+      "details": "J. Grant (Ques)"
     },
     {
       "name": "D. Lillard",
@@ -490,24 +490,29 @@
       "details": "D. Lillard (OFS)"
     },
     {
+      "name": "D. Reath",
+      "status": "QUES",
+      "details": "D. Reath (Ques)"
+    },
+    {
       "name": "R. Williams",
       "status": "QUES",
       "details": "R. Williams (Ques)"
     },
     {
-      "name": "J. Grant",
-      "status": "QUES",
-      "details": "J. Grant (Ques)"
+      "name": "D. Avdija",
+      "status": "DOUBT",
+      "details": "D. Avdija (Doubt)"
     },
     {
       "name": "S. Henderson",
-      "status": "DOUBT",
-      "details": "S. Henderson (Doubt)"
+      "status": "OUT",
+      "details": "S. Henderson (Out)"
     },
     {
       "name": "K. Murray",
-      "status": "DOUBT",
-      "details": "K. Murray (Doubt)"
+      "status": "OUT",
+      "details": "K. Murray (Out)"
     },
     {
       "name": "M. Thybulle",
@@ -522,21 +527,6 @@
   ],
   "POR": [
     {
-      "name": "D. Lillard",
-      "status": "OFS",
-      "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
-    },
-    {
-      "name": "D. Avdija",
-      "status": "PROB",
-      "details": "D. Avdija (Prob)"
-    },
-    {
       "name": "J. Grant",
       "status": "QUES",
       "details": "J. Grant (Ques)"
@@ -547,14 +537,34 @@
       "details": "J. Holiday (Ques)"
     },
     {
-      "name": "S. Henderson",
+      "name": "D. Lillard",
+      "status": "OFS",
+      "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "D. Reath",
+      "status": "QUES",
+      "details": "D. Reath (Ques)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "QUES",
+      "details": "R. Williams (Ques)"
+    },
+    {
+      "name": "D. Avdija",
       "status": "DOUBT",
-      "details": "S. Henderson (Doubt)"
+      "details": "D. Avdija (Doubt)"
+    },
+    {
+      "name": "S. Henderson",
+      "status": "OUT",
+      "details": "S. Henderson (Out)"
     },
     {
       "name": "K. Murray",
-      "status": "DOUBT",
-      "details": "K. Murray (Doubt)"
+      "status": "OUT",
+      "details": "K. Murray (Out)"
     },
     {
       "name": "M. Thybulle",
