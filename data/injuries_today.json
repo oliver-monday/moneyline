@@ -1,13 +1,8 @@
 {
   "asof_date": "2026-01-23",
-  "built_at_utc": "2026-01-23T22:25:05Z",
+  "built_at_utc": "2026-01-23T23:24:24Z",
   "source": "rotowire",
   "HOU": [
-    {
-      "name": "A. Holiday",
-      "status": "QUES",
-      "details": "A. Holiday (Ques)"
-    },
     {
       "name": "S. Adams",
       "status": "OUT",
@@ -22,6 +17,11 @@
       "name": "D. Finney-Smith",
       "status": "OUT",
       "details": "D. Finney-Smith (Out)"
+    },
+    {
+      "name": "A. Holiday",
+      "status": "OUT",
+      "details": "A. Holiday (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -282,11 +282,6 @@
       "details": "D. Murray (Out)"
     },
     {
-      "name": "J. Landale",
-      "status": "QUES",
-      "details": "J. Landale (Ques)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -318,11 +313,6 @@
     }
   ],
   "MEM": [
-    {
-      "name": "J. Landale",
-      "status": "QUES",
-      "details": "J. Landale (Ques)"
-    },
     {
       "name": "S. Aldama",
       "status": "OUT",
