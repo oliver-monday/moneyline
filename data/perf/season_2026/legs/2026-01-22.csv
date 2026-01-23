@@ -1,0 +1,16 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-22,2026,Kevin Durant,HOU,PHI,ast,4,MISSED,3,,targets_snapshot_2026-01-22.json
+2026-01-22,2026,VJ Edgecombe,PHI,HOU,ast,4,HIT,4,,targets_snapshot_2026-01-22.json
+2026-01-22,2026,Luka Doncic,LAL,LAC,ast,8,HIT,8,,targets_snapshot_2026-01-22.json
+2026-01-22,2026,Paolo Banchero,ORL,CHA,reb,8,MISSED,7,,targets_snapshot_2026-01-22.json
+2026-01-22,2026,Paolo Banchero,ORL,CHA,ast,4,HIT,5,,targets_snapshot_2026-01-22.json
+2026-01-22,2026,Desmond Bane,ORL,CHA,reb,4,HIT,5,,targets_snapshot_2026-01-22.json
+2026-01-22,2026,Cameron Johnson,DEN,WSH,ast,2,,,,targets_snapshot_2026-01-22.json
+2026-01-22,2026,LeBron James,LAL,LAC,pts,20,HIT,23,,targets_snapshot_2026-01-22.json
+2026-01-22,2026,LeBron James,LAL,LAC,reb,6,MISSED,5,,targets_snapshot_2026-01-22.json
+2026-01-22,2026,LeBron James,LAL,LAC,ast,6,HIT,6,,targets_snapshot_2026-01-22.json
+2026-01-22,2026,Anthony Davis,DAL,GS,ast,2,,,,targets_snapshot_2026-01-22.json
+2026-01-22,2026,Donte DiVincenzo,MIN,CHI,reb,4,MISSED,3,,targets_snapshot_2026-01-22.json
+2026-01-22,2026,Shaedon Sharpe,POR,MIA,pts,20,HIT,27,,targets_snapshot_2026-01-22.json
+2026-01-22,2026,Shaedon Sharpe,POR,MIA,ast,2,HIT,3,,targets_snapshot_2026-01-22.json
+2026-01-22,2026,Devin Vassell,SA,UTAH,reb,4,,,,targets_snapshot_2026-01-22.json
