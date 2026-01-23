@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-23",
-  "built_at_utc": "2026-01-23T17:17:56Z",
+  "built_at_utc": "2026-01-23T18:30:24Z",
   "source": "rotowire",
   "HOU": [
     {
@@ -12,6 +12,16 @@
       "name": "S. Adams",
       "status": "OUT",
       "details": "S. Adams (Out)"
+    },
+    {
+      "name": "Tari Eason",
+      "status": "OUT",
+      "details": "Tari Eason (Out)"
+    },
+    {
+      "name": "D. Finney-Smith",
+      "status": "OUT",
+      "details": "D. Finney-Smith (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -40,13 +50,8 @@
     },
     {
       "name": "C. Cunningham",
-      "status": "QUES",
-      "details": "C. Cunningham (Ques)"
-    },
-    {
-      "name": "D. Robinson",
       "status": "PROB",
-      "details": "D. Robinson (Prob)"
+      "details": "C. Cunningham (Prob)"
     },
     {
       "name": "R. Holland",
@@ -55,30 +60,25 @@
     },
     {
       "name": "C. LeVert",
-      "status": "DOUBT",
-      "details": "C. LeVert (Doubt)"
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     }
   ],
   "DET": [
     {
+      "name": "C. Cunningham",
+      "status": "PROB",
+      "details": "C. Cunningham (Prob)"
+    },
+    {
       "name": "R. Holland",
       "status": "PROB",
       "details": "R. Holland (Prob)"
     },
     {
-      "name": "D. Robinson",
-      "status": "PROB",
-      "details": "D. Robinson (Prob)"
-    },
-    {
-      "name": "C. Cunningham",
-      "status": "QUES",
-      "details": "C. Cunningham (Ques)"
-    },
-    {
       "name": "C. LeVert",
-      "status": "DOUBT",
-      "details": "C. LeVert (Doubt)"
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     }
   ],
   "ATL": [
@@ -193,16 +193,6 @@
       "details": "Obi Toppin (Out)"
     },
     {
-      "name": "A. Wiggins",
-      "status": "QUES",
-      "details": "A. Wiggins (Ques)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
-    },
-    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
@@ -226,6 +216,11 @@
       "name": "N. Topic",
       "status": "OUT",
       "details": "N. Topic (Out)"
+    },
+    {
+      "name": "A. Wiggins",
+      "status": "OUT",
+      "details": "A. Wiggins (Out)"
     },
     {
       "name": "J. Williams",
@@ -240,16 +235,6 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "A. Wiggins",
-      "status": "QUES",
-      "details": "A. Wiggins (Ques)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
-    },
-    {
       "name": "A. Caruso",
       "status": "OUT",
       "details": "A. Caruso (Out)"
@@ -268,6 +253,11 @@
       "name": "N. Topic",
       "status": "OUT",
       "details": "N. Topic (Out)"
+    },
+    {
+      "name": "A. Wiggins",
+      "status": "OUT",
+      "details": "A. Wiggins (Out)"
     },
     {
       "name": "J. Williams",
@@ -290,6 +280,11 @@
       "name": "D. Murray",
       "status": "OUT",
       "details": "D. Murray (Out)"
+    },
+    {
+      "name": "J. Landale",
+      "status": "QUES",
+      "details": "J. Landale (Ques)"
     },
     {
       "name": "S. Aldama",
@@ -324,6 +319,11 @@
   ],
   "MEM": [
     {
+      "name": "J. Landale",
+      "status": "QUES",
+      "details": "J. Landale (Ques)"
+    },
+    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -356,14 +356,14 @@
   ],
   "DEN": [
     {
-      "name": "J. Valanciunas",
-      "status": "QUES",
-      "details": "J. Valanciunas (Ques)"
-    },
-    {
       "name": "C. Braun",
       "status": "QUES",
       "details": "C. Braun (Ques)"
+    },
+    {
+      "name": "J. Valanciunas",
+      "status": "QUES",
+      "details": "J. Valanciunas (Ques)"
     },
     {
       "name": "T. Bates",
