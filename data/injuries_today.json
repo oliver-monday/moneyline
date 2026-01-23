@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-23",
-  "built_at_utc": "2026-01-23T21:10:05Z",
+  "built_at_utc": "2026-01-23T22:25:05Z",
   "source": "rotowire",
   "HOU": [
     {
@@ -475,16 +475,6 @@
       "details": "J. Walter (Out)"
     },
     {
-      "name": "J. Holiday",
-      "status": "QUES",
-      "details": "J. Holiday (Ques)"
-    },
-    {
-      "name": "J. Grant",
-      "status": "QUES",
-      "details": "J. Grant (Ques)"
-    },
-    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
@@ -526,16 +516,6 @@
     }
   ],
   "POR": [
-    {
-      "name": "J. Grant",
-      "status": "QUES",
-      "details": "J. Grant (Ques)"
-    },
-    {
-      "name": "J. Holiday",
-      "status": "QUES",
-      "details": "J. Holiday (Ques)"
-    },
     {
       "name": "D. Lillard",
       "status": "OFS",
