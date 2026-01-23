@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-22",
-  "built_at_utc": "2026-01-22T23:24:21Z",
+  "built_at_utc": "2026-01-23T01:03:47Z",
   "source": "rotowire",
   "CHA": [
     {
@@ -91,28 +91,6 @@
       "name": "F. VanVleet",
       "status": "OUT",
       "details": "F. VanVleet (Out)"
-    },
-    {
-      "name": "P. George",
-      "status": "QUES",
-      "details": "P. George (Ques)"
-    },
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    }
-  ],
-  "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
-    {
-      "name": "P. George",
-      "status": "QUES",
-      "details": "P. George (Ques)"
     }
   ],
   "DEN": [
@@ -260,16 +238,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Giddey",
-      "status": "PROB",
-      "details": "J. Giddey (Prob)"
-    },
-    {
-      "name": "P. Williams",
-      "status": "QUES",
-      "details": "P. Williams (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
@@ -289,11 +257,6 @@
   ],
   "SAS": [
     {
-      "name": "J. Sochan",
-      "status": "QUES",
-      "details": "J. Sochan (Ques)"
-    },
-    {
       "name": "L. Kornet",
       "status": "OUT",
       "details": "L. Kornet (Out)"
@@ -304,19 +267,9 @@
       "details": "D. Vassell (Out)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "B. Sensabaugh",
-      "status": "QUES",
-      "details": "B. Sensabaugh (Ques)"
     },
     {
       "name": "E. Harkless",
@@ -339,16 +292,6 @@
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
-      "name": "B. Sensabaugh",
-      "status": "QUES",
-      "details": "B. Sensabaugh (Ques)"
     },
     {
       "name": "E. Harkless",
@@ -458,8 +401,8 @@
     },
     {
       "name": "S. Cissoko",
-      "status": "QUES",
-      "details": "S. Cissoko (Ques)"
+      "status": "PROB",
+      "details": "S. Cissoko (Prob)"
     },
     {
       "name": "D. Lillard",
@@ -468,18 +411,18 @@
     },
     {
       "name": "J. Grant",
-      "status": "QUES",
-      "details": "J. Grant (Ques)"
+      "status": "PROB",
+      "details": "J. Grant (Prob)"
     },
     {
       "name": "J. Holiday",
-      "status": "QUES",
-      "details": "J. Holiday (Ques)"
+      "status": "PROB",
+      "details": "J. Holiday (Prob)"
     },
     {
       "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "status": "PROB",
+      "details": "R. Williams (Prob)"
     },
     {
       "name": "S. Henderson",
@@ -510,23 +453,23 @@
     },
     {
       "name": "S. Cissoko",
-      "status": "QUES",
-      "details": "S. Cissoko (Ques)"
+      "status": "PROB",
+      "details": "S. Cissoko (Prob)"
     },
     {
       "name": "J. Grant",
-      "status": "QUES",
-      "details": "J. Grant (Ques)"
+      "status": "PROB",
+      "details": "J. Grant (Prob)"
     },
     {
       "name": "J. Holiday",
-      "status": "QUES",
-      "details": "J. Holiday (Ques)"
+      "status": "PROB",
+      "details": "J. Holiday (Prob)"
     },
     {
       "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "status": "PROB",
+      "details": "R. Williams (Prob)"
     },
     {
       "name": "S. Henderson",
