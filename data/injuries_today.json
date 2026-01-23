@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-23",
-  "built_at_utc": "2026-01-23T18:30:24Z",
+  "built_at_utc": "2026-01-23T19:28:32Z",
   "source": "rotowire",
   "HOU": [
     {
@@ -356,9 +356,14 @@
   ],
   "DEN": [
     {
-      "name": "C. Braun",
+      "name": "A. Gordon",
+      "status": "PROB",
+      "details": "A. Gordon (Prob)"
+    },
+    {
+      "name": "J. Murray",
       "status": "QUES",
-      "details": "C. Braun (Ques)"
+      "details": "J. Murray (Ques)"
     },
     {
       "name": "J. Valanciunas",
@@ -366,9 +371,19 @@
       "details": "J. Valanciunas (Ques)"
     },
     {
+      "name": "P. Watson",
+      "status": "QUES",
+      "details": "P. Watson (Ques)"
+    },
+    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
+    },
+    {
+      "name": "C. Braun",
+      "status": "OUT",
+      "details": "C. Braun (Out)"
     },
     {
       "name": "C. Johnson",
@@ -381,9 +396,19 @@
       "details": "N. Jokic (Out)"
     },
     {
+      "name": "A. Green",
+      "status": "QUES",
+      "details": "A. Green (Ques)"
+    },
+    {
       "name": "M. Turner",
       "status": "PROB",
       "details": "M. Turner (Prob)"
+    },
+    {
+      "name": "G. Trent",
+      "status": "QUES",
+      "details": "G. Trent (Ques)"
     },
     {
       "name": "K. Porter",
@@ -397,6 +422,16 @@
     }
   ],
   "MIL": [
+    {
+      "name": "A. Green",
+      "status": "QUES",
+      "details": "A. Green (Ques)"
+    },
+    {
+      "name": "G. Trent",
+      "status": "QUES",
+      "details": "G. Trent (Ques)"
+    },
     {
       "name": "M. Turner",
       "status": "PROB",
