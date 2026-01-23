@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-22",
-  "built_at_utc": "2026-01-23T02:54:59Z",
+  "built_at_utc": "2026-01-23T03:25:28Z",
   "source": "rotowire",
   "CHA": [
     {
@@ -44,36 +44,36 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "C. Castleton",
-      "status": "OUT",
-      "details": "C. Castleton (Out)"
-    },
-    {
       "name": "J. Suggs",
-      "status": "OUT",
-      "details": "J. Suggs (Out)"
+      "status": "QUES",
+      "details": "J. Suggs (Ques)"
     },
     {
       "name": "F. Wagner",
+      "status": "QUES",
+      "details": "F. Wagner (Ques)"
+    },
+    {
+      "name": "C. Castleton",
       "status": "OUT",
-      "details": "F. Wagner (Out)"
+      "details": "C. Castleton (Out)"
     }
   ],
   "ORL": [
     {
-      "name": "C. Castleton",
-      "status": "OUT",
-      "details": "C. Castleton (Out)"
-    },
-    {
       "name": "J. Suggs",
-      "status": "OUT",
-      "details": "J. Suggs (Out)"
+      "status": "QUES",
+      "details": "J. Suggs (Ques)"
     },
     {
       "name": "F. Wagner",
+      "status": "QUES",
+      "details": "F. Wagner (Ques)"
+    },
+    {
+      "name": "C. Castleton",
       "status": "OUT",
-      "details": "F. Wagner (Out)"
+      "details": "C. Castleton (Out)"
     }
   ],
   "HOU": [
