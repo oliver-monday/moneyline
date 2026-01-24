@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-23",
-  "built_at_utc": "2026-01-23T23:24:24Z",
+  "built_at_utc": "2026-01-24T01:00:56Z",
   "source": "rotowire",
   "HOU": [
     {
@@ -49,32 +49,12 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "C. Cunningham",
-      "status": "PROB",
-      "details": "C. Cunningham (Prob)"
-    },
-    {
-      "name": "R. Holland",
-      "status": "PROB",
-      "details": "R. Holland (Prob)"
-    },
-    {
       "name": "C. LeVert",
       "status": "OUT",
       "details": "C. LeVert (Out)"
     }
   ],
   "DET": [
-    {
-      "name": "C. Cunningham",
-      "status": "PROB",
-      "details": "C. Cunningham (Prob)"
-    },
-    {
-      "name": "R. Holland",
-      "status": "PROB",
-      "details": "R. Holland (Prob)"
-    },
     {
       "name": "C. LeVert",
       "status": "OUT",
@@ -139,11 +119,6 @@
   ],
   "BOS": [
     {
-      "name": "N. Queta",
-      "status": "QUES",
-      "details": "N. Queta (Ques)"
-    },
-    {
       "name": "J. Minott",
       "status": "OUT",
       "details": "J. Minott (Out)"
@@ -179,8 +154,8 @@
     },
     {
       "name": "Q. Jackson",
-      "status": "QUES",
-      "details": "Q. Jackson (Ques)"
+      "status": "OUT",
+      "details": "Q. Jackson (Out)"
     },
     {
       "name": "B. Mathurin",
@@ -266,11 +241,6 @@
     }
   ],
   "NOP": [
-    {
-      "name": "H. Jones",
-      "status": "QUES",
-      "details": "H. Jones (Ques)"
-    },
     {
       "name": "J. Alvarado",
       "status": "OUT",
@@ -386,19 +356,9 @@
       "details": "N. Jokic (Out)"
     },
     {
-      "name": "A. Green",
-      "status": "QUES",
-      "details": "A. Green (Ques)"
-    },
-    {
-      "name": "M. Turner",
-      "status": "PROB",
-      "details": "M. Turner (Prob)"
-    },
-    {
-      "name": "G. Trent",
-      "status": "QUES",
-      "details": "G. Trent (Ques)"
+      "name": "AJ Green",
+      "status": "OUT",
+      "details": "AJ Green (Out)"
     },
     {
       "name": "K. Porter",
@@ -409,23 +369,18 @@
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
+    },
+    {
+      "name": "Gary Trent",
+      "status": "OUT",
+      "details": "Gary Trent (Out)"
     }
   ],
   "MIL": [
     {
-      "name": "A. Green",
-      "status": "QUES",
-      "details": "A. Green (Ques)"
-    },
-    {
-      "name": "G. Trent",
-      "status": "QUES",
-      "details": "G. Trent (Ques)"
-    },
-    {
-      "name": "M. Turner",
-      "status": "PROB",
-      "details": "M. Turner (Prob)"
+      "name": "AJ Green",
+      "status": "OUT",
+      "details": "AJ Green (Out)"
     },
     {
       "name": "K. Porter",
@@ -436,6 +391,11 @@
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
+    },
+    {
+      "name": "Gary Trent",
+      "status": "OUT",
+      "details": "Gary Trent (Out)"
     }
   ],
   "TOR": [
