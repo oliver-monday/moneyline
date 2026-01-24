@@ -1,37 +1,42 @@
 {
   "asof_date": "2026-01-24",
-  "built_at_utc": "2026-01-24T19:20:33Z",
+  "built_at_utc": "2026-01-24T20:20:19Z",
   "source": "rotowire",
   "WAS": [
+    {
+      "name": "M. Bagley",
+      "status": "QUES",
+      "details": "M. Bagley (Ques)"
+    },
+    {
+      "name": "B. Coulibaly",
+      "status": "QUES",
+      "details": "B. Coulibaly (Ques)"
+    },
+    {
+      "name": "K. George",
+      "status": "QUES",
+      "details": "K. George (Ques)"
+    },
+    {
+      "name": "A. Johnson",
+      "status": "QUES",
+      "details": "A. Johnson (Ques)"
+    },
+    {
+      "name": "K. Middleton",
+      "status": "QUES",
+      "details": "K. Middleton (Ques)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "QUES",
+      "details": "T. Vukcevic (Ques)"
+    },
     {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "M. Bagley",
-      "status": "OUT",
-      "details": "M. Bagley (Out)"
-    },
-    {
-      "name": "B. Coulibaly",
-      "status": "OUT",
-      "details": "B. Coulibaly (Out)"
-    },
-    {
-      "name": "AJ Johnson",
-      "status": "OUT",
-      "details": "AJ Johnson (Out)"
-    },
-    {
-      "name": "K. Middleton",
-      "status": "OUT",
-      "details": "K. Middleton (Out)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "OUT",
-      "details": "T. Vukcevic (Out)"
     },
     {
       "name": "Trae Young",
@@ -59,84 +64,26 @@
       "details": "Fantasy Football (Rest)"
     },
     {
+      "name": "K. Simpson",
+      "status": "QUES",
+      "details": "K. Simpson (Ques)"
+    },
+    {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
-    },
-    {
-      "name": "KJ Simpson",
-      "status": "OUT",
-      "details": "KJ Simpson (Out)"
     }
   ],
   "CHA": [
     {
+      "name": "K. Simpson",
+      "status": "QUES",
+      "details": "K. Simpson (Ques)"
+    },
+    {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
-    },
-    {
-      "name": "KJ Simpson",
-      "status": "OUT",
-      "details": "KJ Simpson (Out)"
-    }
-  ],
-  "NYK": [
-    {
-      "name": "K. Towns",
-      "status": "QUES",
-      "details": "K. Towns (Ques)"
-    },
-    {
-      "name": "P. George",
-      "status": "PROB",
-      "details": "P. George (Prob)"
-    },
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    }
-  ],
-  "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
-    {
-      "name": "P. George",
-      "status": "PROB",
-      "details": "P. George (Prob)"
-    }
-  ],
-  "GSW": [
-    {
-      "name": "J. Butler",
-      "status": "OFS",
-      "details": "J. Butler (OFS)"
-    },
-    {
-      "name": "Seth Curry",
-      "status": "OUT",
-      "details": "Seth Curry (Out)"
-    },
-    {
-      "name": "J. Kuminga",
-      "status": "OUT",
-      "details": "J. Kuminga (Out)"
-    },
-    {
-      "name": "T. Shannon",
-      "status": "OUT",
-      "details": "T. Shannon (Out)"
-    }
-  ],
-  "MIN": [
-    {
-      "name": "T. Shannon",
-      "status": "OUT",
-      "details": "T. Shannon (Out)"
     }
   ],
   "CLE": [
