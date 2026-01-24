@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-24",
-  "built_at_utc": "2026-01-24T21:01:36Z",
+  "built_at_utc": "2026-01-24T22:26:05Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -103,11 +103,6 @@
       "details": "Max Strus (Out)"
     },
     {
-      "name": "J. Suggs",
-      "status": "PROB",
-      "details": "J. Suggs (Prob)"
-    },
-    {
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
@@ -119,11 +114,6 @@
     }
   ],
   "ORL": [
-    {
-      "name": "J. Suggs",
-      "status": "PROB",
-      "details": "J. Suggs (Prob)"
-    },
     {
       "name": "C. Castleton",
       "status": "OUT",
