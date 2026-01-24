@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-24",
-  "built_at_utc": "2026-01-24T17:09:09Z",
+  "built_at_utc": "2026-01-24T18:27:03Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -141,14 +141,14 @@
   ],
   "CLE": [
     {
-      "name": "S. Merrill",
-      "status": "DOUBT",
-      "details": "S. Merrill (Doubt)"
-    },
-    {
       "name": "D. Garland",
       "status": "OUT",
       "details": "D. Garland (Out)"
+    },
+    {
+      "name": "S. Merrill",
+      "status": "OUT",
+      "details": "S. Merrill (Out)"
     },
     {
       "name": "Max Strus",
@@ -205,24 +205,9 @@
       "details": "J. Tatum (Out)"
     },
     {
-      "name": "J. Giddey",
-      "status": "PROB",
-      "details": "J. Giddey (Prob)"
-    },
-    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "L. Olbrich",
-      "status": "PROB",
-      "details": "L. Olbrich (Prob)"
-    },
-    {
-      "name": "P. Williams",
-      "status": "PROB",
-      "details": "P. Williams (Prob)"
     },
     {
       "name": "Z. Collins",
@@ -240,21 +225,6 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "J. Giddey",
-      "status": "PROB",
-      "details": "J. Giddey (Prob)"
-    },
-    {
-      "name": "L. Olbrich",
-      "status": "PROB",
-      "details": "L. Olbrich (Prob)"
-    },
-    {
-      "name": "P. Williams",
-      "status": "PROB",
-      "details": "P. Williams (Prob)"
     },
     {
       "name": "Z. Collins",
@@ -343,14 +313,14 @@
   ],
   "MIA": [
     {
-      "name": "P. Larsson",
-      "status": "PROB",
-      "details": "P. Larsson (Prob)"
-    },
-    {
       "name": "D. Mitchell",
       "status": "QUES",
       "details": "D. Mitchell (Ques)"
+    },
+    {
+      "name": "P. Larsson",
+      "status": "PROB",
+      "details": "P. Larsson (Prob)"
     },
     {
       "name": "N. Powell",
@@ -373,19 +343,14 @@
       "details": "K. Ware (Out)"
     },
     {
-      "name": "L. Markkanen",
+      "name": "J. Nurkic",
       "status": "QUES",
-      "details": "L. Markkanen (Ques)"
+      "details": "J. Nurkic (Ques)"
     },
     {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "J. Nurkic",
-      "status": "QUES",
-      "details": "J. Nurkic (Ques)"
     },
     {
       "name": "E. Harkless",
@@ -396,6 +361,11 @@
       "name": "Kevin Love",
       "status": "OUT",
       "details": "Kevin Love (Out)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "OUT",
+      "details": "L. Markkanen (Out)"
     },
     {
       "name": "G. Niang",
@@ -410,11 +380,6 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "L. Markkanen",
-      "status": "QUES",
-      "details": "L. Markkanen (Ques)"
-    },
-    {
       "name": "J. Nurkic",
       "status": "QUES",
       "details": "J. Nurkic (Ques)"
@@ -428,6 +393,11 @@
       "name": "Kevin Love",
       "status": "OUT",
       "details": "Kevin Love (Out)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "OUT",
+      "details": "L. Markkanen (Out)"
     },
     {
       "name": "G. Niang",
