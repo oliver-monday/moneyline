@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-23",
-  "built_at_utc": "2026-01-24T01:00:56Z",
+  "built_at_utc": "2026-01-24T02:49:36Z",
   "source": "rotowire",
   "HOU": [
     {
@@ -59,6 +59,33 @@
       "name": "C. LeVert",
       "status": "OUT",
       "details": "C. LeVert (Out)"
+    }
+  ],
+  "PHX": [
+    {
+      "name": "D. Booker",
+      "status": "QUES",
+      "details": "D. Booker (Ques)"
+    },
+    {
+      "name": "J. Green",
+      "status": "QUES",
+      "details": "J. Green (Ques)"
+    },
+    {
+      "name": "N. Dante",
+      "status": "OFS",
+      "details": "N. Dante (OFS)"
+    },
+    {
+      "name": "K. Porzingis",
+      "status": "OUT",
+      "details": "K. Porzingis (Out)"
+    },
+    {
+      "name": "Z. Risacher",
+      "status": "OUT",
+      "details": "Z. Risacher (Out)"
     }
   ],
   "ATL": [
@@ -316,26 +343,6 @@
   ],
   "DEN": [
     {
-      "name": "A. Gordon",
-      "status": "PROB",
-      "details": "A. Gordon (Prob)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "QUES",
-      "details": "J. Murray (Ques)"
-    },
-    {
-      "name": "J. Valanciunas",
-      "status": "QUES",
-      "details": "J. Valanciunas (Ques)"
-    },
-    {
-      "name": "P. Watson",
-      "status": "QUES",
-      "details": "P. Watson (Ques)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -354,6 +361,21 @@
       "name": "N. Jokic",
       "status": "OUT",
       "details": "N. Jokic (Out)"
+    },
+    {
+      "name": "J. Murray",
+      "status": "OUT",
+      "details": "J. Murray (Out)"
+    },
+    {
+      "name": "J. Valanciunas",
+      "status": "OUT",
+      "details": "J. Valanciunas (Out)"
+    },
+    {
+      "name": "P. Watson",
+      "status": "OUT",
+      "details": "P. Watson (Out)"
     },
     {
       "name": "AJ Green",
@@ -400,19 +422,14 @@
   ],
   "TOR": [
     {
-      "name": "R. Barrett",
-      "status": "QUES",
-      "details": "R. Barrett (Ques)"
-    },
-    {
-      "name": "C. Murray-Boyles",
-      "status": "QUES",
-      "details": "C. Murray-Boyles (Ques)"
-    },
-    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "C. Murray-Boyles",
+      "status": "OUT",
+      "details": "C. Murray-Boyles (Out)"
     },
     {
       "name": "J. Poeltl",
@@ -430,19 +447,9 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "D. Reath",
-      "status": "QUES",
-      "details": "D. Reath (Ques)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
-    },
-    {
       "name": "D. Avdija",
-      "status": "DOUBT",
-      "details": "D. Avdija (Doubt)"
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
     },
     {
       "name": "S. Henderson",
@@ -455,6 +462,11 @@
       "details": "K. Murray (Out)"
     },
     {
+      "name": "Duop Reath",
+      "status": "OUT",
+      "details": "Duop Reath (Out)"
+    },
+    {
       "name": "M. Thybulle",
       "status": "OUT",
       "details": "M. Thybulle (Out)"
@@ -463,6 +475,11 @@
       "name": "B. Wesley",
       "status": "OUT",
       "details": "B. Wesley (Out)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "OUT",
+      "details": "R. Williams (Out)"
     }
   ],
   "POR": [
@@ -472,19 +489,9 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "D. Reath",
-      "status": "QUES",
-      "details": "D. Reath (Ques)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
-    },
-    {
       "name": "D. Avdija",
-      "status": "DOUBT",
-      "details": "D. Avdija (Doubt)"
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
     },
     {
       "name": "S. Henderson",
@@ -497,6 +504,11 @@
       "details": "K. Murray (Out)"
     },
     {
+      "name": "Duop Reath",
+      "status": "OUT",
+      "details": "Duop Reath (Out)"
+    },
+    {
       "name": "M. Thybulle",
       "status": "OUT",
       "details": "M. Thybulle (Out)"
@@ -505,23 +517,11 @@
       "name": "B. Wesley",
       "status": "OUT",
       "details": "B. Wesley (Out)"
-    }
-  ],
-  "PHX": [
-    {
-      "name": "N. Dante",
-      "status": "OFS",
-      "details": "N. Dante (OFS)"
     },
     {
-      "name": "K. Porzingis",
+      "name": "R. Williams",
       "status": "OUT",
-      "details": "K. Porzingis (Out)"
-    },
-    {
-      "name": "Z. Risacher",
-      "status": "OUT",
-      "details": "Z. Risacher (Out)"
+      "details": "R. Williams (Out)"
     }
   ]
 }
