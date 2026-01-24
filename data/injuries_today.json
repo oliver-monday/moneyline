@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-24",
-  "built_at_utc": "2026-01-24T08:44:56Z",
+  "built_at_utc": "2026-01-24T14:42:16Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -162,8 +162,8 @@
   "CLE": [
     {
       "name": "S. Merrill",
-      "status": "QUES",
-      "details": "S. Merrill (Ques)"
+      "status": "DOUBT",
+      "details": "S. Merrill (Doubt)"
     },
     {
       "name": "D. Garland",
