@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-25",
-  "built_at_utc": "2026-01-25T18:27:13Z",
+  "built_at_utc": "2026-01-25T19:21:38Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -34,26 +34,16 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "C. Cunningham",
-      "status": "PROB",
-      "details": "C. Cunningham (Prob)"
-    },
-    {
       "name": "C. LeVert",
-      "status": "DOUBT",
-      "details": "C. LeVert (Doubt)"
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     }
   ],
   "DET": [
     {
-      "name": "C. Cunningham",
-      "status": "PROB",
-      "details": "C. Cunningham (Prob)"
-    },
-    {
       "name": "C. LeVert",
-      "status": "DOUBT",
-      "details": "C. LeVert (Doubt)"
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     }
   ],
   "GSW": [
@@ -209,6 +199,11 @@
       "name": "L. Kornet",
       "status": "QUES",
       "details": "L. Kornet (Ques)"
+    },
+    {
+      "name": "D. Jones Garcia",
+      "status": "OUT",
+      "details": "D. Jones Garcia (Out)"
     }
   ],
   "SAS": [
@@ -216,6 +211,11 @@
       "name": "L. Kornet",
       "status": "QUES",
       "details": "L. Kornet (Ques)"
+    },
+    {
+      "name": "D. Jones Garcia",
+      "status": "OUT",
+      "details": "D. Jones Garcia (Out)"
     }
   ],
   "TOR": [

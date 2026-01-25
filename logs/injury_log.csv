@@ -3456,14 +3456,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,MEM,Ty Jerome,OUT,Ty Jerome (Out),rotowire
 2026-01-25,MEM,Ja Morant,OUT,Ja Morant (Out),rotowire
 2026-01-25,MEM,S. Pippen,OUT,S. Pippen (Out),rotowire
+2026-01-25,SAC,C. Cunningham,PROB,C. Cunningham (Prob),rotowire
+2026-01-25,DET,C. Cunningham,PROB,C. Cunningham (Prob),rotowire
 2026-01-25,SAC,Z. LaVine,OUT,Z. LaVine (Out),rotowire
 2026-01-25,SAC,K. Murray,OUT,K. Murray (Out),rotowire
 2026-01-25,SAC,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-01-25,SAC,Fantasy Football,REST,Fantasy Football (Rest),rotowire
-2026-01-25,SAC,C. Cunningham,PROB,C. Cunningham (Prob),rotowire
-2026-01-25,SAC,C. LeVert,DOUBT,C. LeVert (Doubt),rotowire
-2026-01-25,DET,C. Cunningham,PROB,C. Cunningham (Prob),rotowire
-2026-01-25,DET,C. LeVert,DOUBT,C. LeVert (Doubt),rotowire
+2026-01-25,SAC,C. LeVert,OUT,C. LeVert (Out),rotowire
+2026-01-25,DET,C. LeVert,OUT,C. LeVert (Out),rotowire
 2026-01-25,GSW,J. Butler,OFS,J. Butler (OFS),rotowire
 2026-01-25,GSW,S. Curry,QUES,S. Curry (Ques),rotowire
 2026-01-25,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
@@ -3493,7 +3493,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,NOP,J. Alvarado,QUES,J. Alvarado (Ques),rotowire
 2026-01-25,NOP,D. Murray,OUT,D. Murray (Out),rotowire
 2026-01-25,NOP,L. Kornet,QUES,L. Kornet (Ques),rotowire
+2026-01-25,NOP,D. Jones Garcia,OUT,D. Jones Garcia (Out),rotowire
 2026-01-25,SAS,L. Kornet,QUES,L. Kornet (Ques),rotowire
+2026-01-25,SAS,D. Jones Garcia,OUT,D. Jones Garcia (Out),rotowire
 2026-01-25,TOR,C. Murray-Boyles,QUES,C. Murray-Boyles (Ques),rotowire
 2026-01-25,TOR,I. Quickley,QUES,I. Quickley (Ques),rotowire
 2026-01-25,TOR,J. Walter,QUES,J. Walter (Ques),rotowire
