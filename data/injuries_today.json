@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-25",
-  "built_at_utc": "2026-01-25T17:09:18Z",
+  "built_at_utc": "2026-01-25T18:27:13Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -56,110 +56,6 @@
       "details": "C. LeVert (Doubt)"
     }
   ],
-  "DEN": [
-    {
-      "name": "J. Murray",
-      "status": "QUES",
-      "details": "J. Murray (Ques)"
-    },
-    {
-      "name": "J. Valanciunas",
-      "status": "QUES",
-      "details": "J. Valanciunas (Ques)"
-    },
-    {
-      "name": "P. Watson",
-      "status": "QUES",
-      "details": "P. Watson (Ques)"
-    },
-    {
-      "name": "T. Bates",
-      "status": "OUT",
-      "details": "T. Bates (Out)"
-    },
-    {
-      "name": "C. Braun",
-      "status": "OUT",
-      "details": "C. Braun (Out)"
-    },
-    {
-      "name": "A. Gordon",
-      "status": "OUT",
-      "details": "A. Gordon (Out)"
-    },
-    {
-      "name": "C. Johnson",
-      "status": "OUT",
-      "details": "C. Johnson (Out)"
-    },
-    {
-      "name": "N. Jokic",
-      "status": "OUT",
-      "details": "N. Jokic (Out)"
-    },
-    {
-      "name": "S. Aldama",
-      "status": "OUT",
-      "details": "S. Aldama (Out)"
-    },
-    {
-      "name": "B. Clarke",
-      "status": "OUT",
-      "details": "B. Clarke (Out)"
-    },
-    {
-      "name": "Zach Edey",
-      "status": "OUT",
-      "details": "Zach Edey (Out)"
-    },
-    {
-      "name": "Ty Jerome",
-      "status": "OUT",
-      "details": "Ty Jerome (Out)"
-    },
-    {
-      "name": "Ja Morant",
-      "status": "OUT",
-      "details": "Ja Morant (Out)"
-    },
-    {
-      "name": "S. Pippen",
-      "status": "OUT",
-      "details": "S. Pippen (Out)"
-    }
-  ],
-  "MEM": [
-    {
-      "name": "S. Aldama",
-      "status": "OUT",
-      "details": "S. Aldama (Out)"
-    },
-    {
-      "name": "B. Clarke",
-      "status": "OUT",
-      "details": "B. Clarke (Out)"
-    },
-    {
-      "name": "Zach Edey",
-      "status": "OUT",
-      "details": "Zach Edey (Out)"
-    },
-    {
-      "name": "Ty Jerome",
-      "status": "OUT",
-      "details": "Ty Jerome (Out)"
-    },
-    {
-      "name": "Ja Morant",
-      "status": "OUT",
-      "details": "Ja Morant (Out)"
-    },
-    {
-      "name": "S. Pippen",
-      "status": "OUT",
-      "details": "S. Pippen (Out)"
-    }
-  ],
   "GSW": [
     {
       "name": "J. Butler",
@@ -206,9 +102,29 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "M. Cisse",
+      "name": "M. Christie",
       "status": "QUES",
-      "details": "M. Cisse (Ques)"
+      "details": "M. Christie (Ques)"
+    },
+    {
+      "name": "B. Williams",
+      "status": "QUES",
+      "details": "B. Williams (Ques)"
+    },
+    {
+      "name": "M. Cisse",
+      "status": "DOUBT",
+      "details": "M. Cisse (Doubt)"
+    },
+    {
+      "name": "C. Flagg",
+      "status": "DOUBT",
+      "details": "C. Flagg (Doubt)"
+    },
+    {
+      "name": "K. Thompson",
+      "status": "DOUBT",
+      "details": "K. Thompson (Doubt)"
     },
     {
       "name": "A. Davis",
@@ -274,6 +190,11 @@
     }
   ],
   "NOP": [
+    {
+      "name": "T. Murphy",
+      "status": "PROB",
+      "details": "T. Murphy (Prob)"
+    },
     {
       "name": "J. Alvarado",
       "status": "QUES",
