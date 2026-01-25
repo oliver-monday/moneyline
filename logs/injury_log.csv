@@ -3434,7 +3434,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-24,UTA,Kevin Love,OUT,Kevin Love (Out),rotowire
 2026-01-24,UTA,L. Markkanen,OUT,L. Markkanen (Out),rotowire
 2026-01-24,UTA,G. Niang,OUT,G. Niang (Out),rotowire
-2026-01-25,SAC,Z. LaVine,QUES,Z. LaVine (Ques),rotowire
+2026-01-25,GSW,A. Horford,QUES,A. Horford (Ques),rotowire
+2026-01-25,GSW,D. Melton,QUES,D. Melton (Ques),rotowire
+2026-01-25,SAC,Z. LaVine,OUT,Z. LaVine (Out),rotowire
 2026-01-25,SAC,K. Murray,OUT,K. Murray (Out),rotowire
 2026-01-25,SAC,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-01-25,SAC,Fantasy Football,REST,Fantasy Football (Rest),rotowire
@@ -3464,15 +3466,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,MEM,S. Pippen,OUT,S. Pippen (Out),rotowire
 2026-01-25,GSW,J. Butler,OFS,J. Butler (OFS),rotowire
 2026-01-25,GSW,S. Curry,QUES,S. Curry (Ques),rotowire
-2026-01-25,GSW,A. Horford,QUES,A. Horford (Ques),rotowire
-2026-01-25,GSW,D. Melton,QUES,D. Melton (Ques),rotowire
 2026-01-25,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
 2026-01-25,GSW,J. Kuminga,OUT,J. Kuminga (Out),rotowire
 2026-01-25,GSW,T. Shannon,OUT,T. Shannon (Out),rotowire
 2026-01-25,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
-2026-01-25,DAL,M. Cisse,QUES,M. Cisse (Ques),rotowire
 2026-01-25,DAL,Dante Exum,OFS,Dante Exum (OFS),rotowire
 2026-01-25,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
+2026-01-25,DAL,M. Cisse,QUES,M. Cisse (Ques),rotowire
 2026-01-25,DAL,A. Davis,OUT,A. Davis (Out),rotowire
 2026-01-25,DAL,K. Irving,OUT,K. Irving (Out),rotowire
 2026-01-25,DAL,A. Green,QUES,A. Green (Ques),rotowire

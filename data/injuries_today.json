@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-01-25",
-  "built_at_utc": "2026-01-25T14:42:16Z",
+  "built_at_utc": "2026-01-25T17:09:18Z",
   "source": "rotowire",
   "SAC": [
     {
       "name": "Z. LaVine",
-      "status": "QUES",
-      "details": "Z. LaVine (Ques)"
+      "status": "OUT",
+      "details": "Z. LaVine (Out)"
     },
     {
       "name": "K. Murray",
@@ -172,16 +172,6 @@
       "details": "S. Curry (Ques)"
     },
     {
-      "name": "A. Horford",
-      "status": "QUES",
-      "details": "A. Horford (Ques)"
-    },
-    {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
-    },
-    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
@@ -206,11 +196,6 @@
   ],
   "DAL": [
     {
-      "name": "M. Cisse",
-      "status": "QUES",
-      "details": "M. Cisse (Ques)"
-    },
-    {
       "name": "Dante Exum",
       "status": "OFS",
       "details": "Dante Exum (OFS)"
@@ -219,6 +204,11 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
+    },
+    {
+      "name": "M. Cisse",
+      "status": "QUES",
+      "details": "M. Cisse (Ques)"
     },
     {
       "name": "A. Davis",
