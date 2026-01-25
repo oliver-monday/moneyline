@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-24",
-  "built_at_utc": "2026-01-24T23:22:03Z",
+  "built_at_utc": "2026-01-25T01:09:11Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -88,14 +88,14 @@
   ],
   "CLE": [
     {
-      "name": "D. Hunter",
-      "status": "QUES",
-      "details": "D. Hunter (Ques)"
-    },
-    {
       "name": "D. Garland",
       "status": "OUT",
       "details": "D. Garland (Out)"
+    },
+    {
+      "name": "D. Hunter",
+      "status": "OUT",
+      "details": "D. Hunter (Out)"
     },
     {
       "name": "S. Merrill",
@@ -131,16 +131,6 @@
     }
   ],
   "BOS": [
-    {
-      "name": "J. Brown",
-      "status": "PROB",
-      "details": "J. Brown (Prob)"
-    },
-    {
-      "name": "N. Queta",
-      "status": "PROB",
-      "details": "N. Queta (Prob)"
-    },
     {
       "name": "J. Minott",
       "status": "OUT",
@@ -206,14 +196,9 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "D. Gafford",
-      "status": "PROB",
-      "details": "D. Gafford (Prob)"
-    },
-    {
       "name": "M. Cisse",
-      "status": "DOUBT",
-      "details": "M. Cisse (Doubt)"
+      "status": "OUT",
+      "details": "M. Cisse (Out)"
     },
     {
       "name": "A. Davis",
@@ -238,14 +223,9 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "D. Gafford",
-      "status": "PROB",
-      "details": "D. Gafford (Prob)"
-    },
-    {
       "name": "M. Cisse",
-      "status": "DOUBT",
-      "details": "M. Cisse (Doubt)"
+      "status": "OUT",
+      "details": "M. Cisse (Out)"
     },
     {
       "name": "A. Davis",
@@ -280,11 +260,6 @@
       "details": "K. Ware (Out)"
     },
     {
-      "name": "J. Nurkic",
-      "status": "QUES",
-      "details": "J. Nurkic (Ques)"
-    },
-    {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
@@ -315,11 +290,6 @@
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "J. Nurkic",
-      "status": "QUES",
-      "details": "J. Nurkic (Ques)"
     },
     {
       "name": "E. Harkless",
