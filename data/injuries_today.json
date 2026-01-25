@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-01-25",
-  "built_at_utc": "2026-01-25T22:27:13Z",
+  "built_at_utc": "2026-01-25T23:22:57Z",
   "source": "rotowire",
   "SAC": [
     {
       "name": "Z. LaVine",
-      "status": "OUT",
-      "details": "Z. LaVine (Out)"
+      "status": "QUES",
+      "details": "Z. LaVine (Ques)"
     },
     {
       "name": "K. Murray",
@@ -35,15 +35,15 @@
     },
     {
       "name": "C. LeVert",
-      "status": "OUT",
-      "details": "C. LeVert (Out)"
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
     }
   ],
   "DET": [
     {
       "name": "C. LeVert",
-      "status": "OUT",
-      "details": "C. LeVert (Out)"
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
     }
   ],
   "GSW": [
@@ -77,29 +77,9 @@
   ],
   "NOP": [
     {
-      "name": "T. Murphy",
-      "status": "PROB",
-      "details": "T. Murphy (Prob)"
-    },
-    {
-      "name": "J. Alvarado",
-      "status": "QUES",
-      "details": "J. Alvarado (Ques)"
-    },
-    {
       "name": "D. Murray",
       "status": "OUT",
       "details": "D. Murray (Out)"
-    },
-    {
-      "name": "L. Kornet",
-      "status": "QUES",
-      "details": "L. Kornet (Ques)"
-    },
-    {
-      "name": "J. McLaughlin",
-      "status": "QUES",
-      "details": "J. McLaughlin (Ques)"
     },
     {
       "name": "D. Jones Garcia",
@@ -109,16 +89,6 @@
   ],
   "SAS": [
     {
-      "name": "L. Kornet",
-      "status": "QUES",
-      "details": "L. Kornet (Ques)"
-    },
-    {
-      "name": "J. McLaughlin",
-      "status": "QUES",
-      "details": "J. McLaughlin (Ques)"
-    },
-    {
       "name": "D. Jones Garcia",
       "status": "OUT",
       "details": "D. Jones Garcia (Out)"
@@ -126,19 +96,9 @@
   ],
   "TOR": [
     {
-      "name": "C. Murray-Boyles",
-      "status": "QUES",
-      "details": "C. Murray-Boyles (Ques)"
-    },
-    {
       "name": "I. Quickley",
       "status": "QUES",
       "details": "I. Quickley (Ques)"
-    },
-    {
-      "name": "J. Walter",
-      "status": "QUES",
-      "details": "J. Walter (Ques)"
     },
     {
       "name": "C. Hepburn",
@@ -146,14 +106,14 @@
       "details": "C. Hepburn (Out)"
     },
     {
+      "name": "C. Murray-Boyles",
+      "status": "OUT",
+      "details": "C. Murray-Boyles (Out)"
+    },
+    {
       "name": "J. Poeltl",
       "status": "OUT",
       "details": "J. Poeltl (Out)"
-    },
-    {
-      "name": "A. Wiggins",
-      "status": "QUES",
-      "details": "A. Wiggins (Ques)"
     },
     {
       "name": "T. Sorber",
@@ -193,11 +153,6 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "A. Wiggins",
-      "status": "QUES",
-      "details": "A. Wiggins (Ques)"
-    },
-    {
       "name": "A. Caruso",
       "status": "OUT",
       "details": "A. Caruso (Out)"
@@ -225,29 +180,24 @@
   ],
   "MIA": [
     {
+      "name": "N. Powell",
+      "status": "PROB",
+      "details": "N. Powell (Prob)"
+    },
+    {
       "name": "A. Wiggins",
       "status": "PROB",
       "details": "A. Wiggins (Prob)"
     },
     {
-      "name": "K. Jakucionis",
-      "status": "QUES",
-      "details": "K. Jakucionis (Ques)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
-    },
-    {
-      "name": "D. Mitchell",
-      "status": "DOUBT",
-      "details": "D. Mitchell (Doubt)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
+    },
+    {
+      "name": "D. Mitchell",
+      "status": "OUT",
+      "details": "D. Mitchell (Out)"
     },
     {
       "name": "T. Rozier",
@@ -260,26 +210,26 @@
       "details": "K. Ware (Out)"
     },
     {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
-    {
       "name": "D. Booker",
       "status": "OUT",
       "details": "D. Booker (Out)"
+    },
+    {
+      "name": "J. Green",
+      "status": "OUT",
+      "details": "J. Green (Out)"
     }
   ],
   "PHX": [
     {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
-    {
       "name": "D. Booker",
       "status": "OUT",
       "details": "D. Booker (Out)"
+    },
+    {
+      "name": "J. Green",
+      "status": "OUT",
+      "details": "J. Green (Out)"
     }
   ],
   "BKN": [
