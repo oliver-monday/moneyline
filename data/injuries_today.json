@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-25",
-  "built_at_utc": "2026-01-25T21:01:25Z",
+  "built_at_utc": "2026-01-25T22:27:13Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -53,11 +53,6 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "S. Curry",
-      "status": "QUES",
-      "details": "S. Curry (Ques)"
-    },
-    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
@@ -97,14 +92,14 @@
       "details": "D. Murray (Out)"
     },
     {
-      "name": "J. McLaughlin",
-      "status": "QUES",
-      "details": "J. McLaughlin (Ques)"
-    },
-    {
       "name": "L. Kornet",
       "status": "QUES",
       "details": "L. Kornet (Ques)"
+    },
+    {
+      "name": "J. McLaughlin",
+      "status": "QUES",
+      "details": "J. McLaughlin (Ques)"
     },
     {
       "name": "D. Jones Garcia",
@@ -114,14 +109,14 @@
   ],
   "SAS": [
     {
-      "name": "J. McLaughlin",
-      "status": "QUES",
-      "details": "J. McLaughlin (Ques)"
-    },
-    {
       "name": "L. Kornet",
       "status": "QUES",
       "details": "L. Kornet (Ques)"
+    },
+    {
+      "name": "J. McLaughlin",
+      "status": "QUES",
+      "details": "J. McLaughlin (Ques)"
     },
     {
       "name": "D. Jones Garcia",

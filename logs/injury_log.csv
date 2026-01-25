@@ -3477,6 +3477,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,MIL,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
 2026-01-25,MIL,K. Porter,OUT,K. Porter (Out),rotowire
 2026-01-25,MIL,T. Prince,OUT,T. Prince (Out),rotowire
+2026-01-25,GSW,S. Curry,QUES,S. Curry (Ques),rotowire
 2026-01-25,SAC,Z. LaVine,OUT,Z. LaVine (Out),rotowire
 2026-01-25,SAC,K. Murray,OUT,K. Murray (Out),rotowire
 2026-01-25,SAC,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
@@ -3484,7 +3485,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,SAC,C. LeVert,OUT,C. LeVert (Out),rotowire
 2026-01-25,DET,C. LeVert,OUT,C. LeVert (Out),rotowire
 2026-01-25,GSW,J. Butler,OFS,J. Butler (OFS),rotowire
-2026-01-25,GSW,S. Curry,QUES,S. Curry (Ques),rotowire
 2026-01-25,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
 2026-01-25,GSW,J. Kuminga,OUT,J. Kuminga (Out),rotowire
 2026-01-25,GSW,T. Shannon,OUT,T. Shannon (Out),rotowire
@@ -3492,11 +3492,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,NOP,T. Murphy,PROB,T. Murphy (Prob),rotowire
 2026-01-25,NOP,J. Alvarado,QUES,J. Alvarado (Ques),rotowire
 2026-01-25,NOP,D. Murray,OUT,D. Murray (Out),rotowire
-2026-01-25,NOP,J. McLaughlin,QUES,J. McLaughlin (Ques),rotowire
 2026-01-25,NOP,L. Kornet,QUES,L. Kornet (Ques),rotowire
+2026-01-25,NOP,J. McLaughlin,QUES,J. McLaughlin (Ques),rotowire
 2026-01-25,NOP,D. Jones Garcia,OUT,D. Jones Garcia (Out),rotowire
-2026-01-25,SAS,J. McLaughlin,QUES,J. McLaughlin (Ques),rotowire
 2026-01-25,SAS,L. Kornet,QUES,L. Kornet (Ques),rotowire
+2026-01-25,SAS,J. McLaughlin,QUES,J. McLaughlin (Ques),rotowire
 2026-01-25,SAS,D. Jones Garcia,OUT,D. Jones Garcia (Out),rotowire
 2026-01-25,TOR,C. Murray-Boyles,QUES,C. Murray-Boyles (Ques),rotowire
 2026-01-25,TOR,I. Quickley,QUES,I. Quickley (Ques),rotowire
