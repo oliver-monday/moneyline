@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-25",
-  "built_at_utc": "2026-01-25T20:22:02Z",
+  "built_at_utc": "2026-01-25T21:01:25Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -78,105 +78,6 @@
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
-    }
-  ],
-  "DAL": [
-    {
-      "name": "Dante Exum",
-      "status": "OFS",
-      "details": "Dante Exum (OFS)"
-    },
-    {
-      "name": "D. Lively",
-      "status": "OFS",
-      "details": "D. Lively (OFS)"
-    },
-    {
-      "name": "M. Christie",
-      "status": "QUES",
-      "details": "M. Christie (Ques)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "QUES",
-      "details": "B. Williams (Ques)"
-    },
-    {
-      "name": "M. Cisse",
-      "status": "QUES",
-      "details": "M. Cisse (Ques)"
-    },
-    {
-      "name": "C. Flagg",
-      "status": "QUES",
-      "details": "C. Flagg (Ques)"
-    },
-    {
-      "name": "K. Thompson",
-      "status": "QUES",
-      "details": "K. Thompson (Ques)"
-    },
-    {
-      "name": "A. Davis",
-      "status": "OUT",
-      "details": "A. Davis (Out)"
-    },
-    {
-      "name": "K. Irving",
-      "status": "OUT",
-      "details": "K. Irving (Out)"
-    },
-    {
-      "name": "A. Green",
-      "status": "QUES",
-      "details": "A. Green (Ques)"
-    },
-    {
-      "name": "G. Trent",
-      "status": "PROB",
-      "details": "G. Trent (Prob)"
-    },
-    {
-      "name": "G. Antetokounmpo",
-      "status": "OUT",
-      "details": "G. Antetokounmpo (Out)"
-    },
-    {
-      "name": "K. Porter",
-      "status": "OUT",
-      "details": "K. Porter (Out)"
-    },
-    {
-      "name": "T. Prince",
-      "status": "OUT",
-      "details": "T. Prince (Out)"
-    }
-  ],
-  "MIL": [
-    {
-      "name": "G. Trent",
-      "status": "PROB",
-      "details": "G. Trent (Prob)"
-    },
-    {
-      "name": "A. Green",
-      "status": "QUES",
-      "details": "A. Green (Ques)"
-    },
-    {
-      "name": "G. Antetokounmpo",
-      "status": "OUT",
-      "details": "G. Antetokounmpo (Out)"
-    },
-    {
-      "name": "K. Porter",
-      "status": "OUT",
-      "details": "K. Porter (Out)"
-    },
-    {
-      "name": "T. Prince",
-      "status": "OUT",
-      "details": "T. Prince (Out)"
     }
   ],
   "NOP": [
