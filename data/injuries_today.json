@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-25",
-  "built_at_utc": "2026-01-25T08:45:22Z",
+  "built_at_utc": "2026-01-25T14:42:16Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -206,6 +206,11 @@
   ],
   "DAL": [
     {
+      "name": "M. Cisse",
+      "status": "QUES",
+      "details": "M. Cisse (Ques)"
+    },
+    {
       "name": "Dante Exum",
       "status": "OFS",
       "details": "Dante Exum (OFS)"
@@ -214,11 +219,6 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
-    },
-    {
-      "name": "M. Cisse",
-      "status": "OUT",
-      "details": "M. Cisse (Out)"
     },
     {
       "name": "A. Davis",
@@ -258,14 +258,14 @@
   ],
   "MIL": [
     {
-      "name": "A. Green",
-      "status": "QUES",
-      "details": "A. Green (Ques)"
-    },
-    {
       "name": "G. Trent",
       "status": "PROB",
       "details": "G. Trent (Prob)"
+    },
+    {
+      "name": "A. Green",
+      "status": "QUES",
+      "details": "A. Green (Ques)"
     },
     {
       "name": "G. Antetokounmpo",
@@ -408,14 +408,14 @@
   ],
   "MIA": [
     {
+      "name": "D. Mitchell",
+      "status": "QUES",
+      "details": "D. Mitchell (Ques)"
+    },
+    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
-    },
-    {
-      "name": "D. Mitchell",
-      "status": "OUT",
-      "details": "D. Mitchell (Out)"
     },
     {
       "name": "T. Rozier",

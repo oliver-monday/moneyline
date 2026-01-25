@@ -3470,9 +3470,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,GSW,J. Kuminga,OUT,J. Kuminga (Out),rotowire
 2026-01-25,GSW,T. Shannon,OUT,T. Shannon (Out),rotowire
 2026-01-25,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
+2026-01-25,DAL,M. Cisse,QUES,M. Cisse (Ques),rotowire
 2026-01-25,DAL,Dante Exum,OFS,Dante Exum (OFS),rotowire
 2026-01-25,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
-2026-01-25,DAL,M. Cisse,OUT,M. Cisse (Out),rotowire
 2026-01-25,DAL,A. Davis,OUT,A. Davis (Out),rotowire
 2026-01-25,DAL,K. Irving,OUT,K. Irving (Out),rotowire
 2026-01-25,DAL,A. Green,QUES,A. Green (Ques),rotowire
@@ -3480,8 +3480,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,DAL,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
 2026-01-25,DAL,K. Porter,OUT,K. Porter (Out),rotowire
 2026-01-25,DAL,T. Prince,OUT,T. Prince (Out),rotowire
-2026-01-25,MIL,A. Green,QUES,A. Green (Ques),rotowire
 2026-01-25,MIL,G. Trent,PROB,G. Trent (Prob),rotowire
+2026-01-25,MIL,A. Green,QUES,A. Green (Ques),rotowire
 2026-01-25,MIL,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
 2026-01-25,MIL,K. Porter,OUT,K. Porter (Out),rotowire
 2026-01-25,MIL,T. Prince,OUT,T. Prince (Out),rotowire
@@ -3508,8 +3508,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,OKC,A. Mitchell,OUT,A. Mitchell (Out),rotowire
 2026-01-25,OKC,N. Topic,OUT,N. Topic (Out),rotowire
 2026-01-25,OKC,J. Williams,OUT,J. Williams (Out),rotowire
+2026-01-25,MIA,D. Mitchell,QUES,D. Mitchell (Ques),rotowire
 2026-01-25,MIA,T. Herro,OUT,T. Herro (Out),rotowire
-2026-01-25,MIA,D. Mitchell,OUT,D. Mitchell (Out),rotowire
 2026-01-25,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-01-25,MIA,K. Ware,OUT,K. Ware (Out),rotowire
 2026-01-25,MIA,J. Green,QUES,J. Green (Ques),rotowire
