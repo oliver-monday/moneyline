@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-25",
-  "built_at_utc": "2026-01-25T19:21:38Z",
+  "built_at_utc": "2026-01-25T20:22:02Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -103,18 +103,18 @@
     },
     {
       "name": "M. Cisse",
-      "status": "DOUBT",
-      "details": "M. Cisse (Doubt)"
+      "status": "QUES",
+      "details": "M. Cisse (Ques)"
     },
     {
       "name": "C. Flagg",
-      "status": "DOUBT",
-      "details": "C. Flagg (Doubt)"
+      "status": "QUES",
+      "details": "C. Flagg (Ques)"
     },
     {
       "name": "K. Thompson",
-      "status": "DOUBT",
-      "details": "K. Thompson (Doubt)"
+      "status": "QUES",
+      "details": "K. Thompson (Ques)"
     },
     {
       "name": "A. Davis",
@@ -196,6 +196,11 @@
       "details": "D. Murray (Out)"
     },
     {
+      "name": "J. McLaughlin",
+      "status": "QUES",
+      "details": "J. McLaughlin (Ques)"
+    },
+    {
       "name": "L. Kornet",
       "status": "QUES",
       "details": "L. Kornet (Ques)"
@@ -207,6 +212,11 @@
     }
   ],
   "SAS": [
+    {
+      "name": "J. McLaughlin",
+      "status": "QUES",
+      "details": "J. McLaughlin (Ques)"
+    },
     {
       "name": "L. Kornet",
       "status": "QUES",
@@ -319,9 +329,24 @@
   ],
   "MIA": [
     {
-      "name": "D. Mitchell",
+      "name": "A. Wiggins",
+      "status": "PROB",
+      "details": "A. Wiggins (Prob)"
+    },
+    {
+      "name": "K. Jakucionis",
       "status": "QUES",
-      "details": "D. Mitchell (Ques)"
+      "details": "K. Jakucionis (Ques)"
+    },
+    {
+      "name": "N. Powell",
+      "status": "QUES",
+      "details": "N. Powell (Ques)"
+    },
+    {
+      "name": "D. Mitchell",
+      "status": "DOUBT",
+      "details": "D. Mitchell (Doubt)"
     },
     {
       "name": "T. Herro",
@@ -364,8 +389,8 @@
   "BKN": [
     {
       "name": "N. Clowney",
-      "status": "DOUBT",
-      "details": "N. Clowney (Doubt)"
+      "status": "OUT",
+      "details": "N. Clowney (Out)"
     },
     {
       "name": "H. Highsmith",

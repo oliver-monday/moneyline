@@ -3474,9 +3474,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
 2026-01-25,DAL,M. Christie,QUES,M. Christie (Ques),rotowire
 2026-01-25,DAL,B. Williams,QUES,B. Williams (Ques),rotowire
-2026-01-25,DAL,M. Cisse,DOUBT,M. Cisse (Doubt),rotowire
-2026-01-25,DAL,C. Flagg,DOUBT,C. Flagg (Doubt),rotowire
-2026-01-25,DAL,K. Thompson,DOUBT,K. Thompson (Doubt),rotowire
+2026-01-25,DAL,M. Cisse,QUES,M. Cisse (Ques),rotowire
+2026-01-25,DAL,C. Flagg,QUES,C. Flagg (Ques),rotowire
+2026-01-25,DAL,K. Thompson,QUES,K. Thompson (Ques),rotowire
 2026-01-25,DAL,A. Davis,OUT,A. Davis (Out),rotowire
 2026-01-25,DAL,K. Irving,OUT,K. Irving (Out),rotowire
 2026-01-25,DAL,A. Green,QUES,A. Green (Ques),rotowire
@@ -3492,8 +3492,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,NOP,T. Murphy,PROB,T. Murphy (Prob),rotowire
 2026-01-25,NOP,J. Alvarado,QUES,J. Alvarado (Ques),rotowire
 2026-01-25,NOP,D. Murray,OUT,D. Murray (Out),rotowire
+2026-01-25,NOP,J. McLaughlin,QUES,J. McLaughlin (Ques),rotowire
 2026-01-25,NOP,L. Kornet,QUES,L. Kornet (Ques),rotowire
 2026-01-25,NOP,D. Jones Garcia,OUT,D. Jones Garcia (Out),rotowire
+2026-01-25,SAS,J. McLaughlin,QUES,J. McLaughlin (Ques),rotowire
 2026-01-25,SAS,L. Kornet,QUES,L. Kornet (Ques),rotowire
 2026-01-25,SAS,D. Jones Garcia,OUT,D. Jones Garcia (Out),rotowire
 2026-01-25,TOR,C. Murray-Boyles,QUES,C. Murray-Boyles (Ques),rotowire
@@ -3515,7 +3517,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,OKC,A. Mitchell,OUT,A. Mitchell (Out),rotowire
 2026-01-25,OKC,N. Topic,OUT,N. Topic (Out),rotowire
 2026-01-25,OKC,J. Williams,OUT,J. Williams (Out),rotowire
-2026-01-25,MIA,D. Mitchell,QUES,D. Mitchell (Ques),rotowire
+2026-01-25,MIA,A. Wiggins,PROB,A. Wiggins (Prob),rotowire
+2026-01-25,MIA,K. Jakucionis,QUES,K. Jakucionis (Ques),rotowire
+2026-01-25,MIA,N. Powell,QUES,N. Powell (Ques),rotowire
+2026-01-25,MIA,D. Mitchell,DOUBT,D. Mitchell (Doubt),rotowire
 2026-01-25,MIA,T. Herro,OUT,T. Herro (Out),rotowire
 2026-01-25,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-01-25,MIA,K. Ware,OUT,K. Ware (Out),rotowire
@@ -3523,7 +3528,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,MIA,D. Booker,OUT,D. Booker (Out),rotowire
 2026-01-25,PHX,J. Green,QUES,J. Green (Ques),rotowire
 2026-01-25,PHX,D. Booker,OUT,D. Booker (Out),rotowire
-2026-01-25,BKN,N. Clowney,DOUBT,N. Clowney (Doubt),rotowire
+2026-01-25,BKN,N. Clowney,OUT,N. Clowney (Out),rotowire
 2026-01-25,BKN,H. Highsmith,OUT,H. Highsmith (Out),rotowire
 2026-01-25,BKN,Cam Thomas,OUT,Cam Thomas (Out),rotowire
 2026-01-25,BKN,N. Traore,OUT,N. Traore (Out),rotowire
