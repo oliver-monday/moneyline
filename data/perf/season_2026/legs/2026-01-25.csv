@@ -1,0 +1,12 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-25,2026,Trey Murphy III,NO,SA,pts,20,MISSED,17,,targets_snapshot_2026-01-25.json
+2026-01-25,2026,Trey Murphy III,NO,SA,3pt,3,HIT,3,,targets_snapshot_2026-01-25.json
+2026-01-25,2026,Donte DiVincenzo,MIN,GS,3pt,3,HIT,6,,targets_snapshot_2026-01-25.json
+2026-01-25,2026,Jaden McDaniels,MIN,GS,reb,4,MISSED,3,,targets_snapshot_2026-01-25.json
+2026-01-25,2026,Kawhi Leonard,LAC,BKN,3pt,3,MISSED,2,,targets_snapshot_2026-01-25.json
+2026-01-25,2026,Ryan Rollins,MIL,DAL,reb,4,,,,targets_snapshot_2026-01-25.json
+2026-01-25,2026,Chet Holmgren,OKC,TOR,reb,8,HIT,10,,targets_snapshot_2026-01-25.json
+2026-01-25,2026,Bam Adebayo,MIA,PHX,ast,2,MISSED,1,,targets_snapshot_2026-01-25.json
+2026-01-25,2026,Stephen Curry,GS,MIN,ast,4,HIT,7,,targets_snapshot_2026-01-25.json
+2026-01-25,2026,Dillon Brooks,PHX,MIA,reb,4,HIT,5,,targets_snapshot_2026-01-25.json
+2026-01-25,2026,Devin Vassell,SA,NO,reb,4,MISSED,1,,targets_snapshot_2026-01-25.json
