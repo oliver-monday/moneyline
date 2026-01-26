@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-26",
-  "built_at_utc": "2026-01-26T21:12:34Z",
+  "built_at_utc": "2026-01-26T22:29:26Z",
   "source": "rotowire",
   "IND": [
     {
@@ -69,40 +69,40 @@
   "PHI": [
     {
       "name": "C. Bassey",
-      "status": "OUT",
-      "details": "C. Bassey (Out)"
+      "status": "QUES",
+      "details": "C. Bassey (Ques)"
     },
     {
       "name": "J. Embiid",
-      "status": "OUT",
-      "details": "J. Embiid (Out)"
+      "status": "QUES",
+      "details": "J. Embiid (Ques)"
     },
     {
       "name": "P. George",
-      "status": "OUT",
-      "details": "P. George (Out)"
+      "status": "QUES",
+      "details": "P. George (Ques)"
+    },
+    {
+      "name": "K. Simpson",
+      "status": "QUES",
+      "details": "K. Simpson (Ques)"
     },
     {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
-    },
-    {
-      "name": "KJ Simpson",
-      "status": "OUT",
-      "details": "KJ Simpson (Out)"
     }
   ],
   "CHA": [
     {
+      "name": "K. Simpson",
+      "status": "QUES",
+      "details": "K. Simpson (Ques)"
+    },
+    {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
-    },
-    {
-      "name": "KJ Simpson",
-      "status": "OUT",
-      "details": "KJ Simpson (Out)"
     }
   ],
   "ORL": [
@@ -260,14 +260,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "T. Jones",
-      "status": "DOUBT",
-      "details": "T. Jones (Doubt)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
+    },
+    {
+      "name": "Tre Jones",
+      "status": "OUT",
+      "details": "Tre Jones (Out)"
     }
   ],
   "CHI": [
@@ -277,14 +277,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "T. Jones",
-      "status": "DOUBT",
-      "details": "T. Jones (Doubt)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
+    },
+    {
+      "name": "Tre Jones",
+      "status": "OUT",
+      "details": "Tre Jones (Out)"
     }
   ],
   "MEM": [
