@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-25",
-  "built_at_utc": "2026-01-26T01:08:04Z",
+  "built_at_utc": "2026-01-26T03:07:56Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -111,6 +111,11 @@
       "details": "J. Poeltl (Out)"
     },
     {
+      "name": "C. Wallace",
+      "status": "QUES",
+      "details": "C. Wallace (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
@@ -146,6 +151,11 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "C. Wallace",
+      "status": "QUES",
+      "details": "C. Wallace (Ques)"
     },
     {
       "name": "A. Caruso",
@@ -239,6 +249,11 @@
       "details": "N. Traore (Out)"
     },
     {
+      "name": "K. Dunn",
+      "status": "QUES",
+      "details": "K. Dunn (Ques)"
+    },
+    {
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
@@ -269,6 +284,11 @@
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
+    },
+    {
+      "name": "K. Dunn",
+      "status": "QUES",
+      "details": "K. Dunn (Ques)"
     },
     {
       "name": "B. Bogdanovic",

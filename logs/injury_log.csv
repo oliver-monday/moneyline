@@ -3510,6 +3510,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-01-25,TOR,C. Murray-Boyles,OUT,C. Murray-Boyles (Out),rotowire
 2026-01-25,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
+2026-01-25,TOR,C. Wallace,QUES,C. Wallace (Ques),rotowire
 2026-01-25,TOR,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-01-25,TOR,A. Caruso,OUT,A. Caruso (Out),rotowire
 2026-01-25,TOR,I. Hartenstein,OUT,I. Hartenstein (Out),rotowire
@@ -3517,6 +3518,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,TOR,N. Topic,OUT,N. Topic (Out),rotowire
 2026-01-25,TOR,J. Williams,OUT,J. Williams (Out),rotowire
 2026-01-25,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
+2026-01-25,OKC,C. Wallace,QUES,C. Wallace (Ques),rotowire
 2026-01-25,OKC,A. Caruso,OUT,A. Caruso (Out),rotowire
 2026-01-25,OKC,I. Hartenstein,OUT,I. Hartenstein (Out),rotowire
 2026-01-25,OKC,A. Mitchell,OUT,A. Mitchell (Out),rotowire
@@ -3534,12 +3536,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,BKN,H. Highsmith,OUT,H. Highsmith (Out),rotowire
 2026-01-25,BKN,Cam Thomas,OUT,Cam Thomas (Out),rotowire
 2026-01-25,BKN,N. Traore,OUT,N. Traore (Out),rotowire
+2026-01-25,BKN,K. Dunn,QUES,K. Dunn (Ques),rotowire
 2026-01-25,BKN,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-01-25,BKN,B. Bogdanovic,OUT,B. Bogdanovic (Out),rotowire
 2026-01-25,BKN,D. Jones,OUT,D. Jones (Out),rotowire
 2026-01-25,BKN,Chris Paul,OUT,Chris Paul (Out),rotowire
 2026-01-25,BKN,T. Washington,OUT,T. Washington (Out),rotowire
 2026-01-25,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
+2026-01-25,LAC,K. Dunn,QUES,K. Dunn (Ques),rotowire
 2026-01-25,LAC,B. Bogdanovic,OUT,B. Bogdanovic (Out),rotowire
 2026-01-25,LAC,D. Jones,OUT,D. Jones (Out),rotowire
 2026-01-25,LAC,Chris Paul,OUT,Chris Paul (Out),rotowire
