@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-25",
-  "built_at_utc": "2026-01-25T23:22:57Z",
+  "built_at_utc": "2026-01-26T01:08:04Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -64,15 +64,15 @@
     },
     {
       "name": "T. Shannon",
-      "status": "OUT",
-      "details": "T. Shannon (Out)"
+      "status": "DOUBT",
+      "details": "T. Shannon (Doubt)"
     }
   ],
   "MIN": [
     {
       "name": "T. Shannon",
-      "status": "OUT",
-      "details": "T. Shannon (Out)"
+      "status": "DOUBT",
+      "details": "T. Shannon (Doubt)"
     }
   ],
   "NOP": [
@@ -95,11 +95,6 @@
     }
   ],
   "TOR": [
-    {
-      "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
-    },
     {
       "name": "C. Hepburn",
       "status": "OUT",
@@ -180,16 +175,6 @@
   ],
   "MIA": [
     {
-      "name": "N. Powell",
-      "status": "PROB",
-      "details": "N. Powell (Prob)"
-    },
-    {
-      "name": "A. Wiggins",
-      "status": "PROB",
-      "details": "A. Wiggins (Prob)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
@@ -254,11 +239,6 @@
       "details": "N. Traore (Out)"
     },
     {
-      "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
-    },
-    {
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
@@ -277,6 +257,11 @@
       "name": "Chris Paul",
       "status": "OUT",
       "details": "Chris Paul (Out)"
+    },
+    {
+      "name": "T. Washington",
+      "status": "OUT",
+      "details": "T. Washington (Out)"
     }
   ],
   "LAC": [
@@ -286,11 +271,6 @@
       "details": "B. Beal (OFS)"
     },
     {
-      "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
-    },
-    {
       "name": "B. Bogdanovic",
       "status": "OUT",
       "details": "B. Bogdanovic (Out)"
@@ -304,6 +284,11 @@
       "name": "Chris Paul",
       "status": "OUT",
       "details": "Chris Paul (Out)"
+    },
+    {
+      "name": "T. Washington",
+      "status": "OUT",
+      "details": "T. Washington (Out)"
     }
   ]
 }
