@@ -1,22 +1,12 @@
 {
   "asof_date": "2026-01-26",
-  "built_at_utc": "2026-01-26T14:53:49Z",
+  "built_at_utc": "2026-01-26T17:21:19Z",
   "source": "rotowire",
   "IND": [
     {
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
-    },
-    {
-      "name": "Q. Jackson",
-      "status": "QUES",
-      "details": "Q. Jackson (Ques)"
-    },
-    {
-      "name": "B. Mathurin",
-      "status": "QUES",
-      "details": "B. Mathurin (Ques)"
     },
     {
       "name": "Obi Toppin",
@@ -77,6 +67,11 @@
     }
   ],
   "PHI": [
+    {
+      "name": "C. Bassey",
+      "status": "OUT",
+      "details": "C. Bassey (Out)"
+    },
     {
       "name": "J. Embiid",
       "status": "OUT",
@@ -221,6 +216,11 @@
       "details": "N. Queta (Ques)"
     },
     {
+      "name": "L. Garza",
+      "status": "QUES",
+      "details": "L. Garza (Ques)"
+    },
+    {
       "name": "J. Minott",
       "status": "QUES",
       "details": "J. Minott (Ques)"
@@ -232,6 +232,11 @@
     }
   ],
   "BOS": [
+    {
+      "name": "L. Garza",
+      "status": "QUES",
+      "details": "L. Garza (Ques)"
+    },
     {
       "name": "J. Minott",
       "status": "QUES",
@@ -270,14 +275,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "T. Jones",
+      "status": "DOUBT",
+      "details": "T. Jones (Doubt)"
+    },
+    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
-    },
-    {
-      "name": "Tre Jones",
-      "status": "OUT",
-      "details": "Tre Jones (Out)"
     }
   ],
   "CHI": [
@@ -287,14 +292,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "T. Jones",
+      "status": "DOUBT",
+      "details": "T. Jones (Doubt)"
+    },
+    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
-    },
-    {
-      "name": "Tre Jones",
-      "status": "OUT",
-      "details": "Tre Jones (Out)"
     }
   ],
   "MEM": [

@@ -3548,9 +3548,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-25,LAC,D. Jones,OUT,D. Jones (Out),rotowire
 2026-01-25,LAC,Chris Paul,OUT,Chris Paul (Out),rotowire
 2026-01-25,LAC,T. Washington,OUT,T. Washington (Out),rotowire
-2026-01-26,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-01-26,IND,Q. Jackson,QUES,Q. Jackson (Ques),rotowire
 2026-01-26,IND,B. Mathurin,QUES,B. Mathurin (Ques),rotowire
+2026-01-26,LAL,Tre Jones,OUT,Tre Jones (Out),rotowire
+2026-01-26,CHI,Tre Jones,OUT,Tre Jones (Out),rotowire
+2026-01-26,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-01-26,IND,Obi Toppin,OUT,Obi Toppin (Out),rotowire
 2026-01-26,IND,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-01-26,IND,Fantasy Football,REST,Fantasy Football (Rest),rotowire
@@ -3560,6 +3562,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-26,ATL,N. Dante,OFS,N. Dante (OFS),rotowire
 2026-01-26,ATL,K. Porzingis,OUT,K. Porzingis (Out),rotowire
 2026-01-26,ATL,Z. Risacher,OUT,Z. Risacher (Out),rotowire
+2026-01-26,PHI,C. Bassey,OUT,C. Bassey (Out),rotowire
 2026-01-26,PHI,J. Embiid,OUT,J. Embiid (Out),rotowire
 2026-01-26,PHI,P. George,OUT,P. George (Out),rotowire
 2026-01-26,PHI,C. Sexton,PROB,C. Sexton (Prob),rotowire
@@ -3587,8 +3590,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-26,POR,M. Thybulle,OUT,M. Thybulle (Out),rotowire
 2026-01-26,POR,B. Wesley,OUT,B. Wesley (Out),rotowire
 2026-01-26,POR,N. Queta,QUES,N. Queta (Ques),rotowire
+2026-01-26,POR,L. Garza,QUES,L. Garza (Ques),rotowire
 2026-01-26,POR,J. Minott,QUES,J. Minott (Ques),rotowire
 2026-01-26,POR,J. Tatum,OUT,J. Tatum (Out),rotowire
+2026-01-26,BOS,L. Garza,QUES,L. Garza (Ques),rotowire
 2026-01-26,BOS,J. Minott,QUES,J. Minott (Ques),rotowire
 2026-01-26,BOS,N. Queta,QUES,N. Queta (Ques),rotowire
 2026-01-26,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
@@ -3596,11 +3601,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-26,LAL,A. Reaves,OUT,A. Reaves (Out),rotowire
 2026-01-26,LAL,A. Thiero,OUT,A. Thiero (Out),rotowire
 2026-01-26,LAL,N. Essengue,OFS,N. Essengue (OFS),rotowire
+2026-01-26,LAL,T. Jones,DOUBT,T. Jones (Doubt),rotowire
 2026-01-26,LAL,Z. Collins,OUT,Z. Collins (Out),rotowire
-2026-01-26,LAL,Tre Jones,OUT,Tre Jones (Out),rotowire
 2026-01-26,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
+2026-01-26,CHI,T. Jones,DOUBT,T. Jones (Doubt),rotowire
 2026-01-26,CHI,Z. Collins,OUT,Z. Collins (Out),rotowire
-2026-01-26,CHI,Tre Jones,OUT,Tre Jones (Out),rotowire
 2026-01-26,MEM,S. Aldama,QUES,S. Aldama (Ques),rotowire
 2026-01-26,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-01-26,MEM,Zach Edey,OUT,Zach Edey (Out),rotowire
