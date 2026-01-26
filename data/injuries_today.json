@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-26",
-  "built_at_utc": "2026-01-26T22:29:26Z",
+  "built_at_utc": "2026-01-26T23:26:00Z",
   "source": "rotowire",
   "IND": [
     {
@@ -201,19 +201,14 @@
       "details": "B. Wesley (Out)"
     },
     {
-      "name": "N. Queta",
+      "name": "C. Boucher",
       "status": "QUES",
-      "details": "N. Queta (Ques)"
+      "details": "C. Boucher (Ques)"
     },
     {
-      "name": "L. Garza",
-      "status": "QUES",
-      "details": "L. Garza (Ques)"
-    },
-    {
-      "name": "J. Minott",
-      "status": "QUES",
-      "details": "J. Minott (Ques)"
+      "name": "Luka Garza",
+      "status": "OUT",
+      "details": "Luka Garza (Out)"
     },
     {
       "name": "J. Tatum",
@@ -223,19 +218,14 @@
   ],
   "BOS": [
     {
-      "name": "L. Garza",
+      "name": "C. Boucher",
       "status": "QUES",
-      "details": "L. Garza (Ques)"
+      "details": "C. Boucher (Ques)"
     },
     {
-      "name": "J. Minott",
-      "status": "QUES",
-      "details": "J. Minott (Ques)"
-    },
-    {
-      "name": "N. Queta",
-      "status": "QUES",
-      "details": "N. Queta (Ques)"
+      "name": "Luka Garza",
+      "status": "OUT",
+      "details": "Luka Garza (Out)"
     },
     {
       "name": "J. Tatum",
@@ -369,18 +359,18 @@
     },
     {
       "name": "S. Curry",
-      "status": "QUES",
-      "details": "S. Curry (Ques)"
-    },
-    {
-      "name": "D. Green",
-      "status": "QUES",
-      "details": "D. Green (Ques)"
+      "status": "OUT",
+      "details": "S. Curry (Out)"
     },
     {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "D. Green",
+      "status": "OUT",
+      "details": "D. Green (Out)"
     },
     {
       "name": "Al Horford",
