@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-26",
-  "built_at_utc": "2026-01-26T08:53:12Z",
+  "built_at_utc": "2026-01-26T14:53:49Z",
   "source": "rotowire",
   "IND": [
     {
@@ -373,9 +373,19 @@
       "details": "Seth Curry (Out)"
     },
     {
+      "name": "Al Horford",
+      "status": "OUT",
+      "details": "Al Horford (Out)"
+    },
+    {
       "name": "J. Kuminga",
       "status": "OUT",
       "details": "J. Kuminga (Out)"
+    },
+    {
+      "name": "D. Melton",
+      "status": "OUT",
+      "details": "D. Melton (Out)"
     },
     {
       "name": "T. Shannon",
