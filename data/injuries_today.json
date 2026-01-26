@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-26",
-  "built_at_utc": "2026-01-26T17:21:19Z",
+  "built_at_utc": "2026-01-26T18:32:39Z",
   "source": "rotowire",
   "IND": [
     {
@@ -83,11 +83,6 @@
       "details": "P. George (Out)"
     },
     {
-      "name": "C. Sexton",
-      "status": "PROB",
-      "details": "C. Sexton (Prob)"
-    },
-    {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
@@ -99,11 +94,6 @@
     }
   ],
   "CHA": [
-    {
-      "name": "C. Sexton",
-      "status": "PROB",
-      "details": "C. Sexton (Prob)"
-    },
     {
       "name": "M. Plumlee",
       "status": "OUT",
@@ -254,11 +244,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "J. LaRavia",
-      "status": "QUES",
-      "details": "J. LaRavia (Ques)"
-    },
     {
       "name": "A. Reaves",
       "status": "OUT",

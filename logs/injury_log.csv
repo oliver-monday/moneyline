@@ -3552,6 +3552,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-26,IND,B. Mathurin,QUES,B. Mathurin (Ques),rotowire
 2026-01-26,LAL,Tre Jones,OUT,Tre Jones (Out),rotowire
 2026-01-26,CHI,Tre Jones,OUT,Tre Jones (Out),rotowire
+2026-01-26,PHI,C. Sexton,PROB,C. Sexton (Prob),rotowire
+2026-01-26,CHA,C. Sexton,PROB,C. Sexton (Prob),rotowire
+2026-01-26,LAL,J. LaRavia,QUES,J. LaRavia (Ques),rotowire
 2026-01-26,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-01-26,IND,Obi Toppin,OUT,Obi Toppin (Out),rotowire
 2026-01-26,IND,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
@@ -3565,10 +3568,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-26,PHI,C. Bassey,OUT,C. Bassey (Out),rotowire
 2026-01-26,PHI,J. Embiid,OUT,J. Embiid (Out),rotowire
 2026-01-26,PHI,P. George,OUT,P. George (Out),rotowire
-2026-01-26,PHI,C. Sexton,PROB,C. Sexton (Prob),rotowire
 2026-01-26,PHI,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-01-26,PHI,KJ Simpson,OUT,KJ Simpson (Out),rotowire
-2026-01-26,CHA,C. Sexton,PROB,C. Sexton (Prob),rotowire
 2026-01-26,CHA,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-01-26,CHA,KJ Simpson,OUT,KJ Simpson (Out),rotowire
 2026-01-26,ORL,C. Castleton,OUT,C. Castleton (Out),rotowire
@@ -3597,7 +3598,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-26,BOS,J. Minott,QUES,J. Minott (Ques),rotowire
 2026-01-26,BOS,N. Queta,QUES,N. Queta (Ques),rotowire
 2026-01-26,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
-2026-01-26,LAL,J. LaRavia,QUES,J. LaRavia (Ques),rotowire
 2026-01-26,LAL,A. Reaves,OUT,A. Reaves (Out),rotowire
 2026-01-26,LAL,A. Thiero,OUT,A. Thiero (Out),rotowire
 2026-01-26,LAL,N. Essengue,OFS,N. Essengue (OFS),rotowire
