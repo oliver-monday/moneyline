@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-26",
-  "built_at_utc": "2026-01-26T20:25:24Z",
+  "built_at_utc": "2026-01-26T21:12:34Z",
   "source": "rotowire",
   "IND": [
     {
@@ -39,14 +39,14 @@
       "details": "N. Dante (OFS)"
     },
     {
+      "name": "Z. Risacher",
+      "status": "QUES",
+      "details": "Z. Risacher (Ques)"
+    },
+    {
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
-    },
-    {
-      "name": "Z. Risacher",
-      "status": "OUT",
-      "details": "Z. Risacher (Out)"
     }
   ],
   "ATL": [
@@ -56,14 +56,14 @@
       "details": "N. Dante (OFS)"
     },
     {
+      "name": "Z. Risacher",
+      "status": "QUES",
+      "details": "Z. Risacher (Ques)"
+    },
+    {
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
-    },
-    {
-      "name": "Z. Risacher",
-      "status": "OUT",
-      "details": "Z. Risacher (Out)"
     }
   ],
   "PHI": [
@@ -398,26 +398,26 @@
       "details": "D. Melton (Out)"
     },
     {
-      "name": "T. Shannon",
-      "status": "DOUBT",
-      "details": "T. Shannon (Doubt)"
-    },
-    {
       "name": "L. Miller",
       "status": "QUES",
       "details": "L. Miller (Ques)"
+    },
+    {
+      "name": "T. Shannon",
+      "status": "OUT",
+      "details": "T. Shannon (Out)"
     }
   ],
   "MIN": [
     {
-      "name": "T. Shannon",
-      "status": "DOUBT",
-      "details": "T. Shannon (Doubt)"
-    },
-    {
       "name": "L. Miller",
       "status": "QUES",
       "details": "L. Miller (Ques)"
+    },
+    {
+      "name": "T. Shannon",
+      "status": "OUT",
+      "details": "T. Shannon (Out)"
     }
   ]
 }
