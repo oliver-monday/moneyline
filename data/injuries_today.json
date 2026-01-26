@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-26",
-  "built_at_utc": "2026-01-26T18:32:39Z",
+  "built_at_utc": "2026-01-26T19:28:14Z",
   "source": "rotowire",
   "IND": [
     {
@@ -309,6 +309,11 @@
       "details": "Ty Jerome (Out)"
     },
     {
+      "name": "J. Landale",
+      "status": "OUT",
+      "details": "J. Landale (Out)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
@@ -358,6 +363,21 @@
       "details": "J. Butler (OFS)"
     },
     {
+      "name": "L. Cryer",
+      "status": "QUES",
+      "details": "L. Cryer (Ques)"
+    },
+    {
+      "name": "S. Curry",
+      "status": "QUES",
+      "details": "S. Curry (Ques)"
+    },
+    {
+      "name": "D. Green",
+      "status": "QUES",
+      "details": "D. Green (Ques)"
+    },
+    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
@@ -381,6 +401,11 @@
       "name": "T. Shannon",
       "status": "DOUBT",
       "details": "T. Shannon (Doubt)"
+    },
+    {
+      "name": "L. Miller",
+      "status": "QUES",
+      "details": "L. Miller (Ques)"
     }
   ],
   "MIN": [
@@ -388,6 +413,11 @@
       "name": "T. Shannon",
       "status": "DOUBT",
       "details": "T. Shannon (Doubt)"
+    },
+    {
+      "name": "L. Miller",
+      "status": "QUES",
+      "details": "L. Miller (Ques)"
     }
   ]
 }
