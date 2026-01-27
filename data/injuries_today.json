@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-27",
-  "built_at_utc": "2026-01-27T14:56:42Z",
+  "built_at_utc": "2026-01-27T17:19:26Z",
   "source": "rotowire",
   "POR": [
     {
@@ -17,6 +17,11 @@
       "name": "D. Reath",
       "status": "QUES",
       "details": "D. Reath (Ques)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "QUES",
+      "details": "R. Williams (Ques)"
     },
     {
       "name": "S. Henderson",
@@ -59,11 +64,6 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
-    },
-    {
       "name": "K. Middleton",
       "status": "QUES",
       "details": "K. Middleton (Ques)"
@@ -94,11 +94,6 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
     },
     {
       "name": "K. Middleton",
