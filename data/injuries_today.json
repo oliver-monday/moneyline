@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-27",
-  "built_at_utc": "2026-01-27T17:19:26Z",
+  "built_at_utc": "2026-01-27T18:35:37Z",
   "source": "rotowire",
   "POR": [
     {
@@ -12,11 +12,6 @@
       "name": "D. Avdija",
       "status": "QUES",
       "details": "D. Avdija (Ques)"
-    },
-    {
-      "name": "D. Reath",
-      "status": "QUES",
-      "details": "D. Reath (Ques)"
     },
     {
       "name": "R. Williams",
@@ -32,6 +27,11 @@
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "Duop Reath",
+      "status": "OUT",
+      "details": "Duop Reath (Out)"
     },
     {
       "name": "M. Thybulle",
@@ -119,13 +119,13 @@
   "SAC": [
     {
       "name": "Z. LaVine",
-      "status": "QUES",
-      "details": "Z. LaVine (Ques)"
+      "status": "OUT",
+      "details": "Z. LaVine (Out)"
     },
     {
-      "name": "M. Monk",
-      "status": "QUES",
-      "details": "M. Monk (Ques)"
+      "name": "Malik Monk",
+      "status": "OUT",
+      "details": "Malik Monk (Out)"
     },
     {
       "name": "K. Murray",
@@ -151,25 +151,35 @@
     },
     {
       "name": "P. George",
-      "status": "QUES",
-      "details": "P. George (Ques)"
+      "status": "PROB",
+      "details": "P. George (Prob)"
     },
     {
       "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
+      "status": "QUES",
+      "details": "J. Embiid (Ques)"
+    },
+    {
+      "name": "Q. Grimes",
+      "status": "QUES",
+      "details": "Q. Grimes (Ques)"
     }
   ],
   "PHI": [
     {
-      "name": "J. Embiid",
+      "name": "P. George",
       "status": "PROB",
-      "details": "J. Embiid (Prob)"
+      "details": "P. George (Prob)"
     },
     {
-      "name": "P. George",
+      "name": "J. Embiid",
       "status": "QUES",
-      "details": "P. George (Ques)"
+      "details": "J. Embiid (Ques)"
+    },
+    {
+      "name": "Q. Grimes",
+      "status": "QUES",
+      "details": "Q. Grimes (Ques)"
     }
   ],
   "NOP": [
@@ -342,19 +352,9 @@
   ],
   "BKN": [
     {
-      "name": "C. Thomas",
-      "status": "PROB",
-      "details": "C. Thomas (Prob)"
-    },
-    {
       "name": "N. Traore",
       "status": "PROB",
       "details": "N. Traore (Prob)"
-    },
-    {
-      "name": "T. Martin",
-      "status": "QUES",
-      "details": "T. Martin (Ques)"
     },
     {
       "name": "N. Clowney",
@@ -365,6 +365,11 @@
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
+    },
+    {
+      "name": "T. Martin",
+      "status": "OUT",
+      "details": "T. Martin (Out)"
     },
     {
       "name": "J. Green",
