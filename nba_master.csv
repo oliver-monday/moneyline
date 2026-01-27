@@ -687,10 +687,17 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810509,2026-01-25,2026-01-26T00:00Z,San Antonio Spurs,SA,95,-600.0,,New Orleans Pelicans,NO,104,440.0,,San Antonio,TX,,
 401810510,2026-01-25,2026-01-26T01:00Z,Phoenix Suns,PHX,102,-170.0,,Miami Heat,MIA,111,142.0,,Phoenix,AZ,,
 401810511,2026-01-25,2026-01-26T02:00Z,LA Clippers,LAC,126,-375.0,,Brooklyn Nets,BKN,89,295.0,,Inglewood,CA,,
-401810514,2026-01-26,2026-01-26T18:30Z,Atlanta Hawks,ATL,0,-225.0,,Indiana Pacers,IND,0,185.0,,Atlanta,GA,N. Dante (OFS); K. Porzingis (Out); Z. Risacher (Out),T. Haliburton (OFS); Obi Toppin (Out)
-401810512,2026-01-26,2026-01-26T20:00Z,Charlotte Hornets,CHA,0,-148.0,,Philadelphia 76ers,PHI,0,124.0,,Charlotte,NC,M. Plumlee (Out); KJ Simpson (Out),J. Embiid (Out); P. George (Out)
-401810513,2026-01-26,2026-01-27T00:00Z,Cleveland Cavaliers,CLE,0,-230.0,,Orlando Magic,ORL,0,190.0,,Cleveland,OH,D. Garland (Out); Max Strus (Out),C. Castleton (Out); F. Wagner (Out)
-401810515,2026-01-26,2026-01-27T01:00Z,Boston Celtics,BOS,0,-305.0,,Portland Trail Blazers,POR,0,245.0,,Boston,MA,J. Tatum (Out),D. Lillard (OFS); S. Henderson (Out); K. Murray (Out); Duop Reath (Out); M. Thybulle (Out); B. Wesley (Out)
-401810516,2026-01-26,2026-01-27T01:00Z,Chicago Bulls,CHI,0,-102.0,,Los Angeles Lakers,LAL,0,-118.0,,Chicago,IL,N. Essengue (OFS); Z. Collins (Out); Tre Jones (Out),A. Reaves (Out); A. Thiero (Out)
-401810517,2026-01-26,2026-01-27T01:00Z,Houston Rockets,HOU,0,-470.0,,Memphis Grizzlies,MEM,0,360.0,,Houston,TX,S. Adams (Out); F. VanVleet (Out),B. Clarke (Out); Zach Edey (Out); Ty Jerome (Out); Ja Morant (Out); S. Pippen (Out)
-401810518,2026-01-26,2026-01-27T02:30Z,Minnesota Timberwolves,MIN,0,-278.0,,Golden State Warriors,GS,0,225.0,,Minneapolis,MN,,J. Butler (OFS); Seth Curry (Out); J. Kuminga (Out)
+401810514,2026-01-26,2026-01-26T18:30Z,Atlanta Hawks,ATL,132,-225.0,,Indiana Pacers,IND,116,185.0,,Atlanta,GA,,
+401810512,2026-01-26,2026-01-26T20:00Z,Charlotte Hornets,CHA,130,-148.0,,Philadelphia 76ers,PHI,93,124.0,,Charlotte,NC,,
+401810513,2026-01-26,2026-01-27T00:00Z,Cleveland Cavaliers,CLE,114,-230.0,,Orlando Magic,ORL,98,190.0,,Cleveland,OH,,
+401810515,2026-01-26,2026-01-27T01:00Z,Boston Celtics,BOS,102,-305.0,,Portland Trail Blazers,POR,94,245.0,,Boston,MA,,
+401810516,2026-01-26,2026-01-27T01:00Z,Chicago Bulls,CHI,118,-102.0,,Los Angeles Lakers,LAL,129,-118.0,,Chicago,IL,,
+401810517,2026-01-26,2026-01-27T01:00Z,Houston Rockets,HOU,108,-470.0,,Memphis Grizzlies,MEM,99,360.0,,Houston,TX,,
+401810518,2026-01-26,2026-01-27T02:30Z,Minnesota Timberwolves,MIN,108,-278.0,,Golden State Warriors,GS,83,225.0,,Minneapolis,MN,,
+401810519,2026-01-27,2026-01-28T00:00Z,Washington Wizards,WSH,0,210.0,,Portland Trail Blazers,POR,0,-258.0,,Washington,DC,C. Whitmore (OFS); M. Bagley (Out); T. Vukcevic (Out); Trae Young (Out),D. Lillard (OFS); S. Henderson (Out); K. Murray (Out); M. Thybulle (Out); B. Wesley (Out)
+401810520,2026-01-27,2026-01-28T00:30Z,New York Knicks,NY,0,-700.0,,Sacramento Kings,SAC,0,500.0,,New York,NY,,K. Murray (Out)
+401810521,2026-01-27,2026-01-28T01:00Z,Philadelphia 76ers,PHI,0,-440.0,,Milwaukee Bucks,MIL,0,340.0,,Philadelphia,PA,,G. Antetokounmpo (Out); K. Porter (Out); T. Prince (Out)
+401810522,2026-01-27,2026-01-28T01:00Z,Oklahoma City Thunder,OKC,0,-850.0,,New Orleans Pelicans,NO,0,575.0,,Oklahoma City,OK,T. Sorber (OFS); A. Caruso (Out); I. Hartenstein (Out); A. Mitchell (Out); N. Topic (Out); J. Williams (Out),D. Murray (Out)
+401810523,2026-01-27,2026-01-28T02:00Z,Denver Nuggets,DEN,0,200.0,,Detroit Pistons,DET,0,-245.0,,Denver,CO,T. Bates (Out); C. Braun (Out); A. Gordon (Out); C. Johnson (Out); N. Jokic (Out),C. LeVert (Out)
+401810524,2026-01-27,2026-01-28T02:00Z,Phoenix Suns,PHX,0,-345.0,,Brooklyn Nets,BKN,0,275.0,,Phoenix,AZ,D. Booker (Out),N. Clowney (Out); H. Highsmith (Out)
+401810525,2026-01-27,2026-01-28T03:00Z,Utah Jazz,UTAH,0,275.0,,LA Clippers,LAC,0,-345.0,,Salt Lake City,UT,W. Kessler (OFS); K. George (Out); G. Niang (Out),B. Beal (OFS); B. Bogdanovic (Out); D. Jones (Out); Chris Paul (Out)
