@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-26",
-  "built_at_utc": "2026-01-26T23:26:00Z",
+  "built_at_utc": "2026-01-27T01:06:58Z",
   "source": "rotowire",
   "IND": [
     {
@@ -68,14 +68,9 @@
   ],
   "PHI": [
     {
-      "name": "C. Bassey",
-      "status": "QUES",
-      "details": "C. Bassey (Ques)"
-    },
-    {
       "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
+      "status": "PROB",
+      "details": "J. Embiid (Prob)"
     },
     {
       "name": "P. George",
@@ -117,14 +112,14 @@
       "details": "F. Wagner (Out)"
     },
     {
-      "name": "D. Hunter",
-      "status": "QUES",
-      "details": "D. Hunter (Ques)"
-    },
-    {
       "name": "D. Garland",
       "status": "OUT",
       "details": "D. Garland (Out)"
+    },
+    {
+      "name": "D. Hunter",
+      "status": "OUT",
+      "details": "D. Hunter (Out)"
     },
     {
       "name": "S. Merrill",
@@ -139,14 +134,14 @@
   ],
   "CLE": [
     {
-      "name": "D. Hunter",
-      "status": "QUES",
-      "details": "D. Hunter (Ques)"
-    },
-    {
       "name": "D. Garland",
       "status": "OUT",
       "details": "D. Garland (Out)"
+    },
+    {
+      "name": "D. Hunter",
+      "status": "OUT",
+      "details": "D. Hunter (Out)"
     },
     {
       "name": "S. Merrill",
@@ -167,13 +162,8 @@
     },
     {
       "name": "D. Avdija",
-      "status": "QUES",
-      "details": "D. Avdija (Ques)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
     },
     {
       "name": "S. Henderson",
@@ -202,8 +192,8 @@
     },
     {
       "name": "C. Boucher",
-      "status": "QUES",
-      "details": "C. Boucher (Ques)"
+      "status": "OUT",
+      "details": "C. Boucher (Out)"
     },
     {
       "name": "Luka Garza",
@@ -219,8 +209,8 @@
   "BOS": [
     {
       "name": "C. Boucher",
-      "status": "QUES",
-      "details": "C. Boucher (Ques)"
+      "status": "OUT",
+      "details": "C. Boucher (Out)"
     },
     {
       "name": "Luka Garza",
@@ -279,11 +269,6 @@
   ],
   "MEM": [
     {
-      "name": "S. Aldama",
-      "status": "QUES",
-      "details": "S. Aldama (Ques)"
-    },
-    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -314,11 +299,6 @@
       "details": "S. Pippen (Out)"
     },
     {
-      "name": "A. Holiday",
-      "status": "PROB",
-      "details": "A. Holiday (Prob)"
-    },
-    {
       "name": "S. Adams",
       "status": "OUT",
       "details": "S. Adams (Out)"
@@ -330,11 +310,6 @@
     }
   ],
   "HOU": [
-    {
-      "name": "A. Holiday",
-      "status": "PROB",
-      "details": "A. Holiday (Prob)"
-    },
     {
       "name": "S. Adams",
       "status": "OUT",
@@ -388,9 +363,9 @@
       "details": "D. Melton (Out)"
     },
     {
-      "name": "L. Miller",
+      "name": "A. Edwards",
       "status": "QUES",
-      "details": "L. Miller (Ques)"
+      "details": "A. Edwards (Ques)"
     },
     {
       "name": "T. Shannon",
@@ -400,9 +375,9 @@
   ],
   "MIN": [
     {
-      "name": "L. Miller",
+      "name": "A. Edwards",
       "status": "QUES",
-      "details": "L. Miller (Ques)"
+      "details": "A. Edwards (Ques)"
     },
     {
       "name": "T. Shannon",
