@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-26",
-  "built_at_utc": "2026-01-27T03:00:30Z",
+  "built_at_utc": "2026-01-27T03:29:11Z",
   "source": "rotowire",
   "IND": [
     {
@@ -103,28 +103,28 @@
   "ORL": [
     {
       "name": "C. Castleton",
-      "status": "OUT",
-      "details": "C. Castleton (Out)"
+      "status": "DOUBT",
+      "details": "C. Castleton (Doubt)"
     },
     {
       "name": "F. Wagner",
-      "status": "OUT",
-      "details": "F. Wagner (Out)"
+      "status": "QUES",
+      "details": "F. Wagner (Ques)"
     },
     {
       "name": "D. Garland",
-      "status": "OUT",
-      "details": "D. Garland (Out)"
+      "status": "DOUBT",
+      "details": "D. Garland (Doubt)"
     },
     {
       "name": "D. Hunter",
-      "status": "OUT",
-      "details": "D. Hunter (Out)"
+      "status": "QUES",
+      "details": "D. Hunter (Ques)"
     },
     {
       "name": "S. Merrill",
-      "status": "OUT",
-      "details": "S. Merrill (Out)"
+      "status": "QUES",
+      "details": "S. Merrill (Ques)"
     },
     {
       "name": "Max Strus",
@@ -135,18 +135,18 @@
   "CLE": [
     {
       "name": "D. Garland",
-      "status": "OUT",
-      "details": "D. Garland (Out)"
+      "status": "DOUBT",
+      "details": "D. Garland (Doubt)"
     },
     {
       "name": "D. Hunter",
-      "status": "OUT",
-      "details": "D. Hunter (Out)"
+      "status": "QUES",
+      "details": "D. Hunter (Ques)"
     },
     {
       "name": "S. Merrill",
-      "status": "OUT",
-      "details": "S. Merrill (Out)"
+      "status": "QUES",
+      "details": "S. Merrill (Ques)"
     },
     {
       "name": "Max Strus",
