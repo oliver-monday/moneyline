@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-27",
-  "built_at_utc": "2026-01-27T19:31:42Z",
+  "built_at_utc": "2026-01-27T20:21:31Z",
   "source": "rotowire",
   "POR": [
     {
@@ -372,26 +372,46 @@
       "details": "T. Martin (Out)"
     },
     {
-      "name": "J. Green",
+      "name": "C. Gillespie",
       "status": "QUES",
-      "details": "J. Green (Ques)"
+      "details": "C. Gillespie (Ques)"
+    },
+    {
+      "name": "I. Livers",
+      "status": "PROB",
+      "details": "I. Livers (Prob)"
     },
     {
       "name": "D. Booker",
       "status": "OUT",
       "details": "D. Booker (Out)"
+    },
+    {
+      "name": "J. Green",
+      "status": "OUT",
+      "details": "J. Green (Out)"
     }
   ],
   "PHX": [
     {
-      "name": "J. Green",
+      "name": "I. Livers",
+      "status": "PROB",
+      "details": "I. Livers (Prob)"
+    },
+    {
+      "name": "C. Gillespie",
       "status": "QUES",
-      "details": "J. Green (Ques)"
+      "details": "C. Gillespie (Ques)"
     },
     {
       "name": "D. Booker",
       "status": "OUT",
       "details": "D. Booker (Out)"
+    },
+    {
+      "name": "J. Green",
+      "status": "OUT",
+      "details": "J. Green (Out)"
     }
   ],
   "LAC": [
@@ -431,6 +451,11 @@
       "details": "K. George (Out)"
     },
     {
+      "name": "E. Harkless",
+      "status": "OUT",
+      "details": "E. Harkless (Out)"
+    },
+    {
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
@@ -451,6 +476,11 @@
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
+    },
+    {
+      "name": "E. Harkless",
+      "status": "OUT",
+      "details": "E. Harkless (Out)"
     },
     {
       "name": "G. Niang",
