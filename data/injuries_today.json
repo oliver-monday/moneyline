@@ -1,22 +1,12 @@
 {
   "asof_date": "2026-01-27",
-  "built_at_utc": "2026-01-27T22:28:48Z",
+  "built_at_utc": "2026-01-27T23:25:29Z",
   "source": "rotowire",
   "POR": [
     {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "D. Avdija",
-      "status": "QUES",
-      "details": "D. Avdija (Ques)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
     },
     {
       "name": "S. Henderson",
@@ -44,6 +34,11 @@
       "details": "B. Wesley (Out)"
     },
     {
+      "name": "R. Williams",
+      "status": "OUT",
+      "details": "R. Williams (Out)"
+    },
+    {
       "name": "Fantasy Home",
       "status": "REST",
       "details": "Fantasy Home (Rest)"
@@ -62,11 +57,6 @@
       "name": "Fantasy Football",
       "status": "REST",
       "details": "Fantasy Football (Rest)"
-    },
-    {
-      "name": "K. Middleton",
-      "status": "QUES",
-      "details": "K. Middleton (Ques)"
     },
     {
       "name": "C. Whitmore",
@@ -94,11 +84,6 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "K. Middleton",
-      "status": "QUES",
-      "details": "K. Middleton (Ques)"
     },
     {
       "name": "M. Bagley",
