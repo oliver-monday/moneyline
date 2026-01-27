@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-26",
-  "built_at_utc": "2026-01-27T01:06:58Z",
+  "built_at_utc": "2026-01-27T03:00:30Z",
   "source": "rotowire",
   "IND": [
     {
@@ -328,9 +328,9 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "L. Cryer",
-      "status": "QUES",
-      "details": "L. Cryer (Ques)"
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
     },
     {
       "name": "S. Curry",
@@ -364,8 +364,8 @@
     },
     {
       "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
+      "status": "OUT",
+      "details": "A. Edwards (Out)"
     },
     {
       "name": "T. Shannon",
@@ -376,8 +376,8 @@
   "MIN": [
     {
       "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
+      "status": "OUT",
+      "details": "A. Edwards (Out)"
     },
     {
       "name": "T. Shannon",
