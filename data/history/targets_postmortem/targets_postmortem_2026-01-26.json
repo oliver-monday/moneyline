@@ -6,7 +6,7 @@
     "misses": 5,
     "hit_rate_pct": 62,
     "top_targets_total": 6,
-    "top_targets_hits": 3
+    "top_targets_hits": 4
   },
   "hits": [
     {
@@ -318,7 +318,7 @@
       "actual": 5
     }
   ],
-  "built_at_utc": "2026-01-27T08:56:33Z",
+  "built_at_utc": "2026-01-27T14:21:17Z",
   "snapshot_file": "targets_snapshot_2026-01-26.json",
   "preset": "baseline",
   "top_targets": [
@@ -449,28 +449,28 @@
     },
     {
       "asof_date": "2026-01-26",
-      "player_id": "4431736.0",
-      "player_name": "Toumani Camara",
-      "team_abbrev": "POR",
-      "opp": "BOS",
-      "game_id": "401810515",
-      "stat": "ast",
-      "threshold": 2,
+      "player_id": "4432573.0",
+      "player_name": "Paolo Banchero",
+      "team_abbrev": "ORL",
+      "opp": "CLE",
+      "game_id": "401810513",
+      "stat": "3pt",
+      "threshold": 1,
       "hits": 8,
       "window_games": 10,
       "hit_rate": 0.8,
       "is_home_game": false,
-      "rest_days": 2,
+      "rest_days": 1,
       "is_b2b": false,
-      "share_trend_pp": 0.1298760116694886,
-      "share_trend_dir": "FLAT",
-      "iqr_10": 0.75,
-      "landmine_rate_10": 0.2,
-      "trap_risk": false,
+      "share_trend_pp": 6.8149350649350655,
+      "share_trend_dir": "UP",
+      "iqr_10": 1.75,
+      "landmine_rate_10": null,
+      "trap_risk": null,
       "dnp": false,
-      "actual": 1,
-      "hit": false,
-      "delta": 1
+      "actual": 2,
+      "hit": true,
+      "delta": -1
     }
   ]
 }
