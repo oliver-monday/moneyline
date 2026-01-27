@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-27",
-  "built_at_utc": "2026-01-27T18:35:37Z",
+  "built_at_utc": "2026-01-27T19:31:42Z",
   "source": "rotowire",
   "POR": [
     {
@@ -401,11 +401,6 @@
       "details": "B. Beal (OFS)"
     },
     {
-      "name": "K. Dunn",
-      "status": "QUES",
-      "details": "K. Dunn (Ques)"
-    },
-    {
       "name": "K. Leonard",
       "status": "QUES",
       "details": "K. Leonard (Ques)"
@@ -426,24 +421,9 @@
       "details": "Chris Paul (Out)"
     },
     {
-      "name": "L. Markkanen",
-      "status": "QUES",
-      "details": "L. Markkanen (Ques)"
-    },
-    {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "K. Love",
-      "status": "PROB",
-      "details": "K. Love (Prob)"
-    },
-    {
-      "name": "J. Nurkic",
-      "status": "DOUBT",
-      "details": "J. Nurkic (Doubt)"
     },
     {
       "name": "K. George",
@@ -454,6 +434,11 @@
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
+    },
+    {
+      "name": "J. Nurkic",
+      "status": "OUT",
+      "details": "J. Nurkic (Out)"
     }
   ],
   "UTA": [
@@ -463,21 +448,6 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "K. Love",
-      "status": "PROB",
-      "details": "K. Love (Prob)"
-    },
-    {
-      "name": "L. Markkanen",
-      "status": "QUES",
-      "details": "L. Markkanen (Ques)"
-    },
-    {
-      "name": "J. Nurkic",
-      "status": "DOUBT",
-      "details": "J. Nurkic (Doubt)"
-    },
-    {
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
@@ -486,6 +456,11 @@
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
+    },
+    {
+      "name": "J. Nurkic",
+      "status": "OUT",
+      "details": "J. Nurkic (Out)"
     }
   ]
 }
