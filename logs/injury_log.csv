@@ -3790,6 +3790,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-28,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-01-28,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
 2026-01-28,CHA,M. Plumlee,OUT,M. Plumlee (Out),rotowire
+2026-01-28,CHA,KJ Simpson,OUT,KJ Simpson (Out),rotowire
 2026-01-28,CHA,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-01-28,CHA,Zach Edey,OUT,Zach Edey (Out),rotowire
 2026-01-28,CHA,Ty Jerome,OUT,Ty Jerome (Out),rotowire
@@ -3823,10 +3824,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-28,GSW,K. George,QUES,K. George (Ques),rotowire
 2026-01-28,GSW,J. Nurkic,QUES,J. Nurkic (Ques),rotowire
 2026-01-28,GSW,W. Kessler,OFS,W. Kessler (OFS),rotowire
+2026-01-28,GSW,E. Harkless,OUT,E. Harkless (Out),rotowire
 2026-01-28,GSW,G. Niang,OUT,G. Niang (Out),rotowire
 2026-01-28,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
 2026-01-28,UTA,K. George,QUES,K. George (Ques),rotowire
 2026-01-28,UTA,J. Nurkic,QUES,J. Nurkic (Ques),rotowire
+2026-01-28,UTA,E. Harkless,OUT,E. Harkless (Out),rotowire
 2026-01-28,UTA,G. Niang,OUT,G. Niang (Out),rotowire
 2026-01-28,SAS,J. Sochan,QUES,J. Sochan (Ques),rotowire
 2026-01-28,SAS,S. Adams,OUT,S. Adams (Out),rotowire
