@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-27",
-  "built_at_utc": "2026-01-28T02:57:38Z",
+  "built_at_utc": "2026-01-28T03:27:31Z",
   "source": "rotowire",
   "POR": [
     {
@@ -120,6 +120,11 @@
   ],
   "MIL": [
     {
+      "name": "K. Kuzma",
+      "status": "QUES",
+      "details": "K. Kuzma (Ques)"
+    },
+    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -152,11 +157,6 @@
       "name": "D. Murray",
       "status": "OUT",
       "details": "D. Murray (Out)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
     },
     {
       "name": "T. Sorber",
@@ -199,11 +199,6 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
     },
     {
       "name": "A. Caruso",
