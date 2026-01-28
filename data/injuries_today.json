@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-28",
-  "built_at_utc": "2026-01-28T18:34:46Z",
+  "built_at_utc": "2026-01-28T19:34:29Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -353,11 +353,6 @@
   ],
   "MIN": [
     {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
@@ -376,6 +371,11 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
+    },
+    {
+      "name": "K. Thompson",
+      "status": "QUES",
+      "details": "K. Thompson (Ques)"
     },
     {
       "name": "A. Davis",
@@ -405,6 +405,11 @@
       "details": "C. Flagg (Ques)"
     },
     {
+      "name": "K. Thompson",
+      "status": "QUES",
+      "details": "K. Thompson (Ques)"
+    },
+    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
@@ -425,11 +430,6 @@
       "name": "S. Curry",
       "status": "PROB",
       "details": "S. Curry (Prob)"
-    },
-    {
-      "name": "D. Green",
-      "status": "PROB",
-      "details": "D. Green (Prob)"
     },
     {
       "name": "G. Payton",
