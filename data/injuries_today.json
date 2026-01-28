@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-27",
-  "built_at_utc": "2026-01-27T23:25:29Z",
+  "built_at_utc": "2026-01-28T01:03:14Z",
   "source": "rotowire",
   "POR": [
     {
@@ -135,36 +135,16 @@
       "details": "T. Prince (Out)"
     },
     {
-      "name": "P. George",
-      "status": "PROB",
-      "details": "P. George (Prob)"
-    },
-    {
-      "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
-    },
-    {
       "name": "Q. Grimes",
-      "status": "QUES",
-      "details": "Q. Grimes (Ques)"
+      "status": "OUT",
+      "details": "Q. Grimes (Out)"
     }
   ],
   "PHI": [
     {
-      "name": "P. George",
-      "status": "PROB",
-      "details": "P. George (Prob)"
-    },
-    {
-      "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
-    },
-    {
       "name": "Q. Grimes",
-      "status": "QUES",
-      "details": "Q. Grimes (Ques)"
+      "status": "OUT",
+      "details": "Q. Grimes (Out)"
     }
   ],
   "NOP": [
@@ -172,11 +152,6 @@
       "name": "D. Murray",
       "status": "OUT",
       "details": "D. Murray (Out)"
-    },
-    {
-      "name": "C. Wallace",
-      "status": "QUES",
-      "details": "C. Wallace (Ques)"
     },
     {
       "name": "T. Sorber",
@@ -202,6 +177,11 @@
       "name": "N. Topic",
       "status": "OUT",
       "details": "N. Topic (Out)"
+    },
+    {
+      "name": "C. Wallace",
+      "status": "OUT",
+      "details": "C. Wallace (Out)"
     },
     {
       "name": "J. Williams",
@@ -216,11 +196,6 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "C. Wallace",
-      "status": "QUES",
-      "details": "C. Wallace (Ques)"
-    },
-    {
       "name": "A. Caruso",
       "status": "OUT",
       "details": "A. Caruso (Out)"
@@ -241,6 +216,11 @@
       "details": "N. Topic (Out)"
     },
     {
+      "name": "C. Wallace",
+      "status": "OUT",
+      "details": "C. Wallace (Out)"
+    },
+    {
       "name": "J. Williams",
       "status": "OUT",
       "details": "J. Williams (Out)"
@@ -251,11 +231,6 @@
       "name": "C. LeVert",
       "status": "OUT",
       "details": "C. LeVert (Out)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
     },
     {
       "name": "P. Watson",
@@ -295,11 +270,6 @@
   ],
   "DEN": [
     {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
       "name": "J. Valanciunas",
       "status": "PROB",
       "details": "J. Valanciunas (Prob)"
@@ -337,11 +307,6 @@
   ],
   "BKN": [
     {
-      "name": "N. Traore",
-      "status": "PROB",
-      "details": "N. Traore (Prob)"
-    },
-    {
       "name": "N. Clowney",
       "status": "OUT",
       "details": "N. Clowney (Out)"
@@ -357,46 +322,46 @@
       "details": "T. Martin (Out)"
     },
     {
-      "name": "C. Gillespie",
-      "status": "QUES",
-      "details": "C. Gillespie (Ques)"
-    },
-    {
-      "name": "I. Livers",
-      "status": "PROB",
-      "details": "I. Livers (Prob)"
-    },
-    {
       "name": "D. Booker",
       "status": "OUT",
       "details": "D. Booker (Out)"
     },
     {
+      "name": "C. Gillespie",
+      "status": "OUT",
+      "details": "C. Gillespie (Out)"
+    },
+    {
       "name": "J. Green",
       "status": "OUT",
       "details": "J. Green (Out)"
+    },
+    {
+      "name": "I. Livers",
+      "status": "OUT",
+      "details": "I. Livers (Out)"
     }
   ],
   "PHX": [
     {
-      "name": "I. Livers",
-      "status": "PROB",
-      "details": "I. Livers (Prob)"
-    },
-    {
-      "name": "C. Gillespie",
-      "status": "QUES",
-      "details": "C. Gillespie (Ques)"
-    },
-    {
       "name": "D. Booker",
       "status": "OUT",
       "details": "D. Booker (Out)"
     },
     {
+      "name": "C. Gillespie",
+      "status": "OUT",
+      "details": "C. Gillespie (Out)"
+    },
+    {
       "name": "J. Green",
       "status": "OUT",
       "details": "J. Green (Out)"
+    },
+    {
+      "name": "I. Livers",
+      "status": "OUT",
+      "details": "I. Livers (Out)"
     }
   ],
   "LAC": [
