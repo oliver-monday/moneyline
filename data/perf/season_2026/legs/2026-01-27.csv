@@ -1,0 +1,14 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-27,2026,Trey Murphy III,NO,OKC,pts,20,MISSED,10,,targets_snapshot_2026-01-27.json
+2026-01-27,2026,Trey Murphy III,NO,OKC,3pt,3,MISSED,1,,targets_snapshot_2026-01-27.json
+2026-01-27,2026,James Harden,LAC,UTAH,reb,4,MISSED,3,,targets_snapshot_2026-01-27.json
+2026-01-27,2026,Joel Embiid,PHI,MIL,pts,25,HIT,29,,targets_snapshot_2026-01-27.json
+2026-01-27,2026,Joel Embiid,PHI,MIL,3pt,1,HIT,1,,targets_snapshot_2026-01-27.json
+2026-01-27,2026,Shaedon Sharpe,POR,WSH,reb,4,HIT,4,,targets_snapshot_2026-01-27.json
+2026-01-27,2026,Shaedon Sharpe,POR,WSH,ast,2,HIT,2,,targets_snapshot_2026-01-27.json
+2026-01-27,2026,Ryan Rollins,MIL,PHI,reb,4,HIT,8,,targets_snapshot_2026-01-27.json
+2026-01-27,2026,Saddiq Bey,NO,OKC,pts,15,HIT,16,,targets_snapshot_2026-01-27.json
+2026-01-27,2026,Saddiq Bey,NO,OKC,ast,2,HIT,5,,targets_snapshot_2026-01-27.json
+2026-01-27,2026,Russell Westbrook,SAC,NY,3pt,2,HIT,2,,targets_snapshot_2026-01-27.json
+2026-01-27,2026,Dillon Brooks,PHX,BKN,reb,4,MISSED,3,,targets_snapshot_2026-01-27.json
+2026-01-27,2026,Chet Holmgren,OKC,NO,reb,8,HIT,14,,targets_snapshot_2026-01-27.json
