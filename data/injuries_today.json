@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-27",
-  "built_at_utc": "2026-01-28T01:03:14Z",
+  "built_at_utc": "2026-01-28T02:57:38Z",
   "source": "rotowire",
   "POR": [
     {
@@ -154,6 +154,11 @@
       "details": "D. Murray (Out)"
     },
     {
+      "name": "J. Williams",
+      "status": "QUES",
+      "details": "J. Williams (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
@@ -196,6 +201,11 @@
       "details": "T. Sorber (OFS)"
     },
     {
+      "name": "J. Williams",
+      "status": "QUES",
+      "details": "J. Williams (Ques)"
+    },
+    {
       "name": "A. Caruso",
       "status": "OUT",
       "details": "A. Caruso (Out)"
@@ -233,16 +243,6 @@
       "details": "C. LeVert (Out)"
     },
     {
-      "name": "P. Watson",
-      "status": "PROB",
-      "details": "P. Watson (Prob)"
-    },
-    {
-      "name": "J. Valanciunas",
-      "status": "PROB",
-      "details": "J. Valanciunas (Prob)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -269,16 +269,6 @@
     }
   ],
   "DEN": [
-    {
-      "name": "J. Valanciunas",
-      "status": "PROB",
-      "details": "J. Valanciunas (Prob)"
-    },
-    {
-      "name": "P. Watson",
-      "status": "PROB",
-      "details": "P. Watson (Prob)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -369,11 +359,6 @@
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
-    },
-    {
-      "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
     },
     {
       "name": "B. Bogdanovic",
