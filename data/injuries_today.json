@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-28",
-  "built_at_utc": "2026-01-28T22:34:20Z",
+  "built_at_utc": "2026-01-28T23:28:54Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -34,11 +34,6 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "S. Merrill",
-      "status": "PROB",
-      "details": "S. Merrill (Prob)"
-    },
-    {
       "name": "D. Hunter",
       "status": "PROB",
       "details": "D. Hunter (Prob)"
@@ -64,11 +59,6 @@
       "name": "D. Hunter",
       "status": "PROB",
       "details": "D. Hunter (Prob)"
-    },
-    {
-      "name": "S. Merrill",
-      "status": "PROB",
-      "details": "S. Merrill (Prob)"
     },
     {
       "name": "D. Garland",
@@ -176,24 +166,14 @@
       "details": "F. Wagner (Out)"
     },
     {
-      "name": "N. Powell",
-      "status": "PROB",
-      "details": "N. Powell (Prob)"
-    },
-    {
-      "name": "K. Ware",
-      "status": "QUES",
-      "details": "K. Ware (Ques)"
-    },
-    {
-      "name": "D. Mitchell",
-      "status": "DOUBT",
-      "details": "D. Mitchell (Doubt)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
+    },
+    {
+      "name": "D. Mitchell",
+      "status": "OUT",
+      "details": "D. Mitchell (Out)"
     },
     {
       "name": "T. Rozier",
@@ -203,24 +183,14 @@
   ],
   "MIA": [
     {
-      "name": "N. Powell",
-      "status": "PROB",
-      "details": "N. Powell (Prob)"
-    },
-    {
-      "name": "K. Ware",
-      "status": "QUES",
-      "details": "K. Ware (Ques)"
-    },
-    {
-      "name": "D. Mitchell",
-      "status": "DOUBT",
-      "details": "D. Mitchell (Doubt)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
+    },
+    {
+      "name": "D. Mitchell",
+      "status": "OUT",
+      "details": "D. Mitchell (Out)"
     },
     {
       "name": "T. Rozier",
@@ -250,11 +220,6 @@
       "details": "M. Robinson (Out)"
     },
     {
-      "name": "C. Murray-Boyles",
-      "status": "QUES",
-      "details": "C. Murray-Boyles (Ques)"
-    },
-    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
@@ -266,11 +231,6 @@
     }
   ],
   "TOR": [
-    {
-      "name": "C. Murray-Boyles",
-      "status": "QUES",
-      "details": "C. Murray-Boyles (Ques)"
-    },
     {
       "name": "C. Hepburn",
       "status": "OUT",
@@ -447,11 +407,6 @@
       "details": "J. Kuminga (Out)"
     },
     {
-      "name": "C. Williams",
-      "status": "QUES",
-      "details": "C. Williams (Ques)"
-    },
-    {
       "name": "J. Nurkic",
       "status": "QUES",
       "details": "J. Nurkic (Ques)"
@@ -475,6 +430,11 @@
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
+    },
+    {
+      "name": "C. Williams",
+      "status": "OUT",
+      "details": "C. Williams (Out)"
     }
   ],
   "UTA": [
@@ -489,11 +449,6 @@
       "details": "J. Nurkic (Ques)"
     },
     {
-      "name": "C. Williams",
-      "status": "QUES",
-      "details": "C. Williams (Ques)"
-    },
-    {
       "name": "E. Harkless",
       "status": "OUT",
       "details": "E. Harkless (Out)"
@@ -507,6 +462,11 @@
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
+    },
+    {
+      "name": "C. Williams",
+      "status": "OUT",
+      "details": "C. Williams (Out)"
     }
   ],
   "SAS": [
