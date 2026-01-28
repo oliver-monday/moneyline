@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-28",
-  "built_at_utc": "2026-01-28T19:34:29Z",
+  "built_at_utc": "2026-01-28T20:28:24Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -452,14 +452,9 @@
       "details": "J. Kuminga (Out)"
     },
     {
-      "name": "K. George",
+      "name": "C. Williams",
       "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
-      "name": "L. Markkanen",
-      "status": "QUES",
-      "details": "L. Markkanen (Ques)"
+      "details": "C. Williams (Ques)"
     },
     {
       "name": "J. Nurkic",
@@ -475,6 +470,11 @@
       "name": "E. Harkless",
       "status": "OUT",
       "details": "E. Harkless (Out)"
+    },
+    {
+      "name": "Kevin Love",
+      "status": "OUT",
+      "details": "Kevin Love (Out)"
     },
     {
       "name": "G. Niang",
@@ -489,24 +489,24 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
-      "name": "L. Markkanen",
-      "status": "QUES",
-      "details": "L. Markkanen (Ques)"
-    },
-    {
       "name": "J. Nurkic",
       "status": "QUES",
       "details": "J. Nurkic (Ques)"
     },
     {
+      "name": "C. Williams",
+      "status": "QUES",
+      "details": "C. Williams (Ques)"
+    },
+    {
       "name": "E. Harkless",
       "status": "OUT",
       "details": "E. Harkless (Out)"
+    },
+    {
+      "name": "Kevin Love",
+      "status": "OUT",
+      "details": "Kevin Love (Out)"
     },
     {
       "name": "G. Niang",
