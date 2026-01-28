@@ -3751,6 +3751,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-28,GSW,L. Markkanen,QUES,L. Markkanen (Ques),rotowire
 2026-01-28,UTA,K. George,QUES,K. George (Ques),rotowire
 2026-01-28,UTA,L. Markkanen,QUES,L. Markkanen (Ques),rotowire
+2026-01-28,CHI,J. Walker,QUES,J. Walker (Ques),rotowire
+2026-01-28,IND,J. Walker,QUES,J. Walker (Ques),rotowire
 2026-01-28,LAL,A. Reaves,OUT,A. Reaves (Out),rotowire
 2026-01-28,LAL,A. Thiero,OUT,A. Thiero (Out),rotowire
 2026-01-28,LAL,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
@@ -3768,11 +3770,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-28,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
 2026-01-28,CHI,Z. Collins,OUT,Z. Collins (Out),rotowire
 2026-01-28,CHI,Tre Jones,OUT,Tre Jones (Out),rotowire
-2026-01-28,CHI,J. Walker,QUES,J. Walker (Ques),rotowire
 2026-01-28,CHI,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-01-28,CHI,Obi Toppin,OUT,Obi Toppin (Out),rotowire
 2026-01-28,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
-2026-01-28,IND,J. Walker,QUES,J. Walker (Ques),rotowire
 2026-01-28,IND,Obi Toppin,OUT,Obi Toppin (Out),rotowire
 2026-01-28,ATL,N. Dante,OFS,N. Dante (OFS),rotowire
 2026-01-28,ATL,K. Porzingis,OUT,K. Porzingis (Out),rotowire
@@ -3793,6 +3793,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-28,MIA,D. Mitchell,DOUBT,D. Mitchell (Doubt),rotowire
 2026-01-28,MIA,T. Herro,OUT,T. Herro (Out),rotowire
 2026-01-28,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
+2026-01-28,NYK,J. Brunson,QUES,J. Brunson (Ques),rotowire
 2026-01-28,NYK,J. Hart,QUES,J. Hart (Ques),rotowire
 2026-01-28,NYK,M. McBride,OUT,M. McBride (Out),rotowire
 2026-01-28,NYK,M. Robinson,OUT,M. Robinson (Out),rotowire
@@ -3846,7 +3847,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-28,UTA,Kevin Love,OUT,Kevin Love (Out),rotowire
 2026-01-28,UTA,G. Niang,OUT,G. Niang (Out),rotowire
 2026-01-28,SAS,J. Sochan,QUES,J. Sochan (Ques),rotowire
-2026-01-28,SAS,S. Adams,OUT,S. Adams (Out),rotowire
+2026-01-28,SAS,S. Adams,OFS,S. Adams (OFS),rotowire
 2026-01-28,SAS,F. VanVleet,OUT,F. VanVleet (Out),rotowire
-2026-01-28,HOU,S. Adams,OUT,S. Adams (Out),rotowire
+2026-01-28,HOU,S. Adams,OFS,S. Adams (OFS),rotowire
 2026-01-28,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire

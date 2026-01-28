@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-28",
-  "built_at_utc": "2026-01-28T21:18:06Z",
+  "built_at_utc": "2026-01-28T22:34:20Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -103,11 +103,6 @@
       "details": "Tre Jones (Out)"
     },
     {
-      "name": "J. Walker",
-      "status": "QUES",
-      "details": "J. Walker (Ques)"
-    },
-    {
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
@@ -123,11 +118,6 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
-    },
-    {
-      "name": "J. Walker",
-      "status": "QUES",
-      "details": "J. Walker (Ques)"
     },
     {
       "name": "Obi Toppin",
@@ -239,6 +229,11 @@
     }
   ],
   "NYK": [
+    {
+      "name": "J. Brunson",
+      "status": "QUES",
+      "details": "J. Brunson (Ques)"
+    },
     {
       "name": "J. Hart",
       "status": "QUES",
@@ -522,8 +517,8 @@
     },
     {
       "name": "S. Adams",
-      "status": "OUT",
-      "details": "S. Adams (Out)"
+      "status": "OFS",
+      "details": "S. Adams (OFS)"
     },
     {
       "name": "F. VanVleet",
@@ -534,8 +529,8 @@
   "HOU": [
     {
       "name": "S. Adams",
-      "status": "OUT",
-      "details": "S. Adams (Out)"
+      "status": "OFS",
+      "details": "S. Adams (OFS)"
     },
     {
       "name": "F. VanVleet",
