@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-28",
-  "built_at_utc": "2026-01-28T17:23:49Z",
+  "built_at_utc": "2026-01-28T18:34:46Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -34,14 +34,14 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "D. Hunter",
-      "status": "PROB",
-      "details": "D. Hunter (Prob)"
-    },
-    {
       "name": "S. Merrill",
       "status": "PROB",
       "details": "S. Merrill (Prob)"
+    },
+    {
+      "name": "D. Hunter",
+      "status": "PROB",
+      "details": "D. Hunter (Prob)"
     },
     {
       "name": "D. Garland",
@@ -186,19 +186,19 @@
       "details": "F. Wagner (Out)"
     },
     {
-      "name": "D. Mitchell",
-      "status": "QUES",
-      "details": "D. Mitchell (Ques)"
-    },
-    {
       "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
+      "status": "PROB",
+      "details": "N. Powell (Prob)"
     },
     {
       "name": "K. Ware",
       "status": "QUES",
       "details": "K. Ware (Ques)"
+    },
+    {
+      "name": "D. Mitchell",
+      "status": "DOUBT",
+      "details": "D. Mitchell (Doubt)"
     },
     {
       "name": "T. Herro",
@@ -213,19 +213,19 @@
   ],
   "MIA": [
     {
-      "name": "D. Mitchell",
-      "status": "QUES",
-      "details": "D. Mitchell (Ques)"
-    },
-    {
       "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
+      "status": "PROB",
+      "details": "N. Powell (Prob)"
     },
     {
       "name": "K. Ware",
       "status": "QUES",
       "details": "K. Ware (Ques)"
+    },
+    {
+      "name": "D. Mitchell",
+      "status": "DOUBT",
+      "details": "D. Mitchell (Doubt)"
     },
     {
       "name": "T. Herro",
@@ -240,9 +240,19 @@
   ],
   "NYK": [
     {
-      "name": "M. Robinson",
+      "name": "J. Hart",
       "status": "QUES",
-      "details": "M. Robinson (Ques)"
+      "details": "J. Hart (Ques)"
+    },
+    {
+      "name": "M. McBride",
+      "status": "OUT",
+      "details": "M. McBride (Out)"
+    },
+    {
+      "name": "M. Robinson",
+      "status": "OUT",
+      "details": "M. Robinson (Out)"
     },
     {
       "name": "C. Murray-Boyles",
@@ -348,11 +358,6 @@
       "details": "A. Edwards (Ques)"
     },
     {
-      "name": "L. Miller",
-      "status": "QUES",
-      "details": "L. Miller (Ques)"
-    },
-    {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
@@ -452,6 +457,11 @@
       "details": "K. George (Ques)"
     },
     {
+      "name": "L. Markkanen",
+      "status": "QUES",
+      "details": "L. Markkanen (Ques)"
+    },
+    {
       "name": "J. Nurkic",
       "status": "QUES",
       "details": "J. Nurkic (Ques)"
@@ -482,6 +492,11 @@
       "name": "K. George",
       "status": "QUES",
       "details": "K. George (Ques)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "QUES",
+      "details": "L. Markkanen (Ques)"
     },
     {
       "name": "J. Nurkic",
