@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-28",
-  "built_at_utc": "2026-01-28T14:56:08Z",
+  "built_at_utc": "2026-01-28T17:23:49Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -152,14 +152,9 @@
       "details": "Z. Risacher (Out)"
     },
     {
-      "name": "L. Garza",
-      "status": "QUES",
-      "details": "L. Garza (Ques)"
-    },
-    {
       "name": "N. Queta",
-      "status": "DOUBT",
-      "details": "N. Queta (Doubt)"
+      "status": "OUT",
+      "details": "N. Queta (Out)"
     },
     {
       "name": "J. Tatum",
@@ -169,14 +164,9 @@
   ],
   "BOS": [
     {
-      "name": "L. Garza",
-      "status": "QUES",
-      "details": "L. Garza (Ques)"
-    },
-    {
       "name": "N. Queta",
-      "status": "DOUBT",
-      "details": "N. Queta (Doubt)"
+      "status": "OUT",
+      "details": "N. Queta (Out)"
     },
     {
       "name": "J. Tatum",
@@ -246,6 +236,28 @@
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
+    }
+  ],
+  "NYK": [
+    {
+      "name": "M. Robinson",
+      "status": "QUES",
+      "details": "M. Robinson (Ques)"
+    },
+    {
+      "name": "C. Murray-Boyles",
+      "status": "QUES",
+      "details": "C. Murray-Boyles (Ques)"
+    },
+    {
+      "name": "C. Hepburn",
+      "status": "OUT",
+      "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "J. Poeltl",
+      "status": "OUT",
+      "details": "J. Poeltl (Out)"
     }
   ],
   "TOR": [
@@ -514,23 +526,6 @@
       "name": "F. VanVleet",
       "status": "OUT",
       "details": "F. VanVleet (Out)"
-    }
-  ],
-  "NYK": [
-    {
-      "name": "C. Murray-Boyles",
-      "status": "QUES",
-      "details": "C. Murray-Boyles (Ques)"
-    },
-    {
-      "name": "C. Hepburn",
-      "status": "OUT",
-      "details": "C. Hepburn (Out)"
-    },
-    {
-      "name": "J. Poeltl",
-      "status": "OUT",
-      "details": "J. Poeltl (Out)"
     }
   ]
 }

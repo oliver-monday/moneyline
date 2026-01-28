@@ -3742,6 +3742,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-27,UTA,E. Harkless,OUT,E. Harkless (Out),rotowire
 2026-01-27,UTA,G. Niang,OUT,G. Niang (Out),rotowire
 2026-01-27,UTA,J. Nurkic,OUT,J. Nurkic (Out),rotowire
+2026-01-28,ATL,L. Garza,QUES,L. Garza (Ques),rotowire
+2026-01-28,BOS,L. Garza,QUES,L. Garza (Ques),rotowire
 2026-01-28,LAL,A. Reaves,OUT,A. Reaves (Out),rotowire
 2026-01-28,LAL,A. Thiero,OUT,A. Thiero (Out),rotowire
 2026-01-28,LAL,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
@@ -3768,11 +3770,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-28,ATL,N. Dante,OFS,N. Dante (OFS),rotowire
 2026-01-28,ATL,K. Porzingis,OUT,K. Porzingis (Out),rotowire
 2026-01-28,ATL,Z. Risacher,OUT,Z. Risacher (Out),rotowire
-2026-01-28,ATL,L. Garza,QUES,L. Garza (Ques),rotowire
-2026-01-28,ATL,N. Queta,DOUBT,N. Queta (Doubt),rotowire
+2026-01-28,ATL,N. Queta,OUT,N. Queta (Out),rotowire
 2026-01-28,ATL,J. Tatum,OUT,J. Tatum (Out),rotowire
-2026-01-28,BOS,L. Garza,QUES,L. Garza (Ques),rotowire
-2026-01-28,BOS,N. Queta,DOUBT,N. Queta (Doubt),rotowire
+2026-01-28,BOS,N. Queta,OUT,N. Queta (Out),rotowire
 2026-01-28,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
 2026-01-28,ORL,C. Castleton,OUT,C. Castleton (Out),rotowire
 2026-01-28,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
@@ -3786,6 +3786,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-28,MIA,K. Ware,QUES,K. Ware (Ques),rotowire
 2026-01-28,MIA,T. Herro,OUT,T. Herro (Out),rotowire
 2026-01-28,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
+2026-01-28,NYK,M. Robinson,QUES,M. Robinson (Ques),rotowire
+2026-01-28,NYK,C. Murray-Boyles,QUES,C. Murray-Boyles (Ques),rotowire
+2026-01-28,NYK,C. Hepburn,OUT,C. Hepburn (Out),rotowire
+2026-01-28,NYK,J. Poeltl,OUT,J. Poeltl (Out),rotowire
 2026-01-28,TOR,C. Murray-Boyles,QUES,C. Murray-Boyles (Ques),rotowire
 2026-01-28,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-01-28,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
@@ -3836,6 +3840,3 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-28,SAS,F. VanVleet,OUT,F. VanVleet (Out),rotowire
 2026-01-28,HOU,S. Adams,OUT,S. Adams (Out),rotowire
 2026-01-28,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
-2026-01-28,NYK,C. Murray-Boyles,QUES,C. Murray-Boyles (Ques),rotowire
-2026-01-28,NYK,C. Hepburn,OUT,C. Hepburn (Out),rotowire
-2026-01-28,NYK,J. Poeltl,OUT,J. Poeltl (Out),rotowire
