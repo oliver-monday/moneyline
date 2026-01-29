@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-29",
-  "built_at_utc": "2026-01-29T09:01:59Z",
+  "built_at_utc": "2026-01-29T15:04:19Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -155,6 +155,16 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "Tari Eason",
+      "status": "OUT",
+      "details": "Tari Eason (Out)"
+    },
+    {
+      "name": "D. Finney-Smith",
+      "status": "OUT",
+      "details": "D. Finney-Smith (Out)"
     },
     {
       "name": "F. VanVleet",
