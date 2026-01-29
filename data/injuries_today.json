@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-29",
-  "built_at_utc": "2026-01-29T22:34:54Z",
+  "built_at_utc": "2026-01-29T23:28:51Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -39,24 +39,19 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "P. George",
-      "status": "PROB",
-      "details": "P. George (Prob)"
-    },
-    {
       "name": "J. Embiid",
       "status": "PROB",
       "details": "J. Embiid (Prob)"
     },
     {
-      "name": "Q. Grimes",
-      "status": "QUES",
-      "details": "Q. Grimes (Ques)"
-    },
-    {
       "name": "M. Beauchamp",
       "status": "OUT",
       "details": "M. Beauchamp (Out)"
+    },
+    {
+      "name": "Q. Grimes",
+      "status": "OUT",
+      "details": "Q. Grimes (Out)"
     }
   ],
   "PHI": [
@@ -66,27 +61,17 @@
       "details": "J. Embiid (Prob)"
     },
     {
-      "name": "P. George",
-      "status": "PROB",
-      "details": "P. George (Prob)"
-    },
-    {
-      "name": "Q. Grimes",
-      "status": "QUES",
-      "details": "Q. Grimes (Ques)"
-    },
-    {
       "name": "M. Beauchamp",
       "status": "OUT",
       "details": "M. Beauchamp (Out)"
+    },
+    {
+      "name": "Q. Grimes",
+      "status": "OUT",
+      "details": "Q. Grimes (Out)"
     }
   ],
   "MIL": [
-    {
-      "name": "C. Anthony",
-      "status": "QUES",
-      "details": "C. Anthony (Ques)"
-    },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
@@ -106,11 +91,6 @@
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
-    },
-    {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
     },
     {
       "name": "C. Whitmore",
@@ -138,11 +118,6 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
     },
     {
       "name": "M. Bagley",
@@ -266,24 +241,19 @@
       "details": "T. Rozier (Out)"
     },
     {
-      "name": "J. Giddey",
-      "status": "QUES",
-      "details": "J. Giddey (Ques)"
-    },
-    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Smith",
-      "status": "PROB",
-      "details": "J. Smith (Prob)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
+    },
+    {
+      "name": "J. Giddey",
+      "status": "OUT",
+      "details": "J. Giddey (Out)"
     },
     {
       "name": "Tre Jones",
@@ -298,19 +268,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Smith",
-      "status": "PROB",
-      "details": "J. Smith (Prob)"
-    },
-    {
-      "name": "J. Giddey",
-      "status": "QUES",
-      "details": "J. Giddey (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
+    },
+    {
+      "name": "J. Giddey",
+      "status": "OUT",
+      "details": "J. Giddey (Out)"
     },
     {
       "name": "Tre Jones",
