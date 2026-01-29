@@ -710,11 +710,11 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810532,2026-01-28,2026-01-29T01:30Z,Dallas Mavericks,DAL,105,210.0,,Minnesota Timberwolves,MIN,118,-258.0,,Dallas,TX,,
 401810533,2026-01-28,2026-01-29T02:00Z,Utah Jazz,UTAH,124,320.0,,Golden State Warriors,GS,140,-410.0,,Salt Lake City,UT,,
 401810534,2026-01-28,2026-01-29T02:42Z,Houston Rockets,HOU,99,-148.0,,San Antonio Spurs,SA,111,124.0,,Houston,TX,,
-401810535,2026-01-29,2026-01-30T00:00Z,Philadelphia 76ers,PHI,0,-520.0,,Sacramento Kings,SAC,0,390.0,,Philadelphia,PA,M. Beauchamp (Out),K. Murray (Out)
-401810536,2026-01-29,2026-01-30T00:00Z,Washington Wizards,WSH,0,114.0,,Milwaukee Bucks,MIL,0,-135.0,,Washington,DC,C. Whitmore (OFS); M. Bagley (Out); T. Vukcevic (Out); Trae Young (Out),G. Antetokounmpo (Out); K. Porter (Out); T. Prince (Out)
-401810537,2026-01-29,2026-01-30T01:00Z,Atlanta Hawks,ATL,0,136.0,,Houston Rockets,HOU,0,-162.0,,Atlanta,GA,N. Dante (OFS); K. Porzingis (Out),S. Adams (OFS); F. VanVleet (Out)
-401850920,2026-01-29,2026-01-30T01:00Z,Chicago Bulls,CHI,0,-105.0,,Miami Heat,MIA,0,-115.0,,Chicago,IL,N. Essengue (OFS); Z. Collins (Out),T. Rozier (Out)
-401810538,2026-01-29,2026-01-30T01:30Z,Dallas Mavericks,DAL,0,140.0,,Charlotte Hornets,CHA,0,-166.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); A. Davis (Out); K. Irving (Out),M. Plumlee (Out)
+401810535,2026-01-29,2026-01-30T00:00Z,Philadelphia 76ers,PHI,0,-550.0,,Sacramento Kings,SAC,0,410.0,,Philadelphia,PA,M. Beauchamp (Out),K. Murray (Out)
+401810536,2026-01-29,2026-01-30T00:00Z,Washington Wizards,WSH,0,110.0,,Milwaukee Bucks,MIL,0,-130.0,,Washington,DC,C. Whitmore (OFS); M. Bagley (Out); T. Vukcevic (Out); Trae Young (Out),G. Antetokounmpo (Out); K. Porter (Out); T. Prince (Out)
+401810537,2026-01-29,2026-01-30T01:00Z,Atlanta Hawks,ATL,0,136.0,,Houston Rockets,HOU,0,-162.0,,Atlanta,GA,N. Dante (OFS); K. Porzingis (Out),S. Adams (OFS); Tari Eason (Out); D. Finney-Smith (Out); F. VanVleet (Out)
+401850920,2026-01-29,2026-01-30T01:00Z,Chicago Bulls,CHI,0,-102.0,,Miami Heat,MIA,0,-118.0,,Chicago,IL,N. Essengue (OFS); Z. Collins (Out),T. Rozier (Out)
+401810538,2026-01-29,2026-01-30T01:30Z,Dallas Mavericks,DAL,0,145.0,,Charlotte Hornets,CHA,0,-175.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); A. Davis (Out); K. Irving (Out),M. Plumlee (Out)
 401810539,2026-01-29,2026-01-30T02:00Z,Denver Nuggets,DEN,0,-290.0,,Brooklyn Nets,BKN,0,235.0,,Denver,CO,T. Bates (Out); C. Braun (Out); A. Gordon (Out); C. Johnson (Out); N. Jokic (Out),Egor Demin (Out); H. Highsmith (Out); Cam Thomas (Out); Z. Williams (Out)
 401810540,2026-01-29,2026-01-30T02:00Z,Phoenix Suns,PHX,0,150.0,,Detroit Pistons,DET,0,-180.0,,Phoenix,AZ,D. Booker (Out),
 401810541,2026-01-29,2026-01-30T02:30Z,Minnesota Timberwolves,MIN,0,180.0,,Oklahoma City Thunder,OKC,0,-218.0,,Minneapolis,MN,T. Shannon (Out),T. Sorber (OFS); A. Caruso (Out); A. Mitchell (Out); N. Topic (Out); J. Williams (Out)
