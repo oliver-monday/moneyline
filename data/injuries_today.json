@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-29",
-  "built_at_utc": "2026-01-29T18:41:17Z",
+  "built_at_utc": "2026-01-29T19:34:21Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -241,14 +241,24 @@
   ],
   "MIA": [
     {
-      "name": "D. Mitchell",
-      "status": "QUES",
-      "details": "D. Mitchell (Ques)"
+      "name": "N. Powell",
+      "status": "PROB",
+      "details": "N. Powell (Prob)"
+    },
+    {
+      "name": "K. Ware",
+      "status": "PROB",
+      "details": "K. Ware (Prob)"
     },
     {
       "name": "T. Herro",
-      "status": "DOUBT",
-      "details": "T. Herro (Doubt)"
+      "status": "OUT",
+      "details": "T. Herro (Out)"
+    },
+    {
+      "name": "D. Mitchell",
+      "status": "OUT",
+      "details": "D. Mitchell (Out)"
     },
     {
       "name": "T. Rozier",
@@ -256,19 +266,29 @@
       "details": "T. Rozier (Out)"
     },
     {
+      "name": "J. Giddey",
+      "status": "QUES",
+      "details": "J. Giddey (Ques)"
+    },
+    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "T. Jones",
-      "status": "DOUBT",
-      "details": "T. Jones (Doubt)"
+      "name": "J. Smith",
+      "status": "PROB",
+      "details": "J. Smith (Prob)"
     },
     {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
+    },
+    {
+      "name": "Tre Jones",
+      "status": "OUT",
+      "details": "Tre Jones (Out)"
     }
   ],
   "CHI": [
@@ -278,17 +298,32 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "T. Jones",
-      "status": "DOUBT",
-      "details": "T. Jones (Doubt)"
+      "name": "J. Smith",
+      "status": "PROB",
+      "details": "J. Smith (Prob)"
+    },
+    {
+      "name": "J. Giddey",
+      "status": "QUES",
+      "details": "J. Giddey (Ques)"
     },
     {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
+    },
+    {
+      "name": "Tre Jones",
+      "status": "OUT",
+      "details": "Tre Jones (Out)"
     }
   ],
   "CHA": [
+    {
+      "name": "B. Miller",
+      "status": "PROB",
+      "details": "B. Miller (Prob)"
+    },
     {
       "name": "M. Plumlee",
       "status": "OUT",
@@ -300,14 +335,14 @@
       "details": "KJ Simpson (Out)"
     },
     {
-      "name": "C. Flagg",
-      "status": "QUES",
-      "details": "C. Flagg (Ques)"
+      "name": "G. Williams",
+      "status": "OUT",
+      "details": "G. Williams (Out)"
     },
     {
-      "name": "D. Gafford",
+      "name": "B. Williams",
       "status": "QUES",
-      "details": "D. Gafford (Ques)"
+      "details": "B. Williams (Ques)"
     },
     {
       "name": "Dante Exum",
@@ -321,8 +356,8 @@
     },
     {
       "name": "K. Thompson",
-      "status": "QUES",
-      "details": "K. Thompson (Ques)"
+      "status": "PROB",
+      "details": "K. Thompson (Prob)"
     },
     {
       "name": "A. Davis",
@@ -333,6 +368,11 @@
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "N. Marshall",
+      "status": "OUT",
+      "details": "N. Marshall (Out)"
     }
   ],
   "DAL": [
@@ -347,19 +387,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "C. Flagg",
-      "status": "QUES",
-      "details": "C. Flagg (Ques)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
-    },
-    {
       "name": "K. Thompson",
+      "status": "PROB",
+      "details": "K. Thompson (Prob)"
+    },
+    {
+      "name": "B. Williams",
       "status": "QUES",
-      "details": "K. Thompson (Ques)"
+      "details": "B. Williams (Ques)"
     },
     {
       "name": "A. Davis",
@@ -370,14 +405,14 @@
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "N. Marshall",
+      "status": "OUT",
+      "details": "N. Marshall (Out)"
     }
   ],
   "BKN": [
-    {
-      "name": "T. Mann",
-      "status": "QUES",
-      "details": "T. Mann (Ques)"
-    },
     {
       "name": "N. Clowney",
       "status": "OUT",
@@ -479,8 +514,8 @@
   "DET": [
     {
       "name": "C. LeVert",
-      "status": "QUES",
-      "details": "C. LeVert (Ques)"
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     },
     {
       "name": "C. Gillespie",
@@ -547,12 +582,32 @@
       "details": "J. Williams (Out)"
     },
     {
+      "name": "R. Gobert",
+      "status": "QUES",
+      "details": "R. Gobert (Ques)"
+    },
+    {
+      "name": "M. Conley",
+      "status": "OUT",
+      "details": "M. Conley (Out)"
+    },
+    {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
     }
   ],
   "MIN": [
+    {
+      "name": "R. Gobert",
+      "status": "QUES",
+      "details": "R. Gobert (Ques)"
+    },
+    {
+      "name": "M. Conley",
+      "status": "OUT",
+      "details": "M. Conley (Out)"
+    },
     {
       "name": "T. Shannon",
       "status": "OUT",
