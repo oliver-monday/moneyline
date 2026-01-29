@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-29",
-  "built_at_utc": "2026-01-29T15:04:19Z",
+  "built_at_utc": "2026-01-29T17:28:46Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -83,9 +83,19 @@
   ],
   "MIL": [
     {
+      "name": "C. Anthony",
+      "status": "QUES",
+      "details": "C. Anthony (Ques)"
+    },
+    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
+    },
+    {
+      "name": "G. Harris",
+      "status": "OUT",
+      "details": "G. Harris (Out)"
     },
     {
       "name": "K. Porter",
@@ -265,19 +275,24 @@
   ],
   "CHA": [
     {
-      "name": "K. Simpson",
-      "status": "QUES",
-      "details": "K. Simpson (Ques)"
-    },
-    {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
     },
     {
+      "name": "KJ Simpson",
+      "status": "OUT",
+      "details": "KJ Simpson (Out)"
+    },
+    {
       "name": "C. Flagg",
       "status": "QUES",
       "details": "C. Flagg (Ques)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "QUES",
+      "details": "D. Gafford (Ques)"
     },
     {
       "name": "Dante Exum",
@@ -322,6 +337,11 @@
       "details": "C. Flagg (Ques)"
     },
     {
+      "name": "D. Gafford",
+      "status": "QUES",
+      "details": "D. Gafford (Ques)"
+    },
+    {
       "name": "K. Thompson",
       "status": "QUES",
       "details": "K. Thompson (Ques)"
@@ -339,14 +359,14 @@
   ],
   "BKN": [
     {
-      "name": "N. Clowney",
-      "status": "QUES",
-      "details": "N. Clowney (Ques)"
-    },
-    {
       "name": "T. Mann",
       "status": "QUES",
       "details": "T. Mann (Ques)"
+    },
+    {
+      "name": "N. Clowney",
+      "status": "OUT",
+      "details": "N. Clowney (Out)"
     },
     {
       "name": "Egor Demin",
