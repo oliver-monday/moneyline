@@ -1,0 +1,14 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-28,2026,Luka Doncic,LAL,CLE,ast,8,MISSED,6,,targets_snapshot_2026-01-28.json
+2026-01-28,2026,Paolo Banchero,ORL,MIA,ast,4,HIT,4,,targets_snapshot_2026-01-28.json
+2026-01-28,2026,Paolo Banchero,ORL,MIA,3pt,1,HIT,1,,targets_snapshot_2026-01-28.json
+2026-01-28,2026,Desmond Bane,ORL,MIA,reb,4,MISSED,1,,targets_snapshot_2026-01-28.json
+2026-01-28,2026,Donte DiVincenzo,MIN,DAL,ast,4,MISSED,1,,targets_snapshot_2026-01-28.json
+2026-01-28,2026,Donte DiVincenzo,MIN,DAL,3pt,3,MISSED,2,,targets_snapshot_2026-01-28.json
+2026-01-28,2026,Dyson Daniels,ATL,BOS,reb,6,HIT,6,,targets_snapshot_2026-01-28.json
+2026-01-28,2026,LeBron James,LAL,CLE,pts,20,MISSED,11,,targets_snapshot_2026-01-28.json
+2026-01-28,2026,OG Anunoby,NY,TOR,pts,15,HIT,26,,targets_snapshot_2026-01-28.json
+2026-01-28,2026,Jaden McDaniels,MIN,DAL,3pt,1,HIT,2,,targets_snapshot_2026-01-28.json
+2026-01-28,2026,Bam Adebayo,MIA,ORL,ast,2,HIT,7,,targets_snapshot_2026-01-28.json
+2026-01-28,2026,Stephen Curry,GS,UTAH,ast,4,MISSED,2,,targets_snapshot_2026-01-28.json
+2026-01-28,2026,Devin Vassell,SA,HOU,reb,4,MISSED,1,,targets_snapshot_2026-01-28.json
