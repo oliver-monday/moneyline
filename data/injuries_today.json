@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-29",
-  "built_at_utc": "2026-01-29T17:28:46Z",
+  "built_at_utc": "2026-01-29T18:41:17Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -9,14 +9,14 @@
       "details": "M. Monk (Ques)"
     },
     {
-      "name": "R. Westbrook",
-      "status": "QUES",
-      "details": "R. Westbrook (Ques)"
-    },
-    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "R. Westbrook",
+      "status": "OUT",
+      "details": "R. Westbrook (Out)"
     },
     {
       "name": "Fantasy Home",
@@ -167,6 +167,11 @@
       "details": "S. Adams (OFS)"
     },
     {
+      "name": "A. Sengun",
+      "status": "QUES",
+      "details": "A. Sengun (Ques)"
+    },
+    {
       "name": "Tari Eason",
       "status": "OUT",
       "details": "Tari Eason (Out)"
@@ -182,9 +187,9 @@
       "details": "F. VanVleet (Out)"
     },
     {
-      "name": "O. Okongwu",
+      "name": "J. Johnson",
       "status": "QUES",
-      "details": "O. Okongwu (Ques)"
+      "details": "J. Johnson (Ques)"
     },
     {
       "name": "N. Dante",
@@ -192,14 +197,19 @@
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "Z. Risacher",
-      "status": "QUES",
-      "details": "Z. Risacher (Ques)"
+      "name": "O. Okongwu",
+      "status": "OUT",
+      "details": "O. Okongwu (Out)"
     },
     {
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
+    },
+    {
+      "name": "Z. Risacher",
+      "status": "OUT",
+      "details": "Z. Risacher (Out)"
     }
   ],
   "ATL": [
@@ -209,19 +219,24 @@
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "O. Okongwu",
+      "name": "J. Johnson",
       "status": "QUES",
-      "details": "O. Okongwu (Ques)"
+      "details": "J. Johnson (Ques)"
     },
     {
-      "name": "Z. Risacher",
-      "status": "QUES",
-      "details": "Z. Risacher (Ques)"
+      "name": "O. Okongwu",
+      "status": "OUT",
+      "details": "O. Okongwu (Out)"
     },
     {
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
+    },
+    {
+      "name": "Z. Risacher",
+      "status": "OUT",
+      "details": "Z. Risacher (Out)"
     }
   ],
   "MIA": [
