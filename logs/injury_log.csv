@@ -3897,13 +3897,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-29,HOU,Tari Eason,OUT,Tari Eason (Out),rotowire
 2026-01-29,HOU,D. Finney-Smith,OUT,D. Finney-Smith (Out),rotowire
 2026-01-29,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
-2026-01-29,HOU,J. Johnson,QUES,J. Johnson (Ques),rotowire
 2026-01-29,HOU,N. Dante,OFS,N. Dante (OFS),rotowire
+2026-01-29,HOU,J. Johnson,OUT,J. Johnson (Out),rotowire
 2026-01-29,HOU,O. Okongwu,OUT,O. Okongwu (Out),rotowire
 2026-01-29,HOU,K. Porzingis,OUT,K. Porzingis (Out),rotowire
 2026-01-29,HOU,Z. Risacher,OUT,Z. Risacher (Out),rotowire
 2026-01-29,ATL,N. Dante,OFS,N. Dante (OFS),rotowire
-2026-01-29,ATL,J. Johnson,QUES,J. Johnson (Ques),rotowire
+2026-01-29,ATL,J. Johnson,OUT,J. Johnson (Out),rotowire
 2026-01-29,ATL,O. Okongwu,OUT,O. Okongwu (Out),rotowire
 2026-01-29,ATL,K. Porzingis,OUT,K. Porzingis (Out),rotowire
 2026-01-29,ATL,Z. Risacher,OUT,Z. Risacher (Out),rotowire
@@ -3926,10 +3926,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-29,CHA,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-01-29,CHA,KJ Simpson,OUT,KJ Simpson (Out),rotowire
 2026-01-29,CHA,G. Williams,OUT,G. Williams (Out),rotowire
-2026-01-29,CHA,B. Williams,QUES,B. Williams (Ques),rotowire
 2026-01-29,CHA,Dante Exum,OFS,Dante Exum (OFS),rotowire
 2026-01-29,CHA,D. Lively,OFS,D. Lively (OFS),rotowire
 2026-01-29,CHA,K. Thompson,PROB,K. Thompson (Prob),rotowire
+2026-01-29,CHA,B. Williams,QUES,B. Williams (Ques),rotowire
 2026-01-29,CHA,A. Davis,OUT,A. Davis (Out),rotowire
 2026-01-29,CHA,K. Irving,OUT,K. Irving (Out),rotowire
 2026-01-29,CHA,N. Marshall,OUT,N. Marshall (Out),rotowire

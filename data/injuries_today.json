@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-29",
-  "built_at_utc": "2026-01-29T21:15:20Z",
+  "built_at_utc": "2026-01-29T22:34:54Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -187,14 +187,14 @@
       "details": "F. VanVleet (Out)"
     },
     {
-      "name": "J. Johnson",
-      "status": "QUES",
-      "details": "J. Johnson (Ques)"
-    },
-    {
       "name": "N. Dante",
       "status": "OFS",
       "details": "N. Dante (OFS)"
+    },
+    {
+      "name": "J. Johnson",
+      "status": "OUT",
+      "details": "J. Johnson (Out)"
     },
     {
       "name": "O. Okongwu",
@@ -220,8 +220,8 @@
     },
     {
       "name": "J. Johnson",
-      "status": "QUES",
-      "details": "J. Johnson (Ques)"
+      "status": "OUT",
+      "details": "J. Johnson (Out)"
     },
     {
       "name": "O. Okongwu",
@@ -340,11 +340,6 @@
       "details": "G. Williams (Out)"
     },
     {
-      "name": "B. Williams",
-      "status": "QUES",
-      "details": "B. Williams (Ques)"
-    },
-    {
       "name": "Dante Exum",
       "status": "OFS",
       "details": "Dante Exum (OFS)"
@@ -358,6 +353,11 @@
       "name": "K. Thompson",
       "status": "PROB",
       "details": "K. Thompson (Prob)"
+    },
+    {
+      "name": "B. Williams",
+      "status": "QUES",
+      "details": "B. Williams (Ques)"
     },
     {
       "name": "A. Davis",
