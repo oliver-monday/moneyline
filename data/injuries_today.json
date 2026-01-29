@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-28",
-  "built_at_utc": "2026-01-28T23:28:54Z",
+  "built_at_utc": "2026-01-29T01:12:33Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -34,11 +34,6 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "D. Hunter",
-      "status": "PROB",
-      "details": "D. Hunter (Prob)"
-    },
-    {
       "name": "D. Garland",
       "status": "OUT",
       "details": "D. Garland (Out)"
@@ -55,11 +50,6 @@
     }
   ],
   "CLE": [
-    {
-      "name": "D. Hunter",
-      "status": "PROB",
-      "details": "D. Hunter (Prob)"
-    },
     {
       "name": "D. Garland",
       "status": "OUT",
@@ -200,16 +190,6 @@
   ],
   "NYK": [
     {
-      "name": "J. Brunson",
-      "status": "QUES",
-      "details": "J. Brunson (Ques)"
-    },
-    {
-      "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
-    },
-    {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
@@ -313,11 +293,6 @@
       "details": "T. Shannon (Out)"
     },
     {
-      "name": "C. Flagg",
-      "status": "QUES",
-      "details": "C. Flagg (Ques)"
-    },
-    {
       "name": "Dante Exum",
       "status": "OFS",
       "details": "Dante Exum (OFS)"
@@ -328,19 +303,24 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "K. Thompson",
-      "status": "QUES",
-      "details": "K. Thompson (Ques)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
     },
     {
+      "name": "C. Flagg",
+      "status": "OUT",
+      "details": "C. Flagg (Out)"
+    },
+    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "K. Thompson",
+      "status": "OUT",
+      "details": "K. Thompson (Out)"
     }
   ],
   "DAL": [
@@ -355,24 +335,24 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "C. Flagg",
-      "status": "QUES",
-      "details": "C. Flagg (Ques)"
-    },
-    {
-      "name": "K. Thompson",
-      "status": "QUES",
-      "details": "K. Thompson (Ques)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
     },
     {
+      "name": "C. Flagg",
+      "status": "OUT",
+      "details": "C. Flagg (Out)"
+    },
+    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "K. Thompson",
+      "status": "OUT",
+      "details": "K. Thompson (Out)"
     }
   ],
   "GSW": [
@@ -382,19 +362,9 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "S. Curry",
-      "status": "PROB",
-      "details": "S. Curry (Prob)"
-    },
-    {
-      "name": "G. Payton",
-      "status": "PROB",
-      "details": "G. Payton (Prob)"
-    },
-    {
-      "name": "L. Cryer",
-      "status": "QUES",
-      "details": "L. Cryer (Ques)"
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
     },
     {
       "name": "Seth Curry",
@@ -405,11 +375,6 @@
       "name": "J. Kuminga",
       "status": "OUT",
       "details": "J. Kuminga (Out)"
-    },
-    {
-      "name": "J. Nurkic",
-      "status": "QUES",
-      "details": "J. Nurkic (Ques)"
     },
     {
       "name": "W. Kessler",
@@ -444,11 +409,6 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "J. Nurkic",
-      "status": "QUES",
-      "details": "J. Nurkic (Ques)"
-    },
-    {
       "name": "E. Harkless",
       "status": "OUT",
       "details": "E. Harkless (Out)"
@@ -472,8 +432,8 @@
   "SAS": [
     {
       "name": "J. Sochan",
-      "status": "QUES",
-      "details": "J. Sochan (Ques)"
+      "status": "OUT",
+      "details": "J. Sochan (Out)"
     },
     {
       "name": "S. Adams",
