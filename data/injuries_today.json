@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-28",
-  "built_at_utc": "2026-01-29T01:12:33Z",
+  "built_at_utc": "2026-01-29T03:20:52Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -73,14 +73,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "T. Jones",
+      "status": "QUES",
+      "details": "T. Jones (Ques)"
+    },
+    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
-    },
-    {
-      "name": "Tre Jones",
-      "status": "OUT",
-      "details": "Tre Jones (Out)"
     },
     {
       "name": "T. Haliburton",
@@ -110,6 +110,11 @@
       "name": "N. Dante",
       "status": "OFS",
       "details": "N. Dante (OFS)"
+    },
+    {
+      "name": "O. Okongwu",
+      "status": "QUES",
+      "details": "O. Okongwu (Ques)"
     },
     {
       "name": "K. Porzingis",
@@ -234,6 +239,11 @@
       "details": "KJ Simpson (Out)"
     },
     {
+      "name": "S. Aldama",
+      "status": "OUT",
+      "details": "S. Aldama (Out)"
+    },
+    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -260,6 +270,11 @@
     }
   ],
   "MEM": [
+    {
+      "name": "S. Aldama",
+      "status": "OUT",
+      "details": "S. Aldama (Out)"
+    },
     {
       "name": "B. Clarke",
       "status": "OUT",

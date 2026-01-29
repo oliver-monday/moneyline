@@ -3770,6 +3770,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-28,GSW,L. Cryer,QUES,L. Cryer (Ques),rotowire
 2026-01-28,GSW,J. Nurkic,QUES,J. Nurkic (Ques),rotowire
 2026-01-28,UTA,J. Nurkic,QUES,J. Nurkic (Ques),rotowire
+2026-01-28,CHI,Tre Jones,OUT,Tre Jones (Out),rotowire
 2026-01-28,LAL,A. Reaves,OUT,A. Reaves (Out),rotowire
 2026-01-28,LAL,A. Thiero,OUT,A. Thiero (Out),rotowire
 2026-01-28,LAL,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
@@ -3781,13 +3782,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-28,CLE,E. Mobley,OUT,E. Mobley (Out),rotowire
 2026-01-28,CLE,Max Strus,OUT,Max Strus (Out),rotowire
 2026-01-28,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
+2026-01-28,CHI,T. Jones,QUES,T. Jones (Ques),rotowire
 2026-01-28,CHI,Z. Collins,OUT,Z. Collins (Out),rotowire
-2026-01-28,CHI,Tre Jones,OUT,Tre Jones (Out),rotowire
 2026-01-28,CHI,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-01-28,CHI,Obi Toppin,OUT,Obi Toppin (Out),rotowire
 2026-01-28,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-01-28,IND,Obi Toppin,OUT,Obi Toppin (Out),rotowire
 2026-01-28,ATL,N. Dante,OFS,N. Dante (OFS),rotowire
+2026-01-28,ATL,O. Okongwu,QUES,O. Okongwu (Ques),rotowire
 2026-01-28,ATL,K. Porzingis,OUT,K. Porzingis (Out),rotowire
 2026-01-28,ATL,Z. Risacher,OUT,Z. Risacher (Out),rotowire
 2026-01-28,ATL,N. Queta,OUT,N. Queta (Out),rotowire
@@ -3810,11 +3812,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-28,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
 2026-01-28,CHA,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-01-28,CHA,KJ Simpson,OUT,KJ Simpson (Out),rotowire
+2026-01-28,CHA,S. Aldama,OUT,S. Aldama (Out),rotowire
 2026-01-28,CHA,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-01-28,CHA,Zach Edey,OUT,Zach Edey (Out),rotowire
 2026-01-28,CHA,Ty Jerome,OUT,Ty Jerome (Out),rotowire
 2026-01-28,CHA,Ja Morant,OUT,Ja Morant (Out),rotowire
 2026-01-28,CHA,S. Pippen,OUT,S. Pippen (Out),rotowire
+2026-01-28,MEM,S. Aldama,OUT,S. Aldama (Out),rotowire
 2026-01-28,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-01-28,MEM,Zach Edey,OUT,Zach Edey (Out),rotowire
 2026-01-28,MEM,Ty Jerome,OUT,Ty Jerome (Out),rotowire
