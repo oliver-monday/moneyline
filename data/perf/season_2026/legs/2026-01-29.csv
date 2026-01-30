@@ -1,0 +1,16 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-29,2026,Anthony Edwards,MIN,OKC,3pt,3,HIT,4,,targets_snapshot_2026-01-29.json
+2026-01-29,2026,Dyson Daniels,ATL,HOU,reb,6,HIT,6,,targets_snapshot_2026-01-29.json
+2026-01-29,2026,Bam Adebayo,MIA,CHI,pts,20,HIT,20,,targets_snapshot_2026-01-29.json
+2026-01-29,2026,Bam Adebayo,MIA,CHI,ast,2,HIT,2,,targets_snapshot_2026-01-29.json
+2026-01-29,2026,Bam Adebayo,MIA,CHI,3pt,2,HIT,2,,targets_snapshot_2026-01-29.json
+2026-01-29,2026,Donte DiVincenzo,MIN,OKC,reb,4,HIT,5,,targets_snapshot_2026-01-29.json
+2026-01-29,2026,Jaden McDaniels,MIN,OKC,ast,2,HIT,4,,targets_snapshot_2026-01-29.json
+2026-01-29,2026,Jaden McDaniels,MIN,OKC,3pt,1,HIT,5,,targets_snapshot_2026-01-29.json
+2026-01-29,2026,Ryan Rollins,MIL,WSH,reb,4,MISSED,3,,targets_snapshot_2026-01-29.json
+2026-01-29,2026,Nikola Vucevic,CHI,MIA,pts,15,HIT,15,,targets_snapshot_2026-01-29.json
+2026-01-29,2026,Nikola Vucevic,CHI,MIA,ast,4,MISSED,3,,targets_snapshot_2026-01-29.json
+2026-01-29,2026,Russell Westbrook,SAC,PHI,3pt,2,,,,targets_snapshot_2026-01-29.json
+2026-01-29,2026,Chet Holmgren,OKC,MIN,reb,8,MISSED,5,,targets_snapshot_2026-01-29.json
+2026-01-29,2026,Coby White,CHI,MIA,ast,4,HIT,8,,targets_snapshot_2026-01-29.json
+2026-01-29,2026,Brandon Miller,CHA,DAL,pts,20,HIT,23,,targets_snapshot_2026-01-29.json
