@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-29",
-  "built_at_utc": "2026-01-30T01:12:02Z",
+  "built_at_utc": "2026-01-30T03:22:18Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -83,6 +83,11 @@
       "details": "T. Prince (Out)"
     },
     {
+      "name": "T. Johnson",
+      "status": "QUES",
+      "details": "T. Johnson (Ques)"
+    },
+    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
@@ -104,6 +109,11 @@
     }
   ],
   "WAS": [
+    {
+      "name": "T. Johnson",
+      "status": "QUES",
+      "details": "T. Johnson (Ques)"
+    },
     {
       "name": "C. Whitmore",
       "status": "OFS",
@@ -216,6 +226,11 @@
       "details": "T. Rozier (Out)"
     },
     {
+      "name": "J. Smith",
+      "status": "QUES",
+      "details": "J. Smith (Ques)"
+    },
+    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
@@ -241,6 +256,11 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "QUES",
+      "details": "J. Smith (Ques)"
     },
     {
       "name": "Z. Collins",
@@ -440,11 +460,6 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "C. Wallace",
-      "status": "QUES",
-      "details": "C. Wallace (Ques)"
     },
     {
       "name": "A. Caruso",

@@ -3869,8 +3869,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-29,MIL,C. Anthony,QUES,C. Anthony (Ques),rotowire
 2026-01-29,MIL,A. Sarr,QUES,A. Sarr (Ques),rotowire
 2026-01-29,WAS,A. Sarr,QUES,A. Sarr (Ques),rotowire
-2026-01-29,MIA,J. Smith,PROB,J. Smith (Prob),rotowire
-2026-01-29,CHI,J. Smith,PROB,J. Smith (Prob),rotowire
 2026-01-29,SAC,M. Monk,QUES,M. Monk (Ques),rotowire
 2026-01-29,SAC,J. Embiid,PROB,J. Embiid (Prob),rotowire
 2026-01-29,PHI,J. Embiid,PROB,J. Embiid (Prob),rotowire
@@ -3890,6 +3888,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-29,PHX,C. Gillespie,QUES,C. Gillespie (Ques),rotowire
 2026-01-29,OKC,R. Gobert,QUES,R. Gobert (Ques),rotowire
 2026-01-29,MIN,R. Gobert,QUES,R. Gobert (Ques),rotowire
+2026-01-29,OKC,C. Wallace,QUES,C. Wallace (Ques),rotowire
 2026-01-29,SAC,Malik Monk,OUT,Malik Monk (Out),rotowire
 2026-01-29,SAC,K. Murray,OUT,K. Murray (Out),rotowire
 2026-01-29,SAC,R. Westbrook,OUT,R. Westbrook (Out),rotowire
@@ -3903,10 +3902,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-29,MIL,G. Harris,OUT,G. Harris (Out),rotowire
 2026-01-29,MIL,K. Porter,OUT,K. Porter (Out),rotowire
 2026-01-29,MIL,T. Prince,OUT,T. Prince (Out),rotowire
+2026-01-29,MIL,T. Johnson,QUES,T. Johnson (Ques),rotowire
 2026-01-29,MIL,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
 2026-01-29,MIL,M. Bagley,OUT,M. Bagley (Out),rotowire
 2026-01-29,MIL,T. Vukcevic,OUT,T. Vukcevic (Out),rotowire
 2026-01-29,MIL,Trae Young,OUT,Trae Young (Out),rotowire
+2026-01-29,WAS,T. Johnson,QUES,T. Johnson (Ques),rotowire
 2026-01-29,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
 2026-01-29,WAS,M. Bagley,OUT,M. Bagley (Out),rotowire
 2026-01-29,WAS,T. Vukcevic,OUT,T. Vukcevic (Out),rotowire
@@ -3928,11 +3929,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-29,MIA,T. Herro,OUT,T. Herro (Out),rotowire
 2026-01-29,MIA,D. Mitchell,OUT,D. Mitchell (Out),rotowire
 2026-01-29,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
+2026-01-29,MIA,J. Smith,QUES,J. Smith (Ques),rotowire
 2026-01-29,MIA,N. Essengue,OFS,N. Essengue (OFS),rotowire
 2026-01-29,MIA,Z. Collins,OUT,Z. Collins (Out),rotowire
 2026-01-29,MIA,J. Giddey,OUT,J. Giddey (Out),rotowire
 2026-01-29,MIA,Tre Jones,OUT,Tre Jones (Out),rotowire
 2026-01-29,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
+2026-01-29,CHI,J. Smith,QUES,J. Smith (Ques),rotowire
 2026-01-29,CHI,Z. Collins,OUT,Z. Collins (Out),rotowire
 2026-01-29,CHI,J. Giddey,OUT,J. Giddey (Out),rotowire
 2026-01-29,CHI,Tre Jones,OUT,Tre Jones (Out),rotowire
@@ -3970,7 +3973,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-29,PHX,D. Booker,OUT,D. Booker (Out),rotowire
 2026-01-29,PHX,J. Green,OUT,J. Green (Out),rotowire
 2026-01-29,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
-2026-01-29,OKC,C. Wallace,QUES,C. Wallace (Ques),rotowire
 2026-01-29,OKC,A. Caruso,OUT,A. Caruso (Out),rotowire
 2026-01-29,OKC,A. Mitchell,OUT,A. Mitchell (Out),rotowire
 2026-01-29,OKC,N. Topic,OUT,N. Topic (Out),rotowire
