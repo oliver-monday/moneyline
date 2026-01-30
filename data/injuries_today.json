@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-30",
-  "built_at_utc": "2026-01-30T17:24:52Z",
+  "built_at_utc": "2026-01-30T18:39:08Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -45,23 +45,23 @@
     },
     {
       "name": "M. Bagley",
-      "status": "QUES",
-      "details": "M. Bagley (Ques)"
+      "status": "OUT",
+      "details": "M. Bagley (Out)"
     },
     {
       "name": "T. Johnson",
-      "status": "QUES",
-      "details": "T. Johnson (Ques)"
+      "status": "OUT",
+      "details": "T. Johnson (Out)"
     },
     {
       "name": "K. Middleton",
-      "status": "QUES",
-      "details": "K. Middleton (Ques)"
+      "status": "OUT",
+      "details": "K. Middleton (Out)"
     },
     {
       "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
+      "status": "OUT",
+      "details": "T. Vukcevic (Out)"
     },
     {
       "name": "Trae Young",
@@ -77,23 +77,23 @@
     },
     {
       "name": "M. Bagley",
-      "status": "QUES",
-      "details": "M. Bagley (Ques)"
+      "status": "OUT",
+      "details": "M. Bagley (Out)"
     },
     {
       "name": "T. Johnson",
-      "status": "QUES",
-      "details": "T. Johnson (Ques)"
+      "status": "OUT",
+      "details": "T. Johnson (Out)"
     },
     {
       "name": "K. Middleton",
-      "status": "QUES",
-      "details": "K. Middleton (Ques)"
+      "status": "OUT",
+      "details": "K. Middleton (Out)"
     },
     {
       "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
+      "status": "OUT",
+      "details": "T. Vukcevic (Out)"
     },
     {
       "name": "Trae Young",
@@ -103,29 +103,24 @@
   ],
   "SAC": [
     {
-      "name": "M. Monk",
-      "status": "QUES",
-      "details": "M. Monk (Ques)"
-    },
-    {
-      "name": "R. Westbrook",
-      "status": "QUES",
-      "details": "R. Westbrook (Ques)"
-    },
-    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
     },
     {
-      "name": "N. Queta",
-      "status": "PROB",
-      "details": "N. Queta (Prob)"
+      "name": "D. Sabonis",
+      "status": "OUT",
+      "details": "D. Sabonis (Out)"
+    },
+    {
+      "name": "R. Westbrook",
+      "status": "OUT",
+      "details": "R. Westbrook (Out)"
     },
     {
       "name": "J. Brown",
-      "status": "DOUBT",
-      "details": "J. Brown (Doubt)"
+      "status": "OUT",
+      "details": "J. Brown (Out)"
     },
     {
       "name": "J. Tatum",
@@ -135,14 +130,9 @@
   ],
   "BOS": [
     {
-      "name": "N. Queta",
-      "status": "PROB",
-      "details": "N. Queta (Prob)"
-    },
-    {
       "name": "J. Brown",
-      "status": "DOUBT",
-      "details": "J. Brown (Doubt)"
+      "status": "OUT",
+      "details": "J. Brown (Out)"
     },
     {
       "name": "J. Tatum",
