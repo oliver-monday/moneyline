@@ -1,17 +1,12 @@
 {
   "asof_date": "2026-01-30",
-  "built_at_utc": "2026-01-30T22:33:09Z",
+  "built_at_utc": "2026-01-30T23:28:30Z",
   "source": "rotowire",
   "LAL": [
     {
-      "name": "L. Doncic",
-      "status": "QUES",
-      "details": "L. Doncic (Ques)"
-    },
-    {
       "name": "A. Reaves",
-      "status": "QUES",
-      "details": "A. Reaves (Ques)"
+      "status": "OUT",
+      "details": "A. Reaves (Out)"
     },
     {
       "name": "A. Thiero",
@@ -226,26 +221,16 @@
       "details": "B. Wesley (Out)"
     },
     {
-      "name": "J. Hart",
-      "status": "PROB",
-      "details": "J. Hart (Prob)"
-    },
-    {
       "name": "M. McBride",
-      "status": "DOUBT",
-      "details": "M. McBride (Doubt)"
+      "status": "OUT",
+      "details": "M. McBride (Out)"
     }
   ],
   "NYK": [
     {
-      "name": "J. Hart",
-      "status": "PROB",
-      "details": "J. Hart (Prob)"
-    },
-    {
       "name": "M. McBride",
-      "status": "DOUBT",
-      "details": "M. McBride (Doubt)"
+      "status": "OUT",
+      "details": "M. McBride (Out)"
     }
   ],
   "TOR": [

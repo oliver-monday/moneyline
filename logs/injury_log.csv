@@ -3996,7 +3996,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-30,CLE,J. Green,QUES,J. Green (Ques),rotowire
 2026-01-30,PHX,J. Green,QUES,J. Green (Ques),rotowire
 2026-01-30,LAL,L. Doncic,QUES,L. Doncic (Ques),rotowire
-2026-01-30,LAL,A. Reaves,QUES,A. Reaves (Ques),rotowire
+2026-01-30,POR,J. Hart,PROB,J. Hart (Prob),rotowire
+2026-01-30,NYK,J. Hart,PROB,J. Hart (Prob),rotowire
+2026-01-30,LAL,A. Reaves,OUT,A. Reaves (Out),rotowire
 2026-01-30,LAL,A. Thiero,OUT,A. Thiero (Out),rotowire
 2026-01-30,LAL,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-01-30,LAL,Fantasy Football,REST,Fantasy Football (Rest),rotowire
@@ -4035,10 +4037,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-30,POR,Duop Reath,OUT,Duop Reath (Out),rotowire
 2026-01-30,POR,M. Thybulle,OUT,M. Thybulle (Out),rotowire
 2026-01-30,POR,B. Wesley,OUT,B. Wesley (Out),rotowire
-2026-01-30,POR,J. Hart,PROB,J. Hart (Prob),rotowire
-2026-01-30,POR,M. McBride,DOUBT,M. McBride (Doubt),rotowire
-2026-01-30,NYK,J. Hart,PROB,J. Hart (Prob),rotowire
-2026-01-30,NYK,M. McBride,DOUBT,M. McBride (Doubt),rotowire
+2026-01-30,POR,M. McBride,OUT,M. McBride (Out),rotowire
+2026-01-30,NYK,M. McBride,OUT,M. McBride (Out),rotowire
 2026-01-30,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-01-30,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
 2026-01-30,TOR,C. Castleton,OUT,C. Castleton (Out),rotowire
