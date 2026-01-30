@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-30",
-  "built_at_utc": "2026-01-30T19:36:29Z",
+  "built_at_utc": "2026-01-30T20:27:50Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -336,14 +336,14 @@
   ],
   "DEN": [
     {
-      "name": "J. Valanciunas",
-      "status": "PROB",
-      "details": "J. Valanciunas (Prob)"
-    },
-    {
       "name": "N. Jokic",
       "status": "PROB",
       "details": "N. Jokic (Prob)"
+    },
+    {
+      "name": "J. Valanciunas",
+      "status": "PROB",
+      "details": "J. Valanciunas (Prob)"
     },
     {
       "name": "T. Bates",
@@ -383,22 +383,12 @@
       "details": "Max Strus (Out)"
     },
     {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
-    {
       "name": "D. Booker",
       "status": "OUT",
       "details": "D. Booker (Out)"
     }
   ],
   "PHX": [
-    {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
     {
       "name": "D. Booker",
       "status": "OUT",

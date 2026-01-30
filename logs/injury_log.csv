@@ -3993,6 +3993,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-30,LAC,K. Leonard,QUES,K. Leonard (Ques),rotowire
 2026-01-30,BKN,E. Demin,PROB,E. Demin (Prob),rotowire
 2026-01-30,BKN,C. Thomas,PROB,C. Thomas (Prob),rotowire
+2026-01-30,CLE,J. Green,QUES,J. Green (Ques),rotowire
+2026-01-30,PHX,J. Green,QUES,J. Green (Ques),rotowire
 2026-01-30,LAL,L. Doncic,QUES,L. Doncic (Ques),rotowire
 2026-01-30,LAL,A. Reaves,QUES,A. Reaves (Ques),rotowire
 2026-01-30,LAL,A. Thiero,OUT,A. Thiero (Out),rotowire
@@ -4053,8 +4055,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-30,LAC,C. Braun,OUT,C. Braun (Out),rotowire
 2026-01-30,LAC,A. Gordon,OUT,A. Gordon (Out),rotowire
 2026-01-30,LAC,C. Johnson,OUT,C. Johnson (Out),rotowire
-2026-01-30,DEN,J. Valanciunas,PROB,J. Valanciunas (Prob),rotowire
 2026-01-30,DEN,N. Jokic,PROB,N. Jokic (Prob),rotowire
+2026-01-30,DEN,J. Valanciunas,PROB,J. Valanciunas (Prob),rotowire
 2026-01-30,DEN,T. Bates,OUT,T. Bates (Out),rotowire
 2026-01-30,DEN,C. Braun,OUT,C. Braun (Out),rotowire
 2026-01-30,DEN,A. Gordon,OUT,A. Gordon (Out),rotowire
@@ -4062,9 +4064,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-30,CLE,D. Garland,OUT,D. Garland (Out),rotowire
 2026-01-30,CLE,E. Mobley,OUT,E. Mobley (Out),rotowire
 2026-01-30,CLE,Max Strus,OUT,Max Strus (Out),rotowire
-2026-01-30,CLE,J. Green,QUES,J. Green (Ques),rotowire
 2026-01-30,CLE,D. Booker,OUT,D. Booker (Out),rotowire
-2026-01-30,PHX,J. Green,QUES,J. Green (Ques),rotowire
 2026-01-30,PHX,D. Booker,OUT,D. Booker (Out),rotowire
 2026-01-30,BKN,N. Clowney,OUT,N. Clowney (Out),rotowire
 2026-01-30,BKN,H. Highsmith,OUT,H. Highsmith (Out),rotowire
