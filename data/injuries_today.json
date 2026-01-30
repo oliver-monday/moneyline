@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-30",
-  "built_at_utc": "2026-01-30T15:01:50Z",
+  "built_at_utc": "2026-01-30T17:24:52Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -237,25 +237,25 @@
     },
     {
       "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
+      "status": "PROB",
+      "details": "J. Hart (Prob)"
     },
     {
       "name": "M. McBride",
-      "status": "QUES",
-      "details": "M. McBride (Ques)"
+      "status": "DOUBT",
+      "details": "M. McBride (Doubt)"
     }
   ],
   "NYK": [
     {
       "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
+      "status": "PROB",
+      "details": "J. Hart (Prob)"
     },
     {
       "name": "M. McBride",
-      "status": "QUES",
-      "details": "M. McBride (Ques)"
+      "status": "DOUBT",
+      "details": "M. McBride (Doubt)"
     }
   ],
   "TOR": [
@@ -422,14 +422,19 @@
       "details": "C. Thomas (Prob)"
     },
     {
+      "name": "Z. Williams",
+      "status": "QUES",
+      "details": "Z. Williams (Ques)"
+    },
+    {
       "name": "N. Clowney",
       "status": "QUES",
       "details": "N. Clowney (Ques)"
     },
     {
-      "name": "Z. Williams",
+      "name": "M. Porter",
       "status": "QUES",
-      "details": "Z. Williams (Ques)"
+      "details": "M. Porter (Ques)"
     },
     {
       "name": "H. Highsmith",
@@ -442,24 +447,19 @@
       "details": "C. Williams (Ques)"
     },
     {
-      "name": "J. Nurkic",
-      "status": "QUES",
-      "details": "J. Nurkic (Ques)"
-    },
-    {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "K. Love",
-      "status": "QUES",
-      "details": "K. Love (Ques)"
-    },
-    {
       "name": "E. Harkless",
       "status": "OUT",
       "details": "E. Harkless (Out)"
+    },
+    {
+      "name": "Kevin Love",
+      "status": "OUT",
+      "details": "Kevin Love (Out)"
     },
     {
       "name": "L. Markkanen",
@@ -470,6 +470,11 @@
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
+    },
+    {
+      "name": "J. Nurkic",
+      "status": "OUT",
+      "details": "J. Nurkic (Out)"
     }
   ],
   "UTA": [
@@ -477,16 +482,6 @@
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "K. Love",
-      "status": "QUES",
-      "details": "K. Love (Ques)"
-    },
-    {
-      "name": "J. Nurkic",
-      "status": "QUES",
-      "details": "J. Nurkic (Ques)"
     },
     {
       "name": "C. Williams",
@@ -499,6 +494,11 @@
       "details": "E. Harkless (Out)"
     },
     {
+      "name": "Kevin Love",
+      "status": "OUT",
+      "details": "Kevin Love (Out)"
+    },
+    {
       "name": "L. Markkanen",
       "status": "OUT",
       "details": "L. Markkanen (Out)"
@@ -507,6 +507,11 @@
       "name": "G. Niang",
       "status": "OUT",
       "details": "G. Niang (Out)"
+    },
+    {
+      "name": "J. Nurkic",
+      "status": "OUT",
+      "details": "J. Nurkic (Out)"
     }
   ],
   "DET": [
