@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-30",
-  "built_at_utc": "2026-01-30T09:00:23Z",
+  "built_at_utc": "2026-01-30T15:01:50Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -39,24 +39,29 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "T. Johnson",
-      "status": "QUES",
-      "details": "T. Johnson (Ques)"
-    },
-    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
     },
     {
       "name": "M. Bagley",
-      "status": "OUT",
-      "details": "M. Bagley (Out)"
+      "status": "QUES",
+      "details": "M. Bagley (Ques)"
+    },
+    {
+      "name": "T. Johnson",
+      "status": "QUES",
+      "details": "T. Johnson (Ques)"
+    },
+    {
+      "name": "K. Middleton",
+      "status": "QUES",
+      "details": "K. Middleton (Ques)"
     },
     {
       "name": "T. Vukcevic",
-      "status": "OUT",
-      "details": "T. Vukcevic (Out)"
+      "status": "QUES",
+      "details": "T. Vukcevic (Ques)"
     },
     {
       "name": "Trae Young",
@@ -71,19 +76,24 @@
       "details": "C. Whitmore (OFS)"
     },
     {
+      "name": "M. Bagley",
+      "status": "QUES",
+      "details": "M. Bagley (Ques)"
+    },
+    {
       "name": "T. Johnson",
       "status": "QUES",
       "details": "T. Johnson (Ques)"
     },
     {
-      "name": "M. Bagley",
-      "status": "OUT",
-      "details": "M. Bagley (Out)"
+      "name": "K. Middleton",
+      "status": "QUES",
+      "details": "K. Middleton (Ques)"
     },
     {
       "name": "T. Vukcevic",
-      "status": "OUT",
-      "details": "T. Vukcevic (Out)"
+      "status": "QUES",
+      "details": "T. Vukcevic (Ques)"
     },
     {
       "name": "Trae Young",
@@ -93,19 +103,19 @@
   ],
   "SAC": [
     {
-      "name": "Malik Monk",
-      "status": "OUT",
-      "details": "Malik Monk (Out)"
+      "name": "M. Monk",
+      "status": "QUES",
+      "details": "M. Monk (Ques)"
+    },
+    {
+      "name": "R. Westbrook",
+      "status": "QUES",
+      "details": "R. Westbrook (Ques)"
     },
     {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
-    },
-    {
-      "name": "R. Westbrook",
-      "status": "OUT",
-      "details": "R. Westbrook (Out)"
     },
     {
       "name": "N. Queta",
@@ -191,11 +201,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "B. Wesley",
-      "status": "DOUBT",
-      "details": "B. Wesley (Doubt)"
-    },
-    {
       "name": "D. Avdija",
       "status": "QUES",
       "details": "D. Avdija (Ques)"
@@ -224,6 +229,11 @@
       "name": "M. Thybulle",
       "status": "OUT",
       "details": "M. Thybulle (Out)"
+    },
+    {
+      "name": "B. Wesley",
+      "status": "OUT",
+      "details": "B. Wesley (Out)"
     },
     {
       "name": "J. Hart",
@@ -378,53 +388,53 @@
       "details": "Max Strus (Out)"
     },
     {
+      "name": "J. Green",
+      "status": "QUES",
+      "details": "J. Green (Ques)"
+    },
+    {
       "name": "D. Booker",
       "status": "OUT",
       "details": "D. Booker (Out)"
-    },
-    {
-      "name": "J. Green",
-      "status": "OUT",
-      "details": "J. Green (Out)"
     }
   ],
   "PHX": [
     {
+      "name": "J. Green",
+      "status": "QUES",
+      "details": "J. Green (Ques)"
+    },
+    {
       "name": "D. Booker",
       "status": "OUT",
       "details": "D. Booker (Out)"
-    },
-    {
-      "name": "J. Green",
-      "status": "OUT",
-      "details": "J. Green (Out)"
     }
   ],
   "BKN": [
     {
-      "name": "N. Clowney",
-      "status": "OUT",
-      "details": "N. Clowney (Out)"
+      "name": "E. Demin",
+      "status": "PROB",
+      "details": "E. Demin (Prob)"
     },
     {
-      "name": "Egor Demin",
-      "status": "OUT",
-      "details": "Egor Demin (Out)"
+      "name": "C. Thomas",
+      "status": "PROB",
+      "details": "C. Thomas (Prob)"
+    },
+    {
+      "name": "N. Clowney",
+      "status": "QUES",
+      "details": "N. Clowney (Ques)"
+    },
+    {
+      "name": "Z. Williams",
+      "status": "QUES",
+      "details": "Z. Williams (Ques)"
     },
     {
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
-    },
-    {
-      "name": "Cam Thomas",
-      "status": "OUT",
-      "details": "Cam Thomas (Out)"
-    },
-    {
-      "name": "Z. Williams",
-      "status": "OUT",
-      "details": "Z. Williams (Out)"
     },
     {
       "name": "C. Williams",
@@ -502,8 +512,8 @@
   "DET": [
     {
       "name": "C. LeVert",
-      "status": "OUT",
-      "details": "C. LeVert (Out)"
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
     },
     {
       "name": "J. Butler",
