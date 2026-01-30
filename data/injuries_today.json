@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-01-29",
-  "built_at_utc": "2026-01-29T23:28:51Z",
+  "built_at_utc": "2026-01-30T01:12:02Z",
   "source": "rotowire",
   "SAC": [
     {
-      "name": "M. Monk",
-      "status": "QUES",
-      "details": "M. Monk (Ques)"
+      "name": "Malik Monk",
+      "status": "OUT",
+      "details": "Malik Monk (Out)"
     },
     {
       "name": "K. Murray",
@@ -39,11 +39,6 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
-    {
       "name": "M. Beauchamp",
       "status": "OUT",
       "details": "M. Beauchamp (Out)"
@@ -55,11 +50,6 @@
     }
   ],
   "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
     {
       "name": "M. Beauchamp",
       "status": "OUT",
@@ -142,11 +132,6 @@
       "details": "S. Adams (OFS)"
     },
     {
-      "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
-    },
-    {
       "name": "Tari Eason",
       "status": "OUT",
       "details": "Tari Eason (Out)"
@@ -216,16 +201,6 @@
   ],
   "MIA": [
     {
-      "name": "N. Powell",
-      "status": "PROB",
-      "details": "N. Powell (Prob)"
-    },
-    {
-      "name": "K. Ware",
-      "status": "PROB",
-      "details": "K. Ware (Prob)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
@@ -285,11 +260,6 @@
   ],
   "CHA": [
     {
-      "name": "B. Miller",
-      "status": "PROB",
-      "details": "B. Miller (Prob)"
-    },
-    {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
@@ -313,16 +283,6 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
-    },
-    {
-      "name": "K. Thompson",
-      "status": "PROB",
-      "details": "K. Thompson (Prob)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "QUES",
-      "details": "B. Williams (Ques)"
     },
     {
       "name": "A. Davis",
@@ -350,16 +310,6 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
-    },
-    {
-      "name": "K. Thompson",
-      "status": "PROB",
-      "details": "K. Thompson (Prob)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "QUES",
-      "details": "B. Williams (Ques)"
     },
     {
       "name": "A. Davis",
@@ -404,16 +354,6 @@
       "details": "Z. Williams (Out)"
     },
     {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "J. Valanciunas",
-      "status": "PROB",
-      "details": "J. Valanciunas (Prob)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -440,16 +380,6 @@
     }
   ],
   "DEN": [
-    {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "J. Valanciunas",
-      "status": "PROB",
-      "details": "J. Valanciunas (Prob)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -483,11 +413,6 @@
       "details": "C. LeVert (Out)"
     },
     {
-      "name": "C. Gillespie",
-      "status": "QUES",
-      "details": "C. Gillespie (Ques)"
-    },
-    {
       "name": "D. Booker",
       "status": "OUT",
       "details": "D. Booker (Out)"
@@ -499,11 +424,6 @@
     }
   ],
   "PHX": [
-    {
-      "name": "C. Gillespie",
-      "status": "QUES",
-      "details": "C. Gillespie (Ques)"
-    },
     {
       "name": "D. Booker",
       "status": "OUT",
@@ -547,11 +467,6 @@
       "details": "J. Williams (Out)"
     },
     {
-      "name": "R. Gobert",
-      "status": "QUES",
-      "details": "R. Gobert (Ques)"
-    },
-    {
       "name": "M. Conley",
       "status": "OUT",
       "details": "M. Conley (Out)"
@@ -563,11 +478,6 @@
     }
   ],
   "MIN": [
-    {
-      "name": "R. Gobert",
-      "status": "QUES",
-      "details": "R. Gobert (Ques)"
-    },
     {
       "name": "M. Conley",
       "status": "OUT",
