@@ -4049,6 +4049,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-30,LAC,B. Bogdanovic,OUT,B. Bogdanovic (Out),rotowire
 2026-01-30,LAC,D. Jones,OUT,D. Jones (Out),rotowire
 2026-01-30,LAC,Chris Paul,OUT,Chris Paul (Out),rotowire
+2026-01-30,LAC,J. Murray,PROB,J. Murray (Prob),rotowire
 2026-01-30,LAC,N. Jokic,PROB,N. Jokic (Prob),rotowire
 2026-01-30,LAC,J. Valanciunas,PROB,J. Valanciunas (Prob),rotowire
 2026-01-30,LAC,T. Bates,OUT,T. Bates (Out),rotowire
@@ -4056,11 +4057,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-30,LAC,A. Gordon,OUT,A. Gordon (Out),rotowire
 2026-01-30,LAC,C. Johnson,OUT,C. Johnson (Out),rotowire
 2026-01-30,DEN,N. Jokic,PROB,N. Jokic (Prob),rotowire
+2026-01-30,DEN,J. Murray,PROB,J. Murray (Prob),rotowire
 2026-01-30,DEN,J. Valanciunas,PROB,J. Valanciunas (Prob),rotowire
 2026-01-30,DEN,T. Bates,OUT,T. Bates (Out),rotowire
 2026-01-30,DEN,C. Braun,OUT,C. Braun (Out),rotowire
 2026-01-30,DEN,A. Gordon,OUT,A. Gordon (Out),rotowire
 2026-01-30,DEN,C. Johnson,OUT,C. Johnson (Out),rotowire
+2026-01-30,CLE,C. Porter,QUES,C. Porter (Ques),rotowire
 2026-01-30,CLE,D. Garland,OUT,D. Garland (Out),rotowire
 2026-01-30,CLE,E. Mobley,OUT,E. Mobley (Out),rotowire
 2026-01-30,CLE,Max Strus,OUT,Max Strus (Out),rotowire
@@ -4084,7 +4087,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-30,UTA,L. Markkanen,OUT,L. Markkanen (Out),rotowire
 2026-01-30,UTA,G. Niang,OUT,G. Niang (Out),rotowire
 2026-01-30,UTA,J. Nurkic,OUT,J. Nurkic (Out),rotowire
-2026-01-30,DET,C. LeVert,QUES,C. LeVert (Ques),rotowire
+2026-01-30,DET,C. Cunningham,PROB,C. Cunningham (Prob),rotowire
+2026-01-30,DET,C. LeVert,DOUBT,C. LeVert (Doubt),rotowire
 2026-01-30,DET,J. Butler,OFS,J. Butler (OFS),rotowire
 2026-01-30,DET,G. Santos,PROB,G. Santos (Prob),rotowire
 2026-01-30,DET,LJ Cryer,OUT,LJ Cryer (Out),rotowire

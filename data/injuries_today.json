@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-30",
-  "built_at_utc": "2026-01-30T21:16:14Z",
+  "built_at_utc": "2026-01-30T22:33:09Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -304,6 +304,11 @@
       "details": "Chris Paul (Out)"
     },
     {
+      "name": "J. Murray",
+      "status": "PROB",
+      "details": "J. Murray (Prob)"
+    },
+    {
       "name": "N. Jokic",
       "status": "PROB",
       "details": "N. Jokic (Prob)"
@@ -341,6 +346,11 @@
       "details": "N. Jokic (Prob)"
     },
     {
+      "name": "J. Murray",
+      "status": "PROB",
+      "details": "J. Murray (Prob)"
+    },
+    {
       "name": "J. Valanciunas",
       "status": "PROB",
       "details": "J. Valanciunas (Prob)"
@@ -367,6 +377,11 @@
     }
   ],
   "CLE": [
+    {
+      "name": "C. Porter",
+      "status": "QUES",
+      "details": "C. Porter (Ques)"
+    },
     {
       "name": "D. Garland",
       "status": "OUT",
@@ -491,9 +506,14 @@
   ],
   "DET": [
     {
+      "name": "C. Cunningham",
+      "status": "PROB",
+      "details": "C. Cunningham (Prob)"
+    },
+    {
       "name": "C. LeVert",
-      "status": "QUES",
-      "details": "C. LeVert (Ques)"
+      "status": "DOUBT",
+      "details": "C. LeVert (Doubt)"
     },
     {
       "name": "J. Butler",
