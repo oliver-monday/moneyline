@@ -1,0 +1,15 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-30,2026,Paolo Banchero,ORL,TOR,ast,4,HIT,6,,targets_snapshot_2026-01-30.json
+2026-01-30,2026,Paolo Banchero,ORL,TOR,3pt,1,HIT,1,,targets_snapshot_2026-01-30.json
+2026-01-30,2026,James Harden,LAC,DEN,reb,4,HIT,5,,targets_snapshot_2026-01-30.json
+2026-01-30,2026,OG Anunoby,NY,POR,pts,15,HIT,24,,targets_snapshot_2026-01-30.json
+2026-01-30,2026,OG Anunoby,NY,POR,ast,2,HIT,3,,targets_snapshot_2026-01-30.json
+2026-01-30,2026,LeBron James,LAL,WSH,3pt,1,HIT,2,,targets_snapshot_2026-01-30.json
+2026-01-30,2026,Shaedon Sharpe,POR,NY,pts,20,HIT,26,,targets_snapshot_2026-01-30.json
+2026-01-30,2026,Shaedon Sharpe,POR,NY,reb,4,MISSED,3,,targets_snapshot_2026-01-30.json
+2026-01-30,2026,Shaedon Sharpe,POR,NY,ast,2,HIT,3,,targets_snapshot_2026-01-30.json
+2026-01-30,2026,Dillon Brooks,PHX,CLE,reb,4,MISSED,2,,targets_snapshot_2026-01-30.json
+2026-01-30,2026,Saddiq Bey,NO,MEM,pts,15,HIT,22,,targets_snapshot_2026-01-30.json
+2026-01-30,2026,Saddiq Bey,NO,MEM,ast,2,HIT,2,,targets_snapshot_2026-01-30.json
+2026-01-30,2026,Grayson Allen,PHX,CLE,pts,15,MISSED,13,,targets_snapshot_2026-01-30.json
+2026-01-30,2026,Zion Williamson,NO,MEM,pts,20,HIT,21,,targets_snapshot_2026-01-30.json
