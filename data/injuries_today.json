@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-01-31",
-  "built_at_utc": "2026-01-31T19:25:17Z",
+  "built_at_utc": "2026-01-31T20:23:37Z",
   "source": "rotowire",
   "SAS": [
     {
       "name": "J. Sochan",
-      "status": "OUT",
-      "details": "J. Sochan (Out)"
+      "status": "QUES",
+      "details": "J. Sochan (Ques)"
     },
     {
       "name": "Fantasy Home",
