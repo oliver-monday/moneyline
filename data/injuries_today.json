@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-31",
-  "built_at_utc": "2026-01-31T17:14:25Z",
+  "built_at_utc": "2026-01-31T18:28:56Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -51,6 +51,11 @@
       "name": "J. Johnson",
       "status": "QUES",
       "details": "J. Johnson (Ques)"
+    },
+    {
+      "name": "V. Krejci",
+      "status": "QUES",
+      "details": "V. Krejci (Ques)"
     },
     {
       "name": "Z. Risacher",
@@ -171,14 +176,14 @@
       "details": "J. Smith (Out)"
     },
     {
-      "name": "D. Mitchell",
-      "status": "DOUBT",
-      "details": "D. Mitchell (Doubt)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
+    },
+    {
+      "name": "D. Mitchell",
+      "status": "OUT",
+      "details": "D. Mitchell (Out)"
     },
     {
       "name": "N. Powell",
@@ -193,14 +198,14 @@
   ],
   "MIA": [
     {
-      "name": "D. Mitchell",
-      "status": "DOUBT",
-      "details": "D. Mitchell (Doubt)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
+    },
+    {
+      "name": "D. Mitchell",
+      "status": "OUT",
+      "details": "D. Mitchell (Out)"
     },
     {
       "name": "N. Powell",

@@ -4109,6 +4109,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-31,CHA,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-01-31,ATL,N. Dante,OFS,N. Dante (OFS),rotowire
 2026-01-31,ATL,J. Johnson,QUES,J. Johnson (Ques),rotowire
+2026-01-31,ATL,V. Krejci,QUES,V. Krejci (Ques),rotowire
 2026-01-31,ATL,Z. Risacher,QUES,Z. Risacher (Ques),rotowire
 2026-01-31,ATL,O. Okongwu,OUT,O. Okongwu (Out),rotowire
 2026-01-31,ATL,K. Porzingis,OUT,K. Porzingis (Out),rotowire
@@ -4131,12 +4132,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-01-31,CHI,J. Giddey,OUT,J. Giddey (Out),rotowire
 2026-01-31,CHI,Tre Jones,OUT,Tre Jones (Out),rotowire
 2026-01-31,CHI,J. Smith,OUT,J. Smith (Out),rotowire
-2026-01-31,CHI,D. Mitchell,DOUBT,D. Mitchell (Doubt),rotowire
 2026-01-31,CHI,T. Herro,OUT,T. Herro (Out),rotowire
+2026-01-31,CHI,D. Mitchell,OUT,D. Mitchell (Out),rotowire
 2026-01-31,CHI,N. Powell,OUT,N. Powell (Out),rotowire
 2026-01-31,CHI,T. Rozier,OUT,T. Rozier (Out),rotowire
-2026-01-31,MIA,D. Mitchell,DOUBT,D. Mitchell (Doubt),rotowire
 2026-01-31,MIA,T. Herro,OUT,T. Herro (Out),rotowire
+2026-01-31,MIA,D. Mitchell,OUT,D. Mitchell (Out),rotowire
 2026-01-31,MIA,N. Powell,OUT,N. Powell (Out),rotowire
 2026-01-31,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-01-31,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
