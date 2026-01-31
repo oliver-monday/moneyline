@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-31",
-  "built_at_utc": "2026-01-31T22:30:10Z",
+  "built_at_utc": "2026-01-31T23:25:32Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -48,19 +48,9 @@
       "details": "N. Dante (OFS)"
     },
     {
-      "name": "J. Johnson",
-      "status": "QUES",
-      "details": "J. Johnson (Ques)"
-    },
-    {
-      "name": "V. Krejci",
-      "status": "QUES",
-      "details": "V. Krejci (Ques)"
-    },
-    {
-      "name": "Z. Risacher",
-      "status": "QUES",
-      "details": "Z. Risacher (Ques)"
+      "name": "Vit Krejci",
+      "status": "OUT",
+      "details": "Vit Krejci (Out)"
     },
     {
       "name": "O. Okongwu",
