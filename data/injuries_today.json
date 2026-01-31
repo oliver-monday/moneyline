@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-30",
-  "built_at_utc": "2026-01-30T23:28:30Z",
+  "built_at_utc": "2026-01-31T01:09:10Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -186,14 +186,9 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "D. Avdija",
-      "status": "QUES",
-      "details": "D. Avdija (Ques)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "name": "Duop Reath",
+      "status": "OFS",
+      "details": "Duop Reath (OFS)"
     },
     {
       "name": "S. Henderson",
@@ -204,11 +199,6 @@
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
-    },
-    {
-      "name": "Duop Reath",
-      "status": "OUT",
-      "details": "Duop Reath (Out)"
     },
     {
       "name": "M. Thybulle",
@@ -289,21 +279,6 @@
       "details": "Chris Paul (Out)"
     },
     {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "N. Jokic",
-      "status": "PROB",
-      "details": "N. Jokic (Prob)"
-    },
-    {
-      "name": "J. Valanciunas",
-      "status": "PROB",
-      "details": "J. Valanciunas (Prob)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -325,21 +300,6 @@
     }
   ],
   "DEN": [
-    {
-      "name": "N. Jokic",
-      "status": "PROB",
-      "details": "N. Jokic (Prob)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "J. Valanciunas",
-      "status": "PROB",
-      "details": "J. Valanciunas (Prob)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -417,11 +377,6 @@
       "details": "Z. Williams (Out)"
     },
     {
-      "name": "C. Williams",
-      "status": "QUES",
-      "details": "C. Williams (Ques)"
-    },
-    {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
@@ -459,11 +414,6 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "C. Williams",
-      "status": "QUES",
-      "details": "C. Williams (Ques)"
-    },
-    {
       "name": "E. Harkless",
       "status": "OUT",
       "details": "E. Harkless (Out)"
@@ -497,18 +447,13 @@
     },
     {
       "name": "C. LeVert",
-      "status": "DOUBT",
-      "details": "C. LeVert (Doubt)"
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     },
     {
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
-    },
-    {
-      "name": "G. Santos",
-      "status": "PROB",
-      "details": "G. Santos (Prob)"
     },
     {
       "name": "LJ Cryer",
@@ -531,11 +476,6 @@
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
-    },
-    {
-      "name": "G. Santos",
-      "status": "PROB",
-      "details": "G. Santos (Prob)"
     },
     {
       "name": "LJ Cryer",
