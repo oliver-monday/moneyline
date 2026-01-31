@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-31",
-  "built_at_utc": "2026-01-31T14:49:13Z",
+  "built_at_utc": "2026-01-31T17:14:25Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -29,22 +29,12 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "J. Green",
-      "status": "PROB",
-      "details": "J. Green (Prob)"
-    },
-    {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
     }
   ],
   "CHA": [
-    {
-      "name": "J. Green",
-      "status": "PROB",
-      "details": "J. Green (Prob)"
-    },
     {
       "name": "M. Plumlee",
       "status": "OUT",
@@ -110,6 +100,16 @@
       "name": "Q. Grimes",
       "status": "PROB",
       "details": "Q. Grimes (Prob)"
+    },
+    {
+      "name": "A. Drummond",
+      "status": "QUES",
+      "details": "A. Drummond (Ques)"
+    },
+    {
+      "name": "P. George",
+      "status": "OUT",
+      "details": "P. George (Out)"
     }
   ],
   "PHI": [
@@ -117,6 +117,16 @@
       "name": "Q. Grimes",
       "status": "PROB",
       "details": "Q. Grimes (Prob)"
+    },
+    {
+      "name": "A. Drummond",
+      "status": "QUES",
+      "details": "A. Drummond (Ques)"
+    },
+    {
+      "name": "P. George",
+      "status": "OUT",
+      "details": "P. George (Out)"
     }
   ],
   "CHI": [
@@ -126,24 +136,9 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Giddey",
-      "status": "QUES",
-      "details": "J. Giddey (Ques)"
-    },
-    {
       "name": "E. Miller",
-      "status": "QUES",
-      "details": "E. Miller (Ques)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "QUES",
-      "details": "J. Smith (Ques)"
-    },
-    {
-      "name": "C. White",
-      "status": "QUES",
-      "details": "C. White (Ques)"
+      "status": "PROB",
+      "details": "E. Miller (Prob)"
     },
     {
       "name": "N. Vucevic",
@@ -151,14 +146,29 @@
       "details": "N. Vucevic (Doubt)"
     },
     {
+      "name": "C. White",
+      "status": "DOUBT",
+      "details": "C. White (Doubt)"
+    },
+    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
     },
     {
+      "name": "J. Giddey",
+      "status": "OUT",
+      "details": "J. Giddey (Out)"
+    },
+    {
       "name": "Tre Jones",
       "status": "OUT",
       "details": "Tre Jones (Out)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OUT",
+      "details": "J. Smith (Out)"
     },
     {
       "name": "D. Mitchell",
@@ -216,8 +226,8 @@
     },
     {
       "name": "T. Jerome",
-      "status": "DOUBT",
-      "details": "T. Jerome (Doubt)"
+      "status": "QUES",
+      "details": "T. Jerome (Ques)"
     },
     {
       "name": "S. Pippen",
@@ -248,8 +258,8 @@
     },
     {
       "name": "T. Jerome",
-      "status": "DOUBT",
-      "details": "T. Jerome (Doubt)"
+      "status": "QUES",
+      "details": "T. Jerome (Ques)"
     },
     {
       "name": "S. Pippen",
