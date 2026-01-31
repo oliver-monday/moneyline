@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-01-30",
-  "built_at_utc": "2026-01-31T01:09:10Z",
+  "built_at_utc": "2026-01-31T03:13:39Z",
   "source": "rotowire",
   "LAL": [
     {
       "name": "A. Reaves",
-      "status": "OUT",
-      "details": "A. Reaves (Out)"
+      "status": "QUES",
+      "details": "A. Reaves (Ques)"
     },
     {
       "name": "A. Thiero",
@@ -34,29 +34,29 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "C. Whitmore",
-      "status": "OFS",
-      "details": "C. Whitmore (OFS)"
-    },
-    {
       "name": "M. Bagley",
-      "status": "OUT",
-      "details": "M. Bagley (Out)"
+      "status": "QUES",
+      "details": "M. Bagley (Ques)"
     },
     {
       "name": "T. Johnson",
-      "status": "OUT",
-      "details": "T. Johnson (Out)"
+      "status": "QUES",
+      "details": "T. Johnson (Ques)"
     },
     {
       "name": "K. Middleton",
-      "status": "OUT",
-      "details": "K. Middleton (Out)"
+      "status": "QUES",
+      "details": "K. Middleton (Ques)"
     },
     {
       "name": "T. Vukcevic",
-      "status": "OUT",
-      "details": "T. Vukcevic (Out)"
+      "status": "QUES",
+      "details": "T. Vukcevic (Ques)"
+    },
+    {
+      "name": "C. Whitmore",
+      "status": "OFS",
+      "details": "C. Whitmore (OFS)"
     },
     {
       "name": "Trae Young",
@@ -66,29 +66,29 @@
   ],
   "WAS": [
     {
-      "name": "C. Whitmore",
-      "status": "OFS",
-      "details": "C. Whitmore (OFS)"
-    },
-    {
       "name": "M. Bagley",
-      "status": "OUT",
-      "details": "M. Bagley (Out)"
+      "status": "QUES",
+      "details": "M. Bagley (Ques)"
     },
     {
       "name": "T. Johnson",
-      "status": "OUT",
-      "details": "T. Johnson (Out)"
+      "status": "QUES",
+      "details": "T. Johnson (Ques)"
     },
     {
       "name": "K. Middleton",
-      "status": "OUT",
-      "details": "K. Middleton (Out)"
+      "status": "QUES",
+      "details": "K. Middleton (Ques)"
     },
     {
       "name": "T. Vukcevic",
-      "status": "OUT",
-      "details": "T. Vukcevic (Out)"
+      "status": "QUES",
+      "details": "T. Vukcevic (Ques)"
+    },
+    {
+      "name": "C. Whitmore",
+      "status": "OFS",
+      "details": "C. Whitmore (OFS)"
     },
     {
       "name": "Trae Young",
@@ -323,11 +323,6 @@
   ],
   "CLE": [
     {
-      "name": "C. Porter",
-      "status": "QUES",
-      "details": "C. Porter (Ques)"
-    },
-    {
       "name": "D. Garland",
       "status": "OUT",
       "details": "D. Garland (Out)"
@@ -336,6 +331,11 @@
       "name": "E. Mobley",
       "status": "OUT",
       "details": "E. Mobley (Out)"
+    },
+    {
+      "name": "C. Porter",
+      "status": "OUT",
+      "details": "C. Porter (Out)"
     },
     {
       "name": "Max Strus",
@@ -440,11 +440,6 @@
     }
   ],
   "DET": [
-    {
-      "name": "C. Cunningham",
-      "status": "PROB",
-      "details": "C. Cunningham (Prob)"
-    },
     {
       "name": "C. LeVert",
       "status": "OUT",
