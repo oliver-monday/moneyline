@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-30",
-  "built_at_utc": "2026-01-31T03:13:39Z",
+  "built_at_utc": "2026-01-31T03:56:17Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -98,24 +98,24 @@
   ],
   "SAC": [
     {
+      "name": "D. Sabonis",
+      "status": "PROB",
+      "details": "D. Sabonis (Prob)"
+    },
+    {
+      "name": "R. Westbrook",
+      "status": "QUES",
+      "details": "R. Westbrook (Ques)"
+    },
+    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
     },
     {
-      "name": "D. Sabonis",
-      "status": "OUT",
-      "details": "D. Sabonis (Out)"
-    },
-    {
-      "name": "R. Westbrook",
-      "status": "OUT",
-      "details": "R. Westbrook (Out)"
-    },
-    {
       "name": "J. Brown",
-      "status": "OUT",
-      "details": "J. Brown (Out)"
+      "status": "QUES",
+      "details": "J. Brown (Ques)"
     },
     {
       "name": "J. Tatum",
@@ -126,8 +126,8 @@
   "BOS": [
     {
       "name": "J. Brown",
-      "status": "OUT",
-      "details": "J. Brown (Out)"
+      "status": "QUES",
+      "details": "J. Brown (Ques)"
     },
     {
       "name": "J. Tatum",
@@ -138,8 +138,18 @@
   "MEM": [
     {
       "name": "S. Aldama",
-      "status": "OUT",
-      "details": "S. Aldama (Out)"
+      "status": "QUES",
+      "details": "S. Aldama (Ques)"
+    },
+    {
+      "name": "T. Jerome",
+      "status": "DOUBT",
+      "details": "T. Jerome (Doubt)"
+    },
+    {
+      "name": "S. Pippen",
+      "status": "DOUBT",
+      "details": "S. Pippen (Doubt)"
     },
     {
       "name": "B. Clarke",
@@ -152,19 +162,9 @@
       "details": "Zach Edey (Out)"
     },
     {
-      "name": "Ty Jerome",
-      "status": "OUT",
-      "details": "Ty Jerome (Out)"
-    },
-    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
-    },
-    {
-      "name": "S. Pippen",
-      "status": "OUT",
-      "details": "S. Pippen (Out)"
     },
     {
       "name": "D. Murray",
@@ -181,6 +181,11 @@
   ],
   "POR": [
     {
+      "name": "S. Henderson",
+      "status": "DOUBT",
+      "details": "S. Henderson (Doubt)"
+    },
+    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
@@ -191,9 +196,14 @@
       "details": "Duop Reath (OFS)"
     },
     {
-      "name": "S. Henderson",
-      "status": "OUT",
-      "details": "S. Henderson (Out)"
+      "name": "M. Thybulle",
+      "status": "DOUBT",
+      "details": "M. Thybulle (Doubt)"
+    },
+    {
+      "name": "B. Wesley",
+      "status": "DOUBT",
+      "details": "B. Wesley (Doubt)"
     },
     {
       "name": "K. Murray",
@@ -201,26 +211,16 @@
       "details": "K. Murray (Out)"
     },
     {
-      "name": "M. Thybulle",
-      "status": "OUT",
-      "details": "M. Thybulle (Out)"
-    },
-    {
-      "name": "B. Wesley",
-      "status": "OUT",
-      "details": "B. Wesley (Out)"
-    },
-    {
       "name": "M. McBride",
-      "status": "OUT",
-      "details": "M. McBride (Out)"
+      "status": "QUES",
+      "details": "M. McBride (Ques)"
     }
   ],
   "NYK": [
     {
       "name": "M. McBride",
-      "status": "OUT",
-      "details": "M. McBride (Out)"
+      "status": "QUES",
+      "details": "M. McBride (Ques)"
     }
   ],
   "TOR": [
@@ -236,25 +236,25 @@
     },
     {
       "name": "C. Castleton",
-      "status": "OUT",
-      "details": "C. Castleton (Out)"
+      "status": "QUES",
+      "details": "C. Castleton (Ques)"
     },
     {
       "name": "F. Wagner",
-      "status": "OUT",
-      "details": "F. Wagner (Out)"
+      "status": "DOUBT",
+      "details": "F. Wagner (Doubt)"
     }
   ],
   "ORL": [
     {
       "name": "C. Castleton",
-      "status": "OUT",
-      "details": "C. Castleton (Out)"
+      "status": "QUES",
+      "details": "C. Castleton (Ques)"
     },
     {
       "name": "F. Wagner",
-      "status": "OUT",
-      "details": "F. Wagner (Out)"
+      "status": "DOUBT",
+      "details": "F. Wagner (Doubt)"
     }
   ],
   "LAC": [
@@ -277,6 +277,11 @@
       "name": "Chris Paul",
       "status": "OUT",
       "details": "Chris Paul (Out)"
+    },
+    {
+      "name": "T. Washington",
+      "status": "OUT",
+      "details": "T. Washington (Out)"
     },
     {
       "name": "T. Bates",
@@ -382,11 +387,6 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "E. Harkless",
-      "status": "OUT",
-      "details": "E. Harkless (Out)"
-    },
-    {
       "name": "Kevin Love",
       "status": "OUT",
       "details": "Kevin Love (Out)"
@@ -412,11 +412,6 @@
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "E. Harkless",
-      "status": "OUT",
-      "details": "E. Harkless (Out)"
     },
     {
       "name": "Kevin Love",
