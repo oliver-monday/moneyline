@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-01",
-  "built_at_utc": "2026-02-01T17:15:42Z",
+  "built_at_utc": "2026-02-01T18:31:30Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -133,8 +133,8 @@
     },
     {
       "name": "D. Mitchell",
-      "status": "QUES",
-      "details": "D. Mitchell (Ques)"
+      "status": "PROB",
+      "details": "D. Mitchell (Prob)"
     },
     {
       "name": "N. Powell",
@@ -142,9 +142,14 @@
       "details": "N. Powell (Ques)"
     },
     {
-      "name": "T. Herro",
+      "name": "N. Jovic",
       "status": "DOUBT",
-      "details": "T. Herro (Doubt)"
+      "details": "N. Jovic (Doubt)"
+    },
+    {
+      "name": "T. Herro",
+      "status": "OUT",
+      "details": "T. Herro (Out)"
     },
     {
       "name": "T. Rozier",
@@ -155,8 +160,8 @@
   "MIA": [
     {
       "name": "D. Mitchell",
-      "status": "QUES",
-      "details": "D. Mitchell (Ques)"
+      "status": "PROB",
+      "details": "D. Mitchell (Prob)"
     },
     {
       "name": "N. Powell",
@@ -164,9 +169,14 @@
       "details": "N. Powell (Ques)"
     },
     {
-      "name": "T. Herro",
+      "name": "N. Jovic",
       "status": "DOUBT",
-      "details": "T. Herro (Doubt)"
+      "details": "N. Jovic (Doubt)"
+    },
+    {
+      "name": "T. Herro",
+      "status": "OUT",
+      "details": "T. Herro (Out)"
     },
     {
       "name": "T. Rozier",
@@ -186,14 +196,14 @@
       "details": "M. Monk (Ques)"
     },
     {
-      "name": "R. Westbrook",
-      "status": "QUES",
-      "details": "R. Westbrook (Ques)"
-    },
-    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "R. Westbrook",
+      "status": "OUT",
+      "details": "R. Westbrook (Out)"
     },
     {
       "name": "A. Sarr",
@@ -304,14 +314,14 @@
   ],
   "LAL": [
     {
-      "name": "B. James",
-      "status": "QUES",
-      "details": "B. James (Ques)"
-    },
-    {
       "name": "A. Reaves",
       "status": "QUES",
       "details": "A. Reaves (Ques)"
+    },
+    {
+      "name": "B. James",
+      "status": "OUT",
+      "details": "B. James (Out)"
     },
     {
       "name": "A. Thiero",
@@ -360,6 +370,11 @@
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
+    },
+    {
+      "name": "J. Harden",
+      "status": "OUT",
+      "details": "J. Harden (Out)"
     },
     {
       "name": "D. Jones",
@@ -436,11 +451,6 @@
       "details": "D. Avdija (Ques)"
     },
     {
-      "name": "V. Krejci",
-      "status": "QUES",
-      "details": "V. Krejci (Ques)"
-    },
-    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
@@ -466,6 +476,11 @@
       "details": "J. Holiday (Out)"
     },
     {
+      "name": "Vit Krejci",
+      "status": "OUT",
+      "details": "Vit Krejci (Out)"
+    },
+    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
@@ -477,11 +492,6 @@
     }
   ],
   "POR": [
-    {
-      "name": "V. Krejci",
-      "status": "QUES",
-      "details": "V. Krejci (Ques)"
-    },
     {
       "name": "D. Lillard",
       "status": "OFS",
@@ -511,6 +521,11 @@
       "name": "J. Holiday",
       "status": "OUT",
       "details": "J. Holiday (Out)"
+    },
+    {
+      "name": "Vit Krejci",
+      "status": "OUT",
+      "details": "Vit Krejci (Out)"
     },
     {
       "name": "K. Murray",
