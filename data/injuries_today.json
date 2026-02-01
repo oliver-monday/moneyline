@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-01-31",
-  "built_at_utc": "2026-01-31T23:25:32Z",
+  "built_at_utc": "2026-02-01T01:24:02Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -92,32 +92,12 @@
       "details": "D. Murray (Out)"
     },
     {
-      "name": "Q. Grimes",
-      "status": "PROB",
-      "details": "Q. Grimes (Prob)"
-    },
-    {
-      "name": "A. Drummond",
-      "status": "QUES",
-      "details": "A. Drummond (Ques)"
-    },
-    {
       "name": "P. George",
       "status": "OUT",
       "details": "P. George (Out)"
     }
   ],
   "PHI": [
-    {
-      "name": "Q. Grimes",
-      "status": "PROB",
-      "details": "Q. Grimes (Prob)"
-    },
-    {
-      "name": "A. Drummond",
-      "status": "QUES",
-      "details": "A. Drummond (Ques)"
-    },
     {
       "name": "P. George",
       "status": "OUT",
@@ -129,21 +109,6 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "E. Miller",
-      "status": "PROB",
-      "details": "E. Miller (Prob)"
-    },
-    {
-      "name": "N. Vucevic",
-      "status": "DOUBT",
-      "details": "N. Vucevic (Doubt)"
-    },
-    {
-      "name": "C. White",
-      "status": "DOUBT",
-      "details": "C. White (Doubt)"
     },
     {
       "name": "Z. Collins",
@@ -164,6 +129,16 @@
       "name": "J. Smith",
       "status": "OUT",
       "details": "J. Smith (Out)"
+    },
+    {
+      "name": "N. Vucevic",
+      "status": "OUT",
+      "details": "N. Vucevic (Out)"
+    },
+    {
+      "name": "Coby White",
+      "status": "OUT",
+      "details": "Coby White (Out)"
     },
     {
       "name": "T. Herro",
@@ -215,21 +190,6 @@
       "details": "T. Shannon (Out)"
     },
     {
-      "name": "T. Jerome",
-      "status": "QUES",
-      "details": "T. Jerome (Ques)"
-    },
-    {
-      "name": "J. Jackson",
-      "status": "DOUBT",
-      "details": "J. Jackson (Doubt)"
-    },
-    {
-      "name": "J. Konchar",
-      "status": "DOUBT",
-      "details": "J. Konchar (Doubt)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -243,6 +203,16 @@
       "name": "Zach Edey",
       "status": "OUT",
       "details": "Zach Edey (Out)"
+    },
+    {
+      "name": "J. Jackson",
+      "status": "OUT",
+      "details": "J. Jackson (Out)"
+    },
+    {
+      "name": "J. Konchar",
+      "status": "OUT",
+      "details": "J. Konchar (Out)"
     },
     {
       "name": "Ja Morant",
@@ -257,21 +227,6 @@
   ],
   "MEM": [
     {
-      "name": "T. Jerome",
-      "status": "QUES",
-      "details": "T. Jerome (Ques)"
-    },
-    {
-      "name": "J. Jackson",
-      "status": "DOUBT",
-      "details": "J. Jackson (Doubt)"
-    },
-    {
-      "name": "J. Konchar",
-      "status": "DOUBT",
-      "details": "J. Konchar (Doubt)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -285,6 +240,16 @@
       "name": "Zach Edey",
       "status": "OUT",
       "details": "Zach Edey (Out)"
+    },
+    {
+      "name": "J. Jackson",
+      "status": "OUT",
+      "details": "J. Jackson (Out)"
+    },
+    {
+      "name": "J. Konchar",
+      "status": "OUT",
+      "details": "J. Konchar (Out)"
     },
     {
       "name": "Ja Morant",
