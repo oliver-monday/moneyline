@@ -1,0 +1,22 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-01-31,2026,Tyrese Maxey,PHI,NO,ast,6,HIT,8,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Anthony Edwards,MIN,MEM,3pt,3,MISSED,1,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Dyson Daniels,ATL,IND,reb,6,HIT,7,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Donte DiVincenzo,MIN,MEM,reb,4,MISSED,1,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Donte DiVincenzo,MIN,MEM,3pt,3,HIT,3,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,De'Aaron Fox,SA,CHA,3pt,2,MISSED,1,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Jaden McDaniels,MIN,MEM,ast,2,HIT,2,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Jaden McDaniels,MIN,MEM,3pt,1,HIT,3,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Nikola Vucevic,CHI,MIA,pts,15,,,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Nikola Vucevic,CHI,MIA,ast,4,,,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Bam Adebayo,MIA,CHI,pts,20,HIT,21,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Bam Adebayo,MIA,CHI,ast,2,MISSED,1,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Bam Adebayo,MIA,CHI,3pt,2,MISSED,1,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Saddiq Bey,NO,PHI,pts,15,HIT,34,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Saddiq Bey,NO,PHI,ast,2,HIT,3,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Coby White,CHI,MIA,ast,4,MISSED,,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Brandon Miller,CHA,SA,pts,20,HIT,26,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Zion Williamson,NO,PHI,pts,20,MISSED,11,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Zion Williamson,NO,PHI,reb,6,MISSED,5,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Andrew Wiggins,MIA,CHI,reb,4,MISSED,1,,targets_snapshot_2026-01-31.json
+2026-01-31,2026,Andrew Wiggins,MIA,CHI,ast,2,MISSED,1,,targets_snapshot_2026-01-31.json

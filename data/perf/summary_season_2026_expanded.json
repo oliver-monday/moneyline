@@ -1,17 +1,17 @@
 {
   "all_targets": {
-    "hit_rate": 0.646562123039807,
-    "hits": 536,
-    "total": 829
+    "hit_rate": 0.6466512702078522,
+    "hits": 560,
+    "total": 866
   },
-  "days_tracked": 29,
-  "end_date": "2026-01-30",
-  "last_updated_utc": "2026-01-31T14:15:00Z",
+  "days_tracked": 30,
+  "end_date": "2026-01-31",
+  "last_updated_utc": "2026-02-01T08:56:04Z",
   "season_end_year": 2026,
   "start_date": "2026-01-02",
   "top_targets": {
-    "hit_rate": 0.6130952380952381,
-    "hits": 103,
-    "total": 168
+    "hit_rate": 0.6149425287356322,
+    "hits": 107,
+    "total": 174
   }
 }
