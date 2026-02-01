@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-01",
-  "built_at_utc": "2026-02-01T21:12:17Z",
+  "built_at_utc": "2026-02-01T22:31:58Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -107,11 +107,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
-    },
-    {
       "name": "D. Saric",
       "status": "QUES",
       "details": "D. Saric (Ques)"
@@ -127,6 +122,11 @@
       "details": "J. Giddey (Out)"
     },
     {
+      "name": "K. Huerter",
+      "status": "OUT",
+      "details": "K. Huerter (Out)"
+    },
+    {
       "name": "Tre Jones",
       "status": "OUT",
       "details": "Tre Jones (Out)"
@@ -137,24 +137,19 @@
       "details": "J. Smith (Out)"
     },
     {
-      "name": "D. Mitchell",
-      "status": "PROB",
-      "details": "D. Mitchell (Prob)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "DOUBT",
-      "details": "N. Jovic (Doubt)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
+    },
+    {
+      "name": "N. Jovic",
+      "status": "OUT",
+      "details": "N. Jovic (Out)"
+    },
+    {
+      "name": "N. Powell",
+      "status": "OUT",
+      "details": "N. Powell (Out)"
     },
     {
       "name": "T. Rozier",
@@ -164,24 +159,19 @@
   ],
   "MIA": [
     {
-      "name": "D. Mitchell",
-      "status": "PROB",
-      "details": "D. Mitchell (Prob)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "DOUBT",
-      "details": "N. Jovic (Doubt)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
+    },
+    {
+      "name": "N. Jovic",
+      "status": "OUT",
+      "details": "N. Jovic (Out)"
+    },
+    {
+      "name": "N. Powell",
+      "status": "OUT",
+      "details": "N. Powell (Out)"
     },
     {
       "name": "T. Rozier",
@@ -192,13 +182,8 @@
   "SAC": [
     {
       "name": "D. Hunter",
-      "status": "QUES",
-      "details": "D. Hunter (Ques)"
-    },
-    {
-      "name": "M. Monk",
-      "status": "QUES",
-      "details": "M. Monk (Ques)"
+      "status": "OUT",
+      "details": "D. Hunter (Out)"
     },
     {
       "name": "K. Murray",
@@ -206,14 +191,14 @@
       "details": "K. Murray (Out)"
     },
     {
+      "name": "D. Sabonis",
+      "status": "OUT",
+      "details": "D. Sabonis (Out)"
+    },
+    {
       "name": "R. Westbrook",
       "status": "OUT",
       "details": "R. Westbrook (Out)"
-    },
-    {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
     },
     {
       "name": "C. Whitmore",
@@ -224,6 +209,11 @@
       "name": "T. Johnson",
       "status": "OUT",
       "details": "T. Johnson (Out)"
+    },
+    {
+      "name": "Alex Sarr",
+      "status": "OUT",
+      "details": "Alex Sarr (Out)"
     },
     {
       "name": "T. Vukcevic",
@@ -243,14 +233,14 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
-    },
-    {
       "name": "T. Johnson",
       "status": "OUT",
       "details": "T. Johnson (Out)"
+    },
+    {
+      "name": "Alex Sarr",
+      "status": "OUT",
+      "details": "Alex Sarr (Out)"
     },
     {
       "name": "T. Vukcevic",
@@ -268,16 +258,6 @@
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "K. Love",
-      "status": "PROB",
-      "details": "K. Love (Prob)"
-    },
-    {
-      "name": "J. Nurkic",
-      "status": "PROB",
-      "details": "J. Nurkic (Prob)"
     },
     {
       "name": "K. George",
@@ -397,19 +377,14 @@
   ],
   "CLE": [
     {
-      "name": "K. Ellis",
-      "status": "QUES",
-      "details": "K. Ellis (Ques)"
-    },
-    {
       "name": "C. Porter",
       "status": "QUES",
       "details": "C. Porter (Ques)"
     },
     {
-      "name": "D. Schroder",
-      "status": "QUES",
-      "details": "D. Schroder (Ques)"
+      "name": "Keon Ellis",
+      "status": "OUT",
+      "details": "Keon Ellis (Out)"
     },
     {
       "name": "D. Garland",
@@ -420,6 +395,11 @@
       "name": "E. Mobley",
       "status": "OUT",
       "details": "E. Mobley (Out)"
+    },
+    {
+      "name": "D. Schroder",
+      "status": "OUT",
+      "details": "D. Schroder (Out)"
     },
     {
       "name": "Max Strus",
