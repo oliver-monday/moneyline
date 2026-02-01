@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-01",
-  "built_at_utc": "2026-02-01T08:51:43Z",
+  "built_at_utc": "2026-02-01T14:51:13Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -102,6 +102,16 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "N. Vucevic",
+      "status": "PROB",
+      "details": "N. Vucevic (Prob)"
+    },
+    {
+      "name": "J. Giddey",
+      "status": "QUES",
+      "details": "J. Giddey (Ques)"
+    },
+    {
       "name": "D. Saric",
       "status": "QUES",
       "details": "D. Saric (Ques)"
@@ -122,29 +132,19 @@
       "details": "Z. Collins (Out)"
     },
     {
-      "name": "J. Giddey",
-      "status": "OUT",
-      "details": "J. Giddey (Out)"
-    },
-    {
       "name": "Tre Jones",
       "status": "OUT",
       "details": "Tre Jones (Out)"
     },
     {
-      "name": "N. Vucevic",
-      "status": "OUT",
-      "details": "N. Vucevic (Out)"
-    },
-    {
       "name": "D. Mitchell",
-      "status": "OUT",
-      "details": "D. Mitchell (Out)"
+      "status": "QUES",
+      "details": "D. Mitchell (Ques)"
     },
     {
       "name": "N. Powell",
-      "status": "OUT",
-      "details": "N. Powell (Out)"
+      "status": "QUES",
+      "details": "N. Powell (Ques)"
     },
     {
       "name": "T. Herro",
@@ -159,19 +159,19 @@
   ],
   "MIA": [
     {
-      "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
-    },
-    {
       "name": "D. Mitchell",
-      "status": "OUT",
-      "details": "D. Mitchell (Out)"
+      "status": "QUES",
+      "details": "D. Mitchell (Ques)"
     },
     {
       "name": "N. Powell",
-      "status": "OUT",
-      "details": "N. Powell (Out)"
+      "status": "QUES",
+      "details": "N. Powell (Ques)"
+    },
+    {
+      "name": "T. Herro",
+      "status": "QUES",
+      "details": "T. Herro (Ques)"
     },
     {
       "name": "T. Rozier",
