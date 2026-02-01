@@ -1,22 +1,22 @@
 {
   "asof_date": "2026-02-01",
-  "built_at_utc": "2026-02-01T22:31:58Z",
+  "built_at_utc": "2026-02-01T23:28:09Z",
   "source": "rotowire",
   "MIL": [
+    {
+      "name": "G. Harris",
+      "status": "QUES",
+      "details": "G. Harris (Ques)"
+    },
+    {
+      "name": "K. Porter",
+      "status": "DOUBT",
+      "details": "K. Porter (Doubt)"
+    },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
-    },
-    {
-      "name": "G. Harris",
-      "status": "OUT",
-      "details": "G. Harris (Out)"
-    },
-    {
-      "name": "K. Porter",
-      "status": "OUT",
-      "details": "K. Porter (Out)"
     },
     {
       "name": "T. Prince",
@@ -78,26 +78,16 @@
       "details": "Z. Williams (Out)"
     },
     {
-      "name": "C. Cunningham",
-      "status": "PROB",
-      "details": "C. Cunningham (Prob)"
-    },
-    {
       "name": "C. LeVert",
-      "status": "QUES",
-      "details": "C. LeVert (Ques)"
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     }
   ],
   "DET": [
     {
-      "name": "C. Cunningham",
-      "status": "PROB",
-      "details": "C. Cunningham (Prob)"
-    },
-    {
       "name": "C. LeVert",
-      "status": "QUES",
-      "details": "C. LeVert (Ques)"
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     }
   ],
   "CHI": [
@@ -299,14 +289,14 @@
   ],
   "LAL": [
     {
-      "name": "A. Reaves",
-      "status": "QUES",
-      "details": "A. Reaves (Ques)"
-    },
-    {
       "name": "B. James",
       "status": "OUT",
       "details": "B. James (Out)"
+    },
+    {
+      "name": "A. Reaves",
+      "status": "OUT",
+      "details": "A. Reaves (Out)"
     },
     {
       "name": "A. Thiero",
