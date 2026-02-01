@@ -1,17 +1,17 @@
 {
   "asof_date": "2026-02-01",
-  "built_at_utc": "2026-02-01T19:29:14Z",
+  "built_at_utc": "2026-02-01T20:24:50Z",
   "source": "rotowire",
   "MIL": [
-    {
-      "name": "G. Harris",
-      "status": "DOUBT",
-      "details": "G. Harris (Doubt)"
-    },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
+    },
+    {
+      "name": "G. Harris",
+      "status": "OUT",
+      "details": "G. Harris (Out)"
     },
     {
       "name": "K. Porter",
@@ -66,6 +66,11 @@
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
+    },
+    {
+      "name": "M. Porter",
+      "status": "OUT",
+      "details": "M. Porter (Out)"
     },
     {
       "name": "Z. Williams",
@@ -341,30 +346,6 @@
       "details": "M. McBride (Out)"
     }
   ],
-  "ORL": [
-    {
-      "name": "C. Castleton",
-      "status": "OUT",
-      "details": "C. Castleton (Out)"
-    },
-    {
-      "name": "F. Wagner",
-      "status": "OUT",
-      "details": "F. Wagner (Out)"
-    },
-    {
-      "name": "J. Sochan",
-      "status": "QUES",
-      "details": "J. Sochan (Ques)"
-    }
-  ],
-  "SAS": [
-    {
-      "name": "J. Sochan",
-      "status": "QUES",
-      "details": "J. Sochan (Ques)"
-    }
-  ],
   "LAC": [
     {
       "name": "B. Beal",
@@ -392,26 +373,26 @@
       "details": "T. Washington (Out)"
     },
     {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
-    {
       "name": "D. Booker",
       "status": "OUT",
       "details": "D. Booker (Out)"
+    },
+    {
+      "name": "J. Green",
+      "status": "OUT",
+      "details": "J. Green (Out)"
     }
   ],
   "PHX": [
     {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
-    {
       "name": "D. Booker",
       "status": "OUT",
       "details": "D. Booker (Out)"
+    },
+    {
+      "name": "J. Green",
+      "status": "OUT",
+      "details": "J. Green (Out)"
     }
   ],
   "CLE": [
@@ -536,6 +517,50 @@
       "name": "M. Thybulle",
       "status": "OUT",
       "details": "M. Thybulle (Out)"
+    }
+  ],
+  "ORL": [
+    {
+      "name": "C. Castleton",
+      "status": "OUT",
+      "details": "C. Castleton (Out)"
+    },
+    {
+      "name": "F. Wagner",
+      "status": "OUT",
+      "details": "F. Wagner (Out)"
+    },
+    {
+      "name": "S. Castle",
+      "status": "QUES",
+      "details": "S. Castle (Ques)"
+    },
+    {
+      "name": "V. Wembanyama",
+      "status": "QUES",
+      "details": "V. Wembanyama (Ques)"
+    },
+    {
+      "name": "J. Sochan",
+      "status": "OUT",
+      "details": "J. Sochan (Out)"
+    }
+  ],
+  "SAS": [
+    {
+      "name": "S. Castle",
+      "status": "QUES",
+      "details": "S. Castle (Ques)"
+    },
+    {
+      "name": "V. Wembanyama",
+      "status": "QUES",
+      "details": "V. Wembanyama (Ques)"
+    },
+    {
+      "name": "J. Sochan",
+      "status": "OUT",
+      "details": "J. Sochan (Out)"
     }
   ],
   "OKC": [
