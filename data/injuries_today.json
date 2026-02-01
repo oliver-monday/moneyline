@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-01",
-  "built_at_utc": "2026-02-01T14:51:13Z",
+  "built_at_utc": "2026-02-01T17:15:42Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -102,14 +102,9 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "N. Vucevic",
-      "status": "PROB",
-      "details": "N. Vucevic (Prob)"
-    },
-    {
-      "name": "J. Giddey",
+      "name": "K. Huerter",
       "status": "QUES",
-      "details": "J. Giddey (Ques)"
+      "details": "K. Huerter (Ques)"
     },
     {
       "name": "D. Saric",
@@ -117,24 +112,24 @@
       "details": "D. Saric (Ques)"
     },
     {
-      "name": "J. Smith",
-      "status": "QUES",
-      "details": "J. Smith (Ques)"
-    },
-    {
-      "name": "C. White",
-      "status": "QUES",
-      "details": "C. White (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
     },
     {
+      "name": "J. Giddey",
+      "status": "OUT",
+      "details": "J. Giddey (Out)"
+    },
+    {
       "name": "Tre Jones",
       "status": "OUT",
       "details": "Tre Jones (Out)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OUT",
+      "details": "J. Smith (Out)"
     },
     {
       "name": "D. Mitchell",
@@ -148,8 +143,8 @@
     },
     {
       "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
+      "status": "DOUBT",
+      "details": "T. Herro (Doubt)"
     },
     {
       "name": "T. Rozier",
@@ -170,8 +165,8 @@
     },
     {
       "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
+      "status": "DOUBT",
+      "details": "T. Herro (Doubt)"
     },
     {
       "name": "T. Rozier",
@@ -260,19 +255,19 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
       "name": "K. Love",
-      "status": "QUES",
-      "details": "K. Love (Ques)"
+      "status": "PROB",
+      "details": "K. Love (Prob)"
     },
     {
       "name": "J. Nurkic",
-      "status": "QUES",
-      "details": "J. Nurkic (Ques)"
+      "status": "PROB",
+      "details": "J. Nurkic (Prob)"
+    },
+    {
+      "name": "K. George",
+      "status": "OUT",
+      "details": "K. George (Out)"
     },
     {
       "name": "E. Harkless",
@@ -441,14 +436,14 @@
       "details": "D. Avdija (Ques)"
     },
     {
+      "name": "V. Krejci",
+      "status": "QUES",
+      "details": "V. Krejci (Ques)"
+    },
+    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "Duop Reath",
-      "status": "OFS",
-      "details": "Duop Reath (OFS)"
     },
     {
       "name": "B. Wesley",
@@ -483,14 +478,14 @@
   ],
   "POR": [
     {
+      "name": "V. Krejci",
+      "status": "QUES",
+      "details": "V. Krejci (Ques)"
+    },
+    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "Duop Reath",
-      "status": "OFS",
-      "details": "Duop Reath (OFS)"
     },
     {
       "name": "D. Avdija",
