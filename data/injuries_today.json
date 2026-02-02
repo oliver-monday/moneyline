@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-01",
-  "built_at_utc": "2026-02-02T01:16:20Z",
+  "built_at_utc": "2026-02-02T03:35:13Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -128,18 +128,18 @@
     },
     {
       "name": "T. Herro",
-      "status": "OUT",
-      "details": "T. Herro (Out)"
+      "status": "QUES",
+      "details": "T. Herro (Ques)"
     },
     {
       "name": "N. Jovic",
-      "status": "OUT",
-      "details": "N. Jovic (Out)"
+      "status": "QUES",
+      "details": "N. Jovic (Ques)"
     },
     {
       "name": "N. Powell",
-      "status": "OUT",
-      "details": "N. Powell (Out)"
+      "status": "QUES",
+      "details": "N. Powell (Ques)"
     },
     {
       "name": "T. Rozier",
@@ -150,18 +150,18 @@
   "MIA": [
     {
       "name": "T. Herro",
-      "status": "OUT",
-      "details": "T. Herro (Out)"
+      "status": "QUES",
+      "details": "T. Herro (Ques)"
     },
     {
       "name": "N. Jovic",
-      "status": "OUT",
-      "details": "N. Jovic (Out)"
+      "status": "QUES",
+      "details": "N. Jovic (Ques)"
     },
     {
       "name": "N. Powell",
-      "status": "OUT",
-      "details": "N. Powell (Out)"
+      "status": "QUES",
+      "details": "N. Powell (Ques)"
     },
     {
       "name": "T. Rozier",
@@ -392,14 +392,14 @@
       "details": "Max Strus (Out)"
     },
     {
-      "name": "D. Avdija",
-      "status": "QUES",
-      "details": "D. Avdija (Ques)"
-    },
-    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "D. Avdija",
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
     },
     {
       "name": "S. Henderson",
@@ -435,8 +435,8 @@
     },
     {
       "name": "D. Avdija",
-      "status": "QUES",
-      "details": "D. Avdija (Ques)"
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
     },
     {
       "name": "S. Henderson",
@@ -525,24 +525,14 @@
       "details": "J. Williams (Out)"
     },
     {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "N. Jokic",
-      "status": "PROB",
-      "details": "N. Jokic (Prob)"
-    },
-    {
-      "name": "C. Braun",
-      "status": "DOUBT",
-      "details": "C. Braun (Doubt)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
+    },
+    {
+      "name": "C. Braun",
+      "status": "OUT",
+      "details": "C. Braun (Out)"
     },
     {
       "name": "A. Gordon",
@@ -557,24 +547,14 @@
   ],
   "DEN": [
     {
-      "name": "N. Jokic",
-      "status": "PROB",
-      "details": "N. Jokic (Prob)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "C. Braun",
-      "status": "DOUBT",
-      "details": "C. Braun (Doubt)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
+    },
+    {
+      "name": "C. Braun",
+      "status": "OUT",
+      "details": "C. Braun (Out)"
     },
     {
       "name": "A. Gordon",
