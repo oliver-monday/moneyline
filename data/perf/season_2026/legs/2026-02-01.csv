@@ -1,0 +1,23 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-01,2026,Paolo Banchero,ORL,SA,pts,20,MISSED,19,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Paolo Banchero,ORL,SA,reb,8,HIT,10,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Paolo Banchero,ORL,SA,ast,4,HIT,4,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Paolo Banchero,ORL,SA,3pt,1,HIT,1,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,James Harden,LAC,PHX,reb,4,,,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,James Harden,LAC,PHX,ast,8,,,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Bam Adebayo,MIA,CHI,pts,20,HIT,20,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Bam Adebayo,MIA,CHI,reb,10,MISSED,9,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,OG Anunoby,NY,LAL,pts,15,HIT,25,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,OG Anunoby,NY,LAL,ast,2,HIT,3,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,LeBron James,LAL,NY,3pt,1,HIT,2,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,De'Aaron Fox,SA,ORL,3pt,2,MISSED,0,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Stephon Castle,SA,ORL,ast,8,,,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Stephon Castle,SA,ORL,3pt,1,,,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Shaedon Sharpe,POR,CLE,pts,20,HIT,20,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Shaedon Sharpe,POR,CLE,ast,2,HIT,3,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Russell Westbrook,SAC,WSH,3pt,2,,,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Ace Bailey,UTAH,TOR,pts,10,MISSED,4,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Chet Holmgren,OKC,DEN,reb,8,MISSED,4,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Grayson Allen,PHX,LAC,pts,15,HIT,23,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Matas Buzelis,CHI,MIA,ast,2,HIT,2,,targets_snapshot_2026-02-01.json
+2026-02-01,2026,Matas Buzelis,CHI,MIA,3pt,2,MISSED,0,,targets_snapshot_2026-02-01.json
