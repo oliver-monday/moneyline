@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-02",
-  "built_at_utc": "2026-02-02T15:06:26Z",
+  "built_at_utc": "2026-02-02T17:29:34Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -202,8 +202,8 @@
     },
     {
       "name": "D. Jones",
-      "status": "OUT",
-      "details": "D. Jones (Out)"
+      "status": "DOUBT",
+      "details": "D. Jones (Doubt)"
     },
     {
       "name": "Chris Paul",
@@ -229,8 +229,8 @@
     },
     {
       "name": "D. Jones",
-      "status": "OUT",
-      "details": "D. Jones (Out)"
+      "status": "DOUBT",
+      "details": "D. Jones (Doubt)"
     },
     {
       "name": "Chris Paul",
