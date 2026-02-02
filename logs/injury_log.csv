@@ -4185,6 +4185,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-01,CLE,K. Ellis,QUES,K. Ellis (Ques),rotowire
 2026-02-01,BKN,C. Cunningham,PROB,C. Cunningham (Prob),rotowire
 2026-02-01,DET,C. Cunningham,PROB,C. Cunningham (Prob),rotowire
+2026-02-01,CLE,C. Porter,QUES,C. Porter (Ques),rotowire
+2026-02-01,CLE,B. Wesley,QUES,B. Wesley (Ques),rotowire
+2026-02-01,CLE,R. Williams,QUES,R. Williams (Ques),rotowire
+2026-02-01,POR,B. Wesley,QUES,B. Wesley (Ques),rotowire
+2026-02-01,POR,R. Williams,QUES,R. Williams (Ques),rotowire
+2026-02-01,ORL,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
+2026-02-01,SAS,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
 2026-02-01,MIL,G. Harris,QUES,G. Harris (Ques),rotowire
 2026-02-01,MIL,K. Porter,DOUBT,K. Porter (Doubt),rotowire
 2026-02-01,MIL,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
@@ -4250,7 +4257,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-01,LAC,J. Green,OUT,J. Green (Out),rotowire
 2026-02-01,PHX,D. Booker,OUT,D. Booker (Out),rotowire
 2026-02-01,PHX,J. Green,OUT,J. Green (Out),rotowire
-2026-02-01,CLE,C. Porter,QUES,C. Porter (Ques),rotowire
 2026-02-01,CLE,Keon Ellis,OUT,Keon Ellis (Out),rotowire
 2026-02-01,CLE,D. Garland,OUT,D. Garland (Out),rotowire
 2026-02-01,CLE,E. Mobley,OUT,E. Mobley (Out),rotowire
@@ -4258,8 +4264,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-01,CLE,Max Strus,OUT,Max Strus (Out),rotowire
 2026-02-01,CLE,D. Avdija,QUES,D. Avdija (Ques),rotowire
 2026-02-01,CLE,D. Lillard,OFS,D. Lillard (OFS),rotowire
-2026-02-01,CLE,B. Wesley,QUES,B. Wesley (Ques),rotowire
-2026-02-01,CLE,R. Williams,QUES,R. Williams (Ques),rotowire
 2026-02-01,CLE,S. Henderson,OUT,S. Henderson (Out),rotowire
 2026-02-01,CLE,J. Holiday,OUT,J. Holiday (Out),rotowire
 2026-02-01,CLE,Vit Krejci,OUT,Vit Krejci (Out),rotowire
@@ -4267,8 +4271,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-01,CLE,M. Thybulle,OUT,M. Thybulle (Out),rotowire
 2026-02-01,POR,D. Lillard,OFS,D. Lillard (OFS),rotowire
 2026-02-01,POR,D. Avdija,QUES,D. Avdija (Ques),rotowire
-2026-02-01,POR,B. Wesley,QUES,B. Wesley (Ques),rotowire
-2026-02-01,POR,R. Williams,QUES,R. Williams (Ques),rotowire
 2026-02-01,POR,S. Henderson,OUT,S. Henderson (Out),rotowire
 2026-02-01,POR,J. Holiday,OUT,J. Holiday (Out),rotowire
 2026-02-01,POR,Vit Krejci,OUT,Vit Krejci (Out),rotowire
@@ -4276,11 +4278,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-01,POR,M. Thybulle,OUT,M. Thybulle (Out),rotowire
 2026-02-01,ORL,C. Castleton,OUT,C. Castleton (Out),rotowire
 2026-02-01,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
-2026-02-01,ORL,S. Castle,QUES,S. Castle (Ques),rotowire
-2026-02-01,ORL,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
+2026-02-01,ORL,S. Castle,OUT,S. Castle (Out),rotowire
 2026-02-01,ORL,J. Sochan,OUT,J. Sochan (Out),rotowire
-2026-02-01,SAS,S. Castle,QUES,S. Castle (Ques),rotowire
-2026-02-01,SAS,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
+2026-02-01,SAS,S. Castle,OUT,S. Castle (Out),rotowire
 2026-02-01,SAS,J. Sochan,OUT,J. Sochan (Out),rotowire
 2026-02-01,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-02-01,OKC,A. Caruso,OUT,A. Caruso (Out),rotowire

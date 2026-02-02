@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-01",
-  "built_at_utc": "2026-02-01T23:28:09Z",
+  "built_at_utc": "2026-02-02T01:16:20Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -367,11 +367,6 @@
   ],
   "CLE": [
     {
-      "name": "C. Porter",
-      "status": "QUES",
-      "details": "C. Porter (Ques)"
-    },
-    {
       "name": "Keon Ellis",
       "status": "OUT",
       "details": "Keon Ellis (Out)"
@@ -405,16 +400,6 @@
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "B. Wesley",
-      "status": "QUES",
-      "details": "B. Wesley (Ques)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
     },
     {
       "name": "S. Henderson",
@@ -452,16 +437,6 @@
       "name": "D. Avdija",
       "status": "QUES",
       "details": "D. Avdija (Ques)"
-    },
-    {
-      "name": "B. Wesley",
-      "status": "QUES",
-      "details": "B. Wesley (Ques)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
     },
     {
       "name": "S. Henderson",
@@ -502,13 +477,8 @@
     },
     {
       "name": "S. Castle",
-      "status": "QUES",
-      "details": "S. Castle (Ques)"
-    },
-    {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
+      "status": "OUT",
+      "details": "S. Castle (Out)"
     },
     {
       "name": "J. Sochan",
@@ -519,13 +489,8 @@
   "SAS": [
     {
       "name": "S. Castle",
-      "status": "QUES",
-      "details": "S. Castle (Ques)"
-    },
-    {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
+      "status": "OUT",
+      "details": "S. Castle (Out)"
     },
     {
       "name": "J. Sochan",
