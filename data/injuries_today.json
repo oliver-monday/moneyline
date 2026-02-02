@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-02",
-  "built_at_utc": "2026-02-02T18:40:05Z",
+  "built_at_utc": "2026-02-02T23:31:41Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -92,24 +92,14 @@
   ],
   "MIN": [
     {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
-      "name": "J. Randle",
-      "status": "QUES",
-      "details": "J. Randle (Ques)"
-    },
-    {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
     },
     {
       "name": "J. Jackson",
-      "status": "QUES",
-      "details": "J. Jackson (Ques)"
+      "status": "PROB",
+      "details": "J. Jackson (Prob)"
     },
     {
       "name": "S. Aldama",
@@ -145,8 +135,8 @@
   "MEM": [
     {
       "name": "J. Jackson",
-      "status": "QUES",
-      "details": "J. Jackson (Ques)"
+      "status": "PROB",
+      "details": "J. Jackson (Prob)"
     },
     {
       "name": "S. Aldama",
@@ -191,19 +181,19 @@
       "details": "P. George (Out)"
     },
     {
-      "name": "J. Harden",
-      "status": "QUES",
-      "details": "J. Harden (Ques)"
-    },
-    {
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
     },
     {
+      "name": "J. Harden",
+      "status": "OUT",
+      "details": "J. Harden (Out)"
+    },
+    {
       "name": "D. Jones",
-      "status": "DOUBT",
-      "details": "D. Jones (Doubt)"
+      "status": "OUT",
+      "details": "D. Jones (Out)"
     },
     {
       "name": "Chris Paul",
@@ -224,13 +214,13 @@
     },
     {
       "name": "J. Harden",
-      "status": "QUES",
-      "details": "J. Harden (Ques)"
+      "status": "OUT",
+      "details": "J. Harden (Out)"
     },
     {
       "name": "D. Jones",
-      "status": "DOUBT",
-      "details": "D. Jones (Doubt)"
+      "status": "OUT",
+      "details": "D. Jones (Out)"
     },
     {
       "name": "Chris Paul",
