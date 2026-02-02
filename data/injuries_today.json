@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-02",
-  "built_at_utc": "2026-02-02T17:29:34Z",
+  "built_at_utc": "2026-02-02T18:40:05Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -29,26 +29,26 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "J. Green",
-      "status": "PROB",
-      "details": "J. Green (Prob)"
-    },
-    {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
+    },
+    {
+      "name": "KJ Simpson",
+      "status": "OUT",
+      "details": "KJ Simpson (Out)"
     }
   ],
   "CHA": [
     {
-      "name": "J. Green",
-      "status": "PROB",
-      "details": "J. Green (Prob)"
-    },
-    {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
+    },
+    {
+      "name": "KJ Simpson",
+      "status": "OUT",
+      "details": "KJ Simpson (Out)"
     }
   ],
   "HOU": [
