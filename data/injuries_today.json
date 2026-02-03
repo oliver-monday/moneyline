@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-03",
-  "built_at_utc": "2026-02-03T19:46:19Z",
+  "built_at_utc": "2026-02-03T20:33:38Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -101,11 +101,6 @@
       "name": "J. Landale",
       "status": "OUT",
       "details": "J. Landale (Out)"
-    },
-    {
-      "name": "J. Nurkic",
-      "status": "OUT",
-      "details": "J. Nurkic (Out)"
     },
     {
       "name": "V. Williams",

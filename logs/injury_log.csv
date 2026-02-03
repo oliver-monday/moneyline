@@ -4360,6 +4360,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-03,LAL,B. James,QUES,B. James (Ques),rotowire
 2026-02-03,CHI,K. Huerter,QUES,K. Huerter (Ques),rotowire
 2026-02-03,CHI,D. Saric,OUT,D. Saric (Out),rotowire
+2026-02-03,UTA,J. Nurkic,OUT,J. Nurkic (Out),rotowire
 2026-02-03,DEN,C. Braun,QUES,C. Braun (Ques),rotowire
 2026-02-03,DEN,T. Bates,OUT,T. Bates (Out),rotowire
 2026-02-03,DEN,A. Gordon,OUT,A. Gordon (Out),rotowire
@@ -4377,7 +4378,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-03,UTA,J. Jackson,OUT,J. Jackson (Out),rotowire
 2026-02-03,UTA,J. Konchar,OUT,J. Konchar (Out),rotowire
 2026-02-03,UTA,J. Landale,OUT,J. Landale (Out),rotowire
-2026-02-03,UTA,J. Nurkic,OUT,J. Nurkic (Out),rotowire
 2026-02-03,UTA,V. Williams,OUT,V. Williams (Out),rotowire
 2026-02-03,UTA,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-02-03,UTA,M. Potter,QUES,M. Potter (Ques),rotowire
