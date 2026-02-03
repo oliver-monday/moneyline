@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-03",
-  "built_at_utc": "2026-02-03T18:53:55Z",
+  "built_at_utc": "2026-02-03T19:46:19Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -42,6 +42,28 @@
       "name": "Fantasy Football",
       "status": "REST",
       "details": "Fantasy Football (Rest)"
+    },
+    {
+      "name": "K. Huerter",
+      "status": "OUT",
+      "details": "K. Huerter (Out)"
+    },
+    {
+      "name": "D. Saric",
+      "status": "OUT",
+      "details": "D. Saric (Out)"
+    }
+  ],
+  "DET": [
+    {
+      "name": "K. Huerter",
+      "status": "OUT",
+      "details": "K. Huerter (Out)"
+    },
+    {
+      "name": "D. Saric",
+      "status": "OUT",
+      "details": "D. Saric (Out)"
     }
   ],
   "UTA": [
@@ -49,11 +71,6 @@
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "K. Anderson",
-      "status": "QUES",
-      "details": "K. Anderson (Ques)"
     },
     {
       "name": "K. Love",
@@ -76,14 +93,24 @@
       "details": "J. Jackson (Out)"
     },
     {
-      "name": "G. Niang",
+      "name": "J. Konchar",
       "status": "OUT",
-      "details": "G. Niang (Out)"
+      "details": "J. Konchar (Out)"
+    },
+    {
+      "name": "J. Landale",
+      "status": "OUT",
+      "details": "J. Landale (Out)"
     },
     {
       "name": "J. Nurkic",
       "status": "OUT",
       "details": "J. Nurkic (Out)"
+    },
+    {
+      "name": "V. Williams",
+      "status": "OUT",
+      "details": "V. Williams (Out)"
     },
     {
       "name": "T. Haliburton",
@@ -244,6 +271,11 @@
       "details": "O. Okongwu (Out)"
     },
     {
+      "name": "A. Wiggins",
+      "status": "QUES",
+      "details": "A. Wiggins (Ques)"
+    },
+    {
       "name": "N. Powell",
       "status": "DOUBT",
       "details": "N. Powell (Doubt)"
@@ -261,6 +293,11 @@
   ],
   "MIA": [
     {
+      "name": "A. Wiggins",
+      "status": "QUES",
+      "details": "A. Wiggins (Ques)"
+    },
+    {
       "name": "N. Powell",
       "status": "DOUBT",
       "details": "N. Powell (Doubt)"
@@ -277,11 +314,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "B. James",
-      "status": "QUES",
-      "details": "B. James (Ques)"
-    },
     {
       "name": "A. Reaves",
       "status": "QUES",
@@ -308,8 +340,8 @@
   "BOS": [
     {
       "name": "C. Boucher",
-      "status": "QUES",
-      "details": "C. Boucher (Ques)"
+      "status": "OUT",
+      "details": "C. Boucher (Out)"
     },
     {
       "name": "J. Tatum",
@@ -396,11 +428,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
-    },
-    {
       "name": "J. Phillips",
       "status": "QUES",
       "details": "J. Phillips (Ques)"
@@ -416,19 +443,24 @@
       "details": "Z. Collins (Out)"
     },
     {
+      "name": "M. Conley",
+      "status": "OUT",
+      "details": "M. Conley (Out)"
+    },
+    {
       "name": "J. Giddey",
       "status": "OUT",
       "details": "J. Giddey (Out)"
     },
     {
+      "name": "Jaden Ivey",
+      "status": "OUT",
+      "details": "Jaden Ivey (Out)"
+    },
+    {
       "name": "Tre Jones",
       "status": "OUT",
       "details": "Tre Jones (Out)"
-    },
-    {
-      "name": "D. Saric",
-      "status": "OUT",
-      "details": "D. Saric (Out)"
     },
     {
       "name": "B. Portis",
