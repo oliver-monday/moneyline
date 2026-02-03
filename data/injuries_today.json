@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-03",
-  "built_at_utc": "2026-02-03T20:33:38Z",
+  "built_at_utc": "2026-02-03T21:22:42Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -344,6 +344,11 @@
       "details": "J. Tatum (Out)"
     },
     {
+      "name": "N. Vucevic",
+      "status": "OUT",
+      "details": "N. Vucevic (Out)"
+    },
+    {
       "name": "Dante Exum",
       "status": "OFS",
       "details": "Dante Exum (OFS)"
@@ -456,6 +461,11 @@
       "name": "Tre Jones",
       "status": "OUT",
       "details": "Tre Jones (Out)"
+    },
+    {
+      "name": "A. Simons",
+      "status": "OUT",
+      "details": "A. Simons (Out)"
     },
     {
       "name": "B. Portis",
@@ -617,8 +627,8 @@
   "PHI": [
     {
       "name": "J. Embiid",
-      "status": "DOUBT",
-      "details": "J. Embiid (Doubt)"
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     },
     {
       "name": "P. George",
@@ -711,13 +721,13 @@
     },
     {
       "name": "D. Avdija",
-      "status": "DOUBT",
-      "details": "D. Avdija (Doubt)"
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
     },
     {
       "name": "S. Henderson",
-      "status": "DOUBT",
-      "details": "S. Henderson (Doubt)"
+      "status": "OUT",
+      "details": "S. Henderson (Out)"
     },
     {
       "name": "K. Murray",
@@ -743,13 +753,13 @@
     },
     {
       "name": "D. Avdija",
-      "status": "DOUBT",
-      "details": "D. Avdija (Doubt)"
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
     },
     {
       "name": "S. Henderson",
-      "status": "DOUBT",
-      "details": "S. Henderson (Doubt)"
+      "status": "OUT",
+      "details": "S. Henderson (Out)"
     },
     {
       "name": "K. Murray",
