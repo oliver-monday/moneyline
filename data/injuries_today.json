@@ -1,13 +1,8 @@
 {
   "asof_date": "2026-02-03",
-  "built_at_utc": "2026-02-03T22:36:44Z",
+  "built_at_utc": "2026-02-03T23:30:45Z",
   "source": "rotowire",
   "DEN": [
-    {
-      "name": "C. Braun",
-      "status": "QUES",
-      "details": "C. Braun (Ques)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -266,6 +261,11 @@
       "details": "O. Okongwu (Out)"
     },
     {
+      "name": "K. Porzingis",
+      "status": "OUT",
+      "details": "K. Porzingis (Out)"
+    },
+    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
@@ -359,16 +359,6 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "D. Russell",
-      "status": "DOUBT",
-      "details": "D. Russell (Doubt)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "DOUBT",
-      "details": "B. Williams (Doubt)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
@@ -379,9 +369,19 @@
       "details": "K. Irving (Out)"
     },
     {
+      "name": "D. Russell",
+      "status": "OUT",
+      "details": "D. Russell (Out)"
+    },
+    {
       "name": "P. Washington",
       "status": "OUT",
       "details": "P. Washington (Out)"
+    },
+    {
+      "name": "B. Williams",
+      "status": "OUT",
+      "details": "B. Williams (Out)"
     }
   ],
   "DAL": [
@@ -396,16 +396,6 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "D. Russell",
-      "status": "DOUBT",
-      "details": "D. Russell (Doubt)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "DOUBT",
-      "details": "B. Williams (Doubt)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
@@ -416,9 +406,19 @@
       "details": "K. Irving (Out)"
     },
     {
+      "name": "D. Russell",
+      "status": "OUT",
+      "details": "D. Russell (Out)"
+    },
+    {
       "name": "P. Washington",
       "status": "OUT",
       "details": "P. Washington (Out)"
+    },
+    {
+      "name": "B. Williams",
+      "status": "OUT",
+      "details": "B. Williams (Out)"
     }
   ],
   "CHI": [
@@ -469,8 +469,8 @@
     },
     {
       "name": "B. Portis",
-      "status": "QUES",
-      "details": "B. Portis (Ques)"
+      "status": "DOUBT",
+      "details": "B. Portis (Doubt)"
     },
     {
       "name": "G. Antetokounmpo",
@@ -496,8 +496,8 @@
   "MIL": [
     {
       "name": "B. Portis",
-      "status": "QUES",
-      "details": "B. Portis (Ques)"
+      "status": "DOUBT",
+      "details": "B. Portis (Doubt)"
     },
     {
       "name": "G. Antetokounmpo",
