@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-02",
-  "built_at_utc": "2026-02-02T23:31:41Z",
+  "built_at_utc": "2026-02-03T01:16:38Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -97,11 +97,6 @@
       "details": "T. Shannon (Out)"
     },
     {
-      "name": "J. Jackson",
-      "status": "PROB",
-      "details": "J. Jackson (Prob)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -133,11 +128,6 @@
     }
   ],
   "MEM": [
-    {
-      "name": "J. Jackson",
-      "status": "PROB",
-      "details": "J. Jackson (Prob)"
-    },
     {
       "name": "S. Aldama",
       "status": "OUT",

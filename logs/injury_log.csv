@@ -4303,6 +4303,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-02,CHA,J. Green,PROB,J. Green (Prob),rotowire
 2026-02-02,MIN,A. Edwards,QUES,A. Edwards (Ques),rotowire
 2026-02-02,MIN,J. Randle,QUES,J. Randle (Ques),rotowire
+2026-02-02,MIN,J. Jackson,PROB,J. Jackson (Prob),rotowire
+2026-02-02,MEM,J. Jackson,PROB,J. Jackson (Prob),rotowire
 2026-02-02,NOP,D. Murray,OUT,D. Murray (Out),rotowire
 2026-02-02,NOP,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-02-02,NOP,Fantasy Football,REST,Fantasy Football (Rest),rotowire
@@ -4318,14 +4320,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-02,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-02-02,IND,Obi Toppin,OUT,Obi Toppin (Out),rotowire
 2026-02-02,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
-2026-02-02,MIN,J. Jackson,PROB,J. Jackson (Prob),rotowire
 2026-02-02,MIN,S. Aldama,OUT,S. Aldama (Out),rotowire
 2026-02-02,MIN,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-02-02,MIN,Zach Edey,OUT,Zach Edey (Out),rotowire
 2026-02-02,MIN,J. Konchar,OUT,J. Konchar (Out),rotowire
 2026-02-02,MIN,Ja Morant,OUT,Ja Morant (Out),rotowire
 2026-02-02,MIN,S. Pippen,OUT,S. Pippen (Out),rotowire
-2026-02-02,MEM,J. Jackson,PROB,J. Jackson (Prob),rotowire
 2026-02-02,MEM,S. Aldama,OUT,S. Aldama (Out),rotowire
 2026-02-02,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-02-02,MEM,Zach Edey,OUT,Zach Edey (Out),rotowire
