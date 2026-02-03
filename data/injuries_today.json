@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-03",
-  "built_at_utc": "2026-02-03T15:09:06Z",
+  "built_at_utc": "2026-02-03T17:42:36Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -42,18 +42,6 @@
       "name": "Fantasy Football",
       "status": "REST",
       "details": "Fantasy Football (Rest)"
-    },
-    {
-      "name": "C. LeVert",
-      "status": "QUES",
-      "details": "C. LeVert (Ques)"
-    }
-  ],
-  "DET": [
-    {
-      "name": "C. LeVert",
-      "status": "QUES",
-      "details": "C. LeVert (Ques)"
     }
   ],
   "UTA": [
@@ -61,6 +49,16 @@
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
+    },
+    {
+      "name": "K. Love",
+      "status": "DOUBT",
+      "details": "K. Love (Doubt)"
+    },
+    {
+      "name": "K. Anderson",
+      "status": "OUT",
+      "details": "K. Anderson (Out)"
     },
     {
       "name": "K. George",
@@ -127,11 +125,6 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "A. Gill",
-      "status": "QUES",
-      "details": "A. Gill (Ques)"
-    },
-    {
       "name": "T. Johnson",
       "status": "OUT",
       "details": "T. Johnson (Out)"
@@ -152,11 +145,6 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "A. Gill",
-      "status": "QUES",
-      "details": "A. Gill (Ques)"
     },
     {
       "name": "T. Johnson",
@@ -255,16 +243,6 @@
       "details": "A. Thiero (Out)"
     },
     {
-      "name": "N. Clowney",
-      "status": "PROB",
-      "details": "N. Clowney (Prob)"
-    },
-    {
-      "name": "Z. Williams",
-      "status": "PROB",
-      "details": "Z. Williams (Prob)"
-    },
-    {
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
@@ -272,22 +250,17 @@
   ],
   "BKN": [
     {
-      "name": "N. Clowney",
-      "status": "PROB",
-      "details": "N. Clowney (Prob)"
-    },
-    {
-      "name": "Z. Williams",
-      "status": "PROB",
-      "details": "Z. Williams (Prob)"
-    },
-    {
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
     }
   ],
   "BOS": [
+    {
+      "name": "C. Boucher",
+      "status": "QUES",
+      "details": "C. Boucher (Ques)"
+    },
     {
       "name": "J. Tatum",
       "status": "OUT",
@@ -302,6 +275,11 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
+    },
+    {
+      "name": "D. Russell",
+      "status": "QUES",
+      "details": "D. Russell (Ques)"
     },
     {
       "name": "B. Williams",
@@ -334,6 +312,11 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
+    },
+    {
+      "name": "D. Russell",
+      "status": "QUES",
+      "details": "D. Russell (Ques)"
     },
     {
       "name": "B. Williams",
@@ -398,6 +381,11 @@
       "details": "D. Saric (Out)"
     },
     {
+      "name": "B. Portis",
+      "status": "QUES",
+      "details": "B. Portis (Ques)"
+    },
+    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -419,6 +407,11 @@
     }
   ],
   "MIL": [
+    {
+      "name": "B. Portis",
+      "status": "QUES",
+      "details": "B. Portis (Ques)"
+    },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
@@ -545,6 +538,11 @@
     }
   ],
   "PHI": [
+    {
+      "name": "J. Embiid",
+      "status": "DOUBT",
+      "details": "J. Embiid (Doubt)"
+    },
     {
       "name": "P. George",
       "status": "OUT",
