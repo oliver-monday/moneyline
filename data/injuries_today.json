@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-03",
-  "built_at_utc": "2026-02-03T21:22:42Z",
+  "built_at_utc": "2026-02-03T22:36:44Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -73,11 +73,6 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "K. Love",
-      "status": "DOUBT",
-      "details": "K. Love (Doubt)"
-    },
-    {
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
@@ -103,6 +98,11 @@
       "details": "J. Landale (Out)"
     },
     {
+      "name": "Kevin Love",
+      "status": "OUT",
+      "details": "Kevin Love (Out)"
+    },
+    {
       "name": "V. Williams",
       "status": "OUT",
       "details": "V. Williams (Out)"
@@ -111,11 +111,6 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
-    },
-    {
-      "name": "M. Potter",
-      "status": "QUES",
-      "details": "M. Potter (Ques)"
     },
     {
       "name": "B. Mathurin",
@@ -136,6 +131,11 @@
       "name": "A. Nesmith",
       "status": "OUT",
       "details": "A. Nesmith (Out)"
+    },
+    {
+      "name": "M. Potter",
+      "status": "OUT",
+      "details": "M. Potter (Out)"
     },
     {
       "name": "P. Siakam",
@@ -155,11 +155,6 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "M. Potter",
-      "status": "QUES",
-      "details": "M. Potter (Ques)"
-    },
-    {
       "name": "B. Mathurin",
       "status": "OUT",
       "details": "B. Mathurin (Out)"
@@ -178,6 +173,11 @@
       "name": "A. Nesmith",
       "status": "OUT",
       "details": "A. Nesmith (Out)"
+    },
+    {
+      "name": "M. Potter",
+      "status": "OUT",
+      "details": "M. Potter (Out)"
     },
     {
       "name": "P. Siakam",
@@ -266,46 +266,46 @@
       "details": "O. Okongwu (Out)"
     },
     {
-      "name": "A. Wiggins",
-      "status": "QUES",
-      "details": "A. Wiggins (Ques)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "DOUBT",
-      "details": "N. Powell (Doubt)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
     },
     {
+      "name": "N. Powell",
+      "status": "OUT",
+      "details": "N. Powell (Out)"
+    },
+    {
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
+    },
+    {
+      "name": "A. Wiggins",
+      "status": "OUT",
+      "details": "A. Wiggins (Out)"
     }
   ],
   "MIA": [
     {
-      "name": "A. Wiggins",
-      "status": "QUES",
-      "details": "A. Wiggins (Ques)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "DOUBT",
-      "details": "N. Powell (Doubt)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
     },
     {
+      "name": "N. Powell",
+      "status": "OUT",
+      "details": "N. Powell (Out)"
+    },
+    {
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
+    },
+    {
+      "name": "A. Wiggins",
+      "status": "OUT",
+      "details": "A. Wiggins (Out)"
     }
   ],
   "LAL": [
