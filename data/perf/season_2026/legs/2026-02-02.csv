@@ -1,0 +1,14 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-02,2026,Tyrese Maxey,PHI,LAC,ast,6,HIT,6,,targets_snapshot_2026-02-02.json
+2026-02-02,2026,James Harden,LAC,PHI,reb,4,,,,targets_snapshot_2026-02-02.json
+2026-02-02,2026,James Harden,LAC,PHI,ast,8,,,,targets_snapshot_2026-02-02.json
+2026-02-02,2026,Joel Embiid,PHI,LAC,pts,25,MISSED,24,,targets_snapshot_2026-02-02.json
+2026-02-02,2026,Joel Embiid,PHI,LAC,3pt,1,HIT,1,,targets_snapshot_2026-02-02.json
+2026-02-02,2026,Jaden McDaniels,MIN,MEM,ast,2,HIT,3,,targets_snapshot_2026-02-02.json
+2026-02-02,2026,Andrew Nembhard,IND,HOU,reb,2,MISSED,1,,targets_snapshot_2026-02-02.json
+2026-02-02,2026,Andrew Nembhard,IND,HOU,ast,8,HIT,8,,targets_snapshot_2026-02-02.json
+2026-02-02,2026,Donte DiVincenzo,MIN,MEM,reb,4,MISSED,3,,targets_snapshot_2026-02-02.json
+2026-02-02,2026,Donte DiVincenzo,MIN,MEM,3pt,3,HIT,5,,targets_snapshot_2026-02-02.json
+2026-02-02,2026,Saddiq Bey,NO,CHA,pts,15,MISSED,8,,targets_snapshot_2026-02-02.json
+2026-02-02,2026,Saddiq Bey,NO,CHA,ast,2,HIT,5,,targets_snapshot_2026-02-02.json
+2026-02-02,2026,Zion Williamson,NO,CHA,reb,6,HIT,11,,targets_snapshot_2026-02-02.json
