@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-04",
-  "built_at_utc": "2026-02-04T15:07:08Z",
+  "built_at_utc": "2026-02-04T17:36:59Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -44,11 +44,6 @@
       "details": "J. Hart (Ques)"
     },
     {
-      "name": "K. McCullar",
-      "status": "QUES",
-      "details": "K. McCullar (Ques)"
-    },
-    {
       "name": "M. Robinson",
       "status": "PROB",
       "details": "M. Robinson (Prob)"
@@ -62,14 +57,14 @@
       "name": "M. McBride",
       "status": "QUES",
       "details": "M. McBride (Ques)"
+    },
+    {
+      "name": "K. McCullar",
+      "status": "OUT",
+      "details": "K. McCullar (Out)"
     }
   ],
   "NYK": [
-    {
-      "name": "K. McCullar",
-      "status": "QUES",
-      "details": "K. McCullar (Ques)"
-    },
     {
       "name": "M. Robinson",
       "status": "PROB",
@@ -89,6 +84,11 @@
       "name": "M. McBride",
       "status": "QUES",
       "details": "M. McBride (Ques)"
+    },
+    {
+      "name": "K. McCullar",
+      "status": "OUT",
+      "details": "K. McCullar (Out)"
     }
   ],
   "MIN": [
@@ -265,6 +265,11 @@
       "details": "S. Castle (Ques)"
     },
     {
+      "name": "D. Harper",
+      "status": "QUES",
+      "details": "D. Harper (Ques)"
+    },
+    {
       "name": "J. Sochan",
       "status": "OUT",
       "details": "J. Sochan (Out)"
@@ -280,6 +285,11 @@
       "name": "S. Castle",
       "status": "QUES",
       "details": "S. Castle (Ques)"
+    },
+    {
+      "name": "D. Harper",
+      "status": "QUES",
+      "details": "D. Harper (Ques)"
     },
     {
       "name": "J. Sochan",
