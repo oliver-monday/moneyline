@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-04",
-  "built_at_utc": "2026-02-04T09:03:29Z",
+  "built_at_utc": "2026-02-04T15:07:08Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -364,8 +364,8 @@
   "CLE": [
     {
       "name": "J. Harden",
-      "status": "DOUBT",
-      "details": "J. Harden (Doubt)"
+      "status": "OUT",
+      "details": "J. Harden (Out)"
     },
     {
       "name": "E. Mobley",
