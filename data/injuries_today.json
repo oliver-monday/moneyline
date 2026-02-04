@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-04",
-  "built_at_utc": "2026-02-04T19:40:51Z",
+  "built_at_utc": "2026-02-04T20:32:12Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -49,11 +49,6 @@
       "details": "J. Hart (Ques)"
     },
     {
-      "name": "P. Dadiet",
-      "status": "QUES",
-      "details": "P. Dadiet (Ques)"
-    },
-    {
       "name": "K. McCullar",
       "status": "QUES",
       "details": "K. McCullar (Ques)"
@@ -70,11 +65,6 @@
     }
   ],
   "NYK": [
-    {
-      "name": "P. Dadiet",
-      "status": "QUES",
-      "details": "P. Dadiet (Ques)"
-    },
     {
       "name": "K. McCullar",
       "status": "QUES",
@@ -113,12 +103,22 @@
       "details": "T. Shannon (Out)"
     },
     {
+      "name": "C. Hepburn",
+      "status": "OUT",
+      "details": "C. Hepburn (Out)"
+    },
+    {
       "name": "J. Poeltl",
       "status": "OUT",
       "details": "J. Poeltl (Out)"
     }
   ],
   "TOR": [
+    {
+      "name": "C. Hepburn",
+      "status": "OUT",
+      "details": "C. Hepburn (Out)"
+    },
     {
       "name": "J. Poeltl",
       "status": "OUT",
@@ -273,11 +273,6 @@
       "name": "A. Caruso",
       "status": "OUT",
       "details": "A. Caruso (Out)"
-    },
-    {
-      "name": "O. Dieng",
-      "status": "OUT",
-      "details": "O. Dieng (Out)"
     },
     {
       "name": "L. Dort",

@@ -4511,6 +4511,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-04,NYK,M. Robinson,PROB,M. Robinson (Prob),rotowire
 2026-02-04,NOP,K. Porter,QUES,K. Porter (Ques),rotowire
 2026-02-04,MIL,K. Porter,QUES,K. Porter (Ques),rotowire
+2026-02-04,DEN,P. Dadiet,QUES,P. Dadiet (Ques),rotowire
+2026-02-04,NYK,P. Dadiet,QUES,P. Dadiet (Ques),rotowire
+2026-02-04,OKC,O. Dieng,OUT,O. Dieng (Out),rotowire
 2026-02-04,DEN,C. Braun,PROB,C. Braun (Prob),rotowire
 2026-02-04,DEN,T. Bates,OUT,T. Bates (Out),rotowire
 2026-02-04,DEN,A. Gordon,OUT,A. Gordon (Out),rotowire
@@ -4518,11 +4521,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-04,DEN,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-02-04,DEN,Fantasy Football,REST,Fantasy Football (Rest),rotowire
 2026-02-04,DEN,J. Hart,QUES,J. Hart (Ques),rotowire
-2026-02-04,DEN,P. Dadiet,QUES,P. Dadiet (Ques),rotowire
 2026-02-04,DEN,K. McCullar,QUES,K. McCullar (Ques),rotowire
 2026-02-04,DEN,M. Diawara,QUES,M. Diawara (Ques),rotowire
 2026-02-04,DEN,M. McBride,OUT,M. McBride (Out),rotowire
-2026-02-04,NYK,P. Dadiet,QUES,P. Dadiet (Ques),rotowire
 2026-02-04,NYK,K. McCullar,QUES,K. McCullar (Ques),rotowire
 2026-02-04,NYK,M. Diawara,QUES,M. Diawara (Ques),rotowire
 2026-02-04,NYK,J. Hart,QUES,J. Hart (Ques),rotowire
@@ -4530,7 +4531,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-04,MIN,A. Edwards,QUES,A. Edwards (Ques),rotowire
 2026-02-04,MIN,J. Randle,QUES,J. Randle (Ques),rotowire
 2026-02-04,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
+2026-02-04,MIN,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-04,MIN,J. Poeltl,OUT,J. Poeltl (Out),rotowire
+2026-02-04,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-04,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
 2026-02-04,BOS,N. Vucevic,QUES,N. Vucevic (Ques),rotowire
 2026-02-04,BOS,J. Brown,DOUBT,J. Brown (Doubt),rotowire
@@ -4560,7 +4563,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-04,MIL,T. Prince,OUT,T. Prince (Out),rotowire
 2026-02-04,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-02-04,OKC,A. Caruso,OUT,A. Caruso (Out),rotowire
-2026-02-04,OKC,O. Dieng,OUT,O. Dieng (Out),rotowire
 2026-02-04,OKC,L. Dort,OUT,L. Dort (Out),rotowire
 2026-02-04,OKC,S. Gilgeous-Alexander,OUT,S. Gilgeous-Alexander (Out),rotowire
 2026-02-04,OKC,I. Hartenstein,OUT,I. Hartenstein (Out),rotowire
