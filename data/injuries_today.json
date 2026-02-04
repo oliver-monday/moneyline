@@ -1,13 +1,8 @@
 {
   "asof_date": "2026-02-04",
-  "built_at_utc": "2026-02-04T22:35:52Z",
+  "built_at_utc": "2026-02-04T23:31:05Z",
   "source": "rotowire",
   "DEN": [
-    {
-      "name": "C. Braun",
-      "status": "PROB",
-      "details": "C. Braun (Prob)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -44,24 +39,14 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "Josh Hart",
-      "status": "OUT",
-      "details": "Josh Hart (Out)"
-    },
-    {
-      "name": "P. Dadiet",
-      "status": "QUES",
-      "details": "P. Dadiet (Ques)"
-    },
-    {
       "name": "K. McCullar",
       "status": "QUES",
       "details": "K. McCullar (Ques)"
     },
     {
-      "name": "M. Diawara",
-      "status": "QUES",
-      "details": "M. Diawara (Ques)"
+      "name": "Josh Hart",
+      "status": "OUT",
+      "details": "Josh Hart (Out)"
     },
     {
       "name": "M. McBride",
@@ -71,19 +56,9 @@
   ],
   "NYK": [
     {
-      "name": "P. Dadiet",
-      "status": "QUES",
-      "details": "P. Dadiet (Ques)"
-    },
-    {
       "name": "K. McCullar",
       "status": "QUES",
       "details": "K. McCullar (Ques)"
-    },
-    {
-      "name": "M. Diawara",
-      "status": "QUES",
-      "details": "M. Diawara (Ques)"
     },
     {
       "name": "Josh Hart",
@@ -98,16 +73,6 @@
   ],
   "MIN": [
     {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
-      "name": "J. Randle",
-      "status": "QUES",
-      "details": "J. Randle (Ques)"
-    },
-    {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
@@ -116,6 +81,11 @@
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "Chris Paul",
+      "status": "OUT",
+      "details": "Chris Paul (Out)"
     },
     {
       "name": "J. Poeltl",
@@ -128,6 +98,11 @@
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "Chris Paul",
+      "status": "OUT",
+      "details": "Chris Paul (Out)"
     },
     {
       "name": "J. Poeltl",
@@ -162,11 +137,6 @@
       "details": "J. Tatum (Out)"
     },
     {
-      "name": "K. Durant",
-      "status": "PROB",
-      "details": "K. Durant (Prob)"
-    },
-    {
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
@@ -187,11 +157,6 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
-    },
-    {
-      "name": "K. Durant",
-      "status": "PROB",
-      "details": "K. Durant (Prob)"
     },
     {
       "name": "D. Finney-Smith",
