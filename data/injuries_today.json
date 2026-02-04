@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-03",
-  "built_at_utc": "2026-02-04T03:26:01Z",
+  "built_at_utc": "2026-02-04T04:03:21Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -340,18 +340,18 @@
   "BOS": [
     {
       "name": "C. Boucher",
-      "status": "OUT",
-      "details": "C. Boucher (Out)"
+      "status": "QUES",
+      "details": "C. Boucher (Ques)"
+    },
+    {
+      "name": "N. Vucevic",
+      "status": "QUES",
+      "details": "N. Vucevic (Ques)"
     },
     {
       "name": "J. Tatum",
       "status": "OUT",
       "details": "J. Tatum (Out)"
-    },
-    {
-      "name": "N. Vucevic",
-      "status": "OUT",
-      "details": "N. Vucevic (Out)"
     },
     {
       "name": "Dante Exum",
@@ -364,6 +364,21 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "D. Russell",
+      "status": "QUES",
+      "details": "D. Russell (Ques)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "QUES",
+      "details": "P. Washington (Ques)"
+    },
+    {
+      "name": "B. Williams",
+      "status": "QUES",
+      "details": "B. Williams (Ques)"
+    },
+    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
@@ -372,21 +387,6 @@
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
-    },
-    {
-      "name": "D. Russell",
-      "status": "OUT",
-      "details": "D. Russell (Out)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "OUT",
-      "details": "P. Washington (Out)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "OUT",
-      "details": "B. Williams (Out)"
     }
   ],
   "DAL": [
@@ -401,6 +401,21 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "D. Russell",
+      "status": "QUES",
+      "details": "D. Russell (Ques)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "QUES",
+      "details": "P. Washington (Ques)"
+    },
+    {
+      "name": "B. Williams",
+      "status": "QUES",
+      "details": "B. Williams (Ques)"
+    },
+    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
@@ -409,21 +424,6 @@
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
-    },
-    {
-      "name": "D. Russell",
-      "status": "OUT",
-      "details": "D. Russell (Out)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "OUT",
-      "details": "P. Washington (Out)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "OUT",
-      "details": "B. Williams (Out)"
     }
   ],
   "CHI": [
@@ -527,14 +527,14 @@
       "details": "F. Wagner (Doubt)"
     },
     {
+      "name": "A. Mitchell",
+      "status": "QUES",
+      "details": "A. Mitchell (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "A. Mitchell",
-      "status": "OUT",
-      "details": "A. Mitchell (Out)"
     },
     {
       "name": "N. Topic",
@@ -549,14 +549,14 @@
   ],
   "OKC": [
     {
+      "name": "A. Mitchell",
+      "status": "QUES",
+      "details": "A. Mitchell (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "A. Mitchell",
-      "status": "OUT",
-      "details": "A. Mitchell (Out)"
     },
     {
       "name": "N. Topic",
