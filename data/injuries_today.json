@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-03",
-  "built_at_utc": "2026-02-03T23:30:45Z",
+  "built_at_utc": "2026-02-04T01:11:39Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -187,6 +187,11 @@
   ],
   "NYK": [
     {
+      "name": "M. Diawara",
+      "status": "QUES",
+      "details": "M. Diawara (Ques)"
+    },
+    {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
@@ -310,11 +315,6 @@
   ],
   "LAL": [
     {
-      "name": "A. Reaves",
-      "status": "QUES",
-      "details": "A. Reaves (Ques)"
-    },
-    {
       "name": "A. Thiero",
       "status": "OUT",
       "details": "A. Thiero (Out)"
@@ -428,16 +428,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Phillips",
-      "status": "QUES",
-      "details": "J. Phillips (Ques)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "QUES",
-      "details": "J. Smith (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
@@ -458,19 +448,14 @@
       "details": "Jaden Ivey (Out)"
     },
     {
-      "name": "Tre Jones",
+      "name": "J. Phillips",
       "status": "OUT",
-      "details": "Tre Jones (Out)"
+      "details": "J. Phillips (Out)"
     },
     {
       "name": "A. Simons",
       "status": "OUT",
       "details": "A. Simons (Out)"
-    },
-    {
-      "name": "B. Portis",
-      "status": "DOUBT",
-      "details": "B. Portis (Doubt)"
     },
     {
       "name": "G. Antetokounmpo",
@@ -486,6 +471,11 @@
       "name": "K. Porter",
       "status": "OUT",
       "details": "K. Porter (Out)"
+    },
+    {
+      "name": "B. Portis",
+      "status": "OUT",
+      "details": "B. Portis (Out)"
     },
     {
       "name": "T. Prince",
@@ -495,11 +485,6 @@
   ],
   "MIL": [
     {
-      "name": "B. Portis",
-      "status": "DOUBT",
-      "details": "B. Portis (Doubt)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -513,6 +498,11 @@
       "name": "K. Porter",
       "status": "OUT",
       "details": "K. Porter (Out)"
+    },
+    {
+      "name": "B. Portis",
+      "status": "OUT",
+      "details": "B. Portis (Out)"
     },
     {
       "name": "T. Prince",
@@ -532,34 +522,9 @@
       "details": "F. Wagner (Out)"
     },
     {
-      "name": "S. Gilgeous-Alexander",
-      "status": "QUES",
-      "details": "S. Gilgeous-Alexander (Ques)"
-    },
-    {
-      "name": "C. Holmgren",
-      "status": "QUES",
-      "details": "C. Holmgren (Ques)"
-    },
-    {
-      "name": "I. Hartenstein",
-      "status": "QUES",
-      "details": "I. Hartenstein (Ques)"
-    },
-    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "A. Caruso",
-      "status": "QUES",
-      "details": "A. Caruso (Ques)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
     },
     {
       "name": "A. Mitchell",
@@ -582,31 +547,6 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "A. Caruso",
-      "status": "QUES",
-      "details": "A. Caruso (Ques)"
-    },
-    {
-      "name": "S. Gilgeous-Alexander",
-      "status": "QUES",
-      "details": "S. Gilgeous-Alexander (Ques)"
-    },
-    {
-      "name": "I. Hartenstein",
-      "status": "QUES",
-      "details": "I. Hartenstein (Ques)"
-    },
-    {
-      "name": "C. Holmgren",
-      "status": "QUES",
-      "details": "C. Holmgren (Ques)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
     },
     {
       "name": "A. Mitchell",
