@@ -757,10 +757,10 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810578,2026-02-03,2026-02-04T01:00Z,Oklahoma City Thunder,OKC,128,-265.0,,Orlando Magic,ORL,92,215.0,,Oklahoma City,OK,,
 401810579,2026-02-03,2026-02-04T03:00Z,Golden State Warriors,GS,94,-155.0,,Philadelphia 76ers,PHI,113,130.0,,San Francisco,CA,,
 401810580,2026-02-03,2026-02-04T04:00Z,Portland Trail Blazers,POR,125,130.0,,Phoenix Suns,PHX,130,-155.0,,Portland,OR,,
-401810581,2026-02-04,2026-02-05T00:00Z,New York Knicks,NY,0,-218.0,,Denver Nuggets,DEN,0,180.0,,New York,NY,,T. Bates (Out); A. Gordon (Out)
-401810582,2026-02-04,2026-02-05T00:30Z,Toronto Raptors,TOR,0,102.0,,Minnesota Timberwolves,MIN,0,-122.0,,Toronto,ON,J. Poeltl (Out),T. Shannon (Out)
+401810581,2026-02-04,2026-02-05T00:00Z,New York Knicks,NY,0,-258.0,,Denver Nuggets,DEN,0,210.0,,New York,NY,,T. Bates (Out); A. Gordon (Out)
+401810582,2026-02-04,2026-02-05T00:30Z,Toronto Raptors,TOR,0,114.0,,Minnesota Timberwolves,MIN,0,-135.0,,Toronto,ON,J. Poeltl (Out),T. Shannon (Out)
 401810583,2026-02-04,2026-02-05T01:00Z,Houston Rockets,HOU,0,-225.0,,Boston Celtics,BOS,0,185.0,,Houston,TX,S. Adams (OFS); D. Finney-Smith (Out); F. VanVleet (Out),J. Tatum (Out)
 401810584,2026-02-04,2026-02-05T01:00Z,Milwaukee Bucks,MIL,0,150.0,,New Orleans Pelicans,NO,0,-180.0,,Milwaukee,WI,G. Antetokounmpo (Out); T. Prince (Out),D. Murray (Out)
-401810585,2026-02-04,2026-02-05T02:30Z,San Antonio Spurs,SA,0,114.0,,Oklahoma City Thunder,OKC,0,-135.0,,San Antonio,TX,J. Sochan (Out); L. Waters (Out),T. Sorber (OFS); N. Topic (Out); J. Williams (Out)
-401810586,2026-02-04,2026-02-05T03:00Z,Sacramento Kings,SAC,0,-120.0,,Memphis Grizzlies,MEM,0,100.0,,Sacramento,CA,K. Murray (Out),K. Anderson (Out); B. Clarke (Out); W. Clayton (Out); Zach Edey (Out); T. Hendricks (Out); Ja Morant (Out); G. Niang (Out)
+401810585,2026-02-04,2026-02-05T02:30Z,San Antonio Spurs,SA,0,100.0,,Oklahoma City Thunder,OKC,0,-120.0,,San Antonio,TX,J. Sochan (Out); L. Waters (Out),T. Sorber (OFS); N. Topic (Out); J. Williams (Out)
+401810586,2026-02-04,2026-02-05T03:00Z,Sacramento Kings,SAC,0,-115.0,,Memphis Grizzlies,MEM,0,-105.0,,Sacramento,CA,K. Murray (Out),K. Anderson (Out); B. Clarke (Out); W. Clayton (Out); Zach Edey (Out); T. Hendricks (Out); Ja Morant (Out); G. Niang (Out)
 401810587,2026-02-04,2026-02-05T03:30Z,LA Clippers,LAC,0,110.0,,Cleveland Cavaliers,CLE,0,-130.0,,Inglewood,CA,B. Beal (OFS); D. Garland (Out); Chris Paul (Out),E. Mobley (Out); Max Strus (Out)
