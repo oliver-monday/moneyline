@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-04",
-  "built_at_utc": "2026-02-04T21:22:17Z",
+  "built_at_utc": "2026-02-04T22:35:52Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -44,9 +44,14 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "J. Hart",
+      "name": "Josh Hart",
+      "status": "OUT",
+      "details": "Josh Hart (Out)"
+    },
+    {
+      "name": "P. Dadiet",
       "status": "QUES",
-      "details": "J. Hart (Ques)"
+      "details": "P. Dadiet (Ques)"
     },
     {
       "name": "K. McCullar",
@@ -66,6 +71,11 @@
   ],
   "NYK": [
     {
+      "name": "P. Dadiet",
+      "status": "QUES",
+      "details": "P. Dadiet (Ques)"
+    },
+    {
       "name": "K. McCullar",
       "status": "QUES",
       "details": "K. McCullar (Ques)"
@@ -76,9 +86,9 @@
       "details": "M. Diawara (Ques)"
     },
     {
-      "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
+      "name": "Josh Hart",
+      "status": "OUT",
+      "details": "Josh Hart (Out)"
     },
     {
       "name": "M. McBride",
@@ -320,6 +330,11 @@
       "details": "S. Castle (Ques)"
     },
     {
+      "name": "D. Jones Garcia",
+      "status": "OFS",
+      "details": "D. Jones Garcia (OFS)"
+    },
+    {
       "name": "D. Harper",
       "status": "QUES",
       "details": "D. Harper (Ques)"
@@ -341,6 +356,11 @@
     }
   ],
   "SAS": [
+    {
+      "name": "D. Jones Garcia",
+      "status": "OFS",
+      "details": "D. Jones Garcia (OFS)"
+    },
     {
       "name": "S. Castle",
       "status": "QUES",

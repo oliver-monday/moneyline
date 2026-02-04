@@ -4511,24 +4511,26 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-04,NYK,M. Robinson,PROB,M. Robinson (Prob),rotowire
 2026-02-04,NOP,K. Porter,QUES,K. Porter (Ques),rotowire
 2026-02-04,MIL,K. Porter,QUES,K. Porter (Ques),rotowire
-2026-02-04,DEN,P. Dadiet,QUES,P. Dadiet (Ques),rotowire
-2026-02-04,NYK,P. Dadiet,QUES,P. Dadiet (Ques),rotowire
 2026-02-04,OKC,O. Dieng,OUT,O. Dieng (Out),rotowire
 2026-02-04,CLE,Chris Paul,OUT,Chris Paul (Out),rotowire
 2026-02-04,LAC,Chris Paul,OUT,Chris Paul (Out),rotowire
+2026-02-04,DEN,J. Hart,QUES,J. Hart (Ques),rotowire
+2026-02-04,NYK,J. Hart,QUES,J. Hart (Ques),rotowire
 2026-02-04,DEN,C. Braun,PROB,C. Braun (Prob),rotowire
 2026-02-04,DEN,T. Bates,OUT,T. Bates (Out),rotowire
 2026-02-04,DEN,A. Gordon,OUT,A. Gordon (Out),rotowire
 2026-02-04,DEN,C. Johnson,OUT,C. Johnson (Out),rotowire
 2026-02-04,DEN,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-02-04,DEN,Fantasy Football,REST,Fantasy Football (Rest),rotowire
-2026-02-04,DEN,J. Hart,QUES,J. Hart (Ques),rotowire
+2026-02-04,DEN,Josh Hart,OUT,Josh Hart (Out),rotowire
+2026-02-04,DEN,P. Dadiet,QUES,P. Dadiet (Ques),rotowire
 2026-02-04,DEN,K. McCullar,QUES,K. McCullar (Ques),rotowire
 2026-02-04,DEN,M. Diawara,QUES,M. Diawara (Ques),rotowire
 2026-02-04,DEN,M. McBride,OUT,M. McBride (Out),rotowire
+2026-02-04,NYK,P. Dadiet,QUES,P. Dadiet (Ques),rotowire
 2026-02-04,NYK,K. McCullar,QUES,K. McCullar (Ques),rotowire
 2026-02-04,NYK,M. Diawara,QUES,M. Diawara (Ques),rotowire
-2026-02-04,NYK,J. Hart,QUES,J. Hart (Ques),rotowire
+2026-02-04,NYK,Josh Hart,OUT,Josh Hart (Out),rotowire
 2026-02-04,NYK,M. McBride,OUT,M. McBride (Out),rotowire
 2026-02-04,MIN,A. Edwards,QUES,A. Edwards (Ques),rotowire
 2026-02-04,MIN,J. Randle,QUES,J. Randle (Ques),rotowire
@@ -4574,10 +4576,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-04,OKC,N. Topic,OUT,N. Topic (Out),rotowire
 2026-02-04,OKC,J. Williams,OUT,J. Williams (Out),rotowire
 2026-02-04,OKC,S. Castle,QUES,S. Castle (Ques),rotowire
+2026-02-04,OKC,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-02-04,OKC,D. Harper,QUES,D. Harper (Ques),rotowire
 2026-02-04,OKC,K. Olynyk,QUES,K. Olynyk (Ques),rotowire
 2026-02-04,OKC,J. Sochan,OUT,J. Sochan (Out),rotowire
 2026-02-04,OKC,L. Waters,OUT,L. Waters (Out),rotowire
+2026-02-04,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-02-04,SAS,S. Castle,QUES,S. Castle (Ques),rotowire
 2026-02-04,SAS,D. Harper,QUES,D. Harper (Ques),rotowire
 2026-02-04,SAS,K. Olynyk,QUES,K. Olynyk (Ques),rotowire
