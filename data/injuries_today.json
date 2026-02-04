@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-02-04",
-  "built_at_utc": "2026-02-04T17:36:59Z",
+  "built_at_utc": "2026-02-04T18:45:34Z",
   "source": "rotowire",
   "DEN": [
     {
-      "name": "C. Johnson",
-      "status": "DOUBT",
-      "details": "C. Johnson (Doubt)"
+      "name": "C. Braun",
+      "status": "PROB",
+      "details": "C. Braun (Prob)"
     },
     {
       "name": "T. Bates",
@@ -17,6 +17,11 @@
       "name": "A. Gordon",
       "status": "OUT",
       "details": "A. Gordon (Out)"
+    },
+    {
+      "name": "C. Johnson",
+      "status": "OUT",
+      "details": "C. Johnson (Out)"
     },
     {
       "name": "Fantasy Home",
@@ -44,19 +49,14 @@
       "details": "J. Hart (Ques)"
     },
     {
-      "name": "M. Robinson",
-      "status": "PROB",
-      "details": "M. Robinson (Prob)"
-    },
-    {
       "name": "M. Diawara",
       "status": "QUES",
       "details": "M. Diawara (Ques)"
     },
     {
       "name": "M. McBride",
-      "status": "QUES",
-      "details": "M. McBride (Ques)"
+      "status": "OUT",
+      "details": "M. McBride (Out)"
     },
     {
       "name": "K. McCullar",
@@ -65,11 +65,6 @@
     }
   ],
   "NYK": [
-    {
-      "name": "M. Robinson",
-      "status": "PROB",
-      "details": "M. Robinson (Prob)"
-    },
     {
       "name": "M. Diawara",
       "status": "QUES",
@@ -82,8 +77,8 @@
     },
     {
       "name": "M. McBride",
-      "status": "QUES",
-      "details": "M. McBride (Ques)"
+      "status": "OUT",
+      "details": "M. McBride (Out)"
     },
     {
       "name": "K. McCullar",
@@ -122,14 +117,24 @@
   ],
   "BOS": [
     {
-      "name": "C. Boucher",
-      "status": "QUES",
-      "details": "C. Boucher (Ques)"
-    },
-    {
       "name": "N. Vucevic",
       "status": "QUES",
       "details": "N. Vucevic (Ques)"
+    },
+    {
+      "name": "J. Brown",
+      "status": "DOUBT",
+      "details": "J. Brown (Doubt)"
+    },
+    {
+      "name": "C. Boucher",
+      "status": "OUT",
+      "details": "C. Boucher (Out)"
+    },
+    {
+      "name": "Sam Hauser",
+      "status": "OUT",
+      "details": "Sam Hauser (Out)"
     },
     {
       "name": "J. Tatum",
@@ -186,24 +191,29 @@
       "details": "D. Murray (Out)"
     },
     {
-      "name": "B. Portis",
-      "status": "QUES",
-      "details": "B. Portis (Ques)"
+      "name": "M. Turner",
+      "status": "PROB",
+      "details": "M. Turner (Prob)"
     },
     {
-      "name": "G. Harris",
-      "status": "QUES",
-      "details": "G. Harris (Ques)"
-    },
-    {
-      "name": "K. Porter",
-      "status": "QUES",
-      "details": "K. Porter (Ques)"
+      "name": "C. Anthony",
+      "status": "PROB",
+      "details": "C. Anthony (Prob)"
     },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
+    },
+    {
+      "name": "G. Harris",
+      "status": "OUT",
+      "details": "G. Harris (Out)"
+    },
+    {
+      "name": "B. Portis",
+      "status": "OUT",
+      "details": "B. Portis (Out)"
     },
     {
       "name": "T. Prince",
@@ -213,24 +223,29 @@
   ],
   "MIL": [
     {
-      "name": "G. Harris",
-      "status": "QUES",
-      "details": "G. Harris (Ques)"
+      "name": "C. Anthony",
+      "status": "PROB",
+      "details": "C. Anthony (Prob)"
     },
     {
-      "name": "K. Porter",
-      "status": "QUES",
-      "details": "K. Porter (Ques)"
-    },
-    {
-      "name": "B. Portis",
-      "status": "QUES",
-      "details": "B. Portis (Ques)"
+      "name": "M. Turner",
+      "status": "PROB",
+      "details": "M. Turner (Prob)"
     },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
+    },
+    {
+      "name": "G. Harris",
+      "status": "OUT",
+      "details": "G. Harris (Out)"
+    },
+    {
+      "name": "B. Portis",
+      "status": "OUT",
+      "details": "B. Portis (Out)"
     },
     {
       "name": "T. Prince",
@@ -270,6 +285,11 @@
       "details": "D. Harper (Ques)"
     },
     {
+      "name": "K. Olynyk",
+      "status": "QUES",
+      "details": "K. Olynyk (Ques)"
+    },
+    {
       "name": "J. Sochan",
       "status": "OUT",
       "details": "J. Sochan (Out)"
@@ -290,6 +310,11 @@
       "name": "D. Harper",
       "status": "QUES",
       "details": "D. Harper (Ques)"
+    },
+    {
+      "name": "K. Olynyk",
+      "status": "QUES",
+      "details": "K. Olynyk (Ques)"
     },
     {
       "name": "J. Sochan",
