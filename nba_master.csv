@@ -747,13 +747,20 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810568,2026-02-02,2026-02-03T00:00Z,Indiana Pacers,IND,114,200.0,,Houston Rockets,HOU,118,-245.0,,Indianapolis,IN,,
 401810569,2026-02-02,2026-02-03T00:30Z,Memphis Grizzlies,MEM,137,250.0,,Minnesota Timberwolves,MIN,128,-310.0,,Memphis,TN,,
 401810570,2026-02-02,2026-02-03T03:00Z,LA Clippers,LAC,113,-130.0,,Philadelphia 76ers,PHI,128,110.0,,Inglewood,CA,,
-401810571,2026-02-03,2026-02-04T00:00Z,Detroit Pistons,DET,0,-175.0,,Denver Nuggets,DEN,0,145.0,,Detroit,MI,,T. Bates (Out); A. Gordon (Out); C. Johnson (Out)
-401810572,2026-02-03,2026-02-04T00:00Z,Indiana Pacers,IND,0,-162.0,,Utah Jazz,UTAH,0,136.0,,Indianapolis,IN,T. Haliburton (OFS); Obi Toppin (Out),W. Kessler (OFS); K. George (Out); E. Harkless (Out); G. Niang (Out); J. Nurkic (Out)
-401810573,2026-02-03,2026-02-04T00:00Z,Washington Wizards,WSH,0,500.0,,New York Knicks,NY,0,-700.0,,Washington,DC,C. Whitmore (OFS); T. Johnson (Out); T. Vukcevic (Out); Trae Young (Out),M. McBride (Out); K. McCullar (Out); M. Robinson (Out)
-401810574,2026-02-03,2026-02-04T00:30Z,Brooklyn Nets,BKN,0,285.0,,Los Angeles Lakers,LAL,0,-360.0,,Brooklyn,NY,H. Highsmith (Out),A. Thiero (Out)
-401810575,2026-02-03,2026-02-04T00:30Z,Miami Heat,MIA,0,-162.0,,Atlanta Hawks,ATL,0,136.0,,Miami,FL,T. Herro (Out); T. Rozier (Out),N. Dante (OFS); Duop Reath (OFS); O. Okongwu (Out)
-401810576,2026-02-03,2026-02-04T01:00Z,Dallas Mavericks,DAL,0,210.0,,Boston Celtics,BOS,0,-258.0,,Dallas,TX,Dante Exum (OFS); D. Lively (OFS); A. Davis (Out); K. Irving (Out); P. Washington (Out),J. Tatum (Out)
-401810577,2026-02-03,2026-02-04T01:00Z,Milwaukee Bucks,MIL,0,130.0,,Chicago Bulls,CHI,0,-155.0,,Milwaukee,WI,G. Antetokounmpo (Out); G. Harris (Out); K. Porter (Out); T. Prince (Out),N. Essengue (OFS); Z. Collins (Out); J. Giddey (Out); Tre Jones (Out); D. Saric (Out)
-401810578,2026-02-03,2026-02-04T01:00Z,Oklahoma City Thunder,OKC,0,-265.0,,Orlando Magic,ORL,0,215.0,,Oklahoma City,OK,T. Sorber (OFS); A. Mitchell (Out); N. Topic (Out); J. Williams (Out),C. Castleton (Out); F. Wagner (Out)
-401810579,2026-02-03,2026-02-04T03:00Z,Golden State Warriors,GS,0,-155.0,,Philadelphia 76ers,PHI,0,130.0,,San Francisco,CA,J. Butler (OFS); LJ Cryer (Out); S. Curry (Out); Seth Curry (Out); J. Kuminga (Out),P. George (Out)
-401810580,2026-02-03,2026-02-04T04:00Z,Portland Trail Blazers,POR,0,130.0,,Phoenix Suns,PHX,0,-155.0,,Portland,OR,D. Lillard (OFS); K. Murray (Out); M. Thybulle (Out),D. Booker (Out)
+401810571,2026-02-03,2026-02-04T00:00Z,Detroit Pistons,DET,124,-175.0,,Denver Nuggets,DEN,121,145.0,,Detroit,MI,,
+401810572,2026-02-03,2026-02-04T00:00Z,Indiana Pacers,IND,122,-162.0,,Utah Jazz,UTAH,131,136.0,,Indianapolis,IN,,
+401810573,2026-02-03,2026-02-04T00:00Z,Washington Wizards,WSH,101,500.0,,New York Knicks,NY,132,-700.0,,Washington,DC,,
+401810574,2026-02-03,2026-02-04T00:30Z,Brooklyn Nets,BKN,109,285.0,,Los Angeles Lakers,LAL,125,-360.0,,Brooklyn,NY,,
+401810575,2026-02-03,2026-02-04T00:30Z,Miami Heat,MIA,115,-162.0,,Atlanta Hawks,ATL,127,136.0,,Miami,FL,,
+401810576,2026-02-03,2026-02-04T01:00Z,Dallas Mavericks,DAL,100,210.0,,Boston Celtics,BOS,110,-258.0,,Dallas,TX,,
+401810577,2026-02-03,2026-02-04T01:00Z,Milwaukee Bucks,MIL,131,130.0,,Chicago Bulls,CHI,115,-155.0,,Milwaukee,WI,,
+401810578,2026-02-03,2026-02-04T01:00Z,Oklahoma City Thunder,OKC,128,-265.0,,Orlando Magic,ORL,92,215.0,,Oklahoma City,OK,,
+401810579,2026-02-03,2026-02-04T03:00Z,Golden State Warriors,GS,94,-155.0,,Philadelphia 76ers,PHI,113,130.0,,San Francisco,CA,,
+401810580,2026-02-03,2026-02-04T04:00Z,Portland Trail Blazers,POR,125,130.0,,Phoenix Suns,PHX,130,-155.0,,Portland,OR,,
+401810581,2026-02-04,2026-02-05T00:00Z,New York Knicks,NY,0,-218.0,,Denver Nuggets,DEN,0,180.0,,New York,NY,,T. Bates (Out); A. Gordon (Out)
+401810582,2026-02-04,2026-02-05T00:30Z,Toronto Raptors,TOR,0,102.0,,Minnesota Timberwolves,MIN,0,-122.0,,Toronto,ON,J. Poeltl (Out),T. Shannon (Out)
+401810583,2026-02-04,2026-02-05T01:00Z,Houston Rockets,HOU,0,-225.0,,Boston Celtics,BOS,0,185.0,,Houston,TX,S. Adams (OFS); D. Finney-Smith (Out); F. VanVleet (Out),J. Tatum (Out)
+401810584,2026-02-04,2026-02-05T01:00Z,Milwaukee Bucks,MIL,0,150.0,,New Orleans Pelicans,NO,0,-180.0,,Milwaukee,WI,G. Antetokounmpo (Out); T. Prince (Out),D. Murray (Out)
+401810585,2026-02-04,2026-02-05T02:30Z,San Antonio Spurs,SA,0,114.0,,Oklahoma City Thunder,OKC,0,-135.0,,San Antonio,TX,J. Sochan (Out); L. Waters (Out),T. Sorber (OFS); N. Topic (Out); J. Williams (Out)
+401810586,2026-02-04,2026-02-05T03:00Z,Sacramento Kings,SAC,0,-120.0,,Memphis Grizzlies,MEM,0,100.0,,Sacramento,CA,K. Murray (Out),K. Anderson (Out); B. Clarke (Out); W. Clayton (Out); Zach Edey (Out); T. Hendricks (Out); Ja Morant (Out); G. Niang (Out)
+401810587,2026-02-04,2026-02-05T03:30Z,LA Clippers,LAC,0,110.0,,Cleveland Cavaliers,CLE,0,-130.0,,Inglewood,CA,B. Beal (OFS); D. Garland (Out); Chris Paul (Out),E. Mobley (Out); Max Strus (Out)

@@ -1,0 +1,20 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-03,2026,Tyrese Maxey,PHI,GS,ast,6,MISSED,3,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Paolo Banchero,ORL,OKC,reb,8,MISSED,3,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Paolo Banchero,ORL,OKC,ast,4,HIT,4,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Paolo Banchero,ORL,OKC,3pt,1,HIT,1,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Desmond Bane,ORL,OKC,reb,4,MISSED,2,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Joel Embiid,PHI,GS,3pt,1,,,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,OG Anunoby,NY,WSH,pts,15,HIT,19,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,OG Anunoby,NY,WSH,ast,2,HIT,2,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Andrew Nembhard,IND,UTAH,reb,2,MISSED,,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Andrew Nembhard,IND,UTAH,ast,8,MISSED,,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Dyson Daniels,ATL,MIA,reb,6,MISSED,1,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Bam Adebayo,MIA,ATL,pts,20,MISSED,16,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Bam Adebayo,MIA,ATL,ast,2,MISSED,1,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Shaedon Sharpe,POR,PHX,pts,20,MISSED,19,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Shaedon Sharpe,POR,PHX,ast,2,MISSED,1,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Nikola Vucevic,CHI,MIL,pts,15,,,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Grayson Allen,PHX,POR,pts,15,HIT,24,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Ace Bailey,UTAH,IND,pts,10,HIT,19,,targets_snapshot_2026-02-03.json
+2026-02-03,2026,Ace Bailey,UTAH,IND,3pt,1,HIT,2,,targets_snapshot_2026-02-03.json
