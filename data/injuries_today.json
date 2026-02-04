@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-04",
-  "built_at_utc": "2026-02-04T18:45:34Z",
+  "built_at_utc": "2026-02-04T19:40:51Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -49,6 +49,16 @@
       "details": "J. Hart (Ques)"
     },
     {
+      "name": "P. Dadiet",
+      "status": "QUES",
+      "details": "P. Dadiet (Ques)"
+    },
+    {
+      "name": "K. McCullar",
+      "status": "QUES",
+      "details": "K. McCullar (Ques)"
+    },
+    {
       "name": "M. Diawara",
       "status": "QUES",
       "details": "M. Diawara (Ques)"
@@ -57,14 +67,19 @@
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
-    },
-    {
-      "name": "K. McCullar",
-      "status": "OUT",
-      "details": "K. McCullar (Out)"
     }
   ],
   "NYK": [
+    {
+      "name": "P. Dadiet",
+      "status": "QUES",
+      "details": "P. Dadiet (Ques)"
+    },
+    {
+      "name": "K. McCullar",
+      "status": "QUES",
+      "details": "K. McCullar (Ques)"
+    },
     {
       "name": "M. Diawara",
       "status": "QUES",
@@ -79,11 +94,6 @@
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
-    },
-    {
-      "name": "K. McCullar",
-      "status": "OUT",
-      "details": "K. McCullar (Out)"
     }
   ],
   "MIN": [
@@ -260,9 +270,44 @@
       "details": "T. Sorber (OFS)"
     },
     {
+      "name": "A. Caruso",
+      "status": "OUT",
+      "details": "A. Caruso (Out)"
+    },
+    {
+      "name": "O. Dieng",
+      "status": "OUT",
+      "details": "O. Dieng (Out)"
+    },
+    {
+      "name": "L. Dort",
+      "status": "OUT",
+      "details": "L. Dort (Out)"
+    },
+    {
+      "name": "S. Gilgeous-Alexander",
+      "status": "OUT",
+      "details": "S. Gilgeous-Alexander (Out)"
+    },
+    {
+      "name": "I. Hartenstein",
+      "status": "OUT",
+      "details": "I. Hartenstein (Out)"
+    },
+    {
+      "name": "C. Holmgren",
+      "status": "OUT",
+      "details": "C. Holmgren (Out)"
+    },
+    {
+      "name": "J. McCain",
+      "status": "OUT",
+      "details": "J. McCain (Out)"
+    },
+    {
       "name": "A. Mitchell",
-      "status": "QUES",
-      "details": "A. Mitchell (Ques)"
+      "status": "OUT",
+      "details": "A. Mitchell (Out)"
     },
     {
       "name": "N. Topic",
