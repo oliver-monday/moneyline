@@ -4514,6 +4514,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-04,DEN,P. Dadiet,QUES,P. Dadiet (Ques),rotowire
 2026-02-04,NYK,P. Dadiet,QUES,P. Dadiet (Ques),rotowire
 2026-02-04,OKC,O. Dieng,OUT,O. Dieng (Out),rotowire
+2026-02-04,CLE,Chris Paul,OUT,Chris Paul (Out),rotowire
+2026-02-04,LAC,Chris Paul,OUT,Chris Paul (Out),rotowire
 2026-02-04,DEN,C. Braun,PROB,C. Braun (Prob),rotowire
 2026-02-04,DEN,T. Bates,OUT,T. Bates (Out),rotowire
 2026-02-04,DEN,A. Gordon,OUT,A. Gordon (Out),rotowire
@@ -4535,8 +4537,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-04,MIN,J. Poeltl,OUT,J. Poeltl (Out),rotowire
 2026-02-04,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-04,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
-2026-02-04,BOS,N. Vucevic,QUES,N. Vucevic (Ques),rotowire
 2026-02-04,BOS,J. Brown,DOUBT,J. Brown (Doubt),rotowire
+2026-02-04,BOS,N. Vucevic,DOUBT,N. Vucevic (Doubt),rotowire
 2026-02-04,BOS,C. Boucher,OUT,C. Boucher (Out),rotowire
 2026-02-04,BOS,Sam Hauser,OUT,Sam Hauser (Out),rotowire
 2026-02-04,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
@@ -4599,7 +4601,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-04,CLE,Max Strus,OUT,Max Strus (Out),rotowire
 2026-02-04,CLE,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-02-04,CLE,D. Garland,OUT,D. Garland (Out),rotowire
-2026-02-04,CLE,Chris Paul,OUT,Chris Paul (Out),rotowire
+2026-02-04,CLE,T. Washington,OUT,T. Washington (Out),rotowire
+2026-02-04,CLE,I. Zubac,OUT,I. Zubac (Out),rotowire
 2026-02-04,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-02-04,LAC,D. Garland,OUT,D. Garland (Out),rotowire
-2026-02-04,LAC,Chris Paul,OUT,Chris Paul (Out),rotowire
+2026-02-04,LAC,T. Washington,OUT,T. Washington (Out),rotowire
+2026-02-04,LAC,I. Zubac,OUT,I. Zubac (Out),rotowire

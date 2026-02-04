@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-04",
-  "built_at_utc": "2026-02-04T20:32:12Z",
+  "built_at_utc": "2026-02-04T21:22:17Z",
   "source": "rotowire",
   "DEN": [
     {
@@ -127,14 +127,14 @@
   ],
   "BOS": [
     {
-      "name": "N. Vucevic",
-      "status": "QUES",
-      "details": "N. Vucevic (Ques)"
-    },
-    {
       "name": "J. Brown",
       "status": "DOUBT",
       "details": "J. Brown (Doubt)"
+    },
+    {
+      "name": "N. Vucevic",
+      "status": "DOUBT",
+      "details": "N. Vucevic (Doubt)"
     },
     {
       "name": "C. Boucher",
@@ -463,9 +463,14 @@
       "details": "D. Garland (Out)"
     },
     {
-      "name": "Chris Paul",
+      "name": "T. Washington",
       "status": "OUT",
-      "details": "Chris Paul (Out)"
+      "details": "T. Washington (Out)"
+    },
+    {
+      "name": "I. Zubac",
+      "status": "OUT",
+      "details": "I. Zubac (Out)"
     }
   ],
   "LAC": [
@@ -480,9 +485,14 @@
       "details": "D. Garland (Out)"
     },
     {
-      "name": "Chris Paul",
+      "name": "T. Washington",
       "status": "OUT",
-      "details": "Chris Paul (Out)"
+      "details": "T. Washington (Out)"
+    },
+    {
+      "name": "I. Zubac",
+      "status": "OUT",
+      "details": "I. Zubac (Out)"
     }
   ]
 }
