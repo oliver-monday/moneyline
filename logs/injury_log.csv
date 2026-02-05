@@ -4638,6 +4638,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,SAS,M. Branham,DOUBT,M. Branham (Doubt),rotowire
 2026-02-05,DAL,M. Branham,DOUBT,M. Branham (Doubt),rotowire
 2026-02-05,GSW,L. Cryer,QUES,L. Cryer (Ques),rotowire
+2026-02-05,UTA,N. Dante,OFS,N. Dante (OFS),rotowire
+2026-02-05,ATL,N. Dante,OFS,N. Dante (OFS),rotowire
+2026-02-05,CHA,C. White,DOUBT,C. White (Doubt),rotowire
 2026-02-05,WAS,Dante Exum,OFS,Dante Exum (OFS),rotowire
 2026-02-05,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
 2026-02-05,WAS,J. Hardy,DOUBT,J. Hardy (Doubt),rotowire
@@ -4671,11 +4674,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,UTA,J. Konchar,OUT,J. Konchar (Out),rotowire
 2026-02-05,UTA,V. Williams,OUT,V. Williams (Out),rotowire
 2026-02-05,UTA,O. Okongwu,QUES,O. Okongwu (Ques),rotowire
-2026-02-05,UTA,N. Dante,OFS,N. Dante (OFS),rotowire
 2026-02-05,UTA,B. Hield,OUT,B. Hield (Out),rotowire
 2026-02-05,UTA,J. Kuminga,OUT,J. Kuminga (Out),rotowire
 2026-02-05,UTA,G. Vincent,OUT,G. Vincent (Out),rotowire
-2026-02-05,ATL,N. Dante,OFS,N. Dante (OFS),rotowire
 2026-02-05,ATL,O. Okongwu,QUES,O. Okongwu (Ques),rotowire
 2026-02-05,ATL,B. Hield,OUT,B. Hield (Out),rotowire
 2026-02-05,ATL,J. Kuminga,OUT,J. Kuminga (Out),rotowire
@@ -4702,9 +4703,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,TOR,Chris Paul,OUT,Chris Paul (Out),rotowire
 2026-02-05,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
 2026-02-05,CHA,T. Salaun,QUES,T. Salaun (Ques),rotowire
-2026-02-05,CHA,C. White,DOUBT,C. White (Doubt),rotowire
 2026-02-05,CHA,M. Branham,OUT,M. Branham (Out),rotowire
 2026-02-05,CHA,KJ Simpson,OUT,KJ Simpson (Out),rotowire
+2026-02-05,CHA,Coby White,OUT,Coby White (Out),rotowire
 2026-02-05,CHA,T. Eason,QUES,T. Eason (Ques),rotowire
 2026-02-05,CHA,S. Adams,OFS,S. Adams (OFS),rotowire
 2026-02-05,CHA,J. Tate,OUT,J. Tate (Out),rotowire

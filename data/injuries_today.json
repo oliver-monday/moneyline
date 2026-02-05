@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-05",
-  "built_at_utc": "2026-02-05T20:31:53Z",
+  "built_at_utc": "2026-02-05T21:17:29Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -187,11 +187,6 @@
       "details": "O. Okongwu (Ques)"
     },
     {
-      "name": "N. Dante",
-      "status": "OFS",
-      "details": "N. Dante (OFS)"
-    },
-    {
       "name": "B. Hield",
       "status": "OUT",
       "details": "B. Hield (Out)"
@@ -208,11 +203,6 @@
     }
   ],
   "ATL": [
-    {
-      "name": "N. Dante",
-      "status": "OFS",
-      "details": "N. Dante (OFS)"
-    },
     {
       "name": "O. Okongwu",
       "status": "QUES",
@@ -350,11 +340,6 @@
       "details": "T. Salaun (Ques)"
     },
     {
-      "name": "C. White",
-      "status": "DOUBT",
-      "details": "C. White (Doubt)"
-    },
-    {
       "name": "M. Branham",
       "status": "OUT",
       "details": "M. Branham (Out)"
@@ -363,6 +348,11 @@
       "name": "KJ Simpson",
       "status": "OUT",
       "details": "KJ Simpson (Out)"
+    },
+    {
+      "name": "Coby White",
+      "status": "OUT",
+      "details": "Coby White (Out)"
     },
     {
       "name": "T. Eason",
