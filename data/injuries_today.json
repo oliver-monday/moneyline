@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-02-04",
-  "built_at_utc": "2026-02-05T01:13:18Z",
+  "built_at_utc": "2026-02-05T03:27:10Z",
   "source": "rotowire",
   "DEN": [
     {
       "name": "S. Jones",
       "status": "QUES",
       "details": "S. Jones (Ques)"
+    },
+    {
+      "name": "P. Watson",
+      "status": "QUES",
+      "details": "P. Watson (Ques)"
     },
     {
       "name": "T. Bates",
@@ -265,24 +270,19 @@
       "details": "J. Williams (Out)"
     },
     {
-      "name": "S. Castle",
-      "status": "PROB",
-      "details": "S. Castle (Prob)"
-    },
-    {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "K. Olynyk",
-      "status": "QUES",
-      "details": "K. Olynyk (Ques)"
-    },
-    {
       "name": "D. Harper",
       "status": "OUT",
       "details": "D. Harper (Out)"
+    },
+    {
+      "name": "K. Olynyk",
+      "status": "OUT",
+      "details": "K. Olynyk (Out)"
     },
     {
       "name": "J. Sochan",
@@ -302,19 +302,14 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "S. Castle",
-      "status": "PROB",
-      "details": "S. Castle (Prob)"
-    },
-    {
-      "name": "K. Olynyk",
-      "status": "QUES",
-      "details": "K. Olynyk (Ques)"
-    },
-    {
       "name": "D. Harper",
       "status": "OUT",
       "details": "D. Harper (Out)"
+    },
+    {
+      "name": "K. Olynyk",
+      "status": "OUT",
+      "details": "K. Olynyk (Out)"
     },
     {
       "name": "J. Sochan",
@@ -328,16 +323,6 @@
     }
   ],
   "MEM": [
-    {
-      "name": "S. Aldama",
-      "status": "QUES",
-      "details": "S. Aldama (Ques)"
-    },
-    {
-      "name": "S. Pippen",
-      "status": "DOUBT",
-      "details": "S. Pippen (Doubt)"
-    },
     {
       "name": "K. Anderson",
       "status": "OUT",
@@ -374,9 +359,9 @@
       "details": "G. Niang (Out)"
     },
     {
-      "name": "D. Sabonis",
-      "status": "QUES",
-      "details": "D. Sabonis (Ques)"
+      "name": "S. Pippen",
+      "status": "OUT",
+      "details": "S. Pippen (Out)"
     },
     {
       "name": "K. Murray",
@@ -385,11 +370,6 @@
     }
   ],
   "SAC": [
-    {
-      "name": "D. Sabonis",
-      "status": "QUES",
-      "details": "D. Sabonis (Ques)"
-    },
     {
       "name": "K. Murray",
       "status": "OUT",
