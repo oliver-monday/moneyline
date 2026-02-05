@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-05",
-  "built_at_utc": "2026-02-05T19:39:30Z",
+  "built_at_utc": "2026-02-05T20:31:53Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -69,11 +69,6 @@
       "details": "T. Harris (Ques)"
     },
     {
-      "name": "D. Jenkins",
-      "status": "OUT",
-      "details": "D. Jenkins (Out)"
-    },
-    {
       "name": "D. Saric",
       "status": "OUT",
       "details": "D. Saric (Out)"
@@ -96,11 +91,6 @@
       "details": "T. Harris (Ques)"
     },
     {
-      "name": "D. Jenkins",
-      "status": "OUT",
-      "details": "D. Jenkins (Out)"
-    },
-    {
       "name": "D. Saric",
       "status": "OUT",
       "details": "D. Saric (Out)"
@@ -121,11 +111,6 @@
       "name": "J. Minott",
       "status": "OUT",
       "details": "J. Minott (Out)"
-    },
-    {
-      "name": "Cam Thomas",
-      "status": "OUT",
-      "details": "Cam Thomas (Out)"
     },
     {
       "name": "H. Tyson",
@@ -170,11 +155,6 @@
       "name": "Lonzo Ball",
       "status": "OUT",
       "details": "Lonzo Ball (Out)"
-    },
-    {
-      "name": "C. Boucher",
-      "status": "OUT",
-      "details": "C. Boucher (Out)"
     },
     {
       "name": "K. George",
@@ -266,11 +246,6 @@
       "details": "J. Ivey (Prob)"
     },
     {
-      "name": "O. Dieng",
-      "status": "QUES",
-      "details": "O. Dieng (Ques)"
-    },
-    {
       "name": "C. Sexton",
       "status": "QUES",
       "details": "C. Sexton (Ques)"
@@ -304,6 +279,11 @@
       "name": "L. Miller",
       "status": "OUT",
       "details": "L. Miller (Out)"
+    },
+    {
+      "name": "N. Richards",
+      "status": "OUT",
+      "details": "N. Richards (Out)"
     },
     {
       "name": "G. Yabusele",
@@ -370,19 +350,14 @@
       "details": "T. Salaun (Ques)"
     },
     {
-      "name": "M. Conley",
-      "status": "DOUBT",
-      "details": "M. Conley (Doubt)"
-    },
-    {
-      "name": "T. Jones",
-      "status": "DOUBT",
-      "details": "T. Jones (Doubt)"
-    },
-    {
       "name": "C. White",
       "status": "DOUBT",
       "details": "C. White (Doubt)"
+    },
+    {
+      "name": "M. Branham",
+      "status": "OUT",
+      "details": "M. Branham (Out)"
     },
     {
       "name": "KJ Simpson",
@@ -484,14 +459,14 @@
       "details": "M. Bagley (Doubt)"
     },
     {
-      "name": "M. Branham",
-      "status": "DOUBT",
-      "details": "M. Branham (Doubt)"
-    },
-    {
       "name": "A. Johnson",
       "status": "DOUBT",
       "details": "A. Johnson (Doubt)"
+    },
+    {
+      "name": "T. Jones",
+      "status": "DOUBT",
+      "details": "T. Jones (Doubt)"
     },
     {
       "name": "K. Middleton",
@@ -531,14 +506,14 @@
       "details": "M. Bagley (Doubt)"
     },
     {
-      "name": "M. Branham",
-      "status": "DOUBT",
-      "details": "M. Branham (Doubt)"
-    },
-    {
       "name": "A. Johnson",
       "status": "DOUBT",
       "details": "A. Johnson (Doubt)"
+    },
+    {
+      "name": "T. Jones",
+      "status": "DOUBT",
+      "details": "T. Jones (Doubt)"
     },
     {
       "name": "K. Middleton",
@@ -607,14 +582,14 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "L. Cryer",
-      "status": "QUES",
-      "details": "L. Cryer (Ques)"
-    },
-    {
       "name": "D. Melton",
       "status": "QUES",
       "details": "D. Melton (Ques)"
+    },
+    {
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
     },
     {
       "name": "S. Curry",
@@ -632,11 +607,6 @@
       "details": "K. Porzingis (Out)"
     },
     {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
-    {
       "name": "C. Anthony",
       "status": "OUT",
       "details": "C. Anthony (Out)"
@@ -650,15 +620,15 @@
       "name": "A. Coffey",
       "status": "OUT",
       "details": "A. Coffey (Out)"
+    },
+    {
+      "name": "J. Green",
+      "status": "OUT",
+      "details": "J. Green (Out)"
     }
   ],
   "PHX": [
     {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
-    {
       "name": "C. Anthony",
       "status": "OUT",
       "details": "C. Anthony (Out)"
@@ -672,6 +642,11 @@
       "name": "A. Coffey",
       "status": "OUT",
       "details": "A. Coffey (Out)"
+    },
+    {
+      "name": "J. Green",
+      "status": "OUT",
+      "details": "J. Green (Out)"
     }
   ]
 }
