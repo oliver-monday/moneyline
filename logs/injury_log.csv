@@ -4663,7 +4663,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,ATL,O. Okongwu,QUES,O. Okongwu (Ques),rotowire
 2026-02-05,ATL,B. Hield,OUT,B. Hield (Out),rotowire
 2026-02-05,ATL,J. Kuminga,OUT,J. Kuminga (Out),rotowire
-2026-02-05,CHI,A. Dosunmu,QUES,A. Dosunmu (Ques),rotowire
 2026-02-05,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
 2026-02-05,CHI,O. Dieng,QUES,O. Dieng (Ques),rotowire
 2026-02-05,CHI,J. Ivey,QUES,J. Ivey (Ques),rotowire
@@ -4674,6 +4673,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,CHI,Z. Collins,OUT,Z. Collins (Out),rotowire
 2026-02-05,CHI,J. Giddey,OUT,J. Giddey (Out),rotowire
 2026-02-05,CHI,G. Yabusele,OUT,G. Yabusele (Out),rotowire
+2026-02-05,CHI,A. Dosunmu,QUES,A. Dosunmu (Ques),rotowire
 2026-02-05,CHI,T. Jackson-Davis,QUES,T. Jackson-Davis (Ques),rotowire
 2026-02-05,CHI,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-05,CHI,Chris Paul,OUT,Chris Paul (Out),rotowire

@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-05",
-  "built_at_utc": "2026-02-05T09:05:58Z",
+  "built_at_utc": "2026-02-05T15:08:49Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -266,11 +266,6 @@
   ],
   "CHI": [
     {
-      "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
-    },
-    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
@@ -319,6 +314,11 @@
       "name": "G. Yabusele",
       "status": "OUT",
       "details": "G. Yabusele (Out)"
+    },
+    {
+      "name": "A. Dosunmu",
+      "status": "QUES",
+      "details": "A. Dosunmu (Ques)"
     },
     {
       "name": "T. Jackson-Davis",
