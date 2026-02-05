@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-05",
-  "built_at_utc": "2026-02-05T17:38:43Z",
+  "built_at_utc": "2026-02-05T18:44:09Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -114,8 +114,8 @@
   "BKN": [
     {
       "name": "O. Agbaji",
-      "status": "DOUBT",
-      "details": "O. Agbaji (Doubt)"
+      "status": "OUT",
+      "details": "O. Agbaji (Out)"
     },
     {
       "name": "Cam Thomas",
@@ -212,11 +212,6 @@
       "details": "J. Kuminga (Out)"
     },
     {
-      "name": "J. Landale",
-      "status": "OUT",
-      "details": "J. Landale (Out)"
-    },
-    {
       "name": "G. Vincent",
       "status": "OUT",
       "details": "G. Vincent (Out)"
@@ -244,11 +239,6 @@
       "details": "J. Kuminga (Out)"
     },
     {
-      "name": "J. Landale",
-      "status": "OUT",
-      "details": "J. Landale (Out)"
-    },
-    {
       "name": "G. Vincent",
       "status": "OUT",
       "details": "G. Vincent (Out)"
@@ -259,11 +249,6 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "A. Simons",
-      "status": "DOUBT",
-      "details": "A. Simons (Doubt)"
     },
     {
       "name": "J. Ivey",
@@ -279,6 +264,11 @@
       "name": "C. Sexton",
       "status": "QUES",
       "details": "C. Sexton (Ques)"
+    },
+    {
+      "name": "A. Simons",
+      "status": "DOUBT",
+      "details": "A. Simons (Doubt)"
     },
     {
       "name": "Z. Collins",
@@ -390,19 +380,19 @@
       "details": "KJ Simpson (Out)"
     },
     {
-      "name": "S. Adams",
-      "status": "OFS",
-      "details": "S. Adams (OFS)"
-    },
-    {
       "name": "T. Eason",
       "status": "QUES",
       "details": "T. Eason (Ques)"
     },
     {
-      "name": "D. Finney-Smith",
-      "status": "QUES",
-      "details": "D. Finney-Smith (Ques)"
+      "name": "S. Adams",
+      "status": "OFS",
+      "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "J. Tate",
+      "status": "OUT",
+      "details": "J. Tate (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -422,9 +412,9 @@
       "details": "T. Eason (Ques)"
     },
     {
-      "name": "D. Finney-Smith",
-      "status": "QUES",
-      "details": "D. Finney-Smith (Ques)"
+      "name": "J. Tate",
+      "status": "OUT",
+      "details": "J. Tate (Out)"
     },
     {
       "name": "F. VanVleet",

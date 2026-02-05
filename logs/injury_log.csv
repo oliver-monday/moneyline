@@ -4624,6 +4624,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,CHI,T. Jones,QUES,T. Jones (Ques),rotowire
 2026-02-05,CHI,J. Phillips,QUES,J. Phillips (Ques),rotowire
 2026-02-05,CHI,A. Dosunmu,QUES,A. Dosunmu (Ques),rotowire
+2026-02-05,UTA,J. Landale,OUT,J. Landale (Out),rotowire
+2026-02-05,ATL,J. Landale,OUT,J. Landale (Out),rotowire
+2026-02-05,CHA,D. Finney-Smith,QUES,D. Finney-Smith (Ques),rotowire
+2026-02-05,HOU,D. Finney-Smith,QUES,D. Finney-Smith (Ques),rotowire
 2026-02-05,WAS,Dante Exum,OFS,Dante Exum (OFS),rotowire
 2026-02-05,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
 2026-02-05,WAS,J. Hardy,DOUBT,J. Hardy (Doubt),rotowire
@@ -4643,7 +4647,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,DET,D. Jenkins,OUT,D. Jenkins (Out),rotowire
 2026-02-05,DET,D. Saric,OUT,D. Saric (Out),rotowire
 2026-02-05,DET,Tolu Smith,OUT,Tolu Smith (Out),rotowire
-2026-02-05,BKN,O. Agbaji,DOUBT,O. Agbaji (Doubt),rotowire
+2026-02-05,BKN,O. Agbaji,OUT,O. Agbaji (Out),rotowire
 2026-02-05,BKN,Cam Thomas,OUT,Cam Thomas (Out),rotowire
 2026-02-05,BKN,C. Castleton,OUT,C. Castleton (Out),rotowire
 2026-02-05,BKN,F. Wagner,OUT,F. Wagner (Out),rotowire
@@ -4662,19 +4666,17 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,UTA,N. Dante,OFS,N. Dante (OFS),rotowire
 2026-02-05,UTA,B. Hield,OUT,B. Hield (Out),rotowire
 2026-02-05,UTA,J. Kuminga,OUT,J. Kuminga (Out),rotowire
-2026-02-05,UTA,J. Landale,OUT,J. Landale (Out),rotowire
 2026-02-05,UTA,G. Vincent,OUT,G. Vincent (Out),rotowire
 2026-02-05,ATL,N. Dante,OFS,N. Dante (OFS),rotowire
 2026-02-05,ATL,O. Okongwu,QUES,O. Okongwu (Ques),rotowire
 2026-02-05,ATL,B. Hield,OUT,B. Hield (Out),rotowire
 2026-02-05,ATL,J. Kuminga,OUT,J. Kuminga (Out),rotowire
-2026-02-05,ATL,J. Landale,OUT,J. Landale (Out),rotowire
 2026-02-05,ATL,G. Vincent,OUT,G. Vincent (Out),rotowire
 2026-02-05,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
-2026-02-05,CHI,A. Simons,DOUBT,A. Simons (Doubt),rotowire
 2026-02-05,CHI,J. Ivey,PROB,J. Ivey (Prob),rotowire
 2026-02-05,CHI,O. Dieng,QUES,O. Dieng (Ques),rotowire
 2026-02-05,CHI,C. Sexton,QUES,C. Sexton (Ques),rotowire
+2026-02-05,CHI,A. Simons,DOUBT,A. Simons (Doubt),rotowire
 2026-02-05,CHI,Z. Collins,OUT,Z. Collins (Out),rotowire
 2026-02-05,CHI,R. Dillingham,OUT,R. Dillingham (Out),rotowire
 2026-02-05,CHI,J. Giddey,OUT,J. Giddey (Out),rotowire
@@ -4696,13 +4698,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,CHA,T. Jones,DOUBT,T. Jones (Doubt),rotowire
 2026-02-05,CHA,C. White,DOUBT,C. White (Doubt),rotowire
 2026-02-05,CHA,KJ Simpson,OUT,KJ Simpson (Out),rotowire
-2026-02-05,CHA,S. Adams,OFS,S. Adams (OFS),rotowire
 2026-02-05,CHA,T. Eason,QUES,T. Eason (Ques),rotowire
-2026-02-05,CHA,D. Finney-Smith,QUES,D. Finney-Smith (Ques),rotowire
+2026-02-05,CHA,S. Adams,OFS,S. Adams (OFS),rotowire
+2026-02-05,CHA,J. Tate,OUT,J. Tate (Out),rotowire
 2026-02-05,CHA,F. VanVleet,OUT,F. VanVleet (Out),rotowire
 2026-02-05,HOU,S. Adams,OFS,S. Adams (OFS),rotowire
 2026-02-05,HOU,T. Eason,QUES,T. Eason (Ques),rotowire
-2026-02-05,HOU,D. Finney-Smith,QUES,D. Finney-Smith (Ques),rotowire
+2026-02-05,HOU,J. Tate,OUT,J. Tate (Out),rotowire
 2026-02-05,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
 2026-02-05,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-02-05,SAS,D. Harper,QUES,D. Harper (Ques),rotowire
