@@ -1,8 +1,13 @@
 {
   "asof_date": "2026-02-04",
-  "built_at_utc": "2026-02-04T23:31:05Z",
+  "built_at_utc": "2026-02-05T01:13:18Z",
   "source": "rotowire",
   "DEN": [
+    {
+      "name": "S. Jones",
+      "status": "QUES",
+      "details": "S. Jones (Ques)"
+    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -39,11 +44,6 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "K. McCullar",
-      "status": "QUES",
-      "details": "K. McCullar (Ques)"
-    },
-    {
       "name": "Josh Hart",
       "status": "OUT",
       "details": "Josh Hart (Out)"
@@ -55,11 +55,6 @@
     }
   ],
   "NYK": [
-    {
-      "name": "K. McCullar",
-      "status": "QUES",
-      "details": "K. McCullar (Ques)"
-    },
     {
       "name": "Josh Hart",
       "status": "OUT",
@@ -112,19 +107,14 @@
   ],
   "BOS": [
     {
-      "name": "J. Brown",
-      "status": "DOUBT",
-      "details": "J. Brown (Doubt)"
-    },
-    {
-      "name": "N. Vucevic",
-      "status": "DOUBT",
-      "details": "N. Vucevic (Doubt)"
-    },
-    {
       "name": "C. Boucher",
       "status": "OUT",
       "details": "C. Boucher (Out)"
+    },
+    {
+      "name": "J. Brown",
+      "status": "OUT",
+      "details": "J. Brown (Out)"
     },
     {
       "name": "Sam Hauser",
@@ -135,6 +125,11 @@
       "name": "J. Tatum",
       "status": "OUT",
       "details": "J. Tatum (Out)"
+    },
+    {
+      "name": "N. Vucevic",
+      "status": "OUT",
+      "details": "N. Vucevic (Out)"
     },
     {
       "name": "S. Adams",
@@ -176,16 +171,6 @@
       "details": "D. Murray (Out)"
     },
     {
-      "name": "M. Turner",
-      "status": "PROB",
-      "details": "M. Turner (Prob)"
-    },
-    {
-      "name": "C. Anthony",
-      "status": "PROB",
-      "details": "C. Anthony (Prob)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -207,16 +192,6 @@
     }
   ],
   "MIL": [
-    {
-      "name": "C. Anthony",
-      "status": "PROB",
-      "details": "C. Anthony (Prob)"
-    },
-    {
-      "name": "M. Turner",
-      "status": "PROB",
-      "details": "M. Turner (Prob)"
-    },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
@@ -291,8 +266,8 @@
     },
     {
       "name": "S. Castle",
-      "status": "QUES",
-      "details": "S. Castle (Ques)"
+      "status": "PROB",
+      "details": "S. Castle (Prob)"
     },
     {
       "name": "D. Jones Garcia",
@@ -300,14 +275,14 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "D. Harper",
-      "status": "QUES",
-      "details": "D. Harper (Ques)"
-    },
-    {
       "name": "K. Olynyk",
       "status": "QUES",
       "details": "K. Olynyk (Ques)"
+    },
+    {
+      "name": "D. Harper",
+      "status": "OUT",
+      "details": "D. Harper (Out)"
     },
     {
       "name": "J. Sochan",
@@ -328,18 +303,18 @@
     },
     {
       "name": "S. Castle",
-      "status": "QUES",
-      "details": "S. Castle (Ques)"
-    },
-    {
-      "name": "D. Harper",
-      "status": "QUES",
-      "details": "D. Harper (Ques)"
+      "status": "PROB",
+      "details": "S. Castle (Prob)"
     },
     {
       "name": "K. Olynyk",
       "status": "QUES",
       "details": "K. Olynyk (Ques)"
+    },
+    {
+      "name": "D. Harper",
+      "status": "OUT",
+      "details": "D. Harper (Out)"
     },
     {
       "name": "J. Sochan",
