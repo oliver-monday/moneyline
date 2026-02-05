@@ -1,0 +1,14 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-04,2026,James Harden,LAC,CLE,reb,4,,,,targets_snapshot_2026-02-04.json
+2026-02-04,2026,James Harden,LAC,CLE,ast,8,,,,targets_snapshot_2026-02-04.json
+2026-02-04,2026,Cameron Johnson,DEN,NY,ast,2,,,,targets_snapshot_2026-02-04.json
+2026-02-04,2026,Jaden McDaniels,MIN,TOR,ast,2,HIT,4,,targets_snapshot_2026-02-04.json
+2026-02-04,2026,Shai Gilgeous-Alexander,OKC,SA,reb,4,,,,targets_snapshot_2026-02-04.json
+2026-02-04,2026,Stephon Castle,SA,OKC,3pt,1,MISSED,0,,targets_snapshot_2026-02-04.json
+2026-02-04,2026,De'Aaron Fox,SA,OKC,3pt,2,MISSED,0,,targets_snapshot_2026-02-04.json
+2026-02-04,2026,OG Anunoby,NY,DEN,pts,15,HIT,20,,targets_snapshot_2026-02-04.json
+2026-02-04,2026,OG Anunoby,NY,DEN,ast,2,HIT,4,,targets_snapshot_2026-02-04.json
+2026-02-04,2026,Russell Westbrook,SAC,MEM,3pt,2,HIT,3,,targets_snapshot_2026-02-04.json
+2026-02-04,2026,Donte DiVincenzo,MIN,TOR,3pt,3,HIT,5,,targets_snapshot_2026-02-04.json
+2026-02-04,2026,Saddiq Bey,NO,MIL,ast,2,HIT,2,,targets_snapshot_2026-02-04.json
+2026-02-04,2026,Zion Williamson,NO,MIL,reb,6,MISSED,5,,targets_snapshot_2026-02-04.json
