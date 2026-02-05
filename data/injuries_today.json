@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-05",
-  "built_at_utc": "2026-02-05T18:44:09Z",
+  "built_at_utc": "2026-02-05T19:39:30Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -118,9 +118,19 @@
       "details": "O. Agbaji (Out)"
     },
     {
+      "name": "J. Minott",
+      "status": "OUT",
+      "details": "J. Minott (Out)"
+    },
+    {
       "name": "Cam Thomas",
       "status": "OUT",
       "details": "Cam Thomas (Out)"
+    },
+    {
+      "name": "H. Tyson",
+      "status": "OUT",
+      "details": "H. Tyson (Out)"
     },
     {
       "name": "C. Castleton",
@@ -439,14 +449,19 @@
       "details": "K. Olynyk (Ques)"
     },
     {
+      "name": "L. Kornet",
+      "status": "OUT",
+      "details": "L. Kornet (Out)"
+    },
+    {
       "name": "J. Sochan",
-      "status": "QUES",
-      "details": "J. Sochan (Ques)"
+      "status": "OUT",
+      "details": "J. Sochan (Out)"
     },
     {
       "name": "L. Waters",
-      "status": "QUES",
-      "details": "L. Waters (Ques)"
+      "status": "OUT",
+      "details": "L. Waters (Out)"
     },
     {
       "name": "D. Gafford",
@@ -595,6 +610,11 @@
       "name": "L. Cryer",
       "status": "QUES",
       "details": "L. Cryer (Ques)"
+    },
+    {
+      "name": "D. Melton",
+      "status": "QUES",
+      "details": "D. Melton (Ques)"
     },
     {
       "name": "S. Curry",
