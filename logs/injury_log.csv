@@ -4659,6 +4659,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,DET,D. Saric,OUT,D. Saric (Out),rotowire
 2026-02-05,DET,Tolu Smith,OUT,Tolu Smith (Out),rotowire
 2026-02-05,BKN,O. Agbaji,OUT,O. Agbaji (Out),rotowire
+2026-02-05,BKN,T. Martin,OUT,T. Martin (Out),rotowire
 2026-02-05,BKN,J. Minott,OUT,J. Minott (Out),rotowire
 2026-02-05,BKN,H. Tyson,OUT,H. Tyson (Out),rotowire
 2026-02-05,BKN,C. Castleton,OUT,C. Castleton (Out),rotowire
@@ -4705,6 +4706,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,CHA,T. Salaun,QUES,T. Salaun (Ques),rotowire
 2026-02-05,CHA,M. Branham,OUT,M. Branham (Out),rotowire
 2026-02-05,CHA,KJ Simpson,OUT,KJ Simpson (Out),rotowire
+2026-02-05,CHA,X. Tillman,OUT,X. Tillman (Out),rotowire
 2026-02-05,CHA,Coby White,OUT,Coby White (Out),rotowire
 2026-02-05,CHA,T. Eason,QUES,T. Eason (Ques),rotowire
 2026-02-05,CHA,S. Adams,OFS,S. Adams (OFS),rotowire
@@ -4738,6 +4740,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,DAL,K. Middleton,DOUBT,K. Middleton (Doubt),rotowire
 2026-02-05,DAL,K. Irving,OUT,K. Irving (Out),rotowire
 2026-02-05,DAL,P. Washington,OUT,P. Washington (Out),rotowire
+2026-02-05,PHI,D. Barlow,QUES,D. Barlow (Ques),rotowire
 2026-02-05,PHI,J. Embiid,QUES,J. Embiid (Ques),rotowire
 2026-02-05,PHI,P. George,OUT,P. George (Out),rotowire
 2026-02-05,PHI,J. Hayes,OUT,J. Hayes (Out),rotowire

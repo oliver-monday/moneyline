@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-05",
-  "built_at_utc": "2026-02-05T21:17:29Z",
+  "built_at_utc": "2026-02-05T22:34:45Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -106,6 +106,11 @@
       "name": "O. Agbaji",
       "status": "OUT",
       "details": "O. Agbaji (Out)"
+    },
+    {
+      "name": "T. Martin",
+      "status": "OUT",
+      "details": "T. Martin (Out)"
     },
     {
       "name": "J. Minott",
@@ -350,6 +355,11 @@
       "details": "KJ Simpson (Out)"
     },
     {
+      "name": "X. Tillman",
+      "status": "OUT",
+      "details": "X. Tillman (Out)"
+    },
+    {
       "name": "Coby White",
       "status": "OUT",
       "details": "Coby White (Out)"
@@ -522,6 +532,11 @@
     }
   ],
   "PHI": [
+    {
+      "name": "D. Barlow",
+      "status": "QUES",
+      "details": "D. Barlow (Ques)"
+    },
     {
       "name": "J. Embiid",
       "status": "QUES",
