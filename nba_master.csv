@@ -765,10 +765,10 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810586,2026-02-04,2026-02-05T03:00Z,Sacramento Kings,SAC,125,-115.0,,Memphis Grizzlies,MEM,129,-105.0,,Sacramento,CA,,
 401810587,2026-02-04,2026-02-05T03:30Z,LA Clippers,LAC,91,110.0,,Cleveland Cavaliers,CLE,124,-130.0,,Inglewood,CA,,
 401810588,2026-02-05,2026-02-06T00:00Z,Detroit Pistons,DET,0,-800.0,,Washington Wizards,WSH,0,550.0,,Detroit,MI,D. Jenkins (Out); D. Saric (Out); Tolu Smith (Out),Dante Exum (OFS); C. Whitmore (OFS); A. Davis (Out); T. Johnson (Out); Trae Young (Out)
-401810589,2026-02-05,2026-02-06T00:00Z,Orlando Magic,ORL,0,-500.0,,Brooklyn Nets,BKN,0,380.0,,Orlando,FL,C. Castleton (Out); F. Wagner (Out),H. Highsmith (Out); Cam Thomas (Out)
-401810590,2026-02-05,2026-02-06T00:30Z,Atlanta Hawks,ATL,0,-395.0,,Utah Jazz,UTAH,0,310.0,,Atlanta,GA,N. Dante (OFS); Duop Reath (OFS); B. Hield (Out); J. Kuminga (Out),W. Kessler (OFS); K. George (Out); E. Harkless (Out); J. Jackson (Out); J. Konchar (Out); V. Williams (Out)
+401810589,2026-02-05,2026-02-06T00:00Z,Orlando Magic,ORL,0,-455.0,,Brooklyn Nets,BKN,0,350.0,,Orlando,FL,C. Castleton (Out); F. Wagner (Out),H. Highsmith (Out); Cam Thomas (Out)
+401810590,2026-02-05,2026-02-06T00:30Z,Atlanta Hawks,ATL,0,-375.0,,Utah Jazz,UTAH,0,295.0,,Atlanta,GA,N. Dante (OFS); Duop Reath (OFS); B. Hield (Out); J. Kuminga (Out),W. Kessler (OFS); K. George (Out); E. Harkless (Out); J. Jackson (Out); J. Konchar (Out); V. Williams (Out)
 401810591,2026-02-05,2026-02-06T00:30Z,Toronto Raptors,TOR,0,-340.0,,Chicago Bulls,CHI,0,270.0,,Toronto,ON,C. Hepburn (Out); Chris Paul (Out); J. Poeltl (Out),N. Essengue (OFS); Z. Collins (Out); J. Giddey (Out); G. Yabusele (Out)
-401810592,2026-02-05,2026-02-06T01:00Z,Houston Rockets,HOU,0,-155.0,,Charlotte Hornets,CHA,0,130.0,,Houston,TX,S. Adams (OFS); D. Finney-Smith (Out); F. VanVleet (Out),KJ Simpson (Out)
-401810593,2026-02-05,2026-02-06T01:30Z,Dallas Mavericks,DAL,0,225.0,,San Antonio Spurs,SA,0,-278.0,,Dallas,TX,D. Lively (OFS); K. Irving (Out); P. Washington (Out),D. Jones Garcia (OFS); D. Harper (Out); K. Olynyk (Out); J. Sochan (Out); L. Waters (Out)
-401810594,2026-02-05,2026-02-06T03:00Z,Phoenix Suns,PHX,0,-258.0,,Golden State Warriors,GS,0,210.0,,Phoenix,AZ,,J. Butler (OFS); S. Curry (Out); Seth Curry (Out)
-401810595,2026-02-05,2026-02-06T03:00Z,Los Angeles Lakers,LAL,0,-170.0,,Philadelphia 76ers,PHI,0,142.0,,Los Angeles,CA,A. Thiero (Out),P. George (Out)
+401810592,2026-02-05,2026-02-06T01:00Z,Houston Rockets,HOU,0,-148.0,,Charlotte Hornets,CHA,0,124.0,,Houston,TX,S. Adams (OFS); D. Finney-Smith (Out); F. VanVleet (Out),KJ Simpson (Out)
+401810593,2026-02-05,2026-02-06T01:30Z,Dallas Mavericks,DAL,0,215.0,,San Antonio Spurs,SA,0,-265.0,,Dallas,TX,D. Lively (OFS); K. Irving (Out); P. Washington (Out),D. Jones Garcia (OFS); D. Harper (Out); K. Olynyk (Out); J. Sochan (Out); L. Waters (Out)
+401810594,2026-02-05,2026-02-06T03:00Z,Phoenix Suns,PHX,0,-238.0,,Golden State Warriors,GS,0,195.0,,Phoenix,AZ,,J. Butler (OFS); S. Curry (Out); Seth Curry (Out)
+401810595,2026-02-05,2026-02-06T03:00Z,Los Angeles Lakers,LAL,0,-175.0,,Philadelphia 76ers,PHI,0,145.0,,Los Angeles,CA,A. Thiero (Out),P. George (Out)
