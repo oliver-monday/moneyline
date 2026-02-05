@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-05",
-  "built_at_utc": "2026-02-05T22:34:45Z",
+  "built_at_utc": "2026-02-05T23:26:32Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -152,16 +152,6 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "K. Love",
-      "status": "QUES",
-      "details": "K. Love (Ques)"
-    },
-    {
-      "name": "Lonzo Ball",
-      "status": "OUT",
-      "details": "Lonzo Ball (Out)"
-    },
-    {
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
@@ -182,14 +172,14 @@
       "details": "J. Konchar (Out)"
     },
     {
+      "name": "Kevin Love",
+      "status": "OUT",
+      "details": "Kevin Love (Out)"
+    },
+    {
       "name": "V. Williams",
       "status": "OUT",
       "details": "V. Williams (Out)"
-    },
-    {
-      "name": "O. Okongwu",
-      "status": "QUES",
-      "details": "O. Okongwu (Ques)"
     },
     {
       "name": "B. Hield",
@@ -200,6 +190,11 @@
       "name": "J. Kuminga",
       "status": "OUT",
       "details": "J. Kuminga (Out)"
+    },
+    {
+      "name": "O. Okongwu",
+      "status": "OUT",
+      "details": "O. Okongwu (Out)"
     },
     {
       "name": "G. Vincent",
@@ -209,11 +204,6 @@
   ],
   "ATL": [
     {
-      "name": "O. Okongwu",
-      "status": "QUES",
-      "details": "O. Okongwu (Ques)"
-    },
-    {
       "name": "B. Hield",
       "status": "OUT",
       "details": "B. Hield (Out)"
@@ -222,6 +212,11 @@
       "name": "J. Kuminga",
       "status": "OUT",
       "details": "J. Kuminga (Out)"
+    },
+    {
+      "name": "O. Okongwu",
+      "status": "OUT",
+      "details": "O. Okongwu (Out)"
     },
     {
       "name": "G. Vincent",
@@ -234,21 +229,6 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "J. Ivey",
-      "status": "PROB",
-      "details": "J. Ivey (Prob)"
-    },
-    {
-      "name": "C. Sexton",
-      "status": "QUES",
-      "details": "C. Sexton (Ques)"
-    },
-    {
-      "name": "A. Simons",
-      "status": "DOUBT",
-      "details": "A. Simons (Doubt)"
     },
     {
       "name": "Z. Collins",
@@ -281,9 +261,9 @@
       "details": "N. Richards (Out)"
     },
     {
-      "name": "G. Yabusele",
+      "name": "C. Sexton",
       "status": "OUT",
-      "details": "G. Yabusele (Out)"
+      "details": "C. Sexton (Out)"
     },
     {
       "name": "RJ Barrett",
