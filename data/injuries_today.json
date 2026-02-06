@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-06",
-  "built_at_utc": "2026-02-06T22:32:24Z",
+  "built_at_utc": "2026-02-06T23:28:36Z",
   "source": "rotowire",
   "MIA": [
     {
@@ -48,19 +48,9 @@
   ],
   "NYK": [
     {
-      "name": "J. Hart",
-      "status": "PROB",
-      "details": "J. Hart (Prob)"
-    },
-    {
       "name": "O. Anunoby",
       "status": "QUES",
       "details": "O. Anunoby (Ques)"
-    },
-    {
-      "name": "K. Towns",
-      "status": "DOUBT",
-      "details": "K. Towns (Doubt)"
     },
     {
       "name": "J. Alvarado",
@@ -71,6 +61,11 @@
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
+    },
+    {
+      "name": "K. Towns",
+      "status": "OUT",
+      "details": "K. Towns (Out)"
     },
     {
       "name": "D. Robinson",
@@ -86,6 +81,11 @@
       "name": "J. Duren",
       "status": "QUES",
       "details": "J. Duren (Ques)"
+    },
+    {
+      "name": "B. Klintman",
+      "status": "OUT",
+      "details": "B. Klintman (Out)"
     },
     {
       "name": "D. Saric",
@@ -113,6 +113,11 @@
       "name": "J. Duren",
       "status": "QUES",
       "details": "J. Duren (Ques)"
+    },
+    {
+      "name": "B. Klintman",
+      "status": "OUT",
+      "details": "B. Klintman (Out)"
     },
     {
       "name": "D. Saric",
@@ -152,11 +157,6 @@
       "details": "I. Zubac (Out)"
     },
     {
-      "name": "B. Portis",
-      "status": "QUES",
-      "details": "B. Portis (Ques)"
-    },
-    {
       "name": "G. Harris",
       "status": "QUES",
       "details": "G. Harris (Ques)"
@@ -184,11 +184,6 @@
       "details": "G. Harris (Ques)"
     },
     {
-      "name": "B. Portis",
-      "status": "QUES",
-      "details": "B. Portis (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -211,11 +206,6 @@
       "details": "D. Murray (Out)"
     },
     {
-      "name": "J. Randle",
-      "status": "QUES",
-      "details": "J. Randle (Ques)"
-    },
-    {
       "name": "A. Dosunmu",
       "status": "OUT",
       "details": "A. Dosunmu (Out)"
@@ -232,11 +222,6 @@
     }
   ],
   "MIN": [
-    {
-      "name": "J. Randle",
-      "status": "QUES",
-      "details": "J. Randle (Ques)"
-    },
     {
       "name": "A. Dosunmu",
       "status": "OUT",
