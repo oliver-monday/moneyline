@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-06",
-  "built_at_utc": "2026-02-06T18:46:19Z",
+  "built_at_utc": "2026-02-06T19:39:48Z",
   "source": "rotowire",
   "MIA": [
     {
@@ -49,8 +49,8 @@
   "NYK": [
     {
       "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
+      "status": "PROB",
+      "details": "J. Hart (Prob)"
     },
     {
       "name": "O. Anunoby",
@@ -222,13 +222,13 @@
     },
     {
       "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
+      "status": "OUT",
+      "details": "A. Dosunmu (Out)"
     },
     {
       "name": "J. Phillips",
-      "status": "QUES",
-      "details": "J. Phillips (Ques)"
+      "status": "OUT",
+      "details": "J. Phillips (Out)"
     },
     {
       "name": "T. Shannon",
@@ -238,19 +238,19 @@
   ],
   "MIN": [
     {
-      "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
-    },
-    {
-      "name": "J. Phillips",
-      "status": "QUES",
-      "details": "J. Phillips (Ques)"
-    },
-    {
       "name": "J. Randle",
       "status": "QUES",
       "details": "J. Randle (Ques)"
+    },
+    {
+      "name": "A. Dosunmu",
+      "status": "OUT",
+      "details": "A. Dosunmu (Out)"
+    },
+    {
+      "name": "J. Phillips",
+      "status": "OUT",
+      "details": "J. Phillips (Out)"
     },
     {
       "name": "T. Shannon",
@@ -259,6 +259,11 @@
     }
   ],
   "MEM": [
+    {
+      "name": "K. Anderson",
+      "status": "QUES",
+      "details": "K. Anderson (Ques)"
+    },
     {
       "name": "S. Pippen",
       "status": "QUES",

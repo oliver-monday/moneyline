@@ -4776,7 +4776,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-06,BOS,John Tonje,OUT,John Tonje (Out),rotowire
 2026-02-06,NYK,T. Smith,QUES,T. Smith (Ques),rotowire
 2026-02-06,DET,T. Smith,QUES,T. Smith (Ques),rotowire
-2026-02-06,MEM,K. Anderson,QUES,K. Anderson (Ques),rotowire
 2026-02-06,MEM,W. Clayton,QUES,W. Clayton (Ques),rotowire
 2026-02-06,MEM,T. Hendricks,QUES,T. Hendricks (Ques),rotowire
 2026-02-06,IND,O. Dieng,QUES,O. Dieng (Ques),rotowire
@@ -4788,7 +4787,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-06,MIA,Fantasy Football,REST,Fantasy Football (Rest),rotowire
 2026-02-06,MIA,J. Tatum,OUT,J. Tatum (Out),rotowire
 2026-02-06,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
-2026-02-06,NYK,J. Hart,QUES,J. Hart (Ques),rotowire
+2026-02-06,NYK,J. Hart,PROB,J. Hart (Prob),rotowire
 2026-02-06,NYK,O. Anunoby,QUES,O. Anunoby (Ques),rotowire
 2026-02-06,NYK,K. Towns,DOUBT,K. Towns (Doubt),rotowire
 2026-02-06,NYK,J. Alvarado,OUT,J. Alvarado (Out),rotowire
@@ -4821,13 +4820,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-06,NOP,D. Murray,OUT,D. Murray (Out),rotowire
 2026-02-06,NOP,D. Terry,OUT,D. Terry (Out),rotowire
 2026-02-06,NOP,J. Randle,QUES,J. Randle (Ques),rotowire
-2026-02-06,NOP,A. Dosunmu,QUES,A. Dosunmu (Ques),rotowire
-2026-02-06,NOP,J. Phillips,QUES,J. Phillips (Ques),rotowire
+2026-02-06,NOP,A. Dosunmu,OUT,A. Dosunmu (Out),rotowire
+2026-02-06,NOP,J. Phillips,OUT,J. Phillips (Out),rotowire
 2026-02-06,NOP,T. Shannon,OUT,T. Shannon (Out),rotowire
-2026-02-06,MIN,A. Dosunmu,QUES,A. Dosunmu (Ques),rotowire
-2026-02-06,MIN,J. Phillips,QUES,J. Phillips (Ques),rotowire
 2026-02-06,MIN,J. Randle,QUES,J. Randle (Ques),rotowire
+2026-02-06,MIN,A. Dosunmu,OUT,A. Dosunmu (Out),rotowire
+2026-02-06,MIN,J. Phillips,OUT,J. Phillips (Out),rotowire
 2026-02-06,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
+2026-02-06,MEM,K. Anderson,QUES,K. Anderson (Ques),rotowire
 2026-02-06,MEM,S. Pippen,QUES,S. Pippen (Ques),rotowire
 2026-02-06,MEM,S. Aldama,OUT,S. Aldama (Out),rotowire
 2026-02-06,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire
