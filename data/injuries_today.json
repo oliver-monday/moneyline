@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-06",
-  "built_at_utc": "2026-02-06T09:04:21Z",
+  "built_at_utc": "2026-02-06T15:06:30Z",
   "source": "rotowire",
   "MIA": [
     {
@@ -84,8 +84,8 @@
     },
     {
       "name": "T. Harris",
-      "status": "OUT",
-      "details": "T. Harris (Out)"
+      "status": "QUES",
+      "details": "T. Harris (Ques)"
     },
     {
       "name": "J. Duren",
@@ -93,17 +93,22 @@
       "details": "J. Duren (Ques)"
     },
     {
-      "name": "D. Saric",
-      "status": "OUT",
-      "details": "D. Saric (Out)"
+      "name": "T. Smith",
+      "status": "QUES",
+      "details": "T. Smith (Ques)"
     },
     {
-      "name": "Tolu Smith",
-      "status": "OUT",
-      "details": "Tolu Smith (Out)"
+      "name": "D. Saric",
+      "status": "QUES",
+      "details": "D. Saric (Ques)"
     }
   ],
   "DET": [
+    {
+      "name": "T. Smith",
+      "status": "QUES",
+      "details": "T. Smith (Ques)"
+    },
     {
       "name": "J. Duren",
       "status": "QUES",
@@ -111,18 +116,13 @@
     },
     {
       "name": "T. Harris",
-      "status": "OUT",
-      "details": "T. Harris (Out)"
+      "status": "QUES",
+      "details": "T. Harris (Ques)"
     },
     {
       "name": "D. Saric",
-      "status": "OUT",
-      "details": "D. Saric (Out)"
-    },
-    {
-      "name": "Tolu Smith",
-      "status": "OUT",
-      "details": "Tolu Smith (Out)"
+      "status": "QUES",
+      "details": "D. Saric (Ques)"
     }
   ],
   "IND": [
@@ -310,14 +310,14 @@
       "details": "Ja Morant (Out)"
     },
     {
-      "name": "D. Lillard",
-      "status": "OFS",
-      "details": "D. Lillard (OFS)"
-    },
-    {
       "name": "D. Avdija",
       "status": "QUES",
       "details": "D. Avdija (Ques)"
+    },
+    {
+      "name": "D. Lillard",
+      "status": "OFS",
+      "details": "D. Lillard (OFS)"
     },
     {
       "name": "K. Murray",
