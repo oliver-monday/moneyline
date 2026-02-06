@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-06",
-  "built_at_utc": "2026-02-06T19:39:48Z",
+  "built_at_utc": "2026-02-06T20:31:47Z",
   "source": "rotowire",
   "MIA": [
     {
@@ -167,6 +167,11 @@
       "details": "G. Antetokounmpo (Out)"
     },
     {
+      "name": "O. Dieng",
+      "status": "OUT",
+      "details": "O. Dieng (Out)"
+    },
+    {
       "name": "Kyle Kuzma",
       "status": "OUT",
       "details": "Kyle Kuzma (Out)"
@@ -192,6 +197,11 @@
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
+    },
+    {
+      "name": "O. Dieng",
+      "status": "OUT",
+      "details": "O. Dieng (Out)"
     },
     {
       "name": "Kyle Kuzma",
