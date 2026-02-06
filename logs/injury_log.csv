@@ -4779,6 +4779,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-06,MEM,W. Clayton,QUES,W. Clayton (Ques),rotowire
 2026-02-06,MEM,T. Hendricks,QUES,T. Hendricks (Ques),rotowire
 2026-02-06,MEM,E. Gordon,OUT,E. Gordon (Out),rotowire
+2026-02-06,IND,O. Dieng,OUT,O. Dieng (Out),rotowire
+2026-02-06,MIL,O. Dieng,OUT,O. Dieng (Out),rotowire
+2026-02-06,NOP,D. Terry,OUT,D. Terry (Out),rotowire
 2026-02-06,MIA,T. Herro,OUT,T. Herro (Out),rotowire
 2026-02-06,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-02-06,MIA,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
@@ -4808,17 +4811,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-06,IND,B. Portis,QUES,B. Portis (Ques),rotowire
 2026-02-06,IND,G. Harris,QUES,G. Harris (Ques),rotowire
 2026-02-06,IND,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
-2026-02-06,IND,O. Dieng,OUT,O. Dieng (Out),rotowire
 2026-02-06,IND,Kyle Kuzma,OUT,Kyle Kuzma (Out),rotowire
 2026-02-06,IND,T. Prince,OUT,T. Prince (Out),rotowire
 2026-02-06,MIL,G. Harris,QUES,G. Harris (Ques),rotowire
 2026-02-06,MIL,B. Portis,QUES,B. Portis (Ques),rotowire
 2026-02-06,MIL,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
-2026-02-06,MIL,O. Dieng,OUT,O. Dieng (Out),rotowire
 2026-02-06,MIL,Kyle Kuzma,OUT,Kyle Kuzma (Out),rotowire
 2026-02-06,MIL,T. Prince,OUT,T. Prince (Out),rotowire
 2026-02-06,NOP,D. Murray,OUT,D. Murray (Out),rotowire
-2026-02-06,NOP,D. Terry,OUT,D. Terry (Out),rotowire
 2026-02-06,NOP,J. Randle,QUES,J. Randle (Ques),rotowire
 2026-02-06,NOP,A. Dosunmu,OUT,A. Dosunmu (Out),rotowire
 2026-02-06,NOP,J. Phillips,OUT,J. Phillips (Out),rotowire
