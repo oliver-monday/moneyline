@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-05",
-  "built_at_utc": "2026-02-06T01:11:57Z",
+  "built_at_utc": "2026-02-06T03:25:57Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -59,6 +59,11 @@
       "details": "Fantasy Football (Rest)"
     },
     {
+      "name": "J. Duren",
+      "status": "QUES",
+      "details": "J. Duren (Ques)"
+    },
+    {
       "name": "T. Harris",
       "status": "OUT",
       "details": "T. Harris (Out)"
@@ -75,6 +80,11 @@
     }
   ],
   "DET": [
+    {
+      "name": "J. Duren",
+      "status": "QUES",
+      "details": "J. Duren (Ques)"
+    },
     {
       "name": "T. Harris",
       "status": "OUT",
@@ -483,16 +493,6 @@
   ],
   "PHI": [
     {
-      "name": "D. Barlow",
-      "status": "QUES",
-      "details": "D. Barlow (Ques)"
-    },
-    {
-      "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
-    },
-    {
       "name": "P. George",
       "status": "OUT",
       "details": "P. George (Out)"
@@ -535,11 +535,6 @@
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
-    },
-    {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
     },
     {
       "name": "LJ Cryer",

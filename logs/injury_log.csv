@@ -4658,6 +4658,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,DAL,D. Gafford,QUES,D. Gafford (Ques),rotowire
 2026-02-05,DAL,A. Johnson,DOUBT,A. Johnson (Doubt),rotowire
 2026-02-05,DAL,T. Jones,DOUBT,T. Jones (Doubt),rotowire
+2026-02-05,PHI,D. Barlow,QUES,D. Barlow (Ques),rotowire
+2026-02-05,PHI,J. Embiid,QUES,J. Embiid (Ques),rotowire
+2026-02-05,GSW,D. Melton,QUES,D. Melton (Ques),rotowire
 2026-02-05,WAS,Dante Exum,OFS,Dante Exum (OFS),rotowire
 2026-02-05,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
 2026-02-05,WAS,A. Davis,OUT,A. Davis (Out),rotowire
@@ -4667,9 +4670,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,WAS,Trae Young,OUT,Trae Young (Out),rotowire
 2026-02-05,WAS,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-02-05,WAS,Fantasy Football,REST,Fantasy Football (Rest),rotowire
+2026-02-05,WAS,J. Duren,QUES,J. Duren (Ques),rotowire
 2026-02-05,WAS,T. Harris,OUT,T. Harris (Out),rotowire
 2026-02-05,WAS,D. Saric,OUT,D. Saric (Out),rotowire
 2026-02-05,WAS,Tolu Smith,OUT,Tolu Smith (Out),rotowire
+2026-02-05,DET,J. Duren,QUES,J. Duren (Ques),rotowire
 2026-02-05,DET,T. Harris,OUT,T. Harris (Out),rotowire
 2026-02-05,DET,D. Saric,OUT,D. Saric (Out),rotowire
 2026-02-05,DET,Tolu Smith,OUT,Tolu Smith (Out),rotowire
@@ -4747,8 +4752,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,DAL,K. Middleton,OUT,K. Middleton (Out),rotowire
 2026-02-05,DAL,P. Washington,OUT,P. Washington (Out),rotowire
 2026-02-05,DAL,B. Williams,OUT,B. Williams (Out),rotowire
-2026-02-05,PHI,D. Barlow,QUES,D. Barlow (Ques),rotowire
-2026-02-05,PHI,J. Embiid,QUES,J. Embiid (Ques),rotowire
 2026-02-05,PHI,P. George,OUT,P. George (Out),rotowire
 2026-02-05,PHI,J. Hayes,OUT,J. Hayes (Out),rotowire
 2026-02-05,PHI,L. Kennard,OUT,L. Kennard (Out),rotowire
@@ -4757,7 +4760,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-05,LAL,L. Kennard,OUT,L. Kennard (Out),rotowire
 2026-02-05,LAL,A. Thiero,OUT,A. Thiero (Out),rotowire
 2026-02-05,GSW,J. Butler,OFS,J. Butler (OFS),rotowire
-2026-02-05,GSW,D. Melton,QUES,D. Melton (Ques),rotowire
 2026-02-05,GSW,LJ Cryer,OUT,LJ Cryer (Out),rotowire
 2026-02-05,GSW,S. Curry,OUT,S. Curry (Out),rotowire
 2026-02-05,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
