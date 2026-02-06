@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-06",
-  "built_at_utc": "2026-02-06T17:32:47Z",
+  "built_at_utc": "2026-02-06T18:46:19Z",
   "source": "rotowire",
   "MIA": [
     {
@@ -48,24 +48,24 @@
   ],
   "NYK": [
     {
-      "name": "O. Anunoby",
-      "status": "PROB",
-      "details": "O. Anunoby (Prob)"
-    },
-    {
-      "name": "J. Alvarado",
-      "status": "QUES",
-      "details": "J. Alvarado (Ques)"
-    },
-    {
       "name": "J. Hart",
       "status": "QUES",
       "details": "J. Hart (Ques)"
     },
     {
-      "name": "K. Towns",
+      "name": "O. Anunoby",
       "status": "QUES",
-      "details": "K. Towns (Ques)"
+      "details": "O. Anunoby (Ques)"
+    },
+    {
+      "name": "K. Towns",
+      "status": "DOUBT",
+      "details": "K. Towns (Doubt)"
+    },
+    {
+      "name": "J. Alvarado",
+      "status": "OUT",
+      "details": "J. Alvarado (Out)"
     },
     {
       "name": "M. McBride",
@@ -73,9 +73,14 @@
       "details": "M. McBride (Out)"
     },
     {
+      "name": "D. Robinson",
+      "status": "PROB",
+      "details": "D. Robinson (Prob)"
+    },
+    {
       "name": "T. Harris",
-      "status": "QUES",
-      "details": "T. Harris (Ques)"
+      "status": "PROB",
+      "details": "T. Harris (Prob)"
     },
     {
       "name": "J. Duren",
@@ -84,8 +89,8 @@
     },
     {
       "name": "D. Saric",
-      "status": "QUES",
-      "details": "D. Saric (Ques)"
+      "status": "OUT",
+      "details": "D. Saric (Out)"
     },
     {
       "name": "Tolu Smith",
@@ -95,19 +100,24 @@
   ],
   "DET": [
     {
+      "name": "T. Harris",
+      "status": "PROB",
+      "details": "T. Harris (Prob)"
+    },
+    {
+      "name": "D. Robinson",
+      "status": "PROB",
+      "details": "D. Robinson (Prob)"
+    },
+    {
       "name": "J. Duren",
       "status": "QUES",
       "details": "J. Duren (Ques)"
     },
     {
-      "name": "T. Harris",
-      "status": "QUES",
-      "details": "T. Harris (Ques)"
-    },
-    {
       "name": "D. Saric",
-      "status": "QUES",
-      "details": "D. Saric (Ques)"
+      "status": "OUT",
+      "details": "D. Saric (Out)"
     },
     {
       "name": "Tolu Smith",
@@ -147,11 +157,6 @@
       "details": "B. Portis (Ques)"
     },
     {
-      "name": "O. Dieng",
-      "status": "QUES",
-      "details": "O. Dieng (Ques)"
-    },
-    {
       "name": "G. Harris",
       "status": "QUES",
       "details": "G. Harris (Ques)"
@@ -162,17 +167,17 @@
       "details": "G. Antetokounmpo (Out)"
     },
     {
+      "name": "Kyle Kuzma",
+      "status": "OUT",
+      "details": "Kyle Kuzma (Out)"
+    },
+    {
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
     }
   ],
   "MIL": [
-    {
-      "name": "O. Dieng",
-      "status": "QUES",
-      "details": "O. Dieng (Ques)"
-    },
     {
       "name": "G. Harris",
       "status": "QUES",
@@ -189,6 +194,11 @@
       "details": "G. Antetokounmpo (Out)"
     },
     {
+      "name": "Kyle Kuzma",
+      "status": "OUT",
+      "details": "Kyle Kuzma (Out)"
+    },
+    {
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
@@ -196,14 +206,14 @@
   ],
   "NOP": [
     {
-      "name": "D. Terry",
-      "status": "QUES",
-      "details": "D. Terry (Ques)"
-    },
-    {
       "name": "D. Murray",
       "status": "OUT",
       "details": "D. Murray (Out)"
+    },
+    {
+      "name": "D. Terry",
+      "status": "OUT",
+      "details": "D. Terry (Out)"
     },
     {
       "name": "J. Randle",
@@ -268,11 +278,6 @@
       "name": "Zach Edey",
       "status": "OUT",
       "details": "Zach Edey (Out)"
-    },
-    {
-      "name": "E. Gordon",
-      "status": "OUT",
-      "details": "E. Gordon (Out)"
     },
     {
       "name": "Ty Jerome",
