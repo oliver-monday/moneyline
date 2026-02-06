@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-06",
-  "built_at_utc": "2026-02-06T20:31:47Z",
+  "built_at_utc": "2026-02-06T21:18:52Z",
   "source": "rotowire",
   "MIA": [
     {
@@ -315,6 +315,11 @@
       "details": "D. Lillard (OFS)"
     },
     {
+      "name": "B. Wesley",
+      "status": "QUES",
+      "details": "B. Wesley (Ques)"
+    },
+    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
@@ -335,6 +340,11 @@
       "name": "D. Avdija",
       "status": "QUES",
       "details": "D. Avdija (Ques)"
+    },
+    {
+      "name": "B. Wesley",
+      "status": "QUES",
+      "details": "B. Wesley (Ques)"
     },
     {
       "name": "K. Murray",
@@ -369,26 +379,26 @@
       "details": "B. Mathurin (Out)"
     },
     {
-      "name": "D. Sabonis",
-      "status": "QUES",
-      "details": "D. Sabonis (Ques)"
-    },
-    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "D. Sabonis",
+      "status": "OUT",
+      "details": "D. Sabonis (Out)"
     }
   ],
   "SAC": [
     {
-      "name": "D. Sabonis",
-      "status": "QUES",
-      "details": "D. Sabonis (Ques)"
-    },
-    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "D. Sabonis",
+      "status": "OUT",
+      "details": "D. Sabonis (Out)"
     }
   ]
 }
