@@ -764,11 +764,17 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810585,2026-02-04,2026-02-05T02:30Z,San Antonio Spurs,SA,116,100.0,,Oklahoma City Thunder,OKC,106,-120.0,,San Antonio,TX,,
 401810586,2026-02-04,2026-02-05T03:00Z,Sacramento Kings,SAC,125,-115.0,,Memphis Grizzlies,MEM,129,-105.0,,Sacramento,CA,,
 401810587,2026-02-04,2026-02-05T03:30Z,LA Clippers,LAC,91,110.0,,Cleveland Cavaliers,CLE,124,-130.0,,Inglewood,CA,,
-401810588,2026-02-05,2026-02-06T00:00Z,Detroit Pistons,DET,0,-800.0,,Washington Wizards,WSH,0,550.0,,Detroit,MI,D. Jenkins (Out); D. Saric (Out); Tolu Smith (Out),Dante Exum (OFS); C. Whitmore (OFS); A. Davis (Out); T. Johnson (Out); Trae Young (Out)
-401810589,2026-02-05,2026-02-06T00:00Z,Orlando Magic,ORL,0,-455.0,,Brooklyn Nets,BKN,0,350.0,,Orlando,FL,C. Castleton (Out); F. Wagner (Out),H. Highsmith (Out); Cam Thomas (Out)
-401810590,2026-02-05,2026-02-06T00:30Z,Atlanta Hawks,ATL,0,-375.0,,Utah Jazz,UTAH,0,295.0,,Atlanta,GA,N. Dante (OFS); Duop Reath (OFS); B. Hield (Out); J. Kuminga (Out),W. Kessler (OFS); K. George (Out); E. Harkless (Out); J. Jackson (Out); J. Konchar (Out); V. Williams (Out)
-401810591,2026-02-05,2026-02-06T00:30Z,Toronto Raptors,TOR,0,-340.0,,Chicago Bulls,CHI,0,270.0,,Toronto,ON,C. Hepburn (Out); Chris Paul (Out); J. Poeltl (Out),N. Essengue (OFS); Z. Collins (Out); J. Giddey (Out); G. Yabusele (Out)
-401810592,2026-02-05,2026-02-06T01:00Z,Houston Rockets,HOU,0,-148.0,,Charlotte Hornets,CHA,0,124.0,,Houston,TX,S. Adams (OFS); D. Finney-Smith (Out); F. VanVleet (Out),KJ Simpson (Out)
-401810593,2026-02-05,2026-02-06T01:30Z,Dallas Mavericks,DAL,0,215.0,,San Antonio Spurs,SA,0,-265.0,,Dallas,TX,D. Lively (OFS); K. Irving (Out); P. Washington (Out),D. Jones Garcia (OFS); D. Harper (Out); K. Olynyk (Out); J. Sochan (Out); L. Waters (Out)
-401810594,2026-02-05,2026-02-06T03:00Z,Phoenix Suns,PHX,0,-238.0,,Golden State Warriors,GS,0,195.0,,Phoenix,AZ,,J. Butler (OFS); S. Curry (Out); Seth Curry (Out)
-401810595,2026-02-05,2026-02-06T03:00Z,Los Angeles Lakers,LAL,0,-175.0,,Philadelphia 76ers,PHI,0,145.0,,Los Angeles,CA,A. Thiero (Out),P. George (Out)
+401810588,2026-02-05,2026-02-06T00:00Z,Detroit Pistons,DET,117,-800.0,,Washington Wizards,WSH,126,550.0,,Detroit,MI,,
+401810589,2026-02-05,2026-02-06T00:00Z,Orlando Magic,ORL,118,-455.0,,Brooklyn Nets,BKN,98,350.0,,Orlando,FL,,
+401810590,2026-02-05,2026-02-06T00:30Z,Atlanta Hawks,ATL,121,-375.0,,Utah Jazz,UTAH,119,295.0,,Atlanta,GA,,
+401810591,2026-02-05,2026-02-06T00:30Z,Toronto Raptors,TOR,123,-340.0,,Chicago Bulls,CHI,107,270.0,,Toronto,ON,,
+401810592,2026-02-05,2026-02-06T01:00Z,Houston Rockets,HOU,99,-148.0,,Charlotte Hornets,CHA,109,124.0,,Houston,TX,,
+401810593,2026-02-05,2026-02-06T01:30Z,Dallas Mavericks,DAL,123,215.0,,San Antonio Spurs,SA,135,-265.0,,Dallas,TX,,
+401810594,2026-02-05,2026-02-06T03:00Z,Phoenix Suns,PHX,97,-238.0,,Golden State Warriors,GS,101,195.0,,Phoenix,AZ,,
+401810595,2026-02-05,2026-02-06T03:00Z,Los Angeles Lakers,LAL,119,-175.0,,Philadelphia 76ers,PHI,115,145.0,,Los Angeles,CA,,
+401810596,2026-02-06,2026-02-07T00:30Z,Boston Celtics,BOS,0,-250.0,,Miami Heat,MIA,0,205.0,,Boston,MA,J. Tatum (Out); John Tonje (Out),T. Herro (Out); T. Rozier (Out)
+401810597,2026-02-06,2026-02-07T00:30Z,Detroit Pistons,DET,0,-105.0,,New York Knicks,NY,0,-115.0,,Detroit,MI,T. Harris (Out); D. Saric (Out); Tolu Smith (Out),M. McBride (Out)
+401810598,2026-02-06,2026-02-07T01:00Z,Milwaukee Bucks,MIL,0,100.0,,Indiana Pacers,IND,0,-120.0,,Milwaukee,WI,G. Antetokounmpo (Out); T. Prince (Out),T. Haliburton (OFS); Kobe Brown (Out); Obi Toppin (Out); I. Zubac (Out)
+401810599,2026-02-06,2026-02-07T01:00Z,Minnesota Timberwolves,MIN,0,-500.0,,New Orleans Pelicans,NO,0,380.0,,Minneapolis,MN,T. Shannon (Out),D. Murray (Out)
+401810600,2026-02-06,2026-02-07T03:00Z,Portland Trail Blazers,POR,0,-270.0,,Memphis Grizzlies,MEM,0,220.0,,Portland,OR,D. Lillard (OFS); K. Murray (Out); M. Thybulle (Out),S. Aldama (Out); B. Clarke (Out); Zach Edey (Out); Ty Jerome (Out); Ja Morant (Out)
+401810601,2026-02-06,2026-02-07T03:00Z,Sacramento Kings,SAC,0,140.0,,LA Clippers,LAC,0,-166.0,,Sacramento,CA,K. Murray (Out),B. Beal (OFS); D. Garland (Out); I. Jackson (Out); B. Mathurin (Out)

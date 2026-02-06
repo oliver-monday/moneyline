@@ -1,0 +1,17 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-05,2026,Tyrese Maxey,PHI,LAL,ast,6,HIT,13,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,Paolo Banchero,ORL,BKN,ast,4,HIT,4,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,Paolo Banchero,ORL,BKN,3pt,1,MISSED,0,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,Scottie Barnes,TOR,CHI,reb,8,MISSED,6,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,Jabari Smith Jr.,HOU,CHA,ast,2,HIT,2,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,Jabari Smith Jr.,HOU,CHA,3pt,2,MISSED,1,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,Joel Embiid,PHI,LAL,pts,25,HIT,35,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,Joel Embiid,PHI,LAL,3pt,1,HIT,1,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,De'Aaron Fox,SA,DAL,ast,6,HIT,7,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,Anthony Davis,DAL,SA,ast,2,,,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,Immanuel Quickley,TOR,CHI,reb,4,MISSED,2,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,LeBron James,LAL,PHI,3pt,1,MISSED,0,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,Dillon Brooks,PHX,GS,reb,4,HIT,6,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,Grayson Allen,PHX,GS,pts,15,HIT,21,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,Ace Bailey,UTAH,ATL,pts,10,HIT,20,,targets_snapshot_2026-02-05.json
+2026-02-05,2026,Ace Bailey,UTAH,ATL,3pt,2,HIT,2,,targets_snapshot_2026-02-05.json
