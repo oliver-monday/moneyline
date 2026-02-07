@@ -1,8 +1,13 @@
 {
   "asof_date": "2026-02-07",
-  "built_at_utc": "2026-02-07T22:33:52Z",
+  "built_at_utc": "2026-02-07T23:32:48Z",
   "source": "rotowire",
   "WAS": [
+    {
+      "name": "B. Coulibaly",
+      "status": "QUES",
+      "details": "B. Coulibaly (Ques)"
+    },
     {
       "name": "A. Davis",
       "status": "OFS",
@@ -14,39 +19,34 @@
       "details": "Dante Exum (OFS)"
     },
     {
-      "name": "C. Whitmore",
-      "status": "OFS",
-      "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "B. Coulibaly",
-      "status": "OUT",
-      "details": "B. Coulibaly (Out)"
-    },
-    {
       "name": "K. George",
-      "status": "OUT",
-      "details": "K. George (Out)"
+      "status": "QUES",
+      "details": "K. George (Ques)"
     },
     {
       "name": "J. Hardy",
-      "status": "OUT",
-      "details": "J. Hardy (Out)"
+      "status": "QUES",
+      "details": "J. Hardy (Ques)"
     },
     {
       "name": "T. Johnson",
-      "status": "OUT",
-      "details": "T. Johnson (Out)"
+      "status": "QUES",
+      "details": "T. Johnson (Ques)"
     },
     {
       "name": "D. Russell",
-      "status": "OUT",
-      "details": "D. Russell (Out)"
+      "status": "QUES",
+      "details": "D. Russell (Ques)"
     },
     {
-      "name": "Alex Sarr",
-      "status": "OUT",
-      "details": "Alex Sarr (Out)"
+      "name": "A. Sarr",
+      "status": "QUES",
+      "details": "A. Sarr (Ques)"
+    },
+    {
+      "name": "C. Whitmore",
+      "status": "OFS",
+      "details": "C. Whitmore (OFS)"
     },
     {
       "name": "Trae Young",
@@ -282,11 +282,6 @@
       "details": "P. Watson (Out)"
     },
     {
-      "name": "J. Smith",
-      "status": "QUES",
-      "details": "J. Smith (Ques)"
-    },
-    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
@@ -305,6 +300,11 @@
       "name": "Tre Jones",
       "status": "OUT",
       "details": "Tre Jones (Out)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OUT",
+      "details": "J. Smith (Out)"
     }
   ],
   "CHI": [
@@ -314,11 +314,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Smith",
-      "status": "QUES",
-      "details": "J. Smith (Ques)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
@@ -332,6 +327,11 @@
       "name": "Tre Jones",
       "status": "OUT",
       "details": "Tre Jones (Out)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OUT",
+      "details": "J. Smith (Out)"
     }
   ],
   "GSW": [
@@ -568,11 +568,6 @@
   ],
   "CLE": [
     {
-      "name": "J. Harden",
-      "status": "QUES",
-      "details": "J. Harden (Ques)"
-    },
-    {
       "name": "D. Wade",
       "status": "DOUBT",
       "details": "D. Wade (Doubt)"
@@ -598,6 +593,11 @@
       "details": "Z. LaVine (Out)"
     },
     {
+      "name": "Malik Monk",
+      "status": "OUT",
+      "details": "Malik Monk (Out)"
+    },
+    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
@@ -618,6 +618,11 @@
       "name": "Z. LaVine",
       "status": "OUT",
       "details": "Z. LaVine (Out)"
+    },
+    {
+      "name": "Malik Monk",
+      "status": "OUT",
+      "details": "Malik Monk (Out)"
     },
     {
       "name": "K. Murray",
