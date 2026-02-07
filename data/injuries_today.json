@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-07",
-  "built_at_utc": "2026-02-07T17:17:11Z",
+  "built_at_utc": "2026-02-07T18:32:16Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -79,6 +79,11 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "A. Thompson",
+      "status": "QUES",
+      "details": "A. Thompson (Ques)"
     },
     {
       "name": "J. Tate",
@@ -281,6 +286,11 @@
       "name": "M. Branham",
       "status": "OUT",
       "details": "M. Branham (Out)"
+    },
+    {
+      "name": "X. Tillman",
+      "status": "OUT",
+      "details": "X. Tillman (Out)"
     },
     {
       "name": "Coby White",

@@ -4873,6 +4873,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-07,WAS,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-02-07,WAS,Fantasy Football,REST,Fantasy Football (Rest),rotowire
 2026-02-07,HOU,S. Adams,OFS,S. Adams (OFS),rotowire
+2026-02-07,HOU,A. Thompson,QUES,A. Thompson (Ques),rotowire
 2026-02-07,HOU,J. Tate,OUT,J. Tate (Out),rotowire
 2026-02-07,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
 2026-02-07,HOU,T. Sorber,OFS,T. Sorber (OFS),rotowire
@@ -4911,6 +4912,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-07,ORL,C. Castleton,OUT,C. Castleton (Out),rotowire
 2026-02-07,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
 2026-02-07,CHA,M. Branham,OUT,M. Branham (Out),rotowire
+2026-02-07,CHA,X. Tillman,OUT,X. Tillman (Out),rotowire
 2026-02-07,CHA,Coby White,OUT,Coby White (Out),rotowire
 2026-02-07,CHA,O. Okongwu,QUES,O. Okongwu (Ques),rotowire
 2026-02-07,CHA,B. Hield,QUES,B. Hield (Ques),rotowire
