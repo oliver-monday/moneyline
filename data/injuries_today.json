@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-07",
-  "built_at_utc": "2026-02-07T18:32:16Z",
+  "built_at_utc": "2026-02-07T19:29:09Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -20,18 +20,13 @@
     },
     {
       "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
+      "status": "OUT",
+      "details": "B. Coulibaly (Out)"
     },
     {
       "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
+      "status": "OUT",
+      "details": "K. George (Out)"
     },
     {
       "name": "J. Hardy",
@@ -47,6 +42,11 @@
       "name": "D. Russell",
       "status": "OUT",
       "details": "D. Russell (Out)"
+    },
+    {
+      "name": "Alex Sarr",
+      "status": "OUT",
+      "details": "Alex Sarr (Out)"
     },
     {
       "name": "Trae Young",
@@ -451,11 +451,6 @@
       "details": "K. Porzingis (Out)"
     },
     {
-      "name": "L. Kennard",
-      "status": "QUES",
-      "details": "L. Kennard (Ques)"
-    },
-    {
       "name": "L. Doncic",
       "status": "OUT",
       "details": "L. Doncic (Out)"
@@ -467,11 +462,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "L. Kennard",
-      "status": "QUES",
-      "details": "L. Kennard (Ques)"
-    },
     {
       "name": "L. Doncic",
       "status": "OUT",
