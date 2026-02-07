@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-07",
-  "built_at_utc": "2026-02-07T21:14:16Z",
+  "built_at_utc": "2026-02-07T22:33:52Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -150,54 +150,19 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "M. Bagley",
-      "status": "PROB",
-      "details": "M. Bagley (Prob)"
-    },
-    {
-      "name": "A. Johnson",
-      "status": "PROB",
-      "details": "A. Johnson (Prob)"
-    },
-    {
-      "name": "T. Jones",
-      "status": "PROB",
-      "details": "T. Jones (Prob)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "PROB",
-      "details": "B. Williams (Prob)"
-    },
-    {
-      "name": "K. Middleton",
-      "status": "DOUBT",
-      "details": "K. Middleton (Doubt)"
-    },
-    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
     },
     {
-      "name": "D. Fox",
-      "status": "QUES",
-      "details": "D. Fox (Ques)"
+      "name": "K. Middleton",
+      "status": "OUT",
+      "details": "K. Middleton (Out)"
     },
     {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "L. Kornet",
-      "status": "QUES",
-      "details": "L. Kornet (Ques)"
-    },
-    {
-      "name": "J. Sochan",
-      "status": "QUES",
-      "details": "J. Sochan (Ques)"
     },
     {
       "name": "L. Waters",
@@ -212,21 +177,6 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "D. Fox",
-      "status": "QUES",
-      "details": "D. Fox (Ques)"
-    },
-    {
-      "name": "L. Kornet",
-      "status": "QUES",
-      "details": "L. Kornet (Ques)"
-    },
-    {
-      "name": "J. Sochan",
-      "status": "QUES",
-      "details": "J. Sochan (Ques)"
-    },
-    {
       "name": "L. Waters",
       "status": "OUT",
       "details": "L. Waters (Out)"
@@ -237,16 +187,6 @@
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "K. George",
-      "status": "PROB",
-      "details": "K. George (Prob)"
-    },
-    {
-      "name": "K. Love",
-      "status": "PROB",
-      "details": "K. Love (Prob)"
     },
     {
       "name": "E. Harkless",
@@ -293,22 +233,12 @@
       "details": "Coby White (Out)"
     },
     {
-      "name": "O. Okongwu",
-      "status": "QUES",
-      "details": "O. Okongwu (Ques)"
-    },
-    {
       "name": "J. Kuminga",
       "status": "OUT",
       "details": "J. Kuminga (Out)"
     }
   ],
   "ATL": [
-    {
-      "name": "O. Okongwu",
-      "status": "QUES",
-      "details": "O. Okongwu (Ques)"
-    },
     {
       "name": "J. Kuminga",
       "status": "OUT",
@@ -524,6 +454,21 @@
   ],
   "MEM": [
     {
+      "name": "C. Spencer",
+      "status": "QUES",
+      "details": "C. Spencer (Ques)"
+    },
+    {
+      "name": "C. Coward",
+      "status": "DOUBT",
+      "details": "C. Coward (Doubt)"
+    },
+    {
+      "name": "J. Wells",
+      "status": "DOUBT",
+      "details": "J. Wells (Doubt)"
+    },
+    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -644,35 +589,45 @@
     },
     {
       "name": "D. Hunter",
-      "status": "QUES",
-      "details": "D. Hunter (Ques)"
+      "status": "OUT",
+      "details": "D. Hunter (Out)"
     },
     {
-      "name": "D. Sabonis",
-      "status": "QUES",
-      "details": "D. Sabonis (Ques)"
+      "name": "Z. LaVine",
+      "status": "OUT",
+      "details": "Z. LaVine (Out)"
     },
     {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "D. Sabonis",
+      "status": "OUT",
+      "details": "D. Sabonis (Out)"
     }
   ],
   "SAC": [
     {
       "name": "D. Hunter",
-      "status": "QUES",
-      "details": "D. Hunter (Ques)"
+      "status": "OUT",
+      "details": "D. Hunter (Out)"
     },
     {
-      "name": "D. Sabonis",
-      "status": "QUES",
-      "details": "D. Sabonis (Ques)"
+      "name": "Z. LaVine",
+      "status": "OUT",
+      "details": "Z. LaVine (Out)"
     },
     {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "D. Sabonis",
+      "status": "OUT",
+      "details": "D. Sabonis (Out)"
     }
   ]
 }
