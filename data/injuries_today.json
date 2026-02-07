@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-07",
-  "built_at_utc": "2026-02-07T08:51:48Z",
+  "built_at_utc": "2026-02-07T14:51:42Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -562,6 +562,11 @@
       "name": "K. Anderson",
       "status": "QUES",
       "details": "K. Anderson (Ques)"
+    },
+    {
+      "name": "S. Pippen",
+      "status": "QUES",
+      "details": "S. Pippen (Ques)"
     },
     {
       "name": "B. Clarke",
