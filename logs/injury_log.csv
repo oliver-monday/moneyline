@@ -4863,6 +4863,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-07,WAS,A. Sarr,QUES,A. Sarr (Ques),rotowire
 2026-02-07,GSW,L. Kennard,QUES,L. Kennard (Ques),rotowire
 2026-02-07,LAL,L. Kennard,QUES,L. Kennard (Ques),rotowire
+2026-02-07,HOU,A. Thompson,QUES,A. Thompson (Ques),rotowire
+2026-02-07,CHA,B. Hield,QUES,B. Hield (Ques),rotowire
+2026-02-07,ATL,B. Hield,QUES,B. Hield (Ques),rotowire
 2026-02-07,WAS,A. Davis,OFS,A. Davis (OFS),rotowire
 2026-02-07,WAS,Dante Exum,OFS,Dante Exum (OFS),rotowire
 2026-02-07,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
@@ -4876,7 +4879,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-07,WAS,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-02-07,WAS,Fantasy Football,REST,Fantasy Football (Rest),rotowire
 2026-02-07,HOU,S. Adams,OFS,S. Adams (OFS),rotowire
-2026-02-07,HOU,A. Thompson,QUES,A. Thompson (Ques),rotowire
 2026-02-07,HOU,J. Tate,OUT,J. Tate (Out),rotowire
 2026-02-07,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
 2026-02-07,HOU,T. Sorber,OFS,T. Sorber (OFS),rotowire
@@ -4918,9 +4920,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-07,CHA,X. Tillman,OUT,X. Tillman (Out),rotowire
 2026-02-07,CHA,Coby White,OUT,Coby White (Out),rotowire
 2026-02-07,CHA,O. Okongwu,QUES,O. Okongwu (Ques),rotowire
-2026-02-07,CHA,B. Hield,QUES,B. Hield (Ques),rotowire
 2026-02-07,CHA,J. Kuminga,OUT,J. Kuminga (Out),rotowire
-2026-02-07,ATL,B. Hield,QUES,B. Hield (Ques),rotowire
 2026-02-07,ATL,O. Okongwu,QUES,O. Okongwu (Ques),rotowire
 2026-02-07,ATL,J. Kuminga,OUT,J. Kuminga (Out),rotowire
 2026-02-07,DEN,C. Braun,PROB,C. Braun (Prob),rotowire
@@ -4955,10 +4955,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-07,PHI,D. Booker,QUES,D. Booker (Ques),rotowire
 2026-02-07,PHI,J. Green,QUES,J. Green (Ques),rotowire
 2026-02-07,PHI,G. Allen,OUT,G. Allen (Out),rotowire
+2026-02-07,PHI,C. Anthony,OUT,C. Anthony (Out),rotowire
 2026-02-07,PHI,I. Livers,OUT,I. Livers (Out),rotowire
 2026-02-07,PHX,D. Booker,QUES,D. Booker (Ques),rotowire
 2026-02-07,PHX,J. Green,QUES,J. Green (Ques),rotowire
 2026-02-07,PHX,G. Allen,OUT,G. Allen (Out),rotowire
+2026-02-07,PHX,C. Anthony,OUT,C. Anthony (Out),rotowire
 2026-02-07,PHX,I. Livers,OUT,I. Livers (Out),rotowire
 2026-02-07,MEM,S. Aldama,PROB,S. Aldama (Prob),rotowire
 2026-02-07,MEM,K. Caldwell-Pope,PROB,K. Caldwell-Pope (Prob),rotowire
