@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-07",
-  "built_at_utc": "2026-02-07T14:51:42Z",
+  "built_at_utc": "2026-02-07T17:17:11Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -240,13 +240,13 @@
     },
     {
       "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
+      "status": "PROB",
+      "details": "K. George (Prob)"
     },
     {
       "name": "K. Love",
-      "status": "QUES",
-      "details": "K. Love (Ques)"
+      "status": "PROB",
+      "details": "K. Love (Prob)"
     },
     {
       "name": "E. Harkless",
@@ -278,11 +278,6 @@
   ],
   "CHA": [
     {
-      "name": "T. Salaun",
-      "status": "QUES",
-      "details": "T. Salaun (Ques)"
-    },
-    {
       "name": "M. Branham",
       "status": "OUT",
       "details": "M. Branham (Out)"
@@ -303,11 +298,6 @@
       "details": "B. Hield (Ques)"
     },
     {
-      "name": "G. Vincent",
-      "status": "QUES",
-      "details": "G. Vincent (Ques)"
-    },
-    {
       "name": "J. Kuminga",
       "status": "OUT",
       "details": "J. Kuminga (Out)"
@@ -323,11 +313,6 @@
       "name": "O. Okongwu",
       "status": "QUES",
       "details": "O. Okongwu (Ques)"
-    },
-    {
-      "name": "G. Vincent",
-      "status": "QUES",
-      "details": "G. Vincent (Ques)"
     },
     {
       "name": "J. Kuminga",
@@ -584,11 +569,6 @@
       "details": "Ja Morant (Out)"
     },
     {
-      "name": "S. Sharpe",
-      "status": "QUES",
-      "details": "S. Sharpe (Ques)"
-    },
-    {
       "name": "D. Avdija",
       "status": "QUES",
       "details": "D. Avdija (Ques)"
@@ -599,9 +579,29 @@
       "details": "D. Lillard (OFS)"
     },
     {
+      "name": "R. Williams",
+      "status": "QUES",
+      "details": "R. Williams (Ques)"
+    },
+    {
+      "name": "S. Henderson",
+      "status": "QUES",
+      "details": "S. Henderson (Ques)"
+    },
+    {
+      "name": "B. Wesley",
+      "status": "QUES",
+      "details": "B. Wesley (Ques)"
+    },
+    {
       "name": "K. Murray",
       "status": "DOUBT",
       "details": "K. Murray (Doubt)"
+    },
+    {
+      "name": "S. Sharpe",
+      "status": "DOUBT",
+      "details": "S. Sharpe (Doubt)"
     },
     {
       "name": "M. Thybulle",
@@ -616,19 +616,34 @@
       "details": "D. Lillard (OFS)"
     },
     {
+      "name": "R. Williams",
+      "status": "QUES",
+      "details": "R. Williams (Ques)"
+    },
+    {
       "name": "D. Avdija",
       "status": "QUES",
       "details": "D. Avdija (Ques)"
     },
     {
-      "name": "S. Sharpe",
+      "name": "S. Henderson",
       "status": "QUES",
-      "details": "S. Sharpe (Ques)"
+      "details": "S. Henderson (Ques)"
+    },
+    {
+      "name": "B. Wesley",
+      "status": "QUES",
+      "details": "B. Wesley (Ques)"
     },
     {
       "name": "K. Murray",
       "status": "DOUBT",
       "details": "K. Murray (Doubt)"
+    },
+    {
+      "name": "S. Sharpe",
+      "status": "DOUBT",
+      "details": "S. Sharpe (Doubt)"
     },
     {
       "name": "M. Thybulle",
