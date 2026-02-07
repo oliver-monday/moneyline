@@ -1,0 +1,13 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-06,2026,James Harden,LAC,SAC,reb,4,,,,targets_snapshot_2026-02-06.json
+2026-02-06,2026,James Harden,LAC,SAC,ast,8,,,,targets_snapshot_2026-02-06.json
+2026-02-06,2026,OG Anunoby,NY,DET,pts,15,MISSED,,,targets_snapshot_2026-02-06.json
+2026-02-06,2026,OG Anunoby,NY,DET,ast,2,MISSED,,,targets_snapshot_2026-02-06.json
+2026-02-06,2026,Saddiq Bey,NO,MIN,pts,15,HIT,30,,targets_snapshot_2026-02-06.json
+2026-02-06,2026,Saddiq Bey,NO,MIN,ast,2,HIT,5,,targets_snapshot_2026-02-06.json
+2026-02-06,2026,Shaedon Sharpe,POR,MEM,pts,20,MISSED,2,,targets_snapshot_2026-02-06.json
+2026-02-06,2026,Shaedon Sharpe,POR,MEM,ast,2,HIT,2,,targets_snapshot_2026-02-06.json
+2026-02-06,2026,Shaedon Sharpe,POR,MEM,3pt,2,MISSED,0,,targets_snapshot_2026-02-06.json
+2026-02-06,2026,Bam Adebayo,MIA,BOS,pts,20,MISSED,16,,targets_snapshot_2026-02-06.json
+2026-02-06,2026,Russell Westbrook,SAC,LAC,3pt,2,MISSED,0,,targets_snapshot_2026-02-06.json
+2026-02-06,2026,Donte DiVincenzo,MIN,NO,3pt,3,MISSED,2,,targets_snapshot_2026-02-06.json
