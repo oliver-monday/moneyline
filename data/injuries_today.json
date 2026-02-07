@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-07",
-  "built_at_utc": "2026-02-07T20:25:16Z",
+  "built_at_utc": "2026-02-07T21:14:16Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -525,28 +525,8 @@
   "MEM": [
     {
       "name": "S. Aldama",
-      "status": "PROB",
-      "details": "S. Aldama (Prob)"
-    },
-    {
-      "name": "K. Caldwell-Pope",
-      "status": "PROB",
-      "details": "K. Caldwell-Pope (Prob)"
-    },
-    {
-      "name": "T. Jerome",
-      "status": "PROB",
-      "details": "T. Jerome (Prob)"
-    },
-    {
-      "name": "K. Anderson",
-      "status": "QUES",
-      "details": "K. Anderson (Ques)"
-    },
-    {
-      "name": "S. Pippen",
-      "status": "QUES",
-      "details": "S. Pippen (Ques)"
+      "status": "OUT",
+      "details": "S. Aldama (Out)"
     },
     {
       "name": "B. Clarke",
@@ -564,6 +544,11 @@
       "details": "Ja Morant (Out)"
     },
     {
+      "name": "S. Pippen",
+      "status": "OUT",
+      "details": "S. Pippen (Out)"
+    },
+    {
       "name": "D. Avdija",
       "status": "QUES",
       "details": "D. Avdija (Ques)"
@@ -574,34 +559,29 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
-    },
-    {
       "name": "S. Henderson",
-      "status": "QUES",
-      "details": "S. Henderson (Ques)"
-    },
-    {
-      "name": "B. Wesley",
-      "status": "QUES",
-      "details": "B. Wesley (Ques)"
+      "status": "OUT",
+      "details": "S. Henderson (Out)"
     },
     {
       "name": "K. Murray",
-      "status": "DOUBT",
-      "details": "K. Murray (Doubt)"
+      "status": "OUT",
+      "details": "K. Murray (Out)"
     },
     {
       "name": "S. Sharpe",
-      "status": "DOUBT",
-      "details": "S. Sharpe (Doubt)"
+      "status": "OUT",
+      "details": "S. Sharpe (Out)"
     },
     {
       "name": "M. Thybulle",
       "status": "OUT",
       "details": "M. Thybulle (Out)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "OUT",
+      "details": "R. Williams (Out)"
     }
   ],
   "POR": [
@@ -611,39 +591,34 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
-    },
-    {
       "name": "D. Avdija",
       "status": "QUES",
       "details": "D. Avdija (Ques)"
     },
     {
       "name": "S. Henderson",
-      "status": "QUES",
-      "details": "S. Henderson (Ques)"
-    },
-    {
-      "name": "B. Wesley",
-      "status": "QUES",
-      "details": "B. Wesley (Ques)"
+      "status": "OUT",
+      "details": "S. Henderson (Out)"
     },
     {
       "name": "K. Murray",
-      "status": "DOUBT",
-      "details": "K. Murray (Doubt)"
+      "status": "OUT",
+      "details": "K. Murray (Out)"
     },
     {
       "name": "S. Sharpe",
-      "status": "DOUBT",
-      "details": "S. Sharpe (Doubt)"
+      "status": "OUT",
+      "details": "S. Sharpe (Out)"
     },
     {
       "name": "M. Thybulle",
       "status": "OUT",
       "details": "M. Thybulle (Out)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "OUT",
+      "details": "R. Williams (Out)"
     }
   ],
   "CLE": [
@@ -654,8 +629,8 @@
     },
     {
       "name": "D. Wade",
-      "status": "QUES",
-      "details": "D. Wade (Ques)"
+      "status": "DOUBT",
+      "details": "D. Wade (Doubt)"
     },
     {
       "name": "E. Mobley",
