@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-06",
-  "built_at_utc": "2026-02-06T23:28:36Z",
+  "built_at_utc": "2026-02-07T01:11:01Z",
   "source": "rotowire",
   "MIA": [
     {
@@ -48,14 +48,14 @@
   ],
   "NYK": [
     {
-      "name": "O. Anunoby",
-      "status": "QUES",
-      "details": "O. Anunoby (Ques)"
-    },
-    {
       "name": "J. Alvarado",
       "status": "OUT",
       "details": "J. Alvarado (Out)"
+    },
+    {
+      "name": "OG Anunoby",
+      "status": "OUT",
+      "details": "OG Anunoby (Out)"
     },
     {
       "name": "M. McBride",
@@ -68,19 +68,9 @@
       "details": "K. Towns (Out)"
     },
     {
-      "name": "D. Robinson",
-      "status": "PROB",
-      "details": "D. Robinson (Prob)"
-    },
-    {
-      "name": "T. Harris",
-      "status": "PROB",
-      "details": "T. Harris (Prob)"
-    },
-    {
       "name": "J. Duren",
-      "status": "QUES",
-      "details": "J. Duren (Ques)"
+      "status": "OUT",
+      "details": "J. Duren (Out)"
     },
     {
       "name": "B. Klintman",
@@ -100,19 +90,9 @@
   ],
   "DET": [
     {
-      "name": "T. Harris",
-      "status": "PROB",
-      "details": "T. Harris (Prob)"
-    },
-    {
-      "name": "D. Robinson",
-      "status": "PROB",
-      "details": "D. Robinson (Prob)"
-    },
-    {
       "name": "J. Duren",
-      "status": "QUES",
-      "details": "J. Duren (Ques)"
+      "status": "OUT",
+      "details": "J. Duren (Out)"
     },
     {
       "name": "B. Klintman",
@@ -137,11 +117,6 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "M. Potter",
-      "status": "QUES",
-      "details": "M. Potter (Ques)"
-    },
-    {
       "name": "Kobe Brown",
       "status": "OUT",
       "details": "Kobe Brown (Out)"
@@ -155,11 +130,6 @@
       "name": "I. Zubac",
       "status": "OUT",
       "details": "I. Zubac (Out)"
-    },
-    {
-      "name": "G. Harris",
-      "status": "QUES",
-      "details": "G. Harris (Ques)"
     },
     {
       "name": "G. Antetokounmpo",
@@ -178,11 +148,6 @@
     }
   ],
   "MIL": [
-    {
-      "name": "G. Harris",
-      "status": "QUES",
-      "details": "G. Harris (Ques)"
-    },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
