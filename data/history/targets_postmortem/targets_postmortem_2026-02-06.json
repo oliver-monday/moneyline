@@ -6,7 +6,7 @@
     "misses": 5,
     "hit_rate_pct": 38,
     "top_targets_total": 6,
-    "top_targets_hits": 1
+    "top_targets_hits": 2
   },
   "hits": [
     {
@@ -271,7 +271,7 @@
       "actual": 5
     }
   ],
-  "built_at_utc": "2026-02-07T08:56:40Z",
+  "built_at_utc": "2026-02-07T14:16:58Z",
   "snapshot_file": "targets_snapshot_2026-02-06.json",
   "preset": "baseline",
   "top_targets": [
@@ -325,31 +325,6 @@
       "actual": 5,
       "hit": true,
       "delta": -3
-    },
-    {
-      "asof_date": "2026-02-06",
-      "player_id": "3468.0",
-      "player_name": "Russell Westbrook",
-      "team_abbrev": "SAC",
-      "opp": "LAC",
-      "game_id": "401810601",
-      "stat": "3pt",
-      "threshold": 2,
-      "hits": 9,
-      "window_games": 10,
-      "hit_rate": 0.9,
-      "is_home_game": true,
-      "rest_days": 1,
-      "is_b2b": false,
-      "share_trend_pp": 3.115345438874856,
-      "share_trend_dir": "UP",
-      "iqr_10": 1.0,
-      "landmine_rate_10": null,
-      "trap_risk": null,
-      "dnp": false,
-      "actual": 0,
-      "hit": false,
-      "delta": 2
     },
     {
       "asof_date": "2026-02-06",
@@ -424,6 +399,31 @@
       "delta": null,
       "dnp": true,
       "status": "OUT"
+    },
+    {
+      "asof_date": "2026-02-06",
+      "player_id": "4397136.0",
+      "player_name": "Saddiq Bey",
+      "team_abbrev": "NO",
+      "opp": "MIN",
+      "game_id": "401810599",
+      "stat": "pts",
+      "threshold": 15,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 1.569531262439261,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 6.5,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false,
+      "dnp": false,
+      "actual": 30,
+      "hit": true,
+      "delta": -15
     }
   ]
 }
