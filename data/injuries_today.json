@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-08",
-  "built_at_utc": "2026-02-08T17:17:37Z",
+  "built_at_utc": "2026-02-08T18:34:23Z",
   "source": "rotowire",
   "NYK": [
     {
@@ -58,16 +58,6 @@
   ],
   "MIA": [
     {
-      "name": "B. Adebayo",
-      "status": "PROB",
-      "details": "B. Adebayo (Prob)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "PROB",
-      "details": "N. Powell (Prob)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
@@ -83,21 +73,6 @@
       "details": "T. Rozier (Out)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
-      "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
-    },
-    {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
-    },
-    {
       "name": "A. Davis",
       "status": "OFS",
       "details": "A. Davis (OFS)"
@@ -109,13 +84,8 @@
     },
     {
       "name": "A. Gill",
-      "status": "QUES",
-      "details": "A. Gill (Ques)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
+      "status": "OUT",
+      "details": "A. Gill (Out)"
     },
     {
       "name": "J. Hardy",
@@ -150,29 +120,9 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
-    },
-    {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
       "name": "A. Gill",
-      "status": "QUES",
-      "details": "A. Gill (Ques)"
-    },
-    {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
+      "status": "OUT",
+      "details": "A. Gill (Out)"
     },
     {
       "name": "J. Hardy",
@@ -276,11 +226,6 @@
       "details": "I. Quickley (Ques)"
     },
     {
-      "name": "J. Poeltl",
-      "status": "QUES",
-      "details": "J. Poeltl (Ques)"
-    },
-    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
@@ -289,14 +234,14 @@
       "name": "Chris Paul",
       "status": "OUT",
       "details": "Chris Paul (Out)"
+    },
+    {
+      "name": "J. Poeltl",
+      "status": "OUT",
+      "details": "J. Poeltl (Out)"
     }
   ],
   "TOR": [
-    {
-      "name": "J. Poeltl",
-      "status": "QUES",
-      "details": "J. Poeltl (Ques)"
-    },
     {
       "name": "I. Quickley",
       "status": "QUES",
@@ -311,6 +256,11 @@
       "name": "Chris Paul",
       "status": "OUT",
       "details": "Chris Paul (Out)"
+    },
+    {
+      "name": "J. Poeltl",
+      "status": "OUT",
+      "details": "J. Poeltl (Out)"
     }
   ]
 }
