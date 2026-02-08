@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-07",
-  "built_at_utc": "2026-02-08T03:49:10Z",
+  "built_at_utc": "2026-02-08T04:25:33Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -251,6 +251,11 @@
     }
   ],
   "DEN": [
+    {
+      "name": "J. Murray",
+      "status": "QUES",
+      "details": "J. Murray (Ques)"
+    },
     {
       "name": "T. Bates",
       "status": "OUT",
