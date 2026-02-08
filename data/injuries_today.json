@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-07",
-  "built_at_utc": "2026-02-07T23:32:48Z",
+  "built_at_utc": "2026-02-08T01:47:45Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -82,8 +82,8 @@
     },
     {
       "name": "J. Tate",
-      "status": "OUT",
-      "details": "J. Tate (Out)"
+      "status": "QUES",
+      "details": "J. Tate (Ques)"
     },
     {
       "name": "F. VanVleet",
@@ -91,9 +91,19 @@
       "details": "F. VanVleet (Out)"
     },
     {
+      "name": "A. Mitchell",
+      "status": "QUES",
+      "details": "A. Mitchell (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "DOUBT",
+      "details": "J. Williams (Doubt)"
     },
     {
       "name": "S. Gilgeous-Alexander",
@@ -101,26 +111,26 @@
       "details": "S. Gilgeous-Alexander (Out)"
     },
     {
-      "name": "A. Mitchell",
-      "status": "OUT",
-      "details": "A. Mitchell (Out)"
-    },
-    {
       "name": "N. Topic",
       "status": "OUT",
       "details": "N. Topic (Out)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "OUT",
-      "details": "J. Williams (Out)"
     }
   ],
   "OKC": [
     {
+      "name": "A. Mitchell",
+      "status": "QUES",
+      "details": "A. Mitchell (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "DOUBT",
+      "details": "J. Williams (Doubt)"
     },
     {
       "name": "S. Gilgeous-Alexander",
@@ -128,19 +138,9 @@
       "details": "S. Gilgeous-Alexander (Out)"
     },
     {
-      "name": "A. Mitchell",
-      "status": "OUT",
-      "details": "A. Mitchell (Out)"
-    },
-    {
       "name": "N. Topic",
       "status": "OUT",
       "details": "N. Topic (Out)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "OUT",
-      "details": "J. Williams (Out)"
     }
   ],
   "DAL": [
@@ -150,14 +150,14 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "K. Middleton",
+      "status": "PROB",
+      "details": "K. Middleton (Prob)"
+    },
+    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
-    },
-    {
-      "name": "K. Middleton",
-      "status": "OUT",
-      "details": "K. Middleton (Out)"
     },
     {
       "name": "D. Jones Garcia",
@@ -166,8 +166,8 @@
     },
     {
       "name": "L. Waters",
-      "status": "OUT",
-      "details": "L. Waters (Out)"
+      "status": "QUES",
+      "details": "L. Waters (Ques)"
     }
   ],
   "SAS": [
@@ -178,11 +178,16 @@
     },
     {
       "name": "L. Waters",
-      "status": "OUT",
-      "details": "L. Waters (Out)"
+      "status": "QUES",
+      "details": "L. Waters (Ques)"
     }
   ],
   "UTA": [
+    {
+      "name": "K. George",
+      "status": "QUES",
+      "details": "K. George (Ques)"
+    },
     {
       "name": "W. Kessler",
       "status": "OFS",
@@ -246,21 +251,6 @@
     }
   ],
   "DEN": [
-    {
-      "name": "C. Braun",
-      "status": "PROB",
-      "details": "C. Braun (Prob)"
-    },
-    {
-      "name": "C. Johnson",
-      "status": "QUES",
-      "details": "C. Johnson (Ques)"
-    },
-    {
-      "name": "N. Jokic",
-      "status": "QUES",
-      "details": "N. Jokic (Ques)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -341,11 +331,6 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "B. Podziemski",
-      "status": "PROB",
-      "details": "B. Podziemski (Prob)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -366,6 +351,11 @@
       "details": "K. Porzingis (Out)"
     },
     {
+      "name": "D. Ayton",
+      "status": "OUT",
+      "details": "D. Ayton (Out)"
+    },
+    {
       "name": "L. Doncic",
       "status": "OUT",
       "details": "L. Doncic (Out)"
@@ -377,6 +367,11 @@
     }
   ],
   "LAL": [
+    {
+      "name": "D. Ayton",
+      "status": "OUT",
+      "details": "D. Ayton (Out)"
+    },
     {
       "name": "L. Doncic",
       "status": "OUT",
@@ -390,24 +385,9 @@
   ],
   "PHI": [
     {
-      "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
-    },
-    {
       "name": "P. George",
       "status": "OUT",
       "details": "P. George (Out)"
-    },
-    {
-      "name": "D. Booker",
-      "status": "QUES",
-      "details": "D. Booker (Ques)"
-    },
-    {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
     },
     {
       "name": "G. Allen",
@@ -426,16 +406,6 @@
     }
   ],
   "PHX": [
-    {
-      "name": "D. Booker",
-      "status": "QUES",
-      "details": "D. Booker (Ques)"
-    },
-    {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
     {
       "name": "G. Allen",
       "status": "OUT",
@@ -494,14 +464,14 @@
       "details": "S. Pippen (Out)"
     },
     {
-      "name": "D. Avdija",
-      "status": "QUES",
-      "details": "D. Avdija (Ques)"
-    },
-    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "D. Avdija",
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
     },
     {
       "name": "S. Henderson",
@@ -537,8 +507,8 @@
     },
     {
       "name": "D. Avdija",
-      "status": "QUES",
-      "details": "D. Avdija (Ques)"
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
     },
     {
       "name": "S. Henderson",
