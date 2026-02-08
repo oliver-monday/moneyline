@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-08",
-  "built_at_utc": "2026-02-08T18:34:23Z",
+  "built_at_utc": "2026-02-08T19:30:39Z",
   "source": "rotowire",
   "NYK": [
     {
@@ -167,22 +167,12 @@
       "details": "B. Mathurin (Out)"
     },
     {
-      "name": "J. Phillips",
-      "status": "QUES",
-      "details": "J. Phillips (Ques)"
-    },
-    {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
     }
   ],
   "MIN": [
-    {
-      "name": "J. Phillips",
-      "status": "QUES",
-      "details": "J. Phillips (Ques)"
-    },
     {
       "name": "T. Shannon",
       "status": "OUT",
@@ -194,16 +184,6 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
-    },
-    {
-      "name": "A. Nesmith",
-      "status": "QUES",
-      "details": "A. Nesmith (Ques)"
-    },
-    {
-      "name": "M. Potter",
-      "status": "QUES",
-      "details": "M. Potter (Ques)"
     },
     {
       "name": "Kobe Brown",
@@ -219,11 +199,6 @@
       "name": "I. Zubac",
       "status": "OUT",
       "details": "I. Zubac (Out)"
-    },
-    {
-      "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
     },
     {
       "name": "C. Hepburn",
@@ -242,11 +217,6 @@
     }
   ],
   "TOR": [
-    {
-      "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
-    },
     {
       "name": "C. Hepburn",
       "status": "OUT",
