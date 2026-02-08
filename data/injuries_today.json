@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-07",
-  "built_at_utc": "2026-02-08T01:47:45Z",
+  "built_at_utc": "2026-02-08T03:49:10Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -424,21 +424,6 @@
   ],
   "MEM": [
     {
-      "name": "C. Spencer",
-      "status": "QUES",
-      "details": "C. Spencer (Ques)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "DOUBT",
-      "details": "C. Coward (Doubt)"
-    },
-    {
-      "name": "J. Wells",
-      "status": "DOUBT",
-      "details": "J. Wells (Doubt)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -447,6 +432,11 @@
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
+    },
+    {
+      "name": "C. Coward",
+      "status": "OUT",
+      "details": "C. Coward (Out)"
     },
     {
       "name": "Zach Edey",
@@ -462,6 +452,16 @@
       "name": "S. Pippen",
       "status": "OUT",
       "details": "S. Pippen (Out)"
+    },
+    {
+      "name": "C. Spencer",
+      "status": "OUT",
+      "details": "C. Spencer (Out)"
+    },
+    {
+      "name": "J. Wells",
+      "status": "OUT",
+      "details": "J. Wells (Out)"
     },
     {
       "name": "D. Lillard",
@@ -538,11 +538,6 @@
   ],
   "CLE": [
     {
-      "name": "D. Wade",
-      "status": "DOUBT",
-      "details": "D. Wade (Doubt)"
-    },
-    {
       "name": "E. Mobley",
       "status": "OUT",
       "details": "E. Mobley (Out)"
@@ -551,6 +546,11 @@
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
+    },
+    {
+      "name": "Dean Wade",
+      "status": "OUT",
+      "details": "Dean Wade (Out)"
     },
     {
       "name": "D. Hunter",

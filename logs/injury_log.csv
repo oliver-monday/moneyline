@@ -4894,6 +4894,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-07,PHI,J. Green,QUES,J. Green (Ques),rotowire
 2026-02-07,PHX,D. Booker,QUES,D. Booker (Ques),rotowire
 2026-02-07,PHX,J. Green,QUES,J. Green (Ques),rotowire
+2026-02-07,CLE,D. Wade,DOUBT,D. Wade (Doubt),rotowire
 2026-02-07,WAS,B. Coulibaly,QUES,B. Coulibaly (Ques),rotowire
 2026-02-07,WAS,A. Davis,OFS,A. Davis (OFS),rotowire
 2026-02-07,WAS,Dante Exum,OFS,Dante Exum (OFS),rotowire
@@ -4970,14 +4971,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-07,PHX,G. Allen,OUT,G. Allen (Out),rotowire
 2026-02-07,PHX,C. Anthony,OUT,C. Anthony (Out),rotowire
 2026-02-07,PHX,I. Livers,OUT,I. Livers (Out),rotowire
-2026-02-07,MEM,C. Spencer,QUES,C. Spencer (Ques),rotowire
-2026-02-07,MEM,C. Coward,DOUBT,C. Coward (Doubt),rotowire
-2026-02-07,MEM,J. Wells,DOUBT,J. Wells (Doubt),rotowire
 2026-02-07,MEM,S. Aldama,OUT,S. Aldama (Out),rotowire
 2026-02-07,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire
+2026-02-07,MEM,C. Coward,OUT,C. Coward (Out),rotowire
 2026-02-07,MEM,Zach Edey,OUT,Zach Edey (Out),rotowire
 2026-02-07,MEM,Ja Morant,OUT,Ja Morant (Out),rotowire
 2026-02-07,MEM,S. Pippen,OUT,S. Pippen (Out),rotowire
+2026-02-07,MEM,C. Spencer,OUT,C. Spencer (Out),rotowire
+2026-02-07,MEM,J. Wells,OUT,J. Wells (Out),rotowire
 2026-02-07,MEM,D. Lillard,OFS,D. Lillard (OFS),rotowire
 2026-02-07,MEM,D. Avdija,OUT,D. Avdija (Out),rotowire
 2026-02-07,MEM,S. Henderson,OUT,S. Henderson (Out),rotowire
@@ -4992,9 +4993,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-07,POR,S. Sharpe,OUT,S. Sharpe (Out),rotowire
 2026-02-07,POR,M. Thybulle,OUT,M. Thybulle (Out),rotowire
 2026-02-07,POR,R. Williams,OUT,R. Williams (Out),rotowire
-2026-02-07,CLE,D. Wade,DOUBT,D. Wade (Doubt),rotowire
 2026-02-07,CLE,E. Mobley,OUT,E. Mobley (Out),rotowire
 2026-02-07,CLE,Max Strus,OUT,Max Strus (Out),rotowire
+2026-02-07,CLE,Dean Wade,OUT,Dean Wade (Out),rotowire
 2026-02-07,CLE,D. Hunter,OUT,D. Hunter (Out),rotowire
 2026-02-07,CLE,Z. LaVine,OUT,Z. LaVine (Out),rotowire
 2026-02-07,CLE,Malik Monk,OUT,Malik Monk (Out),rotowire
