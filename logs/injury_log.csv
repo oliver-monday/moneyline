@@ -5015,13 +5015,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-08,MIA,Dante Exum,OFS,Dante Exum (OFS),rotowire
 2026-02-08,WAS,Dante Exum,OFS,Dante Exum (OFS),rotowire
 2026-02-08,MIA,B. Adebayo,PROB,B. Adebayo (Prob),rotowire
-2026-02-08,MIA,N. Powell,PROB,N. Powell (Prob),rotowire
-2026-02-08,MIA,K. George,QUES,K. George (Ques),rotowire
 2026-02-08,MIA,B. Coulibaly,QUES,B. Coulibaly (Ques),rotowire
 2026-02-08,MIA,A. Sarr,QUES,A. Sarr (Ques),rotowire
 2026-02-08,MIA,T. Vukcevic,QUES,T. Vukcevic (Ques),rotowire
 2026-02-08,WAS,B. Coulibaly,QUES,B. Coulibaly (Ques),rotowire
-2026-02-08,WAS,K. George,QUES,K. George (Ques),rotowire
 2026-02-08,WAS,A. Sarr,QUES,A. Sarr (Ques),rotowire
 2026-02-08,WAS,T. Vukcevic,QUES,T. Vukcevic (Ques),rotowire
 2026-02-08,LAC,J. Phillips,QUES,J. Phillips (Ques),rotowire
@@ -5038,9 +5035,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-08,NYK,J. Tatum,OUT,J. Tatum (Out),rotowire
 2026-02-08,BOS,Sam Hauser,OUT,Sam Hauser (Out),rotowire
 2026-02-08,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
+2026-02-08,MIA,N. Powell,QUES,N. Powell (Ques),rotowire
 2026-02-08,MIA,T. Herro,OUT,T. Herro (Out),rotowire
 2026-02-08,MIA,P. Larsson,OUT,P. Larsson (Out),rotowire
 2026-02-08,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
+2026-02-08,MIA,K. George,QUES,K. George (Ques),rotowire
 2026-02-08,MIA,A. Davis,OFS,A. Davis (OFS),rotowire
 2026-02-08,MIA,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
 2026-02-08,MIA,A. Gill,OUT,A. Gill (Out),rotowire
@@ -5049,6 +5048,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-08,MIA,D. Russell,OUT,D. Russell (Out),rotowire
 2026-02-08,MIA,Trae Young,OUT,Trae Young (Out),rotowire
 2026-02-08,WAS,A. Davis,OFS,A. Davis (OFS),rotowire
+2026-02-08,WAS,K. George,QUES,K. George (Ques),rotowire
 2026-02-08,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
 2026-02-08,WAS,A. Gill,OUT,A. Gill (Out),rotowire
 2026-02-08,WAS,J. Hardy,OUT,J. Hardy (Out),rotowire
@@ -5065,9 +5065,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-08,IND,Kobe Brown,OUT,Kobe Brown (Out),rotowire
 2026-02-08,IND,Obi Toppin,OUT,Obi Toppin (Out),rotowire
 2026-02-08,IND,I. Zubac,OUT,I. Zubac (Out),rotowire
+2026-02-08,IND,C. Murray-Boyles,QUES,C. Murray-Boyles (Ques),rotowire
 2026-02-08,IND,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-08,IND,Chris Paul,OUT,Chris Paul (Out),rotowire
 2026-02-08,IND,J. Poeltl,OUT,J. Poeltl (Out),rotowire
+2026-02-08,TOR,C. Murray-Boyles,QUES,C. Murray-Boyles (Ques),rotowire
 2026-02-08,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-08,TOR,Chris Paul,OUT,Chris Paul (Out),rotowire
 2026-02-08,TOR,J. Poeltl,OUT,J. Poeltl (Out),rotowire
