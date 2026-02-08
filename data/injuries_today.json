@@ -1,22 +1,12 @@
 {
   "asof_date": "2026-02-08",
-  "built_at_utc": "2026-02-08T14:52:46Z",
+  "built_at_utc": "2026-02-08T17:17:37Z",
   "source": "rotowire",
   "NYK": [
     {
-      "name": "O. Anunoby",
-      "status": "QUES",
-      "details": "O. Anunoby (Ques)"
-    },
-    {
-      "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
-    },
-    {
-      "name": "K. Towns",
-      "status": "QUES",
-      "details": "K. Towns (Ques)"
+      "name": "OG Anunoby",
+      "status": "OUT",
+      "details": "OG Anunoby (Out)"
     },
     {
       "name": "M. McBride",
@@ -44,9 +34,9 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "S. Hauser",
-      "status": "QUES",
-      "details": "S. Hauser (Ques)"
+      "name": "Sam Hauser",
+      "status": "OUT",
+      "details": "Sam Hauser (Out)"
     },
     {
       "name": "J. Tatum",
@@ -56,9 +46,9 @@
   ],
   "BOS": [
     {
-      "name": "S. Hauser",
-      "status": "QUES",
-      "details": "S. Hauser (Ques)"
+      "name": "Sam Hauser",
+      "status": "OUT",
+      "details": "Sam Hauser (Out)"
     },
     {
       "name": "J. Tatum",
@@ -74,13 +64,8 @@
     },
     {
       "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
-    },
-    {
-      "name": "P. Larsson",
-      "status": "DOUBT",
-      "details": "P. Larsson (Doubt)"
+      "status": "PROB",
+      "details": "N. Powell (Prob)"
     },
     {
       "name": "T. Herro",
@@ -88,14 +73,14 @@
       "details": "T. Herro (Out)"
     },
     {
+      "name": "P. Larsson",
+      "status": "OUT",
+      "details": "P. Larsson (Out)"
+    },
+    {
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
-    },
-    {
-      "name": "T. Johnson",
-      "status": "QUES",
-      "details": "T. Johnson (Ques)"
     },
     {
       "name": "K. George",
@@ -118,24 +103,34 @@
       "details": "A. Davis (OFS)"
     },
     {
-      "name": "Dante Exum",
-      "status": "OFS",
-      "details": "Dante Exum (OFS)"
-    },
-    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "J. Hardy",
+      "name": "A. Gill",
       "status": "QUES",
-      "details": "J. Hardy (Ques)"
+      "details": "A. Gill (Ques)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "QUES",
+      "details": "T. Vukcevic (Ques)"
+    },
+    {
+      "name": "J. Hardy",
+      "status": "OUT",
+      "details": "J. Hardy (Out)"
+    },
+    {
+      "name": "T. Johnson",
+      "status": "OUT",
+      "details": "T. Johnson (Out)"
     },
     {
       "name": "D. Russell",
-      "status": "QUES",
-      "details": "D. Russell (Ques)"
+      "status": "OUT",
+      "details": "D. Russell (Out)"
     },
     {
       "name": "Trae Young",
@@ -150,11 +145,6 @@
       "details": "A. Davis (OFS)"
     },
     {
-      "name": "Dante Exum",
-      "status": "OFS",
-      "details": "Dante Exum (OFS)"
-    },
-    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
@@ -170,24 +160,34 @@
       "details": "K. George (Ques)"
     },
     {
-      "name": "J. Hardy",
+      "name": "A. Gill",
       "status": "QUES",
-      "details": "J. Hardy (Ques)"
-    },
-    {
-      "name": "T. Johnson",
-      "status": "QUES",
-      "details": "T. Johnson (Ques)"
-    },
-    {
-      "name": "D. Russell",
-      "status": "QUES",
-      "details": "D. Russell (Ques)"
+      "details": "A. Gill (Ques)"
     },
     {
       "name": "A. Sarr",
       "status": "QUES",
       "details": "A. Sarr (Ques)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "QUES",
+      "details": "T. Vukcevic (Ques)"
+    },
+    {
+      "name": "J. Hardy",
+      "status": "OUT",
+      "details": "J. Hardy (Out)"
+    },
+    {
+      "name": "T. Johnson",
+      "status": "OUT",
+      "details": "T. Johnson (Out)"
+    },
+    {
+      "name": "D. Russell",
+      "status": "OUT",
+      "details": "D. Russell (Out)"
     },
     {
       "name": "Trae Young",
