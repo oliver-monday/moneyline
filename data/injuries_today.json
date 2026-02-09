@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-09",
-  "built_at_utc": "2026-02-09T15:29:28Z",
+  "built_at_utc": "2026-02-09T17:41:09Z",
   "source": "rotowire",
   "DET": [
     {
@@ -12,6 +12,11 @@
       "name": "R. Holland",
       "status": "OUT",
       "details": "R. Holland (Out)"
+    },
+    {
+      "name": "Tolu Smith",
+      "status": "OUT",
+      "details": "Tolu Smith (Out)"
     },
     {
       "name": "Fantasy Home",
@@ -34,12 +39,22 @@
       "details": "Fantasy Football (Rest)"
     },
     {
+      "name": "L. McNeeley",
+      "status": "OUT",
+      "details": "L. McNeeley (Out)"
+    },
+    {
       "name": "Coby White",
       "status": "OUT",
       "details": "Coby White (Out)"
     }
   ],
   "CHA": [
+    {
+      "name": "L. McNeeley",
+      "status": "OUT",
+      "details": "L. McNeeley (Out)"
+    },
     {
       "name": "Coby White",
       "status": "OUT",
@@ -61,6 +76,11 @@
       "name": "E. Harkless",
       "status": "OUT",
       "details": "E. Harkless (Out)"
+    },
+    {
+      "name": "Kevin Love",
+      "status": "OUT",
+      "details": "Kevin Love (Out)"
     },
     {
       "name": "N. Powell",
@@ -156,6 +176,11 @@
   ],
   "MIL": [
     {
+      "name": "C. Thomas",
+      "status": "QUES",
+      "details": "C. Thomas (Ques)"
+    },
+    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -166,22 +191,12 @@
       "details": "T. Prince (Out)"
     },
     {
-      "name": "F. Wagner",
-      "status": "QUES",
-      "details": "F. Wagner (Ques)"
-    },
-    {
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
     }
   ],
   "ORL": [
-    {
-      "name": "F. Wagner",
-      "status": "QUES",
-      "details": "F. Wagner (Ques)"
-    },
     {
       "name": "C. Castleton",
       "status": "OUT",
@@ -245,15 +260,15 @@
     },
     {
       "name": "T. Shannon",
-      "status": "DOUBT",
-      "details": "T. Shannon (Doubt)"
+      "status": "OUT",
+      "details": "T. Shannon (Out)"
     }
   ],
   "MIN": [
     {
       "name": "T. Shannon",
-      "status": "DOUBT",
-      "details": "T. Shannon (Doubt)"
+      "status": "OUT",
+      "details": "T. Shannon (Out)"
     }
   ],
   "CLE": [
