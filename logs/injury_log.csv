@@ -5116,7 +5116,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-09,MIL,C. Thomas,QUES,C. Thomas (Ques),rotowire
 2026-02-09,MIL,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
 2026-02-09,MIL,T. Prince,OUT,T. Prince (Out),rotowire
+2026-02-09,MIL,W. Carter,QUES,W. Carter (Ques),rotowire
 2026-02-09,MIL,C. Castleton,OUT,C. Castleton (Out),rotowire
+2026-02-09,ORL,W. Carter,QUES,W. Carter (Ques),rotowire
 2026-02-09,ORL,C. Castleton,OUT,C. Castleton (Out),rotowire
 2026-02-09,SAC,D. Hunter,OUT,D. Hunter (Out),rotowire
 2026-02-09,SAC,Z. LaVine,OUT,Z. LaVine (Out),rotowire
@@ -5175,6 +5177,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-09,LAL,L. Doncic,OUT,L. Doncic (Out),rotowire
 2026-02-09,LAL,A. Thiero,OUT,A. Thiero (Out),rotowire
 2026-02-09,PHI,J. Embiid,QUES,J. Embiid (Ques),rotowire
+2026-02-09,PHI,Q. Grimes,QUES,Q. Grimes (Ques),rotowire
 2026-02-09,PHI,P. George,OUT,P. George (Out),rotowire
 2026-02-09,PHI,D. Avdija,QUES,D. Avdija (Ques),rotowire
 2026-02-09,PHI,D. Lillard,OFS,D. Lillard (OFS),rotowire
