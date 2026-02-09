@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-09",
-  "built_at_utc": "2026-02-09T09:12:42Z",
+  "built_at_utc": "2026-02-09T15:29:28Z",
   "source": "rotowire",
   "DET": [
     {
@@ -12,11 +12,6 @@
       "name": "R. Holland",
       "status": "OUT",
       "details": "R. Holland (Out)"
-    },
-    {
-      "name": "Tolu Smith",
-      "status": "OUT",
-      "details": "Tolu Smith (Out)"
     },
     {
       "name": "Fantasy Home",
@@ -39,22 +34,12 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "M. Branham",
-      "status": "OUT",
-      "details": "M. Branham (Out)"
-    },
-    {
       "name": "Coby White",
       "status": "OUT",
       "details": "Coby White (Out)"
     }
   ],
   "CHA": [
-    {
-      "name": "M. Branham",
-      "status": "OUT",
-      "details": "M. Branham (Out)"
-    },
     {
       "name": "Coby White",
       "status": "OUT",
@@ -84,13 +69,13 @@
     },
     {
       "name": "P. Larsson",
-      "status": "OUT",
-      "details": "P. Larsson (Out)"
+      "status": "QUES",
+      "details": "P. Larsson (Ques)"
     },
     {
       "name": "T. Herro",
-      "status": "OUT",
-      "details": "T. Herro (Out)"
+      "status": "DOUBT",
+      "details": "T. Herro (Doubt)"
     },
     {
       "name": "T. Rozier",
@@ -100,19 +85,19 @@
   ],
   "MIA": [
     {
+      "name": "P. Larsson",
+      "status": "QUES",
+      "details": "P. Larsson (Ques)"
+    },
+    {
       "name": "N. Powell",
       "status": "QUES",
       "details": "N. Powell (Ques)"
     },
     {
       "name": "T. Herro",
-      "status": "OUT",
-      "details": "T. Herro (Out)"
-    },
-    {
-      "name": "P. Larsson",
-      "status": "OUT",
-      "details": "P. Larsson (Out)"
+      "status": "DOUBT",
+      "details": "T. Herro (Doubt)"
     },
     {
       "name": "T. Rozier",
@@ -260,15 +245,15 @@
     },
     {
       "name": "T. Shannon",
-      "status": "OUT",
-      "details": "T. Shannon (Out)"
+      "status": "DOUBT",
+      "details": "T. Shannon (Doubt)"
     }
   ],
   "MIN": [
     {
       "name": "T. Shannon",
-      "status": "OUT",
-      "details": "T. Shannon (Out)"
+      "status": "DOUBT",
+      "details": "T. Shannon (Doubt)"
     }
   ],
   "CLE": [
