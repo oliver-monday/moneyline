@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-09",
-  "built_at_utc": "2026-02-09T17:41:09Z",
+  "built_at_utc": "2026-02-09T20:03:21Z",
   "source": "rotowire",
   "DET": [
     {
@@ -88,14 +88,19 @@
       "details": "N. Powell (Ques)"
     },
     {
+      "name": "B. Adebayo",
+      "status": "PROB",
+      "details": "B. Adebayo (Prob)"
+    },
+    {
       "name": "P. Larsson",
-      "status": "QUES",
-      "details": "P. Larsson (Ques)"
+      "status": "DOUBT",
+      "details": "P. Larsson (Doubt)"
     },
     {
       "name": "T. Herro",
-      "status": "DOUBT",
-      "details": "T. Herro (Doubt)"
+      "status": "OUT",
+      "details": "T. Herro (Out)"
     },
     {
       "name": "T. Rozier",
@@ -105,9 +110,9 @@
   ],
   "MIA": [
     {
-      "name": "P. Larsson",
-      "status": "QUES",
-      "details": "P. Larsson (Ques)"
+      "name": "B. Adebayo",
+      "status": "PROB",
+      "details": "B. Adebayo (Prob)"
     },
     {
       "name": "N. Powell",
@@ -115,9 +120,14 @@
       "details": "N. Powell (Ques)"
     },
     {
-      "name": "T. Herro",
+      "name": "P. Larsson",
       "status": "DOUBT",
-      "details": "T. Herro (Doubt)"
+      "details": "P. Larsson (Doubt)"
+    },
+    {
+      "name": "T. Herro",
+      "status": "OUT",
+      "details": "T. Herro (Out)"
     },
     {
       "name": "T. Rozier",
@@ -205,16 +215,6 @@
   ],
   "SAC": [
     {
-      "name": "D. McDermott",
-      "status": "QUES",
-      "details": "D. McDermott (Ques)"
-    },
-    {
-      "name": "D. Sabonis",
-      "status": "QUES",
-      "details": "D. Sabonis (Ques)"
-    },
-    {
       "name": "D. Hunter",
       "status": "OUT",
       "details": "D. Hunter (Out)"
@@ -235,6 +235,11 @@
       "details": "K. Murray (Out)"
     },
     {
+      "name": "D. Sabonis",
+      "status": "OUT",
+      "details": "D. Sabonis (Out)"
+    },
+    {
       "name": "D. Murray",
       "status": "OUT",
       "details": "D. Murray (Out)"
@@ -252,6 +257,11 @@
       "name": "D. Daniels",
       "status": "QUES",
       "details": "D. Daniels (Ques)"
+    },
+    {
+      "name": "J. Johnson",
+      "status": "QUES",
+      "details": "J. Johnson (Ques)"
     },
     {
       "name": "J. Kuminga",
