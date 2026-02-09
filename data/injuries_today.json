@@ -1,13 +1,8 @@
 {
   "asof_date": "2026-02-09",
-  "built_at_utc": "2026-02-09T22:45:08Z",
+  "built_at_utc": "2026-02-09T23:40:15Z",
   "source": "rotowire",
   "DET": [
-    {
-      "name": "J. Duren",
-      "status": "PROB",
-      "details": "J. Duren (Prob)"
-    },
     {
       "name": "R. Holland",
       "status": "OUT",
@@ -83,24 +78,19 @@
       "details": "Kevin Love (Out)"
     },
     {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
-    },
-    {
-      "name": "B. Adebayo",
-      "status": "PROB",
-      "details": "B. Adebayo (Prob)"
-    },
-    {
-      "name": "P. Larsson",
-      "status": "DOUBT",
-      "details": "P. Larsson (Doubt)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
+    },
+    {
+      "name": "P. Larsson",
+      "status": "OUT",
+      "details": "P. Larsson (Out)"
+    },
+    {
+      "name": "N. Powell",
+      "status": "OUT",
+      "details": "N. Powell (Out)"
     },
     {
       "name": "T. Rozier",
@@ -110,24 +100,19 @@
   ],
   "MIA": [
     {
-      "name": "B. Adebayo",
-      "status": "PROB",
-      "details": "B. Adebayo (Prob)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
-    },
-    {
-      "name": "P. Larsson",
-      "status": "DOUBT",
-      "details": "P. Larsson (Doubt)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
+    },
+    {
+      "name": "P. Larsson",
+      "status": "OUT",
+      "details": "P. Larsson (Out)"
+    },
+    {
+      "name": "N. Powell",
+      "status": "OUT",
+      "details": "N. Powell (Out)"
     },
     {
       "name": "T. Rozier",
@@ -142,24 +127,24 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Smith",
-      "status": "QUES",
-      "details": "J. Smith (Ques)"
-    },
-    {
-      "name": "J. Giddey",
-      "status": "DOUBT",
-      "details": "J. Giddey (Doubt)"
-    },
-    {
-      "name": "T. Jones",
-      "status": "DOUBT",
-      "details": "T. Jones (Doubt)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
+    },
+    {
+      "name": "J. Giddey",
+      "status": "OUT",
+      "details": "J. Giddey (Out)"
+    },
+    {
+      "name": "Tre Jones",
+      "status": "OUT",
+      "details": "Tre Jones (Out)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OUT",
+      "details": "J. Smith (Out)"
     },
     {
       "name": "Egor Demin",
@@ -265,13 +250,13 @@
   "ATL": [
     {
       "name": "D. Daniels",
-      "status": "QUES",
-      "details": "D. Daniels (Ques)"
+      "status": "OUT",
+      "details": "D. Daniels (Out)"
     },
     {
       "name": "J. Johnson",
-      "status": "QUES",
-      "details": "J. Johnson (Ques)"
+      "status": "OUT",
+      "details": "J. Johnson (Out)"
     },
     {
       "name": "J. Kuminga",
@@ -501,6 +486,11 @@
       "details": "N. Topic (Out)"
     },
     {
+      "name": "D. Knecht",
+      "status": "QUES",
+      "details": "D. Knecht (Ques)"
+    },
+    {
       "name": "L. Doncic",
       "status": "OUT",
       "details": "L. Doncic (Out)"
@@ -512,6 +502,11 @@
     }
   ],
   "LAL": [
+    {
+      "name": "D. Knecht",
+      "status": "QUES",
+      "details": "D. Knecht (Ques)"
+    },
     {
       "name": "L. Doncic",
       "status": "OUT",
