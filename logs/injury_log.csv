@@ -5079,6 +5079,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-09,MIL,F. Wagner,QUES,F. Wagner (Ques),rotowire
 2026-02-09,ORL,F. Wagner,QUES,F. Wagner (Ques),rotowire
 2026-02-09,SAC,D. McDermott,QUES,D. McDermott (Ques),rotowire
+2026-02-09,OKC,D. Ayton,PROB,D. Ayton (Prob),rotowire
+2026-02-09,LAL,D. Ayton,PROB,D. Ayton (Prob),rotowire
 2026-02-09,DET,J. Duren,PROB,J. Duren (Prob),rotowire
 2026-02-09,DET,R. Holland,OUT,R. Holland (Out),rotowire
 2026-02-09,DET,Tolu Smith,OUT,Tolu Smith (Out),rotowire
@@ -5168,10 +5170,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-09,OKC,S. Gilgeous-Alexander,OUT,S. Gilgeous-Alexander (Out),rotowire
 2026-02-09,OKC,A. Mitchell,OUT,A. Mitchell (Out),rotowire
 2026-02-09,OKC,N. Topic,OUT,N. Topic (Out),rotowire
-2026-02-09,OKC,D. Ayton,PROB,D. Ayton (Prob),rotowire
 2026-02-09,OKC,L. Doncic,OUT,L. Doncic (Out),rotowire
 2026-02-09,OKC,A. Thiero,OUT,A. Thiero (Out),rotowire
-2026-02-09,LAL,D. Ayton,PROB,D. Ayton (Prob),rotowire
 2026-02-09,LAL,L. Doncic,OUT,L. Doncic (Out),rotowire
 2026-02-09,LAL,A. Thiero,OUT,A. Thiero (Out),rotowire
 2026-02-09,PHI,J. Embiid,QUES,J. Embiid (Ques),rotowire
