@@ -5128,6 +5128,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-09,ATL,J. Kuminga,OUT,J. Kuminga (Out),rotowire
 2026-02-09,ATL,T. Shannon,OUT,T. Shannon (Out),rotowire
 2026-02-09,MIN,T. Shannon,OUT,T. Shannon (Out),rotowire
+2026-02-09,CLE,T. Proctor,QUES,T. Proctor (Ques),rotowire
 2026-02-09,CLE,J. Tyson,QUES,J. Tyson (Ques),rotowire
 2026-02-09,CLE,D. Wade,QUES,D. Wade (Ques),rotowire
 2026-02-09,CLE,E. Mobley,OUT,E. Mobley (Out),rotowire
@@ -5152,11 +5153,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-09,MEM,Zach Edey,OUT,Zach Edey (Out),rotowire
 2026-02-09,MEM,Ja Morant,OUT,Ja Morant (Out),rotowire
 2026-02-09,MEM,J. Butler,OFS,J. Butler (OFS),rotowire
+2026-02-09,MEM,W. Richard,QUES,W. Richard (Ques),rotowire
 2026-02-09,MEM,LJ Cryer,OUT,LJ Cryer (Out),rotowire
 2026-02-09,MEM,S. Curry,OUT,S. Curry (Out),rotowire
 2026-02-09,MEM,Seth Curry,OUT,Seth Curry (Out),rotowire
 2026-02-09,MEM,K. Porzingis,OUT,K. Porzingis (Out),rotowire
 2026-02-09,GSW,J. Butler,OFS,J. Butler (OFS),rotowire
+2026-02-09,GSW,W. Richard,QUES,W. Richard (Ques),rotowire
 2026-02-09,GSW,LJ Cryer,OUT,LJ Cryer (Out),rotowire
 2026-02-09,GSW,S. Curry,OUT,S. Curry (Out),rotowire
 2026-02-09,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
