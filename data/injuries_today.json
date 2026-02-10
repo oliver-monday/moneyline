@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-09",
-  "built_at_utc": "2026-02-10T01:27:04Z",
+  "built_at_utc": "2026-02-10T03:45:30Z",
   "source": "rotowire",
   "DET": [
     {
@@ -322,11 +322,6 @@
   ],
   "MEM": [
     {
-      "name": "W. Clayton",
-      "status": "QUES",
-      "details": "W. Clayton (Ques)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -335,6 +330,11 @@
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
+    },
+    {
+      "name": "W. Clayton",
+      "status": "OUT",
+      "details": "W. Clayton (Out)"
     },
     {
       "name": "Zach Edey",
@@ -421,11 +421,6 @@
       "details": "N. Topic (Out)"
     },
     {
-      "name": "D. Knecht",
-      "status": "QUES",
-      "details": "D. Knecht (Ques)"
-    },
-    {
       "name": "L. Doncic",
       "status": "OUT",
       "details": "L. Doncic (Out)"
@@ -437,11 +432,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "D. Knecht",
-      "status": "QUES",
-      "details": "D. Knecht (Ques)"
-    },
     {
       "name": "L. Doncic",
       "status": "OUT",
@@ -455,14 +445,14 @@
   ],
   "PHI": [
     {
-      "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
+      "name": "D. Barlow",
+      "status": "OUT",
+      "details": "D. Barlow (Out)"
     },
     {
-      "name": "Q. Grimes",
-      "status": "QUES",
-      "details": "Q. Grimes (Ques)"
+      "name": "J. Embiid",
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     },
     {
       "name": "P. George",
@@ -470,9 +460,9 @@
       "details": "P. George (Out)"
     },
     {
-      "name": "D. Avdija",
-      "status": "QUES",
-      "details": "D. Avdija (Ques)"
+      "name": "Q. Grimes",
+      "status": "OUT",
+      "details": "Q. Grimes (Out)"
     },
     {
       "name": "D. Lillard",
@@ -500,11 +490,6 @@
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "D. Avdija",
-      "status": "QUES",
-      "details": "D. Avdija (Ques)"
     },
     {
       "name": "K. Murray",
