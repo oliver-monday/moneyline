@@ -1,0 +1,15 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-09,2026,Tyrese Maxey,PHI,POR,ast,6,MISSED,4,,targets_snapshot_2026-02-09.json
+2026-02-09,2026,Paolo Banchero,ORL,MIL,ast,4,MISSED,3,,targets_snapshot_2026-02-09.json
+2026-02-09,2026,Paolo Banchero,ORL,MIL,3pt,1,HIT,2,,targets_snapshot_2026-02-09.json
+2026-02-09,2026,Joel Embiid,PHI,POR,pts,25,MISSED,,,targets_snapshot_2026-02-09.json
+2026-02-09,2026,Joel Embiid,PHI,POR,3pt,1,MISSED,,,targets_snapshot_2026-02-09.json
+2026-02-09,2026,Cameron Johnson,DEN,CLE,ast,2,MISSED,1,,targets_snapshot_2026-02-09.json
+2026-02-09,2026,Saddiq Bey,NO,SAC,pts,15,MISSED,12,,targets_snapshot_2026-02-09.json
+2026-02-09,2026,Saddiq Bey,NO,SAC,ast,2,MISSED,1,,targets_snapshot_2026-02-09.json
+2026-02-09,2026,Ace Bailey,UTAH,MIA,pts,10,HIT,16,,targets_snapshot_2026-02-09.json
+2026-02-09,2026,Ace Bailey,UTAH,MIA,3pt,1,MISSED,0,,targets_snapshot_2026-02-09.json
+2026-02-09,2026,Dyson Daniels,ATL,MIN,reb,6,MISSED,,,targets_snapshot_2026-02-09.json
+2026-02-09,2026,Darius Garland,CLE,DEN,ast,6,,,,targets_snapshot_2026-02-09.json
+2026-02-09,2026,Matas Buzelis,CHI,BKN,ast,2,MISSED,1,,targets_snapshot_2026-02-09.json
+2026-02-09,2026,Matas Buzelis,CHI,BKN,3pt,2,HIT,3,,targets_snapshot_2026-02-09.json
