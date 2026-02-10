@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-09",
-  "built_at_utc": "2026-02-09T23:40:15Z",
+  "built_at_utc": "2026-02-10T01:27:04Z",
   "source": "rotowire",
   "DET": [
     {
@@ -171,11 +171,6 @@
   ],
   "MIL": [
     {
-      "name": "C. Thomas",
-      "status": "QUES",
-      "details": "C. Thomas (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -186,22 +181,12 @@
       "details": "T. Prince (Out)"
     },
     {
-      "name": "W. Carter",
-      "status": "QUES",
-      "details": "W. Carter (Ques)"
-    },
-    {
       "name": "C. Castleton",
       "status": "OUT",
       "details": "C. Castleton (Out)"
     }
   ],
   "ORL": [
-    {
-      "name": "W. Carter",
-      "status": "QUES",
-      "details": "W. Carter (Ques)"
-    },
     {
       "name": "C. Castleton",
       "status": "OUT",
@@ -278,21 +263,6 @@
   ],
   "CLE": [
     {
-      "name": "T. Proctor",
-      "status": "QUES",
-      "details": "T. Proctor (Ques)"
-    },
-    {
-      "name": "J. Tyson",
-      "status": "QUES",
-      "details": "J. Tyson (Ques)"
-    },
-    {
-      "name": "D. Wade",
-      "status": "QUES",
-      "details": "D. Wade (Ques)"
-    },
-    {
       "name": "E. Mobley",
       "status": "OUT",
       "details": "E. Mobley (Out)"
@@ -303,19 +273,9 @@
       "details": "Max Strus (Out)"
     },
     {
-      "name": "J. Murray",
-      "status": "QUES",
-      "details": "J. Murray (Ques)"
-    },
-    {
-      "name": "C. Braun",
-      "status": "PROB",
-      "details": "C. Braun (Prob)"
-    },
-    {
-      "name": "N. Jokic",
-      "status": "PROB",
-      "details": "N. Jokic (Prob)"
+      "name": "Dean Wade",
+      "status": "OUT",
+      "details": "Dean Wade (Out)"
     },
     {
       "name": "T. Bates",
@@ -339,21 +299,6 @@
     }
   ],
   "DEN": [
-    {
-      "name": "C. Braun",
-      "status": "PROB",
-      "details": "C. Braun (Prob)"
-    },
-    {
-      "name": "N. Jokic",
-      "status": "PROB",
-      "details": "N. Jokic (Prob)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "QUES",
-      "details": "J. Murray (Ques)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -407,11 +352,6 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "W. Richard",
-      "status": "QUES",
-      "details": "W. Richard (Ques)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -437,11 +377,6 @@
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
-    },
-    {
-      "name": "W. Richard",
-      "status": "QUES",
-      "details": "W. Richard (Ques)"
     },
     {
       "name": "LJ Cryer",
@@ -545,16 +480,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "S. Henderson",
-      "status": "PROB",
-      "details": "S. Henderson (Prob)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
-    },
-    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
@@ -577,19 +502,9 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "S. Henderson",
-      "status": "PROB",
-      "details": "S. Henderson (Prob)"
-    },
-    {
       "name": "D. Avdija",
       "status": "QUES",
       "details": "D. Avdija (Ques)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
     },
     {
       "name": "K. Murray",
