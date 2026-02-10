@@ -5198,6 +5198,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-09,POR,K. Murray,OUT,K. Murray (Out),rotowire
 2026-02-09,POR,S. Sharpe,OUT,S. Sharpe (Out),rotowire
 2026-02-09,POR,M. Thybulle,OUT,M. Thybulle (Out),rotowire
+2026-02-10,SAS,A. Thiero,QUES,A. Thiero (Ques),rotowire
+2026-02-10,LAL,A. Thiero,QUES,A. Thiero (Ques),rotowire
 2026-02-10,IND,J. Furphy,OFS,J. Furphy (OFS),rotowire
 2026-02-10,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-02-10,IND,E. Thompson,QUES,E. Thompson (Ques),rotowire
@@ -5231,9 +5233,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-10,PHX,I. Livers,OUT,I. Livers (Out),rotowire
 2026-02-10,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-02-10,SAS,L. Waters,OUT,L. Waters (Out),rotowire
-2026-02-10,SAS,A. Reaves,QUES,A. Reaves (Ques),rotowire
-2026-02-10,SAS,A. Thiero,QUES,A. Thiero (Ques),rotowire
+2026-02-10,SAS,D. Ayton,QUES,D. Ayton (Ques),rotowire
 2026-02-10,SAS,L. Doncic,OUT,L. Doncic (Out),rotowire
-2026-02-10,LAL,A. Reaves,QUES,A. Reaves (Ques),rotowire
-2026-02-10,LAL,A. Thiero,QUES,A. Thiero (Ques),rotowire
+2026-02-10,SAS,L. James,OUT,L. James (Out),rotowire
+2026-02-10,SAS,A. Reaves,OUT,A. Reaves (Out),rotowire
+2026-02-10,SAS,M. Smart,OUT,M. Smart (Out),rotowire
+2026-02-10,LAL,D. Ayton,QUES,D. Ayton (Ques),rotowire
 2026-02-10,LAL,L. Doncic,OUT,L. Doncic (Out),rotowire
+2026-02-10,LAL,L. James,OUT,L. James (Out),rotowire
+2026-02-10,LAL,A. Reaves,OUT,A. Reaves (Out),rotowire
+2026-02-10,LAL,M. Smart,OUT,M. Smart (Out),rotowire
