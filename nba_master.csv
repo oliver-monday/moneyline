@@ -803,6 +803,6 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810624,2026-02-09,2026-02-10T03:00Z,Los Angeles Lakers,LAL,110,210.0,,Oklahoma City Thunder,OKC,119,-258.0,,Los Angeles,CA,,
 401810625,2026-02-09,2026-02-10T03:00Z,Portland Trail Blazers,POR,135,145.0,,Philadelphia 76ers,PHI,118,-175.0,,Portland,OR,,
 401810626,2026-02-10,2026-02-11T00:30Z,New York Knicks,NY,0,-600.0,,Indiana Pacers,IND,0,440.0,,New York,NY,M. McBride (Out); M. Robinson (Out),J. Furphy (OFS); T. Haliburton (OFS); Obi Toppin (Out)
-401810627,2026-02-10,2026-02-11T01:00Z,Houston Rockets,HOU,0,-278.0,,LA Clippers,LAC,0,225.0,,Houston,TX,S. Adams (OFS); F. VanVleet (Out),B. Beal (OFS); D. Garland (Out)
-401810628,2026-02-10,2026-02-11T02:00Z,Phoenix Suns,PHX,0,-305.0,,Dallas Mavericks,DAL,0,245.0,,Phoenix,AZ,G. Allen (Out); C. Anthony (Out); I. Livers (Out),D. Lively (OFS); K. Irving (Out)
-401810629,2026-02-10,2026-02-11T03:30Z,Los Angeles Lakers,LAL,0,250.0,,San Antonio Spurs,SA,0,-310.0,,Los Angeles,CA,L. Doncic (Out); A. Thiero (Out),D. Jones Garcia (OFS); L. Waters (Out)
+401810627,2026-02-10,2026-02-11T01:00Z,Houston Rockets,HOU,0,-290.0,,LA Clippers,LAC,0,235.0,,Houston,TX,S. Adams (OFS); F. VanVleet (Out),B. Beal (OFS); D. Garland (Out)
+401810628,2026-02-10,2026-02-11T02:00Z,Phoenix Suns,PHX,0,-325.0,,Dallas Mavericks,DAL,0,260.0,,Phoenix,AZ,G. Allen (Out); C. Anthony (Out); I. Livers (Out),D. Lively (OFS); K. Irving (Out)
+401810629,2026-02-10,2026-02-11T03:30Z,Los Angeles Lakers,LAL,0,270.0,,San Antonio Spurs,SA,0,-340.0,,Los Angeles,CA,L. Doncic (Out); A. Thiero (Out),D. Jones Garcia (OFS); L. Waters (Out)
