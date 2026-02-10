@@ -5204,8 +5204,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-10,IND,T. McConnell,QUES,T. McConnell (Ques),rotowire
 2026-02-10,IND,A. Nesmith,QUES,A. Nesmith (Ques),rotowire
 2026-02-10,IND,M. Potter,QUES,M. Potter (Ques),rotowire
-2026-02-10,IND,I. Zubac,QUES,I. Zubac (Ques),rotowire
 2026-02-10,IND,Obi Toppin,OUT,Obi Toppin (Out),rotowire
+2026-02-10,IND,I. Zubac,OUT,I. Zubac (Out),rotowire
 2026-02-10,IND,Fantasy Home,PROB,Fantasy Home (Prob),rotowire
 2026-02-10,IND,Fantasy Football,REST,Fantasy Football (Rest),rotowire
 2026-02-10,IND,O. Anunoby,QUES,O. Anunoby (Ques),rotowire
@@ -5231,7 +5231,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-10,PHX,I. Livers,OUT,I. Livers (Out),rotowire
 2026-02-10,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-02-10,SAS,L. Waters,OUT,L. Waters (Out),rotowire
-2026-02-10,SAS,L. Doncic,OUT,L. Doncic (Out),rotowire
-2026-02-10,SAS,A. Thiero,OUT,A. Thiero (Out),rotowire
-2026-02-10,LAL,L. Doncic,OUT,L. Doncic (Out),rotowire
-2026-02-10,LAL,A. Thiero,OUT,A. Thiero (Out),rotowire
+2026-02-10,SAS,L. Doncic,QUES,L. Doncic (Ques),rotowire
+2026-02-10,SAS,A. Thiero,QUES,A. Thiero (Ques),rotowire
+2026-02-10,LAL,L. Doncic,QUES,L. Doncic (Ques),rotowire
+2026-02-10,LAL,A. Thiero,QUES,A. Thiero (Ques),rotowire

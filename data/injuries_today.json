@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-10",
-  "built_at_utc": "2026-02-10T09:15:12Z",
+  "built_at_utc": "2026-02-10T15:41:04Z",
   "source": "rotowire",
   "IND": [
     {
@@ -34,14 +34,14 @@
       "details": "M. Potter (Ques)"
     },
     {
-      "name": "I. Zubac",
-      "status": "QUES",
-      "details": "I. Zubac (Ques)"
-    },
-    {
       "name": "Obi Toppin",
       "status": "OUT",
       "details": "Obi Toppin (Out)"
+    },
+    {
+      "name": "I. Zubac",
+      "status": "OUT",
+      "details": "I. Zubac (Out)"
     },
     {
       "name": "Fantasy Home",
@@ -192,25 +192,25 @@
     },
     {
       "name": "L. Doncic",
-      "status": "OUT",
-      "details": "L. Doncic (Out)"
+      "status": "QUES",
+      "details": "L. Doncic (Ques)"
     },
     {
       "name": "A. Thiero",
-      "status": "OUT",
-      "details": "A. Thiero (Out)"
+      "status": "QUES",
+      "details": "A. Thiero (Ques)"
     }
   ],
   "LAL": [
     {
       "name": "L. Doncic",
-      "status": "OUT",
-      "details": "L. Doncic (Out)"
+      "status": "QUES",
+      "details": "L. Doncic (Ques)"
     },
     {
       "name": "A. Thiero",
-      "status": "OUT",
-      "details": "A. Thiero (Out)"
+      "status": "QUES",
+      "details": "A. Thiero (Ques)"
     }
   ]
 }
