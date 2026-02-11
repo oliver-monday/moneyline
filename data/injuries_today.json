@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-11",
-  "built_at_utc": "2026-02-11T22:36:22Z",
+  "built_at_utc": "2026-02-11T23:35:29Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -14,14 +14,14 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
-    },
-    {
       "name": "D. Russell",
       "status": "OUT",
       "details": "D. Russell (Out)"
+    },
+    {
+      "name": "Alex Sarr",
+      "status": "OUT",
+      "details": "Alex Sarr (Out)"
     },
     {
       "name": "T. Vukcevic",
@@ -88,11 +88,6 @@
   ],
   "MIL": [
     {
-      "name": "R. Rollins",
-      "status": "QUES",
-      "details": "R. Rollins (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -101,6 +96,11 @@
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
+    },
+    {
+      "name": "R. Rollins",
+      "status": "OUT",
+      "details": "R. Rollins (Out)"
     },
     {
       "name": "C. Castleton",
@@ -181,29 +181,29 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Giddey",
-      "status": "DOUBT",
-      "details": "J. Giddey (Doubt)"
-    },
-    {
-      "name": "T. Jones",
-      "status": "DOUBT",
-      "details": "T. Jones (Doubt)"
-    },
-    {
-      "name": "I. Okoro",
-      "status": "QUES",
-      "details": "I. Okoro (Ques)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "DOUBT",
-      "details": "J. Smith (Doubt)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OUT",
       "details": "Z. Collins (Out)"
+    },
+    {
+      "name": "J. Giddey",
+      "status": "OUT",
+      "details": "J. Giddey (Out)"
+    },
+    {
+      "name": "Tre Jones",
+      "status": "OUT",
+      "details": "Tre Jones (Out)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "OUT",
+      "details": "I. Okoro (Out)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OUT",
+      "details": "J. Smith (Out)"
     }
   ],
   "IND": [
@@ -258,14 +258,14 @@
       "details": "I. Zubac (Out)"
     },
     {
-      "name": "N. Clowney",
-      "status": "PROB",
-      "details": "N. Clowney (Prob)"
+      "name": "N. Claxton",
+      "status": "OUT",
+      "details": "N. Claxton (Out)"
     },
     {
-      "name": "N. Claxton",
-      "status": "DOUBT",
-      "details": "N. Claxton (Doubt)"
+      "name": "N. Clowney",
+      "status": "OUT",
+      "details": "N. Clowney (Out)"
     },
     {
       "name": "M. Porter",
@@ -275,14 +275,14 @@
   ],
   "BKN": [
     {
-      "name": "N. Clowney",
-      "status": "PROB",
-      "details": "N. Clowney (Prob)"
+      "name": "N. Claxton",
+      "status": "OUT",
+      "details": "N. Claxton (Out)"
     },
     {
-      "name": "N. Claxton",
-      "status": "DOUBT",
-      "details": "N. Claxton (Doubt)"
+      "name": "N. Clowney",
+      "status": "OUT",
+      "details": "N. Clowney (Out)"
     },
     {
       "name": "M. Porter",
@@ -302,46 +302,36 @@
       "details": "M. McBride (Out)"
     },
     {
-      "name": "D. Barlow",
-      "status": "QUES",
-      "details": "D. Barlow (Ques)"
-    },
-    {
       "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
-    },
-    {
-      "name": "Q. Grimes",
-      "status": "QUES",
-      "details": "Q. Grimes (Ques)"
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     },
     {
       "name": "P. George",
       "status": "OUT",
       "details": "P. George (Out)"
+    },
+    {
+      "name": "Q. Grimes",
+      "status": "OUT",
+      "details": "Q. Grimes (Out)"
     }
   ],
   "PHI": [
     {
-      "name": "D. Barlow",
-      "status": "QUES",
-      "details": "D. Barlow (Ques)"
-    },
-    {
       "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
-    },
-    {
-      "name": "Q. Grimes",
-      "status": "QUES",
-      "details": "Q. Grimes (Ques)"
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     },
     {
       "name": "P. George",
       "status": "OUT",
       "details": "P. George (Out)"
+    },
+    {
+      "name": "Q. Grimes",
+      "status": "OUT",
+      "details": "Q. Grimes (Out)"
     }
   ],
   "DET": [
@@ -361,11 +351,6 @@
       "details": "I. Stewart (Out)"
     },
     {
-      "name": "J. Poeltl",
-      "status": "QUES",
-      "details": "J. Poeltl (Ques)"
-    },
-    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
@@ -382,11 +367,6 @@
     }
   ],
   "TOR": [
-    {
-      "name": "J. Poeltl",
-      "status": "QUES",
-      "details": "J. Poeltl (Ques)"
-    },
     {
       "name": "C. Hepburn",
       "status": "OUT",
@@ -469,6 +449,11 @@
       "details": "D. Garland (Out)"
     },
     {
+      "name": "T. Eason",
+      "status": "QUES",
+      "details": "T. Eason (Ques)"
+    },
+    {
       "name": "A. Sengun",
       "status": "PROB",
       "details": "A. Sengun (Prob)"
@@ -477,11 +462,6 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
-    },
-    {
-      "name": "T. Eason",
-      "status": "QUES",
-      "details": "T. Eason (Ques)"
     },
     {
       "name": "D. Finney-Smith",
