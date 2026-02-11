@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-10",
-  "built_at_utc": "2026-02-11T03:42:46Z",
+  "built_at_utc": "2026-02-11T04:21:35Z",
   "source": "rotowire",
   "IND": [
     {
@@ -14,14 +14,14 @@
       "details": "T. Haliburton (OFS)"
     },
     {
+      "name": "J. Walker",
+      "status": "QUES",
+      "details": "J. Walker (Ques)"
+    },
+    {
       "name": "Obi Toppin",
       "status": "OUT",
       "details": "Obi Toppin (Out)"
-    },
-    {
-      "name": "J. Walker",
-      "status": "OUT",
-      "details": "J. Walker (Out)"
     },
     {
       "name": "I. Zubac",
@@ -49,36 +49,36 @@
       "details": "Fantasy Football (Rest)"
     },
     {
-      "name": "OG Anunoby",
-      "status": "OUT",
-      "details": "OG Anunoby (Out)"
+      "name": "O. Anunoby",
+      "status": "QUES",
+      "details": "O. Anunoby (Ques)"
+    },
+    {
+      "name": "M. Robinson",
+      "status": "QUES",
+      "details": "M. Robinson (Ques)"
     },
     {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
-    },
-    {
-      "name": "M. Robinson",
-      "status": "OUT",
-      "details": "M. Robinson (Out)"
     }
   ],
   "NYK": [
     {
-      "name": "OG Anunoby",
-      "status": "OUT",
-      "details": "OG Anunoby (Out)"
+      "name": "O. Anunoby",
+      "status": "QUES",
+      "details": "O. Anunoby (Ques)"
+    },
+    {
+      "name": "M. Robinson",
+      "status": "QUES",
+      "details": "M. Robinson (Ques)"
     },
     {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
-    },
-    {
-      "name": "M. Robinson",
-      "status": "OUT",
-      "details": "M. Robinson (Out)"
     }
   ],
   "LAC": [
