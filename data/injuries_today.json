@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-11",
-  "built_at_utc": "2026-02-11T19:56:10Z",
+  "built_at_utc": "2026-02-11T20:36:56Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -716,9 +716,9 @@
       "details": "N. Topic (Out)"
     },
     {
-      "name": "C. Anthony",
+      "name": "D. Booker",
       "status": "QUES",
-      "details": "C. Anthony (Ques)"
+      "details": "D. Booker (Ques)"
     },
     {
       "name": "J. Green",
@@ -729,6 +729,11 @@
       "name": "G. Allen",
       "status": "OUT",
       "details": "G. Allen (Out)"
+    },
+    {
+      "name": "C. Anthony",
+      "status": "OUT",
+      "details": "C. Anthony (Out)"
     },
     {
       "name": "I. Livers",
@@ -738,9 +743,9 @@
   ],
   "PHX": [
     {
-      "name": "C. Anthony",
+      "name": "D. Booker",
       "status": "QUES",
-      "details": "C. Anthony (Ques)"
+      "details": "D. Booker (Ques)"
     },
     {
       "name": "J. Green",
@@ -751,6 +756,11 @@
       "name": "G. Allen",
       "status": "OUT",
       "details": "G. Allen (Out)"
+    },
+    {
+      "name": "C. Anthony",
+      "status": "OUT",
+      "details": "C. Anthony (Out)"
     },
     {
       "name": "I. Livers",
