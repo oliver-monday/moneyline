@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-11",
-  "built_at_utc": "2026-02-11T17:48:46Z",
+  "built_at_utc": "2026-02-11T19:00:10Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -14,14 +14,19 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "T. Vukcevic",
+      "name": "A. Sarr",
       "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
+      "details": "A. Sarr (Ques)"
     },
     {
       "name": "D. Russell",
       "status": "OUT",
       "details": "D. Russell (Out)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "OUT",
+      "details": "T. Vukcevic (Out)"
     },
     {
       "name": "Trae Young",
@@ -238,29 +243,34 @@
       "details": "E. Thompson (Ques)"
     },
     {
-      "name": "T. McConnell",
+      "name": "M. Potter",
       "status": "QUES",
-      "details": "T. McConnell (Ques)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
-    },
-    {
-      "name": "A. Nesmith",
-      "status": "QUES",
-      "details": "A. Nesmith (Ques)"
-    },
-    {
-      "name": "P. Siakam",
-      "status": "QUES",
-      "details": "P. Siakam (Ques)"
+      "details": "M. Potter (Ques)"
     },
     {
       "name": "J. Walker",
       "status": "QUES",
       "details": "J. Walker (Ques)"
+    },
+    {
+      "name": "T. McConnell",
+      "status": "OUT",
+      "details": "T. McConnell (Out)"
+    },
+    {
+      "name": "A. Nembhard",
+      "status": "OUT",
+      "details": "A. Nembhard (Out)"
+    },
+    {
+      "name": "A. Nesmith",
+      "status": "OUT",
+      "details": "A. Nesmith (Out)"
+    },
+    {
+      "name": "P. Siakam",
+      "status": "OUT",
+      "details": "P. Siakam (Out)"
     },
     {
       "name": "Obi Toppin",
@@ -307,14 +317,9 @@
   ],
   "NYK": [
     {
-      "name": "O. Anunoby",
-      "status": "QUES",
-      "details": "O. Anunoby (Ques)"
-    },
-    {
-      "name": "M. Robinson",
-      "status": "QUES",
-      "details": "M. Robinson (Ques)"
+      "name": "OG Anunoby",
+      "status": "OUT",
+      "details": "OG Anunoby (Out)"
     },
     {
       "name": "M. McBride",
@@ -450,26 +455,26 @@
       "details": "T. Rozier (Out)"
     },
     {
-      "name": "M. Peavy",
-      "status": "QUES",
-      "details": "M. Peavy (Ques)"
-    },
-    {
       "name": "D. Murray",
       "status": "OUT",
       "details": "D. Murray (Out)"
+    },
+    {
+      "name": "M. Peavy",
+      "status": "OUT",
+      "details": "M. Peavy (Out)"
     }
   ],
   "NOP": [
     {
-      "name": "M. Peavy",
-      "status": "QUES",
-      "details": "M. Peavy (Ques)"
-    },
-    {
       "name": "D. Murray",
       "status": "OUT",
       "details": "D. Murray (Out)"
+    },
+    {
+      "name": "M. Peavy",
+      "status": "OUT",
+      "details": "M. Peavy (Out)"
     }
   ],
   "LAC": [
@@ -479,9 +484,19 @@
       "details": "B. Beal (OFS)"
     },
     {
+      "name": "N. Batum",
+      "status": "OUT",
+      "details": "N. Batum (Out)"
+    },
+    {
       "name": "D. Garland",
       "status": "OUT",
       "details": "D. Garland (Out)"
+    },
+    {
+      "name": "A. Sengun",
+      "status": "PROB",
+      "details": "A. Sengun (Prob)"
     },
     {
       "name": "S. Adams",
@@ -495,8 +510,8 @@
     },
     {
       "name": "D. Finney-Smith",
-      "status": "QUES",
-      "details": "D. Finney-Smith (Ques)"
+      "status": "OUT",
+      "details": "D. Finney-Smith (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -511,14 +526,19 @@
       "details": "S. Adams (OFS)"
     },
     {
+      "name": "A. Sengun",
+      "status": "PROB",
+      "details": "A. Sengun (Prob)"
+    },
+    {
       "name": "T. Eason",
       "status": "QUES",
       "details": "T. Eason (Ques)"
     },
     {
       "name": "D. Finney-Smith",
-      "status": "QUES",
-      "details": "D. Finney-Smith (Ques)"
+      "status": "OUT",
+      "details": "D. Finney-Smith (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -701,6 +721,11 @@
       "details": "C. Anthony (Ques)"
     },
     {
+      "name": "J. Green",
+      "status": "QUES",
+      "details": "J. Green (Ques)"
+    },
+    {
       "name": "G. Allen",
       "status": "OUT",
       "details": "G. Allen (Out)"
@@ -716,6 +741,11 @@
       "name": "C. Anthony",
       "status": "QUES",
       "details": "C. Anthony (Ques)"
+    },
+    {
+      "name": "J. Green",
+      "status": "QUES",
+      "details": "J. Green (Ques)"
     },
     {
       "name": "G. Allen",
