@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-11",
-  "built_at_utc": "2026-02-11T21:23:21Z",
+  "built_at_utc": "2026-02-11T22:36:22Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -88,11 +88,6 @@
   ],
   "MIL": [
     {
-      "name": "P. Nance",
-      "status": "QUES",
-      "details": "P. Nance (Ques)"
-    },
-    {
       "name": "R. Rollins",
       "status": "QUES",
       "details": "R. Rollins (Ques)"
@@ -131,21 +126,6 @@
     }
   ],
   "ATL": [
-    {
-      "name": "D. Daniels",
-      "status": "QUES",
-      "details": "D. Daniels (Ques)"
-    },
-    {
-      "name": "J. Johnson",
-      "status": "QUES",
-      "details": "J. Johnson (Ques)"
-    },
-    {
-      "name": "Z. Risacher",
-      "status": "QUES",
-      "details": "Z. Risacher (Ques)"
-    },
     {
       "name": "J. Kuminga",
       "status": "OUT",
@@ -201,11 +181,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "I. Okoro",
-      "status": "QUES",
-      "details": "I. Okoro (Ques)"
-    },
-    {
       "name": "J. Giddey",
       "status": "DOUBT",
       "details": "J. Giddey (Doubt)"
@@ -214,6 +189,11 @@
       "name": "T. Jones",
       "status": "DOUBT",
       "details": "T. Jones (Doubt)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "QUES",
+      "details": "I. Okoro (Ques)"
     },
     {
       "name": "J. Smith",
@@ -236,11 +216,6 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
-    },
-    {
-      "name": "E. Thompson",
-      "status": "QUES",
-      "details": "E. Thompson (Ques)"
     },
     {
       "name": "M. Potter",
@@ -845,8 +820,8 @@
     },
     {
       "name": "L. Waters",
-      "status": "QUES",
-      "details": "L. Waters (Ques)"
+      "status": "OUT",
+      "details": "L. Waters (Out)"
     },
     {
       "name": "D. Melton",
