@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-10",
-  "built_at_utc": "2026-02-10T23:40:29Z",
+  "built_at_utc": "2026-02-11T01:24:41Z",
   "source": "rotowire",
   "IND": [
     {
@@ -14,24 +14,14 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "E. Thompson",
-      "status": "QUES",
-      "details": "E. Thompson (Ques)"
-    },
-    {
-      "name": "M. Potter",
-      "status": "QUES",
-      "details": "M. Potter (Ques)"
-    },
-    {
-      "name": "J. Walker",
-      "status": "DOUBT",
-      "details": "J. Walker (Doubt)"
-    },
-    {
       "name": "Obi Toppin",
       "status": "OUT",
       "details": "Obi Toppin (Out)"
+    },
+    {
+      "name": "J. Walker",
+      "status": "OUT",
+      "details": "J. Walker (Out)"
     },
     {
       "name": "I. Zubac",
@@ -132,14 +122,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "K. Thompson",
-      "status": "QUES",
-      "details": "K. Thompson (Ques)"
-    },
-    {
       "name": "K. Irving",
       "status": "OUT",
       "details": "K. Irving (Out)"
+    },
+    {
+      "name": "K. Thompson",
+      "status": "OUT",
+      "details": "K. Thompson (Out)"
     },
     {
       "name": "G. Allen",
