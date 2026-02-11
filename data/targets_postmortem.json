@@ -5,8 +5,8 @@
     "hits": 2,
     "misses": 0,
     "hit_rate_pct": 100,
-    "top_targets_total": 2,
-    "top_targets_hits": 1
+    "top_targets_total": 3,
+    "top_targets_hits": 2
   },
   "hits": [
     {
@@ -58,7 +58,7 @@
       "actual": 3
     }
   ],
-  "built_at_utc": "2026-02-11T09:15:45Z",
+  "built_at_utc": "2026-02-11T14:45:51Z",
   "snapshot_file": "targets_snapshot_2026-02-10.json",
   "preset": "baseline",
   "top_targets": [
@@ -85,6 +85,31 @@
       "actual": null,
       "hit": false,
       "delta": null
+    },
+    {
+      "asof_date": "2026-02-10",
+      "player_id": "3202.0",
+      "player_name": "Kevin Durant",
+      "team_abbrev": "HOU",
+      "opp": "LAC",
+      "game_id": "401810627",
+      "stat": "3pt",
+      "threshold": 2,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": true,
+      "rest_days": 2,
+      "is_b2b": false,
+      "share_trend_pp": -8.010336885336885,
+      "share_trend_dir": "DOWN",
+      "iqr_10": 1.75,
+      "landmine_rate_10": null,
+      "trap_risk": null,
+      "dnp": false,
+      "actual": 3,
+      "hit": true,
+      "delta": -1
     },
     {
       "asof_date": "2026-02-10",

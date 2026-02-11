@@ -6,11 +6,11 @@
   },
   "days_tracked": 45,
   "end_date": "2026-02-10",
-  "last_updated_utc": "2026-02-11T09:15:47Z",
+  "last_updated_utc": "2026-02-11T14:45:53Z",
   "start_date": "2025-12-28",
   "top_targets": {
-    "hit_rate": 0.5791505791505791,
-    "hits": 150,
-    "total": 259
+    "hit_rate": 0.5807692307692308,
+    "hits": 151,
+    "total": 260
   }
 }
