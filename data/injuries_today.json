@@ -1,8 +1,13 @@
 {
   "asof_date": "2026-02-12",
-  "built_at_utc": "2026-02-12T09:08:33Z",
+  "built_at_utc": "2026-02-12T15:13:06Z",
   "source": "rotowire",
   "MIL": [
+    {
+      "name": "R. Rollins",
+      "status": "QUES",
+      "details": "R. Rollins (Ques)"
+    },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
@@ -12,11 +17,6 @@
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
-    },
-    {
-      "name": "R. Rollins",
-      "status": "OUT",
-      "details": "R. Rollins (Out)"
     },
     {
       "name": "Fantasy Home",
@@ -49,14 +49,14 @@
       "details": "T. Sorber (OFS)"
     },
     {
+      "name": "A. Mitchell",
+      "status": "QUES",
+      "details": "A. Mitchell (Ques)"
+    },
+    {
       "name": "S. Gilgeous-Alexander",
       "status": "OUT",
       "details": "S. Gilgeous-Alexander (Out)"
-    },
-    {
-      "name": "A. Mitchell",
-      "status": "OUT",
-      "details": "A. Mitchell (Out)"
     },
     {
       "name": "N. Topic",
@@ -76,14 +76,14 @@
       "details": "J. Williams (Ques)"
     },
     {
+      "name": "A. Mitchell",
+      "status": "QUES",
+      "details": "A. Mitchell (Ques)"
+    },
+    {
       "name": "S. Gilgeous-Alexander",
       "status": "OUT",
       "details": "S. Gilgeous-Alexander (Out)"
-    },
-    {
-      "name": "A. Mitchell",
-      "status": "OUT",
-      "details": "A. Mitchell (Out)"
     },
     {
       "name": "N. Topic",
@@ -99,13 +99,13 @@
     },
     {
       "name": "K. Murray",
-      "status": "OUT",
-      "details": "K. Murray (Out)"
+      "status": "DOUBT",
+      "details": "K. Murray (Doubt)"
     },
     {
       "name": "S. Sharpe",
-      "status": "OUT",
-      "details": "S. Sharpe (Out)"
+      "status": "QUES",
+      "details": "S. Sharpe (Ques)"
     },
     {
       "name": "M. Thybulle",
@@ -114,8 +114,8 @@
     },
     {
       "name": "K. George",
-      "status": "OUT",
-      "details": "K. George (Out)"
+      "status": "QUES",
+      "details": "K. George (Ques)"
     },
     {
       "name": "W. Kessler",
@@ -136,8 +136,8 @@
     },
     {
       "name": "K. George",
-      "status": "OUT",
-      "details": "K. George (Out)"
+      "status": "QUES",
+      "details": "K. George (Ques)"
     },
     {
       "name": "E. Harkless",
