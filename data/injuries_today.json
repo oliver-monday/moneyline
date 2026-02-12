@@ -1,18 +1,8 @@
 {
   "asof_date": "2026-02-12",
-  "built_at_utc": "2026-02-12T22:38:13Z",
+  "built_at_utc": "2026-02-12T23:32:31Z",
   "source": "rotowire",
   "MIL": [
-    {
-      "name": "K. Kuzma",
-      "status": "QUES",
-      "details": "K. Kuzma (Ques)"
-    },
-    {
-      "name": "R. Rollins",
-      "status": "QUES",
-      "details": "R. Rollins (Ques)"
-    },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
@@ -22,6 +12,11 @@
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
+    },
+    {
+      "name": "R. Rollins",
+      "status": "OUT",
+      "details": "R. Rollins (Out)"
     },
     {
       "name": "T. Sorber",
