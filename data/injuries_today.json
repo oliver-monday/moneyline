@@ -1,8 +1,13 @@
 {
   "asof_date": "2026-02-12",
-  "built_at_utc": "2026-02-12T19:00:24Z",
+  "built_at_utc": "2026-02-12T19:50:55Z",
   "source": "rotowire",
   "MIL": [
+    {
+      "name": "K. Kuzma",
+      "status": "QUES",
+      "details": "K. Kuzma (Ques)"
+    },
     {
       "name": "R. Rollins",
       "status": "QUES",
@@ -24,24 +29,24 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "A. Mitchell",
-      "status": "QUES",
-      "details": "A. Mitchell (Ques)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "DOUBT",
-      "details": "J. Williams (Doubt)"
-    },
-    {
       "name": "S. Gilgeous-Alexander",
       "status": "OUT",
       "details": "S. Gilgeous-Alexander (Out)"
     },
     {
-      "name": "N. Topic",
+      "name": "I. Hartenstein",
       "status": "OUT",
-      "details": "N. Topic (Out)"
+      "details": "I. Hartenstein (Out)"
+    },
+    {
+      "name": "A. Mitchell",
+      "status": "OUT",
+      "details": "A. Mitchell (Out)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ],
   "OKC": [
@@ -51,24 +56,24 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "A. Mitchell",
-      "status": "QUES",
-      "details": "A. Mitchell (Ques)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "DOUBT",
-      "details": "J. Williams (Doubt)"
-    },
-    {
       "name": "S. Gilgeous-Alexander",
       "status": "OUT",
       "details": "S. Gilgeous-Alexander (Out)"
     },
     {
-      "name": "N. Topic",
+      "name": "I. Hartenstein",
       "status": "OUT",
-      "details": "N. Topic (Out)"
+      "details": "I. Hartenstein (Out)"
+    },
+    {
+      "name": "A. Mitchell",
+      "status": "OUT",
+      "details": "A. Mitchell (Out)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ],
   "POR": [
