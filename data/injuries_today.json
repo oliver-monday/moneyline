@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-12",
-  "built_at_utc": "2026-02-12T19:50:55Z",
+  "built_at_utc": "2026-02-12T20:32:47Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -83,9 +83,9 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "S. Sharpe",
+      "name": "D. Avdija",
       "status": "QUES",
-      "details": "S. Sharpe (Ques)"
+      "details": "D. Avdija (Ques)"
     },
     {
       "name": "R. Williams",
@@ -93,24 +93,19 @@
       "details": "R. Williams (Ques)"
     },
     {
-      "name": "S. Henderson",
-      "status": "DOUBT",
-      "details": "S. Henderson (Doubt)"
+      "name": "K. Murray",
+      "status": "OUT",
+      "details": "K. Murray (Out)"
     },
     {
-      "name": "K. Murray",
-      "status": "DOUBT",
-      "details": "K. Murray (Doubt)"
+      "name": "S. Sharpe",
+      "status": "OUT",
+      "details": "S. Sharpe (Out)"
     },
     {
       "name": "M. Thybulle",
       "status": "OUT",
       "details": "M. Thybulle (Out)"
-    },
-    {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
     },
     {
       "name": "J. Jackson",
@@ -123,9 +118,19 @@
       "details": "W. Kessler (OFS)"
     },
     {
+      "name": "K. George",
+      "status": "OUT",
+      "details": "K. George (Out)"
+    },
+    {
       "name": "E. Harkless",
       "status": "OUT",
       "details": "E. Harkless (Out)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "OUT",
+      "details": "L. Markkanen (Out)"
     }
   ],
   "UTA": [
@@ -141,13 +146,18 @@
     },
     {
       "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
+      "status": "OUT",
+      "details": "K. George (Out)"
     },
     {
       "name": "E. Harkless",
       "status": "OUT",
       "details": "E. Harkless (Out)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "OUT",
+      "details": "L. Markkanen (Out)"
     }
   ],
   "DAL": [
