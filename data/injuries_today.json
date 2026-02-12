@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-12",
-  "built_at_utc": "2026-02-12T15:13:06Z",
+  "built_at_utc": "2026-02-12T17:49:31Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -19,31 +19,6 @@
       "details": "T. Prince (Out)"
     },
     {
-      "name": "Fantasy Home",
-      "status": "REST",
-      "details": "Fantasy Home (Rest)"
-    },
-    {
-      "name": "Fantasy Home",
-      "status": "OUT",
-      "details": "Fantasy Home (Out)"
-    },
-    {
-      "name": "Fantasy Home",
-      "status": "PROB",
-      "details": "Fantasy Home (Prob)"
-    },
-    {
-      "name": "Fantasy Football",
-      "status": "REST",
-      "details": "Fantasy Football (Rest)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
-    },
-    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
@@ -52,6 +27,11 @@
       "name": "A. Mitchell",
       "status": "QUES",
       "details": "A. Mitchell (Ques)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "DOUBT",
+      "details": "J. Williams (Doubt)"
     },
     {
       "name": "S. Gilgeous-Alexander",
@@ -71,14 +51,14 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
-    },
-    {
       "name": "A. Mitchell",
       "status": "QUES",
       "details": "A. Mitchell (Ques)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "DOUBT",
+      "details": "J. Williams (Doubt)"
     },
     {
       "name": "S. Gilgeous-Alexander",
@@ -98,14 +78,24 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "K. Murray",
-      "status": "DOUBT",
-      "details": "K. Murray (Doubt)"
-    },
-    {
       "name": "S. Sharpe",
       "status": "QUES",
       "details": "S. Sharpe (Ques)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "QUES",
+      "details": "R. Williams (Ques)"
+    },
+    {
+      "name": "S. Henderson",
+      "status": "DOUBT",
+      "details": "S. Henderson (Doubt)"
+    },
+    {
+      "name": "K. Murray",
+      "status": "DOUBT",
+      "details": "K. Murray (Doubt)"
     },
     {
       "name": "M. Thybulle",
@@ -113,14 +103,24 @@
       "details": "M. Thybulle (Out)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
+      "name": "J. Jackson",
+      "status": "OFS",
+      "details": "J. Jackson (OFS)"
     },
     {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
+    },
+    {
+      "name": "K. George",
+      "status": "QUES",
+      "details": "K. George (Ques)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "QUES",
+      "details": "L. Markkanen (Ques)"
     },
     {
       "name": "E. Harkless",
@@ -130,6 +130,11 @@
   ],
   "UTA": [
     {
+      "name": "J. Jackson",
+      "status": "OFS",
+      "details": "J. Jackson (OFS)"
+    },
+    {
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
@@ -138,6 +143,11 @@
       "name": "K. George",
       "status": "QUES",
       "details": "K. George (Ques)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "QUES",
+      "details": "L. Markkanen (Ques)"
     },
     {
       "name": "E. Harkless",
