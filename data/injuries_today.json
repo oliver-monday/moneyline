@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-12",
-  "built_at_utc": "2026-02-12T20:32:47Z",
+  "built_at_utc": "2026-02-12T21:21:56Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -29,6 +29,11 @@
       "details": "T. Sorber (OFS)"
     },
     {
+      "name": "B. Carlson",
+      "status": "OUT",
+      "details": "B. Carlson (Out)"
+    },
+    {
       "name": "S. Gilgeous-Alexander",
       "status": "OUT",
       "details": "S. Gilgeous-Alexander (Out)"
@@ -54,6 +59,11 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "B. Carlson",
+      "status": "OUT",
+      "details": "B. Carlson (Out)"
     },
     {
       "name": "S. Gilgeous-Alexander",
@@ -188,8 +198,8 @@
     },
     {
       "name": "D. Ayton",
-      "status": "QUES",
-      "details": "D. Ayton (Ques)"
+      "status": "OUT",
+      "details": "D. Ayton (Out)"
     },
     {
       "name": "L. Doncic",
@@ -200,8 +210,8 @@
   "LAL": [
     {
       "name": "D. Ayton",
-      "status": "QUES",
-      "details": "D. Ayton (Ques)"
+      "status": "OUT",
+      "details": "D. Ayton (Out)"
     },
     {
       "name": "L. Doncic",
