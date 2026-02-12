@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-11",
-  "built_at_utc": "2026-02-12T01:17:39Z",
+  "built_at_utc": "2026-02-12T03:37:17Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -400,6 +400,11 @@
       "details": "A. Wiggins (Out)"
     },
     {
+      "name": "T. Murphy",
+      "status": "QUES",
+      "details": "T. Murphy (Ques)"
+    },
+    {
       "name": "Yves Missi",
       "status": "OUT",
       "details": "Yves Missi (Out)"
@@ -416,6 +421,11 @@
     }
   ],
   "NOP": [
+    {
+      "name": "T. Murphy",
+      "status": "QUES",
+      "details": "T. Murphy (Ques)"
+    },
     {
       "name": "Yves Missi",
       "status": "OUT",
@@ -547,6 +557,11 @@
       "details": "Ja Morant (Out)"
     },
     {
+      "name": "J. Pickett",
+      "status": "QUES",
+      "details": "J. Pickett (Ques)"
+    },
+    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -568,6 +583,11 @@
     }
   ],
   "DEN": [
+    {
+      "name": "J. Pickett",
+      "status": "QUES",
+      "details": "J. Pickett (Ques)"
+    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -734,29 +754,14 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "S. Castle",
-      "status": "QUES",
-      "details": "S. Castle (Ques)"
-    },
-    {
       "name": "L. Waters",
       "status": "OUT",
       "details": "L. Waters (Out)"
     },
     {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
-    },
-    {
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
-    },
-    {
-      "name": "W. Richard",
-      "status": "QUES",
-      "details": "W. Richard (Ques)"
     },
     {
       "name": "LJ Cryer",
@@ -777,6 +782,11 @@
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
+    },
+    {
+      "name": "W. Richard",
+      "status": "OUT",
+      "details": "W. Richard (Out)"
     }
   ],
   "GSW": [
@@ -786,16 +796,6 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
-    },
-    {
-      "name": "W. Richard",
-      "status": "QUES",
-      "details": "W. Richard (Ques)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -814,6 +814,11 @@
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
+    },
+    {
+      "name": "W. Richard",
+      "status": "OUT",
+      "details": "W. Richard (Out)"
     }
   ]
 }
