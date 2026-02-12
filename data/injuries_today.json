@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-12",
-  "built_at_utc": "2026-02-12T17:49:31Z",
+  "built_at_utc": "2026-02-12T19:00:24Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -103,6 +103,11 @@
       "details": "M. Thybulle (Out)"
     },
     {
+      "name": "K. George",
+      "status": "QUES",
+      "details": "K. George (Ques)"
+    },
+    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -111,16 +116,6 @@
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
-    },
-    {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
-      "name": "L. Markkanen",
-      "status": "QUES",
-      "details": "L. Markkanen (Ques)"
     },
     {
       "name": "E. Harkless",
@@ -143,11 +138,6 @@
       "name": "K. George",
       "status": "QUES",
       "details": "K. George (Ques)"
-    },
-    {
-      "name": "L. Markkanen",
-      "status": "QUES",
-      "details": "L. Markkanen (Ques)"
     },
     {
       "name": "E. Harkless",
