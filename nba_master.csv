@@ -820,6 +820,6 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810641,2026-02-11,2026-02-12T02:00Z,Utah Jazz,UTAH,121,-230.0,,Sacramento Kings,SAC,93,190.0,,Salt Lake City,UT,,
 401810642,2026-02-11,2026-02-12T02:00Z,Denver Nuggets,DEN,122,-675.0,,Memphis Grizzlies,MEM,116,490.0,,Denver,CO,,
 401810643,2026-02-11,2026-02-12T03:00Z,Golden State Warriors,GS,113,205.0,,San Antonio Spurs,SA,126,-250.0,,San Francisco,CA,,
-401810644,2026-02-12,2026-02-13T00:30Z,Oklahoma City Thunder,OKC,0,-675.0,,Milwaukee Bucks,MIL,0,490.0,,Oklahoma City,OK,T. Sorber (OFS); S. Gilgeous-Alexander (Out); A. Mitchell (Out); N. Topic (Out),G. Antetokounmpo (Out); T. Prince (Out); R. Rollins (Out)
-401810645,2026-02-12,2026-02-13T02:00Z,Utah Jazz,UTAH,0,240.0,,Portland Trail Blazers,POR,0,-298.0,,Salt Lake City,UT,W. Kessler (OFS); K. George (Out); E. Harkless (Out),D. Lillard (OFS); K. Murray (Out); S. Sharpe (Out); M. Thybulle (Out)
-401810646,2026-02-12,2026-02-13T03:00Z,Los Angeles Lakers,LAL,0,-290.0,,Dallas Mavericks,DAL,0,235.0,,Los Angeles,CA,L. Doncic (Out),D. Lively (OFS); C. Flagg (Out); K. Irving (Out)
+401810644,2026-02-12,2026-02-13T00:30Z,Oklahoma City Thunder,OKC,0,-650.0,,Milwaukee Bucks,MIL,0,470.0,,Oklahoma City,OK,T. Sorber (OFS); S. Gilgeous-Alexander (Out); A. Mitchell (Out); N. Topic (Out),G. Antetokounmpo (Out); T. Prince (Out); R. Rollins (Out)
+401810645,2026-02-12,2026-02-13T02:00Z,Utah Jazz,UTAH,0,230.0,,Portland Trail Blazers,POR,0,-285.0,,Salt Lake City,UT,W. Kessler (OFS); K. George (Out); E. Harkless (Out),D. Lillard (OFS); K. Murray (Out); S. Sharpe (Out); M. Thybulle (Out)
+401810646,2026-02-12,2026-02-13T03:00Z,Los Angeles Lakers,LAL,0,-305.0,,Dallas Mavericks,DAL,0,245.0,,Los Angeles,CA,L. Doncic (Out),D. Lively (OFS); C. Flagg (Out); K. Irving (Out)
