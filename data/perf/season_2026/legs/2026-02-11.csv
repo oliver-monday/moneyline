@@ -1,0 +1,19 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-11,2026,Kevin Durant,HOU,LAC,3pt,2,HIT,3,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Paolo Banchero,ORL,MIL,ast,4,MISSED,2,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Paolo Banchero,ORL,MIL,3pt,1,HIT,2,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Jabari Smith Jr.,HOU,LAC,ast,2,MISSED,0,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Jabari Smith Jr.,HOU,LAC,3pt,2,HIT,2,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Tyrese Maxey,PHI,NY,ast,6,MISSED,2,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,James Harden,CLE,WSH,ast,8,HIT,11,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Scottie Barnes,TOR,DET,reb,8,MISSED,7,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Desmond Bane,ORL,MIL,pts,20,HIT,31,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Ryan Rollins,MIL,ORL,3pt,2,,,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Dillon Brooks,PHX,OKC,pts,20,HIT,23,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Immanuel Quickley,TOR,DET,reb,4,MISSED,2,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Bam Adebayo,MIA,NO,pts,20,HIT,27,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Saddiq Bey,NO,MIA,pts,15,MISSED,14,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Saddiq Bey,NO,MIA,ast,2,HIT,4,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Jaden McDaniels,MIN,POR,ast,2,HIT,6,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Jaren Jackson Jr.,UTAH,SAC,3pt,2,MISSED,1,,targets_snapshot_2026-02-11.json
+2026-02-11,2026,Darius Garland,CLE,WSH,ast,6,,,,targets_snapshot_2026-02-11.json
