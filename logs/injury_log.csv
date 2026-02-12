@@ -5284,6 +5284,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-11,SAS,S. Castle,QUES,S. Castle (Ques),rotowire
 2026-02-11,SAS,D. Melton,QUES,D. Melton (Ques),rotowire
 2026-02-11,GSW,D. Melton,QUES,D. Melton (Ques),rotowire
+2026-02-11,DET,C. Hepburn,OUT,C. Hepburn (Out),rotowire
+2026-02-11,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-11,WAS,A. Davis,OFS,A. Davis (OFS),rotowire
 2026-02-11,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
 2026-02-11,WAS,D. Russell,OUT,D. Russell (Out),rotowire
@@ -5345,10 +5347,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-11,DET,J. Duren,OUT,J. Duren (Out),rotowire
 2026-02-11,DET,R. Holland,OUT,R. Holland (Out),rotowire
 2026-02-11,DET,I. Stewart,OUT,I. Stewart (Out),rotowire
-2026-02-11,DET,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-11,DET,C. Murray-Boyles,OUT,C. Murray-Boyles (Out),rotowire
 2026-02-11,DET,Chris Paul,OUT,Chris Paul (Out),rotowire
-2026-02-11,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-11,TOR,C. Murray-Boyles,OUT,C. Murray-Boyles (Out),rotowire
 2026-02-11,TOR,Chris Paul,OUT,Chris Paul (Out),rotowire
 2026-02-11,MIA,T. Herro,OUT,T. Herro (Out),rotowire
@@ -5396,6 +5396,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-11,DEN,S. Jones,OUT,S. Jones (Out),rotowire
 2026-02-11,DEN,P. Watson,OUT,P. Watson (Out),rotowire
 2026-02-11,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
+2026-02-11,OKC,J. Williams,QUES,J. Williams (Ques),rotowire
 2026-02-11,OKC,S. Gilgeous-Alexander,OUT,S. Gilgeous-Alexander (Out),rotowire
 2026-02-11,OKC,A. Mitchell,OUT,A. Mitchell (Out),rotowire
 2026-02-11,OKC,N. Topic,OUT,N. Topic (Out),rotowire
