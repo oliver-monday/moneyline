@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-11",
-  "built_at_utc": "2026-02-11T23:35:29Z",
+  "built_at_utc": "2026-02-12T01:17:39Z",
   "source": "rotowire",
   "WAS": [
     {
@@ -218,16 +218,6 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "M. Potter",
-      "status": "QUES",
-      "details": "M. Potter (Ques)"
-    },
-    {
-      "name": "J. Walker",
-      "status": "QUES",
-      "details": "J. Walker (Ques)"
-    },
-    {
       "name": "T. McConnell",
       "status": "OUT",
       "details": "T. McConnell (Out)"
@@ -385,11 +375,6 @@
   ],
   "MIA": [
     {
-      "name": "A. Wiggins",
-      "status": "QUES",
-      "details": "A. Wiggins (Ques)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
@@ -410,6 +395,16 @@
       "details": "T. Rozier (Out)"
     },
     {
+      "name": "A. Wiggins",
+      "status": "OUT",
+      "details": "A. Wiggins (Out)"
+    },
+    {
+      "name": "Yves Missi",
+      "status": "OUT",
+      "details": "Yves Missi (Out)"
+    },
+    {
       "name": "D. Murray",
       "status": "OUT",
       "details": "D. Murray (Out)"
@@ -421,6 +416,11 @@
     }
   ],
   "NOP": [
+    {
+      "name": "Yves Missi",
+      "status": "OUT",
+      "details": "Yves Missi (Out)"
+    },
     {
       "name": "D. Murray",
       "status": "OUT",
@@ -449,16 +449,6 @@
       "details": "D. Garland (Out)"
     },
     {
-      "name": "T. Eason",
-      "status": "QUES",
-      "details": "T. Eason (Ques)"
-    },
-    {
-      "name": "A. Sengun",
-      "status": "PROB",
-      "details": "A. Sengun (Prob)"
-    },
-    {
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
@@ -479,16 +469,6 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
-    },
-    {
-      "name": "A. Sengun",
-      "status": "PROB",
-      "details": "A. Sengun (Prob)"
-    },
-    {
-      "name": "T. Eason",
-      "status": "QUES",
-      "details": "T. Eason (Ques)"
     },
     {
       "name": "D. Finney-Smith",
@@ -523,11 +503,6 @@
       "details": "M. Thybulle (Out)"
     },
     {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
@@ -535,27 +510,12 @@
   ],
   "MIN": [
     {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
       "name": "T. Shannon",
       "status": "OUT",
       "details": "T. Shannon (Out)"
     }
   ],
   "MEM": [
-    {
-      "name": "W. Clayton",
-      "status": "DOUBT",
-      "details": "W. Clayton (Doubt)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "DOUBT",
-      "details": "C. Coward (Doubt)"
-    },
     {
       "name": "S. Aldama",
       "status": "OUT",
@@ -565,6 +525,16 @@
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
+    },
+    {
+      "name": "W. Clayton",
+      "status": "OUT",
+      "details": "W. Clayton (Out)"
+    },
+    {
+      "name": "C. Coward",
+      "status": "OUT",
+      "details": "C. Coward (Out)"
     },
     {
       "name": "Zach Edey",
@@ -577,26 +547,6 @@
       "details": "Ja Morant (Out)"
     },
     {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "C. Braun",
-      "status": "PROB",
-      "details": "C. Braun (Prob)"
-    },
-    {
-      "name": "S. Jones",
-      "status": "QUES",
-      "details": "S. Jones (Ques)"
-    },
-    {
-      "name": "N. Jokic",
-      "status": "PROB",
-      "details": "N. Jokic (Prob)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -605,6 +555,11 @@
       "name": "A. Gordon",
       "status": "OUT",
       "details": "A. Gordon (Out)"
+    },
+    {
+      "name": "S. Jones",
+      "status": "OUT",
+      "details": "S. Jones (Out)"
     },
     {
       "name": "P. Watson",
@@ -614,26 +569,6 @@
   ],
   "DEN": [
     {
-      "name": "C. Braun",
-      "status": "PROB",
-      "details": "C. Braun (Prob)"
-    },
-    {
-      "name": "N. Jokic",
-      "status": "PROB",
-      "details": "N. Jokic (Prob)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "S. Jones",
-      "status": "QUES",
-      "details": "S. Jones (Ques)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -642,6 +577,11 @@
       "name": "A. Gordon",
       "status": "OUT",
       "details": "A. Gordon (Out)"
+    },
+    {
+      "name": "S. Jones",
+      "status": "OUT",
+      "details": "S. Jones (Out)"
     },
     {
       "name": "P. Watson",
@@ -671,16 +611,6 @@
       "details": "N. Topic (Out)"
     },
     {
-      "name": "D. Booker",
-      "status": "QUES",
-      "details": "D. Booker (Ques)"
-    },
-    {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
-    {
       "name": "G. Allen",
       "status": "OUT",
       "details": "G. Allen (Out)"
@@ -689,6 +619,16 @@
       "name": "C. Anthony",
       "status": "OUT",
       "details": "C. Anthony (Out)"
+    },
+    {
+      "name": "D. Booker",
+      "status": "OUT",
+      "details": "D. Booker (Out)"
+    },
+    {
+      "name": "J. Green",
+      "status": "OUT",
+      "details": "J. Green (Out)"
     },
     {
       "name": "I. Livers",
@@ -698,16 +638,6 @@
   ],
   "PHX": [
     {
-      "name": "D. Booker",
-      "status": "QUES",
-      "details": "D. Booker (Ques)"
-    },
-    {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
-    {
       "name": "G. Allen",
       "status": "OUT",
       "details": "G. Allen (Out)"
@@ -716,6 +646,16 @@
       "name": "C. Anthony",
       "status": "OUT",
       "details": "C. Anthony (Out)"
+    },
+    {
+      "name": "D. Booker",
+      "status": "OUT",
+      "details": "D. Booker (Out)"
+    },
+    {
+      "name": "J. Green",
+      "status": "OUT",
+      "details": "J. Green (Out)"
     },
     {
       "name": "I. Livers",
