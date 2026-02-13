@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-12",
-  "built_at_utc": "2026-02-12T23:32:31Z",
+  "built_at_utc": "2026-02-13T01:20:35Z",
   "source": "rotowire",
   "MIL": [
     {
@@ -17,6 +17,11 @@
       "name": "R. Rollins",
       "status": "OUT",
       "details": "R. Rollins (Out)"
+    },
+    {
+      "name": "M. Turner",
+      "status": "OUT",
+      "details": "M. Turner (Out)"
     },
     {
       "name": "T. Sorber",
@@ -89,13 +94,8 @@
     },
     {
       "name": "D. Avdija",
-      "status": "QUES",
-      "details": "D. Avdija (Ques)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
     },
     {
       "name": "K. Murray",
@@ -111,6 +111,11 @@
       "name": "M. Thybulle",
       "status": "OUT",
       "details": "M. Thybulle (Out)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "OUT",
+      "details": "R. Williams (Out)"
     },
     {
       "name": "J. Jackson",
