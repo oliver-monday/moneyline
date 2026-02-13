@@ -1,4 +1,10 @@
 date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-12,2026,Ace Bailey,UTAH,POR,pts,10,HIT,15,,targets_snapshot_2026-02-12.json
+2026-02-12,2026,Ace Bailey,UTAH,POR,reb,4,HIT,8,,targets_snapshot_2026-02-12.json
+2026-02-12,2026,Ace Bailey,UTAH,POR,3pt,1,HIT,1,,targets_snapshot_2026-02-12.json
+2026-02-12,2026,Ryan Rollins,MIL,OKC,3pt,2,,,,targets_snapshot_2026-02-12.json
+2026-02-12,2026,LeBron James,LAL,DAL,pts,20,HIT,28,,targets_snapshot_2026-02-12.json
 2026-02-12,2026,Anthony Davis,DAL,LAL,ast,2,,,,targets_snapshot_2026-02-12.json
 2026-02-12,2026,Kyle Kuzma,MIL,OKC,reb,4,HIT,4,,targets_snapshot_2026-02-12.json
 2026-02-12,2026,Kyle Kuzma,MIL,OKC,ast,2,HIT,2,,targets_snapshot_2026-02-12.json
+2026-02-12,2026,Kyle Kuzma,MIL,OKC,3pt,1,HIT,2,,targets_snapshot_2026-02-12.json
