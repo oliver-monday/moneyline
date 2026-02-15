@@ -823,3 +823,7 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810644,2026-02-12,2026-02-13T00:30Z,Oklahoma City Thunder,OKC,93,-650.0,,Milwaukee Bucks,MIL,110,470.0,,Oklahoma City,OK,,
 401810645,2026-02-12,2026-02-13T02:00Z,Utah Jazz,UTAH,119,230.0,,Portland Trail Blazers,POR,135,-285.0,,Salt Lake City,UT,,
 401810646,2026-02-12,2026-02-13T03:00Z,Los Angeles Lakers,LAL,124,-305.0,,Dallas Mavericks,DAL,104,245.0,,Los Angeles,CA,,
+401838140,2026-02-15,2026-02-15T22:00Z,Team Stars,STARS,0,,,World,WORLD,0,,,Inglewood,CA,,
+401838141,2026-02-15,2026-02-15T22:55Z,Team Stripes,STRIPES,0,,,TBD,TBD,0,,,Inglewood,CA,,
+401838142,2026-02-15,2026-02-15T23:25Z,Team Stripes,STRIPES,0,,,TBD,TBD,0,,,Inglewood,CA,,
+401838143,2026-02-15,2026-02-16T00:10Z,TBD,TBD,0,,,TBD,TBD,0,,,Inglewood,CA,,
