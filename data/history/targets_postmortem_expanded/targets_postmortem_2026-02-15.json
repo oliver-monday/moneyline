@@ -1,0 +1,67 @@
+{
+  "asof_date": "2026-02-15",
+  "summary": {
+    "targets_total": 0,
+    "hits": 0,
+    "misses": 0,
+    "hit_rate_pct": 0,
+    "top_targets_total": 1,
+    "top_targets_hits": 0
+  },
+  "hits": [],
+  "misses": [
+    {
+      "player_id": "3945274.0",
+      "player_name": "Luka Doncic",
+      "team_abbrev": "WORLD",
+      "opp": "STRIPES",
+      "stat": "3pt",
+      "threshold": 3,
+      "actual": null,
+      "delta": null,
+      "out": true,
+      "status": "OUT",
+      "is_home_game": false,
+      "rest_days": 9,
+      "is_b2b": false,
+      "share_trend_pp": -0.7905369484316804,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 1.75,
+      "landmine_rate_10": null,
+      "trap_risk": null
+    }
+  ],
+  "closest_misses": [],
+  "reaches_hit": [],
+  "built_at_utc": "2026-02-16T09:08:34Z",
+  "snapshot_file": "targets_snapshot_expanded_2026-02-15.json",
+  "preset": "expanded",
+  "top_targets": [
+    {
+      "asof_date": "2026-02-15",
+      "player_id": "3945274.0",
+      "player_name": "Luka Doncic",
+      "team_abbrev": "WORLD",
+      "opp": "STRIPES",
+      "game_id": "401838142",
+      "stat": "3pt",
+      "threshold": 3,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": false,
+      "rest_days": 9,
+      "is_b2b": false,
+      "share_trend_pp": -0.7905369484316804,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 1.75,
+      "landmine_rate_10": null,
+      "trap_risk": null,
+      "actual": null,
+      "hit": null,
+      "delta": null,
+      "dnp": true,
+      "status": "OUT"
+    }
+  ]
+}

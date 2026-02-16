@@ -1,0 +1,34 @@
+{
+  "asof_date": "2026-02-15",
+  "season_end_year": 2026,
+  "groups": {
+    "top_targets": {
+      "totals": {
+        "total": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "out_count": 0
+      },
+      "by_stat": {},
+      "by_threshold": {},
+      "by_trap_risk": {},
+      "by_b2b": {},
+      "by_share_trend_dir": {},
+      "by_home_game": {}
+    },
+    "all_targets": {
+      "totals": {
+        "total": 0,
+        "hits": 0,
+        "hit_rate": null,
+        "out_count": 0
+      },
+      "by_stat": {},
+      "by_threshold": {},
+      "by_trap_risk": {},
+      "by_b2b": {},
+      "by_share_trend_dir": {},
+      "by_home_game": {}
+    }
+  }
+}
