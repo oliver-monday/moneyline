@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-19",
-  "built_at_utc": "2026-02-19T18:47:26Z",
+  "built_at_utc": "2026-02-19T19:41:23Z",
   "source": "rotowire",
   "BKN": [
     {
@@ -254,6 +254,11 @@
       "details": "S. Mamukelashvili (Ques)"
     },
     {
+      "name": "C. Hepburn",
+      "status": "OUT",
+      "details": "C. Hepburn (Out)"
+    },
+    {
       "name": "J. Giddey",
       "status": "PROB",
       "details": "J. Giddey (Prob)"
@@ -308,6 +313,11 @@
   ],
   "PHX": [
     {
+      "name": "G. Allen",
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
+    },
+    {
       "name": "C. Anthony",
       "status": "OUT",
       "details": "C. Anthony (Out)"
@@ -316,6 +326,11 @@
       "name": "D. Brooks",
       "status": "OUT",
       "details": "D. Brooks (Out)"
+    },
+    {
+      "name": "H. Highsmith",
+      "status": "OUT",
+      "details": "H. Highsmith (Out)"
     },
     {
       "name": "D. Jones Garcia",

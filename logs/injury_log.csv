@@ -5538,6 +5538,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-19,NYK,M. McBride,OUT,M. McBride (Out),rotowire
 2026-02-19,TOR,C. Murray-Boyles,PROB,C. Murray-Boyles (Prob),rotowire
 2026-02-19,TOR,S. Mamukelashvili,QUES,S. Mamukelashvili (Ques),rotowire
+2026-02-19,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-19,TOR,J. Giddey,PROB,J. Giddey (Prob),rotowire
 2026-02-19,TOR,J. Smith,PROB,J. Smith (Prob),rotowire
 2026-02-19,TOR,N. Essengue,OFS,N. Essengue (OFS),rotowire
@@ -5548,8 +5549,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-19,CHI,T. Jones,PROB,T. Jones (Prob),rotowire
 2026-02-19,CHI,J. Smith,PROB,J. Smith (Prob),rotowire
 2026-02-19,CHI,Z. Collins,OUT,Z. Collins (Out),rotowire
+2026-02-19,PHX,G. Allen,QUES,G. Allen (Ques),rotowire
 2026-02-19,PHX,C. Anthony,OUT,C. Anthony (Out),rotowire
 2026-02-19,PHX,D. Brooks,OUT,D. Brooks (Out),rotowire
+2026-02-19,PHX,H. Highsmith,OUT,H. Highsmith (Out),rotowire
 2026-02-19,PHX,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-02-19,PHX,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-02-19,PHX,L. Waters,OUT,L. Waters (Out),rotowire
