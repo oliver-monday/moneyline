@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-19",
-  "built_at_utc": "2026-02-19T22:39:01Z",
+  "built_at_utc": "2026-02-19T23:32:45Z",
   "source": "rotowire",
   "BKN": [
     {
@@ -73,18 +73,8 @@
     },
     {
       "name": "T. McConnell",
-      "status": "QUES",
-      "details": "T. McConnell (Ques)"
-    },
-    {
-      "name": "A. Nesmith",
-      "status": "QUES",
-      "details": "A. Nesmith (Ques)"
-    },
-    {
-      "name": "M. Potter",
-      "status": "QUES",
-      "details": "M. Potter (Ques)"
+      "status": "OUT",
+      "details": "T. McConnell (Out)"
     },
     {
       "name": "P. Siakam",
@@ -220,22 +210,12 @@
       "details": "I. Stewart (Out)"
     },
     {
-      "name": "O. Anunoby",
-      "status": "PROB",
-      "details": "O. Anunoby (Prob)"
-    },
-    {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
     }
   ],
   "NYK": [
-    {
-      "name": "O. Anunoby",
-      "status": "PROB",
-      "details": "O. Anunoby (Prob)"
-    },
     {
       "name": "M. McBride",
       "status": "OUT",
@@ -259,24 +239,9 @@
       "details": "C. Hepburn (Out)"
     },
     {
-      "name": "J. Giddey",
-      "status": "PROB",
-      "details": "J. Giddey (Prob)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "PROB",
-      "details": "J. Smith (Prob)"
-    },
-    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "T. Jones",
-      "status": "PROB",
-      "details": "T. Jones (Prob)"
     },
     {
       "name": "Z. Collins",
@@ -289,21 +254,6 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "J. Giddey",
-      "status": "PROB",
-      "details": "J. Giddey (Prob)"
-    },
-    {
-      "name": "T. Jones",
-      "status": "PROB",
-      "details": "T. Jones (Prob)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "PROB",
-      "details": "J. Smith (Prob)"
     },
     {
       "name": "Z. Collins",
