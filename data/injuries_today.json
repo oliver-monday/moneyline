@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-19",
-  "built_at_utc": "2026-02-19T15:12:19Z",
+  "built_at_utc": "2026-02-19T17:41:27Z",
   "source": "rotowire",
   "BKN": [
     {
@@ -166,11 +166,6 @@
       "details": "F. VanVleet (Out)"
     },
     {
-      "name": "T. Evbuomwan",
-      "status": "QUES",
-      "details": "T. Evbuomwan (Ques)"
-    },
-    {
       "name": "M. Bridges",
       "status": "OUT",
       "details": "M. Bridges (Out)"
@@ -192,11 +187,6 @@
     }
   ],
   "CHA": [
-    {
-      "name": "T. Evbuomwan",
-      "status": "QUES",
-      "details": "T. Evbuomwan (Ques)"
-    },
     {
       "name": "M. Bridges",
       "status": "OUT",
@@ -231,8 +221,8 @@
     },
     {
       "name": "O. Anunoby",
-      "status": "QUES",
-      "details": "O. Anunoby (Ques)"
+      "status": "PROB",
+      "details": "O. Anunoby (Prob)"
     },
     {
       "name": "M. McBride",
@@ -243,8 +233,8 @@
   "NYK": [
     {
       "name": "O. Anunoby",
-      "status": "QUES",
-      "details": "O. Anunoby (Ques)"
+      "status": "PROB",
+      "details": "O. Anunoby (Prob)"
     },
     {
       "name": "M. McBride",
@@ -372,19 +362,9 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "L. Cryer",
-      "status": "QUES",
-      "details": "L. Cryer (Ques)"
-    },
-    {
       "name": "K. Porzingis",
       "status": "QUES",
       "details": "K. Porzingis (Ques)"
-    },
-    {
-      "name": "W. Richard",
-      "status": "QUES",
-      "details": "W. Richard (Ques)"
     },
     {
       "name": "S. Curry",
@@ -404,19 +384,9 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "L. Cryer",
-      "status": "QUES",
-      "details": "L. Cryer (Ques)"
-    },
-    {
       "name": "K. Porzingis",
       "status": "QUES",
       "details": "K. Porzingis (Ques)"
-    },
-    {
-      "name": "W. Richard",
-      "status": "QUES",
-      "details": "W. Richard (Ques)"
     },
     {
       "name": "S. Curry",
@@ -430,11 +400,6 @@
     }
   ],
   "ORL": [
-    {
-      "name": "C. Castleton",
-      "status": "QUES",
-      "details": "C. Castleton (Ques)"
-    },
     {
       "name": "F. Wagner",
       "status": "OUT",
