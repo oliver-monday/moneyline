@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-19",
-  "built_at_utc": "2026-02-19T19:41:23Z",
+  "built_at_utc": "2026-02-19T20:30:19Z",
   "source": "rotowire",
   "BKN": [
     {
@@ -416,6 +416,11 @@
   ],
   "ORL": [
     {
+      "name": "C. Castleton",
+      "status": "QUES",
+      "details": "C. Castleton (Ques)"
+    },
+    {
       "name": "F. Wagner",
       "status": "OUT",
       "details": "F. Wagner (Out)"
@@ -468,6 +473,11 @@
       "name": "J. Pickett",
       "status": "PROB",
       "details": "J. Pickett (Prob)"
+    },
+    {
+      "name": "T. Bates",
+      "status": "OUT",
+      "details": "T. Bates (Out)"
     },
     {
       "name": "A. Gordon",

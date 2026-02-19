@@ -5491,7 +5491,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-19,BOS,W. Richard,QUES,W. Richard (Ques),rotowire
 2026-02-19,GSW,L. Cryer,QUES,L. Cryer (Ques),rotowire
 2026-02-19,GSW,W. Richard,QUES,W. Richard (Ques),rotowire
-2026-02-19,ORL,C. Castleton,QUES,C. Castleton (Ques),rotowire
 2026-02-19,BKN,N. Claxton,OUT,N. Claxton (Out),rotowire
 2026-02-19,BKN,Max Strus,OUT,Max Strus (Out),rotowire
 2026-02-19,BKN,N. Tomlin,OUT,N. Tomlin (Out),rotowire
@@ -5568,6 +5567,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-19,GSW,K. Porzingis,QUES,K. Porzingis (Ques),rotowire
 2026-02-19,GSW,S. Curry,OUT,S. Curry (Out),rotowire
 2026-02-19,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
+2026-02-19,ORL,C. Castleton,QUES,C. Castleton (Ques),rotowire
 2026-02-19,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
 2026-02-19,ORL,Z. LaVine,OFS,Z. LaVine (OFS),rotowire
 2026-02-19,ORL,D. Sabonis,OFS,D. Sabonis (OFS),rotowire
@@ -5578,6 +5578,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-19,SAC,D. Cardwell,OUT,D. Cardwell (Out),rotowire
 2026-02-19,SAC,D. Hunter,OUT,D. Hunter (Out),rotowire
 2026-02-19,DEN,J. Pickett,PROB,J. Pickett (Prob),rotowire
+2026-02-19,DEN,T. Bates,OUT,T. Bates (Out),rotowire
 2026-02-19,DEN,A. Gordon,OUT,A. Gordon (Out),rotowire
 2026-02-19,DEN,P. Watson,OUT,P. Watson (Out),rotowire
 2026-02-19,DEN,B. Beal,OFS,B. Beal (OFS),rotowire
