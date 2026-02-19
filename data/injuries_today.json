@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-19",
-  "built_at_utc": "2026-02-19T17:41:27Z",
+  "built_at_utc": "2026-02-19T18:47:26Z",
   "source": "rotowire",
   "BKN": [
     {
@@ -255,8 +255,8 @@
     },
     {
       "name": "J. Giddey",
-      "status": "QUES",
-      "details": "J. Giddey (Ques)"
+      "status": "PROB",
+      "details": "J. Giddey (Prob)"
     },
     {
       "name": "J. Smith",
@@ -270,8 +270,8 @@
     },
     {
       "name": "T. Jones",
-      "status": "QUES",
-      "details": "T. Jones (Ques)"
+      "status": "PROB",
+      "details": "T. Jones (Prob)"
     },
     {
       "name": "Z. Collins",
@@ -286,19 +286,19 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Smith",
-      "status": "PROB",
-      "details": "J. Smith (Prob)"
-    },
-    {
       "name": "J. Giddey",
-      "status": "QUES",
-      "details": "J. Giddey (Ques)"
+      "status": "PROB",
+      "details": "J. Giddey (Prob)"
     },
     {
       "name": "T. Jones",
-      "status": "QUES",
-      "details": "T. Jones (Ques)"
+      "status": "PROB",
+      "details": "T. Jones (Prob)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "PROB",
+      "details": "J. Smith (Prob)"
     },
     {
       "name": "Z. Collins",
