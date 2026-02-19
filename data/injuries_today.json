@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-19",
-  "built_at_utc": "2026-02-19T09:06:57Z",
+  "built_at_utc": "2026-02-19T15:12:19Z",
   "source": "rotowire",
   "BKN": [
     {
@@ -166,6 +166,11 @@
       "details": "F. VanVleet (Out)"
     },
     {
+      "name": "T. Evbuomwan",
+      "status": "QUES",
+      "details": "T. Evbuomwan (Ques)"
+    },
+    {
       "name": "M. Bridges",
       "status": "OUT",
       "details": "M. Bridges (Out)"
@@ -187,6 +192,11 @@
     }
   ],
   "CHA": [
+    {
+      "name": "T. Evbuomwan",
+      "status": "QUES",
+      "details": "T. Evbuomwan (Ques)"
+    },
     {
       "name": "M. Bridges",
       "status": "OUT",
