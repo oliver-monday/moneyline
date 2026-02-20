@@ -1,0 +1,9 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-19,2026,Paolo Banchero,ORL,SAC,3pt,1,HIT,5,,targets_snapshot_2026-02-19.json
+2026-02-19,2026,Jabari Smith Jr.,HOU,CHA,3pt,2,HIT,2,,targets_snapshot_2026-02-19.json
+2026-02-19,2026,Desmond Bane,ORL,SAC,pts,20,MISSED,17,,targets_snapshot_2026-02-19.json
+2026-02-19,2026,James Harden,CLE,BKN,ast,8,HIT,9,,targets_snapshot_2026-02-19.json
+2026-02-19,2026,Grayson Allen,PHX,SA,pts,15,,,,targets_snapshot_2026-02-19.json
+2026-02-19,2026,Grayson Allen,PHX,SA,ast,4,,,,targets_snapshot_2026-02-19.json
+2026-02-19,2026,Immanuel Quickley,TOR,CHI,reb,4,MISSED,2,,targets_snapshot_2026-02-19.json
+2026-02-19,2026,Darius Garland,CLE,BKN,ast,6,,,,targets_snapshot_2026-02-19.json
