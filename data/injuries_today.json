@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-19",
-  "built_at_utc": "2026-02-20T01:13:35Z",
+  "built_at_utc": "2026-02-20T03:26:31Z",
   "source": "rotowire",
   "BKN": [
     {
@@ -72,9 +72,19 @@
       "details": "T. Haliburton (OFS)"
     },
     {
+      "name": "K. Jones",
+      "status": "QUES",
+      "details": "K. Jones (Ques)"
+    },
+    {
       "name": "T. McConnell",
       "status": "OUT",
       "details": "T. McConnell (Out)"
+    },
+    {
+      "name": "A. Nesmith",
+      "status": "OUT",
+      "details": "A. Nesmith (Out)"
     },
     {
       "name": "P. Siakam",
@@ -156,6 +166,16 @@
       "details": "F. VanVleet (Out)"
     },
     {
+      "name": "L. McNeeley",
+      "status": "QUES",
+      "details": "L. McNeeley (Ques)"
+    },
+    {
+      "name": "C. White",
+      "status": "DOUBT",
+      "details": "C. White (Doubt)"
+    },
+    {
       "name": "M. Bridges",
       "status": "OUT",
       "details": "M. Bridges (Out)"
@@ -164,20 +184,20 @@
       "name": "M. Diabate",
       "status": "OUT",
       "details": "M. Diabate (Out)"
-    },
-    {
-      "name": "L. McNeeley",
-      "status": "OUT",
-      "details": "L. McNeeley (Out)"
-    },
-    {
-      "name": "Coby White",
-      "status": "OUT",
-      "details": "Coby White (Out)"
     }
   ],
   "CHA": [
     {
+      "name": "L. McNeeley",
+      "status": "QUES",
+      "details": "L. McNeeley (Ques)"
+    },
+    {
+      "name": "C. White",
+      "status": "DOUBT",
+      "details": "C. White (Doubt)"
+    },
+    {
       "name": "M. Bridges",
       "status": "OUT",
       "details": "M. Bridges (Out)"
@@ -186,16 +206,6 @@
       "name": "M. Diabate",
       "status": "OUT",
       "details": "M. Diabate (Out)"
-    },
-    {
-      "name": "L. McNeeley",
-      "status": "OUT",
-      "details": "L. McNeeley (Out)"
-    },
-    {
-      "name": "Coby White",
-      "status": "OUT",
-      "details": "Coby White (Out)"
     }
   ],
   "DET": [
@@ -257,6 +267,11 @@
     }
   ],
   "PHX": [
+    {
+      "name": "D. Booker",
+      "status": "QUES",
+      "details": "D. Booker (Ques)"
+    },
     {
       "name": "G. Allen",
       "status": "OUT",
@@ -322,11 +337,6 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "K. Porzingis",
-      "status": "QUES",
-      "details": "K. Porzingis (Ques)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -347,11 +357,6 @@
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
-    },
-    {
-      "name": "K. Porzingis",
-      "status": "QUES",
-      "details": "K. Porzingis (Ques)"
     },
     {
       "name": "LJ Cryer",
@@ -424,11 +429,6 @@
     }
   ],
   "DEN": [
-    {
-      "name": "J. Pickett",
-      "status": "PROB",
-      "details": "J. Pickett (Prob)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
