@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-20",
-  "built_at_utc": "2026-02-20T21:12:32Z",
+  "built_at_utc": "2026-02-20T22:34:07Z",
   "source": "rotowire",
   "IND": [
     {
@@ -27,6 +27,11 @@
       "name": "T. McConnell",
       "status": "QUES",
       "details": "T. McConnell (Ques)"
+    },
+    {
+      "name": "M. Potter",
+      "status": "QUES",
+      "details": "M. Potter (Ques)"
     },
     {
       "name": "A. Nesmith",
@@ -124,13 +129,8 @@
     },
     {
       "name": "L. Markkanen",
-      "status": "QUES",
-      "details": "L. Markkanen (Ques)"
-    },
-    {
-      "name": "O. Tshiebwe",
-      "status": "QUES",
-      "details": "O. Tshiebwe (Ques)"
+      "status": "DOUBT",
+      "details": "L. Markkanen (Doubt)"
     },
     {
       "name": "K. George",
@@ -416,14 +416,14 @@
   ],
   "BKN": [
     {
-      "name": "N. Claxton",
-      "status": "QUES",
-      "details": "N. Claxton (Ques)"
-    },
-    {
       "name": "M. Porter",
       "status": "QUES",
       "details": "M. Porter (Ques)"
+    },
+    {
+      "name": "N. Claxton",
+      "status": "OUT",
+      "details": "N. Claxton (Out)"
     },
     {
       "name": "Z. Williams",

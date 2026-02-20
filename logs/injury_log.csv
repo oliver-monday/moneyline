@@ -5597,11 +5597,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-20,CHA,C. White,DOUBT,C. White (Doubt),rotowire
 2026-02-20,MIA,T. Herro,PROB,T. Herro (Prob),rotowire
 2026-02-20,MIA,K. Johnson,QUES,K. Johnson (Ques),rotowire
+2026-02-20,UTA,O. Tshiebwe,QUES,O. Tshiebwe (Ques),rotowire
 2026-02-20,IND,J. Furphy,OFS,J. Furphy (OFS),rotowire
 2026-02-20,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-02-20,IND,A. Nembhard,DOUBT,A. Nembhard (Doubt),rotowire
 2026-02-20,IND,K. Jones,QUES,K. Jones (Ques),rotowire
 2026-02-20,IND,T. McConnell,QUES,T. McConnell (Ques),rotowire
+2026-02-20,IND,M. Potter,QUES,M. Potter (Ques),rotowire
 2026-02-20,IND,A. Nesmith,OUT,A. Nesmith (Out),rotowire
 2026-02-20,IND,P. Siakam,OUT,P. Siakam (Out),rotowire
 2026-02-20,IND,Obi Toppin,OUT,Obi Toppin (Out),rotowire
@@ -5620,8 +5622,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-20,WAS,Trae Young,OUT,Trae Young (Out),rotowire
 2026-02-20,UTA,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-02-20,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
-2026-02-20,UTA,L. Markkanen,QUES,L. Markkanen (Ques),rotowire
-2026-02-20,UTA,O. Tshiebwe,QUES,O. Tshiebwe (Ques),rotowire
+2026-02-20,UTA,L. Markkanen,DOUBT,L. Markkanen (Doubt),rotowire
 2026-02-20,UTA,K. George,OUT,K. George (Out),rotowire
 2026-02-20,UTA,J. Nurkic,OUT,J. Nurkic (Out),rotowire
 2026-02-20,UTA,K. Caldwell-Pope,OFS,K. Caldwell-Pope (OFS),rotowire
@@ -5675,8 +5676,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-20,NOP,T. Murphy,OUT,T. Murphy (Out),rotowire
 2026-02-20,NOP,D. Murray,OUT,D. Murray (Out),rotowire
 2026-02-20,NOP,M. Peavy,OUT,M. Peavy (Out),rotowire
-2026-02-20,BKN,N. Claxton,QUES,N. Claxton (Ques),rotowire
 2026-02-20,BKN,M. Porter,QUES,M. Porter (Ques),rotowire
+2026-02-20,BKN,N. Claxton,OUT,N. Claxton (Out),rotowire
 2026-02-20,BKN,Z. Williams,OUT,Z. Williams (Out),rotowire
 2026-02-20,BKN,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-02-20,BKN,S. Gilgeous-Alexander,OUT,S. Gilgeous-Alexander (Out),rotowire
