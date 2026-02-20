@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-20",
-  "built_at_utc": "2026-02-20T17:28:24Z",
+  "built_at_utc": "2026-02-20T18:42:42Z",
   "source": "rotowire",
   "IND": [
     {
@@ -12,6 +12,11 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
+    },
+    {
+      "name": "A. Nembhard",
+      "status": "DOUBT",
+      "details": "A. Nembhard (Doubt)"
     },
     {
       "name": "K. Jones",
@@ -54,6 +59,11 @@
       "details": "C. Whitmore (OFS)"
     },
     {
+      "name": "K. George",
+      "status": "OUT",
+      "details": "K. George (Out)"
+    },
+    {
       "name": "D. Russell",
       "status": "OUT",
       "details": "D. Russell (Out)"
@@ -79,6 +89,11 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
+    },
+    {
+      "name": "K. George",
+      "status": "OUT",
+      "details": "K. George (Out)"
     },
     {
       "name": "D. Russell",
@@ -223,8 +238,13 @@
   "CLE": [
     {
       "name": "N. Tomlin",
-      "status": "QUES",
-      "details": "N. Tomlin (Ques)"
+      "status": "PROB",
+      "details": "N. Tomlin (Prob)"
+    },
+    {
+      "name": "E. Mobley",
+      "status": "OUT",
+      "details": "E. Mobley (Out)"
     },
     {
       "name": "Max Strus",
@@ -232,21 +252,6 @@
       "details": "Max Strus (Out)"
     },
     {
-      "name": "G. Williams",
-      "status": "QUES",
-      "details": "G. Williams (Ques)"
-    },
-    {
-      "name": "L. McNeeley",
-      "status": "QUES",
-      "details": "L. McNeeley (Ques)"
-    },
-    {
-      "name": "C. White",
-      "status": "DOUBT",
-      "details": "C. White (Doubt)"
-    },
-    {
       "name": "M. Bridges",
       "status": "OUT",
       "details": "M. Bridges (Out)"
@@ -255,25 +260,25 @@
       "name": "M. Diabate",
       "status": "OUT",
       "details": "M. Diabate (Out)"
+    },
+    {
+      "name": "L. McNeeley",
+      "status": "OUT",
+      "details": "L. McNeeley (Out)"
+    },
+    {
+      "name": "Coby White",
+      "status": "OUT",
+      "details": "Coby White (Out)"
+    },
+    {
+      "name": "G. Williams",
+      "status": "OUT",
+      "details": "G. Williams (Out)"
     }
   ],
   "CHA": [
     {
-      "name": "L. McNeeley",
-      "status": "QUES",
-      "details": "L. McNeeley (Ques)"
-    },
-    {
-      "name": "G. Williams",
-      "status": "QUES",
-      "details": "G. Williams (Ques)"
-    },
-    {
-      "name": "C. White",
-      "status": "DOUBT",
-      "details": "C. White (Doubt)"
-    },
-    {
       "name": "M. Bridges",
       "status": "OUT",
       "details": "M. Bridges (Out)"
@@ -282,19 +287,24 @@
       "name": "M. Diabate",
       "status": "OUT",
       "details": "M. Diabate (Out)"
+    },
+    {
+      "name": "L. McNeeley",
+      "status": "OUT",
+      "details": "L. McNeeley (Out)"
+    },
+    {
+      "name": "Coby White",
+      "status": "OUT",
+      "details": "Coby White (Out)"
+    },
+    {
+      "name": "G. Williams",
+      "status": "OUT",
+      "details": "G. Williams (Out)"
     }
   ],
   "MIA": [
-    {
-      "name": "T. Herro",
-      "status": "PROB",
-      "details": "T. Herro (Prob)"
-    },
-    {
-      "name": "K. Johnson",
-      "status": "QUES",
-      "details": "K. Johnson (Ques)"
-    },
     {
       "name": "T. Rozier",
       "status": "OUT",
@@ -362,14 +372,14 @@
       "details": "M. Turner (Out)"
     },
     {
-      "name": "T. Murphy",
-      "status": "DOUBT",
-      "details": "T. Murphy (Doubt)"
-    },
-    {
       "name": "Yves Missi",
       "status": "OUT",
       "details": "Yves Missi (Out)"
+    },
+    {
+      "name": "T. Murphy",
+      "status": "OUT",
+      "details": "T. Murphy (Out)"
     },
     {
       "name": "D. Murray",
@@ -384,14 +394,14 @@
   ],
   "NOP": [
     {
-      "name": "T. Murphy",
-      "status": "DOUBT",
-      "details": "T. Murphy (Doubt)"
-    },
-    {
       "name": "Yves Missi",
       "status": "OUT",
       "details": "Yves Missi (Out)"
+    },
+    {
+      "name": "T. Murphy",
+      "status": "OUT",
+      "details": "T. Murphy (Out)"
     },
     {
       "name": "D. Murray",
