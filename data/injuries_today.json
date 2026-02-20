@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-19",
-  "built_at_utc": "2026-02-19T23:32:45Z",
+  "built_at_utc": "2026-02-20T01:13:35Z",
   "source": "rotowire",
   "BKN": [
     {
@@ -205,6 +205,11 @@
       "details": "J. Duren (Out)"
     },
     {
+      "name": "I. Jones",
+      "status": "OUT",
+      "details": "I. Jones (Out)"
+    },
+    {
       "name": "I. Stewart",
       "status": "OUT",
       "details": "I. Stewart (Out)"
@@ -223,16 +228,6 @@
     }
   ],
   "TOR": [
-    {
-      "name": "C. Murray-Boyles",
-      "status": "PROB",
-      "details": "C. Murray-Boyles (Prob)"
-    },
-    {
-      "name": "S. Mamukelashvili",
-      "status": "QUES",
-      "details": "S. Mamukelashvili (Ques)"
-    },
     {
       "name": "C. Hepburn",
       "status": "OUT",
@@ -264,8 +259,8 @@
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "C. Anthony",
@@ -332,6 +327,11 @@
       "details": "K. Porzingis (Ques)"
     },
     {
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
+    },
+    {
       "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
@@ -354,6 +354,11 @@
       "details": "K. Porzingis (Ques)"
     },
     {
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
+    },
+    {
       "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
@@ -367,8 +372,8 @@
   "ORL": [
     {
       "name": "C. Castleton",
-      "status": "QUES",
-      "details": "C. Castleton (Ques)"
+      "status": "OUT",
+      "details": "C. Castleton (Out)"
     },
     {
       "name": "F. Wagner",
