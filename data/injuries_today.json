@@ -1,34 +1,34 @@
 {
   "asof_date": "2026-02-19",
-  "built_at_utc": "2026-02-20T03:26:31Z",
+  "built_at_utc": "2026-02-20T04:04:55Z",
   "source": "rotowire",
   "BKN": [
     {
       "name": "N. Claxton",
-      "status": "OUT",
-      "details": "N. Claxton (Out)"
+      "status": "QUES",
+      "details": "N. Claxton (Ques)"
+    },
+    {
+      "name": "N. Tomlin",
+      "status": "QUES",
+      "details": "N. Tomlin (Ques)"
     },
     {
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
-    },
-    {
-      "name": "N. Tomlin",
-      "status": "OUT",
-      "details": "N. Tomlin (Out)"
     }
   ],
   "CLE": [
     {
+      "name": "N. Tomlin",
+      "status": "QUES",
+      "details": "N. Tomlin (Ques)"
+    },
+    {
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
-    },
-    {
-      "name": "N. Tomlin",
-      "status": "OUT",
-      "details": "N. Tomlin (Out)"
     }
   ],
   "ATL": [
@@ -39,8 +39,8 @@
     },
     {
       "name": "J. Embiid",
-      "status": "OUT",
-      "details": "J. Embiid (Out)"
+      "status": "QUES",
+      "details": "J. Embiid (Ques)"
     },
     {
       "name": "P. George",
@@ -51,8 +51,8 @@
   "PHI": [
     {
       "name": "J. Embiid",
-      "status": "OUT",
-      "details": "J. Embiid (Out)"
+      "status": "QUES",
+      "details": "J. Embiid (Ques)"
     },
     {
       "name": "P. George",
@@ -78,8 +78,8 @@
     },
     {
       "name": "T. McConnell",
-      "status": "OUT",
-      "details": "T. McConnell (Out)"
+      "status": "QUES",
+      "details": "T. McConnell (Ques)"
     },
     {
       "name": "A. Nesmith",
@@ -210,16 +210,6 @@
   ],
   "DET": [
     {
-      "name": "J. Duren",
-      "status": "OUT",
-      "details": "J. Duren (Out)"
-    },
-    {
-      "name": "I. Jones",
-      "status": "OUT",
-      "details": "I. Jones (Out)"
-    },
-    {
       "name": "I. Stewart",
       "status": "OUT",
       "details": "I. Stewart (Out)"
@@ -240,8 +230,8 @@
   "TOR": [
     {
       "name": "C. Hepburn",
-      "status": "OUT",
-      "details": "C. Hepburn (Out)"
+      "status": "DOUBT",
+      "details": "C. Hepburn (Doubt)"
     },
     {
       "name": "N. Essengue",
@@ -268,24 +258,19 @@
   ],
   "PHX": [
     {
-      "name": "D. Booker",
-      "status": "QUES",
-      "details": "D. Booker (Ques)"
-    },
-    {
       "name": "G. Allen",
-      "status": "OUT",
-      "details": "G. Allen (Out)"
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
     },
     {
       "name": "C. Anthony",
-      "status": "OUT",
-      "details": "C. Anthony (Out)"
+      "status": "QUES",
+      "details": "C. Anthony (Ques)"
     },
     {
-      "name": "D. Brooks",
-      "status": "OUT",
-      "details": "D. Brooks (Out)"
+      "name": "D. Booker",
+      "status": "QUES",
+      "details": "D. Booker (Ques)"
     },
     {
       "name": "H. Highsmith",
@@ -299,13 +284,13 @@
     },
     {
       "name": "M. Plumlee",
-      "status": "OUT",
-      "details": "M. Plumlee (Out)"
+      "status": "QUES",
+      "details": "M. Plumlee (Ques)"
     },
     {
       "name": "L. Waters",
-      "status": "OUT",
-      "details": "L. Waters (Out)"
+      "status": "QUES",
+      "details": "L. Waters (Ques)"
     }
   ],
   "SAS": [
@@ -316,13 +301,13 @@
     },
     {
       "name": "M. Plumlee",
-      "status": "OUT",
-      "details": "M. Plumlee (Out)"
+      "status": "QUES",
+      "details": "M. Plumlee (Ques)"
     },
     {
       "name": "L. Waters",
-      "status": "OUT",
-      "details": "L. Waters (Out)"
+      "status": "QUES",
+      "details": "L. Waters (Ques)"
     }
   ],
   "BOS": [
