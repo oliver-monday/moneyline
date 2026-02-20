@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-20",
-  "built_at_utc": "2026-02-20T09:01:42Z",
+  "built_at_utc": "2026-02-20T15:05:49Z",
   "source": "rotowire",
   "IND": [
     {
@@ -227,6 +227,11 @@
       "details": "Max Strus (Out)"
     },
     {
+      "name": "G. Williams",
+      "status": "QUES",
+      "details": "G. Williams (Ques)"
+    },
+    {
       "name": "L. McNeeley",
       "status": "QUES",
       "details": "L. McNeeley (Ques)"
@@ -252,6 +257,11 @@
       "name": "L. McNeeley",
       "status": "QUES",
       "details": "L. McNeeley (Ques)"
+    },
+    {
+      "name": "G. Williams",
+      "status": "QUES",
+      "details": "G. Williams (Ques)"
     },
     {
       "name": "C. White",
