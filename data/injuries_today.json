@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-20",
-  "built_at_utc": "2026-02-20T18:42:42Z",
+  "built_at_utc": "2026-02-20T19:39:08Z",
   "source": "rotowire",
   "IND": [
     {
@@ -424,6 +424,11 @@
       "name": "M. Porter",
       "status": "QUES",
       "details": "M. Porter (Ques)"
+    },
+    {
+      "name": "Z. Williams",
+      "status": "OUT",
+      "details": "Z. Williams (Out)"
     },
     {
       "name": "T. Sorber",
