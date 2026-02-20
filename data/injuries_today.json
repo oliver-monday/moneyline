@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-20",
-  "built_at_utc": "2026-02-20T20:28:51Z",
+  "built_at_utc": "2026-02-20T21:12:32Z",
   "source": "rotowire",
   "IND": [
     {
@@ -483,9 +483,31 @@
       "name": "D. Garland",
       "status": "OUT",
       "details": "D. Garland (Out)"
+    },
+    {
+      "name": "L. James",
+      "status": "QUES",
+      "details": "L. James (Ques)"
+    }
+  ],
+  "LAL": [
+    {
+      "name": "L. James",
+      "status": "QUES",
+      "details": "L. James (Ques)"
     }
   ],
   "DEN": [
+    {
+      "name": "J. Pickett",
+      "status": "PROB",
+      "details": "J. Pickett (Prob)"
+    },
+    {
+      "name": "J. Murray",
+      "status": "QUES",
+      "details": "J. Murray (Ques)"
+    },
     {
       "name": "T. Bates",
       "status": "OUT",
