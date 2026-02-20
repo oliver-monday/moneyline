@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-20",
-  "built_at_utc": "2026-02-20T22:34:07Z",
+  "built_at_utc": "2026-02-20T23:31:41Z",
   "source": "rotowire",
   "IND": [
     {
@@ -15,23 +15,8 @@
     },
     {
       "name": "A. Nembhard",
-      "status": "DOUBT",
-      "details": "A. Nembhard (Doubt)"
-    },
-    {
-      "name": "K. Jones",
-      "status": "QUES",
-      "details": "K. Jones (Ques)"
-    },
-    {
-      "name": "T. McConnell",
-      "status": "QUES",
-      "details": "T. McConnell (Ques)"
-    },
-    {
-      "name": "M. Potter",
-      "status": "QUES",
-      "details": "M. Potter (Ques)"
+      "status": "OUT",
+      "details": "A. Nembhard (Out)"
     },
     {
       "name": "A. Nesmith",
@@ -128,14 +113,14 @@
       "details": "W. Kessler (OFS)"
     },
     {
-      "name": "L. Markkanen",
-      "status": "DOUBT",
-      "details": "L. Markkanen (Doubt)"
-    },
-    {
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "OUT",
+      "details": "L. Markkanen (Out)"
     },
     {
       "name": "J. Nurkic",
@@ -148,11 +133,6 @@
       "details": "K. Caldwell-Pope (OFS)"
     },
     {
-      "name": "W. Clayton",
-      "status": "DOUBT",
-      "details": "W. Clayton (Doubt)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -161,6 +141,11 @@
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
+    },
+    {
+      "name": "W. Clayton",
+      "status": "OUT",
+      "details": "W. Clayton (Out)"
     },
     {
       "name": "C. Coward",
@@ -195,11 +180,6 @@
       "details": "K. Caldwell-Pope (OFS)"
     },
     {
-      "name": "W. Clayton",
-      "status": "DOUBT",
-      "details": "W. Clayton (Doubt)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -208,6 +188,11 @@
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
+    },
+    {
+      "name": "W. Clayton",
+      "status": "OUT",
+      "details": "W. Clayton (Out)"
     },
     {
       "name": "C. Coward",
@@ -306,6 +291,11 @@
   ],
   "MIA": [
     {
+      "name": "D. Mitchell",
+      "status": "QUES",
+      "details": "D. Mitchell (Ques)"
+    },
+    {
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
@@ -335,19 +325,9 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
-    },
-    {
-      "name": "C. Martin",
-      "status": "QUES",
-      "details": "C. Martin (Ques)"
-    },
-    {
       "name": "M. Christie",
-      "status": "DOUBT",
-      "details": "M. Christie (Doubt)"
+      "status": "OUT",
+      "details": "M. Christie (Out)"
     },
     {
       "name": "C. Flagg",
@@ -415,11 +395,6 @@
     }
   ],
   "BKN": [
-    {
-      "name": "M. Porter",
-      "status": "QUES",
-      "details": "M. Porter (Ques)"
-    },
     {
       "name": "N. Claxton",
       "status": "OUT",
