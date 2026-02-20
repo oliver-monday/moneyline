@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-20",
-  "built_at_utc": "2026-02-20T15:05:49Z",
+  "built_at_utc": "2026-02-20T17:28:24Z",
   "source": "rotowire",
   "IND": [
     {
@@ -106,6 +106,11 @@
       "name": "W. Kessler",
       "status": "OFS",
       "details": "W. Kessler (OFS)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "QUES",
+      "details": "L. Markkanen (Ques)"
     },
     {
       "name": "O. Tshiebwe",
@@ -291,11 +296,6 @@
       "details": "K. Johnson (Ques)"
     },
     {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
-    },
-    {
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
@@ -325,11 +325,6 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "M. Christie",
-      "status": "QUES",
-      "details": "M. Christie (Ques)"
-    },
-    {
       "name": "D. Gafford",
       "status": "QUES",
       "details": "D. Gafford (Ques)"
@@ -338,6 +333,11 @@
       "name": "C. Martin",
       "status": "QUES",
       "details": "C. Martin (Ques)"
+    },
+    {
+      "name": "M. Christie",
+      "status": "DOUBT",
+      "details": "M. Christie (Doubt)"
     },
     {
       "name": "C. Flagg",
@@ -409,6 +409,11 @@
       "name": "N. Claxton",
       "status": "QUES",
       "details": "N. Claxton (Ques)"
+    },
+    {
+      "name": "M. Porter",
+      "status": "QUES",
+      "details": "M. Porter (Ques)"
     },
     {
       "name": "T. Sorber",
