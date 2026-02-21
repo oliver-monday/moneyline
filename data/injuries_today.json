@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-21",
-  "built_at_utc": "2026-02-21T22:31:45Z",
+  "built_at_utc": "2026-02-21T23:27:38Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -216,29 +216,19 @@
       "details": "Ja Morant (Out)"
     },
     {
-      "name": "N. Powell",
-      "status": "PROB",
-      "details": "N. Powell (Prob)"
-    },
-    {
-      "name": "T. Herro",
-      "status": "PROB",
-      "details": "T. Herro (Prob)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "QUES",
-      "details": "N. Jovic (Ques)"
-    },
-    {
       "name": "D. Smith",
-      "status": "QUES",
-      "details": "D. Smith (Ques)"
+      "status": "PROB",
+      "details": "D. Smith (Prob)"
     },
     {
       "name": "D. Mitchell",
       "status": "DOUBT",
       "details": "D. Mitchell (Doubt)"
+    },
+    {
+      "name": "N. Jovic",
+      "status": "OUT",
+      "details": "N. Jovic (Out)"
     },
     {
       "name": "T. Rozier",
@@ -248,29 +238,19 @@
   ],
   "MIA": [
     {
-      "name": "T. Herro",
-      "status": "PROB",
-      "details": "T. Herro (Prob)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "PROB",
-      "details": "N. Powell (Prob)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "QUES",
-      "details": "N. Jovic (Ques)"
-    },
-    {
       "name": "D. Smith",
-      "status": "QUES",
-      "details": "D. Smith (Ques)"
+      "status": "PROB",
+      "details": "D. Smith (Prob)"
     },
     {
       "name": "D. Mitchell",
       "status": "DOUBT",
       "details": "D. Mitchell (Doubt)"
+    },
+    {
+      "name": "N. Jovic",
+      "status": "OUT",
+      "details": "N. Jovic (Out)"
     },
     {
       "name": "T. Rozier",
