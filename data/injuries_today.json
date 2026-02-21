@@ -1,22 +1,17 @@
 {
   "asof_date": "2026-02-21",
-  "built_at_utc": "2026-02-21T20:22:24Z",
+  "built_at_utc": "2026-02-21T21:11:09Z",
   "source": "rotowire",
   "ORL": [
     {
       "name": "J. Suggs",
-      "status": "QUES",
-      "details": "J. Suggs (Ques)"
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
     },
     {
       "name": "F. Wagner",
       "status": "OUT",
       "details": "F. Wagner (Out)"
-    },
-    {
-      "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
     },
     {
       "name": "C. Anthony",
@@ -35,11 +30,6 @@
     }
   ],
   "PHX": [
-    {
-      "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
     {
       "name": "C. Anthony",
       "status": "OUT",
