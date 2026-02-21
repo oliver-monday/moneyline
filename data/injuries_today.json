@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-20",
-  "built_at_utc": "2026-02-21T01:11:09Z",
+  "built_at_utc": "2026-02-21T03:14:54Z",
   "source": "rotowire",
   "IND": [
     {
@@ -39,6 +39,16 @@
       "details": "I. Zubac (Out)"
     },
     {
+      "name": "J. Champagnie",
+      "status": "QUES",
+      "details": "J. Champagnie (Ques)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "QUES",
+      "details": "T. Vukcevic (Ques)"
+    },
+    {
       "name": "A. Davis",
       "status": "OFS",
       "details": "A. Davis (OFS)"
@@ -71,9 +81,19 @@
   ],
   "WAS": [
     {
+      "name": "J. Champagnie",
+      "status": "QUES",
+      "details": "J. Champagnie (Ques)"
+    },
+    {
       "name": "A. Davis",
       "status": "OFS",
       "details": "A. Davis (OFS)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "QUES",
+      "details": "T. Vukcevic (Ques)"
     },
     {
       "name": "C. Whitmore",
@@ -448,31 +468,9 @@
       "name": "D. Garland",
       "status": "OUT",
       "details": "D. Garland (Out)"
-    },
-    {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
-    }
-  ],
-  "LAL": [
-    {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
     }
   ],
   "DEN": [
-    {
-      "name": "J. Pickett",
-      "status": "PROB",
-      "details": "J. Pickett (Prob)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "QUES",
-      "details": "J. Murray (Ques)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -494,16 +492,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "K. Murray",
-      "status": "QUES",
-      "details": "K. Murray (Ques)"
-    },
-    {
-      "name": "M. Thybulle",
-      "status": "QUES",
-      "details": "M. Thybulle (Ques)"
-    },
-    {
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
@@ -514,16 +502,6 @@
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "K. Murray",
-      "status": "QUES",
-      "details": "K. Murray (Ques)"
-    },
-    {
-      "name": "M. Thybulle",
-      "status": "QUES",
-      "details": "M. Thybulle (Ques)"
     },
     {
       "name": "S. Sharpe",
