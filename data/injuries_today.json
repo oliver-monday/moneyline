@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-21",
-  "built_at_utc": "2026-02-21T19:29:02Z",
+  "built_at_utc": "2026-02-21T20:22:24Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -111,6 +111,11 @@
     }
   ],
   "DET": [
+    {
+      "name": "I. Jones",
+      "status": "OUT",
+      "details": "I. Jones (Out)"
+    },
     {
       "name": "I. Stewart",
       "status": "OUT",
