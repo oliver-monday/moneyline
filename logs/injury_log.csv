@@ -5604,6 +5604,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-20,DAL,D. Gafford,QUES,D. Gafford (Ques),rotowire
 2026-02-20,DAL,C. Martin,QUES,C. Martin (Ques),rotowire
 2026-02-20,BKN,M. Porter,QUES,M. Porter (Ques),rotowire
+2026-02-20,CLE,N. Tomlin,PROB,N. Tomlin (Prob),rotowire
+2026-02-20,MIA,D. Mitchell,QUES,D. Mitchell (Ques),rotowire
 2026-02-20,IND,J. Furphy,OFS,J. Furphy (OFS),rotowire
 2026-02-20,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-02-20,IND,A. Nembhard,OUT,A. Nembhard (Out),rotowire
@@ -5646,7 +5648,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-20,MEM,Ty Jerome,OUT,Ty Jerome (Out),rotowire
 2026-02-20,MEM,Ja Morant,OUT,Ja Morant (Out),rotowire
 2026-02-20,MEM,S. Pippen,OUT,S. Pippen (Out),rotowire
-2026-02-20,CLE,N. Tomlin,PROB,N. Tomlin (Prob),rotowire
 2026-02-20,CLE,E. Mobley,OUT,E. Mobley (Out),rotowire
 2026-02-20,CLE,Max Strus,OUT,Max Strus (Out),rotowire
 2026-02-20,CLE,M. Bridges,OUT,M. Bridges (Out),rotowire
@@ -5659,7 +5660,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-20,CHA,L. McNeeley,OUT,L. McNeeley (Out),rotowire
 2026-02-20,CHA,Coby White,OUT,Coby White (Out),rotowire
 2026-02-20,CHA,G. Williams,OUT,G. Williams (Out),rotowire
-2026-02-20,MIA,D. Mitchell,QUES,D. Mitchell (Ques),rotowire
 2026-02-20,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-02-20,MIA,J. Kuminga,OUT,J. Kuminga (Out),rotowire
 2026-02-20,ATL,J. Kuminga,OUT,J. Kuminga (Out),rotowire
