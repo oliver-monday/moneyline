@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-21",
-  "built_at_utc": "2026-02-21T17:16:11Z",
+  "built_at_utc": "2026-02-21T18:31:57Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -68,54 +68,49 @@
       "details": "P. George (Out)"
     },
     {
-      "name": "T. Murphy",
-      "status": "QUES",
-      "details": "T. Murphy (Ques)"
+      "name": "D. Murray",
+      "status": "DOUBT",
+      "details": "D. Murray (Doubt)"
     },
     {
-      "name": "D. Murray",
-      "status": "QUES",
-      "details": "D. Murray (Ques)"
+      "name": "Yves Missi",
+      "status": "OUT",
+      "details": "Yves Missi (Out)"
+    },
+    {
+      "name": "T. Murphy",
+      "status": "OUT",
+      "details": "T. Murphy (Out)"
     },
     {
       "name": "M. Peavy",
-      "status": "QUES",
-      "details": "M. Peavy (Ques)"
-    },
-    {
-      "name": "Y. Missi",
-      "status": "DOUBT",
-      "details": "Y. Missi (Doubt)"
+      "status": "OUT",
+      "details": "M. Peavy (Out)"
     }
   ],
   "NOP": [
     {
-      "name": "T. Murphy",
-      "status": "QUES",
-      "details": "T. Murphy (Ques)"
+      "name": "D. Murray",
+      "status": "DOUBT",
+      "details": "D. Murray (Doubt)"
     },
     {
-      "name": "D. Murray",
-      "status": "QUES",
-      "details": "D. Murray (Ques)"
+      "name": "Yves Missi",
+      "status": "OUT",
+      "details": "Yves Missi (Out)"
+    },
+    {
+      "name": "T. Murphy",
+      "status": "OUT",
+      "details": "T. Murphy (Out)"
     },
     {
       "name": "M. Peavy",
-      "status": "QUES",
-      "details": "M. Peavy (Ques)"
-    },
-    {
-      "name": "Y. Missi",
-      "status": "DOUBT",
-      "details": "Y. Missi (Doubt)"
+      "status": "OUT",
+      "details": "M. Peavy (Out)"
     }
   ],
   "DET": [
-    {
-      "name": "T. Smith",
-      "status": "QUES",
-      "details": "T. Smith (Ques)"
-    },
     {
       "name": "I. Stewart",
       "status": "OUT",
@@ -171,19 +166,9 @@
       "details": "K. Caldwell-Pope (OFS)"
     },
     {
-      "name": "T. Jerome",
-      "status": "PROB",
-      "details": "T. Jerome (Prob)"
-    },
-    {
-      "name": "S. Pippen",
-      "status": "PROB",
-      "details": "S. Pippen (Prob)"
-    },
-    {
-      "name": "S. Aldama",
+      "name": "K. Anderson",
       "status": "QUES",
-      "details": "S. Aldama (Ques)"
+      "details": "K. Anderson (Ques)"
     },
     {
       "name": "W. Clayton",
@@ -191,14 +176,19 @@
       "details": "W. Clayton (Ques)"
     },
     {
-      "name": "C. Coward",
-      "status": "QUES",
-      "details": "C. Coward (Ques)"
+      "name": "S. Aldama",
+      "status": "OUT",
+      "details": "S. Aldama (Out)"
     },
     {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
+    },
+    {
+      "name": "C. Coward",
+      "status": "OUT",
+      "details": "C. Coward (Out)"
     },
     {
       "name": "Zach Edey",
@@ -211,12 +201,62 @@
       "details": "Ja Morant (Out)"
     },
     {
+      "name": "N. Powell",
+      "status": "PROB",
+      "details": "N. Powell (Prob)"
+    },
+    {
+      "name": "T. Herro",
+      "status": "PROB",
+      "details": "T. Herro (Prob)"
+    },
+    {
+      "name": "N. Jovic",
+      "status": "QUES",
+      "details": "N. Jovic (Ques)"
+    },
+    {
+      "name": "D. Smith",
+      "status": "QUES",
+      "details": "D. Smith (Ques)"
+    },
+    {
+      "name": "D. Mitchell",
+      "status": "DOUBT",
+      "details": "D. Mitchell (Doubt)"
+    },
+    {
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
     }
   ],
   "MIA": [
+    {
+      "name": "T. Herro",
+      "status": "PROB",
+      "details": "T. Herro (Prob)"
+    },
+    {
+      "name": "N. Powell",
+      "status": "PROB",
+      "details": "N. Powell (Prob)"
+    },
+    {
+      "name": "N. Jovic",
+      "status": "QUES",
+      "details": "N. Jovic (Ques)"
+    },
+    {
+      "name": "D. Smith",
+      "status": "QUES",
+      "details": "D. Smith (Ques)"
+    },
+    {
+      "name": "D. Mitchell",
+      "status": "DOUBT",
+      "details": "D. Mitchell (Doubt)"
+    },
     {
       "name": "T. Rozier",
       "status": "OUT",
