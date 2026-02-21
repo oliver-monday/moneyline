@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-21",
-  "built_at_utc": "2026-02-21T14:50:43Z",
+  "built_at_utc": "2026-02-21T17:16:11Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -73,11 +73,6 @@
       "details": "T. Murphy (Ques)"
     },
     {
-      "name": "Y. Missi",
-      "status": "QUES",
-      "details": "Y. Missi (Ques)"
-    },
-    {
       "name": "D. Murray",
       "status": "QUES",
       "details": "D. Murray (Ques)"
@@ -86,14 +81,14 @@
       "name": "M. Peavy",
       "status": "QUES",
       "details": "M. Peavy (Ques)"
+    },
+    {
+      "name": "Y. Missi",
+      "status": "DOUBT",
+      "details": "Y. Missi (Doubt)"
     }
   ],
   "NOP": [
-    {
-      "name": "Y. Missi",
-      "status": "QUES",
-      "details": "Y. Missi (Ques)"
-    },
     {
       "name": "T. Murphy",
       "status": "QUES",
@@ -108,6 +103,11 @@
       "name": "M. Peavy",
       "status": "QUES",
       "details": "M. Peavy (Ques)"
+    },
+    {
+      "name": "Y. Missi",
+      "status": "DOUBT",
+      "details": "Y. Missi (Doubt)"
     }
   ],
   "DET": [
@@ -122,6 +122,11 @@
       "details": "I. Stewart (Out)"
     },
     {
+      "name": "Z. Collins",
+      "status": "OFS",
+      "details": "Z. Collins (OFS)"
+    },
+    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
@@ -132,18 +137,18 @@
       "details": "G. Yabusele (Prob)"
     },
     {
-      "name": "J. Ivey",
-      "status": "QUES",
-      "details": "J. Ivey (Ques)"
-    },
-    {
-      "name": "Z. Collins",
+      "name": "Jaden Ivey",
       "status": "OUT",
-      "details": "Z. Collins (Out)"
+      "details": "Jaden Ivey (Out)"
     }
   ],
   "CHI": [
     {
+      "name": "Z. Collins",
+      "status": "OFS",
+      "details": "Z. Collins (OFS)"
+    },
+    {
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
@@ -154,14 +159,9 @@
       "details": "G. Yabusele (Prob)"
     },
     {
-      "name": "J. Ivey",
-      "status": "QUES",
-      "details": "J. Ivey (Ques)"
-    },
-    {
-      "name": "Z. Collins",
+      "name": "Jaden Ivey",
       "status": "OUT",
-      "details": "Z. Collins (Out)"
+      "details": "Jaden Ivey (Out)"
     }
   ],
   "MEM": [
