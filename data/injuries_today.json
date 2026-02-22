@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-22",
-  "built_at_utc": "2026-02-22T18:32:39Z",
+  "built_at_utc": "2026-02-22T19:29:53Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -171,11 +171,6 @@
       "details": "C. Hepburn (Out)"
     },
     {
-      "name": "M. Turner",
-      "status": "QUES",
-      "details": "M. Turner (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -187,11 +182,6 @@
     }
   ],
   "MIL": [
-    {
-      "name": "M. Turner",
-      "status": "QUES",
-      "details": "M. Turner (Ques)"
-    },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
@@ -451,8 +441,8 @@
   "PHI": [
     {
       "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     },
     {
       "name": "P. George",
@@ -484,14 +474,14 @@
   ],
   "NYK": [
     {
-      "name": "M. Robinson",
-      "status": "DOUBT",
-      "details": "M. Robinson (Doubt)"
-    },
-    {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
+    },
+    {
+      "name": "M. Robinson",
+      "status": "OUT",
+      "details": "M. Robinson (Out)"
     },
     {
       "name": "Z. Collins",
@@ -504,14 +494,24 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "A. Simons",
+      "name": "P. Williams",
+      "status": "PROB",
+      "details": "P. Williams (Prob)"
+    },
+    {
+      "name": "N. Richards",
       "status": "QUES",
-      "details": "A. Simons (Ques)"
+      "details": "N. Richards (Ques)"
     },
     {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
+    },
+    {
+      "name": "A. Simons",
+      "status": "OUT",
+      "details": "A. Simons (Out)"
     }
   ],
   "CHI": [
@@ -526,14 +526,24 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "A. Simons",
+      "name": "P. Williams",
+      "status": "PROB",
+      "details": "P. Williams (Prob)"
+    },
+    {
+      "name": "N. Richards",
       "status": "QUES",
-      "details": "A. Simons (Ques)"
+      "details": "N. Richards (Ques)"
     },
     {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
+    },
+    {
+      "name": "A. Simons",
+      "status": "OUT",
+      "details": "A. Simons (Out)"
     }
   ],
   "POR": [
