@@ -1,0 +1,10 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-21,2026,Paolo Banchero,ORL,PHX,ast,4,HIT,8,,targets_snapshot_2026-02-21.json
+2026-02-21,2026,Paolo Banchero,ORL,PHX,3pt,1,MISSED,0,,targets_snapshot_2026-02-21.json
+2026-02-21,2026,Jabari Smith Jr.,HOU,NY,3pt,2,HIT,4,,targets_snapshot_2026-02-21.json
+2026-02-21,2026,Saddiq Bey,NO,PHI,ast,2,HIT,2,,targets_snapshot_2026-02-21.json
+2026-02-21,2026,Saddiq Bey,NO,PHI,3pt,2,HIT,4,,targets_snapshot_2026-02-21.json
+2026-02-21,2026,Grayson Allen,PHX,ORL,pts,15,HIT,27,,targets_snapshot_2026-02-21.json
+2026-02-21,2026,Grayson Allen,PHX,ORL,ast,4,MISSED,2,,targets_snapshot_2026-02-21.json
+2026-02-21,2026,Matas Buzelis,CHI,DET,pts,15,HIT,15,,targets_snapshot_2026-02-21.json
+2026-02-21,2026,Matas Buzelis,CHI,DET,3pt,2,HIT,2,,targets_snapshot_2026-02-21.json
