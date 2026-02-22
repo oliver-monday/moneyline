@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-22",
-  "built_at_utc": "2026-02-22T21:13:00Z",
+  "built_at_utc": "2026-02-22T22:31:36Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -299,16 +299,6 @@
       "details": "Coby White (Out)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
-    },
-    {
       "name": "A. Davis",
       "status": "OFS",
       "details": "A. Davis (OFS)"
@@ -320,8 +310,8 @@
     },
     {
       "name": "J. Champagnie",
-      "status": "QUES",
-      "details": "J. Champagnie (Ques)"
+      "status": "OUT",
+      "details": "J. Champagnie (Out)"
     },
     {
       "name": "D. Russell",
@@ -332,6 +322,11 @@
       "name": "Alex Sarr",
       "status": "OUT",
       "details": "Alex Sarr (Out)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "OUT",
+      "details": "T. Vukcevic (Out)"
     },
     {
       "name": "Trae Young",
@@ -352,18 +347,8 @@
     },
     {
       "name": "J. Champagnie",
-      "status": "QUES",
-      "details": "J. Champagnie (Ques)"
-    },
-    {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
+      "status": "OUT",
+      "details": "J. Champagnie (Out)"
     },
     {
       "name": "D. Russell",
@@ -374,6 +359,11 @@
       "name": "Alex Sarr",
       "status": "OUT",
       "details": "Alex Sarr (Out)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "OUT",
+      "details": "T. Vukcevic (Out)"
     },
     {
       "name": "Trae Young",
