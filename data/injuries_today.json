@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-22",
-  "built_at_utc": "2026-02-22T20:24:42Z",
+  "built_at_utc": "2026-02-22T21:13:00Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -9,14 +9,14 @@
       "details": "Max Strus (Out)"
     },
     {
+      "name": "A. Caruso",
+      "status": "QUES",
+      "details": "A. Caruso (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "A. Caruso",
-      "status": "OUT",
-      "details": "A. Caruso (Out)"
     },
     {
       "name": "S. Gilgeous-Alexander",
@@ -36,14 +36,14 @@
   ],
   "OKC": [
     {
+      "name": "A. Caruso",
+      "status": "QUES",
+      "details": "A. Caruso (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "A. Caruso",
-      "status": "OUT",
-      "details": "A. Caruso (Out)"
     },
     {
       "name": "S. Gilgeous-Alexander",
@@ -122,6 +122,11 @@
       "details": "Seth Curry (Out)"
     },
     {
+      "name": "D. Green",
+      "status": "OUT",
+      "details": "D. Green (Out)"
+    },
+    {
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
@@ -147,6 +152,11 @@
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "D. Green",
+      "status": "OUT",
+      "details": "D. Green (Out)"
     },
     {
       "name": "K. Porzingis",
@@ -200,34 +210,9 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "C. Martin",
-      "status": "PROB",
-      "details": "C. Martin (Prob)"
-    },
-    {
-      "name": "M. Christie",
-      "status": "QUES",
-      "details": "M. Christie (Ques)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
-    },
-    {
       "name": "C. Flagg",
       "status": "OUT",
       "details": "C. Flagg (Out)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
-    },
-    {
-      "name": "P. Siakam",
-      "status": "QUES",
-      "details": "P. Siakam (Ques)"
     },
     {
       "name": "J. Furphy",
@@ -240,19 +225,9 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "K. Jones",
-      "status": "QUES",
-      "details": "K. Jones (Ques)"
-    },
-    {
       "name": "T. McConnell",
-      "status": "QUES",
-      "details": "T. McConnell (Ques)"
-    },
-    {
-      "name": "M. Potter",
-      "status": "QUES",
-      "details": "M. Potter (Ques)"
+      "status": "OUT",
+      "details": "T. McConnell (Out)"
     },
     {
       "name": "A. Nesmith",
@@ -282,29 +257,9 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "K. Jones",
-      "status": "QUES",
-      "details": "K. Jones (Ques)"
-    },
-    {
       "name": "T. McConnell",
-      "status": "QUES",
-      "details": "T. McConnell (Ques)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
-    },
-    {
-      "name": "M. Potter",
-      "status": "QUES",
-      "details": "M. Potter (Ques)"
-    },
-    {
-      "name": "P. Siakam",
-      "status": "QUES",
-      "details": "P. Siakam (Ques)"
+      "status": "OUT",
+      "details": "T. McConnell (Out)"
     },
     {
       "name": "A. Nesmith",
