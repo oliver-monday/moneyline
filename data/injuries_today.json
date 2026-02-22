@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-22",
-  "built_at_utc": "2026-02-22T17:16:11Z",
+  "built_at_utc": "2026-02-22T18:32:39Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -112,9 +112,9 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "K. Porzingis",
-      "status": "PROB",
-      "details": "K. Porzingis (Prob)"
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
     },
     {
       "name": "S. Curry",
@@ -125,6 +125,11 @@
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "K. Porzingis",
+      "status": "OUT",
+      "details": "K. Porzingis (Out)"
     }
   ],
   "GSW": [
@@ -134,9 +139,9 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "K. Porzingis",
-      "status": "PROB",
-      "details": "K. Porzingis (Prob)"
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
     },
     {
       "name": "S. Curry",
@@ -147,6 +152,11 @@
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "K. Porzingis",
+      "status": "OUT",
+      "details": "K. Porzingis (Out)"
     }
   ],
   "TOR": [
@@ -450,12 +460,22 @@
       "details": "P. George (Out)"
     },
     {
+      "name": "N. Reid",
+      "status": "QUES",
+      "details": "N. Reid (Ques)"
+    },
+    {
       "name": "R. Gobert",
       "status": "OUT",
       "details": "R. Gobert (Out)"
     }
   ],
   "MIN": [
+    {
+      "name": "N. Reid",
+      "status": "QUES",
+      "details": "N. Reid (Ques)"
+    },
     {
       "name": "R. Gobert",
       "status": "OUT",

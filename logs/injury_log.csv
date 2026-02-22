@@ -5813,13 +5813,15 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-22,DEN,J. Pickett,OUT,J. Pickett (Out),rotowire
 2026-02-22,DEN,P. Watson,OUT,P. Watson (Out),rotowire
 2026-02-22,DEN,J. Butler,OFS,J. Butler (OFS),rotowire
-2026-02-22,DEN,K. Porzingis,PROB,K. Porzingis (Prob),rotowire
+2026-02-22,DEN,LJ Cryer,OUT,LJ Cryer (Out),rotowire
 2026-02-22,DEN,S. Curry,OUT,S. Curry (Out),rotowire
 2026-02-22,DEN,Seth Curry,OUT,Seth Curry (Out),rotowire
+2026-02-22,DEN,K. Porzingis,OUT,K. Porzingis (Out),rotowire
 2026-02-22,GSW,J. Butler,OFS,J. Butler (OFS),rotowire
-2026-02-22,GSW,K. Porzingis,PROB,K. Porzingis (Prob),rotowire
+2026-02-22,GSW,LJ Cryer,OUT,LJ Cryer (Out),rotowire
 2026-02-22,GSW,S. Curry,OUT,S. Curry (Out),rotowire
 2026-02-22,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
+2026-02-22,GSW,K. Porzingis,OUT,K. Porzingis (Out),rotowire
 2026-02-22,TOR,S. Barnes,OUT,S. Barnes (Out),rotowire
 2026-02-22,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-22,TOR,M. Turner,QUES,M. Turner (Ques),rotowire
@@ -5877,7 +5879,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-22,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
 2026-02-22,PHI,J. Embiid,QUES,J. Embiid (Ques),rotowire
 2026-02-22,PHI,P. George,OUT,P. George (Out),rotowire
+2026-02-22,PHI,N. Reid,QUES,N. Reid (Ques),rotowire
 2026-02-22,PHI,R. Gobert,OUT,R. Gobert (Out),rotowire
+2026-02-22,MIN,N. Reid,QUES,N. Reid (Ques),rotowire
 2026-02-22,MIN,R. Gobert,OUT,R. Gobert (Out),rotowire
 2026-02-22,NYK,M. Robinson,DOUBT,M. Robinson (Doubt),rotowire
 2026-02-22,NYK,M. McBride,OUT,M. McBride (Out),rotowire
