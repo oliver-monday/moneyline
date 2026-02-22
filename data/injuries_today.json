@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-22",
-  "built_at_utc": "2026-02-22T19:29:53Z",
+  "built_at_utc": "2026-02-22T20:24:42Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -81,11 +81,6 @@
     }
   ],
   "DEN": [
-    {
-      "name": "J. Murray",
-      "status": "QUES",
-      "details": "J. Murray (Ques)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
@@ -440,6 +435,11 @@
   ],
   "PHI": [
     {
+      "name": "J. Broome",
+      "status": "OUT",
+      "details": "J. Broome (Out)"
+    },
+    {
       "name": "J. Embiid",
       "status": "OUT",
       "details": "J. Embiid (Out)"
@@ -563,14 +563,19 @@
       "details": "S. Sharpe (Out)"
     },
     {
-      "name": "C. Anthony",
-      "status": "DOUBT",
-      "details": "C. Anthony (Doubt)"
+      "name": "J. Green",
+      "status": "QUES",
+      "details": "J. Green (Ques)"
     },
     {
-      "name": "J. Goodwin",
-      "status": "DOUBT",
-      "details": "J. Goodwin (Doubt)"
+      "name": "G. Allen",
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
+    },
+    {
+      "name": "C. Anthony",
+      "status": "OUT",
+      "details": "C. Anthony (Out)"
     },
     {
       "name": "D. Booker",
@@ -581,6 +586,11 @@
       "name": "D. Brooks",
       "status": "OUT",
       "details": "D. Brooks (Out)"
+    },
+    {
+      "name": "J. Goodwin",
+      "status": "OUT",
+      "details": "J. Goodwin (Out)"
     },
     {
       "name": "H. Highsmith",
@@ -590,14 +600,19 @@
   ],
   "PHX": [
     {
-      "name": "C. Anthony",
-      "status": "DOUBT",
-      "details": "C. Anthony (Doubt)"
+      "name": "G. Allen",
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
     },
     {
-      "name": "J. Goodwin",
-      "status": "DOUBT",
-      "details": "J. Goodwin (Doubt)"
+      "name": "J. Green",
+      "status": "QUES",
+      "details": "J. Green (Ques)"
+    },
+    {
+      "name": "C. Anthony",
+      "status": "OUT",
+      "details": "C. Anthony (Out)"
     },
     {
       "name": "D. Booker",
@@ -608,6 +623,11 @@
       "name": "D. Brooks",
       "status": "OUT",
       "details": "D. Brooks (Out)"
+    },
+    {
+      "name": "J. Goodwin",
+      "status": "OUT",
+      "details": "J. Goodwin (Out)"
     },
     {
       "name": "H. Highsmith",
