@@ -6,7 +6,7 @@
     "misses": 2,
     "hit_rate_pct": 78,
     "top_targets_total": 6,
-    "top_targets_hits": 4
+    "top_targets_hits": 5
   },
   "hits": [
     {
@@ -247,35 +247,10 @@
       "actual": 27
     }
   ],
-  "built_at_utc": "2026-02-22T08:56:45Z",
+  "built_at_utc": "2026-02-22T14:17:04Z",
   "snapshot_file": "targets_snapshot_2026-02-21.json",
   "preset": "baseline",
   "top_targets": [
-    {
-      "asof_date": "2026-02-21",
-      "player_id": "4432573.0",
-      "player_name": "Paolo Banchero",
-      "team_abbrev": "ORL",
-      "opp": "PHX",
-      "game_id": "401810666",
-      "stat": "3pt",
-      "threshold": 1,
-      "hits": 9,
-      "window_games": 10,
-      "hit_rate": 0.9,
-      "is_home_game": false,
-      "rest_days": 1,
-      "is_b2b": false,
-      "share_trend_pp": -0.2697600602012365,
-      "share_trend_dir": "FLAT",
-      "iqr_10": 1.0,
-      "landmine_rate_10": null,
-      "trap_risk": null,
-      "dnp": false,
-      "actual": 0,
-      "hit": false,
-      "delta": 1
-    },
     {
       "asof_date": "2026-02-21",
       "player_id": "4432639.0",
@@ -400,6 +375,31 @@
       "actual": 2,
       "hit": false,
       "delta": 2
+    },
+    {
+      "asof_date": "2026-02-21",
+      "player_id": "4711294.0",
+      "player_name": "Matas Buzelis",
+      "team_abbrev": "CHI",
+      "opp": "DET",
+      "game_id": "401810669",
+      "stat": "pts",
+      "threshold": 15,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 0.205661866733034,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 5.5,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false,
+      "dnp": false,
+      "actual": 15,
+      "hit": true,
+      "delta": 0
     }
   ]
 }
