@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-02-21",
-  "built_at_utc": "2026-02-22T01:16:55Z",
+  "built_at_utc": "2026-02-22T03:30:49Z",
   "source": "rotowire",
   "ORL": [
     {
       "name": "J. Suggs",
-      "status": "OUT",
-      "details": "J. Suggs (Out)"
+      "status": "QUES",
+      "details": "J. Suggs (Ques)"
     },
     {
       "name": "F. Wagner",
@@ -15,18 +15,18 @@
     },
     {
       "name": "D. Brooks",
+      "status": "OUT",
+      "details": "D. Brooks (Out)"
+    },
+    {
+      "name": "C. Anthony",
       "status": "QUES",
-      "details": "D. Brooks (Ques)"
+      "details": "C. Anthony (Ques)"
     },
     {
       "name": "J. Goodwin",
       "status": "QUES",
       "details": "J. Goodwin (Ques)"
-    },
-    {
-      "name": "C. Anthony",
-      "status": "OUT",
-      "details": "C. Anthony (Out)"
     },
     {
       "name": "D. Booker",
@@ -41,9 +41,9 @@
   ],
   "PHX": [
     {
-      "name": "D. Brooks",
+      "name": "C. Anthony",
       "status": "QUES",
-      "details": "D. Brooks (Ques)"
+      "details": "C. Anthony (Ques)"
     },
     {
       "name": "J. Goodwin",
@@ -51,14 +51,14 @@
       "details": "J. Goodwin (Ques)"
     },
     {
-      "name": "C. Anthony",
-      "status": "OUT",
-      "details": "C. Anthony (Out)"
-    },
-    {
       "name": "D. Booker",
       "status": "OUT",
       "details": "D. Booker (Out)"
+    },
+    {
+      "name": "D. Brooks",
+      "status": "OUT",
+      "details": "D. Brooks (Out)"
     },
     {
       "name": "H. Highsmith",
@@ -142,6 +142,11 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "A. Simons",
+      "status": "QUES",
+      "details": "A. Simons (Ques)"
+    },
+    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -157,6 +162,11 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
+    },
+    {
+      "name": "A. Simons",
+      "status": "QUES",
+      "details": "A. Simons (Ques)"
     },
     {
       "name": "Jaden Ivey",
@@ -292,6 +302,11 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "J. Tate",
+      "status": "QUES",
+      "details": "J. Tate (Ques)"
     },
     {
       "name": "F. VanVleet",
