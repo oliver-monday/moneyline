@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-22",
-  "built_at_utc": "2026-02-22T14:51:08Z",
+  "built_at_utc": "2026-02-22T17:16:11Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -464,14 +464,14 @@
   ],
   "NYK": [
     {
+      "name": "M. Robinson",
+      "status": "DOUBT",
+      "details": "M. Robinson (Doubt)"
+    },
+    {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
-    },
-    {
-      "name": "A. Simons",
-      "status": "QUES",
-      "details": "A. Simons (Ques)"
     },
     {
       "name": "Z. Collins",
@@ -482,6 +482,11 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
+    },
+    {
+      "name": "A. Simons",
+      "status": "QUES",
+      "details": "A. Simons (Ques)"
     },
     {
       "name": "Jaden Ivey",
@@ -529,13 +534,13 @@
     },
     {
       "name": "C. Anthony",
-      "status": "QUES",
-      "details": "C. Anthony (Ques)"
+      "status": "DOUBT",
+      "details": "C. Anthony (Doubt)"
     },
     {
       "name": "J. Goodwin",
-      "status": "QUES",
-      "details": "J. Goodwin (Ques)"
+      "status": "DOUBT",
+      "details": "J. Goodwin (Doubt)"
     },
     {
       "name": "D. Booker",
@@ -556,13 +561,13 @@
   "PHX": [
     {
       "name": "C. Anthony",
-      "status": "QUES",
-      "details": "C. Anthony (Ques)"
+      "status": "DOUBT",
+      "details": "C. Anthony (Doubt)"
     },
     {
       "name": "J. Goodwin",
-      "status": "QUES",
-      "details": "J. Goodwin (Ques)"
+      "status": "DOUBT",
+      "details": "J. Goodwin (Doubt)"
     },
     {
       "name": "D. Booker",
