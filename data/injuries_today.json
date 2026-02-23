@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-23",
-  "built_at_utc": "2026-02-23T18:59:30Z",
+  "built_at_utc": "2026-02-23T19:59:08Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -51,6 +51,11 @@
       "name": "D. Sabonis",
       "status": "OFS",
       "details": "D. Sabonis (OFS)"
+    },
+    {
+      "name": "D. Carter",
+      "status": "QUES",
+      "details": "D. Carter (Ques)"
     },
     {
       "name": "D. Cardwell",
