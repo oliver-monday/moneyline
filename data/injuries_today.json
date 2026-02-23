@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-22",
-  "built_at_utc": "2026-02-23T03:35:09Z",
+  "built_at_utc": "2026-02-23T04:12:35Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -407,26 +407,26 @@
       "details": "P. George (Out)"
     },
     {
+      "name": "N. Reid",
+      "status": "QUES",
+      "details": "N. Reid (Ques)"
+    },
+    {
       "name": "R. Gobert",
       "status": "OUT",
       "details": "R. Gobert (Out)"
-    },
-    {
-      "name": "Naz Reid",
-      "status": "OUT",
-      "details": "Naz Reid (Out)"
     }
   ],
   "MIN": [
     {
+      "name": "N. Reid",
+      "status": "QUES",
+      "details": "N. Reid (Ques)"
+    },
+    {
       "name": "R. Gobert",
       "status": "OUT",
       "details": "R. Gobert (Out)"
-    },
-    {
-      "name": "Naz Reid",
-      "status": "OUT",
-      "details": "Naz Reid (Out)"
     }
   ],
   "NYK": [
@@ -511,8 +511,8 @@
     },
     {
       "name": "G. Allen",
-      "status": "OUT",
-      "details": "G. Allen (Out)"
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
     },
     {
       "name": "C. Anthony",
@@ -543,8 +543,8 @@
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "OUT",
-      "details": "G. Allen (Out)"
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
     },
     {
       "name": "C. Anthony",
