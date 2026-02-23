@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-23",
-  "built_at_utc": "2026-02-23T22:50:26Z",
+  "built_at_utc": "2026-02-23T23:35:47Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -53,19 +53,14 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "D. Carter",
-      "status": "QUES",
-      "details": "D. Carter (Ques)"
-    },
-    {
       "name": "D. Cardwell",
       "status": "OUT",
       "details": "D. Cardwell (Out)"
     },
     {
-      "name": "T. Jerome",
-      "status": "QUES",
-      "details": "T. Jerome (Ques)"
+      "name": "D. Carter",
+      "status": "OUT",
+      "details": "D. Carter (Out)"
     },
     {
       "name": "K. Caldwell-Pope",
@@ -76,6 +71,11 @@
       "name": "K. Anderson",
       "status": "DOUBT",
       "details": "K. Anderson (Doubt)"
+    },
+    {
+      "name": "T. Jerome",
+      "status": "DOUBT",
+      "details": "T. Jerome (Doubt)"
     },
     {
       "name": "S. Aldama",
@@ -110,14 +110,14 @@
       "details": "K. Caldwell-Pope (OFS)"
     },
     {
-      "name": "T. Jerome",
-      "status": "QUES",
-      "details": "T. Jerome (Ques)"
-    },
-    {
       "name": "K. Anderson",
       "status": "DOUBT",
       "details": "K. Anderson (Doubt)"
+    },
+    {
+      "name": "T. Jerome",
+      "status": "DOUBT",
+      "details": "T. Jerome (Doubt)"
     },
     {
       "name": "S. Aldama",
