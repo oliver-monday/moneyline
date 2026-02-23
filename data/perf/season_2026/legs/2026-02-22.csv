@@ -1,0 +1,11 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-22,2026,Ryan Rollins,MIL,TOR,pts,15,HIT,21,,targets_snapshot_2026-02-22.json
+2026-02-22,2026,Ryan Rollins,MIL,TOR,3pt,2,HIT,4,,targets_snapshot_2026-02-22.json
+2026-02-22,2026,Anthony Davis,DAL,IND,ast,2,,,,targets_snapshot_2026-02-22.json
+2026-02-22,2026,Jaden McDaniels,MIN,PHI,ast,2,HIT,2,,targets_snapshot_2026-02-22.json
+2026-02-22,2026,James Harden,CLE,OKC,reb,4,HIT,5,,targets_snapshot_2026-02-22.json
+2026-02-22,2026,James Harden,CLE,OKC,ast,8,HIT,9,,targets_snapshot_2026-02-22.json
+2026-02-22,2026,Darius Garland,CLE,OKC,ast,6,,,,targets_snapshot_2026-02-22.json
+2026-02-22,2026,Kyle Kuzma,MIL,TOR,reb,4,HIT,4,,targets_snapshot_2026-02-22.json
+2026-02-22,2026,Kyle Kuzma,MIL,TOR,ast,2,MISSED,1,,targets_snapshot_2026-02-22.json
+2026-02-22,2026,Kyle Kuzma,MIL,TOR,3pt,1,MISSED,0,,targets_snapshot_2026-02-22.json
