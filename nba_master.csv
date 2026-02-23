@@ -863,6 +863,6 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810680,2026-02-22,2026-02-23T01:00Z,Chicago Bulls,CHI,99,350.0,,New York Knicks,NY,105,-455.0,,Chicago,IL,,
 401810681,2026-02-22,2026-02-23T01:00Z,Phoenix Suns,PHX,77,140.0,,Portland Trail Blazers,POR,92,-166.0,,Phoenix,AZ,,
 401810682,2026-02-22,2026-02-23T02:00Z,LA Clippers,LAC,109,-142.0,,Orlando Magic,ORL,111,120.0,,Inglewood,CA,,
-401810683,2026-02-23,2026-02-24T00:00Z,Detroit Pistons,DET,0,-125.0,,San Antonio Spurs,SA,0,105.0,,Detroit,MI,I. Stewart (Out),D. Jones Garcia (OFS); M. Plumlee (Out)
-401810684,2026-02-23,2026-02-24T01:00Z,Memphis Grizzlies,MEM,0,-198.0,,Sacramento Kings,SAC,0,164.0,,Memphis,TN,K. Caldwell-Pope (OFS); S. Aldama (Out); B. Clarke (Out); C. Coward (Out); Zach Edey (Out); Ja Morant (Out),D. Hunter (OFS); Z. LaVine (OFS); D. Sabonis (OFS); D. Cardwell (Out)
-401810685,2026-02-23,2026-02-24T02:30Z,Houston Rockets,HOU,0,-900.0,,Utah Jazz,UTAH,0,600.0,,Houston,TX,S. Adams (OFS); J. Tate (Out); F. VanVleet (Out),J. Jackson (OFS); W. Kessler (OFS); J. Nurkic (Out)
+401810683,2026-02-23,2026-02-24T00:00Z,Detroit Pistons,DET,0,-118.0,,San Antonio Spurs,SA,0,-102.0,,Detroit,MI,I. Stewart (Out),D. Jones Garcia (OFS); M. Plumlee (Out)
+401810684,2026-02-23,2026-02-24T01:00Z,Memphis Grizzlies,MEM,0,-185.0,,Sacramento Kings,SAC,0,154.0,,Memphis,TN,K. Caldwell-Pope (OFS); S. Aldama (Out); B. Clarke (Out); C. Coward (Out); Zach Edey (Out); Ja Morant (Out),D. Hunter (OFS); Z. LaVine (OFS); D. Sabonis (OFS); D. Cardwell (Out)
+401810685,2026-02-23,2026-02-24T02:30Z,Houston Rockets,HOU,0,-850.0,,Utah Jazz,UTAH,0,575.0,,Houston,TX,S. Adams (OFS); J. Tate (Out); F. VanVleet (Out),J. Jackson (OFS); W. Kessler (OFS); J. Nurkic (Out)

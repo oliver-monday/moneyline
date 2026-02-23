@@ -5,8 +5,8 @@
     "top_targets": {
       "totals": {
         "total": 6,
-        "hits": 3,
-        "hit_rate": 0.5,
+        "hits": 4,
+        "hit_rate": 0.6666666666666666,
         "out_count": 0
       },
       "by_stat": {
@@ -17,9 +17,15 @@
           "out_count": 0
         },
         "ast": {
-          "total": 4,
+          "total": 3,
           "hits": 1,
-          "hit_rate": 0.25,
+          "hit_rate": 0.3333333333333333,
+          "out_count": 0
+        },
+        "pts": {
+          "total": 1,
+          "hits": 1,
+          "hit_rate": 1.0,
           "out_count": 0
         },
         "reb": {
@@ -40,15 +46,23 @@
         },
         "ast": {
           "2": {
-            "total": 3,
+            "total": 2,
             "hits": 1,
-            "hit_rate": 0.3333333333333333,
+            "hit_rate": 0.5,
             "out_count": 0
           },
           "6": {
             "total": 1,
             "hits": 0,
             "hit_rate": 0.0,
+            "out_count": 0
+          }
+        },
+        "pts": {
+          "15": {
+            "total": 1,
+            "hits": 1,
+            "hit_rate": 1.0,
             "out_count": 0
           }
         },
@@ -64,30 +78,30 @@
       "by_trap_risk": {
         "false": {
           "total": 5,
-          "hits": 2,
-          "hit_rate": 0.4,
+          "hits": 3,
+          "hit_rate": 0.6,
           "out_count": 0
         }
       },
       "by_b2b": {
         "false": {
           "total": 6,
-          "hits": 3,
-          "hit_rate": 0.5,
+          "hits": 4,
+          "hit_rate": 0.6666666666666666,
           "out_count": 0
         }
       },
       "by_share_trend_dir": {
         "UP": {
-          "total": 1,
-          "hits": 1,
+          "total": 2,
+          "hits": 2,
           "hit_rate": 1.0,
           "out_count": 0
         },
         "FLAT": {
-          "total": 4,
+          "total": 3,
           "hits": 2,
-          "hit_rate": 0.5,
+          "hit_rate": 0.6666666666666666,
           "out_count": 0
         },
         "DOWN": {
@@ -99,15 +113,15 @@
       },
       "by_home_game": {
         "true": {
-          "total": 4,
+          "total": 3,
           "hits": 3,
-          "hit_rate": 0.75,
+          "hit_rate": 1.0,
           "out_count": 0
         },
         "false": {
-          "total": 2,
-          "hits": 0,
-          "hit_rate": 0.0,
+          "total": 3,
+          "hits": 1,
+          "hit_rate": 0.3333333333333333,
           "out_count": 0
         }
       }
