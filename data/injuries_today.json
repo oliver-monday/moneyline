@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-22",
-  "built_at_utc": "2026-02-22T23:29:06Z",
+  "built_at_utc": "2026-02-23T01:16:21Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -376,6 +376,18 @@
       "name": "J. Tatum",
       "status": "OUT",
       "details": "J. Tatum (Out)"
+    },
+    {
+      "name": "J. Hayes",
+      "status": "QUES",
+      "details": "J. Hayes (Ques)"
+    }
+  ],
+  "LAL": [
+    {
+      "name": "J. Hayes",
+      "status": "QUES",
+      "details": "J. Hayes (Ques)"
     }
   ],
   "PHI": [
@@ -395,26 +407,26 @@
       "details": "P. George (Out)"
     },
     {
-      "name": "N. Reid",
-      "status": "QUES",
-      "details": "N. Reid (Ques)"
-    },
-    {
       "name": "R. Gobert",
       "status": "OUT",
       "details": "R. Gobert (Out)"
+    },
+    {
+      "name": "Naz Reid",
+      "status": "OUT",
+      "details": "Naz Reid (Out)"
     }
   ],
   "MIN": [
     {
-      "name": "N. Reid",
-      "status": "QUES",
-      "details": "N. Reid (Ques)"
-    },
-    {
       "name": "R. Gobert",
       "status": "OUT",
       "details": "R. Gobert (Out)"
+    },
+    {
+      "name": "Naz Reid",
+      "status": "OUT",
+      "details": "Naz Reid (Out)"
     }
   ],
   "NYK": [
@@ -439,16 +451,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "P. Williams",
-      "status": "PROB",
-      "details": "P. Williams (Prob)"
-    },
-    {
-      "name": "N. Richards",
-      "status": "QUES",
-      "details": "N. Richards (Ques)"
-    },
-    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -471,16 +473,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "P. Williams",
-      "status": "PROB",
-      "details": "P. Williams (Prob)"
-    },
-    {
-      "name": "N. Richards",
-      "status": "QUES",
-      "details": "N. Richards (Ques)"
-    },
-    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -498,24 +490,14 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "D. Avdija",
-      "status": "QUES",
-      "details": "D. Avdija (Ques)"
-    },
-    {
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
     },
     {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
-    {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "C. Anthony",
@@ -546,13 +528,8 @@
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
-    {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "C. Anthony",
@@ -583,18 +560,13 @@
   "ORL": [
     {
       "name": "J. Suggs",
-      "status": "QUES",
-      "details": "J. Suggs (Ques)"
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
     },
     {
       "name": "F. Wagner",
       "status": "OUT",
       "details": "F. Wagner (Out)"
-    },
-    {
-      "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
     },
     {
       "name": "B. Beal",
@@ -617,11 +589,6 @@
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
-    },
-    {
-      "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
     },
     {
       "name": "J. Collins",
