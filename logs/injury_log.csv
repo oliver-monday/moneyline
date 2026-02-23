@@ -5815,7 +5815,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-22,NYK,N. Richards,QUES,N. Richards (Ques),rotowire
 2026-02-22,CHI,P. Williams,PROB,P. Williams (Prob),rotowire
 2026-02-22,CHI,N. Richards,QUES,N. Richards (Ques),rotowire
-2026-02-22,POR,D. Avdija,QUES,D. Avdija (Ques),rotowire
 2026-02-22,POR,J. Green,QUES,J. Green (Ques),rotowire
 2026-02-22,PHX,J. Green,QUES,J. Green (Ques),rotowire
 2026-02-22,ORL,K. Leonard,QUES,K. Leonard (Ques),rotowire
@@ -5901,15 +5900,18 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-22,MIN,Naz Reid,OUT,Naz Reid (Out),rotowire
 2026-02-22,NYK,M. McBride,OUT,M. McBride (Out),rotowire
 2026-02-22,NYK,M. Robinson,OUT,M. Robinson (Out),rotowire
+2026-02-22,NYK,J. Smith,QUES,J. Smith (Ques),rotowire
 2026-02-22,NYK,Z. Collins,OFS,Z. Collins (OFS),rotowire
 2026-02-22,NYK,N. Essengue,OFS,N. Essengue (OFS),rotowire
 2026-02-22,NYK,Jaden Ivey,OUT,Jaden Ivey (Out),rotowire
 2026-02-22,NYK,A. Simons,OUT,A. Simons (Out),rotowire
 2026-02-22,CHI,Z. Collins,OFS,Z. Collins (OFS),rotowire
 2026-02-22,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
+2026-02-22,CHI,J. Smith,QUES,J. Smith (Ques),rotowire
 2026-02-22,CHI,Jaden Ivey,OUT,Jaden Ivey (Out),rotowire
 2026-02-22,CHI,A. Simons,OUT,A. Simons (Out),rotowire
 2026-02-22,POR,D. Lillard,OFS,D. Lillard (OFS),rotowire
+2026-02-22,POR,D. Avdija,QUES,D. Avdija (Ques),rotowire
 2026-02-22,POR,S. Sharpe,OUT,S. Sharpe (Out),rotowire
 2026-02-22,POR,G. Allen,OUT,G. Allen (Out),rotowire
 2026-02-22,POR,C. Anthony,OUT,C. Anthony (Out),rotowire
