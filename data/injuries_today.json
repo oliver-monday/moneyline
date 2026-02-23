@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-23",
-  "built_at_utc": "2026-02-23T17:53:19Z",
+  "built_at_utc": "2026-02-23T18:59:30Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -14,12 +14,22 @@
       "details": "M. Plumlee (Out)"
     },
     {
+      "name": "B. Klintman",
+      "status": "OUT",
+      "details": "B. Klintman (Out)"
+    },
+    {
       "name": "I. Stewart",
       "status": "OUT",
       "details": "I. Stewart (Out)"
     }
   ],
   "DET": [
+    {
+      "name": "B. Klintman",
+      "status": "OUT",
+      "details": "B. Klintman (Out)"
+    },
     {
       "name": "I. Stewart",
       "status": "OUT",
