@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-23",
-  "built_at_utc": "2026-02-23T19:59:08Z",
+  "built_at_utc": "2026-02-23T20:42:28Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -157,6 +157,11 @@
       "details": "W. Kessler (OFS)"
     },
     {
+      "name": "J. Nurkic",
+      "status": "OFS",
+      "details": "J. Nurkic (OFS)"
+    },
+    {
       "name": "L. Markkanen",
       "status": "PROB",
       "details": "L. Markkanen (Prob)"
@@ -165,11 +170,6 @@
       "name": "K. George",
       "status": "QUES",
       "details": "K. George (Ques)"
-    },
-    {
-      "name": "J. Nurkic",
-      "status": "OUT",
-      "details": "J. Nurkic (Out)"
     },
     {
       "name": "S. Adams",
