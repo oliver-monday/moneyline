@@ -5933,8 +5933,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-22,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-02-22,LAC,J. Collins,OUT,J. Collins (Out),rotowire
 2026-02-22,LAC,D. Garland,OUT,D. Garland (Out),rotowire
-2026-02-23,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-02-23,SAS,L. Waters,QUES,L. Waters (Ques),rotowire
+2026-02-23,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-02-23,SAS,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-02-23,SAS,I. Stewart,OUT,I. Stewart (Out),rotowire
 2026-02-23,DET,I. Stewart,OUT,I. Stewart (Out),rotowire
@@ -5942,6 +5942,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-23,SAC,Z. LaVine,OFS,Z. LaVine (OFS),rotowire
 2026-02-23,SAC,D. Sabonis,OFS,D. Sabonis (OFS),rotowire
 2026-02-23,SAC,D. Cardwell,OUT,D. Cardwell (Out),rotowire
+2026-02-23,SAC,T. Jerome,QUES,T. Jerome (Ques),rotowire
 2026-02-23,SAC,K. Caldwell-Pope,OFS,K. Caldwell-Pope (OFS),rotowire
 2026-02-23,SAC,K. Anderson,DOUBT,K. Anderson (Doubt),rotowire
 2026-02-23,SAC,S. Aldama,OUT,S. Aldama (Out),rotowire
@@ -5950,6 +5951,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-23,SAC,Zach Edey,OUT,Zach Edey (Out),rotowire
 2026-02-23,SAC,Ja Morant,OUT,Ja Morant (Out),rotowire
 2026-02-23,MEM,K. Caldwell-Pope,OFS,K. Caldwell-Pope (OFS),rotowire
+2026-02-23,MEM,T. Jerome,QUES,T. Jerome (Ques),rotowire
 2026-02-23,MEM,K. Anderson,DOUBT,K. Anderson (Doubt),rotowire
 2026-02-23,MEM,S. Aldama,OUT,S. Aldama (Out),rotowire
 2026-02-23,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire

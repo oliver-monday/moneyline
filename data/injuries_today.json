@@ -1,17 +1,12 @@
 {
   "asof_date": "2026-02-23",
-  "built_at_utc": "2026-02-23T15:12:35Z",
+  "built_at_utc": "2026-02-23T17:53:19Z",
   "source": "rotowire",
   "SAS": [
     {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "L. Waters",
-      "status": "QUES",
-      "details": "L. Waters (Ques)"
     },
     {
       "name": "M. Plumlee",
@@ -51,6 +46,11 @@
       "name": "D. Cardwell",
       "status": "OUT",
       "details": "D. Cardwell (Out)"
+    },
+    {
+      "name": "T. Jerome",
+      "status": "QUES",
+      "details": "T. Jerome (Ques)"
     },
     {
       "name": "K. Caldwell-Pope",
@@ -93,6 +93,11 @@
       "name": "K. Caldwell-Pope",
       "status": "OFS",
       "details": "K. Caldwell-Pope (OFS)"
+    },
+    {
+      "name": "T. Jerome",
+      "status": "QUES",
+      "details": "T. Jerome (Ques)"
     },
     {
       "name": "K. Anderson",
