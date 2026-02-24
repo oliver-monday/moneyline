@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-02-23",
-  "built_at_utc": "2026-02-23T23:35:47Z",
+  "built_at_utc": "2026-02-24T01:14:40Z",
   "source": "rotowire",
   "SAS": [
     {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "L. Kornet",
+      "status": "QUES",
+      "details": "L. Kornet (Ques)"
     },
     {
       "name": "M. Plumlee",
@@ -68,19 +73,14 @@
       "details": "K. Caldwell-Pope (OFS)"
     },
     {
-      "name": "K. Anderson",
-      "status": "DOUBT",
-      "details": "K. Anderson (Doubt)"
-    },
-    {
-      "name": "T. Jerome",
-      "status": "DOUBT",
-      "details": "T. Jerome (Doubt)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
+    },
+    {
+      "name": "K. Anderson",
+      "status": "OUT",
+      "details": "K. Anderson (Out)"
     },
     {
       "name": "B. Clarke",
@@ -96,6 +96,11 @@
       "name": "Zach Edey",
       "status": "OUT",
       "details": "Zach Edey (Out)"
+    },
+    {
+      "name": "Ty Jerome",
+      "status": "OUT",
+      "details": "Ty Jerome (Out)"
     },
     {
       "name": "Ja Morant",
@@ -110,19 +115,14 @@
       "details": "K. Caldwell-Pope (OFS)"
     },
     {
-      "name": "K. Anderson",
-      "status": "DOUBT",
-      "details": "K. Anderson (Doubt)"
-    },
-    {
-      "name": "T. Jerome",
-      "status": "DOUBT",
-      "details": "T. Jerome (Doubt)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
+    },
+    {
+      "name": "K. Anderson",
+      "status": "OUT",
+      "details": "K. Anderson (Out)"
     },
     {
       "name": "B. Clarke",
@@ -138,6 +138,11 @@
       "name": "Zach Edey",
       "status": "OUT",
       "details": "Zach Edey (Out)"
+    },
+    {
+      "name": "Ty Jerome",
+      "status": "OUT",
+      "details": "Ty Jerome (Out)"
     },
     {
       "name": "Ja Morant",
@@ -162,14 +167,9 @@
       "details": "J. Nurkic (OFS)"
     },
     {
-      "name": "L. Markkanen",
-      "status": "PROB",
-      "details": "L. Markkanen (Prob)"
-    },
-    {
       "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
+      "status": "OUT",
+      "details": "K. George (Out)"
     },
     {
       "name": "S. Adams",
