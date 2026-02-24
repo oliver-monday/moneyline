@@ -1,13 +1,8 @@
 {
   "asof_date": "2026-02-24",
-  "built_at_utc": "2026-02-24T22:40:08Z",
+  "built_at_utc": "2026-02-24T23:35:01Z",
   "source": "rotowire",
   "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
-    },
     {
       "name": "J. Broome",
       "status": "OUT",
@@ -137,16 +132,6 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
-    },
-    {
-      "name": "C. Martin",
-      "status": "PROB",
-      "details": "C. Martin (Prob)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
     },
     {
       "name": "C. Flagg",
@@ -337,11 +322,6 @@
     }
   ],
   "MIA": [
-    {
-      "name": "D. Mitchell",
-      "status": "PROB",
-      "details": "D. Mitchell (Prob)"
-    },
     {
       "name": "N. Jovic",
       "status": "OUT",

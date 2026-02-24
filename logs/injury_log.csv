@@ -5994,6 +5994,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-24,WAS,J. Kuminga,QUES,J. Kuminga (Ques),rotowire
 2026-02-24,ATL,J. Kuminga,QUES,J. Kuminga (Ques),rotowire
 2026-02-24,PHI,J. Embiid,QUES,J. Embiid (Ques),rotowire
+2026-02-24,DAL,C. Martin,PROB,C. Martin (Prob),rotowire
+2026-02-24,DAL,D. Gafford,QUES,D. Gafford (Ques),rotowire
+2026-02-24,MIA,D. Mitchell,PROB,D. Mitchell (Prob),rotowire
 2026-02-24,PHI,J. Broome,OUT,J. Broome (Out),rotowire
 2026-02-24,PHI,P. George,OUT,P. George (Out),rotowire
 2026-02-24,PHI,J. Furphy,OFS,J. Furphy (OFS),rotowire
@@ -6018,8 +6021,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-24,CLE,Max Strus,OUT,Max Strus (Out),rotowire
 2026-02-24,DAL,K. Irving,OFS,K. Irving (OFS),rotowire
 2026-02-24,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
-2026-02-24,DAL,C. Martin,PROB,C. Martin (Prob),rotowire
-2026-02-24,DAL,D. Gafford,QUES,D. Gafford (Ques),rotowire
 2026-02-24,DAL,C. Flagg,OUT,C. Flagg (Out),rotowire
 2026-02-24,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-02-24,OKC,A. Caruso,QUES,A. Caruso (Ques),rotowire
@@ -6055,7 +6056,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-24,CHI,Jaden Ivey,OUT,Jaden Ivey (Out),rotowire
 2026-02-24,CHI,A. Simons,OUT,A. Simons (Out),rotowire
 2026-02-24,CHI,J. Smith,OUT,J. Smith (Out),rotowire
-2026-02-24,MIA,D. Mitchell,PROB,D. Mitchell (Prob),rotowire
 2026-02-24,MIA,N. Jovic,OUT,N. Jovic (Out),rotowire
 2026-02-24,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-02-24,MIA,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
