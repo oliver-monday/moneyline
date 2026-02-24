@@ -5,8 +5,8 @@
     "hits": 2,
     "misses": 2,
     "hit_rate_pct": 50,
-    "top_targets_total": 3,
-    "top_targets_hits": 2
+    "top_targets_total": 2,
+    "top_targets_hits": 1
   },
   "hits": [
     {
@@ -124,35 +124,10 @@
       "actual": 8
     }
   ],
-  "built_at_utc": "2026-02-24T09:15:02Z",
+  "built_at_utc": "2026-02-24T14:43:55Z",
   "snapshot_file": "targets_snapshot_2026-02-23.json",
   "preset": "baseline",
   "top_targets": [
-    {
-      "asof_date": "2026-02-23",
-      "player_id": "4432639.0",
-      "player_name": "Jabari Smith Jr.",
-      "team_abbrev": "HOU",
-      "opp": "UTAH",
-      "game_id": "401810685",
-      "stat": "3pt",
-      "threshold": 2,
-      "hits": 9,
-      "window_games": 10,
-      "hit_rate": 0.9,
-      "is_home_game": true,
-      "rest_days": 1,
-      "is_b2b": false,
-      "share_trend_pp": -1.1614635364635362,
-      "share_trend_dir": "FLAT",
-      "iqr_10": 1.0,
-      "landmine_rate_10": null,
-      "trap_risk": null,
-      "dnp": false,
-      "actual": 6,
-      "hit": true,
-      "delta": -4
-    },
     {
       "asof_date": "2026-02-23",
       "player_id": "4873138.0",
