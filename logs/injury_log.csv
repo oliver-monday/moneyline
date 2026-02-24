@@ -5982,6 +5982,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-24,GSW,D. Melton,QUES,D. Melton (Ques),rotowire
 2026-02-24,CHA,R. Kalkbrenner,PROB,R. Kalkbrenner (Prob),rotowire
 2026-02-24,CHA,C. White,PROB,C. White (Prob),rotowire
+2026-02-24,MIN,N. Reid,QUES,N. Reid (Ques),rotowire
 2026-02-24,PHI,J. Embiid,QUES,J. Embiid (Ques),rotowire
 2026-02-24,PHI,J. Broome,OUT,J. Broome (Out),rotowire
 2026-02-24,PHI,P. George,OUT,P. George (Out),rotowire
@@ -6075,10 +6076,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-24,PHX,D. Brooks,OUT,D. Brooks (Out),rotowire
 2026-02-24,PHX,J. Goodwin,OUT,J. Goodwin (Out),rotowire
 2026-02-24,PHX,H. Highsmith,OUT,H. Highsmith (Out),rotowire
-2026-02-24,MIN,N. Reid,QUES,N. Reid (Ques),rotowire
-2026-02-24,MIN,D. Lillard,OFS,D. Lillard (OFS),rotowire
-2026-02-24,MIN,D. Avdija,OUT,D. Avdija (Out),rotowire
-2026-02-24,MIN,S. Sharpe,OUT,S. Sharpe (Out),rotowire
 2026-02-24,POR,D. Lillard,OFS,D. Lillard (OFS),rotowire
 2026-02-24,POR,D. Avdija,OUT,D. Avdija (Out),rotowire
 2026-02-24,POR,S. Sharpe,OUT,S. Sharpe (Out),rotowire
@@ -6086,3 +6083,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-24,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
 2026-02-24,ORL,J. Hayes,DOUBT,J. Hayes (Doubt),rotowire
 2026-02-24,LAL,J. Hayes,DOUBT,J. Hayes (Doubt),rotowire
+2026-02-24,MIN,D. Lillard,OFS,D. Lillard (OFS),rotowire
+2026-02-24,MIN,D. Avdija,OUT,D. Avdija (Out),rotowire
+2026-02-24,MIN,S. Sharpe,OUT,S. Sharpe (Out),rotowire

@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-24",
-  "built_at_utc": "2026-02-24T18:58:55Z",
+  "built_at_utc": "2026-02-24T19:50:00Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -501,28 +501,6 @@
       "details": "H. Highsmith (Out)"
     }
   ],
-  "MIN": [
-    {
-      "name": "N. Reid",
-      "status": "QUES",
-      "details": "N. Reid (Ques)"
-    },
-    {
-      "name": "D. Lillard",
-      "status": "OFS",
-      "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "D. Avdija",
-      "status": "OUT",
-      "details": "D. Avdija (Out)"
-    },
-    {
-      "name": "S. Sharpe",
-      "status": "OUT",
-      "details": "S. Sharpe (Out)"
-    }
-  ],
   "POR": [
     {
       "name": "D. Lillard",
@@ -562,6 +540,23 @@
       "name": "J. Hayes",
       "status": "DOUBT",
       "details": "J. Hayes (Doubt)"
+    }
+  ],
+  "MIN": [
+    {
+      "name": "D. Lillard",
+      "status": "OFS",
+      "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "D. Avdija",
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
+    },
+    {
+      "name": "S. Sharpe",
+      "status": "OUT",
+      "details": "S. Sharpe (Out)"
     }
   ]
 }
