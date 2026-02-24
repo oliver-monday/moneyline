@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-24",
-  "built_at_utc": "2026-02-24T17:49:15Z",
+  "built_at_utc": "2026-02-24T18:58:55Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -268,18 +268,8 @@
     },
     {
       "name": "D. Green",
-      "status": "QUES",
-      "details": "D. Green (Ques)"
-    },
-    {
-      "name": "A. Horford",
-      "status": "QUES",
-      "details": "A. Horford (Ques)"
-    },
-    {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
+      "status": "PROB",
+      "details": "D. Green (Prob)"
     },
     {
       "name": "LJ Cryer",
@@ -295,6 +285,11 @@
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "Al Horford",
+      "status": "OUT",
+      "details": "Al Horford (Out)"
     },
     {
       "name": "K. Porzingis",
@@ -336,24 +331,9 @@
   ],
   "CHA": [
     {
-      "name": "R. Kalkbrenner",
-      "status": "PROB",
-      "details": "R. Kalkbrenner (Prob)"
-    },
-    {
-      "name": "C. White",
-      "status": "PROB",
-      "details": "C. White (Prob)"
-    },
-    {
       "name": "L. McNeeley",
       "status": "OUT",
       "details": "L. McNeeley (Out)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "QUES",
-      "details": "J. Smith (Ques)"
     },
     {
       "name": "Z. Collins",
@@ -374,6 +354,11 @@
       "name": "A. Simons",
       "status": "OUT",
       "details": "A. Simons (Out)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OUT",
+      "details": "J. Smith (Out)"
     }
   ],
   "CHI": [
@@ -388,11 +373,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Smith",
-      "status": "QUES",
-      "details": "J. Smith (Ques)"
-    },
-    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -401,6 +381,11 @@
       "name": "A. Simons",
       "status": "OUT",
       "details": "A. Simons (Out)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OUT",
+      "details": "J. Smith (Out)"
     }
   ],
   "MIA": [
@@ -445,8 +430,8 @@
   "BOS": [
     {
       "name": "J. Brown",
-      "status": "QUES",
-      "details": "J. Brown (Ques)"
+      "status": "OUT",
+      "details": "J. Brown (Out)"
     },
     {
       "name": "J. Tatum",
