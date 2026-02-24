@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-24",
-  "built_at_utc": "2026-02-24T21:22:39Z",
+  "built_at_utc": "2026-02-24T22:40:08Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -19,16 +19,6 @@
       "details": "P. George (Out)"
     },
     {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
-    },
-    {
-      "name": "K. Jones",
-      "status": "PROB",
-      "details": "K. Jones (Prob)"
-    },
-    {
       "name": "J. Furphy",
       "status": "OFS",
       "details": "J. Furphy (OFS)"
@@ -39,24 +29,14 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "M. Potter",
-      "status": "PROB",
-      "details": "M. Potter (Prob)"
-    },
-    {
-      "name": "T. McConnell",
-      "status": "QUES",
-      "details": "T. McConnell (Ques)"
-    },
-    {
-      "name": "P. Siakam",
-      "status": "DOUBT",
-      "details": "P. Siakam (Doubt)"
-    },
-    {
       "name": "A. Nesmith",
       "status": "OUT",
       "details": "A. Nesmith (Out)"
+    },
+    {
+      "name": "P. Siakam",
+      "status": "OUT",
+      "details": "P. Siakam (Out)"
     },
     {
       "name": "Obi Toppin",
@@ -81,34 +61,14 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "K. Jones",
-      "status": "PROB",
-      "details": "K. Jones (Prob)"
-    },
-    {
-      "name": "M. Potter",
-      "status": "PROB",
-      "details": "M. Potter (Prob)"
-    },
-    {
-      "name": "T. McConnell",
-      "status": "QUES",
-      "details": "T. McConnell (Ques)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
-    },
-    {
-      "name": "P. Siakam",
-      "status": "DOUBT",
-      "details": "P. Siakam (Doubt)"
-    },
-    {
       "name": "A. Nesmith",
       "status": "OUT",
       "details": "A. Nesmith (Out)"
+    },
+    {
+      "name": "P. Siakam",
+      "status": "OUT",
+      "details": "P. Siakam (Out)"
     },
     {
       "name": "Obi Toppin",
@@ -146,18 +106,6 @@
       "name": "Trae Young",
       "status": "OUT",
       "details": "Trae Young (Out)"
-    },
-    {
-      "name": "J. Kuminga",
-      "status": "QUES",
-      "details": "J. Kuminga (Ques)"
-    }
-  ],
-  "ATL": [
-    {
-      "name": "J. Kuminga",
-      "status": "QUES",
-      "details": "J. Kuminga (Ques)"
     }
   ],
   "NYK": [
