@@ -1,17 +1,12 @@
 {
   "asof_date": "2026-02-23",
-  "built_at_utc": "2026-02-24T01:14:40Z",
+  "built_at_utc": "2026-02-24T03:30:01Z",
   "source": "rotowire",
   "SAS": [
     {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "L. Kornet",
-      "status": "QUES",
-      "details": "L. Kornet (Ques)"
     },
     {
       "name": "M. Plumlee",
