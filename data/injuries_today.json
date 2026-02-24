@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-24",
-  "built_at_utc": "2026-02-24T20:32:46Z",
+  "built_at_utc": "2026-02-24T21:22:39Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -508,6 +508,11 @@
       "details": "D. Lillard (OFS)"
     },
     {
+      "name": "R. Williams",
+      "status": "QUES",
+      "details": "R. Williams (Ques)"
+    },
+    {
       "name": "D. Avdija",
       "status": "OUT",
       "details": "D. Avdija (Out)"
@@ -531,15 +536,15 @@
     },
     {
       "name": "J. Hayes",
-      "status": "DOUBT",
-      "details": "J. Hayes (Doubt)"
+      "status": "OUT",
+      "details": "J. Hayes (Out)"
     }
   ],
   "LAL": [
     {
       "name": "J. Hayes",
-      "status": "DOUBT",
-      "details": "J. Hayes (Doubt)"
+      "status": "OUT",
+      "details": "J. Hayes (Out)"
     }
   ],
   "MIN": [
@@ -547,6 +552,11 @@
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "QUES",
+      "details": "R. Williams (Ques)"
     },
     {
       "name": "D. Avdija",
