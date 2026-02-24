@@ -1,0 +1,5 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-23,2026,Jabari Smith Jr.,HOU,UTAH,3pt,2,HIT,6,,targets_snapshot_2026-02-23.json
+2026-02-23,2026,Ace Bailey,UTAH,HOU,pts,10,MISSED,4,,targets_snapshot_2026-02-23.json
+2026-02-23,2026,Ace Bailey,UTAH,HOU,reb,4,HIT,8,,targets_snapshot_2026-02-23.json
+2026-02-23,2026,Ace Bailey,UTAH,HOU,3pt,1,MISSED,0,,targets_snapshot_2026-02-23.json
