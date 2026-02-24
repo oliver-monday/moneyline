@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-24",
-  "built_at_utc": "2026-02-24T15:29:44Z",
+  "built_at_utc": "2026-02-24T17:49:15Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -25,8 +25,8 @@
     },
     {
       "name": "K. Jones",
-      "status": "QUES",
-      "details": "K. Jones (Ques)"
+      "status": "PROB",
+      "details": "K. Jones (Prob)"
     },
     {
       "name": "J. Furphy",
@@ -81,14 +81,14 @@
       "details": "T. Haliburton (OFS)"
     },
     {
+      "name": "K. Jones",
+      "status": "PROB",
+      "details": "K. Jones (Prob)"
+    },
+    {
       "name": "M. Potter",
       "status": "PROB",
       "details": "M. Potter (Prob)"
-    },
-    {
-      "name": "K. Jones",
-      "status": "QUES",
-      "details": "K. Jones (Ques)"
     },
     {
       "name": "T. McConnell",
@@ -126,16 +126,6 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "J. Champagnie",
-      "status": "QUES",
-      "details": "J. Champagnie (Ques)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
     },
     {
       "name": "A. Davis",
@@ -292,6 +282,11 @@
       "details": "D. Melton (Ques)"
     },
     {
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
+    },
+    {
       "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
@@ -411,13 +406,13 @@
   "MIA": [
     {
       "name": "D. Mitchell",
-      "status": "QUES",
-      "details": "D. Mitchell (Ques)"
+      "status": "PROB",
+      "details": "D. Mitchell (Prob)"
     },
     {
       "name": "N. Jovic",
-      "status": "DOUBT",
-      "details": "N. Jovic (Doubt)"
+      "status": "OUT",
+      "details": "N. Jovic (Out)"
     },
     {
       "name": "T. Rozier",
