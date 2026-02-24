@@ -5981,9 +5981,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-24,PHI,P. George,OUT,P. George (Out),rotowire
 2026-02-24,PHI,A. Nembhard,QUES,A. Nembhard (Ques),rotowire
 2026-02-24,PHI,K. Jones,QUES,K. Jones (Ques),rotowire
-2026-02-24,PHI,M. Potter,PROB,M. Potter (Prob),rotowire
 2026-02-24,PHI,J. Furphy,OFS,J. Furphy (OFS),rotowire
 2026-02-24,PHI,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
+2026-02-24,PHI,M. Potter,PROB,M. Potter (Prob),rotowire
 2026-02-24,PHI,T. McConnell,QUES,T. McConnell (Ques),rotowire
 2026-02-24,PHI,P. Siakam,DOUBT,P. Siakam (Doubt),rotowire
 2026-02-24,PHI,A. Nesmith,OUT,A. Nesmith (Out),rotowire
@@ -5999,10 +5999,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-24,IND,A. Nesmith,OUT,A. Nesmith (Out),rotowire
 2026-02-24,IND,Obi Toppin,OUT,Obi Toppin (Out),rotowire
 2026-02-24,IND,I. Zubac,OUT,I. Zubac (Out),rotowire
-2026-02-24,WAS,A. Davis,OFS,A. Davis (OFS),rotowire
 2026-02-24,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
 2026-02-24,WAS,J. Champagnie,QUES,J. Champagnie (Ques),rotowire
 2026-02-24,WAS,T. Vukcevic,QUES,T. Vukcevic (Ques),rotowire
+2026-02-24,WAS,A. Davis,OUT,A. Davis (Out),rotowire
 2026-02-24,WAS,D. Russell,OUT,D. Russell (Out),rotowire
 2026-02-24,WAS,Alex Sarr,OUT,Alex Sarr (Out),rotowire
 2026-02-24,WAS,Trae Young,OUT,Trae Young (Out),rotowire

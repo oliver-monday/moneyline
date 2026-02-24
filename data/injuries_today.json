@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-24",
-  "built_at_utc": "2026-02-24T09:10:03Z",
+  "built_at_utc": "2026-02-24T15:29:44Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -29,11 +29,6 @@
       "details": "K. Jones (Ques)"
     },
     {
-      "name": "M. Potter",
-      "status": "PROB",
-      "details": "M. Potter (Prob)"
-    },
-    {
       "name": "J. Furphy",
       "status": "OFS",
       "details": "J. Furphy (OFS)"
@@ -42,6 +37,11 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
+    },
+    {
+      "name": "M. Potter",
+      "status": "PROB",
+      "details": "M. Potter (Prob)"
     },
     {
       "name": "T. McConnell",
@@ -123,11 +123,6 @@
   ],
   "WAS": [
     {
-      "name": "A. Davis",
-      "status": "OFS",
-      "details": "A. Davis (OFS)"
-    },
-    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
@@ -141,6 +136,11 @@
       "name": "T. Vukcevic",
       "status": "QUES",
       "details": "T. Vukcevic (Ques)"
+    },
+    {
+      "name": "A. Davis",
+      "status": "OUT",
+      "details": "A. Davis (Out)"
     },
     {
       "name": "D. Russell",
