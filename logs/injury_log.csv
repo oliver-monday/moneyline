@@ -6102,20 +6102,20 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-25,TOR,J. Poeltl,PROB,J. Poeltl (Prob),rotowire
 2026-02-25,GSW,A. Horford,PROB,A. Horford (Prob),rotowire
 2026-02-25,BOS,J. Brown,QUES,J. Brown (Ques),rotowire
+2026-02-25,SAS,S. Barnes,QUES,S. Barnes (Ques),rotowire
+2026-02-25,TOR,S. Barnes,QUES,S. Barnes (Ques),rotowire
 2026-02-25,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
-2026-02-25,OKC,A. Caruso,DOUBT,A. Caruso (Doubt),rotowire
-2026-02-25,OKC,C. Holmgren,DOUBT,C. Holmgren (Doubt),rotowire
+2026-02-25,OKC,A. Caruso,OUT,A. Caruso (Out),rotowire
 2026-02-25,OKC,S. Gilgeous-Alexander,OUT,S. Gilgeous-Alexander (Out),rotowire
 2026-02-25,OKC,I. Hartenstein,OUT,I. Hartenstein (Out),rotowire
+2026-02-25,OKC,C. Holmgren,OUT,C. Holmgren (Out),rotowire
 2026-02-25,OKC,A. Mitchell,OUT,A. Mitchell (Out),rotowire
 2026-02-25,OKC,J. Williams,OUT,J. Williams (Out),rotowire
 2026-02-25,OKC,I. Stewart,OUT,I. Stewart (Out),rotowire
 2026-02-25,DET,I. Stewart,OUT,I. Stewart (Out),rotowire
 2026-02-25,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-02-25,SAS,M. Plumlee,OUT,M. Plumlee (Out),rotowire
-2026-02-25,SAS,S. Barnes,QUES,S. Barnes (Ques),rotowire
 2026-02-25,SAS,C. Hepburn,OUT,C. Hepburn (Out),rotowire
-2026-02-25,TOR,S. Barnes,QUES,S. Barnes (Ques),rotowire
 2026-02-25,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-25,GSW,J. Butler,OFS,J. Butler (OFS),rotowire
 2026-02-25,GSW,LJ Cryer,OUT,LJ Cryer (Out),rotowire
@@ -6144,10 +6144,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-25,SAC,D. Carter,QUES,D. Carter (Ques),rotowire
 2026-02-25,SAC,D. Cardwell,OUT,D. Cardwell (Out),rotowire
 2026-02-25,SAC,S. Adams,OFS,S. Adams (OFS),rotowire
+2026-02-25,SAC,D. Finney-Smith,OUT,D. Finney-Smith (Out),rotowire
 2026-02-25,SAC,J. Tate,OUT,J. Tate (Out),rotowire
 2026-02-25,SAC,A. Thompson,OUT,A. Thompson (Out),rotowire
 2026-02-25,SAC,F. VanVleet,OUT,F. VanVleet (Out),rotowire
 2026-02-25,HOU,S. Adams,OFS,S. Adams (OFS),rotowire
+2026-02-25,HOU,D. Finney-Smith,OUT,D. Finney-Smith (Out),rotowire
 2026-02-25,HOU,J. Tate,OUT,J. Tate (Out),rotowire
 2026-02-25,HOU,A. Thompson,OUT,A. Thompson (Out),rotowire
 2026-02-25,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
