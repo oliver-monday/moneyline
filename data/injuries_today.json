@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-25",
-  "built_at_utc": "2026-02-25T09:10:14Z",
+  "built_at_utc": "2026-02-25T15:30:34Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -59,16 +59,11 @@
     },
     {
       "name": "C. Hepburn",
-      "status": "DOUBT",
-      "details": "C. Hepburn (Doubt)"
+      "status": "OUT",
+      "details": "C. Hepburn (Out)"
     }
   ],
   "TOR": [
-    {
-      "name": "C. Hepburn",
-      "status": "DOUBT",
-      "details": "C. Hepburn (Doubt)"
-    },
     {
       "name": "J. Poeltl",
       "status": "PROB",
@@ -78,6 +73,11 @@
       "name": "S. Barnes",
       "status": "QUES",
       "details": "S. Barnes (Ques)"
+    },
+    {
+      "name": "C. Hepburn",
+      "status": "OUT",
+      "details": "C. Hepburn (Out)"
     }
   ],
   "GSW": [
@@ -87,14 +87,19 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "L. Cryer",
-      "status": "QUES",
-      "details": "L. Cryer (Ques)"
-    },
-    {
       "name": "A. Horford",
       "status": "PROB",
       "details": "A. Horford (Prob)"
+    },
+    {
+      "name": "D. Melton",
+      "status": "DOUBT",
+      "details": "D. Melton (Doubt)"
+    },
+    {
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
     },
     {
       "name": "S. Curry",

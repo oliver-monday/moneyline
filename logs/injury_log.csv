@@ -6097,6 +6097,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-24,MIN,D. Avdija,OUT,D. Avdija (Out),rotowire
 2026-02-24,MIN,S. Sharpe,OUT,S. Sharpe (Out),rotowire
 2026-02-24,MIN,R. Williams,OUT,R. Williams (Out),rotowire
+2026-02-25,GSW,L. Cryer,QUES,L. Cryer (Ques),rotowire
 2026-02-25,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-02-25,OKC,S. Gilgeous-Alexander,OUT,S. Gilgeous-Alexander (Out),rotowire
 2026-02-25,OKC,A. Mitchell,OUT,A. Mitchell (Out),rotowire
@@ -6107,13 +6108,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-25,SAS,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-02-25,SAS,S. Barnes,QUES,S. Barnes (Ques),rotowire
 2026-02-25,SAS,J. Poeltl,PROB,J. Poeltl (Prob),rotowire
-2026-02-25,SAS,C. Hepburn,DOUBT,C. Hepburn (Doubt),rotowire
-2026-02-25,TOR,C. Hepburn,DOUBT,C. Hepburn (Doubt),rotowire
+2026-02-25,SAS,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-25,TOR,J. Poeltl,PROB,J. Poeltl (Prob),rotowire
 2026-02-25,TOR,S. Barnes,QUES,S. Barnes (Ques),rotowire
+2026-02-25,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-25,GSW,J. Butler,OFS,J. Butler (OFS),rotowire
-2026-02-25,GSW,L. Cryer,QUES,L. Cryer (Ques),rotowire
 2026-02-25,GSW,A. Horford,PROB,A. Horford (Prob),rotowire
+2026-02-25,GSW,D. Melton,DOUBT,D. Melton (Doubt),rotowire
+2026-02-25,GSW,LJ Cryer,OUT,LJ Cryer (Out),rotowire
 2026-02-25,GSW,S. Curry,OUT,S. Curry (Out),rotowire
 2026-02-25,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
 2026-02-25,GSW,K. Porzingis,OUT,K. Porzingis (Out),rotowire
