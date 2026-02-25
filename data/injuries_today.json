@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-02-25",
-  "built_at_utc": "2026-02-25T15:30:34Z",
+  "built_at_utc": "2026-02-25T17:49:56Z",
   "source": "rotowire",
   "OKC": [
     {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "A. Caruso",
+      "status": "QUES",
+      "details": "A. Caruso (Ques)"
     },
     {
       "name": "S. Gilgeous-Alexander",
@@ -93,8 +98,8 @@
     },
     {
       "name": "D. Melton",
-      "status": "DOUBT",
-      "details": "D. Melton (Doubt)"
+      "status": "QUES",
+      "details": "D. Melton (Ques)"
     },
     {
       "name": "LJ Cryer",
@@ -260,14 +265,19 @@
   ],
   "CLE": [
     {
+      "name": "E. Mobley",
+      "status": "QUES",
+      "details": "E. Mobley (Ques)"
+    },
+    {
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
     },
     {
       "name": "G. Antetokounmpo",
-      "status": "QUES",
-      "details": "G. Antetokounmpo (Ques)"
+      "status": "OUT",
+      "details": "G. Antetokounmpo (Out)"
     },
     {
       "name": "T. Prince",
@@ -278,8 +288,8 @@
   "MIL": [
     {
       "name": "G. Antetokounmpo",
-      "status": "QUES",
-      "details": "G. Antetokounmpo (Ques)"
+      "status": "OUT",
+      "details": "G. Antetokounmpo (Out)"
     },
     {
       "name": "T. Prince",

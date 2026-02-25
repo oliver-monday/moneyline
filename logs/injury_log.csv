@@ -6099,6 +6099,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-24,MIN,R. Williams,OUT,R. Williams (Out),rotowire
 2026-02-25,GSW,L. Cryer,QUES,L. Cryer (Ques),rotowire
 2026-02-25,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
+2026-02-25,OKC,A. Caruso,QUES,A. Caruso (Ques),rotowire
 2026-02-25,OKC,S. Gilgeous-Alexander,OUT,S. Gilgeous-Alexander (Out),rotowire
 2026-02-25,OKC,A. Mitchell,OUT,A. Mitchell (Out),rotowire
 2026-02-25,OKC,J. Williams,OUT,J. Williams (Out),rotowire
@@ -6114,7 +6115,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-25,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-02-25,GSW,J. Butler,OFS,J. Butler (OFS),rotowire
 2026-02-25,GSW,A. Horford,PROB,A. Horford (Prob),rotowire
-2026-02-25,GSW,D. Melton,DOUBT,D. Melton (Doubt),rotowire
+2026-02-25,GSW,D. Melton,QUES,D. Melton (Ques),rotowire
 2026-02-25,GSW,LJ Cryer,OUT,LJ Cryer (Out),rotowire
 2026-02-25,GSW,S. Curry,OUT,S. Curry (Out),rotowire
 2026-02-25,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
@@ -6146,10 +6147,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-25,HOU,J. Tate,OUT,J. Tate (Out),rotowire
 2026-02-25,HOU,A. Thompson,OUT,A. Thompson (Out),rotowire
 2026-02-25,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
+2026-02-25,CLE,E. Mobley,QUES,E. Mobley (Ques),rotowire
 2026-02-25,CLE,Max Strus,OUT,Max Strus (Out),rotowire
-2026-02-25,CLE,G. Antetokounmpo,QUES,G. Antetokounmpo (Ques),rotowire
+2026-02-25,CLE,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
 2026-02-25,CLE,T. Prince,OUT,T. Prince (Out),rotowire
-2026-02-25,MIL,G. Antetokounmpo,QUES,G. Antetokounmpo (Ques),rotowire
+2026-02-25,MIL,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
 2026-02-25,MIL,T. Prince,OUT,T. Prince (Out),rotowire
 2026-02-25,BOS,J. Brown,QUES,J. Brown (Ques),rotowire
 2026-02-25,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
