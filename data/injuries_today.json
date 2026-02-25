@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-24",
-  "built_at_utc": "2026-02-25T01:20:03Z",
+  "built_at_utc": "2026-02-25T03:31:13Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -24,14 +24,14 @@
       "details": "T. Haliburton (OFS)"
     },
     {
+      "name": "P. Siakam",
+      "status": "QUES",
+      "details": "P. Siakam (Ques)"
+    },
+    {
       "name": "A. Nesmith",
       "status": "OUT",
       "details": "A. Nesmith (Out)"
-    },
-    {
-      "name": "P. Siakam",
-      "status": "OUT",
-      "details": "P. Siakam (Out)"
     },
     {
       "name": "Obi Toppin",
@@ -56,14 +56,14 @@
       "details": "T. Haliburton (OFS)"
     },
     {
+      "name": "P. Siakam",
+      "status": "QUES",
+      "details": "P. Siakam (Ques)"
+    },
+    {
       "name": "A. Nesmith",
       "status": "OUT",
       "details": "A. Nesmith (Out)"
-    },
-    {
-      "name": "P. Siakam",
-      "status": "OUT",
-      "details": "P. Siakam (Out)"
     },
     {
       "name": "Obi Toppin",
@@ -146,6 +146,16 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "K. Middleton",
+      "status": "QUES",
+      "details": "K. Middleton (Ques)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "QUES",
+      "details": "P. Washington (Ques)"
+    },
+    {
       "name": "C. Flagg",
       "status": "OUT",
       "details": "C. Flagg (Out)"
@@ -173,6 +183,11 @@
       "details": "J. Williams (Out)"
     },
     {
+      "name": "S. Barnes",
+      "status": "QUES",
+      "details": "S. Barnes (Ques)"
+    },
+    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
@@ -184,6 +199,11 @@
     }
   ],
   "TOR": [
+    {
+      "name": "S. Barnes",
+      "status": "QUES",
+      "details": "S. Barnes (Ques)"
+    },
     {
       "name": "C. Hepburn",
       "status": "OUT",
@@ -423,11 +443,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
-    },
-    {
       "name": "D. Avdija",
       "status": "OUT",
       "details": "D. Avdija (Out)"
@@ -436,13 +451,18 @@
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "OUT",
+      "details": "R. Williams (Out)"
     }
   ],
   "ORL": [
     {
       "name": "J. Suggs",
-      "status": "QUES",
-      "details": "J. Suggs (Ques)"
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
     },
     {
       "name": "F. Wagner",
@@ -469,11 +489,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
-    },
-    {
       "name": "D. Avdija",
       "status": "OUT",
       "details": "D. Avdija (Out)"
@@ -482,6 +497,11 @@
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "OUT",
+      "details": "R. Williams (Out)"
     }
   ]
 }
