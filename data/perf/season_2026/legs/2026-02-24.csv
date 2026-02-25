@@ -1,0 +1,16 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-24,2026,Paolo Banchero,ORL,LAL,ast,4,HIT,6,,targets_snapshot_2026-02-24.json
+2026-02-24,2026,Nickeil Alexander-Walker,ATL,WSH,ast,4,HIT,5,,targets_snapshot_2026-02-24.json
+2026-02-24,2026,Ryan Rollins,MIL,MIA,pts,15,HIT,21,,targets_snapshot_2026-02-24.json
+2026-02-24,2026,Ryan Rollins,MIL,MIA,reb,4,HIT,4,,targets_snapshot_2026-02-24.json
+2026-02-24,2026,Ryan Rollins,MIL,MIA,3pt,3,MISSED,1,,targets_snapshot_2026-02-24.json
+2026-02-24,2026,Desmond Bane,ORL,LAL,pts,20,HIT,22,,targets_snapshot_2026-02-24.json
+2026-02-24,2026,Kon Knueppel,CHA,CHI,3pt,3,HIT,3,,targets_snapshot_2026-02-24.json
+2026-02-24,2026,Anthony Davis,DAL,BKN,ast,2,,,,targets_snapshot_2026-02-24.json
+2026-02-24,2026,Saddiq Bey,NO,GS,ast,2,MISSED,1,,targets_snapshot_2026-02-24.json
+2026-02-24,2026,Saddiq Bey,NO,GS,3pt,2,MISSED,1,,targets_snapshot_2026-02-24.json
+2026-02-24,2026,Grayson Allen,PHX,BOS,pts,15,MISSED,14,,targets_snapshot_2026-02-24.json
+2026-02-24,2026,Jaden McDaniels,MIN,POR,ast,2,HIT,2,,targets_snapshot_2026-02-24.json
+2026-02-24,2026,James Harden,CLE,NY,reb,4,MISSED,2,,targets_snapshot_2026-02-24.json
+2026-02-24,2026,James Harden,CLE,NY,ast,8,MISSED,4,,targets_snapshot_2026-02-24.json
+2026-02-24,2026,Darius Garland,CLE,NY,ast,6,,,,targets_snapshot_2026-02-24.json
