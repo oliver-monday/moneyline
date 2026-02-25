@@ -877,9 +877,9 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810694,2026-02-24,2026-02-25T02:00Z,Phoenix Suns,PHX,81,205.0,,Boston Celtics,BOS,97,-250.0,,Phoenix,AZ,,
 401810696,2026-02-24,2026-02-25T03:00Z,Portland Trail Blazers,POR,121,215.0,,Minnesota Timberwolves,MIN,124,-265.0,,Portland,OR,,
 401810695,2026-02-24,2026-02-25T03:30Z,Los Angeles Lakers,LAL,109,-205.0,,Orlando Magic,ORL,110,170.0,,Los Angeles,CA,,
-401810697,2026-02-25,2026-02-26T00:30Z,Detroit Pistons,DET,0,-305.0,,Oklahoma City Thunder,OKC,0,245.0,,Detroit,MI,I. Stewart (Out),T. Sorber (OFS); S. Gilgeous-Alexander (Out); A. Mitchell (Out); J. Williams (Out)
-401810698,2026-02-25,2026-02-26T00:30Z,Toronto Raptors,TOR,0,240.0,,San Antonio Spurs,SA,0,-298.0,,Toronto,ON,,D. Jones Garcia (OFS); M. Plumlee (Out)
-401810699,2026-02-25,2026-02-26T00:30Z,Memphis Grizzlies,MEM,0,150.0,,Golden State Warriors,GS,0,-180.0,,Memphis,TN,K. Caldwell-Pope (OFS); S. Aldama (Out); B. Clarke (Out); C. Coward (Out); Zach Edey (Out); Ja Morant (Out),J. Butler (OFS); S. Curry (Out); Seth Curry (Out); K. Porzingis (Out)
-401810700,2026-02-25,2026-02-26T01:00Z,Houston Rockets,HOU,0,-1000.0,,Sacramento Kings,SAC,0,650.0,,Houston,TX,S. Adams (OFS); J. Tate (Out); A. Thompson (Out); F. VanVleet (Out),D. Hunter (OFS); Z. LaVine (OFS); D. Sabonis (OFS); D. Cardwell (Out)
+401810697,2026-02-25,2026-02-26T00:30Z,Detroit Pistons,DET,0,-298.0,,Oklahoma City Thunder,OKC,0,240.0,,Detroit,MI,I. Stewart (Out),T. Sorber (OFS); S. Gilgeous-Alexander (Out); A. Mitchell (Out); J. Williams (Out)
+401810698,2026-02-25,2026-02-26T00:30Z,Toronto Raptors,TOR,0,250.0,,San Antonio Spurs,SA,0,-310.0,,Toronto,ON,,D. Jones Garcia (OFS); M. Plumlee (Out)
+401810699,2026-02-25,2026-02-26T00:30Z,Memphis Grizzlies,MEM,0,145.0,,Golden State Warriors,GS,0,-175.0,,Memphis,TN,K. Caldwell-Pope (OFS); S. Aldama (Out); B. Clarke (Out); C. Coward (Out); Zach Edey (Out); Ja Morant (Out),J. Butler (OFS); S. Curry (Out); Seth Curry (Out); K. Porzingis (Out)
+401810700,2026-02-25,2026-02-26T01:00Z,Houston Rockets,HOU,0,-850.0,,Sacramento Kings,SAC,0,575.0,,Houston,TX,S. Adams (OFS); J. Tate (Out); A. Thompson (Out); F. VanVleet (Out),D. Hunter (OFS); Z. LaVine (OFS); D. Sabonis (OFS); D. Cardwell (Out)
 401810701,2026-02-25,2026-02-26T01:00Z,Milwaukee Bucks,MIL,0,285.0,,Cleveland Cavaliers,CLE,0,-360.0,,Milwaukee,WI,T. Prince (Out),Max Strus (Out)
-401810702,2026-02-25,2026-02-26T03:00Z,Denver Nuggets,DEN,0,-166.0,,Boston Celtics,BOS,0,140.0,,Denver,CO,A. Gordon (Out); J. Pickett (Out); P. Watson (Out),J. Tatum (Out)
+401810702,2026-02-25,2026-02-26T03:00Z,Denver Nuggets,DEN,0,-162.0,,Boston Celtics,BOS,0,136.0,,Denver,CO,A. Gordon (Out); J. Pickett (Out); P. Watson (Out),J. Tatum (Out)
