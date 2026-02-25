@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-25",
-  "built_at_utc": "2026-02-25T21:24:08Z",
+  "built_at_utc": "2026-02-25T22:40:26Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -92,11 +92,6 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "D. Green",
-      "status": "QUES",
-      "details": "D. Green (Ques)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -110,6 +105,11 @@
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "D. Green",
+      "status": "OUT",
+      "details": "D. Green (Out)"
     },
     {
       "name": "D. Melton",
