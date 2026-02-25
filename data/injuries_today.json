@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-24",
-  "built_at_utc": "2026-02-24T23:35:01Z",
+  "built_at_utc": "2026-02-25T01:20:03Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -101,6 +101,18 @@
       "name": "Trae Young",
       "status": "OUT",
       "details": "Trae Young (Out)"
+    },
+    {
+      "name": "J. Johnson",
+      "status": "QUES",
+      "details": "J. Johnson (Ques)"
+    }
+  ],
+  "ATL": [
+    {
+      "name": "J. Johnson",
+      "status": "QUES",
+      "details": "J. Johnson (Ques)"
     }
   ],
   "NYK": [
@@ -146,16 +158,6 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "A. Caruso",
-      "status": "QUES",
-      "details": "A. Caruso (Ques)"
-    },
-    {
-      "name": "C. Holmgren",
-      "status": "QUES",
-      "details": "C. Holmgren (Ques)"
-    },
-    {
       "name": "S. Gilgeous-Alexander",
       "status": "OUT",
       "details": "S. Gilgeous-Alexander (Out)"
@@ -198,11 +200,6 @@
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
-    },
-    {
-      "name": "D. Green",
-      "status": "PROB",
-      "details": "D. Green (Prob)"
     },
     {
       "name": "LJ Cryer",
@@ -367,11 +364,6 @@
       "details": "J. Tatum (Out)"
     },
     {
-      "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
-    {
       "name": "C. Anthony",
       "status": "OUT",
       "details": "C. Anthony (Out)"
@@ -398,11 +390,6 @@
     }
   ],
   "PHX": [
-    {
-      "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
     {
       "name": "C. Anthony",
       "status": "OUT",
