@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-25",
-  "built_at_utc": "2026-02-25T19:03:13Z",
+  "built_at_utc": "2026-02-25T19:51:06Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -92,14 +92,9 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "A. Horford",
-      "status": "PROB",
-      "details": "A. Horford (Prob)"
-    },
-    {
-      "name": "D. Melton",
+      "name": "D. Green",
       "status": "QUES",
-      "details": "D. Melton (Ques)"
+      "details": "D. Green (Ques)"
     },
     {
       "name": "LJ Cryer",
@@ -115,6 +110,11 @@
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "D. Melton",
+      "status": "OUT",
+      "details": "D. Melton (Out)"
     },
     {
       "name": "K. Porzingis",
@@ -265,9 +265,19 @@
   ],
   "CLE": [
     {
-      "name": "E. Mobley",
+      "name": "J. Harden",
       "status": "QUES",
-      "details": "E. Mobley (Ques)"
+      "details": "J. Harden (Ques)"
+    },
+    {
+      "name": "D. Mitchell",
+      "status": "OUT",
+      "details": "D. Mitchell (Out)"
+    },
+    {
+      "name": "E. Mobley",
+      "status": "OUT",
+      "details": "E. Mobley (Out)"
     },
     {
       "name": "Max Strus",
@@ -298,11 +308,6 @@
     }
   ],
   "BOS": [
-    {
-      "name": "J. Brown",
-      "status": "QUES",
-      "details": "J. Brown (Ques)"
-    },
     {
       "name": "J. Tatum",
       "status": "OUT",
