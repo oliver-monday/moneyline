@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-24",
-  "built_at_utc": "2026-02-25T03:31:13Z",
+  "built_at_utc": "2026-02-25T04:09:49Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -136,6 +136,11 @@
   ],
   "DAL": [
     {
+      "name": "C. Flagg",
+      "status": "QUES",
+      "details": "C. Flagg (Ques)"
+    },
+    {
       "name": "K. Irving",
       "status": "OFS",
       "details": "K. Irving (OFS)"
@@ -154,11 +159,6 @@
       "name": "P. Washington",
       "status": "QUES",
       "details": "P. Washington (Ques)"
-    },
-    {
-      "name": "C. Flagg",
-      "status": "OUT",
-      "details": "C. Flagg (Out)"
     }
   ],
   "OKC": [
@@ -189,13 +189,13 @@
     },
     {
       "name": "C. Hepburn",
-      "status": "OUT",
-      "details": "C. Hepburn (Out)"
+      "status": "DOUBT",
+      "details": "C. Hepburn (Doubt)"
     },
     {
       "name": "J. Poeltl",
-      "status": "OUT",
-      "details": "J. Poeltl (Out)"
+      "status": "PROB",
+      "details": "J. Poeltl (Prob)"
     }
   ],
   "TOR": [
@@ -206,13 +206,13 @@
     },
     {
       "name": "C. Hepburn",
-      "status": "OUT",
-      "details": "C. Hepburn (Out)"
+      "status": "DOUBT",
+      "details": "C. Hepburn (Doubt)"
     },
     {
       "name": "J. Poeltl",
-      "status": "OUT",
-      "details": "J. Poeltl (Out)"
+      "status": "PROB",
+      "details": "J. Poeltl (Prob)"
     }
   ],
   "GSW": [
@@ -222,9 +222,14 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "LJ Cryer",
-      "status": "OUT",
-      "details": "LJ Cryer (Out)"
+      "name": "L. Cryer",
+      "status": "QUES",
+      "details": "L. Cryer (Ques)"
+    },
+    {
+      "name": "A. Horford",
+      "status": "PROB",
+      "details": "A. Horford (Prob)"
     },
     {
       "name": "S. Curry",
@@ -237,53 +242,48 @@
       "details": "Seth Curry (Out)"
     },
     {
-      "name": "Al Horford",
-      "status": "OUT",
-      "details": "Al Horford (Out)"
-    },
-    {
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
     },
     {
-      "name": "Yves Missi",
-      "status": "OUT",
-      "details": "Yves Missi (Out)"
+      "name": "Y. Missi",
+      "status": "QUES",
+      "details": "Y. Missi (Ques)"
     },
     {
       "name": "T. Murphy",
-      "status": "OUT",
-      "details": "T. Murphy (Out)"
+      "status": "QUES",
+      "details": "T. Murphy (Ques)"
     },
     {
       "name": "M. Peavy",
-      "status": "OUT",
-      "details": "M. Peavy (Out)"
+      "status": "QUES",
+      "details": "M. Peavy (Ques)"
     }
   ],
   "NOP": [
     {
-      "name": "Yves Missi",
-      "status": "OUT",
-      "details": "Yves Missi (Out)"
+      "name": "Y. Missi",
+      "status": "QUES",
+      "details": "Y. Missi (Ques)"
     },
     {
       "name": "T. Murphy",
-      "status": "OUT",
-      "details": "T. Murphy (Out)"
+      "status": "QUES",
+      "details": "T. Murphy (Ques)"
     },
     {
       "name": "M. Peavy",
-      "status": "OUT",
-      "details": "M. Peavy (Out)"
+      "status": "QUES",
+      "details": "M. Peavy (Ques)"
     }
   ],
   "CHA": [
     {
       "name": "L. McNeeley",
-      "status": "OUT",
-      "details": "L. McNeeley (Out)"
+      "status": "QUES",
+      "details": "L. McNeeley (Ques)"
     },
     {
       "name": "Z. Collins",
@@ -296,6 +296,11 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "J. Smith",
+      "status": "QUES",
+      "details": "J. Smith (Ques)"
+    },
+    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -304,11 +309,6 @@
       "name": "A. Simons",
       "status": "OUT",
       "details": "A. Simons (Out)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "OUT",
-      "details": "J. Smith (Out)"
     }
   ],
   "CHI": [
@@ -323,6 +323,11 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "J. Smith",
+      "status": "QUES",
+      "details": "J. Smith (Ques)"
+    },
+    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -331,18 +336,13 @@
       "name": "A. Simons",
       "status": "OUT",
       "details": "A. Simons (Out)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "OUT",
-      "details": "J. Smith (Out)"
     }
   ],
   "MIA": [
     {
       "name": "N. Jovic",
-      "status": "OUT",
-      "details": "N. Jovic (Out)"
+      "status": "QUES",
+      "details": "N. Jovic (Ques)"
     },
     {
       "name": "T. Rozier",
@@ -351,8 +351,8 @@
     },
     {
       "name": "G. Antetokounmpo",
-      "status": "OUT",
-      "details": "G. Antetokounmpo (Out)"
+      "status": "QUES",
+      "details": "G. Antetokounmpo (Ques)"
     },
     {
       "name": "T. Prince",
@@ -363,8 +363,8 @@
   "MIL": [
     {
       "name": "G. Antetokounmpo",
-      "status": "OUT",
-      "details": "G. Antetokounmpo (Out)"
+      "status": "QUES",
+      "details": "G. Antetokounmpo (Ques)"
     },
     {
       "name": "T. Prince",
