@@ -6179,6 +6179,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-25,DEN,A. Gordon,OUT,A. Gordon (Out),rotowire
 2026-02-25,DEN,J. Pickett,OUT,J. Pickett (Out),rotowire
 2026-02-25,DEN,P. Watson,OUT,P. Watson (Out),rotowire
+2026-02-26,WAS,T. Vukcevic,QUES,T. Vukcevic (Ques),rotowire
+2026-02-26,SAS,J. Minott,QUES,J. Minott (Ques),rotowire
+2026-02-26,BKN,J. Minott,QUES,J. Minott (Ques),rotowire
 2026-02-26,CHA,L. McNeeley,OUT,L. McNeeley (Out),rotowire
 2026-02-26,CHA,A. Nembhard,QUES,A. Nembhard (Ques),rotowire
 2026-02-26,CHA,J. Furphy,OFS,J. Furphy (OFS),rotowire
@@ -6195,6 +6198,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-26,IND,A. Nesmith,OUT,A. Nesmith (Out),rotowire
 2026-02-26,IND,I. Zubac,OUT,I. Zubac (Out),rotowire
 2026-02-26,MIA,D. Mitchell,QUES,D. Mitchell (Ques),rotowire
+2026-02-26,MIA,N. Powell,QUES,N. Powell (Ques),rotowire
 2026-02-26,MIA,N. Jovic,OUT,N. Jovic (Out),rotowire
 2026-02-26,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-02-26,MIA,J. Embiid,PROB,J. Embiid (Prob),rotowire
@@ -6204,9 +6208,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-26,PHI,J. Broome,OUT,J. Broome (Out),rotowire
 2026-02-26,PHI,P. George,OUT,P. George (Out),rotowire
 2026-02-26,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
-2026-02-26,WAS,K. George,QUES,K. George (Ques),rotowire
-2026-02-26,WAS,T. Vukcevic,QUES,T. Vukcevic (Ques),rotowire
 2026-02-26,WAS,A. Davis,OUT,A. Davis (Out),rotowire
+2026-02-26,WAS,K. George,OUT,K. George (Out),rotowire
 2026-02-26,WAS,D. Russell,OUT,D. Russell (Out),rotowire
 2026-02-26,WAS,Alex Sarr,OUT,Alex Sarr (Out),rotowire
 2026-02-26,WAS,Trae Young,OUT,Trae Young (Out),rotowire
@@ -6218,8 +6221,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-26,ATL,Z. Risacher,QUES,Z. Risacher (Ques),rotowire
 2026-02-26,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-02-26,SAS,M. Plumlee,QUES,M. Plumlee (Ques),rotowire
-2026-02-26,SAS,J. Minott,QUES,J. Minott (Ques),rotowire
-2026-02-26,BKN,J. Minott,QUES,J. Minott (Ques),rotowire
 2026-02-26,HOU,S. Adams,OFS,S. Adams (OFS),rotowire
 2026-02-26,HOU,D. Finney-Smith,PROB,D. Finney-Smith (Prob),rotowire
 2026-02-26,HOU,A. Thompson,QUES,A. Thompson (Ques),rotowire
@@ -6249,7 +6250,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-26,SAC,D. Hunter,OFS,D. Hunter (OFS),rotowire
 2026-02-26,SAC,Z. LaVine,OFS,Z. LaVine (OFS),rotowire
 2026-02-26,SAC,D. Sabonis,OFS,D. Sabonis (OFS),rotowire
-2026-02-26,SAC,K. Murray,QUES,K. Murray (Ques),rotowire
+2026-02-26,SAC,K. Murray,DOUBT,K. Murray (Doubt),rotowire
 2026-02-26,SAC,D. Cardwell,OUT,D. Cardwell (Out),rotowire
 2026-02-26,SAC,K. Middleton,QUES,K. Middleton (Ques),rotowire
 2026-02-26,SAC,K. Irving,OFS,K. Irving (OFS),rotowire
@@ -6278,17 +6279,17 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-26,NOP,Yves Missi,OUT,Yves Missi (Out),rotowire
 2026-02-26,NOP,T. Murphy,OUT,T. Murphy (Out),rotowire
 2026-02-26,NOP,K. George,QUES,K. George (Ques),rotowire
-2026-02-26,NOP,L. Markkanen,QUES,L. Markkanen (Ques),rotowire
 2026-02-26,NOP,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-02-26,NOP,W. Kessler,OFS,W. Kessler (OFS),rotowire
 2026-02-26,NOP,J. Nurkic,OFS,J. Nurkic (OFS),rotowire
 2026-02-26,NOP,V. Williams,OFS,V. Williams (OFS),rotowire
+2026-02-26,NOP,L. Markkanen,OUT,L. Markkanen (Out),rotowire
 2026-02-26,UTA,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-02-26,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
 2026-02-26,UTA,J. Nurkic,OFS,J. Nurkic (OFS),rotowire
 2026-02-26,UTA,V. Williams,OFS,V. Williams (OFS),rotowire
 2026-02-26,UTA,K. George,QUES,K. George (Ques),rotowire
-2026-02-26,UTA,L. Markkanen,QUES,L. Markkanen (Ques),rotowire
+2026-02-26,UTA,L. Markkanen,OUT,L. Markkanen (Out),rotowire
 2026-02-26,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-02-26,LAC,J. Collins,QUES,J. Collins (Ques),rotowire
 2026-02-26,LAC,K. Leonard,QUES,K. Leonard (Ques),rotowire

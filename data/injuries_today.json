@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-26",
-  "built_at_utc": "2026-02-26T15:11:29Z",
+  "built_at_utc": "2026-02-26T17:50:02Z",
   "source": "rotowire",
   "CHA": [
     {
@@ -88,6 +88,11 @@
       "details": "D. Mitchell (Ques)"
     },
     {
+      "name": "N. Powell",
+      "status": "QUES",
+      "details": "N. Powell (Ques)"
+    },
+    {
       "name": "N. Jovic",
       "status": "OUT",
       "details": "N. Jovic (Out)"
@@ -137,19 +142,14 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
+    },
+    {
+      "name": "K. George",
+      "status": "OUT",
+      "details": "K. George (Out)"
     },
     {
       "name": "D. Russell",
@@ -209,18 +209,6 @@
       "name": "M. Plumlee",
       "status": "QUES",
       "details": "M. Plumlee (Ques)"
-    },
-    {
-      "name": "J. Minott",
-      "status": "QUES",
-      "details": "J. Minott (Ques)"
-    }
-  ],
-  "BKN": [
-    {
-      "name": "J. Minott",
-      "status": "QUES",
-      "details": "J. Minott (Ques)"
     }
   ],
   "HOU": [
@@ -379,8 +367,8 @@
     },
     {
       "name": "K. Murray",
-      "status": "QUES",
-      "details": "K. Murray (Ques)"
+      "status": "DOUBT",
+      "details": "K. Murray (Doubt)"
     },
     {
       "name": "D. Cardwell",
@@ -531,11 +519,6 @@
       "details": "K. George (Ques)"
     },
     {
-      "name": "L. Markkanen",
-      "status": "QUES",
-      "details": "L. Markkanen (Ques)"
-    },
-    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -554,6 +537,11 @@
       "name": "V. Williams",
       "status": "OFS",
       "details": "V. Williams (OFS)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "OUT",
+      "details": "L. Markkanen (Out)"
     }
   ],
   "UTA": [
@@ -584,8 +572,8 @@
     },
     {
       "name": "L. Markkanen",
-      "status": "QUES",
-      "details": "L. Markkanen (Ques)"
+      "status": "OUT",
+      "details": "L. Markkanen (Out)"
     }
   ],
   "LAC": [
