@@ -1,17 +1,32 @@
 {
   "asof_date": "2026-02-25",
-  "built_at_utc": "2026-02-26T01:13:48Z",
+  "built_at_utc": "2026-02-26T03:27:16Z",
   "source": "rotowire",
   "OKC": [
+    {
+      "name": "B. Carlson",
+      "status": "QUES",
+      "details": "B. Carlson (Ques)"
+    },
+    {
+      "name": "A. Caruso",
+      "status": "QUES",
+      "details": "A. Caruso (Ques)"
+    },
+    {
+      "name": "C. Holmgren",
+      "status": "QUES",
+      "details": "C. Holmgren (Ques)"
+    },
+    {
+      "name": "I. Joe",
+      "status": "QUES",
+      "details": "I. Joe (Ques)"
+    },
     {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "A. Caruso",
-      "status": "OUT",
-      "details": "A. Caruso (Out)"
     },
     {
       "name": "S. Gilgeous-Alexander",
@@ -22,11 +37,6 @@
       "name": "I. Hartenstein",
       "status": "OUT",
       "details": "I. Hartenstein (Out)"
-    },
-    {
-      "name": "C. Holmgren",
-      "status": "OUT",
-      "details": "C. Holmgren (Out)"
     },
     {
       "name": "A. Mitchell",
@@ -63,12 +73,22 @@
       "details": "M. Plumlee (Out)"
     },
     {
+      "name": "C. Murray-Boyles",
+      "status": "QUES",
+      "details": "C. Murray-Boyles (Ques)"
+    },
+    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
     }
   ],
   "TOR": [
+    {
+      "name": "C. Murray-Boyles",
+      "status": "QUES",
+      "details": "C. Murray-Boyles (Ques)"
+    },
     {
       "name": "C. Hepburn",
       "status": "OUT",
@@ -206,6 +226,11 @@
       "details": "D. Cardwell (Out)"
     },
     {
+      "name": "K. Murray",
+      "status": "OUT",
+      "details": "K. Murray (Out)"
+    },
+    {
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
@@ -309,16 +334,6 @@
       "details": "J. Tatum (Out)"
     },
     {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "J. Strawther",
-      "status": "PROB",
-      "details": "J. Strawther (Prob)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -340,16 +355,6 @@
     }
   ],
   "DEN": [
-    {
-      "name": "J. Murray",
-      "status": "PROB",
-      "details": "J. Murray (Prob)"
-    },
-    {
-      "name": "J. Strawther",
-      "status": "PROB",
-      "details": "J. Strawther (Prob)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
