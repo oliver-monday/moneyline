@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-26",
-  "built_at_utc": "2026-02-26T09:08:10Z",
+  "built_at_utc": "2026-02-26T15:11:29Z",
   "source": "rotowire",
   "CHA": [
     {
@@ -12,11 +12,6 @@
       "name": "A. Nembhard",
       "status": "QUES",
       "details": "A. Nembhard (Ques)"
-    },
-    {
-      "name": "P. Siakam",
-      "status": "DOUBT",
-      "details": "P. Siakam (Doubt)"
     },
     {
       "name": "J. Furphy",
@@ -32,6 +27,11 @@
       "name": "O. Toppin",
       "status": "QUES",
       "details": "O. Toppin (Ques)"
+    },
+    {
+      "name": "P. Siakam",
+      "status": "DOUBT",
+      "details": "P. Siakam (Doubt)"
     },
     {
       "name": "A. Nesmith",
@@ -207,8 +207,20 @@
     },
     {
       "name": "M. Plumlee",
-      "status": "OUT",
-      "details": "M. Plumlee (Out)"
+      "status": "QUES",
+      "details": "M. Plumlee (Ques)"
+    },
+    {
+      "name": "J. Minott",
+      "status": "QUES",
+      "details": "J. Minott (Ques)"
+    }
+  ],
+  "BKN": [
+    {
+      "name": "J. Minott",
+      "status": "QUES",
+      "details": "J. Minott (Ques)"
     }
   ],
   "HOU": [
@@ -219,18 +231,18 @@
     },
     {
       "name": "D. Finney-Smith",
-      "status": "OUT",
-      "details": "D. Finney-Smith (Out)"
+      "status": "PROB",
+      "details": "D. Finney-Smith (Prob)"
+    },
+    {
+      "name": "A. Thompson",
+      "status": "QUES",
+      "details": "A. Thompson (Ques)"
     },
     {
       "name": "J. Tate",
       "status": "OUT",
       "details": "J. Tate (Out)"
-    },
-    {
-      "name": "A. Thompson",
-      "status": "OUT",
-      "details": "A. Thompson (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -267,6 +279,11 @@
       "details": "D. Lillard (OFS)"
     },
     {
+      "name": "Y. Hansen",
+      "status": "QUES",
+      "details": "Y. Hansen (Ques)"
+    },
+    {
       "name": "R. Williams",
       "status": "QUES",
       "details": "R. Williams (Ques)"
@@ -282,11 +299,6 @@
       "details": "S. Sharpe (Out)"
     },
     {
-      "name": "P. Williams",
-      "status": "DOUBT",
-      "details": "P. Williams (Doubt)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OFS",
       "details": "Z. Collins (OFS)"
@@ -297,6 +309,16 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "J. Smith",
+      "status": "DOUBT",
+      "details": "J. Smith (Doubt)"
+    },
+    {
+      "name": "P. Williams",
+      "status": "DOUBT",
+      "details": "P. Williams (Doubt)"
+    },
+    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -305,11 +327,6 @@
       "name": "A. Simons",
       "status": "OUT",
       "details": "A. Simons (Out)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "OUT",
-      "details": "J. Smith (Out)"
     }
   ],
   "CHI": [
@@ -324,6 +341,11 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "J. Smith",
+      "status": "DOUBT",
+      "details": "J. Smith (Doubt)"
+    },
+    {
       "name": "P. Williams",
       "status": "DOUBT",
       "details": "P. Williams (Doubt)"
@@ -337,11 +359,6 @@
       "name": "A. Simons",
       "status": "OUT",
       "details": "A. Simons (Out)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "OUT",
-      "details": "J. Smith (Out)"
     }
   ],
   "SAC": [
@@ -356,14 +373,14 @@
       "details": "Z. LaVine (OFS)"
     },
     {
-      "name": "K. Murray",
-      "status": "QUES",
-      "details": "K. Murray (Ques)"
-    },
-    {
       "name": "D. Sabonis",
       "status": "OFS",
       "details": "D. Sabonis (OFS)"
+    },
+    {
+      "name": "K. Murray",
+      "status": "QUES",
+      "details": "K. Murray (Ques)"
     },
     {
       "name": "D. Cardwell",
@@ -435,14 +452,14 @@
   ],
   "LAL": [
     {
-      "name": "R. Hachimura",
-      "status": "QUES",
-      "details": "R. Hachimura (Ques)"
-    },
-    {
       "name": "J. Hayes",
       "status": "PROB",
       "details": "J. Hayes (Prob)"
+    },
+    {
+      "name": "R. Hachimura",
+      "status": "QUES",
+      "details": "R. Hachimura (Ques)"
     },
     {
       "name": "C. Anthony",
