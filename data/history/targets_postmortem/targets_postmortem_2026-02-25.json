@@ -6,7 +6,7 @@
     "misses": 4,
     "hit_rate_pct": 43,
     "top_targets_total": 6,
-    "top_targets_hits": 1
+    "top_targets_hits": 2
   },
   "hits": [
     {
@@ -192,35 +192,10 @@
     }
   ],
   "reaches_hit": [],
-  "built_at_utc": "2026-02-26T09:13:49Z",
+  "built_at_utc": "2026-02-26T14:41:22Z",
   "snapshot_file": "targets_snapshot_2026-02-25.json",
   "preset": "baseline",
   "top_targets": [
-    {
-      "asof_date": "2026-02-25",
-      "player_id": "4432639.0",
-      "player_name": "Jabari Smith Jr.",
-      "team_abbrev": "HOU",
-      "opp": "SAC",
-      "game_id": "401810700",
-      "stat": "3pt",
-      "threshold": 2,
-      "hits": 9,
-      "window_games": 10,
-      "hit_rate": 0.9,
-      "is_home_game": true,
-      "rest_days": 1,
-      "is_b2b": false,
-      "share_trend_pp": -0.16146353646353528,
-      "share_trend_dir": "FLAT",
-      "iqr_10": 1.0,
-      "landmine_rate_10": null,
-      "trap_risk": null,
-      "dnp": false,
-      "actual": 0,
-      "hit": false,
-      "delta": 2
-    },
     {
       "asof_date": "2026-02-25",
       "player_id": "4591725.0",
@@ -344,6 +319,31 @@
       "actual": 3,
       "hit": false,
       "delta": 1
+    },
+    {
+      "asof_date": "2026-02-25",
+      "player_id": "4395724.0",
+      "player_name": "Immanuel Quickley",
+      "team_abbrev": "TOR",
+      "opp": "SA",
+      "game_id": "401810698",
+      "stat": "3pt",
+      "threshold": 3,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": true,
+      "rest_days": 0,
+      "is_b2b": true,
+      "share_trend_pp": -3.7710692085692052,
+      "share_trend_dir": "DOWN",
+      "iqr_10": 1.0,
+      "landmine_rate_10": null,
+      "trap_risk": null,
+      "dnp": false,
+      "actual": 3,
+      "hit": true,
+      "delta": 0
     }
   ]
 }

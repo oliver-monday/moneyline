@@ -885,11 +885,11 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810702,2026-02-25,2026-02-26T03:00Z,Denver Nuggets,DEN,103,-162.0,,Boston Celtics,BOS,84,136.0,,Denver,CO,,
 401810703,2026-02-26,2026-02-27T00:00Z,Indiana Pacers,IND,0,550.0,,Charlotte Hornets,CHA,0,-800.0,,Indianapolis,IN,J. Furphy (OFS); T. Haliburton (OFS); A. Nesmith (Out); I. Zubac (Out),L. McNeeley (Out)
 401810704,2026-02-26,2026-02-27T00:00Z,Philadelphia 76ers,PHI,0,-135.0,,Miami Heat,MIA,0,114.0,,Philadelphia,PA,J. Broome (Out); P. George (Out),N. Jovic (Out); T. Rozier (Out)
-401810705,2026-02-26,2026-02-27T00:30Z,Atlanta Hawks,ATL,0,-625.0,,Washington Wizards,WSH,0,455.0,,Atlanta,GA,,C. Whitmore (OFS); A. Davis (Out); D. Russell (Out); Alex Sarr (Out); Trae Young (Out)
-401810706,2026-02-26,2026-02-27T00:30Z,Brooklyn Nets,BKN,0,525.0,,San Antonio Spurs,SA,0,-750.0,,Brooklyn,NY,,D. Jones Garcia (OFS); M. Plumlee (Out)
-401810707,2026-02-26,2026-02-27T00:30Z,Orlando Magic,ORL,0,110.0,,Houston Rockets,HOU,0,-130.0,,Orlando,FL,F. Wagner (Out),S. Adams (OFS); D. Finney-Smith (Out); J. Tate (Out); A. Thompson (Out); F. VanVleet (Out)
-401810708,2026-02-26,2026-02-27T01:00Z,Chicago Bulls,CHI,0,150.0,,Portland Trail Blazers,POR,0,-180.0,,Chicago,IL,Z. Collins (OFS); N. Essengue (OFS); Jaden Ivey (Out); A. Simons (Out); J. Smith (Out),D. Lillard (OFS); D. Avdija (Out); S. Sharpe (Out)
+401810705,2026-02-26,2026-02-27T00:30Z,Atlanta Hawks,ATL,0,-550.0,,Washington Wizards,WSH,0,410.0,,Atlanta,GA,,C. Whitmore (OFS); A. Davis (Out); D. Russell (Out); Alex Sarr (Out); Trae Young (Out)
+401810706,2026-02-26,2026-02-27T00:30Z,Brooklyn Nets,BKN,0,490.0,,San Antonio Spurs,SA,0,-675.0,,Brooklyn,NY,,D. Jones Garcia (OFS)
+401810707,2026-02-26,2026-02-27T00:30Z,Orlando Magic,ORL,0,124.0,,Houston Rockets,HOU,0,-148.0,,Orlando,FL,F. Wagner (Out),S. Adams (OFS); J. Tate (Out); F. VanVleet (Out)
+401810708,2026-02-26,2026-02-27T01:00Z,Chicago Bulls,CHI,0,150.0,,Portland Trail Blazers,POR,0,-180.0,,Chicago,IL,Z. Collins (OFS); N. Essengue (OFS); Jaden Ivey (Out); A. Simons (Out),D. Lillard (OFS); D. Avdija (Out); S. Sharpe (Out)
 401810709,2026-02-26,2026-02-27T01:30Z,Dallas Mavericks,DAL,0,-270.0,,Sacramento Kings,SAC,0,220.0,,Dallas,TX,K. Irving (OFS); D. Lively (OFS); C. Flagg (Out); P. Washington (Out),D. Hunter (OFS); Z. LaVine (OFS); D. Sabonis (OFS); D. Cardwell (Out)
 401810710,2026-02-26,2026-02-27T02:00Z,Phoenix Suns,PHX,0,164.0,,Los Angeles Lakers,LAL,0,-198.0,,Phoenix,AZ,C. Anthony (Out); D. Booker (Out); D. Brooks (Out); J. Goodwin (Out); H. Highsmith (Out),
-401810711,2026-02-26,2026-02-27T02:00Z,Utah Jazz,UTAH,0,154.0,,New Orleans Pelicans,NO,0,-185.0,,Salt Lake City,UT,J. Jackson (OFS); W. Kessler (OFS); J. Nurkic (OFS); V. Williams (OFS),Yves Missi (Out); T. Murphy (Out)
+401810711,2026-02-26,2026-02-27T02:00Z,Utah Jazz,UTAH,0,160.0,,New Orleans Pelicans,NO,0,-192.0,,Salt Lake City,UT,J. Jackson (OFS); W. Kessler (OFS); J. Nurkic (OFS); V. Williams (OFS),Yves Missi (Out); T. Murphy (Out)
 401810712,2026-02-26,2026-02-27T03:00Z,LA Clippers,LAC,0,170.0,,Minnesota Timberwolves,MIN,0,-205.0,,Inglewood,CA,B. Beal (OFS); D. Garland (Out),

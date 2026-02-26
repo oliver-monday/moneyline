@@ -6,12 +6,12 @@
   },
   "days_tracked": 55,
   "end_date": "2026-02-25",
-  "last_updated_utc": "2026-02-26T09:13:51Z",
+  "last_updated_utc": "2026-02-26T14:41:23Z",
   "season_end_year": 2026,
   "start_date": "2025-12-28",
   "top_targets": {
-    "hit_rate": 0.5774193548387097,
-    "hits": 179,
+    "hit_rate": 0.5806451612903226,
+    "hits": 180,
     "total": 310
   }
 }
