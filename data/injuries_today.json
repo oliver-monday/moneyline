@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-25",
-  "built_at_utc": "2026-02-26T03:27:16Z",
+  "built_at_utc": "2026-02-26T04:06:24Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -216,6 +216,11 @@
       "details": "Z. LaVine (OFS)"
     },
     {
+      "name": "K. Murray",
+      "status": "QUES",
+      "details": "K. Murray (Ques)"
+    },
+    {
       "name": "D. Sabonis",
       "status": "OFS",
       "details": "D. Sabonis (OFS)"
@@ -224,11 +229,6 @@
       "name": "D. Cardwell",
       "status": "OUT",
       "details": "D. Cardwell (Out)"
-    },
-    {
-      "name": "K. Murray",
-      "status": "OUT",
-      "details": "K. Murray (Out)"
     },
     {
       "name": "S. Adams",
@@ -334,6 +334,11 @@
       "details": "J. Tatum (Out)"
     },
     {
+      "name": "J. Murray",
+      "status": "QUES",
+      "details": "J. Murray (Ques)"
+    },
+    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
@@ -355,6 +360,11 @@
     }
   ],
   "DEN": [
+    {
+      "name": "J. Murray",
+      "status": "QUES",
+      "details": "J. Murray (Ques)"
+    },
     {
       "name": "T. Bates",
       "status": "OUT",
