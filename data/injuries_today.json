@@ -1,17 +1,12 @@
 {
   "asof_date": "2026-02-26",
-  "built_at_utc": "2026-02-26T21:22:21Z",
+  "built_at_utc": "2026-02-26T22:40:09Z",
   "source": "rotowire",
   "CHA": [
     {
       "name": "L. McNeeley",
       "status": "OUT",
       "details": "L. McNeeley (Out)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
     },
     {
       "name": "J. Furphy",
@@ -24,19 +19,14 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "O. Toppin",
-      "status": "QUES",
-      "details": "O. Toppin (Ques)"
-    },
-    {
-      "name": "P. Siakam",
-      "status": "DOUBT",
-      "details": "P. Siakam (Doubt)"
-    },
-    {
       "name": "A. Nesmith",
       "status": "OUT",
       "details": "A. Nesmith (Out)"
+    },
+    {
+      "name": "P. Siakam",
+      "status": "OUT",
+      "details": "P. Siakam (Out)"
     },
     {
       "name": "I. Zubac",
@@ -56,24 +46,14 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
-    },
-    {
-      "name": "O. Toppin",
-      "status": "QUES",
-      "details": "O. Toppin (Ques)"
-    },
-    {
-      "name": "P. Siakam",
-      "status": "DOUBT",
-      "details": "P. Siakam (Doubt)"
-    },
-    {
       "name": "A. Nesmith",
       "status": "OUT",
       "details": "A. Nesmith (Out)"
+    },
+    {
+      "name": "P. Siakam",
+      "status": "OUT",
+      "details": "P. Siakam (Out)"
     },
     {
       "name": "I. Zubac",
@@ -238,22 +218,12 @@
       "details": "F. VanVleet (Out)"
     },
     {
-      "name": "J. Suggs",
-      "status": "QUES",
-      "details": "J. Suggs (Ques)"
-    },
-    {
       "name": "F. Wagner",
       "status": "OUT",
       "details": "F. Wagner (Out)"
     }
   ],
   "ORL": [
-    {
-      "name": "J. Suggs",
-      "status": "QUES",
-      "details": "J. Suggs (Ques)"
-    },
     {
       "name": "F. Wagner",
       "status": "OUT",
@@ -461,8 +431,8 @@
     },
     {
       "name": "R. Hachimura",
-      "status": "QUES",
-      "details": "R. Hachimura (Ques)"
+      "status": "OUT",
+      "details": "R. Hachimura (Out)"
     },
     {
       "name": "C. Anthony",
