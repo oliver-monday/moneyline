@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-26",
-  "built_at_utc": "2026-02-26T18:50:58Z",
+  "built_at_utc": "2026-02-26T19:46:19Z",
   "source": "rotowire",
   "CHA": [
     {
@@ -211,6 +211,11 @@
       "details": "S. Castle (Ques)"
     },
     {
+      "name": "K. Johnson",
+      "status": "QUES",
+      "details": "K. Johnson (Ques)"
+    },
+    {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
@@ -256,6 +261,11 @@
     }
   ],
   "POR": [
+    {
+      "name": "D. Clingan",
+      "status": "QUES",
+      "details": "D. Clingan (Ques)"
+    },
     {
       "name": "D. Lillard",
       "status": "OFS",
@@ -361,14 +371,24 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "K. Murray",
-      "status": "DOUBT",
-      "details": "K. Murray (Doubt)"
+      "name": "M. Monk",
+      "status": "QUES",
+      "details": "M. Monk (Ques)"
     },
     {
       "name": "D. Cardwell",
       "status": "OUT",
       "details": "D. Cardwell (Out)"
+    },
+    {
+      "name": "K. Murray",
+      "status": "OUT",
+      "details": "K. Murray (Out)"
+    },
+    {
+      "name": "R. Westbrook",
+      "status": "OUT",
+      "details": "R. Westbrook (Out)"
     },
     {
       "name": "K. Middleton",

@@ -6223,6 +6223,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-26,ATL,J. Johnson,OUT,J. Johnson (Out),rotowire
 2026-02-26,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-02-26,SAS,S. Castle,QUES,S. Castle (Ques),rotowire
+2026-02-26,SAS,K. Johnson,QUES,K. Johnson (Ques),rotowire
 2026-02-26,SAS,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-02-26,HOU,S. Adams,OFS,S. Adams (OFS),rotowire
 2026-02-26,HOU,J. Tate,OUT,J. Tate (Out),rotowire
@@ -6231,6 +6232,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-26,HOU,F. Wagner,OUT,F. Wagner (Out),rotowire
 2026-02-26,ORL,J. Suggs,QUES,J. Suggs (Ques),rotowire
 2026-02-26,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
+2026-02-26,POR,D. Clingan,QUES,D. Clingan (Ques),rotowire
 2026-02-26,POR,D. Lillard,OFS,D. Lillard (OFS),rotowire
 2026-02-26,POR,Y. Hansen,QUES,Y. Hansen (Ques),rotowire
 2026-02-26,POR,R. Williams,QUES,R. Williams (Ques),rotowire
@@ -6251,8 +6253,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-26,SAC,D. Hunter,OFS,D. Hunter (OFS),rotowire
 2026-02-26,SAC,Z. LaVine,OFS,Z. LaVine (OFS),rotowire
 2026-02-26,SAC,D. Sabonis,OFS,D. Sabonis (OFS),rotowire
-2026-02-26,SAC,K. Murray,DOUBT,K. Murray (Doubt),rotowire
+2026-02-26,SAC,M. Monk,QUES,M. Monk (Ques),rotowire
 2026-02-26,SAC,D. Cardwell,OUT,D. Cardwell (Out),rotowire
+2026-02-26,SAC,K. Murray,OUT,K. Murray (Out),rotowire
+2026-02-26,SAC,R. Westbrook,OUT,R. Westbrook (Out),rotowire
 2026-02-26,SAC,K. Middleton,PROB,K. Middleton (Prob),rotowire
 2026-02-26,SAC,K. Irving,OFS,K. Irving (OFS),rotowire
 2026-02-26,SAC,D. Lively,OFS,D. Lively (OFS),rotowire
