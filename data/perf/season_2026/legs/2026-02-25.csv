@@ -1,0 +1,9 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-25,2026,Derrick White,BOS,DEN,ast,6,MISSED,3,,targets_snapshot_2026-02-25.json
+2026-02-25,2026,Jabari Smith Jr.,HOU,SAC,pts,15,MISSED,12,,targets_snapshot_2026-02-25.json
+2026-02-25,2026,Jabari Smith Jr.,HOU,SAC,3pt,2,MISSED,0,,targets_snapshot_2026-02-25.json
+2026-02-25,2026,Ryan Rollins,MIL,CLE,pts,15,HIT,18,,targets_snapshot_2026-02-25.json
+2026-02-25,2026,Ryan Rollins,MIL,CLE,reb,4,MISSED,3,,targets_snapshot_2026-02-25.json
+2026-02-25,2026,Ryan Rollins,MIL,CLE,3pt,2,HIT,2,,targets_snapshot_2026-02-25.json
+2026-02-25,2026,Immanuel Quickley,TOR,SA,3pt,3,HIT,3,,targets_snapshot_2026-02-25.json
+2026-02-25,2026,Darius Garland,CLE,MIL,ast,6,,,,targets_snapshot_2026-02-25.json
