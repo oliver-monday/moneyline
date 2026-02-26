@@ -6190,6 +6190,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-26,IND,O. Toppin,QUES,O. Toppin (Ques),rotowire
 2026-02-26,HOU,J. Suggs,QUES,J. Suggs (Ques),rotowire
 2026-02-26,ORL,J. Suggs,QUES,J. Suggs (Ques),rotowire
+2026-02-26,MIA,D. Mitchell,QUES,D. Mitchell (Ques),rotowire
+2026-02-26,MIA,N. Powell,QUES,N. Powell (Ques),rotowire
+2026-02-26,MIA,J. Embiid,PROB,J. Embiid (Prob),rotowire
+2026-02-26,PHI,J. Embiid,PROB,J. Embiid (Prob),rotowire
+2026-02-26,WAS,Z. Risacher,QUES,Z. Risacher (Ques),rotowire
+2026-02-26,ATL,Z. Risacher,QUES,Z. Risacher (Ques),rotowire
+2026-02-26,SAS,S. Castle,QUES,S. Castle (Ques),rotowire
 2026-02-26,CHA,L. McNeeley,OUT,L. McNeeley (Out),rotowire
 2026-02-26,CHA,J. Furphy,OFS,J. Furphy (OFS),rotowire
 2026-02-26,CHA,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
@@ -6201,14 +6208,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-26,IND,A. Nesmith,OUT,A. Nesmith (Out),rotowire
 2026-02-26,IND,P. Siakam,OUT,P. Siakam (Out),rotowire
 2026-02-26,IND,I. Zubac,OUT,I. Zubac (Out),rotowire
-2026-02-26,MIA,D. Mitchell,QUES,D. Mitchell (Ques),rotowire
-2026-02-26,MIA,N. Powell,QUES,N. Powell (Ques),rotowire
 2026-02-26,MIA,N. Jovic,OUT,N. Jovic (Out),rotowire
 2026-02-26,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
-2026-02-26,MIA,J. Embiid,PROB,J. Embiid (Prob),rotowire
 2026-02-26,MIA,J. Broome,OUT,J. Broome (Out),rotowire
 2026-02-26,MIA,P. George,OUT,P. George (Out),rotowire
-2026-02-26,PHI,J. Embiid,PROB,J. Embiid (Prob),rotowire
 2026-02-26,PHI,J. Broome,OUT,J. Broome (Out),rotowire
 2026-02-26,PHI,P. George,OUT,P. George (Out),rotowire
 2026-02-26,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
@@ -6217,14 +6220,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-26,WAS,D. Russell,OUT,D. Russell (Out),rotowire
 2026-02-26,WAS,Alex Sarr,OUT,Alex Sarr (Out),rotowire
 2026-02-26,WAS,Trae Young,OUT,Trae Young (Out),rotowire
-2026-02-26,WAS,N. Alexander-Walker,QUES,N. Alexander-Walker (Ques),rotowire
-2026-02-26,WAS,Z. Risacher,QUES,Z. Risacher (Ques),rotowire
+2026-02-26,WAS,N. Alexander-Walker,OUT,N. Alexander-Walker (Out),rotowire
 2026-02-26,WAS,J. Johnson,OUT,J. Johnson (Out),rotowire
-2026-02-26,ATL,N. Alexander-Walker,QUES,N. Alexander-Walker (Ques),rotowire
-2026-02-26,ATL,Z. Risacher,QUES,Z. Risacher (Ques),rotowire
+2026-02-26,ATL,N. Alexander-Walker,OUT,N. Alexander-Walker (Out),rotowire
 2026-02-26,ATL,J. Johnson,OUT,J. Johnson (Out),rotowire
 2026-02-26,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
-2026-02-26,SAS,S. Castle,QUES,S. Castle (Ques),rotowire
 2026-02-26,SAS,K. Johnson,QUES,K. Johnson (Ques),rotowire
 2026-02-26,SAS,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-02-26,HOU,S. Adams,OFS,S. Adams (OFS),rotowire
