@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-26",
-  "built_at_utc": "2026-02-26T17:50:02Z",
+  "built_at_utc": "2026-02-26T18:50:58Z",
   "source": "rotowire",
   "CHA": [
     {
@@ -172,14 +172,14 @@
       "details": "N. Alexander-Walker (Ques)"
     },
     {
-      "name": "J. Johnson",
-      "status": "QUES",
-      "details": "J. Johnson (Ques)"
-    },
-    {
       "name": "Z. Risacher",
       "status": "QUES",
       "details": "Z. Risacher (Ques)"
+    },
+    {
+      "name": "J. Johnson",
+      "status": "OUT",
+      "details": "J. Johnson (Out)"
     }
   ],
   "ATL": [
@@ -189,14 +189,14 @@
       "details": "N. Alexander-Walker (Ques)"
     },
     {
-      "name": "J. Johnson",
-      "status": "QUES",
-      "details": "J. Johnson (Ques)"
-    },
-    {
       "name": "Z. Risacher",
       "status": "QUES",
       "details": "Z. Risacher (Ques)"
+    },
+    {
+      "name": "J. Johnson",
+      "status": "OUT",
+      "details": "J. Johnson (Out)"
     }
   ],
   "SAS": [
@@ -206,9 +206,14 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "M. Plumlee",
+      "name": "S. Castle",
       "status": "QUES",
-      "details": "M. Plumlee (Ques)"
+      "details": "S. Castle (Ques)"
+    },
+    {
+      "name": "M. Plumlee",
+      "status": "OUT",
+      "details": "M. Plumlee (Out)"
     }
   ],
   "HOU": [
@@ -216,16 +221,6 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
-    },
-    {
-      "name": "D. Finney-Smith",
-      "status": "PROB",
-      "details": "D. Finney-Smith (Prob)"
-    },
-    {
-      "name": "A. Thompson",
-      "status": "QUES",
-      "details": "A. Thompson (Ques)"
     },
     {
       "name": "J. Tate",
@@ -297,16 +292,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Smith",
-      "status": "DOUBT",
-      "details": "J. Smith (Doubt)"
-    },
-    {
-      "name": "P. Williams",
-      "status": "DOUBT",
-      "details": "P. Williams (Doubt)"
-    },
-    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -315,6 +300,16 @@
       "name": "A. Simons",
       "status": "OUT",
       "details": "A. Simons (Out)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OUT",
+      "details": "J. Smith (Out)"
+    },
+    {
+      "name": "P. Williams",
+      "status": "OUT",
+      "details": "P. Williams (Out)"
     }
   ],
   "CHI": [
@@ -329,16 +324,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Smith",
-      "status": "DOUBT",
-      "details": "J. Smith (Doubt)"
-    },
-    {
-      "name": "P. Williams",
-      "status": "DOUBT",
-      "details": "P. Williams (Doubt)"
-    },
-    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -347,6 +332,16 @@
       "name": "A. Simons",
       "status": "OUT",
       "details": "A. Simons (Out)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OUT",
+      "details": "J. Smith (Out)"
+    },
+    {
+      "name": "P. Williams",
+      "status": "OUT",
+      "details": "P. Williams (Out)"
     }
   ],
   "SAC": [
@@ -377,8 +372,8 @@
     },
     {
       "name": "K. Middleton",
-      "status": "QUES",
-      "details": "K. Middleton (Ques)"
+      "status": "PROB",
+      "details": "K. Middleton (Prob)"
     },
     {
       "name": "K. Irving",
@@ -419,8 +414,8 @@
     },
     {
       "name": "K. Middleton",
-      "status": "QUES",
-      "details": "K. Middleton (Ques)"
+      "status": "PROB",
+      "details": "K. Middleton (Prob)"
     },
     {
       "name": "D. Gafford",
@@ -514,11 +509,6 @@
       "details": "T. Murphy (Out)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -537,6 +527,11 @@
       "name": "V. Williams",
       "status": "OFS",
       "details": "V. Williams (OFS)"
+    },
+    {
+      "name": "K. George",
+      "status": "OUT",
+      "details": "K. George (Out)"
     },
     {
       "name": "L. Markkanen",
@@ -567,8 +562,8 @@
     },
     {
       "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
+      "status": "OUT",
+      "details": "K. George (Out)"
     },
     {
       "name": "L. Markkanen",
