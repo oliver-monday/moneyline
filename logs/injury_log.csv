@@ -6104,6 +6104,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-25,BOS,J. Brown,QUES,J. Brown (Ques),rotowire
 2026-02-25,SAS,S. Barnes,QUES,S. Barnes (Ques),rotowire
 2026-02-25,TOR,S. Barnes,QUES,S. Barnes (Ques),rotowire
+2026-02-25,SAC,D. Carter,QUES,D. Carter (Ques),rotowire
 2026-02-25,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-02-25,OKC,A. Caruso,OUT,A. Caruso (Out),rotowire
 2026-02-25,OKC,S. Gilgeous-Alexander,OUT,S. Gilgeous-Alexander (Out),rotowire
@@ -6124,16 +6125,16 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-25,GSW,D. Green,OUT,D. Green (Out),rotowire
 2026-02-25,GSW,D. Melton,OUT,D. Melton (Out),rotowire
 2026-02-25,GSW,K. Porzingis,OUT,K. Porzingis (Out),rotowire
-2026-02-25,GSW,K. Anderson,QUES,K. Anderson (Ques),rotowire
 2026-02-25,GSW,K. Caldwell-Pope,OFS,K. Caldwell-Pope (OFS),rotowire
 2026-02-25,GSW,S. Aldama,OUT,S. Aldama (Out),rotowire
+2026-02-25,GSW,K. Anderson,OUT,K. Anderson (Out),rotowire
 2026-02-25,GSW,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-02-25,GSW,C. Coward,OUT,C. Coward (Out),rotowire
 2026-02-25,GSW,Zach Edey,OUT,Zach Edey (Out),rotowire
 2026-02-25,GSW,Ja Morant,OUT,Ja Morant (Out),rotowire
 2026-02-25,MEM,K. Caldwell-Pope,OFS,K. Caldwell-Pope (OFS),rotowire
-2026-02-25,MEM,K. Anderson,QUES,K. Anderson (Ques),rotowire
 2026-02-25,MEM,S. Aldama,OUT,S. Aldama (Out),rotowire
+2026-02-25,MEM,K. Anderson,OUT,K. Anderson (Out),rotowire
 2026-02-25,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-02-25,MEM,C. Coward,OUT,C. Coward (Out),rotowire
 2026-02-25,MEM,Zach Edey,OUT,Zach Edey (Out),rotowire
@@ -6141,7 +6142,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-25,SAC,D. Hunter,OFS,D. Hunter (OFS),rotowire
 2026-02-25,SAC,Z. LaVine,OFS,Z. LaVine (OFS),rotowire
 2026-02-25,SAC,D. Sabonis,OFS,D. Sabonis (OFS),rotowire
-2026-02-25,SAC,D. Carter,QUES,D. Carter (Ques),rotowire
 2026-02-25,SAC,D. Cardwell,OUT,D. Cardwell (Out),rotowire
 2026-02-25,SAC,S. Adams,OFS,S. Adams (OFS),rotowire
 2026-02-25,SAC,D. Finney-Smith,OUT,D. Finney-Smith (Out),rotowire
@@ -6153,7 +6153,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-25,HOU,J. Tate,OUT,J. Tate (Out),rotowire
 2026-02-25,HOU,A. Thompson,OUT,A. Thompson (Out),rotowire
 2026-02-25,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
-2026-02-25,CLE,J. Harden,QUES,J. Harden (Ques),rotowire
+2026-02-25,CLE,J. Harden,OUT,J. Harden (Out),rotowire
 2026-02-25,CLE,D. Mitchell,OUT,D. Mitchell (Out),rotowire
 2026-02-25,CLE,E. Mobley,OUT,E. Mobley (Out),rotowire
 2026-02-25,CLE,Max Strus,OUT,Max Strus (Out),rotowire
@@ -6164,11 +6164,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-25,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
 2026-02-25,BOS,J. Murray,PROB,J. Murray (Prob),rotowire
 2026-02-25,BOS,J. Strawther,PROB,J. Strawther (Prob),rotowire
+2026-02-25,BOS,T. Bates,OUT,T. Bates (Out),rotowire
 2026-02-25,BOS,A. Gordon,OUT,A. Gordon (Out),rotowire
 2026-02-25,BOS,J. Pickett,OUT,J. Pickett (Out),rotowire
 2026-02-25,BOS,P. Watson,OUT,P. Watson (Out),rotowire
 2026-02-25,DEN,J. Murray,PROB,J. Murray (Prob),rotowire
 2026-02-25,DEN,J. Strawther,PROB,J. Strawther (Prob),rotowire
+2026-02-25,DEN,T. Bates,OUT,T. Bates (Out),rotowire
 2026-02-25,DEN,A. Gordon,OUT,A. Gordon (Out),rotowire
 2026-02-25,DEN,J. Pickett,OUT,J. Pickett (Out),rotowire
 2026-02-25,DEN,P. Watson,OUT,P. Watson (Out),rotowire

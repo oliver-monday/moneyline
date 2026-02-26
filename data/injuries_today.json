@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-25",
-  "built_at_utc": "2026-02-25T23:30:29Z",
+  "built_at_utc": "2026-02-26T01:13:48Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -112,11 +112,6 @@
       "details": "K. Porzingis (Out)"
     },
     {
-      "name": "K. Anderson",
-      "status": "QUES",
-      "details": "K. Anderson (Ques)"
-    },
-    {
       "name": "K. Caldwell-Pope",
       "status": "OFS",
       "details": "K. Caldwell-Pope (OFS)"
@@ -125,6 +120,11 @@
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
+    },
+    {
+      "name": "K. Anderson",
+      "status": "OUT",
+      "details": "K. Anderson (Out)"
     },
     {
       "name": "B. Clarke",
@@ -154,14 +154,14 @@
       "details": "K. Caldwell-Pope (OFS)"
     },
     {
-      "name": "K. Anderson",
-      "status": "QUES",
-      "details": "K. Anderson (Ques)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
+    },
+    {
+      "name": "K. Anderson",
+      "status": "OUT",
+      "details": "K. Anderson (Out)"
     },
     {
       "name": "B. Clarke",
@@ -199,11 +199,6 @@
       "name": "D. Sabonis",
       "status": "OFS",
       "details": "D. Sabonis (OFS)"
-    },
-    {
-      "name": "D. Carter",
-      "status": "QUES",
-      "details": "D. Carter (Ques)"
     },
     {
       "name": "D. Cardwell",
@@ -266,8 +261,8 @@
   "CLE": [
     {
       "name": "J. Harden",
-      "status": "QUES",
-      "details": "J. Harden (Ques)"
+      "status": "OUT",
+      "details": "J. Harden (Out)"
     },
     {
       "name": "D. Mitchell",
@@ -324,6 +319,11 @@
       "details": "J. Strawther (Prob)"
     },
     {
+      "name": "T. Bates",
+      "status": "OUT",
+      "details": "T. Bates (Out)"
+    },
+    {
       "name": "A. Gordon",
       "status": "OUT",
       "details": "A. Gordon (Out)"
@@ -349,6 +349,11 @@
       "name": "J. Strawther",
       "status": "PROB",
       "details": "J. Strawther (Prob)"
+    },
+    {
+      "name": "T. Bates",
+      "status": "OUT",
+      "details": "T. Bates (Out)"
     },
     {
       "name": "A. Gordon",
