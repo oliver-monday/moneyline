@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-27",
-  "built_at_utc": "2026-02-27T15:04:26Z",
+  "built_at_utc": "2026-02-27T17:24:50Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -140,8 +140,8 @@
     },
     {
       "name": "C. Flagg",
-      "status": "OUT",
-      "details": "C. Flagg (Out)"
+      "status": "DOUBT",
+      "details": "C. Flagg (Doubt)"
     }
   ],
   "DAL": [
@@ -167,8 +167,8 @@
     },
     {
       "name": "C. Flagg",
-      "status": "OUT",
-      "details": "C. Flagg (Out)"
+      "status": "DOUBT",
+      "details": "C. Flagg (Doubt)"
     }
   ],
   "DEN": [
