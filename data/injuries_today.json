@@ -1,27 +1,17 @@
 {
   "asof_date": "2026-02-27",
-  "built_at_utc": "2026-02-27T22:30:37Z",
+  "built_at_utc": "2026-02-27T23:27:23Z",
   "source": "rotowire",
   "CLE": [
     {
-      "name": "D. Schroder",
-      "status": "PROB",
-      "details": "D. Schroder (Prob)"
-    },
-    {
-      "name": "K. Ellis",
-      "status": "QUES",
-      "details": "K. Ellis (Ques)"
+      "name": "Keon Ellis",
+      "status": "OUT",
+      "details": "Keon Ellis (Out)"
     },
     {
       "name": "J. Harden",
-      "status": "QUES",
-      "details": "J. Harden (Ques)"
-    },
-    {
-      "name": "D. Wade",
-      "status": "DOUBT",
-      "details": "D. Wade (Doubt)"
+      "status": "OUT",
+      "details": "J. Harden (Out)"
     },
     {
       "name": "D. Mitchell",
@@ -32,6 +22,11 @@
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
+    },
+    {
+      "name": "Dean Wade",
+      "status": "OUT",
+      "details": "Dean Wade (Out)"
     },
     {
       "name": "I. Stewart",
@@ -119,11 +114,6 @@
       "details": "Ja Morant (Out)"
     },
     {
-      "name": "C. Martin",
-      "status": "QUES",
-      "details": "C. Martin (Ques)"
-    },
-    {
       "name": "K. Irving",
       "status": "OFS",
       "details": "K. Irving (OFS)"
@@ -132,6 +122,11 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
+    },
+    {
+      "name": "C. Martin",
+      "status": "DOUBT",
+      "details": "C. Martin (Doubt)"
     },
     {
       "name": "K. Thompson",
@@ -167,8 +162,8 @@
     },
     {
       "name": "C. Martin",
-      "status": "QUES",
-      "details": "C. Martin (Ques)"
+      "status": "DOUBT",
+      "details": "C. Martin (Doubt)"
     },
     {
       "name": "K. Thompson",
