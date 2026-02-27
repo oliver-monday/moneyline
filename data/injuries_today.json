@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-26",
-  "built_at_utc": "2026-02-26T23:33:03Z",
+  "built_at_utc": "2026-02-27T01:12:23Z",
   "source": "rotowire",
   "CHA": [
     {
@@ -62,6 +62,11 @@
     }
   ],
   "MIA": [
+    {
+      "name": "N. Powell",
+      "status": "QUES",
+      "details": "N. Powell (Ques)"
+    },
     {
       "name": "N. Jovic",
       "status": "OUT",
@@ -156,11 +161,6 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "K. Johnson",
-      "status": "QUES",
-      "details": "K. Johnson (Ques)"
-    },
-    {
       "name": "M. Plumlee",
       "status": "OUT",
       "details": "M. Plumlee (Out)"
@@ -197,29 +197,19 @@
   ],
   "POR": [
     {
-      "name": "D. Clingan",
-      "status": "QUES",
-      "details": "D. Clingan (Ques)"
-    },
-    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "Y. Hansen",
-      "status": "QUES",
-      "details": "Y. Hansen (Ques)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
-    },
-    {
       "name": "D. Avdija",
       "status": "OUT",
       "details": "D. Avdija (Out)"
+    },
+    {
+      "name": "D. Clingan",
+      "status": "OUT",
+      "details": "D. Clingan (Out)"
     },
     {
       "name": "S. Sharpe",
@@ -306,11 +296,6 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "M. Monk",
-      "status": "QUES",
-      "details": "M. Monk (Ques)"
-    },
-    {
       "name": "D. Cardwell",
       "status": "OUT",
       "details": "D. Cardwell (Out)"
@@ -326,11 +311,6 @@
       "details": "R. Westbrook (Out)"
     },
     {
-      "name": "K. Middleton",
-      "status": "PROB",
-      "details": "K. Middleton (Prob)"
-    },
-    {
       "name": "K. Irving",
       "status": "OFS",
       "details": "K. Irving (OFS)"
@@ -341,14 +321,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
-    },
-    {
       "name": "C. Flagg",
       "status": "OUT",
       "details": "C. Flagg (Out)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
     },
     {
       "name": "P. Washington",
@@ -368,19 +348,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "K. Middleton",
-      "status": "PROB",
-      "details": "K. Middleton (Prob)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
-    },
-    {
       "name": "C. Flagg",
       "status": "OUT",
       "details": "C. Flagg (Out)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
     },
     {
       "name": "P. Washington",
@@ -389,11 +364,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "J. Hayes",
-      "status": "PROB",
-      "details": "J. Hayes (Prob)"
-    },
     {
       "name": "R. Hachimura",
       "status": "OUT",
