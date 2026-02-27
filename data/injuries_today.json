@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-26",
-  "built_at_utc": "2026-02-27T01:12:23Z",
+  "built_at_utc": "2026-02-27T03:24:22Z",
   "source": "rotowire",
   "CHA": [
     {
@@ -171,6 +171,11 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "QUES",
+      "details": "J. Smith (Ques)"
     },
     {
       "name": "J. Tate",
