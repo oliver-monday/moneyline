@@ -1,8 +1,13 @@
 {
   "asof_date": "2026-02-27",
-  "built_at_utc": "2026-02-27T17:24:50Z",
+  "built_at_utc": "2026-02-27T18:39:06Z",
   "source": "rotowire",
   "CLE": [
+    {
+      "name": "D. Schroder",
+      "status": "PROB",
+      "details": "D. Schroder (Prob)"
+    },
     {
       "name": "K. Ellis",
       "status": "QUES",
@@ -14,14 +19,9 @@
       "details": "J. Harden (Ques)"
     },
     {
-      "name": "D. Schroder",
-      "status": "QUES",
-      "details": "D. Schroder (Ques)"
-    },
-    {
       "name": "D. Wade",
-      "status": "QUES",
-      "details": "D. Wade (Ques)"
+      "status": "DOUBT",
+      "details": "D. Wade (Doubt)"
     },
     {
       "name": "D. Mitchell",
@@ -119,16 +119,6 @@
       "details": "Ja Morant (Out)"
     },
     {
-      "name": "P. Washington",
-      "status": "QUES",
-      "details": "P. Washington (Ques)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
-    },
-    {
       "name": "K. Irving",
       "status": "OFS",
       "details": "K. Irving (OFS)"
@@ -139,9 +129,19 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "C. Flagg",
+      "name": "K. Thompson",
       "status": "DOUBT",
-      "details": "C. Flagg (Doubt)"
+      "details": "K. Thompson (Doubt)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "DOUBT",
+      "details": "P. Washington (Doubt)"
+    },
+    {
+      "name": "C. Flagg",
+      "status": "OUT",
+      "details": "C. Flagg (Out)"
     }
   ],
   "DAL": [
@@ -156,19 +156,19 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
+      "name": "K. Thompson",
+      "status": "DOUBT",
+      "details": "K. Thompson (Doubt)"
     },
     {
       "name": "P. Washington",
-      "status": "QUES",
-      "details": "P. Washington (Ques)"
+      "status": "DOUBT",
+      "details": "P. Washington (Doubt)"
     },
     {
       "name": "C. Flagg",
-      "status": "DOUBT",
-      "details": "C. Flagg (Doubt)"
+      "status": "OUT",
+      "details": "C. Flagg (Out)"
     }
   ],
   "DEN": [
