@@ -893,8 +893,8 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810710,2026-02-26,2026-02-27T02:00Z,Phoenix Suns,PHX,113,164.0,,Los Angeles Lakers,LAL,110,-198.0,,Phoenix,AZ,,
 401810711,2026-02-26,2026-02-27T02:00Z,Utah Jazz,UTAH,118,160.0,,New Orleans Pelicans,NO,129,-192.0,,Salt Lake City,UT,,
 401810712,2026-02-26,2026-02-27T03:00Z,LA Clippers,LAC,88,170.0,,Minnesota Timberwolves,MIN,94,-205.0,,Inglewood,CA,,
-401810713,2026-02-27,2026-02-28T00:00Z,Detroit Pistons,DET,0,-258.0,,Cleveland Cavaliers,CLE,0,210.0,,Detroit,MI,I. Stewart (Out),D. Mitchell (Out); Max Strus (Out)
+401810713,2026-02-27,2026-02-28T00:00Z,Detroit Pistons,DET,0,-245.0,,Cleveland Cavaliers,CLE,0,200.0,,Detroit,MI,I. Stewart (Out),D. Mitchell (Out); Max Strus (Out)
 401810714,2026-02-27,2026-02-28T00:30Z,Boston Celtics,BOS,0,-1450.0,,Brooklyn Nets,BKN,0,850.0,,Boston,MA,J. Tatum (Out),
-401810715,2026-02-27,2026-02-28T01:00Z,Milwaukee Bucks,MIL,0,245.0,,New York Knicks,NY,0,-305.0,,Milwaukee,WI,G. Antetokounmpo (Out); T. Prince (Out),M. McBride (Out)
-401810716,2026-02-27,2026-02-28T01:30Z,Dallas Mavericks,DAL,0,-225.0,,Memphis Grizzlies,MEM,0,185.0,,Dallas,TX,K. Irving (OFS); D. Lively (OFS); C. Flagg (Out); D. Gafford (Out),K. Caldwell-Pope (OFS); S. Aldama (Out); B. Clarke (Out); C. Coward (Out); Zach Edey (Out); Ja Morant (Out)
+401810715,2026-02-27,2026-02-28T01:00Z,Milwaukee Bucks,MIL,0,260.0,,New York Knicks,NY,0,-325.0,,Milwaukee,WI,G. Antetokounmpo (Out); T. Prince (Out),M. McBride (Out)
+401810716,2026-02-27,2026-02-28T01:30Z,Dallas Mavericks,DAL,0,-198.0,,Memphis Grizzlies,MEM,0,164.0,,Dallas,TX,K. Irving (OFS); D. Lively (OFS); C. Flagg (Out),K. Caldwell-Pope (OFS); S. Aldama (Out); B. Clarke (Out); C. Coward (Out); Zach Edey (Out); Ja Morant (Out)
 401810717,2026-02-27,2026-02-28T02:30Z,Oklahoma City Thunder,OKC,0,-310.0,,Denver Nuggets,DEN,0,250.0,,Oklahoma City,OK,T. Sorber (OFS); B. Carlson (Out); A. Mitchell (Out); J. Williams (Out),T. Bates (Out); A. Gordon (Out); P. Watson (Out)
