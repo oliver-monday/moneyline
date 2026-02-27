@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-27",
-  "built_at_utc": "2026-02-27T09:02:08Z",
+  "built_at_utc": "2026-02-27T15:04:26Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -125,8 +125,8 @@
     },
     {
       "name": "D. Gafford",
-      "status": "OUT",
-      "details": "D. Gafford (Out)"
+      "status": "QUES",
+      "details": "D. Gafford (Ques)"
     },
     {
       "name": "K. Irving",
@@ -156,6 +156,11 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "D. Gafford",
+      "status": "QUES",
+      "details": "D. Gafford (Ques)"
+    },
+    {
       "name": "P. Washington",
       "status": "QUES",
       "details": "P. Washington (Ques)"
@@ -164,11 +169,6 @@
       "name": "C. Flagg",
       "status": "OUT",
       "details": "C. Flagg (Out)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "OUT",
-      "details": "D. Gafford (Out)"
     }
   ],
   "DEN": [
