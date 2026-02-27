@@ -1,0 +1,9 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-26,2026,Paolo Banchero,ORL,HOU,ast,4,HIT,9,,targets_snapshot_2026-02-26.json
+2026-02-26,2026,Nickeil Alexander-Walker,ATL,WSH,ast,4,,,,targets_snapshot_2026-02-26.json
+2026-02-26,2026,Desmond Bane,ORL,HOU,pts,20,HIT,30,,targets_snapshot_2026-02-26.json
+2026-02-26,2026,Anthony Davis,DAL,SAC,ast,2,,,,targets_snapshot_2026-02-26.json
+2026-02-26,2026,Jaden McDaniels,MIN,LAC,ast,2,HIT,2,,targets_snapshot_2026-02-26.json
+2026-02-26,2026,Saddiq Bey,NO,UTAH,ast,2,HIT,7,,targets_snapshot_2026-02-26.json
+2026-02-26,2026,Kon Knueppel,CHA,IND,3pt,3,HIT,8,,targets_snapshot_2026-02-26.json
+2026-02-26,2026,Grayson Allen,PHX,LAL,pts,15,HIT,28,,targets_snapshot_2026-02-26.json
