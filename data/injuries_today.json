@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-27",
-  "built_at_utc": "2026-02-27T18:39:06Z",
+  "built_at_utc": "2026-02-27T19:36:50Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -119,6 +119,11 @@
       "details": "Ja Morant (Out)"
     },
     {
+      "name": "C. Martin",
+      "status": "QUES",
+      "details": "C. Martin (Ques)"
+    },
+    {
       "name": "K. Irving",
       "status": "OFS",
       "details": "K. Irving (OFS)"
@@ -137,6 +142,11 @@
       "name": "P. Washington",
       "status": "DOUBT",
       "details": "P. Washington (Doubt)"
+    },
+    {
+      "name": "M. Bagley",
+      "status": "OUT",
+      "details": "M. Bagley (Out)"
     },
     {
       "name": "C. Flagg",
@@ -156,6 +166,11 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "C. Martin",
+      "status": "QUES",
+      "details": "C. Martin (Ques)"
+    },
+    {
       "name": "K. Thompson",
       "status": "DOUBT",
       "details": "K. Thompson (Doubt)"
@@ -164,6 +179,11 @@
       "name": "P. Washington",
       "status": "DOUBT",
       "details": "P. Washington (Doubt)"
+    },
+    {
+      "name": "M. Bagley",
+      "status": "OUT",
+      "details": "M. Bagley (Out)"
     },
     {
       "name": "C. Flagg",
