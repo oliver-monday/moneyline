@@ -6310,6 +6310,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-27,CLE,K. Ellis,QUES,K. Ellis (Ques),rotowire
 2026-02-27,CLE,D. Wade,DOUBT,D. Wade (Doubt),rotowire
 2026-02-27,MEM,T. Jerome,DOUBT,T. Jerome (Doubt),rotowire
+2026-02-27,DEN,J. Strawther,PROB,J. Strawther (Prob),rotowire
+2026-02-27,DEN,S. Jones,QUES,S. Jones (Ques),rotowire
+2026-02-27,DEN,J. Murray,QUES,J. Murray (Ques),rotowire
+2026-02-27,DEN,J. Pickett,QUES,J. Pickett (Ques),rotowire
 2026-02-27,CLE,Keon Ellis,OUT,Keon Ellis (Out),rotowire
 2026-02-27,CLE,J. Harden,OUT,J. Harden (Out),rotowire
 2026-02-27,CLE,D. Mitchell,OUT,D. Mitchell (Out),rotowire
@@ -6345,10 +6349,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-27,DAL,C. Martin,OUT,C. Martin (Out),rotowire
 2026-02-27,DAL,K. Thompson,OUT,K. Thompson (Out),rotowire
 2026-02-27,DAL,P. Washington,OUT,P. Washington (Out),rotowire
-2026-02-27,DEN,J. Strawther,PROB,J. Strawther (Prob),rotowire
-2026-02-27,DEN,S. Jones,QUES,S. Jones (Ques),rotowire
-2026-02-27,DEN,J. Murray,QUES,J. Murray (Ques),rotowire
-2026-02-27,DEN,J. Pickett,QUES,J. Pickett (Ques),rotowire
 2026-02-27,DEN,T. Bates,OUT,T. Bates (Out),rotowire
 2026-02-27,DEN,A. Gordon,OUT,A. Gordon (Out),rotowire
 2026-02-27,DEN,P. Watson,OUT,P. Watson (Out),rotowire

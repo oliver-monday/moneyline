@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-27",
-  "built_at_utc": "2026-02-28T01:07:07Z",
+  "built_at_utc": "2026-02-28T03:04:58Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -192,26 +192,6 @@
     }
   ],
   "DEN": [
-    {
-      "name": "J. Strawther",
-      "status": "PROB",
-      "details": "J. Strawther (Prob)"
-    },
-    {
-      "name": "S. Jones",
-      "status": "QUES",
-      "details": "S. Jones (Ques)"
-    },
-    {
-      "name": "J. Murray",
-      "status": "QUES",
-      "details": "J. Murray (Ques)"
-    },
-    {
-      "name": "J. Pickett",
-      "status": "QUES",
-      "details": "J. Pickett (Ques)"
-    },
     {
       "name": "T. Bates",
       "status": "OUT",
