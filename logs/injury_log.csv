@@ -6361,12 +6361,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-02-27,OKC,A. Mitchell,OUT,A. Mitchell (Out),rotowire
 2026-02-27,OKC,J. Williams,OUT,J. Williams (Out),rotowire
 2026-02-27,BKN,J. Tatum,OUT,J. Tatum (Out),rotowire
-2026-02-28,POR,D. Lillard,OFS,D. Lillard (OFS),rotowire
-2026-02-28,POR,D. Clingan,QUES,D. Clingan (Ques),rotowire
-2026-02-28,POR,D. Avdija,DOUBT,D. Avdija (Doubt),rotowire
-2026-02-28,POR,S. Sharpe,OUT,S. Sharpe (Out),rotowire
 2026-02-28,POR,L. McNeeley,OUT,L. McNeeley (Out),rotowire
 2026-02-28,CHA,L. McNeeley,OUT,L. McNeeley (Out),rotowire
+2026-02-28,POR,D. Clingan,QUES,D. Clingan (Ques),rotowire
+2026-02-28,POR,D. Lillard,OFS,D. Lillard (OFS),rotowire
+2026-02-28,POR,S. Cissoko,QUES,S. Cissoko (Ques),rotowire
+2026-02-28,POR,D. Avdija,OUT,D. Avdija (Out),rotowire
+2026-02-28,POR,S. Sharpe,OUT,S. Sharpe (Out),rotowire
 2026-02-28,HOU,S. Adams,OFS,S. Adams (OFS),rotowire
 2026-02-28,HOU,J. Smith,OUT,J. Smith (Out),rotowire
 2026-02-28,HOU,J. Tate,OUT,J. Tate (Out),rotowire
