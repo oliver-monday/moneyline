@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-28",
-  "built_at_utc": "2026-02-28T20:23:17Z",
+  "built_at_utc": "2026-02-28T21:09:32Z",
   "source": "rotowire",
   "POR": [
     {
@@ -154,11 +154,6 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "K. Porzingis",
-      "status": "QUES",
-      "details": "K. Porzingis (Ques)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -172,6 +167,11 @@
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "K. Porzingis",
+      "status": "OUT",
+      "details": "K. Porzingis (Out)"
     }
   ],
   "GSW": [
@@ -186,11 +186,6 @@
       "details": "D. Green (Prob)"
     },
     {
-      "name": "K. Porzingis",
-      "status": "QUES",
-      "details": "K. Porzingis (Ques)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -204,6 +199,11 @@
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "K. Porzingis",
+      "status": "OUT",
+      "details": "K. Porzingis (Out)"
     }
   ],
   "NOP": [
