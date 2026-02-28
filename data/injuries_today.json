@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-28",
-  "built_at_utc": "2026-02-28T08:46:49Z",
+  "built_at_utc": "2026-02-28T14:45:53Z",
   "source": "rotowire",
   "POR": [
     {
@@ -22,6 +22,18 @@
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
+    },
+    {
+      "name": "L. McNeeley",
+      "status": "OUT",
+      "details": "L. McNeeley (Out)"
+    }
+  ],
+  "CHA": [
+    {
+      "name": "L. McNeeley",
+      "status": "OUT",
+      "details": "L. McNeeley (Out)"
     }
   ],
   "HOU": [
