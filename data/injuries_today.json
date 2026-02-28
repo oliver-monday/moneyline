@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-28",
-  "built_at_utc": "2026-02-28T19:25:28Z",
+  "built_at_utc": "2026-02-28T20:23:17Z",
   "source": "rotowire",
   "POR": [
     {
@@ -140,8 +140,8 @@
   "LAL": [
     {
       "name": "R. Hachimura",
-      "status": "DOUBT",
-      "details": "R. Hachimura (Doubt)"
+      "status": "OUT",
+      "details": "R. Hachimura (Out)"
     },
     {
       "name": "D. Green",
