@@ -1,22 +1,12 @@
 {
   "asof_date": "2026-02-28",
-  "built_at_utc": "2026-02-28T17:11:02Z",
+  "built_at_utc": "2026-02-28T18:29:56Z",
   "source": "rotowire",
   "POR": [
-    {
-      "name": "D. Clingan",
-      "status": "QUES",
-      "details": "D. Clingan (Ques)"
-    },
     {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "S. Cissoko",
-      "status": "QUES",
-      "details": "S. Cissoko (Ques)"
     },
     {
       "name": "D. Avdija",
@@ -95,24 +85,9 @@
       "details": "C. Hepburn (Out)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
-    },
-    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "W. Riley",
-      "status": "QUES",
-      "details": "W. Riley (Ques)"
     },
     {
       "name": "A. Davis",
@@ -140,21 +115,6 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
-      "name": "W. Riley",
-      "status": "QUES",
-      "details": "W. Riley (Ques)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
     },
     {
       "name": "A. Davis",
@@ -247,11 +207,6 @@
     }
   ],
   "NOP": [
-    {
-      "name": "Y. Missi",
-      "status": "QUES",
-      "details": "Y. Missi (Ques)"
-    },
     {
       "name": "T. Murphy",
       "status": "OUT",
