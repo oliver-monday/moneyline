@@ -1,0 +1,6 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-02-27,2026,Ryan Rollins,MIL,NY,pts,15,MISSED,13,,targets_snapshot_2026-02-27.json
+2026-02-27,2026,Ryan Rollins,MIL,NY,3pt,2,HIT,2,,targets_snapshot_2026-02-27.json
+2026-02-27,2026,Anthony Davis,DAL,MEM,ast,2,,,,targets_snapshot_2026-02-27.json
+2026-02-27,2026,James Harden,CLE,DET,ast,8,,,,targets_snapshot_2026-02-27.json
+2026-02-27,2026,Darius Garland,CLE,DET,ast,6,,,,targets_snapshot_2026-02-27.json
