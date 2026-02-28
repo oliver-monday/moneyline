@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-27",
-  "built_at_utc": "2026-02-28T03:04:58Z",
+  "built_at_utc": "2026-02-28T03:45:22Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -56,8 +56,8 @@
     },
     {
       "name": "G. Antetokounmpo",
-      "status": "OUT",
-      "details": "G. Antetokounmpo (Out)"
+      "status": "DOUBT",
+      "details": "G. Antetokounmpo (Doubt)"
     },
     {
       "name": "T. Prince",
@@ -68,8 +68,8 @@
   "MIL": [
     {
       "name": "G. Antetokounmpo",
-      "status": "OUT",
-      "details": "G. Antetokounmpo (Out)"
+      "status": "DOUBT",
+      "details": "G. Antetokounmpo (Doubt)"
     },
     {
       "name": "T. Prince",
