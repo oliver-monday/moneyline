@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-28",
-  "built_at_utc": "2026-02-28T18:29:56Z",
+  "built_at_utc": "2026-02-28T19:25:28Z",
   "source": "rotowire",
   "POR": [
     {
@@ -219,8 +219,8 @@
     },
     {
       "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
+      "status": "PROB",
+      "details": "K. George (Prob)"
     },
     {
       "name": "J. Jackson",
@@ -250,6 +250,11 @@
   ],
   "UTA": [
     {
+      "name": "K. George",
+      "status": "PROB",
+      "details": "K. George (Prob)"
+    },
+    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -268,11 +273,6 @@
       "name": "V. Williams",
       "status": "OFS",
       "details": "V. Williams (OFS)"
-    },
-    {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
     },
     {
       "name": "L. Markkanen",
