@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-27",
-  "built_at_utc": "2026-02-27T23:27:23Z",
+  "built_at_utc": "2026-02-28T01:07:07Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -84,11 +84,6 @@
       "details": "K. Caldwell-Pope (OFS)"
     },
     {
-      "name": "T. Jerome",
-      "status": "DOUBT",
-      "details": "T. Jerome (Doubt)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -109,6 +104,16 @@
       "details": "Zach Edey (Out)"
     },
     {
+      "name": "Taj Gibson",
+      "status": "OUT",
+      "details": "Taj Gibson (Out)"
+    },
+    {
+      "name": "Ty Jerome",
+      "status": "OUT",
+      "details": "Ty Jerome (Out)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
@@ -124,21 +129,6 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "C. Martin",
-      "status": "DOUBT",
-      "details": "C. Martin (Doubt)"
-    },
-    {
-      "name": "K. Thompson",
-      "status": "DOUBT",
-      "details": "K. Thompson (Doubt)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
-    },
-    {
       "name": "M. Bagley",
       "status": "OUT",
       "details": "M. Bagley (Out)"
@@ -147,6 +137,21 @@
       "name": "C. Flagg",
       "status": "OUT",
       "details": "C. Flagg (Out)"
+    },
+    {
+      "name": "C. Martin",
+      "status": "OUT",
+      "details": "C. Martin (Out)"
+    },
+    {
+      "name": "K. Thompson",
+      "status": "OUT",
+      "details": "K. Thompson (Out)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     }
   ],
   "DAL": [
@@ -161,21 +166,6 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "C. Martin",
-      "status": "DOUBT",
-      "details": "C. Martin (Doubt)"
-    },
-    {
-      "name": "K. Thompson",
-      "status": "DOUBT",
-      "details": "K. Thompson (Doubt)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
-    },
-    {
       "name": "M. Bagley",
       "status": "OUT",
       "details": "M. Bagley (Out)"
@@ -184,6 +174,21 @@
       "name": "C. Flagg",
       "status": "OUT",
       "details": "C. Flagg (Out)"
+    },
+    {
+      "name": "C. Martin",
+      "status": "OUT",
+      "details": "C. Martin (Out)"
+    },
+    {
+      "name": "K. Thompson",
+      "status": "OUT",
+      "details": "K. Thompson (Out)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     }
   ],
   "DEN": [
