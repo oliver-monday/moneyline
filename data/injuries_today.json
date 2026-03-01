@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-01",
-  "built_at_utc": "2026-03-01T14:47:37Z",
+  "built_at_utc": "2026-03-01T17:13:27Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -27,6 +27,11 @@
     }
   ],
   "MIL": [
+    {
+      "name": "T. Antetokounmpo",
+      "status": "QUES",
+      "details": "T. Antetokounmpo (Ques)"
+    },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
@@ -334,6 +339,11 @@
       "details": "D. Avdija (Ques)"
     },
     {
+      "name": "R. Williams",
+      "status": "QUES",
+      "details": "R. Williams (Ques)"
+    },
+    {
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
@@ -456,14 +466,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
-    },
-    {
       "name": "C. Martin",
       "status": "QUES",
       "details": "C. Martin (Ques)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "DOUBT",
+      "details": "P. Washington (Doubt)"
     },
     {
       "name": "M. Bagley",
@@ -488,11 +498,6 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
-    },
-    {
       "name": "N. Marshall",
       "status": "QUES",
       "details": "N. Marshall (Ques)"
@@ -501,6 +506,11 @@
       "name": "C. Martin",
       "status": "QUES",
       "details": "C. Martin (Ques)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "DOUBT",
+      "details": "P. Washington (Doubt)"
     },
     {
       "name": "M. Bagley",
@@ -515,14 +525,14 @@
   ],
   "NOP": [
     {
+      "name": "D. Murray",
+      "status": "PROB",
+      "details": "D. Murray (Prob)"
+    },
+    {
       "name": "T. Murphy",
       "status": "QUES",
       "details": "T. Murphy (Ques)"
-    },
-    {
-      "name": "D. Murray",
-      "status": "QUES",
-      "details": "D. Murray (Ques)"
     },
     {
       "name": "Z. Williamson",
