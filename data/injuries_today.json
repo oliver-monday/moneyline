@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-28",
-  "built_at_utc": "2026-03-01T01:22:22Z",
+  "built_at_utc": "2026-03-01T03:36:03Z",
   "source": "rotowire",
   "POR": [
     {
@@ -76,13 +76,18 @@
   "TOR": [
     {
       "name": "C. Hepburn",
-      "status": "OUT",
-      "details": "C. Hepburn (Out)"
+      "status": "DOUBT",
+      "details": "C. Hepburn (Doubt)"
     },
     {
       "name": "C. Murray-Boyles",
-      "status": "OUT",
-      "details": "C. Murray-Boyles (Out)"
+      "status": "QUES",
+      "details": "C. Murray-Boyles (Ques)"
+    },
+    {
+      "name": "D. Russell",
+      "status": "DOUBT",
+      "details": "D. Russell (Doubt)"
     },
     {
       "name": "C. Whitmore",
@@ -90,31 +95,36 @@
       "details": "C. Whitmore (OFS)"
     },
     {
+      "name": "T. Young",
+      "status": "DOUBT",
+      "details": "T. Young (Doubt)"
+    },
+    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
     },
     {
-      "name": "D. Russell",
-      "status": "OUT",
-      "details": "D. Russell (Out)"
-    },
-    {
       "name": "Alex Sarr",
       "status": "OUT",
       "details": "Alex Sarr (Out)"
-    },
-    {
-      "name": "Trae Young",
-      "status": "OUT",
-      "details": "Trae Young (Out)"
     }
   ],
   "WAS": [
     {
+      "name": "D. Russell",
+      "status": "DOUBT",
+      "details": "D. Russell (Doubt)"
+    },
+    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
+    },
+    {
+      "name": "T. Young",
+      "status": "DOUBT",
+      "details": "T. Young (Doubt)"
     },
     {
       "name": "A. Davis",
@@ -122,19 +132,9 @@
       "details": "A. Davis (Out)"
     },
     {
-      "name": "D. Russell",
-      "status": "OUT",
-      "details": "D. Russell (Out)"
-    },
-    {
       "name": "Alex Sarr",
       "status": "OUT",
       "details": "Alex Sarr (Out)"
-    },
-    {
-      "name": "Trae Young",
-      "status": "OUT",
-      "details": "Trae Young (Out)"
     }
   ],
   "LAL": [
@@ -147,6 +147,11 @@
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
+    },
+    {
+      "name": "W. Richard",
+      "status": "QUES",
+      "details": "W. Richard (Ques)"
     },
     {
       "name": "LJ Cryer",
@@ -174,6 +179,11 @@
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
+    },
+    {
+      "name": "W. Richard",
+      "status": "QUES",
+      "details": "W. Richard (Ques)"
     },
     {
       "name": "LJ Cryer",
