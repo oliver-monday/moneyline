@@ -6443,6 +6443,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-01,NOP,T. Murphy,QUES,T. Murphy (Ques),rotowire
 2026-03-01,SAC,R. Hachimura,QUES,R. Hachimura (Ques),rotowire
 2026-03-01,LAL,R. Hachimura,QUES,R. Hachimura (Ques),rotowire
+2026-03-01,POR,S. Cissoko,QUES,S. Cissoko (Ques),rotowire
+2026-03-01,POR,Y. Hansen,QUES,Y. Hansen (Ques),rotowire
+2026-03-01,POR,N. Alexander-Walker,QUES,N. Alexander-Walker (Ques),rotowire
+2026-03-01,POR,J. Johnson,QUES,J. Johnson (Ques),rotowire
+2026-03-01,ATL,N. Alexander-Walker,QUES,N. Alexander-Walker (Ques),rotowire
+2026-03-01,ATL,J. Johnson,QUES,J. Johnson (Ques),rotowire
 2026-03-01,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-03-01,SAS,M. Plumlee,QUES,M. Plumlee (Ques),rotowire
 2026-03-01,SAS,M. McBride,OUT,M. McBride (Out),rotowire
@@ -6494,19 +6500,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-01,IND,P. Siakam,OUT,P. Siakam (Out),rotowire
 2026-03-01,IND,I. Zubac,OUT,I. Zubac (Out),rotowire
 2026-03-01,POR,D. Lillard,OFS,D. Lillard (OFS),rotowire
-2026-03-01,POR,S. Cissoko,QUES,S. Cissoko (Ques),rotowire
-2026-03-01,POR,Y. Hansen,QUES,Y. Hansen (Ques),rotowire
 2026-03-01,POR,D. Avdija,OUT,D. Avdija (Out),rotowire
 2026-03-01,POR,S. Sharpe,OUT,S. Sharpe (Out),rotowire
 2026-03-01,POR,R. Williams,OUT,R. Williams (Out),rotowire
-2026-03-01,POR,N. Alexander-Walker,QUES,N. Alexander-Walker (Ques),rotowire
-2026-03-01,POR,J. Johnson,QUES,J. Johnson (Ques),rotowire
-2026-03-01,ATL,N. Alexander-Walker,QUES,N. Alexander-Walker (Ques),rotowire
-2026-03-01,ATL,J. Johnson,QUES,J. Johnson (Ques),rotowire
 2026-03-01,DET,I. Stewart,OUT,I. Stewart (Out),rotowire
-2026-03-01,DET,A. Black,QUES,A. Black (Ques),rotowire
+2026-03-01,DET,A. Black,OUT,A. Black (Out),rotowire
 2026-03-01,DET,F. Wagner,OUT,F. Wagner (Out),rotowire
-2026-03-01,ORL,A. Black,QUES,A. Black (Ques),rotowire
+2026-03-01,ORL,A. Black,OUT,A. Black (Out),rotowire
 2026-03-01,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
 2026-03-01,PHI,J. Broome,OUT,J. Broome (Out),rotowire
 2026-03-01,PHI,J. Embiid,OUT,J. Embiid (Out),rotowire

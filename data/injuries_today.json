@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-01",
-  "built_at_utc": "2026-03-01T21:11:15Z",
+  "built_at_utc": "2026-03-01T22:31:05Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -277,16 +277,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "S. Cissoko",
-      "status": "QUES",
-      "details": "S. Cissoko (Ques)"
-    },
-    {
-      "name": "Y. Hansen",
-      "status": "QUES",
-      "details": "Y. Hansen (Ques)"
-    },
-    {
       "name": "D. Avdija",
       "status": "OUT",
       "details": "D. Avdija (Out)"
@@ -300,28 +290,6 @@
       "name": "R. Williams",
       "status": "OUT",
       "details": "R. Williams (Out)"
-    },
-    {
-      "name": "N. Alexander-Walker",
-      "status": "QUES",
-      "details": "N. Alexander-Walker (Ques)"
-    },
-    {
-      "name": "J. Johnson",
-      "status": "QUES",
-      "details": "J. Johnson (Ques)"
-    }
-  ],
-  "ATL": [
-    {
-      "name": "N. Alexander-Walker",
-      "status": "QUES",
-      "details": "N. Alexander-Walker (Ques)"
-    },
-    {
-      "name": "J. Johnson",
-      "status": "QUES",
-      "details": "J. Johnson (Ques)"
     }
   ],
   "DET": [
@@ -332,8 +300,8 @@
     },
     {
       "name": "A. Black",
-      "status": "QUES",
-      "details": "A. Black (Ques)"
+      "status": "OUT",
+      "details": "A. Black (Out)"
     },
     {
       "name": "F. Wagner",
@@ -344,8 +312,8 @@
   "ORL": [
     {
       "name": "A. Black",
-      "status": "QUES",
-      "details": "A. Black (Ques)"
+      "status": "OUT",
+      "details": "A. Black (Out)"
     },
     {
       "name": "F. Wagner",
