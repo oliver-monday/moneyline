@@ -5,7 +5,7 @@
     "hits": 2,
     "misses": 1,
     "hit_rate_pct": 67,
-    "top_targets_total": 3,
+    "top_targets_total": 2,
     "top_targets_hits": 2
   },
   "hits": [
@@ -106,7 +106,7 @@
       "actual": 3
     }
   ],
-  "built_at_utc": "2026-03-01T08:55:31Z",
+  "built_at_utc": "2026-03-01T14:15:17Z",
   "snapshot_file": "targets_snapshot_2026-02-28.json",
   "preset": "baseline",
   "top_targets": [
@@ -134,31 +134,6 @@
       "actual": 6,
       "hit": true,
       "delta": -4
-    },
-    {
-      "asof_date": "2026-02-28",
-      "player_id": "4395724.0",
-      "player_name": "Immanuel Quickley",
-      "team_abbrev": "TOR",
-      "opp": "WSH",
-      "game_id": "401810720",
-      "stat": "3pt",
-      "threshold": 3,
-      "hits": 8,
-      "window_games": 10,
-      "hit_rate": 0.8,
-      "is_home_game": false,
-      "rest_days": 2,
-      "is_b2b": false,
-      "share_trend_pp": -1.479402541902547,
-      "share_trend_dir": "FLAT",
-      "iqr_10": 1.0,
-      "landmine_rate_10": null,
-      "trap_risk": null,
-      "dnp": false,
-      "actual": 2,
-      "hit": false,
-      "delta": 1
     },
     {
       "asof_date": "2026-02-28",
