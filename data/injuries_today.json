@@ -1,17 +1,17 @@
 {
   "asof_date": "2026-02-28",
-  "built_at_utc": "2026-02-28T23:24:47Z",
+  "built_at_utc": "2026-03-01T01:22:22Z",
   "source": "rotowire",
   "POR": [
+    {
+      "name": "D. Avdija",
+      "status": "QUES",
+      "details": "D. Avdija (Ques)"
+    },
     {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "D. Avdija",
-      "status": "OUT",
-      "details": "D. Avdija (Out)"
     },
     {
       "name": "S. Sharpe",
@@ -42,8 +42,8 @@
     },
     {
       "name": "N. Jovic",
-      "status": "OUT",
-      "details": "N. Jovic (Out)"
+      "status": "QUES",
+      "details": "N. Jovic (Ques)"
     },
     {
       "name": "N. Powell",
@@ -59,8 +59,8 @@
   "MIA": [
     {
       "name": "N. Jovic",
-      "status": "OUT",
-      "details": "N. Jovic (Out)"
+      "status": "QUES",
+      "details": "N. Jovic (Ques)"
     },
     {
       "name": "N. Powell",
@@ -144,11 +144,6 @@
       "details": "R. Hachimura (Out)"
     },
     {
-      "name": "D. Green",
-      "status": "PROB",
-      "details": "D. Green (Prob)"
-    },
-    {
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
@@ -179,11 +174,6 @@
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
-    },
-    {
-      "name": "D. Green",
-      "status": "PROB",
-      "details": "D. Green (Prob)"
     },
     {
       "name": "LJ Cryer",
@@ -218,11 +208,6 @@
       "details": "D. Murray (Out)"
     },
     {
-      "name": "K. George",
-      "status": "PROB",
-      "details": "K. George (Prob)"
-    },
-    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -249,11 +234,6 @@
     }
   ],
   "UTA": [
-    {
-      "name": "K. George",
-      "status": "PROB",
-      "details": "K. George (Prob)"
-    },
     {
       "name": "J. Jackson",
       "status": "OFS",
