@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-01",
-  "built_at_utc": "2026-03-01T22:31:05Z",
+  "built_at_utc": "2026-03-01T23:27:01Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -29,13 +29,13 @@
   "MIL": [
     {
       "name": "G. Antetokounmpo",
-      "status": "OUT",
-      "details": "G. Antetokounmpo (Out)"
+      "status": "DOUBT",
+      "details": "G. Antetokounmpo (Doubt)"
     },
     {
       "name": "T. Antetokounmpo",
-      "status": "OUT",
-      "details": "T. Antetokounmpo (Out)"
+      "status": "QUES",
+      "details": "T. Antetokounmpo (Ques)"
     },
     {
       "name": "T. Prince",
@@ -107,19 +107,24 @@
   ],
   "DEN": [
     {
-      "name": "T. Bates",
-      "status": "OUT",
-      "details": "T. Bates (Out)"
+      "name": "A. Gordon",
+      "status": "DOUBT",
+      "details": "A. Gordon (Doubt)"
     },
     {
-      "name": "A. Gordon",
-      "status": "OUT",
-      "details": "A. Gordon (Out)"
+      "name": "C. Johnson",
+      "status": "QUES",
+      "details": "C. Johnson (Ques)"
     },
     {
       "name": "S. Jones",
+      "status": "QUES",
+      "details": "S. Jones (Ques)"
+    },
+    {
+      "name": "T. Bates",
       "status": "OUT",
-      "details": "S. Jones (Out)"
+      "details": "T. Bates (Out)"
     },
     {
       "name": "P. Watson",
@@ -130,8 +135,13 @@
   "CLE": [
     {
       "name": "D. Mitchell",
-      "status": "OUT",
-      "details": "D. Mitchell (Out)"
+      "status": "QUES",
+      "details": "D. Mitchell (Ques)"
+    },
+    {
+      "name": "D. Wade",
+      "status": "QUES",
+      "details": "D. Wade (Ques)"
     },
     {
       "name": "Max Strus",
@@ -139,31 +149,26 @@
       "details": "Max Strus (Out)"
     },
     {
-      "name": "Dean Wade",
-      "status": "OUT",
-      "details": "Dean Wade (Out)"
-    },
-    {
       "name": "N. Claxton",
-      "status": "OUT",
-      "details": "N. Claxton (Out)"
+      "status": "QUES",
+      "details": "N. Claxton (Ques)"
     },
     {
-      "name": "Egor Demin",
-      "status": "OUT",
-      "details": "Egor Demin (Out)"
+      "name": "E. Demin",
+      "status": "QUES",
+      "details": "E. Demin (Ques)"
     }
   ],
   "BKN": [
     {
       "name": "N. Claxton",
-      "status": "OUT",
-      "details": "N. Claxton (Out)"
+      "status": "QUES",
+      "details": "N. Claxton (Ques)"
     },
     {
-      "name": "Egor Demin",
-      "status": "OUT",
-      "details": "Egor Demin (Out)"
+      "name": "E. Demin",
+      "status": "QUES",
+      "details": "E. Demin (Ques)"
     }
   ],
   "MEM": [
@@ -338,22 +343,12 @@
       "details": "P. George (Out)"
     },
     {
-      "name": "B. Scheierman",
-      "status": "QUES",
-      "details": "B. Scheierman (Ques)"
-    },
-    {
       "name": "J. Tatum",
       "status": "OUT",
       "details": "J. Tatum (Out)"
     }
   ],
   "BOS": [
-    {
-      "name": "B. Scheierman",
-      "status": "QUES",
-      "details": "B. Scheierman (Ques)"
-    },
     {
       "name": "J. Tatum",
       "status": "OUT",
@@ -429,14 +424,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "C. Martin",
-      "status": "PROB",
-      "details": "C. Martin (Prob)"
-    },
-    {
       "name": "N. Marshall",
       "status": "DOUBT",
       "details": "N. Marshall (Doubt)"
+    },
+    {
+      "name": "C. Martin",
+      "status": "PROB",
+      "details": "C. Martin (Prob)"
     },
     {
       "name": "P. Washington",
@@ -534,19 +529,24 @@
   ],
   "MIN": [
     {
-      "name": "T. Bates",
-      "status": "OUT",
-      "details": "T. Bates (Out)"
+      "name": "C. Johnson",
+      "status": "QUES",
+      "details": "C. Johnson (Ques)"
     },
     {
       "name": "A. Gordon",
-      "status": "OUT",
-      "details": "A. Gordon (Out)"
+      "status": "DOUBT",
+      "details": "A. Gordon (Doubt)"
     },
     {
       "name": "S. Jones",
+      "status": "QUES",
+      "details": "S. Jones (Ques)"
+    },
+    {
+      "name": "T. Bates",
       "status": "OUT",
-      "details": "S. Jones (Out)"
+      "details": "T. Bates (Out)"
     },
     {
       "name": "P. Watson",
