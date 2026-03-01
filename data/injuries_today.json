@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-02-28",
-  "built_at_utc": "2026-03-01T03:36:03Z",
+  "built_at_utc": "2026-03-01T04:12:29Z",
   "source": "rotowire",
   "POR": [
     {
@@ -140,8 +140,8 @@
   "LAL": [
     {
       "name": "R. Hachimura",
-      "status": "OUT",
-      "details": "R. Hachimura (Out)"
+      "status": "QUES",
+      "details": "R. Hachimura (Ques)"
     },
     {
       "name": "J. Butler",
@@ -149,29 +149,29 @@
       "details": "J. Butler (OFS)"
     },
     {
+      "name": "L. Cryer",
+      "status": "QUES",
+      "details": "L. Cryer (Ques)"
+    },
+    {
+      "name": "S. Curry",
+      "status": "DOUBT",
+      "details": "S. Curry (Doubt)"
+    },
+    {
+      "name": "K. Porzingis",
+      "status": "QUES",
+      "details": "K. Porzingis (Ques)"
+    },
+    {
       "name": "W. Richard",
       "status": "QUES",
       "details": "W. Richard (Ques)"
     },
     {
-      "name": "LJ Cryer",
-      "status": "OUT",
-      "details": "LJ Cryer (Out)"
-    },
-    {
-      "name": "S. Curry",
-      "status": "OUT",
-      "details": "S. Curry (Out)"
-    },
-    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
-    },
-    {
-      "name": "K. Porzingis",
-      "status": "OUT",
-      "details": "K. Porzingis (Out)"
     }
   ],
   "GSW": [
@@ -181,32 +181,37 @@
       "details": "J. Butler (OFS)"
     },
     {
+      "name": "L. Cryer",
+      "status": "QUES",
+      "details": "L. Cryer (Ques)"
+    },
+    {
+      "name": "S. Curry",
+      "status": "DOUBT",
+      "details": "S. Curry (Doubt)"
+    },
+    {
+      "name": "K. Porzingis",
+      "status": "QUES",
+      "details": "K. Porzingis (Ques)"
+    },
+    {
       "name": "W. Richard",
       "status": "QUES",
       "details": "W. Richard (Ques)"
     },
     {
-      "name": "LJ Cryer",
-      "status": "OUT",
-      "details": "LJ Cryer (Out)"
-    },
-    {
-      "name": "S. Curry",
-      "status": "OUT",
-      "details": "S. Curry (Out)"
-    },
-    {
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
-    },
-    {
-      "name": "K. Porzingis",
-      "status": "OUT",
-      "details": "K. Porzingis (Out)"
     }
   ],
   "NOP": [
+    {
+      "name": "Z. Williamson",
+      "status": "QUES",
+      "details": "Z. Williamson (Ques)"
+    },
     {
       "name": "T. Murphy",
       "status": "OUT",
