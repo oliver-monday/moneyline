@@ -914,7 +914,7 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810731,2026-03-01,2026-03-02T01:00Z,Dallas Mavericks,DAL,87,700.0,,Oklahoma City Thunder,OKC,100,-1100.0,,Dallas,TX,,
 401810732,2026-03-01,2026-03-02T02:00Z,LA Clippers,LAC,137,-360.0,,New Orleans Pelicans,NO,117,285.0,,Inglewood,CA,,
 401810733,2026-03-01,2026-03-02T02:30Z,Los Angeles Lakers,LAL,128,-750.0,,Sacramento Kings,SAC,104,525.0,,Los Angeles,CA,,
-401810734,2026-03-02,2026-03-03T00:00Z,Washington Wizards,WSH,0,750.0,,Houston Rockets,HOU,0,-1200.0,,Washington,DC,C. Whitmore (OFS); L. Black (Out); A. Davis (Out); D. Russell (Out); Alex Sarr (Out); Trae Young (Out),S. Adams (OFS); J. Smith (Out); J. Tate (Out); F. VanVleet (Out)
+401810734,2026-03-02,2026-03-03T00:00Z,Washington Wizards,WSH,0,700.0,,Houston Rockets,HOU,0,-1100.0,,Washington,DC,C. Whitmore (OFS); L. Black (Out); A. Davis (Out); D. Russell (Out); Alex Sarr (Out); Trae Young (Out),S. Adams (OFS); J. Smith (Out); J. Tate (Out); F. VanVleet (Out)
 401810735,2026-03-02,2026-03-03T00:30Z,Milwaukee Bucks,MIL,0,250.0,,Boston Celtics,BOS,0,-310.0,,Milwaukee,WI,T. Prince (Out),J. Tatum (Out)
 401810736,2026-03-02,2026-03-03T02:00Z,Utah Jazz,UTAH,0,410.0,,Denver Nuggets,DEN,0,-550.0,,Salt Lake City,UT,J. Jackson (OFS); W. Kessler (OFS); J. Nurkic (OFS); V. Williams (OFS); Kevin Love (Out); L. Markkanen (Out),T. Bates (Out); P. Watson (Out)
-401810737,2026-03-02,2026-03-03T03:00Z,Golden State Warriors,GS,0,102.0,,LA Clippers,LAC,0,-122.0,,San Francisco,CA,J. Butler (OFS); S. Curry (Out); Seth Curry (Out); K. Porzingis (Out); W. Richard (Out),B. Beal (OFS); D. Garland (Out)
+401810737,2026-03-02,2026-03-03T03:00Z,Golden State Warriors,GS,0,102.0,,LA Clippers,LAC,0,-122.0,,San Francisco,CA,J. Butler (OFS); S. Curry (Out); Seth Curry (Out); K. Porzingis (Out); W. Richard (Out),B. Beal (OFS)
