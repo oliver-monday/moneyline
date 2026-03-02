@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-02",
-  "built_at_utc": "2026-03-02T17:36:26Z",
+  "built_at_utc": "2026-03-02T18:43:11Z",
   "source": "rotowire",
   "HOU": [
     {
@@ -24,24 +24,14 @@
       "details": "F. VanVleet (Out)"
     },
     {
-      "name": "K. George",
+      "name": "A. Gill",
       "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
+      "details": "A. Gill (Ques)"
     },
     {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "A. Gill",
-      "status": "QUES",
-      "details": "A. Gill (Ques)"
     },
     {
       "name": "L. Black",
@@ -62,6 +52,11 @@
       "name": "Alex Sarr",
       "status": "OUT",
       "details": "Alex Sarr (Out)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "OUT",
+      "details": "T. Vukcevic (Out)"
     },
     {
       "name": "Trae Young",
@@ -76,19 +71,9 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
       "name": "A. Gill",
       "status": "QUES",
       "details": "A. Gill (Ques)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
     },
     {
       "name": "L. Black",
@@ -109,6 +94,11 @@
       "name": "Alex Sarr",
       "status": "OUT",
       "details": "Alex Sarr (Out)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "OUT",
+      "details": "T. Vukcevic (Out)"
     },
     {
       "name": "Trae Young",
@@ -124,8 +114,8 @@
     },
     {
       "name": "G. Antetokounmpo",
-      "status": "QUES",
-      "details": "G. Antetokounmpo (Ques)"
+      "status": "PROB",
+      "details": "G. Antetokounmpo (Prob)"
     },
     {
       "name": "T. Antetokounmpo",
@@ -141,8 +131,8 @@
   "MIL": [
     {
       "name": "G. Antetokounmpo",
-      "status": "QUES",
-      "details": "G. Antetokounmpo (Ques)"
+      "status": "PROB",
+      "details": "G. Antetokounmpo (Prob)"
     },
     {
       "name": "T. Antetokounmpo",
