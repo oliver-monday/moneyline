@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-02",
-  "built_at_utc": "2026-03-02T19:39:25Z",
+  "built_at_utc": "2026-03-02T20:35:33Z",
   "source": "rotowire",
   "HOU": [
     {
@@ -147,24 +147,24 @@
   ],
   "DEN": [
     {
-      "name": "S. Jones",
-      "status": "QUES",
-      "details": "S. Jones (Ques)"
-    },
-    {
-      "name": "A. Gordon",
-      "status": "DOUBT",
-      "details": "A. Gordon (Doubt)"
-    },
-    {
-      "name": "C. Johnson",
-      "status": "DOUBT",
-      "details": "C. Johnson (Doubt)"
-    },
-    {
       "name": "T. Bates",
       "status": "OUT",
       "details": "T. Bates (Out)"
+    },
+    {
+      "name": "A. Gordon",
+      "status": "OUT",
+      "details": "A. Gordon (Out)"
+    },
+    {
+      "name": "C. Johnson",
+      "status": "OUT",
+      "details": "C. Johnson (Out)"
+    },
+    {
+      "name": "S. Jones",
+      "status": "OUT",
+      "details": "S. Jones (Out)"
     },
     {
       "name": "P. Watson",

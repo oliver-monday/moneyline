@@ -6590,10 +6590,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-02,BOS,T. Prince,OUT,T. Prince (Out),rotowire
 2026-03-02,MIL,G. Antetokounmpo,PROB,G. Antetokounmpo (Prob),rotowire
 2026-03-02,MIL,T. Prince,OUT,T. Prince (Out),rotowire
-2026-03-02,DEN,S. Jones,QUES,S. Jones (Ques),rotowire
-2026-03-02,DEN,A. Gordon,DOUBT,A. Gordon (Doubt),rotowire
-2026-03-02,DEN,C. Johnson,DOUBT,C. Johnson (Doubt),rotowire
 2026-03-02,DEN,T. Bates,OUT,T. Bates (Out),rotowire
+2026-03-02,DEN,A. Gordon,OUT,A. Gordon (Out),rotowire
+2026-03-02,DEN,C. Johnson,OUT,C. Johnson (Out),rotowire
+2026-03-02,DEN,S. Jones,OUT,S. Jones (Out),rotowire
 2026-03-02,DEN,P. Watson,OUT,P. Watson (Out),rotowire
 2026-03-02,DEN,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-03-02,DEN,W. Kessler,OFS,W. Kessler (OFS),rotowire
