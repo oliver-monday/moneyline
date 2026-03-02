@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-02",
-  "built_at_utc": "2026-03-02T18:43:11Z",
+  "built_at_utc": "2026-03-02T19:39:25Z",
   "source": "rotowire",
   "HOU": [
     {
@@ -108,6 +108,16 @@
   ],
   "BOS": [
     {
+      "name": "J. Brown",
+      "status": "OUT",
+      "details": "J. Brown (Out)"
+    },
+    {
+      "name": "N. Queta",
+      "status": "OUT",
+      "details": "N. Queta (Out)"
+    },
+    {
       "name": "J. Tatum",
       "status": "OUT",
       "details": "J. Tatum (Out)"
@@ -116,11 +126,6 @@
       "name": "G. Antetokounmpo",
       "status": "PROB",
       "details": "G. Antetokounmpo (Prob)"
-    },
-    {
-      "name": "T. Antetokounmpo",
-      "status": "QUES",
-      "details": "T. Antetokounmpo (Ques)"
     },
     {
       "name": "T. Prince",
@@ -133,11 +138,6 @@
       "name": "G. Antetokounmpo",
       "status": "PROB",
       "details": "G. Antetokounmpo (Prob)"
-    },
-    {
-      "name": "T. Antetokounmpo",
-      "status": "QUES",
-      "details": "T. Antetokounmpo (Ques)"
     },
     {
       "name": "T. Prince",
