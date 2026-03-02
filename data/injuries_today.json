@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-01",
-  "built_at_utc": "2026-03-02T01:14:33Z",
+  "built_at_utc": "2026-03-02T03:25:34Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -277,6 +277,11 @@
   ],
   "POR": [
     {
+      "name": "D. Avdija",
+      "status": "QUES",
+      "details": "D. Avdija (Ques)"
+    },
+    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
@@ -287,43 +292,21 @@
       "details": "K. Murray (Ques)"
     },
     {
-      "name": "D. Avdija",
-      "status": "OUT",
-      "details": "D. Avdija (Out)"
+      "name": "R. Williams",
+      "status": "PROB",
+      "details": "R. Williams (Prob)"
     },
     {
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "OUT",
-      "details": "R. Williams (Out)"
-    }
-  ],
-  "DET": [
-    {
-      "name": "I. Stewart",
-      "status": "OUT",
-      "details": "I. Stewart (Out)"
-    },
-    {
-      "name": "A. Black",
-      "status": "OUT",
-      "details": "A. Black (Out)"
-    },
-    {
-      "name": "F. Wagner",
-      "status": "OUT",
-      "details": "F. Wagner (Out)"
     }
   ],
   "ORL": [
     {
       "name": "A. Black",
-      "status": "OUT",
-      "details": "A. Black (Out)"
+      "status": "QUES",
+      "details": "A. Black (Ques)"
     },
     {
       "name": "F. Wagner",
@@ -392,6 +375,11 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "K. Thompson",
+      "status": "QUES",
+      "details": "K. Thompson (Ques)"
+    },
+    {
       "name": "M. Bagley",
       "status": "OUT",
       "details": "M. Bagley (Out)"
@@ -422,6 +410,11 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
+    },
+    {
+      "name": "K. Thompson",
+      "status": "QUES",
+      "details": "K. Thompson (Ques)"
     },
     {
       "name": "M. Bagley",
@@ -498,18 +491,6 @@
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
-    },
-    {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
-    }
-  ],
-  "LAL": [
-    {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
     }
   ],
   "MIN": [
@@ -537,6 +518,18 @@
       "name": "P. Watson",
       "status": "OUT",
       "details": "P. Watson (Out)"
+    }
+  ],
+  "DET": [
+    {
+      "name": "A. Black",
+      "status": "QUES",
+      "details": "A. Black (Ques)"
+    },
+    {
+      "name": "F. Wagner",
+      "status": "OUT",
+      "details": "F. Wagner (Out)"
     }
   ]
 }
