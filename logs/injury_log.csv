@@ -6564,6 +6564,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-02,BOS,T. Antetokounmpo,QUES,T. Antetokounmpo (Ques),rotowire
 2026-03-02,MIL,T. Antetokounmpo,QUES,T. Antetokounmpo (Ques),rotowire
 2026-03-02,LAC,K. Dunn,QUES,K. Dunn (Ques),rotowire
+2026-03-02,BOS,G. Antetokounmpo,PROB,G. Antetokounmpo (Prob),rotowire
+2026-03-02,MIL,G. Antetokounmpo,PROB,G. Antetokounmpo (Prob),rotowire
 2026-03-02,HOU,S. Adams,OFS,S. Adams (OFS),rotowire
 2026-03-02,HOU,J. Smith,OUT,J. Smith (Out),rotowire
 2026-03-02,HOU,J. Tate,OUT,J. Tate (Out),rotowire
@@ -6587,9 +6589,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-02,BOS,J. Brown,OUT,J. Brown (Out),rotowire
 2026-03-02,BOS,N. Queta,OUT,N. Queta (Out),rotowire
 2026-03-02,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
-2026-03-02,BOS,G. Antetokounmpo,PROB,G. Antetokounmpo (Prob),rotowire
 2026-03-02,BOS,T. Prince,OUT,T. Prince (Out),rotowire
-2026-03-02,MIL,G. Antetokounmpo,PROB,G. Antetokounmpo (Prob),rotowire
 2026-03-02,MIL,T. Prince,OUT,T. Prince (Out),rotowire
 2026-03-02,DEN,T. Bates,OUT,T. Bates (Out),rotowire
 2026-03-02,DEN,A. Gordon,OUT,A. Gordon (Out),rotowire
@@ -6612,12 +6612,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-02,LAC,J. Collins,OUT,J. Collins (Out),rotowire
 2026-03-02,LAC,J. Butler,OFS,J. Butler (OFS),rotowire
 2026-03-02,LAC,G. Payton,QUES,G. Payton (Ques),rotowire
+2026-03-02,LAC,LJ Cryer,OUT,LJ Cryer (Out),rotowire
 2026-03-02,LAC,S. Curry,OUT,S. Curry (Out),rotowire
 2026-03-02,LAC,Seth Curry,OUT,Seth Curry (Out),rotowire
 2026-03-02,LAC,K. Porzingis,OUT,K. Porzingis (Out),rotowire
 2026-03-02,LAC,W. Richard,OUT,W. Richard (Out),rotowire
 2026-03-02,GSW,J. Butler,OFS,J. Butler (OFS),rotowire
 2026-03-02,GSW,G. Payton,QUES,G. Payton (Ques),rotowire
+2026-03-02,GSW,LJ Cryer,OUT,LJ Cryer (Out),rotowire
 2026-03-02,GSW,S. Curry,OUT,S. Curry (Out),rotowire
 2026-03-02,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
 2026-03-02,GSW,K. Porzingis,OUT,K. Porzingis (Out),rotowire
