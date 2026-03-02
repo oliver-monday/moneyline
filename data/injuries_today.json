@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-01",
-  "built_at_utc": "2026-03-01T23:27:01Z",
+  "built_at_utc": "2026-03-02T01:14:33Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -29,8 +29,8 @@
   "MIL": [
     {
       "name": "G. Antetokounmpo",
-      "status": "DOUBT",
-      "details": "G. Antetokounmpo (Doubt)"
+      "status": "QUES",
+      "details": "G. Antetokounmpo (Ques)"
     },
     {
       "name": "T. Antetokounmpo",
@@ -173,14 +173,29 @@
   ],
   "MEM": [
     {
+      "name": "S. Aldama",
+      "status": "QUES",
+      "details": "S. Aldama (Ques)"
+    },
+    {
       "name": "K. Caldwell-Pope",
       "status": "OFS",
       "details": "K. Caldwell-Pope (OFS)"
     },
     {
-      "name": "S. Aldama",
-      "status": "OUT",
-      "details": "S. Aldama (Out)"
+      "name": "C. Coward",
+      "status": "QUES",
+      "details": "C. Coward (Ques)"
+    },
+    {
+      "name": "T. Gibson",
+      "status": "QUES",
+      "details": "T. Gibson (Ques)"
+    },
+    {
+      "name": "T. Jerome",
+      "status": "QUES",
+      "details": "T. Jerome (Ques)"
     },
     {
       "name": "B. Clarke",
@@ -188,24 +203,9 @@
       "details": "B. Clarke (Out)"
     },
     {
-      "name": "C. Coward",
-      "status": "OUT",
-      "details": "C. Coward (Out)"
-    },
-    {
       "name": "Zach Edey",
       "status": "OUT",
       "details": "Zach Edey (Out)"
-    },
-    {
-      "name": "Taj Gibson",
-      "status": "OUT",
-      "details": "Taj Gibson (Out)"
-    },
-    {
-      "name": "Ty Jerome",
-      "status": "OUT",
-      "details": "Ty Jerome (Out)"
     },
     {
       "name": "Ja Morant",
@@ -224,23 +224,23 @@
     },
     {
       "name": "A. Nembhard",
-      "status": "OUT",
-      "details": "A. Nembhard (Out)"
+      "status": "QUES",
+      "details": "A. Nembhard (Ques)"
     },
     {
       "name": "A. Nesmith",
-      "status": "OUT",
-      "details": "A. Nesmith (Out)"
+      "status": "DOUBT",
+      "details": "A. Nesmith (Doubt)"
     },
     {
       "name": "P. Siakam",
-      "status": "OUT",
-      "details": "P. Siakam (Out)"
+      "status": "QUES",
+      "details": "P. Siakam (Ques)"
     },
     {
       "name": "I. Zubac",
-      "status": "OUT",
-      "details": "I. Zubac (Out)"
+      "status": "DOUBT",
+      "details": "I. Zubac (Doubt)"
     }
   ],
   "IND": [
@@ -256,23 +256,23 @@
     },
     {
       "name": "A. Nembhard",
-      "status": "OUT",
-      "details": "A. Nembhard (Out)"
+      "status": "QUES",
+      "details": "A. Nembhard (Ques)"
     },
     {
       "name": "A. Nesmith",
-      "status": "OUT",
-      "details": "A. Nesmith (Out)"
+      "status": "DOUBT",
+      "details": "A. Nesmith (Doubt)"
     },
     {
       "name": "P. Siakam",
-      "status": "OUT",
-      "details": "P. Siakam (Out)"
+      "status": "QUES",
+      "details": "P. Siakam (Ques)"
     },
     {
       "name": "I. Zubac",
-      "status": "OUT",
-      "details": "I. Zubac (Out)"
+      "status": "DOUBT",
+      "details": "I. Zubac (Doubt)"
     }
   ],
   "POR": [
@@ -280,6 +280,11 @@
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "K. Murray",
+      "status": "QUES",
+      "details": "K. Murray (Ques)"
     },
     {
       "name": "D. Avdija",
@@ -377,11 +382,6 @@
       "details": "J. Williams (Out)"
     },
     {
-      "name": "C. Martin",
-      "status": "PROB",
-      "details": "C. Martin (Prob)"
-    },
-    {
       "name": "K. Irving",
       "status": "OFS",
       "details": "K. Irving (OFS)"
@@ -392,16 +392,6 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "N. Marshall",
-      "status": "DOUBT",
-      "details": "N. Marshall (Doubt)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
-    },
-    {
       "name": "M. Bagley",
       "status": "OUT",
       "details": "M. Bagley (Out)"
@@ -410,6 +400,16 @@
       "name": "C. Flagg",
       "status": "OUT",
       "details": "C. Flagg (Out)"
+    },
+    {
+      "name": "N. Marshall",
+      "status": "OUT",
+      "details": "N. Marshall (Out)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     }
   ],
   "DAL": [
@@ -424,21 +424,6 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "N. Marshall",
-      "status": "DOUBT",
-      "details": "N. Marshall (Doubt)"
-    },
-    {
-      "name": "C. Martin",
-      "status": "PROB",
-      "details": "C. Martin (Prob)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
-    },
-    {
       "name": "M. Bagley",
       "status": "OUT",
       "details": "M. Bagley (Out)"
@@ -447,18 +432,23 @@
       "name": "C. Flagg",
       "status": "OUT",
       "details": "C. Flagg (Out)"
+    },
+    {
+      "name": "N. Marshall",
+      "status": "OUT",
+      "details": "N. Marshall (Out)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     }
   ],
   "NOP": [
     {
       "name": "Z. Williamson",
-      "status": "QUES",
-      "details": "Z. Williamson (Ques)"
-    },
-    {
-      "name": "J. Collins",
-      "status": "QUES",
-      "details": "J. Collins (Ques)"
+      "status": "OUT",
+      "details": "Z. Williamson (Out)"
     },
     {
       "name": "B. Beal",
@@ -476,11 +466,6 @@
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
-    },
-    {
-      "name": "J. Collins",
-      "status": "QUES",
-      "details": "J. Collins (Ques)"
     },
     {
       "name": "D. Garland",
