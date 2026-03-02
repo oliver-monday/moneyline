@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-01",
-  "built_at_utc": "2026-03-02T03:25:34Z",
+  "built_at_utc": "2026-03-02T04:03:50Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -375,9 +375,19 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "N. Marshall",
+      "status": "QUES",
+      "details": "N. Marshall (Ques)"
+    },
+    {
       "name": "K. Thompson",
       "status": "QUES",
       "details": "K. Thompson (Ques)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "QUES",
+      "details": "P. Washington (Ques)"
     },
     {
       "name": "M. Bagley",
@@ -388,16 +398,6 @@
       "name": "C. Flagg",
       "status": "OUT",
       "details": "C. Flagg (Out)"
-    },
-    {
-      "name": "N. Marshall",
-      "status": "OUT",
-      "details": "N. Marshall (Out)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "OUT",
-      "details": "P. Washington (Out)"
     }
   ],
   "DAL": [
@@ -412,9 +412,19 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "N. Marshall",
+      "status": "QUES",
+      "details": "N. Marshall (Ques)"
+    },
+    {
       "name": "K. Thompson",
       "status": "QUES",
       "details": "K. Thompson (Ques)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "QUES",
+      "details": "P. Washington (Ques)"
     },
     {
       "name": "M. Bagley",
@@ -425,16 +435,6 @@
       "name": "C. Flagg",
       "status": "OUT",
       "details": "C. Flagg (Out)"
-    },
-    {
-      "name": "N. Marshall",
-      "status": "OUT",
-      "details": "N. Marshall (Out)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "OUT",
-      "details": "P. Washington (Out)"
     }
   ],
   "NOP": [
