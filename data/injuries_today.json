@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-03",
-  "built_at_utc": "2026-03-03T09:02:48Z",
+  "built_at_utc": "2026-03-03T15:10:58Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -26,14 +26,29 @@
       "details": "C. Whitmore (OFS)"
     },
     {
+      "name": "L. Black",
+      "status": "QUES",
+      "details": "L. Black (Ques)"
+    },
+    {
       "name": "K. George",
       "status": "QUES",
       "details": "K. George (Ques)"
     },
     {
-      "name": "L. Black",
-      "status": "OUT",
-      "details": "L. Black (Out)"
+      "name": "A. Gill",
+      "status": "QUES",
+      "details": "A. Gill (Ques)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "QUES",
+      "details": "T. Vukcevic (Ques)"
+    },
+    {
+      "name": "D. Russell",
+      "status": "DOUBT",
+      "details": "D. Russell (Doubt)"
     },
     {
       "name": "A. Davis",
@@ -41,24 +56,9 @@
       "details": "A. Davis (Out)"
     },
     {
-      "name": "A. Gill",
-      "status": "OUT",
-      "details": "A. Gill (Out)"
-    },
-    {
-      "name": "D. Russell",
-      "status": "OUT",
-      "details": "D. Russell (Out)"
-    },
-    {
       "name": "Alex Sarr",
       "status": "OUT",
       "details": "Alex Sarr (Out)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "OUT",
-      "details": "T. Vukcevic (Out)"
     },
     {
       "name": "Trae Young",
