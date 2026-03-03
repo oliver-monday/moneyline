@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-02",
-  "built_at_utc": "2026-03-02T23:29:30Z",
+  "built_at_utc": "2026-03-03T01:16:58Z",
   "source": "rotowire",
   "HOU": [
     {
@@ -24,11 +24,6 @@
       "details": "F. VanVleet (Out)"
     },
     {
-      "name": "A. Gill",
-      "status": "QUES",
-      "details": "A. Gill (Ques)"
-    },
-    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
@@ -42,6 +37,11 @@
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
+    },
+    {
+      "name": "A. Gill",
+      "status": "OUT",
+      "details": "A. Gill (Out)"
     },
     {
       "name": "D. Russell",
@@ -71,11 +71,6 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "A. Gill",
-      "status": "QUES",
-      "details": "A. Gill (Ques)"
-    },
-    {
       "name": "L. Black",
       "status": "OUT",
       "details": "L. Black (Out)"
@@ -84,6 +79,11 @@
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
+    },
+    {
+      "name": "A. Gill",
+      "status": "OUT",
+      "details": "A. Gill (Out)"
     },
     {
       "name": "D. Russell",
