@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-03",
-  "built_at_utc": "2026-03-03T17:34:02Z",
+  "built_at_utc": "2026-03-03T18:43:19Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -26,29 +26,9 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "L. Black",
-      "status": "QUES",
-      "details": "L. Black (Ques)"
-    },
-    {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
       "name": "A. Gill",
       "status": "QUES",
       "details": "A. Gill (Ques)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
-    },
-    {
-      "name": "D. Russell",
-      "status": "DOUBT",
-      "details": "D. Russell (Doubt)"
     },
     {
       "name": "A. Davis",
@@ -56,9 +36,29 @@
       "details": "A. Davis (Out)"
     },
     {
+      "name": "K. George",
+      "status": "OUT",
+      "details": "K. George (Out)"
+    },
+    {
+      "name": "D. Russell",
+      "status": "OUT",
+      "details": "D. Russell (Out)"
+    },
+    {
       "name": "Alex Sarr",
       "status": "OUT",
       "details": "Alex Sarr (Out)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "OUT",
+      "details": "T. Vukcevic (Out)"
+    },
+    {
+      "name": "J. Watkins",
+      "status": "OUT",
+      "details": "J. Watkins (Out)"
     },
     {
       "name": "Trae Young",
@@ -67,8 +67,8 @@
     },
     {
       "name": "A. Black",
-      "status": "DOUBT",
-      "details": "A. Black (Doubt)"
+      "status": "QUES",
+      "details": "A. Black (Ques)"
     },
     {
       "name": "F. Wagner",
@@ -79,8 +79,8 @@
   "ORL": [
     {
       "name": "A. Black",
-      "status": "DOUBT",
-      "details": "A. Black (Doubt)"
+      "status": "QUES",
+      "details": "A. Black (Ques)"
     },
     {
       "name": "F. Wagner",
@@ -105,19 +105,19 @@
       "details": "C. Martin (Prob)"
     },
     {
-      "name": "K. Thompson",
-      "status": "QUES",
-      "details": "K. Thompson (Ques)"
-    },
-    {
       "name": "P. Washington",
-      "status": "QUES",
-      "details": "P. Washington (Ques)"
+      "status": "PROB",
+      "details": "P. Washington (Prob)"
     },
     {
       "name": "C. Flagg",
       "status": "DOUBT",
       "details": "C. Flagg (Doubt)"
+    },
+    {
+      "name": "K. Thompson",
+      "status": "DOUBT",
+      "details": "K. Thompson (Doubt)"
     },
     {
       "name": "M. Bagley",
@@ -143,11 +143,6 @@
     }
   ],
   "BKN": [
-    {
-      "name": "N. Claxton",
-      "status": "PROB",
-      "details": "N. Claxton (Prob)"
-    },
     {
       "name": "Egor Demin",
       "status": "OUT",
