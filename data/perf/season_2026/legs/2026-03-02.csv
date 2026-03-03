@@ -1,0 +1,5 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-02,2026,Christian Braun,DEN,UTAH,pts,10,HIT,11,,targets_snapshot_2026-03-02.json
+2026-03-02,2026,Christian Braun,DEN,UTAH,reb,4,HIT,6,,targets_snapshot_2026-03-02.json
+2026-03-02,2026,Christian Braun,DEN,UTAH,ast,2,HIT,4,,targets_snapshot_2026-03-02.json
+2026-03-02,2026,Ryan Rollins,MIL,BOS,reb,4,MISSED,3,,targets_snapshot_2026-03-02.json

@@ -914,7 +914,17 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810731,2026-03-01,2026-03-02T01:00Z,Dallas Mavericks,DAL,87,700.0,,Oklahoma City Thunder,OKC,100,-1100.0,,Dallas,TX,,
 401810732,2026-03-01,2026-03-02T02:00Z,LA Clippers,LAC,137,-360.0,,New Orleans Pelicans,NO,117,285.0,,Inglewood,CA,,
 401810733,2026-03-01,2026-03-02T02:30Z,Los Angeles Lakers,LAL,128,-750.0,,Sacramento Kings,SAC,104,525.0,,Los Angeles,CA,,
-401810734,2026-03-02,2026-03-03T00:00Z,Washington Wizards,WSH,0,700.0,,Houston Rockets,HOU,0,-1100.0,,Washington,DC,C. Whitmore (OFS); L. Black (Out); A. Davis (Out); D. Russell (Out); Alex Sarr (Out); Trae Young (Out),S. Adams (OFS); J. Smith (Out); J. Tate (Out); F. VanVleet (Out)
-401810735,2026-03-02,2026-03-03T00:30Z,Milwaukee Bucks,MIL,0,250.0,,Boston Celtics,BOS,0,-310.0,,Milwaukee,WI,T. Prince (Out),J. Tatum (Out)
-401810736,2026-03-02,2026-03-03T02:00Z,Utah Jazz,UTAH,0,410.0,,Denver Nuggets,DEN,0,-550.0,,Salt Lake City,UT,J. Jackson (OFS); W. Kessler (OFS); J. Nurkic (OFS); V. Williams (OFS); Kevin Love (Out); L. Markkanen (Out),T. Bates (Out); P. Watson (Out)
-401810737,2026-03-02,2026-03-03T03:00Z,Golden State Warriors,GS,0,102.0,,LA Clippers,LAC,0,-122.0,,San Francisco,CA,J. Butler (OFS); S. Curry (Out); Seth Curry (Out); K. Porzingis (Out); W. Richard (Out),B. Beal (OFS)
+401810734,2026-03-02,2026-03-03T00:00Z,Washington Wizards,WSH,118,700.0,,Houston Rockets,HOU,123,-1100.0,,Washington,DC,,
+401810735,2026-03-02,2026-03-03T00:30Z,Milwaukee Bucks,MIL,81,250.0,,Boston Celtics,BOS,108,-310.0,,Milwaukee,WI,,
+401810736,2026-03-02,2026-03-03T02:00Z,Utah Jazz,UTAH,125,410.0,,Denver Nuggets,DEN,128,-550.0,,Salt Lake City,UT,,
+401810737,2026-03-02,2026-03-03T03:00Z,Golden State Warriors,GS,101,102.0,,LA Clippers,LAC,114,-122.0,,San Francisco,CA,,
+401810738,2026-03-03,2026-03-04T00:00Z,Charlotte Hornets,CHA,0,-650.0,,Dallas Mavericks,DAL,0,470.0,,Charlotte,NC,Coby White (Out),K. Irving (OFS); D. Lively (OFS); M. Bagley (Out); N. Marshall (Out)
+401810739,2026-03-03,2026-03-04T00:00Z,Cleveland Cavaliers,CLE,0,110.0,,Detroit Pistons,DET,0,-130.0,,Cleveland,OH,D. Mitchell (Out); Max Strus (Out),
+401810740,2026-03-03,2026-03-04T00:00Z,Orlando Magic,ORL,0,-1200.0,,Washington Wizards,WSH,0,750.0,,Orlando,FL,F. Wagner (Out),C. Whitmore (OFS); L. Black (Out); A. Davis (Out); A. Gill (Out); D. Russell (Out); Alex Sarr (Out); T. Vukcevic (Out); Trae Young (Out)
+401810741,2026-03-03,2026-03-04T00:30Z,Miami Heat,MIA,0,-700.0,,Brooklyn Nets,BKN,0,500.0,,Miami,FL,N. Jovic (Out); N. Powell (Out); T. Rozier (Out),Egor Demin (Out)
+401810742,2026-03-03,2026-03-04T00:30Z,Toronto Raptors,TOR,0,124.0,,New York Knicks,NY,0,-148.0,,Toronto,ON,C. Hepburn (Out); C. Murray-Boyles (Out),M. McBride (Out)
+401810743,2026-03-03,2026-03-04T01:00Z,Philadelphia 76ers,PHI,0,250.0,,San Antonio Spurs,SA,0,-310.0,,Philadelphia,PA,J. Broome (Out); J. Embiid (Out); P. George (Out),D. Jones Garcia (OFS); M. Plumlee (Out)
+401810744,2026-03-03,2026-03-04T01:00Z,Chicago Bulls,CHI,0,330.0,,Oklahoma City Thunder,OKC,0,-425.0,,Chicago,IL,Z. Collins (OFS); N. Essengue (OFS); Jaden Ivey (Out); A. Simons (Out); J. Smith (Out); P. Williams (Out),T. Sorber (OFS); B. Carlson (Out); S. Gilgeous-Alexander (Out); I. Hartenstein (Out); A. Mitchell (Out); J. Williams (Out)
+401810745,2026-03-03,2026-03-04T01:00Z,Minnesota Timberwolves,MIN,0,-850.0,,Memphis Grizzlies,MEM,0,575.0,,Minneapolis,MN,,K. Caldwell-Pope (OFS); B. Clarke (Out); Zach Edey (Out); Taj Gibson (Out); Ja Morant (Out)
+401810746,2026-03-03,2026-03-04T03:30Z,Los Angeles Lakers,LAL,0,-345.0,,New Orleans Pelicans,NO,0,275.0,,Los Angeles,CA,,
+401810747,2026-03-03,2026-03-04T04:00Z,Sacramento Kings,SAC,0,360.0,,Phoenix Suns,PHX,0,-470.0,,Sacramento,CA,D. Hunter (OFS); Z. LaVine (OFS); D. Sabonis (OFS); D. Cardwell (Out); K. Murray (Out),D. Brooks (Out); J. Goodwin (Out)
