@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-03",
-  "built_at_utc": "2026-03-03T18:43:19Z",
+  "built_at_utc": "2026-03-03T19:41:10Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -26,11 +26,6 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "A. Gill",
-      "status": "QUES",
-      "details": "A. Gill (Ques)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
@@ -39,6 +34,11 @@
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
+    },
+    {
+      "name": "A. Gill",
+      "status": "OUT",
+      "details": "A. Gill (Out)"
     },
     {
       "name": "D. Russell",
