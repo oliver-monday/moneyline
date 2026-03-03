@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-03",
-  "built_at_utc": "2026-03-03T21:21:31Z",
+  "built_at_utc": "2026-03-03T22:36:39Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -66,9 +66,14 @@
       "details": "Trae Young (Out)"
     },
     {
-      "name": "A. Black",
+      "name": "W. Carter",
       "status": "QUES",
-      "details": "A. Black (Ques)"
+      "details": "W. Carter (Ques)"
+    },
+    {
+      "name": "A. Black",
+      "status": "OUT",
+      "details": "A. Black (Out)"
     },
     {
       "name": "F. Wagner",
@@ -78,9 +83,14 @@
   ],
   "ORL": [
     {
-      "name": "A. Black",
+      "name": "W. Carter",
       "status": "QUES",
-      "details": "A. Black (Ques)"
+      "details": "W. Carter (Ques)"
+    },
+    {
+      "name": "A. Black",
+      "status": "OUT",
+      "details": "A. Black (Out)"
     },
     {
       "name": "F. Wagner",
@@ -110,11 +120,6 @@
       "details": "P. Washington (Prob)"
     },
     {
-      "name": "C. Flagg",
-      "status": "DOUBT",
-      "details": "C. Flagg (Doubt)"
-    },
-    {
       "name": "K. Thompson",
       "status": "DOUBT",
       "details": "K. Thompson (Doubt)"
@@ -123,6 +128,11 @@
       "name": "M. Bagley",
       "status": "OUT",
       "details": "M. Bagley (Out)"
+    },
+    {
+      "name": "C. Flagg",
+      "status": "OUT",
+      "details": "C. Flagg (Out)"
     },
     {
       "name": "N. Marshall",
@@ -440,11 +450,6 @@
     }
   ],
   "PHX": [
-    {
-      "name": "K. Maluach",
-      "status": "QUES",
-      "details": "K. Maluach (Ques)"
-    },
     {
       "name": "D. Brooks",
       "status": "OUT",
