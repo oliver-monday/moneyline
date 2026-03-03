@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-03-02",
-  "built_at_utc": "2026-03-03T01:16:58Z",
+  "built_at_utc": "2026-03-03T03:28:40Z",
   "source": "rotowire",
   "HOU": [
     {
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "A. Thompson",
+      "status": "QUES",
+      "details": "A. Thompson (Ques)"
     },
     {
       "name": "J. Smith",
@@ -22,6 +27,11 @@
       "name": "F. VanVleet",
       "status": "OUT",
       "details": "F. VanVleet (Out)"
+    },
+    {
+      "name": "K. George",
+      "status": "QUES",
+      "details": "K. George (Ques)"
     },
     {
       "name": "C. Whitmore",
@@ -65,6 +75,11 @@
     }
   ],
   "WAS": [
+    {
+      "name": "K. George",
+      "status": "QUES",
+      "details": "K. George (Ques)"
+    },
     {
       "name": "C. Whitmore",
       "status": "OFS",
@@ -241,11 +256,6 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "G. Payton",
-      "status": "QUES",
-      "details": "G. Payton (Ques)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -259,6 +269,11 @@
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "G. Payton",
+      "status": "OUT",
+      "details": "G. Payton (Out)"
     },
     {
       "name": "K. Porzingis",
@@ -278,11 +293,6 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "G. Payton",
-      "status": "QUES",
-      "details": "G. Payton (Ques)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -296,6 +306,11 @@
       "name": "Seth Curry",
       "status": "OUT",
       "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "G. Payton",
+      "status": "OUT",
+      "details": "G. Payton (Out)"
     },
     {
       "name": "K. Porzingis",
