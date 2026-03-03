@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-03",
-  "built_at_utc": "2026-03-03T15:10:58Z",
+  "built_at_utc": "2026-03-03T17:34:02Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -67,8 +67,8 @@
     },
     {
       "name": "A. Black",
-      "status": "PROB",
-      "details": "A. Black (Prob)"
+      "status": "DOUBT",
+      "details": "A. Black (Doubt)"
     },
     {
       "name": "F. Wagner",
@@ -79,8 +79,8 @@
   "ORL": [
     {
       "name": "A. Black",
-      "status": "PROB",
-      "details": "A. Black (Prob)"
+      "status": "DOUBT",
+      "details": "A. Black (Doubt)"
     },
     {
       "name": "F. Wagner",
@@ -159,6 +159,11 @@
       "details": "D. Mitchell (Ques)"
     },
     {
+      "name": "A. Wiggins",
+      "status": "PROB",
+      "details": "A. Wiggins (Prob)"
+    },
+    {
       "name": "N. Jovic",
       "status": "OUT",
       "details": "N. Jovic (Out)"
@@ -175,6 +180,11 @@
     }
   ],
   "MIA": [
+    {
+      "name": "A. Wiggins",
+      "status": "PROB",
+      "details": "A. Wiggins (Prob)"
+    },
     {
       "name": "D. Mitchell",
       "status": "QUES",
@@ -386,6 +396,11 @@
       "name": "P. George",
       "status": "OUT",
       "details": "P. George (Out)"
+    },
+    {
+      "name": "K. Oubre",
+      "status": "OUT",
+      "details": "K. Oubre (Out)"
     }
   ],
   "PHI": [
@@ -403,6 +418,11 @@
       "name": "P. George",
       "status": "OUT",
       "details": "P. George (Out)"
+    },
+    {
+      "name": "K. Oubre",
+      "status": "OUT",
+      "details": "K. Oubre (Out)"
     }
   ],
   "NOP": [
