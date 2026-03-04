@@ -6634,6 +6634,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-03,BKN,D. Mitchell,QUES,D. Mitchell (Ques),rotowire
 2026-03-03,MIA,D. Mitchell,QUES,D. Mitchell (Ques),rotowire
 2026-03-03,DET,D. Wade,QUES,D. Wade (Ques),rotowire
+2026-03-03,BKN,A. Wiggins,PROB,A. Wiggins (Prob),rotowire
+2026-03-03,MIA,A. Wiggins,PROB,A. Wiggins (Prob),rotowire
+2026-03-03,MEM,C. Coward,QUES,C. Coward (Ques),rotowire
+2026-03-03,MEM,T. Jerome,QUES,T. Jerome (Ques),rotowire
+2026-03-03,MEM,A. Edwards,QUES,A. Edwards (Ques),rotowire
+2026-03-03,MIN,A. Edwards,QUES,A. Edwards (Ques),rotowire
 2026-03-03,CLE,D. Mitchell,OUT,D. Mitchell (Out),rotowire
 2026-03-03,CLE,Max Strus,OUT,Max Strus (Out),rotowire
 2026-03-03,CLE,Dean Wade,OUT,Dean Wade (Out),rotowire
@@ -6661,11 +6667,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-03,DAL,Coby White,OUT,Coby White (Out),rotowire
 2026-03-03,CHA,Coby White,OUT,Coby White (Out),rotowire
 2026-03-03,BKN,Egor Demin,OUT,Egor Demin (Out),rotowire
-2026-03-03,BKN,A. Wiggins,PROB,A. Wiggins (Prob),rotowire
 2026-03-03,BKN,N. Jovic,OUT,N. Jovic (Out),rotowire
 2026-03-03,BKN,N. Powell,OUT,N. Powell (Out),rotowire
 2026-03-03,BKN,T. Rozier,OUT,T. Rozier (Out),rotowire
-2026-03-03,MIA,A. Wiggins,PROB,A. Wiggins (Prob),rotowire
 2026-03-03,MIA,N. Jovic,OUT,N. Jovic (Out),rotowire
 2026-03-03,MIA,N. Powell,OUT,N. Powell (Out),rotowire
 2026-03-03,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
@@ -6693,17 +6697,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-03,CHI,J. Smith,OUT,J. Smith (Out),rotowire
 2026-03-03,CHI,P. Williams,OUT,P. Williams (Out),rotowire
 2026-03-03,MEM,K. Caldwell-Pope,OFS,K. Caldwell-Pope (OFS),rotowire
-2026-03-03,MEM,S. Aldama,QUES,S. Aldama (Ques),rotowire
-2026-03-03,MEM,C. Coward,QUES,C. Coward (Ques),rotowire
-2026-03-03,MEM,T. Jerome,QUES,T. Jerome (Ques),rotowire
+2026-03-03,MEM,S. Aldama,OUT,S. Aldama (Out),rotowire
 2026-03-03,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-03-03,MEM,Zach Edey,OUT,Zach Edey (Out),rotowire
 2026-03-03,MEM,Taj Gibson,OUT,Taj Gibson (Out),rotowire
 2026-03-03,MEM,Ja Morant,OUT,Ja Morant (Out),rotowire
-2026-03-03,MEM,A. Edwards,QUES,A. Edwards (Ques),rotowire
-2026-03-03,MIN,A. Edwards,QUES,A. Edwards (Ques),rotowire
 2026-03-03,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
-2026-03-03,SAS,H. Barnes,QUES,H. Barnes (Ques),rotowire
+2026-03-03,SAS,H. Barnes,OUT,H. Barnes (Out),rotowire
 2026-03-03,SAS,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-03-03,SAS,J. Broome,OUT,J. Broome (Out),rotowire
 2026-03-03,SAS,J. Embiid,OUT,J. Embiid (Out),rotowire

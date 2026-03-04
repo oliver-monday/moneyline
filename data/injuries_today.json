@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-03",
-  "built_at_utc": "2026-03-03T23:29:55Z",
+  "built_at_utc": "2026-03-04T01:12:53Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -149,11 +149,6 @@
       "details": "Egor Demin (Out)"
     },
     {
-      "name": "A. Wiggins",
-      "status": "PROB",
-      "details": "A. Wiggins (Prob)"
-    },
-    {
       "name": "N. Jovic",
       "status": "OUT",
       "details": "N. Jovic (Out)"
@@ -170,11 +165,6 @@
     }
   ],
   "MIA": [
-    {
-      "name": "A. Wiggins",
-      "status": "PROB",
-      "details": "A. Wiggins (Prob)"
-    },
     {
       "name": "N. Jovic",
       "status": "OUT",
@@ -322,18 +312,8 @@
     },
     {
       "name": "S. Aldama",
-      "status": "QUES",
-      "details": "S. Aldama (Ques)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "QUES",
-      "details": "C. Coward (Ques)"
-    },
-    {
-      "name": "T. Jerome",
-      "status": "QUES",
-      "details": "T. Jerome (Ques)"
+      "status": "OUT",
+      "details": "S. Aldama (Out)"
     },
     {
       "name": "B. Clarke",
@@ -354,18 +334,6 @@
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
-    },
-    {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    }
-  ],
-  "MIN": [
-    {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
     }
   ],
   "SAS": [
@@ -376,8 +344,8 @@
     },
     {
       "name": "H. Barnes",
-      "status": "QUES",
-      "details": "H. Barnes (Ques)"
+      "status": "OUT",
+      "details": "H. Barnes (Out)"
     },
     {
       "name": "M. Plumlee",
