@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-03",
-  "built_at_utc": "2026-03-04T03:19:56Z",
+  "built_at_utc": "2026-03-04T03:59:03Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -72,13 +72,13 @@
     },
     {
       "name": "A. Black",
-      "status": "OUT",
-      "details": "A. Black (Out)"
+      "status": "QUES",
+      "details": "A. Black (Ques)"
     },
     {
       "name": "W. Carter",
-      "status": "OUT",
-      "details": "W. Carter (Out)"
+      "status": "QUES",
+      "details": "W. Carter (Ques)"
     },
     {
       "name": "F. Wagner",
@@ -89,13 +89,13 @@
   "ORL": [
     {
       "name": "A. Black",
-      "status": "OUT",
-      "details": "A. Black (Out)"
+      "status": "QUES",
+      "details": "A. Black (Ques)"
     },
     {
       "name": "W. Carter",
-      "status": "OUT",
-      "details": "W. Carter (Out)"
+      "status": "QUES",
+      "details": "W. Carter (Ques)"
     },
     {
       "name": "F. Wagner",
@@ -149,14 +149,14 @@
   ],
   "BKN": [
     {
-      "name": "Egor Demin",
-      "status": "OUT",
-      "details": "Egor Demin (Out)"
+      "name": "E. Demin",
+      "status": "QUES",
+      "details": "E. Demin (Ques)"
     },
     {
       "name": "N. Jovic",
-      "status": "OUT",
-      "details": "N. Jovic (Out)"
+      "status": "QUES",
+      "details": "N. Jovic (Ques)"
     },
     {
       "name": "N. Powell",
@@ -172,8 +172,8 @@
   "MIA": [
     {
       "name": "N. Jovic",
-      "status": "OUT",
-      "details": "N. Jovic (Out)"
+      "status": "QUES",
+      "details": "N. Jovic (Ques)"
     },
     {
       "name": "N. Powell",
@@ -194,52 +194,52 @@
     },
     {
       "name": "C. Hepburn",
-      "status": "OUT",
-      "details": "C. Hepburn (Out)"
+      "status": "DOUBT",
+      "details": "C. Hepburn (Doubt)"
     },
     {
       "name": "C. Murray-Boyles",
-      "status": "OUT",
-      "details": "C. Murray-Boyles (Out)"
+      "status": "QUES",
+      "details": "C. Murray-Boyles (Ques)"
     }
   ],
   "TOR": [
     {
       "name": "C. Hepburn",
-      "status": "OUT",
-      "details": "C. Hepburn (Out)"
+      "status": "DOUBT",
+      "details": "C. Hepburn (Doubt)"
     },
     {
       "name": "C. Murray-Boyles",
-      "status": "OUT",
-      "details": "C. Murray-Boyles (Out)"
+      "status": "QUES",
+      "details": "C. Murray-Boyles (Ques)"
     }
   ],
   "OKC": [
     {
-      "name": "T. Sorber",
-      "status": "OFS",
-      "details": "T. Sorber (OFS)"
-    },
-    {
       "name": "B. Carlson",
-      "status": "OUT",
-      "details": "B. Carlson (Out)"
+      "status": "QUES",
+      "details": "B. Carlson (Ques)"
     },
     {
       "name": "S. Gilgeous-Alexander",
-      "status": "OUT",
-      "details": "S. Gilgeous-Alexander (Out)"
+      "status": "PROB",
+      "details": "S. Gilgeous-Alexander (Prob)"
     },
     {
       "name": "I. Hartenstein",
-      "status": "OUT",
-      "details": "I. Hartenstein (Out)"
+      "status": "PROB",
+      "details": "I. Hartenstein (Prob)"
     },
     {
       "name": "A. Mitchell",
-      "status": "OUT",
-      "details": "A. Mitchell (Out)"
+      "status": "DOUBT",
+      "details": "A. Mitchell (Doubt)"
+    },
+    {
+      "name": "T. Sorber",
+      "status": "OFS",
+      "details": "T. Sorber (OFS)"
     },
     {
       "name": "J. Williams",
@@ -262,6 +262,16 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "J. Smith",
+      "status": "QUES",
+      "details": "J. Smith (Ques)"
+    },
+    {
+      "name": "P. Williams",
+      "status": "QUES",
+      "details": "P. Williams (Ques)"
+    },
+    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -270,16 +280,6 @@
       "name": "A. Simons",
       "status": "OUT",
       "details": "A. Simons (Out)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "OUT",
-      "details": "J. Smith (Out)"
-    },
-    {
-      "name": "P. Williams",
-      "status": "OUT",
-      "details": "P. Williams (Out)"
     }
   ],
   "CHI": [
@@ -299,6 +299,16 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "J. Smith",
+      "status": "QUES",
+      "details": "J. Smith (Ques)"
+    },
+    {
+      "name": "P. Williams",
+      "status": "QUES",
+      "details": "P. Williams (Ques)"
+    },
+    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -307,28 +317,23 @@
       "name": "A. Simons",
       "status": "OUT",
       "details": "A. Simons (Out)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "OUT",
-      "details": "J. Smith (Out)"
-    },
-    {
-      "name": "P. Williams",
-      "status": "OUT",
-      "details": "P. Williams (Out)"
     }
   ],
   "MEM": [
+    {
+      "name": "S. Aldama",
+      "status": "QUES",
+      "details": "S. Aldama (Ques)"
+    },
     {
       "name": "K. Caldwell-Pope",
       "status": "OFS",
       "details": "K. Caldwell-Pope (OFS)"
     },
     {
-      "name": "S. Aldama",
-      "status": "OUT",
-      "details": "S. Aldama (Out)"
+      "name": "T. Gibson",
+      "status": "QUES",
+      "details": "T. Gibson (Ques)"
     },
     {
       "name": "B. Clarke",
@@ -341,11 +346,6 @@
       "details": "Zach Edey (Out)"
     },
     {
-      "name": "Taj Gibson",
-      "status": "OUT",
-      "details": "Taj Gibson (Out)"
-    },
-    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
@@ -353,24 +353,29 @@
   ],
   "SAS": [
     {
+      "name": "H. Barnes",
+      "status": "QUES",
+      "details": "H. Barnes (Ques)"
+    },
+    {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "H. Barnes",
-      "status": "OUT",
-      "details": "H. Barnes (Out)"
-    },
-    {
       "name": "M. Plumlee",
-      "status": "OUT",
-      "details": "M. Plumlee (Out)"
+      "status": "QUES",
+      "details": "M. Plumlee (Ques)"
     },
     {
       "name": "V. Edgecombe",
       "status": "QUES",
       "details": "V. Edgecombe (Ques)"
+    },
+    {
+      "name": "K. Oubre",
+      "status": "QUES",
+      "details": "K. Oubre (Ques)"
     },
     {
       "name": "J. Broome",
@@ -386,11 +391,6 @@
       "name": "P. George",
       "status": "OUT",
       "details": "P. George (Out)"
-    },
-    {
-      "name": "K. Oubre",
-      "status": "OUT",
-      "details": "K. Oubre (Out)"
     }
   ],
   "PHI": [
@@ -400,6 +400,11 @@
       "details": "V. Edgecombe (Ques)"
     },
     {
+      "name": "K. Oubre",
+      "status": "QUES",
+      "details": "K. Oubre (Ques)"
+    },
+    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
@@ -413,11 +418,6 @@
       "name": "P. George",
       "status": "OUT",
       "details": "P. George (Out)"
-    },
-    {
-      "name": "K. Oubre",
-      "status": "OUT",
-      "details": "K. Oubre (Out)"
     }
   ],
   "PHX": [
