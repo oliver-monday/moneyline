@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-04",
-  "built_at_utc": "2026-03-04T18:45:09Z",
+  "built_at_utc": "2026-03-04T19:40:25Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -171,11 +171,6 @@
       "details": "S. Sharpe (Out)"
     },
     {
-      "name": "S. Aldama",
-      "status": "QUES",
-      "details": "S. Aldama (Ques)"
-    },
-    {
       "name": "K. Caldwell-Pope",
       "status": "OFS",
       "details": "K. Caldwell-Pope (OFS)"
@@ -184,11 +179,6 @@
       "name": "Zach Edey",
       "status": "OFS",
       "details": "Zach Edey (OFS)"
-    },
-    {
-      "name": "T. Gibson",
-      "status": "QUES",
-      "details": "T. Gibson (Ques)"
     },
     {
       "name": "C. Coward",
@@ -206,9 +196,19 @@
       "details": "S. Pippen (Doubt)"
     },
     {
+      "name": "S. Aldama",
+      "status": "OUT",
+      "details": "S. Aldama (Out)"
+    },
+    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
+    },
+    {
+      "name": "Taj Gibson",
+      "status": "OUT",
+      "details": "Taj Gibson (Out)"
     },
     {
       "name": "Ja Morant",
@@ -228,16 +228,6 @@
       "details": "Zach Edey (OFS)"
     },
     {
-      "name": "S. Aldama",
-      "status": "QUES",
-      "details": "S. Aldama (Ques)"
-    },
-    {
-      "name": "T. Gibson",
-      "status": "QUES",
-      "details": "T. Gibson (Ques)"
-    },
-    {
       "name": "C. Coward",
       "status": "DOUBT",
       "details": "C. Coward (Doubt)"
@@ -253,14 +243,41 @@
       "details": "S. Pippen (Doubt)"
     },
     {
+      "name": "S. Aldama",
+      "status": "OUT",
+      "details": "S. Aldama (Out)"
+    },
+    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
     },
     {
+      "name": "Taj Gibson",
+      "status": "OUT",
+      "details": "Taj Gibson (Out)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
+    }
+  ],
+  "ATL": [
+    {
+      "name": "J. Kuminga",
+      "status": "QUES",
+      "details": "J. Kuminga (Ques)"
+    },
+    {
+      "name": "K. Porter",
+      "status": "OUT",
+      "details": "K. Porter (Out)"
+    },
+    {
+      "name": "T. Prince",
+      "status": "OUT",
+      "details": "T. Prince (Out)"
     }
   ],
   "MIL": [
@@ -332,18 +349,6 @@
       "name": "J. Collins",
       "status": "OUT",
       "details": "J. Collins (Out)"
-    }
-  ],
-  "ATL": [
-    {
-      "name": "K. Porter",
-      "status": "OUT",
-      "details": "K. Porter (Out)"
-    },
-    {
-      "name": "T. Prince",
-      "status": "OUT",
-      "details": "T. Prince (Out)"
     }
   ]
 }
