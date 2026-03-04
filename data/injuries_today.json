@@ -1,29 +1,64 @@
 {
   "asof_date": "2026-03-03",
-  "built_at_utc": "2026-03-04T01:12:53Z",
+  "built_at_utc": "2026-03-04T03:19:56Z",
   "source": "rotowire",
   "CLE": [
     {
+      "name": "J. Allen",
+      "status": "QUES",
+      "details": "J. Allen (Ques)"
+    },
+    {
       "name": "D. Mitchell",
-      "status": "OUT",
-      "details": "D. Mitchell (Out)"
+      "status": "QUES",
+      "details": "D. Mitchell (Ques)"
+    },
+    {
+      "name": "D. Wade",
+      "status": "QUES",
+      "details": "D. Wade (Ques)"
     },
     {
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
-    },
-    {
-      "name": "Dean Wade",
-      "status": "OUT",
-      "details": "Dean Wade (Out)"
     }
   ],
   "WAS": [
     {
+      "name": "K. George",
+      "status": "QUES",
+      "details": "K. George (Ques)"
+    },
+    {
+      "name": "A. Gill",
+      "status": "QUES",
+      "details": "A. Gill (Ques)"
+    },
+    {
+      "name": "A. Sarr",
+      "status": "DOUBT",
+      "details": "A. Sarr (Doubt)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "QUES",
+      "details": "T. Vukcevic (Ques)"
+    },
+    {
+      "name": "J. Watkins",
+      "status": "QUES",
+      "details": "J. Watkins (Ques)"
+    },
+    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
+    },
+    {
+      "name": "T. Young",
+      "status": "PROB",
+      "details": "T. Young (Prob)"
     },
     {
       "name": "A. Davis",
@@ -31,39 +66,9 @@
       "details": "A. Davis (Out)"
     },
     {
-      "name": "K. George",
-      "status": "OUT",
-      "details": "K. George (Out)"
-    },
-    {
-      "name": "A. Gill",
-      "status": "OUT",
-      "details": "A. Gill (Out)"
-    },
-    {
       "name": "D. Russell",
       "status": "OUT",
       "details": "D. Russell (Out)"
-    },
-    {
-      "name": "Alex Sarr",
-      "status": "OUT",
-      "details": "Alex Sarr (Out)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "OUT",
-      "details": "T. Vukcevic (Out)"
-    },
-    {
-      "name": "J. Watkins",
-      "status": "OUT",
-      "details": "J. Watkins (Out)"
-    },
-    {
-      "name": "Trae Young",
-      "status": "OUT",
-      "details": "Trae Young (Out)"
     },
     {
       "name": "A. Black",
@@ -100,6 +105,16 @@
   ],
   "DAL": [
     {
+      "name": "M. Bagley",
+      "status": "QUES",
+      "details": "M. Bagley (Ques)"
+    },
+    {
+      "name": "C. Flagg",
+      "status": "QUES",
+      "details": "C. Flagg (Ques)"
+    },
+    {
       "name": "K. Irving",
       "status": "OFS",
       "details": "K. Irving (OFS)"
@@ -110,36 +125,26 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "M. Bagley",
-      "status": "OUT",
-      "details": "M. Bagley (Out)"
-    },
-    {
-      "name": "C. Flagg",
-      "status": "OUT",
-      "details": "C. Flagg (Out)"
-    },
-    {
       "name": "N. Marshall",
-      "status": "OUT",
-      "details": "N. Marshall (Out)"
+      "status": "QUES",
+      "details": "N. Marshall (Ques)"
     },
     {
       "name": "K. Thompson",
-      "status": "OUT",
-      "details": "K. Thompson (Out)"
+      "status": "QUES",
+      "details": "K. Thompson (Ques)"
     },
     {
-      "name": "Coby White",
-      "status": "OUT",
-      "details": "Coby White (Out)"
+      "name": "C. White",
+      "status": "PROB",
+      "details": "C. White (Prob)"
     }
   ],
   "CHA": [
     {
-      "name": "Coby White",
-      "status": "OUT",
-      "details": "Coby White (Out)"
+      "name": "C. White",
+      "status": "PROB",
+      "details": "C. White (Prob)"
     }
   ],
   "BKN": [
@@ -242,6 +247,11 @@
       "details": "J. Williams (Out)"
     },
     {
+      "name": "M. Buzelis",
+      "status": "QUES",
+      "details": "M. Buzelis (Ques)"
+    },
+    {
       "name": "Z. Collins",
       "status": "OFS",
       "details": "Z. Collins (OFS)"
@@ -273,6 +283,11 @@
     }
   ],
   "CHI": [
+    {
+      "name": "M. Buzelis",
+      "status": "QUES",
+      "details": "M. Buzelis (Ques)"
+    },
     {
       "name": "Z. Collins",
       "status": "OFS",
@@ -353,6 +368,11 @@
       "details": "M. Plumlee (Out)"
     },
     {
+      "name": "V. Edgecombe",
+      "status": "QUES",
+      "details": "V. Edgecombe (Ques)"
+    },
+    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
@@ -375,6 +395,11 @@
   ],
   "PHI": [
     {
+      "name": "V. Edgecombe",
+      "status": "QUES",
+      "details": "V. Edgecombe (Ques)"
+    },
+    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
@@ -393,25 +418,6 @@
       "name": "K. Oubre",
       "status": "OUT",
       "details": "K. Oubre (Out)"
-    }
-  ],
-  "NOP": [
-    {
-      "name": "Z. Williamson",
-      "status": "QUES",
-      "details": "Z. Williamson (Ques)"
-    },
-    {
-      "name": "M. Kleber",
-      "status": "QUES",
-      "details": "M. Kleber (Ques)"
-    }
-  ],
-  "LAL": [
-    {
-      "name": "M. Kleber",
-      "status": "QUES",
-      "details": "M. Kleber (Ques)"
     }
   ],
   "PHX": [
@@ -480,19 +486,24 @@
   ],
   "DET": [
     {
+      "name": "J. Allen",
+      "status": "QUES",
+      "details": "J. Allen (Ques)"
+    },
+    {
       "name": "D. Mitchell",
-      "status": "OUT",
-      "details": "D. Mitchell (Out)"
+      "status": "QUES",
+      "details": "D. Mitchell (Ques)"
+    },
+    {
+      "name": "D. Wade",
+      "status": "QUES",
+      "details": "D. Wade (Ques)"
     },
     {
       "name": "Max Strus",
       "status": "OUT",
       "details": "Max Strus (Out)"
-    },
-    {
-      "name": "Dean Wade",
-      "status": "OUT",
-      "details": "Dean Wade (Out)"
     }
   ]
 }
