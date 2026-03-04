@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-04",
-  "built_at_utc": "2026-03-04T21:21:22Z",
+  "built_at_utc": "2026-03-04T22:38:37Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -181,6 +181,11 @@
       "details": "Zach Edey (OFS)"
     },
     {
+      "name": "T. Hendricks",
+      "status": "QUES",
+      "details": "T. Hendricks (Ques)"
+    },
+    {
       "name": "C. Coward",
       "status": "DOUBT",
       "details": "C. Coward (Doubt)"
@@ -226,6 +231,11 @@
       "name": "Zach Edey",
       "status": "OFS",
       "details": "Zach Edey (OFS)"
+    },
+    {
+      "name": "T. Hendricks",
+      "status": "QUES",
+      "details": "T. Hendricks (Ques)"
     },
     {
       "name": "C. Coward",
