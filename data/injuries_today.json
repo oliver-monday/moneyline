@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-05",
-  "built_at_utc": "2026-03-05T15:11:06Z",
+  "built_at_utc": "2026-03-05T18:31:04Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -24,14 +24,14 @@
       "details": "K. Thompson (Prob)"
     },
     {
-      "name": "B. Williams",
-      "status": "PROB",
-      "details": "B. Williams (Prob)"
-    },
-    {
       "name": "C. Flagg",
       "status": "QUES",
       "details": "C. Flagg (Ques)"
+    },
+    {
+      "name": "B. Williams",
+      "status": "QUES",
+      "details": "B. Williams (Ques)"
     },
     {
       "name": "M. Bagley",
@@ -49,6 +49,11 @@
       "details": "W. Carter (Ques)"
     },
     {
+      "name": "J. Isaac",
+      "status": "QUES",
+      "details": "J. Isaac (Ques)"
+    },
+    {
       "name": "F. Wagner",
       "status": "OUT",
       "details": "F. Wagner (Out)"
@@ -64,6 +69,11 @@
       "name": "W. Carter",
       "status": "QUES",
       "details": "W. Carter (Ques)"
+    },
+    {
+      "name": "J. Isaac",
+      "status": "QUES",
+      "details": "J. Isaac (Ques)"
     },
     {
       "name": "F. Wagner",
@@ -93,6 +103,11 @@
       "details": "V. Williams (OFS)"
     },
     {
+      "name": "K. George",
+      "status": "OUT",
+      "details": "K. George (Out)"
+    },
+    {
       "name": "L. Markkanen",
       "status": "OUT",
       "details": "L. Markkanen (Out)"
@@ -111,11 +126,6 @@
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
-    },
-    {
-      "name": "K. George",
-      "status": "OUT",
-      "details": "K. George (Out)"
     },
     {
       "name": "D. Russell",
@@ -345,12 +355,32 @@
       "details": "C. Murray-Boyles (Out)"
     },
     {
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
+    },
+    {
+      "name": "J. Clark",
+      "status": "QUES",
+      "details": "J. Clark (Ques)"
+    },
+    {
       "name": "Joe Ingles",
       "status": "OUT",
       "details": "Joe Ingles (Out)"
     }
   ],
   "MIN": [
+    {
+      "name": "J. Clark",
+      "status": "QUES",
+      "details": "J. Clark (Ques)"
+    },
+    {
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
+    },
     {
       "name": "Joe Ingles",
       "status": "OUT",
@@ -367,6 +397,11 @@
       "name": "H. Barnes",
       "status": "OUT",
       "details": "H. Barnes (Out)"
+    },
+    {
+      "name": "H. Ingram",
+      "status": "OUT",
+      "details": "H. Ingram (Out)"
     },
     {
       "name": "M. Plumlee",
@@ -576,6 +611,11 @@
       "name": "H. Barnes",
       "status": "OUT",
       "details": "H. Barnes (Out)"
+    },
+    {
+      "name": "H. Ingram",
+      "status": "OUT",
+      "details": "H. Ingram (Out)"
     },
     {
       "name": "M. Plumlee",
