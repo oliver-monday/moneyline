@@ -1,61 +1,71 @@
 {
   "asof_date": "2026-03-04",
-  "built_at_utc": "2026-03-05T01:15:12Z",
+  "built_at_utc": "2026-03-05T03:24:15Z",
   "source": "rotowire",
   "OKC": [
+    {
+      "name": "B. Carlson",
+      "status": "QUES",
+      "details": "B. Carlson (Ques)"
+    },
+    {
+      "name": "A. Caruso",
+      "status": "QUES",
+      "details": "A. Caruso (Ques)"
+    },
+    {
+      "name": "I. Hartenstein",
+      "status": "QUES",
+      "details": "I. Hartenstein (Ques)"
+    },
+    {
+      "name": "A. Mitchell",
+      "status": "DOUBT",
+      "details": "A. Mitchell (Doubt)"
+    },
     {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "B. Carlson",
-      "status": "OUT",
-      "details": "B. Carlson (Out)"
-    },
-    {
-      "name": "A. Mitchell",
-      "status": "OUT",
-      "details": "A. Mitchell (Out)"
-    },
-    {
       "name": "J. Williams",
-      "status": "OUT",
-      "details": "J. Williams (Out)"
+      "status": "DOUBT",
+      "details": "J. Williams (Doubt)"
+    },
+    {
+      "name": "M. Robinson",
+      "status": "PROB",
+      "details": "M. Robinson (Prob)"
     },
     {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
-    },
-    {
-      "name": "M. Robinson",
-      "status": "OUT",
-      "details": "M. Robinson (Out)"
     }
   ],
   "NYK": [
     {
+      "name": "M. Robinson",
+      "status": "PROB",
+      "details": "M. Robinson (Prob)"
+    },
+    {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
-    },
-    {
-      "name": "M. Robinson",
-      "status": "OUT",
-      "details": "M. Robinson (Out)"
     }
   ],
   "CHA": [
     {
       "name": "T. Salaun",
-      "status": "OUT",
-      "details": "T. Salaun (Out)"
+      "status": "QUES",
+      "details": "T. Salaun (Ques)"
     },
     {
       "name": "G. Williams",
-      "status": "OUT",
-      "details": "G. Williams (Out)"
+      "status": "PROB",
+      "details": "G. Williams (Prob)"
     },
     {
       "name": "J. Tatum",
@@ -97,56 +107,56 @@
       "details": "L. Markkanen (Out)"
     },
     {
+      "name": "V. Edgecombe",
+      "status": "QUES",
+      "details": "V. Edgecombe (Ques)"
+    },
+    {
+      "name": "J. Embiid",
+      "status": "QUES",
+      "details": "J. Embiid (Ques)"
+    },
+    {
+      "name": "K. Oubre",
+      "status": "QUES",
+      "details": "K. Oubre (Ques)"
+    },
+    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
     },
     {
-      "name": "V. Edgecombe",
-      "status": "OUT",
-      "details": "V. Edgecombe (Out)"
-    },
-    {
-      "name": "J. Embiid",
-      "status": "OUT",
-      "details": "J. Embiid (Out)"
-    },
-    {
       "name": "P. George",
       "status": "OUT",
       "details": "P. George (Out)"
-    },
-    {
-      "name": "K. Oubre",
-      "status": "OUT",
-      "details": "K. Oubre (Out)"
     }
   ],
   "PHI": [
     {
+      "name": "V. Edgecombe",
+      "status": "QUES",
+      "details": "V. Edgecombe (Ques)"
+    },
+    {
+      "name": "J. Embiid",
+      "status": "QUES",
+      "details": "J. Embiid (Ques)"
+    },
+    {
+      "name": "K. Oubre",
+      "status": "QUES",
+      "details": "K. Oubre (Ques)"
+    },
+    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
     },
     {
-      "name": "V. Edgecombe",
-      "status": "OUT",
-      "details": "V. Edgecombe (Out)"
-    },
-    {
-      "name": "J. Embiid",
-      "status": "OUT",
-      "details": "J. Embiid (Out)"
-    },
-    {
       "name": "P. George",
       "status": "OUT",
       "details": "P. George (Out)"
-    },
-    {
-      "name": "K. Oubre",
-      "status": "OUT",
-      "details": "K. Oubre (Out)"
     }
   ],
   "POR": [
@@ -312,26 +322,6 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
-    },
-    {
-      "name": "O. Toppin",
-      "status": "PROB",
-      "details": "O. Toppin (Prob)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
-    },
-    {
-      "name": "A. Nesmith",
-      "status": "QUES",
-      "details": "A. Nesmith (Ques)"
-    },
-    {
-      "name": "P. Siakam",
-      "status": "QUES",
-      "details": "P. Siakam (Ques)"
     },
     {
       "name": "I. Zubac",
