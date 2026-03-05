@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-05",
-  "built_at_utc": "2026-03-05T22:38:40Z",
+  "built_at_utc": "2026-03-05T23:52:16Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -14,29 +14,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "N. Marshall",
-      "status": "PROB",
-      "details": "N. Marshall (Prob)"
-    },
-    {
-      "name": "K. Thompson",
-      "status": "PROB",
-      "details": "K. Thompson (Prob)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "QUES",
-      "details": "B. Williams (Ques)"
-    },
-    {
       "name": "M. Bagley",
       "status": "OUT",
       "details": "M. Bagley (Out)"
     },
     {
-      "name": "W. Carter",
-      "status": "QUES",
-      "details": "W. Carter (Ques)"
+      "name": "B. Williams",
+      "status": "OUT",
+      "details": "B. Williams (Out)"
     },
     {
       "name": "J. Isaac",
@@ -50,11 +35,6 @@
     }
   ],
   "ORL": [
-    {
-      "name": "W. Carter",
-      "status": "QUES",
-      "details": "W. Carter (Ques)"
-    },
     {
       "name": "J. Isaac",
       "status": "OUT",
@@ -98,11 +78,6 @@
       "details": "L. Markkanen (Out)"
     },
     {
-      "name": "A. Gill",
-      "status": "QUES",
-      "details": "A. Gill (Ques)"
-    },
-    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
@@ -138,11 +113,6 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "A. Gill",
-      "status": "QUES",
-      "details": "A. Gill (Ques)"
     },
     {
       "name": "A. Davis",
@@ -212,24 +182,14 @@
       "details": "W. Richard (Out)"
     },
     {
-      "name": "A. Thompson",
-      "status": "QUES",
-      "details": "A. Thompson (Ques)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "QUES",
-      "details": "J. Smith (Ques)"
-    },
-    {
-      "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
-    },
-    {
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "D. Finney-Smith",
+      "status": "OUT",
+      "details": "D. Finney-Smith (Out)"
     },
     {
       "name": "J. Tate",
@@ -249,19 +209,9 @@
       "details": "S. Adams (OFS)"
     },
     {
-      "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "QUES",
-      "details": "J. Smith (Ques)"
-    },
-    {
-      "name": "A. Thompson",
-      "status": "QUES",
-      "details": "A. Thompson (Ques)"
+      "name": "D. Finney-Smith",
+      "status": "OUT",
+      "details": "D. Finney-Smith (Out)"
     },
     {
       "name": "J. Tate",
@@ -325,11 +275,6 @@
   ],
   "TOR": [
     {
-      "name": "B. Ingram",
-      "status": "QUES",
-      "details": "B. Ingram (Ques)"
-    },
-    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
@@ -340,32 +285,12 @@
       "details": "C. Murray-Boyles (Out)"
     },
     {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
-      "name": "J. Clark",
-      "status": "QUES",
-      "details": "J. Clark (Ques)"
-    },
-    {
       "name": "Joe Ingles",
       "status": "OUT",
       "details": "Joe Ingles (Out)"
     }
   ],
   "MIN": [
-    {
-      "name": "J. Clark",
-      "status": "QUES",
-      "details": "J. Clark (Ques)"
-    },
-    {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
     {
       "name": "Joe Ingles",
       "status": "OUT",
