@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-04",
-  "built_at_utc": "2026-03-04T23:33:06Z",
+  "built_at_utc": "2026-03-05T01:15:12Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -157,13 +157,13 @@
     },
     {
       "name": "D. Avdija",
-      "status": "QUES",
-      "details": "D. Avdija (Ques)"
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
     },
     {
       "name": "K. Murray",
-      "status": "QUES",
-      "details": "K. Murray (Ques)"
+      "status": "OUT",
+      "details": "K. Murray (Out)"
     },
     {
       "name": "S. Sharpe",
@@ -181,26 +181,6 @@
       "details": "Zach Edey (OFS)"
     },
     {
-      "name": "T. Hendricks",
-      "status": "QUES",
-      "details": "T. Hendricks (Ques)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "DOUBT",
-      "details": "C. Coward (Doubt)"
-    },
-    {
-      "name": "T. Jerome",
-      "status": "DOUBT",
-      "details": "T. Jerome (Doubt)"
-    },
-    {
-      "name": "S. Pippen",
-      "status": "DOUBT",
-      "details": "S. Pippen (Doubt)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -211,14 +191,34 @@
       "details": "B. Clarke (Out)"
     },
     {
+      "name": "C. Coward",
+      "status": "OUT",
+      "details": "C. Coward (Out)"
+    },
+    {
       "name": "Taj Gibson",
       "status": "OUT",
       "details": "Taj Gibson (Out)"
     },
     {
+      "name": "T. Hendricks",
+      "status": "OUT",
+      "details": "T. Hendricks (Out)"
+    },
+    {
+      "name": "Ty Jerome",
+      "status": "OUT",
+      "details": "Ty Jerome (Out)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
+    },
+    {
+      "name": "S. Pippen",
+      "status": "OUT",
+      "details": "S. Pippen (Out)"
     }
   ],
   "MEM": [
@@ -233,26 +233,6 @@
       "details": "Zach Edey (OFS)"
     },
     {
-      "name": "T. Hendricks",
-      "status": "QUES",
-      "details": "T. Hendricks (Ques)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "DOUBT",
-      "details": "C. Coward (Doubt)"
-    },
-    {
-      "name": "T. Jerome",
-      "status": "DOUBT",
-      "details": "T. Jerome (Doubt)"
-    },
-    {
-      "name": "S. Pippen",
-      "status": "DOUBT",
-      "details": "S. Pippen (Doubt)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -263,21 +243,41 @@
       "details": "B. Clarke (Out)"
     },
     {
+      "name": "C. Coward",
+      "status": "OUT",
+      "details": "C. Coward (Out)"
+    },
+    {
       "name": "Taj Gibson",
       "status": "OUT",
       "details": "Taj Gibson (Out)"
     },
     {
+      "name": "T. Hendricks",
+      "status": "OUT",
+      "details": "T. Hendricks (Out)"
+    },
+    {
+      "name": "Ty Jerome",
+      "status": "OUT",
+      "details": "Ty Jerome (Out)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
+    },
+    {
+      "name": "S. Pippen",
+      "status": "OUT",
+      "details": "S. Pippen (Out)"
     }
   ],
   "ATL": [
     {
       "name": "J. Kuminga",
-      "status": "QUES",
-      "details": "J. Kuminga (Ques)"
+      "status": "OUT",
+      "details": "J. Kuminga (Out)"
     },
     {
       "name": "K. Porter",
