@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-05",
-  "built_at_utc": "2026-03-05T20:35:14Z",
+  "built_at_utc": "2026-03-05T21:22:13Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -22,11 +22,6 @@
       "name": "K. Thompson",
       "status": "PROB",
       "details": "K. Thompson (Prob)"
-    },
-    {
-      "name": "C. Flagg",
-      "status": "QUES",
-      "details": "C. Flagg (Ques)"
     },
     {
       "name": "B. Williams",
