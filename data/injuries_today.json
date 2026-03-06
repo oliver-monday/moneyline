@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-06",
-  "built_at_utc": "2026-03-06T15:03:00Z",
+  "built_at_utc": "2026-03-06T17:25:54Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -14,19 +14,24 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "M. Bagley",
-      "status": "QUES",
-      "details": "M. Bagley (Ques)"
-    },
-    {
       "name": "B. Williams",
       "status": "QUES",
       "details": "B. Williams (Ques)"
     },
     {
+      "name": "M. Bagley",
+      "status": "DOUBT",
+      "details": "M. Bagley (Doubt)"
+    },
+    {
       "name": "J. Tatum",
       "status": "QUES",
       "details": "J. Tatum (Ques)"
+    },
+    {
+      "name": "J. Walsh",
+      "status": "QUES",
+      "details": "J. Walsh (Ques)"
     }
   ],
   "BOS": [
@@ -34,6 +39,11 @@
       "name": "J. Tatum",
       "status": "QUES",
       "details": "J. Tatum (Ques)"
+    },
+    {
+      "name": "J. Walsh",
+      "status": "QUES",
+      "details": "J. Walsh (Ques)"
     }
   ],
   "MIA": [

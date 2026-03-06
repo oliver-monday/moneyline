@@ -6943,10 +6943,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-05,SAC,K. Murray,OUT,K. Murray (Out),rotowire
 2026-03-06,DAL,K. Irving,OFS,K. Irving (OFS),rotowire
 2026-03-06,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
-2026-03-06,DAL,M. Bagley,QUES,M. Bagley (Ques),rotowire
 2026-03-06,DAL,B. Williams,QUES,B. Williams (Ques),rotowire
+2026-03-06,DAL,M. Bagley,DOUBT,M. Bagley (Doubt),rotowire
 2026-03-06,DAL,J. Tatum,QUES,J. Tatum (Ques),rotowire
+2026-03-06,DAL,J. Walsh,QUES,J. Walsh (Ques),rotowire
 2026-03-06,BOS,J. Tatum,QUES,J. Tatum (Ques),rotowire
+2026-03-06,BOS,J. Walsh,QUES,J. Walsh (Ques),rotowire
 2026-03-06,MIA,S. Fontecchio,QUES,S. Fontecchio (Ques),rotowire
 2026-03-06,MIA,N. Jovic,QUES,N. Jovic (Ques),rotowire
 2026-03-06,MIA,N. Powell,OUT,N. Powell (Out),rotowire
