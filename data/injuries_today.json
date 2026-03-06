@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-06",
-  "built_at_utc": "2026-03-06T19:37:32Z",
+  "built_at_utc": "2026-03-06T20:29:19Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -218,29 +218,12 @@
       "details": "P. Watson (Out)"
     }
   ],
-  "NOP": [
-    {
-      "name": "D. Murray",
-      "status": "PROB",
-      "details": "D. Murray (Prob)"
-    },
-    {
-      "name": "D. Brooks",
-      "status": "OUT",
-      "details": "D. Brooks (Out)"
-    },
-    {
-      "name": "J. Goodwin",
-      "status": "OUT",
-      "details": "J. Goodwin (Out)"
-    },
-    {
-      "name": "M. Williams",
-      "status": "OUT",
-      "details": "M. Williams (Out)"
-    }
-  ],
   "PHX": [
+    {
+      "name": "R. O'Neale",
+      "status": "QUES",
+      "details": "R. O'Neale (Ques)"
+    },
     {
       "name": "D. Brooks",
       "status": "OUT",
@@ -398,6 +381,28 @@
       "name": "M. Kleber",
       "status": "QUES",
       "details": "M. Kleber (Ques)"
+    }
+  ],
+  "NOP": [
+    {
+      "name": "R. O'Neale",
+      "status": "QUES",
+      "details": "R. O'Neale (Ques)"
+    },
+    {
+      "name": "D. Brooks",
+      "status": "OUT",
+      "details": "D. Brooks (Out)"
+    },
+    {
+      "name": "J. Goodwin",
+      "status": "OUT",
+      "details": "J. Goodwin (Out)"
+    },
+    {
+      "name": "M. Williams",
+      "status": "OUT",
+      "details": "M. Williams (Out)"
     }
   ]
 }

@@ -6945,6 +6945,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-06,BOS,J. Tatum,QUES,J. Tatum (Ques),rotowire
 2026-03-06,POR,D. Finney-Smith,PROB,D. Finney-Smith (Prob),rotowire
 2026-03-06,HOU,D. Finney-Smith,PROB,D. Finney-Smith (Prob),rotowire
+2026-03-06,NOP,D. Murray,PROB,D. Murray (Prob),rotowire
 2026-03-06,DAL,K. Irving,OFS,K. Irving (OFS),rotowire
 2026-03-06,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
 2026-03-06,DAL,K. Thompson,PROB,K. Thompson (Prob),rotowire
@@ -6985,10 +6986,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-06,DEN,C. Johnson,QUES,C. Johnson (Ques),rotowire
 2026-03-06,DEN,S. Jones,QUES,S. Jones (Ques),rotowire
 2026-03-06,DEN,P. Watson,OUT,P. Watson (Out),rotowire
-2026-03-06,NOP,D. Murray,PROB,D. Murray (Prob),rotowire
-2026-03-06,NOP,D. Brooks,OUT,D. Brooks (Out),rotowire
-2026-03-06,NOP,J. Goodwin,OUT,J. Goodwin (Out),rotowire
-2026-03-06,NOP,M. Williams,OUT,M. Williams (Out),rotowire
+2026-03-06,PHX,R. O'Neale,QUES,R. O'Neale (Ques),rotowire
 2026-03-06,PHX,D. Brooks,OUT,D. Brooks (Out),rotowire
 2026-03-06,PHX,J. Goodwin,OUT,J. Goodwin (Out),rotowire
 2026-03-06,PHX,M. Williams,OUT,M. Williams (Out),rotowire
@@ -7019,3 +7017,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-06,LAL,D. Ayton,QUES,D. Ayton (Ques),rotowire
 2026-03-06,LAL,L. James,QUES,L. James (Ques),rotowire
 2026-03-06,LAL,M. Kleber,QUES,M. Kleber (Ques),rotowire
+2026-03-06,NOP,R. O'Neale,QUES,R. O'Neale (Ques),rotowire
+2026-03-06,NOP,D. Brooks,OUT,D. Brooks (Out),rotowire
+2026-03-06,NOP,J. Goodwin,OUT,J. Goodwin (Out),rotowire
+2026-03-06,NOP,M. Williams,OUT,M. Williams (Out),rotowire
