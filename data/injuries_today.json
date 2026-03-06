@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-06",
-  "built_at_utc": "2026-03-06T21:17:26Z",
+  "built_at_utc": "2026-03-06T22:35:49Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -48,16 +48,6 @@
   ],
   "MIA": [
     {
-      "name": "D. Smith",
-      "status": "PROB",
-      "details": "D. Smith (Prob)"
-    },
-    {
-      "name": "A. Wiggins",
-      "status": "DOUBT",
-      "details": "A. Wiggins (Doubt)"
-    },
-    {
       "name": "S. Fontecchio",
       "status": "OUT",
       "details": "S. Fontecchio (Out)"
@@ -76,6 +66,11 @@
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
+    },
+    {
+      "name": "A. Wiggins",
+      "status": "OUT",
+      "details": "A. Wiggins (Out)"
     },
     {
       "name": "T. Salaun",
