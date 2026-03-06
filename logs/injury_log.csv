@@ -6840,6 +6840,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-05,TOR,J. Clark,QUES,J. Clark (Ques),rotowire
 2026-03-05,MIN,J. Clark,QUES,J. Clark (Ques),rotowire
 2026-03-05,MIN,A. Edwards,QUES,A. Edwards (Ques),rotowire
+2026-03-05,NOP,T. Murphy,PROB,T. Murphy (Prob),rotowire
+2026-03-05,NOP,Z. Williamson,QUES,Z. Williamson (Ques),rotowire
 2026-03-05,DAL,K. Irving,OFS,K. Irving (OFS),rotowire
 2026-03-05,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
 2026-03-05,DAL,M. Bagley,OUT,M. Bagley (Out),rotowire
@@ -6895,6 +6897,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-05,TOR,C. Murray-Boyles,OUT,C. Murray-Boyles (Out),rotowire
 2026-03-05,TOR,Joe Ingles,OUT,Joe Ingles (Out),rotowire
 2026-03-05,MIN,Joe Ingles,OUT,Joe Ingles (Out),rotowire
+2026-03-05,DET,R. Holland,QUES,R. Holland (Ques),rotowire
 2026-03-05,DET,A. Thompson,QUES,A. Thompson (Ques),rotowire
 2026-03-05,DET,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-03-05,DET,H. Barnes,OUT,H. Barnes (Out),rotowire
@@ -6919,16 +6922,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-05,PHX,J. Goodwin,OUT,J. Goodwin (Out),rotowire
 2026-03-05,PHX,M. Williams,OUT,M. Williams (Out),rotowire
 2026-03-05,LAL,M. Kleber,OUT,M. Kleber (Out),rotowire
-2026-03-05,LAL,C. Johnson,QUES,C. Johnson (Ques),rotowire
 2026-03-05,LAL,A. Gordon,OUT,A. Gordon (Out),rotowire
+2026-03-05,LAL,C. Johnson,OUT,C. Johnson (Out),rotowire
 2026-03-05,LAL,S. Jones,OUT,S. Jones (Out),rotowire
 2026-03-05,LAL,P. Watson,OUT,P. Watson (Out),rotowire
-2026-03-05,DEN,C. Johnson,QUES,C. Johnson (Ques),rotowire
 2026-03-05,DEN,A. Gordon,OUT,A. Gordon (Out),rotowire
+2026-03-05,DEN,C. Johnson,OUT,C. Johnson (Out),rotowire
 2026-03-05,DEN,S. Jones,OUT,S. Jones (Out),rotowire
 2026-03-05,DEN,P. Watson,OUT,P. Watson (Out),rotowire
-2026-03-05,NOP,T. Murphy,PROB,T. Murphy (Prob),rotowire
-2026-03-05,NOP,Z. Williamson,QUES,Z. Williamson (Ques),rotowire
 2026-03-05,NOP,D. Murray,OUT,D. Murray (Out),rotowire
 2026-03-05,NOP,D. Hunter,OFS,D. Hunter (OFS),rotowire
 2026-03-05,NOP,Z. LaVine,OFS,Z. LaVine (OFS),rotowire

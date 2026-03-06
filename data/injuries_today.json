@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-05",
-  "built_at_utc": "2026-03-06T01:18:27Z",
+  "built_at_utc": "2026-03-06T03:22:44Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -299,6 +299,11 @@
   ],
   "DET": [
     {
+      "name": "R. Holland",
+      "status": "QUES",
+      "details": "R. Holland (Ques)"
+    },
+    {
       "name": "A. Thompson",
       "status": "QUES",
       "details": "A. Thompson (Ques)"
@@ -427,14 +432,14 @@
       "details": "M. Kleber (Out)"
     },
     {
-      "name": "C. Johnson",
-      "status": "QUES",
-      "details": "C. Johnson (Ques)"
-    },
-    {
       "name": "A. Gordon",
       "status": "OUT",
       "details": "A. Gordon (Out)"
+    },
+    {
+      "name": "C. Johnson",
+      "status": "OUT",
+      "details": "C. Johnson (Out)"
     },
     {
       "name": "S. Jones",
@@ -449,14 +454,14 @@
   ],
   "DEN": [
     {
-      "name": "C. Johnson",
-      "status": "QUES",
-      "details": "C. Johnson (Ques)"
-    },
-    {
       "name": "A. Gordon",
       "status": "OUT",
       "details": "A. Gordon (Out)"
+    },
+    {
+      "name": "C. Johnson",
+      "status": "OUT",
+      "details": "C. Johnson (Out)"
     },
     {
       "name": "S. Jones",
@@ -470,16 +475,6 @@
     }
   ],
   "NOP": [
-    {
-      "name": "T. Murphy",
-      "status": "PROB",
-      "details": "T. Murphy (Prob)"
-    },
-    {
-      "name": "Z. Williamson",
-      "status": "QUES",
-      "details": "Z. Williamson (Ques)"
-    },
     {
       "name": "D. Murray",
       "status": "OUT",
