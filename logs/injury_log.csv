@@ -6945,14 +6945,15 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-06,BOS,J. Tatum,QUES,J. Tatum (Ques),rotowire
 2026-03-06,POR,D. Finney-Smith,PROB,D. Finney-Smith (Prob),rotowire
 2026-03-06,HOU,D. Finney-Smith,PROB,D. Finney-Smith (Prob),rotowire
-2026-03-06,DAL,M. Bagley,DOUBT,M. Bagley (Doubt),rotowire
 2026-03-06,DAL,K. Irving,OFS,K. Irving (OFS),rotowire
 2026-03-06,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
 2026-03-06,DAL,K. Thompson,PROB,K. Thompson (Prob),rotowire
 2026-03-06,DAL,B. Williams,PROB,B. Williams (Prob),rotowire
+2026-03-06,DAL,M. Bagley,DOUBT,M. Bagley (Doubt),rotowire
 2026-03-06,DAL,D. Gafford,DOUBT,D. Gafford (Doubt),rotowire
 2026-03-06,DAL,J. Walsh,QUES,J. Walsh (Ques),rotowire
 2026-03-06,BOS,J. Walsh,QUES,J. Walsh (Ques),rotowire
+2026-03-06,MIA,D. Smith,PROB,D. Smith (Prob),rotowire
 2026-03-06,MIA,A. Wiggins,DOUBT,A. Wiggins (Doubt),rotowire
 2026-03-06,MIA,S. Fontecchio,OUT,S. Fontecchio (Out),rotowire
 2026-03-06,MIA,N. Jovic,OUT,N. Jovic (Out),rotowire
@@ -6965,10 +6966,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-06,POR,D. Avdija,DOUBT,D. Avdija (Doubt),rotowire
 2026-03-06,POR,S. Sharpe,OUT,S. Sharpe (Out),rotowire
 2026-03-06,POR,A. Thompson,QUES,A. Thompson (Ques),rotowire
+2026-03-06,POR,J. Smith,QUES,J. Smith (Ques),rotowire
 2026-03-06,POR,S. Adams,OFS,S. Adams (OFS),rotowire
 2026-03-06,POR,J. Tate,OUT,J. Tate (Out),rotowire
 2026-03-06,POR,F. VanVleet,OUT,F. VanVleet (Out),rotowire
 2026-03-06,HOU,S. Adams,OFS,S. Adams (OFS),rotowire
+2026-03-06,HOU,J. Smith,QUES,J. Smith (Ques),rotowire
 2026-03-06,HOU,A. Thompson,QUES,A. Thompson (Ques),rotowire
 2026-03-06,HOU,J. Tate,OUT,J. Tate (Out),rotowire
 2026-03-06,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
@@ -6990,18 +6993,20 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-06,PHX,J. Goodwin,OUT,J. Goodwin (Out),rotowire
 2026-03-06,PHX,M. Williams,OUT,M. Williams (Out),rotowire
 2026-03-06,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
-2026-03-06,LAC,B. Bogdanovic,QUES,B. Bogdanovic (Ques),rotowire
 2026-03-06,LAC,Y. Niederhauser,OFS,Y. Niederhauser (OFS),rotowire
+2026-03-06,LAC,B. Bogdanovic,QUES,B. Bogdanovic (Ques),rotowire
 2026-03-06,LAC,J. Collins,OUT,J. Collins (Out),rotowire
 2026-03-06,LAC,D. Garland,OUT,D. Garland (Out),rotowire
+2026-03-06,LAC,J. Champagnie,QUES,J. Champagnie (Ques),rotowire
 2026-03-06,LAC,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
-2026-03-06,LAC,H. Barnes,QUES,H. Barnes (Ques),rotowire
-2026-03-06,LAC,M. Plumlee,QUES,M. Plumlee (Ques),rotowire
+2026-03-06,LAC,H. Barnes,OUT,H. Barnes (Out),rotowire
 2026-03-06,LAC,H. Ingram,OUT,H. Ingram (Out),rotowire
+2026-03-06,LAC,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-03-06,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
-2026-03-06,SAS,H. Barnes,QUES,H. Barnes (Ques),rotowire
-2026-03-06,SAS,M. Plumlee,QUES,M. Plumlee (Ques),rotowire
+2026-03-06,SAS,J. Champagnie,QUES,J. Champagnie (Ques),rotowire
+2026-03-06,SAS,H. Barnes,OUT,H. Barnes (Out),rotowire
 2026-03-06,SAS,H. Ingram,OUT,H. Ingram (Out),rotowire
+2026-03-06,SAS,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-03-06,IND,J. Furphy,OFS,J. Furphy (OFS),rotowire
 2026-03-06,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-03-06,IND,A. Nembhard,PROB,A. Nembhard (Prob),rotowire

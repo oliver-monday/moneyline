@@ -1,13 +1,8 @@
 {
   "asof_date": "2026-03-06",
-  "built_at_utc": "2026-03-06T18:40:54Z",
+  "built_at_utc": "2026-03-06T19:37:32Z",
   "source": "rotowire",
   "DAL": [
-    {
-      "name": "M. Bagley",
-      "status": "DOUBT",
-      "details": "M. Bagley (Doubt)"
-    },
     {
       "name": "K. Irving",
       "status": "OFS",
@@ -29,6 +24,11 @@
       "details": "B. Williams (Prob)"
     },
     {
+      "name": "M. Bagley",
+      "status": "DOUBT",
+      "details": "M. Bagley (Doubt)"
+    },
+    {
       "name": "D. Gafford",
       "status": "DOUBT",
       "details": "D. Gafford (Doubt)"
@@ -47,6 +47,11 @@
     }
   ],
   "MIA": [
+    {
+      "name": "D. Smith",
+      "status": "PROB",
+      "details": "D. Smith (Prob)"
+    },
     {
       "name": "A. Wiggins",
       "status": "DOUBT",
@@ -112,6 +117,11 @@
       "details": "A. Thompson (Ques)"
     },
     {
+      "name": "J. Smith",
+      "status": "QUES",
+      "details": "J. Smith (Ques)"
+    },
+    {
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
@@ -132,6 +142,11 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "QUES",
+      "details": "J. Smith (Ques)"
     },
     {
       "name": "A. Thompson",
@@ -249,14 +264,14 @@
       "details": "B. Beal (OFS)"
     },
     {
-      "name": "B. Bogdanovic",
-      "status": "QUES",
-      "details": "B. Bogdanovic (Ques)"
-    },
-    {
       "name": "Y. Niederhauser",
       "status": "OFS",
       "details": "Y. Niederhauser (OFS)"
+    },
+    {
+      "name": "B. Bogdanovic",
+      "status": "QUES",
+      "details": "B. Bogdanovic (Ques)"
     },
     {
       "name": "J. Collins",
@@ -269,24 +284,29 @@
       "details": "D. Garland (Out)"
     },
     {
+      "name": "J. Champagnie",
+      "status": "QUES",
+      "details": "J. Champagnie (Ques)"
+    },
+    {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
     },
     {
       "name": "H. Barnes",
-      "status": "QUES",
-      "details": "H. Barnes (Ques)"
-    },
-    {
-      "name": "M. Plumlee",
-      "status": "QUES",
-      "details": "M. Plumlee (Ques)"
+      "status": "OUT",
+      "details": "H. Barnes (Out)"
     },
     {
       "name": "H. Ingram",
       "status": "OUT",
       "details": "H. Ingram (Out)"
+    },
+    {
+      "name": "M. Plumlee",
+      "status": "OUT",
+      "details": "M. Plumlee (Out)"
     }
   ],
   "SAS": [
@@ -296,19 +316,24 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "H. Barnes",
+      "name": "J. Champagnie",
       "status": "QUES",
-      "details": "H. Barnes (Ques)"
+      "details": "J. Champagnie (Ques)"
     },
     {
-      "name": "M. Plumlee",
-      "status": "QUES",
-      "details": "M. Plumlee (Ques)"
+      "name": "H. Barnes",
+      "status": "OUT",
+      "details": "H. Barnes (Out)"
     },
     {
       "name": "H. Ingram",
       "status": "OUT",
       "details": "H. Ingram (Out)"
+    },
+    {
+      "name": "M. Plumlee",
+      "status": "OUT",
+      "details": "M. Plumlee (Out)"
     }
   ],
   "IND": [
