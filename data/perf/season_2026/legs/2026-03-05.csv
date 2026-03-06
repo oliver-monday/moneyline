@@ -1,0 +1,13 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-05,2026,Desmond Bane,ORL,DAL,pts,20,MISSED,14,,targets_snapshot_2026-03-05.json
+2026-03-05,2026,Desmond Bane,ORL,DAL,3pt,2,MISSED,1,,targets_snapshot_2026-03-05.json
+2026-03-05,2026,Christian Braun,DEN,LAL,pts,10,HIT,15,,targets_snapshot_2026-03-05.json
+2026-03-05,2026,Christian Braun,DEN,LAL,reb,4,HIT,5,,targets_snapshot_2026-03-05.json
+2026-03-05,2026,Christian Braun,DEN,LAL,ast,2,HIT,4,,targets_snapshot_2026-03-05.json
+2026-03-05,2026,Anthony Davis,DAL,ORL,ast,2,,,,targets_snapshot_2026-03-05.json
+2026-03-05,2026,Immanuel Quickley,TOR,MIN,3pt,3,MISSED,2,,targets_snapshot_2026-03-05.json
+2026-03-05,2026,Jaden McDaniels,MIN,TOR,ast,2,HIT,4,,targets_snapshot_2026-03-05.json
+2026-03-05,2026,Ace Bailey,UTAH,WSH,pts,10,HIT,32,,targets_snapshot_2026-03-05.json
+2026-03-05,2026,Ace Bailey,UTAH,WSH,reb,4,MISSED,2,,targets_snapshot_2026-03-05.json
+2026-03-05,2026,Grayson Allen,PHX,CHI,ast,4,HIT,8,,targets_snapshot_2026-03-05.json
+2026-03-05,2026,Zion Williamson,NO,SAC,pts,20,HIT,23,,targets_snapshot_2026-03-05.json
