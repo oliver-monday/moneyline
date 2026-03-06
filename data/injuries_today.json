@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-06",
-  "built_at_utc": "2026-03-06T08:58:03Z",
+  "built_at_utc": "2026-03-06T15:03:00Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -15,13 +15,13 @@
     },
     {
       "name": "M. Bagley",
-      "status": "OUT",
-      "details": "M. Bagley (Out)"
+      "status": "QUES",
+      "details": "M. Bagley (Ques)"
     },
     {
       "name": "B. Williams",
-      "status": "OUT",
-      "details": "B. Williams (Out)"
+      "status": "QUES",
+      "details": "B. Williams (Ques)"
     },
     {
       "name": "J. Tatum",
@@ -38,14 +38,14 @@
   ],
   "MIA": [
     {
+      "name": "S. Fontecchio",
+      "status": "QUES",
+      "details": "S. Fontecchio (Ques)"
+    },
+    {
       "name": "N. Jovic",
       "status": "QUES",
       "details": "N. Jovic (Ques)"
-    },
-    {
-      "name": "S. Fontecchio",
-      "status": "OUT",
-      "details": "S. Fontecchio (Out)"
     },
     {
       "name": "N. Powell",
@@ -98,8 +98,8 @@
     },
     {
       "name": "D. Finney-Smith",
-      "status": "QUES",
-      "details": "D. Finney-Smith (Ques)"
+      "status": "PROB",
+      "details": "D. Finney-Smith (Prob)"
     },
     {
       "name": "J. Tate",
@@ -120,8 +120,8 @@
     },
     {
       "name": "D. Finney-Smith",
-      "status": "QUES",
-      "details": "D. Finney-Smith (Ques)"
+      "status": "PROB",
+      "details": "D. Finney-Smith (Prob)"
     },
     {
       "name": "J. Tate",
@@ -147,18 +147,18 @@
     },
     {
       "name": "C. Johnson",
-      "status": "OUT",
-      "details": "C. Johnson (Out)"
+      "status": "QUES",
+      "details": "C. Johnson (Ques)"
     },
     {
       "name": "A. Gordon",
-      "status": "OUT",
-      "details": "A. Gordon (Out)"
+      "status": "QUES",
+      "details": "A. Gordon (Ques)"
     },
     {
       "name": "S. Jones",
-      "status": "OUT",
-      "details": "S. Jones (Out)"
+      "status": "QUES",
+      "details": "S. Jones (Ques)"
     },
     {
       "name": "P. Watson",
@@ -169,18 +169,18 @@
   "DEN": [
     {
       "name": "A. Gordon",
-      "status": "OUT",
-      "details": "A. Gordon (Out)"
+      "status": "QUES",
+      "details": "A. Gordon (Ques)"
     },
     {
       "name": "C. Johnson",
-      "status": "OUT",
-      "details": "C. Johnson (Out)"
+      "status": "QUES",
+      "details": "C. Johnson (Ques)"
     },
     {
       "name": "S. Jones",
-      "status": "OUT",
-      "details": "S. Jones (Out)"
+      "status": "QUES",
+      "details": "S. Jones (Ques)"
     },
     {
       "name": "P. Watson",
@@ -191,8 +191,8 @@
   "NOP": [
     {
       "name": "D. Murray",
-      "status": "OUT",
-      "details": "D. Murray (Out)"
+      "status": "PROB",
+      "details": "D. Murray (Prob)"
     },
     {
       "name": "D. Brooks",
@@ -255,18 +255,18 @@
     },
     {
       "name": "H. Barnes",
-      "status": "OUT",
-      "details": "H. Barnes (Out)"
+      "status": "QUES",
+      "details": "H. Barnes (Ques)"
+    },
+    {
+      "name": "M. Plumlee",
+      "status": "QUES",
+      "details": "M. Plumlee (Ques)"
     },
     {
       "name": "H. Ingram",
       "status": "OUT",
       "details": "H. Ingram (Out)"
-    },
-    {
-      "name": "M. Plumlee",
-      "status": "OUT",
-      "details": "M. Plumlee (Out)"
     }
   ],
   "SAS": [
@@ -277,18 +277,18 @@
     },
     {
       "name": "H. Barnes",
-      "status": "OUT",
-      "details": "H. Barnes (Out)"
+      "status": "QUES",
+      "details": "H. Barnes (Ques)"
+    },
+    {
+      "name": "M. Plumlee",
+      "status": "QUES",
+      "details": "M. Plumlee (Ques)"
     },
     {
       "name": "H. Ingram",
       "status": "OUT",
       "details": "H. Ingram (Out)"
-    },
-    {
-      "name": "M. Plumlee",
-      "status": "OUT",
-      "details": "M. Plumlee (Out)"
     }
   ],
   "IND": [
@@ -334,8 +334,8 @@
     },
     {
       "name": "M. Kleber",
-      "status": "OUT",
-      "details": "M. Kleber (Out)"
+      "status": "QUES",
+      "details": "M. Kleber (Ques)"
     }
   ],
   "LAL": [
@@ -351,8 +351,8 @@
     },
     {
       "name": "M. Kleber",
-      "status": "OUT",
-      "details": "M. Kleber (Out)"
+      "status": "QUES",
+      "details": "M. Kleber (Ques)"
     }
   ]
 }
