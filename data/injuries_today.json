@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-06",
-  "built_at_utc": "2026-03-06T22:35:49Z",
+  "built_at_utc": "2026-03-06T23:29:58Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -14,36 +14,26 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "K. Thompson",
-      "status": "PROB",
-      "details": "K. Thompson (Prob)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "PROB",
-      "details": "B. Williams (Prob)"
-    },
-    {
       "name": "M. Bagley",
-      "status": "DOUBT",
-      "details": "M. Bagley (Doubt)"
+      "status": "OUT",
+      "details": "M. Bagley (Out)"
     },
     {
       "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
     },
     {
       "name": "J. Walsh",
-      "status": "QUES",
-      "details": "J. Walsh (Ques)"
+      "status": "OUT",
+      "details": "J. Walsh (Out)"
     }
   ],
   "BOS": [
     {
       "name": "J. Walsh",
-      "status": "QUES",
-      "details": "J. Walsh (Ques)"
+      "status": "OUT",
+      "details": "J. Walsh (Out)"
     }
   ],
   "MIA": [
@@ -107,11 +97,6 @@
       "details": "S. Sharpe (Out)"
     },
     {
-      "name": "A. Thompson",
-      "status": "QUES",
-      "details": "A. Thompson (Ques)"
-    },
-    {
       "name": "J. Smith",
       "status": "QUES",
       "details": "J. Smith (Ques)"
@@ -142,11 +127,6 @@
       "name": "J. Smith",
       "status": "QUES",
       "details": "J. Smith (Ques)"
-    },
-    {
-      "name": "A. Thompson",
-      "status": "QUES",
-      "details": "A. Thompson (Ques)"
     },
     {
       "name": "J. Tate",
