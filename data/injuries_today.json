@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-05",
-  "built_at_utc": "2026-03-05T23:52:16Z",
+  "built_at_utc": "2026-03-06T01:18:27Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -297,6 +297,33 @@
       "details": "Joe Ingles (Out)"
     }
   ],
+  "DET": [
+    {
+      "name": "A. Thompson",
+      "status": "QUES",
+      "details": "A. Thompson (Ques)"
+    },
+    {
+      "name": "D. Jones Garcia",
+      "status": "OFS",
+      "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "H. Barnes",
+      "status": "OUT",
+      "details": "H. Barnes (Out)"
+    },
+    {
+      "name": "H. Ingram",
+      "status": "OUT",
+      "details": "H. Ingram (Out)"
+    },
+    {
+      "name": "M. Plumlee",
+      "status": "OUT",
+      "details": "M. Plumlee (Out)"
+    }
+  ],
   "SAS": [
     {
       "name": "D. Jones Garcia",
@@ -332,23 +359,13 @@
     },
     {
       "name": "M. Buzelis",
-      "status": "QUES",
-      "details": "M. Buzelis (Ques)"
+      "status": "OUT",
+      "details": "M. Buzelis (Out)"
     },
     {
       "name": "J. Giddey",
-      "status": "QUES",
-      "details": "J. Giddey (Ques)"
-    },
-    {
-      "name": "J. Smith",
-      "status": "DOUBT",
-      "details": "J. Smith (Doubt)"
-    },
-    {
-      "name": "P. Williams",
-      "status": "DOUBT",
-      "details": "P. Williams (Doubt)"
+      "status": "OUT",
+      "details": "J. Giddey (Out)"
     },
     {
       "name": "Jaden Ivey",
@@ -359,6 +376,16 @@
       "name": "A. Simons",
       "status": "OUT",
       "details": "A. Simons (Out)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OUT",
+      "details": "J. Smith (Out)"
+    },
+    {
+      "name": "P. Williams",
+      "status": "OUT",
+      "details": "P. Williams (Out)"
     },
     {
       "name": "D. Brooks",
@@ -396,8 +423,8 @@
   "LAL": [
     {
       "name": "M. Kleber",
-      "status": "QUES",
-      "details": "M. Kleber (Ques)"
+      "status": "OUT",
+      "details": "M. Kleber (Out)"
     },
     {
       "name": "C. Johnson",
@@ -509,28 +536,6 @@
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
-    }
-  ],
-  "DET": [
-    {
-      "name": "D. Jones Garcia",
-      "status": "OFS",
-      "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "H. Barnes",
-      "status": "OUT",
-      "details": "H. Barnes (Out)"
-    },
-    {
-      "name": "H. Ingram",
-      "status": "OUT",
-      "details": "H. Ingram (Out)"
-    },
-    {
-      "name": "M. Plumlee",
-      "status": "OUT",
-      "details": "M. Plumlee (Out)"
     }
   ]
 }

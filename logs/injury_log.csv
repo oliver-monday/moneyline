@@ -6895,25 +6895,30 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-05,TOR,C. Murray-Boyles,OUT,C. Murray-Boyles (Out),rotowire
 2026-03-05,TOR,Joe Ingles,OUT,Joe Ingles (Out),rotowire
 2026-03-05,MIN,Joe Ingles,OUT,Joe Ingles (Out),rotowire
+2026-03-05,DET,A. Thompson,QUES,A. Thompson (Ques),rotowire
+2026-03-05,DET,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
+2026-03-05,DET,H. Barnes,OUT,H. Barnes (Out),rotowire
+2026-03-05,DET,H. Ingram,OUT,H. Ingram (Out),rotowire
+2026-03-05,DET,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-03-05,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-03-05,SAS,H. Barnes,OUT,H. Barnes (Out),rotowire
 2026-03-05,SAS,H. Ingram,OUT,H. Ingram (Out),rotowire
 2026-03-05,SAS,M. Plumlee,OUT,M. Plumlee (Out),rotowire
 2026-03-05,CHI,Z. Collins,OFS,Z. Collins (OFS),rotowire
 2026-03-05,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
-2026-03-05,CHI,M. Buzelis,QUES,M. Buzelis (Ques),rotowire
-2026-03-05,CHI,J. Giddey,QUES,J. Giddey (Ques),rotowire
-2026-03-05,CHI,J. Smith,DOUBT,J. Smith (Doubt),rotowire
-2026-03-05,CHI,P. Williams,DOUBT,P. Williams (Doubt),rotowire
+2026-03-05,CHI,M. Buzelis,OUT,M. Buzelis (Out),rotowire
+2026-03-05,CHI,J. Giddey,OUT,J. Giddey (Out),rotowire
 2026-03-05,CHI,Jaden Ivey,OUT,Jaden Ivey (Out),rotowire
 2026-03-05,CHI,A. Simons,OUT,A. Simons (Out),rotowire
+2026-03-05,CHI,J. Smith,OUT,J. Smith (Out),rotowire
+2026-03-05,CHI,P. Williams,OUT,P. Williams (Out),rotowire
 2026-03-05,CHI,D. Brooks,OUT,D. Brooks (Out),rotowire
 2026-03-05,CHI,J. Goodwin,OUT,J. Goodwin (Out),rotowire
 2026-03-05,CHI,M. Williams,OUT,M. Williams (Out),rotowire
 2026-03-05,PHX,D. Brooks,OUT,D. Brooks (Out),rotowire
 2026-03-05,PHX,J. Goodwin,OUT,J. Goodwin (Out),rotowire
 2026-03-05,PHX,M. Williams,OUT,M. Williams (Out),rotowire
-2026-03-05,LAL,M. Kleber,QUES,M. Kleber (Ques),rotowire
+2026-03-05,LAL,M. Kleber,OUT,M. Kleber (Out),rotowire
 2026-03-05,LAL,C. Johnson,QUES,C. Johnson (Ques),rotowire
 2026-03-05,LAL,A. Gordon,OUT,A. Gordon (Out),rotowire
 2026-03-05,LAL,S. Jones,OUT,S. Jones (Out),rotowire
@@ -6935,7 +6940,3 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-05,SAC,D. Sabonis,OFS,D. Sabonis (OFS),rotowire
 2026-03-05,SAC,D. Cardwell,OUT,D. Cardwell (Out),rotowire
 2026-03-05,SAC,K. Murray,OUT,K. Murray (Out),rotowire
-2026-03-05,DET,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
-2026-03-05,DET,H. Barnes,OUT,H. Barnes (Out),rotowire
-2026-03-05,DET,H. Ingram,OUT,H. Ingram (Out),rotowire
-2026-03-05,DET,M. Plumlee,OUT,M. Plumlee (Out),rotowire
