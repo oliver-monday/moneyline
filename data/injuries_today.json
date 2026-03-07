@@ -1,8 +1,13 @@
 {
   "asof_date": "2026-03-07",
-  "built_at_utc": "2026-03-07T19:26:37Z",
+  "built_at_utc": "2026-03-07T20:23:26Z",
   "source": "rotowire",
   "ORL": [
+    {
+      "name": "A. Black",
+      "status": "QUES",
+      "details": "A. Black (Ques)"
+    },
     {
       "name": "J. Isaac",
       "status": "OUT",
@@ -254,16 +259,6 @@
       "details": "G. Payton (Prob)"
     },
     {
-      "name": "S. Curry",
-      "status": "QUES",
-      "details": "S. Curry (Ques)"
-    },
-    {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
-    },
-    {
       "name": "K. Porzingis",
       "status": "QUES",
       "details": "K. Porzingis (Ques)"
@@ -277,6 +272,16 @@
       "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
+    },
+    {
+      "name": "Seth Curry",
+      "status": "OUT",
+      "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "D. Melton",
+      "status": "OUT",
+      "details": "D. Melton (Out)"
     },
     {
       "name": "M. Moody",
@@ -302,6 +307,11 @@
       "name": "I. Hartenstein",
       "status": "OUT",
       "details": "I. Hartenstein (Out)"
+    },
+    {
+      "name": "C. Holmgren",
+      "status": "OUT",
+      "details": "C. Holmgren (Out)"
     },
     {
       "name": "A. Mitchell",
@@ -334,6 +344,11 @@
       "name": "I. Hartenstein",
       "status": "OUT",
       "details": "I. Hartenstein (Out)"
+    },
+    {
+      "name": "C. Holmgren",
+      "status": "OUT",
+      "details": "C. Holmgren (Out)"
     },
     {
       "name": "A. Mitchell",
