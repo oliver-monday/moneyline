@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-03-07",
-  "built_at_utc": "2026-03-07T17:11:57Z",
+  "built_at_utc": "2026-03-07T18:30:15Z",
   "source": "rotowire",
   "ORL": [
     {
       "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
     },
     {
       "name": "F. Wagner",
@@ -28,14 +28,14 @@
   ],
   "PHI": [
     {
-      "name": "V. Edgecombe",
-      "status": "DOUBT",
-      "details": "V. Edgecombe (Doubt)"
-    },
-    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
+    },
+    {
+      "name": "V. Edgecombe",
+      "status": "OUT",
+      "details": "V. Edgecombe (Out)"
     },
     {
       "name": "J. Embiid",
