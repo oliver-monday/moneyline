@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-06",
-  "built_at_utc": "2026-03-06T23:29:58Z",
+  "built_at_utc": "2026-03-07T01:10:08Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -24,12 +24,22 @@
       "details": "D. Gafford (Out)"
     },
     {
+      "name": "N. Vucevic",
+      "status": "DOUBT",
+      "details": "N. Vucevic (Doubt)"
+    },
+    {
       "name": "J. Walsh",
       "status": "OUT",
       "details": "J. Walsh (Out)"
     }
   ],
   "BOS": [
+    {
+      "name": "N. Vucevic",
+      "status": "DOUBT",
+      "details": "N. Vucevic (Doubt)"
+    },
     {
       "name": "J. Walsh",
       "status": "OUT",
@@ -82,14 +92,14 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "K. Murray",
-      "status": "QUES",
-      "details": "K. Murray (Ques)"
+      "name": "D. Avdija",
+      "status": "OUT",
+      "details": "D. Avdija (Out)"
     },
     {
-      "name": "D. Avdija",
-      "status": "DOUBT",
-      "details": "D. Avdija (Doubt)"
+      "name": "K. Murray",
+      "status": "OUT",
+      "details": "K. Murray (Out)"
     },
     {
       "name": "S. Sharpe",
@@ -97,14 +107,14 @@
       "details": "S. Sharpe (Out)"
     },
     {
-      "name": "J. Smith",
-      "status": "QUES",
-      "details": "J. Smith (Ques)"
-    },
-    {
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OUT",
+      "details": "J. Smith (Out)"
     },
     {
       "name": "J. Tate",
@@ -125,8 +135,8 @@
     },
     {
       "name": "J. Smith",
-      "status": "QUES",
-      "details": "J. Smith (Ques)"
+      "status": "OUT",
+      "details": "J. Smith (Out)"
     },
     {
       "name": "J. Tate",
@@ -141,29 +151,9 @@
   ],
   "NYK": [
     {
-      "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
-    },
-    {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
-    },
-    {
-      "name": "C. Johnson",
-      "status": "QUES",
-      "details": "C. Johnson (Ques)"
-    },
-    {
-      "name": "A. Gordon",
-      "status": "QUES",
-      "details": "A. Gordon (Ques)"
-    },
-    {
-      "name": "S. Jones",
-      "status": "QUES",
-      "details": "S. Jones (Ques)"
     },
     {
       "name": "P. Watson",
@@ -172,21 +162,6 @@
     }
   ],
   "DEN": [
-    {
-      "name": "A. Gordon",
-      "status": "QUES",
-      "details": "A. Gordon (Ques)"
-    },
-    {
-      "name": "C. Johnson",
-      "status": "QUES",
-      "details": "C. Johnson (Ques)"
-    },
-    {
-      "name": "S. Jones",
-      "status": "QUES",
-      "details": "S. Jones (Ques)"
-    },
     {
       "name": "P. Watson",
       "status": "OUT",
