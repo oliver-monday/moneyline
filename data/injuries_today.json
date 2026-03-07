@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-06",
-  "built_at_utc": "2026-03-07T03:09:29Z",
+  "built_at_utc": "2026-03-07T03:50:50Z",
   "source": "rotowire",
   "DAL": [
     {
@@ -156,12 +156,22 @@
       "details": "M. McBride (Out)"
     },
     {
+      "name": "J. Murray",
+      "status": "QUES",
+      "details": "J. Murray (Ques)"
+    },
+    {
       "name": "P. Watson",
       "status": "OUT",
       "details": "P. Watson (Out)"
     }
   ],
   "DEN": [
+    {
+      "name": "J. Murray",
+      "status": "QUES",
+      "details": "J. Murray (Ques)"
+    },
     {
       "name": "P. Watson",
       "status": "OUT",
