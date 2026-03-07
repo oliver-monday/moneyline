@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-07",
-  "built_at_utc": "2026-03-07T20:23:26Z",
+  "built_at_utc": "2026-03-07T21:09:35Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -59,15 +59,15 @@
     },
     {
       "name": "J. Kuminga",
-      "status": "QUES",
-      "details": "J. Kuminga (Ques)"
+      "status": "OUT",
+      "details": "J. Kuminga (Out)"
     }
   ],
   "ATL": [
     {
       "name": "J. Kuminga",
-      "status": "QUES",
-      "details": "J. Kuminga (Ques)"
+      "status": "OUT",
+      "details": "J. Kuminga (Out)"
     }
   ],
   "BKN": [
