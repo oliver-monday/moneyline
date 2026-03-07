@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-07",
-  "built_at_utc": "2026-03-07T18:30:15Z",
+  "built_at_utc": "2026-03-07T19:26:37Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -9,21 +9,26 @@
       "details": "J. Isaac (Out)"
     },
     {
+      "name": "J. Richardson",
+      "status": "OUT",
+      "details": "J. Richardson (Out)"
+    },
+    {
       "name": "F. Wagner",
       "status": "OUT",
       "details": "F. Wagner (Out)"
     },
     {
       "name": "K. Anderson",
-      "status": "QUES",
-      "details": "K. Anderson (Ques)"
+      "status": "OUT",
+      "details": "K. Anderson (Out)"
     }
   ],
   "MIN": [
     {
       "name": "K. Anderson",
-      "status": "QUES",
-      "details": "K. Anderson (Ques)"
+      "status": "OUT",
+      "details": "K. Anderson (Out)"
     }
   ],
   "PHI": [
@@ -67,14 +72,14 @@
       "details": "Egor Demin (Out)"
     },
     {
-      "name": "C. Cunningham",
-      "status": "QUES",
-      "details": "C. Cunningham (Ques)"
-    },
-    {
       "name": "J. Duren",
       "status": "PROB",
       "details": "J. Duren (Prob)"
+    },
+    {
+      "name": "C. Cunningham",
+      "status": "OUT",
+      "details": "C. Cunningham (Out)"
     },
     {
       "name": "A. Thompson",
@@ -90,8 +95,8 @@
     },
     {
       "name": "C. Cunningham",
-      "status": "QUES",
-      "details": "C. Cunningham (Ques)"
+      "status": "OUT",
+      "details": "C. Cunningham (Out)"
     },
     {
       "name": "A. Thompson",
@@ -163,11 +168,6 @@
       "name": "Y. Niederhauser",
       "status": "OFS",
       "details": "Y. Niederhauser (OFS)"
-    },
-    {
-      "name": "D. Garland",
-      "status": "PROB",
-      "details": "D. Garland (Prob)"
     },
     {
       "name": "J. Collins",

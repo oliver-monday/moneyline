@@ -7025,10 +7025,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-06,NOP,D. Brooks,OUT,D. Brooks (Out),rotowire
 2026-03-06,NOP,J. Goodwin,OUT,J. Goodwin (Out),rotowire
 2026-03-06,NOP,M. Williams,OUT,M. Williams (Out),rotowire
+2026-03-07,LAC,D. Garland,PROB,D. Garland (Prob),rotowire
 2026-03-07,ORL,J. Isaac,OUT,J. Isaac (Out),rotowire
+2026-03-07,ORL,J. Richardson,OUT,J. Richardson (Out),rotowire
 2026-03-07,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
-2026-03-07,ORL,K. Anderson,QUES,K. Anderson (Ques),rotowire
-2026-03-07,MIN,K. Anderson,QUES,K. Anderson (Ques),rotowire
+2026-03-07,ORL,K. Anderson,OUT,K. Anderson (Out),rotowire
+2026-03-07,MIN,K. Anderson,OUT,K. Anderson (Out),rotowire
 2026-03-07,PHI,J. Broome,OUT,J. Broome (Out),rotowire
 2026-03-07,PHI,V. Edgecombe,OUT,V. Edgecombe (Out),rotowire
 2026-03-07,PHI,J. Embiid,OUT,J. Embiid (Out),rotowire
@@ -7036,11 +7038,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-07,PHI,J. Kuminga,QUES,J. Kuminga (Ques),rotowire
 2026-03-07,ATL,J. Kuminga,QUES,J. Kuminga (Ques),rotowire
 2026-03-07,BKN,Egor Demin,OUT,Egor Demin (Out),rotowire
-2026-03-07,BKN,C. Cunningham,QUES,C. Cunningham (Ques),rotowire
 2026-03-07,BKN,J. Duren,PROB,J. Duren (Prob),rotowire
+2026-03-07,BKN,C. Cunningham,OUT,C. Cunningham (Out),rotowire
 2026-03-07,BKN,A. Thompson,OUT,A. Thompson (Out),rotowire
 2026-03-07,DET,J. Duren,PROB,J. Duren (Prob),rotowire
-2026-03-07,DET,C. Cunningham,QUES,C. Cunningham (Ques),rotowire
+2026-03-07,DET,C. Cunningham,OUT,C. Cunningham (Out),rotowire
 2026-03-07,DET,A. Thompson,OUT,A. Thompson (Out),rotowire
 2026-03-07,UTA,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-03-07,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
@@ -7054,7 +7056,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-07,MIL,T. Prince,OUT,T. Prince (Out),rotowire
 2026-03-07,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-03-07,LAC,Y. Niederhauser,OFS,Y. Niederhauser (OFS),rotowire
-2026-03-07,LAC,D. Garland,PROB,D. Garland (Prob),rotowire
 2026-03-07,LAC,J. Collins,OUT,J. Collins (Out),rotowire
 2026-03-07,LAC,S. Pedulla,OUT,S. Pedulla (Out),rotowire
 2026-03-07,LAC,K. Caldwell-Pope,OFS,K. Caldwell-Pope (OFS),rotowire
