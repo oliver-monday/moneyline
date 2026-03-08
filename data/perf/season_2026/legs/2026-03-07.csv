@@ -1,0 +1,6 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-07,2026,Desmond Bane,ORL,MIN,3pt,2,MISSED,0,,targets_snapshot_2026-03-07.json
+2026-03-07,2026,Nickeil Alexander-Walker,ATL,PHI,ast,4,HIT,6,,targets_snapshot_2026-03-07.json
+2026-03-07,2026,Jaden McDaniels,MIN,ORL,ast,2,HIT,2,,targets_snapshot_2026-03-07.json
+2026-03-07,2026,Ace Bailey,UTAH,MIL,pts,10,MISSED,9,,targets_snapshot_2026-03-07.json
+2026-03-07,2026,Ace Bailey,UTAH,MIL,reb,4,HIT,6,,targets_snapshot_2026-03-07.json
