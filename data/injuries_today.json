@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-08",
-  "built_at_utc": "2026-03-08T21:11:59Z",
+  "built_at_utc": "2026-03-08T22:31:07Z",
   "source": "rotowire",
   "BOS": [
     {
@@ -61,11 +61,6 @@
     }
   ],
   "DET": [
-    {
-      "name": "C. Cunningham",
-      "status": "PROB",
-      "details": "C. Cunningham (Prob)"
-    },
     {
       "name": "C. LeVert",
       "status": "OUT",
@@ -139,11 +134,6 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
-    },
-    {
-      "name": "D. Powell",
-      "status": "PROB",
-      "details": "D. Powell (Prob)"
     },
     {
       "name": "C. Hepburn",
@@ -449,6 +439,11 @@
       "details": "D. Cardwell (Out)"
     },
     {
+      "name": "D. DeRozan",
+      "status": "OUT",
+      "details": "D. DeRozan (Out)"
+    },
+    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
@@ -474,6 +469,11 @@
       "name": "D. Cardwell",
       "status": "OUT",
       "details": "D. Cardwell (Out)"
+    },
+    {
+      "name": "D. DeRozan",
+      "status": "OUT",
+      "details": "D. DeRozan (Out)"
     },
     {
       "name": "K. Murray",
