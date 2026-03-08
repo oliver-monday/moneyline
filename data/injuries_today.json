@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-07",
-  "built_at_utc": "2026-03-07T23:26:00Z",
+  "built_at_utc": "2026-03-08T01:15:54Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -203,6 +203,11 @@
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
+    },
+    {
+      "name": "R. Rupert",
+      "status": "OUT",
+      "details": "R. Rupert (Out)"
     }
   ],
   "MEM": [
@@ -235,6 +240,11 @@
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
+    },
+    {
+      "name": "R. Rupert",
+      "status": "OUT",
+      "details": "R. Rupert (Out)"
     }
   ],
   "GSW": [
@@ -242,21 +252,6 @@
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
-    },
-    {
-      "name": "G. Payton",
-      "status": "PROB",
-      "details": "G. Payton (Prob)"
-    },
-    {
-      "name": "K. Porzingis",
-      "status": "QUES",
-      "details": "K. Porzingis (Ques)"
-    },
-    {
-      "name": "W. Richard",
-      "status": "QUES",
-      "details": "W. Richard (Ques)"
     },
     {
       "name": "S. Curry",
@@ -277,6 +272,11 @@
       "name": "M. Moody",
       "status": "OUT",
       "details": "M. Moody (Out)"
+    },
+    {
+      "name": "W. Richard",
+      "status": "OUT",
+      "details": "W. Richard (Out)"
     },
     {
       "name": "T. Sorber",
