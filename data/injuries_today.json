@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-08",
-  "built_at_utc": "2026-03-08T22:31:07Z",
+  "built_at_utc": "2026-03-08T23:27:23Z",
   "source": "rotowire",
   "BOS": [
     {
@@ -136,6 +136,11 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "T. Jackson-Davis",
+      "status": "QUES",
+      "details": "T. Jackson-Davis (Ques)"
+    },
+    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
@@ -147,6 +152,11 @@
     }
   ],
   "TOR": [
+    {
+      "name": "T. Jackson-Davis",
+      "status": "QUES",
+      "details": "T. Jackson-Davis (Ques)"
+    },
     {
       "name": "C. Hepburn",
       "status": "OUT",
@@ -193,18 +203,18 @@
   "ORL": [
     {
       "name": "A. Black",
-      "status": "QUES",
-      "details": "A. Black (Ques)"
+      "status": "OUT",
+      "details": "A. Black (Out)"
     },
     {
       "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
     },
     {
       "name": "J. Richardson",
-      "status": "QUES",
-      "details": "J. Richardson (Ques)"
+      "status": "OUT",
+      "details": "J. Richardson (Out)"
     },
     {
       "name": "F. Wagner",
@@ -212,14 +222,14 @@
       "details": "F. Wagner (Out)"
     },
     {
-      "name": "K. Kuzma",
-      "status": "QUES",
-      "details": "K. Kuzma (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
+    },
+    {
+      "name": "Kyle Kuzma",
+      "status": "OUT",
+      "details": "Kyle Kuzma (Out)"
     },
     {
       "name": "K. Porter",
@@ -234,14 +244,14 @@
   ],
   "MIL": [
     {
-      "name": "K. Kuzma",
-      "status": "QUES",
-      "details": "K. Kuzma (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
+    },
+    {
+      "name": "Kyle Kuzma",
+      "status": "OUT",
+      "details": "Kyle Kuzma (Out)"
     },
     {
       "name": "K. Porter",
@@ -345,11 +355,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "K. Murray",
-      "status": "QUES",
-      "details": "K. Murray (Ques)"
-    },
-    {
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
@@ -357,19 +362,14 @@
   ],
   "POR": [
     {
-      "name": "D. Lillard",
-      "status": "OFS",
-      "details": "D. Lillard (OFS)"
-    },
-    {
       "name": "D. Avdija",
       "status": "QUES",
       "details": "D. Avdija (Ques)"
     },
     {
-      "name": "K. Murray",
-      "status": "QUES",
-      "details": "K. Murray (Ques)"
+      "name": "D. Lillard",
+      "status": "OFS",
+      "details": "D. Lillard (OFS)"
     },
     {
       "name": "S. Sharpe",
