@@ -1,27 +1,12 @@
 {
   "asof_date": "2026-03-08",
-  "built_at_utc": "2026-03-08T14:48:42Z",
+  "built_at_utc": "2026-03-08T17:14:13Z",
   "source": "rotowire",
   "BOS": [
     {
       "name": "N. Vucevic",
       "status": "OUT",
       "details": "N. Vucevic (Out)"
-    },
-    {
-      "name": "D. Mitchell",
-      "status": "PROB",
-      "details": "D. Mitchell (Prob)"
-    },
-    {
-      "name": "J. Tyson",
-      "status": "QUES",
-      "details": "J. Tyson (Ques)"
-    },
-    {
-      "name": "D. Wade",
-      "status": "PROB",
-      "details": "D. Wade (Prob)"
     },
     {
       "name": "J. Allen",
@@ -40,21 +25,6 @@
     }
   ],
   "CLE": [
-    {
-      "name": "D. Mitchell",
-      "status": "PROB",
-      "details": "D. Mitchell (Prob)"
-    },
-    {
-      "name": "D. Wade",
-      "status": "PROB",
-      "details": "D. Wade (Prob)"
-    },
-    {
-      "name": "J. Tyson",
-      "status": "QUES",
-      "details": "J. Tyson (Ques)"
-    },
     {
       "name": "J. Allen",
       "status": "OUT",
@@ -117,11 +87,6 @@
       "details": "A. Thompson (Out)"
     },
     {
-      "name": "A. Wiggins",
-      "status": "QUES",
-      "details": "A. Wiggins (Ques)"
-    },
-    {
       "name": "S. Fontecchio",
       "status": "OUT",
       "details": "S. Fontecchio (Out)"
@@ -140,15 +105,15 @@
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
+    },
+    {
+      "name": "A. Wiggins",
+      "status": "OUT",
+      "details": "A. Wiggins (Out)"
     }
   ],
   "MIA": [
     {
-      "name": "A. Wiggins",
-      "status": "QUES",
-      "details": "A. Wiggins (Ques)"
-    },
-    {
       "name": "S. Fontecchio",
       "status": "OUT",
       "details": "S. Fontecchio (Out)"
@@ -167,6 +132,11 @@
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
+    },
+    {
+      "name": "A. Wiggins",
+      "status": "OUT",
+      "details": "A. Wiggins (Out)"
     }
   ],
   "DAL": [
