@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-07",
-  "built_at_utc": "2026-03-08T03:26:03Z",
+  "built_at_utc": "2026-03-08T04:01:15Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -106,6 +106,11 @@
   ],
   "UTA": [
     {
+      "name": "I. Collier",
+      "status": "QUES",
+      "details": "I. Collier (Ques)"
+    },
+    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -126,19 +131,14 @@
       "details": "V. Williams (OFS)"
     },
     {
-      "name": "I. Collier",
-      "status": "OUT",
-      "details": "I. Collier (Out)"
-    },
-    {
       "name": "L. Markkanen",
       "status": "OUT",
       "details": "L. Markkanen (Out)"
     },
     {
       "name": "K. Porter",
-      "status": "OUT",
-      "details": "K. Porter (Out)"
+      "status": "QUES",
+      "details": "K. Porter (Ques)"
     },
     {
       "name": "T. Prince",
@@ -149,8 +149,8 @@
   "MIL": [
     {
       "name": "K. Porter",
-      "status": "OUT",
-      "details": "K. Porter (Out)"
+      "status": "QUES",
+      "details": "K. Porter (Ques)"
     },
     {
       "name": "T. Prince",
@@ -165,19 +165,24 @@
       "details": "B. Beal (OFS)"
     },
     {
+      "name": "J. Collins",
+      "status": "QUES",
+      "details": "J. Collins (Ques)"
+    },
+    {
       "name": "Y. Niederhauser",
       "status": "OFS",
       "details": "Y. Niederhauser (OFS)"
     },
     {
-      "name": "J. Collins",
-      "status": "OUT",
-      "details": "J. Collins (Out)"
+      "name": "S. Pedulla",
+      "status": "QUES",
+      "details": "S. Pedulla (Ques)"
     },
     {
-      "name": "S. Pedulla",
-      "status": "OUT",
-      "details": "S. Pedulla (Out)"
+      "name": "S. Aldama",
+      "status": "QUES",
+      "details": "S. Aldama (Ques)"
     },
     {
       "name": "K. Caldwell-Pope",
@@ -190,9 +195,9 @@
       "details": "Zach Edey (OFS)"
     },
     {
-      "name": "S. Aldama",
-      "status": "OUT",
-      "details": "S. Aldama (Out)"
+      "name": "T. Gibson",
+      "status": "QUES",
+      "details": "T. Gibson (Ques)"
     },
     {
       "name": "B. Clarke",
@@ -200,23 +205,18 @@
       "details": "B. Clarke (Out)"
     },
     {
-      "name": "Taj Gibson",
-      "status": "OUT",
-      "details": "Taj Gibson (Out)"
-    },
-    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
-    },
-    {
-      "name": "R. Rupert",
-      "status": "OUT",
-      "details": "R. Rupert (Out)"
     }
   ],
   "MEM": [
     {
+      "name": "S. Aldama",
+      "status": "QUES",
+      "details": "S. Aldama (Ques)"
+    },
+    {
       "name": "K. Caldwell-Pope",
       "status": "OFS",
       "details": "K. Caldwell-Pope (OFS)"
@@ -227,9 +227,9 @@
       "details": "Zach Edey (OFS)"
     },
     {
-      "name": "S. Aldama",
-      "status": "OUT",
-      "details": "S. Aldama (Out)"
+      "name": "T. Gibson",
+      "status": "QUES",
+      "details": "T. Gibson (Ques)"
     },
     {
       "name": "B. Clarke",
@@ -237,19 +237,9 @@
       "details": "B. Clarke (Out)"
     },
     {
-      "name": "Taj Gibson",
-      "status": "OUT",
-      "details": "Taj Gibson (Out)"
-    },
-    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
-    },
-    {
-      "name": "R. Rupert",
-      "status": "OUT",
-      "details": "R. Rupert (Out)"
     }
   ],
   "GSW": [
