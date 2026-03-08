@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-08",
-  "built_at_utc": "2026-03-08T08:50:24Z",
+  "built_at_utc": "2026-03-08T14:48:42Z",
   "source": "rotowire",
   "BOS": [
     {
@@ -287,12 +287,22 @@
       "details": "K. Porter (Ques)"
     },
     {
+      "name": "G. Antetokounmpo",
+      "status": "QUES",
+      "details": "G. Antetokounmpo (Ques)"
+    },
+    {
       "name": "T. Prince",
       "status": "OUT",
       "details": "T. Prince (Out)"
     }
   ],
   "MIL": [
+    {
+      "name": "G. Antetokounmpo",
+      "status": "QUES",
+      "details": "G. Antetokounmpo (Ques)"
+    },
     {
       "name": "K. Porter",
       "status": "QUES",
@@ -321,11 +331,6 @@
       "details": "F. VanVleet (Out)"
     },
     {
-      "name": "H. Ingram",
-      "status": "QUES",
-      "details": "H. Ingram (Ques)"
-    },
-    {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
@@ -342,11 +347,6 @@
     }
   ],
   "SAS": [
-    {
-      "name": "H. Ingram",
-      "status": "QUES",
-      "details": "H. Ingram (Ques)"
-    },
     {
       "name": "D. Jones Garcia",
       "status": "OFS",
