@@ -7112,6 +7112,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-08,LAL,M. Kleber,QUES,M. Kleber (Ques),rotowire
 2026-03-08,DAL,B. Ingram,QUES,B. Ingram (Ques),rotowire
 2026-03-08,TOR,B. Ingram,QUES,B. Ingram (Ques),rotowire
+2026-03-08,DAL,M. Bagley,QUES,M. Bagley (Ques),rotowire
+2026-03-08,DAL,C. Flagg,QUES,C. Flagg (Ques),rotowire
 2026-03-08,BOS,N. Vucevic,OUT,N. Vucevic (Out),rotowire
 2026-03-08,BOS,J. Allen,OUT,J. Allen (Out),rotowire
 2026-03-08,BOS,T. Proctor,OUT,T. Proctor (Out),rotowire
@@ -7138,8 +7140,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-08,DAL,K. Irving,OFS,K. Irving (OFS),rotowire
 2026-03-08,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
 2026-03-08,DAL,D. Powell,PROB,D. Powell (Prob),rotowire
-2026-03-08,DAL,M. Bagley,QUES,M. Bagley (Ques),rotowire
-2026-03-08,DAL,C. Flagg,QUES,C. Flagg (Ques),rotowire
 2026-03-08,DAL,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-03-08,DAL,C. Murray-Boyles,OUT,C. Murray-Boyles (Out),rotowire
 2026-03-08,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire

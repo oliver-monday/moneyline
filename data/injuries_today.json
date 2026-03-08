@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-08",
-  "built_at_utc": "2026-03-08T20:24:09Z",
+  "built_at_utc": "2026-03-08T21:11:59Z",
   "source": "rotowire",
   "BOS": [
     {
@@ -144,16 +144,6 @@
       "name": "D. Powell",
       "status": "PROB",
       "details": "D. Powell (Prob)"
-    },
-    {
-      "name": "M. Bagley",
-      "status": "QUES",
-      "details": "M. Bagley (Ques)"
-    },
-    {
-      "name": "C. Flagg",
-      "status": "QUES",
-      "details": "C. Flagg (Ques)"
     },
     {
       "name": "C. Hepburn",
