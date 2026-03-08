@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-07",
-  "built_at_utc": "2026-03-08T01:15:54Z",
+  "built_at_utc": "2026-03-08T03:26:03Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -38,14 +38,19 @@
   ],
   "PHI": [
     {
+      "name": "V. Edgecombe",
+      "status": "QUES",
+      "details": "V. Edgecombe (Ques)"
+    },
+    {
+      "name": "T. Maxey",
+      "status": "QUES",
+      "details": "T. Maxey (Ques)"
+    },
+    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
-    },
-    {
-      "name": "V. Edgecombe",
-      "status": "OUT",
-      "details": "V. Edgecombe (Out)"
     },
     {
       "name": "J. Embiid",
@@ -59,27 +64,27 @@
     },
     {
       "name": "J. Kuminga",
-      "status": "OUT",
-      "details": "J. Kuminga (Out)"
+      "status": "QUES",
+      "details": "J. Kuminga (Ques)"
     }
   ],
   "ATL": [
     {
       "name": "J. Kuminga",
-      "status": "OUT",
-      "details": "J. Kuminga (Out)"
+      "status": "QUES",
+      "details": "J. Kuminga (Ques)"
     }
   ],
   "BKN": [
     {
-      "name": "Egor Demin",
-      "status": "OUT",
-      "details": "Egor Demin (Out)"
+      "name": "E. Demin",
+      "status": "QUES",
+      "details": "E. Demin (Ques)"
     },
     {
       "name": "C. Cunningham",
-      "status": "OUT",
-      "details": "C. Cunningham (Out)"
+      "status": "QUES",
+      "details": "C. Cunningham (Ques)"
     },
     {
       "name": "A. Thompson",
@@ -90,8 +95,8 @@
   "DET": [
     {
       "name": "C. Cunningham",
-      "status": "OUT",
-      "details": "C. Cunningham (Out)"
+      "status": "QUES",
+      "details": "C. Cunningham (Ques)"
     },
     {
       "name": "A. Thompson",
