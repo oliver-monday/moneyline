@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-08",
-  "built_at_utc": "2026-03-08T17:14:13Z",
+  "built_at_utc": "2026-03-08T18:30:53Z",
   "source": "rotowire",
   "BOS": [
     {
@@ -43,43 +43,33 @@
   ],
   "NYK": [
     {
-      "name": "L. Shamet",
-      "status": "QUES",
-      "details": "L. Shamet (Ques)"
-    },
-    {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
     },
     {
       "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
-    },
-    {
-      "name": "M. Kleber",
-      "status": "QUES",
-      "details": "M. Kleber (Ques)"
+      "status": "OUT",
+      "details": "L. James (Out)"
     }
   ],
   "LAL": [
     {
       "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
-    },
-    {
-      "name": "M. Kleber",
-      "status": "QUES",
-      "details": "M. Kleber (Ques)"
+      "status": "OUT",
+      "details": "L. James (Out)"
     }
   ],
   "DET": [
     {
       "name": "C. Cunningham",
-      "status": "QUES",
-      "details": "C. Cunningham (Ques)"
+      "status": "PROB",
+      "details": "C. Cunningham (Prob)"
+    },
+    {
+      "name": "C. LeVert",
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     },
     {
       "name": "A. Thompson",
@@ -252,14 +242,19 @@
       "details": "F. Wagner (Out)"
     },
     {
-      "name": "K. Porter",
+      "name": "K. Kuzma",
       "status": "QUES",
-      "details": "K. Porter (Ques)"
+      "details": "K. Kuzma (Ques)"
     },
     {
       "name": "G. Antetokounmpo",
-      "status": "QUES",
-      "details": "G. Antetokounmpo (Ques)"
+      "status": "OUT",
+      "details": "G. Antetokounmpo (Out)"
+    },
+    {
+      "name": "K. Porter",
+      "status": "OUT",
+      "details": "K. Porter (Out)"
     },
     {
       "name": "T. Prince",
@@ -269,14 +264,19 @@
   ],
   "MIL": [
     {
-      "name": "G. Antetokounmpo",
+      "name": "K. Kuzma",
       "status": "QUES",
-      "details": "G. Antetokounmpo (Ques)"
+      "details": "K. Kuzma (Ques)"
+    },
+    {
+      "name": "G. Antetokounmpo",
+      "status": "OUT",
+      "details": "G. Antetokounmpo (Out)"
     },
     {
       "name": "K. Porter",
-      "status": "QUES",
-      "details": "K. Porter (Ques)"
+      "status": "OUT",
+      "details": "K. Porter (Out)"
     },
     {
       "name": "T. Prince",
