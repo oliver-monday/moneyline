@@ -7251,9 +7251,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-09,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-03-09,MEM,Taj Gibson,OUT,Taj Gibson (Out),rotowire
 2026-03-09,MEM,Ja Morant,OUT,Ja Morant (Out),rotowire
-2026-03-09,MEM,Egor Demin,OUT,Egor Demin (Out),rotowire
+2026-03-09,MEM,Egor Demin,OFS,Egor Demin (OFS),rotowire
 2026-03-09,MEM,M. Porter,OUT,M. Porter (Out),rotowire
-2026-03-09,BKN,Egor Demin,OUT,Egor Demin (Out),rotowire
+2026-03-09,BKN,Egor Demin,OFS,Egor Demin (OFS),rotowire
 2026-03-09,BKN,M. Porter,OUT,M. Porter (Out),rotowire
 2026-03-09,DEN,J. Murray,QUES,J. Murray (Ques),rotowire
 2026-03-09,DEN,P. Watson,OUT,P. Watson (Out),rotowire
@@ -7289,8 +7289,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-09,UTA,K. George,QUES,K. George (Ques),rotowire
 2026-03-09,UTA,I. Collier,OUT,I. Collier (Out),rotowire
 2026-03-09,UTA,L. Markkanen,OUT,L. Markkanen (Out),rotowire
-2026-03-09,NYK,M. Robinson,DOUBT,M. Robinson (Doubt),rotowire
 2026-03-09,NYK,M. McBride,OUT,M. McBride (Out),rotowire
+2026-03-09,NYK,M. Robinson,OUT,M. Robinson (Out),rotowire
 2026-03-09,NYK,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-03-09,NYK,Y. Niederhauser,OFS,Y. Niederhauser (OFS),rotowire
 2026-03-09,NYK,J. Collins,OUT,J. Collins (Out),rotowire

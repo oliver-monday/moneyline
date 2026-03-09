@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-09",
-  "built_at_utc": "2026-03-09T19:42:15Z",
+  "built_at_utc": "2026-03-09T20:32:22Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -124,8 +124,8 @@
     },
     {
       "name": "Egor Demin",
-      "status": "OUT",
-      "details": "Egor Demin (Out)"
+      "status": "OFS",
+      "details": "Egor Demin (OFS)"
     },
     {
       "name": "M. Porter",
@@ -136,8 +136,8 @@
   "BKN": [
     {
       "name": "Egor Demin",
-      "status": "OUT",
-      "details": "Egor Demin (Out)"
+      "status": "OFS",
+      "details": "Egor Demin (OFS)"
     },
     {
       "name": "M. Porter",
@@ -330,14 +330,14 @@
   ],
   "NYK": [
     {
-      "name": "M. Robinson",
-      "status": "DOUBT",
-      "details": "M. Robinson (Doubt)"
-    },
-    {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
+    },
+    {
+      "name": "M. Robinson",
+      "status": "OUT",
+      "details": "M. Robinson (Out)"
     },
     {
       "name": "B. Beal",
