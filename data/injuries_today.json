@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-09",
-  "built_at_utc": "2026-03-09T17:38:53Z",
+  "built_at_utc": "2026-03-09T18:50:32Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -167,14 +167,14 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "A. Caruso",
-      "status": "QUES",
-      "details": "A. Caruso (Ques)"
-    },
-    {
       "name": "B. Carlson",
       "status": "OUT",
       "details": "B. Carlson (Out)"
+    },
+    {
+      "name": "A. Caruso",
+      "status": "OUT",
+      "details": "A. Caruso (Out)"
     },
     {
       "name": "I. Hartenstein",
@@ -194,11 +194,6 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "A. Caruso",
-      "status": "QUES",
-      "details": "A. Caruso (Ques)"
-    },
-    {
       "name": "C. Holmgren",
       "status": "QUES",
       "details": "C. Holmgren (Ques)"
@@ -207,6 +202,11 @@
       "name": "B. Carlson",
       "status": "OUT",
       "details": "B. Carlson (Out)"
+    },
+    {
+      "name": "A. Caruso",
+      "status": "OUT",
+      "details": "A. Caruso (Out)"
     },
     {
       "name": "I. Hartenstein",
@@ -281,11 +281,6 @@
       "details": "J. Nurkic (OFS)"
     },
     {
-      "name": "V. Williams",
-      "status": "OFS",
-      "details": "V. Williams (OFS)"
-    },
-    {
       "name": "I. Collier",
       "status": "OUT",
       "details": "I. Collier (Out)"
@@ -311,11 +306,6 @@
       "name": "J. Nurkic",
       "status": "OFS",
       "details": "J. Nurkic (OFS)"
-    },
-    {
-      "name": "V. Williams",
-      "status": "OFS",
-      "details": "V. Williams (OFS)"
     },
     {
       "name": "A. Bailey",
