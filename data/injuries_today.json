@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-09",
-  "built_at_utc": "2026-03-09T22:36:01Z",
+  "built_at_utc": "2026-03-09T23:30:53Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -73,26 +73,6 @@
       "details": "Zach Edey (OFS)"
     },
     {
-      "name": "C. Coward",
-      "status": "DOUBT",
-      "details": "C. Coward (Doubt)"
-    },
-    {
-      "name": "T. Hendricks",
-      "status": "DOUBT",
-      "details": "T. Hendricks (Doubt)"
-    },
-    {
-      "name": "T. Jerome",
-      "status": "DOUBT",
-      "details": "T. Jerome (Doubt)"
-    },
-    {
-      "name": "S. Pippen",
-      "status": "DOUBT",
-      "details": "S. Pippen (Doubt)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -103,14 +83,34 @@
       "details": "B. Clarke (Out)"
     },
     {
+      "name": "C. Coward",
+      "status": "OUT",
+      "details": "C. Coward (Out)"
+    },
+    {
       "name": "Taj Gibson",
       "status": "OUT",
       "details": "Taj Gibson (Out)"
     },
     {
+      "name": "T. Hendricks",
+      "status": "OUT",
+      "details": "T. Hendricks (Out)"
+    },
+    {
+      "name": "Ty Jerome",
+      "status": "OUT",
+      "details": "Ty Jerome (Out)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
+    },
+    {
+      "name": "S. Pippen",
+      "status": "OUT",
+      "details": "S. Pippen (Out)"
     },
     {
       "name": "Egor Demin",
@@ -236,11 +236,6 @@
       "details": "W. Richard (Out)"
     },
     {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
-    },
-    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -286,11 +281,6 @@
       "name": "J. Nurkic",
       "status": "OFS",
       "details": "J. Nurkic (OFS)"
-    },
-    {
-      "name": "K. George",
-      "status": "QUES",
-      "details": "K. George (Ques)"
     },
     {
       "name": "Ace Bailey",

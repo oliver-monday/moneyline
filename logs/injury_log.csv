@@ -7233,6 +7233,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-09,DEN,J. Murray,QUES,J. Murray (Ques),rotowire
 2026-03-09,GSW,A. Bailey,QUES,A. Bailey (Ques),rotowire
 2026-03-09,UTA,A. Bailey,QUES,A. Bailey (Ques),rotowire
+2026-03-09,MEM,T. Jerome,DOUBT,T. Jerome (Doubt),rotowire
+2026-03-09,GSW,K. George,QUES,K. George (Ques),rotowire
+2026-03-09,UTA,K. George,QUES,K. George (Ques),rotowire
 2026-03-09,PHI,J. Broome,OUT,J. Broome (Out),rotowire
 2026-03-09,PHI,V. Edgecombe,OUT,V. Edgecombe (Out),rotowire
 2026-03-09,PHI,J. Embiid,OUT,J. Embiid (Out),rotowire
@@ -7246,14 +7249,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-09,CLE,Max Strus,OUT,Max Strus (Out),rotowire
 2026-03-09,MEM,K. Caldwell-Pope,OFS,K. Caldwell-Pope (OFS),rotowire
 2026-03-09,MEM,Zach Edey,OFS,Zach Edey (OFS),rotowire
-2026-03-09,MEM,C. Coward,DOUBT,C. Coward (Doubt),rotowire
-2026-03-09,MEM,T. Hendricks,DOUBT,T. Hendricks (Doubt),rotowire
-2026-03-09,MEM,T. Jerome,DOUBT,T. Jerome (Doubt),rotowire
-2026-03-09,MEM,S. Pippen,DOUBT,S. Pippen (Doubt),rotowire
 2026-03-09,MEM,S. Aldama,OUT,S. Aldama (Out),rotowire
 2026-03-09,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire
+2026-03-09,MEM,C. Coward,OUT,C. Coward (Out),rotowire
 2026-03-09,MEM,Taj Gibson,OUT,Taj Gibson (Out),rotowire
+2026-03-09,MEM,T. Hendricks,OUT,T. Hendricks (Out),rotowire
+2026-03-09,MEM,Ty Jerome,OUT,Ty Jerome (Out),rotowire
 2026-03-09,MEM,Ja Morant,OUT,Ja Morant (Out),rotowire
+2026-03-09,MEM,S. Pippen,OUT,S. Pippen (Out),rotowire
 2026-03-09,MEM,Egor Demin,OFS,Egor Demin (OFS),rotowire
 2026-03-09,MEM,M. Porter,OUT,M. Porter (Out),rotowire
 2026-03-09,BKN,Egor Demin,OFS,Egor Demin (OFS),rotowire
@@ -7277,7 +7280,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-09,GSW,M. Moody,OUT,M. Moody (Out),rotowire
 2026-03-09,GSW,K. Porzingis,OUT,K. Porzingis (Out),rotowire
 2026-03-09,GSW,W. Richard,OUT,W. Richard (Out),rotowire
-2026-03-09,GSW,K. George,QUES,K. George (Ques),rotowire
 2026-03-09,GSW,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-03-09,GSW,W. Kessler,OFS,W. Kessler (OFS),rotowire
 2026-03-09,GSW,J. Nurkic,OFS,J. Nurkic (OFS),rotowire
@@ -7287,7 +7289,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-09,UTA,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-03-09,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
 2026-03-09,UTA,J. Nurkic,OFS,J. Nurkic (OFS),rotowire
-2026-03-09,UTA,K. George,QUES,K. George (Ques),rotowire
 2026-03-09,UTA,Ace Bailey,OUT,Ace Bailey (Out),rotowire
 2026-03-09,UTA,I. Collier,OUT,I. Collier (Out),rotowire
 2026-03-09,UTA,L. Markkanen,OUT,L. Markkanen (Out),rotowire
