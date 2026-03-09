@@ -1,17 +1,17 @@
 {
   "asof_date": "2026-03-09",
-  "built_at_utc": "2026-03-09T15:29:38Z",
+  "built_at_utc": "2026-03-09T17:38:53Z",
   "source": "rotowire",
   "PHI": [
-    {
-      "name": "V. Edgecombe",
-      "status": "QUES",
-      "details": "V. Edgecombe (Ques)"
-    },
     {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
+    },
+    {
+      "name": "V. Edgecombe",
+      "status": "OUT",
+      "details": "V. Edgecombe (Out)"
     },
     {
       "name": "J. Embiid",
@@ -29,14 +29,19 @@
       "details": "T. Maxey (Out)"
     },
     {
+      "name": "D. Wade",
+      "status": "PROB",
+      "details": "D. Wade (Prob)"
+    },
+    {
       "name": "J. Allen",
-      "status": "QUES",
-      "details": "J. Allen (Ques)"
+      "status": "OUT",
+      "details": "J. Allen (Out)"
     },
     {
       "name": "T. Proctor",
-      "status": "QUES",
-      "details": "T. Proctor (Ques)"
+      "status": "OUT",
+      "details": "T. Proctor (Out)"
     },
     {
       "name": "Max Strus",
@@ -46,14 +51,19 @@
   ],
   "CLE": [
     {
+      "name": "D. Wade",
+      "status": "PROB",
+      "details": "D. Wade (Prob)"
+    },
+    {
       "name": "J. Allen",
-      "status": "QUES",
-      "details": "J. Allen (Ques)"
+      "status": "OUT",
+      "details": "J. Allen (Out)"
     },
     {
       "name": "T. Proctor",
-      "status": "QUES",
-      "details": "T. Proctor (Ques)"
+      "status": "OUT",
+      "details": "T. Proctor (Out)"
     },
     {
       "name": "Max Strus",
@@ -113,11 +123,6 @@
       "details": "Ja Morant (Out)"
     },
     {
-      "name": "B. Saraf",
-      "status": "PROB",
-      "details": "B. Saraf (Prob)"
-    },
-    {
       "name": "Egor Demin",
       "status": "OUT",
       "details": "Egor Demin (Out)"
@@ -129,11 +134,6 @@
     }
   ],
   "BKN": [
-    {
-      "name": "B. Saraf",
-      "status": "PROB",
-      "details": "B. Saraf (Prob)"
-    },
     {
       "name": "Egor Demin",
       "status": "OUT",
@@ -261,6 +261,11 @@
       "details": "K. George (Ques)"
     },
     {
+      "name": "A. Bailey",
+      "status": "QUES",
+      "details": "A. Bailey (Ques)"
+    },
+    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -282,8 +287,8 @@
     },
     {
       "name": "I. Collier",
-      "status": "QUES",
-      "details": "I. Collier (Ques)"
+      "status": "OUT",
+      "details": "I. Collier (Out)"
     },
     {
       "name": "L. Markkanen",
@@ -313,14 +318,19 @@
       "details": "V. Williams (OFS)"
     },
     {
-      "name": "I. Collier",
+      "name": "A. Bailey",
       "status": "QUES",
-      "details": "I. Collier (Ques)"
+      "details": "A. Bailey (Ques)"
     },
     {
       "name": "K. George",
       "status": "QUES",
       "details": "K. George (Ques)"
+    },
+    {
+      "name": "I. Collier",
+      "status": "OUT",
+      "details": "I. Collier (Out)"
     },
     {
       "name": "L. Markkanen",
