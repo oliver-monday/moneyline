@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-09",
-  "built_at_utc": "2026-03-09T20:32:22Z",
+  "built_at_utc": "2026-03-09T21:20:04Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -227,16 +227,6 @@
     },
     {
       "name": "S. Curry",
-      "status": "PROB",
-      "details": "S. Curry (Prob)"
-    },
-    {
-      "name": "W. Richard",
-      "status": "QUES",
-      "details": "W. Richard (Ques)"
-    },
-    {
-      "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
     },
@@ -254,6 +244,11 @@
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
+    },
+    {
+      "name": "W. Richard",
+      "status": "OUT",
+      "details": "W. Richard (Out)"
     },
     {
       "name": "K. George",
