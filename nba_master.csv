@@ -966,8 +966,8 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810784,2026-03-08,2026-03-09T01:00Z,Portland Trail Blazers,POR,131,-395.0,,Indiana Pacers,IND,111,310.0,,Portland,OR,,
 401810785,2026-03-08,2026-03-09T01:00Z,Sacramento Kings,SAC,126,114.0,,Chicago Bulls,CHI,110,-135.0,,Sacramento,CA,,
 401810783,2026-03-08,2026-03-09T02:00Z,Phoenix Suns,PHX,111,150.0,,Charlotte Hornets,CHA,99,-180.0,,Phoenix,AZ,,
-401810786,2026-03-09,2026-03-09T23:00Z,Cleveland Cavaliers,CLE,0,-550.0,,Philadelphia 76ers,PHI,0,410.0,,Cleveland,OH,,J. Broome (Out); J. Embiid (Out); P. George (Out); T. Maxey (Out)
-401810787,2026-03-09,2026-03-09T23:30Z,Brooklyn Nets,BKN,0,-108.0,,Memphis Grizzlies,MEM,0,-112.0,,Brooklyn,NY,Egor Demin (Out); M. Porter (Out),K. Caldwell-Pope (OFS); Zach Edey (OFS); S. Aldama (Out); B. Clarke (Out); Taj Gibson (Out); Ja Morant (Out)
-401810788,2026-03-09,2026-03-09T23:30Z,Oklahoma City Thunder,OKC,0,-278.0,,Denver Nuggets,DEN,0,225.0,,Oklahoma City,OK,T. Sorber (OFS); B. Carlson (Out); I. Hartenstein (Out); J. Williams (Out),P. Watson (Out)
-401810789,2026-03-09,2026-03-10T01:00Z,Utah Jazz,UTAH,0,170.0,,Golden State Warriors,GS,0,-205.0,,Salt Lake City,UT,J. Jackson (OFS); W. Kessler (OFS); J. Nurkic (OFS); V. Williams (OFS); L. Markkanen (Out),J. Butler (OFS); S. Curry (Out); Al Horford (Out); M. Moody (Out); K. Porzingis (Out)
+401810786,2026-03-09,2026-03-09T23:00Z,Cleveland Cavaliers,CLE,0,-675.0,,Philadelphia 76ers,PHI,0,490.0,,Cleveland,OH,Max Strus (Out),J. Broome (Out); J. Embiid (Out); P. George (Out); T. Maxey (Out)
+401810787,2026-03-09,2026-03-09T23:30Z,Brooklyn Nets,BKN,0,-105.0,,Memphis Grizzlies,MEM,0,-115.0,,Brooklyn,NY,Egor Demin (Out); M. Porter (Out),K. Caldwell-Pope (OFS); Zach Edey (OFS); S. Aldama (Out); B. Clarke (Out); Taj Gibson (Out); Ja Morant (Out)
+401810788,2026-03-09,2026-03-09T23:30Z,Oklahoma City Thunder,OKC,0,-270.0,,Denver Nuggets,DEN,0,220.0,,Oklahoma City,OK,T. Sorber (OFS); B. Carlson (Out); I. Hartenstein (Out); J. Williams (Out),P. Watson (Out)
+401810789,2026-03-09,2026-03-10T01:00Z,Utah Jazz,UTAH,0,195.0,,Golden State Warriors,GS,0,-238.0,,Salt Lake City,UT,J. Jackson (OFS); W. Kessler (OFS); J. Nurkic (OFS); V. Williams (OFS); L. Markkanen (Out),J. Butler (OFS); S. Curry (Out); Al Horford (Out); M. Moody (Out); K. Porzingis (Out)
 401810790,2026-03-09,2026-03-10T02:00Z,LA Clippers,LAC,0,114.0,,New York Knicks,NY,0,-135.0,,Inglewood,CA,B. Beal (OFS); Y. Niederhauser (OFS); J. Collins (Out),M. McBride (Out)
