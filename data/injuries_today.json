@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-09",
-  "built_at_utc": "2026-03-09T09:04:42Z",
+  "built_at_utc": "2026-03-09T15:29:38Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -39,9 +39,9 @@
       "details": "T. Proctor (Ques)"
     },
     {
-      "name": "M. Strus",
-      "status": "DOUBT",
-      "details": "M. Strus (Doubt)"
+      "name": "Max Strus",
+      "status": "OUT",
+      "details": "Max Strus (Out)"
     }
   ],
   "CLE": [
@@ -56,9 +56,9 @@
       "details": "T. Proctor (Ques)"
     },
     {
-      "name": "M. Strus",
-      "status": "DOUBT",
-      "details": "M. Strus (Doubt)"
+      "name": "Max Strus",
+      "status": "OUT",
+      "details": "Max Strus (Out)"
     }
   ],
   "MEM": [
@@ -256,6 +256,11 @@
       "details": "K. Porzingis (Out)"
     },
     {
+      "name": "K. George",
+      "status": "QUES",
+      "details": "K. George (Ques)"
+    },
+    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -274,6 +279,11 @@
       "name": "V. Williams",
       "status": "OFS",
       "details": "V. Williams (OFS)"
+    },
+    {
+      "name": "I. Collier",
+      "status": "QUES",
+      "details": "I. Collier (Ques)"
     },
     {
       "name": "L. Markkanen",
@@ -303,12 +313,27 @@
       "details": "V. Williams (OFS)"
     },
     {
+      "name": "I. Collier",
+      "status": "QUES",
+      "details": "I. Collier (Ques)"
+    },
+    {
+      "name": "K. George",
+      "status": "QUES",
+      "details": "K. George (Ques)"
+    },
+    {
       "name": "L. Markkanen",
       "status": "OUT",
       "details": "L. Markkanen (Out)"
     }
   ],
   "NYK": [
+    {
+      "name": "M. Robinson",
+      "status": "DOUBT",
+      "details": "M. Robinson (Doubt)"
+    },
     {
       "name": "M. McBride",
       "status": "OUT",
