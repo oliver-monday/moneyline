@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-10",
-  "built_at_utc": "2026-03-10T17:37:30Z",
+  "built_at_utc": "2026-03-10T18:43:40Z",
   "source": "rotowire",
   "MEM": [
     {
@@ -314,11 +314,6 @@
       "details": "G. Allen (Ques)"
     },
     {
-      "name": "J. Goodwin",
-      "status": "QUES",
-      "details": "J. Goodwin (Ques)"
-    },
-    {
       "name": "D. Brooks",
       "status": "OUT",
       "details": "D. Brooks (Out)"
@@ -374,8 +369,8 @@
   "BOS": [
     {
       "name": "P. Pritchard",
-      "status": "QUES",
-      "details": "P. Pritchard (Ques)"
+      "status": "OUT",
+      "details": "P. Pritchard (Out)"
     },
     {
       "name": "N. Vucevic",
@@ -652,19 +647,14 @@
       "details": "K. Murray (Out)"
     }
   ],
-  "MIN": [
-    {
-      "name": "K. Anderson",
-      "status": "QUES",
-      "details": "K. Anderson (Ques)"
-    },
+  "LAL": [
     {
       "name": "L. James",
       "status": "QUES",
       "details": "L. James (Ques)"
     }
   ],
-  "LAL": [
+  "MIN": [
     {
       "name": "L. James",
       "status": "QUES",
