@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-10",
-  "built_at_utc": "2026-03-10T21:19:10Z",
+  "built_at_utc": "2026-03-10T22:35:17Z",
   "source": "rotowire",
   "MEM": [
     {
@@ -14,11 +14,6 @@
       "details": "Zach Edey (OFS)"
     },
     {
-      "name": "W. Clayton",
-      "status": "QUES",
-      "details": "W. Clayton (Ques)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -27,6 +22,11 @@
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
+    },
+    {
+      "name": "W. Clayton",
+      "status": "OUT",
+      "details": "W. Clayton (Out)"
     },
     {
       "name": "Taj Gibson",
@@ -42,11 +42,6 @@
       "name": "S. Pippen",
       "status": "OUT",
       "details": "S. Pippen (Out)"
-    },
-    {
-      "name": "V. Edgecombe",
-      "status": "QUES",
-      "details": "V. Edgecombe (Ques)"
     },
     {
       "name": "J. Broome",
@@ -70,11 +65,6 @@
     }
   ],
   "PHI": [
-    {
-      "name": "V. Edgecombe",
-      "status": "QUES",
-      "details": "V. Edgecombe (Ques)"
-    },
     {
       "name": "J. Broome",
       "status": "OUT",
@@ -109,15 +99,15 @@
     },
     {
       "name": "J. Kuminga",
-      "status": "QUES",
-      "details": "J. Kuminga (Ques)"
+      "status": "OUT",
+      "details": "J. Kuminga (Out)"
     }
   ],
   "ATL": [
     {
       "name": "J. Kuminga",
-      "status": "QUES",
-      "details": "J. Kuminga (Ques)"
+      "status": "OUT",
+      "details": "J. Kuminga (Out)"
     }
   ],
   "WAS": [
@@ -265,6 +255,11 @@
       "details": "J. Poeltl (Ques)"
     },
     {
+      "name": "C. Hepburn",
+      "status": "OUT",
+      "details": "C. Hepburn (Out)"
+    },
+    {
       "name": "T. Jackson-Davis",
       "status": "OUT",
       "details": "T. Jackson-Davis (Out)"
@@ -329,11 +324,6 @@
       "details": "B. Portis (Ques)"
     },
     {
-      "name": "T. Prince",
-      "status": "QUES",
-      "details": "T. Prince (Ques)"
-    },
-    {
       "name": "J. Sims",
       "status": "QUES",
       "details": "J. Sims (Ques)"
@@ -342,6 +332,11 @@
       "name": "K. Porter",
       "status": "OUT",
       "details": "K. Porter (Out)"
+    },
+    {
+      "name": "C. Ryan",
+      "status": "OUT",
+      "details": "C. Ryan (Out)"
     }
   ],
   "MIL": [
@@ -351,11 +346,6 @@
       "details": "B. Portis (Ques)"
     },
     {
-      "name": "T. Prince",
-      "status": "QUES",
-      "details": "T. Prince (Ques)"
-    },
-    {
       "name": "J. Sims",
       "status": "QUES",
       "details": "J. Sims (Ques)"
@@ -364,6 +354,11 @@
       "name": "K. Porter",
       "status": "OUT",
       "details": "K. Porter (Out)"
+    },
+    {
+      "name": "C. Ryan",
+      "status": "OUT",
+      "details": "C. Ryan (Out)"
     }
   ],
   "BOS": [
