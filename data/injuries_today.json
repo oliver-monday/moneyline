@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-10",
-  "built_at_utc": "2026-03-10T15:14:54Z",
+  "built_at_utc": "2026-03-10T17:37:30Z",
   "source": "rotowire",
   "MEM": [
     {
@@ -14,34 +14,14 @@
       "details": "Zach Edey (OFS)"
     },
     {
-      "name": "C. Coward",
-      "status": "PROB",
-      "details": "C. Coward (Prob)"
-    },
-    {
-      "name": "T. Jerome",
-      "status": "PROB",
-      "details": "T. Jerome (Prob)"
-    },
-    {
-      "name": "S. Pippen",
-      "status": "PROB",
-      "details": "S. Pippen (Prob)"
+      "name": "W. Clayton",
+      "status": "QUES",
+      "details": "W. Clayton (Ques)"
     },
     {
       "name": "S. Aldama",
-      "status": "QUES",
-      "details": "S. Aldama (Ques)"
-    },
-    {
-      "name": "T. Gibson",
-      "status": "QUES",
-      "details": "T. Gibson (Ques)"
-    },
-    {
-      "name": "T. Hendricks",
-      "status": "QUES",
-      "details": "T. Hendricks (Ques)"
+      "status": "OUT",
+      "details": "S. Aldama (Out)"
     },
     {
       "name": "B. Clarke",
@@ -49,9 +29,19 @@
       "details": "B. Clarke (Out)"
     },
     {
+      "name": "Taj Gibson",
+      "status": "OUT",
+      "details": "Taj Gibson (Out)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
+    },
+    {
+      "name": "S. Pippen",
+      "status": "OUT",
+      "details": "S. Pippen (Out)"
     },
     {
       "name": "V. Edgecombe",
@@ -157,14 +147,14 @@
       "details": "J. Watkins (Out)"
     },
     {
-      "name": "S. Fontecchio",
-      "status": "PROB",
-      "details": "S. Fontecchio (Prob)"
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     },
     {
-      "name": "K. Ware",
+      "name": "T. Herro",
       "status": "QUES",
-      "details": "K. Ware (Ques)"
+      "details": "T. Herro (Ques)"
     },
     {
       "name": "N. Jovic",
@@ -180,6 +170,11 @@
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
+    },
+    {
+      "name": "K. Ware",
+      "status": "OUT",
+      "details": "K. Ware (Out)"
     },
     {
       "name": "A. Wiggins",
@@ -189,14 +184,9 @@
   ],
   "MIA": [
     {
-      "name": "S. Fontecchio",
-      "status": "PROB",
-      "details": "S. Fontecchio (Prob)"
-    },
-    {
-      "name": "K. Ware",
+      "name": "T. Herro",
       "status": "QUES",
-      "details": "K. Ware (Ques)"
+      "details": "T. Herro (Ques)"
     },
     {
       "name": "N. Jovic",
@@ -212,6 +202,11 @@
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
+    },
+    {
+      "name": "K. Ware",
+      "status": "OUT",
+      "details": "K. Ware (Out)"
     },
     {
       "name": "A. Wiggins",
@@ -231,14 +226,19 @@
       "details": "A. Thompson (Out)"
     },
     {
-      "name": "M. Porter",
-      "status": "QUES",
-      "details": "M. Porter (Ques)"
-    },
-    {
       "name": "Egor Demin",
       "status": "OFS",
       "details": "Egor Demin (OFS)"
+    },
+    {
+      "name": "D. Sharpe",
+      "status": "OUT",
+      "details": "D. Sharpe (Out)"
+    },
+    {
+      "name": "Z. Williams",
+      "status": "OUT",
+      "details": "Z. Williams (Out)"
     }
   ],
   "BKN": [
@@ -248,9 +248,14 @@
       "details": "Egor Demin (OFS)"
     },
     {
-      "name": "M. Porter",
-      "status": "QUES",
-      "details": "M. Porter (Ques)"
+      "name": "D. Sharpe",
+      "status": "OUT",
+      "details": "D. Sharpe (Out)"
+    },
+    {
+      "name": "Z. Williams",
+      "status": "OUT",
+      "details": "Z. Williams (Out)"
     }
   ],
   "TOR": [
@@ -324,9 +329,19 @@
       "details": "M. Williams (Out)"
     },
     {
+      "name": "B. Portis",
+      "status": "QUES",
+      "details": "B. Portis (Ques)"
+    },
+    {
       "name": "T. Prince",
       "status": "QUES",
       "details": "T. Prince (Ques)"
+    },
+    {
+      "name": "J. Sims",
+      "status": "QUES",
+      "details": "J. Sims (Ques)"
     },
     {
       "name": "K. Porter",
@@ -336,9 +351,19 @@
   ],
   "MIL": [
     {
+      "name": "B. Portis",
+      "status": "QUES",
+      "details": "B. Portis (Ques)"
+    },
+    {
       "name": "T. Prince",
       "status": "QUES",
       "details": "T. Prince (Ques)"
+    },
+    {
+      "name": "J. Sims",
+      "status": "QUES",
+      "details": "J. Sims (Ques)"
     },
     {
       "name": "K. Porter",
@@ -363,9 +388,9 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "M. Plumlee",
+      "name": "L. Waters",
       "status": "QUES",
-      "details": "M. Plumlee (Ques)"
+      "details": "L. Waters (Ques)"
     },
     {
       "name": "H. Barnes",
@@ -380,9 +405,9 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "M. Plumlee",
+      "name": "L. Waters",
       "status": "QUES",
-      "details": "M. Plumlee (Ques)"
+      "details": "L. Waters (Ques)"
     },
     {
       "name": "H. Barnes",
