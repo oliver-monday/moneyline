@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-10",
-  "built_at_utc": "2026-03-10T19:40:43Z",
+  "built_at_utc": "2026-03-10T20:31:46Z",
   "source": "rotowire",
   "MEM": [
     {
@@ -457,14 +457,14 @@
       "details": "A. Simons (Out)"
     },
     {
-      "name": "M. Moody",
+      "name": "D. Melton",
       "status": "QUES",
-      "details": "M. Moody (Ques)"
+      "details": "D. Melton (Ques)"
     },
     {
-      "name": "A. Horford",
-      "status": "PROB",
-      "details": "A. Horford (Prob)"
+      "name": "D. Green",
+      "status": "QUES",
+      "details": "D. Green (Ques)"
     },
     {
       "name": "J. Butler",
@@ -472,19 +472,29 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "K. Porzingis",
+      "name": "G. Payton",
       "status": "PROB",
-      "details": "K. Porzingis (Prob)"
+      "details": "G. Payton (Prob)"
     },
     {
-      "name": "W. Richard",
+      "name": "Q. Post",
       "status": "QUES",
-      "details": "W. Richard (Ques)"
+      "details": "Q. Post (Ques)"
     },
     {
       "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
+    },
+    {
+      "name": "Seth Curry",
+      "status": "OUT",
+      "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "M. Moody",
+      "status": "OUT",
+      "details": "M. Moody (Out)"
     }
   ],
   "GSW": [
@@ -494,29 +504,39 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "A. Horford",
+      "name": "G. Payton",
       "status": "PROB",
-      "details": "A. Horford (Prob)"
+      "details": "G. Payton (Prob)"
     },
     {
-      "name": "K. Porzingis",
-      "status": "PROB",
-      "details": "K. Porzingis (Prob)"
-    },
-    {
-      "name": "M. Moody",
+      "name": "D. Green",
       "status": "QUES",
-      "details": "M. Moody (Ques)"
+      "details": "D. Green (Ques)"
     },
     {
-      "name": "W. Richard",
+      "name": "D. Melton",
       "status": "QUES",
-      "details": "W. Richard (Ques)"
+      "details": "D. Melton (Ques)"
+    },
+    {
+      "name": "Q. Post",
+      "status": "QUES",
+      "details": "Q. Post (Ques)"
     },
     {
       "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
+    },
+    {
+      "name": "Seth Curry",
+      "status": "OUT",
+      "details": "Seth Curry (Out)"
+    },
+    {
+      "name": "M. Moody",
+      "status": "OUT",
+      "details": "M. Moody (Out)"
     }
   ],
   "CHA": [
