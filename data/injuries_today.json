@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-10",
-  "built_at_utc": "2026-03-10T22:35:17Z",
+  "built_at_utc": "2026-03-10T23:30:53Z",
   "source": "rotowire",
   "MEM": [
     {
@@ -143,8 +143,8 @@
     },
     {
       "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
+      "status": "OUT",
+      "details": "T. Herro (Out)"
     },
     {
       "name": "N. Jovic",
@@ -175,8 +175,8 @@
   "MIA": [
     {
       "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
+      "status": "OUT",
+      "details": "T. Herro (Out)"
     },
     {
       "name": "N. Jovic",
@@ -250,11 +250,6 @@
   ],
   "TOR": [
     {
-      "name": "J. Poeltl",
-      "status": "QUES",
-      "details": "J. Poeltl (Ques)"
-    },
-    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
@@ -268,6 +263,11 @@
       "name": "C. Murray-Boyles",
       "status": "OUT",
       "details": "C. Murray-Boyles (Out)"
+    },
+    {
+      "name": "J. Poeltl",
+      "status": "OUT",
+      "details": "J. Poeltl (Out)"
     },
     {
       "name": "S. Adams",
@@ -304,11 +304,6 @@
   ],
   "PHX": [
     {
-      "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
-    {
       "name": "D. Brooks",
       "status": "OUT",
       "details": "D. Brooks (Out)"
@@ -319,46 +314,46 @@
       "details": "M. Williams (Out)"
     },
     {
-      "name": "B. Portis",
-      "status": "QUES",
-      "details": "B. Portis (Ques)"
-    },
-    {
-      "name": "J. Sims",
-      "status": "QUES",
-      "details": "J. Sims (Ques)"
-    },
-    {
       "name": "K. Porter",
       "status": "OUT",
       "details": "K. Porter (Out)"
     },
     {
+      "name": "B. Portis",
+      "status": "OUT",
+      "details": "B. Portis (Out)"
+    },
+    {
       "name": "C. Ryan",
       "status": "OUT",
       "details": "C. Ryan (Out)"
+    },
+    {
+      "name": "J. Sims",
+      "status": "OUT",
+      "details": "J. Sims (Out)"
     }
   ],
   "MIL": [
     {
-      "name": "B. Portis",
-      "status": "QUES",
-      "details": "B. Portis (Ques)"
-    },
-    {
-      "name": "J. Sims",
-      "status": "QUES",
-      "details": "J. Sims (Ques)"
-    },
-    {
       "name": "K. Porter",
       "status": "OUT",
       "details": "K. Porter (Out)"
     },
     {
+      "name": "B. Portis",
+      "status": "OUT",
+      "details": "B. Portis (Out)"
+    },
+    {
       "name": "C. Ryan",
       "status": "OUT",
       "details": "C. Ryan (Out)"
+    },
+    {
+      "name": "J. Sims",
+      "status": "OUT",
+      "details": "J. Sims (Out)"
     }
   ],
   "BOS": [
@@ -378,14 +373,14 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "L. Waters",
-      "status": "QUES",
-      "details": "L. Waters (Ques)"
-    },
-    {
       "name": "H. Barnes",
       "status": "OUT",
       "details": "H. Barnes (Out)"
+    },
+    {
+      "name": "L. Waters",
+      "status": "OUT",
+      "details": "L. Waters (Out)"
     }
   ],
   "SAS": [
@@ -395,14 +390,14 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "L. Waters",
-      "status": "QUES",
-      "details": "L. Waters (Ques)"
-    },
-    {
       "name": "H. Barnes",
       "status": "OUT",
       "details": "H. Barnes (Out)"
+    },
+    {
+      "name": "L. Waters",
+      "status": "OUT",
+      "details": "L. Waters (Out)"
     }
   ],
   "CHI": [
