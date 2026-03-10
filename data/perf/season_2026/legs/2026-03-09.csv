@@ -1,0 +1,5 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-09,2026,Jalen Brunson,NY,LAC,ast,6,HIT,8,,targets_snapshot_2026-03-09.json
+2026-03-09,2026,James Harden,CLE,PHI,reb,4,HIT,5,,targets_snapshot_2026-03-09.json
+2026-03-09,2026,Ace Bailey,UTAH,GS,pts,10,,,,targets_snapshot_2026-03-09.json
+2026-03-09,2026,Ace Bailey,UTAH,GS,reb,4,,,,targets_snapshot_2026-03-09.json
