@@ -1,0 +1,11 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-10,2026,Kevin Durant,HOU,TOR,3pt,2,HIT,4,,targets_snapshot_2026-03-10.json
+2026-03-10,2026,Nickeil Alexander-Walker,ATL,DAL,ast,4,MISSED,3,,targets_snapshot_2026-03-10.json
+2026-03-10,2026,Anthony Davis,DAL,ATL,ast,2,,,,targets_snapshot_2026-03-10.json
+2026-03-10,2026,Jerami Grant,POR,CHA,3pt,2,HIT,3,,targets_snapshot_2026-03-10.json
+2026-03-10,2026,Jaden McDaniels,MIN,LAL,reb,4,MISSED,2,,targets_snapshot_2026-03-10.json
+2026-03-10,2026,Jaden McDaniels,MIN,LAL,ast,2,MISSED,0,,targets_snapshot_2026-03-10.json
+2026-03-10,2026,Jrue Holiday,POR,CHA,pts,15,MISSED,4,,targets_snapshot_2026-03-10.json
+2026-03-10,2026,Grayson Allen,PHX,MIL,ast,4,MISSED,3,,targets_snapshot_2026-03-10.json
+2026-03-10,2026,Anthony Edwards,MIN,LAL,3pt,3,MISSED,1,,targets_snapshot_2026-03-10.json
+2026-03-10,2026,Donte DiVincenzo,MIN,LAL,ast,4,MISSED,2,,targets_snapshot_2026-03-10.json
