@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-11",
-  "built_at_utc": "2026-03-11T15:10:58Z",
+  "built_at_utc": "2026-03-11T17:40:07Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -19,16 +19,6 @@
       "details": "Max Strus (Out)"
     },
     {
-      "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
-    },
-    {
-      "name": "J. Richardson",
-      "status": "QUES",
-      "details": "J. Richardson (Ques)"
-    },
-    {
       "name": "A. Black",
       "status": "OUT",
       "details": "A. Black (Out)"
@@ -40,16 +30,6 @@
     }
   ],
   "ORL": [
-    {
-      "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
-    },
-    {
-      "name": "J. Richardson",
-      "status": "QUES",
-      "details": "J. Richardson (Ques)"
-    },
     {
       "name": "A. Black",
       "status": "OUT",
@@ -112,11 +92,6 @@
       "details": "K. George (Ques)"
     },
     {
-      "name": "J. Konchar",
-      "status": "QUES",
-      "details": "J. Konchar (Ques)"
-    },
-    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -130,6 +105,11 @@
       "name": "J. Nurkic",
       "status": "OFS",
       "details": "J. Nurkic (OFS)"
+    },
+    {
+      "name": "J. Konchar",
+      "status": "OUT",
+      "details": "J. Konchar (Out)"
     },
     {
       "name": "L. Markkanen",
@@ -160,8 +140,8 @@
     },
     {
       "name": "J. Konchar",
-      "status": "QUES",
-      "details": "J. Konchar (Ques)"
+      "status": "OUT",
+      "details": "J. Konchar (Out)"
     },
     {
       "name": "L. Markkanen",
@@ -174,6 +154,11 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "D. Finney-Smith",
+      "status": "QUES",
+      "details": "D. Finney-Smith (Ques)"
     },
     {
       "name": "J. Tate",
