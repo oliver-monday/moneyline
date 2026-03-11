@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-10",
-  "built_at_utc": "2026-03-11T01:10:44Z",
+  "built_at_utc": "2026-03-11T03:20:10Z",
   "source": "rotowire",
   "MEM": [
     {
@@ -412,14 +412,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "I. Okoro",
-      "status": "QUES",
-      "details": "I. Okoro (Ques)"
-    },
-    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "OUT",
+      "details": "I. Okoro (Out)"
     },
     {
       "name": "C. Sexton",
@@ -580,6 +580,11 @@
       "details": "Z. LaVine (OFS)"
     },
     {
+      "name": "M. Monk",
+      "status": "QUES",
+      "details": "M. Monk (Ques)"
+    },
+    {
       "name": "D. Sabonis",
       "status": "OFS",
       "details": "D. Sabonis (OFS)"
@@ -607,6 +612,11 @@
       "details": "Z. LaVine (OFS)"
     },
     {
+      "name": "M. Monk",
+      "status": "QUES",
+      "details": "M. Monk (Ques)"
+    },
+    {
       "name": "D. Sabonis",
       "status": "OFS",
       "details": "D. Sabonis (OFS)"
@@ -624,16 +634,36 @@
   ],
   "LAL": [
     {
+      "name": "J. Hayes",
+      "status": "OUT",
+      "details": "J. Hayes (Out)"
+    },
+    {
       "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
+      "status": "OUT",
+      "details": "L. James (Out)"
+    },
+    {
+      "name": "M. Kleber",
+      "status": "OUT",
+      "details": "M. Kleber (Out)"
     }
   ],
   "MIN": [
     {
+      "name": "J. Hayes",
+      "status": "OUT",
+      "details": "J. Hayes (Out)"
+    },
+    {
       "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
+      "status": "OUT",
+      "details": "L. James (Out)"
+    },
+    {
+      "name": "M. Kleber",
+      "status": "OUT",
+      "details": "M. Kleber (Out)"
     }
   ]
 }
