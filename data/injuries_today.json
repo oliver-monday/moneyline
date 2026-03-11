@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-11",
-  "built_at_utc": "2026-03-11T09:02:45Z",
+  "built_at_utc": "2026-03-11T15:10:58Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -63,24 +63,24 @@
   ],
   "TOR": [
     {
+      "name": "T. Jackson-Davis",
+      "status": "QUES",
+      "details": "T. Jackson-Davis (Ques)"
+    },
+    {
+      "name": "J. Poeltl",
+      "status": "QUES",
+      "details": "J. Poeltl (Ques)"
+    },
+    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
     },
     {
-      "name": "T. Jackson-Davis",
-      "status": "OUT",
-      "details": "T. Jackson-Davis (Out)"
-    },
-    {
       "name": "C. Murray-Boyles",
       "status": "OUT",
       "details": "C. Murray-Boyles (Out)"
-    },
-    {
-      "name": "J. Poeltl",
-      "status": "OUT",
-      "details": "J. Poeltl (Out)"
     },
     {
       "name": "B. McGowens",
@@ -220,19 +220,24 @@
   ],
   "CHA": [
     {
+      "name": "C. White",
+      "status": "PROB",
+      "details": "C. White (Prob)"
+    },
+    {
       "name": "L. McNeeley",
-      "status": "OUT",
-      "details": "L. McNeeley (Out)"
+      "status": "QUES",
+      "details": "L. McNeeley (Ques)"
     },
     {
       "name": "T. Salaun",
-      "status": "OUT",
-      "details": "T. Salaun (Out)"
+      "status": "QUES",
+      "details": "T. Salaun (Ques)"
     },
     {
-      "name": "Coby White",
-      "status": "OUT",
-      "details": "Coby White (Out)"
+      "name": "G. Williams",
+      "status": "QUES",
+      "details": "G. Williams (Ques)"
     },
     {
       "name": "D. Hunter",
@@ -251,8 +256,8 @@
     },
     {
       "name": "M. Monk",
-      "status": "QUES",
-      "details": "M. Monk (Ques)"
+      "status": "DOUBT",
+      "details": "M. Monk (Doubt)"
     },
     {
       "name": "D. Cardwell",
@@ -283,8 +288,8 @@
     },
     {
       "name": "M. Monk",
-      "status": "QUES",
-      "details": "M. Monk (Ques)"
+      "status": "DOUBT",
+      "details": "M. Monk (Doubt)"
     },
     {
       "name": "D. Cardwell",
