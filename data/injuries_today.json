@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-11",
-  "built_at_utc": "2026-03-11T19:42:50Z",
+  "built_at_utc": "2026-03-11T20:31:53Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -205,24 +205,19 @@
   ],
   "CHA": [
     {
-      "name": "C. White",
-      "status": "PROB",
-      "details": "C. White (Prob)"
-    },
-    {
       "name": "L. McNeeley",
-      "status": "QUES",
-      "details": "L. McNeeley (Ques)"
+      "status": "OUT",
+      "details": "L. McNeeley (Out)"
     },
     {
       "name": "T. Salaun",
-      "status": "QUES",
-      "details": "T. Salaun (Ques)"
+      "status": "OUT",
+      "details": "T. Salaun (Out)"
     },
     {
       "name": "G. Williams",
-      "status": "QUES",
-      "details": "G. Williams (Ques)"
+      "status": "OUT",
+      "details": "G. Williams (Out)"
     },
     {
       "name": "D. Hunter",
@@ -240,19 +235,29 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "M. Monk",
-      "status": "DOUBT",
-      "details": "M. Monk (Doubt)"
-    },
-    {
       "name": "D. Cardwell",
       "status": "OUT",
       "details": "D. Cardwell (Out)"
     },
     {
+      "name": "D. Carter",
+      "status": "OUT",
+      "details": "D. Carter (Out)"
+    },
+    {
+      "name": "Malik Monk",
+      "status": "OUT",
+      "details": "Malik Monk (Out)"
+    },
+    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "R. Westbrook",
+      "status": "OUT",
+      "details": "R. Westbrook (Out)"
     }
   ],
   "SAC": [
@@ -272,22 +277,37 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "M. Monk",
-      "status": "DOUBT",
-      "details": "M. Monk (Doubt)"
-    },
-    {
       "name": "D. Cardwell",
       "status": "OUT",
       "details": "D. Cardwell (Out)"
     },
     {
+      "name": "D. Carter",
+      "status": "OUT",
+      "details": "D. Carter (Out)"
+    },
+    {
+      "name": "Malik Monk",
+      "status": "OUT",
+      "details": "Malik Monk (Out)"
+    },
+    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "R. Westbrook",
+      "status": "OUT",
+      "details": "R. Westbrook (Out)"
     }
   ],
-  "LAC": [
+  "MIN": [
+    {
+      "name": "A. Dosunmu",
+      "status": "QUES",
+      "details": "A. Dosunmu (Ques)"
+    },
     {
       "name": "B. Beal",
       "status": "OFS",
@@ -304,7 +324,7 @@
       "details": "J. Collins (Out)"
     }
   ],
-  "MIN": [
+  "LAC": [
     {
       "name": "B. Beal",
       "status": "OFS",
