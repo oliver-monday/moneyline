@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-11",
-  "built_at_utc": "2026-03-11T17:40:07Z",
+  "built_at_utc": "2026-03-11T18:51:12Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -78,8 +78,8 @@
   "NYK": [
     {
       "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
+      "status": "DOUBT",
+      "details": "J. Hart (Doubt)"
     },
     {
       "name": "M. McBride",
@@ -157,8 +157,8 @@
     },
     {
       "name": "D. Finney-Smith",
-      "status": "QUES",
-      "details": "D. Finney-Smith (Ques)"
+      "status": "OUT",
+      "details": "D. Finney-Smith (Out)"
     },
     {
       "name": "J. Tate",
