@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-12",
-  "built_at_utc": "2026-03-12T22:33:27Z",
+  "built_at_utc": "2026-03-12T23:31:17Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -246,8 +246,8 @@
   "MIA": [
     {
       "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
+      "status": "OUT",
+      "details": "T. Herro (Out)"
     },
     {
       "name": "N. Jovic",
@@ -283,13 +283,8 @@
     },
     {
       "name": "K. Thompson",
-      "status": "DOUBT",
-      "details": "K. Thompson (Doubt)"
-    },
-    {
-      "name": "C. Spencer",
-      "status": "QUES",
-      "details": "C. Spencer (Ques)"
+      "status": "OUT",
+      "details": "K. Thompson (Out)"
     },
     {
       "name": "K. Caldwell-Pope",
@@ -302,26 +297,6 @@
       "details": "Zach Edey (OFS)"
     },
     {
-      "name": "W. Clayton",
-      "status": "DOUBT",
-      "details": "W. Clayton (Doubt)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "DOUBT",
-      "details": "C. Coward (Doubt)"
-    },
-    {
-      "name": "T. Gibson",
-      "status": "DOUBT",
-      "details": "T. Gibson (Doubt)"
-    },
-    {
-      "name": "T. Jerome",
-      "status": "DOUBT",
-      "details": "T. Jerome (Doubt)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -332,6 +307,26 @@
       "details": "B. Clarke (Out)"
     },
     {
+      "name": "W. Clayton",
+      "status": "OUT",
+      "details": "W. Clayton (Out)"
+    },
+    {
+      "name": "C. Coward",
+      "status": "OUT",
+      "details": "C. Coward (Out)"
+    },
+    {
+      "name": "Taj Gibson",
+      "status": "OUT",
+      "details": "Taj Gibson (Out)"
+    },
+    {
+      "name": "Ty Jerome",
+      "status": "OUT",
+      "details": "Ty Jerome (Out)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
@@ -340,6 +335,11 @@
       "name": "S. Pippen",
       "status": "OUT",
       "details": "S. Pippen (Out)"
+    },
+    {
+      "name": "C. Spencer",
+      "status": "OUT",
+      "details": "C. Spencer (Out)"
     }
   ],
   "MEM": [
@@ -354,31 +354,6 @@
       "details": "Zach Edey (OFS)"
     },
     {
-      "name": "C. Spencer",
-      "status": "QUES",
-      "details": "C. Spencer (Ques)"
-    },
-    {
-      "name": "W. Clayton",
-      "status": "DOUBT",
-      "details": "W. Clayton (Doubt)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "DOUBT",
-      "details": "C. Coward (Doubt)"
-    },
-    {
-      "name": "T. Gibson",
-      "status": "DOUBT",
-      "details": "T. Gibson (Doubt)"
-    },
-    {
-      "name": "T. Jerome",
-      "status": "DOUBT",
-      "details": "T. Jerome (Doubt)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -389,6 +364,26 @@
       "details": "B. Clarke (Out)"
     },
     {
+      "name": "W. Clayton",
+      "status": "OUT",
+      "details": "W. Clayton (Out)"
+    },
+    {
+      "name": "C. Coward",
+      "status": "OUT",
+      "details": "C. Coward (Out)"
+    },
+    {
+      "name": "Taj Gibson",
+      "status": "OUT",
+      "details": "Taj Gibson (Out)"
+    },
+    {
+      "name": "Ty Jerome",
+      "status": "OUT",
+      "details": "Ty Jerome (Out)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
@@ -397,6 +392,11 @@
       "name": "S. Pippen",
       "status": "OUT",
       "details": "S. Pippen (Out)"
+    },
+    {
+      "name": "C. Spencer",
+      "status": "OUT",
+      "details": "C. Spencer (Out)"
     }
   ],
   "DEN": [
@@ -619,8 +619,8 @@
   "MIL": [
     {
       "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
+      "status": "OUT",
+      "details": "T. Herro (Out)"
     },
     {
       "name": "N. Jovic",
