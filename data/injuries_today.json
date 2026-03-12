@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-03-12",
-  "built_at_utc": "2026-03-12T15:14:02Z",
+  "built_at_utc": "2026-03-12T17:40:11Z",
   "source": "rotowire",
   "PHI": [
     {
-      "name": "A. Bona",
+      "name": "A. Drummond",
       "status": "QUES",
-      "details": "A. Bona (Ques)"
+      "details": "A. Drummond (Ques)"
+    },
+    {
+      "name": "Adem Bona",
+      "status": "OUT",
+      "details": "Adem Bona (Out)"
     },
     {
       "name": "J. Broome",
@@ -34,9 +39,14 @@
       "details": "K. Oubre (Out)"
     },
     {
+      "name": "B. Klintman",
+      "status": "OUT",
+      "details": "B. Klintman (Out)"
+    },
+    {
       "name": "C. LeVert",
-      "status": "DOUBT",
-      "details": "C. LeVert (Doubt)"
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     },
     {
       "name": "A. Thompson",
@@ -46,9 +56,14 @@
   ],
   "DET": [
     {
+      "name": "B. Klintman",
+      "status": "OUT",
+      "details": "B. Klintman (Out)"
+    },
+    {
       "name": "C. LeVert",
-      "status": "DOUBT",
-      "details": "C. LeVert (Doubt)"
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     },
     {
       "name": "A. Thompson",
@@ -61,11 +76,6 @@
       "name": "G. Allen",
       "status": "QUES",
       "details": "G. Allen (Ques)"
-    },
-    {
-      "name": "J. Goodwin",
-      "status": "QUES",
-      "details": "J. Goodwin (Ques)"
     },
     {
       "name": "H. Highsmith",
@@ -113,14 +123,9 @@
       "details": "T. McConnell (Ques)"
     },
     {
-      "name": "Q. Jackson",
-      "status": "DOUBT",
-      "details": "Q. Jackson (Doubt)"
-    },
-    {
       "name": "P. Siakam",
-      "status": "DOUBT",
-      "details": "P. Siakam (Doubt)"
+      "status": "OUT",
+      "details": "P. Siakam (Out)"
     }
   ],
   "IND": [
@@ -155,14 +160,9 @@
       "details": "I. Zubac (Ques)"
     },
     {
-      "name": "Q. Jackson",
-      "status": "DOUBT",
-      "details": "Q. Jackson (Doubt)"
-    },
-    {
       "name": "P. Siakam",
-      "status": "DOUBT",
-      "details": "P. Siakam (Doubt)"
+      "status": "OUT",
+      "details": "P. Siakam (Out)"
     }
   ],
   "WAS": [
@@ -170,11 +170,6 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "B. Carrington",
-      "status": "QUES",
-      "details": "B. Carrington (Ques)"
     },
     {
       "name": "A. Davis",
@@ -221,11 +216,6 @@
       "details": "Egor Demin (OFS)"
     },
     {
-      "name": "Z. Williams",
-      "status": "QUES",
-      "details": "Z. Williams (Ques)"
-    },
-    {
       "name": "M. Porter",
       "status": "OUT",
       "details": "M. Porter (Out)"
@@ -239,6 +229,11 @@
       "name": "N. Traore",
       "status": "OUT",
       "details": "N. Traore (Out)"
+    },
+    {
+      "name": "Z. Williams",
+      "status": "OUT",
+      "details": "Z. Williams (Out)"
     },
     {
       "name": "D. Daniels",
@@ -290,11 +285,6 @@
       "details": "T. Herro (Ques)"
     },
     {
-      "name": "K. Ware",
-      "status": "QUES",
-      "details": "K. Ware (Ques)"
-    },
-    {
       "name": "N. Jovic",
       "status": "OUT",
       "details": "N. Jovic (Out)"
@@ -320,11 +310,6 @@
       "name": "T. Herro",
       "status": "QUES",
       "details": "T. Herro (Ques)"
-    },
-    {
-      "name": "K. Ware",
-      "status": "QUES",
-      "details": "K. Ware (Ques)"
     },
     {
       "name": "N. Jovic",
