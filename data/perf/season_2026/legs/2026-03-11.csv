@@ -1,0 +1,11 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-11,2026,Nikola Jokic,DEN,HOU,reb,12,HIT,12,,targets_snapshot_2026-03-11.json
+2026-03-11,2026,Jalen Brunson,NY,UTAH,ast,6,HIT,8,,targets_snapshot_2026-03-11.json
+2026-03-11,2026,Kevin Durant,HOU,DEN,3pt,2,MISSED,0,,targets_snapshot_2026-03-11.json
+2026-03-11,2026,James Harden,CLE,ORL,reb,4,HIT,5,,targets_snapshot_2026-03-11.json
+2026-03-11,2026,Saddiq Bey,NO,TOR,pts,15,MISSED,9,,targets_snapshot_2026-03-11.json
+2026-03-11,2026,RJ Barrett,TOR,NO,reb,6,HIT,7,,targets_snapshot_2026-03-11.json
+2026-03-11,2026,Maxime Raynaud,SAC,CHA,pts,10,MISSED,4,,targets_snapshot_2026-03-11.json
+2026-03-11,2026,Maxime Raynaud,SAC,CHA,reb,8,MISSED,6,,targets_snapshot_2026-03-11.json
+2026-03-11,2026,Ace Bailey,UTAH,NY,pts,10,HIT,21,,targets_snapshot_2026-03-11.json
+2026-03-11,2026,Ace Bailey,UTAH,NY,reb,4,HIT,4,,targets_snapshot_2026-03-11.json
