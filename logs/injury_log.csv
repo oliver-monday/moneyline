@@ -7470,6 +7470,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-11,TOR,J. Poeltl,QUES,J. Poeltl (Ques),rotowire
 2026-03-11,NYK,K. George,QUES,K. George (Ques),rotowire
 2026-03-11,UTA,K. George,QUES,K. George (Ques),rotowire
+2026-03-11,NYK,J. Hart,DOUBT,J. Hart (Doubt),rotowire
+2026-03-11,HOU,J. Murray,PROB,J. Murray (Prob),rotowire
+2026-03-11,DEN,J. Murray,PROB,J. Murray (Prob),rotowire
 2026-03-11,CLE,J. Allen,OUT,J. Allen (Out),rotowire
 2026-03-11,CLE,T. Proctor,OUT,T. Proctor (Out),rotowire
 2026-03-11,CLE,Max Strus,OUT,Max Strus (Out),rotowire
@@ -7481,7 +7484,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-11,TOR,C. Murray-Boyles,OUT,C. Murray-Boyles (Out),rotowire
 2026-03-11,TOR,B. McGowens,OUT,B. McGowens (Out),rotowire
 2026-03-11,NOP,B. McGowens,OUT,B. McGowens (Out),rotowire
-2026-03-11,NYK,J. Hart,DOUBT,J. Hart (Doubt),rotowire
+2026-03-11,NYK,Josh Hart,OUT,Josh Hart (Out),rotowire
 2026-03-11,NYK,M. McBride,OUT,M. McBride (Out),rotowire
 2026-03-11,NYK,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-03-11,NYK,W. Kessler,OFS,W. Kessler (OFS),rotowire
@@ -7497,11 +7500,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-11,HOU,D. Finney-Smith,OUT,D. Finney-Smith (Out),rotowire
 2026-03-11,HOU,J. Tate,OUT,J. Tate (Out),rotowire
 2026-03-11,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
-2026-03-11,HOU,J. Murray,PROB,J. Murray (Prob),rotowire
 2026-03-11,HOU,C. Johnson,PROB,C. Johnson (Prob),rotowire
 2026-03-11,HOU,P. Watson,OUT,P. Watson (Out),rotowire
 2026-03-11,DEN,C. Johnson,PROB,C. Johnson (Prob),rotowire
-2026-03-11,DEN,J. Murray,PROB,J. Murray (Prob),rotowire
 2026-03-11,DEN,P. Watson,OUT,P. Watson (Out),rotowire
 2026-03-11,CHA,L. McNeeley,OUT,L. McNeeley (Out),rotowire
 2026-03-11,CHA,T. Salaun,OUT,T. Salaun (Out),rotowire
