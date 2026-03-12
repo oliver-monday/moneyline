@@ -7533,11 +7533,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-11,LAC,J. Collins,OUT,J. Collins (Out),rotowire
 2026-03-12,PHI,A. Bona,QUES,A. Bona (Ques),rotowire
 2026-03-12,PHX,J. Goodwin,QUES,J. Goodwin (Ques),rotowire
-2026-03-12,PHX,Q. Jackson,DOUBT,Q. Jackson (Doubt),rotowire
-2026-03-12,IND,Q. Jackson,DOUBT,Q. Jackson (Doubt),rotowire
 2026-03-12,WAS,B. Carrington,QUES,B. Carrington (Ques),rotowire
 2026-03-12,MIL,K. Ware,QUES,K. Ware (Ques),rotowire
 2026-03-12,MIA,K. Ware,QUES,K. Ware (Ques),rotowire
+2026-03-12,BOS,P. Pritchard,PROB,P. Pritchard (Prob),rotowire
 2026-03-12,PHI,A. Drummond,QUES,A. Drummond (Ques),rotowire
 2026-03-12,PHI,Adem Bona,OUT,Adem Bona (Out),rotowire
 2026-03-12,PHI,J. Broome,OUT,J. Broome (Out),rotowire
@@ -7561,6 +7560,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-12,PHX,J. Furphy,OFS,J. Furphy (OFS),rotowire
 2026-03-12,PHX,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-03-12,PHX,T. McConnell,QUES,T. McConnell (Ques),rotowire
+2026-03-12,PHX,Q. Jackson,OUT,Q. Jackson (Out),rotowire
 2026-03-12,PHX,P. Siakam,OUT,P. Siakam (Out),rotowire
 2026-03-12,IND,J. Furphy,OFS,J. Furphy (OFS),rotowire
 2026-03-12,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
@@ -7568,6 +7568,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-12,IND,A. Nembhard,QUES,A. Nembhard (Ques),rotowire
 2026-03-12,IND,A. Nesmith,QUES,A. Nesmith (Ques),rotowire
 2026-03-12,IND,I. Zubac,QUES,I. Zubac (Ques),rotowire
+2026-03-12,IND,Q. Jackson,OUT,Q. Jackson (Out),rotowire
 2026-03-12,IND,P. Siakam,OUT,P. Siakam (Out),rotowire
 2026-03-12,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
 2026-03-12,WAS,A. Davis,OUT,A. Davis (Out),rotowire
@@ -7625,6 +7626,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-12,MEM,B. Clarke,OUT,B. Clarke (Out),rotowire
 2026-03-12,MEM,Ja Morant,OUT,Ja Morant (Out),rotowire
 2026-03-12,MEM,S. Pippen,OUT,S. Pippen (Out),rotowire
+2026-03-12,DEN,J. Murray,PROB,J. Murray (Prob),rotowire
+2026-03-12,DEN,A. Gordon,QUES,A. Gordon (Ques),rotowire
 2026-03-12,DEN,P. Watson,OUT,P. Watson (Out),rotowire
 2026-03-12,DEN,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
 2026-03-12,DEN,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
@@ -7634,9 +7637,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-12,SAS,H. Barnes,QUES,H. Barnes (Ques),rotowire
 2026-03-12,SAS,L. Waters,QUES,L. Waters (Ques),rotowire
 2026-03-12,SAS,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
-2026-03-12,BOS,P. Pritchard,PROB,P. Pritchard (Prob),rotowire
-2026-03-12,BOS,J. Tatum,QUES,J. Tatum (Ques),rotowire
 2026-03-12,BOS,D. White,QUES,D. White (Ques),rotowire
+2026-03-12,BOS,J. Tatum,OUT,J. Tatum (Out),rotowire
 2026-03-12,BOS,N. Vucevic,OUT,N. Vucevic (Out),rotowire
 2026-03-12,BOS,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-03-12,BOS,B. Carlson,OUT,B. Carlson (Out),rotowire
@@ -7650,10 +7652,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-12,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
 2026-03-12,CHI,M. Buzelis,PROB,M. Buzelis (Prob),rotowire
 2026-03-12,CHI,J. Giddey,PROB,J. Giddey (Prob),rotowire
-2026-03-12,CHI,J. Smith,PROB,J. Smith (Prob),rotowire
 2026-03-12,CHI,I. Okoro,QUES,I. Okoro (Ques),rotowire
 2026-03-12,CHI,C. Sexton,QUES,C. Sexton (Ques),rotowire
-2026-03-12,CHI,P. Williams,QUES,P. Williams (Ques),rotowire
+2026-03-12,CHI,J. Smith,QUES,J. Smith (Ques),rotowire
+2026-03-12,CHI,P. Williams,DOUBT,P. Williams (Doubt),rotowire
 2026-03-12,CHI,G. Yabusele,QUES,G. Yabusele (Ques),rotowire
 2026-03-12,CHI,Jaden Ivey,OUT,Jaden Ivey (Out),rotowire
 2026-03-12,CHI,A. Simons,OUT,A. Simons (Out),rotowire

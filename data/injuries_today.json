@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-12",
-  "built_at_utc": "2026-03-12T17:40:11Z",
+  "built_at_utc": "2026-03-12T18:51:08Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -123,6 +123,11 @@
       "details": "T. McConnell (Ques)"
     },
     {
+      "name": "Q. Jackson",
+      "status": "OUT",
+      "details": "Q. Jackson (Out)"
+    },
+    {
       "name": "P. Siakam",
       "status": "OUT",
       "details": "P. Siakam (Out)"
@@ -158,6 +163,11 @@
       "name": "I. Zubac",
       "status": "QUES",
       "details": "I. Zubac (Ques)"
+    },
+    {
+      "name": "Q. Jackson",
+      "status": "OUT",
+      "details": "Q. Jackson (Out)"
     },
     {
       "name": "P. Siakam",
@@ -463,6 +473,16 @@
   ],
   "DEN": [
     {
+      "name": "J. Murray",
+      "status": "PROB",
+      "details": "J. Murray (Prob)"
+    },
+    {
+      "name": "A. Gordon",
+      "status": "QUES",
+      "details": "A. Gordon (Ques)"
+    },
+    {
       "name": "P. Watson",
       "status": "OUT",
       "details": "P. Watson (Out)"
@@ -512,19 +532,14 @@
   ],
   "BOS": [
     {
-      "name": "P. Pritchard",
-      "status": "PROB",
-      "details": "P. Pritchard (Prob)"
-    },
-    {
-      "name": "J. Tatum",
-      "status": "QUES",
-      "details": "J. Tatum (Ques)"
-    },
-    {
       "name": "D. White",
       "status": "QUES",
       "details": "D. White (Ques)"
+    },
+    {
+      "name": "J. Tatum",
+      "status": "OUT",
+      "details": "J. Tatum (Out)"
     },
     {
       "name": "N. Vucevic",
@@ -596,11 +611,6 @@
       "details": "J. Giddey (Prob)"
     },
     {
-      "name": "J. Smith",
-      "status": "PROB",
-      "details": "J. Smith (Prob)"
-    },
-    {
       "name": "I. Okoro",
       "status": "QUES",
       "details": "I. Okoro (Ques)"
@@ -611,9 +621,14 @@
       "details": "C. Sexton (Ques)"
     },
     {
-      "name": "P. Williams",
+      "name": "J. Smith",
       "status": "QUES",
-      "details": "P. Williams (Ques)"
+      "details": "J. Smith (Ques)"
+    },
+    {
+      "name": "P. Williams",
+      "status": "DOUBT",
+      "details": "P. Williams (Doubt)"
     },
     {
       "name": "G. Yabusele",
