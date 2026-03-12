@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-11",
-  "built_at_utc": "2026-03-12T01:07:51Z",
+  "built_at_utc": "2026-03-12T03:27:27Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -77,6 +77,11 @@
       "details": "M. McBride (Out)"
     },
     {
+      "name": "K. George",
+      "status": "OUT",
+      "details": "K. George (Out)"
+    },
+    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -119,6 +124,11 @@
       "details": "J. Nurkic (OFS)"
     },
     {
+      "name": "K. George",
+      "status": "OUT",
+      "details": "K. George (Out)"
+    },
+    {
       "name": "J. Konchar",
       "status": "OUT",
       "details": "J. Konchar (Out)"
@@ -151,11 +161,6 @@
       "details": "F. VanVleet (Out)"
     },
     {
-      "name": "C. Johnson",
-      "status": "PROB",
-      "details": "C. Johnson (Prob)"
-    },
-    {
       "name": "P. Watson",
       "status": "OUT",
       "details": "P. Watson (Out)"
@@ -163,17 +168,17 @@
   ],
   "DEN": [
     {
-      "name": "C. Johnson",
-      "status": "PROB",
-      "details": "C. Johnson (Prob)"
-    },
-    {
       "name": "P. Watson",
       "status": "OUT",
       "details": "P. Watson (Out)"
     }
   ],
   "CHA": [
+    {
+      "name": "R. Kalkbrenner",
+      "status": "OUT",
+      "details": "R. Kalkbrenner (Out)"
+    },
     {
       "name": "L. McNeeley",
       "status": "OUT",
@@ -275,8 +280,8 @@
   "MIN": [
     {
       "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
+      "status": "OUT",
+      "details": "A. Dosunmu (Out)"
     },
     {
       "name": "B. Beal",
