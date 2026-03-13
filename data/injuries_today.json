@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-13",
-  "built_at_utc": "2026-03-13T09:01:13Z",
+  "built_at_utc": "2026-03-13T15:07:34Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -30,8 +30,8 @@
     },
     {
       "name": "K. Thompson",
-      "status": "OUT",
-      "details": "K. Thompson (Out)"
+      "status": "PROB",
+      "details": "K. Thompson (Prob)"
     }
   ],
   "DAL": [
@@ -47,8 +47,8 @@
     },
     {
       "name": "K. Thompson",
-      "status": "OUT",
-      "details": "K. Thompson (Out)"
+      "status": "PROB",
+      "details": "K. Thompson (Prob)"
     }
   ],
   "MEM": [
@@ -63,19 +63,39 @@
       "details": "Zach Edey (OFS)"
     },
     {
+      "name": "S. Pippen",
+      "status": "OFS",
+      "details": "S. Pippen (OFS)"
+    },
+    {
+      "name": "C. Coward",
+      "status": "PROB",
+      "details": "C. Coward (Prob)"
+    },
+    {
+      "name": "T. Jerome",
+      "status": "PROB",
+      "details": "T. Jerome (Prob)"
+    },
+    {
       "name": "W. Clayton",
       "status": "QUES",
       "details": "W. Clayton (Ques)"
     },
     {
-      "name": "C. Coward",
+      "name": "T. Gibson",
       "status": "QUES",
-      "details": "C. Coward (Ques)"
+      "details": "T. Gibson (Ques)"
+    },
+    {
+      "name": "C. Spencer",
+      "status": "QUES",
+      "details": "C. Spencer (Ques)"
     },
     {
       "name": "S. Aldama",
-      "status": "OUT",
-      "details": "S. Aldama (Out)"
+      "status": "DOUBT",
+      "details": "S. Aldama (Doubt)"
     },
     {
       "name": "B. Clarke",
@@ -83,61 +103,31 @@
       "details": "B. Clarke (Out)"
     },
     {
-      "name": "Taj Gibson",
-      "status": "OUT",
-      "details": "Taj Gibson (Out)"
-    },
-    {
-      "name": "Ty Jerome",
-      "status": "OUT",
-      "details": "Ty Jerome (Out)"
-    },
-    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
     },
     {
-      "name": "S. Pippen",
-      "status": "OUT",
-      "details": "S. Pippen (Out)"
-    },
-    {
-      "name": "C. Spencer",
-      "status": "OUT",
-      "details": "C. Spencer (Out)"
-    },
-    {
       "name": "A. Thompson",
       "status": "QUES",
       "details": "A. Thompson (Ques)"
     },
     {
-      "name": "B. Klintman",
-      "status": "OUT",
-      "details": "B. Klintman (Out)"
-    },
-    {
       "name": "C. LeVert",
-      "status": "OUT",
-      "details": "C. LeVert (Out)"
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
     }
   ],
   "DET": [
     {
+      "name": "C. LeVert",
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
+    },
+    {
       "name": "A. Thompson",
       "status": "QUES",
       "details": "A. Thompson (Ques)"
-    },
-    {
-      "name": "B. Klintman",
-      "status": "OUT",
-      "details": "B. Klintman (Out)"
-    },
-    {
-      "name": "C. LeVert",
-      "status": "OUT",
-      "details": "C. LeVert (Out)"
     }
   ],
   "NYK": [
@@ -158,13 +148,18 @@
     },
     {
       "name": "A. Nesmith",
-      "status": "OUT",
-      "details": "A. Nesmith (Out)"
+      "status": "QUES",
+      "details": "A. Nesmith (Ques)"
     },
     {
       "name": "P. Siakam",
-      "status": "OUT",
-      "details": "P. Siakam (Out)"
+      "status": "QUES",
+      "details": "P. Siakam (Ques)"
+    },
+    {
+      "name": "I. Zubac",
+      "status": "QUES",
+      "details": "I. Zubac (Ques)"
     },
     {
       "name": "J. Furphy",
@@ -178,18 +173,18 @@
     },
     {
       "name": "Q. Jackson",
-      "status": "OUT",
-      "details": "Q. Jackson (Out)"
+      "status": "QUES",
+      "details": "Q. Jackson (Ques)"
     },
     {
       "name": "T. McConnell",
-      "status": "OUT",
-      "details": "T. McConnell (Out)"
+      "status": "QUES",
+      "details": "T. McConnell (Ques)"
     },
     {
-      "name": "Obi Toppin",
-      "status": "OUT",
-      "details": "Obi Toppin (Out)"
+      "name": "O. Toppin",
+      "status": "QUES",
+      "details": "O. Toppin (Ques)"
     }
   ],
   "IND": [
@@ -205,35 +200,40 @@
     },
     {
       "name": "Q. Jackson",
-      "status": "OUT",
-      "details": "Q. Jackson (Out)"
+      "status": "QUES",
+      "details": "Q. Jackson (Ques)"
     },
     {
       "name": "T. McConnell",
-      "status": "OUT",
-      "details": "T. McConnell (Out)"
+      "status": "QUES",
+      "details": "T. McConnell (Ques)"
     },
     {
       "name": "A. Nesmith",
-      "status": "OUT",
-      "details": "A. Nesmith (Out)"
+      "status": "QUES",
+      "details": "A. Nesmith (Ques)"
     },
     {
       "name": "P. Siakam",
-      "status": "OUT",
-      "details": "P. Siakam (Out)"
+      "status": "QUES",
+      "details": "P. Siakam (Ques)"
     },
     {
-      "name": "Obi Toppin",
-      "status": "OUT",
-      "details": "Obi Toppin (Out)"
+      "name": "O. Toppin",
+      "status": "QUES",
+      "details": "O. Toppin (Ques)"
+    },
+    {
+      "name": "I. Zubac",
+      "status": "QUES",
+      "details": "I. Zubac (Ques)"
     }
   ],
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "OUT",
-      "details": "G. Allen (Out)"
+      "status": "PROB",
+      "details": "G. Allen (Prob)"
     },
     {
       "name": "D. Brooks",
@@ -452,34 +452,34 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "Jaden Ivey",
-      "status": "OUT",
-      "details": "Jaden Ivey (Out)"
-    },
-    {
       "name": "I. Okoro",
-      "status": "OUT",
-      "details": "I. Okoro (Out)"
+      "status": "QUES",
+      "details": "I. Okoro (Ques)"
     },
     {
       "name": "C. Sexton",
-      "status": "OUT",
-      "details": "C. Sexton (Out)"
-    },
-    {
-      "name": "A. Simons",
-      "status": "OUT",
-      "details": "A. Simons (Out)"
+      "status": "QUES",
+      "details": "C. Sexton (Ques)"
     },
     {
       "name": "P. Williams",
-      "status": "OUT",
-      "details": "P. Williams (Out)"
+      "status": "QUES",
+      "details": "P. Williams (Ques)"
     },
     {
       "name": "G. Yabusele",
+      "status": "QUES",
+      "details": "G. Yabusele (Ques)"
+    },
+    {
+      "name": "A. Simons",
+      "status": "DOUBT",
+      "details": "A. Simons (Doubt)"
+    },
+    {
+      "name": "Jaden Ivey",
       "status": "OUT",
-      "details": "G. Yabusele (Out)"
+      "details": "Jaden Ivey (Out)"
     },
     {
       "name": "B. Beal",
