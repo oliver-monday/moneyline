@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-13",
-  "built_at_utc": "2026-03-13T17:25:43Z",
+  "built_at_utc": "2026-03-13T18:38:12Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -24,9 +24,9 @@
       "details": "Max Strus (Out)"
     },
     {
-      "name": "D. Gafford",
+      "name": "N. Marshall",
       "status": "QUES",
-      "details": "D. Gafford (Ques)"
+      "details": "N. Marshall (Ques)"
     },
     {
       "name": "K. Irving",
@@ -39,9 +39,19 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "K. Thompson",
+      "name": "C. Martin",
       "status": "PROB",
-      "details": "K. Thompson (Prob)"
+      "details": "C. Martin (Prob)"
+    },
+    {
+      "name": "D. Gafford",
+      "status": "DOUBT",
+      "details": "D. Gafford (Doubt)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "DOUBT",
+      "details": "P. Washington (Doubt)"
     }
   ],
   "DAL": [
@@ -56,31 +66,31 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "K. Thompson",
+      "name": "C. Martin",
       "status": "PROB",
-      "details": "K. Thompson (Prob)"
+      "details": "C. Martin (Prob)"
+    },
+    {
+      "name": "N. Marshall",
+      "status": "QUES",
+      "details": "N. Marshall (Ques)"
     },
     {
       "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
+      "status": "DOUBT",
+      "details": "D. Gafford (Doubt)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "DOUBT",
+      "details": "P. Washington (Doubt)"
     }
   ],
   "MEM": [
     {
-      "name": "S. Aldama",
-      "status": "DOUBT",
-      "details": "S. Aldama (Doubt)"
-    },
-    {
       "name": "K. Caldwell-Pope",
       "status": "OFS",
       "details": "K. Caldwell-Pope (OFS)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "PROB",
-      "details": "C. Coward (Prob)"
     },
     {
       "name": "Zach Edey",
@@ -88,19 +98,9 @@
       "details": "Zach Edey (OFS)"
     },
     {
-      "name": "T. Jerome",
-      "status": "PROB",
-      "details": "T. Jerome (Prob)"
-    },
-    {
       "name": "S. Pippen",
       "status": "OFS",
       "details": "S. Pippen (OFS)"
-    },
-    {
-      "name": "C. Spencer",
-      "status": "QUES",
-      "details": "C. Spencer (Ques)"
     },
     {
       "name": "T. Gibson",
@@ -108,9 +108,24 @@
       "details": "T. Gibson (Ques)"
     },
     {
-      "name": "W. Clayton",
+      "name": "G. Jackson",
       "status": "QUES",
-      "details": "W. Clayton (Ques)"
+      "details": "G. Jackson (Ques)"
+    },
+    {
+      "name": "J. Wells",
+      "status": "QUES",
+      "details": "J. Wells (Ques)"
+    },
+    {
+      "name": "W. Clayton",
+      "status": "DOUBT",
+      "details": "W. Clayton (Doubt)"
+    },
+    {
+      "name": "S. Aldama",
+      "status": "OUT",
+      "details": "S. Aldama (Out)"
     },
     {
       "name": "B. Clarke",
