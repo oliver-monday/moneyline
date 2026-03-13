@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-13",
-  "built_at_utc": "2026-03-13T18:38:12Z",
+  "built_at_utc": "2026-03-13T19:34:35Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -208,8 +208,8 @@
     },
     {
       "name": "A. Nesmith",
-      "status": "QUES",
-      "details": "A. Nesmith (Ques)"
+      "status": "PROB",
+      "details": "A. Nesmith (Prob)"
     },
     {
       "name": "O. Toppin",
@@ -238,8 +238,8 @@
     },
     {
       "name": "Q. Jackson",
-      "status": "QUES",
-      "details": "Q. Jackson (Ques)"
+      "status": "DOUBT",
+      "details": "Q. Jackson (Doubt)"
     },
     {
       "name": "P. Siakam",
@@ -265,8 +265,8 @@
     },
     {
       "name": "A. Nesmith",
-      "status": "QUES",
-      "details": "A. Nesmith (Ques)"
+      "status": "PROB",
+      "details": "A. Nesmith (Prob)"
     },
     {
       "name": "O. Toppin",
@@ -275,8 +275,8 @@
     },
     {
       "name": "Q. Jackson",
-      "status": "QUES",
-      "details": "Q. Jackson (Ques)"
+      "status": "DOUBT",
+      "details": "Q. Jackson (Doubt)"
     },
     {
       "name": "A. Nembhard",
@@ -517,16 +517,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "I. Okoro",
-      "status": "QUES",
-      "details": "I. Okoro (Ques)"
-    },
-    {
-      "name": "C. Sexton",
-      "status": "QUES",
-      "details": "C. Sexton (Ques)"
-    },
-    {
       "name": "P. Williams",
       "status": "QUES",
       "details": "P. Williams (Ques)"
@@ -537,9 +527,14 @@
       "details": "G. Yabusele (Ques)"
     },
     {
-      "name": "A. Simons",
+      "name": "I. Okoro",
       "status": "DOUBT",
-      "details": "A. Simons (Doubt)"
+      "details": "I. Okoro (Doubt)"
+    },
+    {
+      "name": "C. Sexton",
+      "status": "DOUBT",
+      "details": "C. Sexton (Doubt)"
     },
     {
       "name": "J. Smith",
@@ -550,6 +545,11 @@
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
+    },
+    {
+      "name": "A. Simons",
+      "status": "OUT",
+      "details": "A. Simons (Out)"
     },
     {
       "name": "B. Beal",
