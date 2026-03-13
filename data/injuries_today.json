@@ -1,17 +1,17 @@
 {
   "asof_date": "2026-03-13",
-  "built_at_utc": "2026-03-13T22:34:23Z",
+  "built_at_utc": "2026-03-13T23:31:23Z",
   "source": "rotowire",
   "CLE": [
-    {
-      "name": "S. Merrill",
-      "status": "QUES",
-      "details": "S. Merrill (Ques)"
-    },
     {
       "name": "J. Allen",
       "status": "OUT",
       "details": "J. Allen (Out)"
+    },
+    {
+      "name": "S. Merrill",
+      "status": "OUT",
+      "details": "S. Merrill (Out)"
     },
     {
       "name": "T. Proctor",
@@ -34,11 +34,6 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "C. Martin",
-      "status": "PROB",
-      "details": "C. Martin (Prob)"
-    },
-    {
       "name": "D. Gafford",
       "status": "OUT",
       "details": "D. Gafford (Out)"
@@ -59,11 +54,6 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
-    },
-    {
-      "name": "C. Martin",
-      "status": "PROB",
-      "details": "C. Martin (Prob)"
     },
     {
       "name": "D. Gafford",
@@ -93,26 +83,6 @@
       "details": "S. Pippen (OFS)"
     },
     {
-      "name": "T. Gibson",
-      "status": "QUES",
-      "details": "T. Gibson (Ques)"
-    },
-    {
-      "name": "G. Jackson",
-      "status": "QUES",
-      "details": "G. Jackson (Ques)"
-    },
-    {
-      "name": "J. Wells",
-      "status": "QUES",
-      "details": "J. Wells (Ques)"
-    },
-    {
-      "name": "W. Clayton",
-      "status": "DOUBT",
-      "details": "W. Clayton (Doubt)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OUT",
       "details": "S. Aldama (Out)"
@@ -123,51 +93,46 @@
       "details": "B. Clarke (Out)"
     },
     {
+      "name": "W. Clayton",
+      "status": "OUT",
+      "details": "W. Clayton (Out)"
+    },
+    {
+      "name": "GG Jackson",
+      "status": "OUT",
+      "details": "GG Jackson (Out)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OUT",
       "details": "Ja Morant (Out)"
     },
     {
+      "name": "J. Wells",
+      "status": "OUT",
+      "details": "J. Wells (Out)"
+    },
+    {
       "name": "T. Harris",
-      "status": "QUES",
-      "details": "T. Harris (Ques)"
-    },
-    {
-      "name": "J. Duren",
-      "status": "QUES",
-      "details": "J. Duren (Ques)"
-    },
-    {
-      "name": "C. LeVert",
-      "status": "PROB",
-      "details": "C. LeVert (Prob)"
+      "status": "OUT",
+      "details": "T. Harris (Out)"
     },
     {
       "name": "A. Thompson",
-      "status": "DOUBT",
-      "details": "A. Thompson (Doubt)"
+      "status": "OUT",
+      "details": "A. Thompson (Out)"
     }
   ],
   "DET": [
     {
-      "name": "C. LeVert",
-      "status": "PROB",
-      "details": "C. LeVert (Prob)"
-    },
-    {
-      "name": "J. Duren",
-      "status": "QUES",
-      "details": "J. Duren (Ques)"
-    },
-    {
       "name": "T. Harris",
-      "status": "QUES",
-      "details": "T. Harris (Ques)"
+      "status": "OUT",
+      "details": "T. Harris (Out)"
     },
     {
       "name": "A. Thompson",
-      "status": "DOUBT",
-      "details": "A. Thompson (Doubt)"
+      "status": "OUT",
+      "details": "A. Thompson (Out)"
     }
   ],
   "NYK": [
@@ -235,11 +200,6 @@
     }
   ],
   "PHX": [
-    {
-      "name": "J. Goodwin",
-      "status": "QUES",
-      "details": "J. Goodwin (Ques)"
-    },
     {
       "name": "D. Brooks",
       "status": "OUT",
