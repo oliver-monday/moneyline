@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-12",
-  "built_at_utc": "2026-03-13T01:13:41Z",
+  "built_at_utc": "2026-03-13T03:23:32Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -183,8 +183,8 @@
     },
     {
       "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
+      "status": "DOUBT",
+      "details": "J. Isaac (Doubt)"
     },
     {
       "name": "A. Black",
@@ -200,8 +200,8 @@
   "ORL": [
     {
       "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
+      "status": "DOUBT",
+      "details": "J. Isaac (Doubt)"
     },
     {
       "name": "A. Black",
@@ -251,6 +251,38 @@
       "name": "D. Daniels",
       "status": "OUT",
       "details": "D. Daniels (Out)"
+    }
+  ],
+  "MIL": [
+    {
+      "name": "O. Dieng",
+      "status": "QUES",
+      "details": "O. Dieng (Ques)"
+    },
+    {
+      "name": "T. Herro",
+      "status": "OUT",
+      "details": "T. Herro (Out)"
+    },
+    {
+      "name": "N. Jovic",
+      "status": "OUT",
+      "details": "N. Jovic (Out)"
+    },
+    {
+      "name": "N. Powell",
+      "status": "OUT",
+      "details": "N. Powell (Out)"
+    },
+    {
+      "name": "T. Rozier",
+      "status": "OUT",
+      "details": "T. Rozier (Out)"
+    },
+    {
+      "name": "A. Wiggins",
+      "status": "OUT",
+      "details": "A. Wiggins (Out)"
     }
   ],
   "MIA": [
@@ -514,16 +546,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "M. Buzelis",
-      "status": "PROB",
-      "details": "M. Buzelis (Prob)"
-    },
-    {
-      "name": "J. Giddey",
-      "status": "PROB",
-      "details": "J. Giddey (Prob)"
-    },
-    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -554,11 +576,6 @@
       "details": "G. Yabusele (Out)"
     },
     {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
-    },
-    {
       "name": "J. Hayes",
       "status": "OUT",
       "details": "J. Hayes (Out)"
@@ -576,11 +593,6 @@
   ],
   "LAL": [
     {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
-    },
-    {
       "name": "J. Hayes",
       "status": "OUT",
       "details": "J. Hayes (Out)"
@@ -594,33 +606,6 @@
       "name": "M. Smart",
       "status": "OUT",
       "details": "M. Smart (Out)"
-    }
-  ],
-  "MIL": [
-    {
-      "name": "T. Herro",
-      "status": "OUT",
-      "details": "T. Herro (Out)"
-    },
-    {
-      "name": "N. Jovic",
-      "status": "OUT",
-      "details": "N. Jovic (Out)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "OUT",
-      "details": "N. Powell (Out)"
-    },
-    {
-      "name": "T. Rozier",
-      "status": "OUT",
-      "details": "T. Rozier (Out)"
-    },
-    {
-      "name": "A. Wiggins",
-      "status": "OUT",
-      "details": "A. Wiggins (Out)"
     }
   ]
 }
