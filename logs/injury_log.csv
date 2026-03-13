@@ -7740,9 +7740,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-13,IND,T. McConnell,PROB,T. McConnell (Prob),rotowire
 2026-03-13,IND,A. Nesmith,PROB,A. Nesmith (Prob),rotowire
 2026-03-13,IND,O. Toppin,PROB,O. Toppin (Prob),rotowire
-2026-03-13,IND,Q. Jackson,DOUBT,Q. Jackson (Doubt),rotowire
 2026-03-13,IND,A. Nembhard,QUES,A. Nembhard (Ques),rotowire
 2026-03-13,IND,I. Zubac,QUES,I. Zubac (Ques),rotowire
+2026-03-13,IND,Q. Jackson,DOUBT,Q. Jackson (Doubt),rotowire
 2026-03-13,IND,P. Siakam,DOUBT,P. Siakam (Doubt),rotowire
 2026-03-13,PHX,J. Goodwin,QUES,J. Goodwin (Ques),rotowire
 2026-03-13,PHX,D. Brooks,OUT,D. Brooks (Out),rotowire
@@ -7763,6 +7763,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-13,HOU,J. Tate,OUT,J. Tate (Out),rotowire
 2026-03-13,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
 2026-03-13,MIN,A. Dosunmu,QUES,A. Dosunmu (Ques),rotowire
+2026-03-13,MIN,A. Edwards,QUES,A. Edwards (Ques),rotowire
 2026-03-13,MIN,D. Melton,QUES,D. Melton (Ques),rotowire
 2026-03-13,MIN,J. Butler,OFS,J. Butler (OFS),rotowire
 2026-03-13,MIN,Q. Post,QUES,Q. Post (Ques),rotowire
@@ -7780,8 +7781,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-13,UTA,J. Konchar,OUT,J. Konchar (Out),rotowire
 2026-03-13,UTA,L. Markkanen,OUT,L. Markkanen (Out),rotowire
 2026-03-13,UTA,D. Lillard,OFS,D. Lillard (OFS),rotowire
+2026-03-13,UTA,R. Williams,QUES,R. Williams (Ques),rotowire
 2026-03-13,UTA,S. Sharpe,OUT,S. Sharpe (Out),rotowire
 2026-03-13,POR,D. Lillard,OFS,D. Lillard (OFS),rotowire
+2026-03-13,POR,R. Williams,QUES,R. Williams (Ques),rotowire
 2026-03-13,POR,S. Sharpe,OUT,S. Sharpe (Out),rotowire
 2026-03-13,CHI,Z. Collins,OFS,Z. Collins (OFS),rotowire
 2026-03-13,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire

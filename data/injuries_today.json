@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-13",
-  "built_at_utc": "2026-03-13T19:34:35Z",
+  "built_at_utc": "2026-03-13T20:32:04Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -274,11 +274,6 @@
       "details": "O. Toppin (Prob)"
     },
     {
-      "name": "Q. Jackson",
-      "status": "DOUBT",
-      "details": "Q. Jackson (Doubt)"
-    },
-    {
       "name": "A. Nembhard",
       "status": "QUES",
       "details": "A. Nembhard (Ques)"
@@ -287,6 +282,11 @@
       "name": "I. Zubac",
       "status": "QUES",
       "details": "I. Zubac (Ques)"
+    },
+    {
+      "name": "Q. Jackson",
+      "status": "DOUBT",
+      "details": "Q. Jackson (Doubt)"
     },
     {
       "name": "P. Siakam",
@@ -399,6 +399,11 @@
       "details": "A. Dosunmu (Ques)"
     },
     {
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
+    },
+    {
       "name": "D. Melton",
       "status": "QUES",
       "details": "D. Melton (Ques)"
@@ -488,6 +493,11 @@
       "details": "D. Lillard (OFS)"
     },
     {
+      "name": "R. Williams",
+      "status": "QUES",
+      "details": "R. Williams (Ques)"
+    },
+    {
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
@@ -498,6 +508,11 @@
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "QUES",
+      "details": "R. Williams (Ques)"
     },
     {
       "name": "S. Sharpe",
