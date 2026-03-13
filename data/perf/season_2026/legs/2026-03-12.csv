@@ -1,0 +1,9 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-12,2026,Paolo Banchero,ORL,WSH,3pt,1,MISSED,0,,targets_snapshot_2026-03-12.json
+2026-03-12,2026,Cade Cunningham,DET,PHI,ast,10,HIT,13,,targets_snapshot_2026-03-12.json
+2026-03-12,2026,Cade Cunningham,DET,PHI,3pt,2,MISSED,0,,targets_snapshot_2026-03-12.json
+2026-03-12,2026,Desmond Bane,ORL,WSH,ast,4,HIT,6,,targets_snapshot_2026-03-12.json
+2026-03-12,2026,Anthony Davis,DAL,MEM,ast,2,,,,targets_snapshot_2026-03-12.json
+2026-03-12,2026,Collin Gillespie,PHX,IND,3pt,3,MISSED,0,,targets_snapshot_2026-03-12.json
+2026-03-12,2026,Devin Vassell,SA,DEN,ast,2,HIT,3,,targets_snapshot_2026-03-12.json
+2026-03-12,2026,Devin Vassell,SA,DEN,3pt,2,HIT,4,,targets_snapshot_2026-03-12.json
