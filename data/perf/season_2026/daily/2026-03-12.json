@@ -1,7 +1,7 @@
 {
-  "built_at_utc": "2026-03-13T09:06:34Z",
+  "built_at_utc": "2026-03-13T14:35:24Z",
   "date": "2026-03-12",
-  "git_sha": "bb60d96821af5678126bef6565752b3a9bf058f9",
+  "git_sha": "36fb7bc58fd6f602e138a8a29d5a2675bdbb87b0",
   "props": {
     "all_targets": {
       "hit_rate": 0.5714285714285714,
@@ -11,9 +11,9 @@
     "closest_misses": 2,
     "reaches_hit": 3,
     "top_targets": {
-      "hit_rate": 0.75,
-      "hits": 3,
-      "total": 4
+      "hit_rate": 0.6666666666666666,
+      "hits": 2,
+      "total": 3
     }
   },
   "season_end_year": 2026,
