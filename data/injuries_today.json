@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-12",
-  "built_at_utc": "2026-03-13T03:23:32Z",
+  "built_at_utc": "2026-03-13T04:02:23Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -39,6 +39,11 @@
       "details": "K. Oubre (Out)"
     },
     {
+      "name": "A. Thompson",
+      "status": "QUES",
+      "details": "A. Thompson (Ques)"
+    },
+    {
       "name": "B. Klintman",
       "status": "OUT",
       "details": "B. Klintman (Out)"
@@ -47,15 +52,15 @@
       "name": "C. LeVert",
       "status": "OUT",
       "details": "C. LeVert (Out)"
-    },
-    {
-      "name": "A. Thompson",
-      "status": "OUT",
-      "details": "A. Thompson (Out)"
     }
   ],
   "DET": [
     {
+      "name": "A. Thompson",
+      "status": "QUES",
+      "details": "A. Thompson (Ques)"
+    },
+    {
       "name": "B. Klintman",
       "status": "OUT",
       "details": "B. Klintman (Out)"
@@ -64,11 +69,6 @@
       "name": "C. LeVert",
       "status": "OUT",
       "details": "C. LeVert (Out)"
-    },
-    {
-      "name": "A. Thompson",
-      "status": "OUT",
-      "details": "A. Thompson (Out)"
     }
   ],
   "PHX": [
@@ -334,6 +334,11 @@
       "details": "K. Caldwell-Pope (OFS)"
     },
     {
+      "name": "C. Coward",
+      "status": "QUES",
+      "details": "C. Coward (Ques)"
+    },
+    {
       "name": "Zach Edey",
       "status": "OFS",
       "details": "Zach Edey (OFS)"
@@ -352,11 +357,6 @@
       "name": "W. Clayton",
       "status": "OUT",
       "details": "W. Clayton (Out)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "OUT",
-      "details": "C. Coward (Out)"
     },
     {
       "name": "Taj Gibson",
@@ -391,6 +391,11 @@
       "details": "K. Caldwell-Pope (OFS)"
     },
     {
+      "name": "C. Coward",
+      "status": "QUES",
+      "details": "C. Coward (Ques)"
+    },
+    {
       "name": "Zach Edey",
       "status": "OFS",
       "details": "Zach Edey (OFS)"
@@ -409,11 +414,6 @@
       "name": "W. Clayton",
       "status": "OUT",
       "details": "W. Clayton (Out)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "OUT",
-      "details": "C. Coward (Out)"
     },
     {
       "name": "Taj Gibson",
