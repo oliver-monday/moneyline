@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-13",
-  "built_at_utc": "2026-03-13T21:22:07Z",
+  "built_at_utc": "2026-03-13T22:34:23Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -24,11 +24,6 @@
       "details": "Max Strus (Out)"
     },
     {
-      "name": "N. Marshall",
-      "status": "QUES",
-      "details": "N. Marshall (Ques)"
-    },
-    {
       "name": "K. Irving",
       "status": "OFS",
       "details": "K. Irving (OFS)"
@@ -45,13 +40,13 @@
     },
     {
       "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
     },
     {
       "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     }
   ],
   "DAL": [
@@ -71,19 +66,14 @@
       "details": "C. Martin (Prob)"
     },
     {
-      "name": "N. Marshall",
-      "status": "QUES",
-      "details": "N. Marshall (Ques)"
-    },
-    {
       "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
     },
     {
       "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     }
   ],
   "MEM": [
@@ -182,19 +172,9 @@
   ],
   "NYK": [
     {
-      "name": "J. Hart",
-      "status": "DOUBT",
-      "details": "J. Hart (Doubt)"
-    },
-    {
-      "name": "J. Sochan",
-      "status": "DOUBT",
-      "details": "J. Sochan (Doubt)"
-    },
-    {
-      "name": "K. Towns",
-      "status": "DOUBT",
-      "details": "K. Towns (Doubt)"
+      "name": "Josh Hart",
+      "status": "OUT",
+      "details": "Josh Hart (Out)"
     },
     {
       "name": "M. McBride",
@@ -202,24 +182,14 @@
       "details": "M. McBride (Out)"
     },
     {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
+      "name": "J. Sochan",
+      "status": "OUT",
+      "details": "J. Sochan (Out)"
     },
     {
-      "name": "A. Nesmith",
-      "status": "PROB",
-      "details": "A. Nesmith (Prob)"
-    },
-    {
-      "name": "O. Toppin",
-      "status": "PROB",
-      "details": "O. Toppin (Prob)"
-    },
-    {
-      "name": "I. Zubac",
-      "status": "QUES",
-      "details": "I. Zubac (Ques)"
+      "name": "K. Towns",
+      "status": "OUT",
+      "details": "K. Towns (Out)"
     },
     {
       "name": "J. Furphy",
@@ -232,19 +202,14 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "T. McConnell",
-      "status": "PROB",
-      "details": "T. McConnell (Prob)"
-    },
-    {
       "name": "Q. Jackson",
-      "status": "DOUBT",
-      "details": "Q. Jackson (Doubt)"
+      "status": "OUT",
+      "details": "Q. Jackson (Out)"
     },
     {
       "name": "P. Siakam",
-      "status": "DOUBT",
-      "details": "P. Siakam (Doubt)"
+      "status": "OUT",
+      "details": "P. Siakam (Out)"
     }
   ],
   "IND": [
@@ -259,39 +224,14 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "T. McConnell",
-      "status": "PROB",
-      "details": "T. McConnell (Prob)"
-    },
-    {
-      "name": "A. Nesmith",
-      "status": "PROB",
-      "details": "A. Nesmith (Prob)"
-    },
-    {
-      "name": "O. Toppin",
-      "status": "PROB",
-      "details": "O. Toppin (Prob)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
-    },
-    {
-      "name": "I. Zubac",
-      "status": "QUES",
-      "details": "I. Zubac (Ques)"
-    },
-    {
       "name": "Q. Jackson",
-      "status": "DOUBT",
-      "details": "Q. Jackson (Doubt)"
+      "status": "OUT",
+      "details": "Q. Jackson (Out)"
     },
     {
       "name": "P. Siakam",
-      "status": "DOUBT",
-      "details": "P. Siakam (Doubt)"
+      "status": "OUT",
+      "details": "P. Siakam (Out)"
     }
   ],
   "PHX": [
@@ -311,36 +251,26 @@
       "details": "M. Williams (Out)"
     },
     {
-      "name": "S. Barnes",
-      "status": "QUES",
-      "details": "S. Barnes (Ques)"
-    },
-    {
-      "name": "C. Murray-Boyles",
-      "status": "DOUBT",
-      "details": "C. Murray-Boyles (Doubt)"
-    },
-    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "C. Murray-Boyles",
+      "status": "OUT",
+      "details": "C. Murray-Boyles (Out)"
     }
   ],
   "TOR": [
     {
-      "name": "S. Barnes",
-      "status": "QUES",
-      "details": "S. Barnes (Ques)"
-    },
-    {
-      "name": "C. Murray-Boyles",
-      "status": "DOUBT",
-      "details": "C. Murray-Boyles (Doubt)"
-    },
-    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "C. Murray-Boyles",
+      "status": "OUT",
+      "details": "C. Murray-Boyles (Out)"
     }
   ],
   "NOP": [
@@ -350,14 +280,14 @@
       "details": "B. McGowens (Out)"
     },
     {
-      "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
-    },
-    {
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "A. Sengun",
+      "status": "OUT",
+      "details": "A. Sengun (Out)"
     },
     {
       "name": "J. Tate",
@@ -378,8 +308,8 @@
     },
     {
       "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
+      "status": "OUT",
+      "details": "A. Sengun (Out)"
     },
     {
       "name": "J. Tate",
