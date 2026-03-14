@@ -997,11 +997,18 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810813,2026-03-12,2026-03-13T01:00Z,San Antonio Spurs,SA,131,-225.0,,Denver Nuggets,DEN,136,185.0,,San Antonio,TX,,
 401810814,2026-03-12,2026-03-13T01:30Z,Oklahoma City Thunder,OKC,104,-270.0,,Boston Celtics,BOS,102,220.0,,Oklahoma City,OK,,
 401810815,2026-03-12,2026-03-13T02:30Z,Los Angeles Lakers,LAL,142,-535.0,,Chicago Bulls,CHI,130,400.0,,Los Angeles,CA,,
-401810816,2026-03-13,2026-03-13T23:30Z,Detroit Pistons,DET,0,-1200.0,,Memphis Grizzlies,MEM,0,750.0,,Detroit,MI,,K. Caldwell-Pope (OFS); Zach Edey (OFS); B. Clarke (Out); Ja Morant (Out); S. Pippen (Out)
-401810817,2026-03-13,2026-03-13T23:30Z,Indiana Pacers,IND,0,600.0,,New York Knicks,NY,0,-900.0,,Indianapolis,IN,J. Furphy (OFS); T. Haliburton (OFS),M. McBride (Out)
-401810818,2026-03-13,2026-03-13T23:30Z,Toronto Raptors,TOR,0,-185.0,,Phoenix Suns,PHX,0,154.0,,Toronto,ON,C. Hepburn (Out),D. Brooks (Out); M. Williams (Out)
-401810820,2026-03-13,2026-03-13T23:30Z,Dallas Mavericks,DAL,0,525.0,,Cleveland Cavaliers,CLE,0,-750.0,,Dallas,TX,K. Irving (OFS); D. Lively (OFS),J. Allen (Out); T. Proctor (Out); Max Strus (Out)
-401810819,2026-03-13,2026-03-14T00:00Z,Houston Rockets,HOU,0,-285.0,,New Orleans Pelicans,NO,0,230.0,,Houston,TX,S. Adams (OFS); J. Tate (Out); F. VanVleet (Out),B. McGowens (Out)
-401810821,2026-03-13,2026-03-14T02:00Z,Golden State Warriors,GS,0,195.0,,Minnesota Timberwolves,MIN,0,-238.0,,San Francisco,CA,J. Butler (OFS); S. Curry (Out); M. Moody (Out),
-401810822,2026-03-13,2026-03-14T02:00Z,Portland Trail Blazers,POR,0,-1050.0,,Utah Jazz,UTAH,0,675.0,,Portland,OR,D. Lillard (OFS); S. Sharpe (Out),J. Jackson (OFS); W. Kessler (OFS); J. Nurkic (OFS); K. George (Out); J. Konchar (Out); L. Markkanen (Out)
-401810823,2026-03-13,2026-03-14T02:30Z,LA Clippers,LAC,0,-750.0,,Chicago Bulls,CHI,0,525.0,,Inglewood,CA,B. Beal (OFS); Y. Niederhauser (OFS); J. Collins (Out); D. Garland (Out),Z. Collins (OFS); N. Essengue (OFS); Jaden Ivey (Out)
+401810816,2026-03-13,2026-03-13T23:30Z,Detroit Pistons,DET,126,-1200.0,,Memphis Grizzlies,MEM,110,750.0,,Detroit,MI,,
+401810817,2026-03-13,2026-03-13T23:30Z,Indiana Pacers,IND,92,600.0,,New York Knicks,NY,101,-900.0,,Indianapolis,IN,,
+401810818,2026-03-13,2026-03-13T23:30Z,Toronto Raptors,TOR,122,-185.0,,Phoenix Suns,PHX,115,154.0,,Toronto,ON,,
+401810820,2026-03-13,2026-03-13T23:30Z,Dallas Mavericks,DAL,105,525.0,,Cleveland Cavaliers,CLE,138,-750.0,,Dallas,TX,,
+401810819,2026-03-13,2026-03-14T00:00Z,Houston Rockets,HOU,107,-285.0,,New Orleans Pelicans,NO,105,230.0,,Houston,TX,,
+401810821,2026-03-13,2026-03-14T02:00Z,Golden State Warriors,GS,117,195.0,,Minnesota Timberwolves,MIN,127,-238.0,,San Francisco,CA,,
+401810822,2026-03-13,2026-03-14T02:00Z,Portland Trail Blazers,POR,124,-1050.0,,Utah Jazz,UTAH,114,675.0,,Portland,OR,,
+401810823,2026-03-13,2026-03-14T02:30Z,LA Clippers,LAC,119,-750.0,,Chicago Bulls,CHI,108,525.0,,Inglewood,CA,,
+401810824,2026-03-14,2026-03-14T17:00Z,Philadelphia 76ers,PHI,0,-380.0,,Brooklyn Nets,BKN,0,300.0,,Philadelphia,PA,J. Broome (Out); J. Embiid (Out); P. George (Out); T. Maxey (Out); K. Oubre (Out),Egor Demin (OFS); D. Sharpe (OFS); N. Claxton (Out); D. Powell (Out)
+401810825,2026-03-14,2026-03-14T19:00Z,Atlanta Hawks,ATL,0,-310.0,,Milwaukee Bucks,MIL,0,250.0,,Atlanta,GA,J. Kuminga (Out),
+401810828,2026-03-14,2026-03-14T19:30Z,San Antonio Spurs,SA,0,-245.0,,Charlotte Hornets,CHA,0,200.0,,San Antonio,TX,D. Jones Garcia (OFS),L. McNeeley (Out); T. Salaun (Out)
+401810826,2026-03-14,2026-03-14T22:00Z,Boston Celtics,BOS,0,-2100.0,,Washington Wizards,WSH,0,1100.0,,Boston,MA,N. Vucevic (Out),C. Whitmore (OFS); A. Davis (Out); K. George (Out); D. Russell (Out)
+401810827,2026-03-14,2026-03-15T00:00Z,Miami Heat,MIA,0,-162.0,,Orlando Magic,ORL,0,136.0,,Miami,FL,N. Jovic (Out); T. Rozier (Out); A. Wiggins (Out),A. Black (Out); J. Isaac (Out); F. Wagner (Out)
+401810829,2026-03-14,2026-03-15T00:30Z,Los Angeles Lakers,LAL,0,120.0,,Denver Nuggets,DEN,0,-142.0,,Los Angeles,CA,M. Kleber (Out),P. Watson (Out)
+401810830,2026-03-14,2026-03-15T02:30Z,LA Clippers,LAC,0,-800.0,,Sacramento Kings,SAC,0,550.0,,Inglewood,CA,B. Beal (OFS); Y. Niederhauser (OFS); J. Collins (Out),D. Hunter (OFS); Z. LaVine (OFS); D. Sabonis (OFS); D. Carter (Out); D. Eubanks (Out); K. Murray (Out)
