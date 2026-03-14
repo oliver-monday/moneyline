@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-13",
-  "built_at_utc": "2026-03-13T23:31:23Z",
+  "built_at_utc": "2026-03-14T01:12:17Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -282,58 +282,11 @@
       "details": "F. VanVleet (Out)"
     }
   ],
-  "MIN": [
-    {
-      "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
-    },
-    {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
-    },
-    {
-      "name": "J. Butler",
-      "status": "OFS",
-      "details": "J. Butler (OFS)"
-    },
-    {
-      "name": "Q. Post",
-      "status": "QUES",
-      "details": "Q. Post (Ques)"
-    },
-    {
-      "name": "S. Curry",
-      "status": "OUT",
-      "details": "S. Curry (Out)"
-    },
-    {
-      "name": "M. Moody",
-      "status": "OUT",
-      "details": "M. Moody (Out)"
-    }
-  ],
   "GSW": [
     {
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
-    },
-    {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
-    },
-    {
-      "name": "Q. Post",
-      "status": "QUES",
-      "details": "Q. Post (Ques)"
     },
     {
       "name": "S. Curry",
@@ -432,21 +385,6 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "P. Williams",
-      "status": "QUES",
-      "details": "P. Williams (Ques)"
-    },
-    {
-      "name": "G. Yabusele",
-      "status": "QUES",
-      "details": "G. Yabusele (Ques)"
-    },
-    {
-      "name": "I. Okoro",
-      "status": "DOUBT",
-      "details": "I. Okoro (Doubt)"
-    },
-    {
       "name": "C. Sexton",
       "status": "DOUBT",
       "details": "C. Sexton (Doubt)"
@@ -460,6 +398,11 @@
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "OUT",
+      "details": "I. Okoro (Out)"
     },
     {
       "name": "A. Simons",
@@ -507,6 +450,23 @@
       "name": "D. Garland",
       "status": "OUT",
       "details": "D. Garland (Out)"
+    }
+  ],
+  "MIN": [
+    {
+      "name": "J. Butler",
+      "status": "OFS",
+      "details": "J. Butler (OFS)"
+    },
+    {
+      "name": "S. Curry",
+      "status": "OUT",
+      "details": "S. Curry (Out)"
+    },
+    {
+      "name": "M. Moody",
+      "status": "OUT",
+      "details": "M. Moody (Out)"
     }
   ]
 }
