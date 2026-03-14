@@ -7816,8 +7816,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-14,BKN,Egor Demin,OFS,Egor Demin (OFS),rotowire
 2026-03-14,BKN,D. Sharpe,OFS,D. Sharpe (OFS),rotowire
 2026-03-14,BKN,O. Agbaji,PROB,O. Agbaji (Prob),rotowire
-2026-03-14,BKN,M. Porter,DOUBT,M. Porter (Doubt),rotowire
 2026-03-14,BKN,N. Claxton,OUT,N. Claxton (Out),rotowire
+2026-03-14,BKN,M. Porter,OUT,M. Porter (Out),rotowire
 2026-03-14,BKN,D. Powell,OUT,D. Powell (Out),rotowire
 2026-03-14,BKN,A. Bona,QUES,A. Bona (Ques),rotowire
 2026-03-14,BKN,A. Drummond,QUES,A. Drummond (Ques),rotowire
@@ -7836,6 +7836,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-14,MIL,G. Antetokounmpo,QUES,G. Antetokounmpo (Ques),rotowire
 2026-03-14,MIL,O. Dieng,QUES,O. Dieng (Ques),rotowire
 2026-03-14,MIL,K. Porter,QUES,K. Porter (Ques),rotowire
+2026-03-14,MIL,C. Ryan,OUT,C. Ryan (Out),rotowire
 2026-03-14,MIL,J. Kuminga,OUT,J. Kuminga (Out),rotowire
 2026-03-14,ATL,J. Kuminga,OUT,J. Kuminga (Out),rotowire
 2026-03-14,CHA,R. Kalkbrenner,PROB,R. Kalkbrenner (Prob),rotowire
@@ -7844,8 +7845,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-14,CHA,T. Salaun,OUT,T. Salaun (Out),rotowire
 2026-03-14,CHA,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
 2026-03-14,CHA,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
+2026-03-14,CHA,E. Miller,QUES,E. Miller (Ques),rotowire
 2026-03-14,CHA,D. Harper,QUES,D. Harper (Ques),rotowire
 2026-03-14,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
+2026-03-14,SAS,E. Miller,QUES,E. Miller (Ques),rotowire
 2026-03-14,SAS,D. Harper,QUES,D. Harper (Ques),rotowire
 2026-03-14,SAS,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
 2026-03-14,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
@@ -7888,6 +7891,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-14,SAC,D. Carter,OUT,D. Carter (Out),rotowire
 2026-03-14,SAC,D. Eubanks,OUT,D. Eubanks (Out),rotowire
 2026-03-14,SAC,K. Murray,OUT,K. Murray (Out),rotowire
+2026-03-14,SAC,I. Stevens,OUT,I. Stevens (Out),rotowire
 2026-03-14,SAC,D. Garland,PROB,D. Garland (Prob),rotowire
 2026-03-14,SAC,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-03-14,SAC,Y. Niederhauser,OFS,Y. Niederhauser (OFS),rotowire
