@@ -7837,6 +7837,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-14,SAC,J. Collins,OUT,J. Collins (Out),rotowire
 2026-03-14,LAC,D. Garland,PROB,D. Garland (Prob),rotowire
 2026-03-14,LAC,J. Collins,OUT,J. Collins (Out),rotowire
+2026-03-14,WAS,D. White,PROB,D. White (Prob),rotowire
+2026-03-14,WAS,B. Scheierman,PROB,B. Scheierman (Prob),rotowire
+2026-03-14,BOS,B. Scheierman,PROB,B. Scheierman (Prob),rotowire
+2026-03-14,BOS,D. White,PROB,D. White (Prob),rotowire
 2026-03-14,BKN,Egor Demin,OFS,Egor Demin (OFS),rotowire
 2026-03-14,BKN,D. Sharpe,OFS,D. Sharpe (OFS),rotowire
 2026-03-14,BKN,N. Claxton,OUT,N. Claxton (Out),rotowire
@@ -7871,11 +7875,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-14,WAS,A. Davis,OUT,A. Davis (Out),rotowire
 2026-03-14,WAS,K. George,OUT,K. George (Out),rotowire
 2026-03-14,WAS,D. Russell,OUT,D. Russell (Out),rotowire
-2026-03-14,WAS,D. White,PROB,D. White (Prob),rotowire
-2026-03-14,WAS,B. Scheierman,PROB,B. Scheierman (Prob),rotowire
+2026-03-14,WAS,C. Bassey,OUT,C. Bassey (Out),rotowire
 2026-03-14,WAS,N. Vucevic,OUT,N. Vucevic (Out),rotowire
-2026-03-14,BOS,B. Scheierman,PROB,B. Scheierman (Prob),rotowire
-2026-03-14,BOS,D. White,PROB,D. White (Prob),rotowire
+2026-03-14,BOS,C. Bassey,OUT,C. Bassey (Out),rotowire
 2026-03-14,BOS,N. Vucevic,OUT,N. Vucevic (Out),rotowire
 2026-03-14,ORL,A. Black,OUT,A. Black (Out),rotowire
 2026-03-14,ORL,J. Isaac,OUT,J. Isaac (Out),rotowire
