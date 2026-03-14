@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-14",
-  "built_at_utc": "2026-03-14T17:16:34Z",
+  "built_at_utc": "2026-03-14T18:35:25Z",
   "source": "rotowire",
   "BKN": [
     {
@@ -27,6 +27,11 @@
       "name": "D. Powell",
       "status": "OUT",
       "details": "D. Powell (Out)"
+    },
+    {
+      "name": "D. Terry",
+      "status": "QUES",
+      "details": "D. Terry (Ques)"
     },
     {
       "name": "J. Broome",
@@ -66,6 +71,11 @@
   ],
   "PHI": [
     {
+      "name": "D. Terry",
+      "status": "QUES",
+      "details": "D. Terry (Ques)"
+    },
+    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
@@ -104,18 +114,13 @@
   "MIL": [
     {
       "name": "G. Antetokounmpo",
-      "status": "QUES",
-      "details": "G. Antetokounmpo (Ques)"
+      "status": "OUT",
+      "details": "G. Antetokounmpo (Out)"
     },
     {
       "name": "O. Dieng",
-      "status": "QUES",
-      "details": "O. Dieng (Ques)"
-    },
-    {
-      "name": "K. Porter",
-      "status": "QUES",
-      "details": "K. Porter (Ques)"
+      "status": "OUT",
+      "details": "O. Dieng (Out)"
     },
     {
       "name": "C. Ryan",
@@ -136,16 +141,6 @@
     }
   ],
   "CHA": [
-    {
-      "name": "R. Kalkbrenner",
-      "status": "PROB",
-      "details": "R. Kalkbrenner (Prob)"
-    },
-    {
-      "name": "C. White",
-      "status": "PROB",
-      "details": "C. White (Prob)"
-    },
     {
       "name": "L. McNeeley",
       "status": "OUT",
@@ -173,8 +168,8 @@
     },
     {
       "name": "D. Harper",
-      "status": "QUES",
-      "details": "D. Harper (Ques)"
+      "status": "OUT",
+      "details": "D. Harper (Out)"
     }
   ],
   "SAS": [
@@ -189,14 +184,14 @@
       "details": "E. Miller (Ques)"
     },
     {
-      "name": "D. Harper",
-      "status": "QUES",
-      "details": "D. Harper (Ques)"
-    },
-    {
       "name": "V. Wembanyama",
       "status": "QUES",
       "details": "V. Wembanyama (Ques)"
+    },
+    {
+      "name": "D. Harper",
+      "status": "OUT",
+      "details": "D. Harper (Out)"
     }
   ],
   "WAS": [
