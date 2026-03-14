@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-14",
-  "built_at_utc": "2026-03-14T14:52:22Z",
+  "built_at_utc": "2026-03-14T17:16:34Z",
   "source": "rotowire",
   "BKN": [
     {
@@ -12,11 +12,6 @@
       "name": "D. Sharpe",
       "status": "OFS",
       "details": "D. Sharpe (OFS)"
-    },
-    {
-      "name": "O. Agbaji",
-      "status": "PROB",
-      "details": "O. Agbaji (Prob)"
     },
     {
       "name": "N. Claxton",
@@ -34,19 +29,14 @@
       "details": "D. Powell (Out)"
     },
     {
-      "name": "A. Bona",
-      "status": "QUES",
-      "details": "A. Bona (Ques)"
-    },
-    {
-      "name": "A. Drummond",
-      "status": "QUES",
-      "details": "A. Drummond (Ques)"
-    },
-    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
+    },
+    {
+      "name": "A. Drummond",
+      "status": "OUT",
+      "details": "A. Drummond (Out)"
     },
     {
       "name": "J. Embiid",
@@ -67,23 +57,23 @@
       "name": "K. Oubre",
       "status": "OUT",
       "details": "K. Oubre (Out)"
+    },
+    {
+      "name": "J. Walker",
+      "status": "OUT",
+      "details": "J. Walker (Out)"
     }
   ],
   "PHI": [
     {
-      "name": "A. Bona",
-      "status": "QUES",
-      "details": "A. Bona (Ques)"
-    },
-    {
-      "name": "A. Drummond",
-      "status": "QUES",
-      "details": "A. Drummond (Ques)"
-    },
-    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
+    },
+    {
+      "name": "A. Drummond",
+      "status": "OUT",
+      "details": "A. Drummond (Out)"
     },
     {
       "name": "J. Embiid",
@@ -104,6 +94,11 @@
       "name": "K. Oubre",
       "status": "OUT",
       "details": "K. Oubre (Out)"
+    },
+    {
+      "name": "J. Walker",
+      "status": "OUT",
+      "details": "J. Walker (Out)"
     }
   ],
   "MIL": [
@@ -211,11 +206,6 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "S. Cooper",
-      "status": "QUES",
-      "details": "S. Cooper (Ques)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
@@ -280,16 +270,6 @@
       "details": "F. Wagner (Out)"
     },
     {
-      "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
-    },
-    {
       "name": "D. Smith",
       "status": "PROB",
       "details": "D. Smith (Prob)"
@@ -315,16 +295,6 @@
       "name": "D. Smith",
       "status": "PROB",
       "details": "D. Smith (Prob)"
-    },
-    {
-      "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
     },
     {
       "name": "N. Jovic",
