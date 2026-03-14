@@ -1,12 +1,27 @@
 {
   "asof_date": "2026-03-14",
-  "built_at_utc": "2026-03-14T21:15:10Z",
+  "built_at_utc": "2026-03-14T22:33:23Z",
   "source": "rotowire",
   "BKN": [
+    {
+      "name": "N. Claxton",
+      "status": "PROB",
+      "details": "N. Claxton (Prob)"
+    },
     {
       "name": "Egor Demin",
       "status": "OFS",
       "details": "Egor Demin (OFS)"
+    },
+    {
+      "name": "M. Porter",
+      "status": "QUES",
+      "details": "M. Porter (Ques)"
+    },
+    {
+      "name": "D. Powell",
+      "status": "QUES",
+      "details": "D. Powell (Ques)"
     },
     {
       "name": "D. Sharpe",
@@ -14,29 +29,19 @@
       "details": "D. Sharpe (OFS)"
     },
     {
-      "name": "N. Claxton",
-      "status": "OUT",
-      "details": "N. Claxton (Out)"
+      "name": "A. Drummond",
+      "status": "QUES",
+      "details": "A. Drummond (Ques)"
     },
     {
-      "name": "M. Porter",
-      "status": "OUT",
-      "details": "M. Porter (Out)"
-    },
-    {
-      "name": "D. Powell",
-      "status": "OUT",
-      "details": "D. Powell (Out)"
+      "name": "J. Walker",
+      "status": "QUES",
+      "details": "J. Walker (Ques)"
     },
     {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
-    },
-    {
-      "name": "A. Drummond",
-      "status": "OUT",
-      "details": "A. Drummond (Out)"
     },
     {
       "name": "J. Embiid",
@@ -57,23 +62,23 @@
       "name": "K. Oubre",
       "status": "OUT",
       "details": "K. Oubre (Out)"
-    },
-    {
-      "name": "J. Walker",
-      "status": "OUT",
-      "details": "J. Walker (Out)"
     }
   ],
   "PHI": [
     {
+      "name": "A. Drummond",
+      "status": "QUES",
+      "details": "A. Drummond (Ques)"
+    },
+    {
+      "name": "J. Walker",
+      "status": "QUES",
+      "details": "J. Walker (Ques)"
+    },
+    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
-    },
-    {
-      "name": "A. Drummond",
-      "status": "OUT",
-      "details": "A. Drummond (Out)"
     },
     {
       "name": "J. Embiid",
@@ -94,74 +99,64 @@
       "name": "K. Oubre",
       "status": "OUT",
       "details": "K. Oubre (Out)"
-    },
-    {
-      "name": "J. Walker",
-      "status": "OUT",
-      "details": "J. Walker (Out)"
     }
   ],
   "MIL": [
     {
       "name": "G. Antetokounmpo",
-      "status": "OUT",
-      "details": "G. Antetokounmpo (Out)"
+      "status": "QUES",
+      "details": "G. Antetokounmpo (Ques)"
     },
     {
       "name": "O. Dieng",
-      "status": "OUT",
-      "details": "O. Dieng (Out)"
-    },
-    {
-      "name": "C. Ryan",
-      "status": "OUT",
-      "details": "C. Ryan (Out)"
+      "status": "QUES",
+      "details": "O. Dieng (Ques)"
     },
     {
       "name": "J. Kuminga",
-      "status": "OUT",
-      "details": "J. Kuminga (Out)"
+      "status": "PROB",
+      "details": "J. Kuminga (Prob)"
     }
   ],
   "ATL": [
     {
       "name": "J. Kuminga",
-      "status": "OUT",
-      "details": "J. Kuminga (Out)"
+      "status": "PROB",
+      "details": "J. Kuminga (Prob)"
     }
   ],
   "CHA": [
     {
       "name": "L. McNeeley",
-      "status": "OUT",
-      "details": "L. McNeeley (Out)"
+      "status": "QUES",
+      "details": "L. McNeeley (Ques)"
     },
     {
       "name": "T. Salaun",
-      "status": "OUT",
-      "details": "T. Salaun (Out)"
+      "status": "QUES",
+      "details": "T. Salaun (Ques)"
+    },
+    {
+      "name": "D. Harper",
+      "status": "QUES",
+      "details": "D. Harper (Ques)"
     },
     {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "D. Harper",
-      "status": "OUT",
-      "details": "D. Harper (Out)"
     }
   ],
   "SAS": [
     {
+      "name": "D. Harper",
+      "status": "QUES",
+      "details": "D. Harper (Ques)"
+    },
+    {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "D. Harper",
-      "status": "OUT",
-      "details": "D. Harper (Out)"
     }
   ],
   "WAS": [
@@ -186,22 +181,12 @@
       "details": "D. Russell (Out)"
     },
     {
-      "name": "C. Bassey",
-      "status": "OUT",
-      "details": "C. Bassey (Out)"
-    },
-    {
       "name": "N. Vucevic",
       "status": "OUT",
       "details": "N. Vucevic (Out)"
     }
   ],
   "BOS": [
-    {
-      "name": "C. Bassey",
-      "status": "OUT",
-      "details": "C. Bassey (Out)"
-    },
     {
       "name": "N. Vucevic",
       "status": "OUT",
@@ -225,11 +210,6 @@
       "details": "F. Wagner (Out)"
     },
     {
-      "name": "D. Smith",
-      "status": "PROB",
-      "details": "D. Smith (Prob)"
-    },
-    {
       "name": "N. Jovic",
       "status": "OUT",
       "details": "N. Jovic (Out)"
@@ -246,11 +226,6 @@
     }
   ],
   "MIA": [
-    {
-      "name": "D. Smith",
-      "status": "PROB",
-      "details": "D. Smith (Prob)"
-    },
     {
       "name": "N. Jovic",
       "status": "OUT",
