@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-14",
-  "built_at_utc": "2026-03-14T18:35:25Z",
+  "built_at_utc": "2026-03-14T19:32:05Z",
   "source": "rotowire",
   "BKN": [
     {
@@ -27,11 +27,6 @@
       "name": "D. Powell",
       "status": "OUT",
       "details": "D. Powell (Out)"
-    },
-    {
-      "name": "D. Terry",
-      "status": "QUES",
-      "details": "D. Terry (Ques)"
     },
     {
       "name": "J. Broome",
@@ -70,11 +65,6 @@
     }
   ],
   "PHI": [
-    {
-      "name": "D. Terry",
-      "status": "QUES",
-      "details": "D. Terry (Ques)"
-    },
     {
       "name": "J. Broome",
       "status": "OUT",
@@ -152,11 +142,6 @@
       "details": "T. Salaun (Out)"
     },
     {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
-    },
-    {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
@@ -182,11 +167,6 @@
       "name": "E. Miller",
       "status": "QUES",
       "details": "E. Miller (Ques)"
-    },
-    {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
     },
     {
       "name": "D. Harper",
