@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-13",
-  "built_at_utc": "2026-03-14T03:21:27Z",
+  "built_at_utc": "2026-03-14T04:01:09Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -289,6 +289,11 @@
       "details": "J. Butler (OFS)"
     },
     {
+      "name": "S. Curry",
+      "status": "QUES",
+      "details": "S. Curry (Ques)"
+    },
+    {
       "name": "A. Horford",
       "status": "QUES",
       "details": "A. Horford (Ques)"
@@ -310,6 +315,11 @@
     }
   ],
   "UTA": [
+    {
+      "name": "A. Bailey",
+      "status": "QUES",
+      "details": "A. Bailey (Ques)"
+    },
     {
       "name": "J. Jackson",
       "status": "OFS",
@@ -462,6 +472,11 @@
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
+    },
+    {
+      "name": "S. Curry",
+      "status": "QUES",
+      "details": "S. Curry (Ques)"
     },
     {
       "name": "S. Curry",
