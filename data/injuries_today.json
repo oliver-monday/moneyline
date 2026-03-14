@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-14",
-  "built_at_utc": "2026-03-14T19:32:05Z",
+  "built_at_utc": "2026-03-14T20:26:05Z",
   "source": "rotowire",
   "BKN": [
     {
@@ -147,11 +147,6 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "E. Miller",
-      "status": "QUES",
-      "details": "E. Miller (Ques)"
-    },
-    {
       "name": "D. Harper",
       "status": "OUT",
       "details": "D. Harper (Out)"
@@ -162,11 +157,6 @@
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "E. Miller",
-      "status": "QUES",
-      "details": "E. Miller (Ques)"
     },
     {
       "name": "D. Harper",
@@ -304,22 +294,12 @@
       "details": "P. Watson (Out)"
     },
     {
-      "name": "J. Hayes",
-      "status": "PROB",
-      "details": "J. Hayes (Prob)"
-    },
-    {
       "name": "M. Kleber",
       "status": "OUT",
       "details": "M. Kleber (Out)"
     }
   ],
   "LAL": [
-    {
-      "name": "J. Hayes",
-      "status": "PROB",
-      "details": "J. Hayes (Prob)"
-    },
     {
       "name": "M. Kleber",
       "status": "OUT",
@@ -343,11 +323,6 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "M. Monk",
-      "status": "QUES",
-      "details": "M. Monk (Ques)"
-    },
-    {
       "name": "D. Carter",
       "status": "OUT",
       "details": "D. Carter (Out)"
@@ -356,6 +331,11 @@
       "name": "D. Eubanks",
       "status": "OUT",
       "details": "D. Eubanks (Out)"
+    },
+    {
+      "name": "Malik Monk",
+      "status": "OUT",
+      "details": "Malik Monk (Out)"
     },
     {
       "name": "K. Murray",
@@ -368,11 +348,6 @@
       "details": "I. Stevens (Out)"
     },
     {
-      "name": "D. Garland",
-      "status": "PROB",
-      "details": "D. Garland (Prob)"
-    },
-    {
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
@@ -383,9 +358,9 @@
       "details": "Y. Niederhauser (OFS)"
     },
     {
-      "name": "J. Collins",
+      "name": "N. Batum",
       "status": "OUT",
-      "details": "J. Collins (Out)"
+      "details": "N. Batum (Out)"
     }
   ],
   "LAC": [
@@ -400,14 +375,9 @@
       "details": "Y. Niederhauser (OFS)"
     },
     {
-      "name": "D. Garland",
-      "status": "PROB",
-      "details": "D. Garland (Prob)"
-    },
-    {
-      "name": "J. Collins",
+      "name": "N. Batum",
       "status": "OUT",
-      "details": "J. Collins (Out)"
+      "details": "N. Batum (Out)"
     }
   ]
 }

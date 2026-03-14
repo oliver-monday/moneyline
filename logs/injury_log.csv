@@ -7828,6 +7828,15 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-14,PHI,D. Terry,QUES,D. Terry (Ques),rotowire
 2026-03-14,CHA,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
 2026-03-14,SAS,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
+2026-03-14,CHA,E. Miller,QUES,E. Miller (Ques),rotowire
+2026-03-14,SAS,E. Miller,QUES,E. Miller (Ques),rotowire
+2026-03-14,DEN,J. Hayes,PROB,J. Hayes (Prob),rotowire
+2026-03-14,LAL,J. Hayes,PROB,J. Hayes (Prob),rotowire
+2026-03-14,SAC,M. Monk,QUES,M. Monk (Ques),rotowire
+2026-03-14,SAC,D. Garland,PROB,D. Garland (Prob),rotowire
+2026-03-14,SAC,J. Collins,OUT,J. Collins (Out),rotowire
+2026-03-14,LAC,D. Garland,PROB,D. Garland (Prob),rotowire
+2026-03-14,LAC,J. Collins,OUT,J. Collins (Out),rotowire
 2026-03-14,BKN,Egor Demin,OFS,Egor Demin (OFS),rotowire
 2026-03-14,BKN,D. Sharpe,OFS,D. Sharpe (OFS),rotowire
 2026-03-14,BKN,N. Claxton,OUT,N. Claxton (Out),rotowire
@@ -7855,10 +7864,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-14,CHA,L. McNeeley,OUT,L. McNeeley (Out),rotowire
 2026-03-14,CHA,T. Salaun,OUT,T. Salaun (Out),rotowire
 2026-03-14,CHA,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
-2026-03-14,CHA,E. Miller,QUES,E. Miller (Ques),rotowire
 2026-03-14,CHA,D. Harper,OUT,D. Harper (Out),rotowire
 2026-03-14,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
-2026-03-14,SAS,E. Miller,QUES,E. Miller (Ques),rotowire
 2026-03-14,SAS,D. Harper,OUT,D. Harper (Out),rotowire
 2026-03-14,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
 2026-03-14,WAS,A. Davis,OUT,A. Davis (Out),rotowire
@@ -7884,23 +7891,19 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-14,DEN,A. Gordon,PROB,A. Gordon (Prob),rotowire
 2026-03-14,DEN,J. Murray,PROB,J. Murray (Prob),rotowire
 2026-03-14,DEN,P. Watson,OUT,P. Watson (Out),rotowire
-2026-03-14,DEN,J. Hayes,PROB,J. Hayes (Prob),rotowire
 2026-03-14,DEN,M. Kleber,OUT,M. Kleber (Out),rotowire
-2026-03-14,LAL,J. Hayes,PROB,J. Hayes (Prob),rotowire
 2026-03-14,LAL,M. Kleber,OUT,M. Kleber (Out),rotowire
 2026-03-14,SAC,D. Hunter,OFS,D. Hunter (OFS),rotowire
 2026-03-14,SAC,Z. LaVine,OFS,Z. LaVine (OFS),rotowire
 2026-03-14,SAC,D. Sabonis,OFS,D. Sabonis (OFS),rotowire
-2026-03-14,SAC,M. Monk,QUES,M. Monk (Ques),rotowire
 2026-03-14,SAC,D. Carter,OUT,D. Carter (Out),rotowire
 2026-03-14,SAC,D. Eubanks,OUT,D. Eubanks (Out),rotowire
+2026-03-14,SAC,Malik Monk,OUT,Malik Monk (Out),rotowire
 2026-03-14,SAC,K. Murray,OUT,K. Murray (Out),rotowire
 2026-03-14,SAC,I. Stevens,OUT,I. Stevens (Out),rotowire
-2026-03-14,SAC,D. Garland,PROB,D. Garland (Prob),rotowire
 2026-03-14,SAC,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-03-14,SAC,Y. Niederhauser,OFS,Y. Niederhauser (OFS),rotowire
-2026-03-14,SAC,J. Collins,OUT,J. Collins (Out),rotowire
+2026-03-14,SAC,N. Batum,OUT,N. Batum (Out),rotowire
 2026-03-14,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-03-14,LAC,Y. Niederhauser,OFS,Y. Niederhauser (OFS),rotowire
-2026-03-14,LAC,D. Garland,PROB,D. Garland (Prob),rotowire
-2026-03-14,LAC,J. Collins,OUT,J. Collins (Out),rotowire
+2026-03-14,LAC,N. Batum,OUT,N. Batum (Out),rotowire
