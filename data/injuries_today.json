@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-15",
-  "built_at_utc": "2026-03-15T08:56:56Z",
+  "built_at_utc": "2026-03-15T14:54:02Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -69,8 +69,8 @@
     },
     {
       "name": "P. Washington",
-      "status": "QUES",
-      "details": "P. Washington (Ques)"
+      "status": "PROB",
+      "details": "P. Washington (Prob)"
     },
     {
       "name": "D. Gafford",
@@ -205,6 +205,21 @@
       "name": "G. Antetokounmpo",
       "status": "QUES",
       "details": "G. Antetokounmpo (Ques)"
+    },
+    {
+      "name": "M. Turner",
+      "status": "QUES",
+      "details": "M. Turner (Ques)"
+    },
+    {
+      "name": "B. Portis",
+      "status": "QUES",
+      "details": "B. Portis (Ques)"
+    },
+    {
+      "name": "K. Porter",
+      "status": "OUT",
+      "details": "K. Porter (Out)"
     }
   ],
   "MIL": [
@@ -217,14 +232,24 @@
       "name": "O. Dieng",
       "status": "QUES",
       "details": "O. Dieng (Ques)"
+    },
+    {
+      "name": "B. Portis",
+      "status": "QUES",
+      "details": "B. Portis (Ques)"
+    },
+    {
+      "name": "M. Turner",
+      "status": "QUES",
+      "details": "M. Turner (Ques)"
+    },
+    {
+      "name": "K. Porter",
+      "status": "OUT",
+      "details": "K. Porter (Out)"
     }
   ],
   "DET": [
-    {
-      "name": "A. Thompson",
-      "status": "PROB",
-      "details": "A. Thompson (Prob)"
-    },
     {
       "name": "I. Stewart",
       "status": "OUT",
