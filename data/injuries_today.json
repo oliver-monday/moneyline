@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-14",
-  "built_at_utc": "2026-03-15T03:45:49Z",
+  "built_at_utc": "2026-03-15T04:23:42Z",
   "source": "rotowire",
   "BKN": [
     {
@@ -255,8 +255,8 @@
   "DEN": [
     {
       "name": "P. Watson",
-      "status": "OUT",
-      "details": "P. Watson (Out)"
+      "status": "DOUBT",
+      "details": "P. Watson (Doubt)"
     },
     {
       "name": "M. Kleber",
