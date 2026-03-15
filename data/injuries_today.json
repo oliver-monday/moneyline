@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-15",
-  "built_at_utc": "2026-03-15T21:15:56Z",
+  "built_at_utc": "2026-03-15T22:35:28Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -105,6 +105,11 @@
       "details": "T. Haliburton (OFS)"
     },
     {
+      "name": "M. Potter",
+      "status": "QUES",
+      "details": "M. Potter (Ques)"
+    },
+    {
       "name": "A. Nembhard",
       "status": "OUT",
       "details": "A. Nembhard (Out)"
@@ -188,24 +193,9 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
-    },
-    {
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
-    },
-    {
-      "name": "A. Bona",
-      "status": "QUES",
-      "details": "A. Bona (Ques)"
-    },
-    {
-      "name": "A. Drummond",
-      "status": "QUES",
-      "details": "A. Drummond (Ques)"
     },
     {
       "name": "J. Broome",
@@ -244,16 +234,6 @@
     }
   ],
   "PHI": [
-    {
-      "name": "A. Bona",
-      "status": "QUES",
-      "details": "A. Bona (Ques)"
-    },
-    {
-      "name": "A. Drummond",
-      "status": "QUES",
-      "details": "A. Drummond (Ques)"
-    },
     {
       "name": "J. Broome",
       "status": "OUT",
