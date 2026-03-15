@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-15",
-  "built_at_utc": "2026-03-15T22:35:28Z",
+  "built_at_utc": "2026-03-15T23:31:51Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -277,11 +277,6 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "Q. Post",
-      "status": "QUES",
-      "details": "Q. Post (Ques)"
-    },
-    {
       "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
@@ -317,22 +312,12 @@
       "details": "K. Porzingis (Out)"
     },
     {
-      "name": "J. Sochan",
-      "status": "PROB",
-      "details": "J. Sochan (Prob)"
-    },
-    {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
     }
   ],
   "NYK": [
-    {
-      "name": "J. Sochan",
-      "status": "PROB",
-      "details": "J. Sochan (Prob)"
-    },
     {
       "name": "M. McBride",
       "status": "OUT",

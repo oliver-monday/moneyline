@@ -7941,6 +7941,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-15,POR,A. Drummond,QUES,A. Drummond (Ques),rotowire
 2026-03-15,PHI,A. Bona,QUES,A. Bona (Ques),rotowire
 2026-03-15,PHI,A. Drummond,QUES,A. Drummond (Ques),rotowire
+2026-03-15,GSW,Q. Post,QUES,Q. Post (Ques),rotowire
+2026-03-15,GSW,J. Sochan,PROB,J. Sochan (Prob),rotowire
+2026-03-15,NYK,J. Sochan,PROB,J. Sochan (Prob),rotowire
 2026-03-15,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-03-15,OKC,B. Carlson,OUT,B. Carlson (Out),rotowire
 2026-03-15,OKC,J. Williams,OUT,J. Williams (Out),rotowire
@@ -7992,7 +7995,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-15,PHI,D. Terry,OUT,D. Terry (Out),rotowire
 2026-03-15,PHI,J. Walker,OUT,J. Walker (Out),rotowire
 2026-03-15,GSW,J. Butler,OFS,J. Butler (OFS),rotowire
-2026-03-15,GSW,Q. Post,QUES,Q. Post (Ques),rotowire
 2026-03-15,GSW,S. Curry,OUT,S. Curry (Out),rotowire
 2026-03-15,GSW,Seth Curry,OUT,Seth Curry (Out),rotowire
 2026-03-15,GSW,D. Green,OUT,D. Green (Out),rotowire
@@ -8000,9 +8002,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-15,GSW,D. Melton,OUT,D. Melton (Out),rotowire
 2026-03-15,GSW,M. Moody,OUT,M. Moody (Out),rotowire
 2026-03-15,GSW,K. Porzingis,OUT,K. Porzingis (Out),rotowire
-2026-03-15,GSW,J. Sochan,PROB,J. Sochan (Prob),rotowire
 2026-03-15,GSW,M. McBride,OUT,M. McBride (Out),rotowire
-2026-03-15,NYK,J. Sochan,PROB,J. Sochan (Prob),rotowire
 2026-03-15,NYK,M. McBride,OUT,M. McBride (Out),rotowire
 2026-03-15,UTA,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-03-15,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
