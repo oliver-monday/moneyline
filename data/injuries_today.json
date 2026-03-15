@@ -1,44 +1,12 @@
 {
   "asof_date": "2026-03-15",
-  "built_at_utc": "2026-03-15T14:54:02Z",
+  "built_at_utc": "2026-03-15T17:17:33Z",
   "source": "rotowire",
-  "MIN": [
-    {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
-      "name": "I. Hartenstein",
-      "status": "QUES",
-      "details": "I. Hartenstein (Ques)"
-    },
-    {
-      "name": "T. Sorber",
-      "status": "OFS",
-      "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "B. Carlson",
-      "status": "OUT",
-      "details": "B. Carlson (Out)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "OUT",
-      "details": "J. Williams (Out)"
-    }
-  ],
   "OKC": [
     {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "I. Hartenstein",
-      "status": "QUES",
-      "details": "I. Hartenstein (Ques)"
     },
     {
       "name": "B. Carlson",
@@ -295,14 +263,24 @@
       "details": "S. Sharpe (Out)"
     },
     {
-      "name": "A. Drummond",
+      "name": "A. Bona",
       "status": "QUES",
-      "details": "A. Drummond (Ques)"
+      "details": "A. Bona (Ques)"
     },
     {
       "name": "J. Walker",
       "status": "QUES",
       "details": "J. Walker (Ques)"
+    },
+    {
+      "name": "A. Drummond",
+      "status": "QUES",
+      "details": "A. Drummond (Ques)"
+    },
+    {
+      "name": "D. Terry",
+      "status": "QUES",
+      "details": "D. Terry (Ques)"
     },
     {
       "name": "J. Broome",
@@ -332,14 +310,24 @@
   ],
   "PHI": [
     {
+      "name": "J. Walker",
+      "status": "QUES",
+      "details": "J. Walker (Ques)"
+    },
+    {
+      "name": "A. Bona",
+      "status": "QUES",
+      "details": "A. Bona (Ques)"
+    },
+    {
       "name": "A. Drummond",
       "status": "QUES",
       "details": "A. Drummond (Ques)"
     },
     {
-      "name": "J. Walker",
+      "name": "D. Terry",
       "status": "QUES",
-      "details": "J. Walker (Ques)"
+      "details": "D. Terry (Ques)"
     },
     {
       "name": "J. Broome",
@@ -414,14 +402,9 @@
       "details": "K. Porzingis (Out)"
     },
     {
-      "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
-    },
-    {
       "name": "J. Sochan",
-      "status": "QUES",
-      "details": "J. Sochan (Ques)"
+      "status": "PROB",
+      "details": "J. Sochan (Prob)"
     },
     {
       "name": "M. McBride",
@@ -431,14 +414,9 @@
   ],
   "NYK": [
     {
-      "name": "J. Hart",
-      "status": "QUES",
-      "details": "J. Hart (Ques)"
-    },
-    {
       "name": "J. Sochan",
-      "status": "QUES",
-      "details": "J. Sochan (Ques)"
+      "status": "PROB",
+      "details": "J. Sochan (Prob)"
     },
     {
       "name": "M. McBride",
@@ -568,6 +546,23 @@
       "name": "I. Stevens",
       "status": "OUT",
       "details": "I. Stevens (Out)"
+    }
+  ],
+  "MIN": [
+    {
+      "name": "T. Sorber",
+      "status": "OFS",
+      "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "B. Carlson",
+      "status": "OUT",
+      "details": "B. Carlson (Out)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ]
 }
