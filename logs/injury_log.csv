@@ -7846,6 +7846,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-14,BOS,C. Bassey,OUT,C. Bassey (Out),rotowire
 2026-03-14,ORL,D. Smith,PROB,D. Smith (Prob),rotowire
 2026-03-14,MIA,D. Smith,PROB,D. Smith (Prob),rotowire
+2026-03-14,ORL,J. Jaquez,QUES,J. Jaquez (Ques),rotowire
+2026-03-14,MIA,J. Jaquez,QUES,J. Jaquez (Ques),rotowire
+2026-03-14,DEN,A. Gordon,PROB,A. Gordon (Prob),rotowire
+2026-03-14,DEN,J. Murray,PROB,J. Murray (Prob),rotowire
 2026-03-14,BKN,N. Claxton,PROB,N. Claxton (Prob),rotowire
 2026-03-14,BKN,Egor Demin,OFS,Egor Demin (OFS),rotowire
 2026-03-14,BKN,M. Porter,QUES,M. Porter (Ques),rotowire
@@ -7876,6 +7880,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-14,SAS,D. Harper,QUES,D. Harper (Ques),rotowire
 2026-03-14,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-03-14,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
+2026-03-14,WAS,T. Young,QUES,T. Young (Ques),rotowire
 2026-03-14,WAS,A. Davis,OUT,A. Davis (Out),rotowire
 2026-03-14,WAS,K. George,OUT,K. George (Out),rotowire
 2026-03-14,WAS,D. Russell,OUT,D. Russell (Out),rotowire
@@ -7885,16 +7890,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-14,ORL,J. Howard,OUT,J. Howard (Out),rotowire
 2026-03-14,ORL,J. Isaac,OUT,J. Isaac (Out),rotowire
 2026-03-14,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
-2026-03-14,ORL,J. Jaquez,QUES,J. Jaquez (Ques),rotowire
 2026-03-14,ORL,N. Jovic,OUT,N. Jovic (Out),rotowire
 2026-03-14,ORL,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-03-14,ORL,A. Wiggins,OUT,A. Wiggins (Out),rotowire
-2026-03-14,MIA,J. Jaquez,QUES,J. Jaquez (Ques),rotowire
 2026-03-14,MIA,N. Jovic,OUT,N. Jovic (Out),rotowire
 2026-03-14,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-03-14,MIA,A. Wiggins,OUT,A. Wiggins (Out),rotowire
-2026-03-14,DEN,A. Gordon,PROB,A. Gordon (Prob),rotowire
-2026-03-14,DEN,J. Murray,PROB,J. Murray (Prob),rotowire
 2026-03-14,DEN,P. Watson,OUT,P. Watson (Out),rotowire
 2026-03-14,DEN,M. Kleber,OUT,M. Kleber (Out),rotowire
 2026-03-14,LAL,M. Kleber,OUT,M. Kleber (Out),rotowire
