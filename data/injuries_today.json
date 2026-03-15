@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-14",
-  "built_at_utc": "2026-03-15T01:24:44Z",
+  "built_at_utc": "2026-03-15T03:45:49Z",
   "source": "rotowire",
   "BKN": [
     {
@@ -201,13 +201,18 @@
   "ORL": [
     {
       "name": "A. Black",
-      "status": "OUT",
-      "details": "A. Black (Out)"
+      "status": "DOUBT",
+      "details": "A. Black (Doubt)"
     },
     {
       "name": "J. Howard",
-      "status": "OUT",
-      "details": "J. Howard (Out)"
+      "status": "QUES",
+      "details": "J. Howard (Ques)"
+    },
+    {
+      "name": "F. Wagner",
+      "status": "DOUBT",
+      "details": "F. Wagner (Doubt)"
     },
     {
       "name": "J. Isaac",
@@ -215,41 +220,36 @@
       "details": "J. Isaac (Out)"
     },
     {
-      "name": "F. Wagner",
-      "status": "OUT",
-      "details": "F. Wagner (Out)"
+      "name": "N. Jovic",
+      "status": "DOUBT",
+      "details": "N. Jovic (Doubt)"
     },
     {
-      "name": "N. Jovic",
-      "status": "OUT",
-      "details": "N. Jovic (Out)"
+      "name": "A. Wiggins",
+      "status": "QUES",
+      "details": "A. Wiggins (Ques)"
     },
     {
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
-    },
-    {
-      "name": "A. Wiggins",
-      "status": "OUT",
-      "details": "A. Wiggins (Out)"
     }
   ],
   "MIA": [
     {
       "name": "N. Jovic",
-      "status": "OUT",
-      "details": "N. Jovic (Out)"
+      "status": "DOUBT",
+      "details": "N. Jovic (Doubt)"
+    },
+    {
+      "name": "A. Wiggins",
+      "status": "QUES",
+      "details": "A. Wiggins (Ques)"
     },
     {
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
-    },
-    {
-      "name": "A. Wiggins",
-      "status": "OUT",
-      "details": "A. Wiggins (Out)"
     }
   ],
   "DEN": [
