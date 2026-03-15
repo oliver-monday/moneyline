@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-15",
-  "built_at_utc": "2026-03-15T17:17:33Z",
+  "built_at_utc": "2026-03-15T18:36:08Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -31,24 +31,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "C. Martin",
-      "status": "PROB",
-      "details": "C. Martin (Prob)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "PROB",
-      "details": "P. Washington (Prob)"
-    },
-    {
       "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
     },
     {
       "name": "K. Thompson",
-      "status": "DOUBT",
-      "details": "K. Thompson (Doubt)"
+      "status": "OUT",
+      "details": "K. Thompson (Out)"
     },
     {
       "name": "M. Strus",
@@ -126,63 +116,28 @@
     },
     {
       "name": "Q. Jackson",
-      "status": "QUES",
-      "details": "Q. Jackson (Ques)"
-    },
-    {
-      "name": "T. McConnell",
-      "status": "QUES",
-      "details": "T. McConnell (Ques)"
+      "status": "OUT",
+      "details": "Q. Jackson (Out)"
     },
     {
       "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
-    },
-    {
-      "name": "A. Nesmith",
-      "status": "QUES",
-      "details": "A. Nesmith (Ques)"
+      "status": "OUT",
+      "details": "A. Nembhard (Out)"
     },
     {
       "name": "B. Sheppard",
-      "status": "QUES",
-      "details": "B. Sheppard (Ques)"
-    },
-    {
-      "name": "O. Toppin",
-      "status": "QUES",
-      "details": "O. Toppin (Ques)"
-    },
-    {
-      "name": "I. Zubac",
-      "status": "QUES",
-      "details": "I. Zubac (Ques)"
+      "status": "OUT",
+      "details": "B. Sheppard (Out)"
     },
     {
       "name": "P. Siakam",
-      "status": "DOUBT",
-      "details": "P. Siakam (Doubt)"
+      "status": "OUT",
+      "details": "P. Siakam (Out)"
     },
     {
       "name": "O. Dieng",
-      "status": "QUES",
-      "details": "O. Dieng (Ques)"
-    },
-    {
-      "name": "G. Antetokounmpo",
-      "status": "QUES",
-      "details": "G. Antetokounmpo (Ques)"
-    },
-    {
-      "name": "M. Turner",
-      "status": "QUES",
-      "details": "M. Turner (Ques)"
-    },
-    {
-      "name": "B. Portis",
-      "status": "QUES",
-      "details": "B. Portis (Ques)"
+      "status": "OUT",
+      "details": "O. Dieng (Out)"
     },
     {
       "name": "K. Porter",
@@ -192,24 +147,9 @@
   ],
   "MIL": [
     {
-      "name": "G. Antetokounmpo",
-      "status": "QUES",
-      "details": "G. Antetokounmpo (Ques)"
-    },
-    {
       "name": "O. Dieng",
-      "status": "QUES",
-      "details": "O. Dieng (Ques)"
-    },
-    {
-      "name": "B. Portis",
-      "status": "QUES",
-      "details": "B. Portis (Ques)"
-    },
-    {
-      "name": "M. Turner",
-      "status": "QUES",
-      "details": "M. Turner (Ques)"
+      "status": "OUT",
+      "details": "O. Dieng (Out)"
     },
     {
       "name": "K. Porter",
