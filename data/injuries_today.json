@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-15",
-  "built_at_utc": "2026-03-15T19:32:58Z",
+  "built_at_utc": "2026-03-15T20:27:32Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -128,6 +128,11 @@
       "name": "K. Porter",
       "status": "OUT",
       "details": "K. Porter (Out)"
+    },
+    {
+      "name": "C. Ryan",
+      "status": "OUT",
+      "details": "C. Ryan (Out)"
     }
   ],
   "MIL": [
@@ -140,6 +145,11 @@
       "name": "K. Porter",
       "status": "OUT",
       "details": "K. Porter (Out)"
+    },
+    {
+      "name": "C. Ryan",
+      "status": "OUT",
+      "details": "C. Ryan (Out)"
     }
   ],
   "DET": [
@@ -407,18 +417,18 @@
     },
     {
       "name": "D. Carter",
-      "status": "QUES",
-      "details": "D. Carter (Ques)"
+      "status": "OUT",
+      "details": "D. Carter (Out)"
     },
     {
       "name": "D. Eubanks",
-      "status": "QUES",
-      "details": "D. Eubanks (Ques)"
+      "status": "OUT",
+      "details": "D. Eubanks (Out)"
     },
     {
-      "name": "M. Monk",
-      "status": "QUES",
-      "details": "M. Monk (Ques)"
+      "name": "Malik Monk",
+      "status": "OUT",
+      "details": "Malik Monk (Out)"
     },
     {
       "name": "K. Murray",
@@ -429,6 +439,11 @@
       "name": "I. Stevens",
       "status": "OUT",
       "details": "I. Stevens (Out)"
+    },
+    {
+      "name": "R. Westbrook",
+      "status": "OUT",
+      "details": "R. Westbrook (Out)"
     }
   ],
   "SAC": [
@@ -449,18 +464,18 @@
     },
     {
       "name": "D. Carter",
-      "status": "QUES",
-      "details": "D. Carter (Ques)"
+      "status": "OUT",
+      "details": "D. Carter (Out)"
     },
     {
       "name": "D. Eubanks",
-      "status": "QUES",
-      "details": "D. Eubanks (Ques)"
+      "status": "OUT",
+      "details": "D. Eubanks (Out)"
     },
     {
-      "name": "M. Monk",
-      "status": "QUES",
-      "details": "M. Monk (Ques)"
+      "name": "Malik Monk",
+      "status": "OUT",
+      "details": "Malik Monk (Out)"
     },
     {
       "name": "K. Murray",
@@ -471,6 +486,11 @@
       "name": "I. Stevens",
       "status": "OUT",
       "details": "I. Stevens (Out)"
+    },
+    {
+      "name": "R. Westbrook",
+      "status": "OUT",
+      "details": "R. Westbrook (Out)"
     }
   ],
   "MIN": [
