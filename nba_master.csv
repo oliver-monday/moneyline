@@ -1005,10 +1005,17 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810821,2026-03-13,2026-03-14T02:00Z,Golden State Warriors,GS,117,195.0,,Minnesota Timberwolves,MIN,127,-238.0,,San Francisco,CA,,
 401810822,2026-03-13,2026-03-14T02:00Z,Portland Trail Blazers,POR,124,-1050.0,,Utah Jazz,UTAH,114,675.0,,Portland,OR,,
 401810823,2026-03-13,2026-03-14T02:30Z,LA Clippers,LAC,119,-750.0,,Chicago Bulls,CHI,108,525.0,,Inglewood,CA,,
-401810824,2026-03-14,2026-03-14T17:00Z,Philadelphia 76ers,PHI,0,-380.0,,Brooklyn Nets,BKN,0,300.0,,Philadelphia,PA,J. Broome (Out); J. Embiid (Out); P. George (Out); T. Maxey (Out); K. Oubre (Out),Egor Demin (OFS); D. Sharpe (OFS); N. Claxton (Out); M. Porter (Out); D. Powell (Out)
-401810825,2026-03-14,2026-03-14T19:00Z,Atlanta Hawks,ATL,0,-355.0,,Milwaukee Bucks,MIL,0,280.0,,Atlanta,GA,J. Kuminga (Out),C. Ryan (Out)
-401810828,2026-03-14,2026-03-14T19:30Z,San Antonio Spurs,SA,0,-205.0,,Charlotte Hornets,CHA,0,170.0,,San Antonio,TX,D. Jones Garcia (OFS),L. McNeeley (Out); T. Salaun (Out)
-401810826,2026-03-14,2026-03-14T22:00Z,Boston Celtics,BOS,0,-2400.0,,Washington Wizards,WSH,0,1200.0,,Boston,MA,N. Vucevic (Out),C. Whitmore (OFS); A. Davis (Out); K. George (Out); D. Russell (Out)
-401810827,2026-03-14,2026-03-15T00:00Z,Miami Heat,MIA,0,-162.0,,Orlando Magic,ORL,0,136.0,,Miami,FL,N. Jovic (Out); T. Rozier (Out); A. Wiggins (Out),A. Black (Out); J. Isaac (Out); F. Wagner (Out)
-401810829,2026-03-14,2026-03-15T00:30Z,Los Angeles Lakers,LAL,0,130.0,,Denver Nuggets,DEN,0,-155.0,,Los Angeles,CA,M. Kleber (Out),P. Watson (Out)
-401810830,2026-03-14,2026-03-15T02:30Z,LA Clippers,LAC,0,-900.0,,Sacramento Kings,SAC,0,600.0,,Inglewood,CA,B. Beal (OFS); Y. Niederhauser (OFS); J. Collins (Out),D. Hunter (OFS); Z. LaVine (OFS); D. Sabonis (OFS); D. Carter (Out); D. Eubanks (Out); K. Murray (Out)
+401810824,2026-03-14,2026-03-14T17:00Z,Philadelphia 76ers,PHI,104,-380.0,,Brooklyn Nets,BKN,97,300.0,,Philadelphia,PA,,
+401810825,2026-03-14,2026-03-14T19:00Z,Atlanta Hawks,ATL,122,-355.0,,Milwaukee Bucks,MIL,99,280.0,,Atlanta,GA,,
+401810828,2026-03-14,2026-03-14T19:30Z,San Antonio Spurs,SA,115,-205.0,,Charlotte Hornets,CHA,102,170.0,,San Antonio,TX,,
+401810826,2026-03-14,2026-03-14T22:00Z,Boston Celtics,BOS,111,-2400.0,,Washington Wizards,WSH,100,1200.0,,Boston,MA,,
+401810827,2026-03-14,2026-03-15T00:00Z,Miami Heat,MIA,117,-162.0,,Orlando Magic,ORL,121,136.0,,Miami,FL,,
+401810829,2026-03-14,2026-03-15T00:30Z,Los Angeles Lakers,LAL,127,130.0,,Denver Nuggets,DEN,125,-155.0,,Los Angeles,CA,,
+401810830,2026-03-14,2026-03-15T02:30Z,LA Clippers,LAC,109,-900.0,,Sacramento Kings,SAC,118,600.0,,Inglewood,CA,,
+401810831,2026-03-15,2026-03-15T17:00Z,Oklahoma City Thunder,OKC,0,-395.0,,Minnesota Timberwolves,MIN,0,310.0,,Oklahoma City,OK,T. Sorber (OFS); B. Carlson (Out); J. Williams (Out),
+401810832,2026-03-15,2026-03-15T19:30Z,Cleveland Cavaliers,CLE,0,-1600.0,,Dallas Mavericks,DAL,0,900.0,,Cleveland,OH,J. Allen (Out); S. Merrill (Out); C. Porter (Out); T. Proctor (Out),K. Irving (OFS); D. Lively (OFS)
+401810833,2026-03-15,2026-03-15T19:30Z,Toronto Raptors,TOR,0,145.0,,Detroit Pistons,DET,0,-175.0,,Toronto,ON,C. Hepburn (Out); C. Murray-Boyles (Out),I. Stewart (Out)
+401810834,2026-03-15,2026-03-15T19:30Z,Milwaukee Bucks,MIL,0,-285.0,,Indiana Pacers,IND,0,230.0,,Milwaukee,WI,,J. Furphy (OFS); T. Haliburton (OFS)
+401810835,2026-03-15,2026-03-15T22:00Z,Philadelphia 76ers,PHI,0,245.0,,Portland Trail Blazers,POR,0,-305.0,,Philadelphia,PA,J. Broome (Out); J. Embiid (Out); P. George (Out); T. Maxey (Out); K. Oubre (Out),D. Lillard (OFS); S. Sharpe (Out)
+401810836,2026-03-15,2026-03-16T00:00Z,New York Knicks,NY,0,-850.0,,Golden State Warriors,GS,0,575.0,,New York,NY,M. McBride (Out),J. Butler (OFS); S. Curry (Out); Seth Curry (Out); D. Green (Out); Al Horford (Out); D. Melton (Out); M. Moody (Out); K. Porzingis (Out)
+401810837,2026-03-15,2026-03-16T02:00Z,Sacramento Kings,SAC,0,-130.0,,Utah Jazz,UTAH,0,110.0,,Sacramento,CA,D. Hunter (OFS); Z. LaVine (OFS); D. Sabonis (OFS); K. Murray (Out); I. Stevens (Out),J. Jackson (OFS); W. Kessler (OFS); J. Nurkic (OFS); Ace Bailey (Out); K. Filipowski (Out); K. George (Out); J. Konchar (Out); L. Markkanen (Out)
