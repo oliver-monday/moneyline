@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-16",
-  "built_at_utc": "2026-03-16T21:26:37Z",
+  "built_at_utc": "2026-03-16T22:40:52Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -26,19 +26,9 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "D. Green",
-      "status": "PROB",
-      "details": "D. Green (Prob)"
-    },
-    {
-      "name": "L. Cryer",
-      "status": "QUES",
-      "details": "L. Cryer (Ques)"
-    },
-    {
-      "name": "Q. Post",
-      "status": "QUES",
-      "details": "Q. Post (Ques)"
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
     },
     {
       "name": "S. Curry",
@@ -59,6 +49,11 @@
       "name": "M. Moody",
       "status": "OUT",
       "details": "M. Moody (Out)"
+    },
+    {
+      "name": "Q. Post",
+      "status": "OUT",
+      "details": "Q. Post (Out)"
     },
     {
       "name": "C. Whitmore",
@@ -154,19 +149,19 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
-    },
-    {
-      "name": "V. Krejci",
-      "status": "DOUBT",
-      "details": "V. Krejci (Doubt)"
+      "name": "Vit Krejci",
+      "status": "OUT",
+      "details": "Vit Krejci (Out)"
     },
     {
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "OUT",
+      "details": "R. Williams (Out)"
     },
     {
       "name": "Egor Demin",
@@ -239,13 +234,13 @@
     },
     {
       "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
     },
     {
       "name": "K. Thompson",
-      "status": "DOUBT",
-      "details": "K. Thompson (Doubt)"
+      "status": "OUT",
+      "details": "K. Thompson (Out)"
     },
     {
       "name": "D. Murray",
@@ -337,11 +332,6 @@
       "details": "N. Richards (Prob)"
     },
     {
-      "name": "C. Sexton",
-      "status": "QUES",
-      "details": "C. Sexton (Ques)"
-    },
-    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -350,6 +340,11 @@
       "name": "I. Okoro",
       "status": "OUT",
       "details": "I. Okoro (Out)"
+    },
+    {
+      "name": "C. Sexton",
+      "status": "OUT",
+      "details": "C. Sexton (Out)"
     },
     {
       "name": "A. Simons",
@@ -379,11 +374,6 @@
       "details": "N. Richards (Prob)"
     },
     {
-      "name": "C. Sexton",
-      "status": "QUES",
-      "details": "C. Sexton (Ques)"
-    },
-    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -392,6 +382,11 @@
       "name": "I. Okoro",
       "status": "OUT",
       "details": "I. Okoro (Out)"
+    },
+    {
+      "name": "C. Sexton",
+      "status": "OUT",
+      "details": "C. Sexton (Out)"
     },
     {
       "name": "A. Simons",
