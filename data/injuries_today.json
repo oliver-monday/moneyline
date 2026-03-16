@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-16",
-  "built_at_utc": "2026-03-16T22:40:52Z",
+  "built_at_utc": "2026-03-16T23:34:17Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -228,14 +228,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "C. Martin",
-      "status": "QUES",
-      "details": "C. Martin (Ques)"
-    },
-    {
       "name": "D. Gafford",
       "status": "OUT",
       "details": "D. Gafford (Out)"
+    },
+    {
+      "name": "C. Martin",
+      "status": "OUT",
+      "details": "C. Martin (Out)"
     },
     {
       "name": "K. Thompson",
@@ -243,26 +243,26 @@
       "details": "K. Thompson (Out)"
     },
     {
-      "name": "D. Murray",
-      "status": "QUES",
-      "details": "D. Murray (Ques)"
-    },
-    {
       "name": "B. McGowens",
       "status": "OUT",
       "details": "B. McGowens (Out)"
+    },
+    {
+      "name": "D. Murray",
+      "status": "OUT",
+      "details": "D. Murray (Out)"
     }
   ],
   "NOP": [
     {
-      "name": "D. Murray",
-      "status": "QUES",
-      "details": "D. Murray (Ques)"
-    },
-    {
       "name": "B. McGowens",
       "status": "OUT",
       "details": "B. McGowens (Out)"
+    },
+    {
+      "name": "D. Murray",
+      "status": "OUT",
+      "details": "D. Murray (Out)"
     }
   ],
   "MEM": [
@@ -287,24 +287,19 @@
       "details": "S. Pippen (OFS)"
     },
     {
-      "name": "W. Clayton",
-      "status": "QUES",
-      "details": "W. Clayton (Ques)"
-    },
-    {
-      "name": "G. Jackson",
-      "status": "DOUBT",
-      "details": "G. Jackson (Doubt)"
-    },
-    {
-      "name": "T. Jerome",
-      "status": "DOUBT",
-      "details": "T. Jerome (Doubt)"
-    },
-    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
+    },
+    {
+      "name": "GG Jackson",
+      "status": "OUT",
+      "details": "GG Jackson (Out)"
+    },
+    {
+      "name": "Ty Jerome",
+      "status": "OUT",
+      "details": "Ty Jerome (Out)"
     },
     {
       "name": "Ja Morant",
@@ -320,16 +315,6 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "L. Olbrich",
-      "status": "PROB",
-      "details": "L. Olbrich (Prob)"
-    },
-    {
-      "name": "N. Richards",
-      "status": "PROB",
-      "details": "N. Richards (Prob)"
     },
     {
       "name": "Jaden Ivey",
@@ -362,16 +347,6 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "L. Olbrich",
-      "status": "PROB",
-      "details": "L. Olbrich (Prob)"
-    },
-    {
-      "name": "N. Richards",
-      "status": "PROB",
-      "details": "N. Richards (Prob)"
     },
     {
       "name": "Jaden Ivey",
