@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-15",
-  "built_at_utc": "2026-03-16T03:49:42Z",
+  "built_at_utc": "2026-03-16T04:30:50Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -325,6 +325,11 @@
     }
   ],
   "UTA": [
+    {
+      "name": "I. Collier",
+      "status": "QUES",
+      "details": "I. Collier (Ques)"
+    },
     {
       "name": "J. Jackson",
       "status": "OFS",
