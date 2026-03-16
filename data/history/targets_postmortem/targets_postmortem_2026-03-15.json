@@ -363,7 +363,7 @@
       "actual": 10
     }
   ],
-  "built_at_utc": "2026-03-16T09:21:42Z",
+  "built_at_utc": "2026-03-16T14:53:26Z",
   "snapshot_file": "targets_snapshot_2026-03-15.json",
   "preset": "baseline",
   "top_targets": [
@@ -443,31 +443,6 @@
     },
     {
       "asof_date": "2026-03-15",
-      "player_id": "2991070.0",
-      "player_name": "Jerami Grant",
-      "team_abbrev": "POR",
-      "opp": "PHI",
-      "game_id": "401810835",
-      "stat": "3pt",
-      "threshold": 2,
-      "hits": 9,
-      "window_games": 10,
-      "hit_rate": 0.9,
-      "is_home_game": false,
-      "rest_days": 1,
-      "is_b2b": false,
-      "share_trend_pp": 2.794163352986881,
-      "share_trend_dir": "UP",
-      "iqr_10": 1.0,
-      "landmine_rate_10": null,
-      "trap_risk": null,
-      "dnp": false,
-      "actual": 6,
-      "hit": true,
-      "delta": -4
-    },
-    {
-      "asof_date": "2026-03-15",
       "player_id": "5041939.0",
       "player_name": "Cooper Flagg",
       "team_abbrev": "DAL",
@@ -515,6 +490,31 @@
       "actual": 8,
       "hit": false,
       "delta": 2
+    },
+    {
+      "asof_date": "2026-03-15",
+      "player_id": "3934672.0",
+      "player_name": "Jalen Brunson",
+      "team_abbrev": "NY",
+      "opp": "GS",
+      "game_id": "401810836",
+      "stat": "ast",
+      "threshold": 6,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 4.392993543510515,
+      "share_trend_dir": "UP",
+      "iqr_10": 2.75,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false,
+      "dnp": false,
+      "actual": 9,
+      "hit": true,
+      "delta": -3
     }
   ]
 }
