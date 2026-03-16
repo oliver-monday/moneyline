@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-16",
-  "built_at_utc": "2026-03-16T15:37:40Z",
+  "built_at_utc": "2026-03-16T17:52:03Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -48,19 +48,14 @@
       "details": "D. Green (Prob)"
     },
     {
-      "name": "D. Melton",
-      "status": "PROB",
-      "details": "D. Melton (Prob)"
-    },
-    {
-      "name": "K. Porzingis",
-      "status": "PROB",
-      "details": "K. Porzingis (Prob)"
-    },
-    {
-      "name": "M. Moody",
+      "name": "L. Cryer",
       "status": "QUES",
-      "details": "M. Moody (Ques)"
+      "details": "L. Cryer (Ques)"
+    },
+    {
+      "name": "Q. Post",
+      "status": "QUES",
+      "details": "Q. Post (Ques)"
     },
     {
       "name": "S. Curry",
@@ -76,6 +71,11 @@
       "name": "Al Horford",
       "status": "OUT",
       "details": "Al Horford (Out)"
+    },
+    {
+      "name": "M. Moody",
+      "status": "OUT",
+      "details": "M. Moody (Out)"
     },
     {
       "name": "C. Whitmore",
@@ -176,6 +176,11 @@
       "details": "R. Williams (Ques)"
     },
     {
+      "name": "V. Krejci",
+      "status": "DOUBT",
+      "details": "V. Krejci (Doubt)"
+    },
+    {
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
@@ -189,11 +194,6 @@
       "name": "D. Sharpe",
       "status": "OFS",
       "details": "D. Sharpe (OFS)"
-    },
-    {
-      "name": "B. Saraf",
-      "status": "QUES",
-      "details": "B. Saraf (Ques)"
     },
     {
       "name": "N. Clowney",
@@ -223,11 +223,6 @@
       "details": "D. Sharpe (OFS)"
     },
     {
-      "name": "B. Saraf",
-      "status": "QUES",
-      "details": "B. Saraf (Ques)"
-    },
-    {
       "name": "N. Clowney",
       "status": "OUT",
       "details": "N. Clowney (Out)"
@@ -255,14 +250,19 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "K. Thompson",
-      "status": "PROB",
-      "details": "K. Thompson (Prob)"
+      "name": "C. Martin",
+      "status": "QUES",
+      "details": "C. Martin (Ques)"
     },
     {
       "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
+      "status": "DOUBT",
+      "details": "D. Gafford (Doubt)"
+    },
+    {
+      "name": "K. Thompson",
+      "status": "DOUBT",
+      "details": "K. Thompson (Doubt)"
     },
     {
       "name": "D. Murray",
@@ -344,19 +344,29 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "L. Olbrich",
+      "status": "PROB",
+      "details": "L. Olbrich (Prob)"
+    },
+    {
+      "name": "N. Richards",
+      "status": "PROB",
+      "details": "N. Richards (Prob)"
+    },
+    {
       "name": "C. Sexton",
       "status": "QUES",
       "details": "C. Sexton (Ques)"
     },
     {
-      "name": "I. Okoro",
-      "status": "DOUBT",
-      "details": "I. Okoro (Doubt)"
-    },
-    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "OUT",
+      "details": "I. Okoro (Out)"
     },
     {
       "name": "A. Simons",
@@ -376,19 +386,29 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "L. Olbrich",
+      "status": "PROB",
+      "details": "L. Olbrich (Prob)"
+    },
+    {
+      "name": "N. Richards",
+      "status": "PROB",
+      "details": "N. Richards (Prob)"
+    },
+    {
       "name": "C. Sexton",
       "status": "QUES",
       "details": "C. Sexton (Ques)"
     },
     {
-      "name": "I. Okoro",
-      "status": "DOUBT",
-      "details": "I. Okoro (Doubt)"
-    },
-    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "OUT",
+      "details": "I. Okoro (Out)"
     },
     {
       "name": "A. Simons",
