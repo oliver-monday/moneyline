@@ -1,13 +1,8 @@
 {
   "asof_date": "2026-03-16",
-  "built_at_utc": "2026-03-16T19:53:50Z",
+  "built_at_utc": "2026-03-16T20:37:25Z",
   "source": "rotowire",
   "ORL": [
-    {
-      "name": "J. Howard",
-      "status": "QUES",
-      "details": "J. Howard (Ques)"
-    },
     {
       "name": "A. Black",
       "status": "OUT",
@@ -493,8 +488,8 @@
     },
     {
       "name": "K. Leonard",
-      "status": "DOUBT",
-      "details": "K. Leonard (Doubt)"
+      "status": "OUT",
+      "details": "K. Leonard (Out)"
     }
   ],
   "LAC": [
@@ -510,8 +505,8 @@
     },
     {
       "name": "K. Leonard",
-      "status": "DOUBT",
-      "details": "K. Leonard (Doubt)"
+      "status": "OUT",
+      "details": "K. Leonard (Out)"
     }
   ]
 }
