@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-15",
-  "built_at_utc": "2026-03-16T01:24:32Z",
+  "built_at_utc": "2026-03-16T03:49:42Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -198,6 +198,11 @@
       "details": "S. Sharpe (Out)"
     },
     {
+      "name": "D. Terry",
+      "status": "QUES",
+      "details": "D. Terry (Ques)"
+    },
+    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
@@ -221,11 +226,6 @@
       "name": "K. Oubre",
       "status": "OUT",
       "details": "K. Oubre (Out)"
-    },
-    {
-      "name": "D. Terry",
-      "status": "OUT",
-      "details": "D. Terry (Out)"
     },
     {
       "name": "J. Walker",
@@ -235,6 +235,11 @@
   ],
   "PHI": [
     {
+      "name": "D. Terry",
+      "status": "QUES",
+      "details": "D. Terry (Ques)"
+    },
+    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
@@ -258,11 +263,6 @@
       "name": "K. Oubre",
       "status": "OUT",
       "details": "K. Oubre (Out)"
-    },
-    {
-      "name": "D. Terry",
-      "status": "OUT",
-      "details": "D. Terry (Out)"
     },
     {
       "name": "J. Walker",
@@ -366,6 +366,11 @@
       "details": "L. Markkanen (Out)"
     },
     {
+      "name": "D. Eubanks",
+      "status": "OFS",
+      "details": "D. Eubanks (OFS)"
+    },
+    {
       "name": "D. Hunter",
       "status": "OFS",
       "details": "D. Hunter (OFS)"
@@ -384,11 +389,6 @@
       "name": "D. Carter",
       "status": "OUT",
       "details": "D. Carter (Out)"
-    },
-    {
-      "name": "D. Eubanks",
-      "status": "OUT",
-      "details": "D. Eubanks (Out)"
     },
     {
       "name": "Malik Monk",
@@ -413,6 +413,11 @@
   ],
   "SAC": [
     {
+      "name": "D. Eubanks",
+      "status": "OFS",
+      "details": "D. Eubanks (OFS)"
+    },
+    {
       "name": "D. Hunter",
       "status": "OFS",
       "details": "D. Hunter (OFS)"
@@ -431,11 +436,6 @@
       "name": "D. Carter",
       "status": "OUT",
       "details": "D. Carter (Out)"
-    },
-    {
-      "name": "D. Eubanks",
-      "status": "OUT",
-      "details": "D. Eubanks (Out)"
     },
     {
       "name": "Malik Monk",
