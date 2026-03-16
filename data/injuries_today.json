@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-15",
-  "built_at_utc": "2026-03-15T23:31:51Z",
+  "built_at_utc": "2026-03-16T01:24:32Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -21,6 +21,11 @@
   ],
   "DAL": [
     {
+      "name": "D. Gafford",
+      "status": "QUES",
+      "details": "D. Gafford (Ques)"
+    },
+    {
       "name": "K. Irving",
       "status": "OFS",
       "details": "K. Irving (OFS)"
@@ -31,14 +36,14 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "D. Gafford",
-      "status": "OUT",
-      "details": "D. Gafford (Out)"
+      "name": "K. Thompson",
+      "status": "QUES",
+      "details": "K. Thompson (Ques)"
     },
     {
-      "name": "K. Thompson",
-      "status": "OUT",
-      "details": "K. Thompson (Out)"
+      "name": "J. Tyson",
+      "status": "QUES",
+      "details": "J. Tyson (Ques)"
     },
     {
       "name": "J. Allen",
@@ -59,15 +64,15 @@
       "name": "T. Proctor",
       "status": "OUT",
       "details": "T. Proctor (Out)"
-    },
-    {
-      "name": "J. Tyson",
-      "status": "OUT",
-      "details": "J. Tyson (Out)"
     }
   ],
   "CLE": [
     {
+      "name": "J. Tyson",
+      "status": "QUES",
+      "details": "J. Tyson (Ques)"
+    },
+    {
       "name": "J. Allen",
       "status": "OUT",
       "details": "J. Allen (Out)"
@@ -86,11 +91,6 @@
       "name": "T. Proctor",
       "status": "OUT",
       "details": "T. Proctor (Out)"
-    },
-    {
-      "name": "J. Tyson",
-      "status": "OUT",
-      "details": "J. Tyson (Out)"
     }
   ],
   "IND": [
@@ -105,29 +105,29 @@
       "details": "T. Haliburton (OFS)"
     },
     {
+      "name": "A. Nembhard",
+      "status": "QUES",
+      "details": "A. Nembhard (Ques)"
+    },
+    {
       "name": "M. Potter",
       "status": "QUES",
       "details": "M. Potter (Ques)"
     },
     {
-      "name": "A. Nembhard",
-      "status": "OUT",
-      "details": "A. Nembhard (Out)"
-    },
-    {
       "name": "B. Sheppard",
-      "status": "OUT",
-      "details": "B. Sheppard (Out)"
+      "status": "QUES",
+      "details": "B. Sheppard (Ques)"
     },
     {
       "name": "P. Siakam",
-      "status": "OUT",
-      "details": "P. Siakam (Out)"
+      "status": "QUES",
+      "details": "P. Siakam (Ques)"
     },
     {
       "name": "O. Dieng",
-      "status": "OUT",
-      "details": "O. Dieng (Out)"
+      "status": "QUES",
+      "details": "O. Dieng (Ques)"
     },
     {
       "name": "K. Porter",
@@ -143,8 +143,8 @@
   "MIL": [
     {
       "name": "O. Dieng",
-      "status": "OUT",
-      "details": "O. Dieng (Out)"
+      "status": "QUES",
+      "details": "O. Dieng (Ques)"
     },
     {
       "name": "K. Porter",
