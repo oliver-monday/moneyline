@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-17",
-  "built_at_utc": "2026-03-17T22:40:28Z",
+  "built_at_utc": "2026-03-17T23:35:15Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -220,16 +220,6 @@
   ],
   "CLE": [
     {
-      "name": "J. Tyson",
-      "status": "PROB",
-      "details": "J. Tyson (Prob)"
-    },
-    {
-      "name": "S. Merrill",
-      "status": "QUES",
-      "details": "S. Merrill (Ques)"
-    },
-    {
       "name": "J. Allen",
       "status": "OUT",
       "details": "J. Allen (Out)"
@@ -245,11 +235,6 @@
       "details": "T. Proctor (Out)"
     },
     {
-      "name": "R. Rollins",
-      "status": "QUES",
-      "details": "R. Rollins (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -261,11 +246,6 @@
     }
   ],
   "MIL": [
-    {
-      "name": "R. Rollins",
-      "status": "QUES",
-      "details": "R. Rollins (Ques)"
-    },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
@@ -279,14 +259,9 @@
   ],
   "PHX": [
     {
-      "name": "H. Highsmith",
-      "status": "QUES",
-      "details": "H. Highsmith (Ques)"
-    },
-    {
       "name": "G. Allen",
-      "status": "DOUBT",
-      "details": "G. Allen (Doubt)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "D. Brooks",
