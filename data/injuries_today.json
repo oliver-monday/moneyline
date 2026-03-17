@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-16",
-  "built_at_utc": "2026-03-16T23:34:17Z",
+  "built_at_utc": "2026-03-17T01:15:47Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -54,6 +54,11 @@
       "name": "Q. Post",
       "status": "OUT",
       "details": "Q. Post (Out)"
+    },
+    {
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     },
     {
       "name": "C. Whitmore",
@@ -116,6 +121,11 @@
       "name": "Alex Sarr",
       "status": "OUT",
       "details": "Alex Sarr (Out)"
+    },
+    {
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     }
   ],
   "PHX": [
@@ -376,14 +386,14 @@
       "details": "M. Kleber (Out)"
     },
     {
-      "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
-    },
-    {
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "A. Sengun",
+      "status": "OUT",
+      "details": "A. Sengun (Out)"
     },
     {
       "name": "J. Tate",
@@ -404,8 +414,8 @@
     },
     {
       "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
+      "status": "OUT",
+      "details": "A. Sengun (Out)"
     },
     {
       "name": "J. Tate",
