@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-16",
-  "built_at_utc": "2026-03-17T01:15:47Z",
+  "built_at_utc": "2026-03-17T03:27:53Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -56,9 +56,9 @@
       "details": "Q. Post (Out)"
     },
     {
-      "name": "Trae Young",
-      "status": "OUT",
-      "details": "Trae Young (Out)"
+      "name": "T. Young",
+      "status": "QUES",
+      "details": "T. Young (Ques)"
     },
     {
       "name": "C. Whitmore",
@@ -98,6 +98,11 @@
       "details": "C. Whitmore (OFS)"
     },
     {
+      "name": "T. Young",
+      "status": "QUES",
+      "details": "T. Young (Ques)"
+    },
+    {
       "name": "L. Black",
       "status": "OUT",
       "details": "L. Black (Out)"
@@ -121,11 +126,6 @@
       "name": "Alex Sarr",
       "status": "OUT",
       "details": "Alex Sarr (Out)"
-    },
-    {
-      "name": "Trae Young",
-      "status": "OUT",
-      "details": "Trae Young (Out)"
     }
   ],
   "PHX": [
@@ -179,6 +179,11 @@
       "details": "Egor Demin (OFS)"
     },
     {
+      "name": "T. Mann",
+      "status": "QUES",
+      "details": "T. Mann (Ques)"
+    },
+    {
       "name": "D. Sharpe",
       "status": "OFS",
       "details": "D. Sharpe (OFS)"
@@ -187,11 +192,6 @@
       "name": "N. Clowney",
       "status": "OUT",
       "details": "N. Clowney (Out)"
-    },
-    {
-      "name": "T. Mann",
-      "status": "OUT",
-      "details": "T. Mann (Out)"
     },
     {
       "name": "M. Porter",
@@ -206,6 +206,11 @@
       "details": "Egor Demin (OFS)"
     },
     {
+      "name": "T. Mann",
+      "status": "QUES",
+      "details": "T. Mann (Ques)"
+    },
+    {
       "name": "D. Sharpe",
       "status": "OFS",
       "details": "D. Sharpe (OFS)"
@@ -214,11 +219,6 @@
       "name": "N. Clowney",
       "status": "OUT",
       "details": "N. Clowney (Out)"
-    },
-    {
-      "name": "T. Mann",
-      "status": "OUT",
-      "details": "T. Mann (Out)"
     },
     {
       "name": "M. Porter",
@@ -236,6 +236,11 @@
       "name": "D. Lively",
       "status": "OFS",
       "details": "D. Lively (OFS)"
+    },
+    {
+      "name": "B. Williams",
+      "status": "QUES",
+      "details": "B. Williams (Ques)"
     },
     {
       "name": "D. Gafford",
