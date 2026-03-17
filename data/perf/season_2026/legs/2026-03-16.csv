@@ -1,0 +1,16 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-16,2026,Paolo Banchero,ORL,ATL,reb,8,HIT,10,,targets_snapshot_2026-03-16.json
+2026-03-16,2026,Paolo Banchero,ORL,ATL,3pt,1,HIT,1,,targets_snapshot_2026-03-16.json
+2026-03-16,2026,Luka Doncic,LAL,HOU,reb,8,MISSED,6,,targets_snapshot_2026-03-16.json
+2026-03-16,2026,Luka Doncic,LAL,HOU,3pt,4,HIT,4,,targets_snapshot_2026-03-16.json
+2026-03-16,2026,Desmond Bane,ORL,ATL,ast,4,HIT,4,,targets_snapshot_2026-03-16.json
+2026-03-16,2026,Anthony Davis,DAL,NO,ast,2,,,,targets_snapshot_2026-03-16.json
+2026-03-16,2026,Reed Sheppard,HOU,LAL,reb,2,MISSED,0,,targets_snapshot_2026-03-16.json
+2026-03-16,2026,Reed Sheppard,HOU,LAL,3pt,3,MISSED,1,,targets_snapshot_2026-03-16.json
+2026-03-16,2026,Toumani Camara,POR,BKN,ast,2,HIT,2,,targets_snapshot_2026-03-16.json
+2026-03-16,2026,Jerami Grant,POR,BKN,pts,20,MISSED,12,,targets_snapshot_2026-03-16.json
+2026-03-16,2026,Jerami Grant,POR,BKN,3pt,2,HIT,2,,targets_snapshot_2026-03-16.json
+2026-03-16,2026,Dyson Daniels,ATL,ORL,reb,6,HIT,12,,targets_snapshot_2026-03-16.json
+2026-03-16,2026,Devin Vassell,SA,LAC,ast,2,HIT,4,,targets_snapshot_2026-03-16.json
+2026-03-16,2026,Cooper Flagg,DAL,NO,ast,4,HIT,8,,targets_snapshot_2026-03-16.json
+2026-03-16,2026,Kawhi Leonard,LAC,SA,pts,25,,,,targets_snapshot_2026-03-16.json
