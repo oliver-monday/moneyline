@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-17",
-  "built_at_utc": "2026-03-17T18:58:49Z",
+  "built_at_utc": "2026-03-17T19:57:09Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -420,6 +420,11 @@
       "name": "L. Kornet",
       "status": "QUES",
       "details": "L. Kornet (Ques)"
+    },
+    {
+      "name": "D. Vassell",
+      "status": "OUT",
+      "details": "D. Vassell (Out)"
     },
     {
       "name": "D. Eubanks",
