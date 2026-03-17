@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-17",
-  "built_at_utc": "2026-03-17T17:54:24Z",
+  "built_at_utc": "2026-03-17T18:58:49Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -329,6 +329,16 @@
   ],
   "PHX": [
     {
+      "name": "H. Highsmith",
+      "status": "QUES",
+      "details": "H. Highsmith (Ques)"
+    },
+    {
+      "name": "G. Allen",
+      "status": "DOUBT",
+      "details": "G. Allen (Doubt)"
+    },
+    {
       "name": "D. Brooks",
       "status": "OUT",
       "details": "D. Brooks (Out)"
@@ -352,11 +362,6 @@
     }
   ],
   "PHI": [
-    {
-      "name": "D. Terry",
-      "status": "QUES",
-      "details": "D. Terry (Ques)"
-    },
     {
       "name": "J. Broome",
       "status": "OUT",
