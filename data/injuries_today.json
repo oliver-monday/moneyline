@@ -1,12 +1,27 @@
 {
-  "asof_date": "2026-03-16",
-  "built_at_utc": "2026-03-17T04:07:23Z",
+  "asof_date": "2026-03-17",
+  "built_at_utc": "2026-03-17T09:10:51Z",
   "source": "rotowire",
-  "ORL": [
+  "OKC": [
+    {
+      "name": "T. Sorber",
+      "status": "OFS",
+      "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "B. Carlson",
+      "status": "OUT",
+      "details": "B. Carlson (Out)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
+    },
     {
       "name": "A. Black",
-      "status": "OUT",
-      "details": "A. Black (Out)"
+      "status": "QUES",
+      "details": "A. Black (Ques)"
     },
     {
       "name": "J. Isaac",
@@ -19,46 +34,38 @@
       "details": "F. Wagner (Out)"
     }
   ],
-  "GSW": [
+  "ORL": [
     {
-      "name": "J. Butler",
-      "status": "OFS",
-      "details": "J. Butler (OFS)"
+      "name": "A. Black",
+      "status": "QUES",
+      "details": "A. Black (Ques)"
     },
     {
-      "name": "LJ Cryer",
+      "name": "J. Isaac",
       "status": "OUT",
-      "details": "LJ Cryer (Out)"
+      "details": "J. Isaac (Out)"
     },
     {
-      "name": "S. Curry",
+      "name": "F. Wagner",
       "status": "OUT",
-      "details": "S. Curry (Out)"
-    },
+      "details": "F. Wagner (Out)"
+    }
+  ],
+  "DET": [
     {
-      "name": "Seth Curry",
+      "name": "I. Stewart",
       "status": "OUT",
-      "details": "Seth Curry (Out)"
-    },
-    {
-      "name": "Al Horford",
-      "status": "OUT",
-      "details": "Al Horford (Out)"
-    },
-    {
-      "name": "M. Moody",
-      "status": "OUT",
-      "details": "M. Moody (Out)"
-    },
-    {
-      "name": "Q. Post",
-      "status": "OUT",
-      "details": "Q. Post (Out)"
+      "details": "I. Stewart (Out)"
     },
     {
       "name": "T. Young",
       "status": "QUES",
       "details": "T. Young (Ques)"
+    },
+    {
+      "name": "A. Sarr",
+      "status": "QUES",
+      "details": "A. Sarr (Ques)"
     },
     {
       "name": "C. Whitmore",
@@ -84,11 +91,6 @@
       "name": "D. Russell",
       "status": "OUT",
       "details": "D. Russell (Out)"
-    },
-    {
-      "name": "Alex Sarr",
-      "status": "OUT",
-      "details": "Alex Sarr (Out)"
     }
   ],
   "WAS": [
@@ -98,6 +100,11 @@
       "details": "C. Whitmore (OFS)"
     },
     {
+      "name": "A. Sarr",
+      "status": "QUES",
+      "details": "A. Sarr (Ques)"
+    },
+    {
       "name": "T. Young",
       "status": "QUES",
       "details": "T. Young (Ques)"
@@ -121,11 +128,193 @@
       "name": "D. Russell",
       "status": "OUT",
       "details": "D. Russell (Out)"
+    }
+  ],
+  "MIA": [
+    {
+      "name": "N. Jovic",
+      "status": "PROB",
+      "details": "N. Jovic (Prob)"
     },
     {
-      "name": "Alex Sarr",
+      "name": "P. Larsson",
+      "status": "PROB",
+      "details": "P. Larsson (Prob)"
+    },
+    {
+      "name": "B. Adebayo",
+      "status": "QUES",
+      "details": "B. Adebayo (Ques)"
+    },
+    {
+      "name": "T. Rozier",
       "status": "OUT",
-      "details": "Alex Sarr (Out)"
+      "details": "T. Rozier (Out)"
+    },
+    {
+      "name": "A. Wiggins",
+      "status": "OUT",
+      "details": "A. Wiggins (Out)"
+    },
+    {
+      "name": "T. Salaun",
+      "status": "OUT",
+      "details": "T. Salaun (Out)"
+    }
+  ],
+  "CHA": [
+    {
+      "name": "T. Salaun",
+      "status": "OUT",
+      "details": "T. Salaun (Out)"
+    }
+  ],
+  "IND": [
+    {
+      "name": "J. Furphy",
+      "status": "OFS",
+      "details": "J. Furphy (OFS)"
+    },
+    {
+      "name": "T. Haliburton",
+      "status": "OFS",
+      "details": "T. Haliburton (OFS)"
+    },
+    {
+      "name": "Q. Jackson",
+      "status": "QUES",
+      "details": "Q. Jackson (Ques)"
+    },
+    {
+      "name": "T. McConnell",
+      "status": "QUES",
+      "details": "T. McConnell (Ques)"
+    },
+    {
+      "name": "A. Nembhard",
+      "status": "QUES",
+      "details": "A. Nembhard (Ques)"
+    },
+    {
+      "name": "A. Nesmith",
+      "status": "QUES",
+      "details": "A. Nesmith (Ques)"
+    },
+    {
+      "name": "M. Potter",
+      "status": "QUES",
+      "details": "M. Potter (Ques)"
+    },
+    {
+      "name": "B. Sheppard",
+      "status": "QUES",
+      "details": "B. Sheppard (Ques)"
+    },
+    {
+      "name": "O. Toppin",
+      "status": "QUES",
+      "details": "O. Toppin (Ques)"
+    },
+    {
+      "name": "I. Zubac",
+      "status": "QUES",
+      "details": "I. Zubac (Ques)"
+    },
+    {
+      "name": "P. Siakam",
+      "status": "DOUBT",
+      "details": "P. Siakam (Doubt)"
+    },
+    {
+      "name": "J. Brunson",
+      "status": "QUES",
+      "details": "J. Brunson (Ques)"
+    },
+    {
+      "name": "M. McBride",
+      "status": "OUT",
+      "details": "M. McBride (Out)"
+    }
+  ],
+  "NYK": [
+    {
+      "name": "J. Brunson",
+      "status": "QUES",
+      "details": "J. Brunson (Ques)"
+    },
+    {
+      "name": "M. McBride",
+      "status": "OUT",
+      "details": "M. McBride (Out)"
+    }
+  ],
+  "CLE": [
+    {
+      "name": "J. Tyson",
+      "status": "PROB",
+      "details": "J. Tyson (Prob)"
+    },
+    {
+      "name": "S. Merrill",
+      "status": "QUES",
+      "details": "S. Merrill (Ques)"
+    },
+    {
+      "name": "J. Allen",
+      "status": "OUT",
+      "details": "J. Allen (Out)"
+    },
+    {
+      "name": "C. Porter",
+      "status": "OUT",
+      "details": "C. Porter (Out)"
+    },
+    {
+      "name": "T. Proctor",
+      "status": "OUT",
+      "details": "T. Proctor (Out)"
+    },
+    {
+      "name": "O. Dieng",
+      "status": "QUES",
+      "details": "O. Dieng (Ques)"
+    },
+    {
+      "name": "G. Antetokounmpo",
+      "status": "QUES",
+      "details": "G. Antetokounmpo (Ques)"
+    },
+    {
+      "name": "M. Turner",
+      "status": "QUES",
+      "details": "M. Turner (Ques)"
+    },
+    {
+      "name": "C. Ryan",
+      "status": "QUES",
+      "details": "C. Ryan (Ques)"
+    }
+  ],
+  "MIL": [
+    {
+      "name": "C. Ryan",
+      "status": "QUES",
+      "details": "C. Ryan (Ques)"
+    },
+    {
+      "name": "G. Antetokounmpo",
+      "status": "QUES",
+      "details": "G. Antetokounmpo (Ques)"
+    },
+    {
+      "name": "O. Dieng",
+      "status": "QUES",
+      "details": "O. Dieng (Ques)"
+    },
+    {
+      "name": "M. Turner",
+      "status": "QUES",
+      "details": "M. Turner (Ques)"
     }
   ],
   "PHX": [
@@ -140,297 +329,75 @@
       "details": "M. Williams (Out)"
     },
     {
-      "name": "N. Vucevic",
-      "status": "OUT",
-      "details": "N. Vucevic (Out)"
-    }
-  ],
-  "BOS": [
-    {
-      "name": "N. Vucevic",
-      "status": "OUT",
-      "details": "N. Vucevic (Out)"
-    }
-  ],
-  "POR": [
-    {
-      "name": "D. Lillard",
-      "status": "OFS",
-      "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "Vit Krejci",
-      "status": "OUT",
-      "details": "Vit Krejci (Out)"
-    },
-    {
-      "name": "S. Sharpe",
-      "status": "OUT",
-      "details": "S. Sharpe (Out)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "OUT",
-      "details": "R. Williams (Out)"
-    },
-    {
-      "name": "Egor Demin",
-      "status": "OFS",
-      "details": "Egor Demin (OFS)"
-    },
-    {
-      "name": "T. Mann",
+      "name": "N. Reid",
       "status": "QUES",
-      "details": "T. Mann (Ques)"
+      "details": "N. Reid (Ques)"
     },
     {
-      "name": "D. Sharpe",
-      "status": "OFS",
-      "details": "D. Sharpe (OFS)"
-    },
-    {
-      "name": "N. Clowney",
+      "name": "A. Edwards",
       "status": "OUT",
-      "details": "N. Clowney (Out)"
-    },
-    {
-      "name": "M. Porter",
-      "status": "OUT",
-      "details": "M. Porter (Out)"
+      "details": "A. Edwards (Out)"
     }
   ],
-  "BKN": [
+  "MIN": [
     {
-      "name": "Egor Demin",
-      "status": "OFS",
-      "details": "Egor Demin (OFS)"
-    },
-    {
-      "name": "T. Mann",
+      "name": "N. Reid",
       "status": "QUES",
-      "details": "T. Mann (Ques)"
+      "details": "N. Reid (Ques)"
     },
     {
-      "name": "D. Sharpe",
-      "status": "OFS",
-      "details": "D. Sharpe (OFS)"
-    },
-    {
-      "name": "N. Clowney",
+      "name": "A. Edwards",
       "status": "OUT",
-      "details": "N. Clowney (Out)"
-    },
-    {
-      "name": "M. Porter",
-      "status": "OUT",
-      "details": "M. Porter (Out)"
+      "details": "A. Edwards (Out)"
     }
   ],
-  "DAL": [
+  "PHI": [
     {
-      "name": "K. Irving",
-      "status": "OFS",
-      "details": "K. Irving (OFS)"
-    },
-    {
-      "name": "D. Lively",
-      "status": "OFS",
-      "details": "D. Lively (OFS)"
-    },
-    {
-      "name": "B. Williams",
+      "name": "D. Terry",
       "status": "QUES",
-      "details": "B. Williams (Ques)"
+      "details": "D. Terry (Ques)"
     },
     {
-      "name": "D. Gafford",
+      "name": "J. Broome",
       "status": "OUT",
-      "details": "D. Gafford (Out)"
+      "details": "J. Broome (Out)"
     },
     {
-      "name": "C. Martin",
+      "name": "J. Embiid",
       "status": "OUT",
-      "details": "C. Martin (Out)"
+      "details": "J. Embiid (Out)"
     },
     {
-      "name": "K. Thompson",
+      "name": "P. George",
       "status": "OUT",
-      "details": "K. Thompson (Out)"
+      "details": "P. George (Out)"
     },
     {
-      "name": "B. McGowens",
+      "name": "T. Maxey",
       "status": "OUT",
-      "details": "B. McGowens (Out)"
+      "details": "T. Maxey (Out)"
     },
     {
-      "name": "D. Murray",
+      "name": "K. Oubre",
       "status": "OUT",
-      "details": "D. Murray (Out)"
+      "details": "K. Oubre (Out)"
+    },
+    {
+      "name": "J. Walker",
+      "status": "OUT",
+      "details": "J. Walker (Out)"
+    },
+    {
+      "name": "P. Watson",
+      "status": "OUT",
+      "details": "P. Watson (Out)"
     }
   ],
-  "NOP": [
+  "DEN": [
     {
-      "name": "B. McGowens",
+      "name": "P. Watson",
       "status": "OUT",
-      "details": "B. McGowens (Out)"
-    },
-    {
-      "name": "D. Murray",
-      "status": "OUT",
-      "details": "D. Murray (Out)"
-    }
-  ],
-  "MEM": [
-    {
-      "name": "S. Aldama",
-      "status": "OFS",
-      "details": "S. Aldama (OFS)"
-    },
-    {
-      "name": "K. Caldwell-Pope",
-      "status": "OFS",
-      "details": "K. Caldwell-Pope (OFS)"
-    },
-    {
-      "name": "Zach Edey",
-      "status": "OFS",
-      "details": "Zach Edey (OFS)"
-    },
-    {
-      "name": "S. Pippen",
-      "status": "OFS",
-      "details": "S. Pippen (OFS)"
-    },
-    {
-      "name": "B. Clarke",
-      "status": "OUT",
-      "details": "B. Clarke (Out)"
-    },
-    {
-      "name": "GG Jackson",
-      "status": "OUT",
-      "details": "GG Jackson (Out)"
-    },
-    {
-      "name": "Ty Jerome",
-      "status": "OUT",
-      "details": "Ty Jerome (Out)"
-    },
-    {
-      "name": "Ja Morant",
-      "status": "OUT",
-      "details": "Ja Morant (Out)"
-    },
-    {
-      "name": "Z. Collins",
-      "status": "OFS",
-      "details": "Z. Collins (OFS)"
-    },
-    {
-      "name": "N. Essengue",
-      "status": "OFS",
-      "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "Jaden Ivey",
-      "status": "OUT",
-      "details": "Jaden Ivey (Out)"
-    },
-    {
-      "name": "I. Okoro",
-      "status": "OUT",
-      "details": "I. Okoro (Out)"
-    },
-    {
-      "name": "C. Sexton",
-      "status": "OUT",
-      "details": "C. Sexton (Out)"
-    },
-    {
-      "name": "A. Simons",
-      "status": "OUT",
-      "details": "A. Simons (Out)"
-    }
-  ],
-  "CHI": [
-    {
-      "name": "Z. Collins",
-      "status": "OFS",
-      "details": "Z. Collins (OFS)"
-    },
-    {
-      "name": "N. Essengue",
-      "status": "OFS",
-      "details": "N. Essengue (OFS)"
-    },
-    {
-      "name": "Jaden Ivey",
-      "status": "OUT",
-      "details": "Jaden Ivey (Out)"
-    },
-    {
-      "name": "I. Okoro",
-      "status": "OUT",
-      "details": "I. Okoro (Out)"
-    },
-    {
-      "name": "C. Sexton",
-      "status": "OUT",
-      "details": "C. Sexton (Out)"
-    },
-    {
-      "name": "A. Simons",
-      "status": "OUT",
-      "details": "A. Simons (Out)"
-    }
-  ],
-  "LAL": [
-    {
-      "name": "M. Kleber",
-      "status": "OUT",
-      "details": "M. Kleber (Out)"
-    },
-    {
-      "name": "S. Adams",
-      "status": "OFS",
-      "details": "S. Adams (OFS)"
-    },
-    {
-      "name": "A. Sengun",
-      "status": "OUT",
-      "details": "A. Sengun (Out)"
-    },
-    {
-      "name": "J. Tate",
-      "status": "OUT",
-      "details": "J. Tate (Out)"
-    },
-    {
-      "name": "F. VanVleet",
-      "status": "OUT",
-      "details": "F. VanVleet (Out)"
-    }
-  ],
-  "HOU": [
-    {
-      "name": "S. Adams",
-      "status": "OFS",
-      "details": "S. Adams (OFS)"
-    },
-    {
-      "name": "A. Sengun",
-      "status": "OUT",
-      "details": "A. Sengun (Out)"
-    },
-    {
-      "name": "J. Tate",
-      "status": "OUT",
-      "details": "J. Tate (Out)"
-    },
-    {
-      "name": "F. VanVleet",
-      "status": "OUT",
-      "details": "F. VanVleet (Out)"
+      "details": "P. Watson (Out)"
     }
   ],
   "SAS": [
@@ -441,8 +408,8 @@
     },
     {
       "name": "D. Harper",
-      "status": "OUT",
-      "details": "D. Harper (Out)"
+      "status": "QUES",
+      "details": "D. Harper (Ques)"
     },
     {
       "name": "L. Kornet",
@@ -450,36 +417,76 @@
       "details": "L. Kornet (Out)"
     },
     {
-      "name": "B. Beal",
+      "name": "D. Eubanks",
       "status": "OFS",
-      "details": "B. Beal (OFS)"
+      "details": "D. Eubanks (OFS)"
     },
     {
-      "name": "Y. Niederhauser",
+      "name": "D. Hunter",
       "status": "OFS",
-      "details": "Y. Niederhauser (OFS)"
+      "details": "D. Hunter (OFS)"
     },
     {
-      "name": "K. Leonard",
+      "name": "Z. LaVine",
+      "status": "OFS",
+      "details": "Z. LaVine (OFS)"
+    },
+    {
+      "name": "D. Sabonis",
+      "status": "OFS",
+      "details": "D. Sabonis (OFS)"
+    },
+    {
+      "name": "M. Monk",
+      "status": "QUES",
+      "details": "M. Monk (Ques)"
+    },
+    {
+      "name": "D. Carter",
       "status": "OUT",
-      "details": "K. Leonard (Out)"
+      "details": "D. Carter (Out)"
+    },
+    {
+      "name": "K. Murray",
+      "status": "OUT",
+      "details": "K. Murray (Out)"
     }
   ],
-  "LAC": [
+  "SAC": [
     {
-      "name": "B. Beal",
+      "name": "D. Eubanks",
       "status": "OFS",
-      "details": "B. Beal (OFS)"
+      "details": "D. Eubanks (OFS)"
     },
     {
-      "name": "Y. Niederhauser",
+      "name": "D. Hunter",
       "status": "OFS",
-      "details": "Y. Niederhauser (OFS)"
+      "details": "D. Hunter (OFS)"
     },
     {
-      "name": "K. Leonard",
+      "name": "Z. LaVine",
+      "status": "OFS",
+      "details": "Z. LaVine (OFS)"
+    },
+    {
+      "name": "D. Sabonis",
+      "status": "OFS",
+      "details": "D. Sabonis (OFS)"
+    },
+    {
+      "name": "M. Monk",
+      "status": "QUES",
+      "details": "M. Monk (Ques)"
+    },
+    {
+      "name": "D. Carter",
       "status": "OUT",
-      "details": "K. Leonard (Out)"
+      "details": "D. Carter (Out)"
+    },
+    {
+      "name": "K. Murray",
+      "status": "OUT",
+      "details": "K. Murray (Out)"
     }
   ]
 }
