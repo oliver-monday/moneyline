@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-17",
-  "built_at_utc": "2026-03-17T15:37:41Z",
+  "built_at_utc": "2026-03-17T17:54:24Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -20,8 +20,8 @@
     },
     {
       "name": "A. Black",
-      "status": "DOUBT",
-      "details": "A. Black (Doubt)"
+      "status": "OUT",
+      "details": "A. Black (Out)"
     },
     {
       "name": "J. Isaac",
@@ -37,8 +37,8 @@
   "ORL": [
     {
       "name": "A. Black",
-      "status": "DOUBT",
-      "details": "A. Black (Doubt)"
+      "status": "OUT",
+      "details": "A. Black (Out)"
     },
     {
       "name": "J. Isaac",
@@ -58,24 +58,19 @@
       "details": "I. Stewart (Out)"
     },
     {
-      "name": "T. Young",
-      "status": "QUES",
-      "details": "T. Young (Ques)"
-    },
-    {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
-    },
-    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
     },
     {
       "name": "L. Black",
-      "status": "QUES",
-      "details": "L. Black (Ques)"
+      "status": "OUT",
+      "details": "L. Black (Out)"
+    },
+    {
+      "name": "B. Coulibaly",
+      "status": "OUT",
+      "details": "B. Coulibaly (Out)"
     },
     {
       "name": "A. Davis",
@@ -91,6 +86,16 @@
       "name": "D. Russell",
       "status": "OUT",
       "details": "D. Russell (Out)"
+    },
+    {
+      "name": "Alex Sarr",
+      "status": "OUT",
+      "details": "Alex Sarr (Out)"
+    },
+    {
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     }
   ],
   "WAS": [
@@ -101,18 +106,13 @@
     },
     {
       "name": "L. Black",
-      "status": "QUES",
-      "details": "L. Black (Ques)"
+      "status": "OUT",
+      "details": "L. Black (Out)"
     },
     {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
-    },
-    {
-      "name": "T. Young",
-      "status": "QUES",
-      "details": "T. Young (Ques)"
+      "name": "B. Coulibaly",
+      "status": "OUT",
+      "details": "B. Coulibaly (Out)"
     },
     {
       "name": "A. Davis",
@@ -128,23 +128,23 @@
       "name": "D. Russell",
       "status": "OUT",
       "details": "D. Russell (Out)"
+    },
+    {
+      "name": "Alex Sarr",
+      "status": "OUT",
+      "details": "Alex Sarr (Out)"
+    },
+    {
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     }
   ],
   "MIA": [
     {
-      "name": "N. Jovic",
-      "status": "PROB",
-      "details": "N. Jovic (Prob)"
-    },
-    {
-      "name": "P. Larsson",
-      "status": "PROB",
-      "details": "P. Larsson (Prob)"
-    },
-    {
       "name": "B. Adebayo",
-      "status": "QUES",
-      "details": "B. Adebayo (Ques)"
+      "status": "DOUBT",
+      "details": "B. Adebayo (Doubt)"
     },
     {
       "name": "T. Rozier",
@@ -298,6 +298,11 @@
       "name": "M. Turner",
       "status": "QUES",
       "details": "M. Turner (Ques)"
+    },
+    {
+      "name": "R. Rollins",
+      "status": "QUES",
+      "details": "R. Rollins (Ques)"
     }
   ],
   "MIL": [
@@ -310,6 +315,11 @@
       "name": "O. Dieng",
       "status": "QUES",
       "details": "O. Dieng (Ques)"
+    },
+    {
+      "name": "R. Rollins",
+      "status": "QUES",
+      "details": "R. Rollins (Ques)"
     },
     {
       "name": "M. Turner",
@@ -329,22 +339,12 @@
       "details": "M. Williams (Out)"
     },
     {
-      "name": "N. Reid",
-      "status": "QUES",
-      "details": "N. Reid (Ques)"
-    },
-    {
       "name": "A. Edwards",
       "status": "OUT",
       "details": "A. Edwards (Out)"
     }
   ],
   "MIN": [
-    {
-      "name": "N. Reid",
-      "status": "QUES",
-      "details": "N. Reid (Ques)"
-    },
     {
       "name": "A. Edwards",
       "status": "OUT",
