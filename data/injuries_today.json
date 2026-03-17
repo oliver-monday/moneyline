@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-17",
-  "built_at_utc": "2026-03-17T21:25:30Z",
+  "built_at_utc": "2026-03-17T22:40:28Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -143,8 +143,8 @@
   "MIA": [
     {
       "name": "B. Adebayo",
-      "status": "DOUBT",
-      "details": "B. Adebayo (Doubt)"
+      "status": "OUT",
+      "details": "B. Adebayo (Out)"
     },
     {
       "name": "T. Rozier",
@@ -181,59 +181,24 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "Q. Jackson",
-      "status": "QUES",
-      "details": "Q. Jackson (Ques)"
-    },
-    {
-      "name": "T. McConnell",
-      "status": "QUES",
-      "details": "T. McConnell (Ques)"
-    },
-    {
       "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
-    },
-    {
-      "name": "A. Nesmith",
-      "status": "QUES",
-      "details": "A. Nesmith (Ques)"
+      "status": "OUT",
+      "details": "A. Nembhard (Out)"
     },
     {
       "name": "M. Potter",
-      "status": "QUES",
-      "details": "M. Potter (Ques)"
-    },
-    {
-      "name": "B. Sheppard",
-      "status": "QUES",
-      "details": "B. Sheppard (Ques)"
-    },
-    {
-      "name": "O. Toppin",
-      "status": "QUES",
-      "details": "O. Toppin (Ques)"
-    },
-    {
-      "name": "I. Zubac",
-      "status": "QUES",
-      "details": "I. Zubac (Ques)"
+      "status": "OUT",
+      "details": "M. Potter (Out)"
     },
     {
       "name": "P. Siakam",
-      "status": "DOUBT",
-      "details": "P. Siakam (Doubt)"
-    },
-    {
-      "name": "M. Robinson",
-      "status": "QUES",
-      "details": "M. Robinson (Ques)"
+      "status": "OUT",
+      "details": "P. Siakam (Out)"
     },
     {
       "name": "J. Brunson",
-      "status": "DOUBT",
-      "details": "J. Brunson (Doubt)"
+      "status": "OUT",
+      "details": "J. Brunson (Out)"
     },
     {
       "name": "M. McBride",
@@ -243,14 +208,9 @@
   ],
   "NYK": [
     {
-      "name": "M. Robinson",
-      "status": "QUES",
-      "details": "M. Robinson (Ques)"
-    },
-    {
       "name": "J. Brunson",
-      "status": "DOUBT",
-      "details": "J. Brunson (Doubt)"
+      "status": "OUT",
+      "details": "J. Brunson (Out)"
     },
     {
       "name": "M. McBride",
@@ -285,46 +245,36 @@
       "details": "T. Proctor (Out)"
     },
     {
-      "name": "O. Dieng",
-      "status": "QUES",
-      "details": "O. Dieng (Ques)"
-    },
-    {
-      "name": "G. Antetokounmpo",
-      "status": "QUES",
-      "details": "G. Antetokounmpo (Ques)"
-    },
-    {
-      "name": "M. Turner",
-      "status": "QUES",
-      "details": "M. Turner (Ques)"
-    },
-    {
       "name": "R. Rollins",
       "status": "QUES",
       "details": "R. Rollins (Ques)"
+    },
+    {
+      "name": "G. Antetokounmpo",
+      "status": "OUT",
+      "details": "G. Antetokounmpo (Out)"
+    },
+    {
+      "name": "M. Turner",
+      "status": "OUT",
+      "details": "M. Turner (Out)"
     }
   ],
   "MIL": [
     {
-      "name": "G. Antetokounmpo",
-      "status": "QUES",
-      "details": "G. Antetokounmpo (Ques)"
-    },
-    {
-      "name": "O. Dieng",
-      "status": "QUES",
-      "details": "O. Dieng (Ques)"
-    },
-    {
       "name": "R. Rollins",
       "status": "QUES",
       "details": "R. Rollins (Ques)"
     },
     {
+      "name": "G. Antetokounmpo",
+      "status": "OUT",
+      "details": "G. Antetokounmpo (Out)"
+    },
+    {
       "name": "M. Turner",
-      "status": "QUES",
-      "details": "M. Turner (Ques)"
+      "status": "OUT",
+      "details": "M. Turner (Out)"
     }
   ],
   "PHX": [
