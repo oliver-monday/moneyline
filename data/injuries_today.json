@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-17",
-  "built_at_utc": "2026-03-17T23:35:15Z",
+  "built_at_utc": "2026-03-18T01:19:35Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -52,6 +52,11 @@
     }
   ],
   "DET": [
+    {
+      "name": "C. Cunningham",
+      "status": "QUES",
+      "details": "C. Cunningham (Ques)"
+    },
     {
       "name": "I. Stewart",
       "status": "OUT",
@@ -235,6 +240,11 @@
       "details": "T. Proctor (Out)"
     },
     {
+      "name": "J. Sims",
+      "status": "PROB",
+      "details": "J. Sims (Prob)"
+    },
+    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -246,6 +256,11 @@
     }
   ],
   "MIL": [
+    {
+      "name": "J. Sims",
+      "status": "PROB",
+      "details": "J. Sims (Prob)"
+    },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
@@ -274,12 +289,22 @@
       "details": "M. Williams (Out)"
     },
     {
+      "name": "N. Reid",
+      "status": "QUES",
+      "details": "N. Reid (Ques)"
+    },
+    {
       "name": "A. Edwards",
       "status": "OUT",
       "details": "A. Edwards (Out)"
     }
   ],
   "MIN": [
+    {
+      "name": "N. Reid",
+      "status": "QUES",
+      "details": "N. Reid (Ques)"
+    },
     {
       "name": "A. Edwards",
       "status": "OUT",
@@ -337,16 +362,6 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "D. Harper",
-      "status": "QUES",
-      "details": "D. Harper (Ques)"
-    },
-    {
-      "name": "L. Kornet",
-      "status": "QUES",
-      "details": "L. Kornet (Ques)"
-    },
-    {
       "name": "D. Vassell",
       "status": "OUT",
       "details": "D. Vassell (Out)"
@@ -372,14 +387,14 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "M. Monk",
-      "status": "QUES",
-      "details": "M. Monk (Ques)"
-    },
-    {
       "name": "D. Carter",
       "status": "OUT",
       "details": "D. Carter (Out)"
+    },
+    {
+      "name": "Malik Monk",
+      "status": "OUT",
+      "details": "Malik Monk (Out)"
     },
     {
       "name": "K. Murray",
@@ -409,14 +424,14 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "M. Monk",
-      "status": "QUES",
-      "details": "M. Monk (Ques)"
-    },
-    {
       "name": "D. Carter",
       "status": "OUT",
       "details": "D. Carter (Out)"
+    },
+    {
+      "name": "Malik Monk",
+      "status": "OUT",
+      "details": "Malik Monk (Out)"
     },
     {
       "name": "K. Murray",
