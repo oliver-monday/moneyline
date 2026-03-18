@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-18",
-  "built_at_utc": "2026-03-18T21:23:13Z",
+  "built_at_utc": "2026-03-18T22:37:53Z",
   "source": "rotowire",
   "GSW": [
     {
@@ -9,19 +9,9 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "G. Payton",
-      "status": "PROB",
-      "details": "G. Payton (Prob)"
-    },
-    {
-      "name": "L. Cryer",
-      "status": "QUES",
-      "details": "L. Cryer (Ques)"
-    },
-    {
-      "name": "Q. Post",
-      "status": "QUES",
-      "details": "Q. Post (Ques)"
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
     },
     {
       "name": "S. Curry",
@@ -61,11 +51,6 @@
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
     },
     {
       "name": "Vit Krejci",
@@ -271,6 +256,11 @@
       "details": "B. Beal (OFS)"
     },
     {
+      "name": "K. Leonard",
+      "status": "QUES",
+      "details": "K. Leonard (Ques)"
+    },
+    {
       "name": "Y. Niederhauser",
       "status": "OFS",
       "details": "Y. Niederhauser (OFS)"
@@ -279,11 +269,6 @@
       "name": "N. Batum",
       "status": "QUES",
       "details": "N. Batum (Ques)"
-    },
-    {
-      "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
     },
     {
       "name": "B. Mathurin",
@@ -325,19 +310,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "C. Sexton",
-      "status": "QUES",
-      "details": "C. Sexton (Ques)"
-    },
-    {
-      "name": "I. Okoro",
-      "status": "DOUBT",
-      "details": "I. Okoro (Doubt)"
-    },
-    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "OUT",
+      "details": "I. Okoro (Out)"
     },
     {
       "name": "A. Simons",
@@ -357,19 +337,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "C. Sexton",
-      "status": "QUES",
-      "details": "C. Sexton (Ques)"
-    },
-    {
-      "name": "I. Okoro",
-      "status": "DOUBT",
-      "details": "I. Okoro (Doubt)"
-    },
-    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "OUT",
+      "details": "I. Okoro (Out)"
     },
     {
       "name": "A. Simons",
@@ -392,16 +367,6 @@
       "name": "J. Nurkic",
       "status": "OFS",
       "details": "J. Nurkic (OFS)"
-    },
-    {
-      "name": "J. Konchar",
-      "status": "PROB",
-      "details": "J. Konchar (Prob)"
-    },
-    {
-      "name": "A. Bailey",
-      "status": "QUES",
-      "details": "A. Bailey (Ques)"
     },
     {
       "name": "K. George",
