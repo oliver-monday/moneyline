@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-18",
-  "built_at_utc": "2026-03-18T15:46:16Z",
+  "built_at_utc": "2026-03-18T17:51:36Z",
   "source": "rotowire",
   "GSW": [
     {
@@ -63,14 +63,14 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "V. Krejci",
-      "status": "QUES",
-      "details": "V. Krejci (Ques)"
-    },
-    {
       "name": "R. Williams",
       "status": "QUES",
       "details": "R. Williams (Ques)"
+    },
+    {
+      "name": "Vit Krejci",
+      "status": "OUT",
+      "details": "Vit Krejci (Out)"
     },
     {
       "name": "S. Sharpe",
@@ -83,9 +83,14 @@
       "details": "A. Nembhard (Ques)"
     },
     {
-      "name": "P. Siakam",
+      "name": "A. Nesmith",
       "status": "QUES",
-      "details": "P. Siakam (Ques)"
+      "details": "A. Nesmith (Ques)"
+    },
+    {
+      "name": "I. Zubac",
+      "status": "QUES",
+      "details": "I. Zubac (Ques)"
     },
     {
       "name": "J. Furphy",
@@ -98,9 +103,34 @@
       "details": "T. Haliburton (OFS)"
     },
     {
+      "name": "Q. Jackson",
+      "status": "QUES",
+      "details": "Q. Jackson (Ques)"
+    },
+    {
+      "name": "T. McConnell",
+      "status": "QUES",
+      "details": "T. McConnell (Ques)"
+    },
+    {
       "name": "M. Potter",
       "status": "QUES",
       "details": "M. Potter (Ques)"
+    },
+    {
+      "name": "B. Sheppard",
+      "status": "QUES",
+      "details": "B. Sheppard (Ques)"
+    },
+    {
+      "name": "P. Siakam",
+      "status": "OUT",
+      "details": "P. Siakam (Out)"
+    },
+    {
+      "name": "Obi Toppin",
+      "status": "OUT",
+      "details": "Obi Toppin (Out)"
     }
   ],
   "IND": [
@@ -115,9 +145,24 @@
       "details": "T. Haliburton (OFS)"
     },
     {
+      "name": "Q. Jackson",
+      "status": "QUES",
+      "details": "Q. Jackson (Ques)"
+    },
+    {
+      "name": "T. McConnell",
+      "status": "QUES",
+      "details": "T. McConnell (Ques)"
+    },
+    {
       "name": "A. Nembhard",
       "status": "QUES",
       "details": "A. Nembhard (Ques)"
+    },
+    {
+      "name": "A. Nesmith",
+      "status": "QUES",
+      "details": "A. Nesmith (Ques)"
     },
     {
       "name": "M. Potter",
@@ -125,9 +170,24 @@
       "details": "M. Potter (Ques)"
     },
     {
-      "name": "P. Siakam",
+      "name": "B. Sheppard",
       "status": "QUES",
-      "details": "P. Siakam (Ques)"
+      "details": "B. Sheppard (Ques)"
+    },
+    {
+      "name": "I. Zubac",
+      "status": "QUES",
+      "details": "I. Zubac (Ques)"
+    },
+    {
+      "name": "P. Siakam",
+      "status": "OUT",
+      "details": "P. Siakam (Out)"
+    },
+    {
+      "name": "Obi Toppin",
+      "status": "OUT",
+      "details": "Obi Toppin (Out)"
     }
   ],
   "OKC": [
@@ -137,24 +197,29 @@
       "details": "T. Sorber (OFS)"
     },
     {
+      "name": "C. Holmgren",
+      "status": "QUES",
+      "details": "C. Holmgren (Ques)"
+    },
+    {
       "name": "B. Carlson",
-      "status": "DOUBT",
-      "details": "B. Carlson (Doubt)"
+      "status": "OUT",
+      "details": "B. Carlson (Out)"
+    },
+    {
+      "name": "L. Dort",
+      "status": "OUT",
+      "details": "L. Dort (Out)"
+    },
+    {
+      "name": "I. Hartenstein",
+      "status": "OUT",
+      "details": "I. Hartenstein (Out)"
     },
     {
       "name": "J. Williams",
-      "status": "DOUBT",
-      "details": "J. Williams (Doubt)"
-    },
-    {
-      "name": "N. Traore",
-      "status": "PROB",
-      "details": "N. Traore (Prob)"
-    },
-    {
-      "name": "M. Porter",
-      "status": "QUES",
-      "details": "M. Porter (Ques)"
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     },
     {
       "name": "Egor Demin",
@@ -167,14 +232,14 @@
       "details": "D. Sharpe (OFS)"
     },
     {
-      "name": "T. Mann",
-      "status": "PROB",
-      "details": "T. Mann (Prob)"
-    },
-    {
       "name": "B. Saraf",
       "status": "QUES",
       "details": "B. Saraf (Ques)"
+    },
+    {
+      "name": "M. Porter",
+      "status": "OUT",
+      "details": "M. Porter (Out)"
     }
   ],
   "BKN": [
@@ -189,24 +254,14 @@
       "details": "D. Sharpe (OFS)"
     },
     {
-      "name": "T. Mann",
-      "status": "PROB",
-      "details": "T. Mann (Prob)"
-    },
-    {
-      "name": "N. Traore",
-      "status": "PROB",
-      "details": "N. Traore (Prob)"
-    },
-    {
-      "name": "M. Porter",
-      "status": "QUES",
-      "details": "M. Porter (Ques)"
-    },
-    {
       "name": "B. Saraf",
       "status": "QUES",
       "details": "B. Saraf (Ques)"
+    },
+    {
+      "name": "M. Porter",
+      "status": "OUT",
+      "details": "M. Porter (Out)"
     }
   ],
   "LAC": [
@@ -236,22 +291,12 @@
       "details": "B. Mathurin (Out)"
     },
     {
-      "name": "D. Murray",
-      "status": "QUES",
-      "details": "D. Murray (Ques)"
-    },
-    {
       "name": "B. McGowens",
       "status": "OUT",
       "details": "B. McGowens (Out)"
     }
   ],
   "NOP": [
-    {
-      "name": "D. Murray",
-      "status": "QUES",
-      "details": "D. Murray (Ques)"
-    },
     {
       "name": "B. McGowens",
       "status": "OUT",
@@ -344,14 +389,14 @@
       "details": "J. Nurkic (OFS)"
     },
     {
+      "name": "J. Konchar",
+      "status": "PROB",
+      "details": "J. Konchar (Prob)"
+    },
+    {
       "name": "A. Bailey",
       "status": "QUES",
       "details": "A. Bailey (Ques)"
-    },
-    {
-      "name": "J. Konchar",
-      "status": "QUES",
-      "details": "J. Konchar (Ques)"
     },
     {
       "name": "K. George",
@@ -364,12 +409,32 @@
       "details": "L. Markkanen (Out)"
     },
     {
+      "name": "J. Clark",
+      "status": "QUES",
+      "details": "J. Clark (Ques)"
+    },
+    {
+      "name": "N. Reid",
+      "status": "QUES",
+      "details": "N. Reid (Ques)"
+    },
+    {
       "name": "A. Edwards",
       "status": "OUT",
       "details": "A. Edwards (Out)"
     }
   ],
   "MIN": [
+    {
+      "name": "J. Clark",
+      "status": "QUES",
+      "details": "J. Clark (Ques)"
+    },
+    {
+      "name": "N. Reid",
+      "status": "QUES",
+      "details": "N. Reid (Ques)"
+    },
     {
       "name": "A. Edwards",
       "status": "OUT",
