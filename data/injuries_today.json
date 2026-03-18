@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-18",
-  "built_at_utc": "2026-03-18T19:50:45Z",
+  "built_at_utc": "2026-03-18T20:33:55Z",
   "source": "rotowire",
   "GSW": [
     {
@@ -232,14 +232,14 @@
       "details": "D. Sharpe (OFS)"
     },
     {
-      "name": "B. Saraf",
-      "status": "QUES",
-      "details": "B. Saraf (Ques)"
-    },
-    {
       "name": "M. Porter",
       "status": "OUT",
       "details": "M. Porter (Out)"
+    },
+    {
+      "name": "Ben Saraf",
+      "status": "OUT",
+      "details": "Ben Saraf (Out)"
     }
   ],
   "BKN": [
@@ -254,14 +254,14 @@
       "details": "D. Sharpe (OFS)"
     },
     {
-      "name": "B. Saraf",
-      "status": "QUES",
-      "details": "B. Saraf (Ques)"
-    },
-    {
       "name": "M. Porter",
       "status": "OUT",
       "details": "M. Porter (Out)"
+    },
+    {
+      "name": "Ben Saraf",
+      "status": "OUT",
+      "details": "Ben Saraf (Out)"
     }
   ],
   "LAC": [
@@ -419,14 +419,14 @@
       "details": "J. Clark (Ques)"
     },
     {
-      "name": "N. Reid",
-      "status": "QUES",
-      "details": "N. Reid (Ques)"
-    },
-    {
       "name": "A. Edwards",
       "status": "OUT",
       "details": "A. Edwards (Out)"
+    },
+    {
+      "name": "Naz Reid",
+      "status": "OUT",
+      "details": "Naz Reid (Out)"
     }
   ],
   "MIN": [
@@ -436,14 +436,14 @@
       "details": "J. Clark (Ques)"
     },
     {
-      "name": "N. Reid",
-      "status": "QUES",
-      "details": "N. Reid (Ques)"
-    },
-    {
       "name": "A. Edwards",
       "status": "OUT",
       "details": "A. Edwards (Out)"
+    },
+    {
+      "name": "Naz Reid",
+      "status": "OUT",
+      "details": "Naz Reid (Out)"
     }
   ],
   "ATL": [
