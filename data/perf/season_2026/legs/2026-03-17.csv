@@ -1,0 +1,18 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-17,2026,Nikola Jokic,DEN,PHI,reb,12,MISSED,7,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,Jalen Brunson,NY,IND,ast,6,,,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,Paolo Banchero,ORL,OKC,reb,8,HIT,10,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,Paolo Banchero,ORL,OKC,3pt,1,HIT,3,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,Bam Adebayo,MIA,CHA,pts,20,MISSED,,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,Bam Adebayo,MIA,CHA,ast,2,MISSED,,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,Desmond Bane,ORL,OKC,ast,4,MISSED,1,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,James Harden,CLE,MIL,reb,4,HIT,5,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,Ryan Rollins,MIL,CLE,3pt,2,HIT,3,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,Devin Vassell,SA,SAC,ast,2,,,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,Devin Booker,PHX,MIN,pts,25,HIT,34,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,Devin Booker,PHX,MIN,3pt,2,MISSED,1,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,Jalen Green,PHX,MIN,pts,20,MISSED,9,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,Stephon Castle,SA,SAC,3pt,1,HIT,1,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,Maxime Raynaud,SAC,SA,pts,10,HIT,32,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,De'Aaron Fox,SA,SAC,ast,6,HIT,6,,targets_snapshot_2026-03-17.json
+2026-03-17,2026,Karl-Anthony Towns,NY,IND,reb,12,MISSED,11,,targets_snapshot_2026-03-17.json
