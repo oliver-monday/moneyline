@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-19",
-  "built_at_utc": "2026-03-19T15:11:09Z",
+  "built_at_utc": "2026-03-19T17:45:42Z",
   "source": "rotowire",
   "DET": [
     {
@@ -14,16 +14,6 @@
       "details": "I. Stewart (Out)"
     },
     {
-      "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
-    },
-    {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
-    },
-    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
@@ -32,6 +22,11 @@
       "name": "L. Black",
       "status": "OUT",
       "details": "L. Black (Out)"
+    },
+    {
+      "name": "B. Coulibaly",
+      "status": "OUT",
+      "details": "B. Coulibaly (Out)"
     },
     {
       "name": "A. Davis",
@@ -61,19 +56,14 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
-    },
-    {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
-    },
-    {
       "name": "L. Black",
       "status": "OUT",
       "details": "L. Black (Out)"
+    },
+    {
+      "name": "B. Coulibaly",
+      "status": "OUT",
+      "details": "B. Coulibaly (Out)"
     },
     {
       "name": "A. Davis",
@@ -176,6 +166,11 @@
   ],
   "CLE": [
     {
+      "name": "D. Mitchell",
+      "status": "QUES",
+      "details": "D. Mitchell (Ques)"
+    },
+    {
       "name": "J. Allen",
       "status": "OUT",
       "details": "J. Allen (Out)"
@@ -191,6 +186,11 @@
       "details": "T. Proctor (Out)"
     },
     {
+      "name": "J. Smith",
+      "status": "QUES",
+      "details": "J. Smith (Ques)"
+    },
+    {
       "name": "Z. Collins",
       "status": "OFS",
       "details": "Z. Collins (OFS)"
@@ -201,14 +201,19 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "I. Okoro",
-      "status": "QUES",
-      "details": "I. Okoro (Ques)"
+      "name": "C. Sexton",
+      "status": "PROB",
+      "details": "C. Sexton (Prob)"
     },
     {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "OUT",
+      "details": "I. Okoro (Out)"
     },
     {
       "name": "A. Simons",
@@ -228,14 +233,24 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "I. Okoro",
+      "name": "C. Sexton",
+      "status": "PROB",
+      "details": "C. Sexton (Prob)"
+    },
+    {
+      "name": "J. Smith",
       "status": "QUES",
-      "details": "I. Okoro (Ques)"
+      "details": "J. Smith (Ques)"
     },
     {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "OUT",
+      "details": "I. Okoro (Out)"
     },
     {
       "name": "A. Simons",
@@ -245,14 +260,24 @@
   ],
   "LAL": [
     {
-      "name": "M. Kleber",
-      "status": "DOUBT",
-      "details": "M. Kleber (Doubt)"
+      "name": "L. Doncic",
+      "status": "QUES",
+      "details": "L. Doncic (Ques)"
     },
     {
-      "name": "B. Adebayo",
-      "status": "PROB",
-      "details": "B. Adebayo (Prob)"
+      "name": "L. James",
+      "status": "QUES",
+      "details": "L. James (Ques)"
+    },
+    {
+      "name": "A. Reaves",
+      "status": "QUES",
+      "details": "A. Reaves (Ques)"
+    },
+    {
+      "name": "M. Kleber",
+      "status": "OUT",
+      "details": "M. Kleber (Out)"
     },
     {
       "name": "J. Jaquez",
@@ -271,11 +296,6 @@
     }
   ],
   "MIA": [
-    {
-      "name": "B. Adebayo",
-      "status": "PROB",
-      "details": "B. Adebayo (Prob)"
-    },
     {
       "name": "J. Jaquez",
       "status": "QUES",
