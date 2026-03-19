@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-19",
-  "built_at_utc": "2026-03-19T18:55:24Z",
+  "built_at_utc": "2026-03-19T19:49:11Z",
   "source": "rotowire",
   "DET": [
     {
@@ -393,14 +393,29 @@
       "details": "J. Nurkic (OFS)"
     },
     {
-      "name": "L. Markkanen",
+      "name": "J. Konchar",
       "status": "DOUBT",
-      "details": "L. Markkanen (Doubt)"
+      "details": "J. Konchar (Doubt)"
+    },
+    {
+      "name": "I. Collier",
+      "status": "OUT",
+      "details": "I. Collier (Out)"
     },
     {
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "OUT",
+      "details": "L. Markkanen (Out)"
+    },
+    {
+      "name": "B. Sensabaugh",
+      "status": "OUT",
+      "details": "B. Sensabaugh (Out)"
     }
   ],
   "UTA": [
@@ -420,26 +435,41 @@
       "details": "J. Nurkic (OFS)"
     },
     {
-      "name": "L. Markkanen",
+      "name": "J. Konchar",
       "status": "DOUBT",
-      "details": "L. Markkanen (Doubt)"
+      "details": "J. Konchar (Doubt)"
+    },
+    {
+      "name": "I. Collier",
+      "status": "OUT",
+      "details": "I. Collier (Out)"
     },
     {
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
+    },
+    {
+      "name": "L. Markkanen",
+      "status": "OUT",
+      "details": "L. Markkanen (Out)"
+    },
+    {
+      "name": "B. Sensabaugh",
+      "status": "OUT",
+      "details": "B. Sensabaugh (Out)"
     }
   ],
   "PHI": [
     {
-      "name": "J. Embiid",
-      "status": "DOUBT",
-      "details": "J. Embiid (Doubt)"
-    },
-    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
+    },
+    {
+      "name": "J. Embiid",
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     },
     {
       "name": "P. George",
