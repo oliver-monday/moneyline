@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-19",
-  "built_at_utc": "2026-03-19T09:04:43Z",
+  "built_at_utc": "2026-03-19T15:11:09Z",
   "source": "rotowire",
   "DET": [
     {
@@ -138,8 +138,13 @@
     },
     {
       "name": "N. Batum",
-      "status": "OUT",
-      "details": "N. Batum (Out)"
+      "status": "PROB",
+      "details": "N. Batum (Prob)"
+    },
+    {
+      "name": "D. Garland",
+      "status": "QUES",
+      "details": "D. Garland (Ques)"
     },
     {
       "name": "B. Mathurin",
@@ -148,15 +153,25 @@
     },
     {
       "name": "B. McGowens",
-      "status": "OUT",
-      "details": "B. McGowens (Out)"
+      "status": "QUES",
+      "details": "B. McGowens (Ques)"
+    },
+    {
+      "name": "D. Murray",
+      "status": "DOUBT",
+      "details": "D. Murray (Doubt)"
     }
   ],
   "NOP": [
     {
       "name": "B. McGowens",
-      "status": "OUT",
-      "details": "B. McGowens (Out)"
+      "status": "QUES",
+      "details": "B. McGowens (Ques)"
+    },
+    {
+      "name": "D. Murray",
+      "status": "DOUBT",
+      "details": "D. Murray (Doubt)"
     }
   ],
   "CLE": [
@@ -176,11 +191,6 @@
       "details": "T. Proctor (Out)"
     },
     {
-      "name": "I. Okoro",
-      "status": "OUT",
-      "details": "I. Okoro (Out)"
-    },
-    {
       "name": "Z. Collins",
       "status": "OFS",
       "details": "Z. Collins (OFS)"
@@ -189,6 +199,11 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "QUES",
+      "details": "I. Okoro (Ques)"
     },
     {
       "name": "Jaden Ivey",
@@ -213,14 +228,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "I. Okoro",
+      "status": "QUES",
+      "details": "I. Okoro (Ques)"
+    },
+    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
-    },
-    {
-      "name": "I. Okoro",
-      "status": "OUT",
-      "details": "I. Okoro (Out)"
     },
     {
       "name": "A. Simons",
@@ -231,18 +246,13 @@
   "LAL": [
     {
       "name": "M. Kleber",
-      "status": "OUT",
-      "details": "M. Kleber (Out)"
+      "status": "DOUBT",
+      "details": "M. Kleber (Doubt)"
     },
     {
       "name": "B. Adebayo",
       "status": "PROB",
       "details": "B. Adebayo (Prob)"
-    },
-    {
-      "name": "A. Wiggins",
-      "status": "QUES",
-      "details": "A. Wiggins (Ques)"
     },
     {
       "name": "J. Jaquez",
@@ -253,15 +263,15 @@
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
+    },
+    {
+      "name": "A. Wiggins",
+      "status": "OUT",
+      "details": "A. Wiggins (Out)"
     }
   ],
   "MIA": [
     {
-      "name": "A. Wiggins",
-      "status": "QUES",
-      "details": "A. Wiggins (Ques)"
-    },
-    {
       "name": "B. Adebayo",
       "status": "PROB",
       "details": "B. Adebayo (Prob)"
@@ -275,6 +285,11 @@
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
+    },
+    {
+      "name": "A. Wiggins",
+      "status": "OUT",
+      "details": "A. Wiggins (Out)"
     }
   ],
   "PHX": [
@@ -348,14 +363,14 @@
       "details": "J. Nurkic (OFS)"
     },
     {
+      "name": "L. Markkanen",
+      "status": "DOUBT",
+      "details": "L. Markkanen (Doubt)"
+    },
+    {
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
-    },
-    {
-      "name": "L. Markkanen",
-      "status": "OUT",
-      "details": "L. Markkanen (Out)"
     }
   ],
   "UTA": [
@@ -375,14 +390,14 @@
       "details": "J. Nurkic (OFS)"
     },
     {
+      "name": "L. Markkanen",
+      "status": "DOUBT",
+      "details": "L. Markkanen (Doubt)"
+    },
+    {
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
-    },
-    {
-      "name": "L. Markkanen",
-      "status": "OUT",
-      "details": "L. Markkanen (Out)"
     }
   ],
   "PHI": [
