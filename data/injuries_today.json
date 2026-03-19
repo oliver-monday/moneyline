@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-19",
-  "built_at_utc": "2026-03-19T17:45:42Z",
+  "built_at_utc": "2026-03-19T18:55:24Z",
   "source": "rotowire",
   "DET": [
     {
@@ -93,6 +93,11 @@
       "details": "A. Black (Out)"
     },
     {
+      "name": "W. Carter",
+      "status": "OUT",
+      "details": "W. Carter (Out)"
+    },
+    {
       "name": "J. Isaac",
       "status": "OUT",
       "details": "J. Isaac (Out)"
@@ -127,14 +132,14 @@
       "details": "Y. Niederhauser (OFS)"
     },
     {
-      "name": "N. Batum",
-      "status": "PROB",
-      "details": "N. Batum (Prob)"
+      "name": "K. Leonard",
+      "status": "QUES",
+      "details": "K. Leonard (Ques)"
     },
     {
       "name": "D. Garland",
-      "status": "QUES",
-      "details": "D. Garland (Ques)"
+      "status": "OUT",
+      "details": "D. Garland (Out)"
     },
     {
       "name": "B. Mathurin",
@@ -143,25 +148,25 @@
     },
     {
       "name": "B. McGowens",
-      "status": "QUES",
-      "details": "B. McGowens (Ques)"
+      "status": "OUT",
+      "details": "B. McGowens (Out)"
     },
     {
       "name": "D. Murray",
-      "status": "DOUBT",
-      "details": "D. Murray (Doubt)"
+      "status": "OUT",
+      "details": "D. Murray (Out)"
     }
   ],
   "NOP": [
     {
       "name": "B. McGowens",
-      "status": "QUES",
-      "details": "B. McGowens (Ques)"
+      "status": "OUT",
+      "details": "B. McGowens (Out)"
     },
     {
       "name": "D. Murray",
-      "status": "DOUBT",
-      "details": "D. Murray (Doubt)"
+      "status": "OUT",
+      "details": "D. Murray (Out)"
     }
   ],
   "CLE": [
@@ -281,8 +286,8 @@
     },
     {
       "name": "J. Jaquez",
-      "status": "QUES",
-      "details": "J. Jaquez (Ques)"
+      "status": "OUT",
+      "details": "J. Jaquez (Out)"
     },
     {
       "name": "T. Rozier",
@@ -298,8 +303,8 @@
   "MIA": [
     {
       "name": "J. Jaquez",
-      "status": "QUES",
-      "details": "J. Jaquez (Ques)"
+      "status": "OUT",
+      "details": "J. Jaquez (Out)"
     },
     {
       "name": "T. Rozier",
@@ -319,14 +324,19 @@
       "details": "G. Allen (Ques)"
     },
     {
-      "name": "R. O'Neale",
+      "name": "H. Highsmith",
       "status": "QUES",
-      "details": "R. O'Neale (Ques)"
+      "details": "H. Highsmith (Ques)"
     },
     {
       "name": "D. Brooks",
       "status": "OUT",
       "details": "D. Brooks (Out)"
+    },
+    {
+      "name": "R. O'Neale",
+      "status": "OUT",
+      "details": "R. O'Neale (Out)"
     },
     {
       "name": "M. Williams",
