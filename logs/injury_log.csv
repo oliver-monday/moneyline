@@ -8398,6 +8398,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-19,SAC,M. Monk,QUES,M. Monk (Ques),rotowire
 2026-03-19,CLE,C. Sexton,PROB,C. Sexton (Prob),rotowire
 2026-03-19,CHI,C. Sexton,PROB,C. Sexton (Prob),rotowire
+2026-03-19,LAL,L. Doncic,QUES,L. Doncic (Ques),rotowire
+2026-03-19,LAL,L. James,QUES,L. James (Ques),rotowire
+2026-03-19,LAL,A. Reaves,QUES,A. Reaves (Ques),rotowire
 2026-03-19,DET,C. Cunningham,OUT,C. Cunningham (Out),rotowire
 2026-03-19,DET,I. Stewart,OUT,I. Stewart (Out),rotowire
 2026-03-19,DET,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
@@ -8422,15 +8425,15 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-19,CHA,T. Salaun,OUT,T. Salaun (Out),rotowire
 2026-03-19,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-03-19,LAC,Y. Niederhauser,OFS,Y. Niederhauser (OFS),rotowire
-2026-03-19,LAC,K. Leonard,QUES,K. Leonard (Ques),rotowire
 2026-03-19,LAC,D. Garland,OUT,D. Garland (Out),rotowire
+2026-03-19,LAC,K. Leonard,OUT,K. Leonard (Out),rotowire
 2026-03-19,LAC,B. Mathurin,OUT,B. Mathurin (Out),rotowire
 2026-03-19,LAC,B. McGowens,OUT,B. McGowens (Out),rotowire
 2026-03-19,LAC,D. Murray,OUT,D. Murray (Out),rotowire
 2026-03-19,NOP,B. McGowens,OUT,B. McGowens (Out),rotowire
 2026-03-19,NOP,D. Murray,OUT,D. Murray (Out),rotowire
-2026-03-19,CLE,D. Mitchell,QUES,D. Mitchell (Ques),rotowire
 2026-03-19,CLE,J. Allen,OUT,J. Allen (Out),rotowire
+2026-03-19,CLE,D. Mitchell,OUT,D. Mitchell (Out),rotowire
 2026-03-19,CLE,C. Porter,OUT,C. Porter (Out),rotowire
 2026-03-19,CLE,T. Proctor,OUT,T. Proctor (Out),rotowire
 2026-03-19,CLE,Z. Collins,OFS,Z. Collins (OFS),rotowire
@@ -8445,9 +8448,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-19,CHI,I. Okoro,OUT,I. Okoro (Out),rotowire
 2026-03-19,CHI,A. Simons,OUT,A. Simons (Out),rotowire
 2026-03-19,CHI,J. Smith,OUT,J. Smith (Out),rotowire
-2026-03-19,LAL,L. Doncic,QUES,L. Doncic (Ques),rotowire
-2026-03-19,LAL,L. James,QUES,L. James (Ques),rotowire
-2026-03-19,LAL,A. Reaves,QUES,A. Reaves (Ques),rotowire
 2026-03-19,LAL,M. Kleber,OUT,M. Kleber (Out),rotowire
 2026-03-19,LAL,J. Jaquez,OUT,J. Jaquez (Out),rotowire
 2026-03-19,LAL,T. Rozier,OUT,T. Rozier (Out),rotowire
@@ -8455,13 +8455,15 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-19,MIA,J. Jaquez,OUT,J. Jaquez (Out),rotowire
 2026-03-19,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-03-19,MIA,A. Wiggins,OUT,A. Wiggins (Out),rotowire
-2026-03-19,PHX,G. Allen,QUES,G. Allen (Ques),rotowire
-2026-03-19,PHX,H. Highsmith,QUES,H. Highsmith (Ques),rotowire
+2026-03-19,PHX,G. Allen,OUT,G. Allen (Out),rotowire
 2026-03-19,PHX,D. Brooks,OUT,D. Brooks (Out),rotowire
+2026-03-19,PHX,H. Highsmith,OUT,H. Highsmith (Out),rotowire
 2026-03-19,PHX,R. O'Neale,OUT,R. O'Neale (Out),rotowire
 2026-03-19,PHX,M. Williams,OUT,M. Williams (Out),rotowire
 2026-03-19,PHX,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
+2026-03-19,PHX,S. Castle,OUT,S. Castle (Out),rotowire
 2026-03-19,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
+2026-03-19,SAS,S. Castle,OUT,S. Castle (Out),rotowire
 2026-03-19,MIL,K. Kuzma,PROB,K. Kuzma (Prob),rotowire
 2026-03-19,MIL,K. Porter,QUES,K. Porter (Ques),rotowire
 2026-03-19,MIL,M. Turner,QUES,M. Turner (Ques),rotowire

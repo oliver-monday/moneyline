@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-19",
-  "built_at_utc": "2026-03-19T22:35:41Z",
+  "built_at_utc": "2026-03-19T23:32:54Z",
   "source": "rotowire",
   "DET": [
     {
@@ -132,14 +132,14 @@
       "details": "Y. Niederhauser (OFS)"
     },
     {
-      "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
-    },
-    {
       "name": "D. Garland",
       "status": "OUT",
       "details": "D. Garland (Out)"
+    },
+    {
+      "name": "K. Leonard",
+      "status": "OUT",
+      "details": "K. Leonard (Out)"
     },
     {
       "name": "B. Mathurin",
@@ -171,14 +171,14 @@
   ],
   "CLE": [
     {
-      "name": "D. Mitchell",
-      "status": "QUES",
-      "details": "D. Mitchell (Ques)"
-    },
-    {
       "name": "J. Allen",
       "status": "OUT",
       "details": "J. Allen (Out)"
+    },
+    {
+      "name": "D. Mitchell",
+      "status": "OUT",
+      "details": "D. Mitchell (Out)"
     },
     {
       "name": "C. Porter",
@@ -255,21 +255,6 @@
   ],
   "LAL": [
     {
-      "name": "L. Doncic",
-      "status": "QUES",
-      "details": "L. Doncic (Ques)"
-    },
-    {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
-    },
-    {
-      "name": "A. Reaves",
-      "status": "QUES",
-      "details": "A. Reaves (Ques)"
-    },
-    {
       "name": "M. Kleber",
       "status": "OUT",
       "details": "M. Kleber (Out)"
@@ -310,18 +295,18 @@
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
-    {
-      "name": "H. Highsmith",
-      "status": "QUES",
-      "details": "H. Highsmith (Ques)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "D. Brooks",
       "status": "OUT",
       "details": "D. Brooks (Out)"
+    },
+    {
+      "name": "H. Highsmith",
+      "status": "OUT",
+      "details": "H. Highsmith (Out)"
     },
     {
       "name": "R. O'Neale",
@@ -337,6 +322,11 @@
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "S. Castle",
+      "status": "OUT",
+      "details": "S. Castle (Out)"
     }
   ],
   "SAS": [
@@ -344,6 +334,11 @@
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "S. Castle",
+      "status": "OUT",
+      "details": "S. Castle (Out)"
     }
   ],
   "MIL": [
