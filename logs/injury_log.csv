@@ -8277,7 +8277,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-18,UTA,J. Konchar,PROB,J. Konchar (Prob),rotowire
 2026-03-18,UTA,A. Bailey,QUES,A. Bailey (Ques),rotowire
 2026-03-18,POR,A. Nesmith,QUES,A. Nesmith (Ques),rotowire
-2026-03-18,POR,I. Zubac,QUES,I. Zubac (Ques),rotowire
 2026-03-18,POR,Q. Jackson,QUES,Q. Jackson (Ques),rotowire
 2026-03-18,POR,T. McConnell,QUES,T. McConnell (Ques),rotowire
 2026-03-18,POR,B. Sheppard,QUES,B. Sheppard (Ques),rotowire
@@ -8285,7 +8284,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-18,IND,T. McConnell,QUES,T. McConnell (Ques),rotowire
 2026-03-18,IND,A. Nesmith,QUES,A. Nesmith (Ques),rotowire
 2026-03-18,IND,B. Sheppard,QUES,B. Sheppard (Ques),rotowire
-2026-03-18,IND,I. Zubac,QUES,I. Zubac (Ques),rotowire
 2026-03-18,OKC,C. Holmgren,QUES,C. Holmgren (Ques),rotowire
 2026-03-18,LAC,K. Leonard,QUES,K. Leonard (Ques),rotowire
 2026-03-18,UTA,J. Clark,QUES,J. Clark (Ques),rotowire
@@ -8304,6 +8302,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-18,POR,D. Lillard,OFS,D. Lillard (OFS),rotowire
 2026-03-18,POR,Vit Krejci,OUT,Vit Krejci (Out),rotowire
 2026-03-18,POR,S. Sharpe,OUT,S. Sharpe (Out),rotowire
+2026-03-18,POR,I. Zubac,QUES,I. Zubac (Ques),rotowire
 2026-03-18,POR,J. Furphy,OFS,J. Furphy (OFS),rotowire
 2026-03-18,POR,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-03-18,POR,A. Nembhard,OUT,A. Nembhard (Out),rotowire
@@ -8312,6 +8311,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-18,POR,Obi Toppin,OUT,Obi Toppin (Out),rotowire
 2026-03-18,IND,J. Furphy,OFS,J. Furphy (OFS),rotowire
 2026-03-18,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
+2026-03-18,IND,I. Zubac,QUES,I. Zubac (Ques),rotowire
 2026-03-18,IND,A. Nembhard,OUT,A. Nembhard (Out),rotowire
 2026-03-18,IND,M. Potter,OUT,M. Potter (Out),rotowire
 2026-03-18,IND,P. Siakam,OUT,P. Siakam (Out),rotowire

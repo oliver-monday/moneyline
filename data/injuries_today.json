@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-18",
-  "built_at_utc": "2026-03-19T01:19:40Z",
+  "built_at_utc": "2026-03-19T03:36:03Z",
   "source": "rotowire",
   "GSW": [
     {
@@ -63,6 +63,11 @@
       "details": "S. Sharpe (Out)"
     },
     {
+      "name": "I. Zubac",
+      "status": "QUES",
+      "details": "I. Zubac (Ques)"
+    },
+    {
       "name": "J. Furphy",
       "status": "OFS",
       "details": "J. Furphy (OFS)"
@@ -103,6 +108,11 @@
       "name": "T. Haliburton",
       "status": "OFS",
       "details": "T. Haliburton (OFS)"
+    },
+    {
+      "name": "I. Zubac",
+      "status": "QUES",
+      "details": "I. Zubac (Ques)"
     },
     {
       "name": "A. Nembhard",
