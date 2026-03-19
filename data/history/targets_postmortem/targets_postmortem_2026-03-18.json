@@ -6,7 +6,7 @@
     "misses": 4,
     "hit_rate_pct": 67,
     "top_targets_total": 6,
-    "top_targets_hits": 2
+    "top_targets_hits": 3
   },
   "hits": [
     {
@@ -298,7 +298,7 @@
       "actual": 4
     }
   ],
-  "built_at_utc": "2026-03-19T09:15:05Z",
+  "built_at_utc": "2026-03-19T14:42:47Z",
   "snapshot_file": "targets_snapshot_2026-03-18.json",
   "preset": "baseline",
   "top_targets": [
@@ -403,31 +403,6 @@
     },
     {
       "asof_date": "2026-03-18",
-      "player_id": "2991070.0",
-      "player_name": "Jerami Grant",
-      "team_abbrev": "POR",
-      "opp": "IND",
-      "game_id": "401810856",
-      "stat": "3pt",
-      "threshold": 2,
-      "hits": 9,
-      "window_games": 10,
-      "hit_rate": 0.9,
-      "is_home_game": false,
-      "rest_days": 1,
-      "is_b2b": false,
-      "share_trend_pp": 4.251451163215875,
-      "share_trend_dir": "UP",
-      "iqr_10": 1.0,
-      "landmine_rate_10": null,
-      "trap_risk": null,
-      "dnp": false,
-      "actual": 0,
-      "hit": false,
-      "delta": 2
-    },
-    {
-      "asof_date": "2026-03-18",
       "player_id": "4869342.0",
       "player_name": "Dyson Daniels",
       "team_abbrev": "ATL",
@@ -450,6 +425,31 @@
       "actual": 6,
       "hit": true,
       "delta": 0
+    },
+    {
+      "asof_date": "2026-03-18",
+      "player_id": "5041939.0",
+      "player_name": "Cooper Flagg",
+      "team_abbrev": "DAL",
+      "opp": "ATL",
+      "game_id": "401810861",
+      "stat": "ast",
+      "threshold": 4,
+      "hits": 9,
+      "window_games": 10,
+      "hit_rate": 0.9,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 5.360268345308395,
+      "share_trend_dir": "UP",
+      "iqr_10": 1.75,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false,
+      "dnp": false,
+      "actual": 5,
+      "hit": true,
+      "delta": -1
     }
   ]
 }
