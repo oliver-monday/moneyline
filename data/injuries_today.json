@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-19",
-  "built_at_utc": "2026-03-19T19:49:11Z",
+  "built_at_utc": "2026-03-19T20:35:19Z",
   "source": "rotowire",
   "DET": [
     {
@@ -487,11 +487,6 @@
       "details": "K. Oubre (Out)"
     },
     {
-      "name": "N. Clifford",
-      "status": "QUES",
-      "details": "N. Clifford (Ques)"
-    },
-    {
       "name": "D. Eubanks",
       "status": "OFS",
       "details": "D. Eubanks (OFS)"
@@ -512,14 +507,14 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "M. Monk",
-      "status": "QUES",
-      "details": "M. Monk (Ques)"
-    },
-    {
       "name": "D. Carter",
       "status": "OUT",
       "details": "D. Carter (Out)"
+    },
+    {
+      "name": "N. Clifford",
+      "status": "OUT",
+      "details": "N. Clifford (Out)"
     },
     {
       "name": "K. Murray",
@@ -549,19 +544,14 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "N. Clifford",
-      "status": "QUES",
-      "details": "N. Clifford (Ques)"
-    },
-    {
-      "name": "M. Monk",
-      "status": "QUES",
-      "details": "M. Monk (Ques)"
-    },
-    {
       "name": "D. Carter",
       "status": "OUT",
       "details": "D. Carter (Out)"
+    },
+    {
+      "name": "N. Clifford",
+      "status": "OUT",
+      "details": "N. Clifford (Out)"
     },
     {
       "name": "K. Murray",
