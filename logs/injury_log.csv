@@ -8394,8 +8394,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-19,LAL,B. Adebayo,PROB,B. Adebayo (Prob),rotowire
 2026-03-19,MIA,B. Adebayo,PROB,B. Adebayo (Prob),rotowire
 2026-03-19,LAC,N. Batum,PROB,N. Batum (Prob),rotowire
-2026-03-19,PHI,M. Monk,QUES,M. Monk (Ques),rotowire
-2026-03-19,SAC,M. Monk,QUES,M. Monk (Ques),rotowire
 2026-03-19,CLE,C. Sexton,PROB,C. Sexton (Prob),rotowire
 2026-03-19,CHI,C. Sexton,PROB,C. Sexton (Prob),rotowire
 2026-03-19,LAL,L. Doncic,QUES,L. Doncic (Ques),rotowire
@@ -8499,6 +8497,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-19,PHI,D. Eubanks,OFS,D. Eubanks (OFS),rotowire
 2026-03-19,PHI,D. Hunter,OFS,D. Hunter (OFS),rotowire
 2026-03-19,PHI,Z. LaVine,OFS,Z. LaVine (OFS),rotowire
+2026-03-19,PHI,M. Monk,QUES,M. Monk (Ques),rotowire
 2026-03-19,PHI,D. Sabonis,OFS,D. Sabonis (OFS),rotowire
 2026-03-19,PHI,D. Carter,OUT,D. Carter (Out),rotowire
 2026-03-19,PHI,N. Clifford,OUT,N. Clifford (Out),rotowire
@@ -8506,6 +8505,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-19,SAC,D. Eubanks,OFS,D. Eubanks (OFS),rotowire
 2026-03-19,SAC,D. Hunter,OFS,D. Hunter (OFS),rotowire
 2026-03-19,SAC,Z. LaVine,OFS,Z. LaVine (OFS),rotowire
+2026-03-19,SAC,M. Monk,QUES,M. Monk (Ques),rotowire
 2026-03-19,SAC,D. Sabonis,OFS,D. Sabonis (OFS),rotowire
 2026-03-19,SAC,D. Carter,OUT,D. Carter (Out),rotowire
 2026-03-19,SAC,N. Clifford,OUT,N. Clifford (Out),rotowire
