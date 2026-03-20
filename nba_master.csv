@@ -1053,8 +1053,8 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810869,2026-03-19,2026-03-20T01:00Z,Utah Jazz,UTAH,128,195.0,,Milwaukee Bucks,MIL,96,-238.0,,Salt Lake City,UT,,
 401810870,2026-03-19,2026-03-20T02:00Z,Sacramento Kings,SAC,118,120.0,,Philadelphia 76ers,PHI,139,-142.0,,Sacramento,CA,,
 401810871,2026-03-20,2026-03-20T23:30Z,Brooklyn Nets,BKN,0,1000.0,,New York Knicks,NY,0,-1800.0,,Brooklyn,NY,Egor Demin (OFS); D. Sharpe (OFS); N. Clowney (Out); M. Porter (Out),Josh Hart (Out); M. McBride (Out)
-401810872,2026-03-20,2026-03-20T23:30Z,Detroit Pistons,DET,0,-245.0,,Golden State Warriors,GS,0,200.0,,Detroit,MI,C. Cunningham (Out); I. Stewart (Out),J. Butler (OFS); S. Curry (Out); Seth Curry (Out); Al Horford (Out); M. Moody (Out)
-401810873,2026-03-20,2026-03-21T00:00Z,Houston Rockets,HOU,0,-166.0,,Atlanta Hawks,ATL,0,140.0,,Houston,TX,S. Adams (OFS); J. Tate (Out); F. VanVleet (Out),J. Kuminga (Out)
+401810872,2026-03-20,2026-03-20T23:30Z,Detroit Pistons,DET,0,-218.0,,Golden State Warriors,GS,0,180.0,,Detroit,MI,C. Cunningham (Out); W. Moore (Out); I. Stewart (Out),J. Butler (OFS); S. Curry (Out); Seth Curry (Out); Al Horford (Out); M. Moody (Out)
+401810873,2026-03-20,2026-03-21T00:00Z,Houston Rockets,HOU,0,-162.0,,Atlanta Hawks,ATL,0,136.0,,Houston,TX,S. Adams (OFS); J. Tate (Out); F. VanVleet (Out),J. Kuminga (Out)
 401810874,2026-03-20,2026-03-21T00:00Z,Memphis Grizzlies,MEM,0,750.0,,Boston Celtics,BOS,0,-1200.0,,Memphis,TN,S. Aldama (OFS); K. Caldwell-Pope (OFS); Zach Edey (OFS); S. Pippen (OFS); B. Clarke (Out); J. Mashack (Out); Ja Morant (Out),N. Vucevic (Out)
-401810875,2026-03-20,2026-03-21T00:00Z,Minnesota Timberwolves,MIN,0,-142.0,,Portland Trail Blazers,POR,0,120.0,,Minneapolis,MN,A. Edwards (Out),D. Lillard (OFS); S. Sharpe (Out)
-401810876,2026-03-20,2026-03-21T01:00Z,Denver Nuggets,DEN,0,-258.0,,Toronto Raptors,TOR,0,210.0,,Denver,CO,P. Watson (Out),C. Hepburn (Out)
+401810875,2026-03-20,2026-03-21T00:00Z,Minnesota Timberwolves,MIN,0,-135.0,,Portland Trail Blazers,POR,0,114.0,,Minneapolis,MN,A. Edwards (Out),D. Lillard (OFS); S. Sharpe (Out)
+401810876,2026-03-20,2026-03-21T01:00Z,Denver Nuggets,DEN,0,-278.0,,Toronto Raptors,TOR,0,225.0,,Denver,CO,P. Watson (Out),C. Hepburn (Out)

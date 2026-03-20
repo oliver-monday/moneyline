@@ -275,35 +275,10 @@
       "actual": 3
     }
   ],
-  "built_at_utc": "2026-03-20T09:07:33Z",
+  "built_at_utc": "2026-03-20T14:36:03Z",
   "snapshot_file": "targets_snapshot_2026-03-19.json",
   "preset": "baseline",
   "top_targets": [
-    {
-      "asof_date": "2026-03-19",
-      "player_id": "3945274.0",
-      "player_name": "Luka Doncic",
-      "team_abbrev": "LAL",
-      "opp": "MIA",
-      "game_id": "401810865",
-      "stat": "reb",
-      "threshold": 8,
-      "hits": 9,
-      "window_games": 10,
-      "hit_rate": 0.9,
-      "is_home_game": false,
-      "rest_days": 0,
-      "is_b2b": true,
-      "share_trend_pp": 3.7064300696552754,
-      "share_trend_dir": "UP",
-      "iqr_10": 1.75,
-      "landmine_rate_10": 0.0,
-      "trap_risk": false,
-      "dnp": false,
-      "actual": 7,
-      "hit": false,
-      "delta": 1
-    },
     {
       "asof_date": "2026-03-19",
       "player_id": "4432573.0",
@@ -427,6 +402,31 @@
       "actual": 3,
       "hit": false,
       "delta": 5
+    },
+    {
+      "asof_date": "2026-03-19",
+      "player_id": "4066320.0",
+      "player_name": "Desmond Bane",
+      "team_abbrev": "ORL",
+      "opp": "CHA",
+      "game_id": "401810863",
+      "stat": "ast",
+      "threshold": 4,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 1.5061644366427456,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 2.0,
+      "landmine_rate_10": 0.1,
+      "trap_risk": false,
+      "dnp": false,
+      "actual": 2,
+      "hit": false,
+      "delta": 2
     }
   ]
 }
