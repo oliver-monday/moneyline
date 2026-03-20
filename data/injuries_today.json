@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-20",
-  "built_at_utc": "2026-03-20T15:12:52Z",
+  "built_at_utc": "2026-03-20T17:27:59Z",
   "source": "rotowire",
   "GSW": [
     {
@@ -12,11 +12,6 @@
       "name": "L. Cryer",
       "status": "PROB",
       "details": "L. Cryer (Prob)"
-    },
-    {
-      "name": "Q. Post",
-      "status": "QUES",
-      "details": "Q. Post (Ques)"
     },
     {
       "name": "S. Curry",
@@ -39,6 +34,21 @@
       "details": "M. Moody (Out)"
     },
     {
+      "name": "Q. Post",
+      "status": "OUT",
+      "details": "Q. Post (Out)"
+    },
+    {
+      "name": "J. Duren",
+      "status": "QUES",
+      "details": "J. Duren (Ques)"
+    },
+    {
+      "name": "K. Huerter",
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
+    },
+    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
@@ -47,6 +57,11 @@
       "name": "W. Moore",
       "status": "OUT",
       "details": "W. Moore (Out)"
+    },
+    {
+      "name": "M. Sasser",
+      "status": "OUT",
+      "details": "M. Sasser (Out)"
     },
     {
       "name": "I. Stewart",
@@ -56,6 +71,16 @@
   ],
   "DET": [
     {
+      "name": "J. Duren",
+      "status": "QUES",
+      "details": "J. Duren (Ques)"
+    },
+    {
+      "name": "K. Huerter",
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
+    },
+    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
@@ -64,6 +89,11 @@
       "name": "W. Moore",
       "status": "OUT",
       "details": "W. Moore (Out)"
+    },
+    {
+      "name": "M. Sasser",
+      "status": "OUT",
+      "details": "M. Sasser (Out)"
     },
     {
       "name": "I. Stewart",
@@ -98,14 +128,14 @@
       "details": "D. Sharpe (OFS)"
     },
     {
-      "name": "T. Mann",
-      "status": "QUES",
-      "details": "T. Mann (Ques)"
-    },
-    {
       "name": "N. Clowney",
       "status": "OUT",
       "details": "N. Clowney (Out)"
+    },
+    {
+      "name": "T. Mann",
+      "status": "OUT",
+      "details": "T. Mann (Out)"
     },
     {
       "name": "M. Porter",
@@ -125,14 +155,14 @@
       "details": "D. Sharpe (OFS)"
     },
     {
-      "name": "T. Mann",
-      "status": "QUES",
-      "details": "T. Mann (Ques)"
-    },
-    {
       "name": "N. Clowney",
       "status": "OUT",
       "details": "N. Clowney (Out)"
+    },
+    {
+      "name": "T. Mann",
+      "status": "OUT",
+      "details": "T. Mann (Out)"
     },
     {
       "name": "M. Porter",
