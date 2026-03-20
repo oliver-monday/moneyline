@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-19",
-  "built_at_utc": "2026-03-19T23:32:54Z",
+  "built_at_utc": "2026-03-20T01:15:20Z",
   "source": "rotowire",
   "DET": [
     {
@@ -343,24 +343,14 @@
   ],
   "MIL": [
     {
-      "name": "K. Kuzma",
-      "status": "PROB",
-      "details": "K. Kuzma (Prob)"
-    },
-    {
-      "name": "K. Porter",
-      "status": "QUES",
-      "details": "K. Porter (Ques)"
-    },
-    {
-      "name": "M. Turner",
-      "status": "QUES",
-      "details": "M. Turner (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
+    },
+    {
+      "name": "K. Porter",
+      "status": "OUT",
+      "details": "K. Porter (Out)"
     },
     {
       "name": "J. Jackson",
@@ -378,11 +368,6 @@
       "details": "J. Nurkic (OFS)"
     },
     {
-      "name": "J. Konchar",
-      "status": "DOUBT",
-      "details": "J. Konchar (Doubt)"
-    },
-    {
       "name": "I. Collier",
       "status": "OUT",
       "details": "I. Collier (Out)"
@@ -391,6 +376,11 @@
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
+    },
+    {
+      "name": "J. Konchar",
+      "status": "OUT",
+      "details": "J. Konchar (Out)"
     },
     {
       "name": "L. Markkanen",
@@ -420,11 +410,6 @@
       "details": "J. Nurkic (OFS)"
     },
     {
-      "name": "J. Konchar",
-      "status": "DOUBT",
-      "details": "J. Konchar (Doubt)"
-    },
-    {
       "name": "I. Collier",
       "status": "OUT",
       "details": "I. Collier (Out)"
@@ -433,6 +418,11 @@
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
+    },
+    {
+      "name": "J. Konchar",
+      "status": "OUT",
+      "details": "J. Konchar (Out)"
     },
     {
       "name": "L. Markkanen",
