@@ -1,17 +1,12 @@
 {
   "asof_date": "2026-03-20",
-  "built_at_utc": "2026-03-20T21:18:44Z",
+  "built_at_utc": "2026-03-20T22:35:43Z",
   "source": "rotowire",
   "GSW": [
     {
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
-    },
-    {
-      "name": "L. Cryer",
-      "status": "PROB",
-      "details": "L. Cryer (Prob)"
     },
     {
       "name": "S. Curry",
@@ -102,11 +97,6 @@
     }
   ],
   "NYK": [
-    {
-      "name": "K. Towns",
-      "status": "QUES",
-      "details": "K. Towns (Ques)"
-    },
     {
       "name": "Josh Hart",
       "status": "OUT",
@@ -290,6 +280,11 @@
       "details": "B. Clarke (Out)"
     },
     {
+      "name": "C. Coward",
+      "status": "OUT",
+      "details": "C. Coward (Out)"
+    },
+    {
       "name": "J. Mashack",
       "status": "OUT",
       "details": "J. Mashack (Out)"
@@ -335,6 +330,11 @@
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
+    },
+    {
+      "name": "C. Coward",
+      "status": "OUT",
+      "details": "C. Coward (Out)"
     },
     {
       "name": "J. Mashack",
