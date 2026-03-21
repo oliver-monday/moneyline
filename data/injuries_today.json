@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-21",
-  "built_at_utc": "2026-03-21T19:29:44Z",
+  "built_at_utc": "2026-03-21T20:24:35Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -140,11 +140,6 @@
       "name": "K. Bufkin",
       "status": "QUES",
       "details": "K. Bufkin (Ques)"
-    },
-    {
-      "name": "A. Reaves",
-      "status": "QUES",
-      "details": "A. Reaves (Ques)"
     },
     {
       "name": "M. Kleber",
@@ -664,13 +659,8 @@
     },
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
-    {
-      "name": "R. O'Neale",
-      "status": "DOUBT",
-      "details": "R. O'Neale (Doubt)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "D. Brooks",
@@ -686,6 +676,11 @@
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
+    },
+    {
+      "name": "R. O'Neale",
+      "status": "OUT",
+      "details": "R. O'Neale (Out)"
     },
     {
       "name": "M. Williams",
@@ -696,13 +691,8 @@
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
-    {
-      "name": "R. O'Neale",
-      "status": "DOUBT",
-      "details": "R. O'Neale (Doubt)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "D. Brooks",
@@ -718,6 +708,11 @@
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
+    },
+    {
+      "name": "R. O'Neale",
+      "status": "OUT",
+      "details": "R. O'Neale (Out)"
     },
     {
       "name": "M. Williams",

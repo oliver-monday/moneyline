@@ -8606,6 +8606,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-21,ATL,J. Kuminga,QUES,J. Kuminga (Ques),rotowire
 2026-03-21,OKC,W. Riley,QUES,W. Riley (Ques),rotowire
 2026-03-21,WAS,W. Riley,QUES,W. Riley (Ques),rotowire
+2026-03-21,LAL,A. Reaves,QUES,A. Reaves (Ques),rotowire
 2026-03-21,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-03-21,OKC,B. Carlson,OUT,B. Carlson (Out),rotowire
 2026-03-21,OKC,L. Dort,OUT,L. Dort (Out),rotowire
@@ -8632,7 +8633,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-21,CLE,B. McGowens,OUT,B. McGowens (Out),rotowire
 2026-03-21,NOP,B. McGowens,OUT,B. McGowens (Out),rotowire
 2026-03-21,LAL,K. Bufkin,QUES,K. Bufkin (Ques),rotowire
-2026-03-21,LAL,A. Reaves,QUES,A. Reaves (Ques),rotowire
 2026-03-21,LAL,M. Kleber,OUT,M. Kleber (Out),rotowire
 2026-03-21,LAL,W. Carter,QUES,W. Carter (Ques),rotowire
 2026-03-21,LAL,A. Black,OUT,A. Black (Out),rotowire
@@ -8731,15 +8731,15 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-21,MIL,G. Harris,QUES,G. Harris (Ques),rotowire
 2026-03-21,MIL,K. Porter,QUES,K. Porter (Ques),rotowire
 2026-03-21,MIL,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
-2026-03-21,MIL,G. Allen,QUES,G. Allen (Ques),rotowire
-2026-03-21,MIL,R. O'Neale,DOUBT,R. O'Neale (Doubt),rotowire
+2026-03-21,MIL,G. Allen,OUT,G. Allen (Out),rotowire
 2026-03-21,MIL,D. Brooks,OUT,D. Brooks (Out),rotowire
 2026-03-21,MIL,A. Coffey,OUT,A. Coffey (Out),rotowire
 2026-03-21,MIL,H. Highsmith,OUT,H. Highsmith (Out),rotowire
+2026-03-21,MIL,R. O'Neale,OUT,R. O'Neale (Out),rotowire
 2026-03-21,MIL,M. Williams,OUT,M. Williams (Out),rotowire
-2026-03-21,PHX,G. Allen,QUES,G. Allen (Ques),rotowire
-2026-03-21,PHX,R. O'Neale,DOUBT,R. O'Neale (Doubt),rotowire
+2026-03-21,PHX,G. Allen,OUT,G. Allen (Out),rotowire
 2026-03-21,PHX,D. Brooks,OUT,D. Brooks (Out),rotowire
 2026-03-21,PHX,A. Coffey,OUT,A. Coffey (Out),rotowire
 2026-03-21,PHX,H. Highsmith,OUT,H. Highsmith (Out),rotowire
+2026-03-21,PHX,R. O'Neale,OUT,R. O'Neale (Out),rotowire
 2026-03-21,PHX,M. Williams,OUT,M. Williams (Out),rotowire
