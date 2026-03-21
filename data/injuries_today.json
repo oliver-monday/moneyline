@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-20",
-  "built_at_utc": "2026-03-21T03:13:43Z",
+  "built_at_utc": "2026-03-21T03:55:08Z",
   "source": "rotowire",
   "GSW": [
     {
@@ -355,25 +355,25 @@
   "TOR": [
     {
       "name": "C. Hepburn",
-      "status": "OUT",
-      "details": "C. Hepburn (Out)"
+      "status": "DOUBT",
+      "details": "C. Hepburn (Doubt)"
     },
     {
       "name": "C. Murray-Boyles",
-      "status": "OUT",
-      "details": "C. Murray-Boyles (Out)"
+      "status": "QUES",
+      "details": "C. Murray-Boyles (Ques)"
     },
     {
       "name": "P. Watson",
-      "status": "OUT",
-      "details": "P. Watson (Out)"
+      "status": "QUES",
+      "details": "P. Watson (Ques)"
     }
   ],
   "DEN": [
     {
       "name": "P. Watson",
-      "status": "OUT",
-      "details": "P. Watson (Out)"
+      "status": "QUES",
+      "details": "P. Watson (Ques)"
     }
   ]
 }
