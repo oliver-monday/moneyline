@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-21",
-  "built_at_utc": "2026-03-21T22:32:24Z",
+  "built_at_utc": "2026-03-21T23:28:28Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -235,26 +235,6 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "D. Green",
-      "status": "QUES",
-      "details": "D. Green (Ques)"
-    },
-    {
-      "name": "M. Leons",
-      "status": "QUES",
-      "details": "M. Leons (Ques)"
-    },
-    {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
-    },
-    {
-      "name": "Q. Post",
-      "status": "QUES",
-      "details": "Q. Post (Ques)"
-    },
-    {
       "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
@@ -299,14 +279,14 @@
   ],
   "MIA": [
     {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
-    },
-    {
       "name": "J. Jaquez",
       "status": "OUT",
       "details": "J. Jaquez (Out)"
+    },
+    {
+      "name": "N. Powell",
+      "status": "OUT",
+      "details": "N. Powell (Out)"
     },
     {
       "name": "T. Rozier",
@@ -324,11 +304,6 @@
       "details": "S. Adams (OFS)"
     },
     {
-      "name": "J. Tate",
-      "status": "PROB",
-      "details": "J. Tate (Prob)"
-    },
-    {
       "name": "F. VanVleet",
       "status": "OUT",
       "details": "F. VanVleet (Out)"
@@ -339,11 +314,6 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
-    },
-    {
-      "name": "J. Tate",
-      "status": "PROB",
-      "details": "J. Tate (Prob)"
     },
     {
       "name": "F. VanVleet",
@@ -366,46 +336,6 @@
       "name": "I. Zubac",
       "status": "OFS",
       "details": "I. Zubac (OFS)"
-    },
-    {
-      "name": "Q. Jackson",
-      "status": "QUES",
-      "details": "Q. Jackson (Ques)"
-    },
-    {
-      "name": "T. McConnell",
-      "status": "QUES",
-      "details": "T. McConnell (Ques)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
-    },
-    {
-      "name": "A. Nesmith",
-      "status": "QUES",
-      "details": "A. Nesmith (Ques)"
-    },
-    {
-      "name": "M. Potter",
-      "status": "QUES",
-      "details": "M. Potter (Ques)"
-    },
-    {
-      "name": "B. Sheppard",
-      "status": "QUES",
-      "details": "B. Sheppard (Ques)"
-    },
-    {
-      "name": "P. Siakam",
-      "status": "QUES",
-      "details": "P. Siakam (Ques)"
-    },
-    {
-      "name": "O. Toppin",
-      "status": "QUES",
-      "details": "O. Toppin (Ques)"
     },
     {
       "name": "V. Wembanyama",
@@ -452,11 +382,6 @@
       "details": "Y. Niederhauser (OFS)"
     },
     {
-      "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
-    },
-    {
       "name": "B. Mathurin",
       "status": "OUT",
       "details": "B. Mathurin (Out)"
@@ -473,8 +398,8 @@
     },
     {
       "name": "C. Martin",
-      "status": "QUES",
-      "details": "C. Martin (Ques)"
+      "status": "OUT",
+      "details": "C. Martin (Out)"
     },
     {
       "name": "B. Williams",
@@ -495,8 +420,8 @@
     },
     {
       "name": "C. Martin",
-      "status": "QUES",
-      "details": "C. Martin (Ques)"
+      "status": "OUT",
+      "details": "C. Martin (Out)"
     },
     {
       "name": "B. Williams",
