@@ -1,0 +1,8 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-20,2026,Jalen Brunson,NY,BKN,ast,6,HIT,8,,targets_snapshot_2026-03-20.json
+2026-03-20,2026,Nickeil Alexander-Walker,ATL,HOU,3pt,3,MISSED,1,,targets_snapshot_2026-03-20.json
+2026-03-20,2026,RJ Barrett,TOR,DEN,pts,20,MISSED,18,,targets_snapshot_2026-03-20.json
+2026-03-20,2026,Toumani Camara,POR,MIN,ast,2,MISSED,0,,targets_snapshot_2026-03-20.json
+2026-03-20,2026,Jerami Grant,POR,MIN,3pt,2,HIT,4,,targets_snapshot_2026-03-20.json
+2026-03-20,2026,Dyson Daniels,ATL,HOU,reb,6,MISSED,3,,targets_snapshot_2026-03-20.json
+2026-03-20,2026,Karl-Anthony Towns,NY,BKN,reb,12,HIT,15,,targets_snapshot_2026-03-20.json
