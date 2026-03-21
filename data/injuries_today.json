@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-21",
-  "built_at_utc": "2026-03-21T18:32:52Z",
+  "built_at_utc": "2026-03-21T19:29:44Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -24,16 +24,6 @@
       "details": "J. Williams (Out)"
     },
     {
-      "name": "T. Johnson",
-      "status": "QUES",
-      "details": "T. Johnson (Ques)"
-    },
-    {
-      "name": "W. Riley",
-      "status": "QUES",
-      "details": "W. Riley (Ques)"
-    },
-    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
@@ -52,6 +42,11 @@
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
+    },
+    {
+      "name": "T. Johnson",
+      "status": "OUT",
+      "details": "T. Johnson (Out)"
     },
     {
       "name": "D. Russell",
@@ -71,16 +66,6 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "T. Johnson",
-      "status": "QUES",
-      "details": "T. Johnson (Ques)"
-    },
-    {
-      "name": "W. Riley",
-      "status": "QUES",
-      "details": "W. Riley (Ques)"
-    },
-    {
       "name": "L. Black",
       "status": "OUT",
       "details": "L. Black (Out)"
@@ -94,6 +79,11 @@
       "name": "K. George",
       "status": "OUT",
       "details": "K. George (Out)"
+    },
+    {
+      "name": "T. Johnson",
+      "status": "OUT",
+      "details": "T. Johnson (Out)"
     },
     {
       "name": "D. Russell",
@@ -146,6 +136,11 @@
     }
   ],
   "LAL": [
+    {
+      "name": "K. Bufkin",
+      "status": "QUES",
+      "details": "K. Bufkin (Ques)"
+    },
     {
       "name": "A. Reaves",
       "status": "QUES",
@@ -347,6 +342,11 @@
       "details": "A. Wiggins (Out)"
     },
     {
+      "name": "A. Sengun",
+      "status": "QUES",
+      "details": "A. Sengun (Ques)"
+    },
+    {
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
@@ -367,6 +367,11 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "A. Sengun",
+      "status": "QUES",
+      "details": "A. Sengun (Ques)"
     },
     {
       "name": "J. Tate",
