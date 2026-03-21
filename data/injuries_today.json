@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-03-20",
-  "built_at_utc": "2026-03-20T23:31:53Z",
+  "built_at_utc": "2026-03-21T01:10:40Z",
   "source": "rotowire",
   "GSW": [
     {
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
+    },
+    {
+      "name": "K. Porzingis",
+      "status": "QUES",
+      "details": "K. Porzingis (Ques)"
     },
     {
       "name": "S. Curry",
@@ -339,14 +344,14 @@
   ],
   "TOR": [
     {
-      "name": "C. Murray-Boyles",
-      "status": "DOUBT",
-      "details": "C. Murray-Boyles (Doubt)"
-    },
-    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "C. Murray-Boyles",
+      "status": "OUT",
+      "details": "C. Murray-Boyles (Out)"
     },
     {
       "name": "P. Watson",
