@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-21",
-  "built_at_utc": "2026-03-21T17:16:04Z",
+  "built_at_utc": "2026-03-21T18:32:52Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -216,6 +216,11 @@
       "details": "Zach Edey (OFS)"
     },
     {
+      "name": "D. Jarreau",
+      "status": "QUES",
+      "details": "D. Jarreau (Ques)"
+    },
+    {
       "name": "S. Pippen",
       "status": "OFS",
       "details": "S. Pippen (OFS)"
@@ -318,18 +323,6 @@
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
-    },
-    {
-      "name": "J. Kuminga",
-      "status": "QUES",
-      "details": "J. Kuminga (Ques)"
-    }
-  ],
-  "ATL": [
-    {
-      "name": "J. Kuminga",
-      "status": "QUES",
-      "details": "J. Kuminga (Ques)"
     }
   ],
   "MIA": [
@@ -360,8 +353,8 @@
     },
     {
       "name": "J. Tate",
-      "status": "OUT",
-      "details": "J. Tate (Out)"
+      "status": "PROB",
+      "details": "J. Tate (Prob)"
     },
     {
       "name": "F. VanVleet",
@@ -377,8 +370,8 @@
     },
     {
       "name": "J. Tate",
-      "status": "OUT",
-      "details": "J. Tate (Out)"
+      "status": "PROB",
+      "details": "J. Tate (Prob)"
     },
     {
       "name": "F. VanVleet",
@@ -567,8 +560,8 @@
     },
     {
       "name": "J. Konchar",
-      "status": "QUES",
-      "details": "J. Konchar (Ques)"
+      "status": "PROB",
+      "details": "J. Konchar (Prob)"
     },
     {
       "name": "J. Jackson",
@@ -624,8 +617,8 @@
     },
     {
       "name": "J. Konchar",
-      "status": "QUES",
-      "details": "J. Konchar (Ques)"
+      "status": "PROB",
+      "details": "J. Konchar (Prob)"
     },
     {
       "name": "I. Collier",
