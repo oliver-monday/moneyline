@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-20",
-  "built_at_utc": "2026-03-21T01:10:40Z",
+  "built_at_utc": "2026-03-21T03:13:43Z",
   "source": "rotowire",
   "GSW": [
     {
@@ -9,9 +9,19 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "K. Porzingis",
+      "name": "M. Leons",
       "status": "QUES",
-      "details": "K. Porzingis (Ques)"
+      "details": "M. Leons (Ques)"
+    },
+    {
+      "name": "K. Porzingis",
+      "status": "DOUBT",
+      "details": "K. Porzingis (Doubt)"
+    },
+    {
+      "name": "Q. Post",
+      "status": "QUES",
+      "details": "Q. Post (Ques)"
     },
     {
       "name": "S. Curry",
@@ -34,29 +44,24 @@
       "details": "M. Moody (Out)"
     },
     {
-      "name": "Q. Post",
-      "status": "OUT",
-      "details": "Q. Post (Out)"
+      "name": "K. Huerter",
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
+    },
+    {
+      "name": "W. Moore",
+      "status": "QUES",
+      "details": "W. Moore (Ques)"
+    },
+    {
+      "name": "M. Sasser",
+      "status": "QUES",
+      "details": "M. Sasser (Ques)"
     },
     {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
-    },
-    {
-      "name": "K. Huerter",
-      "status": "OUT",
-      "details": "K. Huerter (Out)"
-    },
-    {
-      "name": "W. Moore",
-      "status": "OUT",
-      "details": "W. Moore (Out)"
-    },
-    {
-      "name": "M. Sasser",
-      "status": "OUT",
-      "details": "M. Sasser (Out)"
     },
     {
       "name": "I. Stewart",
@@ -66,24 +71,24 @@
   ],
   "DET": [
     {
-      "name": "C. Cunningham",
-      "status": "OUT",
-      "details": "C. Cunningham (Out)"
-    },
-    {
       "name": "K. Huerter",
-      "status": "OUT",
-      "details": "K. Huerter (Out)"
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
     },
     {
       "name": "W. Moore",
-      "status": "OUT",
-      "details": "W. Moore (Out)"
+      "status": "QUES",
+      "details": "W. Moore (Ques)"
     },
     {
       "name": "M. Sasser",
+      "status": "QUES",
+      "details": "M. Sasser (Ques)"
+    },
+    {
+      "name": "C. Cunningham",
       "status": "OUT",
-      "details": "M. Sasser (Out)"
+      "details": "C. Cunningham (Out)"
     },
     {
       "name": "I. Stewart",
@@ -93,9 +98,14 @@
   ],
   "NYK": [
     {
-      "name": "Josh Hart",
-      "status": "OUT",
-      "details": "Josh Hart (Out)"
+      "name": "J. Hart",
+      "status": "QUES",
+      "details": "J. Hart (Ques)"
+    },
+    {
+      "name": "L. Shamet",
+      "status": "QUES",
+      "details": "L. Shamet (Ques)"
     },
     {
       "name": "M. McBride",
@@ -103,24 +113,24 @@
       "details": "M. McBride (Out)"
     },
     {
+      "name": "N. Clowney",
+      "status": "DOUBT",
+      "details": "N. Clowney (Doubt)"
+    },
+    {
       "name": "Egor Demin",
       "status": "OFS",
       "details": "Egor Demin (OFS)"
     },
     {
+      "name": "T. Mann",
+      "status": "QUES",
+      "details": "T. Mann (Ques)"
+    },
+    {
       "name": "D. Sharpe",
       "status": "OFS",
       "details": "D. Sharpe (OFS)"
-    },
-    {
-      "name": "N. Clowney",
-      "status": "OUT",
-      "details": "N. Clowney (Out)"
-    },
-    {
-      "name": "T. Mann",
-      "status": "OUT",
-      "details": "T. Mann (Out)"
     },
     {
       "name": "M. Porter",
@@ -130,24 +140,24 @@
   ],
   "BKN": [
     {
+      "name": "N. Clowney",
+      "status": "DOUBT",
+      "details": "N. Clowney (Doubt)"
+    },
+    {
       "name": "Egor Demin",
       "status": "OFS",
       "details": "Egor Demin (OFS)"
     },
     {
+      "name": "T. Mann",
+      "status": "QUES",
+      "details": "T. Mann (Ques)"
+    },
+    {
       "name": "D. Sharpe",
       "status": "OFS",
       "details": "D. Sharpe (OFS)"
-    },
-    {
-      "name": "N. Clowney",
-      "status": "OUT",
-      "details": "N. Clowney (Out)"
-    },
-    {
-      "name": "T. Mann",
-      "status": "OUT",
-      "details": "T. Mann (Out)"
     },
     {
       "name": "M. Porter",
@@ -158,8 +168,8 @@
   "ATL": [
     {
       "name": "J. Kuminga",
-      "status": "OUT",
-      "details": "J. Kuminga (Out)"
+      "status": "QUES",
+      "details": "J. Kuminga (Ques)"
     },
     {
       "name": "S. Adams",
@@ -196,14 +206,14 @@
   ],
   "POR": [
     {
+      "name": "V. Krejci",
+      "status": "QUES",
+      "details": "V. Krejci (Ques)"
+    },
+    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "Vit Krejci",
-      "status": "OUT",
-      "details": "Vit Krejci (Out)"
     },
     {
       "name": "S. Sharpe",
@@ -211,26 +221,26 @@
       "details": "S. Sharpe (Out)"
     },
     {
+      "name": "N. Reid",
+      "status": "QUES",
+      "details": "N. Reid (Ques)"
+    },
+    {
       "name": "A. Edwards",
       "status": "OUT",
       "details": "A. Edwards (Out)"
-    },
-    {
-      "name": "Naz Reid",
-      "status": "OUT",
-      "details": "Naz Reid (Out)"
     }
   ],
   "MIN": [
     {
+      "name": "N. Reid",
+      "status": "QUES",
+      "details": "N. Reid (Ques)"
+    },
+    {
       "name": "A. Edwards",
       "status": "OUT",
       "details": "A. Edwards (Out)"
-    },
-    {
-      "name": "Naz Reid",
-      "status": "OUT",
-      "details": "Naz Reid (Out)"
     }
   ],
   "BOS": [
@@ -250,9 +260,34 @@
       "details": "K. Caldwell-Pope (OFS)"
     },
     {
+      "name": "C. Coward",
+      "status": "QUES",
+      "details": "C. Coward (Ques)"
+    },
+    {
       "name": "Zach Edey",
       "status": "OFS",
       "details": "Zach Edey (OFS)"
+    },
+    {
+      "name": "T. Gibson",
+      "status": "QUES",
+      "details": "T. Gibson (Ques)"
+    },
+    {
+      "name": "G. Jackson",
+      "status": "QUES",
+      "details": "G. Jackson (Ques)"
+    },
+    {
+      "name": "J. Mashack",
+      "status": "QUES",
+      "details": "J. Mashack (Ques)"
+    },
+    {
+      "name": "J. Morant",
+      "status": "DOUBT",
+      "details": "J. Morant (Doubt)"
     },
     {
       "name": "S. Pippen",
@@ -263,31 +298,6 @@
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "OUT",
-      "details": "C. Coward (Out)"
-    },
-    {
-      "name": "Taj Gibson",
-      "status": "OUT",
-      "details": "Taj Gibson (Out)"
-    },
-    {
-      "name": "GG Jackson",
-      "status": "OUT",
-      "details": "GG Jackson (Out)"
-    },
-    {
-      "name": "J. Mashack",
-      "status": "OUT",
-      "details": "J. Mashack (Out)"
-    },
-    {
-      "name": "Ja Morant",
-      "status": "OUT",
-      "details": "Ja Morant (Out)"
     }
   ],
   "MEM": [
@@ -302,9 +312,34 @@
       "details": "K. Caldwell-Pope (OFS)"
     },
     {
+      "name": "C. Coward",
+      "status": "QUES",
+      "details": "C. Coward (Ques)"
+    },
+    {
       "name": "Zach Edey",
       "status": "OFS",
       "details": "Zach Edey (OFS)"
+    },
+    {
+      "name": "T. Gibson",
+      "status": "QUES",
+      "details": "T. Gibson (Ques)"
+    },
+    {
+      "name": "G. Jackson",
+      "status": "QUES",
+      "details": "G. Jackson (Ques)"
+    },
+    {
+      "name": "J. Mashack",
+      "status": "QUES",
+      "details": "J. Mashack (Ques)"
+    },
+    {
+      "name": "J. Morant",
+      "status": "DOUBT",
+      "details": "J. Morant (Doubt)"
     },
     {
       "name": "S. Pippen",
@@ -315,31 +350,6 @@
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "OUT",
-      "details": "C. Coward (Out)"
-    },
-    {
-      "name": "Taj Gibson",
-      "status": "OUT",
-      "details": "Taj Gibson (Out)"
-    },
-    {
-      "name": "GG Jackson",
-      "status": "OUT",
-      "details": "GG Jackson (Out)"
-    },
-    {
-      "name": "J. Mashack",
-      "status": "OUT",
-      "details": "J. Mashack (Out)"
-    },
-    {
-      "name": "Ja Morant",
-      "status": "OUT",
-      "details": "Ja Morant (Out)"
     }
   ],
   "TOR": [
