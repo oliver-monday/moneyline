@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-21",
-  "built_at_utc": "2026-03-21T08:53:00Z",
+  "built_at_utc": "2026-03-21T14:51:15Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -142,14 +142,14 @@
   ],
   "LAL": [
     {
-      "name": "M. Kleber",
-      "status": "DOUBT",
-      "details": "M. Kleber (Doubt)"
-    },
-    {
       "name": "A. Reaves",
       "status": "QUES",
       "details": "A. Reaves (Ques)"
+    },
+    {
+      "name": "M. Kleber",
+      "status": "OUT",
+      "details": "M. Kleber (Out)"
     },
     {
       "name": "W. Carter",
@@ -229,6 +229,11 @@
       "name": "G. Jackson",
       "status": "QUES",
       "details": "G. Jackson (Ques)"
+    },
+    {
+      "name": "T. Jerome",
+      "status": "QUES",
+      "details": "T. Jerome (Ques)"
     },
     {
       "name": "J. Mashack",
