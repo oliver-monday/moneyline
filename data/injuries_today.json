@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-21",
-  "built_at_utc": "2026-03-21T21:13:38Z",
+  "built_at_utc": "2026-03-21T22:32:24Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -98,16 +98,6 @@
   ],
   "CLE": [
     {
-      "name": "D. Mitchell",
-      "status": "QUES",
-      "details": "D. Mitchell (Ques)"
-    },
-    {
-      "name": "J. Tyson",
-      "status": "DOUBT",
-      "details": "J. Tyson (Doubt)"
-    },
-    {
       "name": "J. Allen",
       "status": "OUT",
       "details": "J. Allen (Out)"
@@ -123,6 +113,11 @@
       "details": "T. Proctor (Out)"
     },
     {
+      "name": "J. Tyson",
+      "status": "OUT",
+      "details": "J. Tyson (Out)"
+    },
+    {
       "name": "B. McGowens",
       "status": "OUT",
       "details": "B. McGowens (Out)"
@@ -136,11 +131,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "K. Bufkin",
-      "status": "QUES",
-      "details": "K. Bufkin (Ques)"
-    },
     {
       "name": "M. Kleber",
       "status": "OUT",
@@ -201,21 +191,6 @@
       "details": "S. Pippen (OFS)"
     },
     {
-      "name": "G. Jackson",
-      "status": "QUES",
-      "details": "G. Jackson (Ques)"
-    },
-    {
-      "name": "D. Jarreau",
-      "status": "QUES",
-      "details": "D. Jarreau (Ques)"
-    },
-    {
-      "name": "T. Jerome",
-      "status": "DOUBT",
-      "details": "T. Jerome (Doubt)"
-    },
-    {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
@@ -224,6 +199,11 @@
       "name": "C. Coward",
       "status": "OUT",
       "details": "C. Coward (Out)"
+    },
+    {
+      "name": "Ty Jerome",
+      "status": "OUT",
+      "details": "Ty Jerome (Out)"
     },
     {
       "name": "J. Mashack",
@@ -270,11 +250,6 @@
       "details": "D. Melton (Ques)"
     },
     {
-      "name": "G. Payton",
-      "status": "QUES",
-      "details": "G. Payton (Ques)"
-    },
-    {
       "name": "Q. Post",
       "status": "QUES",
       "details": "Q. Post (Ques)"
@@ -300,9 +275,26 @@
       "details": "M. Moody (Out)"
     },
     {
+      "name": "G. Payton",
+      "status": "OUT",
+      "details": "G. Payton (Out)"
+    },
+    {
       "name": "K. Porzingis",
       "status": "OUT",
       "details": "K. Porzingis (Out)"
+    },
+    {
+      "name": "J. Johnson",
+      "status": "OUT",
+      "details": "J. Johnson (Out)"
+    }
+  ],
+  "ATL": [
+    {
+      "name": "J. Johnson",
+      "status": "OUT",
+      "details": "J. Johnson (Out)"
     }
   ],
   "MIA": [
@@ -325,11 +317,6 @@
       "name": "A. Wiggins",
       "status": "OUT",
       "details": "A. Wiggins (Out)"
-    },
-    {
-      "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
     },
     {
       "name": "S. Adams",
@@ -357,11 +344,6 @@
       "name": "J. Tate",
       "status": "PROB",
       "details": "J. Tate (Prob)"
-    },
-    {
-      "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
     },
     {
       "name": "F. VanVleet",
