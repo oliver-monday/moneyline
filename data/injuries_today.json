@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-21",
-  "built_at_utc": "2026-03-21T20:24:35Z",
+  "built_at_utc": "2026-03-21T21:13:38Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -147,11 +147,6 @@
       "details": "M. Kleber (Out)"
     },
     {
-      "name": "W. Carter",
-      "status": "QUES",
-      "details": "W. Carter (Ques)"
-    },
-    {
       "name": "A. Black",
       "status": "OUT",
       "details": "A. Black (Out)"
@@ -168,11 +163,6 @@
     }
   ],
   "ORL": [
-    {
-      "name": "W. Carter",
-      "status": "QUES",
-      "details": "W. Carter (Ques)"
-    },
     {
       "name": "A. Black",
       "status": "OUT",
@@ -206,11 +196,6 @@
       "details": "Zach Edey (OFS)"
     },
     {
-      "name": "D. Jarreau",
-      "status": "QUES",
-      "details": "D. Jarreau (Ques)"
-    },
-    {
       "name": "S. Pippen",
       "status": "OFS",
       "details": "S. Pippen (OFS)"
@@ -219,6 +204,11 @@
       "name": "G. Jackson",
       "status": "QUES",
       "details": "G. Jackson (Ques)"
+    },
+    {
+      "name": "D. Jarreau",
+      "status": "QUES",
+      "details": "D. Jarreau (Ques)"
     },
     {
       "name": "T. Jerome",
@@ -364,14 +354,14 @@
       "details": "S. Adams (OFS)"
     },
     {
-      "name": "A. Sengun",
-      "status": "QUES",
-      "details": "A. Sengun (Ques)"
-    },
-    {
       "name": "J. Tate",
       "status": "PROB",
       "details": "J. Tate (Prob)"
+    },
+    {
+      "name": "A. Sengun",
+      "status": "QUES",
+      "details": "A. Sengun (Ques)"
     },
     {
       "name": "F. VanVleet",
