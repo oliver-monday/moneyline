@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-21",
-  "built_at_utc": "2026-03-21T14:51:15Z",
+  "built_at_utc": "2026-03-21T17:16:04Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -12,6 +12,11 @@
       "name": "B. Carlson",
       "status": "OUT",
       "details": "B. Carlson (Out)"
+    },
+    {
+      "name": "L. Dort",
+      "status": "OUT",
+      "details": "L. Dort (Out)"
     },
     {
       "name": "J. Williams",
@@ -109,8 +114,8 @@
     },
     {
       "name": "J. Tyson",
-      "status": "QUES",
-      "details": "J. Tyson (Ques)"
+      "status": "DOUBT",
+      "details": "J. Tyson (Doubt)"
     },
     {
       "name": "J. Allen",
@@ -216,39 +221,34 @@
       "details": "S. Pippen (OFS)"
     },
     {
-      "name": "C. Coward",
-      "status": "QUES",
-      "details": "C. Coward (Ques)"
-    },
-    {
-      "name": "T. Gibson",
-      "status": "QUES",
-      "details": "T. Gibson (Ques)"
-    },
-    {
       "name": "G. Jackson",
       "status": "QUES",
       "details": "G. Jackson (Ques)"
     },
     {
       "name": "T. Jerome",
-      "status": "QUES",
-      "details": "T. Jerome (Ques)"
-    },
-    {
-      "name": "J. Mashack",
-      "status": "QUES",
-      "details": "J. Mashack (Ques)"
-    },
-    {
-      "name": "J. Morant",
       "status": "DOUBT",
-      "details": "J. Morant (Doubt)"
+      "details": "T. Jerome (Doubt)"
     },
     {
       "name": "B. Clarke",
       "status": "OUT",
       "details": "B. Clarke (Out)"
+    },
+    {
+      "name": "C. Coward",
+      "status": "OUT",
+      "details": "C. Coward (Out)"
+    },
+    {
+      "name": "J. Mashack",
+      "status": "OUT",
+      "details": "J. Mashack (Out)"
+    },
+    {
+      "name": "Ja Morant",
+      "status": "OUT",
+      "details": "Ja Morant (Out)"
     },
     {
       "name": "T. Salaun",
@@ -270,19 +270,29 @@
       "details": "J. Butler (OFS)"
     },
     {
+      "name": "D. Green",
+      "status": "QUES",
+      "details": "D. Green (Ques)"
+    },
+    {
       "name": "M. Leons",
       "status": "QUES",
       "details": "M. Leons (Ques)"
     },
     {
+      "name": "D. Melton",
+      "status": "QUES",
+      "details": "D. Melton (Ques)"
+    },
+    {
+      "name": "G. Payton",
+      "status": "QUES",
+      "details": "G. Payton (Ques)"
+    },
+    {
       "name": "Q. Post",
       "status": "QUES",
       "details": "Q. Post (Ques)"
-    },
-    {
-      "name": "K. Porzingis",
-      "status": "DOUBT",
-      "details": "K. Porzingis (Doubt)"
     },
     {
       "name": "S. Curry",
@@ -305,6 +315,11 @@
       "details": "M. Moody (Out)"
     },
     {
+      "name": "K. Porzingis",
+      "status": "OUT",
+      "details": "K. Porzingis (Out)"
+    },
+    {
       "name": "J. Kuminga",
       "status": "QUES",
       "details": "J. Kuminga (Ques)"
@@ -319,14 +334,9 @@
   ],
   "MIA": [
     {
-      "name": "S. Fontecchio",
+      "name": "N. Powell",
       "status": "QUES",
-      "details": "S. Fontecchio (Ques)"
-    },
-    {
-      "name": "P. Larsson",
-      "status": "QUES",
-      "details": "P. Larsson (Ques)"
+      "details": "N. Powell (Ques)"
     },
     {
       "name": "J. Jaquez",
@@ -433,14 +443,19 @@
       "details": "O. Toppin (Ques)"
     },
     {
-      "name": "S. Castle",
+      "name": "V. Wembanyama",
       "status": "QUES",
-      "details": "S. Castle (Ques)"
+      "details": "V. Wembanyama (Ques)"
     },
     {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "S. Castle",
+      "status": "OUT",
+      "details": "S. Castle (Out)"
     }
   ],
   "SAS": [
@@ -450,9 +465,14 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "S. Castle",
+      "name": "V. Wembanyama",
       "status": "QUES",
-      "details": "S. Castle (Ques)"
+      "details": "V. Wembanyama (Ques)"
+    },
+    {
+      "name": "S. Castle",
+      "status": "OUT",
+      "details": "S. Castle (Out)"
     }
   ],
   "LAC": [
