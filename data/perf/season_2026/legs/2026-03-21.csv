@@ -1,0 +1,15 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-21,2026,Luka Doncic,LAL,ORL,reb,8,MISSED,5,,targets_snapshot_2026-03-21.json
+2026-03-21,2026,Luka Doncic,LAL,ORL,3pt,4,MISSED,3,,targets_snapshot_2026-03-21.json
+2026-03-21,2026,Jalen Johnson,ATL,GS,3pt,2,,,,targets_snapshot_2026-03-21.json
+2026-03-21,2026,Paolo Banchero,ORL,LAL,3pt,1,MISSED,0,,targets_snapshot_2026-03-21.json
+2026-03-21,2026,Trey Murphy III,NO,CLE,3pt,3,MISSED,2,,targets_snapshot_2026-03-21.json
+2026-03-21,2026,James Harden,CLE,NO,reb,4,HIT,6,,targets_snapshot_2026-03-21.json
+2026-03-21,2026,Devin Booker,PHX,MIL,pts,25,MISSED,14,,targets_snapshot_2026-03-21.json
+2026-03-21,2026,Anthony Davis,DAL,LAC,ast,2,,,,targets_snapshot_2026-03-21.json
+2026-03-21,2026,Jalen Green,PHX,MIL,pts,15,HIT,24,,targets_snapshot_2026-03-21.json
+2026-03-21,2026,Jalen Green,PHX,MIL,ast,2,HIT,2,,targets_snapshot_2026-03-21.json
+2026-03-21,2026,Devin Vassell,SA,IND,ast,2,MISSED,,,targets_snapshot_2026-03-21.json
+2026-03-21,2026,Cooper Flagg,DAL,LAC,ast,4,HIT,8,,targets_snapshot_2026-03-21.json
+2026-03-21,2026,Chet Holmgren,OKC,WSH,reb,8,HIT,10,,targets_snapshot_2026-03-21.json
+2026-03-21,2026,Kawhi Leonard,LAC,DAL,pts,25,HIT,34,,targets_snapshot_2026-03-21.json
