@@ -8659,6 +8659,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-21,CLE,J. Tyson,OUT,J. Tyson (Out),rotowire
 2026-03-21,CLE,B. McGowens,OUT,B. McGowens (Out),rotowire
 2026-03-21,NOP,B. McGowens,OUT,B. McGowens (Out),rotowire
+2026-03-21,LAL,L. Doncic,OUT,L. Doncic (Out),rotowire
 2026-03-21,LAL,M. Kleber,OUT,M. Kleber (Out),rotowire
 2026-03-21,LAL,A. Black,OUT,A. Black (Out),rotowire
 2026-03-21,LAL,J. Isaac,OUT,J. Isaac (Out),rotowire
@@ -8714,6 +8715,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-21,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
 2026-03-21,DAL,C. Martin,OUT,C. Martin (Out),rotowire
 2026-03-21,DAL,B. Williams,OUT,B. Williams (Out),rotowire
+2026-03-21,PHI,D. Barlow,QUES,D. Barlow (Ques),rotowire
 2026-03-21,PHI,J. Broome,OUT,J. Broome (Out),rotowire
 2026-03-21,PHI,J. Embiid,OUT,J. Embiid (Out),rotowire
 2026-03-21,PHI,P. George,OUT,P. George (Out),rotowire

@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-21",
-  "built_at_utc": "2026-03-22T01:19:24Z",
+  "built_at_utc": "2026-03-22T03:34:09Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -131,6 +131,11 @@
     }
   ],
   "LAL": [
+    {
+      "name": "L. Doncic",
+      "status": "OUT",
+      "details": "L. Doncic (Out)"
+    },
     {
       "name": "M. Kleber",
       "status": "OUT",
@@ -430,6 +435,11 @@
     }
   ],
   "PHI": [
+    {
+      "name": "D. Barlow",
+      "status": "QUES",
+      "details": "D. Barlow (Ques)"
+    },
     {
       "name": "J. Broome",
       "status": "OUT",
