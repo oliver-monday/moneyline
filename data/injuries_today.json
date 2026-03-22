@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-22",
-  "built_at_utc": "2026-03-22T19:30:51Z",
+  "built_at_utc": "2026-03-22T20:25:14Z",
   "source": "rotowire",
   "POR": [
     {
@@ -10,30 +10,18 @@
     },
     {
       "name": "J. Grant",
-      "status": "QUES",
-      "details": "J. Grant (Ques)"
+      "status": "OUT",
+      "details": "J. Grant (Out)"
     },
     {
-      "name": "V. Krejci",
-      "status": "QUES",
-      "details": "V. Krejci (Ques)"
+      "name": "Vit Krejci",
+      "status": "OUT",
+      "details": "Vit Krejci (Out)"
     },
     {
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
-    },
-    {
-      "name": "P. Watson",
-      "status": "QUES",
-      "details": "P. Watson (Ques)"
-    }
-  ],
-  "DEN": [
-    {
-      "name": "P. Watson",
-      "status": "QUES",
-      "details": "P. Watson (Ques)"
     }
   ],
   "BKN": [
@@ -46,11 +34,6 @@
       "name": "D. Sharpe",
       "status": "OFS",
       "details": "D. Sharpe (OFS)"
-    },
-    {
-      "name": "T. Mann",
-      "status": "PROB",
-      "details": "T. Mann (Prob)"
     },
     {
       "name": "N. Claxton",
@@ -281,23 +264,23 @@
     },
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
-    {
-      "name": "A. Coffey",
-      "status": "QUES",
-      "details": "A. Coffey (Ques)"
-    },
-    {
-      "name": "H. Highsmith",
-      "status": "QUES",
-      "details": "H. Highsmith (Ques)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "D. Brooks",
       "status": "OUT",
       "details": "D. Brooks (Out)"
+    },
+    {
+      "name": "A. Coffey",
+      "status": "OUT",
+      "details": "A. Coffey (Out)"
+    },
+    {
+      "name": "H. Highsmith",
+      "status": "OUT",
+      "details": "H. Highsmith (Out)"
     },
     {
       "name": "M. Williams",
@@ -307,29 +290,29 @@
   ],
   "PHX": [
     {
-      "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
-    {
-      "name": "A. Coffey",
-      "status": "QUES",
-      "details": "A. Coffey (Ques)"
-    },
-    {
-      "name": "H. Highsmith",
-      "status": "QUES",
-      "details": "H. Highsmith (Ques)"
-    },
-    {
       "name": "R. O'Neale",
       "status": "QUES",
       "details": "R. O'Neale (Ques)"
     },
     {
+      "name": "G. Allen",
+      "status": "OUT",
+      "details": "G. Allen (Out)"
+    },
+    {
       "name": "D. Brooks",
       "status": "OUT",
       "details": "D. Brooks (Out)"
+    },
+    {
+      "name": "A. Coffey",
+      "status": "OUT",
+      "details": "A. Coffey (Out)"
+    },
+    {
+      "name": "H. Highsmith",
+      "status": "OUT",
+      "details": "H. Highsmith (Out)"
     },
     {
       "name": "M. Williams",
