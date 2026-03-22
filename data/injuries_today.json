@@ -1,17 +1,17 @@
 {
   "asof_date": "2026-03-22",
-  "built_at_utc": "2026-03-22T08:54:08Z",
+  "built_at_utc": "2026-03-22T14:51:57Z",
   "source": "rotowire",
   "POR": [
-    {
-      "name": "J. Grant",
-      "status": "QUES",
-      "details": "J. Grant (Ques)"
-    },
     {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "J. Grant",
+      "status": "QUES",
+      "details": "J. Grant (Ques)"
     },
     {
       "name": "V. Krejci",
@@ -98,6 +98,11 @@
       "details": "K. Murray (Out)"
     },
     {
+      "name": "I. Stevens",
+      "status": "OUT",
+      "details": "I. Stevens (Out)"
+    },
+    {
       "name": "R. Westbrook",
       "status": "OUT",
       "details": "R. Westbrook (Out)"
@@ -135,6 +140,11 @@
       "details": "K. Murray (Out)"
     },
     {
+      "name": "I. Stevens",
+      "status": "OUT",
+      "details": "I. Stevens (Out)"
+    },
+    {
       "name": "R. Westbrook",
       "status": "OUT",
       "details": "R. Westbrook (Out)"
@@ -147,9 +157,19 @@
       "details": "C. Whitmore (OFS)"
     },
     {
+      "name": "T. Johnson",
+      "status": "QUES",
+      "details": "T. Johnson (Ques)"
+    },
+    {
       "name": "L. Black",
-      "status": "OUT",
-      "details": "L. Black (Out)"
+      "status": "DOUBT",
+      "details": "L. Black (Doubt)"
+    },
+    {
+      "name": "T. Young",
+      "status": "DOUBT",
+      "details": "T. Young (Doubt)"
     },
     {
       "name": "A. Davis",
@@ -162,19 +182,9 @@
       "details": "K. George (Out)"
     },
     {
-      "name": "T. Johnson",
-      "status": "OUT",
-      "details": "T. Johnson (Out)"
-    },
-    {
       "name": "D. Russell",
       "status": "OUT",
       "details": "D. Russell (Out)"
-    },
-    {
-      "name": "Trae Young",
-      "status": "OUT",
-      "details": "Trae Young (Out)"
     },
     {
       "name": "J. Hart",
@@ -256,28 +266,28 @@
     },
     {
       "name": "R. O'Neale",
-      "status": "OUT",
-      "details": "R. O'Neale (Out)"
+      "status": "QUES",
+      "details": "R. O'Neale (Ques)"
     },
     {
       "name": "G. Allen",
-      "status": "OUT",
-      "details": "G. Allen (Out)"
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
+    },
+    {
+      "name": "A. Coffey",
+      "status": "QUES",
+      "details": "A. Coffey (Ques)"
+    },
+    {
+      "name": "H. Highsmith",
+      "status": "QUES",
+      "details": "H. Highsmith (Ques)"
     },
     {
       "name": "D. Brooks",
       "status": "OUT",
       "details": "D. Brooks (Out)"
-    },
-    {
-      "name": "A. Coffey",
-      "status": "OUT",
-      "details": "A. Coffey (Out)"
-    },
-    {
-      "name": "H. Highsmith",
-      "status": "OUT",
-      "details": "H. Highsmith (Out)"
     },
     {
       "name": "M. Williams",
@@ -288,28 +298,28 @@
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "OUT",
-      "details": "G. Allen (Out)"
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
+    },
+    {
+      "name": "A. Coffey",
+      "status": "QUES",
+      "details": "A. Coffey (Ques)"
+    },
+    {
+      "name": "H. Highsmith",
+      "status": "QUES",
+      "details": "H. Highsmith (Ques)"
+    },
+    {
+      "name": "R. O'Neale",
+      "status": "QUES",
+      "details": "R. O'Neale (Ques)"
     },
     {
       "name": "D. Brooks",
       "status": "OUT",
       "details": "D. Brooks (Out)"
-    },
-    {
-      "name": "A. Coffey",
-      "status": "OUT",
-      "details": "A. Coffey (Out)"
-    },
-    {
-      "name": "H. Highsmith",
-      "status": "OUT",
-      "details": "H. Highsmith (Out)"
-    },
-    {
-      "name": "R. O'Neale",
-      "status": "OUT",
-      "details": "R. O'Neale (Out)"
     },
     {
       "name": "M. Williams",
