@@ -8636,9 +8636,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-21,PHI,J. Konchar,PROB,J. Konchar (Prob),rotowire
 2026-03-21,UTA,J. Konchar,PROB,J. Konchar (Prob),rotowire
 2026-03-21,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
+2026-03-21,OKC,J. Williams,QUES,J. Williams (Ques),rotowire
 2026-03-21,OKC,B. Carlson,OUT,B. Carlson (Out),rotowire
 2026-03-21,OKC,L. Dort,OUT,L. Dort (Out),rotowire
-2026-03-21,OKC,J. Williams,OUT,J. Williams (Out),rotowire
 2026-03-21,OKC,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
 2026-03-21,OKC,L. Black,OUT,L. Black (Out),rotowire
 2026-03-21,OKC,A. Davis,OUT,A. Davis (Out),rotowire
@@ -8735,6 +8735,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-21,UTA,K. George,OUT,K. George (Out),rotowire
 2026-03-21,UTA,L. Markkanen,OUT,L. Markkanen (Out),rotowire
 2026-03-21,UTA,B. Sensabaugh,OUT,B. Sensabaugh (Out),rotowire
+2026-03-21,MIL,K. Kuzma,QUES,K. Kuzma (Ques),rotowire
 2026-03-21,MIL,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
 2026-03-21,MIL,G. Harris,OUT,G. Harris (Out),rotowire
 2026-03-21,MIL,K. Porter,OUT,K. Porter (Out),rotowire

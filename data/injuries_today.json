@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-03-21",
-  "built_at_utc": "2026-03-22T03:34:09Z",
+  "built_at_utc": "2026-03-22T04:09:41Z",
   "source": "rotowire",
   "OKC": [
     {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "QUES",
+      "details": "J. Williams (Ques)"
     },
     {
       "name": "B. Carlson",
@@ -17,11 +22,6 @@
       "name": "L. Dort",
       "status": "OUT",
       "details": "L. Dort (Out)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "OUT",
-      "details": "J. Williams (Out)"
     },
     {
       "name": "C. Whitmore",
@@ -539,6 +539,11 @@
     }
   ],
   "MIL": [
+    {
+      "name": "K. Kuzma",
+      "status": "QUES",
+      "details": "K. Kuzma (Ques)"
+    },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
