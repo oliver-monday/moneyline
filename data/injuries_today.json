@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-21",
-  "built_at_utc": "2026-03-21T23:28:28Z",
+  "built_at_utc": "2026-03-22T01:19:24Z",
   "source": "rotowire",
   "OKC": [
     {
@@ -338,11 +338,6 @@
       "details": "I. Zubac (OFS)"
     },
     {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
-    },
-    {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
@@ -351,6 +346,11 @@
       "name": "S. Castle",
       "status": "OUT",
       "details": "S. Castle (Out)"
+    },
+    {
+      "name": "D. Vassell",
+      "status": "OUT",
+      "details": "D. Vassell (Out)"
     }
   ],
   "SAS": [
@@ -360,14 +360,14 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
-    },
-    {
       "name": "S. Castle",
       "status": "OUT",
       "details": "S. Castle (Out)"
+    },
+    {
+      "name": "D. Vassell",
+      "status": "OUT",
+      "details": "D. Vassell (Out)"
     }
   ],
   "LAC": [
@@ -456,11 +456,6 @@
       "details": "K. Oubre (Out)"
     },
     {
-      "name": "J. Konchar",
-      "status": "PROB",
-      "details": "J. Konchar (Prob)"
-    },
-    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -513,11 +508,6 @@
       "details": "J. Nurkic (OFS)"
     },
     {
-      "name": "J. Konchar",
-      "status": "PROB",
-      "details": "J. Konchar (Prob)"
-    },
-    {
       "name": "I. Collier",
       "status": "OUT",
       "details": "I. Collier (Out)"
@@ -540,19 +530,24 @@
   ],
   "MIL": [
     {
-      "name": "G. Harris",
-      "status": "QUES",
-      "details": "G. Harris (Ques)"
-    },
-    {
-      "name": "K. Porter",
-      "status": "QUES",
-      "details": "K. Porter (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
+    },
+    {
+      "name": "G. Harris",
+      "status": "OUT",
+      "details": "G. Harris (Out)"
+    },
+    {
+      "name": "K. Porter",
+      "status": "OUT",
+      "details": "K. Porter (Out)"
+    },
+    {
+      "name": "B. Portis",
+      "status": "OUT",
+      "details": "B. Portis (Out)"
     },
     {
       "name": "G. Allen",

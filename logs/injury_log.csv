@@ -8631,6 +8631,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-21,IND,P. Siakam,QUES,P. Siakam (Ques),rotowire
 2026-03-21,IND,O. Toppin,QUES,O. Toppin (Ques),rotowire
 2026-03-21,LAC,K. Leonard,QUES,K. Leonard (Ques),rotowire
+2026-03-21,IND,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
+2026-03-21,SAS,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
+2026-03-21,PHI,J. Konchar,PROB,J. Konchar (Prob),rotowire
+2026-03-21,UTA,J. Konchar,PROB,J. Konchar (Prob),rotowire
 2026-03-21,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-03-21,OKC,B. Carlson,OUT,B. Carlson (Out),rotowire
 2026-03-21,OKC,L. Dort,OUT,L. Dort (Out),rotowire
@@ -8693,12 +8697,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-21,IND,J. Furphy,OFS,J. Furphy (OFS),rotowire
 2026-03-21,IND,T. Haliburton,OFS,T. Haliburton (OFS),rotowire
 2026-03-21,IND,I. Zubac,OFS,I. Zubac (OFS),rotowire
-2026-03-21,IND,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
 2026-03-21,IND,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-03-21,IND,S. Castle,OUT,S. Castle (Out),rotowire
+2026-03-21,IND,D. Vassell,OUT,D. Vassell (Out),rotowire
 2026-03-21,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
-2026-03-21,SAS,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
 2026-03-21,SAS,S. Castle,OUT,S. Castle (Out),rotowire
+2026-03-21,SAS,D. Vassell,OUT,D. Vassell (Out),rotowire
 2026-03-21,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-03-21,LAC,Y. Niederhauser,OFS,Y. Niederhauser (OFS),rotowire
 2026-03-21,LAC,B. Mathurin,OUT,B. Mathurin (Out),rotowire
@@ -8715,7 +8719,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-21,PHI,P. George,OUT,P. George (Out),rotowire
 2026-03-21,PHI,T. Maxey,OUT,T. Maxey (Out),rotowire
 2026-03-21,PHI,K. Oubre,OUT,K. Oubre (Out),rotowire
-2026-03-21,PHI,J. Konchar,PROB,J. Konchar (Prob),rotowire
 2026-03-21,PHI,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-03-21,PHI,W. Kessler,OFS,W. Kessler (OFS),rotowire
 2026-03-21,PHI,J. Nurkic,OFS,J. Nurkic (OFS),rotowire
@@ -8726,14 +8729,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-21,UTA,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-03-21,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
 2026-03-21,UTA,J. Nurkic,OFS,J. Nurkic (OFS),rotowire
-2026-03-21,UTA,J. Konchar,PROB,J. Konchar (Prob),rotowire
 2026-03-21,UTA,I. Collier,OUT,I. Collier (Out),rotowire
 2026-03-21,UTA,K. George,OUT,K. George (Out),rotowire
 2026-03-21,UTA,L. Markkanen,OUT,L. Markkanen (Out),rotowire
 2026-03-21,UTA,B. Sensabaugh,OUT,B. Sensabaugh (Out),rotowire
-2026-03-21,MIL,G. Harris,QUES,G. Harris (Ques),rotowire
-2026-03-21,MIL,K. Porter,QUES,K. Porter (Ques),rotowire
 2026-03-21,MIL,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
+2026-03-21,MIL,G. Harris,OUT,G. Harris (Out),rotowire
+2026-03-21,MIL,K. Porter,OUT,K. Porter (Out),rotowire
+2026-03-21,MIL,B. Portis,OUT,B. Portis (Out),rotowire
 2026-03-21,MIL,G. Allen,OUT,G. Allen (Out),rotowire
 2026-03-21,MIL,D. Brooks,OUT,D. Brooks (Out),rotowire
 2026-03-21,MIL,A. Coffey,OUT,A. Coffey (Out),rotowire
