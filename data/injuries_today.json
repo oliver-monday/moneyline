@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-22",
-  "built_at_utc": "2026-03-22T21:14:53Z",
+  "built_at_utc": "2026-03-22T22:32:52Z",
   "source": "rotowire",
   "POR": [
     {
@@ -71,14 +71,14 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "D. Plowden",
-      "status": "QUES",
-      "details": "D. Plowden (Ques)"
-    },
-    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "D. Plowden",
+      "status": "OUT",
+      "details": "D. Plowden (Out)"
     },
     {
       "name": "I. Stevens",
@@ -113,14 +113,14 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "D. Plowden",
-      "status": "QUES",
-      "details": "D. Plowden (Ques)"
-    },
-    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "D. Plowden",
+      "status": "OUT",
+      "details": "D. Plowden (Out)"
     },
     {
       "name": "I. Stevens",
@@ -138,11 +138,6 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "L. Black",
-      "status": "OUT",
-      "details": "L. Black (Out)"
     },
     {
       "name": "J. Champagnie",
@@ -180,9 +175,9 @@
       "details": "Trae Young (Out)"
     },
     {
-      "name": "J. Hart",
+      "name": "K. McCullar",
       "status": "QUES",
-      "details": "J. Hart (Ques)"
+      "details": "K. McCullar (Ques)"
     },
     {
       "name": "M. McBride",
@@ -197,9 +192,9 @@
   ],
   "NYK": [
     {
-      "name": "J. Hart",
+      "name": "K. McCullar",
       "status": "QUES",
-      "details": "J. Hart (Ques)"
+      "details": "K. McCullar (Ques)"
     },
     {
       "name": "M. McBride",
