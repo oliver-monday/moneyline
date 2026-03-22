@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-22",
-  "built_at_utc": "2026-03-22T17:16:17Z",
+  "built_at_utc": "2026-03-22T18:34:14Z",
   "source": "rotowire",
   "POR": [
     {
@@ -160,6 +160,11 @@
       "name": "L. Black",
       "status": "OUT",
       "details": "L. Black (Out)"
+    },
+    {
+      "name": "J. Champagnie",
+      "status": "OUT",
+      "details": "J. Champagnie (Out)"
     },
     {
       "name": "A. Davis",
