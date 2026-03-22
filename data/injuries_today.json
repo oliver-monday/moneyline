@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-22",
-  "built_at_utc": "2026-03-22T14:51:57Z",
+  "built_at_utc": "2026-03-22T17:16:17Z",
   "source": "rotowire",
   "POR": [
     {
@@ -157,19 +157,9 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "T. Johnson",
-      "status": "QUES",
-      "details": "T. Johnson (Ques)"
-    },
-    {
       "name": "L. Black",
-      "status": "DOUBT",
-      "details": "L. Black (Doubt)"
-    },
-    {
-      "name": "T. Young",
-      "status": "DOUBT",
-      "details": "T. Young (Doubt)"
+      "status": "OUT",
+      "details": "L. Black (Out)"
     },
     {
       "name": "A. Davis",
@@ -182,9 +172,24 @@
       "details": "K. George (Out)"
     },
     {
+      "name": "T. Johnson",
+      "status": "OUT",
+      "details": "T. Johnson (Out)"
+    },
+    {
       "name": "D. Russell",
       "status": "OUT",
       "details": "D. Russell (Out)"
+    },
+    {
+      "name": "Alex Sarr",
+      "status": "OUT",
+      "details": "Alex Sarr (Out)"
+    },
+    {
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     },
     {
       "name": "J. Hart",
