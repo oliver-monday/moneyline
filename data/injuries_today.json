@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-23",
-  "built_at_utc": "2026-03-23T19:50:41Z",
+  "built_at_utc": "2026-03-23T20:36:16Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -19,11 +19,6 @@
       "details": "M. Smart (Out)"
     },
     {
-      "name": "W. Moore",
-      "status": "QUES",
-      "details": "W. Moore (Ques)"
-    },
-    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
@@ -40,11 +35,6 @@
     }
   ],
   "DET": [
-    {
-      "name": "W. Moore",
-      "status": "QUES",
-      "details": "W. Moore (Ques)"
-    },
     {
       "name": "C. Cunningham",
       "status": "OUT",
@@ -616,29 +606,29 @@
       "details": "Danny Wolf (Out)"
     },
     {
-      "name": "J. Grant",
-      "status": "QUES",
-      "details": "J. Grant (Ques)"
-    },
-    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "V. Krejci",
-      "status": "QUES",
-      "details": "V. Krejci (Ques)"
+      "name": "J. Grant",
+      "status": "OUT",
+      "details": "J. Grant (Out)"
     },
     {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "name": "Vit Krejci",
+      "status": "OUT",
+      "details": "Vit Krejci (Out)"
     },
     {
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "OUT",
+      "details": "R. Williams (Out)"
     }
   ],
   "POR": [
@@ -649,23 +639,23 @@
     },
     {
       "name": "J. Grant",
-      "status": "QUES",
-      "details": "J. Grant (Ques)"
+      "status": "OUT",
+      "details": "J. Grant (Out)"
     },
     {
-      "name": "V. Krejci",
-      "status": "QUES",
-      "details": "V. Krejci (Ques)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "name": "Vit Krejci",
+      "status": "OUT",
+      "details": "Vit Krejci (Out)"
     },
     {
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "OUT",
+      "details": "R. Williams (Out)"
     }
   ],
   "MIL": [
