@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-23",
-  "built_at_utc": "2026-03-23T15:33:56Z",
+  "built_at_utc": "2026-03-23T17:41:25Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -10,18 +10,13 @@
     },
     {
       "name": "R. Hachimura",
-      "status": "QUES",
-      "details": "R. Hachimura (Ques)"
-    },
-    {
-      "name": "M. Kleber",
-      "status": "QUES",
-      "details": "M. Kleber (Ques)"
+      "status": "OUT",
+      "details": "R. Hachimura (Out)"
     },
     {
       "name": "M. Smart",
-      "status": "QUES",
-      "details": "M. Smart (Ques)"
+      "status": "OUT",
+      "details": "M. Smart (Out)"
     },
     {
       "name": "W. Moore",
@@ -73,29 +68,9 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "S. Castle",
-      "status": "QUES",
-      "details": "S. Castle (Ques)"
-    },
-    {
       "name": "D. Vassell",
       "status": "QUES",
       "details": "D. Vassell (Ques)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
-    },
-    {
-      "name": "A. Wiggins",
-      "status": "PROB",
-      "details": "A. Wiggins (Prob)"
-    },
-    {
-      "name": "J. Jaquez",
-      "status": "PROB",
-      "details": "J. Jaquez (Prob)"
     },
     {
       "name": "T. Rozier",
@@ -104,21 +79,6 @@
     }
   ],
   "MIA": [
-    {
-      "name": "J. Jaquez",
-      "status": "PROB",
-      "details": "J. Jaquez (Prob)"
-    },
-    {
-      "name": "A. Wiggins",
-      "status": "PROB",
-      "details": "A. Wiggins (Prob)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
-    },
     {
       "name": "T. Rozier",
       "status": "OUT",
@@ -216,9 +176,14 @@
       "details": "A. Mitchell (Out)"
     },
     {
+      "name": "Q. Grimes",
+      "status": "QUES",
+      "details": "Q. Grimes (Ques)"
+    },
+    {
       "name": "D. Barlow",
-      "status": "DOUBT",
-      "details": "D. Barlow (Doubt)"
+      "status": "QUES",
+      "details": "D. Barlow (Ques)"
     },
     {
       "name": "J. Broome",
@@ -249,8 +214,13 @@
   "PHI": [
     {
       "name": "D. Barlow",
-      "status": "DOUBT",
-      "details": "D. Barlow (Doubt)"
+      "status": "QUES",
+      "details": "D. Barlow (Ques)"
+    },
+    {
+      "name": "Q. Grimes",
+      "status": "QUES",
+      "details": "Q. Grimes (Ques)"
     },
     {
       "name": "J. Broome",
@@ -303,6 +273,11 @@
       "name": "T. Gibson",
       "status": "QUES",
       "details": "T. Gibson (Ques)"
+    },
+    {
+      "name": "J. Small",
+      "status": "QUES",
+      "details": "J. Small (Ques)"
     },
     {
       "name": "C. Spencer",
@@ -369,24 +344,24 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Ivey",
-      "status": "QUES",
-      "details": "J. Ivey (Ques)"
-    },
-    {
-      "name": "A. Simons",
-      "status": "QUES",
-      "details": "A. Simons (Ques)"
+      "name": "Jaden Ivey",
+      "status": "OUT",
+      "details": "Jaden Ivey (Out)"
     },
     {
       "name": "I. Okoro",
-      "status": "DOUBT",
-      "details": "I. Okoro (Doubt)"
+      "status": "OUT",
+      "details": "I. Okoro (Out)"
+    },
+    {
+      "name": "A. Simons",
+      "status": "OUT",
+      "details": "A. Simons (Out)"
     },
     {
       "name": "G. Yabusele",
-      "status": "DOUBT",
-      "details": "G. Yabusele (Doubt)"
+      "status": "OUT",
+      "details": "G. Yabusele (Out)"
     }
   ],
   "CHI": [
@@ -401,29 +376,29 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Ivey",
-      "status": "QUES",
-      "details": "J. Ivey (Ques)"
-    },
-    {
-      "name": "A. Simons",
-      "status": "QUES",
-      "details": "A. Simons (Ques)"
-    },
-    {
       "name": "J. Smith",
       "status": "QUES",
       "details": "J. Smith (Ques)"
     },
     {
+      "name": "Jaden Ivey",
+      "status": "OUT",
+      "details": "Jaden Ivey (Out)"
+    },
+    {
       "name": "I. Okoro",
-      "status": "DOUBT",
-      "details": "I. Okoro (Doubt)"
+      "status": "OUT",
+      "details": "I. Okoro (Out)"
+    },
+    {
+      "name": "A. Simons",
+      "status": "OUT",
+      "details": "A. Simons (Out)"
     },
     {
       "name": "G. Yabusele",
-      "status": "DOUBT",
-      "details": "G. Yabusele (Doubt)"
+      "status": "OUT",
+      "details": "G. Yabusele (Out)"
     }
   ],
   "TOR": [
@@ -617,8 +592,8 @@
     },
     {
       "name": "D. Wolf",
-      "status": "QUES",
-      "details": "D. Wolf (Ques)"
+      "status": "DOUBT",
+      "details": "D. Wolf (Doubt)"
     },
     {
       "name": "M. Porter",
@@ -641,6 +616,11 @@
       "details": "V. Krejci (Ques)"
     },
     {
+      "name": "R. Williams",
+      "status": "QUES",
+      "details": "R. Williams (Ques)"
+    },
+    {
       "name": "S. Sharpe",
       "status": "OUT",
       "details": "S. Sharpe (Out)"
@@ -661,6 +641,11 @@
       "name": "V. Krejci",
       "status": "QUES",
       "details": "V. Krejci (Ques)"
+    },
+    {
+      "name": "R. Williams",
+      "status": "QUES",
+      "details": "R. Williams (Ques)"
     },
     {
       "name": "S. Sharpe",
