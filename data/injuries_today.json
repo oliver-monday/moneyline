@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-23",
-  "built_at_utc": "2026-03-23T22:39:28Z",
+  "built_at_utc": "2026-03-23T23:35:32Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -393,11 +393,6 @@
       "details": "J. Nurkic (OFS)"
     },
     {
-      "name": "C. Williams",
-      "status": "DOUBT",
-      "details": "C. Williams (Doubt)"
-    },
-    {
       "name": "I. Collier",
       "status": "OUT",
       "details": "I. Collier (Out)"
@@ -411,6 +406,11 @@
       "name": "L. Markkanen",
       "status": "OUT",
       "details": "L. Markkanen (Out)"
+    },
+    {
+      "name": "C. Williams",
+      "status": "OUT",
+      "details": "C. Williams (Out)"
     }
   ],
   "UTA": [
@@ -430,11 +430,6 @@
       "details": "J. Nurkic (OFS)"
     },
     {
-      "name": "C. Williams",
-      "status": "DOUBT",
-      "details": "C. Williams (Doubt)"
-    },
-    {
       "name": "I. Collier",
       "status": "OUT",
       "details": "I. Collier (Out)"
@@ -448,6 +443,11 @@
       "name": "L. Markkanen",
       "status": "OUT",
       "details": "L. Markkanen (Out)"
+    },
+    {
+      "name": "C. Williams",
+      "status": "OUT",
+      "details": "C. Williams (Out)"
     }
   ],
   "GSW": [
