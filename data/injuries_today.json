@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-23",
-  "built_at_utc": "2026-03-23T18:51:41Z",
+  "built_at_utc": "2026-03-23T19:50:41Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -403,14 +403,14 @@
   ],
   "TOR": [
     {
-      "name": "C. Hepburn",
-      "status": "DOUBT",
-      "details": "C. Hepburn (Doubt)"
-    },
-    {
       "name": "C. Murray-Boyles",
       "status": "QUES",
       "details": "C. Murray-Boyles (Ques)"
+    },
+    {
+      "name": "C. Hepburn",
+      "status": "OUT",
+      "details": "C. Hepburn (Out)"
     },
     {
       "name": "J. Poeltl",
@@ -591,24 +591,29 @@
       "details": "D. Sharpe (OFS)"
     },
     {
-      "name": "N. Claxton",
-      "status": "QUES",
-      "details": "N. Claxton (Ques)"
-    },
-    {
       "name": "N. Clowney",
-      "status": "QUES",
-      "details": "N. Clowney (Ques)"
+      "status": "OUT",
+      "details": "N. Clowney (Out)"
     },
     {
-      "name": "D. Wolf",
-      "status": "DOUBT",
-      "details": "D. Wolf (Doubt)"
+      "name": "T. Mann",
+      "status": "OUT",
+      "details": "T. Mann (Out)"
     },
     {
       "name": "M. Porter",
       "status": "OUT",
       "details": "M. Porter (Out)"
+    },
+    {
+      "name": "D. Powell",
+      "status": "OUT",
+      "details": "D. Powell (Out)"
+    },
+    {
+      "name": "Danny Wolf",
+      "status": "OUT",
+      "details": "Danny Wolf (Out)"
     },
     {
       "name": "J. Grant",
@@ -666,8 +671,8 @@
   "MIL": [
     {
       "name": "G. Harris",
-      "status": "PROB",
-      "details": "G. Harris (Prob)"
+      "status": "QUES",
+      "details": "G. Harris (Ques)"
     },
     {
       "name": "K. Kuzma",
@@ -691,8 +696,8 @@
     },
     {
       "name": "J. Collins",
-      "status": "PROB",
-      "details": "J. Collins (Prob)"
+      "status": "QUES",
+      "details": "J. Collins (Ques)"
     },
     {
       "name": "B. Beal",
@@ -723,8 +728,8 @@
     },
     {
       "name": "J. Collins",
-      "status": "PROB",
-      "details": "J. Collins (Prob)"
+      "status": "QUES",
+      "details": "J. Collins (Ques)"
     },
     {
       "name": "K. Leonard",
