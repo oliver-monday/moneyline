@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-22",
-  "built_at_utc": "2026-03-23T01:19:54Z",
+  "built_at_utc": "2026-03-23T03:38:20Z",
   "source": "rotowire",
   "POR": [
     {
@@ -160,14 +160,29 @@
   ],
   "WAS": [
     {
+      "name": "T. Johnson",
+      "status": "QUES",
+      "details": "T. Johnson (Ques)"
+    },
+    {
+      "name": "A. Sarr",
+      "status": "QUES",
+      "details": "A. Sarr (Ques)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "QUES",
+      "details": "T. Vukcevic (Ques)"
+    },
+    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "J. Champagnie",
-      "status": "OUT",
-      "details": "J. Champagnie (Out)"
+      "name": "T. Young",
+      "status": "QUES",
+      "details": "T. Young (Ques)"
     },
     {
       "name": "A. Davis",
@@ -180,53 +195,38 @@
       "details": "K. George (Out)"
     },
     {
-      "name": "T. Johnson",
-      "status": "OUT",
-      "details": "T. Johnson (Out)"
-    },
-    {
       "name": "D. Russell",
       "status": "OUT",
       "details": "D. Russell (Out)"
     },
     {
-      "name": "Alex Sarr",
-      "status": "OUT",
-      "details": "Alex Sarr (Out)"
-    },
-    {
-      "name": "Trae Young",
-      "status": "OUT",
-      "details": "Trae Young (Out)"
+      "name": "L. Shamet",
+      "status": "QUES",
+      "details": "L. Shamet (Ques)"
     },
     {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
-    },
-    {
-      "name": "L. Shamet",
-      "status": "OUT",
-      "details": "L. Shamet (Out)"
     }
   ],
   "NYK": [
     {
+      "name": "L. Shamet",
+      "status": "QUES",
+      "details": "L. Shamet (Ques)"
+    },
+    {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
-    },
-    {
-      "name": "L. Shamet",
-      "status": "OUT",
-      "details": "L. Shamet (Out)"
     }
   ],
   "MIN": [
     {
       "name": "A. Edwards",
-      "status": "OUT",
-      "details": "A. Edwards (Out)"
+      "status": "DOUBT",
+      "details": "A. Edwards (Doubt)"
     },
     {
       "name": "N. Vucevic",
@@ -244,38 +244,38 @@
   "TOR": [
     {
       "name": "C. Hepburn",
-      "status": "OUT",
-      "details": "C. Hepburn (Out)"
+      "status": "DOUBT",
+      "details": "C. Hepburn (Doubt)"
     },
     {
       "name": "C. Murray-Boyles",
-      "status": "OUT",
-      "details": "C. Murray-Boyles (Out)"
+      "status": "QUES",
+      "details": "C. Murray-Boyles (Ques)"
     },
     {
       "name": "G. Allen",
-      "status": "OUT",
-      "details": "G. Allen (Out)"
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
     },
     {
       "name": "D. Brooks",
-      "status": "OUT",
-      "details": "D. Brooks (Out)"
+      "status": "DOUBT",
+      "details": "D. Brooks (Doubt)"
     },
     {
       "name": "A. Coffey",
-      "status": "OUT",
-      "details": "A. Coffey (Out)"
+      "status": "QUES",
+      "details": "A. Coffey (Ques)"
     },
     {
       "name": "H. Highsmith",
-      "status": "OUT",
-      "details": "H. Highsmith (Out)"
+      "status": "QUES",
+      "details": "H. Highsmith (Ques)"
     },
     {
       "name": "R. O'Neale",
-      "status": "OUT",
-      "details": "R. O'Neale (Out)"
+      "status": "QUES",
+      "details": "R. O'Neale (Ques)"
     },
     {
       "name": "M. Williams",
@@ -286,28 +286,28 @@
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "OUT",
-      "details": "G. Allen (Out)"
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
     },
     {
       "name": "D. Brooks",
-      "status": "OUT",
-      "details": "D. Brooks (Out)"
+      "status": "DOUBT",
+      "details": "D. Brooks (Doubt)"
     },
     {
       "name": "A. Coffey",
-      "status": "OUT",
-      "details": "A. Coffey (Out)"
+      "status": "QUES",
+      "details": "A. Coffey (Ques)"
     },
     {
       "name": "H. Highsmith",
-      "status": "OUT",
-      "details": "H. Highsmith (Out)"
+      "status": "QUES",
+      "details": "H. Highsmith (Ques)"
     },
     {
       "name": "R. O'Neale",
-      "status": "OUT",
-      "details": "R. O'Neale (Out)"
+      "status": "QUES",
+      "details": "R. O'Neale (Ques)"
     },
     {
       "name": "M. Williams",
