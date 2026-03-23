@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-23",
-  "built_at_utc": "2026-03-23T17:41:25Z",
+  "built_at_utc": "2026-03-23T18:51:41Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -413,9 +413,14 @@
       "details": "C. Murray-Boyles (Ques)"
     },
     {
-      "name": "C. Williams",
-      "status": "QUES",
-      "details": "C. Williams (Ques)"
+      "name": "J. Poeltl",
+      "status": "OUT",
+      "details": "J. Poeltl (Out)"
+    },
+    {
+      "name": "I. Quickley",
+      "status": "OUT",
+      "details": "I. Quickley (Out)"
     },
     {
       "name": "J. Jackson",
@@ -431,6 +436,11 @@
       "name": "J. Nurkic",
       "status": "OFS",
       "details": "J. Nurkic (OFS)"
+    },
+    {
+      "name": "C. Williams",
+      "status": "DOUBT",
+      "details": "C. Williams (Doubt)"
     },
     {
       "name": "I. Collier",
@@ -466,8 +476,8 @@
     },
     {
       "name": "C. Williams",
-      "status": "QUES",
-      "details": "C. Williams (Ques)"
+      "status": "DOUBT",
+      "details": "C. Williams (Doubt)"
     },
     {
       "name": "I. Collier",
