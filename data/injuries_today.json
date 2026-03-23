@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-23",
-  "built_at_utc": "2026-03-23T09:15:39Z",
+  "built_at_utc": "2026-03-23T15:33:56Z",
   "source": "rotowire",
   "LAL": [
     {
@@ -24,6 +24,11 @@
       "details": "M. Smart (Ques)"
     },
     {
+      "name": "W. Moore",
+      "status": "QUES",
+      "details": "W. Moore (Ques)"
+    },
+    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
@@ -40,6 +45,11 @@
     }
   ],
   "DET": [
+    {
+      "name": "W. Moore",
+      "status": "QUES",
+      "details": "W. Moore (Ques)"
+    },
     {
       "name": "C. Cunningham",
       "status": "OUT",
@@ -162,6 +172,11 @@
       "details": "J. Isaac (Out)"
     },
     {
+      "name": "J. Suggs",
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
+    },
+    {
       "name": "F. Wagner",
       "status": "OUT",
       "details": "F. Wagner (Out)"
@@ -177,6 +192,11 @@
       "name": "J. Isaac",
       "status": "OUT",
       "details": "J. Isaac (Out)"
+    },
+    {
+      "name": "J. Suggs",
+      "status": "OUT",
+      "details": "J. Suggs (Out)"
     },
     {
       "name": "F. Wagner",
@@ -418,6 +438,11 @@
       "details": "C. Murray-Boyles (Ques)"
     },
     {
+      "name": "C. Williams",
+      "status": "QUES",
+      "details": "C. Williams (Ques)"
+    },
+    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -463,6 +488,11 @@
       "name": "J. Nurkic",
       "status": "OFS",
       "details": "J. Nurkic (OFS)"
+    },
+    {
+      "name": "C. Williams",
+      "status": "QUES",
+      "details": "C. Williams (Ques)"
     },
     {
       "name": "I. Collier",

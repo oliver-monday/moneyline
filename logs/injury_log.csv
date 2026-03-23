@@ -8830,9 +8830,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-23,LAL,R. Hachimura,QUES,R. Hachimura (Ques),rotowire
 2026-03-23,LAL,M. Kleber,QUES,M. Kleber (Ques),rotowire
 2026-03-23,LAL,M. Smart,QUES,M. Smart (Ques),rotowire
+2026-03-23,LAL,W. Moore,QUES,W. Moore (Ques),rotowire
 2026-03-23,LAL,C. Cunningham,OUT,C. Cunningham (Out),rotowire
 2026-03-23,LAL,M. Sasser,OUT,M. Sasser (Out),rotowire
 2026-03-23,LAL,I. Stewart,OUT,I. Stewart (Out),rotowire
+2026-03-23,DET,W. Moore,QUES,W. Moore (Ques),rotowire
 2026-03-23,DET,C. Cunningham,OUT,C. Cunningham (Out),rotowire
 2026-03-23,DET,M. Sasser,OUT,M. Sasser (Out),rotowire
 2026-03-23,DET,I. Stewart,OUT,I. Stewart (Out),rotowire
@@ -8856,9 +8858,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-23,IND,O. Toppin,QUES,O. Toppin (Ques),rotowire
 2026-03-23,IND,A. Black,OUT,A. Black (Out),rotowire
 2026-03-23,IND,J. Isaac,OUT,J. Isaac (Out),rotowire
+2026-03-23,IND,J. Suggs,OUT,J. Suggs (Out),rotowire
 2026-03-23,IND,F. Wagner,OUT,F. Wagner (Out),rotowire
 2026-03-23,ORL,A. Black,OUT,A. Black (Out),rotowire
 2026-03-23,ORL,J. Isaac,OUT,J. Isaac (Out),rotowire
+2026-03-23,ORL,J. Suggs,OUT,J. Suggs (Out),rotowire
 2026-03-23,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
 2026-03-23,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-03-23,OKC,A. Mitchell,OUT,A. Mitchell (Out),rotowire
@@ -8904,6 +8908,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-23,CHI,G. Yabusele,DOUBT,G. Yabusele (Doubt),rotowire
 2026-03-23,TOR,C. Hepburn,DOUBT,C. Hepburn (Doubt),rotowire
 2026-03-23,TOR,C. Murray-Boyles,QUES,C. Murray-Boyles (Ques),rotowire
+2026-03-23,TOR,C. Williams,QUES,C. Williams (Ques),rotowire
 2026-03-23,TOR,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-03-23,TOR,W. Kessler,OFS,W. Kessler (OFS),rotowire
 2026-03-23,TOR,J. Nurkic,OFS,J. Nurkic (OFS),rotowire
@@ -8913,6 +8918,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-23,UTA,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-03-23,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
 2026-03-23,UTA,J. Nurkic,OFS,J. Nurkic (OFS),rotowire
+2026-03-23,UTA,C. Williams,QUES,C. Williams (Ques),rotowire
 2026-03-23,UTA,I. Collier,OUT,I. Collier (Out),rotowire
 2026-03-23,UTA,K. George,OUT,K. George (Out),rotowire
 2026-03-23,UTA,L. Markkanen,OUT,L. Markkanen (Out),rotowire
