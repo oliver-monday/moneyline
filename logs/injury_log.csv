@@ -8986,6 +8986,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-23,LAC,J. Collins,OUT,J. Collins (Out),rotowire
 2026-03-23,LAC,B. Mathurin,OUT,B. Mathurin (Out),rotowire
 2026-03-24,SAC,D. Plowden,PROB,D. Plowden (Prob),rotowire
+2026-03-24,SAC,K. Knueppel,PROB,K. Knueppel (Prob),rotowire
+2026-03-24,CHA,K. Knueppel,PROB,K. Knueppel (Prob),rotowire
 2026-03-24,SAC,D. Eubanks,OFS,D. Eubanks (OFS),rotowire
 2026-03-24,SAC,D. Hunter,OFS,D. Hunter (OFS),rotowire
 2026-03-24,SAC,Z. LaVine,OFS,Z. LaVine (OFS),rotowire
@@ -8995,11 +8997,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-24,SAC,K. Hayes,OUT,K. Hayes (Out),rotowire
 2026-03-24,SAC,K. Murray,OUT,K. Murray (Out),rotowire
 2026-03-24,SAC,R. Westbrook,OUT,R. Westbrook (Out),rotowire
-2026-03-24,SAC,K. Knueppel,PROB,K. Knueppel (Prob),rotowire
-2026-03-24,SAC,P. Connaughton,QUES,P. Connaughton (Ques),rotowire
+2026-03-24,SAC,P. Connaughton,OUT,P. Connaughton (Out),rotowire
 2026-03-24,SAC,T. Salaun,OUT,T. Salaun (Out),rotowire
-2026-03-24,CHA,K. Knueppel,PROB,K. Knueppel (Prob),rotowire
-2026-03-24,CHA,P. Connaughton,QUES,P. Connaughton (Ques),rotowire
+2026-03-24,CHA,P. Connaughton,OUT,P. Connaughton (Out),rotowire
 2026-03-24,CHA,T. Salaun,OUT,T. Salaun (Out),rotowire
 2026-03-24,NOP,B. McGowens,OUT,B. McGowens (Out),rotowire
 2026-03-24,NOP,K. McCullar,QUES,K. McCullar (Ques),rotowire
@@ -9013,10 +9013,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-24,ORL,J. Suggs,OUT,J. Suggs (Out),rotowire
 2026-03-24,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
 2026-03-24,ORL,T. Proctor,PROB,T. Proctor (Prob),rotowire
+2026-03-24,ORL,L. Nance,QUES,L. Nance (Ques),rotowire
 2026-03-24,ORL,J. Allen,OUT,J. Allen (Out),rotowire
 2026-03-24,ORL,C. Porter,OUT,C. Porter (Out),rotowire
 2026-03-24,ORL,J. Tyson,OUT,J. Tyson (Out),rotowire
 2026-03-24,CLE,T. Proctor,PROB,T. Proctor (Prob),rotowire
+2026-03-24,CLE,L. Nance,QUES,L. Nance (Ques),rotowire
 2026-03-24,CLE,J. Allen,OUT,J. Allen (Out),rotowire
 2026-03-24,CLE,C. Porter,OUT,C. Porter (Out),rotowire
 2026-03-24,CLE,J. Tyson,OUT,J. Tyson (Out),rotowire
