@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-24",
-  "built_at_utc": "2026-03-24T15:40:08Z",
+  "built_at_utc": "2026-03-24T17:46:05Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -24,24 +24,19 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "D. Plowden",
-      "status": "PROB",
-      "details": "D. Plowden (Prob)"
-    },
-    {
       "name": "P. Achiuwa",
-      "status": "QUES",
-      "details": "P. Achiuwa (Ques)"
-    },
-    {
-      "name": "K. Hayes",
-      "status": "QUES",
-      "details": "K. Hayes (Ques)"
+      "status": "OUT",
+      "details": "P. Achiuwa (Out)"
     },
     {
       "name": "N. Clifford",
       "status": "OUT",
       "details": "N. Clifford (Out)"
+    },
+    {
+      "name": "K. Hayes",
+      "status": "OUT",
+      "details": "K. Hayes (Out)"
     },
     {
       "name": "K. Murray",
@@ -148,8 +143,8 @@
     },
     {
       "name": "T. Proctor",
-      "status": "QUES",
-      "details": "T. Proctor (Ques)"
+      "status": "PROB",
+      "details": "T. Proctor (Prob)"
     },
     {
       "name": "J. Allen",
@@ -170,8 +165,8 @@
   "CLE": [
     {
       "name": "T. Proctor",
-      "status": "QUES",
-      "details": "T. Proctor (Ques)"
+      "status": "PROB",
+      "details": "T. Proctor (Prob)"
     },
     {
       "name": "J. Allen",
