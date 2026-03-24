@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-24",
-  "built_at_utc": "2026-03-24T22:38:54Z",
+  "built_at_utc": "2026-03-24T23:35:13Z",
   "source": "rotowire",
   "SAC": [
     {
@@ -78,11 +78,6 @@
       "details": "B. McGowens (Out)"
     },
     {
-      "name": "K. McCullar",
-      "status": "QUES",
-      "details": "K. McCullar (Ques)"
-    },
-    {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
@@ -94,11 +89,6 @@
     }
   ],
   "NYK": [
-    {
-      "name": "K. McCullar",
-      "status": "QUES",
-      "details": "K. McCullar (Ques)"
-    },
     {
       "name": "M. McBride",
       "status": "OUT",
@@ -132,19 +122,14 @@
       "details": "F. Wagner (Out)"
     },
     {
-      "name": "T. Proctor",
-      "status": "PROB",
-      "details": "T. Proctor (Prob)"
-    },
-    {
-      "name": "L. Nance",
-      "status": "QUES",
-      "details": "L. Nance (Ques)"
-    },
-    {
       "name": "J. Allen",
       "status": "OUT",
       "details": "J. Allen (Out)"
+    },
+    {
+      "name": "L. Nance",
+      "status": "OUT",
+      "details": "L. Nance (Out)"
     },
     {
       "name": "C. Porter",
@@ -159,19 +144,14 @@
   ],
   "CLE": [
     {
-      "name": "T. Proctor",
-      "status": "PROB",
-      "details": "T. Proctor (Prob)"
-    },
-    {
-      "name": "L. Nance",
-      "status": "QUES",
-      "details": "L. Nance (Ques)"
-    },
-    {
       "name": "J. Allen",
       "status": "OUT",
       "details": "J. Allen (Out)"
+    },
+    {
+      "name": "L. Nance",
+      "status": "OUT",
+      "details": "L. Nance (Out)"
     },
     {
       "name": "C. Porter",
