@@ -1,0 +1,11 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-23,2026,Luka Doncic,LAL,DET,3pt,4,MISSED,3,,targets_snapshot_2026-03-23.json
+2026-03-23,2026,Paolo Banchero,ORL,IND,3pt,1,HIT,4,,targets_snapshot_2026-03-23.json
+2026-03-23,2026,Anthony Davis,DAL,GS,ast,2,,,,targets_snapshot_2026-03-23.json
+2026-03-23,2026,Ryan Rollins,MIL,LAC,3pt,2,MISSED,1,,targets_snapshot_2026-03-23.json
+2026-03-23,2026,Dyson Daniels,ATL,MEM,pts,10,HIT,12,,targets_snapshot_2026-03-23.json
+2026-03-23,2026,Dyson Daniels,ATL,MEM,reb,6,MISSED,5,,targets_snapshot_2026-03-23.json
+2026-03-23,2026,Cooper Flagg,DAL,GS,reb,6,MISSED,4,,targets_snapshot_2026-03-23.json
+2026-03-23,2026,Cooper Flagg,DAL,GS,ast,4,HIT,9,,targets_snapshot_2026-03-23.json
+2026-03-23,2026,P.J. Washington,DAL,GS,3pt,1,MISSED,0,,targets_snapshot_2026-03-23.json
+2026-03-23,2026,Toumani Camara,POR,BKN,ast,2,HIT,3,,targets_snapshot_2026-03-23.json
