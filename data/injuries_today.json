@@ -1,12 +1,22 @@
 {
   "asof_date": "2026-03-24",
-  "built_at_utc": "2026-03-25T01:18:11Z",
+  "built_at_utc": "2026-03-25T03:32:48Z",
   "source": "rotowire",
   "SAC": [
+    {
+      "name": "P. Achiuwa",
+      "status": "QUES",
+      "details": "P. Achiuwa (Ques)"
+    },
     {
       "name": "D. Eubanks",
       "status": "OFS",
       "details": "D. Eubanks (OFS)"
+    },
+    {
+      "name": "K. Hayes",
+      "status": "QUES",
+      "details": "K. Hayes (Ques)"
     },
     {
       "name": "D. Hunter",
@@ -24,9 +34,9 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "P. Achiuwa",
-      "status": "OUT",
-      "details": "P. Achiuwa (Out)"
+      "name": "R. Westbrook",
+      "status": "QUES",
+      "details": "R. Westbrook (Ques)"
     },
     {
       "name": "N. Clifford",
@@ -34,134 +44,124 @@
       "details": "N. Clifford (Out)"
     },
     {
-      "name": "K. Hayes",
-      "status": "OUT",
-      "details": "K. Hayes (Out)"
-    },
-    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
     },
     {
-      "name": "R. Westbrook",
-      "status": "OUT",
-      "details": "R. Westbrook (Out)"
-    },
-    {
       "name": "P. Connaughton",
-      "status": "OUT",
-      "details": "P. Connaughton (Out)"
+      "status": "QUES",
+      "details": "P. Connaughton (Ques)"
     },
     {
       "name": "T. Salaun",
-      "status": "OUT",
-      "details": "T. Salaun (Out)"
+      "status": "QUES",
+      "details": "T. Salaun (Ques)"
     }
   ],
   "CHA": [
     {
       "name": "P. Connaughton",
-      "status": "OUT",
-      "details": "P. Connaughton (Out)"
+      "status": "QUES",
+      "details": "P. Connaughton (Ques)"
     },
     {
       "name": "T. Salaun",
-      "status": "OUT",
-      "details": "T. Salaun (Out)"
+      "status": "QUES",
+      "details": "T. Salaun (Ques)"
     }
   ],
   "NOP": [
     {
       "name": "B. McGowens",
-      "status": "OUT",
-      "details": "B. McGowens (Out)"
+      "status": "QUES",
+      "details": "B. McGowens (Ques)"
+    },
+    {
+      "name": "L. Shamet",
+      "status": "QUES",
+      "details": "L. Shamet (Ques)"
     },
     {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
-    },
-    {
-      "name": "L. Shamet",
-      "status": "OUT",
-      "details": "L. Shamet (Out)"
     }
   ],
   "NYK": [
     {
+      "name": "L. Shamet",
+      "status": "QUES",
+      "details": "L. Shamet (Ques)"
+    },
+    {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
-    },
-    {
-      "name": "L. Shamet",
-      "status": "OUT",
-      "details": "L. Shamet (Out)"
     }
   ],
   "ORL": [
     {
       "name": "A. Black",
-      "status": "OUT",
-      "details": "A. Black (Out)"
+      "status": "DOUBT",
+      "details": "A. Black (Doubt)"
     },
     {
       "name": "J. Isaac",
-      "status": "OUT",
-      "details": "J. Isaac (Out)"
+      "status": "DOUBT",
+      "details": "J. Isaac (Doubt)"
     },
     {
       "name": "J. Suggs",
-      "status": "OUT",
-      "details": "J. Suggs (Out)"
+      "status": "QUES",
+      "details": "J. Suggs (Ques)"
     },
     {
       "name": "F. Wagner",
-      "status": "OUT",
-      "details": "F. Wagner (Out)"
+      "status": "DOUBT",
+      "details": "F. Wagner (Doubt)"
     },
     {
       "name": "J. Allen",
-      "status": "OUT",
-      "details": "J. Allen (Out)"
+      "status": "QUES",
+      "details": "J. Allen (Ques)"
     },
     {
       "name": "L. Nance",
-      "status": "OUT",
-      "details": "L. Nance (Out)"
+      "status": "QUES",
+      "details": "L. Nance (Ques)"
+    },
+    {
+      "name": "J. Tyson",
+      "status": "QUES",
+      "details": "J. Tyson (Ques)"
     },
     {
       "name": "C. Porter",
       "status": "OUT",
       "details": "C. Porter (Out)"
-    },
-    {
-      "name": "J. Tyson",
-      "status": "OUT",
-      "details": "J. Tyson (Out)"
     }
   ],
   "CLE": [
     {
       "name": "J. Allen",
-      "status": "OUT",
-      "details": "J. Allen (Out)"
+      "status": "QUES",
+      "details": "J. Allen (Ques)"
     },
     {
       "name": "L. Nance",
-      "status": "OUT",
-      "details": "L. Nance (Out)"
+      "status": "QUES",
+      "details": "L. Nance (Ques)"
+    },
+    {
+      "name": "J. Tyson",
+      "status": "QUES",
+      "details": "J. Tyson (Ques)"
     },
     {
       "name": "C. Porter",
       "status": "OUT",
       "details": "C. Porter (Out)"
-    },
-    {
-      "name": "J. Tyson",
-      "status": "OUT",
-      "details": "J. Tyson (Out)"
     }
   ],
   "DEN": [
@@ -169,21 +169,6 @@
       "name": "P. Watson",
       "status": "OUT",
       "details": "P. Watson (Out)"
-    },
-    {
-      "name": "R. O'Neale",
-      "status": "PROB",
-      "details": "R. O'Neale (Prob)"
-    },
-    {
-      "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
-    {
-      "name": "R. Dunn",
-      "status": "QUES",
-      "details": "R. Dunn (Ques)"
     },
     {
       "name": "D. Brooks",
@@ -194,6 +179,11 @@
       "name": "A. Coffey",
       "status": "OUT",
       "details": "A. Coffey (Out)"
+    },
+    {
+      "name": "Ryan Dunn",
+      "status": "OUT",
+      "details": "Ryan Dunn (Out)"
     },
     {
       "name": "H. Highsmith",
@@ -208,21 +198,6 @@
   ],
   "PHX": [
     {
-      "name": "R. O'Neale",
-      "status": "PROB",
-      "details": "R. O'Neale (Prob)"
-    },
-    {
-      "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
-    {
-      "name": "R. Dunn",
-      "status": "QUES",
-      "details": "R. Dunn (Ques)"
-    },
-    {
       "name": "D. Brooks",
       "status": "OUT",
       "details": "D. Brooks (Out)"
@@ -231,6 +206,11 @@
       "name": "A. Coffey",
       "status": "OUT",
       "details": "A. Coffey (Out)"
+    },
+    {
+      "name": "Ryan Dunn",
+      "status": "OUT",
+      "details": "Ryan Dunn (Out)"
     },
     {
       "name": "H. Highsmith",
