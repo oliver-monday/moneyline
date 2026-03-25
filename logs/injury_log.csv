@@ -9042,6 +9042,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-25,ATL,W. Moore,QUES,W. Moore (Ques),rotowire
 2026-03-25,DET,W. Moore,QUES,W. Moore (Ques),rotowire
 2026-03-25,WAS,B. Coulibaly,QUES,B. Coulibaly (Ques),rotowire
+2026-03-25,CHI,Q. Grimes,QUES,Q. Grimes (Ques),rotowire
+2026-03-25,PHI,Q. Grimes,QUES,Q. Grimes (Ques),rotowire
 2026-03-25,ATL,J. Johnson,QUES,J. Johnson (Ques),rotowire
 2026-03-25,ATL,T. Harris,PROB,T. Harris (Prob),rotowire
 2026-03-25,ATL,J. Duren,PROB,J. Duren (Prob),rotowire
@@ -9079,13 +9081,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-25,CHI,G. Yabusele,QUES,G. Yabusele (Ques),rotowire
 2026-03-25,CHI,A. Simons,DOUBT,A. Simons (Doubt),rotowire
 2026-03-25,CHI,Jaden Ivey,OUT,Jaden Ivey (Out),rotowire
-2026-03-25,CHI,Q. Grimes,QUES,Q. Grimes (Ques),rotowire
 2026-03-25,CHI,J. Embiid,QUES,J. Embiid (Ques),rotowire
 2026-03-25,CHI,J. Broome,OUT,J. Broome (Out),rotowire
 2026-03-25,CHI,T. Maxey,OUT,T. Maxey (Out),rotowire
 2026-03-25,CHI,K. Oubre,OUT,K. Oubre (Out),rotowire
 2026-03-25,PHI,J. Embiid,QUES,J. Embiid (Ques),rotowire
-2026-03-25,PHI,Q. Grimes,QUES,Q. Grimes (Ques),rotowire
 2026-03-25,PHI,J. Broome,OUT,J. Broome (Out),rotowire
 2026-03-25,PHI,T. Maxey,OUT,T. Maxey (Out),rotowire
 2026-03-25,PHI,K. Oubre,OUT,K. Oubre (Out),rotowire
@@ -9204,11 +9204,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-25,TOR,J. Poeltl,QUES,J. Poeltl (Ques),rotowire
 2026-03-25,TOR,I. Quickley,DOUBT,I. Quickley (Doubt),rotowire
 2026-03-25,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
+2026-03-25,TOR,K. Leonard,QUES,K. Leonard (Ques),rotowire
 2026-03-25,TOR,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-03-25,TOR,Y. Niederhauser,OFS,Y. Niederhauser (OFS),rotowire
-2026-03-25,TOR,K. Leonard,OUT,K. Leonard (Out),rotowire
 2026-03-25,TOR,J. Miller,OUT,J. Miller (Out),rotowire
 2026-03-25,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-03-25,LAC,Y. Niederhauser,OFS,Y. Niederhauser (OFS),rotowire
-2026-03-25,LAC,K. Leonard,OUT,K. Leonard (Out),rotowire
+2026-03-25,LAC,K. Leonard,QUES,K. Leonard (Ques),rotowire
 2026-03-25,LAC,J. Miller,OUT,J. Miller (Out),rotowire
