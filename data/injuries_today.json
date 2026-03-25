@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-25",
-  "built_at_utc": "2026-03-25T15:43:34Z",
+  "built_at_utc": "2026-03-25T17:48:40Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -9,9 +9,14 @@
       "details": "J. Johnson (Ques)"
     },
     {
-      "name": "W. Moore",
-      "status": "QUES",
-      "details": "W. Moore (Ques)"
+      "name": "T. Harris",
+      "status": "PROB",
+      "details": "T. Harris (Prob)"
+    },
+    {
+      "name": "J. Duren",
+      "status": "PROB",
+      "details": "J. Duren (Prob)"
     },
     {
       "name": "J. Green",
@@ -19,14 +24,14 @@
       "details": "J. Green (Ques)"
     },
     {
-      "name": "M. Sasser",
-      "status": "DOUBT",
-      "details": "M. Sasser (Doubt)"
-    },
-    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
+    },
+    {
+      "name": "M. Sasser",
+      "status": "OUT",
+      "details": "M. Sasser (Out)"
     },
     {
       "name": "I. Stewart",
@@ -36,9 +41,14 @@
   ],
   "DET": [
     {
-      "name": "W. Moore",
-      "status": "QUES",
-      "details": "W. Moore (Ques)"
+      "name": "J. Duren",
+      "status": "PROB",
+      "details": "J. Duren (Prob)"
+    },
+    {
+      "name": "T. Harris",
+      "status": "PROB",
+      "details": "T. Harris (Prob)"
     },
     {
       "name": "J. Green",
@@ -46,14 +56,14 @@
       "details": "J. Green (Ques)"
     },
     {
-      "name": "M. Sasser",
-      "status": "DOUBT",
-      "details": "M. Sasser (Doubt)"
-    },
-    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
+    },
+    {
+      "name": "M. Sasser",
+      "status": "OUT",
+      "details": "M. Sasser (Out)"
     },
     {
       "name": "I. Stewart",
@@ -63,19 +73,24 @@
   ],
   "LAL": [
     {
-      "name": "R. Hachimura",
+      "name": "D. Ayton",
       "status": "QUES",
-      "details": "R. Hachimura (Ques)"
+      "details": "D. Ayton (Ques)"
     },
     {
-      "name": "A. Thiero",
-      "status": "QUES",
-      "details": "A. Thiero (Ques)"
+      "name": "R. Hachimura",
+      "status": "OUT",
+      "details": "R. Hachimura (Out)"
     },
     {
       "name": "M. Smart",
-      "status": "DOUBT",
-      "details": "M. Smart (Doubt)"
+      "status": "OUT",
+      "details": "M. Smart (Out)"
+    },
+    {
+      "name": "A. Thiero",
+      "status": "OUT",
+      "details": "A. Thiero (Out)"
     },
     {
       "name": "A. Nembhard",
@@ -163,18 +178,18 @@
     },
     {
       "name": "I. Okoro",
-      "status": "DOUBT",
-      "details": "I. Okoro (Doubt)"
+      "status": "QUES",
+      "details": "I. Okoro (Ques)"
+    },
+    {
+      "name": "G. Yabusele",
+      "status": "QUES",
+      "details": "G. Yabusele (Ques)"
     },
     {
       "name": "A. Simons",
       "status": "DOUBT",
       "details": "A. Simons (Doubt)"
-    },
-    {
-      "name": "G. Yabusele",
-      "status": "DOUBT",
-      "details": "G. Yabusele (Doubt)"
     },
     {
       "name": "Jaden Ivey",
@@ -260,46 +275,56 @@
       "details": "T. Rozier (Out)"
     },
     {
-      "name": "J. Allen",
-      "status": "QUES",
-      "details": "J. Allen (Ques)"
-    },
-    {
       "name": "L. Nance",
       "status": "QUES",
       "details": "L. Nance (Ques)"
     },
     {
-      "name": "J. Tyson",
-      "status": "QUES",
-      "details": "J. Tyson (Ques)"
+      "name": "J. Allen",
+      "status": "OUT",
+      "details": "J. Allen (Out)"
     },
     {
       "name": "C. Porter",
       "status": "OUT",
       "details": "C. Porter (Out)"
+    },
+    {
+      "name": "Max Strus",
+      "status": "OUT",
+      "details": "Max Strus (Out)"
+    },
+    {
+      "name": "J. Tyson",
+      "status": "OUT",
+      "details": "J. Tyson (Out)"
     }
   ],
   "CLE": [
     {
-      "name": "J. Allen",
-      "status": "QUES",
-      "details": "J. Allen (Ques)"
-    },
-    {
       "name": "L. Nance",
       "status": "QUES",
       "details": "L. Nance (Ques)"
     },
     {
-      "name": "J. Tyson",
-      "status": "QUES",
-      "details": "J. Tyson (Ques)"
+      "name": "J. Allen",
+      "status": "OUT",
+      "details": "J. Allen (Out)"
     },
     {
       "name": "C. Porter",
       "status": "OUT",
       "details": "C. Porter (Out)"
+    },
+    {
+      "name": "Max Strus",
+      "status": "OUT",
+      "details": "Max Strus (Out)"
+    },
+    {
+      "name": "J. Tyson",
+      "status": "OUT",
+      "details": "J. Tyson (Out)"
     }
   ],
   "SAS": [
@@ -488,14 +513,14 @@
       "details": "J. Nurkic (OFS)"
     },
     {
-      "name": "K. Filipowski",
-      "status": "DOUBT",
-      "details": "K. Filipowski (Doubt)"
-    },
-    {
       "name": "I. Collier",
       "status": "OUT",
       "details": "I. Collier (Out)"
+    },
+    {
+      "name": "K. Filipowski",
+      "status": "OUT",
+      "details": "K. Filipowski (Out)"
     },
     {
       "name": "L. Markkanen",
@@ -530,14 +555,14 @@
       "details": "C. Williams (Ques)"
     },
     {
-      "name": "K. Filipowski",
-      "status": "DOUBT",
-      "details": "K. Filipowski (Doubt)"
-    },
-    {
       "name": "I. Collier",
       "status": "OUT",
       "details": "I. Collier (Out)"
+    },
+    {
+      "name": "K. Filipowski",
+      "status": "OUT",
+      "details": "K. Filipowski (Out)"
     },
     {
       "name": "K. George",
