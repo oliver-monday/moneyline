@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-25",
-  "built_at_utc": "2026-03-25T19:48:53Z",
+  "built_at_utc": "2026-03-25T20:36:34Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -849,18 +849,13 @@
     },
     {
       "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
+      "status": "DOUBT",
+      "details": "I. Quickley (Doubt)"
     },
     {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
-    },
-    {
-      "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
     },
     {
       "name": "B. Beal",
@@ -873,9 +868,14 @@
       "details": "Y. Niederhauser (OFS)"
     },
     {
+      "name": "K. Leonard",
+      "status": "OUT",
+      "details": "K. Leonard (Out)"
+    },
+    {
       "name": "J. Miller",
-      "status": "QUES",
-      "details": "J. Miller (Ques)"
+      "status": "OUT",
+      "details": "J. Miller (Out)"
     }
   ],
   "LAC": [
@@ -891,13 +891,13 @@
     },
     {
       "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
+      "status": "OUT",
+      "details": "K. Leonard (Out)"
     },
     {
       "name": "J. Miller",
-      "status": "QUES",
-      "details": "J. Miller (Ques)"
+      "status": "OUT",
+      "details": "J. Miller (Out)"
     }
   ]
 }
