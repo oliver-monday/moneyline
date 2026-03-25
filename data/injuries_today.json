@@ -1,64 +1,17 @@
 {
   "asof_date": "2026-03-25",
-  "built_at_utc": "2026-03-25T21:25:37Z",
+  "built_at_utc": "2026-03-25T22:44:15Z",
   "source": "rotowire",
-  "ATL": [
-    {
-      "name": "J. Johnson",
-      "status": "QUES",
-      "details": "J. Johnson (Ques)"
-    },
-    {
-      "name": "T. Harris",
-      "status": "PROB",
-      "details": "T. Harris (Prob)"
-    },
-    {
-      "name": "J. Duren",
-      "status": "PROB",
-      "details": "J. Duren (Prob)"
-    },
-    {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
-    {
-      "name": "C. Cunningham",
-      "status": "OUT",
-      "details": "C. Cunningham (Out)"
-    },
-    {
-      "name": "M. Sasser",
-      "status": "OUT",
-      "details": "M. Sasser (Out)"
-    },
-    {
-      "name": "I. Stewart",
-      "status": "OUT",
-      "details": "I. Stewart (Out)"
-    }
-  ],
   "DET": [
     {
-      "name": "J. Duren",
-      "status": "PROB",
-      "details": "J. Duren (Prob)"
-    },
-    {
-      "name": "T. Harris",
-      "status": "PROB",
-      "details": "T. Harris (Prob)"
-    },
-    {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
-    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
+    },
+    {
+      "name": "W. Moore",
+      "status": "OUT",
+      "details": "W. Moore (Out)"
     },
     {
       "name": "M. Sasser",
@@ -74,8 +27,8 @@
   "LAL": [
     {
       "name": "D. Ayton",
-      "status": "QUES",
-      "details": "D. Ayton (Ques)"
+      "status": "OUT",
+      "details": "D. Ayton (Out)"
     },
     {
       "name": "R. Hachimura",
@@ -88,24 +41,14 @@
       "details": "M. Smart (Out)"
     },
     {
+      "name": "Nick Smith",
+      "status": "OUT",
+      "details": "Nick Smith (Out)"
+    },
+    {
       "name": "A. Thiero",
       "status": "OUT",
       "details": "A. Thiero (Out)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "PROB",
-      "details": "A. Nembhard (Prob)"
-    },
-    {
-      "name": "A. Nesmith",
-      "status": "PROB",
-      "details": "A. Nesmith (Prob)"
-    },
-    {
-      "name": "P. Siakam",
-      "status": "PROB",
-      "details": "P. Siakam (Prob)"
     },
     {
       "name": "J. Furphy",
@@ -121,11 +64,6 @@
       "name": "I. Zubac",
       "status": "OFS",
       "details": "I. Zubac (OFS)"
-    },
-    {
-      "name": "O. Toppin",
-      "status": "PROB",
-      "details": "O. Toppin (Prob)"
     }
   ],
   "IND": [
@@ -143,26 +81,6 @@
       "name": "I. Zubac",
       "status": "OFS",
       "details": "I. Zubac (OFS)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "PROB",
-      "details": "A. Nembhard (Prob)"
-    },
-    {
-      "name": "A. Nesmith",
-      "status": "PROB",
-      "details": "A. Nesmith (Prob)"
-    },
-    {
-      "name": "P. Siakam",
-      "status": "PROB",
-      "details": "P. Siakam (Prob)"
-    },
-    {
-      "name": "O. Toppin",
-      "status": "PROB",
-      "details": "O. Toppin (Prob)"
     }
   ],
   "CHI": [
@@ -177,29 +95,14 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "I. Okoro",
-      "status": "QUES",
-      "details": "I. Okoro (Ques)"
-    },
-    {
-      "name": "G. Yabusele",
-      "status": "QUES",
-      "details": "G. Yabusele (Ques)"
-    },
-    {
-      "name": "A. Simons",
-      "status": "DOUBT",
-      "details": "A. Simons (Doubt)"
-    },
-    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
     },
     {
-      "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
+      "name": "A. Simons",
+      "status": "OUT",
+      "details": "A. Simons (Out)"
     },
     {
       "name": "J. Broome",
@@ -218,11 +121,6 @@
     }
   ],
   "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
-    },
     {
       "name": "J. Broome",
       "status": "OUT",
@@ -888,6 +786,28 @@
       "name": "J. Miller",
       "status": "OUT",
       "details": "J. Miller (Out)"
+    }
+  ],
+  "ATL": [
+    {
+      "name": "C. Cunningham",
+      "status": "OUT",
+      "details": "C. Cunningham (Out)"
+    },
+    {
+      "name": "W. Moore",
+      "status": "OUT",
+      "details": "W. Moore (Out)"
+    },
+    {
+      "name": "M. Sasser",
+      "status": "OUT",
+      "details": "M. Sasser (Out)"
+    },
+    {
+      "name": "I. Stewart",
+      "status": "OUT",
+      "details": "I. Stewart (Out)"
     }
   ]
 }
