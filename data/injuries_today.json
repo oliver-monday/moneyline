@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-25",
-  "built_at_utc": "2026-03-25T22:44:15Z",
+  "built_at_utc": "2026-03-25T23:38:28Z",
   "source": "rotowire",
   "DET": [
     {
@@ -95,6 +95,11 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "J. Smith",
+      "status": "QUES",
+      "details": "J. Smith (Ques)"
+    },
+    {
       "name": "Jaden Ivey",
       "status": "OUT",
       "details": "Jaden Ivey (Out)"
@@ -186,6 +191,11 @@
       "name": "J. Tyson",
       "status": "OUT",
       "details": "J. Tyson (Out)"
+    },
+    {
+      "name": "Dean Wade",
+      "status": "OUT",
+      "details": "Dean Wade (Out)"
     }
   ],
   "CLE": [
@@ -213,6 +223,11 @@
       "name": "J. Tyson",
       "status": "OUT",
       "details": "J. Tyson (Out)"
+    },
+    {
+      "name": "Dean Wade",
+      "status": "OUT",
+      "details": "Dean Wade (Out)"
     }
   ],
   "SAS": [
@@ -230,11 +245,6 @@
       "name": "L. Kornet",
       "status": "OUT",
       "details": "L. Kornet (Out)"
-    },
-    {
-      "name": "J. Small",
-      "status": "QUES",
-      "details": "J. Small (Ques)"
     },
     {
       "name": "S. Aldama",
@@ -267,14 +277,19 @@
       "details": "S. Pippen (OFS)"
     },
     {
-      "name": "J. Mashack",
-      "status": "DOUBT",
-      "details": "J. Mashack (Doubt)"
-    },
-    {
       "name": "Ty Jerome",
       "status": "OUT",
       "details": "Ty Jerome (Out)"
+    },
+    {
+      "name": "J. Mashack",
+      "status": "OUT",
+      "details": "J. Mashack (Out)"
+    },
+    {
+      "name": "R. Rupert",
+      "status": "OUT",
+      "details": "R. Rupert (Out)"
     },
     {
       "name": "J. Wells",
@@ -314,19 +329,19 @@
       "details": "S. Pippen (OFS)"
     },
     {
-      "name": "J. Small",
-      "status": "QUES",
-      "details": "J. Small (Ques)"
-    },
-    {
-      "name": "J. Mashack",
-      "status": "DOUBT",
-      "details": "J. Mashack (Doubt)"
-    },
-    {
       "name": "Ty Jerome",
       "status": "OUT",
       "details": "Ty Jerome (Out)"
+    },
+    {
+      "name": "J. Mashack",
+      "status": "OUT",
+      "details": "J. Mashack (Out)"
+    },
+    {
+      "name": "R. Rupert",
+      "status": "OUT",
+      "details": "R. Rupert (Out)"
     },
     {
       "name": "J. Wells",
@@ -374,11 +389,6 @@
       "name": "Trae Young",
       "status": "OUT",
       "details": "Trae Young (Out)"
-    },
-    {
-      "name": "C. Williams",
-      "status": "QUES",
-      "details": "C. Williams (Ques)"
     },
     {
       "name": "J. Jackson",
@@ -433,11 +443,6 @@
       "details": "J. Nurkic (OFS)"
     },
     {
-      "name": "C. Williams",
-      "status": "QUES",
-      "details": "C. Williams (Ques)"
-    },
-    {
       "name": "I. Collier",
       "status": "OUT",
       "details": "I. Collier (Out)"
@@ -476,8 +481,8 @@
     },
     {
       "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
+      "status": "OUT",
+      "details": "A. Dosunmu (Out)"
     },
     {
       "name": "A. Edwards",
@@ -488,8 +493,8 @@
   "MIN": [
     {
       "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
+      "status": "OUT",
+      "details": "A. Dosunmu (Out)"
     },
     {
       "name": "A. Edwards",
@@ -603,6 +608,11 @@
       "details": "Al Horford (Out)"
     },
     {
+      "name": "M. Leons",
+      "status": "OUT",
+      "details": "M. Leons (Out)"
+    },
+    {
       "name": "Q. Post",
       "status": "OUT",
       "details": "Q. Post (Out)"
@@ -633,6 +643,11 @@
       "name": "Al Horford",
       "status": "OUT",
       "details": "Al Horford (Out)"
+    },
+    {
+      "name": "M. Leons",
+      "status": "OUT",
+      "details": "M. Leons (Out)"
     },
     {
       "name": "Q. Post",
