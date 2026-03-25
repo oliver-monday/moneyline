@@ -9155,8 +9155,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-25,DAL,D. Gafford,QUES,D. Gafford (Ques),rotowire
 2026-03-25,DAL,B. Williams,QUES,B. Williams (Ques),rotowire
 2026-03-25,DAL,C. Martin,OUT,C. Martin (Out),rotowire
-2026-03-25,DAL,P. Watson,OUT,P. Watson (Out),rotowire
-2026-03-25,DEN,P. Watson,OUT,P. Watson (Out),rotowire
+2026-03-25,DAL,A. Gordon,QUES,A. Gordon (Ques),rotowire
+2026-03-25,DAL,P. Watson,PROB,P. Watson (Prob),rotowire
+2026-03-25,DEN,P. Watson,PROB,P. Watson (Prob),rotowire
+2026-03-25,DEN,A. Gordon,QUES,A. Gordon (Ques),rotowire
 2026-03-25,BKN,Egor Demin,OFS,Egor Demin (OFS),rotowire
 2026-03-25,BKN,D. Sharpe,OFS,D. Sharpe (OFS),rotowire
 2026-03-25,BKN,N. Clowney,OUT,N. Clowney (Out),rotowire

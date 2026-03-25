@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-25",
-  "built_at_utc": "2026-03-25T09:11:27Z",
+  "built_at_utc": "2026-03-25T15:43:34Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -616,16 +616,26 @@
       "details": "C. Martin (Out)"
     },
     {
+      "name": "A. Gordon",
+      "status": "QUES",
+      "details": "A. Gordon (Ques)"
+    },
+    {
       "name": "P. Watson",
-      "status": "OUT",
-      "details": "P. Watson (Out)"
+      "status": "PROB",
+      "details": "P. Watson (Prob)"
     }
   ],
   "DEN": [
     {
       "name": "P. Watson",
-      "status": "OUT",
-      "details": "P. Watson (Out)"
+      "status": "PROB",
+      "details": "P. Watson (Prob)"
+    },
+    {
+      "name": "A. Gordon",
+      "status": "QUES",
+      "details": "A. Gordon (Ques)"
     }
   ],
   "BKN": [
