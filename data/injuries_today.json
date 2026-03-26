@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-26",
-  "built_at_utc": "2026-03-26T15:48:58Z",
+  "built_at_utc": "2026-03-26T17:50:27Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -14,14 +14,44 @@
       "details": "B. McGowens (Out)"
     },
     {
-      "name": "M. Sasser",
+      "name": "D. Robinson",
+      "status": "PROB",
+      "details": "D. Robinson (Prob)"
+    },
+    {
+      "name": "A. Thompson",
+      "status": "PROB",
+      "details": "A. Thompson (Prob)"
+    },
+    {
+      "name": "T. Harris",
       "status": "QUES",
-      "details": "M. Sasser (Ques)"
+      "details": "T. Harris (Ques)"
+    },
+    {
+      "name": "J. Duren",
+      "status": "PROB",
+      "details": "J. Duren (Prob)"
+    },
+    {
+      "name": "J. Green",
+      "status": "PROB",
+      "details": "J. Green (Prob)"
+    },
+    {
+      "name": "M. Sasser",
+      "status": "PROB",
+      "details": "M. Sasser (Prob)"
     },
     {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
+    },
+    {
+      "name": "C. LeVert",
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     },
     {
       "name": "I. Stewart",
@@ -31,14 +61,44 @@
   ],
   "DET": [
     {
+      "name": "J. Duren",
+      "status": "PROB",
+      "details": "J. Duren (Prob)"
+    },
+    {
+      "name": "J. Green",
+      "status": "PROB",
+      "details": "J. Green (Prob)"
+    },
+    {
+      "name": "D. Robinson",
+      "status": "PROB",
+      "details": "D. Robinson (Prob)"
+    },
+    {
       "name": "M. Sasser",
+      "status": "PROB",
+      "details": "M. Sasser (Prob)"
+    },
+    {
+      "name": "A. Thompson",
+      "status": "PROB",
+      "details": "A. Thompson (Prob)"
+    },
+    {
+      "name": "T. Harris",
       "status": "QUES",
-      "details": "M. Sasser (Ques)"
+      "details": "T. Harris (Ques)"
     },
     {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
+    },
+    {
+      "name": "C. LeVert",
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     },
     {
       "name": "I. Stewart",
@@ -66,21 +126,6 @@
       "name": "D. Sabonis",
       "status": "OFS",
       "details": "D. Sabonis (OFS)"
-    },
-    {
-      "name": "I. Stevens",
-      "status": "QUES",
-      "details": "I. Stevens (Ques)"
-    },
-    {
-      "name": "P. Achiuwa",
-      "status": "QUES",
-      "details": "P. Achiuwa (Ques)"
-    },
-    {
-      "name": "K. Hayes",
-      "status": "QUES",
-      "details": "K. Hayes (Ques)"
     },
     {
       "name": "N. Clifford",
