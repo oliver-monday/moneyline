@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-26",
-  "built_at_utc": "2026-03-26T22:37:19Z",
+  "built_at_utc": "2026-03-26T23:35:00Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -14,11 +14,6 @@
       "details": "T. Murphy (Out)"
     },
     {
-      "name": "D. Robinson",
-      "status": "QUES",
-      "details": "D. Robinson (Ques)"
-    },
-    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
@@ -27,6 +22,11 @@
       "name": "C. LeVert",
       "status": "OUT",
       "details": "C. LeVert (Out)"
+    },
+    {
+      "name": "D. Robinson",
+      "status": "OUT",
+      "details": "D. Robinson (Out)"
     },
     {
       "name": "I. Stewart",
@@ -36,11 +36,6 @@
   ],
   "DET": [
     {
-      "name": "D. Robinson",
-      "status": "QUES",
-      "details": "D. Robinson (Ques)"
-    },
-    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
@@ -49,6 +44,11 @@
       "name": "C. LeVert",
       "status": "OUT",
       "details": "C. LeVert (Out)"
+    },
+    {
+      "name": "D. Robinson",
+      "status": "OUT",
+      "details": "D. Robinson (Out)"
     },
     {
       "name": "I. Stewart",
@@ -130,6 +130,11 @@
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
+    },
+    {
+      "name": "K. McCullar",
+      "status": "OUT",
+      "details": "K. McCullar (Out)"
     },
     {
       "name": "L. Shamet",
