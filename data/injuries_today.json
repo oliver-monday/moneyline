@@ -1,47 +1,22 @@
 {
   "asof_date": "2026-03-26",
-  "built_at_utc": "2026-03-26T21:20:11Z",
+  "built_at_utc": "2026-03-26T22:37:19Z",
   "source": "rotowire",
   "NOP": [
-    {
-      "name": "T. Murphy",
-      "status": "QUES",
-      "details": "T. Murphy (Ques)"
-    },
     {
       "name": "B. McGowens",
       "status": "OUT",
       "details": "B. McGowens (Out)"
     },
     {
+      "name": "T. Murphy",
+      "status": "OUT",
+      "details": "T. Murphy (Out)"
+    },
+    {
       "name": "D. Robinson",
-      "status": "PROB",
-      "details": "D. Robinson (Prob)"
-    },
-    {
-      "name": "A. Thompson",
-      "status": "PROB",
-      "details": "A. Thompson (Prob)"
-    },
-    {
-      "name": "T. Harris",
       "status": "QUES",
-      "details": "T. Harris (Ques)"
-    },
-    {
-      "name": "J. Duren",
-      "status": "PROB",
-      "details": "J. Duren (Prob)"
-    },
-    {
-      "name": "J. Green",
-      "status": "PROB",
-      "details": "J. Green (Prob)"
-    },
-    {
-      "name": "M. Sasser",
-      "status": "PROB",
-      "details": "M. Sasser (Prob)"
+      "details": "D. Robinson (Ques)"
     },
     {
       "name": "C. Cunningham",
@@ -61,34 +36,9 @@
   ],
   "DET": [
     {
-      "name": "J. Duren",
-      "status": "PROB",
-      "details": "J. Duren (Prob)"
-    },
-    {
-      "name": "J. Green",
-      "status": "PROB",
-      "details": "J. Green (Prob)"
-    },
-    {
       "name": "D. Robinson",
-      "status": "PROB",
-      "details": "D. Robinson (Prob)"
-    },
-    {
-      "name": "M. Sasser",
-      "status": "PROB",
-      "details": "M. Sasser (Prob)"
-    },
-    {
-      "name": "A. Thompson",
-      "status": "PROB",
-      "details": "A. Thompson (Prob)"
-    },
-    {
-      "name": "T. Harris",
       "status": "QUES",
-      "details": "T. Harris (Ques)"
+      "details": "D. Robinson (Ques)"
     },
     {
       "name": "C. Cunningham",
@@ -143,11 +93,6 @@
       "details": "R. Westbrook (Out)"
     },
     {
-      "name": "J. Suggs",
-      "status": "QUES",
-      "details": "J. Suggs (Ques)"
-    },
-    {
       "name": "A. Black",
       "status": "OUT",
       "details": "A. Black (Out)"
@@ -164,11 +109,6 @@
     }
   ],
   "ORL": [
-    {
-      "name": "J. Suggs",
-      "status": "QUES",
-      "details": "J. Suggs (Ques)"
-    },
     {
       "name": "A. Black",
       "status": "OUT",
@@ -187,11 +127,6 @@
   ],
   "NYK": [
     {
-      "name": "K. McCullar",
-      "status": "QUES",
-      "details": "K. McCullar (Ques)"
-    },
-    {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
@@ -202,9 +137,9 @@
       "details": "L. Shamet (Out)"
     },
     {
-      "name": "P. Connaughton",
-      "status": "QUES",
-      "details": "P. Connaughton (Ques)"
+      "name": "L. McNeeley",
+      "status": "OUT",
+      "details": "L. McNeeley (Out)"
     },
     {
       "name": "T. Salaun",
@@ -214,9 +149,9 @@
   ],
   "CHA": [
     {
-      "name": "P. Connaughton",
-      "status": "QUES",
-      "details": "P. Connaughton (Ques)"
+      "name": "L. McNeeley",
+      "status": "OUT",
+      "details": "L. McNeeley (Out)"
     },
     {
       "name": "T. Salaun",
