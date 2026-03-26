@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-26",
-  "built_at_utc": "2026-03-26T09:16:33Z",
+  "built_at_utc": "2026-03-26T15:48:58Z",
   "source": "rotowire",
   "NOP": [
     {
@@ -9,24 +9,19 @@
       "details": "T. Murphy (Ques)"
     },
     {
-      "name": "D. Murray",
-      "status": "QUES",
-      "details": "D. Murray (Ques)"
-    },
-    {
       "name": "B. McGowens",
       "status": "OUT",
       "details": "B. McGowens (Out)"
     },
     {
+      "name": "M. Sasser",
+      "status": "QUES",
+      "details": "M. Sasser (Ques)"
+    },
+    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
-    },
-    {
-      "name": "M. Sasser",
-      "status": "OUT",
-      "details": "M. Sasser (Out)"
     },
     {
       "name": "I. Stewart",
@@ -36,14 +31,14 @@
   ],
   "DET": [
     {
+      "name": "M. Sasser",
+      "status": "QUES",
+      "details": "M. Sasser (Ques)"
+    },
+    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
-    },
-    {
-      "name": "M. Sasser",
-      "status": "OUT",
-      "details": "M. Sasser (Out)"
     },
     {
       "name": "I. Stewart",
@@ -146,6 +141,11 @@
     }
   ],
   "NYK": [
+    {
+      "name": "K. McCullar",
+      "status": "QUES",
+      "details": "K. McCullar (Ques)"
+    },
     {
       "name": "M. McBride",
       "status": "OUT",

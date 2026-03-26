@@ -9225,14 +9225,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-25,ATL,C. Cunningham,OUT,C. Cunningham (Out),rotowire
 2026-03-25,ATL,M. Sasser,OUT,M. Sasser (Out),rotowire
 2026-03-25,ATL,I. Stewart,OUT,I. Stewart (Out),rotowire
-2026-03-26,NOP,T. Murphy,QUES,T. Murphy (Ques),rotowire
 2026-03-26,NOP,D. Murray,QUES,D. Murray (Ques),rotowire
+2026-03-26,NOP,T. Murphy,QUES,T. Murphy (Ques),rotowire
 2026-03-26,NOP,B. McGowens,OUT,B. McGowens (Out),rotowire
+2026-03-26,NOP,M. Sasser,QUES,M. Sasser (Ques),rotowire
 2026-03-26,NOP,C. Cunningham,OUT,C. Cunningham (Out),rotowire
-2026-03-26,NOP,M. Sasser,OUT,M. Sasser (Out),rotowire
 2026-03-26,NOP,I. Stewart,OUT,I. Stewart (Out),rotowire
+2026-03-26,DET,M. Sasser,QUES,M. Sasser (Ques),rotowire
 2026-03-26,DET,C. Cunningham,OUT,C. Cunningham (Out),rotowire
-2026-03-26,DET,M. Sasser,OUT,M. Sasser (Out),rotowire
 2026-03-26,DET,I. Stewart,OUT,I. Stewart (Out),rotowire
 2026-03-26,SAC,D. Eubanks,OFS,D. Eubanks (OFS),rotowire
 2026-03-26,SAC,D. Hunter,OFS,D. Hunter (OFS),rotowire
@@ -9252,6 +9252,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-26,ORL,A. Black,OUT,A. Black (Out),rotowire
 2026-03-26,ORL,J. Isaac,OUT,J. Isaac (Out),rotowire
 2026-03-26,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
+2026-03-26,NYK,K. McCullar,QUES,K. McCullar (Ques),rotowire
 2026-03-26,NYK,M. McBride,OUT,M. McBride (Out),rotowire
 2026-03-26,NYK,L. Shamet,OUT,L. Shamet (Out),rotowire
 2026-03-26,NYK,P. Connaughton,QUES,P. Connaughton (Ques),rotowire
