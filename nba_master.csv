@@ -1099,6 +1099,6 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810915,2026-03-25,2026-03-26T02:00Z,Golden State Warriors,GS,109,-600.0,,Brooklyn Nets,BKN,106,440.0,,San Francisco,CA,,
 401810916,2026-03-25,2026-03-26T02:00Z,Portland Trail Blazers,POR,130,-675.0,,Milwaukee Bucks,MIL,99,490.0,,Portland,OR,,
 401810917,2026-03-25,2026-03-26T02:30Z,LA Clippers,LAC,119,-185.0,,Toronto Raptors,TOR,94,154.0,,Inglewood,CA,,
-401810918,2026-03-26,2026-03-26T23:00Z,Charlotte Hornets,CHA,0,-115.0,,New York Knicks,NY,0,-105.0,,Charlotte,NC,T. Salaun (Out),M. McBride (Out); L. Shamet (Out)
-401810919,2026-03-26,2026-03-26T23:00Z,Detroit Pistons,DET,0,-205.0,,New Orleans Pelicans,NO,0,170.0,,Detroit,MI,C. Cunningham (Out); M. Sasser (Out); I. Stewart (Out),B. McGowens (Out)
+401810918,2026-03-26,2026-03-26T23:00Z,Charlotte Hornets,CHA,0,-120.0,,New York Knicks,NY,0,100.0,,Charlotte,NC,T. Salaun (Out),M. McBride (Out); L. Shamet (Out)
+401810919,2026-03-26,2026-03-26T23:00Z,Detroit Pistons,DET,0,-185.0,,New Orleans Pelicans,NO,0,154.0,,Detroit,MI,C. Cunningham (Out); I. Stewart (Out),B. McGowens (Out)
 401810920,2026-03-26,2026-03-26T23:00Z,Orlando Magic,ORL,0,-1350.0,,Sacramento Kings,SAC,0,800.0,,Orlando,FL,A. Black (Out); J. Isaac (Out); F. Wagner (Out),D. Eubanks (OFS); D. Hunter (OFS); Z. LaVine (OFS); D. Sabonis (OFS); N. Clifford (Out); K. Murray (Out); R. Westbrook (Out)
