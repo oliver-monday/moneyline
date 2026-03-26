@@ -1,0 +1,14 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-25,2026,Luka Doncic,LAL,IND,3pt,4,HIT,4,,targets_snapshot_2026-03-25.json
+2026-03-25,2026,Nikola Jokic,DEN,DAL,reb,12,HIT,21,,targets_snapshot_2026-03-25.json
+2026-03-25,2026,Nikola Jokic,DEN,DAL,ast,10,HIT,19,,targets_snapshot_2026-03-25.json
+2026-03-25,2026,James Harden,CLE,MIA,reb,4,HIT,9,,targets_snapshot_2026-03-25.json
+2026-03-25,2026,James Harden,CLE,MIA,3pt,3,HIT,3,,targets_snapshot_2026-03-25.json
+2026-03-25,2026,Jaylen Brown,BOS,OKC,reb,6,HIT,8,,targets_snapshot_2026-03-25.json
+2026-03-25,2026,Jaylen Brown,BOS,OKC,ast,4,HIT,8,,targets_snapshot_2026-03-25.json
+2026-03-25,2026,Anthony Davis,DAL,DEN,ast,2,,,,targets_snapshot_2026-03-25.json
+2026-03-25,2026,Cooper Flagg,DAL,DEN,reb,6,HIT,8,,targets_snapshot_2026-03-25.json
+2026-03-25,2026,Cooper Flagg,DAL,DEN,ast,4,HIT,7,,targets_snapshot_2026-03-25.json
+2026-03-25,2026,Evan Mobley,CLE,MIA,reb,8,MISSED,5,,targets_snapshot_2026-03-25.json
+2026-03-25,2026,Toumani Camara,POR,MIL,ast,2,MISSED,1,,targets_snapshot_2026-03-25.json
+2026-03-25,2026,De'Aaron Fox,SA,MEM,ast,6,,,,targets_snapshot_2026-03-25.json
