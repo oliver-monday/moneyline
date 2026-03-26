@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-25",
-  "built_at_utc": "2026-03-26T03:42:41Z",
+  "built_at_utc": "2026-03-26T04:23:44Z",
   "source": "rotowire",
   "DET": [
     {
@@ -336,6 +336,11 @@
       "details": "C. Whitmore (OFS)"
     },
     {
+      "name": "T. Young",
+      "status": "QUES",
+      "details": "T. Young (Ques)"
+    },
+    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
@@ -364,11 +369,6 @@
       "name": "T. Vukcevic",
       "status": "OUT",
       "details": "T. Vukcevic (Out)"
-    },
-    {
-      "name": "Trae Young",
-      "status": "OUT",
-      "details": "Trae Young (Out)"
     },
     {
       "name": "J. Jackson",
@@ -685,11 +685,6 @@
     }
   ],
   "TOR": [
-    {
-      "name": "J. Poeltl",
-      "status": "QUES",
-      "details": "J. Poeltl (Ques)"
-    },
     {
       "name": "C. Hepburn",
       "status": "OUT",

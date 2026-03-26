@@ -9084,6 +9084,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-25,TOR,K. Leonard,QUES,K. Leonard (Ques),rotowire
 2026-03-25,LAC,K. Leonard,QUES,K. Leonard (Ques),rotowire
 2026-03-25,ATL,W. Moore,OUT,W. Moore (Out),rotowire
+2026-03-25,WAS,Trae Young,OUT,Trae Young (Out),rotowire
+2026-03-25,TOR,J. Poeltl,QUES,J. Poeltl (Ques),rotowire
 2026-03-25,DET,C. Cunningham,OUT,C. Cunningham (Out),rotowire
 2026-03-25,DET,M. Sasser,OUT,M. Sasser (Out),rotowire
 2026-03-25,DET,I. Stewart,OUT,I. Stewart (Out),rotowire
@@ -9146,13 +9148,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-25,MEM,J. Mashack,OUT,J. Mashack (Out),rotowire
 2026-03-25,MEM,J. Wells,OUT,J. Wells (Out),rotowire
 2026-03-25,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
+2026-03-25,WAS,T. Young,QUES,T. Young (Ques),rotowire
 2026-03-25,WAS,A. Davis,OUT,A. Davis (Out),rotowire
 2026-03-25,WAS,K. George,OUT,K. George (Out),rotowire
 2026-03-25,WAS,T. Johnson,OUT,T. Johnson (Out),rotowire
 2026-03-25,WAS,D. Russell,OUT,D. Russell (Out),rotowire
 2026-03-25,WAS,Alex Sarr,OUT,Alex Sarr (Out),rotowire
 2026-03-25,WAS,T. Vukcevic,OUT,T. Vukcevic (Out),rotowire
-2026-03-25,WAS,Trae Young,OUT,Trae Young (Out),rotowire
 2026-03-25,WAS,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-03-25,WAS,W. Kessler,OFS,W. Kessler (OFS),rotowire
 2026-03-25,WAS,J. Nurkic,OFS,J. Nurkic (OFS),rotowire
@@ -9212,7 +9214,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-25,POR,D. Lillard,OFS,D. Lillard (OFS),rotowire
 2026-03-25,POR,Vit Krejci,OUT,Vit Krejci (Out),rotowire
 2026-03-25,POR,S. Sharpe,OUT,S. Sharpe (Out),rotowire
-2026-03-25,TOR,J. Poeltl,QUES,J. Poeltl (Ques),rotowire
 2026-03-25,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-03-25,TOR,I. Quickley,OUT,I. Quickley (Out),rotowire
 2026-03-25,TOR,B. Beal,OFS,B. Beal (OFS),rotowire
