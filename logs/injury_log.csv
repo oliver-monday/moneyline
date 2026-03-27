@@ -9285,6 +9285,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-27,WAS,T. Johnson,QUES,T. Johnson (Ques),rotowire
 2026-03-27,WAS,A. Sarr,QUES,A. Sarr (Ques),rotowire
 2026-03-27,WAS,T. Vukcevic,QUES,T. Vukcevic (Ques),rotowire
+2026-03-27,BKN,L. Doncic,QUES,L. Doncic (Ques),rotowire
+2026-03-27,BKN,R. Hachimura,QUES,R. Hachimura (Ques),rotowire
+2026-03-27,LAL,L. Doncic,QUES,L. Doncic (Ques),rotowire
+2026-03-27,LAL,R. Hachimura,QUES,R. Hachimura (Ques),rotowire
 2026-03-27,LAC,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-03-27,LAC,Y. Niederhauser,OFS,Y. Niederhauser (OFS),rotowire
 2026-03-27,LAC,A. Nesmith,PROB,A. Nesmith (Prob),rotowire
@@ -9394,11 +9398,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-27,BKN,N. Clowney,PROB,N. Clowney (Prob),rotowire
 2026-03-27,BKN,M. Porter,OUT,M. Porter (Out),rotowire
 2026-03-27,BKN,Danny Wolf,OUT,Danny Wolf (Out),rotowire
-2026-03-27,BKN,L. Doncic,QUES,L. Doncic (Ques),rotowire
-2026-03-27,BKN,R. Hachimura,QUES,R. Hachimura (Ques),rotowire
 2026-03-27,BKN,M. Smart,OUT,M. Smart (Out),rotowire
 2026-03-27,BKN,A. Thiero,OUT,A. Thiero (Out),rotowire
-2026-03-27,LAL,L. Doncic,QUES,L. Doncic (Ques),rotowire
-2026-03-27,LAL,R. Hachimura,QUES,R. Hachimura (Ques),rotowire
 2026-03-27,LAL,M. Smart,OUT,M. Smart (Out),rotowire
 2026-03-27,LAL,A. Thiero,OUT,A. Thiero (Out),rotowire

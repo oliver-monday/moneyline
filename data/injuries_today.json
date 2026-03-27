@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-27",
-  "built_at_utc": "2026-03-27T19:42:10Z",
+  "built_at_utc": "2026-03-27T20:36:28Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -583,16 +583,6 @@
       "details": "Danny Wolf (Out)"
     },
     {
-      "name": "L. Doncic",
-      "status": "QUES",
-      "details": "L. Doncic (Ques)"
-    },
-    {
-      "name": "R. Hachimura",
-      "status": "QUES",
-      "details": "R. Hachimura (Ques)"
-    },
-    {
       "name": "M. Smart",
       "status": "OUT",
       "details": "M. Smart (Out)"
@@ -604,16 +594,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "L. Doncic",
-      "status": "QUES",
-      "details": "L. Doncic (Ques)"
-    },
-    {
-      "name": "R. Hachimura",
-      "status": "QUES",
-      "details": "R. Hachimura (Ques)"
-    },
     {
       "name": "M. Smart",
       "status": "OUT",
