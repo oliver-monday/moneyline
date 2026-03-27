@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-27",
-  "built_at_utc": "2026-03-27T15:13:44Z",
+  "built_at_utc": "2026-03-27T17:40:33Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -12,11 +12,6 @@
       "name": "Y. Niederhauser",
       "status": "OFS",
       "details": "Y. Niederhauser (OFS)"
-    },
-    {
-      "name": "J. Miller",
-      "status": "QUES",
-      "details": "J. Miller (Ques)"
     },
     {
       "name": "A. Nesmith",
@@ -71,11 +66,11 @@
       "details": "O. Toppin (Ques)"
     }
   ],
-  "BOS": [
+  "ATL": [
     {
-      "name": "J. Brown",
+      "name": "J. Landale",
       "status": "QUES",
-      "details": "J. Brown (Ques)"
+      "details": "J. Landale (Ques)"
     },
     {
       "name": "N. Queta",
@@ -83,9 +78,26 @@
       "details": "N. Queta (Ques)"
     },
     {
-      "name": "D. White",
+      "name": "J. Brown",
+      "status": "OUT",
+      "details": "J. Brown (Out)"
+    },
+    {
+      "name": "N. Vucevic",
+      "status": "OUT",
+      "details": "N. Vucevic (Out)"
+    }
+  ],
+  "BOS": [
+    {
+      "name": "N. Queta",
       "status": "QUES",
-      "details": "D. White (Ques)"
+      "details": "N. Queta (Ques)"
+    },
+    {
+      "name": "J. Brown",
+      "status": "OUT",
+      "details": "J. Brown (Out)"
     },
     {
       "name": "N. Vucevic",
@@ -96,8 +108,8 @@
   "MIA": [
     {
       "name": "J. Jaquez",
-      "status": "QUES",
-      "details": "J. Jaquez (Ques)"
+      "status": "PROB",
+      "details": "J. Jaquez (Prob)"
     },
     {
       "name": "T. Rozier",
@@ -106,8 +118,8 @@
     },
     {
       "name": "J. Allen",
-      "status": "QUES",
-      "details": "J. Allen (Ques)"
+      "status": "PROB",
+      "details": "J. Allen (Prob)"
     },
     {
       "name": "C. Porter",
@@ -128,8 +140,8 @@
   "CLE": [
     {
       "name": "J. Allen",
-      "status": "QUES",
-      "details": "J. Allen (Ques)"
+      "status": "PROB",
+      "details": "J. Allen (Prob)"
     },
     {
       "name": "C. Porter",
@@ -190,8 +202,8 @@
     },
     {
       "name": "A. Simons",
-      "status": "DOUBT",
-      "details": "A. Simons (Doubt)"
+      "status": "OUT",
+      "details": "A. Simons (Out)"
     },
     {
       "name": "T. Sorber",
@@ -312,19 +324,19 @@
   ],
   "NOP": [
     {
-      "name": "T. Murphy",
-      "status": "QUES",
-      "details": "T. Murphy (Ques)"
+      "name": "B. McGowens",
+      "status": "OUT",
+      "details": "B. McGowens (Out)"
     },
     {
-      "name": "B. McGowens",
-      "status": "DOUBT",
-      "details": "B. McGowens (Doubt)"
+      "name": "T. Murphy",
+      "status": "OUT",
+      "details": "T. Murphy (Out)"
     },
     {
       "name": "D. Murray",
-      "status": "DOUBT",
-      "details": "D. Murray (Doubt)"
+      "status": "OUT",
+      "details": "D. Murray (Out)"
     },
     {
       "name": "C. Hepburn",
@@ -591,11 +603,6 @@
       "details": "L. Doncic (Ques)"
     },
     {
-      "name": "N. Smith",
-      "status": "QUES",
-      "details": "N. Smith (Ques)"
-    },
-    {
       "name": "R. Hachimura",
       "status": "QUES",
       "details": "R. Hachimura (Ques)"
@@ -612,11 +619,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "N. Smith",
-      "status": "QUES",
-      "details": "N. Smith (Ques)"
-    },
     {
       "name": "L. Doncic",
       "status": "QUES",
@@ -636,28 +638,6 @@
       "name": "A. Thiero",
       "status": "OUT",
       "details": "A. Thiero (Out)"
-    }
-  ],
-  "ATL": [
-    {
-      "name": "D. White",
-      "status": "QUES",
-      "details": "D. White (Ques)"
-    },
-    {
-      "name": "J. Brown",
-      "status": "QUES",
-      "details": "J. Brown (Ques)"
-    },
-    {
-      "name": "N. Queta",
-      "status": "QUES",
-      "details": "N. Queta (Ques)"
-    },
-    {
-      "name": "N. Vucevic",
-      "status": "OUT",
-      "details": "N. Vucevic (Out)"
     }
   ]
 }
