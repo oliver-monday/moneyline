@@ -1,0 +1,6 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-26,2026,Jalen Brunson,NY,CHA,ast,6,HIT,13,,targets_snapshot_2026-03-26.json
+2026-03-26,2026,Trey Murphy III,NO,DET,3pt,3,,,,targets_snapshot_2026-03-26.json
+2026-03-26,2026,Paolo Banchero,ORL,SAC,3pt,1,HIT,1,,targets_snapshot_2026-03-26.json
+2026-03-26,2026,Saddiq Bey,NO,DET,pts,15,HIT,17,,targets_snapshot_2026-03-26.json
+2026-03-26,2026,Karl-Anthony Towns,NY,CHA,reb,12,MISSED,3,,targets_snapshot_2026-03-26.json
