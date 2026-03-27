@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-27",
-  "built_at_utc": "2026-03-27T21:22:54Z",
+  "built_at_utc": "2026-03-27T22:40:05Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -12,11 +12,6 @@
       "name": "Y. Niederhauser",
       "status": "OFS",
       "details": "Y. Niederhauser (OFS)"
-    },
-    {
-      "name": "A. Nesmith",
-      "status": "PROB",
-      "details": "A. Nesmith (Prob)"
     },
     {
       "name": "J. Furphy",
@@ -32,11 +27,6 @@
       "name": "I. Zubac",
       "status": "OFS",
       "details": "I. Zubac (OFS)"
-    },
-    {
-      "name": "O. Toppin",
-      "status": "QUES",
-      "details": "O. Toppin (Ques)"
     }
   ],
   "IND": [
@@ -54,23 +44,13 @@
       "name": "I. Zubac",
       "status": "OFS",
       "details": "I. Zubac (OFS)"
-    },
-    {
-      "name": "A. Nesmith",
-      "status": "PROB",
-      "details": "A. Nesmith (Prob)"
-    },
-    {
-      "name": "O. Toppin",
-      "status": "QUES",
-      "details": "O. Toppin (Ques)"
     }
   ],
   "ATL": [
     {
       "name": "J. Landale",
-      "status": "QUES",
-      "details": "J. Landale (Ques)"
+      "status": "OUT",
+      "details": "J. Landale (Out)"
     },
     {
       "name": "J. Brown",
@@ -96,11 +76,6 @@
     }
   ],
   "MIA": [
-    {
-      "name": "J. Jaquez",
-      "status": "PROB",
-      "details": "J. Jaquez (Prob)"
-    },
     {
       "name": "T. Rozier",
       "status": "OUT",
@@ -420,11 +395,6 @@
       "details": "Trae Young (Out)"
     },
     {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
-    },
-    {
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
@@ -448,6 +418,11 @@
       "name": "Al Horford",
       "status": "OUT",
       "details": "Al Horford (Out)"
+    },
+    {
+      "name": "D. Melton",
+      "status": "OUT",
+      "details": "D. Melton (Out)"
     },
     {
       "name": "Q. Post",
@@ -467,11 +442,6 @@
       "details": "M. Moody (OFS)"
     },
     {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
-    },
-    {
       "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
@@ -485,6 +455,11 @@
       "name": "Al Horford",
       "status": "OUT",
       "details": "Al Horford (Out)"
+    },
+    {
+      "name": "D. Melton",
+      "status": "OUT",
+      "details": "D. Melton (Out)"
     },
     {
       "name": "Q. Post",
