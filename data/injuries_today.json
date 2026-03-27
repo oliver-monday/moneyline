@@ -1,59 +1,64 @@
 {
   "asof_date": "2026-03-26",
-  "built_at_utc": "2026-03-27T01:23:14Z",
+  "built_at_utc": "2026-03-27T03:44:43Z",
   "source": "rotowire",
   "NOP": [
     {
       "name": "B. McGowens",
-      "status": "OUT",
-      "details": "B. McGowens (Out)"
+      "status": "DOUBT",
+      "details": "B. McGowens (Doubt)"
     },
     {
       "name": "T. Murphy",
-      "status": "OUT",
-      "details": "T. Murphy (Out)"
+      "status": "QUES",
+      "details": "T. Murphy (Ques)"
+    },
+    {
+      "name": "D. Murray",
+      "status": "DOUBT",
+      "details": "D. Murray (Doubt)"
+    },
+    {
+      "name": "C. LeVert",
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
+    },
+    {
+      "name": "D. Robinson",
+      "status": "QUES",
+      "details": "D. Robinson (Ques)"
+    },
+    {
+      "name": "I. Stewart",
+      "status": "QUES",
+      "details": "I. Stewart (Ques)"
     },
     {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
-    },
-    {
-      "name": "C. LeVert",
-      "status": "OUT",
-      "details": "C. LeVert (Out)"
-    },
-    {
-      "name": "D. Robinson",
-      "status": "OUT",
-      "details": "D. Robinson (Out)"
-    },
-    {
-      "name": "I. Stewart",
-      "status": "OUT",
-      "details": "I. Stewart (Out)"
     }
   ],
   "DET": [
     {
-      "name": "C. Cunningham",
-      "status": "OUT",
-      "details": "C. Cunningham (Out)"
-    },
-    {
       "name": "C. LeVert",
-      "status": "OUT",
-      "details": "C. LeVert (Out)"
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
     },
     {
       "name": "D. Robinson",
-      "status": "OUT",
-      "details": "D. Robinson (Out)"
+      "status": "QUES",
+      "details": "D. Robinson (Ques)"
     },
     {
       "name": "I. Stewart",
+      "status": "QUES",
+      "details": "I. Stewart (Ques)"
+    },
+    {
+      "name": "C. Cunningham",
       "status": "OUT",
-      "details": "I. Stewart (Out)"
+      "details": "C. Cunningham (Out)"
     }
   ],
   "SAC": [
@@ -99,74 +104,74 @@
     },
     {
       "name": "A. Black",
-      "status": "OUT",
-      "details": "A. Black (Out)"
+      "status": "DOUBT",
+      "details": "A. Black (Doubt)"
     },
     {
       "name": "J. Isaac",
-      "status": "OUT",
-      "details": "J. Isaac (Out)"
+      "status": "DOUBT",
+      "details": "J. Isaac (Doubt)"
     },
     {
       "name": "F. Wagner",
-      "status": "OUT",
-      "details": "F. Wagner (Out)"
+      "status": "QUES",
+      "details": "F. Wagner (Ques)"
     }
   ],
   "ORL": [
     {
       "name": "A. Black",
-      "status": "OUT",
-      "details": "A. Black (Out)"
+      "status": "DOUBT",
+      "details": "A. Black (Doubt)"
     },
     {
       "name": "J. Isaac",
-      "status": "OUT",
-      "details": "J. Isaac (Out)"
+      "status": "DOUBT",
+      "details": "J. Isaac (Doubt)"
     },
     {
       "name": "F. Wagner",
-      "status": "OUT",
-      "details": "F. Wagner (Out)"
+      "status": "QUES",
+      "details": "F. Wagner (Ques)"
     }
   ],
   "NYK": [
+    {
+      "name": "K. McCullar",
+      "status": "QUES",
+      "details": "K. McCullar (Ques)"
+    },
+    {
+      "name": "L. Shamet",
+      "status": "QUES",
+      "details": "L. Shamet (Ques)"
+    },
     {
       "name": "M. McBride",
       "status": "OUT",
       "details": "M. McBride (Out)"
     },
     {
-      "name": "K. McCullar",
-      "status": "OUT",
-      "details": "K. McCullar (Out)"
-    },
-    {
-      "name": "L. Shamet",
-      "status": "OUT",
-      "details": "L. Shamet (Out)"
-    },
-    {
       "name": "L. McNeeley",
-      "status": "OUT",
-      "details": "L. McNeeley (Out)"
+      "status": "QUES",
+      "details": "L. McNeeley (Ques)"
     },
     {
       "name": "T. Salaun",
-      "status": "OUT",
-      "details": "T. Salaun (Out)"
+      "status": "DOUBT",
+      "details": "T. Salaun (Doubt)"
     }
   ],
   "CHA": [
     {
       "name": "L. McNeeley",
-      "status": "OUT",
-      "details": "L. McNeeley (Out)"
+      "status": "QUES",
+      "details": "L. McNeeley (Ques)"
     },
     {
       "name": "T. Salaun",
-      "status": "OUT",
-      "details": "T. Salaun (Out)"
+      "status": "DOUBT",
+      "details": "T. Salaun (Doubt)"
     }
   ]
 }
