@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-27",
-  "built_at_utc": "2026-03-27T17:40:33Z",
+  "built_at_utc": "2026-03-27T18:53:00Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -73,11 +73,6 @@
       "details": "J. Landale (Ques)"
     },
     {
-      "name": "N. Queta",
-      "status": "QUES",
-      "details": "N. Queta (Ques)"
-    },
-    {
       "name": "J. Brown",
       "status": "OUT",
       "details": "J. Brown (Out)"
@@ -89,11 +84,6 @@
     }
   ],
   "BOS": [
-    {
-      "name": "N. Queta",
-      "status": "QUES",
-      "details": "N. Queta (Ques)"
-    },
     {
       "name": "J. Brown",
       "status": "OUT",
@@ -209,6 +199,11 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "C. Holmgren",
+      "status": "OUT",
+      "details": "C. Holmgren (Out)"
     }
   ],
   "OKC": [
@@ -216,6 +211,11 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "C. Holmgren",
+      "status": "OUT",
+      "details": "C. Holmgren (Out)"
     }
   ],
   "HOU": [
@@ -376,11 +376,6 @@
       "name": "J. Nurkic",
       "status": "OFS",
       "details": "J. Nurkic (OFS)"
-    },
-    {
-      "name": "K. Filipowski",
-      "status": "PROB",
-      "details": "K. Filipowski (Prob)"
     },
     {
       "name": "I. Collier",
