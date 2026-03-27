@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-27",
-  "built_at_utc": "2026-03-27T18:53:00Z",
+  "built_at_utc": "2026-03-27T19:42:10Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -400,26 +400,6 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
-    },
-    {
-      "name": "T. Johnson",
-      "status": "QUES",
-      "details": "T. Johnson (Ques)"
-    },
-    {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
@@ -438,6 +418,11 @@
       "name": "Trae Young",
       "status": "OUT",
       "details": "Trae Young (Out)"
+    },
+    {
+      "name": "D. Melton",
+      "status": "QUES",
+      "details": "D. Melton (Ques)"
     },
     {
       "name": "J. Butler",
@@ -480,6 +465,11 @@
       "name": "M. Moody",
       "status": "OFS",
       "details": "M. Moody (OFS)"
+    },
+    {
+      "name": "D. Melton",
+      "status": "QUES",
+      "details": "D. Melton (Ques)"
     },
     {
       "name": "S. Curry",
