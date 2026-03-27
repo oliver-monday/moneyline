@@ -9228,7 +9228,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-26,NOP,D. Murray,QUES,D. Murray (Ques),rotowire
 2026-03-26,SAC,I. Stevens,QUES,I. Stevens (Ques),rotowire
 2026-03-26,SAC,P. Achiuwa,QUES,P. Achiuwa (Ques),rotowire
-2026-03-26,SAC,K. Hayes,QUES,K. Hayes (Ques),rotowire
 2026-03-26,NOP,A. Thompson,PROB,A. Thompson (Prob),rotowire
 2026-03-26,NOP,T. Harris,QUES,T. Harris (Ques),rotowire
 2026-03-26,NOP,J. Duren,PROB,J. Duren (Prob),rotowire
@@ -9254,6 +9253,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-26,DET,D. Robinson,OUT,D. Robinson (Out),rotowire
 2026-03-26,DET,I. Stewart,OUT,I. Stewart (Out),rotowire
 2026-03-26,SAC,D. Eubanks,OFS,D. Eubanks (OFS),rotowire
+2026-03-26,SAC,K. Hayes,QUES,K. Hayes (Ques),rotowire
 2026-03-26,SAC,D. Hunter,OFS,D. Hunter (OFS),rotowire
 2026-03-26,SAC,Z. LaVine,OFS,Z. LaVine (OFS),rotowire
 2026-03-26,SAC,D. Sabonis,OFS,D. Sabonis (OFS),rotowire
