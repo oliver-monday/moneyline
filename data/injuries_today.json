@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-28",
-  "built_at_utc": "2026-03-28T21:18:18Z",
+  "built_at_utc": "2026-03-28T22:36:11Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -9,66 +9,66 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
+      "name": "T. Antetokounmpo",
+      "status": "QUES",
+      "details": "T. Antetokounmpo (Ques)"
+    },
+    {
+      "name": "G. Harris",
+      "status": "QUES",
+      "details": "G. Harris (Ques)"
+    },
+    {
+      "name": "K. Kuzma",
+      "status": "QUES",
+      "details": "K. Kuzma (Ques)"
+    },
+    {
+      "name": "B. Portis",
+      "status": "QUES",
+      "details": "B. Portis (Ques)"
+    },
+    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
     },
     {
-      "name": "T. Antetokounmpo",
-      "status": "OUT",
-      "details": "T. Antetokounmpo (Out)"
-    },
-    {
-      "name": "G. Harris",
-      "status": "OUT",
-      "details": "G. Harris (Out)"
-    },
-    {
-      "name": "Kyle Kuzma",
-      "status": "OUT",
-      "details": "Kyle Kuzma (Out)"
-    },
-    {
       "name": "K. Porter",
       "status": "OUT",
       "details": "K. Porter (Out)"
-    },
-    {
-      "name": "B. Portis",
-      "status": "OUT",
-      "details": "B. Portis (Out)"
     }
   ],
   "MIL": [
     {
+      "name": "T. Antetokounmpo",
+      "status": "QUES",
+      "details": "T. Antetokounmpo (Ques)"
+    },
+    {
+      "name": "G. Harris",
+      "status": "QUES",
+      "details": "G. Harris (Ques)"
+    },
+    {
+      "name": "K. Kuzma",
+      "status": "QUES",
+      "details": "K. Kuzma (Ques)"
+    },
+    {
+      "name": "B. Portis",
+      "status": "QUES",
+      "details": "B. Portis (Ques)"
+    },
+    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
     },
     {
-      "name": "T. Antetokounmpo",
-      "status": "OUT",
-      "details": "T. Antetokounmpo (Out)"
-    },
-    {
-      "name": "G. Harris",
-      "status": "OUT",
-      "details": "G. Harris (Out)"
-    },
-    {
-      "name": "Kyle Kuzma",
-      "status": "OUT",
-      "details": "Kyle Kuzma (Out)"
-    },
-    {
       "name": "K. Porter",
       "status": "OUT",
       "details": "K. Porter (Out)"
-    },
-    {
-      "name": "B. Portis",
-      "status": "OUT",
-      "details": "B. Portis (Out)"
     }
   ],
   "DET": [
@@ -116,16 +116,6 @@
     }
   ],
   "PHI": [
-    {
-      "name": "T. Maxey",
-      "status": "QUES",
-      "details": "T. Maxey (Ques)"
-    },
-    {
-      "name": "K. Oubre",
-      "status": "QUES",
-      "details": "K. Oubre (Ques)"
-    },
     {
       "name": "J. Broome",
       "status": "OUT",
@@ -182,13 +172,8 @@
     },
     {
       "name": "D. Daniels",
-      "status": "QUES",
-      "details": "D. Daniels (Ques)"
-    },
-    {
-      "name": "J. Landale",
-      "status": "QUES",
-      "details": "J. Landale (Ques)"
+      "status": "OUT",
+      "details": "D. Daniels (Out)"
     },
     {
       "name": "J. Kuminga",
@@ -204,13 +189,8 @@
   "ATL": [
     {
       "name": "D. Daniels",
-      "status": "QUES",
-      "details": "D. Daniels (Ques)"
-    },
-    {
-      "name": "J. Landale",
-      "status": "QUES",
-      "details": "J. Landale (Ques)"
+      "status": "OUT",
+      "details": "D. Daniels (Out)"
     },
     {
       "name": "J. Kuminga",
