@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-28",
-  "built_at_utc": "2026-03-28T22:36:11Z",
+  "built_at_utc": "2026-03-28T23:34:34Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -240,11 +240,6 @@
       "details": "G. Yabusele (Out)"
     },
     {
-      "name": "T. Hendricks",
-      "status": "QUES",
-      "details": "T. Hendricks (Ques)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OFS",
       "details": "S. Aldama (OFS)"
@@ -275,29 +270,24 @@
       "details": "S. Pippen (OFS)"
     },
     {
-      "name": "W. Clayton",
-      "status": "QUES",
-      "details": "W. Clayton (Ques)"
+      "name": "Taj Gibson",
+      "status": "OUT",
+      "details": "Taj Gibson (Out)"
     },
     {
-      "name": "J. Mashack",
-      "status": "QUES",
-      "details": "J. Mashack (Ques)"
-    },
-    {
-      "name": "T. Gibson",
-      "status": "DOUBT",
-      "details": "T. Gibson (Doubt)"
-    },
-    {
-      "name": "C. Spencer",
-      "status": "DOUBT",
-      "details": "C. Spencer (Doubt)"
+      "name": "T. Hendricks",
+      "status": "OUT",
+      "details": "T. Hendricks (Out)"
     },
     {
       "name": "Ty Jerome",
       "status": "OUT",
       "details": "Ty Jerome (Out)"
+    },
+    {
+      "name": "C. Spencer",
+      "status": "OUT",
+      "details": "C. Spencer (Out)"
     },
     {
       "name": "J. Wells",
@@ -337,34 +327,24 @@
       "details": "S. Pippen (OFS)"
     },
     {
-      "name": "W. Clayton",
-      "status": "QUES",
-      "details": "W. Clayton (Ques)"
+      "name": "Taj Gibson",
+      "status": "OUT",
+      "details": "Taj Gibson (Out)"
     },
     {
       "name": "T. Hendricks",
-      "status": "QUES",
-      "details": "T. Hendricks (Ques)"
-    },
-    {
-      "name": "J. Mashack",
-      "status": "QUES",
-      "details": "J. Mashack (Ques)"
-    },
-    {
-      "name": "T. Gibson",
-      "status": "DOUBT",
-      "details": "T. Gibson (Doubt)"
-    },
-    {
-      "name": "C. Spencer",
-      "status": "DOUBT",
-      "details": "C. Spencer (Doubt)"
+      "status": "OUT",
+      "details": "T. Hendricks (Out)"
     },
     {
       "name": "Ty Jerome",
       "status": "OUT",
       "details": "Ty Jerome (Out)"
+    },
+    {
+      "name": "C. Spencer",
+      "status": "OUT",
+      "details": "C. Spencer (Out)"
     },
     {
       "name": "J. Wells",
