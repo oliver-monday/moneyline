@@ -9416,6 +9416,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-27,BKN,A. Thiero,OUT,A. Thiero (Out),rotowire
 2026-03-27,LAL,M. Smart,OUT,M. Smart (Out),rotowire
 2026-03-27,LAL,A. Thiero,OUT,A. Thiero (Out),rotowire
+2026-03-28,DET,C. LeVert,PROB,C. LeVert (Prob),rotowire
+2026-03-28,DET,M. Sasser,PROB,M. Sasser (Prob),rotowire
+2026-03-28,SAC,N. Clifford,QUES,N. Clifford (Ques),rotowire
+2026-03-28,SAC,K. Hayes,QUES,K. Hayes (Ques),rotowire
 2026-03-28,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-03-28,SAS,K. Kuzma,QUES,K. Kuzma (Ques),rotowire
 2026-03-28,SAS,M. Turner,QUES,M. Turner (Ques),rotowire
@@ -9429,12 +9433,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-28,MIL,M. Turner,QUES,M. Turner (Ques),rotowire
 2026-03-28,MIL,G. Antetokounmpo,OUT,G. Antetokounmpo (Out),rotowire
 2026-03-28,MIL,K. Porter,OUT,K. Porter (Out),rotowire
-2026-03-28,DET,C. LeVert,PROB,C. LeVert (Prob),rotowire
-2026-03-28,DET,M. Sasser,PROB,M. Sasser (Prob),rotowire
-2026-03-28,DET,J. Duren,QUES,J. Duren (Ques),rotowire
-2026-03-28,DET,T. Harris,QUES,T. Harris (Ques),rotowire
+2026-03-28,DET,J. Duren,PROB,J. Duren (Prob),rotowire
+2026-03-28,DET,T. Harris,PROB,T. Harris (Prob),rotowire
+2026-03-28,DET,A. Thompson,PROB,A. Thompson (Prob),rotowire
 2026-03-28,DET,D. Robinson,QUES,D. Robinson (Ques),rotowire
-2026-03-28,DET,A. Thompson,QUES,A. Thompson (Ques),rotowire
 2026-03-28,DET,C. Cunningham,OUT,C. Cunningham (Out),rotowire
 2026-03-28,DET,I. Stewart,OUT,I. Stewart (Out),rotowire
 2026-03-28,DET,A. Dosunmu,OUT,A. Dosunmu (Out),rotowire
@@ -9452,12 +9454,16 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-28,SAC,D. Hunter,OFS,D. Hunter (OFS),rotowire
 2026-03-28,SAC,Z. LaVine,OFS,Z. LaVine (OFS),rotowire
 2026-03-28,SAC,D. Sabonis,OFS,D. Sabonis (OFS),rotowire
-2026-03-28,SAC,N. Clifford,QUES,N. Clifford (Ques),rotowire
-2026-03-28,SAC,K. Hayes,QUES,K. Hayes (Ques),rotowire
 2026-03-28,SAC,K. Murray,OUT,K. Murray (Out),rotowire
 2026-03-28,SAC,R. Westbrook,OUT,R. Westbrook (Out),rotowire
+2026-03-28,SAC,D. Daniels,QUES,D. Daniels (Ques),rotowire
 2026-03-28,SAC,J. Landale,QUES,J. Landale (Ques),rotowire
+2026-03-28,SAC,J. Kuminga,OUT,J. Kuminga (Out),rotowire
+2026-03-28,SAC,O. Okongwu,OUT,O. Okongwu (Out),rotowire
+2026-03-28,ATL,D. Daniels,QUES,D. Daniels (Ques),rotowire
 2026-03-28,ATL,J. Landale,QUES,J. Landale (Ques),rotowire
+2026-03-28,ATL,J. Kuminga,OUT,J. Kuminga (Out),rotowire
+2026-03-28,ATL,O. Okongwu,OUT,O. Okongwu (Out),rotowire
 2026-03-28,CHI,Z. Collins,OFS,Z. Collins (OFS),rotowire
 2026-03-28,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
 2026-03-28,CHI,Jaden Ivey,OFS,Jaden Ivey (OFS),rotowire
@@ -9465,6 +9471,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-28,CHI,N. Richards,QUES,N. Richards (Ques),rotowire
 2026-03-28,CHI,A. Simons,QUES,A. Simons (Ques),rotowire
 2026-03-28,CHI,T. Jerome,QUES,T. Jerome (Ques),rotowire
+2026-03-28,CHI,C. Coward,QUES,C. Coward (Ques),rotowire
 2026-03-28,CHI,J. Wells,QUES,J. Wells (Ques),rotowire
 2026-03-28,CHI,S. Aldama,OFS,S. Aldama (OFS),rotowire
 2026-03-28,CHI,K. Caldwell-Pope,OFS,K. Caldwell-Pope (OFS),rotowire
@@ -9476,6 +9483,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-28,MEM,S. Aldama,OFS,S. Aldama (OFS),rotowire
 2026-03-28,MEM,K. Caldwell-Pope,OFS,K. Caldwell-Pope (OFS),rotowire
 2026-03-28,MEM,B. Clarke,OFS,B. Clarke (OFS),rotowire
+2026-03-28,MEM,C. Coward,QUES,C. Coward (Ques),rotowire
 2026-03-28,MEM,Zach Edey,OFS,Zach Edey (OFS),rotowire
 2026-03-28,MEM,Ja Morant,OFS,Ja Morant (OFS),rotowire
 2026-03-28,MEM,S. Pippen,OFS,S. Pippen (OFS),rotowire

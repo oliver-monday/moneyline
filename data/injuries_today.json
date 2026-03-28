@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-28",
-  "built_at_utc": "2026-03-28T14:56:38Z",
+  "built_at_utc": "2026-03-28T17:19:21Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -73,34 +73,24 @@
   ],
   "DET": [
     {
-      "name": "C. LeVert",
-      "status": "PROB",
-      "details": "C. LeVert (Prob)"
-    },
-    {
-      "name": "M. Sasser",
-      "status": "PROB",
-      "details": "M. Sasser (Prob)"
-    },
-    {
       "name": "J. Duren",
-      "status": "QUES",
-      "details": "J. Duren (Ques)"
+      "status": "PROB",
+      "details": "J. Duren (Prob)"
     },
     {
       "name": "T. Harris",
-      "status": "QUES",
-      "details": "T. Harris (Ques)"
+      "status": "PROB",
+      "details": "T. Harris (Prob)"
+    },
+    {
+      "name": "A. Thompson",
+      "status": "PROB",
+      "details": "A. Thompson (Prob)"
     },
     {
       "name": "D. Robinson",
       "status": "QUES",
       "details": "D. Robinson (Ques)"
-    },
-    {
-      "name": "A. Thompson",
-      "status": "QUES",
-      "details": "A. Thompson (Ques)"
     },
     {
       "name": "C. Cunningham",
@@ -196,16 +186,6 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "N. Clifford",
-      "status": "QUES",
-      "details": "N. Clifford (Ques)"
-    },
-    {
-      "name": "K. Hayes",
-      "status": "QUES",
-      "details": "K. Hayes (Ques)"
-    },
-    {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
@@ -216,16 +196,46 @@
       "details": "R. Westbrook (Out)"
     },
     {
-      "name": "J. Landale",
+      "name": "D. Daniels",
       "status": "QUES",
-      "details": "J. Landale (Ques)"
-    }
-  ],
-  "ATL": [
+      "details": "D. Daniels (Ques)"
+    },
     {
       "name": "J. Landale",
       "status": "QUES",
       "details": "J. Landale (Ques)"
+    },
+    {
+      "name": "J. Kuminga",
+      "status": "OUT",
+      "details": "J. Kuminga (Out)"
+    },
+    {
+      "name": "O. Okongwu",
+      "status": "OUT",
+      "details": "O. Okongwu (Out)"
+    }
+  ],
+  "ATL": [
+    {
+      "name": "D. Daniels",
+      "status": "QUES",
+      "details": "D. Daniels (Ques)"
+    },
+    {
+      "name": "J. Landale",
+      "status": "QUES",
+      "details": "J. Landale (Ques)"
+    },
+    {
+      "name": "J. Kuminga",
+      "status": "OUT",
+      "details": "J. Kuminga (Out)"
+    },
+    {
+      "name": "O. Okongwu",
+      "status": "OUT",
+      "details": "O. Okongwu (Out)"
     }
   ],
   "CHI": [
@@ -263,6 +273,11 @@
       "name": "T. Jerome",
       "status": "QUES",
       "details": "T. Jerome (Ques)"
+    },
+    {
+      "name": "C. Coward",
+      "status": "QUES",
+      "details": "C. Coward (Ques)"
     },
     {
       "name": "J. Wells",
@@ -320,6 +335,11 @@
       "name": "B. Clarke",
       "status": "OFS",
       "details": "B. Clarke (OFS)"
+    },
+    {
+      "name": "C. Coward",
+      "status": "QUES",
+      "details": "C. Coward (Ques)"
     },
     {
       "name": "Zach Edey",
