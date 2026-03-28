@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-27",
-  "built_at_utc": "2026-03-28T01:17:53Z",
+  "built_at_utc": "2026-03-28T03:31:45Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -64,13 +64,13 @@
   "ATL": [
     {
       "name": "J. Landale",
-      "status": "OUT",
-      "details": "J. Landale (Out)"
+      "status": "QUES",
+      "details": "J. Landale (Ques)"
     },
     {
       "name": "J. Brown",
-      "status": "OUT",
-      "details": "J. Brown (Out)"
+      "status": "QUES",
+      "details": "J. Brown (Ques)"
     },
     {
       "name": "N. Vucevic",
@@ -81,8 +81,8 @@
   "BOS": [
     {
       "name": "J. Brown",
-      "status": "OUT",
-      "details": "J. Brown (Out)"
+      "status": "QUES",
+      "details": "J. Brown (Ques)"
     },
     {
       "name": "N. Vucevic",
@@ -98,35 +98,35 @@
     },
     {
       "name": "C. Porter",
-      "status": "OUT",
-      "details": "C. Porter (Out)"
+      "status": "QUES",
+      "details": "C. Porter (Ques)"
     },
     {
       "name": "J. Tyson",
-      "status": "OUT",
-      "details": "J. Tyson (Out)"
+      "status": "QUES",
+      "details": "J. Tyson (Ques)"
     },
     {
-      "name": "Dean Wade",
-      "status": "OUT",
-      "details": "Dean Wade (Out)"
+      "name": "D. Wade",
+      "status": "QUES",
+      "details": "D. Wade (Ques)"
     }
   ],
   "CLE": [
     {
       "name": "C. Porter",
-      "status": "OUT",
-      "details": "C. Porter (Out)"
+      "status": "QUES",
+      "details": "C. Porter (Ques)"
     },
     {
       "name": "J. Tyson",
-      "status": "OUT",
-      "details": "J. Tyson (Out)"
+      "status": "QUES",
+      "details": "J. Tyson (Ques)"
     },
     {
-      "name": "Dean Wade",
-      "status": "OUT",
-      "details": "Dean Wade (Out)"
+      "name": "D. Wade",
+      "status": "QUES",
+      "details": "D. Wade (Ques)"
     }
   ],
   "CHI": [
@@ -146,41 +146,41 @@
       "details": "Jaden Ivey (OFS)"
     },
     {
+      "name": "N. Richards",
+      "status": "QUES",
+      "details": "N. Richards (Ques)"
+    },
+    {
+      "name": "A. Simons",
+      "status": "QUES",
+      "details": "A. Simons (Ques)"
+    },
+    {
       "name": "J. Smith",
       "status": "OFS",
       "details": "J. Smith (OFS)"
     },
     {
-      "name": "N. Richards",
-      "status": "OUT",
-      "details": "N. Richards (Out)"
-    },
-    {
-      "name": "A. Simons",
-      "status": "OUT",
-      "details": "A. Simons (Out)"
+      "name": "C. Holmgren",
+      "status": "QUES",
+      "details": "C. Holmgren (Ques)"
     },
     {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "C. Holmgren",
-      "status": "OUT",
-      "details": "C. Holmgren (Out)"
     }
   ],
   "OKC": [
     {
+      "name": "C. Holmgren",
+      "status": "QUES",
+      "details": "C. Holmgren (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "C. Holmgren",
-      "status": "OUT",
-      "details": "C. Holmgren (Out)"
     }
   ],
   "HOU": [
@@ -215,6 +215,16 @@
       "details": "Zach Edey (OFS)"
     },
     {
+      "name": "T. Jerome",
+      "status": "QUES",
+      "details": "T. Jerome (Ques)"
+    },
+    {
+      "name": "J. Mashack",
+      "status": "QUES",
+      "details": "J. Mashack (Ques)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OFS",
       "details": "Ja Morant (OFS)"
@@ -225,19 +235,9 @@
       "details": "S. Pippen (OFS)"
     },
     {
-      "name": "Ty Jerome",
-      "status": "OUT",
-      "details": "Ty Jerome (Out)"
-    },
-    {
-      "name": "J. Mashack",
-      "status": "OUT",
-      "details": "J. Mashack (Out)"
-    },
-    {
       "name": "J. Wells",
-      "status": "OUT",
-      "details": "J. Wells (Out)"
+      "status": "QUES",
+      "details": "J. Wells (Ques)"
     }
   ],
   "MEM": [
@@ -262,6 +262,16 @@
       "details": "Zach Edey (OFS)"
     },
     {
+      "name": "T. Jerome",
+      "status": "QUES",
+      "details": "T. Jerome (Ques)"
+    },
+    {
+      "name": "J. Mashack",
+      "status": "QUES",
+      "details": "J. Mashack (Ques)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OFS",
       "details": "Ja Morant (OFS)"
@@ -272,68 +282,68 @@
       "details": "S. Pippen (OFS)"
     },
     {
-      "name": "Ty Jerome",
-      "status": "OUT",
-      "details": "Ty Jerome (Out)"
-    },
-    {
-      "name": "J. Mashack",
-      "status": "OUT",
-      "details": "J. Mashack (Out)"
-    },
-    {
       "name": "J. Wells",
-      "status": "OUT",
-      "details": "J. Wells (Out)"
+      "status": "QUES",
+      "details": "J. Wells (Ques)"
     }
   ],
   "NOP": [
     {
       "name": "B. McGowens",
-      "status": "OUT",
-      "details": "B. McGowens (Out)"
+      "status": "DOUBT",
+      "details": "B. McGowens (Doubt)"
     },
     {
       "name": "T. Murphy",
-      "status": "OUT",
-      "details": "T. Murphy (Out)"
+      "status": "QUES",
+      "details": "T. Murphy (Ques)"
     },
     {
       "name": "D. Murray",
-      "status": "OUT",
-      "details": "D. Murray (Out)"
+      "status": "PROB",
+      "details": "D. Murray (Prob)"
     },
     {
       "name": "C. Hepburn",
-      "status": "OUT",
-      "details": "C. Hepburn (Out)"
+      "status": "DOUBT",
+      "details": "C. Hepburn (Doubt)"
     },
     {
       "name": "T. Jackson-Davis",
-      "status": "OUT",
-      "details": "T. Jackson-Davis (Out)"
+      "status": "QUES",
+      "details": "T. Jackson-Davis (Ques)"
+    },
+    {
+      "name": "C. Murray-Boyles",
+      "status": "QUES",
+      "details": "C. Murray-Boyles (Ques)"
     },
     {
       "name": "I. Quickley",
-      "status": "OUT",
-      "details": "I. Quickley (Out)"
+      "status": "QUES",
+      "details": "I. Quickley (Ques)"
     }
   ],
   "TOR": [
     {
       "name": "C. Hepburn",
-      "status": "OUT",
-      "details": "C. Hepburn (Out)"
+      "status": "DOUBT",
+      "details": "C. Hepburn (Doubt)"
     },
     {
       "name": "T. Jackson-Davis",
-      "status": "OUT",
-      "details": "T. Jackson-Davis (Out)"
+      "status": "QUES",
+      "details": "T. Jackson-Davis (Ques)"
+    },
+    {
+      "name": "C. Murray-Boyles",
+      "status": "QUES",
+      "details": "C. Murray-Boyles (Ques)"
     },
     {
       "name": "I. Quickley",
-      "status": "OUT",
-      "details": "I. Quickley (Out)"
+      "status": "QUES",
+      "details": "I. Quickley (Ques)"
     }
   ],
   "UTA": [
