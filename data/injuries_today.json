@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-03-27",
-  "built_at_utc": "2026-03-27T23:35:22Z",
+  "built_at_utc": "2026-03-28T01:17:53Z",
   "source": "rotowire",
   "LAC": [
     {
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
+    },
+    {
+      "name": "I. Jackson",
+      "status": "QUES",
+      "details": "I. Jackson (Ques)"
     },
     {
       "name": "Y. Niederhauser",
@@ -484,19 +489,19 @@
       "details": "C. Martin (Out)"
     },
     {
+      "name": "K. Middleton",
+      "status": "OUT",
+      "details": "K. Middleton (Out)"
+    },
+    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
-    },
-    {
-      "name": "V. Krejci",
-      "status": "DOUBT",
-      "details": "V. Krejci (Doubt)"
+      "name": "Vit Krejci",
+      "status": "OUT",
+      "details": "Vit Krejci (Out)"
     },
     {
       "name": "S. Sharpe",
@@ -511,14 +516,9 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
-    },
-    {
-      "name": "V. Krejci",
-      "status": "DOUBT",
-      "details": "V. Krejci (Doubt)"
+      "name": "Vit Krejci",
+      "status": "OUT",
+      "details": "Vit Krejci (Out)"
     },
     {
       "name": "S. Sharpe",
@@ -536,11 +536,6 @@
       "name": "D. Sharpe",
       "status": "OFS",
       "details": "D. Sharpe (OFS)"
-    },
-    {
-      "name": "N. Clowney",
-      "status": "PROB",
-      "details": "N. Clowney (Prob)"
     },
     {
       "name": "M. Porter",
