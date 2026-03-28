@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-27",
-  "built_at_utc": "2026-03-28T03:31:45Z",
+  "built_at_utc": "2026-03-28T04:09:18Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -348,6 +348,16 @@
   ],
   "UTA": [
     {
+      "name": "I. Collier",
+      "status": "DOUBT",
+      "details": "I. Collier (Doubt)"
+    },
+    {
+      "name": "K. George",
+      "status": "DOUBT",
+      "details": "K. George (Doubt)"
+    },
+    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -361,16 +371,6 @@
       "name": "J. Nurkic",
       "status": "OFS",
       "details": "J. Nurkic (OFS)"
-    },
-    {
-      "name": "I. Collier",
-      "status": "OUT",
-      "details": "I. Collier (Out)"
-    },
-    {
-      "name": "K. George",
-      "status": "OUT",
-      "details": "K. George (Out)"
     },
     {
       "name": "L. Markkanen",
