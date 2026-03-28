@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-28",
-  "built_at_utc": "2026-03-28T19:34:04Z",
+  "built_at_utc": "2026-03-28T20:28:11Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -72,26 +72,6 @@
     }
   ],
   "DET": [
-    {
-      "name": "J. Duren",
-      "status": "PROB",
-      "details": "J. Duren (Prob)"
-    },
-    {
-      "name": "T. Harris",
-      "status": "PROB",
-      "details": "T. Harris (Prob)"
-    },
-    {
-      "name": "A. Thompson",
-      "status": "PROB",
-      "details": "A. Thompson (Prob)"
-    },
-    {
-      "name": "D. Robinson",
-      "status": "QUES",
-      "details": "D. Robinson (Ques)"
-    },
     {
       "name": "C. Cunningham",
       "status": "OUT",
@@ -430,13 +410,13 @@
     },
     {
       "name": "I. Collier",
-      "status": "DOUBT",
-      "details": "I. Collier (Doubt)"
+      "status": "OUT",
+      "details": "I. Collier (Out)"
     },
     {
       "name": "K. George",
-      "status": "DOUBT",
-      "details": "K. George (Doubt)"
+      "status": "OUT",
+      "details": "K. George (Out)"
     },
     {
       "name": "L. Markkanen",
