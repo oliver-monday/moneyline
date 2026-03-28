@@ -1114,7 +1114,7 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810930,2026-03-27,2026-03-28T02:30Z,Los Angeles Lakers,LAL,116,-1650.0,,Brooklyn Nets,BKN,99,950.0,,Los Angeles,CA,,
 401810931,2026-03-28,2026-03-28T19:00Z,Milwaukee Bucks,MIL,0,1100.0,,San Antonio Spurs,SA,0,-2100.0,,Milwaukee,WI,G. Antetokounmpo (Out); K. Porter (Out),D. Jones Garcia (OFS)
 401810935,2026-03-28,2026-03-28T21:30Z,Minnesota Timberwolves,MIN,0,-135.0,,Detroit Pistons,DET,0,114.0,,Minneapolis,MN,A. Edwards (Out); J. McDaniels (Out),C. Cunningham (Out); I. Stewart (Out)
-401810932,2026-03-28,2026-03-28T22:00Z,Charlotte Hornets,CHA,0,-218.0,,Philadelphia 76ers,PHI,0,180.0,,Charlotte,NC,T. Salaun (Out),J. Broome (Out)
-401810933,2026-03-28,2026-03-28T23:30Z,Atlanta Hawks,ATL,0,-1000.0,,Sacramento Kings,SAC,0,650.0,,Atlanta,GA,,D. Eubanks (OFS); D. Hunter (OFS); Z. LaVine (OFS); D. Sabonis (OFS); K. Murray (Out); R. Westbrook (Out)
+401810932,2026-03-28,2026-03-28T22:00Z,Charlotte Hornets,CHA,0,-230.0,,Philadelphia 76ers,PHI,0,190.0,,Charlotte,NC,T. Salaun (Out),J. Broome (Out)
+401810933,2026-03-28,2026-03-28T23:30Z,Atlanta Hawks,ATL,0,-1050.0,,Sacramento Kings,SAC,0,675.0,,Atlanta,GA,,D. Eubanks (OFS); D. Hunter (OFS); Z. LaVine (OFS); D. Sabonis (OFS); K. Murray (Out); R. Westbrook (Out)
 401810934,2026-03-28,2026-03-29T00:00Z,Memphis Grizzlies,MEM,0,145.0,,Chicago Bulls,CHI,0,-175.0,,Memphis,TN,S. Aldama (OFS); K. Caldwell-Pope (OFS); B. Clarke (OFS); Zach Edey (OFS); Ja Morant (OFS); S. Pippen (OFS),Z. Collins (OFS); N. Essengue (OFS); Jaden Ivey (OFS); J. Smith (OFS)
 401810936,2026-03-28,2026-03-29T02:00Z,Phoenix Suns,PHX,0,-1350.0,,Utah Jazz,UTAH,0,800.0,,Phoenix,AZ,D. Brooks (Out); A. Coffey (Out); H. Highsmith (Out); M. Williams (Out),J. Jackson (OFS); W. Kessler (OFS); J. Nurkic (OFS); L. Markkanen (Out)
