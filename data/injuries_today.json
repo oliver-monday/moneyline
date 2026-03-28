@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-28",
-  "built_at_utc": "2026-03-28T09:00:08Z",
+  "built_at_utc": "2026-03-28T14:56:38Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -114,8 +114,8 @@
     },
     {
       "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
+      "status": "OUT",
+      "details": "A. Dosunmu (Out)"
     },
     {
       "name": "A. Edwards",
@@ -131,8 +131,8 @@
   "MIN": [
     {
       "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
+      "status": "OUT",
+      "details": "A. Dosunmu (Out)"
     },
     {
       "name": "A. Edwards",
