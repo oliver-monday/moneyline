@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-28",
-  "built_at_utc": "2026-03-28T18:37:31Z",
+  "built_at_utc": "2026-03-28T19:34:04Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -189,6 +189,11 @@
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "I. Stevens",
+      "status": "OUT",
+      "details": "I. Stevens (Out)"
     },
     {
       "name": "R. Westbrook",
