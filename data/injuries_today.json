@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-29",
-  "built_at_utc": "2026-03-29T18:39:00Z",
+  "built_at_utc": "2026-03-29T19:36:15Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -113,16 +113,6 @@
       "details": "T. Rozier (Out)"
     },
     {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
-    },
-    {
-      "name": "J. Walker",
-      "status": "QUES",
-      "details": "J. Walker (Ques)"
-    },
-    {
       "name": "P. Siakam",
       "status": "QUES",
       "details": "P. Siakam (Ques)"
@@ -143,11 +133,6 @@
       "details": "I. Zubac (OFS)"
     },
     {
-      "name": "T. McConnell",
-      "status": "QUES",
-      "details": "T. McConnell (Ques)"
-    },
-    {
       "name": "O. Toppin",
       "status": "QUES",
       "details": "O. Toppin (Ques)"
@@ -156,6 +141,11 @@
       "name": "A. Nesmith",
       "status": "DOUBT",
       "details": "A. Nesmith (Doubt)"
+    },
+    {
+      "name": "J. Walker",
+      "status": "DOUBT",
+      "details": "J. Walker (Doubt)"
     }
   ],
   "IND": [
@@ -170,24 +160,14 @@
       "details": "T. Haliburton (OFS)"
     },
     {
-      "name": "I. Zubac",
-      "status": "OFS",
-      "details": "I. Zubac (OFS)"
-    },
-    {
-      "name": "T. McConnell",
-      "status": "QUES",
-      "details": "T. McConnell (Ques)"
-    },
-    {
-      "name": "A. Nembhard",
-      "status": "QUES",
-      "details": "A. Nembhard (Ques)"
-    },
-    {
       "name": "P. Siakam",
       "status": "QUES",
       "details": "P. Siakam (Ques)"
+    },
+    {
+      "name": "I. Zubac",
+      "status": "OFS",
+      "details": "I. Zubac (OFS)"
     },
     {
       "name": "O. Toppin",
@@ -195,14 +175,14 @@
       "details": "O. Toppin (Ques)"
     },
     {
-      "name": "J. Walker",
-      "status": "QUES",
-      "details": "J. Walker (Ques)"
-    },
-    {
       "name": "A. Nesmith",
       "status": "DOUBT",
       "details": "A. Nesmith (Doubt)"
+    },
+    {
+      "name": "J. Walker",
+      "status": "DOUBT",
+      "details": "J. Walker (Doubt)"
     }
   ],
   "SAC": [
@@ -263,13 +243,13 @@
     },
     {
       "name": "J. Wilson",
-      "status": "PROB",
-      "details": "J. Wilson (Prob)"
+      "status": "QUES",
+      "details": "J. Wilson (Ques)"
     },
     {
       "name": "J. Minott",
-      "status": "QUES",
-      "details": "J. Minott (Ques)"
+      "status": "OUT",
+      "details": "J. Minott (Out)"
     },
     {
       "name": "M. Porter",
@@ -295,13 +275,13 @@
     },
     {
       "name": "J. Wilson",
-      "status": "PROB",
-      "details": "J. Wilson (Prob)"
+      "status": "QUES",
+      "details": "J. Wilson (Ques)"
     },
     {
       "name": "J. Minott",
-      "status": "QUES",
-      "details": "J. Minott (Ques)"
+      "status": "OUT",
+      "details": "J. Minott (Out)"
     },
     {
       "name": "M. Porter",
@@ -425,6 +405,11 @@
       "details": "B. Ingram (Ques)"
     },
     {
+      "name": "R. Barrett",
+      "status": "QUES",
+      "details": "R. Barrett (Ques)"
+    },
+    {
       "name": "T. Jackson-Davis",
       "status": "QUES",
       "details": "T. Jackson-Davis (Ques)"
@@ -451,6 +436,11 @@
     }
   ],
   "TOR": [
+    {
+      "name": "R. Barrett",
+      "status": "QUES",
+      "details": "R. Barrett (Ques)"
+    },
     {
       "name": "B. Ingram",
       "status": "QUES",
