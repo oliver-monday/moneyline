@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-29",
-  "built_at_utc": "2026-03-29T21:19:32Z",
+  "built_at_utc": "2026-03-29T22:38:23Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -316,11 +316,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "R. Williams",
-      "status": "PROB",
-      "details": "R. Williams (Prob)"
-    },
-    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
@@ -341,11 +336,6 @@
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "R. Williams",
-      "status": "PROB",
-      "details": "R. Williams (Prob)"
     },
     {
       "name": "J. Grant",
@@ -380,11 +370,6 @@
       "details": "F. Wagner (Out)"
     },
     {
-      "name": "R. Barrett",
-      "status": "PROB",
-      "details": "R. Barrett (Prob)"
-    },
-    {
       "name": "J. Battle",
       "status": "OUT",
       "details": "J. Battle (Out)"
@@ -393,6 +378,11 @@
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "B. Ingram",
+      "status": "OUT",
+      "details": "B. Ingram (Out)"
     },
     {
       "name": "C. Murray-Boyles",
@@ -407,11 +397,6 @@
   ],
   "TOR": [
     {
-      "name": "R. Barrett",
-      "status": "PROB",
-      "details": "R. Barrett (Prob)"
-    },
-    {
       "name": "J. Battle",
       "status": "OUT",
       "details": "J. Battle (Out)"
@@ -420,6 +405,11 @@
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "B. Ingram",
+      "status": "OUT",
+      "details": "B. Ingram (Out)"
     },
     {
       "name": "C. Murray-Boyles",
@@ -483,44 +473,49 @@
       "details": "F. VanVleet (Out)"
     },
     {
-      "name": "D. Murray",
-      "status": "QUES",
-      "details": "D. Murray (Ques)"
-    },
-    {
-      "name": "T. Murphy",
-      "status": "QUES",
-      "details": "T. Murphy (Ques)"
+      "name": "H. Dickinson",
+      "status": "OUT",
+      "details": "H. Dickinson (Out)"
     },
     {
       "name": "B. McGowens",
       "status": "OUT",
       "details": "B. McGowens (Out)"
+    },
+    {
+      "name": "T. Murphy",
+      "status": "OUT",
+      "details": "T. Murphy (Out)"
+    },
+    {
+      "name": "Josh Oduro",
+      "status": "OUT",
+      "details": "Josh Oduro (Out)"
     }
   ],
   "NOP": [
     {
-      "name": "T. Murphy",
-      "status": "QUES",
-      "details": "T. Murphy (Ques)"
-    },
-    {
-      "name": "D. Murray",
-      "status": "QUES",
-      "details": "D. Murray (Ques)"
+      "name": "H. Dickinson",
+      "status": "OUT",
+      "details": "H. Dickinson (Out)"
     },
     {
       "name": "B. McGowens",
       "status": "OUT",
       "details": "B. McGowens (Out)"
+    },
+    {
+      "name": "T. Murphy",
+      "status": "OUT",
+      "details": "T. Murphy (Out)"
+    },
+    {
+      "name": "Josh Oduro",
+      "status": "OUT",
+      "details": "Josh Oduro (Out)"
     }
   ],
   "NYK": [
-    {
-      "name": "M. McBride",
-      "status": "QUES",
-      "details": "M. McBride (Ques)"
-    },
     {
       "name": "K. McCullar",
       "status": "OUT",
