@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-03-28",
-  "built_at_utc": "2026-03-28T23:34:34Z",
+  "built_at_utc": "2026-03-29T01:26:48Z",
   "source": "rotowire",
   "SAS": [
     {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "G. Antetokounmpo",
+      "status": "DOUBT",
+      "details": "G. Antetokounmpo (Doubt)"
     },
     {
       "name": "T. Antetokounmpo",
@@ -27,11 +32,6 @@
       "name": "B. Portis",
       "status": "QUES",
       "details": "B. Portis (Ques)"
-    },
-    {
-      "name": "G. Antetokounmpo",
-      "status": "OUT",
-      "details": "G. Antetokounmpo (Out)"
     },
     {
       "name": "K. Porter",
@@ -41,6 +41,11 @@
   ],
   "MIL": [
     {
+      "name": "G. Antetokounmpo",
+      "status": "DOUBT",
+      "details": "G. Antetokounmpo (Doubt)"
+    },
+    {
       "name": "T. Antetokounmpo",
       "status": "QUES",
       "details": "T. Antetokounmpo (Ques)"
@@ -59,11 +64,6 @@
       "name": "B. Portis",
       "status": "QUES",
       "details": "B. Portis (Ques)"
-    },
-    {
-      "name": "G. Antetokounmpo",
-      "status": "OUT",
-      "details": "G. Antetokounmpo (Out)"
     },
     {
       "name": "K. Porter",
@@ -84,35 +84,35 @@
     },
     {
       "name": "A. Dosunmu",
-      "status": "OUT",
-      "details": "A. Dosunmu (Out)"
+      "status": "QUES",
+      "details": "A. Dosunmu (Ques)"
     },
     {
       "name": "A. Edwards",
-      "status": "OUT",
-      "details": "A. Edwards (Out)"
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
     },
     {
       "name": "J. McDaniels",
-      "status": "OUT",
-      "details": "J. McDaniels (Out)"
+      "status": "QUES",
+      "details": "J. McDaniels (Ques)"
     }
   ],
   "MIN": [
     {
       "name": "A. Dosunmu",
-      "status": "OUT",
-      "details": "A. Dosunmu (Out)"
+      "status": "QUES",
+      "details": "A. Dosunmu (Ques)"
     },
     {
       "name": "A. Edwards",
-      "status": "OUT",
-      "details": "A. Edwards (Out)"
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
     },
     {
       "name": "J. McDaniels",
-      "status": "OUT",
-      "details": "J. McDaniels (Out)"
+      "status": "QUES",
+      "details": "J. McDaniels (Ques)"
     }
   ],
   "PHI": [
@@ -123,15 +123,15 @@
     },
     {
       "name": "T. Salaun",
-      "status": "OUT",
-      "details": "T. Salaun (Out)"
+      "status": "DOUBT",
+      "details": "T. Salaun (Doubt)"
     }
   ],
   "CHA": [
     {
       "name": "T. Salaun",
-      "status": "OUT",
-      "details": "T. Salaun (Out)"
+      "status": "DOUBT",
+      "details": "T. Salaun (Doubt)"
     }
   ],
   "SAC": [
