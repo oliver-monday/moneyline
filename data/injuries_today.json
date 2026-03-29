@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-29",
-  "built_at_utc": "2026-03-29T14:58:56Z",
+  "built_at_utc": "2026-03-29T17:20:44Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -118,11 +118,6 @@
       "details": "A. Nembhard (Ques)"
     },
     {
-      "name": "A. Nesmith",
-      "status": "QUES",
-      "details": "A. Nesmith (Ques)"
-    },
-    {
       "name": "J. Walker",
       "status": "QUES",
       "details": "J. Walker (Ques)"
@@ -156,6 +151,11 @@
       "name": "O. Toppin",
       "status": "QUES",
       "details": "O. Toppin (Ques)"
+    },
+    {
+      "name": "A. Nesmith",
+      "status": "DOUBT",
+      "details": "A. Nesmith (Doubt)"
     }
   ],
   "IND": [
@@ -185,11 +185,6 @@
       "details": "A. Nembhard (Ques)"
     },
     {
-      "name": "A. Nesmith",
-      "status": "QUES",
-      "details": "A. Nesmith (Ques)"
-    },
-    {
       "name": "P. Siakam",
       "status": "QUES",
       "details": "P. Siakam (Ques)"
@@ -203,6 +198,11 @@
       "name": "J. Walker",
       "status": "QUES",
       "details": "J. Walker (Ques)"
+    },
+    {
+      "name": "A. Nesmith",
+      "status": "DOUBT",
+      "details": "A. Nesmith (Doubt)"
     }
   ],
   "SAC": [
@@ -227,14 +227,24 @@
       "details": "D. Sabonis (OFS)"
     },
     {
-      "name": "I. Stevens",
-      "status": "QUES",
-      "details": "I. Stevens (Ques)"
+      "name": "D. DeRozan",
+      "status": "OUT",
+      "details": "D. DeRozan (Out)"
+    },
+    {
+      "name": "Malik Monk",
+      "status": "OUT",
+      "details": "Malik Monk (Out)"
     },
     {
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "I. Stevens",
+      "status": "OUT",
+      "details": "I. Stevens (Out)"
     },
     {
       "name": "R. Westbrook",
@@ -425,6 +435,11 @@
       "details": "C. Murray-Boyles (Ques)"
     },
     {
+      "name": "J. Battle",
+      "status": "OUT",
+      "details": "J. Battle (Out)"
+    },
+    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
@@ -452,6 +467,11 @@
       "details": "C. Murray-Boyles (Ques)"
     },
     {
+      "name": "J. Battle",
+      "status": "OUT",
+      "details": "J. Battle (Out)"
+    },
+    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
@@ -464,24 +484,19 @@
   ],
   "BOS": [
     {
-      "name": "J. Brown",
-      "status": "QUES",
-      "details": "J. Brown (Ques)"
-    },
-    {
       "name": "N. Queta",
-      "status": "QUES",
-      "details": "N. Queta (Ques)"
-    },
-    {
-      "name": "J. Tatum",
-      "status": "QUES",
-      "details": "J. Tatum (Ques)"
+      "status": "PROB",
+      "details": "N. Queta (Prob)"
     },
     {
       "name": "D. White",
       "status": "QUES",
       "details": "D. White (Ques)"
+    },
+    {
+      "name": "J. Brown",
+      "status": "OUT",
+      "details": "J. Brown (Out)"
     },
     {
       "name": "N. Vucevic",
@@ -495,8 +510,13 @@
     },
     {
       "name": "T. Salaun",
-      "status": "DOUBT",
-      "details": "T. Salaun (Doubt)"
+      "status": "OUT",
+      "details": "T. Salaun (Out)"
+    },
+    {
+      "name": "G. Williams",
+      "status": "OUT",
+      "details": "G. Williams (Out)"
     }
   ],
   "CHA": [
@@ -507,8 +527,13 @@
     },
     {
       "name": "T. Salaun",
-      "status": "DOUBT",
-      "details": "T. Salaun (Doubt)"
+      "status": "OUT",
+      "details": "T. Salaun (Out)"
+    },
+    {
+      "name": "G. Williams",
+      "status": "OUT",
+      "details": "G. Williams (Out)"
     }
   ],
   "HOU": [
