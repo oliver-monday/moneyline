@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-29",
-  "built_at_utc": "2026-03-29T17:20:44Z",
+  "built_at_utc": "2026-03-29T18:39:00Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -15,23 +15,8 @@
     },
     {
       "name": "I. Jackson",
-      "status": "QUES",
-      "details": "I. Jackson (Ques)"
-    },
-    {
-      "name": "R. Rollins",
-      "status": "QUES",
-      "details": "R. Rollins (Ques)"
-    },
-    {
-      "name": "K. Kuzma",
-      "status": "QUES",
-      "details": "K. Kuzma (Ques)"
-    },
-    {
-      "name": "M. Turner",
-      "status": "QUES",
-      "details": "M. Turner (Ques)"
+      "status": "OUT",
+      "details": "I. Jackson (Out)"
     },
     {
       "name": "K. Porter",
@@ -39,14 +24,14 @@
       "details": "K. Porter (OFS)"
     },
     {
-      "name": "T. Antetokounmpo",
-      "status": "QUES",
-      "details": "T. Antetokounmpo (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
+    },
+    {
+      "name": "T. Antetokounmpo",
+      "status": "OUT",
+      "details": "T. Antetokounmpo (Out)"
     },
     {
       "name": "G. Harris",
@@ -54,9 +39,24 @@
       "details": "G. Harris (Out)"
     },
     {
+      "name": "Kyle Kuzma",
+      "status": "OUT",
+      "details": "Kyle Kuzma (Out)"
+    },
+    {
       "name": "B. Portis",
       "status": "OUT",
       "details": "B. Portis (Out)"
+    },
+    {
+      "name": "R. Rollins",
+      "status": "OUT",
+      "details": "R. Rollins (Out)"
+    },
+    {
+      "name": "M. Turner",
+      "status": "OUT",
+      "details": "M. Turner (Out)"
     }
   ],
   "MIL": [
@@ -66,29 +66,14 @@
       "details": "K. Porter (OFS)"
     },
     {
-      "name": "T. Antetokounmpo",
-      "status": "QUES",
-      "details": "T. Antetokounmpo (Ques)"
-    },
-    {
-      "name": "K. Kuzma",
-      "status": "QUES",
-      "details": "K. Kuzma (Ques)"
-    },
-    {
-      "name": "R. Rollins",
-      "status": "QUES",
-      "details": "R. Rollins (Ques)"
-    },
-    {
-      "name": "M. Turner",
-      "status": "QUES",
-      "details": "M. Turner (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
+    },
+    {
+      "name": "T. Antetokounmpo",
+      "status": "OUT",
+      "details": "T. Antetokounmpo (Out)"
     },
     {
       "name": "G. Harris",
@@ -96,9 +81,24 @@
       "details": "G. Harris (Out)"
     },
     {
+      "name": "Kyle Kuzma",
+      "status": "OUT",
+      "details": "Kyle Kuzma (Out)"
+    },
+    {
       "name": "B. Portis",
       "status": "OUT",
       "details": "B. Portis (Out)"
+    },
+    {
+      "name": "R. Rollins",
+      "status": "OUT",
+      "details": "R. Rollins (Out)"
+    },
+    {
+      "name": "M. Turner",
+      "status": "OUT",
+      "details": "M. Turner (Out)"
     }
   ],
   "MIA": [
@@ -262,6 +262,11 @@
       "details": "D. Sharpe (OFS)"
     },
     {
+      "name": "J. Wilson",
+      "status": "PROB",
+      "details": "J. Wilson (Prob)"
+    },
+    {
       "name": "J. Minott",
       "status": "QUES",
       "details": "J. Minott (Ques)"
@@ -289,6 +294,11 @@
       "details": "D. Sharpe (OFS)"
     },
     {
+      "name": "J. Wilson",
+      "status": "PROB",
+      "details": "J. Wilson (Prob)"
+    },
+    {
       "name": "J. Minott",
       "status": "QUES",
       "details": "J. Minott (Ques)"
@@ -309,16 +319,6 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "L. Black",
-      "status": "QUES",
-      "details": "L. Black (Ques)"
-    },
-    {
-      "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
     },
     {
       "name": "A. Davis",
