@@ -1,0 +1,14 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-28,2026,Jalen Johnson,ATL,SAC,pts,20,HIT,26,,targets_snapshot_2026-03-28.json
+2026-03-28,2026,Jalen Johnson,ATL,SAC,3pt,2,HIT,4,,targets_snapshot_2026-03-28.json
+2026-03-28,2026,Josh Giddey,CHI,MEM,ast,10,HIT,10,,targets_snapshot_2026-03-28.json
+2026-03-28,2026,Matas Buzelis,CHI,MEM,pts,15,HIT,29,,targets_snapshot_2026-03-28.json
+2026-03-28,2026,Matas Buzelis,CHI,MEM,reb,6,HIT,10,,targets_snapshot_2026-03-28.json
+2026-03-28,2026,Matas Buzelis,CHI,MEM,3pt,2,HIT,3,,targets_snapshot_2026-03-28.json
+2026-03-28,2026,Jalen Green,PHX,UTAH,pts,20,HIT,31,,targets_snapshot_2026-03-28.json
+2026-03-28,2026,Jalen Green,PHX,UTAH,ast,2,HIT,3,,targets_snapshot_2026-03-28.json
+2026-03-28,2026,Jalen Green,PHX,UTAH,3pt,2,HIT,5,,targets_snapshot_2026-03-28.json
+2026-03-28,2026,Dyson Daniels,ATL,SAC,reb,6,,,,targets_snapshot_2026-03-28.json
+2026-03-28,2026,Ryan Rollins,MIL,SA,pts,15,MISSED,12,,targets_snapshot_2026-03-28.json
+2026-03-28,2026,Ryan Rollins,MIL,SA,3pt,2,MISSED,0,,targets_snapshot_2026-03-28.json
+2026-03-28,2026,De'Aaron Fox,SA,MIL,ast,6,HIT,6,,targets_snapshot_2026-03-28.json
