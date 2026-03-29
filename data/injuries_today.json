@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-29",
-  "built_at_utc": "2026-03-29T09:01:27Z",
+  "built_at_utc": "2026-03-29T14:58:56Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -19,9 +19,24 @@
       "details": "I. Jackson (Ques)"
     },
     {
+      "name": "R. Rollins",
+      "status": "QUES",
+      "details": "R. Rollins (Ques)"
+    },
+    {
       "name": "K. Kuzma",
       "status": "QUES",
       "details": "K. Kuzma (Ques)"
+    },
+    {
+      "name": "M. Turner",
+      "status": "QUES",
+      "details": "M. Turner (Ques)"
+    },
+    {
+      "name": "K. Porter",
+      "status": "OFS",
+      "details": "K. Porter (OFS)"
     },
     {
       "name": "T. Antetokounmpo",
@@ -29,36 +44,31 @@
       "details": "T. Antetokounmpo (Ques)"
     },
     {
+      "name": "G. Antetokounmpo",
+      "status": "OUT",
+      "details": "G. Antetokounmpo (Out)"
+    },
+    {
       "name": "G. Harris",
-      "status": "QUES",
-      "details": "G. Harris (Ques)"
+      "status": "OUT",
+      "details": "G. Harris (Out)"
     },
     {
       "name": "B. Portis",
-      "status": "QUES",
-      "details": "B. Portis (Ques)"
-    },
-    {
-      "name": "G. Antetokounmpo",
-      "status": "DOUBT",
-      "details": "G. Antetokounmpo (Doubt)"
-    },
-    {
-      "name": "K. Porter",
       "status": "OUT",
-      "details": "K. Porter (Out)"
+      "details": "B. Portis (Out)"
     }
   ],
   "MIL": [
     {
+      "name": "K. Porter",
+      "status": "OFS",
+      "details": "K. Porter (OFS)"
+    },
+    {
       "name": "T. Antetokounmpo",
       "status": "QUES",
       "details": "T. Antetokounmpo (Ques)"
-    },
-    {
-      "name": "G. Harris",
-      "status": "QUES",
-      "details": "G. Harris (Ques)"
     },
     {
       "name": "K. Kuzma",
@@ -66,26 +76,36 @@
       "details": "K. Kuzma (Ques)"
     },
     {
-      "name": "B. Portis",
+      "name": "R. Rollins",
       "status": "QUES",
-      "details": "B. Portis (Ques)"
+      "details": "R. Rollins (Ques)"
+    },
+    {
+      "name": "M. Turner",
+      "status": "QUES",
+      "details": "M. Turner (Ques)"
     },
     {
       "name": "G. Antetokounmpo",
-      "status": "DOUBT",
-      "details": "G. Antetokounmpo (Doubt)"
+      "status": "OUT",
+      "details": "G. Antetokounmpo (Out)"
     },
     {
-      "name": "K. Porter",
+      "name": "G. Harris",
       "status": "OUT",
-      "details": "K. Porter (Out)"
+      "details": "G. Harris (Out)"
+    },
+    {
+      "name": "B. Portis",
+      "status": "OUT",
+      "details": "B. Portis (Out)"
     }
   ],
   "MIA": [
     {
       "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
+      "status": "OUT",
+      "details": "N. Powell (Out)"
     },
     {
       "name": "T. Rozier",
@@ -469,12 +489,22 @@
       "details": "N. Vucevic (Out)"
     },
     {
+      "name": "L. McNeeley",
+      "status": "QUES",
+      "details": "L. McNeeley (Ques)"
+    },
+    {
       "name": "T. Salaun",
       "status": "DOUBT",
       "details": "T. Salaun (Doubt)"
     }
   ],
   "CHA": [
+    {
+      "name": "L. McNeeley",
+      "status": "QUES",
+      "details": "L. McNeeley (Ques)"
+    },
     {
       "name": "T. Salaun",
       "status": "DOUBT",
@@ -527,14 +557,14 @@
   ],
   "NYK": [
     {
-      "name": "K. McCullar",
-      "status": "QUES",
-      "details": "K. McCullar (Ques)"
-    },
-    {
       "name": "M. McBride",
       "status": "QUES",
       "details": "M. McBride (Ques)"
+    },
+    {
+      "name": "K. McCullar",
+      "status": "QUES",
+      "details": "K. McCullar (Ques)"
     },
     {
       "name": "L. Shamet",
@@ -545,6 +575,11 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "B. Barnhizer",
+      "status": "PROB",
+      "details": "B. Barnhizer (Prob)"
     }
   ],
   "OKC": [
@@ -552,6 +587,11 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "B. Barnhizer",
+      "status": "PROB",
+      "details": "B. Barnhizer (Prob)"
     }
   ],
   "GSW": [
