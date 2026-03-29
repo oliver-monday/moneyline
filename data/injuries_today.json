@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-28",
-  "built_at_utc": "2026-03-29T03:51:13Z",
+  "built_at_utc": "2026-03-29T04:29:27Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -364,6 +364,16 @@
   ],
   "UTA": [
     {
+      "name": "I. Collier",
+      "status": "DOUBT",
+      "details": "I. Collier (Doubt)"
+    },
+    {
+      "name": "K. George",
+      "status": "DOUBT",
+      "details": "K. George (Doubt)"
+    },
+    {
       "name": "J. Jackson",
       "status": "OFS",
       "details": "J. Jackson (OFS)"
@@ -379,61 +389,51 @@
       "details": "J. Nurkic (OFS)"
     },
     {
-      "name": "I. Collier",
-      "status": "OUT",
-      "details": "I. Collier (Out)"
-    },
-    {
-      "name": "K. George",
-      "status": "OUT",
-      "details": "K. George (Out)"
-    },
-    {
       "name": "L. Markkanen",
       "status": "OUT",
       "details": "L. Markkanen (Out)"
     },
     {
       "name": "D. Brooks",
-      "status": "OUT",
-      "details": "D. Brooks (Out)"
+      "status": "QUES",
+      "details": "D. Brooks (Ques)"
     },
     {
       "name": "A. Coffey",
-      "status": "OUT",
-      "details": "A. Coffey (Out)"
+      "status": "QUES",
+      "details": "A. Coffey (Ques)"
     },
     {
       "name": "H. Highsmith",
-      "status": "OUT",
-      "details": "H. Highsmith (Out)"
+      "status": "QUES",
+      "details": "H. Highsmith (Ques)"
     },
     {
       "name": "M. Williams",
-      "status": "OUT",
-      "details": "M. Williams (Out)"
+      "status": "QUES",
+      "details": "M. Williams (Ques)"
     }
   ],
   "PHX": [
     {
       "name": "D. Brooks",
-      "status": "OUT",
-      "details": "D. Brooks (Out)"
+      "status": "QUES",
+      "details": "D. Brooks (Ques)"
     },
     {
       "name": "A. Coffey",
-      "status": "OUT",
-      "details": "A. Coffey (Out)"
+      "status": "QUES",
+      "details": "A. Coffey (Ques)"
     },
     {
       "name": "H. Highsmith",
-      "status": "OUT",
-      "details": "H. Highsmith (Out)"
+      "status": "QUES",
+      "details": "H. Highsmith (Ques)"
     },
     {
       "name": "M. Williams",
-      "status": "OUT",
-      "details": "M. Williams (Out)"
+      "status": "QUES",
+      "details": "M. Williams (Ques)"
     }
   ]
 }
