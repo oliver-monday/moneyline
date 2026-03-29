@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-29",
-  "built_at_utc": "2026-03-29T20:29:46Z",
+  "built_at_utc": "2026-03-29T21:19:32Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -317,8 +317,8 @@
     },
     {
       "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "status": "PROB",
+      "details": "R. Williams (Prob)"
     },
     {
       "name": "J. Grant",
@@ -344,8 +344,8 @@
     },
     {
       "name": "R. Williams",
-      "status": "QUES",
-      "details": "R. Williams (Ques)"
+      "status": "PROB",
+      "details": "R. Williams (Prob)"
     },
     {
       "name": "J. Grant",
@@ -381,8 +381,8 @@
     },
     {
       "name": "R. Barrett",
-      "status": "QUES",
-      "details": "R. Barrett (Ques)"
+      "status": "PROB",
+      "details": "R. Barrett (Prob)"
     },
     {
       "name": "J. Battle",
@@ -393,6 +393,11 @@
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "C. Murray-Boyles",
+      "status": "OUT",
+      "details": "C. Murray-Boyles (Out)"
     },
     {
       "name": "I. Quickley",
@@ -403,8 +408,8 @@
   "TOR": [
     {
       "name": "R. Barrett",
-      "status": "QUES",
-      "details": "R. Barrett (Ques)"
+      "status": "PROB",
+      "details": "R. Barrett (Prob)"
     },
     {
       "name": "J. Battle",
@@ -417,22 +422,17 @@
       "details": "C. Hepburn (Out)"
     },
     {
+      "name": "C. Murray-Boyles",
+      "status": "OUT",
+      "details": "C. Murray-Boyles (Out)"
+    },
+    {
       "name": "I. Quickley",
       "status": "OUT",
       "details": "I. Quickley (Out)"
     }
   ],
   "BOS": [
-    {
-      "name": "N. Queta",
-      "status": "PROB",
-      "details": "N. Queta (Prob)"
-    },
-    {
-      "name": "D. White",
-      "status": "QUES",
-      "details": "D. White (Ques)"
-    },
     {
       "name": "J. Brown",
       "status": "OUT",
@@ -444,9 +444,9 @@
       "details": "N. Vucevic (Out)"
     },
     {
-      "name": "L. McNeeley",
-      "status": "QUES",
-      "details": "L. McNeeley (Ques)"
+      "name": "D. White",
+      "status": "OUT",
+      "details": "D. White (Out)"
     },
     {
       "name": "T. Salaun",
@@ -460,11 +460,6 @@
     }
   ],
   "CHA": [
-    {
-      "name": "L. McNeeley",
-      "status": "QUES",
-      "details": "L. McNeeley (Ques)"
-    },
     {
       "name": "T. Salaun",
       "status": "OUT",
@@ -540,11 +535,6 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "B. Barnhizer",
-      "status": "PROB",
-      "details": "B. Barnhizer (Prob)"
     }
   ],
   "OKC": [
@@ -552,11 +542,6 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "B. Barnhizer",
-      "status": "PROB",
-      "details": "B. Barnhizer (Prob)"
     }
   ],
   "GSW": [
