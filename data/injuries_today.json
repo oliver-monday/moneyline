@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-30",
-  "built_at_utc": "2026-03-30T15:49:16Z",
+  "built_at_utc": "2026-03-30T17:42:29Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -9,9 +9,14 @@
       "details": "J. Broome (Out)"
     },
     {
+      "name": "P. Larsson",
+      "status": "PROB",
+      "details": "P. Larsson (Prob)"
+    },
+    {
       "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
+      "status": "OUT",
+      "details": "N. Powell (Out)"
     },
     {
       "name": "T. Rozier",
@@ -21,9 +26,14 @@
   ],
   "MIA": [
     {
+      "name": "P. Larsson",
+      "status": "PROB",
+      "details": "P. Larsson (Prob)"
+    },
+    {
       "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
+      "status": "OUT",
+      "details": "N. Powell (Out)"
     },
     {
       "name": "T. Rozier",
@@ -33,24 +43,41 @@
   ],
   "BOS": [
     {
-      "name": "J. Brown",
+      "name": "R. Harper",
       "status": "QUES",
-      "details": "J. Brown (Ques)"
+      "details": "R. Harper (Ques)"
     },
     {
       "name": "D. White",
-      "status": "QUES",
-      "details": "D. White (Ques)"
+      "status": "PROB",
+      "details": "D. White (Prob)"
+    },
+    {
+      "name": "N. Queta",
+      "status": "DOUBT",
+      "details": "N. Queta (Doubt)"
     },
     {
       "name": "J. Tatum",
-      "status": "DOUBT",
-      "details": "J. Tatum (Doubt)"
+      "status": "OUT",
+      "details": "J. Tatum (Out)"
     },
     {
       "name": "N. Vucevic",
       "status": "OUT",
       "details": "N. Vucevic (Out)"
+    },
+    {
+      "name": "J. Landale",
+      "status": "QUES",
+      "details": "J. Landale (Ques)"
+    }
+  ],
+  "ATL": [
+    {
+      "name": "J. Landale",
+      "status": "QUES",
+      "details": "J. Landale (Ques)"
     }
   ],
   "CHI": [
@@ -263,11 +290,6 @@
   ],
   "MIN": [
     {
-      "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
-    },
-    {
       "name": "A. Edwards",
       "status": "QUES",
       "details": "A. Edwards (Ques)"
@@ -279,8 +301,13 @@
     },
     {
       "name": "N. Marshall",
-      "status": "PROB",
-      "details": "N. Marshall (Prob)"
+      "status": "QUES",
+      "details": "N. Marshall (Ques)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "QUES",
+      "details": "P. Washington (Ques)"
     },
     {
       "name": "D. Gafford",
@@ -325,14 +352,19 @@
       "details": "D. Gafford (Prob)"
     },
     {
-      "name": "N. Marshall",
-      "status": "PROB",
-      "details": "N. Marshall (Prob)"
-    },
-    {
       "name": "M. Bagley",
       "status": "QUES",
       "details": "M. Bagley (Ques)"
+    },
+    {
+      "name": "N. Marshall",
+      "status": "QUES",
+      "details": "N. Marshall (Ques)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "QUES",
+      "details": "P. Washington (Ques)"
     },
     {
       "name": "C. Martin",
@@ -461,6 +493,11 @@
       "details": "I. Stewart (Out)"
     },
     {
+      "name": "I. Hartenstein",
+      "status": "QUES",
+      "details": "I. Hartenstein (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
@@ -471,6 +508,11 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "I. Hartenstein",
+      "status": "QUES",
+      "details": "I. Hartenstein (Ques)"
     }
   ],
   "WAS": [
