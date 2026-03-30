@@ -9683,6 +9683,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-30,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-03-30,BOS,J. Brown,QUES,J. Brown (Ques),rotowire
 2026-03-30,BOS,D. White,QUES,D. White (Ques),rotowire
+2026-03-30,BOS,J. Tatum,DOUBT,J. Tatum (Doubt),rotowire
 2026-03-30,BOS,N. Vucevic,OUT,N. Vucevic (Out),rotowire
 2026-03-30,CHI,Z. Collins,OFS,Z. Collins (OFS),rotowire
 2026-03-30,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
@@ -9693,6 +9694,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-30,CHI,A. Simons,OUT,A. Simons (Out),rotowire
 2026-03-30,CHI,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-03-30,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
+2026-03-30,PHX,G. Allen,QUES,G. Allen (Ques),rotowire
 2026-03-30,PHX,D. Brooks,OUT,D. Brooks (Out),rotowire
 2026-03-30,PHX,A. Coffey,OUT,A. Coffey (Out),rotowire
 2026-03-30,PHX,H. Highsmith,OUT,H. Highsmith (Out),rotowire

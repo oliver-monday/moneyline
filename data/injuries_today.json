@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-30",
-  "built_at_utc": "2026-03-30T09:50:40Z",
+  "built_at_utc": "2026-03-30T15:49:16Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -41,6 +41,11 @@
       "name": "D. White",
       "status": "QUES",
       "details": "D. White (Ques)"
+    },
+    {
+      "name": "J. Tatum",
+      "status": "DOUBT",
+      "details": "J. Tatum (Doubt)"
     },
     {
       "name": "N. Vucevic",
@@ -98,6 +103,11 @@
     }
   ],
   "PHX": [
+    {
+      "name": "G. Allen",
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
+    },
     {
       "name": "D. Brooks",
       "status": "OUT",
