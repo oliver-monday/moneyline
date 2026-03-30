@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-30",
-  "built_at_utc": "2026-03-30T18:56:14Z",
+  "built_at_utc": "2026-03-30T19:57:06Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -527,24 +527,14 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "B. Carrington",
+      "name": "B. Coulibaly",
       "status": "QUES",
-      "details": "B. Carrington (Ques)"
+      "details": "B. Coulibaly (Ques)"
     },
     {
-      "name": "T. Johnson",
+      "name": "A. Gill",
       "status": "QUES",
-      "details": "T. Johnson (Ques)"
-    },
-    {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
-    },
-    {
-      "name": "T. Young",
-      "status": "DOUBT",
-      "details": "T. Young (Doubt)"
+      "details": "A. Gill (Ques)"
     },
     {
       "name": "A. Davis",
@@ -560,6 +550,11 @@
       "name": "D. Russell",
       "status": "OUT",
       "details": "D. Russell (Out)"
+    },
+    {
+      "name": "Trae Young",
+      "status": "OUT",
+      "details": "Trae Young (Out)"
     },
     {
       "name": "L. Doncic",
