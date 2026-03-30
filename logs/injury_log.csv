@@ -9681,15 +9681,16 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-30,DET,A. Thompson,QUES,A. Thompson (Ques),rotowire
 2026-03-30,WAS,B. Carrington,QUES,B. Carrington (Ques),rotowire
 2026-03-30,WAS,T. Johnson,QUES,T. Johnson (Ques),rotowire
-2026-03-30,WAS,A. Sarr,QUES,A. Sarr (Ques),rotowire
 2026-03-30,WAS,T. Young,DOUBT,T. Young (Doubt),rotowire
-2026-03-30,PHI,J. Broome,OUT,J. Broome (Out),rotowire
-2026-03-30,PHI,T. Herro,PROB,T. Herro (Prob),rotowire
 2026-03-30,PHI,P. Larsson,PROB,P. Larsson (Prob),rotowire
+2026-03-30,MIA,P. Larsson,PROB,P. Larsson (Prob),rotowire
+2026-03-30,CHI,Jaden Ivey,OFS,Jaden Ivey (OFS),rotowire
+2026-03-30,PHI,J. Broome,OUT,J. Broome (Out),rotowire
+2026-03-30,PHI,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
+2026-03-30,PHI,T. Herro,PROB,T. Herro (Prob),rotowire
 2026-03-30,PHI,N. Powell,OUT,N. Powell (Out),rotowire
 2026-03-30,PHI,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-03-30,MIA,T. Herro,PROB,T. Herro (Prob),rotowire
-2026-03-30,MIA,P. Larsson,PROB,P. Larsson (Prob),rotowire
 2026-03-30,MIA,N. Powell,OUT,N. Powell (Out),rotowire
 2026-03-30,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-03-30,BOS,R. Harper,QUES,R. Harper (Ques),rotowire
@@ -9701,7 +9702,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-30,ATL,J. Landale,QUES,J. Landale (Ques),rotowire
 2026-03-30,CHI,Z. Collins,OFS,Z. Collins (OFS),rotowire
 2026-03-30,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
-2026-03-30,CHI,Jaden Ivey,OFS,Jaden Ivey (OFS),rotowire
 2026-03-30,CHI,J. Smith,OFS,J. Smith (OFS),rotowire
 2026-03-30,CHI,N. Richards,QUES,N. Richards (Ques),rotowire
 2026-03-30,CHI,G. Yabusele,QUES,G. Yabusele (Ques),rotowire
@@ -9787,6 +9787,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-30,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
 2026-03-30,WAS,B. Coulibaly,QUES,B. Coulibaly (Ques),rotowire
 2026-03-30,WAS,A. Gill,QUES,A. Gill (Ques),rotowire
+2026-03-30,WAS,A. Sarr,QUES,A. Sarr (Ques),rotowire
 2026-03-30,WAS,A. Davis,OUT,A. Davis (Out),rotowire
 2026-03-30,WAS,K. George,OUT,K. George (Out),rotowire
 2026-03-30,WAS,D. Russell,OUT,D. Russell (Out),rotowire
