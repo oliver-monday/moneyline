@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-30",
-  "built_at_utc": "2026-03-30T21:30:23Z",
+  "built_at_utc": "2026-03-30T22:44:29Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -12,11 +12,6 @@
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
-    },
-    {
-      "name": "T. Herro",
-      "status": "PROB",
-      "details": "T. Herro (Prob)"
     },
     {
       "name": "N. Powell",
@@ -31,11 +26,6 @@
   ],
   "MIA": [
     {
-      "name": "T. Herro",
-      "status": "PROB",
-      "details": "T. Herro (Prob)"
-    },
-    {
       "name": "N. Powell",
       "status": "OUT",
       "details": "N. Powell (Out)"
@@ -48,19 +38,14 @@
   ],
   "BOS": [
     {
-      "name": "R. Harper",
-      "status": "QUES",
-      "details": "R. Harper (Ques)"
-    },
-    {
-      "name": "D. White",
-      "status": "PROB",
-      "details": "D. White (Prob)"
+      "name": "Ron Harper",
+      "status": "OUT",
+      "details": "Ron Harper (Out)"
     },
     {
       "name": "N. Queta",
-      "status": "DOUBT",
-      "details": "N. Queta (Doubt)"
+      "status": "OUT",
+      "details": "N. Queta (Out)"
     },
     {
       "name": "J. Tatum",
@@ -74,15 +59,15 @@
     },
     {
       "name": "J. Landale",
-      "status": "QUES",
-      "details": "J. Landale (Ques)"
+      "status": "OUT",
+      "details": "J. Landale (Out)"
     }
   ],
   "ATL": [
     {
       "name": "J. Landale",
-      "status": "QUES",
-      "details": "J. Landale (Ques)"
+      "status": "OUT",
+      "details": "J. Landale (Out)"
     }
   ],
   "CHI": [
@@ -137,8 +122,8 @@
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "D. Brooks",
