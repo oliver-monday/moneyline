@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-30",
-  "built_at_utc": "2026-03-30T17:42:29Z",
+  "built_at_utc": "2026-03-30T18:56:14Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -463,29 +463,24 @@
   ],
   "DET": [
     {
-      "name": "A. Thompson",
-      "status": "QUES",
-      "details": "A. Thompson (Ques)"
-    },
-    {
-      "name": "J. Duren",
-      "status": "DOUBT",
-      "details": "J. Duren (Doubt)"
-    },
-    {
-      "name": "T. Harris",
-      "status": "DOUBT",
-      "details": "T. Harris (Doubt)"
-    },
-    {
-      "name": "D. Robinson",
-      "status": "DOUBT",
-      "details": "D. Robinson (Doubt)"
-    },
-    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
+    },
+    {
+      "name": "J. Duren",
+      "status": "OUT",
+      "details": "J. Duren (Out)"
+    },
+    {
+      "name": "T. Harris",
+      "status": "OUT",
+      "details": "T. Harris (Out)"
+    },
+    {
+      "name": "D. Robinson",
+      "status": "OUT",
+      "details": "D. Robinson (Out)"
     },
     {
       "name": "I. Stewart",
@@ -493,14 +488,19 @@
       "details": "I. Stewart (Out)"
     },
     {
-      "name": "I. Hartenstein",
-      "status": "QUES",
-      "details": "I. Hartenstein (Ques)"
-    },
-    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "I. Hartenstein",
+      "status": "OUT",
+      "details": "I. Hartenstein (Out)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ],
   "OKC": [
@@ -511,8 +511,13 @@
     },
     {
       "name": "I. Hartenstein",
-      "status": "QUES",
-      "details": "I. Hartenstein (Ques)"
+      "status": "OUT",
+      "details": "I. Hartenstein (Out)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ],
   "WAS": [
