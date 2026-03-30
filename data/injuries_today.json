@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-03-30",
-  "built_at_utc": "2026-03-30T19:57:06Z",
+  "built_at_utc": "2026-03-30T20:42:52Z",
   "source": "rotowire",
   "PHI": [
     {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
+    },
+    {
+      "name": "T. Herro",
+      "status": "PROB",
+      "details": "T. Herro (Prob)"
     },
     {
       "name": "P. Larsson",
@@ -25,6 +30,11 @@
     }
   ],
   "MIA": [
+    {
+      "name": "T. Herro",
+      "status": "PROB",
+      "details": "T. Herro (Prob)"
+    },
     {
       "name": "P. Larsson",
       "status": "PROB",
@@ -110,6 +120,11 @@
       "name": "G. Yabusele",
       "status": "QUES",
       "details": "G. Yabusele (Ques)"
+    },
+    {
+      "name": "M. McClung",
+      "status": "OUT",
+      "details": "M. McClung (Out)"
     },
     {
       "name": "A. Simons",

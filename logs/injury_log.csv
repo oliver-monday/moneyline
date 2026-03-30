@@ -9684,9 +9684,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-30,WAS,A. Sarr,QUES,A. Sarr (Ques),rotowire
 2026-03-30,WAS,T. Young,DOUBT,T. Young (Doubt),rotowire
 2026-03-30,PHI,J. Broome,OUT,J. Broome (Out),rotowire
+2026-03-30,PHI,T. Herro,PROB,T. Herro (Prob),rotowire
 2026-03-30,PHI,P. Larsson,PROB,P. Larsson (Prob),rotowire
 2026-03-30,PHI,N. Powell,OUT,N. Powell (Out),rotowire
 2026-03-30,PHI,T. Rozier,OUT,T. Rozier (Out),rotowire
+2026-03-30,MIA,T. Herro,PROB,T. Herro (Prob),rotowire
 2026-03-30,MIA,P. Larsson,PROB,P. Larsson (Prob),rotowire
 2026-03-30,MIA,N. Powell,OUT,N. Powell (Out),rotowire
 2026-03-30,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
@@ -9703,6 +9705,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-30,CHI,J. Smith,OFS,J. Smith (OFS),rotowire
 2026-03-30,CHI,N. Richards,QUES,N. Richards (Ques),rotowire
 2026-03-30,CHI,G. Yabusele,QUES,G. Yabusele (Ques),rotowire
+2026-03-30,CHI,M. McClung,OUT,M. McClung (Out),rotowire
 2026-03-30,CHI,A. Simons,OUT,A. Simons (Out),rotowire
 2026-03-30,CHI,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-03-30,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
