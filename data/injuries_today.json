@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-29",
-  "built_at_utc": "2026-03-30T03:54:20Z",
+  "built_at_utc": "2026-03-30T04:36:35Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -581,9 +581,19 @@
       "details": "W. Richard (Out)"
     },
     {
+      "name": "C. Johnson",
+      "status": "QUES",
+      "details": "C. Johnson (Ques)"
+    },
+    {
       "name": "S. Jones",
       "status": "QUES",
       "details": "S. Jones (Ques)"
+    },
+    {
+      "name": "Z. Nnaji",
+      "status": "QUES",
+      "details": "Z. Nnaji (Ques)"
     },
     {
       "name": "A. Gordon",
@@ -593,9 +603,19 @@
   ],
   "DEN": [
     {
+      "name": "C. Johnson",
+      "status": "QUES",
+      "details": "C. Johnson (Ques)"
+    },
+    {
       "name": "S. Jones",
       "status": "QUES",
       "details": "S. Jones (Ques)"
+    },
+    {
+      "name": "Z. Nnaji",
+      "status": "QUES",
+      "details": "Z. Nnaji (Ques)"
     },
     {
       "name": "A. Gordon",
