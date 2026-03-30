@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-29",
-  "built_at_utc": "2026-03-30T01:27:32Z",
+  "built_at_utc": "2026-03-30T03:54:20Z",
   "source": "rotowire",
   "LAC": [
     {
@@ -479,45 +479,45 @@
     },
     {
       "name": "H. Dickinson",
-      "status": "OUT",
-      "details": "H. Dickinson (Out)"
+      "status": "QUES",
+      "details": "H. Dickinson (Ques)"
     },
     {
       "name": "B. McGowens",
-      "status": "OUT",
-      "details": "B. McGowens (Out)"
+      "status": "DOUBT",
+      "details": "B. McGowens (Doubt)"
     },
     {
       "name": "T. Murphy",
-      "status": "OUT",
-      "details": "T. Murphy (Out)"
+      "status": "QUES",
+      "details": "T. Murphy (Ques)"
     },
     {
-      "name": "Josh Oduro",
-      "status": "OUT",
-      "details": "Josh Oduro (Out)"
+      "name": "J. Oduro",
+      "status": "QUES",
+      "details": "J. Oduro (Ques)"
     }
   ],
   "NOP": [
     {
       "name": "H. Dickinson",
-      "status": "OUT",
-      "details": "H. Dickinson (Out)"
+      "status": "QUES",
+      "details": "H. Dickinson (Ques)"
     },
     {
       "name": "B. McGowens",
-      "status": "OUT",
-      "details": "B. McGowens (Out)"
+      "status": "DOUBT",
+      "details": "B. McGowens (Doubt)"
     },
     {
       "name": "T. Murphy",
-      "status": "OUT",
-      "details": "T. Murphy (Out)"
+      "status": "QUES",
+      "details": "T. Murphy (Ques)"
     },
     {
-      "name": "Josh Oduro",
-      "status": "OUT",
-      "details": "Josh Oduro (Out)"
+      "name": "J. Oduro",
+      "status": "QUES",
+      "details": "J. Oduro (Ques)"
     }
   ],
   "NYK": [
@@ -528,13 +528,13 @@
     },
     {
       "name": "K. McCullar",
-      "status": "OUT",
-      "details": "K. McCullar (Out)"
+      "status": "QUES",
+      "details": "K. McCullar (Ques)"
     },
     {
       "name": "L. Shamet",
-      "status": "OUT",
-      "details": "L. Shamet (Out)"
+      "status": "QUES",
+      "details": "L. Shamet (Ques)"
     },
     {
       "name": "T. Sorber",
@@ -561,6 +561,11 @@
       "details": "M. Moody (OFS)"
     },
     {
+      "name": "Q. Post",
+      "status": "QUES",
+      "details": "Q. Post (Ques)"
+    },
+    {
       "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
@@ -576,12 +581,22 @@
       "details": "W. Richard (Out)"
     },
     {
+      "name": "S. Jones",
+      "status": "QUES",
+      "details": "S. Jones (Ques)"
+    },
+    {
       "name": "A. Gordon",
       "status": "OUT",
       "details": "A. Gordon (Out)"
     }
   ],
   "DEN": [
+    {
+      "name": "S. Jones",
+      "status": "QUES",
+      "details": "S. Jones (Ques)"
+    },
     {
       "name": "A. Gordon",
       "status": "OUT",
