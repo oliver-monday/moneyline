@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-30",
-  "built_at_utc": "2026-03-30T22:44:29Z",
+  "built_at_utc": "2026-03-30T23:38:14Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -87,19 +87,14 @@
       "details": "J. Smith (OFS)"
     },
     {
-      "name": "N. Richards",
-      "status": "QUES",
-      "details": "N. Richards (Ques)"
-    },
-    {
-      "name": "G. Yabusele",
-      "status": "QUES",
-      "details": "G. Yabusele (Ques)"
-    },
-    {
       "name": "M. McClung",
       "status": "OUT",
       "details": "M. McClung (Out)"
+    },
+    {
+      "name": "N. Richards",
+      "status": "OUT",
+      "details": "N. Richards (Out)"
     },
     {
       "name": "A. Simons",
@@ -146,11 +141,6 @@
       "details": "M. Williams (Out)"
     },
     {
-      "name": "W. Clayton",
-      "status": "QUES",
-      "details": "W. Clayton (Ques)"
-    },
-    {
       "name": "S. Aldama",
       "status": "OFS",
       "details": "S. Aldama (OFS)"
@@ -181,29 +171,24 @@
       "details": "S. Pippen (OFS)"
     },
     {
-      "name": "D. Jarreau",
-      "status": "QUES",
-      "details": "D. Jarreau (Ques)"
-    },
-    {
-      "name": "T. Gibson",
-      "status": "DOUBT",
-      "details": "T. Gibson (Doubt)"
-    },
-    {
-      "name": "O. Prosper",
-      "status": "DOUBT",
-      "details": "O. Prosper (Doubt)"
-    },
-    {
-      "name": "J. Small",
-      "status": "DOUBT",
-      "details": "J. Small (Doubt)"
+      "name": "Taj Gibson",
+      "status": "OUT",
+      "details": "Taj Gibson (Out)"
     },
     {
       "name": "Ty Jerome",
       "status": "OUT",
       "details": "Ty Jerome (Out)"
+    },
+    {
+      "name": "O. Prosper",
+      "status": "OUT",
+      "details": "O. Prosper (Out)"
+    },
+    {
+      "name": "J. Small",
+      "status": "OUT",
+      "details": "J. Small (Out)"
     },
     {
       "name": "J. Wells",
@@ -243,34 +228,24 @@
       "details": "S. Pippen (OFS)"
     },
     {
-      "name": "W. Clayton",
-      "status": "QUES",
-      "details": "W. Clayton (Ques)"
-    },
-    {
-      "name": "D. Jarreau",
-      "status": "QUES",
-      "details": "D. Jarreau (Ques)"
-    },
-    {
-      "name": "T. Gibson",
-      "status": "DOUBT",
-      "details": "T. Gibson (Doubt)"
-    },
-    {
-      "name": "O. Prosper",
-      "status": "DOUBT",
-      "details": "O. Prosper (Doubt)"
-    },
-    {
-      "name": "J. Small",
-      "status": "DOUBT",
-      "details": "J. Small (Doubt)"
+      "name": "Taj Gibson",
+      "status": "OUT",
+      "details": "Taj Gibson (Out)"
     },
     {
       "name": "Ty Jerome",
       "status": "OUT",
       "details": "Ty Jerome (Out)"
+    },
+    {
+      "name": "O. Prosper",
+      "status": "OUT",
+      "details": "O. Prosper (Out)"
+    },
+    {
+      "name": "J. Small",
+      "status": "OUT",
+      "details": "J. Small (Out)"
     },
     {
       "name": "J. Wells",
@@ -280,29 +255,9 @@
   ],
   "MIN": [
     {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
       "name": "J. McDaniels",
       "status": "OUT",
       "details": "J. McDaniels (Out)"
-    },
-    {
-      "name": "N. Marshall",
-      "status": "QUES",
-      "details": "N. Marshall (Ques)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "QUES",
-      "details": "P. Washington (Ques)"
-    },
-    {
-      "name": "D. Gafford",
-      "status": "PROB",
-      "details": "D. Gafford (Prob)"
     },
     {
       "name": "K. Irving",
@@ -316,13 +271,23 @@
     },
     {
       "name": "M. Bagley",
-      "status": "QUES",
-      "details": "M. Bagley (Ques)"
+      "status": "OUT",
+      "details": "M. Bagley (Out)"
+    },
+    {
+      "name": "N. Marshall",
+      "status": "OUT",
+      "details": "N. Marshall (Out)"
     },
     {
       "name": "C. Martin",
-      "status": "DOUBT",
-      "details": "C. Martin (Doubt)"
+      "status": "OUT",
+      "details": "C. Martin (Out)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     }
   ],
   "DAL": [
@@ -337,29 +302,24 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "D. Gafford",
-      "status": "PROB",
-      "details": "D. Gafford (Prob)"
-    },
-    {
       "name": "M. Bagley",
-      "status": "QUES",
-      "details": "M. Bagley (Ques)"
+      "status": "OUT",
+      "details": "M. Bagley (Out)"
     },
     {
       "name": "N. Marshall",
-      "status": "QUES",
-      "details": "N. Marshall (Ques)"
-    },
-    {
-      "name": "P. Washington",
-      "status": "QUES",
-      "details": "P. Washington (Ques)"
+      "status": "OUT",
+      "details": "N. Marshall (Out)"
     },
     {
       "name": "C. Martin",
-      "status": "DOUBT",
-      "details": "C. Martin (Doubt)"
+      "status": "OUT",
+      "details": "C. Martin (Out)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     }
   ],
   "CLE": [
