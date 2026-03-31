@@ -9699,6 +9699,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-30,MIN,A. Edwards,QUES,A. Edwards (Ques),rotowire
 2026-03-30,MIN,D. Gafford,PROB,D. Gafford (Prob),rotowire
 2026-03-30,DAL,D. Gafford,PROB,D. Gafford (Prob),rotowire
+2026-03-30,CLE,C. Porter,PROB,C. Porter (Prob),rotowire
+2026-03-30,WAS,A. Gill,QUES,A. Gill (Ques),rotowire
+2026-03-30,WAS,A. Sarr,QUES,A. Sarr (Ques),rotowire
 2026-03-30,PHI,J. Broome,OUT,J. Broome (Out),rotowire
 2026-03-30,PHI,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
 2026-03-30,PHI,N. Powell,OUT,N. Powell (Out),rotowire
@@ -9759,7 +9762,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-30,DAL,N. Marshall,OUT,N. Marshall (Out),rotowire
 2026-03-30,DAL,C. Martin,OUT,C. Martin (Out),rotowire
 2026-03-30,DAL,P. Washington,OUT,P. Washington (Out),rotowire
-2026-03-30,CLE,C. Porter,PROB,C. Porter (Prob),rotowire
 2026-03-30,CLE,J. Allen,OUT,J. Allen (Out),rotowire
 2026-03-30,CLE,Max Strus,OUT,Max Strus (Out),rotowire
 2026-03-30,CLE,J. Tyson,OUT,J. Tyson (Out),rotowire
@@ -9769,12 +9771,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-30,CLE,J. Nurkic,OFS,J. Nurkic (OFS),rotowire
 2026-03-30,CLE,I. Collier,OUT,I. Collier (Out),rotowire
 2026-03-30,CLE,K. George,OUT,K. George (Out),rotowire
+2026-03-30,CLE,E. Harkless,OUT,E. Harkless (Out),rotowire
 2026-03-30,CLE,L. Markkanen,OUT,L. Markkanen (Out),rotowire
 2026-03-30,UTA,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-03-30,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
 2026-03-30,UTA,J. Nurkic,OFS,J. Nurkic (OFS),rotowire
 2026-03-30,UTA,I. Collier,OUT,I. Collier (Out),rotowire
 2026-03-30,UTA,K. George,OUT,K. George (Out),rotowire
+2026-03-30,UTA,E. Harkless,OUT,E. Harkless (Out),rotowire
 2026-03-30,UTA,L. Markkanen,OUT,L. Markkanen (Out),rotowire
 2026-03-30,DET,C. Cunningham,OUT,C. Cunningham (Out),rotowire
 2026-03-30,DET,J. Duren,OUT,J. Duren (Out),rotowire
@@ -9788,12 +9792,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-30,OKC,I. Hartenstein,OUT,I. Hartenstein (Out),rotowire
 2026-03-30,OKC,J. Williams,OUT,J. Williams (Out),rotowire
 2026-03-30,WAS,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
-2026-03-30,WAS,B. Coulibaly,QUES,B. Coulibaly (Ques),rotowire
-2026-03-30,WAS,A. Gill,QUES,A. Gill (Ques),rotowire
-2026-03-30,WAS,A. Sarr,QUES,A. Sarr (Ques),rotowire
+2026-03-30,WAS,B. Coulibaly,OUT,B. Coulibaly (Out),rotowire
 2026-03-30,WAS,A. Davis,OUT,A. Davis (Out),rotowire
 2026-03-30,WAS,K. George,OUT,K. George (Out),rotowire
 2026-03-30,WAS,D. Russell,OUT,D. Russell (Out),rotowire
+2026-03-30,WAS,Alex Sarr,OUT,Alex Sarr (Out),rotowire
 2026-03-30,WAS,Trae Young,OUT,Trae Young (Out),rotowire
 2026-03-30,WAS,L. Doncic,OUT,L. Doncic (Out),rotowire
 2026-03-30,WAS,M. Smart,OUT,M. Smart (Out),rotowire
