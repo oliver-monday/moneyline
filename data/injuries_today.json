@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-31",
-  "built_at_utc": "2026-03-31T09:35:33Z",
+  "built_at_utc": "2026-03-31T15:44:06Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -131,18 +131,18 @@
     },
     {
       "name": "D. Robinson",
-      "status": "OUT",
-      "details": "D. Robinson (Out)"
+      "status": "PROB",
+      "details": "D. Robinson (Prob)"
     },
     {
       "name": "T. Harris",
-      "status": "OUT",
-      "details": "T. Harris (Out)"
+      "status": "PROB",
+      "details": "T. Harris (Prob)"
     },
     {
       "name": "J. Duren",
-      "status": "OUT",
-      "details": "J. Duren (Out)"
+      "status": "PROB",
+      "details": "J. Duren (Prob)"
     },
     {
       "name": "C. Cunningham",
@@ -157,24 +157,24 @@
   ],
   "DET": [
     {
-      "name": "C. Cunningham",
-      "status": "OUT",
-      "details": "C. Cunningham (Out)"
-    },
-    {
       "name": "J. Duren",
-      "status": "OUT",
-      "details": "J. Duren (Out)"
+      "status": "PROB",
+      "details": "J. Duren (Prob)"
     },
     {
       "name": "T. Harris",
-      "status": "OUT",
-      "details": "T. Harris (Out)"
+      "status": "PROB",
+      "details": "T. Harris (Prob)"
     },
     {
       "name": "D. Robinson",
+      "status": "PROB",
+      "details": "D. Robinson (Prob)"
+    },
+    {
+      "name": "C. Cunningham",
       "status": "OUT",
-      "details": "D. Robinson (Out)"
+      "details": "C. Cunningham (Out)"
     },
     {
       "name": "I. Stewart",
@@ -228,11 +228,6 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "P. Washington",
-      "status": "QUES",
-      "details": "P. Washington (Ques)"
-    },
-    {
       "name": "M. Bagley",
       "status": "QUES",
       "details": "M. Bagley (Ques)"
@@ -246,6 +241,11 @@
       "name": "C. Martin",
       "status": "QUES",
       "details": "C. Martin (Ques)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "QUES",
+      "details": "P. Washington (Ques)"
     },
     {
       "name": "R. Rollins",
@@ -323,13 +323,13 @@
   "CLE": [
     {
       "name": "J. Allen",
-      "status": "OUT",
-      "details": "J. Allen (Out)"
+      "status": "PROB",
+      "details": "J. Allen (Prob)"
     },
     {
-      "name": "Max Strus",
-      "status": "OUT",
-      "details": "Max Strus (Out)"
+      "name": "M. Strus",
+      "status": "PROB",
+      "details": "M. Strus (Prob)"
     },
     {
       "name": "J. Tyson",
@@ -342,36 +342,26 @@
       "details": "Dean Wade (Out)"
     },
     {
-      "name": "L. Doncic",
-      "status": "OUT",
-      "details": "L. Doncic (Out)"
-    },
-    {
       "name": "M. Smart",
-      "status": "OUT",
-      "details": "M. Smart (Out)"
+      "status": "QUES",
+      "details": "M. Smart (Ques)"
     },
     {
       "name": "A. Thiero",
-      "status": "OUT",
-      "details": "A. Thiero (Out)"
+      "status": "QUES",
+      "details": "A. Thiero (Ques)"
     }
   ],
   "LAL": [
     {
-      "name": "L. Doncic",
-      "status": "OUT",
-      "details": "L. Doncic (Out)"
-    },
-    {
       "name": "M. Smart",
-      "status": "OUT",
-      "details": "M. Smart (Out)"
+      "status": "QUES",
+      "details": "M. Smart (Ques)"
     },
     {
       "name": "A. Thiero",
-      "status": "OUT",
-      "details": "A. Thiero (Out)"
+      "status": "QUES",
+      "details": "A. Thiero (Ques)"
     }
   ],
   "POR": [
