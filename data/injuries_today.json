@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-31",
-  "built_at_utc": "2026-03-31T22:40:37Z",
+  "built_at_utc": "2026-03-31T23:36:24Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -56,38 +56,6 @@
       "details": "F. Wagner (Out)"
     }
   ],
-  "CHA": [
-    {
-      "name": "T. Salaun",
-      "status": "QUES",
-      "details": "T. Salaun (Ques)"
-    },
-    {
-      "name": "Egor Demin",
-      "status": "OFS",
-      "details": "Egor Demin (OFS)"
-    },
-    {
-      "name": "D. Sharpe",
-      "status": "OFS",
-      "details": "D. Sharpe (OFS)"
-    },
-    {
-      "name": "T. Mann",
-      "status": "OUT",
-      "details": "T. Mann (Out)"
-    },
-    {
-      "name": "M. Porter",
-      "status": "OUT",
-      "details": "M. Porter (Out)"
-    },
-    {
-      "name": "Danny Wolf",
-      "status": "OUT",
-      "details": "Danny Wolf (Out)"
-    }
-  ],
   "BKN": [
     {
       "name": "Egor Demin",
@@ -117,16 +85,6 @@
   ],
   "TOR": [
     {
-      "name": "B. Ingram",
-      "status": "QUES",
-      "details": "B. Ingram (Ques)"
-    },
-    {
-      "name": "C. Murray-Boyles",
-      "status": "QUES",
-      "details": "C. Murray-Boyles (Ques)"
-    },
-    {
       "name": "J. Battle",
       "status": "OUT",
       "details": "J. Battle (Out)"
@@ -142,31 +100,6 @@
       "details": "I. Quickley (Out)"
     },
     {
-      "name": "D. Robinson",
-      "status": "PROB",
-      "details": "D. Robinson (Prob)"
-    },
-    {
-      "name": "T. Harris",
-      "status": "PROB",
-      "details": "T. Harris (Prob)"
-    },
-    {
-      "name": "J. Duren",
-      "status": "PROB",
-      "details": "J. Duren (Prob)"
-    },
-    {
-      "name": "C. LeVert",
-      "status": "QUES",
-      "details": "C. LeVert (Ques)"
-    },
-    {
-      "name": "M. Sasser",
-      "status": "QUES",
-      "details": "M. Sasser (Ques)"
-    },
-    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
@@ -178,31 +111,6 @@
     }
   ],
   "DET": [
-    {
-      "name": "J. Duren",
-      "status": "PROB",
-      "details": "J. Duren (Prob)"
-    },
-    {
-      "name": "T. Harris",
-      "status": "PROB",
-      "details": "T. Harris (Prob)"
-    },
-    {
-      "name": "D. Robinson",
-      "status": "PROB",
-      "details": "D. Robinson (Prob)"
-    },
-    {
-      "name": "C. LeVert",
-      "status": "QUES",
-      "details": "C. LeVert (Ques)"
-    },
-    {
-      "name": "M. Sasser",
-      "status": "QUES",
-      "details": "M. Sasser (Ques)"
-    },
     {
       "name": "C. Cunningham",
       "status": "OUT",
@@ -255,11 +163,6 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "K. Thompson",
-      "status": "DOUBT",
-      "details": "K. Thompson (Doubt)"
-    },
-    {
       "name": "M. Bagley",
       "status": "OUT",
       "details": "M. Bagley (Out)"
@@ -273,6 +176,11 @@
       "name": "C. Martin",
       "status": "OUT",
       "details": "C. Martin (Out)"
+    },
+    {
+      "name": "K. Thompson",
+      "status": "OUT",
+      "details": "K. Thompson (Out)"
     },
     {
       "name": "P. Washington",
@@ -423,6 +331,33 @@
       "name": "I. Jackson",
       "status": "OUT",
       "details": "I. Jackson (Out)"
+    }
+  ],
+  "CHA": [
+    {
+      "name": "Egor Demin",
+      "status": "OFS",
+      "details": "Egor Demin (OFS)"
+    },
+    {
+      "name": "D. Sharpe",
+      "status": "OFS",
+      "details": "D. Sharpe (OFS)"
+    },
+    {
+      "name": "T. Mann",
+      "status": "OUT",
+      "details": "T. Mann (Out)"
+    },
+    {
+      "name": "M. Porter",
+      "status": "OUT",
+      "details": "M. Porter (Out)"
+    },
+    {
+      "name": "Danny Wolf",
+      "status": "OUT",
+      "details": "Danny Wolf (Out)"
     }
   ]
 }
