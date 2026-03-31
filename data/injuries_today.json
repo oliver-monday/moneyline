@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-31",
-  "built_at_utc": "2026-03-31T21:25:54Z",
+  "built_at_utc": "2026-03-31T22:40:37Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -54,6 +54,38 @@
       "name": "F. Wagner",
       "status": "OUT",
       "details": "F. Wagner (Out)"
+    }
+  ],
+  "CHA": [
+    {
+      "name": "T. Salaun",
+      "status": "QUES",
+      "details": "T. Salaun (Ques)"
+    },
+    {
+      "name": "Egor Demin",
+      "status": "OFS",
+      "details": "Egor Demin (OFS)"
+    },
+    {
+      "name": "D. Sharpe",
+      "status": "OFS",
+      "details": "D. Sharpe (OFS)"
+    },
+    {
+      "name": "T. Mann",
+      "status": "OUT",
+      "details": "T. Mann (Out)"
+    },
+    {
+      "name": "M. Porter",
+      "status": "OUT",
+      "details": "M. Porter (Out)"
+    },
+    {
+      "name": "Danny Wolf",
+      "status": "OUT",
+      "details": "Danny Wolf (Out)"
     }
   ],
   "BKN": [
@@ -184,11 +216,6 @@
   ],
   "NYK": [
     {
-      "name": "M. McBride",
-      "status": "QUES",
-      "details": "M. McBride (Ques)"
-    },
-    {
       "name": "L. Shamet",
       "status": "OUT",
       "details": "L. Shamet (Out)"
@@ -253,21 +280,6 @@
       "details": "P. Washington (Out)"
     },
     {
-      "name": "R. Rollins",
-      "status": "PROB",
-      "details": "R. Rollins (Prob)"
-    },
-    {
-      "name": "K. Kuzma",
-      "status": "PROB",
-      "details": "K. Kuzma (Prob)"
-    },
-    {
-      "name": "G. Harris",
-      "status": "QUES",
-      "details": "G. Harris (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -276,6 +288,11 @@
       "name": "T. Antetokounmpo",
       "status": "OUT",
       "details": "T. Antetokounmpo (Out)"
+    },
+    {
+      "name": "G. Harris",
+      "status": "OUT",
+      "details": "G. Harris (Out)"
     },
     {
       "name": "K. Porter",
@@ -290,21 +307,6 @@
   ],
   "MIL": [
     {
-      "name": "K. Kuzma",
-      "status": "PROB",
-      "details": "K. Kuzma (Prob)"
-    },
-    {
-      "name": "R. Rollins",
-      "status": "PROB",
-      "details": "R. Rollins (Prob)"
-    },
-    {
-      "name": "G. Harris",
-      "status": "QUES",
-      "details": "G. Harris (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -313,6 +315,11 @@
       "name": "T. Antetokounmpo",
       "status": "OUT",
       "details": "T. Antetokounmpo (Out)"
+    },
+    {
+      "name": "G. Harris",
+      "status": "OUT",
+      "details": "G. Harris (Out)"
     },
     {
       "name": "K. Porter",
@@ -416,33 +423,6 @@
       "name": "I. Jackson",
       "status": "OUT",
       "details": "I. Jackson (Out)"
-    }
-  ],
-  "CHA": [
-    {
-      "name": "Egor Demin",
-      "status": "OFS",
-      "details": "Egor Demin (OFS)"
-    },
-    {
-      "name": "D. Sharpe",
-      "status": "OFS",
-      "details": "D. Sharpe (OFS)"
-    },
-    {
-      "name": "T. Mann",
-      "status": "OUT",
-      "details": "T. Mann (Out)"
-    },
-    {
-      "name": "M. Porter",
-      "status": "OUT",
-      "details": "M. Porter (Out)"
-    },
-    {
-      "name": "Danny Wolf",
-      "status": "OUT",
-      "details": "Danny Wolf (Out)"
     }
   ]
 }
