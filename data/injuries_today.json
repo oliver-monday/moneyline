@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-31",
-  "built_at_utc": "2026-03-31T19:56:05Z",
+  "built_at_utc": "2026-03-31T20:40:21Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -327,14 +327,9 @@
   ],
   "CLE": [
     {
-      "name": "J. Allen",
-      "status": "PROB",
-      "details": "J. Allen (Prob)"
-    },
-    {
-      "name": "M. Strus",
-      "status": "PROB",
-      "details": "M. Strus (Prob)"
+      "name": "S. Merrill",
+      "status": "OUT",
+      "details": "S. Merrill (Out)"
     },
     {
       "name": "J. Tyson",
@@ -347,26 +342,26 @@
       "details": "Dean Wade (Out)"
     },
     {
-      "name": "M. Smart",
+      "name": "L. James",
       "status": "QUES",
-      "details": "M. Smart (Ques)"
+      "details": "L. James (Ques)"
     },
     {
-      "name": "A. Thiero",
-      "status": "QUES",
-      "details": "A. Thiero (Ques)"
+      "name": "M. Smart",
+      "status": "OUT",
+      "details": "M. Smart (Out)"
     }
   ],
   "LAL": [
     {
-      "name": "M. Smart",
+      "name": "L. James",
       "status": "QUES",
-      "details": "M. Smart (Ques)"
+      "details": "L. James (Ques)"
     },
     {
-      "name": "A. Thiero",
-      "status": "QUES",
-      "details": "A. Thiero (Ques)"
+      "name": "M. Smart",
+      "status": "OUT",
+      "details": "M. Smart (Out)"
     }
   ],
   "POR": [
