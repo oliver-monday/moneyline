@@ -1,32 +1,22 @@
 {
   "asof_date": "2026-03-31",
-  "built_at_utc": "2026-03-31T15:44:06Z",
+  "built_at_utc": "2026-03-31T17:45:34Z",
   "source": "rotowire",
   "PHX": [
     {
-      "name": "D. Brooks",
-      "status": "PROB",
-      "details": "D. Brooks (Prob)"
-    },
-    {
-      "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
-    {
       "name": "A. Coffey",
-      "status": "QUES",
-      "details": "A. Coffey (Ques)"
+      "status": "OUT",
+      "details": "A. Coffey (Out)"
     },
     {
       "name": "H. Highsmith",
-      "status": "QUES",
-      "details": "H. Highsmith (Ques)"
+      "status": "OUT",
+      "details": "H. Highsmith (Out)"
     },
     {
       "name": "M. Williams",
-      "status": "QUES",
-      "details": "M. Williams (Ques)"
+      "status": "OUT",
+      "details": "M. Williams (Out)"
     },
     {
       "name": "Probable Pitchers",
@@ -78,11 +68,6 @@
       "details": "D. Sharpe (OFS)"
     },
     {
-      "name": "J. Wilson",
-      "status": "PROB",
-      "details": "J. Wilson (Prob)"
-    },
-    {
       "name": "T. Mann",
       "status": "OUT",
       "details": "T. Mann (Out)"
@@ -99,11 +84,6 @@
     }
   ],
   "TOR": [
-    {
-      "name": "R. Barrett",
-      "status": "PROB",
-      "details": "R. Barrett (Prob)"
-    },
     {
       "name": "B. Ingram",
       "status": "QUES",
@@ -145,6 +125,16 @@
       "details": "J. Duren (Prob)"
     },
     {
+      "name": "C. LeVert",
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
+    },
+    {
+      "name": "M. Sasser",
+      "status": "QUES",
+      "details": "M. Sasser (Ques)"
+    },
+    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
@@ -170,6 +160,16 @@
       "name": "D. Robinson",
       "status": "PROB",
       "details": "D. Robinson (Prob)"
+    },
+    {
+      "name": "C. LeVert",
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
+    },
+    {
+      "name": "M. Sasser",
+      "status": "QUES",
+      "details": "M. Sasser (Ques)"
     },
     {
       "name": "C. Cunningham",
@@ -228,24 +228,29 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "K. Thompson",
+      "status": "DOUBT",
+      "details": "K. Thompson (Doubt)"
+    },
+    {
       "name": "M. Bagley",
-      "status": "QUES",
-      "details": "M. Bagley (Ques)"
+      "status": "OUT",
+      "details": "M. Bagley (Out)"
     },
     {
       "name": "N. Marshall",
-      "status": "QUES",
-      "details": "N. Marshall (Ques)"
+      "status": "OUT",
+      "details": "N. Marshall (Out)"
     },
     {
       "name": "C. Martin",
-      "status": "QUES",
-      "details": "C. Martin (Ques)"
+      "status": "OUT",
+      "details": "C. Martin (Out)"
     },
     {
       "name": "P. Washington",
-      "status": "QUES",
-      "details": "P. Washington (Ques)"
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     },
     {
       "name": "R. Rollins",
@@ -428,11 +433,6 @@
       "name": "D. Sharpe",
       "status": "OFS",
       "details": "D. Sharpe (OFS)"
-    },
-    {
-      "name": "J. Wilson",
-      "status": "PROB",
-      "details": "J. Wilson (Prob)"
     },
     {
       "name": "T. Mann",
