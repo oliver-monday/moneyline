@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-03-30",
-  "built_at_utc": "2026-03-31T01:24:52Z",
+  "built_at_utc": "2026-03-31T03:45:06Z",
   "source": "rotowire",
   "PHI": [
     {
       "name": "J. Broome",
-      "status": "OUT",
-      "details": "J. Broome (Out)"
+      "status": "DOUBT",
+      "details": "J. Broome (Doubt)"
     },
     {
       "name": "Probable Pitchers",
@@ -15,8 +15,8 @@
     },
     {
       "name": "N. Powell",
-      "status": "OUT",
-      "details": "N. Powell (Out)"
+      "status": "QUES",
+      "details": "N. Powell (Ques)"
     },
     {
       "name": "T. Rozier",
@@ -27,8 +27,8 @@
   "MIA": [
     {
       "name": "N. Powell",
-      "status": "OUT",
-      "details": "N. Powell (Out)"
+      "status": "QUES",
+      "details": "N. Powell (Ques)"
     },
     {
       "name": "T. Rozier",
@@ -38,19 +38,19 @@
   ],
   "BOS": [
     {
-      "name": "Ron Harper",
-      "status": "OUT",
-      "details": "Ron Harper (Out)"
+      "name": "R. Harper",
+      "status": "QUES",
+      "details": "R. Harper (Ques)"
     },
     {
       "name": "N. Queta",
-      "status": "OUT",
-      "details": "N. Queta (Out)"
+      "status": "QUES",
+      "details": "N. Queta (Ques)"
     },
     {
       "name": "J. Tatum",
-      "status": "OUT",
-      "details": "J. Tatum (Out)"
+      "status": "PROB",
+      "details": "J. Tatum (Prob)"
     },
     {
       "name": "N. Vucevic",
@@ -59,15 +59,15 @@
     },
     {
       "name": "J. Landale",
-      "status": "OUT",
-      "details": "J. Landale (Out)"
+      "status": "QUES",
+      "details": "J. Landale (Ques)"
     }
   ],
   "ATL": [
     {
       "name": "J. Landale",
-      "status": "OUT",
-      "details": "J. Landale (Out)"
+      "status": "QUES",
+      "details": "J. Landale (Ques)"
     }
   ],
   "CHI": [
@@ -82,24 +82,24 @@
       "details": "N. Essengue (OFS)"
     },
     {
-      "name": "J. Smith",
-      "status": "OFS",
-      "details": "J. Smith (OFS)"
-    },
-    {
       "name": "M. McClung",
-      "status": "OUT",
-      "details": "M. McClung (Out)"
+      "status": "QUES",
+      "details": "M. McClung (Ques)"
     },
     {
       "name": "N. Richards",
-      "status": "OUT",
-      "details": "N. Richards (Out)"
+      "status": "QUES",
+      "details": "N. Richards (Ques)"
     },
     {
       "name": "A. Simons",
-      "status": "OUT",
-      "details": "A. Simons (Out)"
+      "status": "DOUBT",
+      "details": "A. Simons (Doubt)"
+    },
+    {
+      "name": "J. Smith",
+      "status": "OFS",
+      "details": "J. Smith (OFS)"
     },
     {
       "name": "D. Jones Garcia",
@@ -117,28 +117,28 @@
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "OUT",
-      "details": "G. Allen (Out)"
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
     },
     {
       "name": "D. Brooks",
-      "status": "OUT",
-      "details": "D. Brooks (Out)"
+      "status": "PROB",
+      "details": "D. Brooks (Prob)"
     },
     {
       "name": "A. Coffey",
-      "status": "OUT",
-      "details": "A. Coffey (Out)"
+      "status": "QUES",
+      "details": "A. Coffey (Ques)"
     },
     {
       "name": "H. Highsmith",
-      "status": "OUT",
-      "details": "H. Highsmith (Out)"
+      "status": "QUES",
+      "details": "H. Highsmith (Ques)"
     },
     {
       "name": "M. Williams",
-      "status": "OUT",
-      "details": "M. Williams (Out)"
+      "status": "QUES",
+      "details": "M. Williams (Ques)"
     },
     {
       "name": "S. Aldama",
@@ -161,6 +161,16 @@
       "details": "Zach Edey (OFS)"
     },
     {
+      "name": "T. Gibson",
+      "status": "QUES",
+      "details": "T. Gibson (Ques)"
+    },
+    {
+      "name": "T. Jerome",
+      "status": "QUES",
+      "details": "T. Jerome (Ques)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OFS",
       "details": "Ja Morant (OFS)"
@@ -171,24 +181,14 @@
       "details": "S. Pippen (OFS)"
     },
     {
-      "name": "Taj Gibson",
-      "status": "OUT",
-      "details": "Taj Gibson (Out)"
-    },
-    {
-      "name": "Ty Jerome",
-      "status": "OUT",
-      "details": "Ty Jerome (Out)"
-    },
-    {
       "name": "O. Prosper",
-      "status": "OUT",
-      "details": "O. Prosper (Out)"
+      "status": "QUES",
+      "details": "O. Prosper (Ques)"
     },
     {
       "name": "J. Small",
-      "status": "OUT",
-      "details": "J. Small (Out)"
+      "status": "QUES",
+      "details": "J. Small (Ques)"
     },
     {
       "name": "J. Wells",
@@ -218,6 +218,16 @@
       "details": "Zach Edey (OFS)"
     },
     {
+      "name": "T. Gibson",
+      "status": "QUES",
+      "details": "T. Gibson (Ques)"
+    },
+    {
+      "name": "T. Jerome",
+      "status": "QUES",
+      "details": "T. Jerome (Ques)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OFS",
       "details": "Ja Morant (OFS)"
@@ -228,24 +238,14 @@
       "details": "S. Pippen (OFS)"
     },
     {
-      "name": "Taj Gibson",
-      "status": "OUT",
-      "details": "Taj Gibson (Out)"
-    },
-    {
-      "name": "Ty Jerome",
-      "status": "OUT",
-      "details": "Ty Jerome (Out)"
-    },
-    {
       "name": "O. Prosper",
-      "status": "OUT",
-      "details": "O. Prosper (Out)"
+      "status": "QUES",
+      "details": "O. Prosper (Ques)"
     },
     {
       "name": "J. Small",
-      "status": "OUT",
-      "details": "J. Small (Out)"
+      "status": "QUES",
+      "details": "J. Small (Ques)"
     },
     {
       "name": "J. Wells",
