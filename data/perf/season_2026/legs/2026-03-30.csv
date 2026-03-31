@@ -1,0 +1,18 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-30,2026,Austin Reaves,LAL,WSH,3pt,2,MISSED,0,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Jalen Johnson,ATL,BOS,pts,20,HIT,20,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Jalen Johnson,ATL,BOS,3pt,2,MISSED,1,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Josh Giddey,CHI,SA,ast,10,HIT,10,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,James Harden,CLE,UTAH,reb,4,HIT,6,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Matas Buzelis,CHI,SA,pts,15,MISSED,12,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Matas Buzelis,CHI,SA,reb,6,HIT,6,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Matas Buzelis,CHI,SA,3pt,2,MISSED,1,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Cooper Flagg,DAL,MIN,ast,4,MISSED,1,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Jaylen Brown,BOS,ATL,reb,6,HIT,10,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Jaylen Brown,BOS,ATL,ast,4,HIT,9,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Anthony Davis,DAL,MIN,ast,2,,,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Dyson Daniels,ATL,BOS,reb,6,MISSED,5,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Jalen Green,PHX,MEM,pts,20,HIT,21,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Jalen Green,PHX,MEM,ast,2,MISSED,1,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Jalen Green,PHX,MEM,3pt,2,HIT,3,,targets_snapshot_2026-03-30.json
+2026-03-30,2026,Evan Mobley,CLE,UTAH,reb,8,HIT,17,,targets_snapshot_2026-03-30.json
