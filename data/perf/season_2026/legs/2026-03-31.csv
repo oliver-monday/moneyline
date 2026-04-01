@@ -1,0 +1,6 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-03-31,2026,Jalen Brunson,NY,HOU,ast,6,HIT,8,,targets_snapshot_2026-03-31.json
+2026-03-31,2026,Jabari Smith Jr.,HOU,NY,3pt,2,HIT,3,,targets_snapshot_2026-03-31.json
+2026-03-31,2026,LeBron James,LAL,CLE,reb,6,MISSED,5,,targets_snapshot_2026-03-31.json
+2026-03-31,2026,Anthony Davis,DAL,MIL,ast,2,,,,targets_snapshot_2026-03-31.json
+2026-03-31,2026,Brandon Miller,CHA,BKN,3pt,3,HIT,4,,targets_snapshot_2026-03-31.json
