@@ -9905,8 +9905,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-03-31,CHA,D. Sharpe,OFS,D. Sharpe (OFS),rotowire
 2026-03-31,CHA,M. Porter,OUT,M. Porter (Out),rotowire
 2026-03-31,CHA,Danny Wolf,OUT,Danny Wolf (Out),rotowire
-2026-04-01,SAC,C. Hepburn,OUT,C. Hepburn (Out),rotowire
-2026-04-01,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-04-01,PHI,T. Johnson,QUES,T. Johnson (Ques),rotowire
 2026-04-01,PHI,B. Coulibaly,QUES,B. Coulibaly (Ques),rotowire
 2026-04-01,PHI,A. Sarr,QUES,A. Sarr (Ques),rotowire
@@ -9914,8 +9912,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-01,WAS,T. Johnson,QUES,T. Johnson (Ques),rotowire
 2026-04-01,WAS,A. Sarr,QUES,A. Sarr (Ques),rotowire
 2026-04-01,BOS,R. Harper,QUES,R. Harper (Ques),rotowire
-2026-04-01,BOS,A. Wiggins,QUES,A. Wiggins (Ques),rotowire
-2026-04-01,MIA,A. Wiggins,QUES,A. Wiggins (Ques),rotowire
 2026-04-01,NYK,L. Shamet,QUES,L. Shamet (Ques),rotowire
 2026-04-01,ATL,J. Landale,QUES,J. Landale (Ques),rotowire
 2026-04-01,ATL,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
@@ -9940,8 +9936,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-01,WAS,Alex Sarr,OUT,Alex Sarr (Out),rotowire
 2026-04-01,WAS,Trae Young,OUT,Trae Young (Out),rotowire
 2026-04-01,BOS,N. Vucevic,OUT,N. Vucevic (Out),rotowire
+2026-04-01,BOS,A. Wiggins,PROB,A. Wiggins (Prob),rotowire
 2026-04-01,BOS,N. Powell,OUT,N. Powell (Out),rotowire
 2026-04-01,BOS,T. Rozier,OUT,T. Rozier (Out),rotowire
+2026-04-01,MIA,A. Wiggins,PROB,A. Wiggins (Prob),rotowire
 2026-04-01,MIA,N. Powell,OUT,N. Powell (Out),rotowire
 2026-04-01,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
 2026-04-01,IND,J. Furphy,OFS,J. Furphy (OFS),rotowire
@@ -9989,11 +9987,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-01,SAC,S. Barnes,QUES,S. Barnes (Ques),rotowire
 2026-04-01,SAC,G. Temple,QUES,G. Temple (Ques),rotowire
 2026-04-01,SAC,J. Battle,OUT,J. Battle (Out),rotowire
+2026-04-01,SAC,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-04-01,SAC,B. Ingram,OUT,B. Ingram (Out),rotowire
 2026-04-01,SAC,I. Quickley,OUT,I. Quickley (Out),rotowire
 2026-04-01,TOR,S. Barnes,QUES,S. Barnes (Ques),rotowire
 2026-04-01,TOR,G. Temple,QUES,G. Temple (Ques),rotowire
 2026-04-01,TOR,J. Battle,OUT,J. Battle (Out),rotowire
+2026-04-01,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-04-01,TOR,B. Ingram,OUT,B. Ingram (Out),rotowire
 2026-04-01,TOR,I. Quickley,OUT,I. Quickley (Out),rotowire
 2026-04-01,NYK,J. Brunson,QUES,J. Brunson (Ques),rotowire
