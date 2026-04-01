@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-01",
-  "built_at_utc": "2026-04-01T09:39:42Z",
+  "built_at_utc": "2026-04-01T15:51:14Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -51,6 +51,11 @@
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
+    },
+    {
+      "name": "J. Embiid",
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     },
     {
       "name": "T. Johnson",
@@ -226,6 +231,11 @@
       "details": "J. Walker (Out)"
     },
     {
+      "name": "J. Giddey",
+      "status": "QUES",
+      "details": "J. Giddey (Ques)"
+    },
+    {
       "name": "N. Richards",
       "status": "QUES",
       "details": "N. Richards (Ques)"
@@ -271,6 +281,11 @@
       "name": "J. Smith",
       "status": "OFS",
       "details": "J. Smith (OFS)"
+    },
+    {
+      "name": "J. Giddey",
+      "status": "QUES",
+      "details": "J. Giddey (Ques)"
     },
     {
       "name": "N. Richards",
@@ -377,11 +392,6 @@
       "name": "J. Battle",
       "status": "DOUBT",
       "details": "J. Battle (Doubt)"
-    },
-    {
-      "name": "C. Hepburn",
-      "status": "OUT",
-      "details": "C. Hepburn (Out)"
     }
   ],
   "TOR": [
@@ -394,11 +404,6 @@
       "name": "J. Battle",
       "status": "DOUBT",
       "details": "J. Battle (Doubt)"
-    },
-    {
-      "name": "C. Hepburn",
-      "status": "OUT",
-      "details": "C. Hepburn (Out)"
     }
   ],
   "NYK": [
@@ -406,6 +411,11 @@
       "name": "L. Shamet",
       "status": "QUES",
       "details": "L. Shamet (Ques)"
+    },
+    {
+      "name": "M. Robinson",
+      "status": "DOUBT",
+      "details": "M. Robinson (Doubt)"
     },
     {
       "name": "S. Aldama",
