@@ -9913,12 +9913,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-01,WAS,A. Sarr,QUES,A. Sarr (Ques),rotowire
 2026-04-01,BOS,R. Harper,QUES,R. Harper (Ques),rotowire
 2026-04-01,NYK,L. Shamet,QUES,L. Shamet (Ques),rotowire
+2026-04-01,ATL,F. Wagner,QUES,F. Wagner (Ques),rotowire
+2026-04-01,ORL,F. Wagner,QUES,F. Wagner (Ques),rotowire
 2026-04-01,ATL,J. Landale,QUES,J. Landale (Ques),rotowire
 2026-04-01,ATL,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
-2026-04-01,ATL,F. Wagner,QUES,F. Wagner (Ques),rotowire
 2026-04-01,ATL,A. Black,OUT,A. Black (Out),rotowire
 2026-04-01,ATL,J. Isaac,OUT,J. Isaac (Out),rotowire
-2026-04-01,ORL,F. Wagner,QUES,F. Wagner (Ques),rotowire
 2026-04-01,ORL,A. Black,OUT,A. Black (Out),rotowire
 2026-04-01,ORL,J. Isaac,OUT,J. Isaac (Out),rotowire
 2026-04-01,PHI,J. Broome,OUT,J. Broome (Out),rotowire
@@ -9983,6 +9983,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-01,SAC,Z. LaVine,OFS,Z. LaVine (OFS),rotowire
 2026-04-01,SAC,D. Sabonis,OFS,D. Sabonis (OFS),rotowire
 2026-04-01,SAC,K. Murray,OUT,K. Murray (Out),rotowire
+2026-04-01,SAC,I. Stevens,OUT,I. Stevens (Out),rotowire
 2026-04-01,SAC,R. Westbrook,OUT,R. Westbrook (Out),rotowire
 2026-04-01,SAC,S. Barnes,QUES,S. Barnes (Ques),rotowire
 2026-04-01,SAC,G. Temple,QUES,G. Temple (Ques),rotowire

@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-01",
-  "built_at_utc": "2026-04-01T20:41:05Z",
+  "built_at_utc": "2026-04-01T21:30:52Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -14,11 +14,6 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "F. Wagner",
-      "status": "QUES",
-      "details": "F. Wagner (Ques)"
-    },
-    {
       "name": "A. Black",
       "status": "OUT",
       "details": "A. Black (Out)"
@@ -30,11 +25,6 @@
     }
   ],
   "ORL": [
-    {
-      "name": "F. Wagner",
-      "status": "QUES",
-      "details": "F. Wagner (Ques)"
-    },
     {
       "name": "A. Black",
       "status": "OUT",
@@ -372,6 +362,11 @@
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "I. Stevens",
+      "status": "OUT",
+      "details": "I. Stevens (Out)"
     },
     {
       "name": "R. Westbrook",
