@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-03-31",
-  "built_at_utc": "2026-03-31T23:36:24Z",
+  "built_at_utc": "2026-04-01T01:45:39Z",
   "source": "rotowire",
   "PHX": [
     {
@@ -152,6 +152,11 @@
     }
   ],
   "DAL": [
+    {
+      "name": "D. Gafford",
+      "status": "QUES",
+      "details": "D. Gafford (Ques)"
+    },
     {
       "name": "K. Irving",
       "status": "OFS",
