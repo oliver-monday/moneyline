@@ -1153,7 +1153,7 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810968,2026-04-01,2026-04-02T02:00Z,Golden State Warriors,GS,113,625.0,,San Antonio Spurs,SA,127,-950.0,,San Francisco,CA,,
 401810969,2026-04-02,2026-04-02T23:00Z,Charlotte Hornets,CHA,0,-205.0,,Phoenix Suns,PHX,0,170.0,,Charlotte,NC,PJ Hall (Out),A. Coffey (Out); H. Highsmith (Out)
 401810970,2026-04-02,2026-04-02T23:00Z,Detroit Pistons,DET,0,-162.0,,Minnesota Timberwolves,MIN,0,136.0,,Detroit,MI,C. Cunningham (Out); I. Stewart (Out),J. McDaniels (Out)
-401810971,2026-04-02,2026-04-03T01:30Z,Oklahoma City Thunder,OKC,0,-345.0,,Los Angeles Lakers,LAL,0,275.0,,Oklahoma City,OK,T. Sorber (OFS),M. Smart (Out)
-401810972,2026-04-02,2026-04-03T02:00Z,Golden State Warriors,GS,0,360.0,,Cleveland Cavaliers,CLE,0,-470.0,,San Francisco,CA,J. Butler (OFS); M. Moody (OFS); Al Horford (Out),J. Tyson (Out); Dean Wade (Out)
-401810973,2026-04-02,2026-04-03T02:00Z,Portland Trail Blazers,POR,0,-265.0,,New Orleans Pelicans,NO,0,215.0,,Portland,OR,D. Lillard (OFS); J. Grant (Out); Vit Krejci (Out); S. Sharpe (Out),B. McGowens (Out)
-401810974,2026-04-02,2026-04-03T02:30Z,LA Clippers,LAC,0,142.0,,San Antonio Spurs,SA,0,-170.0,,Inglewood,CA,B. Beal (OFS); Y. Niederhauser (OFS); I. Jackson (Out),D. Jones Garcia (OFS)
+401810971,2026-04-02,2026-04-03T01:30Z,Oklahoma City Thunder,OKC,0,-375.0,,Los Angeles Lakers,LAL,0,295.0,,Oklahoma City,OK,T. Sorber (OFS),M. Smart (Out)
+401810972,2026-04-02,2026-04-03T02:00Z,Golden State Warriors,GS,0,360.0,,Cleveland Cavaliers,CLE,0,-470.0,,San Francisco,CA,J. Butler (OFS); M. Moody (OFS); S. Curry (Out); Al Horford (Out),J. Tyson (Out); Dean Wade (Out)
+401810973,2026-04-02,2026-04-03T02:00Z,Portland Trail Blazers,POR,0,-250.0,,New Orleans Pelicans,NO,0,205.0,,Portland,OR,D. Lillard (OFS); J. Grant (Out); Vit Krejci (Out); S. Sharpe (Out),B. McGowens (Out)
+401810974,2026-04-02,2026-04-03T02:30Z,LA Clippers,LAC,0,140.0,,San Antonio Spurs,SA,0,-166.0,,Inglewood,CA,B. Beal (OFS); Y. Niederhauser (OFS); I. Jackson (Out),D. Jones Garcia (OFS)

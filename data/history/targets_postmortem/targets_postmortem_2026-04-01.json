@@ -6,7 +6,7 @@
     "misses": 7,
     "hit_rate_pct": 59,
     "top_targets_total": 6,
-    "top_targets_hits": 3
+    "top_targets_hits": 2
   },
   "hits": [
     {
@@ -452,7 +452,7 @@
       "actual": 18
     }
   ],
-  "built_at_utc": "2026-04-02T09:24:38Z",
+  "built_at_utc": "2026-04-02T14:46:18Z",
   "snapshot_file": "targets_snapshot_2026-04-01.json",
   "preset": "baseline",
   "top_targets": [
@@ -480,6 +480,31 @@
       "actual": 2,
       "hit": true,
       "delta": 0
+    },
+    {
+      "asof_date": "2026-04-01",
+      "player_id": "4701230.0",
+      "player_name": "Jalen Johnson",
+      "team_abbrev": "ATL",
+      "opp": "ORL",
+      "game_id": "401810962",
+      "stat": "3pt",
+      "threshold": 2,
+      "hits": 9,
+      "window_games": 10,
+      "hit_rate": 0.9,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 6.171245421245422,
+      "share_trend_dir": "UP",
+      "iqr_10": 1.5,
+      "landmine_rate_10": null,
+      "trap_risk": null,
+      "dnp": false,
+      "actual": 0,
+      "hit": false,
+      "delta": 2
     },
     {
       "asof_date": "2026-04-01",
@@ -579,31 +604,6 @@
       "actual": 18,
       "hit": false,
       "delta": 2
-    },
-    {
-      "asof_date": "2026-04-01",
-      "player_id": "3112335.0",
-      "player_name": "Nikola Jokic",
-      "team_abbrev": "DEN",
-      "opp": "UTAH",
-      "game_id": "401810967",
-      "stat": "reb",
-      "threshold": 12,
-      "hits": 8,
-      "window_games": 10,
-      "hit_rate": 0.8,
-      "is_home_game": false,
-      "rest_days": 2,
-      "is_b2b": false,
-      "share_trend_pp": 5.622339055902314,
-      "share_trend_dir": "UP",
-      "iqr_10": 2.75,
-      "landmine_rate_10": 0.0,
-      "trap_risk": false,
-      "dnp": false,
-      "actual": 17,
-      "hit": true,
-      "delta": -5
     }
   ]
 }
