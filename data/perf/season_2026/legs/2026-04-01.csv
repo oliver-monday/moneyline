@@ -1,0 +1,20 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-01,2026,Jabari Smith Jr.,HOU,MIL,pts,15,MISSED,12,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Jabari Smith Jr.,HOU,MIL,3pt,2,HIT,2,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Jalen Johnson,ATL,ORL,pts,20,MISSED,18,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Jalen Johnson,ATL,ORL,3pt,2,MISSED,0,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Nikola Jokic,DEN,UTAH,reb,12,HIT,17,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Jalen Brunson,NY,MEM,ast,6,,,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Kevin Durant,HOU,MIL,ast,4,HIT,9,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Kevin Durant,HOU,MIL,3pt,2,HIT,2,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Jaylen Brown,BOS,MIA,reb,6,MISSED,3,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Paolo Banchero,ORL,ATL,3pt,1,MISSED,0,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Josh Giddey,CHI,IND,ast,10,,,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Matas Buzelis,CHI,IND,pts,15,HIT,17,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Matas Buzelis,CHI,IND,reb,6,HIT,9,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Matas Buzelis,CHI,IND,3pt,2,HIT,3,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Maxime Raynaud,SAC,TOR,pts,10,MISSED,6,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Jalen Suggs,ORL,ATL,reb,4,HIT,5,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Jalen Suggs,ORL,ATL,3pt,2,MISSED,0,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Christian Braun,DEN,UTAH,pts,10,HIT,18,,targets_snapshot_2026-04-01.json
+2026-04-01,2026,Christian Braun,DEN,UTAH,3pt,1,HIT,1,,targets_snapshot_2026-04-01.json
