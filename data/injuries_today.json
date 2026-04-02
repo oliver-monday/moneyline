@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-04-02",
-  "built_at_utc": "2026-04-02T21:24:18Z",
+  "built_at_utc": "2026-04-02T22:38:56Z",
   "source": "rotowire",
   "MIN": [
     {
       "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
+      "status": "OUT",
+      "details": "A. Edwards (Out)"
     },
     {
       "name": "J. McDaniels",
@@ -17,11 +17,6 @@
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
-    },
-    {
-      "name": "M. Sasser",
-      "status": "QUES",
-      "details": "M. Sasser (Ques)"
     },
     {
       "name": "C. Cunningham",
@@ -36,11 +31,6 @@
   ],
   "DET": [
     {
-      "name": "M. Sasser",
-      "status": "QUES",
-      "details": "M. Sasser (Ques)"
-    },
-    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
@@ -52,11 +42,6 @@
     }
   ],
   "PHX": [
-    {
-      "name": "M. Williams",
-      "status": "QUES",
-      "details": "M. Williams (Ques)"
-    },
     {
       "name": "A. Coffey",
       "status": "OUT",
