@@ -1,7 +1,29 @@
 {
   "asof_date": "2026-04-01",
-  "built_at_utc": "2026-04-02T01:21:47Z",
+  "built_at_utc": "2026-04-02T03:38:26Z",
   "source": "rotowire",
+  "ATL": [
+    {
+      "name": "J. Landale",
+      "status": "QUES",
+      "details": "J. Landale (Ques)"
+    },
+    {
+      "name": "Probable Pitchers",
+      "status": "PROB",
+      "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "A. Black",
+      "status": "OUT",
+      "details": "A. Black (Out)"
+    },
+    {
+      "name": "J. Isaac",
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
+    }
+  ],
   "ORL": [
     {
       "name": "A. Black",
@@ -490,6 +512,16 @@
   ],
   "DEN": [
     {
+      "name": "T. Hardaway",
+      "status": "QUES",
+      "details": "T. Hardaway (Ques)"
+    },
+    {
+      "name": "P. Watson",
+      "status": "QUES",
+      "details": "P. Watson (Ques)"
+    },
+    {
       "name": "S. Jones",
       "status": "OUT",
       "details": "S. Jones (Out)"
@@ -674,23 +706,6 @@
       "name": "Gui Santos",
       "status": "OUT",
       "details": "Gui Santos (Out)"
-    }
-  ],
-  "ATL": [
-    {
-      "name": "Probable Pitchers",
-      "status": "PROB",
-      "details": "Probable Pitchers (Prob)"
-    },
-    {
-      "name": "A. Black",
-      "status": "OUT",
-      "details": "A. Black (Out)"
-    },
-    {
-      "name": "J. Isaac",
-      "status": "OUT",
-      "details": "J. Isaac (Out)"
     }
   ]
 }
