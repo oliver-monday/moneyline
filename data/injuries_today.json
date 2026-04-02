@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-01",
-  "built_at_utc": "2026-04-01T23:38:33Z",
+  "built_at_utc": "2026-04-02T01:21:47Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -217,6 +217,11 @@
     }
   ],
   "MIL": [
+    {
+      "name": "G. Trent",
+      "status": "QUES",
+      "details": "G. Trent (Ques)"
+    },
     {
       "name": "G. Antetokounmpo",
       "status": "OUT",
@@ -485,11 +490,6 @@
   ],
   "DEN": [
     {
-      "name": "A. Gordon",
-      "status": "PROB",
-      "details": "A. Gordon (Prob)"
-    },
-    {
       "name": "S. Jones",
       "status": "OUT",
       "details": "S. Jones (Out)"
@@ -594,11 +594,6 @@
       "details": "M. Moody (OFS)"
     },
     {
-      "name": "G. Payton",
-      "status": "QUES",
-      "details": "G. Payton (Ques)"
-    },
-    {
       "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
@@ -612,6 +607,11 @@
       "name": "D. Melton",
       "status": "OUT",
       "details": "D. Melton (Out)"
+    },
+    {
+      "name": "G. Payton",
+      "status": "OUT",
+      "details": "G. Payton (Out)"
     },
     {
       "name": "K. Porzingis",
@@ -641,11 +641,6 @@
       "details": "M. Moody (OFS)"
     },
     {
-      "name": "G. Payton",
-      "status": "QUES",
-      "details": "G. Payton (Ques)"
-    },
-    {
       "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
@@ -659,6 +654,11 @@
       "name": "D. Melton",
       "status": "OUT",
       "details": "D. Melton (Out)"
+    },
+    {
+      "name": "G. Payton",
+      "status": "OUT",
+      "details": "G. Payton (Out)"
     },
     {
       "name": "K. Porzingis",
