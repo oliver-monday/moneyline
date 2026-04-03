@@ -1,13 +1,8 @@
 {
   "asof_date": "2026-04-03",
-  "built_at_utc": "2026-04-03T21:21:35Z",
+  "built_at_utc": "2026-04-03T22:40:44Z",
   "source": "rotowire",
   "MIN": [
-    {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
     {
       "name": "J. McDaniels",
       "status": "OUT",
@@ -19,22 +14,12 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
-    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
     }
   ],
   "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
     {
       "name": "J. Broome",
       "status": "OUT",
@@ -58,16 +43,6 @@
       "details": "I. Zubac (OFS)"
     },
     {
-      "name": "P. Siakam",
-      "status": "PROB",
-      "details": "P. Siakam (Prob)"
-    },
-    {
-      "name": "O. Toppin",
-      "status": "PROB",
-      "details": "O. Toppin (Prob)"
-    },
-    {
       "name": "T. McConnell",
       "status": "OUT",
       "details": "T. McConnell (Out)"
@@ -89,8 +64,8 @@
     },
     {
       "name": "M. Diabate",
-      "status": "QUES",
-      "details": "M. Diabate (Ques)"
+      "status": "OUT",
+      "details": "M. Diabate (Out)"
     },
     {
       "name": "PJ Hall",
@@ -106,8 +81,8 @@
   "CHA": [
     {
       "name": "M. Diabate",
-      "status": "QUES",
-      "details": "M. Diabate (Ques)"
+      "status": "OUT",
+      "details": "M. Diabate (Out)"
     },
     {
       "name": "PJ Hall",
@@ -132,19 +107,19 @@
       "details": "Egor Demin (OFS)"
     },
     {
+      "name": "M. Porter",
+      "status": "OFS",
+      "details": "M. Porter (OFS)"
+    },
+    {
       "name": "D. Sharpe",
       "status": "OFS",
       "details": "D. Sharpe (OFS)"
     },
     {
-      "name": "M. Porter",
-      "status": "OUT",
-      "details": "M. Porter (Out)"
-    },
-    {
       "name": "Danny Wolf",
-      "status": "OUT",
-      "details": "Danny Wolf (Out)"
+      "status": "OFS",
+      "details": "Danny Wolf (OFS)"
     }
   ],
   "BKN": [
@@ -154,19 +129,19 @@
       "details": "Egor Demin (OFS)"
     },
     {
+      "name": "M. Porter",
+      "status": "OFS",
+      "details": "M. Porter (OFS)"
+    },
+    {
       "name": "D. Sharpe",
       "status": "OFS",
       "details": "D. Sharpe (OFS)"
     },
     {
-      "name": "M. Porter",
-      "status": "OUT",
-      "details": "M. Porter (Out)"
-    },
-    {
       "name": "Danny Wolf",
-      "status": "OUT",
-      "details": "Danny Wolf (Out)"
+      "status": "OFS",
+      "details": "Danny Wolf (OFS)"
     }
   ],
   "CHI": [
@@ -186,34 +161,9 @@
       "details": "J. Smith (OFS)"
     },
     {
-      "name": "J. Giddey",
-      "status": "PROB",
-      "details": "J. Giddey (Prob)"
-    },
-    {
-      "name": "T. Jones",
-      "status": "PROB",
-      "details": "T. Jones (Prob)"
-    },
-    {
-      "name": "M. McClung",
-      "status": "PROB",
-      "details": "M. McClung (Prob)"
-    },
-    {
-      "name": "L. Olbrich",
-      "status": "PROB",
-      "details": "L. Olbrich (Prob)"
-    },
-    {
-      "name": "G. Yabusele",
-      "status": "PROB",
-      "details": "G. Yabusele (Prob)"
-    },
-    {
       "name": "N. Richards",
-      "status": "QUES",
-      "details": "N. Richards (Ques)"
+      "status": "OUT",
+      "details": "N. Richards (Out)"
     },
     {
       "name": "A. Simons",
@@ -299,26 +249,6 @@
       "details": "N. Vucevic (Out)"
     },
     {
-      "name": "R. Rollins",
-      "status": "PROB",
-      "details": "R. Rollins (Prob)"
-    },
-    {
-      "name": "G. Trent",
-      "status": "QUES",
-      "details": "G. Trent (Ques)"
-    },
-    {
-      "name": "J. Sims",
-      "status": "PROB",
-      "details": "J. Sims (Prob)"
-    },
-    {
-      "name": "T. Antetokounmpo",
-      "status": "QUES",
-      "details": "T. Antetokounmpo (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -332,30 +262,20 @@
       "name": "B. Portis",
       "status": "OUT",
       "details": "B. Portis (Out)"
+    },
+    {
+      "name": "R. Rollins",
+      "status": "OUT",
+      "details": "R. Rollins (Out)"
+    },
+    {
+      "name": "Gary Trent",
+      "status": "OUT",
+      "details": "Gary Trent (Out)"
     }
   ],
   "MIL": [
     {
-      "name": "R. Rollins",
-      "status": "PROB",
-      "details": "R. Rollins (Prob)"
-    },
-    {
-      "name": "J. Sims",
-      "status": "PROB",
-      "details": "J. Sims (Prob)"
-    },
-    {
-      "name": "T. Antetokounmpo",
-      "status": "QUES",
-      "details": "T. Antetokounmpo (Ques)"
-    },
-    {
-      "name": "G. Trent",
-      "status": "QUES",
-      "details": "G. Trent (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -369,6 +289,16 @@
       "name": "B. Portis",
       "status": "OUT",
       "details": "B. Portis (Out)"
+    },
+    {
+      "name": "R. Rollins",
+      "status": "OUT",
+      "details": "R. Rollins (Out)"
+    },
+    {
+      "name": "Gary Trent",
+      "status": "OUT",
+      "details": "Gary Trent (Out)"
     }
   ],
   "TOR": [
@@ -433,14 +363,14 @@
       "details": "T. Gibson (Doubt)"
     },
     {
-      "name": "O. Prosper",
-      "status": "DOUBT",
-      "details": "O. Prosper (Doubt)"
-    },
-    {
       "name": "Ty Jerome",
       "status": "OUT",
       "details": "Ty Jerome (Out)"
+    },
+    {
+      "name": "O. Prosper",
+      "status": "OUT",
+      "details": "O. Prosper (Out)"
     },
     {
       "name": "C. Spencer",
@@ -495,14 +425,14 @@
       "details": "T. Gibson (Doubt)"
     },
     {
-      "name": "O. Prosper",
-      "status": "DOUBT",
-      "details": "O. Prosper (Doubt)"
-    },
-    {
       "name": "Ty Jerome",
       "status": "OUT",
       "details": "Ty Jerome (Out)"
+    },
+    {
+      "name": "O. Prosper",
+      "status": "OUT",
+      "details": "O. Prosper (Out)"
     },
     {
       "name": "C. Spencer",
