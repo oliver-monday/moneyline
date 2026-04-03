@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-03",
-  "built_at_utc": "2026-04-03T22:40:44Z",
+  "built_at_utc": "2026-04-03T23:36:59Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -172,15 +172,15 @@
     },
     {
       "name": "K. Towns",
-      "status": "QUES",
-      "details": "K. Towns (Ques)"
+      "status": "OUT",
+      "details": "K. Towns (Out)"
     }
   ],
   "NYK": [
     {
       "name": "K. Towns",
-      "status": "QUES",
-      "details": "K. Towns (Ques)"
+      "status": "OUT",
+      "details": "K. Towns (Out)"
     }
   ],
   "UTA": [
@@ -303,11 +303,6 @@
   ],
   "TOR": [
     {
-      "name": "J. Battle",
-      "status": "QUES",
-      "details": "J. Battle (Ques)"
-    },
-    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
@@ -354,13 +349,13 @@
     },
     {
       "name": "W. Clayton",
-      "status": "QUES",
-      "details": "W. Clayton (Ques)"
+      "status": "OUT",
+      "details": "W. Clayton (Out)"
     },
     {
-      "name": "T. Gibson",
-      "status": "DOUBT",
-      "details": "T. Gibson (Doubt)"
+      "name": "Taj Gibson",
+      "status": "OUT",
+      "details": "Taj Gibson (Out)"
     },
     {
       "name": "Ty Jerome",
@@ -416,13 +411,13 @@
     },
     {
       "name": "W. Clayton",
-      "status": "QUES",
-      "details": "W. Clayton (Ques)"
+      "status": "OUT",
+      "details": "W. Clayton (Out)"
     },
     {
-      "name": "T. Gibson",
-      "status": "DOUBT",
-      "details": "T. Gibson (Doubt)"
+      "name": "Taj Gibson",
+      "status": "OUT",
+      "details": "Taj Gibson (Out)"
     },
     {
       "name": "Ty Jerome",
@@ -463,18 +458,18 @@
     },
     {
       "name": "M. Bagley",
-      "status": "DOUBT",
-      "details": "M. Bagley (Doubt)"
+      "status": "OUT",
+      "details": "M. Bagley (Out)"
     },
     {
       "name": "C. Martin",
-      "status": "DOUBT",
-      "details": "C. Martin (Doubt)"
+      "status": "OUT",
+      "details": "C. Martin (Out)"
     },
     {
       "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     }
   ],
   "DAL": [
@@ -490,18 +485,18 @@
     },
     {
       "name": "M. Bagley",
-      "status": "DOUBT",
-      "details": "M. Bagley (Doubt)"
+      "status": "OUT",
+      "details": "M. Bagley (Out)"
     },
     {
       "name": "C. Martin",
-      "status": "DOUBT",
-      "details": "C. Martin (Doubt)"
+      "status": "OUT",
+      "details": "C. Martin (Out)"
     },
     {
       "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     }
   ],
   "NOP": [
@@ -556,6 +551,11 @@
       "details": "K. Murray (Out)"
     },
     {
+      "name": "I. Stevens",
+      "status": "OUT",
+      "details": "I. Stevens (Out)"
+    },
+    {
       "name": "R. Westbrook",
       "status": "OUT",
       "details": "R. Westbrook (Out)"
@@ -591,6 +591,11 @@
       "name": "K. Murray",
       "status": "OUT",
       "details": "K. Murray (Out)"
+    },
+    {
+      "name": "I. Stevens",
+      "status": "OUT",
+      "details": "I. Stevens (Out)"
     },
     {
       "name": "R. Westbrook",

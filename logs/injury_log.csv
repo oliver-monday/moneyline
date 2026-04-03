@@ -10158,6 +10158,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,MIL,J. Sims,PROB,J. Sims (Prob),rotowire
 2026-04-03,MIL,T. Antetokounmpo,QUES,T. Antetokounmpo (Ques),rotowire
 2026-04-03,MIL,G. Trent,QUES,G. Trent (Ques),rotowire
+2026-04-03,TOR,J. Battle,QUES,J. Battle (Ques),rotowire
+2026-04-03,TOR,T. Gibson,DOUBT,T. Gibson (Doubt),rotowire
+2026-04-03,MEM,T. Gibson,DOUBT,T. Gibson (Doubt),rotowire
 2026-04-03,MIN,J. McDaniels,OUT,J. McDaniels (Out),rotowire
 2026-04-03,MIN,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
 2026-04-03,MIN,J. Broome,OUT,J. Broome (Out),rotowire
@@ -10189,8 +10192,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,CHI,J. Smith,OFS,J. Smith (OFS),rotowire
 2026-04-03,CHI,N. Richards,OUT,N. Richards (Out),rotowire
 2026-04-03,CHI,A. Simons,OUT,A. Simons (Out),rotowire
-2026-04-03,CHI,K. Towns,QUES,K. Towns (Ques),rotowire
-2026-04-03,NYK,K. Towns,QUES,K. Towns (Ques),rotowire
+2026-04-03,CHI,K. Towns,OUT,K. Towns (Out),rotowire
+2026-04-03,NYK,K. Towns,OUT,K. Towns (Out),rotowire
 2026-04-03,UTA,J. Jackson,OFS,J. Jackson (OFS),rotowire
 2026-04-03,UTA,W. Kessler,OFS,W. Kessler (OFS),rotowire
 2026-04-03,UTA,J. Nurkic,OFS,J. Nurkic (OFS),rotowire
@@ -10213,7 +10216,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,MIL,B. Portis,OUT,B. Portis (Out),rotowire
 2026-04-03,MIL,R. Rollins,OUT,R. Rollins (Out),rotowire
 2026-04-03,MIL,Gary Trent,OUT,Gary Trent (Out),rotowire
-2026-04-03,TOR,J. Battle,QUES,J. Battle (Ques),rotowire
 2026-04-03,TOR,C. Hepburn,OUT,C. Hepburn (Out),rotowire
 2026-04-03,TOR,I. Quickley,OUT,I. Quickley (Out),rotowire
 2026-04-03,TOR,S. Aldama,OFS,S. Aldama (OFS),rotowire
@@ -10223,8 +10225,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,TOR,Ja Morant,OFS,Ja Morant (OFS),rotowire
 2026-04-03,TOR,S. Pippen,OFS,S. Pippen (OFS),rotowire
 2026-04-03,TOR,J. Wells,OFS,J. Wells (OFS),rotowire
-2026-04-03,TOR,W. Clayton,QUES,W. Clayton (Ques),rotowire
-2026-04-03,TOR,T. Gibson,DOUBT,T. Gibson (Doubt),rotowire
+2026-04-03,TOR,W. Clayton,OUT,W. Clayton (Out),rotowire
+2026-04-03,TOR,Taj Gibson,OUT,Taj Gibson (Out),rotowire
 2026-04-03,TOR,Ty Jerome,OUT,Ty Jerome (Out),rotowire
 2026-04-03,TOR,O. Prosper,OUT,O. Prosper (Out),rotowire
 2026-04-03,TOR,C. Spencer,OUT,C. Spencer (Out),rotowire
@@ -10235,8 +10237,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,MEM,Ja Morant,OFS,Ja Morant (OFS),rotowire
 2026-04-03,MEM,S. Pippen,OFS,S. Pippen (OFS),rotowire
 2026-04-03,MEM,J. Wells,OFS,J. Wells (OFS),rotowire
-2026-04-03,MEM,W. Clayton,QUES,W. Clayton (Ques),rotowire
-2026-04-03,MEM,T. Gibson,DOUBT,T. Gibson (Doubt),rotowire
+2026-04-03,MEM,W. Clayton,OUT,W. Clayton (Out),rotowire
+2026-04-03,MEM,Taj Gibson,OUT,Taj Gibson (Out),rotowire
 2026-04-03,MEM,Ty Jerome,OUT,Ty Jerome (Out),rotowire
 2026-04-03,MEM,O. Prosper,OUT,O. Prosper (Out),rotowire
 2026-04-03,MEM,C. Spencer,OUT,C. Spencer (Out),rotowire
@@ -10244,14 +10246,14 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,ORL,J. Isaac,OUT,J. Isaac (Out),rotowire
 2026-04-03,ORL,K. Irving,OFS,K. Irving (OFS),rotowire
 2026-04-03,ORL,D. Lively,OFS,D. Lively (OFS),rotowire
-2026-04-03,ORL,M. Bagley,DOUBT,M. Bagley (Doubt),rotowire
-2026-04-03,ORL,C. Martin,DOUBT,C. Martin (Doubt),rotowire
-2026-04-03,ORL,P. Washington,DOUBT,P. Washington (Doubt),rotowire
+2026-04-03,ORL,M. Bagley,OUT,M. Bagley (Out),rotowire
+2026-04-03,ORL,C. Martin,OUT,C. Martin (Out),rotowire
+2026-04-03,ORL,P. Washington,OUT,P. Washington (Out),rotowire
 2026-04-03,DAL,K. Irving,OFS,K. Irving (OFS),rotowire
 2026-04-03,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
-2026-04-03,DAL,M. Bagley,DOUBT,M. Bagley (Doubt),rotowire
-2026-04-03,DAL,C. Martin,DOUBT,C. Martin (Doubt),rotowire
-2026-04-03,DAL,P. Washington,DOUBT,P. Washington (Doubt),rotowire
+2026-04-03,DAL,M. Bagley,OUT,M. Bagley (Out),rotowire
+2026-04-03,DAL,C. Martin,OUT,C. Martin (Out),rotowire
+2026-04-03,DAL,P. Washington,OUT,P. Washington (Out),rotowire
 2026-04-03,NOP,T. Murphy,PROB,T. Murphy (Prob),rotowire
 2026-04-03,NOP,K. Matkovic,QUES,K. Matkovic (Ques),rotowire
 2026-04-03,NOP,B. McGowens,OUT,B. McGowens (Out),rotowire
@@ -10262,6 +10264,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,NOP,D. Sabonis,OFS,D. Sabonis (OFS),rotowire
 2026-04-03,NOP,Malik Monk,OUT,Malik Monk (Out),rotowire
 2026-04-03,NOP,K. Murray,OUT,K. Murray (Out),rotowire
+2026-04-03,NOP,I. Stevens,OUT,I. Stevens (Out),rotowire
 2026-04-03,NOP,R. Westbrook,OUT,R. Westbrook (Out),rotowire
 2026-04-03,SAC,D. Eubanks,OFS,D. Eubanks (OFS),rotowire
 2026-04-03,SAC,D. Hunter,OFS,D. Hunter (OFS),rotowire
@@ -10269,4 +10272,5 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,SAC,D. Sabonis,OFS,D. Sabonis (OFS),rotowire
 2026-04-03,SAC,Malik Monk,OUT,Malik Monk (Out),rotowire
 2026-04-03,SAC,K. Murray,OUT,K. Murray (Out),rotowire
+2026-04-03,SAC,I. Stevens,OUT,I. Stevens (Out),rotowire
 2026-04-03,SAC,R. Westbrook,OUT,R. Westbrook (Out),rotowire
