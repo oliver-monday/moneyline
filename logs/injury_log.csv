@@ -10138,6 +10138,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,ATL,N. Claxton,PROB,N. Claxton (Prob),rotowire
 2026-04-03,BKN,N. Claxton,PROB,N. Claxton (Prob),rotowire
 2026-04-03,BKN,N. Clowney,PROB,N. Clowney (Prob),rotowire
+2026-04-03,IND,P. Hall,QUES,P. Hall (Ques),rotowire
+2026-04-03,CHA,P. Hall,QUES,P. Hall (Ques),rotowire
 2026-04-03,MIN,A. Edwards,QUES,A. Edwards (Ques),rotowire
 2026-04-03,MIN,J. McDaniels,OUT,J. McDaniels (Out),rotowire
 2026-04-03,MIN,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
@@ -10154,10 +10156,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,IND,A. Nembhard,OUT,A. Nembhard (Out),rotowire
 2026-04-03,IND,A. Nesmith,OUT,A. Nesmith (Out),rotowire
 2026-04-03,IND,J. Walker,OUT,J. Walker (Out),rotowire
-2026-04-03,IND,P. Hall,QUES,P. Hall (Ques),rotowire
-2026-04-03,IND,G. Williams,QUES,G. Williams (Ques),rotowire
-2026-04-03,CHA,P. Hall,QUES,P. Hall (Ques),rotowire
-2026-04-03,CHA,G. Williams,QUES,G. Williams (Ques),rotowire
+2026-04-03,IND,M. Diabate,QUES,M. Diabate (Ques),rotowire
+2026-04-03,IND,PJ Hall,OUT,PJ Hall (Out),rotowire
+2026-04-03,IND,G. Williams,OUT,G. Williams (Out),rotowire
+2026-04-03,CHA,M. Diabate,QUES,M. Diabate (Ques),rotowire
+2026-04-03,CHA,PJ Hall,OUT,PJ Hall (Out),rotowire
+2026-04-03,CHA,G. Williams,OUT,G. Williams (Out),rotowire
 2026-04-03,ATL,J. Landale,OUT,J. Landale (Out),rotowire
 2026-04-03,ATL,Egor Demin,OFS,Egor Demin (OFS),rotowire
 2026-04-03,ATL,D. Sharpe,OFS,D. Sharpe (OFS),rotowire
@@ -10215,6 +10219,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,TOR,Ja Morant,OFS,Ja Morant (OFS),rotowire
 2026-04-03,TOR,S. Pippen,OFS,S. Pippen (OFS),rotowire
 2026-04-03,TOR,J. Wells,OFS,J. Wells (OFS),rotowire
+2026-04-03,TOR,W. Clayton,QUES,W. Clayton (Ques),rotowire
 2026-04-03,TOR,T. Gibson,DOUBT,T. Gibson (Doubt),rotowire
 2026-04-03,TOR,O. Prosper,DOUBT,O. Prosper (Doubt),rotowire
 2026-04-03,TOR,Ty Jerome,OUT,Ty Jerome (Out),rotowire
@@ -10226,6 +10231,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,MEM,Ja Morant,OFS,Ja Morant (OFS),rotowire
 2026-04-03,MEM,S. Pippen,OFS,S. Pippen (OFS),rotowire
 2026-04-03,MEM,J. Wells,OFS,J. Wells (OFS),rotowire
+2026-04-03,MEM,W. Clayton,QUES,W. Clayton (Ques),rotowire
 2026-04-03,MEM,T. Gibson,DOUBT,T. Gibson (Doubt),rotowire
 2026-04-03,MEM,O. Prosper,DOUBT,O. Prosper (Doubt),rotowire
 2026-04-03,MEM,Ty Jerome,OUT,Ty Jerome (Out),rotowire

@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-03",
-  "built_at_utc": "2026-04-03T17:23:38Z",
+  "built_at_utc": "2026-04-03T18:42:40Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -88,26 +88,36 @@
       "details": "J. Walker (Out)"
     },
     {
-      "name": "P. Hall",
+      "name": "M. Diabate",
       "status": "QUES",
-      "details": "P. Hall (Ques)"
+      "details": "M. Diabate (Ques)"
+    },
+    {
+      "name": "PJ Hall",
+      "status": "OUT",
+      "details": "PJ Hall (Out)"
     },
     {
       "name": "G. Williams",
-      "status": "QUES",
-      "details": "G. Williams (Ques)"
+      "status": "OUT",
+      "details": "G. Williams (Out)"
     }
   ],
   "CHA": [
     {
-      "name": "P. Hall",
+      "name": "M. Diabate",
       "status": "QUES",
-      "details": "P. Hall (Ques)"
+      "details": "M. Diabate (Ques)"
+    },
+    {
+      "name": "PJ Hall",
+      "status": "OUT",
+      "details": "PJ Hall (Out)"
     },
     {
       "name": "G. Williams",
-      "status": "QUES",
-      "details": "G. Williams (Ques)"
+      "status": "OUT",
+      "details": "G. Williams (Out)"
     }
   ],
   "ATL": [
@@ -413,6 +423,11 @@
       "details": "J. Wells (OFS)"
     },
     {
+      "name": "W. Clayton",
+      "status": "QUES",
+      "details": "W. Clayton (Ques)"
+    },
+    {
       "name": "T. Gibson",
       "status": "DOUBT",
       "details": "T. Gibson (Doubt)"
@@ -468,6 +483,11 @@
       "name": "J. Wells",
       "status": "OFS",
       "details": "J. Wells (OFS)"
+    },
+    {
+      "name": "W. Clayton",
+      "status": "QUES",
+      "details": "W. Clayton (Ques)"
     },
     {
       "name": "T. Gibson",
