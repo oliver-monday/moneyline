@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-02",
-  "built_at_utc": "2026-04-02T23:37:20Z",
+  "built_at_utc": "2026-04-03T01:24:24Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -53,6 +53,11 @@
   ],
   "PHX": [
     {
+      "name": "J. Goodwin",
+      "status": "QUES",
+      "details": "J. Goodwin (Ques)"
+    },
+    {
       "name": "A. Coffey",
       "status": "OUT",
       "details": "A. Coffey (Out)"
@@ -88,8 +93,8 @@
     },
     {
       "name": "A. Caruso",
-      "status": "QUES",
-      "details": "A. Caruso (Ques)"
+      "status": "OUT",
+      "details": "A. Caruso (Out)"
     }
   ],
   "OKC": [
@@ -100,8 +105,8 @@
     },
     {
       "name": "A. Caruso",
-      "status": "QUES",
-      "details": "A. Caruso (Ques)"
+      "status": "OUT",
+      "details": "A. Caruso (Out)"
     }
   ],
   "CLE": [
@@ -116,16 +121,6 @@
       "details": "Dean Wade (Out)"
     },
     {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
-    },
-    {
-      "name": "G. Santos",
-      "status": "QUES",
-      "details": "G. Santos (Ques)"
-    },
-    {
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
@@ -137,13 +132,13 @@
     },
     {
       "name": "S. Curry",
-      "status": "QUES",
-      "details": "S. Curry (Ques)"
-    },
-    {
-      "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
+    },
+    {
+      "name": "Seth Curry",
+      "status": "OUT",
+      "details": "Seth Curry (Out)"
     },
     {
       "name": "Al Horford",
@@ -169,23 +164,13 @@
     },
     {
       "name": "S. Curry",
-      "status": "QUES",
-      "details": "S. Curry (Ques)"
-    },
-    {
-      "name": "D. Melton",
-      "status": "QUES",
-      "details": "D. Melton (Ques)"
-    },
-    {
-      "name": "G. Santos",
-      "status": "QUES",
-      "details": "G. Santos (Ques)"
-    },
-    {
-      "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
+    },
+    {
+      "name": "Seth Curry",
+      "status": "OUT",
+      "details": "Seth Curry (Out)"
     },
     {
       "name": "Al Horford",
@@ -199,11 +184,6 @@
     }
   ],
   "NOP": [
-    {
-      "name": "T. Murphy",
-      "status": "QUES",
-      "details": "T. Murphy (Ques)"
-    },
     {
       "name": "K. Matkovic",
       "status": "OUT",
@@ -262,11 +242,6 @@
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "E. Miller",
-      "status": "QUES",
-      "details": "E. Miller (Ques)"
     },
     {
       "name": "V. Wembanyama",
