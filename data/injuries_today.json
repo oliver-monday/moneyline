@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-03",
-  "built_at_utc": "2026-04-03T09:12:28Z",
+  "built_at_utc": "2026-04-03T15:06:52Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -91,6 +91,11 @@
       "name": "P. Hall",
       "status": "QUES",
       "details": "P. Hall (Ques)"
+    },
+    {
+      "name": "G. Williams",
+      "status": "QUES",
+      "details": "G. Williams (Ques)"
     }
   ],
   "CHA": [
@@ -98,6 +103,11 @@
       "name": "P. Hall",
       "status": "QUES",
       "details": "P. Hall (Ques)"
+    },
+    {
+      "name": "G. Williams",
+      "status": "QUES",
+      "details": "G. Williams (Ques)"
     }
   ],
   "ATL": [
@@ -555,13 +565,18 @@
   "NOP": [
     {
       "name": "K. Matkovic",
-      "status": "OUT",
-      "details": "K. Matkovic (Out)"
+      "status": "QUES",
+      "details": "K. Matkovic (Ques)"
     },
     {
       "name": "B. McGowens",
-      "status": "OUT",
-      "details": "B. McGowens (Out)"
+      "status": "DOUBT",
+      "details": "B. McGowens (Doubt)"
+    },
+    {
+      "name": "D. Murray",
+      "status": "DOUBT",
+      "details": "D. Murray (Doubt)"
     },
     {
       "name": "D. Eubanks",
