@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-03",
-  "built_at_utc": "2026-04-03T15:06:52Z",
+  "built_at_utc": "2026-04-03T17:23:38Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -20,8 +20,8 @@
     },
     {
       "name": "J. Embiid",
-      "status": "DOUBT",
-      "details": "J. Embiid (Doubt)"
+      "status": "PROB",
+      "details": "J. Embiid (Prob)"
     },
     {
       "name": "J. Broome",
@@ -32,8 +32,8 @@
   "PHI": [
     {
       "name": "J. Embiid",
-      "status": "DOUBT",
-      "details": "J. Embiid (Doubt)"
+      "status": "PROB",
+      "details": "J. Embiid (Prob)"
     },
     {
       "name": "J. Broome",
@@ -117,16 +117,6 @@
       "details": "J. Landale (Out)"
     },
     {
-      "name": "N. Clowney",
-      "status": "PROB",
-      "details": "N. Clowney (Prob)"
-    },
-    {
-      "name": "N. Claxton",
-      "status": "PROB",
-      "details": "N. Claxton (Prob)"
-    },
-    {
       "name": "Egor Demin",
       "status": "OFS",
       "details": "Egor Demin (OFS)"
@@ -159,16 +149,6 @@
       "details": "D. Sharpe (OFS)"
     },
     {
-      "name": "N. Claxton",
-      "status": "PROB",
-      "details": "N. Claxton (Prob)"
-    },
-    {
-      "name": "N. Clowney",
-      "status": "PROB",
-      "details": "N. Clowney (Prob)"
-    },
-    {
       "name": "M. Porter",
       "status": "OUT",
       "details": "M. Porter (Out)"
@@ -196,6 +176,16 @@
       "details": "J. Smith (OFS)"
     },
     {
+      "name": "J. Giddey",
+      "status": "PROB",
+      "details": "J. Giddey (Prob)"
+    },
+    {
+      "name": "T. Jones",
+      "status": "PROB",
+      "details": "T. Jones (Prob)"
+    },
+    {
       "name": "M. McClung",
       "status": "PROB",
       "details": "M. McClung (Prob)"
@@ -211,16 +201,6 @@
       "details": "G. Yabusele (Prob)"
     },
     {
-      "name": "J. Giddey",
-      "status": "QUES",
-      "details": "J. Giddey (Ques)"
-    },
-    {
-      "name": "T. Jones",
-      "status": "QUES",
-      "details": "T. Jones (Ques)"
-    },
-    {
       "name": "N. Richards",
       "status": "QUES",
       "details": "N. Richards (Ques)"
@@ -229,6 +209,18 @@
       "name": "A. Simons",
       "status": "OUT",
       "details": "A. Simons (Out)"
+    },
+    {
+      "name": "K. Towns",
+      "status": "QUES",
+      "details": "K. Towns (Ques)"
+    }
+  ],
+  "NYK": [
+    {
+      "name": "K. Towns",
+      "status": "QUES",
+      "details": "K. Towns (Ques)"
     }
   ],
   "UTA": [
