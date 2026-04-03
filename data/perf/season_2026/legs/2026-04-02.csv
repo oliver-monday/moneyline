@@ -1,0 +1,5 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-02,2026,Trey Murphy III,NO,POR,3pt,3,MISSED,1,,targets_snapshot_2026-04-02.json
+2026-04-02,2026,Saddiq Bey,NO,POR,pts,15,HIT,15,,targets_snapshot_2026-04-02.json
+2026-04-02,2026,Saddiq Bey,NO,POR,ast,2,MISSED,1,,targets_snapshot_2026-04-02.json
+2026-04-02,2026,Brandon Miller,CHA,PHX,3pt,3,HIT,3,,targets_snapshot_2026-04-02.json

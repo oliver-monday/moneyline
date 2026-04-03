@@ -1151,9 +1151,18 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810965,2026-04-01,2026-04-02T00:00Z,Houston Rockets,HOU,119,-1800.0,,Milwaukee Bucks,MIL,113,1000.0,,Houston,TX,,
 401810967,2026-04-01,2026-04-02T01:00Z,Utah Jazz,UTAH,117,950.0,,Denver Nuggets,DEN,130,-1650.0,,Salt Lake City,UT,,
 401810968,2026-04-01,2026-04-02T02:00Z,Golden State Warriors,GS,113,625.0,,San Antonio Spurs,SA,127,-950.0,,San Francisco,CA,,
-401810969,2026-04-02,2026-04-02T23:00Z,Charlotte Hornets,CHA,0,-205.0,,Phoenix Suns,PHX,0,170.0,,Charlotte,NC,PJ Hall (Out),A. Coffey (Out); H. Highsmith (Out)
-401810970,2026-04-02,2026-04-02T23:00Z,Detroit Pistons,DET,0,-162.0,,Minnesota Timberwolves,MIN,0,136.0,,Detroit,MI,C. Cunningham (Out); I. Stewart (Out),J. McDaniels (Out)
-401810971,2026-04-02,2026-04-03T01:30Z,Oklahoma City Thunder,OKC,0,-375.0,,Los Angeles Lakers,LAL,0,295.0,,Oklahoma City,OK,T. Sorber (OFS),M. Smart (Out)
-401810972,2026-04-02,2026-04-03T02:00Z,Golden State Warriors,GS,0,360.0,,Cleveland Cavaliers,CLE,0,-470.0,,San Francisco,CA,J. Butler (OFS); M. Moody (OFS); S. Curry (Out); Al Horford (Out),J. Tyson (Out); Dean Wade (Out)
-401810973,2026-04-02,2026-04-03T02:00Z,Portland Trail Blazers,POR,0,-250.0,,New Orleans Pelicans,NO,0,205.0,,Portland,OR,D. Lillard (OFS); J. Grant (Out); Vit Krejci (Out); S. Sharpe (Out),B. McGowens (Out)
-401810974,2026-04-02,2026-04-03T02:30Z,LA Clippers,LAC,0,140.0,,San Antonio Spurs,SA,0,-166.0,,Inglewood,CA,B. Beal (OFS); Y. Niederhauser (OFS); I. Jackson (Out),D. Jones Garcia (OFS)
+401810969,2026-04-02,2026-04-02T23:00Z,Charlotte Hornets,CHA,127,-205.0,,Phoenix Suns,PHX,107,170.0,,Charlotte,NC,,
+401810970,2026-04-02,2026-04-02T23:00Z,Detroit Pistons,DET,113,-162.0,,Minnesota Timberwolves,MIN,108,136.0,,Detroit,MI,,
+401810971,2026-04-02,2026-04-03T01:30Z,Oklahoma City Thunder,OKC,139,-375.0,,Los Angeles Lakers,LAL,96,295.0,,Oklahoma City,OK,,
+401810972,2026-04-02,2026-04-03T02:00Z,Golden State Warriors,GS,111,360.0,,Cleveland Cavaliers,CLE,118,-470.0,,San Francisco,CA,,
+401810973,2026-04-02,2026-04-03T02:00Z,Portland Trail Blazers,POR,118,-250.0,,New Orleans Pelicans,NO,106,205.0,,Portland,OR,,
+401810974,2026-04-02,2026-04-03T02:30Z,LA Clippers,LAC,99,140.0,,San Antonio Spurs,SA,118,-166.0,,Inglewood,CA,,
+401810975,2026-04-03,2026-04-03T23:00Z,Charlotte Hornets,CHA,0,-1350.0,,Indiana Pacers,IND,0,800.0,,Charlotte,NC,,J. Furphy (OFS); T. Haliburton (OFS); I. Zubac (OFS); T. McConnell (Out); A. Nembhard (Out); A. Nesmith (Out); J. Walker (Out)
+401810976,2026-04-03,2026-04-03T23:00Z,Philadelphia 76ers,PHI,0,-135.0,,Minnesota Timberwolves,MIN,0,114.0,,Philadelphia,PA,J. Broome (Out),J. McDaniels (Out)
+401810977,2026-04-03,2026-04-03T23:30Z,Brooklyn Nets,BKN,0,950.0,,Atlanta Hawks,ATL,0,-1650.0,,Brooklyn,NY,Egor Demin (OFS); D. Sharpe (OFS); M. Porter (Out); Danny Wolf (Out),J. Landale (Out)
+401810978,2026-04-03,2026-04-03T23:30Z,New York Knicks,NY,0,-1600.0,,Chicago Bulls,CHI,0,900.0,,New York,NY,,Z. Collins (OFS); N. Essengue (OFS); J. Smith (OFS); A. Simons (Out)
+401810979,2026-04-03,2026-04-04T00:00Z,Houston Rockets,HOU,0,-1800.0,,Utah Jazz,UTAH,0,1000.0,,Houston,TX,S. Adams (OFS); F. VanVleet (Out),J. Jackson (OFS); W. Kessler (OFS); J. Nurkic (OFS); I. Collier (Out); K. George (Out); E. Harkless (Out); L. Markkanen (Out)
+401810980,2026-04-03,2026-04-04T00:00Z,Memphis Grizzlies,MEM,0,625.0,,Toronto Raptors,TOR,0,-950.0,,Memphis,TN,S. Aldama (OFS); K. Caldwell-Pope (OFS); B. Clarke (OFS); Zach Edey (OFS); Ja Morant (OFS); S. Pippen (OFS); J. Wells (OFS); Ty Jerome (Out); C. Spencer (Out),C. Hepburn (Out); I. Quickley (Out)
+401810981,2026-04-03,2026-04-04T00:00Z,Milwaukee Bucks,MIL,0,1000.0,,Boston Celtics,BOS,0,-1800.0,,Milwaukee,WI,G. Antetokounmpo (Out); K. Porter (Out); B. Portis (Out),N. Vucevic (Out)
+401810982,2026-04-03,2026-04-04T00:30Z,Dallas Mavericks,DAL,0,220.0,,Orlando Magic,ORL,0,-270.0,,Dallas,TX,K. Irving (OFS); D. Lively (OFS),A. Black (Out); J. Isaac (Out)
+401810983,2026-04-03,2026-04-04T02:00Z,Sacramento Kings,SAC,0,170.0,,New Orleans Pelicans,NO,0,-205.0,,Sacramento,CA,D. Eubanks (OFS); D. Hunter (OFS); Z. LaVine (OFS); D. Sabonis (OFS); K. Murray (Out); R. Westbrook (Out),K. Matkovic (Out); B. McGowens (Out)
