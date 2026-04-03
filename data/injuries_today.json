@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-03",
-  "built_at_utc": "2026-04-03T18:42:40Z",
+  "built_at_utc": "2026-04-03T19:41:31Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -576,19 +576,24 @@
   ],
   "NOP": [
     {
+      "name": "T. Murphy",
+      "status": "PROB",
+      "details": "T. Murphy (Prob)"
+    },
+    {
       "name": "K. Matkovic",
       "status": "QUES",
       "details": "K. Matkovic (Ques)"
     },
     {
       "name": "B. McGowens",
-      "status": "DOUBT",
-      "details": "B. McGowens (Doubt)"
+      "status": "OUT",
+      "details": "B. McGowens (Out)"
     },
     {
       "name": "D. Murray",
-      "status": "DOUBT",
-      "details": "D. Murray (Doubt)"
+      "status": "OUT",
+      "details": "D. Murray (Out)"
     },
     {
       "name": "D. Eubanks",
