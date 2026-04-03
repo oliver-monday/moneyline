@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-04-02",
-  "built_at_utc": "2026-04-03T01:24:24Z",
+  "built_at_utc": "2026-04-03T03:39:50Z",
   "source": "rotowire",
   "MIN": [
     {
       "name": "A. Edwards",
-      "status": "OUT",
-      "details": "A. Edwards (Out)"
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
     },
     {
       "name": "J. McDaniels",
@@ -24,14 +24,14 @@
       "details": "T. Harris (Ques)"
     },
     {
+      "name": "I. Stewart",
+      "status": "QUES",
+      "details": "I. Stewart (Ques)"
+    },
+    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
-    },
-    {
-      "name": "I. Stewart",
-      "status": "OUT",
-      "details": "I. Stewart (Out)"
     }
   ],
   "DET": [
@@ -41,50 +41,60 @@
       "details": "T. Harris (Ques)"
     },
     {
+      "name": "I. Stewart",
+      "status": "QUES",
+      "details": "I. Stewart (Ques)"
+    },
+    {
       "name": "C. Cunningham",
       "status": "OUT",
       "details": "C. Cunningham (Out)"
-    },
-    {
-      "name": "I. Stewart",
-      "status": "OUT",
-      "details": "I. Stewart (Out)"
     }
   ],
   "PHX": [
+    {
+      "name": "A. Coffey",
+      "status": "QUES",
+      "details": "A. Coffey (Ques)"
+    },
     {
       "name": "J. Goodwin",
       "status": "QUES",
       "details": "J. Goodwin (Ques)"
     },
     {
-      "name": "A. Coffey",
-      "status": "OUT",
-      "details": "A. Coffey (Out)"
-    },
-    {
       "name": "H. Highsmith",
-      "status": "OUT",
-      "details": "H. Highsmith (Out)"
+      "status": "QUES",
+      "details": "H. Highsmith (Ques)"
     },
     {
-      "name": "PJ Hall",
-      "status": "OUT",
-      "details": "PJ Hall (Out)"
+      "name": "P. Hall",
+      "status": "QUES",
+      "details": "P. Hall (Ques)"
     }
   ],
   "CHA": [
     {
-      "name": "PJ Hall",
-      "status": "OUT",
-      "details": "PJ Hall (Out)"
+      "name": "P. Hall",
+      "status": "QUES",
+      "details": "P. Hall (Ques)"
     }
   ],
   "LAL": [
     {
+      "name": "L. Doncic",
+      "status": "QUES",
+      "details": "L. Doncic (Ques)"
+    },
+    {
       "name": "M. Smart",
       "status": "OUT",
       "details": "M. Smart (Out)"
+    },
+    {
+      "name": "L. Dort",
+      "status": "QUES",
+      "details": "L. Dort (Ques)"
     },
     {
       "name": "T. Sorber",
@@ -98,6 +108,11 @@
     }
   ],
   "OKC": [
+    {
+      "name": "L. Dort",
+      "status": "QUES",
+      "details": "L. Dort (Ques)"
+    },
     {
       "name": "T. Sorber",
       "status": "OFS",
