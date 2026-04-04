@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-04",
-  "built_at_utc": "2026-04-04T22:36:31Z",
+  "built_at_utc": "2026-04-04T23:34:28Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -19,6 +19,11 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
+      "name": "B. Brown",
+      "status": "QUES",
+      "details": "B. Brown (Ques)"
+    },
+    {
       "name": "S. Jones",
       "status": "OUT",
       "details": "S. Jones (Out)"
@@ -35,6 +40,11 @@
     }
   ],
   "DEN": [
+    {
+      "name": "B. Brown",
+      "status": "QUES",
+      "details": "B. Brown (Ques)"
+    },
     {
       "name": "S. Jones",
       "status": "OUT",
