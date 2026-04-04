@@ -10161,6 +10161,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,TOR,J. Battle,QUES,J. Battle (Ques),rotowire
 2026-04-03,TOR,T. Gibson,DOUBT,T. Gibson (Doubt),rotowire
 2026-04-03,MEM,T. Gibson,DOUBT,T. Gibson (Doubt),rotowire
+2026-04-03,NOP,T. Murphy,PROB,T. Murphy (Prob),rotowire
 2026-04-03,MIN,J. McDaniels,OUT,J. McDaniels (Out),rotowire
 2026-04-03,MIN,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
 2026-04-03,MIN,J. Broome,OUT,J. Broome (Out),rotowire
@@ -10254,8 +10255,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,DAL,M. Bagley,OUT,M. Bagley (Out),rotowire
 2026-04-03,DAL,C. Martin,OUT,C. Martin (Out),rotowire
 2026-04-03,DAL,P. Washington,OUT,P. Washington (Out),rotowire
-2026-04-03,NOP,T. Murphy,PROB,T. Murphy (Prob),rotowire
-2026-04-03,NOP,K. Matkovic,QUES,K. Matkovic (Ques),rotowire
+2026-04-03,NOP,K. Matkovic,OUT,K. Matkovic (Out),rotowire
 2026-04-03,NOP,B. McGowens,OUT,B. McGowens (Out),rotowire
 2026-04-03,NOP,D. Murray,OUT,D. Murray (Out),rotowire
 2026-04-03,NOP,D. Eubanks,OFS,D. Eubanks (OFS),rotowire
