@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-04",
-  "built_at_utc": "2026-04-04T18:39:46Z",
+  "built_at_utc": "2026-04-04T19:35:44Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -88,6 +88,11 @@
       "details": "Trae Young (Out)"
     },
     {
+      "name": "T. Herro",
+      "status": "OUT",
+      "details": "T. Herro (Out)"
+    },
+    {
       "name": "N. Powell",
       "status": "OUT",
       "details": "N. Powell (Out)"
@@ -99,6 +104,11 @@
     }
   ],
   "MIA": [
+    {
+      "name": "T. Herro",
+      "status": "OUT",
+      "details": "T. Herro (Out)"
+    },
     {
       "name": "N. Powell",
       "status": "OUT",
