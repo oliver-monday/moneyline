@@ -10281,6 +10281,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-03,SAC,I. Stevens,OUT,I. Stevens (Out),rotowire
 2026-04-03,SAC,R. Westbrook,OUT,R. Westbrook (Out),rotowire
 2026-04-04,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
+2026-04-04,SAS,E. Miller,OUT,E. Miller (Out),rotowire
 2026-04-04,SAS,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
 2026-04-04,SAS,T. Hardaway,PROB,T. Hardaway (Prob),rotowire
 2026-04-04,SAS,S. Jones,OUT,S. Jones (Out),rotowire
@@ -10310,5 +10311,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-04,DET,T. Harris,QUES,T. Harris (Ques),rotowire
 2026-04-04,DET,C. Cunningham,OUT,C. Cunningham (Out),rotowire
 2026-04-04,DET,I. Stewart,OUT,I. Stewart (Out),rotowire
+2026-04-04,DET,P. George,QUES,P. George (Ques),rotowire
+2026-04-04,DET,J. Embiid,QUES,J. Embiid (Ques),rotowire
 2026-04-04,DET,J. Broome,OUT,J. Broome (Out),rotowire
+2026-04-04,PHI,J. Embiid,QUES,J. Embiid (Ques),rotowire
+2026-04-04,PHI,P. George,QUES,P. George (Ques),rotowire
 2026-04-04,PHI,J. Broome,OUT,J. Broome (Out),rotowire

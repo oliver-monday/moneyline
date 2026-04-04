@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-04-04",
-  "built_at_utc": "2026-04-04T09:02:04Z",
+  "built_at_utc": "2026-04-04T14:58:39Z",
   "source": "rotowire",
   "SAS": [
     {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "E. Miller",
+      "status": "OUT",
+      "details": "E. Miller (Out)"
     },
     {
       "name": "Probable Pitchers",
@@ -162,12 +167,32 @@
       "details": "I. Stewart (Out)"
     },
     {
+      "name": "P. George",
+      "status": "QUES",
+      "details": "P. George (Ques)"
+    },
+    {
+      "name": "J. Embiid",
+      "status": "QUES",
+      "details": "J. Embiid (Ques)"
+    },
+    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
     }
   ],
   "PHI": [
+    {
+      "name": "J. Embiid",
+      "status": "QUES",
+      "details": "J. Embiid (Ques)"
+    },
+    {
+      "name": "P. George",
+      "status": "QUES",
+      "details": "P. George (Ques)"
+    },
     {
       "name": "J. Broome",
       "status": "OUT",
