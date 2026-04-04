@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-04",
-  "built_at_utc": "2026-04-04T14:58:39Z",
+  "built_at_utc": "2026-04-04T17:20:41Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -63,39 +63,24 @@
   ],
   "WAS": [
     {
-      "name": "K. George",
-      "status": "OFS",
-      "details": "K. George (OFS)"
-    },
-    {
-      "name": "C. Whitmore",
-      "status": "OFS",
-      "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "J. Champagnie",
-      "status": "QUES",
-      "details": "J. Champagnie (Ques)"
-    },
-    {
       "name": "B. Coulibaly",
       "status": "QUES",
       "details": "B. Coulibaly (Ques)"
     },
     {
-      "name": "T. Johnson",
-      "status": "QUES",
-      "details": "T. Johnson (Ques)"
-    },
-    {
-      "name": "A. Sarr",
-      "status": "QUES",
-      "details": "A. Sarr (Ques)"
+      "name": "K. George",
+      "status": "OFS",
+      "details": "K. George (OFS)"
     },
     {
       "name": "T. Vukcevic",
       "status": "QUES",
       "details": "T. Vukcevic (Ques)"
+    },
+    {
+      "name": "C. Whitmore",
+      "status": "OFS",
+      "details": "C. Whitmore (OFS)"
     },
     {
       "name": "A. Davis",
@@ -108,14 +93,14 @@
       "details": "D. Russell (Out)"
     },
     {
+      "name": "Alex Sarr",
+      "status": "OUT",
+      "details": "Alex Sarr (Out)"
+    },
+    {
       "name": "Trae Young",
       "status": "OUT",
       "details": "Trae Young (Out)"
-    },
-    {
-      "name": "T. Herro",
-      "status": "PROB",
-      "details": "T. Herro (Prob)"
     },
     {
       "name": "N. Powell",
@@ -130,11 +115,6 @@
   ],
   "MIA": [
     {
-      "name": "T. Herro",
-      "status": "PROB",
-      "details": "T. Herro (Prob)"
-    },
-    {
       "name": "N. Powell",
       "status": "OUT",
       "details": "N. Powell (Out)"
@@ -147,9 +127,9 @@
   ],
   "DET": [
     {
-      "name": "M. Sasser",
-      "status": "PROB",
-      "details": "M. Sasser (Prob)"
+      "name": "J. Duren",
+      "status": "QUES",
+      "details": "J. Duren (Ques)"
     },
     {
       "name": "T. Harris",
@@ -168,35 +148,35 @@
     },
     {
       "name": "P. George",
-      "status": "QUES",
-      "details": "P. George (Ques)"
-    },
-    {
-      "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
+      "status": "PROB",
+      "details": "P. George (Prob)"
     },
     {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
+    },
+    {
+      "name": "J. Embiid",
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     }
   ],
   "PHI": [
     {
-      "name": "J. Embiid",
-      "status": "QUES",
-      "details": "J. Embiid (Ques)"
-    },
-    {
       "name": "P. George",
-      "status": "QUES",
-      "details": "P. George (Ques)"
+      "status": "PROB",
+      "details": "P. George (Prob)"
     },
     {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
+    },
+    {
+      "name": "J. Embiid",
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     }
   ]
 }
