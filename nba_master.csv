@@ -1167,5 +1167,5 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810982,2026-04-03,2026-04-04T00:30Z,Dallas Mavericks,DAL,127,220.0,,Orlando Magic,ORL,138,-270.0,,Dallas,TX,,
 401810983,2026-04-03,2026-04-04T02:00Z,Sacramento Kings,SAC,117,170.0,,New Orleans Pelicans,NO,113,-205.0,,Sacramento,CA,,
 401810984,2026-04-04,2026-04-04T19:00Z,Miami Heat,MIA,0,-2100.0,,Washington Wizards,WSH,0,1100.0,,Miami,FL,N. Powell (Out); T. Rozier (Out),K. George (OFS); C. Whitmore (OFS); A. Davis (Out); D. Russell (Out); Trae Young (Out)
-401810985,2026-04-04,2026-04-04T19:00Z,Denver Nuggets,DEN,0,114.0,,San Antonio Spurs,SA,0,-135.0,,Denver,CO,S. Jones (Out); Zeke Nnaji (Out); P. Watson (Out),D. Jones Garcia (OFS)
-401810986,2026-04-04,2026-04-04T23:00Z,Philadelphia 76ers,PHI,0,120.0,,Detroit Pistons,DET,0,-142.0,,Philadelphia,PA,J. Broome (Out),C. Cunningham (Out); I. Stewart (Out)
+401810985,2026-04-04,2026-04-04T19:00Z,Denver Nuggets,DEN,0,110.0,,San Antonio Spurs,SA,0,-130.0,,Denver,CO,S. Jones (Out); Zeke Nnaji (Out); P. Watson (Out),D. Jones Garcia (OFS); E. Miller (Out)
+401810986,2026-04-04,2026-04-04T23:00Z,Philadelphia 76ers,PHI,0,136.0,,Detroit Pistons,DET,0,-162.0,,Philadelphia,PA,J. Broome (Out),C. Cunningham (Out); I. Stewart (Out)
