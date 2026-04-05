@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-05",
-  "built_at_utc": "2026-04-05T18:40:28Z",
+  "built_at_utc": "2026-04-05T19:38:00Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -20,11 +20,6 @@
     }
   ],
   "PHX": [
-    {
-      "name": "A. Coffey",
-      "status": "PROB",
-      "details": "A. Coffey (Prob)"
-    },
     {
       "name": "H. Highsmith",
       "status": "OUT",
@@ -140,24 +135,14 @@
       "details": "J. Wells (OFS)"
     },
     {
-      "name": "T. Gibson",
-      "status": "PROB",
-      "details": "T. Gibson (Prob)"
-    },
-    {
-      "name": "W. Clayton",
-      "status": "QUES",
-      "details": "W. Clayton (Ques)"
-    },
-    {
       "name": "C. Coward",
-      "status": "DOUBT",
-      "details": "C. Coward (Doubt)"
+      "status": "OUT",
+      "details": "C. Coward (Out)"
     },
     {
-      "name": "G. Jackson",
-      "status": "DOUBT",
-      "details": "G. Jackson (Doubt)"
+      "name": "GG Jackson",
+      "status": "OUT",
+      "details": "GG Jackson (Out)"
     },
     {
       "name": "Ty Jerome",
