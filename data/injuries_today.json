@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-04",
-  "built_at_utc": "2026-04-05T03:49:27Z",
+  "built_at_utc": "2026-04-05T04:27:57Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -68,6 +68,11 @@
       "details": "K. George (OFS)"
     },
     {
+      "name": "A. Sarr",
+      "status": "QUES",
+      "details": "A. Sarr (Ques)"
+    },
+    {
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
@@ -81,11 +86,6 @@
       "name": "D. Russell",
       "status": "OUT",
       "details": "D. Russell (Out)"
-    },
-    {
-      "name": "Alex Sarr",
-      "status": "OUT",
-      "details": "Alex Sarr (Out)"
     },
     {
       "name": "T. Vukcevic",
