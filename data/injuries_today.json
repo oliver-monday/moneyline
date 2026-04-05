@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-05",
-  "built_at_utc": "2026-04-05T15:00:35Z",
+  "built_at_utc": "2026-04-05T17:20:12Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -317,13 +317,8 @@
     },
     {
       "name": "T. Mann",
-      "status": "PROB",
-      "details": "T. Mann (Prob)"
-    },
-    {
-      "name": "N. Clowney",
       "status": "QUES",
-      "details": "N. Clowney (Ques)"
+      "details": "T. Mann (Ques)"
     },
     {
       "name": "Egor Demin",
@@ -354,6 +349,11 @@
       "name": "N. Claxton",
       "status": "OUT",
       "details": "N. Claxton (Out)"
+    },
+    {
+      "name": "N. Clowney",
+      "status": "OUT",
+      "details": "N. Clowney (Out)"
     },
     {
       "name": "Z. Williams",
@@ -384,13 +384,8 @@
     },
     {
       "name": "T. Mann",
-      "status": "PROB",
-      "details": "T. Mann (Prob)"
-    },
-    {
-      "name": "N. Clowney",
       "status": "QUES",
-      "details": "N. Clowney (Ques)"
+      "details": "T. Mann (Ques)"
     },
     {
       "name": "B. Saraf",
@@ -401,6 +396,11 @@
       "name": "N. Claxton",
       "status": "OUT",
       "details": "N. Claxton (Out)"
+    },
+    {
+      "name": "N. Clowney",
+      "status": "OUT",
+      "details": "N. Clowney (Out)"
     },
     {
       "name": "Z. Williams",
@@ -519,51 +519,56 @@
       "details": "A. Black (Out)"
     },
     {
+      "name": "J. Howard",
+      "status": "OUT",
+      "details": "J. Howard (Out)"
+    },
+    {
       "name": "J. Isaac",
       "status": "OUT",
       "details": "J. Isaac (Out)"
     },
     {
-      "name": "D. Murray",
-      "status": "QUES",
-      "details": "D. Murray (Ques)"
-    },
-    {
-      "name": "T. Murphy",
-      "status": "QUES",
-      "details": "T. Murphy (Ques)"
-    },
-    {
       "name": "K. Matkovic",
-      "status": "QUES",
-      "details": "K. Matkovic (Ques)"
+      "status": "OUT",
+      "details": "K. Matkovic (Out)"
     },
     {
       "name": "B. McGowens",
       "status": "OUT",
       "details": "B. McGowens (Out)"
+    },
+    {
+      "name": "T. Murphy",
+      "status": "OUT",
+      "details": "T. Murphy (Out)"
+    },
+    {
+      "name": "D. Murray",
+      "status": "OUT",
+      "details": "D. Murray (Out)"
     }
   ],
   "NOP": [
     {
       "name": "K. Matkovic",
-      "status": "QUES",
-      "details": "K. Matkovic (Ques)"
-    },
-    {
-      "name": "T. Murphy",
-      "status": "QUES",
-      "details": "T. Murphy (Ques)"
-    },
-    {
-      "name": "D. Murray",
-      "status": "QUES",
-      "details": "D. Murray (Ques)"
+      "status": "OUT",
+      "details": "K. Matkovic (Out)"
     },
     {
       "name": "B. McGowens",
       "status": "OUT",
       "details": "B. McGowens (Out)"
+    },
+    {
+      "name": "T. Murphy",
+      "status": "OUT",
+      "details": "T. Murphy (Out)"
+    },
+    {
+      "name": "D. Murray",
+      "status": "OUT",
+      "details": "D. Murray (Out)"
     }
   ],
   "CHA": [
@@ -579,8 +584,8 @@
     },
     {
       "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
+      "status": "OUT",
+      "details": "A. Edwards (Out)"
     },
     {
       "name": "J. McDaniels",
@@ -591,8 +596,8 @@
   "MIN": [
     {
       "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
+      "status": "OUT",
+      "details": "A. Edwards (Out)"
     },
     {
       "name": "J. McDaniels",
