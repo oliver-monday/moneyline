@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-05",
-  "built_at_utc": "2026-04-05T09:02:44Z",
+  "built_at_utc": "2026-04-05T15:00:35Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -46,6 +46,11 @@
       "name": "J. Giddey",
       "status": "QUES",
       "details": "J. Giddey (Ques)"
+    },
+    {
+      "name": "M. Buzelis",
+      "status": "QUES",
+      "details": "M. Buzelis (Ques)"
     },
     {
       "name": "N. Richards",
@@ -108,6 +113,11 @@
       "name": "C. Sexton",
       "status": "PROB",
       "details": "C. Sexton (Prob)"
+    },
+    {
+      "name": "M. Buzelis",
+      "status": "QUES",
+      "details": "M. Buzelis (Ques)"
     },
     {
       "name": "J. Giddey",
@@ -266,9 +276,24 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "A. Sarr",
+      "name": "J. Champagnie",
       "status": "QUES",
-      "details": "A. Sarr (Ques)"
+      "details": "J. Champagnie (Ques)"
+    },
+    {
+      "name": "B. Coulibaly",
+      "status": "QUES",
+      "details": "B. Coulibaly (Ques)"
+    },
+    {
+      "name": "T. Johnson",
+      "status": "QUES",
+      "details": "T. Johnson (Ques)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "QUES",
+      "details": "T. Vukcevic (Ques)"
     },
     {
       "name": "A. Davis",
@@ -281,9 +306,9 @@
       "details": "D. Russell (Out)"
     },
     {
-      "name": "T. Vukcevic",
+      "name": "Alex Sarr",
       "status": "OUT",
-      "details": "T. Vukcevic (Out)"
+      "details": "Alex Sarr (Out)"
     },
     {
       "name": "Trae Young",
@@ -509,22 +534,17 @@
       "details": "T. Murphy (Ques)"
     },
     {
-      "name": "B. McGowens",
-      "status": "DOUBT",
-      "details": "B. McGowens (Doubt)"
-    },
-    {
       "name": "K. Matkovic",
       "status": "QUES",
       "details": "K. Matkovic (Ques)"
+    },
+    {
+      "name": "B. McGowens",
+      "status": "OUT",
+      "details": "B. McGowens (Out)"
     }
   ],
   "NOP": [
-    {
-      "name": "B. McGowens",
-      "status": "DOUBT",
-      "details": "B. McGowens (Doubt)"
-    },
     {
       "name": "K. Matkovic",
       "status": "QUES",
@@ -539,6 +559,11 @@
       "name": "D. Murray",
       "status": "QUES",
       "details": "D. Murray (Ques)"
+    },
+    {
+      "name": "B. McGowens",
+      "status": "OUT",
+      "details": "B. McGowens (Out)"
     }
   ],
   "CHA": [
