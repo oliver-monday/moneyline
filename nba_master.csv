@@ -1180,8 +1180,8 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401810995,2026-04-05,2026-04-05T23:30Z,Dallas Mavericks,DAL,134,102.0,,Los Angeles Lakers,LAL,128,-122.0,,Dallas,TX,,
 401810996,2026-04-05,2026-04-06T01:00Z,Sacramento Kings,SAC,109,575.0,,LA Clippers,LAC,138,-850.0,,Sacramento,CA,,
 401810997,2026-04-05,2026-04-06T02:00Z,Golden State Warriors,GS,116,136.0,,Houston Rockets,HOU,117,-162.0,,San Francisco,CA,,
-401810998,2026-04-06,2026-04-06T23:00Z,Atlanta Hawks,ATL,0,-122.0,,New York Knicks,NY,0,102.0,,Atlanta,GA,J. Landale (Out),
-401810999,2026-04-06,2026-04-06T23:00Z,Orlando Magic,ORL,0,130.0,,Detroit Pistons,DET,0,-155.0,,Orlando,FL,A. Black (Out); J. Howard (Out); J. Isaac (Out),C. Cunningham (Out); I. Stewart (Out)
-401811000,2026-04-06,2026-04-07T00:00Z,Memphis Grizzlies,MEM,0,800.0,,Cleveland Cavaliers,CLE,0,-1350.0,,Memphis,TN,S. Aldama (OFS); K. Caldwell-Pope (OFS); B. Clarke (OFS); Zach Edey (OFS); Ja Morant (OFS); S. Pippen (OFS); J. Wells (OFS),J. Allen (Out); S. Merrill (Out); E. Mobley (Out); J. Tyson (Out); Dean Wade (Out)
-401811001,2026-04-06,2026-04-07T00:00Z,San Antonio Spurs,SA,0,-355.0,,Philadelphia 76ers,PHI,0,280.0,,San Antonio,TX,D. Jones Garcia (OFS),J. Broome (Out); C. Payne (Out)
-401811002,2026-04-06,2026-04-07T01:00Z,Denver Nuggets,DEN,0,-340.0,,Portland Trail Blazers,POR,0,270.0,,Denver,CO,S. Jones (Out); P. Watson (Out),D. Lillard (OFS); J. Grant (Out); Vit Krejci (Out)
+401810998,2026-04-06,2026-04-06T23:00Z,Atlanta Hawks,ATL,0,-120.0,,New York Knicks,NY,0,100.0,,Atlanta,GA,J. Landale (Out),
+401810999,2026-04-06,2026-04-06T23:00Z,Orlando Magic,ORL,0,124.0,,Detroit Pistons,DET,0,-148.0,,Orlando,FL,,C. Cunningham (Out); I. Stewart (Out)
+401811000,2026-04-06,2026-04-07T00:00Z,Memphis Grizzlies,MEM,0,900.0,,Cleveland Cavaliers,CLE,0,-1600.0,,Memphis,TN,S. Aldama (OFS); K. Caldwell-Pope (OFS); B. Clarke (OFS); Zach Edey (OFS); Ja Morant (OFS); S. Pippen (OFS); J. Wells (OFS),
+401811001,2026-04-06,2026-04-07T00:00Z,San Antonio Spurs,SA,0,-375.0,,Philadelphia 76ers,PHI,0,295.0,,San Antonio,TX,D. Jones Garcia (OFS),J. Broome (Out); C. Payne (Out)
+401811002,2026-04-06,2026-04-07T01:00Z,Denver Nuggets,DEN,0,-340.0,,Portland Trail Blazers,POR,0,270.0,,Denver,CO,S. Jones (Out); P. Watson (Out),D. Lillard (OFS); J. Grant (Out); Vit Krejci (Out); S. Sharpe (Out)
