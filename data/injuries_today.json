@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-06",
-  "built_at_utc": "2026-04-06T09:44:11Z",
+  "built_at_utc": "2026-04-06T15:10:56Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -31,36 +31,46 @@
       "details": "I. Stewart (Out)"
     },
     {
-      "name": "A. Black",
-      "status": "OUT",
-      "details": "A. Black (Out)"
+      "name": "F. Wagner",
+      "status": "QUES",
+      "details": "F. Wagner (Ques)"
     },
     {
       "name": "J. Howard",
-      "status": "OUT",
-      "details": "J. Howard (Out)"
+      "status": "QUES",
+      "details": "J. Howard (Ques)"
+    },
+    {
+      "name": "A. Black",
+      "status": "DOUBT",
+      "details": "A. Black (Doubt)"
     },
     {
       "name": "J. Isaac",
-      "status": "OUT",
-      "details": "J. Isaac (Out)"
+      "status": "DOUBT",
+      "details": "J. Isaac (Doubt)"
     }
   ],
   "ORL": [
     {
-      "name": "A. Black",
-      "status": "OUT",
-      "details": "A. Black (Out)"
+      "name": "J. Howard",
+      "status": "QUES",
+      "details": "J. Howard (Ques)"
     },
     {
-      "name": "J. Howard",
-      "status": "OUT",
-      "details": "J. Howard (Out)"
+      "name": "F. Wagner",
+      "status": "QUES",
+      "details": "F. Wagner (Ques)"
+    },
+    {
+      "name": "A. Black",
+      "status": "DOUBT",
+      "details": "A. Black (Doubt)"
     },
     {
       "name": "J. Isaac",
-      "status": "OUT",
-      "details": "J. Isaac (Out)"
+      "status": "DOUBT",
+      "details": "J. Isaac (Doubt)"
     }
   ],
   "PHI": [
@@ -100,28 +110,28 @@
   "CLE": [
     {
       "name": "J. Allen",
-      "status": "OUT",
-      "details": "J. Allen (Out)"
+      "status": "PROB",
+      "details": "J. Allen (Prob)"
     },
     {
       "name": "S. Merrill",
-      "status": "OUT",
-      "details": "S. Merrill (Out)"
+      "status": "PROB",
+      "details": "S. Merrill (Prob)"
     },
     {
       "name": "E. Mobley",
-      "status": "OUT",
-      "details": "E. Mobley (Out)"
+      "status": "PROB",
+      "details": "E. Mobley (Prob)"
     },
     {
       "name": "J. Tyson",
-      "status": "OUT",
-      "details": "J. Tyson (Out)"
+      "status": "DOUBT",
+      "details": "J. Tyson (Doubt)"
     },
     {
-      "name": "Dean Wade",
-      "status": "OUT",
-      "details": "Dean Wade (Out)"
+      "name": "D. Wade",
+      "status": "DOUBT",
+      "details": "D. Wade (Doubt)"
     },
     {
       "name": "J. Small",
@@ -263,11 +273,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "S. Sharpe",
-      "status": "DOUBT",
-      "details": "S. Sharpe (Doubt)"
-    },
-    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
@@ -276,6 +281,11 @@
       "name": "Vit Krejci",
       "status": "OUT",
       "details": "Vit Krejci (Out)"
+    },
+    {
+      "name": "S. Sharpe",
+      "status": "OUT",
+      "details": "S. Sharpe (Out)"
     },
     {
       "name": "B. Brown",
