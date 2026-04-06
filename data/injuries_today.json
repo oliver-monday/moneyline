@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-06",
-  "built_at_utc": "2026-04-06T20:35:59Z",
+  "built_at_utc": "2026-04-06T21:26:33Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -11,34 +11,29 @@
   ],
   "DET": [
     {
-      "name": "C. LeVert",
-      "status": "QUES",
-      "details": "C. LeVert (Ques)"
-    },
-    {
       "name": "C. Cunningham",
-      "status": "DOUBT",
-      "details": "C. Cunningham (Doubt)"
+      "status": "OUT",
+      "details": "C. Cunningham (Out)"
     },
     {
       "name": "T. Harris",
-      "status": "DOUBT",
-      "details": "T. Harris (Doubt)"
+      "status": "OUT",
+      "details": "T. Harris (Out)"
+    },
+    {
+      "name": "C. LeVert",
+      "status": "OUT",
+      "details": "C. LeVert (Out)"
     },
     {
       "name": "D. Robinson",
-      "status": "DOUBT",
-      "details": "D. Robinson (Doubt)"
+      "status": "OUT",
+      "details": "D. Robinson (Out)"
     },
     {
       "name": "I. Stewart",
-      "status": "DOUBT",
-      "details": "I. Stewart (Doubt)"
-    },
-    {
-      "name": "A. Black",
-      "status": "PROB",
-      "details": "A. Black (Prob)"
+      "status": "OUT",
+      "details": "I. Stewart (Out)"
     },
     {
       "name": "J. Howard",
@@ -57,11 +52,6 @@
     }
   ],
   "ORL": [
-    {
-      "name": "A. Black",
-      "status": "PROB",
-      "details": "A. Black (Prob)"
-    },
     {
       "name": "J. Howard",
       "status": "OUT",
