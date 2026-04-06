@@ -1,0 +1,16 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-05,2026,Jabari Smith Jr.,HOU,GS,3pt,2,HIT,5,,targets_snapshot_2026-04-05.json
+2026-04-05,2026,Josh Giddey,CHI,PHX,ast,10,MISSED,,,targets_snapshot_2026-04-05.json
+2026-04-05,2026,Derrick White,BOS,TOR,reb,4,HIT,6,,targets_snapshot_2026-04-05.json
+2026-04-05,2026,Anthony Davis,DAL,LAL,ast,2,,,,targets_snapshot_2026-04-05.json
+2026-04-05,2026,Saddiq Bey,NO,ORL,pts,15,HIT,32,,targets_snapshot_2026-04-05.json
+2026-04-05,2026,Saddiq Bey,NO,ORL,ast,2,MISSED,1,,targets_snapshot_2026-04-05.json
+2026-04-05,2026,Saddiq Bey,NO,ORL,3pt,2,HIT,3,,targets_snapshot_2026-04-05.json
+2026-04-05,2026,Ace Bailey,UTAH,OKC,pts,15,MISSED,14,,targets_snapshot_2026-04-05.json
+2026-04-05,2026,Ace Bailey,UTAH,OKC,ast,2,HIT,2,,targets_snapshot_2026-04-05.json
+2026-04-05,2026,Ayo Dosunmu,MIN,CHA,pts,15,MISSED,12,,targets_snapshot_2026-04-05.json
+2026-04-05,2026,Ayo Dosunmu,MIN,CHA,reb,4,HIT,4,,targets_snapshot_2026-04-05.json
+2026-04-05,2026,Matas Buzelis,CHI,PHX,reb,6,,,,targets_snapshot_2026-04-05.json
+2026-04-05,2026,Darius Garland,LAC,SAC,reb,2,HIT,4,,targets_snapshot_2026-04-05.json
+2026-04-05,2026,Darius Garland,LAC,SAC,3pt,3,MISSED,2,,targets_snapshot_2026-04-05.json
+2026-04-05,2026,Brandon Miller,CHA,MIN,3pt,3,MISSED,1,,targets_snapshot_2026-04-05.json
