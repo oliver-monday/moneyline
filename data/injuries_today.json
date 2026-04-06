@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-05",
-  "built_at_utc": "2026-04-06T01:28:02Z",
+  "built_at_utc": "2026-04-06T03:53:12Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -368,6 +368,16 @@
       "details": "T. Haliburton (OFS)"
     },
     {
+      "name": "B. Sheppard",
+      "status": "QUES",
+      "details": "B. Sheppard (Ques)"
+    },
+    {
+      "name": "J. Walker",
+      "status": "QUES",
+      "details": "J. Walker (Ques)"
+    },
+    {
       "name": "I. Zubac",
       "status": "OFS",
       "details": "I. Zubac (OFS)"
@@ -388,19 +398,9 @@
       "details": "A. Nesmith (Out)"
     },
     {
-      "name": "B. Sheppard",
-      "status": "OUT",
-      "details": "B. Sheppard (Out)"
-    },
-    {
       "name": "P. Siakam",
       "status": "OUT",
       "details": "P. Siakam (Out)"
-    },
-    {
-      "name": "J. Walker",
-      "status": "OUT",
-      "details": "J. Walker (Out)"
     },
     {
       "name": "J. Allen",
@@ -522,8 +522,8 @@
     },
     {
       "name": "A. Edwards",
-      "status": "OUT",
-      "details": "A. Edwards (Out)"
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
     },
     {
       "name": "J. McDaniels",
@@ -534,8 +534,8 @@
   "MIN": [
     {
       "name": "A. Edwards",
-      "status": "OUT",
-      "details": "A. Edwards (Out)"
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
     },
     {
       "name": "J. McDaniels",
@@ -609,6 +609,11 @@
       "details": "M. Smart (Out)"
     },
     {
+      "name": "D. Gafford",
+      "status": "QUES",
+      "details": "D. Gafford (Ques)"
+    },
+    {
       "name": "K. Irving",
       "status": "OFS",
       "details": "K. Irving (OFS)"
@@ -625,6 +630,11 @@
     }
   ],
   "DAL": [
+    {
+      "name": "D. Gafford",
+      "status": "QUES",
+      "details": "D. Gafford (Ques)"
+    },
     {
       "name": "K. Irving",
       "status": "OFS",
