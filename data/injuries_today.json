@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-06",
-  "built_at_utc": "2026-04-06T17:35:48Z",
+  "built_at_utc": "2026-04-06T18:55:47Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -37,8 +37,8 @@
     },
     {
       "name": "A. Black",
-      "status": "OUT",
-      "details": "A. Black (Out)"
+      "status": "QUES",
+      "details": "A. Black (Ques)"
     },
     {
       "name": "J. Howard",
@@ -59,8 +59,8 @@
   "ORL": [
     {
       "name": "A. Black",
-      "status": "OUT",
-      "details": "A. Black (Out)"
+      "status": "QUES",
+      "details": "A. Black (Ques)"
     },
     {
       "name": "J. Howard",
@@ -114,49 +114,34 @@
   ],
   "CLE": [
     {
-      "name": "J. Allen",
-      "status": "PROB",
-      "details": "J. Allen (Prob)"
+      "name": "T. Bryant",
+      "status": "OUT",
+      "details": "T. Bryant (Out)"
     },
     {
-      "name": "S. Merrill",
-      "status": "PROB",
-      "details": "S. Merrill (Prob)"
+      "name": "J. Harden",
+      "status": "OUT",
+      "details": "J. Harden (Out)"
     },
     {
-      "name": "E. Mobley",
-      "status": "PROB",
-      "details": "E. Mobley (Prob)"
+      "name": "D. Mitchell",
+      "status": "OUT",
+      "details": "D. Mitchell (Out)"
+    },
+    {
+      "name": "Max Strus",
+      "status": "OUT",
+      "details": "Max Strus (Out)"
     },
     {
       "name": "J. Tyson",
-      "status": "DOUBT",
-      "details": "J. Tyson (Doubt)"
+      "status": "OUT",
+      "details": "J. Tyson (Out)"
     },
     {
-      "name": "D. Wade",
-      "status": "DOUBT",
-      "details": "D. Wade (Doubt)"
-    },
-    {
-      "name": "J. Small",
-      "status": "QUES",
-      "details": "J. Small (Ques)"
-    },
-    {
-      "name": "T. Jerome",
-      "status": "QUES",
-      "details": "T. Jerome (Ques)"
-    },
-    {
-      "name": "C. Coward",
-      "status": "QUES",
-      "details": "C. Coward (Ques)"
-    },
-    {
-      "name": "G. Jackson",
-      "status": "QUES",
-      "details": "G. Jackson (Ques)"
+      "name": "Dean Wade",
+      "status": "OUT",
+      "details": "Dean Wade (Out)"
     },
     {
       "name": "S. Aldama",
@@ -194,14 +179,29 @@
       "details": "J. Wells (OFS)"
     },
     {
-      "name": "J. Mashack",
-      "status": "QUES",
-      "details": "J. Mashack (Ques)"
+      "name": "T. Gibson",
+      "status": "DOUBT",
+      "details": "T. Gibson (Doubt)"
     },
     {
-      "name": "C. Spencer",
-      "status": "QUES",
-      "details": "C. Spencer (Ques)"
+      "name": "T. Hendricks",
+      "status": "DOUBT",
+      "details": "T. Hendricks (Doubt)"
+    },
+    {
+      "name": "Ty Jerome",
+      "status": "OUT",
+      "details": "Ty Jerome (Out)"
+    },
+    {
+      "name": "J. Mashack",
+      "status": "OUT",
+      "details": "J. Mashack (Out)"
+    },
+    {
+      "name": "J. Small",
+      "status": "OUT",
+      "details": "J. Small (Out)"
     }
   ],
   "MEM": [
@@ -241,34 +241,29 @@
       "details": "J. Wells (OFS)"
     },
     {
-      "name": "C. Coward",
-      "status": "QUES",
-      "details": "C. Coward (Ques)"
+      "name": "T. Gibson",
+      "status": "DOUBT",
+      "details": "T. Gibson (Doubt)"
     },
     {
-      "name": "G. Jackson",
-      "status": "QUES",
-      "details": "G. Jackson (Ques)"
+      "name": "T. Hendricks",
+      "status": "DOUBT",
+      "details": "T. Hendricks (Doubt)"
     },
     {
-      "name": "T. Jerome",
-      "status": "QUES",
-      "details": "T. Jerome (Ques)"
+      "name": "Ty Jerome",
+      "status": "OUT",
+      "details": "Ty Jerome (Out)"
     },
     {
       "name": "J. Mashack",
-      "status": "QUES",
-      "details": "J. Mashack (Ques)"
+      "status": "OUT",
+      "details": "J. Mashack (Out)"
     },
     {
       "name": "J. Small",
-      "status": "QUES",
-      "details": "J. Small (Ques)"
-    },
-    {
-      "name": "C. Spencer",
-      "status": "QUES",
-      "details": "C. Spencer (Ques)"
+      "status": "OUT",
+      "details": "J. Small (Out)"
     }
   ],
   "POR": [
