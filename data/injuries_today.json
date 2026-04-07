@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-07",
-  "built_at_utc": "2026-04-07T17:46:45Z",
+  "built_at_utc": "2026-04-07T19:00:01Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -188,6 +188,11 @@
       "details": "C. Whitmore (OFS)"
     },
     {
+      "name": "J. Hardy",
+      "status": "QUES",
+      "details": "J. Hardy (Ques)"
+    },
+    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
@@ -223,6 +228,11 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
+    },
+    {
+      "name": "J. Hardy",
+      "status": "QUES",
+      "details": "J. Hardy (Ques)"
     },
     {
       "name": "T. Johnson",
@@ -596,6 +606,11 @@
       "details": "K. Murray (Out)"
     },
     {
+      "name": "I. Stevens",
+      "status": "OUT",
+      "details": "I. Stevens (Out)"
+    },
+    {
       "name": "R. Westbrook",
       "status": "OUT",
       "details": "R. Westbrook (Out)"
@@ -622,8 +637,8 @@
     },
     {
       "name": "L. Cryer",
-      "status": "PROB",
-      "details": "L. Cryer (Prob)"
+      "status": "QUES",
+      "details": "L. Cryer (Ques)"
     },
     {
       "name": "Al Horford",
@@ -653,14 +668,14 @@
       "details": "M. Moody (OFS)"
     },
     {
-      "name": "L. Cryer",
-      "status": "PROB",
-      "details": "L. Cryer (Prob)"
-    },
-    {
       "name": "S. Curry",
       "status": "PROB",
       "details": "S. Curry (Prob)"
+    },
+    {
+      "name": "L. Cryer",
+      "status": "QUES",
+      "details": "L. Cryer (Ques)"
     },
     {
       "name": "K. Porzingis",
@@ -696,13 +711,8 @@
     },
     {
       "name": "M. Bagley",
-      "status": "QUES",
-      "details": "M. Bagley (Ques)"
-    },
-    {
-      "name": "B. Williams",
-      "status": "QUES",
-      "details": "B. Williams (Ques)"
+      "status": "PROB",
+      "details": "M. Bagley (Prob)"
     },
     {
       "name": "D. Gafford",
@@ -713,6 +723,16 @@
       "name": "C. Martin",
       "status": "DOUBT",
       "details": "C. Martin (Doubt)"
+    },
+    {
+      "name": "P. Washington",
+      "status": "DOUBT",
+      "details": "P. Washington (Doubt)"
+    },
+    {
+      "name": "B. Williams",
+      "status": "DOUBT",
+      "details": "B. Williams (Doubt)"
     },
     {
       "name": "B. Beal",
