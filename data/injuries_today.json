@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-06",
-  "built_at_utc": "2026-04-06T23:38:54Z",
+  "built_at_utc": "2026-04-07T01:25:26Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -36,6 +36,16 @@
       "details": "I. Stewart (Out)"
     },
     {
+      "name": "W. Carter",
+      "status": "DOUBT",
+      "details": "W. Carter (Doubt)"
+    },
+    {
+      "name": "J. Cain",
+      "status": "DOUBT",
+      "details": "J. Cain (Doubt)"
+    },
+    {
       "name": "J. Howard",
       "status": "OUT",
       "details": "J. Howard (Out)"
@@ -52,6 +62,16 @@
     }
   ],
   "ORL": [
+    {
+      "name": "J. Cain",
+      "status": "DOUBT",
+      "details": "J. Cain (Doubt)"
+    },
+    {
+      "name": "W. Carter",
+      "status": "DOUBT",
+      "details": "W. Carter (Doubt)"
+    },
     {
       "name": "J. Howard",
       "status": "OUT",
@@ -278,16 +298,6 @@
       "details": "S. Sharpe (Out)"
     },
     {
-      "name": "B. Brown",
-      "status": "PROB",
-      "details": "B. Brown (Prob)"
-    },
-    {
-      "name": "Z. Nnaji",
-      "status": "QUES",
-      "details": "Z. Nnaji (Ques)"
-    },
-    {
       "name": "S. Jones",
       "status": "OUT",
       "details": "S. Jones (Out)"
@@ -299,16 +309,6 @@
     }
   ],
   "DEN": [
-    {
-      "name": "B. Brown",
-      "status": "PROB",
-      "details": "B. Brown (Prob)"
-    },
-    {
-      "name": "Z. Nnaji",
-      "status": "QUES",
-      "details": "Z. Nnaji (Ques)"
-    },
     {
       "name": "S. Jones",
       "status": "OUT",
