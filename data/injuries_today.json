@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-07",
-  "built_at_utc": "2026-04-07T15:52:39Z",
+  "built_at_utc": "2026-04-07T17:46:45Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -148,6 +148,11 @@
       "details": "C. Sexton (Prob)"
     },
     {
+      "name": "P. Williams",
+      "status": "PROB",
+      "details": "P. Williams (Prob)"
+    },
+    {
       "name": "M. Buzelis",
       "status": "OUT",
       "details": "M. Buzelis (Out)"
@@ -173,16 +178,6 @@
       "details": "T. Johnson (Ques)"
     },
     {
-      "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
-    },
-    {
       "name": "K. George",
       "status": "OFS",
       "details": "K. George (OFS)"
@@ -191,11 +186,6 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "J. Champagnie",
-      "status": "QUES",
-      "details": "J. Champagnie (Ques)"
     },
     {
       "name": "A. Davis",
@@ -211,6 +201,11 @@
       "name": "Alex Sarr",
       "status": "OUT",
       "details": "Alex Sarr (Out)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "OUT",
+      "details": "T. Vukcevic (Out)"
     },
     {
       "name": "Trae Young",
@@ -230,24 +225,9 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "J. Champagnie",
-      "status": "QUES",
-      "details": "J. Champagnie (Ques)"
-    },
-    {
-      "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
-    },
-    {
       "name": "T. Johnson",
       "status": "QUES",
       "details": "T. Johnson (Ques)"
-    },
-    {
-      "name": "T. Vukcevic",
-      "status": "QUES",
-      "details": "T. Vukcevic (Ques)"
     },
     {
       "name": "A. Davis",
@@ -263,6 +243,11 @@
       "name": "Alex Sarr",
       "status": "OUT",
       "details": "Alex Sarr (Out)"
+    },
+    {
+      "name": "T. Vukcevic",
+      "status": "OUT",
+      "details": "T. Vukcevic (Out)"
     },
     {
       "name": "Trae Young",
@@ -401,9 +386,9 @@
   ],
   "MIA": [
     {
-      "name": "N. Powell",
+      "name": "T. Herro",
       "status": "PROB",
-      "details": "N. Powell (Prob)"
+      "details": "T. Herro (Prob)"
     },
     {
       "name": "N. Jovic",
@@ -461,8 +446,8 @@
   "CHA": [
     {
       "name": "C. White",
-      "status": "PROB",
-      "details": "C. White (Prob)"
+      "status": "QUES",
+      "details": "C. White (Ques)"
     },
     {
       "name": "PJ Hall",
@@ -487,14 +472,14 @@
       "details": "J. Nurkic (OFS)"
     },
     {
-      "name": "A. Bailey",
-      "status": "QUES",
-      "details": "A. Bailey (Ques)"
+      "name": "K. Filipowski",
+      "status": "PROB",
+      "details": "K. Filipowski (Prob)"
     },
     {
-      "name": "K. Filipowski",
-      "status": "QUES",
-      "details": "K. Filipowski (Ques)"
+      "name": "A. Bailey",
+      "status": "DOUBT",
+      "details": "A. Bailey (Doubt)"
     },
     {
       "name": "I. Collier",
@@ -517,14 +502,19 @@
       "details": "L. Markkanen (Out)"
     },
     {
-      "name": "D. Murray",
+      "name": "Y. Missi",
       "status": "QUES",
-      "details": "D. Murray (Ques)"
+      "details": "Y. Missi (Ques)"
+    },
+    {
+      "name": "J. Hawkins",
+      "status": "QUES",
+      "details": "J. Hawkins (Ques)"
     },
     {
       "name": "K. Matkovic",
-      "status": "QUES",
-      "details": "K. Matkovic (Ques)"
+      "status": "OUT",
+      "details": "K. Matkovic (Out)"
     },
     {
       "name": "B. McGowens",
@@ -535,18 +525,28 @@
       "name": "T. Murphy",
       "status": "OUT",
       "details": "T. Murphy (Out)"
+    },
+    {
+      "name": "D. Murray",
+      "status": "OUT",
+      "details": "D. Murray (Out)"
     }
   ],
   "NOP": [
     {
-      "name": "K. Matkovic",
+      "name": "J. Hawkins",
       "status": "QUES",
-      "details": "K. Matkovic (Ques)"
+      "details": "J. Hawkins (Ques)"
     },
     {
-      "name": "D. Murray",
+      "name": "Y. Missi",
       "status": "QUES",
-      "details": "D. Murray (Ques)"
+      "details": "Y. Missi (Ques)"
+    },
+    {
+      "name": "K. Matkovic",
+      "status": "OUT",
+      "details": "K. Matkovic (Out)"
     },
     {
       "name": "B. McGowens",
@@ -557,6 +557,11 @@
       "name": "T. Murphy",
       "status": "OUT",
       "details": "T. Murphy (Out)"
+    },
+    {
+      "name": "D. Murray",
+      "status": "OUT",
+      "details": "D. Murray (Out)"
     }
   ],
   "SAC": [
