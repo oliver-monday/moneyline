@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-07",
-  "built_at_utc": "2026-04-07T22:46:52Z",
+  "built_at_utc": "2026-04-07T23:39:32Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -361,42 +361,12 @@
       "details": "T. Rozier (Out)"
     },
     {
-      "name": "I. Quickley",
-      "status": "PROB",
-      "details": "I. Quickley (Prob)"
-    },
-    {
-      "name": "S. Mamukelashvili",
-      "status": "PROB",
-      "details": "S. Mamukelashvili (Prob)"
-    },
-    {
-      "name": "C. Murray-Boyles",
-      "status": "PROB",
-      "details": "C. Murray-Boyles (Prob)"
-    },
-    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
     }
   ],
   "TOR": [
-    {
-      "name": "S. Mamukelashvili",
-      "status": "PROB",
-      "details": "S. Mamukelashvili (Prob)"
-    },
-    {
-      "name": "C. Murray-Boyles",
-      "status": "PROB",
-      "details": "C. Murray-Boyles (Prob)"
-    },
-    {
-      "name": "I. Quickley",
-      "status": "PROB",
-      "details": "I. Quickley (Prob)"
-    },
     {
       "name": "C. Hepburn",
       "status": "OUT",
@@ -405,14 +375,14 @@
   ],
   "CHA": [
     {
-      "name": "C. White",
-      "status": "QUES",
-      "details": "C. White (Ques)"
-    },
-    {
       "name": "PJ Hall",
       "status": "OUT",
       "details": "PJ Hall (Out)"
+    },
+    {
+      "name": "Coby White",
+      "status": "OUT",
+      "details": "Coby White (Out)"
     }
   ],
   "UTA": [
@@ -457,16 +427,6 @@
       "details": "L. Markkanen (Out)"
     },
     {
-      "name": "Y. Missi",
-      "status": "QUES",
-      "details": "Y. Missi (Ques)"
-    },
-    {
-      "name": "J. Hawkins",
-      "status": "QUES",
-      "details": "J. Hawkins (Ques)"
-    },
-    {
       "name": "K. Matkovic",
       "status": "OUT",
       "details": "K. Matkovic (Out)"
@@ -475,6 +435,11 @@
       "name": "B. McGowens",
       "status": "OUT",
       "details": "B. McGowens (Out)"
+    },
+    {
+      "name": "Yves Missi",
+      "status": "OUT",
+      "details": "Yves Missi (Out)"
     },
     {
       "name": "T. Murphy",
@@ -489,16 +454,6 @@
   ],
   "NOP": [
     {
-      "name": "J. Hawkins",
-      "status": "QUES",
-      "details": "J. Hawkins (Ques)"
-    },
-    {
-      "name": "Y. Missi",
-      "status": "QUES",
-      "details": "Y. Missi (Ques)"
-    },
-    {
       "name": "K. Matkovic",
       "status": "OUT",
       "details": "K. Matkovic (Out)"
@@ -507,6 +462,11 @@
       "name": "B. McGowens",
       "status": "OUT",
       "details": "B. McGowens (Out)"
+    },
+    {
+      "name": "Yves Missi",
+      "status": "OUT",
+      "details": "Yves Missi (Out)"
     },
     {
       "name": "T. Murphy",
@@ -576,14 +536,14 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "L. Cryer",
-      "status": "QUES",
-      "details": "L. Cryer (Ques)"
-    },
-    {
       "name": "M. Moody",
       "status": "OFS",
       "details": "M. Moody (OFS)"
+    },
+    {
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
     },
     {
       "name": "Al Horford",
@@ -608,11 +568,6 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "L. Cryer",
-      "status": "QUES",
-      "details": "L. Cryer (Ques)"
-    },
-    {
       "name": "M. Moody",
       "status": "OFS",
       "details": "M. Moody (OFS)"
@@ -626,6 +581,11 @@
       "name": "K. Porzingis",
       "status": "QUES",
       "details": "K. Porzingis (Ques)"
+    },
+    {
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
     },
     {
       "name": "Al Horford",
