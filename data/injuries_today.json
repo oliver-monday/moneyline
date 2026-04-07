@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-07",
-  "built_at_utc": "2026-04-07T20:44:10Z",
+  "built_at_utc": "2026-04-07T21:32:19Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -17,11 +17,6 @@
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
-    },
-    {
-      "name": "J. Walker",
-      "status": "QUES",
-      "details": "J. Walker (Ques)"
     },
     {
       "name": "J. Furphy",
@@ -44,11 +39,6 @@
       "details": "O. Toppin (Prob)"
     },
     {
-      "name": "B. Sheppard",
-      "status": "QUES",
-      "details": "B. Sheppard (Ques)"
-    },
-    {
       "name": "T. McConnell",
       "status": "OUT",
       "details": "T. McConnell (Out)"
@@ -62,6 +52,11 @@
       "name": "A. Nesmith",
       "status": "OUT",
       "details": "A. Nesmith (Out)"
+    },
+    {
+      "name": "B. Sheppard",
+      "status": "OUT",
+      "details": "B. Sheppard (Out)"
     },
     {
       "name": "P. Siakam",
@@ -91,16 +86,6 @@
       "details": "O. Toppin (Prob)"
     },
     {
-      "name": "B. Sheppard",
-      "status": "QUES",
-      "details": "B. Sheppard (Ques)"
-    },
-    {
-      "name": "J. Walker",
-      "status": "QUES",
-      "details": "J. Walker (Ques)"
-    },
-    {
       "name": "T. McConnell",
       "status": "OUT",
       "details": "T. McConnell (Out)"
@@ -114,6 +99,11 @@
       "name": "A. Nesmith",
       "status": "OUT",
       "details": "A. Nesmith (Out)"
+    },
+    {
+      "name": "B. Sheppard",
+      "status": "OUT",
+      "details": "B. Sheppard (Out)"
     },
     {
       "name": "P. Siakam",
