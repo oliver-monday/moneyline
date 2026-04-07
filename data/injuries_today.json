@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-07",
-  "built_at_utc": "2026-04-07T09:38:18Z",
+  "built_at_utc": "2026-04-07T15:52:39Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -400,11 +400,6 @@
     }
   ],
   "MIA": [
-    {
-      "name": "T. Herro",
-      "status": "PROB",
-      "details": "T. Herro (Prob)"
-    },
     {
       "name": "N. Powell",
       "status": "PROB",

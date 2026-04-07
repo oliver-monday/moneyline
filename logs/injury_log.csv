@@ -10592,6 +10592,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-06,DEN,P. Watson,OUT,P. Watson (Out),rotowire
 2026-04-06,NYK,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
 2026-04-06,NYK,J. Landale,OUT,J. Landale (Out),rotowire
+2026-04-07,MIA,T. Herro,PROB,T. Herro (Prob),rotowire
 2026-04-07,MIN,A. Edwards,OUT,A. Edwards (Out),rotowire
 2026-04-07,MIN,J. McDaniels,OUT,J. McDaniels (Out),rotowire
 2026-04-07,MIN,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
@@ -10669,7 +10670,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-07,BKN,N. Clowney,OUT,N. Clowney (Out),rotowire
 2026-04-07,BKN,T. Mann,OUT,T. Mann (Out),rotowire
 2026-04-07,BKN,Z. Williams,OUT,Z. Williams (Out),rotowire
-2026-04-07,MIA,T. Herro,PROB,T. Herro (Prob),rotowire
 2026-04-07,MIA,N. Powell,PROB,N. Powell (Prob),rotowire
 2026-04-07,MIA,N. Jovic,OUT,N. Jovic (Out),rotowire
 2026-04-07,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
