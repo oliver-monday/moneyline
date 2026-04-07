@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-07",
-  "built_at_utc": "2026-04-07T21:32:19Z",
+  "built_at_utc": "2026-04-07T22:46:52Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -32,11 +32,6 @@
       "name": "I. Zubac",
       "status": "OFS",
       "details": "I. Zubac (OFS)"
-    },
-    {
-      "name": "O. Toppin",
-      "status": "PROB",
-      "details": "O. Toppin (Prob)"
     },
     {
       "name": "T. McConnell",
@@ -81,11 +76,6 @@
       "details": "I. Zubac (OFS)"
     },
     {
-      "name": "O. Toppin",
-      "status": "PROB",
-      "details": "O. Toppin (Prob)"
-    },
-    {
       "name": "T. McConnell",
       "status": "OUT",
       "details": "T. McConnell (Out)"
@@ -126,21 +116,6 @@
       "name": "J. Smith",
       "status": "OFS",
       "details": "J. Smith (OFS)"
-    },
-    {
-      "name": "L. Olbrich",
-      "status": "PROB",
-      "details": "L. Olbrich (Prob)"
-    },
-    {
-      "name": "C. Sexton",
-      "status": "PROB",
-      "details": "C. Sexton (Prob)"
-    },
-    {
-      "name": "P. Williams",
-      "status": "PROB",
-      "details": "P. Williams (Prob)"
     },
     {
       "name": "M. Buzelis",
@@ -257,6 +232,11 @@
   ],
   "MIL": [
     {
+      "name": "K. Porter",
+      "status": "OFS",
+      "details": "K. Porter (OFS)"
+    },
+    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
@@ -265,11 +245,6 @@
       "name": "Kyle Kuzma",
       "status": "OUT",
       "details": "Kyle Kuzma (Out)"
-    },
-    {
-      "name": "K. Porter",
-      "status": "OUT",
-      "details": "K. Porter (Out)"
     },
     {
       "name": "B. Portis",
@@ -310,11 +285,6 @@
       "name": "Danny Wolf",
       "status": "OFS",
       "details": "Danny Wolf (OFS)"
-    },
-    {
-      "name": "B. Saraf",
-      "status": "PROB",
-      "details": "B. Saraf (Prob)"
     },
     {
       "name": "N. Claxton",
@@ -359,11 +329,6 @@
       "details": "Danny Wolf (OFS)"
     },
     {
-      "name": "B. Saraf",
-      "status": "PROB",
-      "details": "B. Saraf (Prob)"
-    },
-    {
       "name": "N. Claxton",
       "status": "OUT",
       "details": "N. Claxton (Out)"
@@ -386,11 +351,6 @@
   ],
   "MIA": [
     {
-      "name": "T. Herro",
-      "status": "PROB",
-      "details": "T. Herro (Prob)"
-    },
-    {
       "name": "N. Jovic",
       "status": "OUT",
       "details": "N. Jovic (Out)"
@@ -402,18 +362,18 @@
     },
     {
       "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
+      "status": "PROB",
+      "details": "I. Quickley (Prob)"
     },
     {
       "name": "S. Mamukelashvili",
-      "status": "QUES",
-      "details": "S. Mamukelashvili (Ques)"
+      "status": "PROB",
+      "details": "S. Mamukelashvili (Prob)"
     },
     {
       "name": "C. Murray-Boyles",
-      "status": "QUES",
-      "details": "C. Murray-Boyles (Ques)"
+      "status": "PROB",
+      "details": "C. Murray-Boyles (Prob)"
     },
     {
       "name": "C. Hepburn",
@@ -424,18 +384,18 @@
   "TOR": [
     {
       "name": "S. Mamukelashvili",
-      "status": "QUES",
-      "details": "S. Mamukelashvili (Ques)"
+      "status": "PROB",
+      "details": "S. Mamukelashvili (Prob)"
     },
     {
       "name": "C. Murray-Boyles",
-      "status": "QUES",
-      "details": "C. Murray-Boyles (Ques)"
+      "status": "PROB",
+      "details": "C. Murray-Boyles (Prob)"
     },
     {
       "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
+      "status": "PROB",
+      "details": "I. Quickley (Prob)"
     },
     {
       "name": "C. Hepburn",
@@ -472,14 +432,9 @@
       "details": "J. Nurkic (OFS)"
     },
     {
-      "name": "K. Filipowski",
-      "status": "PROB",
-      "details": "K. Filipowski (Prob)"
-    },
-    {
-      "name": "A. Bailey",
-      "status": "DOUBT",
-      "details": "A. Bailey (Doubt)"
+      "name": "Ace Bailey",
+      "status": "OUT",
+      "details": "Ace Bailey (Out)"
     },
     {
       "name": "I. Collier",
@@ -621,14 +576,14 @@
       "details": "J. Butler (OFS)"
     },
     {
-      "name": "M. Moody",
-      "status": "OFS",
-      "details": "M. Moody (OFS)"
-    },
-    {
       "name": "L. Cryer",
       "status": "QUES",
       "details": "L. Cryer (Ques)"
+    },
+    {
+      "name": "M. Moody",
+      "status": "OFS",
+      "details": "M. Moody (OFS)"
     },
     {
       "name": "Al Horford",
@@ -653,6 +608,11 @@
       "details": "J. Butler (OFS)"
     },
     {
+      "name": "L. Cryer",
+      "status": "QUES",
+      "details": "L. Cryer (Ques)"
+    },
+    {
       "name": "M. Moody",
       "status": "OFS",
       "details": "M. Moody (OFS)"
@@ -661,11 +621,6 @@
       "name": "S. Curry",
       "status": "PROB",
       "details": "S. Curry (Prob)"
-    },
-    {
-      "name": "L. Cryer",
-      "status": "QUES",
-      "details": "L. Cryer (Ques)"
     },
     {
       "name": "K. Porzingis",
