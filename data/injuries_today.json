@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-07",
-  "built_at_utc": "2026-04-07T19:58:25Z",
+  "built_at_utc": "2026-04-07T20:44:10Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -173,11 +173,6 @@
       "details": "A. Simons (Out)"
     },
     {
-      "name": "T. Johnson",
-      "status": "QUES",
-      "details": "T. Johnson (Ques)"
-    },
-    {
       "name": "K. George",
       "status": "OFS",
       "details": "K. George (OFS)"
@@ -188,14 +183,19 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "J. Hardy",
-      "status": "QUES",
-      "details": "J. Hardy (Ques)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
+    },
+    {
+      "name": "J. Hardy",
+      "status": "OUT",
+      "details": "J. Hardy (Out)"
+    },
+    {
+      "name": "T. Johnson",
+      "status": "OUT",
+      "details": "T. Johnson (Out)"
     },
     {
       "name": "D. Russell",
@@ -230,19 +230,19 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "J. Hardy",
-      "status": "QUES",
-      "details": "J. Hardy (Ques)"
-    },
-    {
-      "name": "T. Johnson",
-      "status": "QUES",
-      "details": "T. Johnson (Ques)"
-    },
-    {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
+    },
+    {
+      "name": "J. Hardy",
+      "status": "OUT",
+      "details": "J. Hardy (Out)"
+    },
+    {
+      "name": "T. Johnson",
+      "status": "OUT",
+      "details": "T. Johnson (Out)"
     },
     {
       "name": "D. Russell",
@@ -597,8 +597,8 @@
     },
     {
       "name": "D. DeRozan",
-      "status": "QUES",
-      "details": "D. DeRozan (Ques)"
+      "status": "OUT",
+      "details": "D. DeRozan (Out)"
     },
     {
       "name": "K. Murray",
