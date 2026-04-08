@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-08",
-  "built_at_utc": "2026-04-08T21:32:05Z",
+  "built_at_utc": "2026-04-08T22:50:14Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -14,46 +14,26 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "D. Mitchell",
-      "status": "QUES",
-      "details": "D. Mitchell (Ques)"
-    },
-    {
-      "name": "D. Wade",
-      "status": "QUES",
-      "details": "D. Wade (Ques)"
-    },
-    {
-      "name": "J. Tyson",
-      "status": "DOUBT",
-      "details": "J. Tyson (Doubt)"
-    },
-    {
       "name": "T. Bryant",
       "status": "OUT",
       "details": "T. Bryant (Out)"
+    },
+    {
+      "name": "J. Tyson",
+      "status": "OUT",
+      "details": "J. Tyson (Out)"
     }
   ],
   "CLE": [
     {
-      "name": "D. Mitchell",
-      "status": "QUES",
-      "details": "D. Mitchell (Ques)"
-    },
-    {
-      "name": "D. Wade",
-      "status": "QUES",
-      "details": "D. Wade (Ques)"
-    },
-    {
-      "name": "J. Tyson",
-      "status": "DOUBT",
-      "details": "J. Tyson (Doubt)"
-    },
-    {
       "name": "T. Bryant",
       "status": "OUT",
       "details": "T. Bryant (Out)"
+    },
+    {
+      "name": "J. Tyson",
+      "status": "OUT",
+      "details": "J. Tyson (Out)"
     }
   ],
   "MIL": [
@@ -83,36 +63,16 @@
       "details": "M. Turner (Out)"
     },
     {
-      "name": "C. Cunningham",
-      "status": "QUES",
-      "details": "C. Cunningham (Ques)"
-    },
-    {
       "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
-    },
-    {
-      "name": "I. Stewart",
-      "status": "QUES",
-      "details": "I. Stewart (Ques)"
+      "status": "OUT",
+      "details": "K. Huerter (Out)"
     }
   ],
   "DET": [
     {
-      "name": "C. Cunningham",
-      "status": "QUES",
-      "details": "C. Cunningham (Ques)"
-    },
-    {
       "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
-    },
-    {
-      "name": "I. Stewart",
-      "status": "QUES",
-      "details": "I. Stewart (Ques)"
+      "status": "OUT",
+      "details": "K. Huerter (Out)"
     }
   ],
   "MIN": [
@@ -280,11 +240,6 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "E. Miller",
-      "status": "QUES",
-      "details": "E. Miller (Ques)"
-    },
-    {
       "name": "S. Castle",
       "status": "OUT",
       "details": "S. Castle (Out)"
@@ -300,11 +255,6 @@
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "E. Miller",
-      "status": "QUES",
-      "details": "E. Miller (Ques)"
     },
     {
       "name": "S. Castle",
