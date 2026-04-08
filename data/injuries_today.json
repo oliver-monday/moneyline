@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-08",
-  "built_at_utc": "2026-04-08T15:54:23Z",
+  "built_at_utc": "2026-04-08T17:56:47Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -19,14 +19,14 @@
       "details": "D. Mitchell (Ques)"
     },
     {
-      "name": "J. Tyson",
-      "status": "QUES",
-      "details": "J. Tyson (Ques)"
-    },
-    {
       "name": "D. Wade",
       "status": "QUES",
       "details": "D. Wade (Ques)"
+    },
+    {
+      "name": "J. Tyson",
+      "status": "DOUBT",
+      "details": "J. Tyson (Doubt)"
     },
     {
       "name": "T. Bryant",
@@ -41,14 +41,14 @@
       "details": "D. Mitchell (Ques)"
     },
     {
-      "name": "J. Tyson",
-      "status": "QUES",
-      "details": "J. Tyson (Ques)"
-    },
-    {
       "name": "D. Wade",
       "status": "QUES",
       "details": "D. Wade (Ques)"
+    },
+    {
+      "name": "J. Tyson",
+      "status": "DOUBT",
+      "details": "J. Tyson (Doubt)"
     },
     {
       "name": "T. Bryant",
@@ -63,39 +63,34 @@
       "details": "K. Porter (OFS)"
     },
     {
-      "name": "K. Kuzma",
-      "status": "QUES",
-      "details": "K. Kuzma (Ques)"
+      "name": "G. Antetokounmpo",
+      "status": "OUT",
+      "details": "G. Antetokounmpo (Out)"
+    },
+    {
+      "name": "Kyle Kuzma",
+      "status": "OUT",
+      "details": "Kyle Kuzma (Out)"
     },
     {
       "name": "B. Portis",
-      "status": "QUES",
-      "details": "B. Portis (Ques)"
-    },
-    {
-      "name": "R. Rollins",
-      "status": "QUES",
-      "details": "R. Rollins (Ques)"
-    },
-    {
-      "name": "G. Trent",
-      "status": "QUES",
-      "details": "G. Trent (Ques)"
+      "status": "OUT",
+      "details": "B. Portis (Out)"
     },
     {
       "name": "M. Turner",
-      "status": "QUES",
-      "details": "M. Turner (Ques)"
-    },
-    {
-      "name": "G. Antetokounmpo",
-      "status": "DOUBT",
-      "details": "G. Antetokounmpo (Doubt)"
+      "status": "OUT",
+      "details": "M. Turner (Out)"
     },
     {
       "name": "C. Cunningham",
       "status": "QUES",
       "details": "C. Cunningham (Ques)"
+    },
+    {
+      "name": "K. Huerter",
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
     },
     {
       "name": "I. Stewart",
@@ -110,6 +105,11 @@
       "details": "C. Cunningham (Ques)"
     },
     {
+      "name": "K. Huerter",
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
+    },
+    {
       "name": "I. Stewart",
       "status": "QUES",
       "details": "I. Stewart (Ques)"
@@ -117,14 +117,34 @@
   ],
   "MIN": [
     {
-      "name": "A. Edwards",
+      "name": "R. Gobert",
       "status": "QUES",
-      "details": "A. Edwards (Ques)"
+      "details": "R. Gobert (Ques)"
     },
     {
       "name": "J. McDaniels",
-      "status": "DOUBT",
-      "details": "J. McDaniels (Doubt)"
+      "status": "QUES",
+      "details": "J. McDaniels (Ques)"
+    },
+    {
+      "name": "M. Conley",
+      "status": "OUT",
+      "details": "M. Conley (Out)"
+    },
+    {
+      "name": "A. Dosunmu",
+      "status": "OUT",
+      "details": "A. Dosunmu (Out)"
+    },
+    {
+      "name": "A. Edwards",
+      "status": "OUT",
+      "details": "A. Edwards (Out)"
+    },
+    {
+      "name": "J. Randle",
+      "status": "OUT",
+      "details": "J. Randle (Out)"
     },
     {
       "name": "W. Carter",
@@ -291,13 +311,13 @@
     },
     {
       "name": "S. Castle",
-      "status": "DOUBT",
-      "details": "S. Castle (Doubt)"
+      "status": "OUT",
+      "details": "S. Castle (Out)"
     },
     {
       "name": "V. Wembanyama",
-      "status": "DOUBT",
-      "details": "V. Wembanyama (Doubt)"
+      "status": "OUT",
+      "details": "V. Wembanyama (Out)"
     }
   ],
   "SAS": [
@@ -313,13 +333,13 @@
     },
     {
       "name": "S. Castle",
-      "status": "DOUBT",
-      "details": "S. Castle (Doubt)"
+      "status": "OUT",
+      "details": "S. Castle (Out)"
     },
     {
       "name": "V. Wembanyama",
-      "status": "DOUBT",
-      "details": "V. Wembanyama (Doubt)"
+      "status": "OUT",
+      "details": "V. Wembanyama (Out)"
     }
   ],
   "OKC": [
