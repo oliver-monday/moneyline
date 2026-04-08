@@ -1,0 +1,12 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-07,2026,Jabari Smith Jr.,HOU,PHX,3pt,2,HIT,5,,targets_snapshot_2026-04-07.json
+2026-04-07,2026,LeBron James,LAL,OKC,reb,6,,,,targets_snapshot_2026-04-07.json
+2026-04-07,2026,Derrick White,BOS,CHA,reb,4,MISSED,2,,targets_snapshot_2026-04-07.json
+2026-04-07,2026,Anthony Davis,DAL,LAC,ast,2,,,,targets_snapshot_2026-04-07.json
+2026-04-07,2026,Ayo Dosunmu,MIN,IND,pts,15,HIT,24,,targets_snapshot_2026-04-07.json
+2026-04-07,2026,Ayo Dosunmu,MIN,IND,reb,4,HIT,5,,targets_snapshot_2026-04-07.json
+2026-04-07,2026,Saddiq Bey,NO,UTAH,3pt,2,MISSED,,,targets_snapshot_2026-04-07.json
+2026-04-07,2026,Maxime Raynaud,SAC,GS,pts,10,HIT,17,,targets_snapshot_2026-04-07.json
+2026-04-07,2026,Ace Bailey,UTAH,NO,reb,4,,,,targets_snapshot_2026-04-07.json
+2026-04-07,2026,Ace Bailey,UTAH,NO,ast,2,,,,targets_snapshot_2026-04-07.json
+2026-04-07,2026,Brandon Miller,CHA,BOS,3pt,3,MISSED,2,,targets_snapshot_2026-04-07.json
