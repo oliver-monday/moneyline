@@ -206,7 +206,7 @@
       "actual": 17
     }
   ],
-  "built_at_utc": "2026-04-08T09:41:33Z",
+  "built_at_utc": "2026-04-08T15:00:58Z",
   "snapshot_file": "targets_snapshot_2026-04-07.json",
   "preset": "baseline",
   "top_targets": [
@@ -312,31 +312,6 @@
     },
     {
       "asof_date": "2026-04-07",
-      "player_id": "4433287.0",
-      "player_name": "Brandon Miller",
-      "team_abbrev": "CHA",
-      "opp": "BOS",
-      "game_id": "401811004",
-      "stat": "3pt",
-      "threshold": 3,
-      "hits": 9,
-      "window_games": 10,
-      "hit_rate": 0.9,
-      "is_home_game": false,
-      "rest_days": 1,
-      "is_b2b": false,
-      "share_trend_pp": -0.3341531619395405,
-      "share_trend_dir": "FLAT",
-      "iqr_10": 1.75,
-      "landmine_rate_10": null,
-      "trap_risk": null,
-      "dnp": false,
-      "actual": 2,
-      "hit": false,
-      "delta": 1
-    },
-    {
-      "asof_date": "2026-04-07",
       "player_id": "1966.0",
       "player_name": "LeBron James",
       "team_abbrev": "LAL",
@@ -358,6 +333,31 @@
       "actual": null,
       "hit": false,
       "delta": null
+    },
+    {
+      "asof_date": "2026-04-07",
+      "player_id": "3078576.0",
+      "player_name": "Derrick White",
+      "team_abbrev": "BOS",
+      "opp": "CHA",
+      "game_id": "401811004",
+      "stat": "reb",
+      "threshold": 4,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 0.1171616430135719,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 1.75,
+      "landmine_rate_10": 0.1,
+      "trap_risk": false,
+      "dnp": false,
+      "actual": 2,
+      "hit": false,
+      "delta": 2
     }
   ]
 }

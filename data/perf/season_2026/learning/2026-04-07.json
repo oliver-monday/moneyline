@@ -11,9 +11,9 @@
       },
       "by_stat": {
         "reb": {
-          "total": 2,
+          "total": 3,
           "hits": 1,
-          "hit_rate": 0.5,
+          "hit_rate": 0.3333333333333333,
           "out_count": 0
         },
         "ast": {
@@ -23,9 +23,9 @@
           "out_count": 0
         },
         "3pt": {
-          "total": 1,
+          "total": 0,
           "hits": 0,
-          "hit_rate": 0.0,
+          "hit_rate": null,
           "out_count": 1
         },
         "pts": {
@@ -38,9 +38,9 @@
       "by_threshold": {
         "reb": {
           "4": {
-            "total": 1,
+            "total": 2,
             "hits": 1,
-            "hit_rate": 1.0,
+            "hit_rate": 0.5,
             "out_count": 0
           },
           "6": {
@@ -64,12 +64,6 @@
             "hits": 0,
             "hit_rate": null,
             "out_count": 1
-          },
-          "3": {
-            "total": 1,
-            "hits": 0,
-            "hit_rate": 0.0,
-            "out_count": 0
           }
         },
         "pts": {
@@ -83,9 +77,9 @@
       },
       "by_trap_risk": {
         "false": {
-          "total": 3,
+          "total": 4,
           "hits": 1,
-          "hit_rate": 0.3333333333333333,
+          "hit_rate": 0.25,
           "out_count": 0
         },
         "true": {
@@ -119,13 +113,13 @@
       },
       "by_home_game": {
         "false": {
-          "total": 4,
+          "total": 3,
           "hits": 2,
-          "hit_rate": 0.5,
+          "hit_rate": 0.6666666666666666,
           "out_count": 0
         },
         "true": {
-          "total": 1,
+          "total": 2,
           "hits": 0,
           "hit_rate": 0.0,
           "out_count": 1
