@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-07",
-  "built_at_utc": "2026-04-07T23:39:32Z",
+  "built_at_utc": "2026-04-08T01:26:16Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -17,6 +17,11 @@
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "K. Brown",
+      "status": "QUES",
+      "details": "K. Brown (Ques)"
     },
     {
       "name": "J. Furphy",
@@ -60,6 +65,11 @@
     }
   ],
   "IND": [
+    {
+      "name": "K. Brown",
+      "status": "QUES",
+      "details": "K. Brown (Ques)"
+    },
     {
       "name": "J. Furphy",
       "status": "OFS",
@@ -111,6 +121,11 @@
       "name": "N. Essengue",
       "status": "OFS",
       "details": "N. Essengue (OFS)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "QUES",
+      "details": "I. Okoro (Ques)"
     },
     {
       "name": "J. Smith",
@@ -521,16 +536,6 @@
       "details": "R. Westbrook (Out)"
     },
     {
-      "name": "S. Curry",
-      "status": "PROB",
-      "details": "S. Curry (Prob)"
-    },
-    {
-      "name": "K. Porzingis",
-      "status": "QUES",
-      "details": "K. Porzingis (Ques)"
-    },
-    {
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
@@ -549,6 +554,11 @@
       "name": "Al Horford",
       "status": "OUT",
       "details": "Al Horford (Out)"
+    },
+    {
+      "name": "K. Porzingis",
+      "status": "OUT",
+      "details": "K. Porzingis (Out)"
     },
     {
       "name": "Q. Post",
@@ -573,16 +583,6 @@
       "details": "M. Moody (OFS)"
     },
     {
-      "name": "S. Curry",
-      "status": "PROB",
-      "details": "S. Curry (Prob)"
-    },
-    {
-      "name": "K. Porzingis",
-      "status": "QUES",
-      "details": "K. Porzingis (Ques)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -591,6 +591,11 @@
       "name": "Al Horford",
       "status": "OUT",
       "details": "Al Horford (Out)"
+    },
+    {
+      "name": "K. Porzingis",
+      "status": "OUT",
+      "details": "K. Porzingis (Out)"
     },
     {
       "name": "Q. Post",
@@ -615,29 +620,24 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "M. Bagley",
-      "status": "PROB",
-      "details": "M. Bagley (Prob)"
-    },
-    {
       "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
     },
     {
       "name": "C. Martin",
-      "status": "DOUBT",
-      "details": "C. Martin (Doubt)"
+      "status": "OUT",
+      "details": "C. Martin (Out)"
     },
     {
       "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     },
     {
       "name": "B. Williams",
-      "status": "DOUBT",
-      "details": "B. Williams (Doubt)"
+      "status": "OUT",
+      "details": "B. Williams (Out)"
     },
     {
       "name": "B. Beal",
