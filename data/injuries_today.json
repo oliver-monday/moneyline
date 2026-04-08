@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-08",
-  "built_at_utc": "2026-04-08T19:12:35Z",
+  "built_at_utc": "2026-04-08T19:59:47Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -117,11 +117,6 @@
   ],
   "MIN": [
     {
-      "name": "R. Gobert",
-      "status": "QUES",
-      "details": "R. Gobert (Ques)"
-    },
-    {
       "name": "J. McDaniels",
       "status": "QUES",
       "details": "J. McDaniels (Ques)"
@@ -140,6 +135,11 @@
       "name": "A. Edwards",
       "status": "OUT",
       "details": "A. Edwards (Out)"
+    },
+    {
+      "name": "R. Gobert",
+      "status": "OUT",
+      "details": "R. Gobert (Out)"
     },
     {
       "name": "J. Randle",
@@ -398,29 +398,39 @@
       "details": "D. Lively (OFS)"
     },
     {
+      "name": "C. Flagg",
+      "status": "PROB",
+      "details": "C. Flagg (Prob)"
+    },
+    {
       "name": "D. Gafford",
-      "status": "QUES",
-      "details": "D. Gafford (Ques)"
+      "status": "DOUBT",
+      "details": "D. Gafford (Doubt)"
     },
     {
       "name": "N. Marshall",
-      "status": "QUES",
-      "details": "N. Marshall (Ques)"
+      "status": "DOUBT",
+      "details": "N. Marshall (Doubt)"
     },
     {
       "name": "C. Martin",
-      "status": "QUES",
-      "details": "C. Martin (Ques)"
+      "status": "DOUBT",
+      "details": "C. Martin (Doubt)"
+    },
+    {
+      "name": "K. Thompson",
+      "status": "DOUBT",
+      "details": "K. Thompson (Doubt)"
     },
     {
       "name": "P. Washington",
-      "status": "QUES",
-      "details": "P. Washington (Ques)"
+      "status": "DOUBT",
+      "details": "P. Washington (Doubt)"
     },
     {
       "name": "B. Williams",
-      "status": "QUES",
-      "details": "B. Williams (Ques)"
+      "status": "DOUBT",
+      "details": "B. Williams (Doubt)"
     },
     {
       "name": "H. Highsmith",
