@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-08",
-  "built_at_utc": "2026-04-08T19:59:47Z",
+  "built_at_utc": "2026-04-08T20:40:02Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -147,16 +147,6 @@
       "details": "J. Randle (Out)"
     },
     {
-      "name": "W. Carter",
-      "status": "QUES",
-      "details": "W. Carter (Ques)"
-    },
-    {
-      "name": "J. Cain",
-      "status": "QUES",
-      "details": "J. Cain (Ques)"
-    },
-    {
       "name": "J. Howard",
       "status": "OUT",
       "details": "J. Howard (Out)"
@@ -168,16 +158,6 @@
     }
   ],
   "ORL": [
-    {
-      "name": "J. Cain",
-      "status": "QUES",
-      "details": "J. Cain (Ques)"
-    },
-    {
-      "name": "W. Carter",
-      "status": "QUES",
-      "details": "W. Carter (Ques)"
-    },
     {
       "name": "J. Howard",
       "status": "OUT",
@@ -349,11 +329,6 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "J. Williams",
-      "status": "PROB",
-      "details": "J. Williams (Prob)"
-    },
-    {
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
@@ -362,6 +337,11 @@
       "name": "Y. Niederhauser",
       "status": "OFS",
       "details": "Y. Niederhauser (OFS)"
+    },
+    {
+      "name": "D. Garland",
+      "status": "OUT",
+      "details": "D. Garland (Out)"
     },
     {
       "name": "I. Jackson",
@@ -379,6 +359,11 @@
       "name": "Y. Niederhauser",
       "status": "OFS",
       "details": "Y. Niederhauser (OFS)"
+    },
+    {
+      "name": "D. Garland",
+      "status": "OUT",
+      "details": "D. Garland (Out)"
     },
     {
       "name": "I. Jackson",
@@ -433,16 +418,36 @@
       "details": "B. Williams (Doubt)"
     },
     {
-      "name": "H. Highsmith",
+      "name": "G. Allen",
       "status": "QUES",
-      "details": "H. Highsmith (Ques)"
+      "details": "G. Allen (Ques)"
+    },
+    {
+      "name": "H. Highsmith",
+      "status": "OUT",
+      "details": "H. Highsmith (Out)"
+    },
+    {
+      "name": "M. Williams",
+      "status": "OUT",
+      "details": "M. Williams (Out)"
     }
   ],
   "PHX": [
     {
-      "name": "H. Highsmith",
+      "name": "G. Allen",
       "status": "QUES",
-      "details": "H. Highsmith (Ques)"
+      "details": "G. Allen (Ques)"
+    },
+    {
+      "name": "H. Highsmith",
+      "status": "OUT",
+      "details": "H. Highsmith (Out)"
+    },
+    {
+      "name": "M. Williams",
+      "status": "OUT",
+      "details": "M. Williams (Out)"
     }
   ]
 }
