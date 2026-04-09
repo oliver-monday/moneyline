@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-09",
-  "built_at_utc": "2026-04-09T15:59:51Z",
+  "built_at_utc": "2026-04-09T17:51:31Z",
   "source": "rotowire",
   "CHI": [
     {
@@ -64,21 +64,6 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "T. Johnson",
-      "status": "QUES",
-      "details": "T. Johnson (Ques)"
-    },
-    {
-      "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
-    },
-    {
-      "name": "A. Gill",
-      "status": "QUES",
-      "details": "A. Gill (Ques)"
-    },
-    {
       "name": "K. George",
       "status": "OFS",
       "details": "K. George (OFS)"
@@ -89,19 +74,24 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "J. Champagnie",
-      "status": "QUES",
-      "details": "J. Champagnie (Ques)"
-    },
-    {
-      "name": "J. Hardy",
-      "status": "QUES",
-      "details": "J. Hardy (Ques)"
+      "name": "B. Coulibaly",
+      "status": "OUT",
+      "details": "B. Coulibaly (Out)"
     },
     {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
+    },
+    {
+      "name": "J. Hardy",
+      "status": "OUT",
+      "details": "J. Hardy (Out)"
+    },
+    {
+      "name": "T. Johnson",
+      "status": "OUT",
+      "details": "T. Johnson (Out)"
     },
     {
       "name": "D. Russell",
@@ -136,34 +126,24 @@
       "details": "C. Whitmore (OFS)"
     },
     {
-      "name": "J. Champagnie",
-      "status": "QUES",
-      "details": "J. Champagnie (Ques)"
-    },
-    {
       "name": "B. Coulibaly",
-      "status": "QUES",
-      "details": "B. Coulibaly (Ques)"
-    },
-    {
-      "name": "A. Gill",
-      "status": "QUES",
-      "details": "A. Gill (Ques)"
-    },
-    {
-      "name": "J. Hardy",
-      "status": "QUES",
-      "details": "J. Hardy (Ques)"
-    },
-    {
-      "name": "T. Johnson",
-      "status": "QUES",
-      "details": "T. Johnson (Ques)"
+      "status": "OUT",
+      "details": "B. Coulibaly (Out)"
     },
     {
       "name": "A. Davis",
       "status": "OUT",
       "details": "A. Davis (Out)"
+    },
+    {
+      "name": "J. Hardy",
+      "status": "OUT",
+      "details": "J. Hardy (Out)"
+    },
+    {
+      "name": "T. Johnson",
+      "status": "OUT",
+      "details": "T. Johnson (Out)"
     },
     {
       "name": "D. Russell",
@@ -206,6 +186,11 @@
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "T. Jackson-Davis",
+      "status": "OUT",
+      "details": "T. Jackson-Davis (Out)"
     }
   ],
   "TOR": [
@@ -213,6 +198,11 @@
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
+    },
+    {
+      "name": "T. Jackson-Davis",
+      "status": "OUT",
+      "details": "T. Jackson-Davis (Out)"
     }
   ],
   "IND": [
@@ -371,16 +361,6 @@
   ],
   "BOS": [
     {
-      "name": "J. Brown",
-      "status": "QUES",
-      "details": "J. Brown (Ques)"
-    },
-    {
-      "name": "S. Hauser",
-      "status": "QUES",
-      "details": "S. Hauser (Ques)"
-    },
-    {
       "name": "N. Queta",
       "status": "QUES",
       "details": "N. Queta (Ques)"
@@ -389,6 +369,11 @@
       "name": "D. White",
       "status": "QUES",
       "details": "D. White (Ques)"
+    },
+    {
+      "name": "J. Brown",
+      "status": "OUT",
+      "details": "J. Brown (Out)"
     },
     {
       "name": "T. Kolek",
@@ -410,6 +395,11 @@
       "details": "J. Broome (Out)"
     },
     {
+      "name": "J. Embiid",
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
+    },
+    {
       "name": "C. Payne",
       "status": "OUT",
       "details": "C. Payne (Out)"
@@ -418,6 +408,11 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "T. Eason",
+      "status": "QUES",
+      "details": "T. Eason (Ques)"
     },
     {
       "name": "F. VanVleet",
@@ -430,6 +425,11 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "T. Eason",
+      "status": "QUES",
+      "details": "T. Eason (Ques)"
     },
     {
       "name": "F. VanVleet",
