@@ -1,0 +1,8 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-08,2026,Nikola Jokic,DEN,MEM,reb,12,HIT,16,,targets_snapshot_2026-04-08.json
+2026-04-08,2026,Devin Booker,PHX,DAL,ast,6,HIT,9,,targets_snapshot_2026-04-08.json
+2026-04-08,2026,Devin Booker,PHX,DAL,3pt,2,HIT,2,,targets_snapshot_2026-04-08.json
+2026-04-08,2026,Anthony Davis,DAL,PHX,ast,2,,,,targets_snapshot_2026-04-08.json
+2026-04-08,2026,Ayo Dosunmu,MIN,ORL,pts,15,,,,targets_snapshot_2026-04-08.json
+2026-04-08,2026,Ayo Dosunmu,MIN,ORL,reb,4,,,,targets_snapshot_2026-04-08.json
+2026-04-08,2026,Jalen Duren,DET,MIL,ast,2,HIT,3,,targets_snapshot_2026-04-08.json

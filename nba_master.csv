@@ -1195,10 +1195,16 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401811010,2026-04-07,2026-04-08T02:30Z,Los Angeles Lakers,LAL,87,1000.0,,Oklahoma City Thunder,OKC,123,-1800.0,,Los Angeles,CA,,
 401811011,2026-04-07,2026-04-08T02:30Z,LA Clippers,LAC,116,-600.0,,Dallas Mavericks,DAL,103,440.0,,Inglewood,CA,,
 401811012,2026-04-07,2026-04-08T03:00Z,Phoenix Suns,PHX,105,-112.0,,Houston Rockets,HOU,119,-108.0,,Phoenix,AZ,,
-401811013,2026-04-08,2026-04-08T23:00Z,Cleveland Cavaliers,CLE,0,-120.0,,Atlanta Hawks,ATL,0,100.0,,Cleveland,OH,T. Bryant (Out),J. Landale (Out)
-401811014,2026-04-08,2026-04-08T23:00Z,Orlando Magic,ORL,0,-250.0,,Minnesota Timberwolves,MIN,0,205.0,,Orlando,FL,J. Howard (Out); J. Isaac (Out),
-401811015,2026-04-08,2026-04-08T23:00Z,Detroit Pistons,DET,0,-1800.0,,Milwaukee Bucks,MIL,0,1000.0,,Detroit,MI,,K. Porter (OFS)
-401811017,2026-04-08,2026-04-09T01:00Z,Denver Nuggets,DEN,0,-3200.0,,Memphis Grizzlies,MEM,0,1400.0,,Denver,CO,S. Jones (Out); P. Watson (Out),S. Aldama (OFS); K. Caldwell-Pope (OFS); B. Clarke (OFS); Zach Edey (OFS); Ja Morant (OFS); S. Pippen (OFS); J. Wells (OFS); GG Jackson (Out); Ty Jerome (Out); J. Small (Out); C. Spencer (Out)
-401811016,2026-04-08,2026-04-09T01:30Z,San Antonio Spurs,SA,0,-166.0,,Portland Trail Blazers,POR,0,140.0,,San Antonio,TX,D. Jones Garcia (OFS),D. Lillard (OFS); J. Grant (Out)
-401811018,2026-04-08,2026-04-09T02:00Z,LA Clippers,LAC,0,220.0,,Oklahoma City Thunder,OKC,0,-270.0,,Inglewood,CA,B. Beal (OFS); Y. Niederhauser (OFS); I. Jackson (Out),T. Sorber (OFS)
-401811019,2026-04-08,2026-04-09T02:00Z,Phoenix Suns,PHX,0,-575.0,,Dallas Mavericks,DAL,0,425.0,,Phoenix,AZ,,K. Irving (OFS); D. Lively (OFS)
+401811013,2026-04-08,2026-04-08T23:00Z,Cleveland Cavaliers,CLE,122,-120.0,,Atlanta Hawks,ATL,116,100.0,,Cleveland,OH,,
+401811014,2026-04-08,2026-04-08T23:00Z,Orlando Magic,ORL,132,-250.0,,Minnesota Timberwolves,MIN,120,205.0,,Orlando,FL,,
+401811015,2026-04-08,2026-04-08T23:00Z,Detroit Pistons,DET,137,-1800.0,,Milwaukee Bucks,MIL,111,1000.0,,Detroit,MI,,
+401811017,2026-04-08,2026-04-09T01:00Z,Denver Nuggets,DEN,136,-3200.0,,Memphis Grizzlies,MEM,119,1400.0,,Denver,CO,,
+401811016,2026-04-08,2026-04-09T01:30Z,San Antonio Spurs,SA,112,-166.0,,Portland Trail Blazers,POR,101,140.0,,San Antonio,TX,,
+401811018,2026-04-08,2026-04-09T02:00Z,LA Clippers,LAC,110,220.0,,Oklahoma City Thunder,OKC,128,-270.0,,Inglewood,CA,,
+401811019,2026-04-08,2026-04-09T02:00Z,Phoenix Suns,PHX,112,-575.0,,Dallas Mavericks,DAL,107,425.0,,Phoenix,AZ,,
+401811020,2026-04-09,2026-04-09T23:00Z,Toronto Raptors,TOR,0,-170.0,,Miami Heat,MIA,0,142.0,,Toronto,ON,C. Hepburn (Out),N. Jovic (Out); T. Rozier (Out)
+401811021,2026-04-09,2026-04-09T23:00Z,Washington Wizards,WSH,0,205.0,,Chicago Bulls,CHI,0,-250.0,,Washington,DC,K. George (OFS); C. Whitmore (OFS); A. Davis (Out); D. Russell (Out); Alex Sarr (Out); T. Vukcevic (Out); Trae Young (Out),Z. Collins (OFS); N. Essengue (OFS); J. Smith (OFS); M. Buzelis (Out); J. Giddey (Out); N. Richards (Out); A. Simons (Out)
+401811022,2026-04-09,2026-04-09T23:30Z,Brooklyn Nets,BKN,0,136.0,,Indiana Pacers,IND,0,-162.0,,Brooklyn,NY,Egor Demin (OFS); M. Porter (OFS); D. Sharpe (OFS); Danny Wolf (OFS); N. Claxton (Out); N. Clowney (Out); T. Mann (Out); J. Minott (Out); N. Traore (Out); Z. Williams (Out),J. Furphy (OFS); T. Haliburton (OFS); I. Zubac (OFS); T. McConnell (Out); A. Nembhard (Out); A. Nesmith (Out); P. Siakam (Out)
+401811023,2026-04-09,2026-04-09T23:30Z,New York Knicks,NY,0,-175.0,,Boston Celtics,BOS,0,145.0,,New York,NY,,
+401811024,2026-04-09,2026-04-10T00:00Z,Houston Rockets,HOU,0,-175.0,,Philadelphia 76ers,PHI,0,145.0,,Houston,TX,S. Adams (OFS); F. VanVleet (Out),J. Broome (Out); C. Payne (Out)
+401811025,2026-04-09,2026-04-10T02:00Z,Golden State Warriors,GS,0,-192.0,,Los Angeles Lakers,LAL,0,160.0,,San Francisco,CA,J. Butler (OFS); M. Moody (OFS); Al Horford (Out); K. Porzingis (Out); Q. Post (Out),L. Doncic (Out); J. Hayes (Out); A. Reaves (Out)
