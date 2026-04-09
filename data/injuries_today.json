@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-09",
-  "built_at_utc": "2026-04-09T17:51:31Z",
+  "built_at_utc": "2026-04-09T19:02:36Z",
   "source": "rotowire",
   "CHI": [
     {
@@ -459,11 +459,6 @@
       "details": "A. Reaves (Out)"
     },
     {
-      "name": "S. Curry",
-      "status": "QUES",
-      "details": "S. Curry (Ques)"
-    },
-    {
       "name": "G. Santos",
       "status": "QUES",
       "details": "G. Santos (Ques)"
@@ -479,19 +474,19 @@
       "details": "M. Moody (OFS)"
     },
     {
+      "name": "C. Bassey",
+      "status": "PROB",
+      "details": "C. Bassey (Prob)"
+    },
+    {
       "name": "L. Cryer",
       "status": "PROB",
       "details": "L. Cryer (Prob)"
     },
     {
-      "name": "C. Bassey",
-      "status": "QUES",
-      "details": "C. Bassey (Ques)"
-    },
-    {
-      "name": "W. Richard",
-      "status": "DOUBT",
-      "details": "W. Richard (Doubt)"
+      "name": "S. Curry",
+      "status": "OUT",
+      "details": "S. Curry (Out)"
     },
     {
       "name": "Al Horford",
@@ -507,6 +502,11 @@
       "name": "Q. Post",
       "status": "OUT",
       "details": "Q. Post (Out)"
+    },
+    {
+      "name": "W. Richard",
+      "status": "OUT",
+      "details": "W. Richard (Out)"
     }
   ],
   "GSW": [
@@ -521,19 +521,14 @@
       "details": "M. Moody (OFS)"
     },
     {
+      "name": "C. Bassey",
+      "status": "PROB",
+      "details": "C. Bassey (Prob)"
+    },
+    {
       "name": "L. Cryer",
       "status": "PROB",
       "details": "L. Cryer (Prob)"
-    },
-    {
-      "name": "C. Bassey",
-      "status": "QUES",
-      "details": "C. Bassey (Ques)"
-    },
-    {
-      "name": "S. Curry",
-      "status": "QUES",
-      "details": "S. Curry (Ques)"
     },
     {
       "name": "G. Santos",
@@ -541,9 +536,9 @@
       "details": "G. Santos (Ques)"
     },
     {
-      "name": "W. Richard",
-      "status": "DOUBT",
-      "details": "W. Richard (Doubt)"
+      "name": "S. Curry",
+      "status": "OUT",
+      "details": "S. Curry (Out)"
     },
     {
       "name": "Al Horford",
@@ -559,6 +554,11 @@
       "name": "Q. Post",
       "status": "OUT",
       "details": "Q. Post (Out)"
+    },
+    {
+      "name": "W. Richard",
+      "status": "OUT",
+      "details": "W. Richard (Out)"
     }
   ]
 }
