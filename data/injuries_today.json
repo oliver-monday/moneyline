@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-09",
-  "built_at_utc": "2026-04-09T22:50:27Z",
+  "built_at_utc": "2026-04-09T23:39:03Z",
   "source": "rotowire",
   "CHI": [
     {
@@ -205,11 +205,6 @@
       "name": "I. Zubac",
       "status": "OFS",
       "details": "I. Zubac (OFS)"
-    },
-    {
-      "name": "J. Walker",
-      "status": "QUES",
-      "details": "J. Walker (Ques)"
     },
     {
       "name": "Kobe Brown",
@@ -434,11 +429,6 @@
       "details": "M. Moody (OFS)"
     },
     {
-      "name": "G. Santos",
-      "status": "QUES",
-      "details": "G. Santos (Ques)"
-    },
-    {
       "name": "C. Bassey",
       "status": "PROB",
       "details": "C. Bassey (Prob)"
@@ -472,6 +462,11 @@
       "name": "W. Richard",
       "status": "OUT",
       "details": "W. Richard (Out)"
+    },
+    {
+      "name": "Gui Santos",
+      "status": "OUT",
+      "details": "Gui Santos (Out)"
     }
   ],
   "GSW": [
@@ -486,11 +481,6 @@
       "details": "M. Moody (OFS)"
     },
     {
-      "name": "G. Santos",
-      "status": "QUES",
-      "details": "G. Santos (Ques)"
-    },
-    {
       "name": "C. Bassey",
       "status": "PROB",
       "details": "C. Bassey (Prob)"
@@ -524,6 +514,11 @@
       "name": "W. Richard",
       "status": "OUT",
       "details": "W. Richard (Out)"
+    },
+    {
+      "name": "Gui Santos",
+      "status": "OUT",
+      "details": "Gui Santos (Out)"
     }
   ]
 }
