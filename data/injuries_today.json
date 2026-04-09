@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-08",
-  "built_at_utc": "2026-04-08T23:40:34Z",
+  "built_at_utc": "2026-04-09T01:17:38Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -161,16 +161,6 @@
       "details": "J. Wells (OFS)"
     },
     {
-      "name": "J. Mashack",
-      "status": "QUES",
-      "details": "J. Mashack (Ques)"
-    },
-    {
-      "name": "O. Prosper",
-      "status": "DOUBT",
-      "details": "O. Prosper (Doubt)"
-    },
-    {
       "name": "GG Jackson",
       "status": "OUT",
       "details": "GG Jackson (Out)"
@@ -179,6 +169,11 @@
       "name": "Ty Jerome",
       "status": "OUT",
       "details": "Ty Jerome (Out)"
+    },
+    {
+      "name": "O. Prosper",
+      "status": "OUT",
+      "details": "O. Prosper (Out)"
     },
     {
       "name": "J. Small",
@@ -220,19 +215,19 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "V. Krejci",
-      "status": "DOUBT",
-      "details": "V. Krejci (Doubt)"
-    },
-    {
-      "name": "S. Sharpe",
-      "status": "DOUBT",
-      "details": "S. Sharpe (Doubt)"
-    },
-    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
+    },
+    {
+      "name": "Vit Krejci",
+      "status": "OUT",
+      "details": "Vit Krejci (Out)"
+    },
+    {
+      "name": "S. Sharpe",
+      "status": "OUT",
+      "details": "S. Sharpe (Out)"
     },
     {
       "name": "D. Jones Garcia",
@@ -328,44 +323,39 @@
       "details": "D. Lively (OFS)"
     },
     {
-      "name": "C. Flagg",
-      "status": "PROB",
-      "details": "C. Flagg (Prob)"
-    },
-    {
       "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
     },
     {
       "name": "N. Marshall",
-      "status": "DOUBT",
-      "details": "N. Marshall (Doubt)"
+      "status": "OUT",
+      "details": "N. Marshall (Out)"
     },
     {
       "name": "C. Martin",
-      "status": "DOUBT",
-      "details": "C. Martin (Doubt)"
+      "status": "OUT",
+      "details": "C. Martin (Out)"
     },
     {
       "name": "K. Thompson",
-      "status": "DOUBT",
-      "details": "K. Thompson (Doubt)"
+      "status": "OUT",
+      "details": "K. Thompson (Out)"
     },
     {
       "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     },
     {
       "name": "B. Williams",
-      "status": "DOUBT",
-      "details": "B. Williams (Doubt)"
+      "status": "OUT",
+      "details": "B. Williams (Out)"
     },
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "H. Highsmith",
@@ -381,8 +371,8 @@
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     },
     {
       "name": "H. Highsmith",
