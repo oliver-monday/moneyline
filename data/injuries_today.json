@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-09",
-  "built_at_utc": "2026-04-09T20:03:26Z",
+  "built_at_utc": "2026-04-09T20:48:32Z",
   "source": "rotowire",
   "CHI": [
     {
@@ -377,15 +377,15 @@
     },
     {
       "name": "T. Kolek",
-      "status": "QUES",
-      "details": "T. Kolek (Ques)"
+      "status": "OUT",
+      "details": "T. Kolek (Out)"
     }
   ],
   "NYK": [
     {
       "name": "T. Kolek",
-      "status": "QUES",
-      "details": "T. Kolek (Ques)"
+      "status": "OUT",
+      "details": "T. Kolek (Out)"
     }
   ],
   "PHI": [
