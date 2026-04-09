@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-09",
-  "built_at_utc": "2026-04-09T21:35:15Z",
+  "built_at_utc": "2026-04-09T22:50:27Z",
   "source": "rotowire",
   "CHI": [
     {
@@ -17,21 +17,6 @@
       "name": "J. Smith",
       "status": "OFS",
       "details": "J. Smith (OFS)"
-    },
-    {
-      "name": "L. Olbrich",
-      "status": "PROB",
-      "details": "L. Olbrich (Prob)"
-    },
-    {
-      "name": "C. Sexton",
-      "status": "PROB",
-      "details": "C. Sexton (Prob)"
-    },
-    {
-      "name": "P. Williams",
-      "status": "PROB",
-      "details": "P. Williams (Prob)"
     },
     {
       "name": "M. Buzelis",
@@ -168,11 +153,6 @@
   ],
   "MIA": [
     {
-      "name": "D. Smith",
-      "status": "QUES",
-      "details": "D. Smith (Ques)"
-    },
-    {
       "name": "N. Jovic",
       "status": "OUT",
       "details": "N. Jovic (Out)"
@@ -181,6 +161,11 @@
       "name": "T. Rozier",
       "status": "OUT",
       "details": "T. Rozier (Out)"
+    },
+    {
+      "name": "Dru Smith",
+      "status": "OUT",
+      "details": "Dru Smith (Out)"
     },
     {
       "name": "C. Hepburn",
@@ -222,19 +207,14 @@
       "details": "I. Zubac (OFS)"
     },
     {
-      "name": "K. Brown",
-      "status": "QUES",
-      "details": "K. Brown (Ques)"
-    },
-    {
-      "name": "B. Sheppard",
-      "status": "QUES",
-      "details": "B. Sheppard (Ques)"
-    },
-    {
       "name": "J. Walker",
       "status": "QUES",
       "details": "J. Walker (Ques)"
+    },
+    {
+      "name": "Kobe Brown",
+      "status": "OUT",
+      "details": "Kobe Brown (Out)"
     },
     {
       "name": "T. McConnell",
@@ -250,6 +230,11 @@
       "name": "A. Nesmith",
       "status": "OUT",
       "details": "A. Nesmith (Out)"
+    },
+    {
+      "name": "B. Sheppard",
+      "status": "OUT",
+      "details": "B. Sheppard (Out)"
     },
     {
       "name": "P. Siakam",
@@ -361,16 +346,6 @@
   ],
   "BOS": [
     {
-      "name": "N. Queta",
-      "status": "QUES",
-      "details": "N. Queta (Ques)"
-    },
-    {
-      "name": "D. White",
-      "status": "QUES",
-      "details": "D. White (Ques)"
-    },
-    {
       "name": "J. Brown",
       "status": "OUT",
       "details": "J. Brown (Out)"
@@ -410,11 +385,6 @@
       "details": "S. Adams (OFS)"
     },
     {
-      "name": "T. Eason",
-      "status": "QUES",
-      "details": "T. Eason (Ques)"
-    },
-    {
       "name": "F. VanVleet",
       "status": "OUT",
       "details": "F. VanVleet (Out)"
@@ -425,11 +395,6 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
-    },
-    {
-      "name": "T. Eason",
-      "status": "QUES",
-      "details": "T. Eason (Ques)"
     },
     {
       "name": "F. VanVleet",
@@ -459,11 +424,6 @@
       "details": "M. Smart (Out)"
     },
     {
-      "name": "G. Santos",
-      "status": "QUES",
-      "details": "G. Santos (Ques)"
-    },
-    {
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
@@ -472,6 +432,11 @@
       "name": "M. Moody",
       "status": "OFS",
       "details": "M. Moody (OFS)"
+    },
+    {
+      "name": "G. Santos",
+      "status": "QUES",
+      "details": "G. Santos (Ques)"
     },
     {
       "name": "C. Bassey",
@@ -521,6 +486,11 @@
       "details": "M. Moody (OFS)"
     },
     {
+      "name": "G. Santos",
+      "status": "QUES",
+      "details": "G. Santos (Ques)"
+    },
+    {
       "name": "C. Bassey",
       "status": "PROB",
       "details": "C. Bassey (Prob)"
@@ -529,11 +499,6 @@
       "name": "L. Cryer",
       "status": "PROB",
       "details": "L. Cryer (Prob)"
-    },
-    {
-      "name": "G. Santos",
-      "status": "QUES",
-      "details": "G. Santos (Ques)"
     },
     {
       "name": "S. Curry",
