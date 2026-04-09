@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-08",
-  "built_at_utc": "2026-04-09T01:17:38Z",
+  "built_at_utc": "2026-04-09T03:41:39Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -15,113 +15,113 @@
     },
     {
       "name": "T. Bryant",
-      "status": "OUT",
-      "details": "T. Bryant (Out)"
+      "status": "QUES",
+      "details": "T. Bryant (Ques)"
     },
     {
       "name": "J. Tyson",
-      "status": "OUT",
-      "details": "J. Tyson (Out)"
+      "status": "DOUBT",
+      "details": "J. Tyson (Doubt)"
     }
   ],
   "CLE": [
     {
       "name": "T. Bryant",
-      "status": "OUT",
-      "details": "T. Bryant (Out)"
+      "status": "QUES",
+      "details": "T. Bryant (Ques)"
     },
     {
       "name": "J. Tyson",
-      "status": "OUT",
-      "details": "J. Tyson (Out)"
+      "status": "DOUBT",
+      "details": "J. Tyson (Doubt)"
     }
   ],
   "MIL": [
+    {
+      "name": "G. Antetokounmpo",
+      "status": "DOUBT",
+      "details": "G. Antetokounmpo (Doubt)"
+    },
+    {
+      "name": "K. Kuzma",
+      "status": "QUES",
+      "details": "K. Kuzma (Ques)"
+    },
     {
       "name": "K. Porter",
       "status": "OFS",
       "details": "K. Porter (OFS)"
     },
     {
-      "name": "G. Antetokounmpo",
-      "status": "OUT",
-      "details": "G. Antetokounmpo (Out)"
-    },
-    {
-      "name": "Kyle Kuzma",
-      "status": "OUT",
-      "details": "Kyle Kuzma (Out)"
-    },
-    {
       "name": "B. Portis",
-      "status": "OUT",
-      "details": "B. Portis (Out)"
+      "status": "QUES",
+      "details": "B. Portis (Ques)"
     },
     {
       "name": "M. Turner",
-      "status": "OUT",
-      "details": "M. Turner (Out)"
+      "status": "QUES",
+      "details": "M. Turner (Ques)"
     },
     {
       "name": "K. Huerter",
-      "status": "OUT",
-      "details": "K. Huerter (Out)"
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
     }
   ],
   "DET": [
     {
       "name": "K. Huerter",
-      "status": "OUT",
-      "details": "K. Huerter (Out)"
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
     }
   ],
   "MIN": [
     {
       "name": "M. Conley",
-      "status": "OUT",
-      "details": "M. Conley (Out)"
+      "status": "QUES",
+      "details": "M. Conley (Ques)"
     },
     {
       "name": "A. Dosunmu",
-      "status": "OUT",
-      "details": "A. Dosunmu (Out)"
+      "status": "QUES",
+      "details": "A. Dosunmu (Ques)"
     },
     {
       "name": "A. Edwards",
-      "status": "OUT",
-      "details": "A. Edwards (Out)"
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
     },
     {
       "name": "R. Gobert",
-      "status": "OUT",
-      "details": "R. Gobert (Out)"
+      "status": "QUES",
+      "details": "R. Gobert (Ques)"
     },
     {
       "name": "J. Randle",
-      "status": "OUT",
-      "details": "J. Randle (Out)"
+      "status": "QUES",
+      "details": "J. Randle (Ques)"
     },
     {
       "name": "J. Howard",
-      "status": "OUT",
-      "details": "J. Howard (Out)"
+      "status": "QUES",
+      "details": "J. Howard (Ques)"
     },
     {
       "name": "J. Isaac",
-      "status": "OUT",
-      "details": "J. Isaac (Out)"
+      "status": "DOUBT",
+      "details": "J. Isaac (Doubt)"
     }
   ],
   "ORL": [
     {
       "name": "J. Howard",
-      "status": "OUT",
-      "details": "J. Howard (Out)"
+      "status": "QUES",
+      "details": "J. Howard (Ques)"
     },
     {
       "name": "J. Isaac",
-      "status": "OUT",
-      "details": "J. Isaac (Out)"
+      "status": "DOUBT",
+      "details": "J. Isaac (Doubt)"
     }
   ],
   "MEM": [
@@ -146,6 +146,16 @@
       "details": "Zach Edey (OFS)"
     },
     {
+      "name": "G. Jackson",
+      "status": "QUES",
+      "details": "G. Jackson (Ques)"
+    },
+    {
+      "name": "T. Jerome",
+      "status": "QUES",
+      "details": "T. Jerome (Ques)"
+    },
+    {
       "name": "Ja Morant",
       "status": "OFS",
       "details": "Ja Morant (OFS)"
@@ -156,39 +166,29 @@
       "details": "S. Pippen (OFS)"
     },
     {
+      "name": "O. Prosper",
+      "status": "QUES",
+      "details": "O. Prosper (Ques)"
+    },
+    {
+      "name": "J. Small",
+      "status": "QUES",
+      "details": "J. Small (Ques)"
+    },
+    {
+      "name": "C. Spencer",
+      "status": "QUES",
+      "details": "C. Spencer (Ques)"
+    },
+    {
       "name": "J. Wells",
       "status": "OFS",
       "details": "J. Wells (OFS)"
     },
     {
-      "name": "GG Jackson",
-      "status": "OUT",
-      "details": "GG Jackson (Out)"
-    },
-    {
-      "name": "Ty Jerome",
-      "status": "OUT",
-      "details": "Ty Jerome (Out)"
-    },
-    {
-      "name": "O. Prosper",
-      "status": "OUT",
-      "details": "O. Prosper (Out)"
-    },
-    {
-      "name": "J. Small",
-      "status": "OUT",
-      "details": "J. Small (Out)"
-    },
-    {
-      "name": "C. Spencer",
-      "status": "OUT",
-      "details": "C. Spencer (Out)"
-    },
-    {
       "name": "S. Jones",
-      "status": "OUT",
-      "details": "S. Jones (Out)"
+      "status": "QUES",
+      "details": "S. Jones (Ques)"
     },
     {
       "name": "P. Watson",
@@ -199,8 +199,8 @@
   "DEN": [
     {
       "name": "S. Jones",
-      "status": "OUT",
-      "details": "S. Jones (Out)"
+      "status": "QUES",
+      "details": "S. Jones (Ques)"
     },
     {
       "name": "P. Watson",
@@ -353,6 +353,16 @@
       "details": "B. Williams (Out)"
     },
     {
+      "name": "J. Green",
+      "status": "QUES",
+      "details": "J. Green (Ques)"
+    },
+    {
+      "name": "J. Goodwin",
+      "status": "QUES",
+      "details": "J. Goodwin (Ques)"
+    },
+    {
       "name": "G. Allen",
       "status": "OUT",
       "details": "G. Allen (Out)"
@@ -369,6 +379,16 @@
     }
   ],
   "PHX": [
+    {
+      "name": "J. Goodwin",
+      "status": "QUES",
+      "details": "J. Goodwin (Ques)"
+    },
+    {
+      "name": "J. Green",
+      "status": "QUES",
+      "details": "J. Green (Ques)"
+    },
     {
       "name": "G. Allen",
       "status": "OUT",
