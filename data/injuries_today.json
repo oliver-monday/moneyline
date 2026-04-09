@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-09",
-  "built_at_utc": "2026-04-09T19:02:36Z",
+  "built_at_utc": "2026-04-09T20:03:26Z",
   "source": "rotowire",
   "CHI": [
     {
@@ -439,11 +439,6 @@
   ],
   "LAL": [
     {
-      "name": "M. Smart",
-      "status": "QUES",
-      "details": "M. Smart (Ques)"
-    },
-    {
       "name": "L. Doncic",
       "status": "OUT",
       "details": "L. Doncic (Out)"
@@ -457,6 +452,11 @@
       "name": "A. Reaves",
       "status": "OUT",
       "details": "A. Reaves (Out)"
+    },
+    {
+      "name": "M. Smart",
+      "status": "OUT",
+      "details": "M. Smart (Out)"
     },
     {
       "name": "G. Santos",
