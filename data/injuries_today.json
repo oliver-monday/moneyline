@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-08",
-  "built_at_utc": "2026-04-09T03:41:39Z",
+  "built_at_utc": "2026-04-09T04:23:56Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -210,24 +210,29 @@
   ],
   "POR": [
     {
+      "name": "J. Grant",
+      "status": "QUES",
+      "details": "J. Grant (Ques)"
+    },
+    {
+      "name": "V. Krejci",
+      "status": "DOUBT",
+      "details": "V. Krejci (Doubt)"
+    },
+    {
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "J. Grant",
-      "status": "OUT",
-      "details": "J. Grant (Out)"
-    },
-    {
-      "name": "Vit Krejci",
-      "status": "OUT",
-      "details": "Vit Krejci (Out)"
-    },
-    {
       "name": "S. Sharpe",
-      "status": "OUT",
-      "details": "S. Sharpe (Out)"
+      "status": "DOUBT",
+      "details": "S. Sharpe (Doubt)"
+    },
+    {
+      "name": "S. Castle",
+      "status": "QUES",
+      "details": "S. Castle (Ques)"
     },
     {
       "name": "D. Jones Garcia",
@@ -235,31 +240,26 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "S. Castle",
-      "status": "OUT",
-      "details": "S. Castle (Out)"
-    },
-    {
       "name": "V. Wembanyama",
-      "status": "OUT",
-      "details": "V. Wembanyama (Out)"
+      "status": "QUES",
+      "details": "V. Wembanyama (Ques)"
     }
   ],
   "SAS": [
     {
+      "name": "S. Castle",
+      "status": "QUES",
+      "details": "S. Castle (Ques)"
+    },
+    {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "S. Castle",
-      "status": "OUT",
-      "details": "S. Castle (Out)"
-    },
-    {
       "name": "V. Wembanyama",
-      "status": "OUT",
-      "details": "V. Wembanyama (Out)"
+      "status": "QUES",
+      "details": "V. Wembanyama (Ques)"
     }
   ],
   "OKC": [

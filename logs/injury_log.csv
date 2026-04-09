@@ -10797,11 +10797,11 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-08,POR,E. Miller,QUES,E. Miller (Ques),rotowire
 2026-04-08,SAS,E. Miller,QUES,E. Miller (Ques),rotowire
 2026-04-08,MEM,J. Mashack,QUES,J. Mashack (Ques),rotowire
-2026-04-08,POR,V. Krejci,DOUBT,V. Krejci (Doubt),rotowire
 2026-04-08,DAL,C. Flagg,PROB,C. Flagg (Prob),rotowire
 2026-04-08,MIL,Kyle Kuzma,OUT,Kyle Kuzma (Out),rotowire
 2026-04-08,MEM,GG Jackson,OUT,GG Jackson (Out),rotowire
 2026-04-08,MEM,Ty Jerome,OUT,Ty Jerome (Out),rotowire
+2026-04-08,POR,Vit Krejci,OUT,Vit Krejci (Out),rotowire
 2026-04-08,ATL,J. Landale,OUT,J. Landale (Out),rotowire
 2026-04-08,ATL,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
 2026-04-08,ATL,T. Bryant,QUES,T. Bryant (Ques),rotowire
@@ -10840,16 +10840,16 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-08,MEM,P. Watson,OUT,P. Watson (Out),rotowire
 2026-04-08,DEN,S. Jones,QUES,S. Jones (Ques),rotowire
 2026-04-08,DEN,P. Watson,OUT,P. Watson (Out),rotowire
+2026-04-08,POR,J. Grant,QUES,J. Grant (Ques),rotowire
+2026-04-08,POR,V. Krejci,DOUBT,V. Krejci (Doubt),rotowire
 2026-04-08,POR,D. Lillard,OFS,D. Lillard (OFS),rotowire
-2026-04-08,POR,J. Grant,OUT,J. Grant (Out),rotowire
-2026-04-08,POR,Vit Krejci,OUT,Vit Krejci (Out),rotowire
-2026-04-08,POR,S. Sharpe,OUT,S. Sharpe (Out),rotowire
+2026-04-08,POR,S. Sharpe,DOUBT,S. Sharpe (Doubt),rotowire
+2026-04-08,POR,S. Castle,QUES,S. Castle (Ques),rotowire
 2026-04-08,POR,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
-2026-04-08,POR,S. Castle,OUT,S. Castle (Out),rotowire
-2026-04-08,POR,V. Wembanyama,OUT,V. Wembanyama (Out),rotowire
+2026-04-08,POR,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
+2026-04-08,SAS,S. Castle,QUES,S. Castle (Ques),rotowire
 2026-04-08,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
-2026-04-08,SAS,S. Castle,OUT,S. Castle (Out),rotowire
-2026-04-08,SAS,V. Wembanyama,OUT,V. Wembanyama (Out),rotowire
+2026-04-08,SAS,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
 2026-04-08,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-04-08,OKC,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-04-08,OKC,Y. Niederhauser,OFS,Y. Niederhauser (OFS),rotowire
