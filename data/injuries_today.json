@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-09",
-  "built_at_utc": "2026-04-09T09:43:18Z",
+  "built_at_utc": "2026-04-09T15:59:51Z",
   "source": "rotowire",
   "CHI": [
     {
@@ -34,11 +34,6 @@
       "details": "P. Williams (Prob)"
     },
     {
-      "name": "I. Okoro",
-      "status": "QUES",
-      "details": "I. Okoro (Ques)"
-    },
-    {
       "name": "M. Buzelis",
       "status": "OUT",
       "details": "M. Buzelis (Out)"
@@ -47,6 +42,11 @@
       "name": "J. Giddey",
       "status": "OUT",
       "details": "J. Giddey (Out)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "OUT",
+      "details": "I. Okoro (Out)"
     },
     {
       "name": "N. Richards",
@@ -187,11 +187,6 @@
     }
   ],
   "MIA": [
-    {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
-    },
     {
       "name": "D. Smith",
       "status": "QUES",

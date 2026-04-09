@@ -10877,15 +10877,16 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-08,PHX,G. Allen,OUT,G. Allen (Out),rotowire
 2026-04-08,PHX,H. Highsmith,OUT,H. Highsmith (Out),rotowire
 2026-04-08,PHX,M. Williams,OUT,M. Williams (Out),rotowire
+2026-04-09,MIA,N. Powell,QUES,N. Powell (Ques),rotowire
 2026-04-09,CHI,Z. Collins,OFS,Z. Collins (OFS),rotowire
 2026-04-09,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
 2026-04-09,CHI,J. Smith,OFS,J. Smith (OFS),rotowire
 2026-04-09,CHI,L. Olbrich,PROB,L. Olbrich (Prob),rotowire
 2026-04-09,CHI,C. Sexton,PROB,C. Sexton (Prob),rotowire
 2026-04-09,CHI,P. Williams,PROB,P. Williams (Prob),rotowire
-2026-04-09,CHI,I. Okoro,QUES,I. Okoro (Ques),rotowire
 2026-04-09,CHI,M. Buzelis,OUT,M. Buzelis (Out),rotowire
 2026-04-09,CHI,J. Giddey,OUT,J. Giddey (Out),rotowire
+2026-04-09,CHI,I. Okoro,OUT,I. Okoro (Out),rotowire
 2026-04-09,CHI,N. Richards,OUT,N. Richards (Out),rotowire
 2026-04-09,CHI,A. Simons,OUT,A. Simons (Out),rotowire
 2026-04-09,CHI,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
@@ -10913,7 +10914,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-09,WAS,Alex Sarr,OUT,Alex Sarr (Out),rotowire
 2026-04-09,WAS,T. Vukcevic,OUT,T. Vukcevic (Out),rotowire
 2026-04-09,WAS,Trae Young,OUT,Trae Young (Out),rotowire
-2026-04-09,MIA,N. Powell,QUES,N. Powell (Ques),rotowire
 2026-04-09,MIA,D. Smith,QUES,D. Smith (Ques),rotowire
 2026-04-09,MIA,N. Jovic,OUT,N. Jovic (Out),rotowire
 2026-04-09,MIA,T. Rozier,OUT,T. Rozier (Out),rotowire
