@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-09",
-  "built_at_utc": "2026-04-09T23:39:03Z",
+  "built_at_utc": "2026-04-10T01:27:55Z",
   "source": "rotowire",
   "CHI": [
     {
@@ -17,6 +17,11 @@
       "name": "J. Smith",
       "status": "OFS",
       "details": "J. Smith (OFS)"
+    },
+    {
+      "name": "G. Yabusele",
+      "status": "QUES",
+      "details": "G. Yabusele (Ques)"
     },
     {
       "name": "M. Buzelis",
@@ -429,16 +434,6 @@
       "details": "M. Moody (OFS)"
     },
     {
-      "name": "C. Bassey",
-      "status": "PROB",
-      "details": "C. Bassey (Prob)"
-    },
-    {
-      "name": "L. Cryer",
-      "status": "PROB",
-      "details": "L. Cryer (Prob)"
-    },
-    {
       "name": "S. Curry",
       "status": "OUT",
       "details": "S. Curry (Out)"
@@ -479,16 +474,6 @@
       "name": "M. Moody",
       "status": "OFS",
       "details": "M. Moody (OFS)"
-    },
-    {
-      "name": "C. Bassey",
-      "status": "PROB",
-      "details": "C. Bassey (Prob)"
-    },
-    {
-      "name": "L. Cryer",
-      "status": "PROB",
-      "details": "L. Cryer (Prob)"
     },
     {
       "name": "S. Curry",
