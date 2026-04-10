@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-10",
-  "built_at_utc": "2026-04-10T19:48:23Z",
+  "built_at_utc": "2026-04-10T20:34:46Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -1325,19 +1325,19 @@
       "details": "H. Highsmith (Out)"
     },
     {
-      "name": "M. Smart",
+      "name": "L. Kennard",
       "status": "QUES",
-      "details": "M. Smart (Ques)"
-    },
-    {
-      "name": "J. Hayes",
-      "status": "QUES",
-      "details": "J. Hayes (Ques)"
+      "details": "L. Kennard (Ques)"
     },
     {
       "name": "L. Doncic",
       "status": "OUT",
       "details": "L. Doncic (Out)"
+    },
+    {
+      "name": "J. Hayes",
+      "status": "OUT",
+      "details": "J. Hayes (Out)"
     },
     {
       "name": "A. Reaves",
@@ -1347,19 +1347,19 @@
   ],
   "LAL": [
     {
-      "name": "J. Hayes",
+      "name": "L. Kennard",
       "status": "QUES",
-      "details": "J. Hayes (Ques)"
-    },
-    {
-      "name": "M. Smart",
-      "status": "QUES",
-      "details": "M. Smart (Ques)"
+      "details": "L. Kennard (Ques)"
     },
     {
       "name": "L. Doncic",
       "status": "OUT",
       "details": "L. Doncic (Out)"
+    },
+    {
+      "name": "J. Hayes",
+      "status": "OUT",
+      "details": "J. Hayes (Out)"
     },
     {
       "name": "A. Reaves",
