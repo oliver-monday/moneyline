@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-10",
-  "built_at_utc": "2026-04-10T20:34:46Z",
+  "built_at_utc": "2026-04-10T21:24:29Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -53,11 +53,6 @@
       "details": "D. Mitchell (Ques)"
     },
     {
-      "name": "N. Powell",
-      "status": "DOUBT",
-      "details": "N. Powell (Doubt)"
-    },
-    {
       "name": "T. Herro",
       "status": "OUT",
       "details": "T. Herro (Out)"
@@ -66,6 +61,11 @@
       "name": "N. Jovic",
       "status": "OUT",
       "details": "N. Jovic (Out)"
+    },
+    {
+      "name": "N. Powell",
+      "status": "OUT",
+      "details": "N. Powell (Out)"
     },
     {
       "name": "Dru Smith",
@@ -468,6 +468,11 @@
       "details": "M. Buzelis (Ques)"
     },
     {
+      "name": "L. Miller",
+      "status": "PROB",
+      "details": "L. Miller (Prob)"
+    },
+    {
       "name": "P. Williams",
       "status": "PROB",
       "details": "P. Williams (Prob)"
@@ -533,6 +538,11 @@
       "name": "J. Smith",
       "status": "OFS",
       "details": "J. Smith (OFS)"
+    },
+    {
+      "name": "L. Miller",
+      "status": "PROB",
+      "details": "L. Miller (Prob)"
     },
     {
       "name": "L. Olbrich",

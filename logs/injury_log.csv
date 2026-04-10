@@ -11026,9 +11026,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-10,CLE,J. Landale,OUT,J. Landale (Out),rotowire
 2026-04-10,ATL,J. Landale,OUT,J. Landale (Out),rotowire
 2026-04-10,MIA,D. Mitchell,QUES,D. Mitchell (Ques),rotowire
-2026-04-10,MIA,N. Powell,DOUBT,N. Powell (Doubt),rotowire
 2026-04-10,MIA,T. Herro,OUT,T. Herro (Out),rotowire
 2026-04-10,MIA,N. Jovic,OUT,N. Jovic (Out),rotowire
+2026-04-10,MIA,N. Powell,OUT,N. Powell (Out),rotowire
 2026-04-10,MIA,Dru Smith,OUT,Dru Smith (Out),rotowire
 2026-04-10,MIA,K. George,OFS,K. George (OFS),rotowire
 2026-04-10,MIA,C. Whitmore,OFS,C. Whitmore (OFS),rotowire
@@ -11105,6 +11105,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-10,ORL,J. Isaac,OUT,J. Isaac (Out),rotowire
 2026-04-10,ORL,C. Sexton,PROB,C. Sexton (Prob),rotowire
 2026-04-10,ORL,M. Buzelis,QUES,M. Buzelis (Ques),rotowire
+2026-04-10,ORL,L. Miller,PROB,L. Miller (Prob),rotowire
 2026-04-10,ORL,P. Williams,PROB,P. Williams (Prob),rotowire
 2026-04-10,ORL,Z. Collins,OFS,Z. Collins (OFS),rotowire
 2026-04-10,ORL,N. Essengue,OFS,N. Essengue (OFS),rotowire
@@ -11118,6 +11119,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-10,CHI,Z. Collins,OFS,Z. Collins (OFS),rotowire
 2026-04-10,CHI,N. Essengue,OFS,N. Essengue (OFS),rotowire
 2026-04-10,CHI,J. Smith,OFS,J. Smith (OFS),rotowire
+2026-04-10,CHI,L. Miller,PROB,L. Miller (Prob),rotowire
 2026-04-10,CHI,L. Olbrich,PROB,L. Olbrich (Prob),rotowire
 2026-04-10,CHI,C. Sexton,PROB,C. Sexton (Prob),rotowire
 2026-04-10,CHI,P. Williams,PROB,P. Williams (Prob),rotowire
