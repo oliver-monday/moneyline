@@ -1,0 +1,8 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-09,2026,Jaylen Brown,BOS,NY,reb,6,,,,targets_snapshot_2026-04-09.json
+2026-04-09,2026,Jaylen Brown,BOS,NY,ast,4,,,,targets_snapshot_2026-04-09.json
+2026-04-09,2026,Jalen Brunson,NY,BOS,ast,6,HIT,10,,targets_snapshot_2026-04-09.json
+2026-04-09,2026,Kevin Durant,HOU,PHI,ast,4,HIT,5,,targets_snapshot_2026-04-09.json
+2026-04-09,2026,Kevin Durant,HOU,PHI,3pt,2,HIT,3,,targets_snapshot_2026-04-09.json
+2026-04-09,2026,Jabari Smith Jr.,HOU,PHI,3pt,2,MISSED,1,,targets_snapshot_2026-04-09.json
+2026-04-09,2026,LeBron James,LAL,GS,reb,6,HIT,8,,targets_snapshot_2026-04-09.json
