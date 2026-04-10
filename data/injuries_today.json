@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-09",
-  "built_at_utc": "2026-04-10T03:55:19Z",
+  "built_at_utc": "2026-04-10T04:37:42Z",
   "source": "rotowire",
   "CHI": [
     {
@@ -404,14 +404,19 @@
   ],
   "LAL": [
     {
+      "name": "J. Hayes",
+      "status": "QUES",
+      "details": "J. Hayes (Ques)"
+    },
+    {
+      "name": "M. Smart",
+      "status": "QUES",
+      "details": "M. Smart (Ques)"
+    },
+    {
       "name": "L. Doncic",
       "status": "OUT",
       "details": "L. Doncic (Out)"
-    },
-    {
-      "name": "J. Hayes",
-      "status": "OUT",
-      "details": "J. Hayes (Out)"
     },
     {
       "name": "A. Reaves",
@@ -419,14 +424,24 @@
       "details": "A. Reaves (Out)"
     },
     {
-      "name": "M. Smart",
-      "status": "OUT",
-      "details": "M. Smart (Out)"
-    },
-    {
       "name": "J. Butler",
       "status": "OFS",
       "details": "J. Butler (OFS)"
+    },
+    {
+      "name": "L. Cryer",
+      "status": "QUES",
+      "details": "L. Cryer (Ques)"
+    },
+    {
+      "name": "S. Curry",
+      "status": "QUES",
+      "details": "S. Curry (Ques)"
+    },
+    {
+      "name": "A. Horford",
+      "status": "QUES",
+      "details": "A. Horford (Ques)"
     },
     {
       "name": "M. Moody",
@@ -434,34 +449,24 @@
       "details": "M. Moody (OFS)"
     },
     {
-      "name": "S. Curry",
-      "status": "OUT",
-      "details": "S. Curry (Out)"
-    },
-    {
-      "name": "Al Horford",
-      "status": "OUT",
-      "details": "Al Horford (Out)"
-    },
-    {
       "name": "K. Porzingis",
-      "status": "OUT",
-      "details": "K. Porzingis (Out)"
+      "status": "QUES",
+      "details": "K. Porzingis (Ques)"
+    },
+    {
+      "name": "W. Richard",
+      "status": "QUES",
+      "details": "W. Richard (Ques)"
+    },
+    {
+      "name": "G. Santos",
+      "status": "QUES",
+      "details": "G. Santos (Ques)"
     },
     {
       "name": "Q. Post",
       "status": "OUT",
       "details": "Q. Post (Out)"
-    },
-    {
-      "name": "W. Richard",
-      "status": "OUT",
-      "details": "W. Richard (Out)"
-    },
-    {
-      "name": "Gui Santos",
-      "status": "OUT",
-      "details": "Gui Santos (Out)"
     }
   ],
   "GSW": [
@@ -471,39 +476,44 @@
       "details": "J. Butler (OFS)"
     },
     {
+      "name": "L. Cryer",
+      "status": "QUES",
+      "details": "L. Cryer (Ques)"
+    },
+    {
+      "name": "S. Curry",
+      "status": "QUES",
+      "details": "S. Curry (Ques)"
+    },
+    {
+      "name": "A. Horford",
+      "status": "QUES",
+      "details": "A. Horford (Ques)"
+    },
+    {
       "name": "M. Moody",
       "status": "OFS",
       "details": "M. Moody (OFS)"
     },
     {
-      "name": "S. Curry",
-      "status": "OUT",
-      "details": "S. Curry (Out)"
-    },
-    {
-      "name": "Al Horford",
-      "status": "OUT",
-      "details": "Al Horford (Out)"
-    },
-    {
       "name": "K. Porzingis",
-      "status": "OUT",
-      "details": "K. Porzingis (Out)"
+      "status": "QUES",
+      "details": "K. Porzingis (Ques)"
+    },
+    {
+      "name": "W. Richard",
+      "status": "QUES",
+      "details": "W. Richard (Ques)"
+    },
+    {
+      "name": "G. Santos",
+      "status": "QUES",
+      "details": "G. Santos (Ques)"
     },
     {
       "name": "Q. Post",
       "status": "OUT",
       "details": "Q. Post (Out)"
-    },
-    {
-      "name": "W. Richard",
-      "status": "OUT",
-      "details": "W. Richard (Out)"
-    },
-    {
-      "name": "Gui Santos",
-      "status": "OUT",
-      "details": "Gui Santos (Out)"
     }
   ]
 }
