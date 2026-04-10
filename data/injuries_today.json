@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-10",
-  "built_at_utc": "2026-04-10T17:39:28Z",
+  "built_at_utc": "2026-04-10T18:49:30Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -48,19 +48,19 @@
   ],
   "MIA": [
     {
-      "name": "T. Herro",
-      "status": "QUES",
-      "details": "T. Herro (Ques)"
-    },
-    {
       "name": "D. Mitchell",
       "status": "QUES",
       "details": "D. Mitchell (Ques)"
     },
     {
       "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
+      "status": "DOUBT",
+      "details": "N. Powell (Doubt)"
+    },
+    {
+      "name": "T. Herro",
+      "status": "OUT",
+      "details": "T. Herro (Out)"
     },
     {
       "name": "N. Jovic",
@@ -608,33 +608,33 @@
     },
     {
       "name": "N. Claxton",
-      "status": "QUES",
-      "details": "N. Claxton (Ques)"
+      "status": "OUT",
+      "details": "N. Claxton (Out)"
     },
     {
       "name": "N. Clowney",
-      "status": "QUES",
-      "details": "N. Clowney (Ques)"
+      "status": "OUT",
+      "details": "N. Clowney (Out)"
     },
     {
       "name": "T. Mann",
-      "status": "QUES",
-      "details": "T. Mann (Ques)"
+      "status": "OUT",
+      "details": "T. Mann (Out)"
     },
     {
       "name": "J. Minott",
-      "status": "QUES",
-      "details": "J. Minott (Ques)"
+      "status": "OUT",
+      "details": "J. Minott (Out)"
     },
     {
-      "name": "N. Traore",
-      "status": "QUES",
-      "details": "N. Traore (Ques)"
+      "name": "D. Powell",
+      "status": "OUT",
+      "details": "D. Powell (Out)"
     },
     {
       "name": "Z. Williams",
-      "status": "QUES",
-      "details": "Z. Williams (Ques)"
+      "status": "OUT",
+      "details": "Z. Williams (Out)"
     },
     {
       "name": "K. Porter",
@@ -929,6 +929,11 @@
       "details": "S. Adams (OFS)"
     },
     {
+      "name": "T. Eason",
+      "status": "QUES",
+      "details": "T. Eason (Ques)"
+    },
+    {
       "name": "F. VanVleet",
       "status": "OUT",
       "details": "F. VanVleet (Out)"
@@ -939,6 +944,11 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "T. Eason",
+      "status": "QUES",
+      "details": "T. Eason (Ques)"
     },
     {
       "name": "F. VanVleet",
