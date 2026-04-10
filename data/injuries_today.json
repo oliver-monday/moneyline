@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-10",
-  "built_at_utc": "2026-04-10T18:49:30Z",
+  "built_at_utc": "2026-04-10T19:48:23Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -281,18 +281,13 @@
   "PHI": [
     {
       "name": "J. Broome",
-      "status": "DOUBT",
-      "details": "J. Broome (Doubt)"
+      "status": "OUT",
+      "details": "J. Broome (Out)"
     },
     {
       "name": "J. Embiid",
       "status": "OUT",
       "details": "J. Embiid (Out)"
-    },
-    {
-      "name": "C. Payne",
-      "status": "OUT",
-      "details": "C. Payne (Out)"
     },
     {
       "name": "J. Walker",
@@ -1196,24 +1191,19 @@
       "details": "M. Moody (OFS)"
     },
     {
+      "name": "C. Bassey",
+      "status": "PROB",
+      "details": "C. Bassey (Prob)"
+    },
+    {
       "name": "S. Curry",
       "status": "PROB",
       "details": "S. Curry (Prob)"
     },
     {
-      "name": "L. Cryer",
-      "status": "QUES",
-      "details": "L. Cryer (Ques)"
-    },
-    {
-      "name": "A. Horford",
-      "status": "QUES",
-      "details": "A. Horford (Ques)"
-    },
-    {
       "name": "K. Porzingis",
-      "status": "QUES",
-      "details": "K. Porzingis (Ques)"
+      "status": "PROB",
+      "details": "K. Porzingis (Prob)"
     },
     {
       "name": "W. Richard",
@@ -1224,6 +1214,16 @@
       "name": "G. Santos",
       "status": "QUES",
       "details": "G. Santos (Ques)"
+    },
+    {
+      "name": "LJ Cryer",
+      "status": "OUT",
+      "details": "LJ Cryer (Out)"
+    },
+    {
+      "name": "Seth Curry",
+      "status": "OUT",
+      "details": "Seth Curry (Out)"
     },
     {
       "name": "Q. Post",
