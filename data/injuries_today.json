@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-10",
-  "built_at_utc": "2026-04-10T23:37:51Z",
+  "built_at_utc": "2026-04-11T01:22:11Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -223,6 +223,11 @@
   ],
   "PHI": [
     {
+      "name": "T. Maxey",
+      "status": "QUES",
+      "details": "T. Maxey (Ques)"
+    },
+    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
@@ -342,6 +347,11 @@
       "details": "I. Quickley (Out)"
     },
     {
+      "name": "O. Anunoby",
+      "status": "QUES",
+      "details": "O. Anunoby (Ques)"
+    },
+    {
       "name": "T. Kolek",
       "status": "OUT",
       "details": "T. Kolek (Out)"
@@ -358,6 +368,11 @@
     }
   ],
   "NYK": [
+    {
+      "name": "O. Anunoby",
+      "status": "QUES",
+      "details": "O. Anunoby (Ques)"
+    },
     {
       "name": "T. Kolek",
       "status": "OUT",
@@ -594,6 +609,11 @@
   ],
   "DAL": [
     {
+      "name": "M. Bagley",
+      "status": "QUES",
+      "details": "M. Bagley (Ques)"
+    },
+    {
       "name": "K. Irving",
       "status": "OFS",
       "details": "K. Irving (OFS)"
@@ -777,11 +797,6 @@
   ],
   "MIN": [
     {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
       "name": "R. Gobert",
       "status": "OUT",
       "details": "R. Gobert (Out)"
@@ -812,11 +827,6 @@
       "details": "S. Adams (OFS)"
     },
     {
-      "name": "T. Eason",
-      "status": "QUES",
-      "details": "T. Eason (Ques)"
-    },
-    {
       "name": "F. VanVleet",
       "status": "OUT",
       "details": "F. VanVleet (Out)"
@@ -827,11 +837,6 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
-    },
-    {
-      "name": "T. Eason",
-      "status": "QUES",
-      "details": "T. Eason (Ques)"
     },
     {
       "name": "F. VanVleet",
@@ -877,18 +882,8 @@
     },
     {
       "name": "W. Clayton",
-      "status": "QUES",
-      "details": "W. Clayton (Ques)"
-    },
-    {
-      "name": "J. Small",
-      "status": "QUES",
-      "details": "J. Small (Ques)"
-    },
-    {
-      "name": "O. Prosper",
-      "status": "DOUBT",
-      "details": "O. Prosper (Doubt)"
+      "status": "OUT",
+      "details": "W. Clayton (Out)"
     },
     {
       "name": "C. Coward",
@@ -909,6 +904,11 @@
       "name": "Ty Jerome",
       "status": "OUT",
       "details": "Ty Jerome (Out)"
+    },
+    {
+      "name": "O. Prosper",
+      "status": "OUT",
+      "details": "O. Prosper (Out)"
     },
     {
       "name": "C. Spencer",
@@ -1030,19 +1030,14 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "V. Krejci",
-      "status": "QUES",
-      "details": "V. Krejci (Ques)"
-    },
-    {
-      "name": "S. Sharpe",
-      "status": "QUES",
-      "details": "S. Sharpe (Ques)"
-    },
-    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
+    },
+    {
+      "name": "Vit Krejci",
+      "status": "OUT",
+      "details": "Vit Krejci (Out)"
     }
   ],
   "POR": [
@@ -1052,19 +1047,14 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "V. Krejci",
-      "status": "QUES",
-      "details": "V. Krejci (Ques)"
-    },
-    {
-      "name": "S. Sharpe",
-      "status": "QUES",
-      "details": "S. Sharpe (Ques)"
-    },
-    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
+    },
+    {
+      "name": "Vit Krejci",
+      "status": "OUT",
+      "details": "Vit Krejci (Out)"
     }
   ],
   "GSW": [
@@ -1077,31 +1067,6 @@
       "name": "M. Moody",
       "status": "OFS",
       "details": "M. Moody (OFS)"
-    },
-    {
-      "name": "C. Bassey",
-      "status": "PROB",
-      "details": "C. Bassey (Prob)"
-    },
-    {
-      "name": "S. Curry",
-      "status": "PROB",
-      "details": "S. Curry (Prob)"
-    },
-    {
-      "name": "K. Porzingis",
-      "status": "PROB",
-      "details": "K. Porzingis (Prob)"
-    },
-    {
-      "name": "W. Richard",
-      "status": "QUES",
-      "details": "W. Richard (Ques)"
-    },
-    {
-      "name": "G. Santos",
-      "status": "QUES",
-      "details": "G. Santos (Ques)"
     },
     {
       "name": "LJ Cryer",
