@@ -1,0 +1,18 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-10,2026,Kevin Durant,HOU,MIN,ast,4,HIT,7,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,Kevin Durant,HOU,MIN,3pt,2,MISSED,0,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,Jabari Smith Jr.,HOU,MIN,pts,15,HIT,16,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,Jabari Smith Jr.,HOU,MIN,3pt,2,HIT,2,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,Nickeil Alexander-Walker,ATL,CLE,pts,20,MISSED,18,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,Nickeil Alexander-Walker,ATL,CLE,3pt,3,HIT,3,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,LeBron James,LAL,PHX,reb,6,HIT,6,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,LeBron James,LAL,PHX,ast,6,HIT,12,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,Anthony Davis,DAL,SA,ast,2,,,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,Ayo Dosunmu,MIN,HOU,pts,15,HIT,15,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,Ayo Dosunmu,MIN,HOU,reb,4,MISSED,0,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,Ace Bailey,UTAH,MEM,reb,4,HIT,10,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,Ace Bailey,UTAH,MEM,ast,2,HIT,2,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,Jalen Duren,DET,CHA,ast,2,HIT,4,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,Maxime Raynaud,SAC,GS,pts,10,HIT,23,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,Matas Buzelis,CHI,ORL,reb,6,HIT,8,,targets_snapshot_2026-04-10.json
+2026-04-10,2026,Kawhi Leonard,LAC,POR,reb,6,HIT,8,,targets_snapshot_2026-04-10.json
