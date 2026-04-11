@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-10",
-  "built_at_utc": "2026-04-11T01:22:11Z",
+  "built_at_utc": "2026-04-11T03:31:59Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -44,8 +44,8 @@
   "MIA": [
     {
       "name": "T. Herro",
-      "status": "OUT",
-      "details": "T. Herro (Out)"
+      "status": "QUES",
+      "details": "T. Herro (Ques)"
     },
     {
       "name": "N. Jovic",
@@ -223,11 +223,6 @@
   ],
   "PHI": [
     {
-      "name": "T. Maxey",
-      "status": "QUES",
-      "details": "T. Maxey (Ques)"
-    },
-    {
       "name": "J. Broome",
       "status": "OUT",
       "details": "J. Broome (Out)"
@@ -401,6 +396,11 @@
       "details": "J. Isaac (Out)"
     },
     {
+      "name": "M. Buzelis",
+      "status": "QUES",
+      "details": "M. Buzelis (Ques)"
+    },
+    {
       "name": "Z. Collins",
       "status": "OFS",
       "details": "Z. Collins (OFS)"
@@ -411,6 +411,26 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "J. Giddey",
+      "status": "OFS",
+      "details": "J. Giddey (OFS)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "QUES",
+      "details": "I. Okoro (Ques)"
+    },
+    {
+      "name": "N. Richards",
+      "status": "OFS",
+      "details": "N. Richards (OFS)"
+    },
+    {
+      "name": "A. Simons",
+      "status": "OFS",
+      "details": "A. Simons (OFS)"
+    },
+    {
       "name": "J. Smith",
       "status": "OFS",
       "details": "J. Smith (OFS)"
@@ -419,30 +439,15 @@
       "name": "G. Yabusele",
       "status": "OFS",
       "details": "G. Yabusele (OFS)"
-    },
-    {
-      "name": "J. Giddey",
-      "status": "OUT",
-      "details": "J. Giddey (Out)"
-    },
-    {
-      "name": "I. Okoro",
-      "status": "OUT",
-      "details": "I. Okoro (Out)"
-    },
-    {
-      "name": "N. Richards",
-      "status": "OUT",
-      "details": "N. Richards (Out)"
-    },
-    {
-      "name": "A. Simons",
-      "status": "OUT",
-      "details": "A. Simons (Out)"
     }
   ],
   "CHI": [
     {
+      "name": "M. Buzelis",
+      "status": "QUES",
+      "details": "M. Buzelis (Ques)"
+    },
+    {
       "name": "Z. Collins",
       "status": "OFS",
       "details": "Z. Collins (OFS)"
@@ -453,6 +458,26 @@
       "details": "N. Essengue (OFS)"
     },
     {
+      "name": "J. Giddey",
+      "status": "OFS",
+      "details": "J. Giddey (OFS)"
+    },
+    {
+      "name": "I. Okoro",
+      "status": "QUES",
+      "details": "I. Okoro (Ques)"
+    },
+    {
+      "name": "N. Richards",
+      "status": "OFS",
+      "details": "N. Richards (OFS)"
+    },
+    {
+      "name": "A. Simons",
+      "status": "OFS",
+      "details": "A. Simons (OFS)"
+    },
+    {
       "name": "J. Smith",
       "status": "OFS",
       "details": "J. Smith (OFS)"
@@ -461,26 +486,6 @@
       "name": "G. Yabusele",
       "status": "OFS",
       "details": "G. Yabusele (OFS)"
-    },
-    {
-      "name": "J. Giddey",
-      "status": "OUT",
-      "details": "J. Giddey (Out)"
-    },
-    {
-      "name": "I. Okoro",
-      "status": "OUT",
-      "details": "I. Okoro (Out)"
-    },
-    {
-      "name": "N. Richards",
-      "status": "OUT",
-      "details": "N. Richards (Out)"
-    },
-    {
-      "name": "A. Simons",
-      "status": "OUT",
-      "details": "A. Simons (Out)"
     }
   ],
   "BKN": [
@@ -1030,6 +1035,11 @@
       "details": "D. Lillard (OFS)"
     },
     {
+      "name": "M. Thybulle",
+      "status": "QUES",
+      "details": "M. Thybulle (Ques)"
+    },
+    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
@@ -1045,6 +1055,11 @@
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "M. Thybulle",
+      "status": "QUES",
+      "details": "M. Thybulle (Ques)"
     },
     {
       "name": "J. Grant",
@@ -1158,9 +1173,9 @@
   ],
   "PHX": [
     {
-      "name": "J. Green",
+      "name": "G. Allen",
       "status": "QUES",
-      "details": "J. Green (Ques)"
+      "details": "G. Allen (Ques)"
     },
     {
       "name": "D. Booker",
@@ -1173,14 +1188,14 @@
       "details": "J. Goodwin (Out)"
     },
     {
+      "name": "J. Green",
+      "status": "OUT",
+      "details": "J. Green (Out)"
+    },
+    {
       "name": "H. Highsmith",
       "status": "OUT",
       "details": "H. Highsmith (Out)"
-    },
-    {
-      "name": "L. Kennard",
-      "status": "QUES",
-      "details": "L. Kennard (Ques)"
     },
     {
       "name": "L. Doncic",
@@ -1199,11 +1214,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "L. Kennard",
-      "status": "QUES",
-      "details": "L. Kennard (Ques)"
-    },
     {
       "name": "L. Doncic",
       "status": "OUT",
