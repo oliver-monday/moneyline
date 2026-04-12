@@ -11319,6 +11319,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-12,IND,K. Brown,QUES,K. Brown (Ques),rotowire
 2026-04-12,ATL,M. Gueye,QUES,M. Gueye (Ques),rotowire
 2026-04-12,MIL,P. Nance,QUES,P. Nance (Ques),rotowire
+2026-04-12,DEN,D. Vassell,QUES,D. Vassell (Ques),rotowire
+2026-04-12,SAS,D. Vassell,QUES,D. Vassell (Ques),rotowire
 2026-04-12,ORL,J. Howard,OUT,J. Howard (Out),rotowire
 2026-04-12,ORL,J. Isaac,OUT,J. Isaac (Out),rotowire
 2026-04-12,ORL,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
@@ -11498,9 +11500,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-12,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
 2026-04-12,GSW,J. Butler,OFS,J. Butler (OFS),rotowire
 2026-04-12,GSW,M. Moody,OFS,M. Moody (OFS),rotowire
-2026-04-12,GSW,D. Green,QUES,D. Green (Ques),rotowire
 2026-04-12,GSW,W. Richard,QUES,W. Richard (Ques),rotowire
 2026-04-12,GSW,LJ Cryer,OUT,LJ Cryer (Out),rotowire
+2026-04-12,GSW,D. Green,OUT,D. Green (Out),rotowire
 2026-04-12,GSW,Q. Post,OUT,Q. Post (Out),rotowire
 2026-04-12,GSW,B. Beal,OFS,B. Beal (OFS),rotowire
 2026-04-12,GSW,Y. Niederhauser,OFS,Y. Niederhauser (OFS),rotowire
@@ -11578,15 +11580,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-12,DEN,J. Murray,OUT,J. Murray (Out),rotowire
 2026-04-12,DEN,P. Watson,OUT,P. Watson (Out),rotowire
 2026-04-12,DEN,S. Castle,QUES,S. Castle (Ques),rotowire
-2026-04-12,DEN,D. Vassell,QUES,D. Vassell (Ques),rotowire
-2026-04-12,DEN,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
 2026-04-12,DEN,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-04-12,DEN,L. Kornet,OUT,L. Kornet (Out),rotowire
+2026-04-12,DEN,V. Wembanyama,OUT,V. Wembanyama (Out),rotowire
 2026-04-12,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-04-12,SAS,S. Castle,QUES,S. Castle (Ques),rotowire
-2026-04-12,SAS,D. Vassell,QUES,D. Vassell (Ques),rotowire
-2026-04-12,SAS,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
 2026-04-12,SAS,L. Kornet,OUT,L. Kornet (Out),rotowire
+2026-04-12,SAS,V. Wembanyama,OUT,V. Wembanyama (Out),rotowire
 2026-04-12,PHX,C. Gillespie,QUES,C. Gillespie (Ques),rotowire
 2026-04-12,PHX,J. Goodwin,QUES,J. Goodwin (Ques),rotowire
 2026-04-12,PHX,J. Green,QUES,J. Green (Ques),rotowire
