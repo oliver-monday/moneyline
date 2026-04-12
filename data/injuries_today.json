@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-12",
-  "built_at_utc": "2026-04-12T22:41:33Z",
+  "built_at_utc": "2026-04-12T23:38:17Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -623,12 +623,22 @@
       "details": "Z. Williams (Out)"
     },
     {
+      "name": "I. Quickley",
+      "status": "QUES",
+      "details": "I. Quickley (Ques)"
+    },
+    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
     }
   ],
   "TOR": [
+    {
+      "name": "I. Quickley",
+      "status": "QUES",
+      "details": "I. Quickley (Ques)"
+    },
     {
       "name": "C. Hepburn",
       "status": "OUT",
@@ -672,21 +682,6 @@
       "details": "G. Yabusele (OFS)"
     },
     {
-      "name": "L. Olbrich",
-      "status": "PROB",
-      "details": "L. Olbrich (Prob)"
-    },
-    {
-      "name": "C. Sexton",
-      "status": "PROB",
-      "details": "C. Sexton (Prob)"
-    },
-    {
-      "name": "P. Williams",
-      "status": "PROB",
-      "details": "P. Williams (Prob)"
-    },
-    {
       "name": "M. Buzelis",
       "status": "OUT",
       "details": "M. Buzelis (Out)"
@@ -708,33 +703,33 @@
     },
     {
       "name": "M. Bagley",
-      "status": "DOUBT",
-      "details": "M. Bagley (Doubt)"
+      "status": "OUT",
+      "details": "M. Bagley (Out)"
     },
     {
       "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
     },
     {
       "name": "N. Marshall",
-      "status": "DOUBT",
-      "details": "N. Marshall (Doubt)"
+      "status": "OUT",
+      "details": "N. Marshall (Out)"
     },
     {
       "name": "C. Martin",
-      "status": "DOUBT",
-      "details": "C. Martin (Doubt)"
+      "status": "OUT",
+      "details": "C. Martin (Out)"
     },
     {
       "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     },
     {
       "name": "B. Williams",
-      "status": "DOUBT",
-      "details": "B. Williams (Doubt)"
+      "status": "OUT",
+      "details": "B. Williams (Out)"
     }
   ],
   "DAL": [
@@ -750,33 +745,33 @@
     },
     {
       "name": "M. Bagley",
-      "status": "DOUBT",
-      "details": "M. Bagley (Doubt)"
+      "status": "OUT",
+      "details": "M. Bagley (Out)"
     },
     {
       "name": "D. Gafford",
-      "status": "DOUBT",
-      "details": "D. Gafford (Doubt)"
+      "status": "OUT",
+      "details": "D. Gafford (Out)"
     },
     {
       "name": "N. Marshall",
-      "status": "DOUBT",
-      "details": "N. Marshall (Doubt)"
+      "status": "OUT",
+      "details": "N. Marshall (Out)"
     },
     {
       "name": "C. Martin",
-      "status": "DOUBT",
-      "details": "C. Martin (Doubt)"
+      "status": "OUT",
+      "details": "C. Martin (Out)"
     },
     {
       "name": "P. Washington",
-      "status": "DOUBT",
-      "details": "P. Washington (Doubt)"
+      "status": "OUT",
+      "details": "P. Washington (Out)"
     },
     {
       "name": "B. Williams",
-      "status": "DOUBT",
-      "details": "B. Williams (Doubt)"
+      "status": "OUT",
+      "details": "B. Williams (Out)"
     }
   ],
   "MEM": [
@@ -1267,16 +1262,6 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "M. Thybulle",
-      "status": "PROB",
-      "details": "M. Thybulle (Prob)"
-    },
-    {
-      "name": "V. Krejci",
-      "status": "QUES",
-      "details": "V. Krejci (Ques)"
-    },
-    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
@@ -1289,27 +1274,12 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "M. Thybulle",
-      "status": "PROB",
-      "details": "M. Thybulle (Prob)"
-    },
-    {
-      "name": "V. Krejci",
-      "status": "QUES",
-      "details": "V. Krejci (Ques)"
-    },
-    {
       "name": "J. Grant",
       "status": "OUT",
       "details": "J. Grant (Out)"
     }
   ],
   "DEN": [
-    {
-      "name": "N. Jokic",
-      "status": "QUES",
-      "details": "N. Jokic (Ques)"
-    },
     {
       "name": "C. Braun",
       "status": "OUT",
@@ -1346,11 +1316,6 @@
       "details": "P. Watson (Out)"
     },
     {
-      "name": "S. Castle",
-      "status": "QUES",
-      "details": "S. Castle (Ques)"
-    },
-    {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
@@ -1373,11 +1338,6 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "S. Castle",
-      "status": "QUES",
-      "details": "S. Castle (Ques)"
-    },
-    {
       "name": "L. Kornet",
       "status": "OUT",
       "details": "L. Kornet (Out)"
@@ -1389,31 +1349,6 @@
     }
   ],
   "PHX": [
-    {
-      "name": "C. Gillespie",
-      "status": "QUES",
-      "details": "C. Gillespie (Ques)"
-    },
-    {
-      "name": "J. Goodwin",
-      "status": "QUES",
-      "details": "J. Goodwin (Ques)"
-    },
-    {
-      "name": "J. Green",
-      "status": "QUES",
-      "details": "J. Green (Ques)"
-    },
-    {
-      "name": "H. Highsmith",
-      "status": "QUES",
-      "details": "H. Highsmith (Ques)"
-    },
-    {
-      "name": "M. Williams",
-      "status": "QUES",
-      "details": "M. Williams (Ques)"
-    },
     {
       "name": "G. Allen",
       "status": "OUT",
@@ -1430,9 +1365,29 @@
       "details": "D. Brooks (Out)"
     },
     {
+      "name": "C. Gillespie",
+      "status": "OUT",
+      "details": "C. Gillespie (Out)"
+    },
+    {
+      "name": "J. Goodwin",
+      "status": "OUT",
+      "details": "J. Goodwin (Out)"
+    },
+    {
+      "name": "J. Green",
+      "status": "OUT",
+      "details": "J. Green (Out)"
+    },
+    {
       "name": "R. O'Neale",
       "status": "OUT",
       "details": "R. O'Neale (Out)"
+    },
+    {
+      "name": "M. Williams",
+      "status": "OUT",
+      "details": "M. Williams (Out)"
     },
     {
       "name": "T. Sorber",
