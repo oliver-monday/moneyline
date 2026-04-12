@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-12",
-  "built_at_utc": "2026-04-12T18:43:48Z",
+  "built_at_utc": "2026-04-12T19:41:30Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -397,18 +397,18 @@
     },
     {
       "name": "S. Fontecchio",
-      "status": "QUES",
-      "details": "S. Fontecchio (Ques)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
+      "status": "OUT",
+      "details": "S. Fontecchio (Out)"
     },
     {
       "name": "N. Jovic",
       "status": "OUT",
       "details": "N. Jovic (Out)"
+    },
+    {
+      "name": "P. Larsson",
+      "status": "OUT",
+      "details": "P. Larsson (Out)"
     },
     {
       "name": "Dru Smith",
@@ -419,18 +419,18 @@
   "MIA": [
     {
       "name": "S. Fontecchio",
-      "status": "QUES",
-      "details": "S. Fontecchio (Ques)"
-    },
-    {
-      "name": "N. Powell",
-      "status": "QUES",
-      "details": "N. Powell (Ques)"
+      "status": "OUT",
+      "details": "S. Fontecchio (Out)"
     },
     {
       "name": "N. Jovic",
       "status": "OUT",
       "details": "N. Jovic (Out)"
+    },
+    {
+      "name": "P. Larsson",
+      "status": "OUT",
+      "details": "P. Larsson (Out)"
     },
     {
       "name": "Dru Smith",

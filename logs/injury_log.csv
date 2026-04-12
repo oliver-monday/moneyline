@@ -11305,6 +11305,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-12,WAS,A. Gill,QUES,A. Gill (Ques),rotowire
 2026-04-12,CHA,C. White,PROB,C. White (Prob),rotowire
 2026-04-12,BKN,O. Agbaji,PROB,O. Agbaji (Prob),rotowire
+2026-04-12,ATL,N. Powell,QUES,N. Powell (Ques),rotowire
+2026-04-12,MIA,N. Powell,QUES,N. Powell (Ques),rotowire
 2026-04-12,ORL,J. Howard,QUES,J. Howard (Ques),rotowire
 2026-04-12,ORL,J. Isaac,QUES,J. Isaac (Ques),rotowire
 2026-04-12,ORL,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
@@ -11381,13 +11383,13 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-12,ATL,C. McCollum,OUT,C. McCollum (Out),rotowire
 2026-04-12,ATL,O. Okongwu,OUT,O. Okongwu (Out),rotowire
 2026-04-12,ATL,G. Vincent,OUT,G. Vincent (Out),rotowire
-2026-04-12,ATL,S. Fontecchio,QUES,S. Fontecchio (Ques),rotowire
-2026-04-12,ATL,N. Powell,QUES,N. Powell (Ques),rotowire
+2026-04-12,ATL,S. Fontecchio,OUT,S. Fontecchio (Out),rotowire
 2026-04-12,ATL,N. Jovic,OUT,N. Jovic (Out),rotowire
+2026-04-12,ATL,P. Larsson,OUT,P. Larsson (Out),rotowire
 2026-04-12,ATL,Dru Smith,OUT,Dru Smith (Out),rotowire
-2026-04-12,MIA,S. Fontecchio,QUES,S. Fontecchio (Ques),rotowire
-2026-04-12,MIA,N. Powell,QUES,N. Powell (Ques),rotowire
+2026-04-12,MIA,S. Fontecchio,OUT,S. Fontecchio (Out),rotowire
 2026-04-12,MIA,N. Jovic,OUT,N. Jovic (Out),rotowire
+2026-04-12,MIA,P. Larsson,OUT,P. Larsson (Out),rotowire
 2026-04-12,MIA,Dru Smith,OUT,Dru Smith (Out),rotowire
 2026-04-12,CHA,PJ Hall,OFS,PJ Hall (OFS),rotowire
 2026-04-12,CHA,OG Anunoby,OUT,OG Anunoby (Out),rotowire
