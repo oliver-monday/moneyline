@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-12",
-  "built_at_utc": "2026-04-12T20:34:03Z",
+  "built_at_utc": "2026-04-12T21:21:36Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -247,16 +247,6 @@
       "details": "J. Duren (Out)"
     },
     {
-      "name": "J. Walker",
-      "status": "QUES",
-      "details": "J. Walker (Ques)"
-    },
-    {
-      "name": "K. Brown",
-      "status": "QUES",
-      "details": "K. Brown (Ques)"
-    },
-    {
       "name": "J. Furphy",
       "status": "OFS",
       "details": "J. Furphy (OFS)"
@@ -270,11 +260,6 @@
       "name": "I. Zubac",
       "status": "OFS",
       "details": "I. Zubac (OFS)"
-    },
-    {
-      "name": "B. Sheppard",
-      "status": "QUES",
-      "details": "B. Sheppard (Ques)"
     },
     {
       "name": "T. McConnell",
@@ -292,9 +277,19 @@
       "details": "A. Nesmith (Out)"
     },
     {
+      "name": "B. Sheppard",
+      "status": "OUT",
+      "details": "B. Sheppard (Out)"
+    },
+    {
       "name": "P. Siakam",
       "status": "OUT",
       "details": "P. Siakam (Out)"
+    },
+    {
+      "name": "J. Walker",
+      "status": "OUT",
+      "details": "J. Walker (Out)"
     }
   ],
   "IND": [
@@ -314,21 +309,6 @@
       "details": "I. Zubac (OFS)"
     },
     {
-      "name": "K. Brown",
-      "status": "QUES",
-      "details": "K. Brown (Ques)"
-    },
-    {
-      "name": "B. Sheppard",
-      "status": "QUES",
-      "details": "B. Sheppard (Ques)"
-    },
-    {
-      "name": "J. Walker",
-      "status": "QUES",
-      "details": "J. Walker (Ques)"
-    },
-    {
       "name": "T. McConnell",
       "status": "OUT",
       "details": "T. McConnell (Out)"
@@ -344,17 +324,22 @@
       "details": "A. Nesmith (Out)"
     },
     {
+      "name": "B. Sheppard",
+      "status": "OUT",
+      "details": "B. Sheppard (Out)"
+    },
+    {
       "name": "P. Siakam",
       "status": "OUT",
       "details": "P. Siakam (Out)"
+    },
+    {
+      "name": "J. Walker",
+      "status": "OUT",
+      "details": "J. Walker (Out)"
     }
   ],
   "ATL": [
-    {
-      "name": "M. Gueye",
-      "status": "QUES",
-      "details": "M. Gueye (Ques)"
-    },
     {
       "name": "N. Alexander-Walker",
       "status": "OUT",
@@ -524,24 +509,24 @@
       "details": "K. Porter (OFS)"
     },
     {
-      "name": "G. Harris",
-      "status": "QUES",
-      "details": "G. Harris (Ques)"
-    },
-    {
-      "name": "P. Nance",
-      "status": "QUES",
-      "details": "P. Nance (Ques)"
-    },
-    {
       "name": "G. Antetokounmpo",
       "status": "OUT",
       "details": "G. Antetokounmpo (Out)"
     },
     {
+      "name": "G. Harris",
+      "status": "OUT",
+      "details": "G. Harris (Out)"
+    },
+    {
       "name": "Kyle Kuzma",
       "status": "OUT",
       "details": "Kyle Kuzma (Out)"
+    },
+    {
+      "name": "Pete Nance",
+      "status": "OUT",
+      "details": "Pete Nance (Out)"
     },
     {
       "name": "B. Portis",
@@ -608,11 +593,6 @@
       "details": "Danny Wolf (OFS)"
     },
     {
-      "name": "N. Traore",
-      "status": "DOUBT",
-      "details": "N. Traore (Doubt)"
-    },
-    {
       "name": "N. Claxton",
       "status": "OUT",
       "details": "N. Claxton (Out)"
@@ -631,6 +611,11 @@
       "name": "J. Minott",
       "status": "OUT",
       "details": "J. Minott (Out)"
+    },
+    {
+      "name": "N. Traore",
+      "status": "OUT",
+      "details": "N. Traore (Out)"
     },
     {
       "name": "Z. Williams",
