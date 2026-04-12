@@ -1,17 +1,17 @@
 {
   "asof_date": "2026-04-12",
-  "built_at_utc": "2026-04-12T19:41:30Z",
+  "built_at_utc": "2026-04-12T20:34:03Z",
   "source": "rotowire",
   "ORL": [
     {
       "name": "J. Howard",
-      "status": "QUES",
-      "details": "J. Howard (Ques)"
+      "status": "OUT",
+      "details": "J. Howard (Out)"
     },
     {
       "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
     },
     {
       "name": "Probable Pitchers",
@@ -19,29 +19,24 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "H. Gonzalez",
-      "status": "QUES",
-      "details": "H. Gonzalez (Ques)"
-    },
-    {
-      "name": "S. Hauser",
-      "status": "DOUBT",
-      "details": "S. Hauser (Doubt)"
-    },
-    {
-      "name": "P. Pritchard",
-      "status": "DOUBT",
-      "details": "P. Pritchard (Doubt)"
-    },
-    {
-      "name": "N. Vucevic",
-      "status": "DOUBT",
-      "details": "N. Vucevic (Doubt)"
-    },
-    {
       "name": "J. Brown",
       "status": "OUT",
       "details": "J. Brown (Out)"
+    },
+    {
+      "name": "H. Gonzalez",
+      "status": "OUT",
+      "details": "H. Gonzalez (Out)"
+    },
+    {
+      "name": "Sam Hauser",
+      "status": "OUT",
+      "details": "Sam Hauser (Out)"
+    },
+    {
+      "name": "P. Pritchard",
+      "status": "OUT",
+      "details": "P. Pritchard (Out)"
     },
     {
       "name": "N. Queta",
@@ -52,6 +47,11 @@
       "name": "J. Tatum",
       "status": "OUT",
       "details": "J. Tatum (Out)"
+    },
+    {
+      "name": "N. Vucevic",
+      "status": "OUT",
+      "details": "N. Vucevic (Out)"
     },
     {
       "name": "D. White",
@@ -61,29 +61,24 @@
   ],
   "BOS": [
     {
-      "name": "H. Gonzalez",
-      "status": "QUES",
-      "details": "H. Gonzalez (Ques)"
-    },
-    {
-      "name": "S. Hauser",
-      "status": "DOUBT",
-      "details": "S. Hauser (Doubt)"
-    },
-    {
-      "name": "P. Pritchard",
-      "status": "DOUBT",
-      "details": "P. Pritchard (Doubt)"
-    },
-    {
-      "name": "N. Vucevic",
-      "status": "DOUBT",
-      "details": "N. Vucevic (Doubt)"
-    },
-    {
       "name": "J. Brown",
       "status": "OUT",
       "details": "J. Brown (Out)"
+    },
+    {
+      "name": "H. Gonzalez",
+      "status": "OUT",
+      "details": "H. Gonzalez (Out)"
+    },
+    {
+      "name": "Sam Hauser",
+      "status": "OUT",
+      "details": "Sam Hauser (Out)"
+    },
+    {
+      "name": "P. Pritchard",
+      "status": "OUT",
+      "details": "P. Pritchard (Out)"
     },
     {
       "name": "N. Queta",
@@ -94,6 +89,11 @@
       "name": "J. Tatum",
       "status": "OUT",
       "details": "J. Tatum (Out)"
+    },
+    {
+      "name": "N. Vucevic",
+      "status": "OUT",
+      "details": "N. Vucevic (Out)"
     },
     {
       "name": "D. White",
@@ -638,42 +638,12 @@
       "details": "Z. Williams (Out)"
     },
     {
-      "name": "R. Barrett",
-      "status": "QUES",
-      "details": "R. Barrett (Ques)"
-    },
-    {
-      "name": "T. Jackson-Davis",
-      "status": "QUES",
-      "details": "T. Jackson-Davis (Ques)"
-    },
-    {
-      "name": "C. Murray-Boyles",
-      "status": "QUES",
-      "details": "C. Murray-Boyles (Ques)"
-    },
-    {
       "name": "C. Hepburn",
       "status": "OUT",
       "details": "C. Hepburn (Out)"
     }
   ],
   "TOR": [
-    {
-      "name": "R. Barrett",
-      "status": "QUES",
-      "details": "R. Barrett (Ques)"
-    },
-    {
-      "name": "T. Jackson-Davis",
-      "status": "QUES",
-      "details": "T. Jackson-Davis (Ques)"
-    },
-    {
-      "name": "C. Murray-Boyles",
-      "status": "QUES",
-      "details": "C. Murray-Boyles (Ques)"
-    },
     {
       "name": "C. Hepburn",
       "status": "OUT",
@@ -1000,11 +970,6 @@
       "details": "Q. Post (Out)"
     },
     {
-      "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
-    },
-    {
       "name": "B. Beal",
       "status": "OFS",
       "details": "B. Beal (OFS)"
@@ -1018,6 +983,11 @@
       "name": "I. Jackson",
       "status": "OUT",
       "details": "I. Jackson (Out)"
+    },
+    {
+      "name": "K. Leonard",
+      "status": "OUT",
+      "details": "K. Leonard (Out)"
     }
   ],
   "LAC": [
@@ -1032,14 +1002,14 @@
       "details": "Y. Niederhauser (OFS)"
     },
     {
-      "name": "K. Leonard",
-      "status": "QUES",
-      "details": "K. Leonard (Ques)"
-    },
-    {
       "name": "I. Jackson",
       "status": "OUT",
       "details": "I. Jackson (Out)"
+    },
+    {
+      "name": "K. Leonard",
+      "status": "OUT",
+      "details": "K. Leonard (Out)"
     }
   ],
   "UTA": [
@@ -1089,14 +1059,14 @@
       "details": "L. James (Ques)"
     },
     {
-      "name": "J. Hayes",
-      "status": "QUES",
-      "details": "J. Hayes (Ques)"
-    },
-    {
       "name": "L. Doncic",
       "status": "OUT",
       "details": "L. Doncic (Out)"
+    },
+    {
+      "name": "J. Hayes",
+      "status": "OUT",
+      "details": "J. Hayes (Out)"
     },
     {
       "name": "A. Reaves",
@@ -1106,11 +1076,6 @@
   ],
   "LAL": [
     {
-      "name": "J. Hayes",
-      "status": "QUES",
-      "details": "J. Hayes (Ques)"
-    },
-    {
       "name": "L. James",
       "status": "QUES",
       "details": "L. James (Ques)"
@@ -1119,6 +1084,11 @@
       "name": "L. Doncic",
       "status": "OUT",
       "details": "L. Doncic (Out)"
+    },
+    {
+      "name": "J. Hayes",
+      "status": "OUT",
+      "details": "J. Hayes (Out)"
     },
     {
       "name": "A. Reaves",
