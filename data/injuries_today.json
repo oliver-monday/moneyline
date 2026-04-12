@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-12",
-  "built_at_utc": "2026-04-12T15:03:24Z",
+  "built_at_utc": "2026-04-12T17:25:03Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -17,6 +17,11 @@
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "H. Gonzalez",
+      "status": "QUES",
+      "details": "H. Gonzalez (Ques)"
     },
     {
       "name": "S. Hauser",
@@ -55,6 +60,11 @@
     }
   ],
   "BOS": [
+    {
+      "name": "H. Gonzalez",
+      "status": "QUES",
+      "details": "H. Gonzalez (Ques)"
+    },
     {
       "name": "S. Hauser",
       "status": "DOUBT",
@@ -101,11 +111,6 @@
       "name": "C. Whitmore",
       "status": "OFS",
       "details": "C. Whitmore (OFS)"
-    },
-    {
-      "name": "A. Gill",
-      "status": "QUES",
-      "details": "A. Gill (Ques)"
     },
     {
       "name": "B. Coulibaly",
@@ -346,34 +351,29 @@
   ],
   "ATL": [
     {
-      "name": "N. Alexander-Walker",
+      "name": "M. Gueye",
       "status": "QUES",
-      "details": "N. Alexander-Walker (Ques)"
+      "details": "M. Gueye (Ques)"
+    },
+    {
+      "name": "N. Alexander-Walker",
+      "status": "OUT",
+      "details": "N. Alexander-Walker (Out)"
     },
     {
       "name": "D. Daniels",
-      "status": "QUES",
-      "details": "D. Daniels (Ques)"
+      "status": "OUT",
+      "details": "D. Daniels (Out)"
     },
     {
       "name": "J. Johnson",
-      "status": "QUES",
-      "details": "J. Johnson (Ques)"
+      "status": "OUT",
+      "details": "J. Johnson (Out)"
     },
     {
       "name": "J. Kuminga",
-      "status": "QUES",
-      "details": "J. Kuminga (Ques)"
-    },
-    {
-      "name": "C. McCollum",
-      "status": "QUES",
-      "details": "C. McCollum (Ques)"
-    },
-    {
-      "name": "O. Okongwu",
-      "status": "QUES",
-      "details": "O. Okongwu (Ques)"
+      "status": "OUT",
+      "details": "J. Kuminga (Out)"
     },
     {
       "name": "J. Landale",
@@ -381,9 +381,24 @@
       "details": "J. Landale (Out)"
     },
     {
+      "name": "C. McCollum",
+      "status": "OUT",
+      "details": "C. McCollum (Out)"
+    },
+    {
+      "name": "O. Okongwu",
+      "status": "OUT",
+      "details": "O. Okongwu (Out)"
+    },
+    {
+      "name": "G. Vincent",
+      "status": "OUT",
+      "details": "G. Vincent (Out)"
+    },
+    {
       "name": "S. Fontecchio",
-      "status": "PROB",
-      "details": "S. Fontecchio (Prob)"
+      "status": "QUES",
+      "details": "S. Fontecchio (Ques)"
     },
     {
       "name": "N. Powell",
@@ -404,8 +419,8 @@
   "MIA": [
     {
       "name": "S. Fontecchio",
-      "status": "PROB",
-      "details": "S. Fontecchio (Prob)"
+      "status": "QUES",
+      "details": "S. Fontecchio (Ques)"
     },
     {
       "name": "N. Powell",
@@ -428,11 +443,6 @@
       "name": "PJ Hall",
       "status": "OFS",
       "details": "PJ Hall (OFS)"
-    },
-    {
-      "name": "C. White",
-      "status": "PROB",
-      "details": "C. White (Prob)"
     },
     {
       "name": "OG Anunoby",
@@ -458,6 +468,11 @@
       "name": "M. Robinson",
       "status": "OUT",
       "details": "M. Robinson (Out)"
+    },
+    {
+      "name": "L. Shamet",
+      "status": "OUT",
+      "details": "L. Shamet (Out)"
     },
     {
       "name": "K. Towns",
@@ -490,6 +505,11 @@
       "name": "M. Robinson",
       "status": "OUT",
       "details": "M. Robinson (Out)"
+    },
+    {
+      "name": "L. Shamet",
+      "status": "OUT",
+      "details": "L. Shamet (Out)"
     },
     {
       "name": "K. Towns",
@@ -588,14 +608,9 @@
       "details": "Danny Wolf (OFS)"
     },
     {
-      "name": "O. Agbaji",
-      "status": "PROB",
-      "details": "O. Agbaji (Prob)"
-    },
-    {
       "name": "N. Traore",
-      "status": "QUES",
-      "details": "N. Traore (Ques)"
+      "status": "DOUBT",
+      "details": "N. Traore (Doubt)"
     },
     {
       "name": "N. Claxton",
