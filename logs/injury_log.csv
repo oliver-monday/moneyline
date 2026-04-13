@@ -11332,6 +11332,12 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-12,DEN,S. Castle,QUES,S. Castle (Ques),rotowire
 2026-04-12,SAS,S. Castle,QUES,S. Castle (Ques),rotowire
 2026-04-12,PHX,H. Highsmith,QUES,H. Highsmith (Ques),rotowire
+2026-04-12,MEM,J. Small,PROB,J. Small (Prob),rotowire
+2026-04-12,MEM,A. Bal,QUES,A. Bal (Ques),rotowire
+2026-04-12,MEM,O. Prosper,QUES,O. Prosper (Ques),rotowire
+2026-04-12,GSW,W. Richard,QUES,W. Richard (Ques),rotowire
+2026-04-12,UTA,L. James,QUES,L. James (Ques),rotowire
+2026-04-12,LAL,L. James,QUES,L. James (Ques),rotowire
 2026-04-12,ORL,J. Howard,OUT,J. Howard (Out),rotowire
 2026-04-12,ORL,J. Isaac,OUT,J. Isaac (Out),rotowire
 2026-04-12,ORL,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
@@ -11464,6 +11470,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-12,CHI,G. Yabusele,OFS,G. Yabusele (OFS),rotowire
 2026-04-12,CHI,M. Buzelis,OUT,M. Buzelis (Out),rotowire
 2026-04-12,CHI,I. Okoro,OUT,I. Okoro (Out),rotowire
+2026-04-12,CHI,C. Flagg,QUES,C. Flagg (Ques),rotowire
 2026-04-12,CHI,K. Irving,OFS,K. Irving (OFS),rotowire
 2026-04-12,CHI,D. Lively,OFS,D. Lively (OFS),rotowire
 2026-04-12,CHI,M. Bagley,OUT,M. Bagley (Out),rotowire
@@ -11472,6 +11479,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-12,CHI,C. Martin,OUT,C. Martin (Out),rotowire
 2026-04-12,CHI,P. Washington,OUT,P. Washington (Out),rotowire
 2026-04-12,CHI,B. Williams,OUT,B. Williams (Out),rotowire
+2026-04-12,DAL,C. Flagg,QUES,C. Flagg (Ques),rotowire
 2026-04-12,DAL,K. Irving,OFS,K. Irving (OFS),rotowire
 2026-04-12,DAL,D. Lively,OFS,D. Lively (OFS),rotowire
 2026-04-12,DAL,M. Bagley,OUT,M. Bagley (Out),rotowire
@@ -11487,10 +11495,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-12,MEM,Ja Morant,OFS,Ja Morant (OFS),rotowire
 2026-04-12,MEM,S. Pippen,OFS,S. Pippen (OFS),rotowire
 2026-04-12,MEM,J. Wells,OFS,J. Wells (OFS),rotowire
-2026-04-12,MEM,J. Small,PROB,J. Small (Prob),rotowire
-2026-04-12,MEM,A. Bal,QUES,A. Bal (Ques),rotowire
-2026-04-12,MEM,W. Clayton,QUES,W. Clayton (Ques),rotowire
-2026-04-12,MEM,O. Prosper,QUES,O. Prosper (Ques),rotowire
+2026-04-12,MEM,Adama Bal,OUT,Adama Bal (Out),rotowire
+2026-04-12,MEM,W. Clayton,OUT,W. Clayton (Out),rotowire
 2026-04-12,MEM,C. Coward,OUT,C. Coward (Out),rotowire
 2026-04-12,MEM,T. Hendricks,OUT,T. Hendricks (Out),rotowire
 2026-04-12,MEM,GG Jackson,OUT,GG Jackson (Out),rotowire
@@ -11510,7 +11516,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-12,HOU,F. VanVleet,OUT,F. VanVleet (Out),rotowire
 2026-04-12,GSW,J. Butler,OFS,J. Butler (OFS),rotowire
 2026-04-12,GSW,M. Moody,OFS,M. Moody (OFS),rotowire
-2026-04-12,GSW,W. Richard,QUES,W. Richard (Ques),rotowire
 2026-04-12,GSW,LJ Cryer,OUT,LJ Cryer (Out),rotowire
 2026-04-12,GSW,D. Green,OUT,D. Green (Out),rotowire
 2026-04-12,GSW,Q. Post,OUT,Q. Post (Out),rotowire
@@ -11530,11 +11535,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-12,UTA,K. George,OUT,K. George (Out),rotowire
 2026-04-12,UTA,E. Harkless,OUT,E. Harkless (Out),rotowire
 2026-04-12,UTA,L. Markkanen,OUT,L. Markkanen (Out),rotowire
-2026-04-12,UTA,L. James,QUES,L. James (Ques),rotowire
 2026-04-12,UTA,L. Doncic,OUT,L. Doncic (Out),rotowire
 2026-04-12,UTA,J. Hayes,OUT,J. Hayes (Out),rotowire
 2026-04-12,UTA,A. Reaves,OUT,A. Reaves (Out),rotowire
-2026-04-12,LAL,L. James,QUES,L. James (Ques),rotowire
 2026-04-12,LAL,L. Doncic,OUT,L. Doncic (Out),rotowire
 2026-04-12,LAL,J. Hayes,OUT,J. Hayes (Out),rotowire
 2026-04-12,LAL,A. Reaves,OUT,A. Reaves (Out),rotowire

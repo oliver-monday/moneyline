@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-12",
-  "built_at_utc": "2026-04-12T23:38:17Z",
+  "built_at_utc": "2026-04-13T01:49:38Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -692,6 +692,11 @@
       "details": "I. Okoro (Out)"
     },
     {
+      "name": "C. Flagg",
+      "status": "QUES",
+      "details": "C. Flagg (Ques)"
+    },
+    {
       "name": "K. Irving",
       "status": "OFS",
       "details": "K. Irving (OFS)"
@@ -733,6 +738,11 @@
     }
   ],
   "DAL": [
+    {
+      "name": "C. Flagg",
+      "status": "QUES",
+      "details": "C. Flagg (Ques)"
+    },
     {
       "name": "K. Irving",
       "status": "OFS",
@@ -811,24 +821,14 @@
       "details": "J. Wells (OFS)"
     },
     {
-      "name": "J. Small",
-      "status": "PROB",
-      "details": "J. Small (Prob)"
-    },
-    {
-      "name": "A. Bal",
-      "status": "QUES",
-      "details": "A. Bal (Ques)"
+      "name": "Adama Bal",
+      "status": "OUT",
+      "details": "Adama Bal (Out)"
     },
     {
       "name": "W. Clayton",
-      "status": "QUES",
-      "details": "W. Clayton (Ques)"
-    },
-    {
-      "name": "O. Prosper",
-      "status": "QUES",
-      "details": "O. Prosper (Ques)"
+      "status": "OUT",
+      "details": "W. Clayton (Out)"
     },
     {
       "name": "C. Coward",
@@ -930,11 +930,6 @@
       "details": "M. Moody (OFS)"
     },
     {
-      "name": "W. Richard",
-      "status": "QUES",
-      "details": "W. Richard (Ques)"
-    },
-    {
       "name": "LJ Cryer",
       "status": "OUT",
       "details": "LJ Cryer (Out)"
@@ -1034,11 +1029,6 @@
       "details": "L. Markkanen (Out)"
     },
     {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
-    },
-    {
       "name": "L. Doncic",
       "status": "OUT",
       "details": "L. Doncic (Out)"
@@ -1055,11 +1045,6 @@
     }
   ],
   "LAL": [
-    {
-      "name": "L. James",
-      "status": "QUES",
-      "details": "L. James (Ques)"
-    },
     {
       "name": "L. Doncic",
       "status": "OUT",
