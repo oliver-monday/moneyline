@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-12",
-  "built_at_utc": "2026-04-13T01:49:38Z",
+  "built_at_utc": "2026-04-13T04:14:57Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -342,23 +342,28 @@
   "ATL": [
     {
       "name": "N. Alexander-Walker",
-      "status": "OUT",
-      "details": "N. Alexander-Walker (Out)"
+      "status": "QUES",
+      "details": "N. Alexander-Walker (Ques)"
     },
     {
       "name": "D. Daniels",
-      "status": "OUT",
-      "details": "D. Daniels (Out)"
-    },
-    {
-      "name": "J. Johnson",
-      "status": "OUT",
-      "details": "J. Johnson (Out)"
+      "status": "QUES",
+      "details": "D. Daniels (Ques)"
     },
     {
       "name": "J. Kuminga",
-      "status": "OUT",
-      "details": "J. Kuminga (Out)"
+      "status": "QUES",
+      "details": "J. Kuminga (Ques)"
+    },
+    {
+      "name": "O. Okongwu",
+      "status": "QUES",
+      "details": "O. Okongwu (Ques)"
+    },
+    {
+      "name": "G. Vincent",
+      "status": "QUES",
+      "details": "G. Vincent (Ques)"
     },
     {
       "name": "J. Landale",
@@ -371,19 +376,9 @@
       "details": "C. McCollum (Out)"
     },
     {
-      "name": "O. Okongwu",
-      "status": "OUT",
-      "details": "O. Okongwu (Out)"
-    },
-    {
-      "name": "G. Vincent",
-      "status": "OUT",
-      "details": "G. Vincent (Out)"
-    },
-    {
       "name": "S. Fontecchio",
-      "status": "OUT",
-      "details": "S. Fontecchio (Out)"
+      "status": "QUES",
+      "details": "S. Fontecchio (Ques)"
     },
     {
       "name": "N. Jovic",
@@ -404,8 +399,8 @@
   "MIA": [
     {
       "name": "S. Fontecchio",
-      "status": "OUT",
-      "details": "S. Fontecchio (Out)"
+      "status": "QUES",
+      "details": "S. Fontecchio (Ques)"
     },
     {
       "name": "N. Jovic",
@@ -430,6 +425,11 @@
       "details": "PJ Hall (OFS)"
     },
     {
+      "name": "L. Shamet",
+      "status": "QUES",
+      "details": "L. Shamet (Ques)"
+    },
+    {
       "name": "OG Anunoby",
       "status": "OUT",
       "details": "OG Anunoby (Out)"
@@ -453,11 +453,6 @@
       "name": "M. Robinson",
       "status": "OUT",
       "details": "M. Robinson (Out)"
-    },
-    {
-      "name": "L. Shamet",
-      "status": "OUT",
-      "details": "L. Shamet (Out)"
     },
     {
       "name": "K. Towns",
@@ -467,6 +462,11 @@
   ],
   "NYK": [
     {
+      "name": "L. Shamet",
+      "status": "QUES",
+      "details": "L. Shamet (Ques)"
+    },
+    {
       "name": "OG Anunoby",
       "status": "OUT",
       "details": "OG Anunoby (Out)"
@@ -490,11 +490,6 @@
       "name": "M. Robinson",
       "status": "OUT",
       "details": "M. Robinson (Out)"
-    },
-    {
-      "name": "L. Shamet",
-      "status": "OUT",
-      "details": "L. Shamet (Out)"
     },
     {
       "name": "K. Towns",
@@ -1301,6 +1296,11 @@
       "details": "P. Watson (Out)"
     },
     {
+      "name": "D. Harper",
+      "status": "QUES",
+      "details": "D. Harper (Ques)"
+    },
+    {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
@@ -1317,6 +1317,11 @@
     }
   ],
   "SAS": [
+    {
+      "name": "D. Harper",
+      "status": "QUES",
+      "details": "D. Harper (Ques)"
+    },
     {
       "name": "D. Jones Garcia",
       "status": "OFS",
