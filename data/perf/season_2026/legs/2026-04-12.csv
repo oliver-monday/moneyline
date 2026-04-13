@@ -1,0 +1,6 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-12,2026,Nikola Jokic,DEN,SA,reb,12,MISSED,8,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Nikola Jokic,DEN,SA,ast,10,MISSED,1,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Anthony Davis,DAL,CHI,ast,2,,,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,LeBron James,LAL,UTAH,reb,6,MISSED,4,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,LeBron James,LAL,UTAH,ast,6,HIT,6,,targets_snapshot_2026-04-12.json
