@@ -1,6 +1,19 @@
 date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
-2026-04-12,2026,Nikola Jokic,DEN,SA,reb,12,MISSED,8,,targets_snapshot_2026-04-12.json
-2026-04-12,2026,Nikola Jokic,DEN,SA,ast,10,MISSED,1,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Jamal Murray,DEN,SA,3pt,3,,,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Kevin Durant,HOU,MEM,ast,4,,,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Kevin Durant,HOU,MEM,3pt,2,,,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Jabari Smith Jr.,HOU,MEM,pts,15,,,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Jabari Smith Jr.,HOU,MEM,3pt,2,,,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Deni Avdija,POR,SAC,ast,6,HIT,10,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Devin Booker,PHX,OKC,ast,6,,,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Devin Booker,PHX,OKC,3pt,2,,,,targets_snapshot_2026-04-12.json
 2026-04-12,2026,Anthony Davis,DAL,CHI,ast,2,,,,targets_snapshot_2026-04-12.json
-2026-04-12,2026,LeBron James,LAL,UTAH,reb,6,MISSED,4,,targets_snapshot_2026-04-12.json
-2026-04-12,2026,LeBron James,LAL,UTAH,ast,6,HIT,6,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Jrue Holiday,POR,SAC,reb,4,HIT,7,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Jalen Duren,DET,IND,ast,2,,,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Matas Buzelis,CHI,DAL,reb,6,,,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Kawhi Leonard,LAC,GS,reb,6,,,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Stephon Castle,SA,DEN,pts,15,MISSED,10,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Stephon Castle,SA,DEN,ast,8,HIT,9,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Stephon Castle,SA,DEN,3pt,1,HIT,2,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Devin Vassell,SA,DEN,reb,4,HIT,4,,targets_snapshot_2026-04-12.json
+2026-04-12,2026,Devin Vassell,SA,DEN,ast,2,HIT,2,,targets_snapshot_2026-04-12.json
