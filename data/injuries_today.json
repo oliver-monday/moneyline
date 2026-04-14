@@ -1,5 +1,63 @@
 {
-  "asof_date": "2026-04-13",
-  "built_at_utc": "2026-04-14T04:37:09Z",
-  "source": "rotowire"
+  "asof_date": "2026-04-14",
+  "built_at_utc": "2026-04-14T09:52:06Z",
+  "source": "rotowire",
+  "MIA": [
+    {
+      "name": "P. Larsson",
+      "status": "QUES",
+      "details": "P. Larsson (Ques)"
+    },
+    {
+      "name": "N. Jovic",
+      "status": "OUT",
+      "details": "N. Jovic (Out)"
+    },
+    {
+      "name": "Dru Smith",
+      "status": "OUT",
+      "details": "Dru Smith (Out)"
+    },
+    {
+      "name": "Probable Pitchers",
+      "status": "PROB",
+      "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "PJ Hall",
+      "status": "OFS",
+      "details": "PJ Hall (OFS)"
+    }
+  ],
+  "CHA": [
+    {
+      "name": "PJ Hall",
+      "status": "OFS",
+      "details": "PJ Hall (OFS)"
+    }
+  ],
+  "POR": [
+    {
+      "name": "D. Lillard",
+      "status": "OFS",
+      "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "J. Grant",
+      "status": "QUES",
+      "details": "J. Grant (Ques)"
+    },
+    {
+      "name": "G. Allen",
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
+    }
+  ],
+  "PHX": [
+    {
+      "name": "G. Allen",
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
+    }
+  ]
 }
