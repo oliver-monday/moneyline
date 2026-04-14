@@ -1,13 +1,8 @@
 {
   "asof_date": "2026-04-14",
-  "built_at_utc": "2026-04-14T15:47:35Z",
+  "built_at_utc": "2026-04-14T17:56:03Z",
   "source": "rotowire",
   "MIA": [
-    {
-      "name": "P. Larsson",
-      "status": "QUES",
-      "details": "P. Larsson (Ques)"
-    },
     {
       "name": "N. Jovic",
       "status": "OUT",
