@@ -1,22 +1,17 @@
 {
-  "asof_date": "2026-04-14",
-  "built_at_utc": "2026-04-15T04:37:09Z",
+  "asof_date": "2026-04-15",
+  "built_at_utc": "2026-04-15T09:53:07Z",
   "source": "rotowire",
-  "MIA": [
+  "ORL": [
     {
-      "name": "B. Adebayo",
-      "status": "OUT",
-      "details": "B. Adebayo (Out)"
+      "name": "J. Howard",
+      "status": "QUES",
+      "details": "J. Howard (Ques)"
     },
     {
-      "name": "N. Jovic",
-      "status": "OUT",
-      "details": "N. Jovic (Out)"
-    },
-    {
-      "name": "Dru Smith",
-      "status": "OUT",
-      "details": "Dru Smith (Out)"
+      "name": "J. Isaac",
+      "status": "QUES",
+      "details": "J. Isaac (Ques)"
     },
     {
       "name": "Probable Pitchers",
@@ -24,35 +19,90 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "PJ Hall",
-      "status": "OFS",
-      "details": "PJ Hall (OFS)"
-    }
-  ],
-  "CHA": [
-    {
-      "name": "PJ Hall",
-      "status": "OFS",
-      "details": "PJ Hall (OFS)"
-    }
-  ],
-  "POR": [
-    {
-      "name": "D. Lillard",
-      "status": "OFS",
-      "details": "D. Lillard (OFS)"
+      "name": "T. Watford",
+      "status": "PROB",
+      "details": "T. Watford (Prob)"
     },
     {
-      "name": "G. Allen",
+      "name": "J. Broome",
       "status": "OUT",
-      "details": "G. Allen (Out)"
+      "details": "J. Broome (Out)"
+    },
+    {
+      "name": "J. Embiid",
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     }
   ],
-  "PHX": [
+  "PHI": [
     {
-      "name": "G. Allen",
+      "name": "T. Watford",
+      "status": "PROB",
+      "details": "T. Watford (Prob)"
+    },
+    {
+      "name": "J. Broome",
       "status": "OUT",
-      "details": "G. Allen (Out)"
+      "details": "J. Broome (Out)"
+    },
+    {
+      "name": "J. Embiid",
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
+    }
+  ],
+  "GSW": [
+    {
+      "name": "J. Butler",
+      "status": "OFS",
+      "details": "J. Butler (OFS)"
+    },
+    {
+      "name": "LJ Cryer",
+      "status": "OFS",
+      "details": "LJ Cryer (OFS)"
+    },
+    {
+      "name": "M. Moody",
+      "status": "OFS",
+      "details": "M. Moody (OFS)"
+    },
+    {
+      "name": "Q. Post",
+      "status": "OUT",
+      "details": "Q. Post (Out)"
+    },
+    {
+      "name": "B. Beal",
+      "status": "OFS",
+      "details": "B. Beal (OFS)"
+    },
+    {
+      "name": "Y. Niederhauser",
+      "status": "OFS",
+      "details": "Y. Niederhauser (OFS)"
+    },
+    {
+      "name": "I. Jackson",
+      "status": "QUES",
+      "details": "I. Jackson (Ques)"
+    }
+  ],
+  "LAC": [
+    {
+      "name": "B. Beal",
+      "status": "OFS",
+      "details": "B. Beal (OFS)"
+    },
+    {
+      "name": "Y. Niederhauser",
+      "status": "OFS",
+      "details": "Y. Niederhauser (OFS)"
+    },
+    {
+      "name": "I. Jackson",
+      "status": "QUES",
+      "details": "I. Jackson (Ques)"
     }
   ]
 }
