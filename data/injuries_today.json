@@ -1,22 +1,17 @@
 {
   "asof_date": "2026-04-15",
-  "built_at_utc": "2026-04-15T21:39:30Z",
+  "built_at_utc": "2026-04-15T22:49:25Z",
   "source": "rotowire",
   "ORL": [
     {
       "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
     },
     {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
-    },
-    {
-      "name": "T. Watford",
-      "status": "PROB",
-      "details": "T. Watford (Prob)"
     },
     {
       "name": "J. Broome",
@@ -30,11 +25,6 @@
     }
   ],
   "PHI": [
-    {
-      "name": "T. Watford",
-      "status": "PROB",
-      "details": "T. Watford (Prob)"
-    },
     {
       "name": "J. Broome",
       "status": "OUT",
