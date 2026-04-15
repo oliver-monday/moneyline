@@ -1,0 +1,5 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-14,2026,Deni Avdija,POR,PHX,ast,6,HIT,12,,targets_snapshot_2026-04-14.json
+2026-04-14,2026,Devin Booker,PHX,POR,ast,6,MISSED,4,,targets_snapshot_2026-04-14.json
+2026-04-14,2026,Devin Booker,PHX,POR,3pt,2,MISSED,0,,targets_snapshot_2026-04-14.json
+2026-04-14,2026,Jrue Holiday,POR,PHX,reb,4,HIT,4,,targets_snapshot_2026-04-14.json

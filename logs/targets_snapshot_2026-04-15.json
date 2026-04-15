@@ -1,0 +1,23 @@
+[
+  {
+    "asof_date": "2026-04-15",
+    "player_id": "6450.0",
+    "player_name": "Kawhi Leonard",
+    "team_abbrev": "LAC",
+    "opp": "GS",
+    "game_id": "401866756",
+    "stat": "reb",
+    "threshold": 6,
+    "hits": 8,
+    "window_games": 10,
+    "hit_rate": 0.8,
+    "is_home_game": true,
+    "rest_days": 4,
+    "is_b2b": false,
+    "share_trend_pp": 0.15974306892677648,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 2.0,
+    "landmine_rate_10": 0.1,
+    "trap_risk": false
+  }
+]
