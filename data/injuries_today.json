@@ -1,8 +1,13 @@
 {
   "asof_date": "2026-04-14",
-  "built_at_utc": "2026-04-14T23:44:14Z",
+  "built_at_utc": "2026-04-15T01:27:18Z",
   "source": "rotowire",
   "MIA": [
+    {
+      "name": "B. Adebayo",
+      "status": "OUT",
+      "details": "B. Adebayo (Out)"
+    },
     {
       "name": "N. Jovic",
       "status": "OUT",
@@ -38,21 +43,16 @@
       "details": "D. Lillard (OFS)"
     },
     {
-      "name": "J. Grant",
-      "status": "QUES",
-      "details": "J. Grant (Ques)"
-    },
-    {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     }
   ],
   "PHX": [
     {
       "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
+      "status": "OUT",
+      "details": "G. Allen (Out)"
     }
   ]
 }
