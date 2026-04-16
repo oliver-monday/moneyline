@@ -1,63 +1,18 @@
 {
   "asof_date": "2026-04-15",
   "summary": {
-    "targets_total": 1,
-    "hits": 1,
+    "targets_total": 0,
+    "hits": 0,
     "misses": 0,
-    "hit_rate_pct": 100,
-    "top_targets_total": 1,
-    "top_targets_hits": 1
+    "hit_rate_pct": 0,
+    "top_targets_total": 0,
+    "top_targets_hits": 0
   },
-  "hits": [
-    {
-      "player_id": "6450.0",
-      "player_name": "Kawhi Leonard",
-      "team_abbrev": "LAC",
-      "opp": "GS",
-      "stat": "reb",
-      "threshold": 6,
-      "actual": 7,
-      "is_home_game": true,
-      "rest_days": 4,
-      "is_b2b": false,
-      "share_trend_pp": 0.6877457679821064,
-      "share_trend_dir": "FLAT",
-      "iqr_10": 2.0,
-      "landmine_rate_10": 0.0,
-      "trap_risk": false
-    }
-  ],
-  "misses": [],
+  "hits": [],
   "closest_misses": [],
   "reaches_hit": [],
-  "built_at_utc": "2026-04-16T09:51:08Z",
+  "built_at_utc": "2026-04-16T15:16:56Z",
   "snapshot_file": "targets_snapshot_2026-04-15.json",
   "preset": "baseline",
-  "top_targets": [
-    {
-      "asof_date": "2026-04-15",
-      "player_id": "6450.0",
-      "player_name": "Kawhi Leonard",
-      "team_abbrev": "LAC",
-      "opp": "GS",
-      "game_id": "401866756",
-      "stat": "reb",
-      "threshold": 6,
-      "hits": 9,
-      "window_games": 10,
-      "hit_rate": 0.9,
-      "is_home_game": true,
-      "rest_days": 4,
-      "is_b2b": false,
-      "share_trend_pp": 0.6877457679821064,
-      "share_trend_dir": "FLAT",
-      "iqr_10": 2.0,
-      "landmine_rate_10": 0.0,
-      "trap_risk": false,
-      "dnp": false,
-      "actual": 7,
-      "hit": true,
-      "delta": -1
-    }
-  ]
+  "top_targets": []
 }
