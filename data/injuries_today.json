@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-15",
-  "built_at_utc": "2026-04-16T01:48:51Z",
+  "built_at_utc": "2026-04-16T04:09:52Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -15,8 +15,8 @@
     },
     {
       "name": "J. Broome",
-      "status": "OUT",
-      "details": "J. Broome (Out)"
+      "status": "DOUBT",
+      "details": "J. Broome (Doubt)"
     },
     {
       "name": "J. Embiid",
@@ -27,8 +27,8 @@
   "PHI": [
     {
       "name": "J. Broome",
-      "status": "OUT",
-      "details": "J. Broome (Out)"
+      "status": "DOUBT",
+      "details": "J. Broome (Doubt)"
     },
     {
       "name": "J. Embiid",
