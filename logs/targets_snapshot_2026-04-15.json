@@ -8,16 +8,16 @@
     "game_id": "401866756",
     "stat": "reb",
     "threshold": 6,
-    "hits": 8,
+    "hits": 9,
     "window_games": 10,
-    "hit_rate": 0.8,
+    "hit_rate": 0.9,
     "is_home_game": true,
     "rest_days": 4,
     "is_b2b": false,
-    "share_trend_pp": 0.15974306892677648,
+    "share_trend_pp": 0.6877457679821064,
     "share_trend_dir": "FLAT",
     "iqr_10": 2.0,
-    "landmine_rate_10": 0.1,
+    "landmine_rate_10": 0.0,
     "trap_risk": false
   }
 ]
