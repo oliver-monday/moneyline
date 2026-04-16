@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-04-15",
-  "built_at_utc": "2026-04-16T04:09:52Z",
+  "built_at_utc": "2026-04-16T04:43:16Z",
   "source": "rotowire",
   "ORL": [
     {
       "name": "J. Isaac",
-      "status": "OUT",
-      "details": "J. Isaac (Out)"
+      "status": "QUES",
+      "details": "J. Isaac (Ques)"
     },
     {
       "name": "Probable Pitchers",
