@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-17",
-  "built_at_utc": "2026-04-17T21:30:23Z",
+  "built_at_utc": "2026-04-17T22:50:16Z",
   "source": "rotowire",
   "CHA": [
     {
@@ -9,26 +9,21 @@
       "details": "PJ Hall (OFS)"
     },
     {
-      "name": "M. Diabate",
-      "status": "QUES",
-      "details": "M. Diabate (Ques)"
-    },
-    {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
     },
     {
       "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
     }
   ],
   "ORL": [
     {
       "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
     }
   ],
   "GSW": [
