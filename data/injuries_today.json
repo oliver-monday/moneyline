@@ -1,5 +1,83 @@
 {
-  "asof_date": "2026-04-16",
-  "built_at_utc": "2026-04-17T04:40:28Z",
-  "source": "rotowire"
+  "asof_date": "2026-04-17",
+  "built_at_utc": "2026-04-17T09:50:41Z",
+  "source": "rotowire",
+  "CHA": [
+    {
+      "name": "PJ Hall",
+      "status": "OFS",
+      "details": "PJ Hall (OFS)"
+    },
+    {
+      "name": "M. Diabate",
+      "status": "QUES",
+      "details": "M. Diabate (Ques)"
+    },
+    {
+      "name": "Probable Pitchers",
+      "status": "PROB",
+      "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "J. Isaac",
+      "status": "QUES",
+      "details": "J. Isaac (Ques)"
+    }
+  ],
+  "ORL": [
+    {
+      "name": "J. Isaac",
+      "status": "QUES",
+      "details": "J. Isaac (Ques)"
+    }
+  ],
+  "GSW": [
+    {
+      "name": "J. Butler",
+      "status": "OFS",
+      "details": "J. Butler (OFS)"
+    },
+    {
+      "name": "LJ Cryer",
+      "status": "OFS",
+      "details": "LJ Cryer (OFS)"
+    },
+    {
+      "name": "M. Moody",
+      "status": "OFS",
+      "details": "M. Moody (OFS)"
+    },
+    {
+      "name": "K. Porzingis",
+      "status": "QUES",
+      "details": "K. Porzingis (Ques)"
+    },
+    {
+      "name": "Q. Post",
+      "status": "OUT",
+      "details": "Q. Post (Out)"
+    },
+    {
+      "name": "M. Williams",
+      "status": "QUES",
+      "details": "M. Williams (Ques)"
+    },
+    {
+      "name": "G. Allen",
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
+    }
+  ],
+  "PHX": [
+    {
+      "name": "G. Allen",
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
+    },
+    {
+      "name": "M. Williams",
+      "status": "QUES",
+      "details": "M. Williams (Ques)"
+    }
+  ]
 }
