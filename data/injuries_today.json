@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-17",
-  "built_at_utc": "2026-04-17T23:41:08Z",
+  "built_at_utc": "2026-04-18T01:24:29Z",
   "source": "rotowire",
   "CHA": [
     {
@@ -43,36 +43,21 @@
       "details": "M. Moody (OFS)"
     },
     {
-      "name": "K. Porzingis",
-      "status": "QUES",
-      "details": "K. Porzingis (Ques)"
-    },
-    {
       "name": "Q. Post",
       "status": "OUT",
       "details": "Q. Post (Out)"
     },
     {
       "name": "M. Williams",
-      "status": "QUES",
-      "details": "M. Williams (Ques)"
-    },
-    {
-      "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
+      "status": "OUT",
+      "details": "M. Williams (Out)"
     }
   ],
   "PHX": [
     {
-      "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
-    {
       "name": "M. Williams",
-      "status": "QUES",
-      "details": "M. Williams (Ques)"
+      "status": "OUT",
+      "details": "M. Williams (Out)"
     }
   ]
 }
