@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-18",
-  "built_at_utc": "2026-04-18T17:27:18Z",
+  "built_at_utc": "2026-04-18T18:45:16Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -31,29 +31,7 @@
       "details": "T. Bryant (Out)"
     }
   ],
-  "MIN": [
-    {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
-      "name": "S. Jones",
-      "status": "QUES",
-      "details": "S. Jones (Ques)"
-    },
-    {
-      "name": "P. Watson",
-      "status": "OUT",
-      "details": "P. Watson (Out)"
-    }
-  ],
   "DEN": [
-    {
-      "name": "S. Jones",
-      "status": "QUES",
-      "details": "S. Jones (Ques)"
-    },
     {
       "name": "P. Watson",
       "status": "OUT",
@@ -104,6 +82,13 @@
       "name": "A. Reaves",
       "status": "OUT",
       "details": "A. Reaves (Out)"
+    }
+  ],
+  "MIN": [
+    {
+      "name": "P. Watson",
+      "status": "OUT",
+      "details": "P. Watson (Out)"
     }
   ]
 }
