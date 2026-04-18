@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-18",
-  "built_at_utc": "2026-04-18T21:22:15Z",
+  "built_at_utc": "2026-04-18T22:41:28Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -34,8 +34,8 @@
   "DEN": [
     {
       "name": "P. Watson",
-      "status": "OUT",
-      "details": "P. Watson (Out)"
+      "status": "DOUBT",
+      "details": "P. Watson (Doubt)"
     }
   ],
   "ATL": [
@@ -87,8 +87,8 @@
   "MIN": [
     {
       "name": "P. Watson",
-      "status": "OUT",
-      "details": "P. Watson (Out)"
+      "status": "DOUBT",
+      "details": "P. Watson (Doubt)"
     }
   ]
 }

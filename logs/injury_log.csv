@@ -11673,7 +11673,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-18,TOR,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
 2026-04-18,TOR,T. Bryant,QUES,T. Bryant (Ques),rotowire
 2026-04-18,CLE,T. Bryant,QUES,T. Bryant (Ques),rotowire
-2026-04-18,DEN,P. Watson,OUT,P. Watson (Out),rotowire
+2026-04-18,DEN,P. Watson,DOUBT,P. Watson (Doubt),rotowire
 2026-04-18,ATL,J. Landale,OUT,J. Landale (Out),rotowire
 2026-04-18,HOU,S. Adams,OFS,S. Adams (OFS),rotowire
 2026-04-18,HOU,K. Durant,QUES,K. Durant (Ques),rotowire
@@ -11682,4 +11682,4 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-18,HOU,A. Reaves,OUT,A. Reaves (Out),rotowire
 2026-04-18,LAL,L. Doncic,OUT,L. Doncic (Out),rotowire
 2026-04-18,LAL,A. Reaves,OUT,A. Reaves (Out),rotowire
-2026-04-18,MIN,P. Watson,OUT,P. Watson (Out),rotowire
+2026-04-18,MIN,P. Watson,DOUBT,P. Watson (Doubt),rotowire
