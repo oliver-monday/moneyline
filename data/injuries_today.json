@@ -1,12 +1,17 @@
 {
-  "asof_date": "2026-04-17",
-  "built_at_utc": "2026-04-18T04:22:58Z",
+  "asof_date": "2026-04-18",
+  "built_at_utc": "2026-04-18T09:07:12Z",
   "source": "rotowire",
-  "CHA": [
+  "TOR": [
     {
-      "name": "PJ Hall",
+      "name": "C. Hepburn",
       "status": "OFS",
-      "details": "PJ Hall (OFS)"
+      "details": "C. Hepburn (OFS)"
+    },
+    {
+      "name": "I. Quickley",
+      "status": "QUES",
+      "details": "I. Quickley (Ques)"
     },
     {
       "name": "Probable Pitchers",
@@ -14,50 +19,91 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "J. Isaac",
+      "name": "T. Bryant",
       "status": "OUT",
-      "details": "J. Isaac (Out)"
+      "details": "T. Bryant (Out)"
     }
   ],
-  "ORL": [
+  "CLE": [
     {
-      "name": "J. Isaac",
+      "name": "T. Bryant",
       "status": "OUT",
-      "details": "J. Isaac (Out)"
+      "details": "T. Bryant (Out)"
     }
   ],
-  "GSW": [
+  "MIN": [
     {
-      "name": "J. Butler",
-      "status": "OFS",
-      "details": "J. Butler (OFS)"
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
     },
     {
-      "name": "LJ Cryer",
-      "status": "OFS",
-      "details": "LJ Cryer (OFS)"
+      "name": "S. Jones",
+      "status": "QUES",
+      "details": "S. Jones (Ques)"
     },
     {
-      "name": "M. Moody",
-      "status": "OFS",
-      "details": "M. Moody (OFS)"
-    },
-    {
-      "name": "Q. Post",
+      "name": "P. Watson",
       "status": "OUT",
-      "details": "Q. Post (Out)"
-    },
-    {
-      "name": "M. Williams",
-      "status": "OUT",
-      "details": "M. Williams (Out)"
+      "details": "P. Watson (Out)"
     }
   ],
-  "PHX": [
+  "DEN": [
     {
-      "name": "M. Williams",
+      "name": "S. Jones",
+      "status": "QUES",
+      "details": "S. Jones (Ques)"
+    },
+    {
+      "name": "P. Watson",
       "status": "OUT",
-      "details": "M. Williams (Out)"
+      "details": "P. Watson (Out)"
+    }
+  ],
+  "ATL": [
+    {
+      "name": "J. Landale",
+      "status": "OUT",
+      "details": "J. Landale (Out)"
+    }
+  ],
+  "HOU": [
+    {
+      "name": "S. Adams",
+      "status": "OFS",
+      "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "K. Durant",
+      "status": "QUES",
+      "details": "K. Durant (Ques)"
+    },
+    {
+      "name": "F. VanVleet",
+      "status": "OUT",
+      "details": "F. VanVleet (Out)"
+    },
+    {
+      "name": "L. Doncic",
+      "status": "OUT",
+      "details": "L. Doncic (Out)"
+    },
+    {
+      "name": "A. Reaves",
+      "status": "OUT",
+      "details": "A. Reaves (Out)"
+    }
+  ],
+  "LAL": [
+    {
+      "name": "L. Doncic",
+      "status": "OUT",
+      "details": "L. Doncic (Out)"
+    },
+    {
+      "name": "A. Reaves",
+      "status": "OUT",
+      "details": "A. Reaves (Out)"
     }
   ]
 }
