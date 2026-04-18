@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-18",
-  "built_at_utc": "2026-04-18T15:03:55Z",
+  "built_at_utc": "2026-04-18T17:27:18Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -10,8 +10,8 @@
     },
     {
       "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
+      "status": "OUT",
+      "details": "I. Quickley (Out)"
     },
     {
       "name": "Probable Pitchers",
