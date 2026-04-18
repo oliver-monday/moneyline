@@ -1242,5 +1242,9 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401866754,2026-04-14,2026-04-15T02:00Z,Phoenix Suns,PHX,110,-162.0,,Portland Trail Blazers,POR,114,136.0,,Phoenix,AZ,,
 401866757,2026-04-15,2026-04-15T23:30Z,Philadelphia 76ers,PHI,109,-130.0,,Orlando Magic,ORL,97,110.0,,Philadelphia,PA,,
 401866756,2026-04-15,2026-04-16T02:00Z,LA Clippers,LAC,121,-205.0,,Golden State Warriors,GS,126,170.0,,Inglewood,CA,,
-401866758,2026-04-17,2026-04-17T23:30Z,Orlando Magic,ORL,0,136.0,,Charlotte Hornets,CHA,0,-162.0,,Orlando,FL,,PJ Hall (OFS)
-401866759,2026-04-17,2026-04-18T02:00Z,Phoenix Suns,PHX,0,-155.0,,Golden State Warriors,GS,0,130.0,,Phoenix,AZ,,J. Butler (OFS); LJ Cryer (OFS); M. Moody (OFS); Q. Post (Out)
+401866758,2026-04-17,2026-04-17T23:30Z,Orlando Magic,ORL,121,136.0,,Charlotte Hornets,CHA,90,-162.0,,Orlando,FL,,
+401866759,2026-04-17,2026-04-18T02:00Z,Phoenix Suns,PHX,111,-155.0,,Golden State Warriors,GS,96,130.0,,Phoenix,AZ,,
+401869187,2026-04-18,2026-04-18T17:00Z,Cleveland Cavaliers,CLE,0,-355.0,,Toronto Raptors,TOR,0,280.0,,Cleveland,OH,T. Bryant (Out),C. Hepburn (OFS)
+401869188,2026-04-18,2026-04-18T19:30Z,Denver Nuggets,DEN,0,-258.0,,Minnesota Timberwolves,MIN,0,210.0,,Denver,CO,P. Watson (Out),
+401869189,2026-04-18,2026-04-18T22:00Z,New York Knicks,NY,0,-225.0,,Atlanta Hawks,ATL,0,170.0,,New York,NY,,J. Landale (Out)
+401869190,2026-04-18,2026-04-19T00:30Z,Los Angeles Lakers,LAL,0,170.0,,Houston Rockets,HOU,0,-205.0,,Los Angeles,CA,L. Doncic (Out); A. Reaves (Out),S. Adams (OFS); F. VanVleet (Out)
