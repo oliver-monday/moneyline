@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-19",
-  "built_at_utc": "2026-04-19T09:09:53Z",
+  "built_at_utc": "2026-04-19T15:04:22Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -39,6 +39,11 @@
     }
   ],
   "ORL": [
+    {
+      "name": "D. Bane",
+      "status": "QUES",
+      "details": "D. Bane (Ques)"
+    },
     {
       "name": "J. Isaac",
       "status": "QUES",
