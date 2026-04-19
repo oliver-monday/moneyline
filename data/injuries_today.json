@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-19",
-  "built_at_utc": "2026-04-19T20:35:33Z",
+  "built_at_utc": "2026-04-19T21:22:51Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -15,6 +15,11 @@
     }
   ],
   "PHX": [
+    {
+      "name": "J. Goodwin",
+      "status": "QUES",
+      "details": "J. Goodwin (Ques)"
+    },
     {
       "name": "M. Williams",
       "status": "OUT",
@@ -35,14 +40,9 @@
   ],
   "ORL": [
     {
-      "name": "D. Bane",
-      "status": "PROB",
-      "details": "D. Bane (Prob)"
-    },
-    {
       "name": "J. Isaac",
-      "status": "QUES",
-      "details": "J. Isaac (Ques)"
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
     }
   ],
   "POR": [
