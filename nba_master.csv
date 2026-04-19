@@ -1244,7 +1244,11 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401866756,2026-04-15,2026-04-16T02:00Z,LA Clippers,LAC,121,-205.0,,Golden State Warriors,GS,126,170.0,,Inglewood,CA,,
 401866758,2026-04-17,2026-04-17T23:30Z,Orlando Magic,ORL,121,136.0,,Charlotte Hornets,CHA,90,-162.0,,Orlando,FL,,
 401866759,2026-04-17,2026-04-18T02:00Z,Phoenix Suns,PHX,111,-155.0,,Golden State Warriors,GS,96,130.0,,Phoenix,AZ,,
-401869187,2026-04-18,2026-04-18T17:00Z,Cleveland Cavaliers,CLE,0,-355.0,,Toronto Raptors,TOR,0,280.0,,Cleveland,OH,T. Bryant (Out),C. Hepburn (OFS)
-401869188,2026-04-18,2026-04-18T19:30Z,Denver Nuggets,DEN,0,-258.0,,Minnesota Timberwolves,MIN,0,210.0,,Denver,CO,P. Watson (Out),
-401869189,2026-04-18,2026-04-18T22:00Z,New York Knicks,NY,0,-225.0,,Atlanta Hawks,ATL,0,185.0,,New York,NY,,J. Landale (Out)
-401869190,2026-04-18,2026-04-19T00:30Z,Los Angeles Lakers,LAL,0,170.0,,Houston Rockets,HOU,0,-205.0,,Los Angeles,CA,L. Doncic (Out); A. Reaves (Out),S. Adams (OFS); F. VanVleet (Out)
+401869187,2026-04-18,2026-04-18T17:00Z,Cleveland Cavaliers,CLE,126,-355.0,,Toronto Raptors,TOR,113,280.0,,Cleveland,OH,,
+401869188,2026-04-18,2026-04-18T19:30Z,Denver Nuggets,DEN,116,-258.0,,Minnesota Timberwolves,MIN,105,210.0,,Denver,CO,,
+401869189,2026-04-18,2026-04-18T22:00Z,New York Knicks,NY,113,-225.0,,Atlanta Hawks,ATL,102,185.0,,New York,NY,,
+401869190,2026-04-18,2026-04-19T00:30Z,Los Angeles Lakers,LAL,107,170.0,,Houston Rockets,HOU,98,-205.0,,Los Angeles,CA,,
+401869191,2026-04-19,2026-04-19T17:00Z,Boston Celtics,BOS,0,-800.0,,Philadelphia 76ers,PHI,0,550.0,,Boston,MA,,J. Embiid (Out)
+401869192,2026-04-19,2026-04-19T19:30Z,Oklahoma City Thunder,OKC,0,-1100.0,,Phoenix Suns,PHX,0,700.0,,Oklahoma City,OK,T. Sorber (OFS),
+401869193,2026-04-19,2026-04-19T22:30Z,Detroit Pistons,DET,0,-345.0,,Orlando Magic,ORL,0,275.0,,Detroit,MI,,
+401869194,2026-04-19,2026-04-20T01:00Z,San Antonio Spurs,SA,0,-535.0,,Portland Trail Blazers,POR,0,400.0,,San Antonio,TX,D. Jones Garcia (OFS); J. McLaughlin (Out),D. Lillard (OFS)

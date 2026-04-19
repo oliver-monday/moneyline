@@ -1,0 +1,10 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-18,2026,Jamal Murray,DEN,MIN,3pt,3,MISSED,0,,targets_snapshot_2026-04-18.json
+2026-04-18,2026,Kevin Durant,HOU,LAL,ast,4,MISSED,,,targets_snapshot_2026-04-18.json
+2026-04-18,2026,Kevin Durant,HOU,LAL,3pt,2,MISSED,,,targets_snapshot_2026-04-18.json
+2026-04-18,2026,Jabari Smith Jr.,HOU,LAL,pts,15,HIT,16,,targets_snapshot_2026-04-18.json
+2026-04-18,2026,Jabari Smith Jr.,HOU,LAL,3pt,2,HIT,3,,targets_snapshot_2026-04-18.json
+2026-04-18,2026,Nikola Jokic,DEN,MIN,reb,12,HIT,13,,targets_snapshot_2026-04-18.json
+2026-04-18,2026,Nikola Jokic,DEN,MIN,ast,10,HIT,11,,targets_snapshot_2026-04-18.json
+2026-04-18,2026,LeBron James,LAL,HOU,reb,6,HIT,8,,targets_snapshot_2026-04-18.json
+2026-04-18,2026,LeBron James,LAL,HOU,ast,6,HIT,13,,targets_snapshot_2026-04-18.json
