@@ -1,94 +1,77 @@
 {
-  "asof_date": "2026-04-18",
-  "built_at_utc": "2026-04-19T04:42:47Z",
+  "asof_date": "2026-04-19",
+  "built_at_utc": "2026-04-19T09:09:53Z",
   "source": "rotowire",
-  "TOR": [
+  "PHI": [
     {
-      "name": "C. Hepburn",
-      "status": "OFS",
-      "details": "C. Hepburn (OFS)"
-    },
-    {
-      "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
+      "name": "J. Embiid",
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     },
     {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
+    }
+  ],
+  "PHX": [
+    {
+      "name": "G. Allen",
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
     },
     {
-      "name": "T. Bryant",
+      "name": "M. Williams",
       "status": "QUES",
-      "details": "T. Bryant (Ques)"
-    }
-  ],
-  "CLE": [
+      "details": "M. Williams (Ques)"
+    },
     {
-      "name": "T. Bryant",
-      "status": "QUES",
-      "details": "T. Bryant (Ques)"
-    }
-  ],
-  "DEN": [
-    {
-      "name": "P. Watson",
-      "status": "DOUBT",
-      "details": "P. Watson (Doubt)"
-    }
-  ],
-  "ATL": [
-    {
-      "name": "J. Landale",
-      "status": "OUT",
-      "details": "J. Landale (Out)"
-    }
-  ],
-  "HOU": [
-    {
-      "name": "S. Adams",
+      "name": "T. Sorber",
       "status": "OFS",
-      "details": "S. Adams (OFS)"
-    },
-    {
-      "name": "K. Durant",
-      "status": "OUT",
-      "details": "K. Durant (Out)"
-    },
-    {
-      "name": "F. VanVleet",
-      "status": "OUT",
-      "details": "F. VanVleet (Out)"
-    },
-    {
-      "name": "L. Doncic",
-      "status": "OUT",
-      "details": "L. Doncic (Out)"
-    },
-    {
-      "name": "A. Reaves",
-      "status": "OUT",
-      "details": "A. Reaves (Out)"
+      "details": "T. Sorber (OFS)"
     }
   ],
-  "LAL": [
+  "OKC": [
     {
-      "name": "L. Doncic",
-      "status": "OUT",
-      "details": "L. Doncic (Out)"
-    },
-    {
-      "name": "A. Reaves",
-      "status": "OUT",
-      "details": "A. Reaves (Out)"
+      "name": "T. Sorber",
+      "status": "OFS",
+      "details": "T. Sorber (OFS)"
     }
   ],
-  "MIN": [
+  "ORL": [
     {
-      "name": "P. Watson",
-      "status": "DOUBT",
-      "details": "P. Watson (Doubt)"
+      "name": "J. Isaac",
+      "status": "QUES",
+      "details": "J. Isaac (Ques)"
+    }
+  ],
+  "POR": [
+    {
+      "name": "D. Lillard",
+      "status": "OFS",
+      "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "D. Jones Garcia",
+      "status": "OFS",
+      "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "J. McLaughlin",
+      "status": "OUT",
+      "details": "J. McLaughlin (Out)"
+    }
+  ],
+  "SAS": [
+    {
+      "name": "D. Jones Garcia",
+      "status": "OFS",
+      "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "J. McLaughlin",
+      "status": "OUT",
+      "details": "J. McLaughlin (Out)"
     }
   ]
 }
