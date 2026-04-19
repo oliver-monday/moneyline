@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-19",
-  "built_at_utc": "2026-04-19T18:45:41Z",
+  "built_at_utc": "2026-04-19T19:43:39Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -15,11 +15,6 @@
     }
   ],
   "PHX": [
-    {
-      "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
     {
       "name": "M. Williams",
       "status": "OUT",
