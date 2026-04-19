@@ -5,8 +5,8 @@
     "hits": 6,
     "misses": 1,
     "hit_rate_pct": 86,
-    "top_targets_total": 6,
-    "top_targets_hits": 4
+    "top_targets_total": 5,
+    "top_targets_hits": 3
   },
   "hits": [
     {
@@ -205,7 +205,7 @@
       "actual": 13
     }
   ],
-  "built_at_utc": "2026-04-19T09:21:24Z",
+  "built_at_utc": "2026-04-19T14:33:38Z",
   "snapshot_file": "targets_snapshot_2026-04-18.json",
   "preset": "baseline",
   "top_targets": [
@@ -259,31 +259,6 @@
       "actual": 16,
       "hit": true,
       "delta": -1
-    },
-    {
-      "asof_date": "2026-04-18",
-      "player_id": "1966.0",
-      "player_name": "LeBron James",
-      "team_abbrev": "LAL",
-      "opp": "HOU",
-      "game_id": "401869190",
-      "stat": "ast",
-      "threshold": 6,
-      "hits": 9,
-      "window_games": 10,
-      "hit_rate": 0.9,
-      "is_home_game": true,
-      "rest_days": 5,
-      "is_b2b": false,
-      "share_trend_pp": 0.7184746107405604,
-      "share_trend_dir": "FLAT",
-      "iqr_10": 5.25,
-      "landmine_rate_10": 0.0,
-      "trap_risk": true,
-      "dnp": false,
-      "actual": 13,
-      "hit": true,
-      "delta": -7
     },
     {
       "asof_date": "2026-04-18",
