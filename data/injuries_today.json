@@ -1,77 +1,77 @@
 {
-  "asof_date": "2026-04-19",
-  "built_at_utc": "2026-04-20T04:49:39Z",
+  "asof_date": "2026-04-20",
+  "built_at_utc": "2026-04-20T10:11:37Z",
   "source": "rotowire",
-  "PHI": [
+  "TOR": [
     {
-      "name": "J. Embiid",
-      "status": "OUT",
-      "details": "J. Embiid (Out)"
+      "name": "C. Hepburn",
+      "status": "OFS",
+      "details": "C. Hepburn (OFS)"
+    },
+    {
+      "name": "I. Quickley",
+      "status": "QUES",
+      "details": "I. Quickley (Ques)"
     },
     {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "T. Bryant",
+      "status": "OUT",
+      "details": "T. Bryant (Out)"
     }
   ],
-  "PHX": [
+  "CLE": [
     {
-      "name": "J. Goodwin",
+      "name": "T. Bryant",
+      "status": "OUT",
+      "details": "T. Bryant (Out)"
+    }
+  ],
+  "ATL": [
+    {
+      "name": "O. Okongwu",
       "status": "QUES",
-      "details": "J. Goodwin (Ques)"
+      "details": "O. Okongwu (Ques)"
     },
     {
-      "name": "M. Williams",
+      "name": "J. Landale",
       "status": "OUT",
-      "details": "M. Williams (Out)"
+      "details": "J. Landale (Out)"
     },
     {
-      "name": "T. Sorber",
-      "status": "OFS",
-      "details": "T. Sorber (OFS)"
+      "name": "O. Anunoby",
+      "status": "PROB",
+      "details": "O. Anunoby (Prob)"
     }
   ],
-  "OKC": [
+  "NYK": [
     {
-      "name": "T. Sorber",
-      "status": "OFS",
-      "details": "T. Sorber (OFS)"
+      "name": "O. Anunoby",
+      "status": "PROB",
+      "details": "O. Anunoby (Prob)"
     }
   ],
-  "ORL": [
+  "MIN": [
     {
-      "name": "J. Isaac",
+      "name": "A. Edwards",
       "status": "QUES",
-      "details": "J. Isaac (Ques)"
+      "details": "A. Edwards (Ques)"
+    },
+    {
+      "name": "P. Watson",
+      "status": "OUT",
+      "details": "P. Watson (Out)"
     }
   ],
-  "POR": [
+  "DEN": [
     {
-      "name": "D. Lillard",
-      "status": "OFS",
-      "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "D. Jones Garcia",
-      "status": "OFS",
-      "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "J. McLaughlin",
+      "name": "P. Watson",
       "status": "OUT",
-      "details": "J. McLaughlin (Out)"
-    }
-  ],
-  "SAS": [
-    {
-      "name": "D. Jones Garcia",
-      "status": "OFS",
-      "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "J. McLaughlin",
-      "status": "OUT",
-      "details": "J. McLaughlin (Out)"
+      "details": "P. Watson (Out)"
     }
   ]
 }
