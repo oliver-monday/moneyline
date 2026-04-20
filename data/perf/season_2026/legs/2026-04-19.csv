@@ -1,0 +1,4 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-19,2026,Deni Avdija,POR,SA,ast,6,MISSED,5,,targets_snapshot_2026-04-19.json
+2026-04-19,2026,Jrue Holiday,POR,SA,reb,4,HIT,4,,targets_snapshot_2026-04-19.json
+2026-04-19,2026,Jalen Duren,DET,ORL,ast,2,MISSED,1,,targets_snapshot_2026-04-19.json

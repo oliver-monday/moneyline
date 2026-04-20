@@ -1248,7 +1248,10 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401869188,2026-04-18,2026-04-18T19:30Z,Denver Nuggets,DEN,116,-258.0,,Minnesota Timberwolves,MIN,105,210.0,,Denver,CO,,
 401869189,2026-04-18,2026-04-18T22:00Z,New York Knicks,NY,113,-225.0,,Atlanta Hawks,ATL,102,185.0,,New York,NY,,
 401869190,2026-04-18,2026-04-19T00:30Z,Los Angeles Lakers,LAL,107,170.0,,Houston Rockets,HOU,98,-205.0,,Los Angeles,CA,,
-401869191,2026-04-19,2026-04-19T17:00Z,Boston Celtics,BOS,0,-800.0,,Philadelphia 76ers,PHI,0,550.0,,Boston,MA,,J. Embiid (Out)
-401869192,2026-04-19,2026-04-19T19:30Z,Oklahoma City Thunder,OKC,0,-1100.0,,Phoenix Suns,PHX,0,700.0,,Oklahoma City,OK,T. Sorber (OFS),
-401869193,2026-04-19,2026-04-19T22:30Z,Detroit Pistons,DET,0,-375.0,,Orlando Magic,ORL,0,295.0,,Detroit,MI,,
-401869194,2026-04-19,2026-04-20T01:00Z,San Antonio Spurs,SA,0,-535.0,,Portland Trail Blazers,POR,0,400.0,,San Antonio,TX,D. Jones Garcia (OFS); J. McLaughlin (Out),D. Lillard (OFS)
+401869191,2026-04-19,2026-04-19T17:00Z,Boston Celtics,BOS,123,-800.0,,Philadelphia 76ers,PHI,91,550.0,,Boston,MA,,
+401869192,2026-04-19,2026-04-19T19:30Z,Oklahoma City Thunder,OKC,119,-1100.0,,Phoenix Suns,PHX,84,700.0,,Oklahoma City,OK,,
+401869193,2026-04-19,2026-04-19T22:30Z,Detroit Pistons,DET,101,-375.0,,Orlando Magic,ORL,112,295.0,,Detroit,MI,,
+401869194,2026-04-19,2026-04-20T01:00Z,San Antonio Spurs,SA,111,-535.0,,Portland Trail Blazers,POR,98,400.0,,San Antonio,TX,,
+401869369,2026-04-20,2026-04-20T23:00Z,Cleveland Cavaliers,CLE,0,-345.0,,Toronto Raptors,TOR,0,275.0,,Cleveland,OH,T. Bryant (Out),C. Hepburn (OFS)
+401869387,2026-04-20,2026-04-21T00:00Z,New York Knicks,NY,0,-230.0,,Atlanta Hawks,ATL,0,190.0,,New York,NY,,J. Landale (Out)
+401869395,2026-04-20,2026-04-21T02:30Z,Denver Nuggets,DEN,0,-258.0,,Minnesota Timberwolves,MIN,0,210.0,,Denver,CO,P. Watson (Out),
