@@ -1,17 +1,12 @@
 {
-  "asof_date": "2026-04-20",
-  "built_at_utc": "2026-04-21T04:40:11Z",
+  "asof_date": "2026-04-21",
+  "built_at_utc": "2026-04-21T09:54:44Z",
   "source": "rotowire",
-  "TOR": [
+  "PHI": [
     {
-      "name": "C. Hepburn",
-      "status": "OFS",
-      "details": "C. Hepburn (OFS)"
-    },
-    {
-      "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
+      "name": "J. Embiid",
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     },
     {
       "name": "Probable Pitchers",
@@ -19,37 +14,84 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "T. Bryant",
-      "status": "OUT",
-      "details": "T. Bryant (Out)"
+      "name": "R. Harper",
+      "status": "PROB",
+      "details": "R. Harper (Prob)"
     }
   ],
-  "CLE": [
+  "BOS": [
     {
-      "name": "T. Bryant",
-      "status": "OUT",
-      "details": "T. Bryant (Out)"
+      "name": "R. Harper",
+      "status": "PROB",
+      "details": "R. Harper (Prob)"
     }
   ],
-  "ATL": [
+  "POR": [
     {
-      "name": "J. Landale",
+      "name": "D. Lillard",
+      "status": "OFS",
+      "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "D. Jones Garcia",
+      "status": "OFS",
+      "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "J. McLaughlin",
       "status": "OUT",
-      "details": "J. Landale (Out)"
+      "details": "J. McLaughlin (Out)"
     }
   ],
-  "DEN": [
+  "SAS": [
     {
-      "name": "P. Watson",
+      "name": "D. Jones Garcia",
+      "status": "OFS",
+      "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "J. McLaughlin",
       "status": "OUT",
-      "details": "P. Watson (Out)"
+      "details": "J. McLaughlin (Out)"
     }
   ],
-  "MIN": [
+  "HOU": [
     {
-      "name": "P. Watson",
+      "name": "S. Adams",
+      "status": "OFS",
+      "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "K. Durant",
+      "status": "QUES",
+      "details": "K. Durant (Ques)"
+    },
+    {
+      "name": "F. VanVleet",
       "status": "OUT",
-      "details": "P. Watson (Out)"
+      "details": "F. VanVleet (Out)"
+    },
+    {
+      "name": "L. Doncic",
+      "status": "OUT",
+      "details": "L. Doncic (Out)"
+    },
+    {
+      "name": "A. Reaves",
+      "status": "OUT",
+      "details": "A. Reaves (Out)"
+    }
+  ],
+  "LAL": [
+    {
+      "name": "L. Doncic",
+      "status": "OUT",
+      "details": "L. Doncic (Out)"
+    },
+    {
+      "name": "A. Reaves",
+      "status": "OUT",
+      "details": "A. Reaves (Out)"
     }
   ]
 }
