@@ -1,8 +1,13 @@
 {
   "asof_date": "2026-04-21",
-  "built_at_utc": "2026-04-21T22:44:45Z",
+  "built_at_utc": "2026-04-21T23:36:47Z",
   "source": "rotowire",
   "PHI": [
+    {
+      "name": "V. Edgecombe",
+      "status": "QUES",
+      "details": "V. Edgecombe (Ques)"
+    },
     {
       "name": "J. Embiid",
       "status": "OUT",
