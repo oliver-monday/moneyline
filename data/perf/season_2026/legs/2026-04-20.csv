@@ -1,0 +1,5 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-20,2026,Jamal Murray,DEN,MIN,3pt,3,HIT,6,,targets_snapshot_2026-04-20.json
+2026-04-20,2026,OG Anunoby,NY,ATL,3pt,2,HIT,2,,targets_snapshot_2026-04-20.json
+2026-04-20,2026,Julius Randle,MIN,DEN,ast,4,HIT,6,,targets_snapshot_2026-04-20.json
+2026-04-20,2026,Donovan Mitchell,CLE,TOR,pts,25,HIT,30,,targets_snapshot_2026-04-20.json
