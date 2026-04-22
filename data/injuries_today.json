@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-04-21",
-  "built_at_utc": "2026-04-22T01:29:37Z",
+  "built_at_utc": "2026-04-22T03:55:16Z",
   "source": "rotowire",
   "PHI": [
     {
       "name": "J. Embiid",
-      "status": "OUT",
-      "details": "J. Embiid (Out)"
+      "status": "DOUBT",
+      "details": "J. Embiid (Doubt)"
     },
     {
       "name": "Probable Pitchers",
@@ -26,31 +26,41 @@
       "details": "V. Wembanyama (Ques)"
     },
     {
+      "name": "H. Barnes",
+      "status": "QUES",
+      "details": "H. Barnes (Ques)"
+    },
+    {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
     },
     {
       "name": "J. McLaughlin",
-      "status": "OUT",
-      "details": "J. McLaughlin (Out)"
+      "status": "QUES",
+      "details": "J. McLaughlin (Ques)"
     }
   ],
   "SAS": [
     {
+      "name": "H. Barnes",
+      "status": "QUES",
+      "details": "H. Barnes (Ques)"
+    },
+    {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "J. McLaughlin",
+      "status": "QUES",
+      "details": "J. McLaughlin (Ques)"
     },
     {
       "name": "V. Wembanyama",
       "status": "QUES",
       "details": "V. Wembanyama (Ques)"
-    },
-    {
-      "name": "J. McLaughlin",
-      "status": "OUT",
-      "details": "J. McLaughlin (Out)"
     }
   ],
   "HOU": [
