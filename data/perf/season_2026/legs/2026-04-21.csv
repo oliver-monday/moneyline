@@ -1,0 +1,10 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-21,2026,Deni Avdija,POR,SA,pts,25,MISSED,14,,targets_snapshot_2026-04-21.json
+2026-04-21,2026,Deni Avdija,POR,SA,reb,6,MISSED,4,,targets_snapshot_2026-04-21.json
+2026-04-21,2026,Jabari Smith Jr.,HOU,LAL,pts,15,HIT,18,,targets_snapshot_2026-04-21.json
+2026-04-21,2026,Jabari Smith Jr.,HOU,LAL,3pt,2,HIT,3,,targets_snapshot_2026-04-21.json
+2026-04-21,2026,Jrue Holiday,POR,SA,reb,4,HIT,5,,targets_snapshot_2026-04-21.json
+2026-04-21,2026,LeBron James,LAL,HOU,reb,6,HIT,8,,targets_snapshot_2026-04-21.json
+2026-04-21,2026,Stephon Castle,SA,POR,pts,15,HIT,18,,targets_snapshot_2026-04-21.json
+2026-04-21,2026,Stephon Castle,SA,POR,3pt,1,HIT,2,,targets_snapshot_2026-04-21.json
+2026-04-21,2026,Devin Vassell,SA,POR,ast,2,HIT,2,,targets_snapshot_2026-04-21.json

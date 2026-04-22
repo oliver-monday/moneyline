@@ -1255,6 +1255,8 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401869369,2026-04-20,2026-04-20T23:00Z,Cleveland Cavaliers,CLE,115,-360.0,,Toronto Raptors,TOR,105,285.0,,Cleveland,OH,,
 401869387,2026-04-20,2026-04-21T00:00Z,New York Knicks,NY,106,-238.0,,Atlanta Hawks,ATL,107,195.0,,New York,NY,,
 401869395,2026-04-20,2026-04-21T02:30Z,Denver Nuggets,DEN,114,-258.0,,Minnesota Timberwolves,MIN,119,210.0,,Denver,CO,,
-401869396,2026-04-21,2026-04-21T23:00Z,Boston Celtics,BOS,0,-850.0,,Philadelphia 76ers,PHI,0,575.0,,Boston,MA,,J. Embiid (Out)
-401869378,2026-04-21,2026-04-22T00:00Z,San Antonio Spurs,SA,0,-650.0,,Portland Trail Blazers,POR,0,470.0,,San Antonio,TX,D. Jones Garcia (OFS); J. McLaughlin (Out),D. Lillard (OFS)
-401869397,2026-04-21,2026-04-22T02:30Z,Los Angeles Lakers,LAL,0,160.0,,Houston Rockets,HOU,0,-192.0,,Los Angeles,CA,L. Doncic (Out); A. Reaves (Out),S. Adams (OFS); F. VanVleet (Out)
+401869396,2026-04-21,2026-04-21T23:00Z,Boston Celtics,BOS,97,-850.0,,Philadelphia 76ers,PHI,111,575.0,,Boston,MA,,
+401869378,2026-04-21,2026-04-22T00:00Z,San Antonio Spurs,SA,103,-650.0,,Portland Trail Blazers,POR,106,470.0,,San Antonio,TX,,
+401869397,2026-04-21,2026-04-22T02:30Z,Los Angeles Lakers,LAL,101,160.0,,Houston Rockets,HOU,94,-192.0,,Los Angeles,CA,,
+401869411,2026-04-22,2026-04-22T23:00Z,Detroit Pistons,DET,0,-395.0,,Orlando Magic,ORL,0,310.0,,Detroit,MI,,
+401869368,2026-04-22,2026-04-23T01:30Z,Oklahoma City Thunder,OKC,0,-2100.0,,Phoenix Suns,PHX,0,1100.0,,Oklahoma City,OK,T. Sorber (OFS),
