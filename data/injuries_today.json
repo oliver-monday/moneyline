@@ -1,13 +1,8 @@
 {
   "asof_date": "2026-04-21",
-  "built_at_utc": "2026-04-21T23:36:47Z",
+  "built_at_utc": "2026-04-22T01:29:37Z",
   "source": "rotowire",
   "PHI": [
-    {
-      "name": "V. Edgecombe",
-      "status": "QUES",
-      "details": "V. Edgecombe (Ques)"
-    },
     {
       "name": "J. Embiid",
       "status": "OUT",
@@ -24,6 +19,11 @@
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
+    },
+    {
+      "name": "V. Wembanyama",
+      "status": "QUES",
+      "details": "V. Wembanyama (Ques)"
     },
     {
       "name": "D. Jones Garcia",
@@ -43,6 +43,11 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
+      "name": "V. Wembanyama",
+      "status": "QUES",
+      "details": "V. Wembanyama (Ques)"
+    },
+    {
       "name": "J. McLaughlin",
       "status": "OUT",
       "details": "J. McLaughlin (Out)"
@@ -53,11 +58,6 @@
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
-    },
-    {
-      "name": "K. Durant",
-      "status": "QUES",
-      "details": "K. Durant (Ques)"
     },
     {
       "name": "F. VanVleet",
