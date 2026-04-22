@@ -219,7 +219,7 @@
       "actual": 2
     }
   ],
-  "built_at_utc": "2026-04-22T10:00:39Z",
+  "built_at_utc": "2026-04-22T15:03:19Z",
   "snapshot_file": "targets_snapshot_2026-04-21.json",
   "preset": "baseline",
   "top_targets": [
@@ -325,6 +325,31 @@
     },
     {
       "asof_date": "2026-04-21",
+      "player_id": "3995.0",
+      "player_name": "Jrue Holiday",
+      "team_abbrev": "POR",
+      "opp": "SA",
+      "game_id": "401869378",
+      "stat": "reb",
+      "threshold": 4,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 2.7844506805807177,
+      "share_trend_dir": "UP",
+      "iqr_10": 2.0,
+      "landmine_rate_10": 0.1,
+      "trap_risk": false,
+      "dnp": false,
+      "actual": 5,
+      "hit": true,
+      "delta": -1
+    },
+    {
+      "asof_date": "2026-04-21",
       "player_id": "4845367.0",
       "player_name": "Stephon Castle",
       "team_abbrev": "SA",
@@ -347,31 +372,6 @@
       "actual": 2,
       "hit": true,
       "delta": -1
-    },
-    {
-      "asof_date": "2026-04-21",
-      "player_id": "4395630.0",
-      "player_name": "Devin Vassell",
-      "team_abbrev": "SA",
-      "opp": "POR",
-      "game_id": "401869378",
-      "stat": "ast",
-      "threshold": 2,
-      "hits": 8,
-      "window_games": 10,
-      "hit_rate": 0.8,
-      "is_home_game": true,
-      "rest_days": 1,
-      "is_b2b": false,
-      "share_trend_pp": -1.3229802684601888,
-      "share_trend_dir": "FLAT",
-      "iqr_10": 0.75,
-      "landmine_rate_10": 0.2,
-      "trap_risk": false,
-      "dnp": false,
-      "actual": 2,
-      "hit": true,
-      "delta": 0
     }
   ]
 }
