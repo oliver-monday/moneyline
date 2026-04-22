@@ -1,12 +1,12 @@
 {
-  "asof_date": "2026-04-21",
-  "built_at_utc": "2026-04-22T04:37:55Z",
+  "asof_date": "2026-04-22",
+  "built_at_utc": "2026-04-22T09:55:44Z",
   "source": "rotowire",
-  "PHI": [
+  "ORL": [
     {
-      "name": "J. Embiid",
+      "name": "J. Isaac",
       "status": "DOUBT",
-      "details": "J. Embiid (Doubt)"
+      "details": "J. Isaac (Doubt)"
     },
     {
       "name": "Probable Pitchers",
@@ -14,87 +14,33 @@
       "details": "Probable Pitchers (Prob)"
     }
   ],
-  "POR": [
+  "PHX": [
     {
-      "name": "D. Lillard",
+      "name": "G. Allen",
+      "status": "QUES",
+      "details": "G. Allen (Ques)"
+    },
+    {
+      "name": "J. Goodwin",
+      "status": "QUES",
+      "details": "J. Goodwin (Ques)"
+    },
+    {
+      "name": "M. Williams",
+      "status": "QUES",
+      "details": "M. Williams (Ques)"
+    },
+    {
+      "name": "T. Sorber",
       "status": "OFS",
-      "details": "D. Lillard (OFS)"
-    },
-    {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
-    },
-    {
-      "name": "H. Barnes",
-      "status": "QUES",
-      "details": "H. Barnes (Ques)"
-    },
-    {
-      "name": "D. Jones Garcia",
-      "status": "OFS",
-      "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "J. McLaughlin",
-      "status": "QUES",
-      "details": "J. McLaughlin (Ques)"
+      "details": "T. Sorber (OFS)"
     }
   ],
-  "SAS": [
+  "OKC": [
     {
-      "name": "H. Barnes",
-      "status": "QUES",
-      "details": "H. Barnes (Ques)"
-    },
-    {
-      "name": "D. Jones Garcia",
+      "name": "T. Sorber",
       "status": "OFS",
-      "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "J. McLaughlin",
-      "status": "QUES",
-      "details": "J. McLaughlin (Ques)"
-    },
-    {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
-    }
-  ],
-  "HOU": [
-    {
-      "name": "S. Adams",
-      "status": "OFS",
-      "details": "S. Adams (OFS)"
-    },
-    {
-      "name": "F. VanVleet",
-      "status": "OUT",
-      "details": "F. VanVleet (Out)"
-    },
-    {
-      "name": "L. Doncic",
-      "status": "OUT",
-      "details": "L. Doncic (Out)"
-    },
-    {
-      "name": "A. Reaves",
-      "status": "OUT",
-      "details": "A. Reaves (Out)"
-    }
-  ],
-  "LAL": [
-    {
-      "name": "L. Doncic",
-      "status": "OUT",
-      "details": "L. Doncic (Out)"
-    },
-    {
-      "name": "A. Reaves",
-      "status": "OUT",
-      "details": "A. Reaves (Out)"
+      "details": "T. Sorber (OFS)"
     }
   ]
 }
