@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-23",
-  "built_at_utc": "2026-04-23T09:59:34Z",
+  "built_at_utc": "2026-04-23T16:15:45Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -24,11 +24,6 @@
       "name": "C. Hepburn",
       "status": "OFS",
       "details": "C. Hepburn (OFS)"
-    },
-    {
-      "name": "J. Walter",
-      "status": "QUES",
-      "details": "J. Walter (Ques)"
     }
   ],
   "TOR": [
@@ -41,11 +36,6 @@
       "name": "I. Quickley",
       "status": "QUES",
       "details": "I. Quickley (Ques)"
-    },
-    {
-      "name": "J. Walter",
-      "status": "QUES",
-      "details": "J. Walter (Ques)"
     }
   ],
   "DEN": [
@@ -63,13 +53,33 @@
       "name": "A. Edwards",
       "status": "QUES",
       "details": "A. Edwards (Ques)"
+    },
+    {
+      "name": "J. Clark",
+      "status": "QUES",
+      "details": "J. Clark (Ques)"
+    },
+    {
+      "name": "T. Shannon",
+      "status": "QUES",
+      "details": "T. Shannon (Ques)"
     }
   ],
   "MIN": [
     {
+      "name": "J. Clark",
+      "status": "QUES",
+      "details": "J. Clark (Ques)"
+    },
+    {
       "name": "A. Edwards",
       "status": "QUES",
       "details": "A. Edwards (Ques)"
+    },
+    {
+      "name": "T. Shannon",
+      "status": "QUES",
+      "details": "T. Shannon (Ques)"
     }
   ],
   "NYK": [
