@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-23",
-  "built_at_utc": "2026-04-23T21:34:53Z",
+  "built_at_utc": "2026-04-23T22:54:47Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -16,14 +16,14 @@
       "details": "T. Bryant (Prob)"
     },
     {
-      "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
-    },
-    {
       "name": "C. Hepburn",
       "status": "OFS",
       "details": "C. Hepburn (OFS)"
+    },
+    {
+      "name": "I. Quickley",
+      "status": "OUT",
+      "details": "I. Quickley (Out)"
     }
   ],
   "TOR": [
@@ -34,15 +34,15 @@
     },
     {
       "name": "I. Quickley",
-      "status": "QUES",
-      "details": "I. Quickley (Ques)"
+      "status": "OUT",
+      "details": "I. Quickley (Out)"
     }
   ],
   "DEN": [
     {
       "name": "A. Gordon",
-      "status": "QUES",
-      "details": "A. Gordon (Ques)"
+      "status": "OUT",
+      "details": "A. Gordon (Out)"
     },
     {
       "name": "P. Watson",
@@ -56,30 +56,30 @@
     },
     {
       "name": "J. Clark",
-      "status": "QUES",
-      "details": "J. Clark (Ques)"
+      "status": "OUT",
+      "details": "J. Clark (Out)"
     },
     {
       "name": "T. Shannon",
-      "status": "QUES",
-      "details": "T. Shannon (Ques)"
+      "status": "OUT",
+      "details": "T. Shannon (Out)"
     }
   ],
   "MIN": [
-    {
-      "name": "J. Clark",
-      "status": "QUES",
-      "details": "J. Clark (Ques)"
-    },
     {
       "name": "A. Edwards",
       "status": "QUES",
       "details": "A. Edwards (Ques)"
     },
     {
+      "name": "J. Clark",
+      "status": "OUT",
+      "details": "J. Clark (Out)"
+    },
+    {
       "name": "T. Shannon",
-      "status": "QUES",
-      "details": "T. Shannon (Ques)"
+      "status": "OUT",
+      "details": "T. Shannon (Out)"
     }
   ],
   "NYK": [
