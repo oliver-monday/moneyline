@@ -1,29 +1,12 @@
 {
   "asof_date": "2026-04-23",
-  "built_at_utc": "2026-04-23T22:54:47Z",
+  "built_at_utc": "2026-04-23T23:50:11Z",
   "source": "rotowire",
   "ATL": [
     {
       "name": "J. Landale",
       "status": "OUT",
       "details": "J. Landale (Out)"
-    }
-  ],
-  "CLE": [
-    {
-      "name": "T. Bryant",
-      "status": "PROB",
-      "details": "T. Bryant (Prob)"
-    },
-    {
-      "name": "C. Hepburn",
-      "status": "OFS",
-      "details": "C. Hepburn (OFS)"
-    },
-    {
-      "name": "I. Quickley",
-      "status": "OUT",
-      "details": "I. Quickley (Out)"
     }
   ],
   "TOR": [
@@ -92,6 +75,18 @@
       "name": "J. Landale",
       "status": "OUT",
       "details": "J. Landale (Out)"
+    }
+  ],
+  "CLE": [
+    {
+      "name": "C. Hepburn",
+      "status": "OFS",
+      "details": "C. Hepburn (OFS)"
+    },
+    {
+      "name": "I. Quickley",
+      "status": "OUT",
+      "details": "I. Quickley (Out)"
     }
   ]
 }
