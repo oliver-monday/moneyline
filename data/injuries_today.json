@@ -1,51 +1,87 @@
 {
-  "asof_date": "2026-04-22",
-  "built_at_utc": "2026-04-23T04:42:34Z",
+  "asof_date": "2026-04-23",
+  "built_at_utc": "2026-04-23T09:59:34Z",
   "source": "rotowire",
-  "ORL": [
+  "ATL": [
     {
-      "name": "J. Isaac",
-      "status": "DOUBT",
-      "details": "J. Isaac (Doubt)"
+      "name": "J. Landale",
+      "status": "OUT",
+      "details": "J. Landale (Out)"
+    }
+  ],
+  "CLE": [
+    {
+      "name": "T. Bryant",
+      "status": "QUES",
+      "details": "T. Bryant (Ques)"
     },
+    {
+      "name": "I. Quickley",
+      "status": "QUES",
+      "details": "I. Quickley (Ques)"
+    },
+    {
+      "name": "C. Hepburn",
+      "status": "OFS",
+      "details": "C. Hepburn (OFS)"
+    },
+    {
+      "name": "J. Walter",
+      "status": "QUES",
+      "details": "J. Walter (Ques)"
+    }
+  ],
+  "TOR": [
+    {
+      "name": "C. Hepburn",
+      "status": "OFS",
+      "details": "C. Hepburn (OFS)"
+    },
+    {
+      "name": "I. Quickley",
+      "status": "QUES",
+      "details": "I. Quickley (Ques)"
+    },
+    {
+      "name": "J. Walter",
+      "status": "QUES",
+      "details": "J. Walter (Ques)"
+    }
+  ],
+  "DEN": [
+    {
+      "name": "A. Gordon",
+      "status": "PROB",
+      "details": "A. Gordon (Prob)"
+    },
+    {
+      "name": "P. Watson",
+      "status": "OUT",
+      "details": "P. Watson (Out)"
+    },
+    {
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
+    }
+  ],
+  "MIN": [
+    {
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
+    }
+  ],
+  "NYK": [
     {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
-    }
-  ],
-  "PHX": [
-    {
-      "name": "J. Goodwin",
-      "status": "QUES",
-      "details": "J. Goodwin (Ques)"
     },
     {
-      "name": "M. Williams",
-      "status": "QUES",
-      "details": "M. Williams (Ques)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
-    },
-    {
-      "name": "T. Sorber",
-      "status": "OFS",
-      "details": "T. Sorber (OFS)"
-    }
-  ],
-  "OKC": [
-    {
-      "name": "T. Sorber",
-      "status": "OFS",
-      "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
+      "name": "J. Landale",
+      "status": "OUT",
+      "details": "J. Landale (Out)"
     }
   ]
 }
