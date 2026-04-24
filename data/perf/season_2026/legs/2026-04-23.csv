@@ -1,0 +1,9 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-23,2026,Jamal Murray,DEN,MIN,reb,4,MISSED,3,,targets_snapshot_2026-04-23.json
+2026-04-23,2026,Jamal Murray,DEN,MIN,3pt,3,MISSED,0,,targets_snapshot_2026-04-23.json
+2026-04-23,2026,Jalen Brunson,NY,ATL,pts,25,HIT,26,,targets_snapshot_2026-04-23.json
+2026-04-23,2026,Jalen Brunson,NY,ATL,ast,6,MISSED,4,,targets_snapshot_2026-04-23.json
+2026-04-23,2026,OG Anunoby,NY,ATL,3pt,2,HIT,4,,targets_snapshot_2026-04-23.json
+2026-04-23,2026,Julius Randle,MIN,DEN,reb,6,HIT,6,,targets_snapshot_2026-04-23.json
+2026-04-23,2026,Donovan Mitchell,CLE,TOR,pts,25,MISSED,15,,targets_snapshot_2026-04-23.json
+2026-04-23,2026,Aaron Gordon,DEN,MIN,ast,2,,,,targets_snapshot_2026-04-23.json

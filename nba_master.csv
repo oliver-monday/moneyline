@@ -1260,6 +1260,9 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401869397,2026-04-21,2026-04-22T02:30Z,Los Angeles Lakers,LAL,101,160.0,,Houston Rockets,HOU,94,-192.0,,Los Angeles,CA,,
 401869411,2026-04-22,2026-04-22T23:00Z,Detroit Pistons,DET,98,-395.0,,Orlando Magic,ORL,83,310.0,,Detroit,MI,,
 401869368,2026-04-22,2026-04-23T01:30Z,Oklahoma City Thunder,OKC,120,-2100.0,,Phoenix Suns,PHX,107,1100.0,,Oklahoma City,OK,,
-401869389,2026-04-23,2026-04-23T23:00Z,Atlanta Hawks,ATL,0,102.0,,New York Knicks,NY,0,-122.0,,Atlanta,GA,J. Landale (Out),
-401869375,2026-04-23,2026-04-24T00:00Z,Toronto Raptors,TOR,0,130.0,,Cleveland Cavaliers,CLE,0,-155.0,,Toronto,ON,C. Hepburn (OFS),
-401869398,2026-04-23,2026-04-24T01:30Z,Minnesota Timberwolves,MIN,0,114.0,,Denver Nuggets,DEN,0,-135.0,,Minneapolis,MN,,P. Watson (Out)
+401869389,2026-04-23,2026-04-23T23:00Z,Atlanta Hawks,ATL,109,102.0,,New York Knicks,NY,108,-122.0,,Atlanta,GA,,
+401869375,2026-04-23,2026-04-24T00:00Z,Toronto Raptors,TOR,126,130.0,,Cleveland Cavaliers,CLE,104,-155.0,,Toronto,ON,,
+401869398,2026-04-23,2026-04-24T01:30Z,Minnesota Timberwolves,MIN,113,114.0,,Denver Nuggets,DEN,96,-135.0,,Minneapolis,MN,,
+401869404,2026-04-24,2026-04-24T23:00Z,Philadelphia 76ers,PHI,0,230.0,,Boston Celtics,BOS,0,-285.0,,Philadelphia,PA,,
+401869400,2026-04-24,2026-04-25T00:00Z,Houston Rockets,HOU,0,-340.0,,Los Angeles Lakers,LAL,0,270.0,,Houston,TX,S. Adams (OFS); F. VanVleet (Out),L. Doncic (Out)
+401869382,2026-04-24,2026-04-25T02:30Z,Portland Trail Blazers,POR,0,120.0,,San Antonio Spurs,SA,0,-142.0,,Portland,OR,D. Lillard (OFS),D. Jones Garcia (OFS); J. McLaughlin (Out)
