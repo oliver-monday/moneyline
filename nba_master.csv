@@ -1263,6 +1263,6 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401869389,2026-04-23,2026-04-23T23:00Z,Atlanta Hawks,ATL,109,102.0,,New York Knicks,NY,108,-122.0,,Atlanta,GA,,
 401869375,2026-04-23,2026-04-24T00:00Z,Toronto Raptors,TOR,126,130.0,,Cleveland Cavaliers,CLE,104,-155.0,,Toronto,ON,,
 401869398,2026-04-23,2026-04-24T01:30Z,Minnesota Timberwolves,MIN,113,114.0,,Denver Nuggets,DEN,96,-135.0,,Minneapolis,MN,,
-401869404,2026-04-24,2026-04-24T23:00Z,Philadelphia 76ers,PHI,0,230.0,,Boston Celtics,BOS,0,-285.0,,Philadelphia,PA,,
+401869404,2026-04-24,2026-04-24T23:00Z,Philadelphia 76ers,PHI,0,245.0,,Boston Celtics,BOS,0,-305.0,,Philadelphia,PA,,
 401869400,2026-04-24,2026-04-25T00:00Z,Houston Rockets,HOU,0,-340.0,,Los Angeles Lakers,LAL,0,270.0,,Houston,TX,S. Adams (OFS); F. VanVleet (Out),L. Doncic (Out)
 401869382,2026-04-24,2026-04-25T02:30Z,Portland Trail Blazers,POR,0,120.0,,San Antonio Spurs,SA,0,-142.0,,Portland,OR,D. Lillard (OFS),D. Jones Garcia (OFS); J. McLaughlin (Out)
