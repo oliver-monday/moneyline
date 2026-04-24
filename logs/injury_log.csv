@@ -11757,7 +11757,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-23,NYK,J. Landale,OUT,J. Landale (Out),rotowire
 2026-04-23,CLE,C. Hepburn,OFS,C. Hepburn (OFS),rotowire
 2026-04-23,CLE,I. Quickley,OUT,I. Quickley (Out),rotowire
-2026-04-24,PHI,J. Embiid,DOUBT,J. Embiid (Doubt),rotowire
+2026-04-24,PHI,J. Embiid,OUT,J. Embiid (Out),rotowire
 2026-04-24,LAL,A. Reaves,QUES,A. Reaves (Ques),rotowire
 2026-04-24,LAL,L. Doncic,OUT,L. Doncic (Out),rotowire
 2026-04-24,LAL,K. Durant,QUES,K. Durant (Ques),rotowire
@@ -11772,4 +11772,4 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-24,SAS,D. Lillard,OFS,D. Lillard (OFS),rotowire
 2026-04-24,POR,D. Lillard,OFS,D. Lillard (OFS),rotowire
 2026-04-24,BOS,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
-2026-04-24,BOS,J. Embiid,DOUBT,J. Embiid (Doubt),rotowire
+2026-04-24,BOS,J. Embiid,OUT,J. Embiid (Out),rotowire

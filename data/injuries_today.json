@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-04-24",
-  "built_at_utc": "2026-04-24T20:44:01Z",
+  "built_at_utc": "2026-04-24T21:36:03Z",
   "source": "rotowire",
   "PHI": [
     {
       "name": "J. Embiid",
-      "status": "DOUBT",
-      "details": "J. Embiid (Doubt)"
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     }
   ],
   "LAL": [
@@ -90,8 +90,8 @@
     },
     {
       "name": "J. Embiid",
-      "status": "DOUBT",
-      "details": "J. Embiid (Doubt)"
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     }
   ]
 }
