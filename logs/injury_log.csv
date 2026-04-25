@@ -11776,6 +11776,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-25,OKC,G. Allen,QUES,G. Allen (Ques),rotowire
 2026-04-25,PHX,G. Allen,QUES,G. Allen (Ques),rotowire
 2026-04-25,OKC,Isaiah Joe,OUT,Isaiah Joe (Out),rotowire
+2026-04-25,DEN,A. Gordon,QUES,A. Gordon (Ques),rotowire
 2026-04-25,DET,K. Huerter,QUES,K. Huerter (Ques),rotowire
 2026-04-25,DET,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
 2026-04-25,DET,J. Isaac,OUT,J. Isaac (Out),rotowire
@@ -11789,7 +11790,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-25,PHX,M. Williams,QUES,M. Williams (Ques),rotowire
 2026-04-25,ATL,K. Gilbert,OFS,K. Gilbert (OFS),rotowire
 2026-04-25,ATL,J. Landale,OUT,J. Landale (Out),rotowire
-2026-04-25,DEN,A. Gordon,QUES,A. Gordon (Ques),rotowire
 2026-04-25,DEN,P. Watson,OUT,P. Watson (Out),rotowire
 2026-04-25,NYK,K. Gilbert,OFS,K. Gilbert (OFS),rotowire
 2026-04-25,NYK,J. Landale,OUT,J. Landale (Out),rotowire

@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-25",
-  "built_at_utc": "2026-04-25T22:44:45Z",
+  "built_at_utc": "2026-04-25T23:40:26Z",
   "source": "rotowire",
   "DET": [
     {
@@ -78,11 +78,6 @@
     }
   ],
   "DEN": [
-    {
-      "name": "A. Gordon",
-      "status": "QUES",
-      "details": "A. Gordon (Ques)"
-    },
     {
       "name": "P. Watson",
       "status": "OUT",
