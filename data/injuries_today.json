@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-25",
-  "built_at_utc": "2026-04-25T21:24:11Z",
+  "built_at_utc": "2026-04-25T22:44:45Z",
   "source": "rotowire",
   "DET": [
     {
@@ -28,14 +28,14 @@
   ],
   "OKC": [
     {
+      "name": "I. Joe",
+      "status": "QUES",
+      "details": "I. Joe (Ques)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "Isaiah Joe",
-      "status": "OUT",
-      "details": "Isaiah Joe (Out)"
     },
     {
       "name": "J. Williams",
@@ -44,25 +44,25 @@
     },
     {
       "name": "J. Goodwin",
-      "status": "OUT",
-      "details": "J. Goodwin (Out)"
+      "status": "QUES",
+      "details": "J. Goodwin (Ques)"
     },
     {
       "name": "M. Williams",
-      "status": "OUT",
-      "details": "M. Williams (Out)"
+      "status": "QUES",
+      "details": "M. Williams (Ques)"
     }
   ],
   "PHX": [
     {
       "name": "J. Goodwin",
-      "status": "OUT",
-      "details": "J. Goodwin (Out)"
+      "status": "QUES",
+      "details": "J. Goodwin (Ques)"
     },
     {
       "name": "M. Williams",
-      "status": "OUT",
-      "details": "M. Williams (Out)"
+      "status": "QUES",
+      "details": "M. Williams (Ques)"
     }
   ],
   "ATL": [
