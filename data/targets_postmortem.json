@@ -5,8 +5,8 @@
     "hits": 6,
     "misses": 1,
     "hit_rate_pct": 86,
-    "top_targets_total": 4,
-    "top_targets_hits": 3
+    "top_targets_total": 5,
+    "top_targets_hits": 4
   },
   "hits": [
     {
@@ -185,7 +185,7 @@
       "actual": 3
     }
   ],
-  "built_at_utc": "2026-04-25T09:20:21Z",
+  "built_at_utc": "2026-04-25T14:35:00Z",
   "snapshot_file": "targets_snapshot_2026-04-24.json",
   "preset": "baseline",
   "top_targets": [
@@ -288,6 +288,31 @@
       "actual": 19,
       "hit": false,
       "delta": 6
+    },
+    {
+      "asof_date": "2026-04-24",
+      "player_id": "3995.0",
+      "player_name": "Jrue Holiday",
+      "team_abbrev": "POR",
+      "opp": "SA",
+      "game_id": "401869382",
+      "stat": "reb",
+      "threshold": 4,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": true,
+      "rest_days": 2,
+      "is_b2b": false,
+      "share_trend_pp": 0.16049280431919832,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 2.0,
+      "landmine_rate_10": 0.1,
+      "trap_risk": false,
+      "dnp": false,
+      "actual": 6,
+      "hit": true,
+      "delta": -2
     }
   ]
 }
