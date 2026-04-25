@@ -1263,6 +1263,10 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401869389,2026-04-23,2026-04-23T23:00Z,Atlanta Hawks,ATL,109,102.0,,New York Knicks,NY,108,-122.0,,Atlanta,GA,,
 401869375,2026-04-23,2026-04-24T00:00Z,Toronto Raptors,TOR,126,130.0,,Cleveland Cavaliers,CLE,104,-155.0,,Toronto,ON,,
 401869398,2026-04-23,2026-04-24T01:30Z,Minnesota Timberwolves,MIN,113,114.0,,Denver Nuggets,DEN,96,-135.0,,Minneapolis,MN,,
-401869404,2026-04-24,2026-04-24T23:00Z,Philadelphia 76ers,PHI,0,245.0,,Boston Celtics,BOS,0,-305.0,,Philadelphia,PA,,
-401869400,2026-04-24,2026-04-25T00:00Z,Houston Rockets,HOU,0,-340.0,,Los Angeles Lakers,LAL,0,270.0,,Houston,TX,S. Adams (OFS); F. VanVleet (Out),L. Doncic (Out)
-401869382,2026-04-24,2026-04-25T02:30Z,Portland Trail Blazers,POR,0,120.0,,San Antonio Spurs,SA,0,-142.0,,Portland,OR,D. Lillard (OFS),D. Jones Garcia (OFS); J. McLaughlin (Out)
+401869404,2026-04-24,2026-04-24T23:00Z,Philadelphia 76ers,PHI,100,245.0,,Boston Celtics,BOS,108,-305.0,,Philadelphia,PA,,
+401869400,2026-04-24,2026-04-25T00:00Z,Houston Rockets,HOU,108,-340.0,,Los Angeles Lakers,LAL,112,270.0,,Houston,TX,,
+401869382,2026-04-24,2026-04-25T02:30Z,Portland Trail Blazers,POR,108,120.0,,San Antonio Spurs,SA,120,-142.0,,Portland,OR,,
+401869414,2026-04-25,2026-04-25T17:00Z,Orlando Magic,ORL,0,114.0,,Detroit Pistons,DET,0,-135.0,,Orlando,FL,,
+401869370,2026-04-25,2026-04-25T19:30Z,Phoenix Suns,PHX,0,310.0,,Oklahoma City Thunder,OKC,0,-395.0,,Phoenix,AZ,M. Williams (Out),T. Sorber (OFS); J. Williams (Out)
+401869391,2026-04-25,2026-04-25T22:00Z,Atlanta Hawks,ATL,0,110.0,,New York Knicks,NY,0,-130.0,,Atlanta,GA,K. Gilbert (OFS); J. Landale (Out),
+401869399,2026-04-25,2026-04-26T00:30Z,Minnesota Timberwolves,MIN,0,102.0,,Denver Nuggets,DEN,0,-122.0,,Minneapolis,MN,,P. Watson (Out)
