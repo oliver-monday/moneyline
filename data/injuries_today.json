@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-24",
-  "built_at_utc": "2026-04-24T23:41:45Z",
+  "built_at_utc": "2026-04-25T01:27:20Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -60,14 +60,14 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "V. Wembanyama",
-      "status": "QUES",
-      "details": "V. Wembanyama (Ques)"
-    },
-    {
       "name": "J. McLaughlin",
       "status": "OUT",
       "details": "J. McLaughlin (Out)"
+    },
+    {
+      "name": "V. Wembanyama",
+      "status": "OUT",
+      "details": "V. Wembanyama (Out)"
     },
     {
       "name": "D. Lillard",
