@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-25",
-  "built_at_utc": "2026-04-25T17:29:25Z",
+  "built_at_utc": "2026-04-25T18:49:41Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -16,9 +16,9 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "I. Joe",
-      "status": "DOUBT",
-      "details": "I. Joe (Doubt)"
+      "name": "Isaiah Joe",
+      "status": "OUT",
+      "details": "Isaiah Joe (Out)"
     },
     {
       "name": "J. Williams",
@@ -27,13 +27,8 @@
     },
     {
       "name": "J. Goodwin",
-      "status": "QUES",
-      "details": "J. Goodwin (Ques)"
-    },
-    {
-      "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
+      "status": "OUT",
+      "details": "J. Goodwin (Out)"
     },
     {
       "name": "M. Williams",
@@ -43,14 +38,9 @@
   ],
   "PHX": [
     {
-      "name": "G. Allen",
-      "status": "QUES",
-      "details": "G. Allen (Ques)"
-    },
-    {
       "name": "J. Goodwin",
-      "status": "QUES",
-      "details": "J. Goodwin (Ques)"
+      "status": "OUT",
+      "details": "J. Goodwin (Out)"
     },
     {
       "name": "M. Williams",
