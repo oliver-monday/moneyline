@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-25",
-  "built_at_utc": "2026-04-25T23:40:26Z",
+  "built_at_utc": "2026-04-26T01:50:26Z",
   "source": "rotowire",
   "DET": [
     {
@@ -82,6 +82,28 @@
       "name": "P. Watson",
       "status": "OUT",
       "details": "P. Watson (Out)"
+    },
+    {
+      "name": "D. DiVincenzo",
+      "status": "QUES",
+      "details": "D. DiVincenzo (Ques)"
+    },
+    {
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
+    }
+  ],
+  "MIN": [
+    {
+      "name": "D. DiVincenzo",
+      "status": "QUES",
+      "details": "D. DiVincenzo (Ques)"
+    },
+    {
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
     }
   ],
   "NYK": [
