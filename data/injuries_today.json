@@ -1,17 +1,12 @@
 {
   "asof_date": "2026-04-26",
-  "built_at_utc": "2026-04-26T15:06:36Z",
+  "built_at_utc": "2026-04-26T17:29:44Z",
   "source": "rotowire",
   "TOR": [
     {
       "name": "C. Hepburn",
       "status": "OFS",
       "details": "C. Hepburn (OFS)"
-    },
-    {
-      "name": "A. Lawson",
-      "status": "QUES",
-      "details": "A. Lawson (Ques)"
     },
     {
       "name": "I. Quickley",
@@ -114,11 +109,6 @@
       "name": "C. Hepburn",
       "status": "OFS",
       "details": "C. Hepburn (OFS)"
-    },
-    {
-      "name": "A. Lawson",
-      "status": "QUES",
-      "details": "A. Lawson (Ques)"
     },
     {
       "name": "I. Quickley",
