@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-26",
-  "built_at_utc": "2026-04-26T21:25:37Z",
+  "built_at_utc": "2026-04-26T22:48:12Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -31,18 +31,6 @@
       "name": "D. Lillard",
       "status": "OFS",
       "details": "D. Lillard (OFS)"
-    }
-  ],
-  "PHI": [
-    {
-      "name": "K. Oubre",
-      "status": "QUES",
-      "details": "K. Oubre (Ques)"
-    },
-    {
-      "name": "J. Embiid",
-      "status": "DOUBT",
-      "details": "J. Embiid (Doubt)"
     }
   ],
   "LAL": [
@@ -104,18 +92,6 @@
       "name": "I. Quickley",
       "status": "OUT",
       "details": "I. Quickley (Out)"
-    }
-  ],
-  "BOS": [
-    {
-      "name": "K. Oubre",
-      "status": "QUES",
-      "details": "K. Oubre (Ques)"
-    },
-    {
-      "name": "J. Embiid",
-      "status": "DOUBT",
-      "details": "J. Embiid (Doubt)"
     }
   ]
 }

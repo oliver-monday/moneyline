@@ -11801,13 +11801,15 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-26,CLE,A. Lawson,QUES,A. Lawson (Ques),rotowire
 2026-04-26,SAS,J. McLaughlin,QUES,J. McLaughlin (Ques),rotowire
 2026-04-26,SAS,V. Wembanyama,QUES,V. Wembanyama (Ques),rotowire
+2026-04-26,PHI,K. Oubre,QUES,K. Oubre (Ques),rotowire
+2026-04-26,PHI,J. Embiid,DOUBT,J. Embiid (Doubt),rotowire
+2026-04-26,BOS,K. Oubre,QUES,K. Oubre (Ques),rotowire
+2026-04-26,BOS,J. Embiid,DOUBT,J. Embiid (Doubt),rotowire
 2026-04-26,TOR,C. Hepburn,OFS,C. Hepburn (OFS),rotowire
 2026-04-26,TOR,I. Quickley,OUT,I. Quickley (Out),rotowire
 2026-04-26,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-04-26,SAS,D. Lillard,OFS,D. Lillard (OFS),rotowire
 2026-04-26,POR,D. Lillard,OFS,D. Lillard (OFS),rotowire
-2026-04-26,PHI,K. Oubre,QUES,K. Oubre (Ques),rotowire
-2026-04-26,PHI,J. Embiid,DOUBT,J. Embiid (Doubt),rotowire
 2026-04-26,LAL,A. Reaves,QUES,A. Reaves (Ques),rotowire
 2026-04-26,LAL,L. Doncic,OUT,L. Doncic (Out),rotowire
 2026-04-26,LAL,S. Adams,OFS,S. Adams (OFS),rotowire
@@ -11819,5 +11821,3 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-26,CLE,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
 2026-04-26,CLE,C. Hepburn,OFS,C. Hepburn (OFS),rotowire
 2026-04-26,CLE,I. Quickley,OUT,I. Quickley (Out),rotowire
-2026-04-26,BOS,K. Oubre,QUES,K. Oubre (Ques),rotowire
-2026-04-26,BOS,J. Embiid,DOUBT,J. Embiid (Doubt),rotowire
