@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-26",
-  "built_at_utc": "2026-04-26T18:51:12Z",
+  "built_at_utc": "2026-04-26T19:49:44Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -57,14 +57,14 @@
       "details": "L. Doncic (Out)"
     },
     {
-      "name": "K. Durant",
-      "status": "QUES",
-      "details": "K. Durant (Ques)"
-    },
-    {
       "name": "S. Adams",
       "status": "OFS",
       "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "K. Durant",
+      "status": "DOUBT",
+      "details": "K. Durant (Doubt)"
     },
     {
       "name": "F. VanVleet",
@@ -80,8 +80,8 @@
     },
     {
       "name": "K. Durant",
-      "status": "QUES",
-      "details": "K. Durant (Ques)"
+      "status": "DOUBT",
+      "details": "K. Durant (Doubt)"
     },
     {
       "name": "F. VanVleet",
