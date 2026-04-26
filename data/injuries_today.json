@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-25",
-  "built_at_utc": "2026-04-26T01:50:26Z",
+  "built_at_utc": "2026-04-26T04:18:27Z",
   "source": "rotowire",
   "DET": [
     {
@@ -85,8 +85,8 @@
     },
     {
       "name": "D. DiVincenzo",
-      "status": "QUES",
-      "details": "D. DiVincenzo (Ques)"
+      "status": "OFS",
+      "details": "D. DiVincenzo (OFS)"
     },
     {
       "name": "A. Edwards",
@@ -97,8 +97,8 @@
   "MIN": [
     {
       "name": "D. DiVincenzo",
-      "status": "QUES",
-      "details": "D. DiVincenzo (Ques)"
+      "status": "OFS",
+      "details": "D. DiVincenzo (OFS)"
     },
     {
       "name": "A. Edwards",
