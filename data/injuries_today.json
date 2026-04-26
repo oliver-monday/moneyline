@@ -1,121 +1,141 @@
 {
-  "asof_date": "2026-04-25",
-  "built_at_utc": "2026-04-26T04:50:44Z",
+  "asof_date": "2026-04-26",
+  "built_at_utc": "2026-04-26T09:15:45Z",
   "source": "rotowire",
-  "DET": [
+  "TOR": [
     {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
+      "name": "C. Hepburn",
+      "status": "OFS",
+      "details": "C. Hepburn (OFS)"
     },
+    {
+      "name": "A. Lawson",
+      "status": "QUES",
+      "details": "A. Lawson (Ques)"
+    },
+    {
+      "name": "I. Quickley",
+      "status": "OUT",
+      "details": "I. Quickley (Out)"
+    }
+  ],
+  "SAS": [
+    {
+      "name": "D. Jones Garcia",
+      "status": "OFS",
+      "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "J. McLaughlin",
+      "status": "QUES",
+      "details": "J. McLaughlin (Ques)"
+    },
+    {
+      "name": "V. Wembanyama",
+      "status": "QUES",
+      "details": "V. Wembanyama (Ques)"
+    },
+    {
+      "name": "D. Lillard",
+      "status": "OFS",
+      "details": "D. Lillard (OFS)"
+    }
+  ],
+  "POR": [
+    {
+      "name": "D. Lillard",
+      "status": "OFS",
+      "details": "D. Lillard (OFS)"
+    }
+  ],
+  "PHI": [
+    {
+      "name": "K. Oubre",
+      "status": "QUES",
+      "details": "K. Oubre (Ques)"
+    },
+    {
+      "name": "J. Embiid",
+      "status": "DOUBT",
+      "details": "J. Embiid (Doubt)"
+    }
+  ],
+  "LAL": [
+    {
+      "name": "A. Reaves",
+      "status": "QUES",
+      "details": "A. Reaves (Ques)"
+    },
+    {
+      "name": "L. Doncic",
+      "status": "OUT",
+      "details": "L. Doncic (Out)"
+    },
+    {
+      "name": "K. Durant",
+      "status": "QUES",
+      "details": "K. Durant (Ques)"
+    },
+    {
+      "name": "S. Adams",
+      "status": "OFS",
+      "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "F. VanVleet",
+      "status": "OUT",
+      "details": "F. VanVleet (Out)"
+    }
+  ],
+  "HOU": [
+    {
+      "name": "S. Adams",
+      "status": "OFS",
+      "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "K. Durant",
+      "status": "QUES",
+      "details": "K. Durant (Ques)"
+    },
+    {
+      "name": "F. VanVleet",
+      "status": "OUT",
+      "details": "F. VanVleet (Out)"
+    }
+  ],
+  "CLE": [
     {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "J. Isaac",
-      "status": "OUT",
-      "details": "J. Isaac (Out)"
-    }
-  ],
-  "ORL": [
-    {
-      "name": "J. Isaac",
-      "status": "OUT",
-      "details": "J. Isaac (Out)"
-    }
-  ],
-  "OKC": [
-    {
-      "name": "I. Joe",
-      "status": "QUES",
-      "details": "I. Joe (Ques)"
-    },
-    {
-      "name": "T. Sorber",
+      "name": "C. Hepburn",
       "status": "OFS",
-      "details": "T. Sorber (OFS)"
+      "details": "C. Hepburn (OFS)"
     },
     {
-      "name": "J. Williams",
+      "name": "A. Lawson",
+      "status": "QUES",
+      "details": "A. Lawson (Ques)"
+    },
+    {
+      "name": "I. Quickley",
       "status": "OUT",
-      "details": "J. Williams (Out)"
-    },
-    {
-      "name": "J. Goodwin",
-      "status": "QUES",
-      "details": "J. Goodwin (Ques)"
-    },
-    {
-      "name": "M. Williams",
-      "status": "QUES",
-      "details": "M. Williams (Ques)"
+      "details": "I. Quickley (Out)"
     }
   ],
-  "PHX": [
+  "BOS": [
     {
-      "name": "J. Goodwin",
+      "name": "K. Oubre",
       "status": "QUES",
-      "details": "J. Goodwin (Ques)"
+      "details": "K. Oubre (Ques)"
     },
     {
-      "name": "M. Williams",
-      "status": "QUES",
-      "details": "M. Williams (Ques)"
-    }
-  ],
-  "ATL": [
-    {
-      "name": "K. Gilbert",
-      "status": "OFS",
-      "details": "K. Gilbert (OFS)"
-    },
-    {
-      "name": "J. Landale",
-      "status": "OUT",
-      "details": "J. Landale (Out)"
-    }
-  ],
-  "DEN": [
-    {
-      "name": "P. Watson",
-      "status": "OUT",
-      "details": "P. Watson (Out)"
-    },
-    {
-      "name": "D. DiVincenzo",
-      "status": "OFS",
-      "details": "D. DiVincenzo (OFS)"
-    },
-    {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    }
-  ],
-  "MIN": [
-    {
-      "name": "D. DiVincenzo",
-      "status": "OFS",
-      "details": "D. DiVincenzo (OFS)"
-    },
-    {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    }
-  ],
-  "NYK": [
-    {
-      "name": "K. Gilbert",
-      "status": "OFS",
-      "details": "K. Gilbert (OFS)"
-    },
-    {
-      "name": "J. Landale",
-      "status": "OUT",
-      "details": "J. Landale (Out)"
+      "name": "J. Embiid",
+      "status": "DOUBT",
+      "details": "J. Embiid (Doubt)"
     }
   ]
 }
