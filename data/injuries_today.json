@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-26",
-  "built_at_utc": "2026-04-26T23:41:32Z",
+  "built_at_utc": "2026-04-27T01:54:24Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -35,14 +35,14 @@
   ],
   "LAL": [
     {
-      "name": "A. Reaves",
-      "status": "QUES",
-      "details": "A. Reaves (Ques)"
-    },
-    {
       "name": "L. Doncic",
       "status": "OUT",
       "details": "L. Doncic (Out)"
+    },
+    {
+      "name": "A. Reaves",
+      "status": "OUT",
+      "details": "A. Reaves (Out)"
     },
     {
       "name": "S. Adams",
