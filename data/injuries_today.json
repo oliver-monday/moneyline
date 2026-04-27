@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-27",
-  "built_at_utc": "2026-04-27T21:00:00Z",
+  "built_at_utc": "2026-04-27T21:42:26Z",
   "source": "rotowire",
   "DET": [
     {
@@ -15,15 +15,15 @@
     },
     {
       "name": "J. Isaac",
-      "status": "DOUBT",
-      "details": "J. Isaac (Doubt)"
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
     }
   ],
   "ORL": [
     {
       "name": "J. Isaac",
-      "status": "DOUBT",
-      "details": "J. Isaac (Doubt)"
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
     }
   ],
   "OKC": [
