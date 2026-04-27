@@ -1,24 +1,7 @@
 {
   "asof_date": "2026-04-27",
-  "built_at_utc": "2026-04-27T22:58:08Z",
+  "built_at_utc": "2026-04-27T23:56:08Z",
   "source": "rotowire",
-  "DET": [
-    {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
-    },
-    {
-      "name": "Probable Pitchers",
-      "status": "PROB",
-      "details": "Probable Pitchers (Prob)"
-    },
-    {
-      "name": "J. Isaac",
-      "status": "OUT",
-      "details": "J. Isaac (Out)"
-    }
-  ],
   "ORL": [
     {
       "name": "J. Isaac",
@@ -92,6 +75,18 @@
       "name": "P. Watson",
       "status": "OUT",
       "details": "P. Watson (Out)"
+    }
+  ],
+  "DET": [
+    {
+      "name": "Probable Pitchers",
+      "status": "PROB",
+      "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "J. Isaac",
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
     }
   ]
 }
