@@ -1,0 +1,6 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-04-26,2026,VJ Edgecombe,PHI,BOS,reb,6,MISSED,4,,targets_snapshot_2026-04-26.json
+2026-04-26,2026,Deni Avdija,POR,SA,pts,25,HIT,26,,targets_snapshot_2026-04-26.json
+2026-04-26,2026,Stephon Castle,SA,POR,pts,15,HIT,16,,targets_snapshot_2026-04-26.json
+2026-04-26,2026,Stephon Castle,SA,POR,3pt,1,HIT,3,,targets_snapshot_2026-04-26.json
+2026-04-26,2026,Devin Vassell,SA,POR,ast,2,HIT,3,,targets_snapshot_2026-04-26.json
