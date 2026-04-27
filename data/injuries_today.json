@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-26",
-  "built_at_utc": "2026-04-27T04:25:14Z",
+  "built_at_utc": "2026-04-27T04:59:04Z",
   "source": "rotowire",
   "TOR": [
     {
@@ -51,8 +51,8 @@
     },
     {
       "name": "K. Durant",
-      "status": "OUT",
-      "details": "K. Durant (Out)"
+      "status": "QUES",
+      "details": "K. Durant (Ques)"
     },
     {
       "name": "F. VanVleet",
@@ -68,8 +68,8 @@
     },
     {
       "name": "K. Durant",
-      "status": "OUT",
-      "details": "K. Durant (Out)"
+      "status": "QUES",
+      "details": "K. Durant (Ques)"
     },
     {
       "name": "F. VanVleet",
