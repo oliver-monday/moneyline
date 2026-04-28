@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-27",
-  "built_at_utc": "2026-04-27T23:56:08Z",
+  "built_at_utc": "2026-04-28T02:01:24Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -22,8 +22,8 @@
     },
     {
       "name": "J. Goodwin",
-      "status": "QUES",
-      "details": "J. Goodwin (Ques)"
+      "status": "OUT",
+      "details": "J. Goodwin (Out)"
     },
     {
       "name": "M. Williams",
@@ -34,8 +34,8 @@
   "PHX": [
     {
       "name": "J. Goodwin",
-      "status": "QUES",
-      "details": "J. Goodwin (Ques)"
+      "status": "OUT",
+      "details": "J. Goodwin (Out)"
     },
     {
       "name": "M. Williams",
@@ -56,8 +56,8 @@
     },
     {
       "name": "A. Gordon",
-      "status": "QUES",
-      "details": "A. Gordon (Ques)"
+      "status": "OUT",
+      "details": "A. Gordon (Out)"
     },
     {
       "name": "P. Watson",
@@ -68,8 +68,8 @@
   "DEN": [
     {
       "name": "A. Gordon",
-      "status": "QUES",
-      "details": "A. Gordon (Ques)"
+      "status": "OUT",
+      "details": "A. Gordon (Out)"
     },
     {
       "name": "P. Watson",
