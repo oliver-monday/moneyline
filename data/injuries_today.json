@@ -1,19 +1,7 @@
 {
   "asof_date": "2026-04-28",
-  "built_at_utc": "2026-04-28T21:47:42Z",
+  "built_at_utc": "2026-04-28T23:01:01Z",
   "source": "rotowire",
-  "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
-    {
-      "name": "Probable Pitchers",
-      "status": "PROB",
-      "details": "Probable Pitchers (Prob)"
-    }
-  ],
   "ATL": [
     {
       "name": "K. Gilbert",
@@ -43,6 +31,13 @@
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
+    }
+  ],
+  "PHI": [
+    {
+      "name": "Probable Pitchers",
+      "status": "PROB",
+      "details": "Probable Pitchers (Prob)"
     }
   ]
 }
