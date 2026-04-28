@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-27",
-  "built_at_utc": "2026-04-28T04:28:36Z",
+  "built_at_utc": "2026-04-28T05:21:42Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -55,19 +55,14 @@
       "details": "D. DiVincenzo (OFS)"
     },
     {
-      "name": "N. Reid",
-      "status": "QUES",
-      "details": "N. Reid (Ques)"
-    },
-    {
       "name": "A. Edwards",
       "status": "OUT",
       "details": "A. Edwards (Out)"
     },
     {
       "name": "A. Gordon",
-      "status": "OUT",
-      "details": "A. Gordon (Out)"
+      "status": "QUES",
+      "details": "A. Gordon (Ques)"
     },
     {
       "name": "P. Watson",
@@ -78,8 +73,8 @@
   "DEN": [
     {
       "name": "A. Gordon",
-      "status": "OUT",
-      "details": "A. Gordon (Out)"
+      "status": "QUES",
+      "details": "A. Gordon (Ques)"
     },
     {
       "name": "P. Watson",
