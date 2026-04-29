@@ -1,43 +1,85 @@
 {
-  "asof_date": "2026-04-28",
-  "built_at_utc": "2026-04-29T05:18:33Z",
+  "asof_date": "2026-04-29",
+  "built_at_utc": "2026-04-29T10:20:39Z",
   "source": "rotowire",
-  "ATL": [
+  "ORL": [
     {
-      "name": "K. Gilbert",
-      "status": "OFS",
-      "details": "K. Gilbert (OFS)"
+      "name": "F. Wagner",
+      "status": "QUES",
+      "details": "F. Wagner (Ques)"
     },
     {
-      "name": "J. Landale",
-      "status": "OUT",
-      "details": "J. Landale (Out)"
-    }
-  ],
-  "POR": [
-    {
-      "name": "D. Lillard",
-      "status": "OFS",
-      "details": "D. Lillard (OFS)"
+      "name": "J. Isaac",
+      "status": "DOUBT",
+      "details": "J. Isaac (Doubt)"
     },
-    {
-      "name": "D. Jones Garcia",
-      "status": "OFS",
-      "details": "D. Jones Garcia (OFS)"
-    }
-  ],
-  "SAS": [
-    {
-      "name": "D. Jones Garcia",
-      "status": "OFS",
-      "details": "D. Jones Garcia (OFS)"
-    }
-  ],
-  "PHI": [
     {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "K. Huerter",
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
+    }
+  ],
+  "DET": [
+    {
+      "name": "K. Huerter",
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
+    }
+  ],
+  "TOR": [
+    {
+      "name": "C. Hepburn",
+      "status": "OFS",
+      "details": "C. Hepburn (OFS)"
+    },
+    {
+      "name": "I. Quickley",
+      "status": "OUT",
+      "details": "I. Quickley (Out)"
+    }
+  ],
+  "HOU": [
+    {
+      "name": "S. Adams",
+      "status": "OFS",
+      "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "K. Durant",
+      "status": "OUT",
+      "details": "K. Durant (Out)"
+    },
+    {
+      "name": "F. VanVleet",
+      "status": "OUT",
+      "details": "F. VanVleet (Out)"
+    },
+    {
+      "name": "A. Reaves",
+      "status": "QUES",
+      "details": "A. Reaves (Ques)"
+    },
+    {
+      "name": "L. Doncic",
+      "status": "OUT",
+      "details": "L. Doncic (Out)"
+    }
+  ],
+  "LAL": [
+    {
+      "name": "A. Reaves",
+      "status": "QUES",
+      "details": "A. Reaves (Ques)"
+    },
+    {
+      "name": "L. Doncic",
+      "status": "OUT",
+      "details": "L. Doncic (Out)"
     }
   ]
 }
