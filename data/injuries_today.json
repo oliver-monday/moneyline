@@ -1,17 +1,17 @@
 {
   "asof_date": "2026-04-29",
-  "built_at_utc": "2026-04-29T21:02:18Z",
+  "built_at_utc": "2026-04-29T21:47:33Z",
   "source": "rotowire",
   "ORL": [
-    {
-      "name": "F. Wagner",
-      "status": "QUES",
-      "details": "F. Wagner (Ques)"
-    },
     {
       "name": "J. Isaac",
       "status": "DOUBT",
       "details": "J. Isaac (Doubt)"
+    },
+    {
+      "name": "F. Wagner",
+      "status": "OUT",
+      "details": "F. Wagner (Out)"
     },
     {
       "name": "Probable Pitchers",
