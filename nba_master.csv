@@ -1277,6 +1277,9 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401869415,2026-04-27,2026-04-28T00:00Z,Orlando Magic,ORL,94,124.0,,Detroit Pistons,DET,88,-148.0,,Orlando,FL,,
 401869373,2026-04-27,2026-04-28T01:30Z,Phoenix Suns,PHX,122,380.0,,Oklahoma City Thunder,OKC,131,-500.0,,Phoenix,AZ,,
 401869401,2026-04-27,2026-04-28T02:30Z,Denver Nuggets,DEN,125,-500.0,,Minnesota Timberwolves,MIN,113,380.0,,Denver,CO,,
-401869408,2026-04-28,2026-04-28T23:00Z,Boston Celtics,BOS,0,-550.0,,Philadelphia 76ers,PHI,0,410.0,,Boston,MA,,
-401869392,2026-04-28,2026-04-29T00:00Z,New York Knicks,NY,0,-250.0,,Atlanta Hawks,ATL,0,205.0,,New York,NY,,K. Gilbert (OFS); J. Landale (Out)
-401869386,2026-04-28,2026-04-29T01:30Z,San Antonio Spurs,SA,0,-600.0,,Portland Trail Blazers,POR,0,440.0,,San Antonio,TX,D. Jones Garcia (OFS),D. Lillard (OFS)
+401869408,2026-04-28,2026-04-28T23:00Z,Boston Celtics,BOS,97,-550.0,,Philadelphia 76ers,PHI,113,410.0,,Boston,MA,,
+401869392,2026-04-28,2026-04-29T00:00Z,New York Knicks,NY,126,-250.0,,Atlanta Hawks,ATL,97,205.0,,New York,NY,,
+401869386,2026-04-28,2026-04-29T01:30Z,San Antonio Spurs,SA,114,-600.0,,Portland Trail Blazers,POR,95,440.0,,San Antonio,TX,,
+401869416,2026-04-29,2026-04-29T23:00Z,Detroit Pistons,DET,0,-410.0,,Orlando Magic,ORL,0,320.0,,Detroit,MI,,
+401869380,2026-04-29,2026-04-29T23:30Z,Cleveland Cavaliers,CLE,0,-375.0,,Toronto Raptors,TOR,0,295.0,,Cleveland,OH,,C. Hepburn (OFS); I. Quickley (Out)
+401869407,2026-04-29,2026-04-30T02:00Z,Los Angeles Lakers,LAL,0,-180.0,,Houston Rockets,HOU,0,150.0,,Los Angeles,CA,L. Doncic (Out),S. Adams (OFS); K. Durant (Out); F. VanVleet (Out)
