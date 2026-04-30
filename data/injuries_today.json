@@ -1,17 +1,12 @@
 {
-  "asof_date": "2026-04-29",
-  "built_at_utc": "2026-04-30T05:21:32Z",
+  "asof_date": "2026-04-30",
+  "built_at_utc": "2026-04-30T10:21:09Z",
   "source": "rotowire",
-  "ORL": [
+  "NYK": [
     {
-      "name": "J. Isaac",
-      "status": "DOUBT",
-      "details": "J. Isaac (Doubt)"
-    },
-    {
-      "name": "F. Wagner",
+      "name": "J. Hart",
       "status": "QUES",
-      "details": "F. Wagner (Ques)"
+      "details": "J. Hart (Ques)"
     },
     {
       "name": "Probable Pitchers",
@@ -19,62 +14,84 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
-    }
-  ],
-  "DET": [
-    {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
-    }
-  ],
-  "TOR": [
-    {
-      "name": "C. Hepburn",
+      "name": "K. Gilbert",
       "status": "OFS",
-      "details": "C. Hepburn (OFS)"
+      "details": "K. Gilbert (OFS)"
     },
     {
-      "name": "B. Ingram",
-      "status": "QUES",
-      "details": "B. Ingram (Ques)"
-    },
-    {
-      "name": "I. Quickley",
+      "name": "J. Landale",
       "status": "OUT",
-      "details": "I. Quickley (Out)"
+      "details": "J. Landale (Out)"
     }
   ],
-  "HOU": [
+  "ATL": [
     {
-      "name": "S. Adams",
+      "name": "K. Gilbert",
       "status": "OFS",
-      "details": "S. Adams (OFS)"
+      "details": "K. Gilbert (OFS)"
     },
     {
-      "name": "K. Durant",
-      "status": "DOUBT",
-      "details": "K. Durant (Doubt)"
-    },
-    {
-      "name": "F. VanVleet",
+      "name": "J. Landale",
       "status": "OUT",
-      "details": "F. VanVleet (Out)"
-    },
-    {
-      "name": "L. Doncic",
-      "status": "OUT",
-      "details": "L. Doncic (Out)"
+      "details": "J. Landale (Out)"
     }
   ],
-  "LAL": [
+  "PHI": [
     {
-      "name": "L. Doncic",
+      "name": "J. Embiid",
+      "status": "PROB",
+      "details": "J. Embiid (Prob)"
+    }
+  ],
+  "DEN": [
+    {
+      "name": "A. Gordon",
+      "status": "QUES",
+      "details": "A. Gordon (Ques)"
+    },
+    {
+      "name": "P. Watson",
       "status": "OUT",
-      "details": "L. Doncic (Out)"
+      "details": "P. Watson (Out)"
+    },
+    {
+      "name": "D. DiVincenzo",
+      "status": "OFS",
+      "details": "D. DiVincenzo (OFS)"
+    },
+    {
+      "name": "B. Hyland",
+      "status": "QUES",
+      "details": "B. Hyland (Ques)"
+    },
+    {
+      "name": "A. Edwards",
+      "status": "OUT",
+      "details": "A. Edwards (Out)"
+    }
+  ],
+  "MIN": [
+    {
+      "name": "D. DiVincenzo",
+      "status": "OFS",
+      "details": "D. DiVincenzo (OFS)"
+    },
+    {
+      "name": "B. Hyland",
+      "status": "QUES",
+      "details": "B. Hyland (Ques)"
+    },
+    {
+      "name": "A. Edwards",
+      "status": "OUT",
+      "details": "A. Edwards (Out)"
+    }
+  ],
+  "BOS": [
+    {
+      "name": "J. Embiid",
+      "status": "PROB",
+      "details": "J. Embiid (Prob)"
     }
   ]
 }
