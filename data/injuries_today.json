@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-04-30",
-  "built_at_utc": "2026-04-30T21:43:14Z",
+  "built_at_utc": "2026-04-30T22:57:35Z",
   "source": "rotowire",
   "ATL": [
     {
@@ -43,6 +43,11 @@
       "details": "D. DiVincenzo (OFS)"
     },
     {
+      "name": "K. Anderson",
+      "status": "QUES",
+      "details": "K. Anderson (Ques)"
+    },
+    {
       "name": "A. Edwards",
       "status": "OUT",
       "details": "A. Edwards (Out)"
@@ -53,6 +58,11 @@
       "name": "D. DiVincenzo",
       "status": "OFS",
       "details": "D. DiVincenzo (OFS)"
+    },
+    {
+      "name": "K. Anderson",
+      "status": "QUES",
+      "details": "K. Anderson (Ques)"
     },
     {
       "name": "A. Dosunmu",
