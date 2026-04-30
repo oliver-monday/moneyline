@@ -11865,9 +11865,6 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-30,DEN,B. Hyland,QUES,B. Hyland (Ques),rotowire
 2026-04-30,MIN,B. Hyland,QUES,B. Hyland (Ques),rotowire
 2026-04-30,NYK,J. Hart,QUES,J. Hart (Ques),rotowire
-2026-04-30,NYK,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
-2026-04-30,NYK,K. Gilbert,OFS,K. Gilbert (OFS),rotowire
-2026-04-30,NYK,J. Landale,OUT,J. Landale (Out),rotowire
 2026-04-30,ATL,K. Gilbert,OFS,K. Gilbert (OFS),rotowire
 2026-04-30,ATL,J. Landale,OUT,J. Landale (Out),rotowire
 2026-04-30,PHI,J. Embiid,PROB,J. Embiid (Prob),rotowire
@@ -11879,4 +11876,7 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-04-30,MIN,D. DiVincenzo,OFS,D. DiVincenzo (OFS),rotowire
 2026-04-30,MIN,A. Dosunmu,QUES,A. Dosunmu (Ques),rotowire
 2026-04-30,MIN,A. Edwards,OUT,A. Edwards (Out),rotowire
+2026-04-30,NYK,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
+2026-04-30,NYK,K. Gilbert,OFS,K. Gilbert (OFS),rotowire
+2026-04-30,NYK,J. Landale,OUT,J. Landale (Out),rotowire
 2026-04-30,BOS,J. Embiid,PROB,J. Embiid (Prob),rotowire
