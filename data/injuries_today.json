@@ -1,88 +1,117 @@
 {
-  "asof_date": "2026-04-30",
-  "built_at_utc": "2026-05-01T05:33:40Z",
+  "asof_date": "2026-05-01",
+  "built_at_utc": "2026-05-01T09:59:31Z",
   "source": "rotowire",
-  "ATL": [
+  "DET": [
     {
-      "name": "K. Gilbert",
-      "status": "OUT",
-      "details": "K. Gilbert (Out)"
+      "name": "T. Harris",
+      "status": "QUES",
+      "details": "T. Harris (Ques)"
     },
     {
-      "name": "J. Landale",
-      "status": "OUT",
-      "details": "J. Landale (Out)"
-    }
-  ],
-  "DEN": [
-    {
-      "name": "A. Gordon",
-      "status": "OUT",
-      "details": "A. Gordon (Out)"
+      "name": "K. Huerter",
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
     },
-    {
-      "name": "P. Watson",
-      "status": "OUT",
-      "details": "P. Watson (Out)"
-    },
-    {
-      "name": "D. DiVincenzo",
-      "status": "OFS",
-      "details": "D. DiVincenzo (OFS)"
-    },
-    {
-      "name": "K. Anderson",
-      "status": "OUT",
-      "details": "K. Anderson (Out)"
-    },
-    {
-      "name": "A. Dosunmu",
-      "status": "OUT",
-      "details": "A. Dosunmu (Out)"
-    },
-    {
-      "name": "A. Edwards",
-      "status": "OUT",
-      "details": "A. Edwards (Out)"
-    }
-  ],
-  "MIN": [
-    {
-      "name": "D. DiVincenzo",
-      "status": "OFS",
-      "details": "D. DiVincenzo (OFS)"
-    },
-    {
-      "name": "K. Anderson",
-      "status": "OUT",
-      "details": "K. Anderson (Out)"
-    },
-    {
-      "name": "A. Dosunmu",
-      "status": "OUT",
-      "details": "A. Dosunmu (Out)"
-    },
-    {
-      "name": "A. Edwards",
-      "status": "OUT",
-      "details": "A. Edwards (Out)"
-    }
-  ],
-  "NYK": [
     {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "K. Gilbert",
-      "status": "OUT",
-      "details": "K. Gilbert (Out)"
+      "name": "J. Isaac",
+      "status": "DOUBT",
+      "details": "J. Isaac (Doubt)"
     },
     {
-      "name": "J. Landale",
+      "name": "F. Wagner",
       "status": "OUT",
-      "details": "J. Landale (Out)"
+      "details": "F. Wagner (Out)"
+    }
+  ],
+  "ORL": [
+    {
+      "name": "J. Isaac",
+      "status": "DOUBT",
+      "details": "J. Isaac (Doubt)"
+    },
+    {
+      "name": "F. Wagner",
+      "status": "OUT",
+      "details": "F. Wagner (Out)"
+    }
+  ],
+  "TOR": [
+    {
+      "name": "C. Hepburn",
+      "status": "OFS",
+      "details": "C. Hepburn (OFS)"
+    },
+    {
+      "name": "B. Ingram",
+      "status": "QUES",
+      "details": "B. Ingram (Ques)"
+    },
+    {
+      "name": "I. Quickley",
+      "status": "OUT",
+      "details": "I. Quickley (Out)"
+    }
+  ],
+  "LAL": [
+    {
+      "name": "L. Doncic",
+      "status": "OUT",
+      "details": "L. Doncic (Out)"
+    },
+    {
+      "name": "S. Adams",
+      "status": "OFS",
+      "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "K. Durant",
+      "status": "DOUBT",
+      "details": "K. Durant (Doubt)"
+    },
+    {
+      "name": "F. VanVleet",
+      "status": "OUT",
+      "details": "F. VanVleet (Out)"
+    }
+  ],
+  "HOU": [
+    {
+      "name": "S. Adams",
+      "status": "OFS",
+      "details": "S. Adams (OFS)"
+    },
+    {
+      "name": "K. Durant",
+      "status": "DOUBT",
+      "details": "K. Durant (Doubt)"
+    },
+    {
+      "name": "F. VanVleet",
+      "status": "OUT",
+      "details": "F. VanVleet (Out)"
+    }
+  ],
+  "CLE": [
+    {
+      "name": "B. Ingram",
+      "status": "QUES",
+      "details": "B. Ingram (Ques)"
+    },
+    {
+      "name": "C. Hepburn",
+      "status": "OFS",
+      "details": "C. Hepburn (OFS)"
+    },
+    {
+      "name": "I. Quickley",
+      "status": "OUT",
+      "details": "I. Quickley (Out)"
     }
   ]
 }
