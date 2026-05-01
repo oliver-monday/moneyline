@@ -1,34 +1,12 @@
 {
   "asof_date": "2026-04-30",
-  "built_at_utc": "2026-04-30T23:54:52Z",
+  "built_at_utc": "2026-05-01T02:06:42Z",
   "source": "rotowire",
-  "NYK": [
-    {
-      "name": "M. Robinson",
-      "status": "QUES",
-      "details": "M. Robinson (Ques)"
-    },
-    {
-      "name": "Probable Pitchers",
-      "status": "PROB",
-      "details": "Probable Pitchers (Prob)"
-    },
-    {
-      "name": "K. Gilbert",
-      "status": "OFS",
-      "details": "K. Gilbert (OFS)"
-    },
-    {
-      "name": "J. Landale",
-      "status": "OUT",
-      "details": "J. Landale (Out)"
-    }
-  ],
   "ATL": [
     {
       "name": "K. Gilbert",
-      "status": "OFS",
-      "details": "K. Gilbert (OFS)"
+      "status": "OUT",
+      "details": "K. Gilbert (Out)"
     },
     {
       "name": "J. Landale",
@@ -39,18 +17,13 @@
   "DEN": [
     {
       "name": "A. Gordon",
-      "status": "QUES",
-      "details": "A. Gordon (Ques)"
+      "status": "OUT",
+      "details": "A. Gordon (Out)"
     },
     {
       "name": "P. Watson",
       "status": "OUT",
       "details": "P. Watson (Out)"
-    },
-    {
-      "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
     },
     {
       "name": "D. DiVincenzo",
@@ -61,6 +34,11 @@
       "name": "K. Anderson",
       "status": "OUT",
       "details": "K. Anderson (Out)"
+    },
+    {
+      "name": "A. Dosunmu",
+      "status": "OUT",
+      "details": "A. Dosunmu (Out)"
     },
     {
       "name": "A. Edwards",
@@ -75,19 +53,36 @@
       "details": "D. DiVincenzo (OFS)"
     },
     {
-      "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
-    },
-    {
       "name": "K. Anderson",
       "status": "OUT",
       "details": "K. Anderson (Out)"
     },
     {
+      "name": "A. Dosunmu",
+      "status": "OUT",
+      "details": "A. Dosunmu (Out)"
+    },
+    {
       "name": "A. Edwards",
       "status": "OUT",
       "details": "A. Edwards (Out)"
+    }
+  ],
+  "NYK": [
+    {
+      "name": "Probable Pitchers",
+      "status": "PROB",
+      "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "K. Gilbert",
+      "status": "OUT",
+      "details": "K. Gilbert (Out)"
+    },
+    {
+      "name": "J. Landale",
+      "status": "OUT",
+      "details": "J. Landale (Out)"
     }
   ]
 }
