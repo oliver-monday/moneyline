@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-01",
-  "built_at_utc": "2026-05-01T15:31:52Z",
+  "built_at_utc": "2026-05-01T17:46:21Z",
   "source": "rotowire",
   "DET": [
     {
@@ -71,8 +71,8 @@
     },
     {
       "name": "K. Durant",
-      "status": "DOUBT",
-      "details": "K. Durant (Doubt)"
+      "status": "OUT",
+      "details": "K. Durant (Out)"
     },
     {
       "name": "F. VanVleet",
@@ -88,8 +88,8 @@
     },
     {
       "name": "K. Durant",
-      "status": "DOUBT",
-      "details": "K. Durant (Doubt)"
+      "status": "OUT",
+      "details": "K. Durant (Out)"
     },
     {
       "name": "F. VanVleet",
