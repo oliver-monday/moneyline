@@ -1283,6 +1283,9 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401869416,2026-04-29,2026-04-29T23:00Z,Detroit Pistons,DET,116,-395.0,,Orlando Magic,ORL,109,310.0,,Detroit,MI,,
 401869380,2026-04-29,2026-04-29T23:30Z,Cleveland Cavaliers,CLE,125,-380.0,,Toronto Raptors,TOR,120,300.0,,Cleveland,OH,,
 401869407,2026-04-29,2026-04-30T02:00Z,Los Angeles Lakers,LAL,93,-180.0,,Houston Rockets,HOU,99,150.0,,Los Angeles,CA,,
-401869393,2026-04-30,2026-04-30T23:00Z,Atlanta Hawks,ATL,0,130.0,,New York Knicks,NY,0,-155.0,,Atlanta,GA,K. Gilbert (OFS); J. Landale (Out),
-401869410,2026-04-30,2026-05-01T00:00Z,Philadelphia 76ers,PHI,0,190.0,,Boston Celtics,BOS,0,-230.0,,Philadelphia,PA,,
-401869402,2026-04-30,2026-05-01T01:30Z,Minnesota Timberwolves,MIN,0,210.0,,Denver Nuggets,DEN,0,-258.0,,Minneapolis,MN,D. DiVincenzo (OFS); A. Edwards (Out),P. Watson (Out)
+401869393,2026-04-30,2026-04-30T23:00Z,Atlanta Hawks,ATL,89,130.0,,New York Knicks,NY,140,-155.0,,Atlanta,GA,,
+401869410,2026-04-30,2026-05-01T00:00Z,Philadelphia 76ers,PHI,106,190.0,,Boston Celtics,BOS,93,-230.0,,Philadelphia,PA,,
+401869402,2026-04-30,2026-05-01T01:30Z,Minnesota Timberwolves,MIN,110,210.0,,Denver Nuggets,DEN,98,-258.0,,Minneapolis,MN,,
+401869417,2026-05-01,2026-05-01T23:00Z,Orlando Magic,ORL,0,136.0,,Detroit Pistons,DET,0,-162.0,,Orlando,FL,F. Wagner (Out),
+401869381,2026-05-01,2026-05-01T23:30Z,Toronto Raptors,TOR,0,145.0,,Cleveland Cavaliers,CLE,0,-175.0,,Toronto,ON,C. Hepburn (OFS); I. Quickley (Out),
+401869409,2026-05-01,2026-05-02T01:30Z,Houston Rockets,HOU,0,-170.0,,Los Angeles Lakers,LAL,0,142.0,,Houston,TX,S. Adams (OFS); F. VanVleet (Out),L. Doncic (Out)
