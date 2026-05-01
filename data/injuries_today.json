@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-01",
-  "built_at_utc": "2026-05-01T09:59:31Z",
+  "built_at_utc": "2026-05-01T15:31:52Z",
   "source": "rotowire",
   "DET": [
     {
@@ -49,8 +49,8 @@
     },
     {
       "name": "B. Ingram",
-      "status": "QUES",
-      "details": "B. Ingram (Ques)"
+      "status": "DOUBT",
+      "details": "B. Ingram (Doubt)"
     },
     {
       "name": "I. Quickley",
@@ -99,14 +99,14 @@
   ],
   "CLE": [
     {
-      "name": "B. Ingram",
-      "status": "QUES",
-      "details": "B. Ingram (Ques)"
-    },
-    {
       "name": "C. Hepburn",
       "status": "OFS",
       "details": "C. Hepburn (OFS)"
+    },
+    {
+      "name": "B. Ingram",
+      "status": "DOUBT",
+      "details": "B. Ingram (Doubt)"
     },
     {
       "name": "I. Quickley",
