@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-01",
-  "built_at_utc": "2026-05-01T20:08:00Z",
+  "built_at_utc": "2026-05-01T20:51:06Z",
   "source": "rotowire",
   "DET": [
     {
@@ -20,8 +20,8 @@
     },
     {
       "name": "J. Isaac",
-      "status": "DOUBT",
-      "details": "J. Isaac (Doubt)"
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
     },
     {
       "name": "F. Wagner",
@@ -32,8 +32,8 @@
   "ORL": [
     {
       "name": "J. Isaac",
-      "status": "DOUBT",
-      "details": "J. Isaac (Doubt)"
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
     },
     {
       "name": "F. Wagner",
