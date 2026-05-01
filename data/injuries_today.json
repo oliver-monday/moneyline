@@ -1,17 +1,12 @@
 {
   "asof_date": "2026-05-01",
-  "built_at_utc": "2026-05-01T21:40:11Z",
+  "built_at_utc": "2026-05-01T22:54:47Z",
   "source": "rotowire",
   "DET": [
     {
-      "name": "T. Harris",
-      "status": "QUES",
-      "details": "T. Harris (Ques)"
-    },
-    {
       "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
+      "status": "OUT",
+      "details": "K. Huerter (Out)"
     },
     {
       "name": "Probable Pitchers",
@@ -49,8 +44,8 @@
     },
     {
       "name": "B. Ingram",
-      "status": "DOUBT",
-      "details": "B. Ingram (Doubt)"
+      "status": "OUT",
+      "details": "B. Ingram (Out)"
     },
     {
       "name": "I. Quickley",
@@ -105,8 +100,8 @@
     },
     {
       "name": "B. Ingram",
-      "status": "DOUBT",
-      "details": "B. Ingram (Doubt)"
+      "status": "OUT",
+      "details": "B. Ingram (Out)"
     },
     {
       "name": "I. Quickley",
