@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-02",
-  "built_at_utc": "2026-05-02T21:27:45Z",
+  "built_at_utc": "2026-05-02T22:51:52Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -9,26 +9,21 @@
       "details": "J. Embiid (Prob)"
     },
     {
-      "name": "P. George",
-      "status": "PROB",
-      "details": "P. George (Prob)"
-    },
-    {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
     },
     {
       "name": "J. Tatum",
-      "status": "QUES",
-      "details": "J. Tatum (Ques)"
+      "status": "OUT",
+      "details": "J. Tatum (Out)"
     }
   ],
   "BOS": [
     {
       "name": "J. Tatum",
-      "status": "QUES",
-      "details": "J. Tatum (Ques)"
+      "status": "OUT",
+      "details": "J. Tatum (Out)"
     }
   ]
 }
