@@ -1,25 +1,20 @@
 {
   "asof_date": "2026-05-02",
-  "built_at_utc": "2026-05-02T22:51:52Z",
+  "built_at_utc": "2026-05-02T23:48:41Z",
   "source": "rotowire",
-  "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
-    {
-      "name": "Probable Pitchers",
-      "status": "PROB",
-      "details": "Probable Pitchers (Prob)"
-    },
+  "BOS": [
     {
       "name": "J. Tatum",
       "status": "OUT",
       "details": "J. Tatum (Out)"
     }
   ],
-  "BOS": [
+  "PHI": [
+    {
+      "name": "Probable Pitchers",
+      "status": "PROB",
+      "details": "Probable Pitchers (Prob)"
+    },
     {
       "name": "J. Tatum",
       "status": "OUT",
