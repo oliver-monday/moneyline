@@ -1,112 +1,17 @@
 {
-  "asof_date": "2026-05-01",
-  "built_at_utc": "2026-05-02T04:51:26Z",
+  "asof_date": "2026-05-02",
+  "built_at_utc": "2026-05-02T09:36:01Z",
   "source": "rotowire",
-  "DET": [
+  "PHI": [
     {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
+      "name": "J. Embiid",
+      "status": "PROB",
+      "details": "J. Embiid (Prob)"
     },
     {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
-    },
-    {
-      "name": "J. Isaac",
-      "status": "DOUBT",
-      "details": "J. Isaac (Doubt)"
-    },
-    {
-      "name": "F. Wagner",
-      "status": "QUES",
-      "details": "F. Wagner (Ques)"
-    }
-  ],
-  "ORL": [
-    {
-      "name": "J. Isaac",
-      "status": "DOUBT",
-      "details": "J. Isaac (Doubt)"
-    },
-    {
-      "name": "F. Wagner",
-      "status": "QUES",
-      "details": "F. Wagner (Ques)"
-    }
-  ],
-  "TOR": [
-    {
-      "name": "C. Hepburn",
-      "status": "OFS",
-      "details": "C. Hepburn (OFS)"
-    },
-    {
-      "name": "B. Ingram",
-      "status": "QUES",
-      "details": "B. Ingram (Ques)"
-    },
-    {
-      "name": "I. Quickley",
-      "status": "OUT",
-      "details": "I. Quickley (Out)"
-    }
-  ],
-  "LAL": [
-    {
-      "name": "L. Doncic",
-      "status": "DOUBT",
-      "details": "L. Doncic (Doubt)"
-    },
-    {
-      "name": "S. Adams",
-      "status": "OFS",
-      "details": "S. Adams (OFS)"
-    },
-    {
-      "name": "K. Durant",
-      "status": "QUES",
-      "details": "K. Durant (Ques)"
-    },
-    {
-      "name": "F. VanVleet",
-      "status": "OUT",
-      "details": "F. VanVleet (Out)"
-    }
-  ],
-  "HOU": [
-    {
-      "name": "S. Adams",
-      "status": "OFS",
-      "details": "S. Adams (OFS)"
-    },
-    {
-      "name": "K. Durant",
-      "status": "QUES",
-      "details": "K. Durant (Ques)"
-    },
-    {
-      "name": "F. VanVleet",
-      "status": "OUT",
-      "details": "F. VanVleet (Out)"
-    }
-  ],
-  "CLE": [
-    {
-      "name": "C. Hepburn",
-      "status": "OFS",
-      "details": "C. Hepburn (OFS)"
-    },
-    {
-      "name": "B. Ingram",
-      "status": "QUES",
-      "details": "B. Ingram (Ques)"
-    },
-    {
-      "name": "I. Quickley",
-      "status": "OUT",
-      "details": "I. Quickley (Out)"
     }
   ]
 }
