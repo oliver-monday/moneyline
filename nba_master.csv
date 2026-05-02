@@ -1286,6 +1286,7 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401869393,2026-04-30,2026-04-30T23:00Z,Atlanta Hawks,ATL,89,130.0,,New York Knicks,NY,140,-155.0,,Atlanta,GA,,
 401869410,2026-04-30,2026-05-01T00:00Z,Philadelphia 76ers,PHI,106,190.0,,Boston Celtics,BOS,93,-230.0,,Philadelphia,PA,,
 401869402,2026-04-30,2026-05-01T01:30Z,Minnesota Timberwolves,MIN,110,210.0,,Denver Nuggets,DEN,98,-258.0,,Minneapolis,MN,,
-401869417,2026-05-01,2026-05-01T23:00Z,Orlando Magic,ORL,0,142.0,,Detroit Pistons,DET,0,-170.0,,Orlando,FL,F. Wagner (Out),
-401869381,2026-05-01,2026-05-01T23:30Z,Toronto Raptors,TOR,0,145.0,,Cleveland Cavaliers,CLE,0,-175.0,,Toronto,ON,C. Hepburn (OFS); I. Quickley (Out),
-401869409,2026-05-01,2026-05-02T01:30Z,Houston Rockets,HOU,0,-162.0,,Los Angeles Lakers,LAL,0,136.0,,Houston,TX,S. Adams (OFS); F. VanVleet (Out),L. Doncic (Out)
+401869417,2026-05-01,2026-05-01T23:00Z,Orlando Magic,ORL,79,142.0,,Detroit Pistons,DET,93,-170.0,,Orlando,FL,,
+401869381,2026-05-01,2026-05-01T23:30Z,Toronto Raptors,TOR,112,145.0,,Cleveland Cavaliers,CLE,110,-175.0,,Toronto,ON,,
+401869409,2026-05-01,2026-05-02T01:30Z,Houston Rockets,HOU,78,-162.0,,Los Angeles Lakers,LAL,98,136.0,,Houston,TX,,
+401869412,2026-05-02,2026-05-02T23:30Z,Boston Celtics,BOS,0,-290.0,,Philadelphia 76ers,PHI,0,235.0,,Boston,MA,,
