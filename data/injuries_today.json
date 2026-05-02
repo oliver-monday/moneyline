@@ -1,12 +1,17 @@
 {
   "asof_date": "2026-05-02",
-  "built_at_utc": "2026-05-02T15:10:24Z",
+  "built_at_utc": "2026-05-02T17:35:10Z",
   "source": "rotowire",
   "PHI": [
     {
       "name": "J. Embiid",
       "status": "PROB",
       "details": "J. Embiid (Prob)"
+    },
+    {
+      "name": "P. George",
+      "status": "PROB",
+      "details": "P. George (Prob)"
     },
     {
       "name": "Probable Pitchers",
