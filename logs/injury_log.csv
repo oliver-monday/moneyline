@@ -11911,8 +11911,8 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-05-03,ORL,J. Isaac,OUT,J. Isaac (Out),rotowire
 2026-05-03,ORL,F. Wagner,OUT,F. Wagner (Out),rotowire
 2026-05-03,ORL,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
-2026-05-03,ORL,K. Huerter,OUT,K. Huerter (Out),rotowire
-2026-05-03,DET,K. Huerter,OUT,K. Huerter (Out),rotowire
+2026-05-03,ORL,K. Huerter,QUES,K. Huerter (Ques),rotowire
+2026-05-03,DET,K. Huerter,QUES,K. Huerter (Ques),rotowire
 2026-05-03,TOR,C. Hepburn,OFS,C. Hepburn (OFS),rotowire
 2026-05-03,TOR,B. Ingram,OUT,B. Ingram (Out),rotowire
 2026-05-03,TOR,I. Quickley,OUT,I. Quickley (Out),rotowire
