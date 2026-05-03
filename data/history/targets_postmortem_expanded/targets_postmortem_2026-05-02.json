@@ -1,11 +1,11 @@
 {
   "asof_date": "2026-05-02",
   "summary": {
-    "targets_total": 3,
+    "targets_total": 4,
     "hits": 3,
-    "misses": 0,
-    "hit_rate_pct": 100,
-    "top_targets_total": 3,
+    "misses": 1,
+    "hit_rate_pct": 75,
+    "top_targets_total": 4,
     "top_targets_hits": 3
   },
   "hits": [
@@ -61,8 +61,46 @@
       "trap_risk": null
     }
   ],
-  "misses": [],
-  "closest_misses": [],
+  "misses": [
+    {
+      "player_id": "4251.0",
+      "player_name": "Paul George",
+      "team_abbrev": "PHI",
+      "opp": "BOS",
+      "stat": "pts",
+      "threshold": 15,
+      "actual": 13,
+      "delta": 2,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 0.471815646737167,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 2.75,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false
+    }
+  ],
+  "closest_misses": [
+    {
+      "player_id": "4251.0",
+      "player_name": "Paul George",
+      "team_abbrev": "PHI",
+      "opp": "BOS",
+      "stat": "pts",
+      "threshold": 15,
+      "actual": 13,
+      "delta": 2,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 0.471815646737167,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 2.75,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false
+    }
+  ],
   "reaches_hit": [
     {
       "player_id": "3059318.0",
@@ -75,9 +113,9 @@
       "actual": 34
     }
   ],
-  "built_at_utc": "2026-05-03T09:49:28Z",
-  "snapshot_file": "targets_snapshot_2026-05-02.json",
-  "preset": "baseline",
+  "built_at_utc": "2026-05-03T09:49:30Z",
+  "snapshot_file": "targets_snapshot_expanded_2026-05-02.json",
+  "preset": "expanded",
   "top_targets": [
     {
       "asof_date": "2026-05-02",
@@ -153,6 +191,31 @@
       "actual": 34,
       "hit": true,
       "delta": -9
+    },
+    {
+      "asof_date": "2026-05-02",
+      "player_id": "4251.0",
+      "player_name": "Paul George",
+      "team_abbrev": "PHI",
+      "opp": "BOS",
+      "game_id": "401869412",
+      "stat": "pts",
+      "threshold": 15,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 0.471815646737167,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 2.75,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false,
+      "dnp": false,
+      "actual": 13,
+      "hit": false,
+      "delta": 2
     }
   ]
 }
