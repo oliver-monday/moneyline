@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-05-03",
-  "built_at_utc": "2026-05-03T17:37:14Z",
+  "built_at_utc": "2026-05-03T18:56:25Z",
   "source": "rotowire",
   "ORL": [
     {
       "name": "J. Isaac",
-      "status": "DOUBT",
-      "details": "J. Isaac (Doubt)"
+      "status": "OUT",
+      "details": "J. Isaac (Out)"
     },
     {
       "name": "F. Wagner",
