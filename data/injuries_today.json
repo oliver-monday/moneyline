@@ -1,24 +1,51 @@
 {
-  "asof_date": "2026-05-02",
-  "built_at_utc": "2026-05-03T05:21:20Z",
+  "asof_date": "2026-05-03",
+  "built_at_utc": "2026-05-03T09:41:54Z",
   "source": "rotowire",
-  "BOS": [
+  "ORL": [
     {
-      "name": "J. Tatum",
+      "name": "J. Isaac",
+      "status": "DOUBT",
+      "details": "J. Isaac (Doubt)"
+    },
+    {
+      "name": "F. Wagner",
       "status": "OUT",
-      "details": "J. Tatum (Out)"
-    }
-  ],
-  "PHI": [
+      "details": "F. Wagner (Out)"
+    },
     {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "J. Tatum",
+      "name": "K. Huerter",
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
+    }
+  ],
+  "DET": [
+    {
+      "name": "K. Huerter",
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
+    }
+  ],
+  "TOR": [
+    {
+      "name": "C. Hepburn",
+      "status": "OFS",
+      "details": "C. Hepburn (OFS)"
+    },
+    {
+      "name": "B. Ingram",
+      "status": "QUES",
+      "details": "B. Ingram (Ques)"
+    },
+    {
+      "name": "I. Quickley",
       "status": "OUT",
-      "details": "J. Tatum (Out)"
+      "details": "I. Quickley (Out)"
     }
   ]
 }
