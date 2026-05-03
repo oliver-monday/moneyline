@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-03",
-  "built_at_utc": "2026-05-03T15:09:29Z",
+  "built_at_utc": "2026-05-03T17:37:14Z",
   "source": "rotowire",
   "ORL": [
     {
@@ -39,8 +39,8 @@
     },
     {
       "name": "B. Ingram",
-      "status": "QUES",
-      "details": "B. Ingram (Ques)"
+      "status": "DOUBT",
+      "details": "B. Ingram (Doubt)"
     },
     {
       "name": "I. Quickley",
