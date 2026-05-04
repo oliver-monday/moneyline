@@ -1,19 +1,7 @@
 {
   "asof_date": "2026-05-04",
-  "built_at_utc": "2026-05-04T23:00:16Z",
+  "built_at_utc": "2026-05-04T23:55:45Z",
   "source": "rotowire",
-  "PHI": [
-    {
-      "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
-    },
-    {
-      "name": "Probable Pitchers",
-      "status": "PROB",
-      "details": "Probable Pitchers (Prob)"
-    }
-  ],
   "MIN": [
     {
       "name": "D. DiVincenzo",
@@ -37,8 +25,8 @@
     },
     {
       "name": "C. Bryant",
-      "status": "QUES",
-      "details": "C. Bryant (Ques)"
+      "status": "OUT",
+      "details": "C. Bryant (Out)"
     }
   ],
   "SAS": [
@@ -49,8 +37,15 @@
     },
     {
       "name": "C. Bryant",
-      "status": "QUES",
-      "details": "C. Bryant (Ques)"
+      "status": "OUT",
+      "details": "C. Bryant (Out)"
+    }
+  ],
+  "PHI": [
+    {
+      "name": "Probable Pitchers",
+      "status": "PROB",
+      "details": "Probable Pitchers (Prob)"
     }
   ]
 }
