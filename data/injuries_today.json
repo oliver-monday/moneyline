@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-04",
-  "built_at_utc": "2026-05-04T18:08:52Z",
+  "built_at_utc": "2026-05-04T19:25:44Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -15,15 +15,15 @@
     },
     {
       "name": "J. Sochan",
-      "status": "PROB",
-      "details": "J. Sochan (Prob)"
+      "status": "QUES",
+      "details": "J. Sochan (Ques)"
     }
   ],
   "NYK": [
     {
       "name": "J. Sochan",
-      "status": "PROB",
-      "details": "J. Sochan (Prob)"
+      "status": "QUES",
+      "details": "J. Sochan (Ques)"
     }
   ],
   "MIN": [
@@ -33,14 +33,14 @@
       "details": "D. DiVincenzo (OFS)"
     },
     {
-      "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
+      "name": "A. Edwards",
+      "status": "PROB",
+      "details": "A. Edwards (Prob)"
     },
     {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
+      "name": "A. Dosunmu",
+      "status": "OUT",
+      "details": "A. Dosunmu (Out)"
     },
     {
       "name": "D. Jones Garcia",
