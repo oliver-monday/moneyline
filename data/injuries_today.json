@@ -1,17 +1,12 @@
 {
-  "asof_date": "2026-05-03",
-  "built_at_utc": "2026-05-04T05:24:17Z",
+  "asof_date": "2026-05-04",
+  "built_at_utc": "2026-05-04T10:27:25Z",
   "source": "rotowire",
-  "ORL": [
+  "PHI": [
     {
-      "name": "J. Isaac",
-      "status": "OUT",
-      "details": "J. Isaac (Out)"
-    },
-    {
-      "name": "F. Wagner",
-      "status": "OUT",
-      "details": "F. Wagner (Out)"
+      "name": "J. Embiid",
+      "status": "PROB",
+      "details": "J. Embiid (Prob)"
     },
     {
       "name": "Probable Pitchers",
@@ -19,33 +14,55 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
+      "name": "J. Sochan",
+      "status": "PROB",
+      "details": "J. Sochan (Prob)"
     }
   ],
-  "DET": [
+  "NYK": [
     {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
+      "name": "J. Sochan",
+      "status": "PROB",
+      "details": "J. Sochan (Prob)"
     }
   ],
-  "TOR": [
+  "MIN": [
     {
-      "name": "C. Hepburn",
+      "name": "D. DiVincenzo",
       "status": "OFS",
-      "details": "C. Hepburn (OFS)"
+      "details": "D. DiVincenzo (OFS)"
     },
     {
-      "name": "B. Ingram",
-      "status": "OUT",
-      "details": "B. Ingram (Out)"
+      "name": "A. Dosunmu",
+      "status": "QUES",
+      "details": "A. Dosunmu (Ques)"
     },
     {
-      "name": "I. Quickley",
-      "status": "OUT",
-      "details": "I. Quickley (Out)"
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
+    },
+    {
+      "name": "D. Jones Garcia",
+      "status": "OFS",
+      "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "C. Bryant",
+      "status": "QUES",
+      "details": "C. Bryant (Ques)"
+    }
+  ],
+  "SAS": [
+    {
+      "name": "D. Jones Garcia",
+      "status": "OFS",
+      "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "C. Bryant",
+      "status": "QUES",
+      "details": "C. Bryant (Ques)"
     }
   ]
 }
