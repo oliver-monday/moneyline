@@ -1,0 +1,24 @@
+{
+  "built_at_utc": "2026-05-04T10:34:56Z",
+  "date": "2026-05-03",
+  "git_sha": "d2032d3bd1f8571a30f9a792ec707dc6b0d7fdf7",
+  "props": {
+    "all_targets": {
+      "hit_rate": 0.0,
+      "hits": 0,
+      "total": 1
+    },
+    "closest_misses": 1,
+    "reaches_hit": null,
+    "top_targets": {
+      "hit_rate": 0.0,
+      "hits": 0,
+      "total": 1
+    }
+  },
+  "season_end_year": 2026,
+  "sources": {
+    "targets_postmortem": "data/targets_postmortem.json",
+    "targets_snapshot": "logs/targets_snapshot_2026-05-03.json"
+  }
+}
