@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-05",
-  "built_at_utc": "2026-05-05T10:13:29Z",
+  "built_at_utc": "2026-05-05T18:05:42Z",
   "source": "rotowire",
   "DET": [
     {
@@ -22,8 +22,8 @@
     },
     {
       "name": "J. Williams",
-      "status": "DOUBT",
-      "details": "J. Williams (Doubt)"
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ],
   "OKC": [
@@ -34,8 +34,8 @@
     },
     {
       "name": "J. Williams",
-      "status": "DOUBT",
-      "details": "J. Williams (Doubt)"
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ],
   "CLE": [
