@@ -1,46 +1,53 @@
 {
-  "asof_date": "2026-05-04",
-  "built_at_utc": "2026-05-05T04:53:08Z",
+  "asof_date": "2026-05-05",
+  "built_at_utc": "2026-05-05T10:13:29Z",
   "source": "rotowire",
-  "MIN": [
+  "DET": [
     {
-      "name": "D. DiVincenzo",
-      "status": "OFS",
-      "details": "D. DiVincenzo (OFS)"
-    },
-    {
-      "name": "A. Dosunmu",
+      "name": "K. Huerter",
       "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
-    },
-    {
-      "name": "D. Jones Garcia",
-      "status": "OFS",
-      "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "C. Bryant",
-      "status": "OUT",
-      "details": "C. Bryant (Out)"
+      "details": "K. Huerter (Ques)"
     }
   ],
-  "SAS": [
+  "LAL": [
     {
-      "name": "D. Jones Garcia",
-      "status": "OFS",
-      "details": "D. Jones Garcia (OFS)"
+      "name": "L. Doncic",
+      "status": "OUT",
+      "details": "L. Doncic (Out)"
     },
     {
-      "name": "C. Bryant",
-      "status": "OUT",
-      "details": "C. Bryant (Out)"
+      "name": "T. Sorber",
+      "status": "OFS",
+      "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "DOUBT",
+      "details": "J. Williams (Doubt)"
     }
   ],
-  "PHI": [
+  "OKC": [
+    {
+      "name": "T. Sorber",
+      "status": "OFS",
+      "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "DOUBT",
+      "details": "J. Williams (Doubt)"
+    }
+  ],
+  "CLE": [
     {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "K. Huerter",
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
     }
   ]
 }
