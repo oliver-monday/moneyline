@@ -1,7 +1,24 @@
 {
   "asof_date": "2026-05-05",
-  "built_at_utc": "2026-05-05T22:59:53Z",
+  "built_at_utc": "2026-05-05T23:50:50Z",
   "source": "rotowire",
+  "CLE": [
+    {
+      "name": "S. Merrill",
+      "status": "QUES",
+      "details": "S. Merrill (Ques)"
+    },
+    {
+      "name": "Probable Pitchers",
+      "status": "PROB",
+      "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "K. Huerter",
+      "status": "OUT",
+      "details": "K. Huerter (Out)"
+    }
+  ],
   "DET": [
     {
       "name": "K. Huerter",
@@ -36,18 +53,6 @@
       "name": "J. Williams",
       "status": "OUT",
       "details": "J. Williams (Out)"
-    }
-  ],
-  "CLE": [
-    {
-      "name": "Probable Pitchers",
-      "status": "PROB",
-      "details": "Probable Pitchers (Prob)"
-    },
-    {
-      "name": "K. Huerter",
-      "status": "OUT",
-      "details": "K. Huerter (Out)"
     }
   ]
 }
