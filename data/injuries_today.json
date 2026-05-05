@@ -1,17 +1,12 @@
 {
   "asof_date": "2026-05-04",
-  "built_at_utc": "2026-05-04T23:55:45Z",
+  "built_at_utc": "2026-05-05T01:58:48Z",
   "source": "rotowire",
   "MIN": [
     {
       "name": "D. DiVincenzo",
       "status": "OFS",
       "details": "D. DiVincenzo (OFS)"
-    },
-    {
-      "name": "A. Edwards",
-      "status": "PROB",
-      "details": "A. Edwards (Prob)"
     },
     {
       "name": "A. Dosunmu",
