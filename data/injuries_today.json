@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-05-05",
-  "built_at_utc": "2026-05-05T21:48:48Z",
+  "built_at_utc": "2026-05-05T22:59:53Z",
   "source": "rotowire",
   "DET": [
     {
       "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
+      "status": "OUT",
+      "details": "K. Huerter (Out)"
     }
   ],
   "LAL": [
@@ -46,8 +46,8 @@
     },
     {
       "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
+      "status": "OUT",
+      "details": "K. Huerter (Out)"
     }
   ]
 }
