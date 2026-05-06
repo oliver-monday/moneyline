@@ -1294,5 +1294,7 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401869384,2026-05-03,2026-05-03T23:30Z,Cleveland Cavaliers,CLE,114,-298.0,,Toronto Raptors,TOR,102,240.0,,Cleveland,OH,,
 401871159,2026-05-04,2026-05-05T00:00Z,New York Knicks,NY,137,-290.0,,Philadelphia 76ers,PHI,98,235.0,,New York,NY,,
 401871152,2026-05-04,2026-05-05T01:30Z,San Antonio Spurs,SA,102,-600.0,,Minnesota Timberwolves,MIN,104,440.0,,San Antonio,TX,,
-401871333,2026-05-05,2026-05-05T23:00Z,Detroit Pistons,DET,0,-148.0,,Cleveland Cavaliers,CLE,0,124.0,,Detroit,MI,,
-401871326,2026-05-05,2026-05-06T00:30Z,Oklahoma City Thunder,OKC,0,-1100.0,,Los Angeles Lakers,LAL,0,700.0,,Oklahoma City,OK,T. Sorber (OFS); J. Williams (Out),L. Doncic (Out)
+401871333,2026-05-05,2026-05-05T23:00Z,Detroit Pistons,DET,111,-148.0,,Cleveland Cavaliers,CLE,101,124.0,,Detroit,MI,,
+401871326,2026-05-05,2026-05-06T00:30Z,Oklahoma City Thunder,OKC,108,-1100.0,,Los Angeles Lakers,LAL,90,700.0,,Oklahoma City,OK,,
+401871160,2026-05-06,2026-05-06T23:00Z,New York Knicks,NY,0,-270.0,,Philadelphia 76ers,PHI,0,220.0,,New York,NY,,
+401871153,2026-05-06,2026-05-07T01:30Z,San Antonio Spurs,SA,0,-425.0,,Minnesota Timberwolves,MIN,0,330.0,,San Antonio,TX,D. Jones Garcia (OFS),D. DiVincenzo (OFS)
