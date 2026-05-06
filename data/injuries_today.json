@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-05-06",
-  "built_at_utc": "2026-05-06T16:13:25Z",
+  "built_at_utc": "2026-05-06T18:10:14Z",
   "source": "rotowire",
   "PHI": [
     {
       "name": "J. Embiid",
-      "status": "PROB",
-      "details": "J. Embiid (Prob)"
+      "status": "OUT",
+      "details": "J. Embiid (Out)"
     },
     {
       "name": "Probable Pitchers",
@@ -19,11 +19,6 @@
       "name": "D. DiVincenzo",
       "status": "OFS",
       "details": "D. DiVincenzo (OFS)"
-    },
-    {
-      "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
     },
     {
       "name": "A. Edwards",
