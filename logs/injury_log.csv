@@ -11929,8 +11929,9 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-05-04,PHI,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
 2026-05-05,CLE,S. Merrill,QUES,S. Merrill (Ques),rotowire
 2026-05-05,CLE,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
-2026-05-05,CLE,K. Huerter,OUT,K. Huerter (Out),rotowire
-2026-05-05,DET,K. Huerter,OUT,K. Huerter (Out),rotowire
+2026-05-05,CLE,K. Huerter,QUES,K. Huerter (Ques),rotowire
+2026-05-05,DET,K. Huerter,QUES,K. Huerter (Ques),rotowire
+2026-05-05,LAL,J. Vanderbilt,QUES,J. Vanderbilt (Ques),rotowire
 2026-05-05,LAL,L. Doncic,OUT,L. Doncic (Out),rotowire
 2026-05-05,LAL,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-05-05,LAL,J. Williams,OUT,J. Williams (Out),rotowire
