@@ -1,63 +1,56 @@
 {
-  "asof_date": "2026-05-05",
-  "built_at_utc": "2026-05-06T05:19:34Z",
+  "asof_date": "2026-05-06",
+  "built_at_utc": "2026-05-06T10:29:38Z",
   "source": "rotowire",
-  "CLE": [
+  "PHI": [
     {
-      "name": "S. Merrill",
-      "status": "QUES",
-      "details": "S. Merrill (Ques)"
+      "name": "J. Embiid",
+      "status": "PROB",
+      "details": "J. Embiid (Prob)"
     },
     {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
-    },
-    {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
     }
   ],
-  "DET": [
+  "MIN": [
     {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
-    }
-  ],
-  "LAL": [
-    {
-      "name": "J. Vanderbilt",
-      "status": "DOUBT",
-      "details": "J. Vanderbilt (Doubt)"
-    },
-    {
-      "name": "L. Doncic",
-      "status": "OUT",
-      "details": "L. Doncic (Out)"
-    },
-    {
-      "name": "T. Sorber",
+      "name": "D. DiVincenzo",
       "status": "OFS",
-      "details": "T. Sorber (OFS)"
+      "details": "D. DiVincenzo (OFS)"
     },
     {
-      "name": "J. Williams",
-      "status": "DOUBT",
-      "details": "J. Williams (Doubt)"
+      "name": "A. Dosunmu",
+      "status": "QUES",
+      "details": "A. Dosunmu (Ques)"
+    },
+    {
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
+    },
+    {
+      "name": "D. Jones Garcia",
+      "status": "OFS",
+      "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "C. Bryant",
+      "status": "QUES",
+      "details": "C. Bryant (Ques)"
     }
   ],
-  "OKC": [
+  "SAS": [
     {
-      "name": "T. Sorber",
+      "name": "D. Jones Garcia",
       "status": "OFS",
-      "details": "T. Sorber (OFS)"
+      "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "J. Williams",
-      "status": "DOUBT",
-      "details": "J. Williams (Doubt)"
+      "name": "C. Bryant",
+      "status": "QUES",
+      "details": "C. Bryant (Ques)"
     }
   ]
 }
