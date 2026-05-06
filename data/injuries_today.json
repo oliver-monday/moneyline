@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-05",
-  "built_at_utc": "2026-05-06T01:57:36Z",
+  "built_at_utc": "2026-05-06T04:28:27Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -29,8 +29,8 @@
   "LAL": [
     {
       "name": "J. Vanderbilt",
-      "status": "QUES",
-      "details": "J. Vanderbilt (Ques)"
+      "status": "DOUBT",
+      "details": "J. Vanderbilt (Doubt)"
     },
     {
       "name": "L. Doncic",
@@ -44,8 +44,8 @@
     },
     {
       "name": "J. Williams",
-      "status": "OUT",
-      "details": "J. Williams (Out)"
+      "status": "DOUBT",
+      "details": "J. Williams (Doubt)"
     }
   ],
   "OKC": [
@@ -56,8 +56,8 @@
     },
     {
       "name": "J. Williams",
-      "status": "OUT",
-      "details": "J. Williams (Out)"
+      "status": "DOUBT",
+      "details": "J. Williams (Doubt)"
     }
   ]
 }
