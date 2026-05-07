@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-07",
-  "built_at_utc": "2026-05-07T23:03:34Z",
+  "built_at_utc": "2026-05-07T23:55:03Z",
   "source": "rotowire",
   "CLE": [
     {
@@ -28,19 +28,14 @@
   ],
   "LAL": [
     {
-      "name": "L. Kennard",
-      "status": "QUES",
-      "details": "L. Kennard (Ques)"
-    },
-    {
-      "name": "J. Vanderbilt",
-      "status": "DOUBT",
-      "details": "J. Vanderbilt (Doubt)"
-    },
-    {
       "name": "L. Doncic",
       "status": "OUT",
       "details": "L. Doncic (Out)"
+    },
+    {
+      "name": "J. Vanderbilt",
+      "status": "OUT",
+      "details": "J. Vanderbilt (Out)"
     },
     {
       "name": "T. Sorber",
