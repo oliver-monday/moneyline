@@ -1,0 +1,23 @@
+[
+  {
+    "asof_date": "2026-05-07",
+    "player_id": "3908809.0",
+    "player_name": "Donovan Mitchell",
+    "team_abbrev": "CLE",
+    "opp": "DET",
+    "game_id": "401871334",
+    "stat": "reb",
+    "threshold": 4,
+    "hits": 8,
+    "window_games": 10,
+    "hit_rate": 0.8,
+    "is_home_game": false,
+    "rest_days": 1,
+    "is_b2b": false,
+    "share_trend_pp": -0.6732858967763294,
+    "share_trend_dir": "FLAT",
+    "iqr_10": 1.75,
+    "landmine_rate_10": 0.2,
+    "trap_risk": false
+  }
+]

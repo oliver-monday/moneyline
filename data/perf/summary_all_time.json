@@ -1,16 +1,16 @@
 {
   "all_targets": {
-    "hit_rate": 0.6421875,
-    "hits": 822,
-    "total": 1280
+    "hit_rate": 0.6425796425796426,
+    "hits": 827,
+    "total": 1287
   },
-  "days_tracked": 121,
-  "end_date": "2026-05-05",
-  "last_updated_utc": "2026-05-06T15:56:42Z",
+  "days_tracked": 122,
+  "end_date": "2026-05-06",
+  "last_updated_utc": "2026-05-07T10:43:49Z",
   "start_date": "2025-12-28",
   "top_targets": {
-    "hit_rate": 0.5645161290322581,
-    "hits": 350,
-    "total": 620
+    "hit_rate": 0.5670926517571885,
+    "hits": 355,
+    "total": 626
   }
 }

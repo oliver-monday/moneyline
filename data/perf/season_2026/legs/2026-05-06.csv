@@ -1,0 +1,9 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-05-06,2026,Jalen Brunson,NY,PHI,pts,25,HIT,26,,targets_snapshot_2026-05-06.json
+2026-05-06,2026,Jaden McDaniels,MIN,SA,ast,2,HIT,4,,targets_snapshot_2026-05-06.json
+2026-05-06,2026,Joel Embiid,PHI,NY,3pt,1,,,,targets_snapshot_2026-05-06.json
+2026-05-06,2026,Julius Randle,MIN,SA,reb,6,MISSED,5,,targets_snapshot_2026-05-06.json
+2026-05-06,2026,Devin Vassell,SA,MIN,ast,2,HIT,4,,targets_snapshot_2026-05-06.json
+2026-05-06,2026,Stephon Castle,SA,MIN,pts,15,HIT,21,,targets_snapshot_2026-05-06.json
+2026-05-06,2026,Stephon Castle,SA,MIN,3pt,1,MISSED,0,,targets_snapshot_2026-05-06.json
+2026-05-06,2026,Karl-Anthony Towns,NY,PHI,ast,4,HIT,7,,targets_snapshot_2026-05-06.json
