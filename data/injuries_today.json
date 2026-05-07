@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-06",
-  "built_at_utc": "2026-05-07T02:00:35Z",
+  "built_at_utc": "2026-05-07T04:28:53Z",
   "source": "rotowire",
   "PHI": [
     {
@@ -14,12 +14,22 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
+      "name": "O. Anunoby",
+      "status": "QUES",
+      "details": "O. Anunoby (Ques)"
+    },
+    {
       "name": "M. Robinson",
       "status": "QUES",
       "details": "M. Robinson (Ques)"
     }
   ],
   "NYK": [
+    {
+      "name": "O. Anunoby",
+      "status": "QUES",
+      "details": "O. Anunoby (Ques)"
+    },
     {
       "name": "M. Robinson",
       "status": "QUES",
@@ -31,6 +41,11 @@
       "name": "D. DiVincenzo",
       "status": "OFS",
       "details": "D. DiVincenzo (OFS)"
+    },
+    {
+      "name": "A. Dosunmu",
+      "status": "OUT",
+      "details": "A. Dosunmu (Out)"
     },
     {
       "name": "D. Jones Garcia",
