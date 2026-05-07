@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-05-06",
-  "built_at_utc": "2026-05-06T23:53:40Z",
+  "built_at_utc": "2026-05-07T02:00:35Z",
   "source": "rotowire",
   "PHI": [
     {
       "name": "J. Embiid",
-      "status": "OUT",
-      "details": "J. Embiid (Out)"
+      "status": "QUES",
+      "details": "J. Embiid (Ques)"
     },
     {
       "name": "Probable Pitchers",
@@ -15,15 +15,15 @@
     },
     {
       "name": "M. Robinson",
-      "status": "OUT",
-      "details": "M. Robinson (Out)"
+      "status": "QUES",
+      "details": "M. Robinson (Ques)"
     }
   ],
   "NYK": [
     {
       "name": "M. Robinson",
-      "status": "OUT",
-      "details": "M. Robinson (Out)"
+      "status": "QUES",
+      "details": "M. Robinson (Ques)"
     }
   ],
   "MIN": [
@@ -33,19 +33,9 @@
       "details": "D. DiVincenzo (OFS)"
     },
     {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "C. Bryant",
-      "status": "QUES",
-      "details": "C. Bryant (Ques)"
     }
   ],
   "SAS": [
@@ -53,11 +43,6 @@
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "C. Bryant",
-      "status": "QUES",
-      "details": "C. Bryant (Ques)"
     }
   ]
 }
