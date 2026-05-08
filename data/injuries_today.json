@@ -1,22 +1,17 @@
 {
   "asof_date": "2026-05-08",
-  "built_at_utc": "2026-05-08T20:57:53Z",
+  "built_at_utc": "2026-05-08T21:45:05Z",
   "source": "rotowire",
   "NYK": [
-    {
-      "name": "J. Hart",
-      "status": "PROB",
-      "details": "J. Hart (Prob)"
-    },
     {
       "name": "M. Robinson",
       "status": "PROB",
       "details": "M. Robinson (Prob)"
     },
     {
-      "name": "O. Anunoby",
-      "status": "QUES",
-      "details": "O. Anunoby (Ques)"
+      "name": "OG Anunoby",
+      "status": "OUT",
+      "details": "OG Anunoby (Out)"
     },
     {
       "name": "Probable Pitchers",
