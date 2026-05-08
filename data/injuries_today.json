@@ -1,12 +1,22 @@
 {
-  "asof_date": "2026-05-07",
-  "built_at_utc": "2026-05-08T04:47:31Z",
+  "asof_date": "2026-05-08",
+  "built_at_utc": "2026-05-08T09:58:21Z",
   "source": "rotowire",
-  "CLE": [
+  "NYK": [
     {
-      "name": "S. Merrill",
-      "status": "OUT",
-      "details": "S. Merrill (Out)"
+      "name": "M. Robinson",
+      "status": "PROB",
+      "details": "M. Robinson (Prob)"
+    },
+    {
+      "name": "O. Anunoby",
+      "status": "QUES",
+      "details": "O. Anunoby (Ques)"
+    },
+    {
+      "name": "J. Hart",
+      "status": "QUES",
+      "details": "J. Hart (Ques)"
     },
     {
       "name": "Probable Pitchers",
@@ -14,50 +24,55 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "K. Huerter",
-      "status": "OUT",
-      "details": "K. Huerter (Out)"
+      "name": "J. Embiid",
+      "status": "QUES",
+      "details": "J. Embiid (Ques)"
     }
   ],
-  "DET": [
+  "PHI": [
     {
-      "name": "K. Huerter",
-      "status": "OUT",
-      "details": "K. Huerter (Out)"
+      "name": "J. Embiid",
+      "status": "QUES",
+      "details": "J. Embiid (Ques)"
     }
   ],
-  "LAL": [
+  "SAS": [
     {
-      "name": "L. Doncic",
-      "status": "OUT",
-      "details": "L. Doncic (Out)"
-    },
-    {
-      "name": "J. Vanderbilt",
-      "status": "OUT",
-      "details": "J. Vanderbilt (Out)"
-    },
-    {
-      "name": "T. Sorber",
+      "name": "D. Jones Garcia",
       "status": "OFS",
-      "details": "T. Sorber (OFS)"
+      "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "J. Williams",
-      "status": "OUT",
-      "details": "J. Williams (Out)"
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
+    },
+    {
+      "name": "D. DiVincenzo",
+      "status": "OFS",
+      "details": "D. DiVincenzo (OFS)"
+    },
+    {
+      "name": "A. Dosunmu",
+      "status": "QUES",
+      "details": "A. Dosunmu (Ques)"
     }
   ],
-  "OKC": [
+  "MIN": [
     {
-      "name": "T. Sorber",
+      "name": "D. DiVincenzo",
       "status": "OFS",
-      "details": "T. Sorber (OFS)"
+      "details": "D. DiVincenzo (OFS)"
     },
     {
-      "name": "J. Williams",
-      "status": "OUT",
-      "details": "J. Williams (Out)"
+      "name": "A. Dosunmu",
+      "status": "QUES",
+      "details": "A. Dosunmu (Ques)"
+    },
+    {
+      "name": "A. Edwards",
+      "status": "QUES",
+      "details": "A. Edwards (Ques)"
     }
   ]
 }
