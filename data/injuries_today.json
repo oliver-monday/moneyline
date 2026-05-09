@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-05-09",
-  "built_at_utc": "2026-05-09T21:31:06Z",
+  "built_at_utc": "2026-05-09T22:53:57Z",
   "source": "rotowire",
   "DET": [
     {
       "name": "K. Huerter",
-      "status": "OUT",
-      "details": "K. Huerter (Out)"
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
     },
     {
       "name": "Probable Pitchers",
@@ -22,8 +22,8 @@
     },
     {
       "name": "J. Williams",
-      "status": "DOUBT",
-      "details": "J. Williams (Doubt)"
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     },
     {
       "name": "J. Vanderbilt",
