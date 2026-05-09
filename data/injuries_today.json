@@ -1,12 +1,12 @@
 {
-  "asof_date": "2026-05-08",
-  "built_at_utc": "2026-05-09T05:00:12Z",
+  "asof_date": "2026-05-09",
+  "built_at_utc": "2026-05-09T09:47:40Z",
   "source": "rotowire",
-  "NYK": [
+  "DET": [
     {
-      "name": "O. Anunoby",
-      "status": "QUES",
-      "details": "O. Anunoby (Ques)"
+      "name": "K. Huerter",
+      "status": "DOUBT",
+      "details": "K. Huerter (Doubt)"
     },
     {
       "name": "Probable Pitchers",
@@ -14,35 +14,50 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "J. Embiid",
+      "name": "S. Merrill",
       "status": "QUES",
-      "details": "J. Embiid (Ques)"
+      "details": "S. Merrill (Ques)"
     }
   ],
-  "PHI": [
+  "CLE": [
     {
-      "name": "J. Embiid",
+      "name": "S. Merrill",
       "status": "QUES",
-      "details": "J. Embiid (Ques)"
+      "details": "S. Merrill (Ques)"
     }
   ],
-  "SAS": [
+  "OKC": [
     {
-      "name": "D. Jones Garcia",
+      "name": "T. Sorber",
       "status": "OFS",
-      "details": "D. Jones Garcia (OFS)"
+      "details": "T. Sorber (OFS)"
     },
     {
-      "name": "D. DiVincenzo",
-      "status": "OFS",
-      "details": "D. DiVincenzo (OFS)"
+      "name": "J. Williams",
+      "status": "DOUBT",
+      "details": "J. Williams (Doubt)"
+    },
+    {
+      "name": "J. Vanderbilt",
+      "status": "QUES",
+      "details": "J. Vanderbilt (Ques)"
+    },
+    {
+      "name": "L. Doncic",
+      "status": "OUT",
+      "details": "L. Doncic (Out)"
     }
   ],
-  "MIN": [
+  "LAL": [
     {
-      "name": "D. DiVincenzo",
-      "status": "OFS",
-      "details": "D. DiVincenzo (OFS)"
+      "name": "J. Vanderbilt",
+      "status": "QUES",
+      "details": "J. Vanderbilt (Ques)"
+    },
+    {
+      "name": "L. Doncic",
+      "status": "OUT",
+      "details": "L. Doncic (Out)"
     }
   ]
 }
