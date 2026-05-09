@@ -11975,10 +11975,10 @@ asof_date,team_abbrev,player_name,status,details,source
 2026-05-08,SAS,D. Jones Garcia,OFS,D. Jones Garcia (OFS),rotowire
 2026-05-08,SAS,D. DiVincenzo,OFS,D. DiVincenzo (OFS),rotowire
 2026-05-08,MIN,D. DiVincenzo,OFS,D. DiVincenzo (OFS),rotowire
-2026-05-09,DET,K. Huerter,DOUBT,K. Huerter (Doubt),rotowire
-2026-05-09,DET,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
 2026-05-09,DET,S. Merrill,QUES,S. Merrill (Ques),rotowire
 2026-05-09,CLE,S. Merrill,QUES,S. Merrill (Ques),rotowire
+2026-05-09,DET,K. Huerter,OUT,K. Huerter (Out),rotowire
+2026-05-09,DET,Probable Pitchers,PROB,Probable Pitchers (Prob),rotowire
 2026-05-09,OKC,T. Sorber,OFS,T. Sorber (OFS),rotowire
 2026-05-09,OKC,J. Williams,DOUBT,J. Williams (Doubt),rotowire
 2026-05-09,OKC,J. Vanderbilt,QUES,J. Vanderbilt (Ques),rotowire
