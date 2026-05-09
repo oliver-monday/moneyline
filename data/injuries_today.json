@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-09",
-  "built_at_utc": "2026-05-09T22:53:57Z",
+  "built_at_utc": "2026-05-09T23:52:11Z",
   "source": "rotowire",
   "DET": [
     {
@@ -26,22 +26,12 @@
       "details": "J. Williams (Out)"
     },
     {
-      "name": "J. Vanderbilt",
-      "status": "QUES",
-      "details": "J. Vanderbilt (Ques)"
-    },
-    {
       "name": "L. Doncic",
       "status": "OUT",
       "details": "L. Doncic (Out)"
     }
   ],
   "LAL": [
-    {
-      "name": "J. Vanderbilt",
-      "status": "QUES",
-      "details": "J. Vanderbilt (Ques)"
-    },
     {
       "name": "L. Doncic",
       "status": "OUT",
