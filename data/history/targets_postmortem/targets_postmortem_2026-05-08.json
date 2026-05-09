@@ -5,7 +5,7 @@
     "hits": 3,
     "misses": 2,
     "hit_rate_pct": 60,
-    "top_targets_total": 3,
+    "top_targets_total": 4,
     "top_targets_hits": 2
   },
   "hits": [
@@ -149,7 +149,7 @@
       "actual": 33
     }
   ],
-  "built_at_utc": "2026-05-09T09:53:01Z",
+  "built_at_utc": "2026-05-09T14:41:52Z",
   "snapshot_file": "targets_snapshot_2026-05-08.json",
   "preset": "baseline",
   "top_targets": [
@@ -227,6 +227,31 @@
       "actual": 33,
       "hit": true,
       "delta": -8
+    },
+    {
+      "asof_date": "2026-05-08",
+      "player_id": "3059318.0",
+      "player_name": "Joel Embiid",
+      "team_abbrev": "PHI",
+      "opp": "NY",
+      "game_id": "401871161",
+      "stat": "3pt",
+      "threshold": 1,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": true,
+      "rest_days": 3,
+      "is_b2b": false,
+      "share_trend_pp": -7.795640225787285,
+      "share_trend_dir": "DOWN",
+      "iqr_10": 1.0,
+      "landmine_rate_10": null,
+      "trap_risk": null,
+      "dnp": false,
+      "actual": 0,
+      "hit": false,
+      "delta": 1
     }
   ]
 }
