@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-08",
-  "built_at_utc": "2026-05-08T23:57:22Z",
+  "built_at_utc": "2026-05-09T02:00:45Z",
   "source": "rotowire",
   "NYK": [
     {
@@ -21,19 +21,9 @@
       "details": "D. Jones Garcia (OFS)"
     },
     {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
-    },
-    {
       "name": "D. DiVincenzo",
       "status": "OFS",
       "details": "D. DiVincenzo (OFS)"
-    },
-    {
-      "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
     }
   ],
   "MIN": [
@@ -41,16 +31,6 @@
       "name": "D. DiVincenzo",
       "status": "OFS",
       "details": "D. DiVincenzo (OFS)"
-    },
-    {
-      "name": "A. Dosunmu",
-      "status": "QUES",
-      "details": "A. Dosunmu (Ques)"
-    },
-    {
-      "name": "A. Edwards",
-      "status": "QUES",
-      "details": "A. Edwards (Ques)"
     }
   ]
 }
