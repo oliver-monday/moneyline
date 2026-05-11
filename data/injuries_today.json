@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-11",
-  "built_at_utc": "2026-05-11T17:07:14Z",
+  "built_at_utc": "2026-05-11T18:29:59Z",
   "source": "rotowire",
   "DET": [
     {
@@ -17,6 +17,18 @@
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "T. Bryant",
+      "status": "QUES",
+      "details": "T. Bryant (Ques)"
+    }
+  ],
+  "CLE": [
+    {
+      "name": "T. Bryant",
+      "status": "QUES",
+      "details": "T. Bryant (Ques)"
     }
   ],
   "OKC": [
