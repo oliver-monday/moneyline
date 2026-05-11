@@ -166,26 +166,5 @@
     "iqr_10": 0.75,
     "landmine_rate_10": null,
     "trap_risk": null
-  },
-  {
-    "asof_date": "2026-05-11",
-    "player_id": "4593803.0",
-    "player_name": "Jalen Williams",
-    "team_abbrev": "OKC",
-    "opp": "LAL",
-    "game_id": "401871329",
-    "stat": "pts",
-    "threshold": 15,
-    "hits": 8,
-    "window_games": 10,
-    "hit_rate": 0.8,
-    "is_home_game": false,
-    "rest_days": 18,
-    "is_b2b": false,
-    "share_trend_pp": -1.1666712807490043,
-    "share_trend_dir": "FLAT",
-    "iqr_10": 5.5,
-    "landmine_rate_10": 0.0,
-    "trap_risk": false
   }
 ]
