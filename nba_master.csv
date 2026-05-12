@@ -1308,4 +1308,4 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401871155,2026-05-10,2026-05-10T23:30Z,Minnesota Timberwolves,MIN,114,160.0,,San Antonio Spurs,SA,109,-192.0,,Minneapolis,MN,,
 401871336,2026-05-11,2026-05-12T00:00Z,Cleveland Cavaliers,CLE,112,-166.0,,Detroit Pistons,DET,103,140.0,,Cleveland,OH,,
 401871329,2026-05-11,2026-05-12T02:30Z,Los Angeles Lakers,LAL,110,390.0,,Oklahoma City Thunder,OKC,115,-520.0,,Los Angeles,CA,,
-401871156,2026-05-12,2026-05-13T00:00Z,San Antonio Spurs,SA,0,-410.0,,Minnesota Timberwolves,MIN,0,320.0,,San Antonio,TX,D. Jones Garcia (OFS),D. DiVincenzo (OFS)
+401871156,2026-05-12,2026-05-13T00:00Z,San Antonio Spurs,SA,0,-380.0,,Minnesota Timberwolves,MIN,0,300.0,,San Antonio,TX,D. Jones Garcia (OFS),D. DiVincenzo (OFS)
