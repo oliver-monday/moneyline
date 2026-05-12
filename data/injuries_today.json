@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-12",
-  "built_at_utc": "2026-05-12T16:36:59Z",
+  "built_at_utc": "2026-05-12T18:29:01Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -22,6 +22,11 @@
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "D. Harper",
+      "status": "QUES",
+      "details": "D. Harper (Ques)"
     }
   ],
   "SAS": [
@@ -34,6 +39,11 @@
       "name": "D. Fox",
       "status": "QUES",
       "details": "D. Fox (Ques)"
+    },
+    {
+      "name": "D. Harper",
+      "status": "QUES",
+      "details": "D. Harper (Ques)"
     }
   ]
 }
