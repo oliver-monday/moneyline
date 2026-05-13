@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-12",
-  "built_at_utc": "2026-05-12T23:07:38Z",
+  "built_at_utc": "2026-05-13T00:01:26Z",
   "source": "rotowire",
   "MIN": [
     {
@@ -14,19 +14,9 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "D. Fox",
-      "status": "QUES",
-      "details": "D. Fox (Ques)"
-    },
-    {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "D. Harper",
-      "status": "QUES",
-      "details": "D. Harper (Ques)"
     }
   ],
   "SAS": [
@@ -34,16 +24,6 @@
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "D. Fox",
-      "status": "QUES",
-      "details": "D. Fox (Ques)"
-    },
-    {
-      "name": "D. Harper",
-      "status": "QUES",
-      "details": "D. Harper (Ques)"
     }
   ]
 }
