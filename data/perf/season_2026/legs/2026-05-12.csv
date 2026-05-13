@@ -1,0 +1,3 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-05-12,2026,Julius Randle,MIN,SA,reb,6,HIT,10,,targets_snapshot_2026-05-12.json
+2026-05-12,2026,Devin Vassell,SA,MIN,ast,2,HIT,2,,targets_snapshot_2026-05-12.json
