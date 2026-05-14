@@ -1,24 +1,5 @@
 {
-  "asof_date": "2026-05-13",
-  "built_at_utc": "2026-05-14T05:39:33Z",
-  "source": "rotowire",
-  "DET": [
-    {
-      "name": "D. Robinson",
-      "status": "OUT",
-      "details": "D. Robinson (Out)"
-    }
-  ],
-  "CLE": [
-    {
-      "name": "Probable Pitchers",
-      "status": "PROB",
-      "details": "Probable Pitchers (Prob)"
-    },
-    {
-      "name": "D. Robinson",
-      "status": "OUT",
-      "details": "D. Robinson (Out)"
-    }
-  ]
+  "asof_date": "2026-05-14",
+  "built_at_utc": "2026-05-14T10:37:06Z",
+  "source": "rotowire"
 }
