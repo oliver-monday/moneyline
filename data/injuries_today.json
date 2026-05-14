@@ -1,22 +1,12 @@
 {
   "asof_date": "2026-05-13",
-  "built_at_utc": "2026-05-13T23:11:14Z",
+  "built_at_utc": "2026-05-14T00:01:58Z",
   "source": "rotowire",
   "DET": [
     {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
-    },
-    {
-      "name": "C. LeVert",
-      "status": "QUES",
-      "details": "C. LeVert (Ques)"
-    },
-    {
       "name": "D. Robinson",
-      "status": "QUES",
-      "details": "D. Robinson (Ques)"
+      "status": "OUT",
+      "details": "D. Robinson (Out)"
     }
   ],
   "CLE": [
@@ -27,18 +17,8 @@
     },
     {
       "name": "D. Robinson",
-      "status": "QUES",
-      "details": "D. Robinson (Ques)"
-    },
-    {
-      "name": "K. Huerter",
-      "status": "QUES",
-      "details": "K. Huerter (Ques)"
-    },
-    {
-      "name": "C. LeVert",
-      "status": "QUES",
-      "details": "C. LeVert (Ques)"
+      "status": "OUT",
+      "details": "D. Robinson (Out)"
     }
   ]
 }
