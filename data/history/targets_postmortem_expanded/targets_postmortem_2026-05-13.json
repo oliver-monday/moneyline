@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-05-13",
   "summary": {
-    "targets_total": 3,
-    "hits": 3,
+    "targets_total": 4,
+    "hits": 4,
     "misses": 0,
     "hit_rate_pct": 100,
-    "top_targets_total": 2,
-    "top_targets_hits": 2
+    "top_targets_total": 4,
+    "top_targets_hits": 4
   },
   "hits": [
     {
@@ -59,6 +59,23 @@
       "iqr_10": 1.5,
       "landmine_rate_10": 0.1,
       "trap_risk": false
+    },
+    {
+      "player_id": "4684742.0",
+      "player_name": "Ausar Thompson",
+      "team_abbrev": "DET",
+      "opp": "CLE",
+      "stat": "reb",
+      "threshold": 6,
+      "actual": 7,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 0.5033298760347471,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 1.75,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false
     }
   ],
   "misses": [],
@@ -85,10 +102,35 @@
       "actual": 6
     }
   ],
-  "built_at_utc": "2026-05-14T10:35:56Z",
-  "snapshot_file": "targets_snapshot_2026-05-13.json",
-  "preset": "baseline",
+  "built_at_utc": "2026-05-14T10:35:58Z",
+  "snapshot_file": "targets_snapshot_expanded_2026-05-13.json",
+  "preset": "expanded",
   "top_targets": [
+    {
+      "asof_date": "2026-05-13",
+      "player_id": "4432166.0",
+      "player_name": "Cade Cunningham",
+      "team_abbrev": "DET",
+      "opp": "CLE",
+      "game_id": "401871337",
+      "stat": "3pt",
+      "threshold": 2,
+      "hits": 10,
+      "window_games": 10,
+      "hit_rate": 1.0,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 5.897546897546893,
+      "share_trend_dir": "UP",
+      "iqr_10": 1.75,
+      "landmine_rate_10": null,
+      "trap_risk": null,
+      "dnp": false,
+      "actual": 6,
+      "hit": true,
+      "delta": -4
+    },
     {
       "asof_date": "2026-05-13",
       "player_id": "3908809.0",
@@ -138,6 +180,31 @@
       "actual": 39,
       "hit": true,
       "delta": -14
+    },
+    {
+      "asof_date": "2026-05-13",
+      "player_id": "4684742.0",
+      "player_name": "Ausar Thompson",
+      "team_abbrev": "DET",
+      "opp": "CLE",
+      "game_id": "401871337",
+      "stat": "reb",
+      "threshold": 6,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 0.5033298760347471,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 1.75,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false,
+      "dnp": false,
+      "actual": 7,
+      "hit": true,
+      "delta": -1
     }
   ]
 }

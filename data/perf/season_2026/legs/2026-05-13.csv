@@ -1,0 +1,4 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-05-13,2026,Cade Cunningham,DET,CLE,pts,25,HIT,39,,targets_snapshot_2026-05-13.json
+2026-05-13,2026,Cade Cunningham,DET,CLE,3pt,2,HIT,6,,targets_snapshot_2026-05-13.json
+2026-05-13,2026,Donovan Mitchell,CLE,DET,reb,4,HIT,4,,targets_snapshot_2026-05-13.json
