@@ -5,8 +5,8 @@
     "hits": 3,
     "misses": 0,
     "hit_rate_pct": 100,
-    "top_targets_total": 2,
-    "top_targets_hits": 2
+    "top_targets_total": 1,
+    "top_targets_hits": 1
   },
   "hits": [
     {
@@ -20,11 +20,11 @@
       "is_home_game": true,
       "rest_days": 1,
       "is_b2b": false,
-      "share_trend_pp": 2.388356183349649,
+      "share_trend_pp": 4.1820727548653736,
       "share_trend_dir": "UP",
-      "iqr_10": 7.0,
+      "iqr_10": 12.25,
       "landmine_rate_10": 0.0,
-      "trap_risk": false
+      "trap_risk": true
     },
     {
       "player_id": "4432166.0",
@@ -37,9 +37,9 @@
       "is_home_game": true,
       "rest_days": 1,
       "is_b2b": false,
-      "share_trend_pp": 5.897546897546893,
+      "share_trend_pp": 11.329365079365072,
       "share_trend_dir": "UP",
-      "iqr_10": 1.75,
+      "iqr_10": 2.75,
       "landmine_rate_10": null,
       "trap_risk": null
     },
@@ -54,9 +54,9 @@
       "is_home_game": false,
       "rest_days": 1,
       "is_b2b": false,
-      "share_trend_pp": 3.945185385310511,
+      "share_trend_pp": 3.660632539782058,
       "share_trend_dir": "UP",
-      "iqr_10": 1.5,
+      "iqr_10": 1.75,
       "landmine_rate_10": 0.1,
       "trap_risk": false
     }
@@ -85,7 +85,7 @@
       "actual": 6
     }
   ],
-  "built_at_utc": "2026-05-14T10:35:56Z",
+  "built_at_utc": "2026-05-14T16:03:57Z",
   "snapshot_file": "targets_snapshot_2026-05-13.json",
   "preset": "baseline",
   "top_targets": [
@@ -104,40 +104,15 @@
       "is_home_game": false,
       "rest_days": 1,
       "is_b2b": false,
-      "share_trend_pp": 3.945185385310511,
+      "share_trend_pp": 3.660632539782058,
       "share_trend_dir": "UP",
-      "iqr_10": 1.5,
+      "iqr_10": 1.75,
       "landmine_rate_10": 0.1,
       "trap_risk": false,
       "dnp": false,
       "actual": 4,
       "hit": true,
       "delta": 0
-    },
-    {
-      "asof_date": "2026-05-13",
-      "player_id": "4432166.0",
-      "player_name": "Cade Cunningham",
-      "team_abbrev": "DET",
-      "opp": "CLE",
-      "game_id": "401871337",
-      "stat": "pts",
-      "threshold": 25,
-      "hits": 8,
-      "window_games": 10,
-      "hit_rate": 0.8,
-      "is_home_game": true,
-      "rest_days": 1,
-      "is_b2b": false,
-      "share_trend_pp": 2.388356183349649,
-      "share_trend_dir": "UP",
-      "iqr_10": 7.0,
-      "landmine_rate_10": 0.0,
-      "trap_risk": false,
-      "dnp": false,
-      "actual": 39,
-      "hit": true,
-      "delta": -14
     }
   ]
 }
