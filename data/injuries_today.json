@@ -1,5 +1,46 @@
 {
-  "asof_date": "2026-05-14",
-  "built_at_utc": "2026-05-15T05:45:37Z",
-  "source": "rotowire"
+  "asof_date": "2026-05-15",
+  "built_at_utc": "2026-05-15T10:40:33Z",
+  "source": "rotowire",
+  "DET": [
+    {
+      "name": "K. Huerter",
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
+    },
+    {
+      "name": "C. LeVert",
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
+    },
+    {
+      "name": "D. Robinson",
+      "status": "QUES",
+      "details": "D. Robinson (Ques)"
+    },
+    {
+      "name": "Probable Pitchers",
+      "status": "PROB",
+      "details": "Probable Pitchers (Prob)"
+    }
+  ],
+  "SAS": [
+    {
+      "name": "D. Jones Garcia",
+      "status": "OFS",
+      "details": "D. Jones Garcia (OFS)"
+    },
+    {
+      "name": "D. DiVincenzo",
+      "status": "OFS",
+      "details": "D. DiVincenzo (OFS)"
+    }
+  ],
+  "MIN": [
+    {
+      "name": "D. DiVincenzo",
+      "status": "OFS",
+      "details": "D. DiVincenzo (OFS)"
+    }
+  ]
 }
