@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-15",
-  "built_at_utc": "2026-05-15T16:18:33Z",
+  "built_at_utc": "2026-05-15T18:16:05Z",
   "source": "rotowire",
   "DET": [
     {
@@ -34,6 +34,11 @@
       "name": "D. DiVincenzo",
       "status": "OFS",
       "details": "D. DiVincenzo (OFS)"
+    },
+    {
+      "name": "T. Shannon",
+      "status": "QUES",
+      "details": "T. Shannon (Ques)"
     }
   ],
   "MIN": [
@@ -41,6 +46,11 @@
       "name": "D. DiVincenzo",
       "status": "OFS",
       "details": "D. DiVincenzo (OFS)"
+    },
+    {
+      "name": "T. Shannon",
+      "status": "QUES",
+      "details": "T. Shannon (Ques)"
     }
   ]
 }
