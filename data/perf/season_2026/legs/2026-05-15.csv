@@ -1,6 +1,5 @@
 date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
 2026-05-15,2026,Cade Cunningham,DET,CLE,3pt,2,HIT,5,,targets_snapshot_2026-05-15.json
+2026-05-15,2026,James Harden,CLE,DET,reb,4,HIT,7,,targets_snapshot_2026-05-15.json
 2026-05-15,2026,Donovan Mitchell,CLE,DET,reb,4,HIT,4,,targets_snapshot_2026-05-15.json
 2026-05-15,2026,Evan Mobley,CLE,DET,3pt,1,HIT,2,,targets_snapshot_2026-05-15.json
-2026-05-15,2026,Julius Randle,MIN,SA,reb,6,HIT,7,,targets_snapshot_2026-05-15.json
-2026-05-15,2026,Devin Vassell,SA,MIN,ast,2,HIT,4,,targets_snapshot_2026-05-15.json
