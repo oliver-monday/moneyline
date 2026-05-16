@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-05-15",
-  "built_at_utc": "2026-05-15T23:55:59Z",
+  "built_at_utc": "2026-05-16T02:03:42Z",
   "source": "rotowire",
   "CLE": [
     {
       "name": "L. Nance",
-      "status": "OUT",
-      "details": "L. Nance (Out)"
+      "status": "QUES",
+      "details": "L. Nance (Ques)"
     }
   ],
   "SAS": [
@@ -19,11 +19,6 @@
       "name": "D. DiVincenzo",
       "status": "OFS",
       "details": "D. DiVincenzo (OFS)"
-    },
-    {
-      "name": "T. Shannon",
-      "status": "QUES",
-      "details": "T. Shannon (Ques)"
     }
   ],
   "MIN": [
@@ -31,11 +26,6 @@
       "name": "D. DiVincenzo",
       "status": "OFS",
       "details": "D. DiVincenzo (OFS)"
-    },
-    {
-      "name": "T. Shannon",
-      "status": "QUES",
-      "details": "T. Shannon (Ques)"
     }
   ],
   "DET": [
@@ -46,8 +36,8 @@
     },
     {
       "name": "L. Nance",
-      "status": "OUT",
-      "details": "L. Nance (Out)"
+      "status": "QUES",
+      "details": "L. Nance (Ques)"
     }
   ]
 }
