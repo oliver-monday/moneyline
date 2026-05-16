@@ -1,43 +1,5 @@
 {
-  "asof_date": "2026-05-15",
-  "built_at_utc": "2026-05-16T05:19:26Z",
-  "source": "rotowire",
-  "CLE": [
-    {
-      "name": "L. Nance",
-      "status": "QUES",
-      "details": "L. Nance (Ques)"
-    }
-  ],
-  "SAS": [
-    {
-      "name": "D. Jones Garcia",
-      "status": "OFS",
-      "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "D. DiVincenzo",
-      "status": "OFS",
-      "details": "D. DiVincenzo (OFS)"
-    }
-  ],
-  "MIN": [
-    {
-      "name": "D. DiVincenzo",
-      "status": "OFS",
-      "details": "D. DiVincenzo (OFS)"
-    }
-  ],
-  "DET": [
-    {
-      "name": "Probable Pitchers",
-      "status": "PROB",
-      "details": "Probable Pitchers (Prob)"
-    },
-    {
-      "name": "L. Nance",
-      "status": "QUES",
-      "details": "L. Nance (Ques)"
-    }
-  ]
+  "asof_date": "2026-05-16",
+  "built_at_utc": "2026-05-16T09:52:59Z",
+  "source": "rotowire"
 }
