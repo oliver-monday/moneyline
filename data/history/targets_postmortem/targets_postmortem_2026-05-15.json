@@ -112,7 +112,7 @@
       "actual": 2
     }
   ],
-  "built_at_utc": "2026-05-16T14:46:27Z",
+  "built_at_utc": "2026-05-17T10:06:37Z",
   "snapshot_file": "targets_snapshot_2026-05-15.json",
   "preset": "baseline",
   "top_targets": [
@@ -191,5 +191,6 @@
       "hit": true,
       "delta": -3
     }
-  ]
+  ],
+  "note": "Using snapshot from 2026-05-15 for results_date 2026-05-16"
 }
