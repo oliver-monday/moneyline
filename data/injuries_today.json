@@ -1,5 +1,49 @@
 {
-  "asof_date": "2026-05-16",
-  "built_at_utc": "2026-05-17T05:39:58Z",
-  "source": "rotowire"
+  "asof_date": "2026-05-17",
+  "built_at_utc": "2026-05-17T10:01:15Z",
+  "source": "rotowire",
+  "CLE": [
+    {
+      "name": "L. Nance",
+      "status": "DOUBT",
+      "details": "L. Nance (Doubt)"
+    },
+    {
+      "name": "Probable Pitchers",
+      "status": "PROB",
+      "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "K. Huerter",
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
+    },
+    {
+      "name": "C. LeVert",
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
+    },
+    {
+      "name": "D. Robinson",
+      "status": "QUES",
+      "details": "D. Robinson (Ques)"
+    }
+  ],
+  "DET": [
+    {
+      "name": "K. Huerter",
+      "status": "QUES",
+      "details": "K. Huerter (Ques)"
+    },
+    {
+      "name": "C. LeVert",
+      "status": "QUES",
+      "details": "C. LeVert (Ques)"
+    },
+    {
+      "name": "D. Robinson",
+      "status": "QUES",
+      "details": "D. Robinson (Ques)"
+    }
+  ]
 }
