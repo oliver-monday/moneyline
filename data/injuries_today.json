@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-05-17",
-  "built_at_utc": "2026-05-18T05:00:36Z",
+  "built_at_utc": "2026-05-18T06:02:45Z",
   "source": "rotowire",
   "CLE": [
     {
       "name": "L. Nance",
-      "status": "OUT",
-      "details": "L. Nance (Out)"
+      "status": "QUES",
+      "details": "L. Nance (Ques)"
     },
     {
       "name": "Probable Pitchers",
