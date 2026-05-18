@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-18",
-  "built_at_utc": "2026-05-18T21:56:23Z",
+  "built_at_utc": "2026-05-18T23:09:46Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -10,13 +10,13 @@
     },
     {
       "name": "D. Fox",
-      "status": "QUES",
-      "details": "D. Fox (Ques)"
+      "status": "PROB",
+      "details": "D. Fox (Prob)"
     },
     {
       "name": "L. Kornet",
-      "status": "QUES",
-      "details": "L. Kornet (Ques)"
+      "status": "PROB",
+      "details": "L. Kornet (Prob)"
     },
     {
       "name": "Probable Pitchers",
