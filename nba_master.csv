@@ -1313,4 +1313,5 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401871338,2026-05-15,2026-05-15T23:00Z,Cleveland Cavaliers,CLE,94,-175.0,,Detroit Pistons,DET,115,145.0,,Cleveland,OH,,
 401871157,2026-05-15,2026-05-16T01:30Z,Minnesota Timberwolves,MIN,109,180.0,,San Antonio Spurs,SA,139,-218.0,,Minneapolis,MN,,
 401871339,2026-05-17,2026-05-18T00:00Z,Detroit Pistons,DET,94,-185.0,,Cleveland Cavaliers,CLE,125,154.0,,Detroit,MI,,
-401873197,2026-05-18,2026-05-19T00:30Z,Oklahoma City Thunder,OKC,0,-245.0,,San Antonio Spurs,SA,0,200.0,,Oklahoma City,OK,T. Sorber (OFS),D. Jones Garcia (OFS)
+401873197,2026-05-18,2026-05-19T00:30Z,Oklahoma City Thunder,OKC,115,-245.0,,San Antonio Spurs,SA,122,200.0,,Oklahoma City,OK,,
+401873341,2026-05-19,2026-05-20T00:00Z,New York Knicks,NY,0,-265.0,,Cleveland Cavaliers,CLE,0,215.0,,New York,NY,,

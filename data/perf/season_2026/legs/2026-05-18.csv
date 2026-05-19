@@ -1,0 +1,4 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-05-18,2026,Devin Vassell,SA,OKC,ast,2,HIT,2,,targets_snapshot_2026-05-18.json
+2026-05-18,2026,Chet Holmgren,OKC,SA,pts,15,MISSED,8,,targets_snapshot_2026-05-18.json
+2026-05-18,2026,Chet Holmgren,OKC,SA,reb,8,HIT,8,,targets_snapshot_2026-05-18.json
