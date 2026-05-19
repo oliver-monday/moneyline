@@ -1,17 +1,12 @@
 {
-  "asof_date": "2026-05-18",
-  "built_at_utc": "2026-05-19T05:57:40Z",
+  "asof_date": "2026-05-19",
+  "built_at_utc": "2026-05-19T11:34:16Z",
   "source": "rotowire",
-  "SAS": [
+  "CLE": [
     {
-      "name": "D. Fox",
+      "name": "L. Nance",
       "status": "QUES",
-      "details": "D. Fox (Ques)"
-    },
-    {
-      "name": "D. Jones Garcia",
-      "status": "OFS",
-      "details": "D. Jones Garcia (OFS)"
+      "details": "L. Nance (Ques)"
     },
     {
       "name": "Probable Pitchers",
@@ -19,16 +14,16 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "T. Sorber",
-      "status": "OFS",
-      "details": "T. Sorber (OFS)"
+      "name": "O. Anunoby",
+      "status": "PROB",
+      "details": "O. Anunoby (Prob)"
     }
   ],
-  "OKC": [
+  "NYK": [
     {
-      "name": "T. Sorber",
-      "status": "OFS",
-      "details": "T. Sorber (OFS)"
+      "name": "O. Anunoby",
+      "status": "PROB",
+      "details": "O. Anunoby (Prob)"
     }
   ]
 }
