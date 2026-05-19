@@ -1,17 +1,17 @@
 {
   "asof_date": "2026-05-18",
-  "built_at_utc": "2026-05-19T02:28:02Z",
+  "built_at_utc": "2026-05-19T04:52:44Z",
   "source": "rotowire",
   "SAS": [
+    {
+      "name": "D. Fox",
+      "status": "QUES",
+      "details": "D. Fox (Ques)"
+    },
     {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "D. Fox",
-      "status": "OUT",
-      "details": "D. Fox (Out)"
     },
     {
       "name": "Probable Pitchers",
