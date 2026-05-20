@@ -1,29 +1,12 @@
 {
   "asof_date": "2026-05-19",
-  "built_at_utc": "2026-05-19T23:09:56Z",
+  "built_at_utc": "2026-05-20T00:08:59Z",
   "source": "rotowire",
   "CLE": [
-    {
-      "name": "L. Nance",
-      "status": "QUES",
-      "details": "L. Nance (Ques)"
-    },
     {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
-    },
-    {
-      "name": "O. Anunoby",
-      "status": "PROB",
-      "details": "O. Anunoby (Prob)"
-    }
-  ],
-  "NYK": [
-    {
-      "name": "O. Anunoby",
-      "status": "PROB",
-      "details": "O. Anunoby (Prob)"
     }
   ]
 }
