@@ -1,43 +1,43 @@
 {
-  "asof_date": "2026-05-18",
-  "built_at_utc": "2026-05-19T16:43:13Z",
+  "asof_date": "2026-05-19",
+  "built_at_utc": "2026-05-20T11:20:54Z",
   "coinflips": [],
-  "favorites": [],
-  "summary": {
-    "coinflips_total": 0,
-    "favorites_lost": 1,
-    "favorites_won": 0,
-    "games_total": 1
-  },
-  "underdogs": [
+  "favorites": [
     {
-      "abs_prob_diff": 0.3768115942028986,
-      "away_abbrev": "SA",
-      "away_ml": 200.0,
-      "away_prob": 0.3333333333333333,
-      "away_score": 122,
-      "away_team": "San Antonio Spurs",
+      "abs_prob_diff": 0.40856707979995655,
+      "away_abbrev": "CLE",
+      "away_ml": 215.0,
+      "away_prob": 0.31746031746031744,
+      "away_score": 104,
+      "away_team": "Cleveland Cavaliers",
       "dog_side": "AWAY",
       "fav_side": "HOME",
-      "favorite_prob": 0.7101449275362319,
-      "game_id": 401873197,
-      "home_abbrev": "OKC",
-      "home_ml": -245.0,
-      "home_prob": 0.7101449275362319,
+      "favorite_prob": 0.726027397260274,
+      "game_id": 401873341,
+      "home_abbrev": "NY",
+      "home_ml": -265.0,
+      "home_prob": 0.726027397260274,
       "home_score": 115,
-      "home_team": "Oklahoma City Thunder",
+      "home_team": "New York Knicks",
       "is_coinflip": false,
-      "loser_abbrev": "OKC",
-      "loser_ml": -245.0,
-      "loser_score": 115,
-      "loser_side": "HOME",
-      "loser_team": "Oklahoma City Thunder",
-      "underdog_prob": 0.3333333333333333,
-      "winner_abbrev": "SA",
-      "winner_ml": 200.0,
-      "winner_score": 122,
-      "winner_side": "AWAY",
-      "winner_team": "San Antonio Spurs"
+      "loser_abbrev": "CLE",
+      "loser_ml": 215.0,
+      "loser_score": 104,
+      "loser_side": "AWAY",
+      "loser_team": "Cleveland Cavaliers",
+      "underdog_prob": 0.31746031746031744,
+      "winner_abbrev": "NY",
+      "winner_ml": -265.0,
+      "winner_score": 115,
+      "winner_side": "HOME",
+      "winner_team": "New York Knicks"
     }
-  ]
+  ],
+  "summary": {
+    "coinflips_total": 0,
+    "favorites_lost": 0,
+    "favorites_won": 1,
+    "games_total": 1
+  },
+  "underdogs": []
 }

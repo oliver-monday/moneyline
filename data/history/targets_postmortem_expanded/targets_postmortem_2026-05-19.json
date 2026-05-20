@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-05-19",
   "summary": {
-    "targets_total": 3,
-    "hits": 3,
-    "misses": 0,
-    "hit_rate_pct": 100,
-    "top_targets_total": 3,
-    "top_targets_hits": 3
+    "targets_total": 5,
+    "hits": 4,
+    "misses": 1,
+    "hit_rate_pct": 80,
+    "top_targets_total": 5,
+    "top_targets_hits": 4
   },
   "hits": [
     {
@@ -59,10 +59,65 @@
       "iqr_10": 1.0,
       "landmine_rate_10": null,
       "trap_risk": null
+    },
+    {
+      "player_id": "3136195.0",
+      "player_name": "Karl-Anthony Towns",
+      "team_abbrev": "NY",
+      "opp": "CLE",
+      "stat": "ast",
+      "threshold": 4,
+      "actual": 5,
+      "is_home_game": true,
+      "rest_days": 8,
+      "is_b2b": false,
+      "share_trend_pp": 7.639172522767998,
+      "share_trend_dir": "UP",
+      "iqr_10": 4.75,
+      "landmine_rate_10": 0.0,
+      "trap_risk": true
     }
   ],
-  "misses": [],
-  "closest_misses": [],
+  "misses": [
+    {
+      "player_id": "3934719.0",
+      "player_name": "OG Anunoby",
+      "team_abbrev": "NY",
+      "opp": "CLE",
+      "stat": "3pt",
+      "threshold": 2,
+      "actual": 1,
+      "delta": 1,
+      "is_home_game": true,
+      "rest_days": 12,
+      "is_b2b": false,
+      "share_trend_pp": -1.9034958419633319,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 1.0,
+      "landmine_rate_10": null,
+      "trap_risk": null
+    }
+  ],
+  "closest_misses": [
+    {
+      "player_id": "3934719.0",
+      "player_name": "OG Anunoby",
+      "team_abbrev": "NY",
+      "opp": "CLE",
+      "stat": "3pt",
+      "threshold": 2,
+      "actual": 1,
+      "delta": 1,
+      "is_home_game": true,
+      "rest_days": 12,
+      "is_b2b": false,
+      "share_trend_pp": -1.9034958419633319,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 1.0,
+      "landmine_rate_10": null,
+      "trap_risk": null
+    }
+  ],
   "reaches_hit": [
     {
       "player_id": "4432158.0",
@@ -75,9 +130,9 @@
       "actual": 2
     }
   ],
-  "built_at_utc": "2026-05-20T11:27:25Z",
-  "snapshot_file": "targets_snapshot_2026-05-19.json",
-  "preset": "baseline",
+  "built_at_utc": "2026-05-20T11:27:27Z",
+  "snapshot_file": "targets_snapshot_expanded_2026-05-19.json",
+  "preset": "expanded",
   "top_targets": [
     {
       "asof_date": "2026-05-19",
@@ -126,6 +181,56 @@
       "trap_risk": null,
       "dnp": false,
       "actual": 2,
+      "hit": true,
+      "delta": -1
+    },
+    {
+      "asof_date": "2026-05-19",
+      "player_id": "3934719.0",
+      "player_name": "OG Anunoby",
+      "team_abbrev": "NY",
+      "opp": "CLE",
+      "game_id": "401873341",
+      "stat": "3pt",
+      "threshold": 2,
+      "hits": 9,
+      "window_games": 10,
+      "hit_rate": 0.9,
+      "is_home_game": true,
+      "rest_days": 12,
+      "is_b2b": false,
+      "share_trend_pp": -1.9034958419633319,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 1.0,
+      "landmine_rate_10": null,
+      "trap_risk": null,
+      "dnp": false,
+      "actual": 1,
+      "hit": false,
+      "delta": 1
+    },
+    {
+      "asof_date": "2026-05-19",
+      "player_id": "3136195.0",
+      "player_name": "Karl-Anthony Towns",
+      "team_abbrev": "NY",
+      "opp": "CLE",
+      "game_id": "401873341",
+      "stat": "ast",
+      "threshold": 4,
+      "hits": 9,
+      "window_games": 10,
+      "hit_rate": 0.9,
+      "is_home_game": true,
+      "rest_days": 8,
+      "is_b2b": false,
+      "share_trend_pp": 7.639172522767998,
+      "share_trend_dir": "UP",
+      "iqr_10": 4.75,
+      "landmine_rate_10": 0.0,
+      "trap_risk": true,
+      "dnp": false,
+      "actual": 5,
       "hit": true,
       "delta": -1
     },
