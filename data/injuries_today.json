@@ -1,8 +1,13 @@
 {
   "asof_date": "2026-05-20",
-  "built_at_utc": "2026-05-21T00:09:18Z",
+  "built_at_utc": "2026-05-21T02:28:30Z",
   "source": "rotowire",
   "SAS": [
+    {
+      "name": "D. Harper",
+      "status": "QUES",
+      "details": "D. Harper (Ques)"
+    },
     {
       "name": "D. Jones Garcia",
       "status": "OFS",
@@ -19,6 +24,11 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
+    },
+    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
@@ -29,6 +39,11 @@
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ]
 }
