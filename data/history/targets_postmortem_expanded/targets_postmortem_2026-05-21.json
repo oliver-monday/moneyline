@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-05-21",
   "summary": {
-    "targets_total": 3,
-    "hits": 3,
-    "misses": 0,
-    "hit_rate_pct": 100,
-    "top_targets_total": 3,
-    "top_targets_hits": 3
+    "targets_total": 6,
+    "hits": 5,
+    "misses": 1,
+    "hit_rate_pct": 83,
+    "top_targets_total": 6,
+    "top_targets_hits": 5
   },
   "hits": [
     {
@@ -59,9 +59,62 @@
       "iqr_10": 1.0,
       "landmine_rate_10": null,
       "trap_risk": null
+    },
+    {
+      "player_id": "3062679.0",
+      "player_name": "Josh Hart",
+      "team_abbrev": "NY",
+      "opp": "CLE",
+      "stat": "3pt",
+      "threshold": 1,
+      "actual": 5,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": -0.33017333543649413,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 0.0,
+      "landmine_rate_10": null,
+      "trap_risk": null
+    },
+    {
+      "player_id": "3934719.0",
+      "player_name": "OG Anunoby",
+      "team_abbrev": "NY",
+      "opp": "CLE",
+      "stat": "3pt",
+      "threshold": 2,
+      "actual": 2,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": -3.5780990165665076,
+      "share_trend_dir": "DOWN",
+      "iqr_10": 0.75,
+      "landmine_rate_10": null,
+      "trap_risk": null
     }
   ],
-  "misses": [],
+  "misses": [
+    {
+      "player_id": "3136195.0",
+      "player_name": "Karl-Anthony Towns",
+      "team_abbrev": "NY",
+      "opp": "CLE",
+      "stat": "ast",
+      "threshold": 4,
+      "actual": 1,
+      "delta": 3,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 5.555839189434672,
+      "share_trend_dir": "UP",
+      "iqr_10": 4.0,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false
+    }
+  ],
   "closest_misses": [],
   "reaches_hit": [
     {
@@ -83,11 +136,21 @@
       "target_threshold": 1,
       "reached_threshold": 2,
       "actual": 2
+    },
+    {
+      "player_id": "3062679.0",
+      "player_name": "Josh Hart",
+      "team_abbrev": "NY",
+      "opp": "CLE",
+      "stat": "3pt",
+      "target_threshold": 1,
+      "reached_threshold": 3,
+      "actual": 5
     }
   ],
-  "built_at_utc": "2026-05-22T11:26:09Z",
-  "snapshot_file": "targets_snapshot_2026-05-21.json",
-  "preset": "baseline",
+  "built_at_utc": "2026-05-22T11:26:11Z",
+  "snapshot_file": "targets_snapshot_expanded_2026-05-21.json",
+  "preset": "expanded",
   "top_targets": [
     {
       "asof_date": "2026-05-21",
@@ -141,6 +204,31 @@
     },
     {
       "asof_date": "2026-05-21",
+      "player_id": "3136195.0",
+      "player_name": "Karl-Anthony Towns",
+      "team_abbrev": "NY",
+      "opp": "CLE",
+      "game_id": "401873342",
+      "stat": "ast",
+      "threshold": 4,
+      "hits": 9,
+      "window_games": 10,
+      "hit_rate": 0.9,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 5.555839189434672,
+      "share_trend_dir": "UP",
+      "iqr_10": 4.0,
+      "landmine_rate_10": 0.0,
+      "trap_risk": false,
+      "dnp": false,
+      "actual": 1,
+      "hit": false,
+      "delta": 3
+    },
+    {
+      "asof_date": "2026-05-21",
       "player_id": "3992.0",
       "player_name": "James Harden",
       "team_abbrev": "CLE",
@@ -163,6 +251,56 @@
       "actual": 6,
       "hit": true,
       "delta": -2
+    },
+    {
+      "asof_date": "2026-05-21",
+      "player_id": "3062679.0",
+      "player_name": "Josh Hart",
+      "team_abbrev": "NY",
+      "opp": "CLE",
+      "game_id": "401873342",
+      "stat": "3pt",
+      "threshold": 1,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": -0.33017333543649413,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 0.0,
+      "landmine_rate_10": null,
+      "trap_risk": null,
+      "dnp": false,
+      "actual": 5,
+      "hit": true,
+      "delta": -4
+    },
+    {
+      "asof_date": "2026-05-21",
+      "player_id": "3934719.0",
+      "player_name": "OG Anunoby",
+      "team_abbrev": "NY",
+      "opp": "CLE",
+      "game_id": "401873342",
+      "stat": "3pt",
+      "threshold": 2,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": -3.5780990165665076,
+      "share_trend_dir": "DOWN",
+      "iqr_10": 0.75,
+      "landmine_rate_10": null,
+      "trap_risk": null,
+      "dnp": false,
+      "actual": 2,
+      "hit": true,
+      "delta": 0
     }
   ]
 }
