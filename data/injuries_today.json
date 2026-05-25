@@ -1,12 +1,24 @@
 {
   "asof_date": "2026-05-25",
-  "built_at_utc": "2026-05-25T21:57:47Z",
+  "built_at_utc": "2026-05-25T23:11:27Z",
   "source": "rotowire",
+  "CLE": [
+    {
+      "name": "D. Schroder",
+      "status": "QUES",
+      "details": "D. Schroder (Ques)"
+    }
+  ],
   "NYK": [
     {
       "name": "Probable Pitchers",
       "status": "PROB",
       "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "D. Schroder",
+      "status": "QUES",
+      "details": "D. Schroder (Ques)"
     }
   ]
 }
