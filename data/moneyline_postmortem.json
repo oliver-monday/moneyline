@@ -1,43 +1,43 @@
 {
-  "asof_date": "2026-05-23",
-  "built_at_utc": "2026-05-24T14:54:36Z",
+  "asof_date": "2026-05-24",
+  "built_at_utc": "2026-05-25T12:00:15Z",
   "coinflips": [],
-  "favorites": [],
-  "summary": {
-    "coinflips_total": 0,
-    "favorites_lost": 1,
-    "favorites_won": 0,
-    "games_total": 1
-  },
-  "underdogs": [
+  "favorites": [
     {
-      "abs_prob_diff": 0.08902691511387162,
-      "away_abbrev": "NY",
-      "away_ml": 110.0,
-      "away_prob": 0.47619047619047616,
-      "away_score": 121,
-      "away_team": "New York Knicks",
+      "abs_prob_diff": 0.13223140495867775,
+      "away_abbrev": "OKC",
+      "away_ml": 120.0,
+      "away_prob": 0.45454545454545453,
+      "away_score": 82,
+      "away_team": "Oklahoma City Thunder",
       "dog_side": "AWAY",
       "fav_side": "HOME",
-      "favorite_prob": 0.5652173913043478,
-      "game_id": 401873343,
-      "home_abbrev": "CLE",
-      "home_ml": -130.0,
-      "home_prob": 0.5652173913043478,
-      "home_score": 108,
-      "home_team": "Cleveland Cavaliers",
+      "favorite_prob": 0.5867768595041323,
+      "game_id": 401873200,
+      "home_abbrev": "SA",
+      "home_ml": -142.0,
+      "home_prob": 0.5867768595041323,
+      "home_score": 103,
+      "home_team": "San Antonio Spurs",
       "is_coinflip": false,
-      "loser_abbrev": "CLE",
-      "loser_ml": -130.0,
-      "loser_score": 108,
-      "loser_side": "HOME",
-      "loser_team": "Cleveland Cavaliers",
-      "underdog_prob": 0.47619047619047616,
-      "winner_abbrev": "NY",
-      "winner_ml": 110.0,
-      "winner_score": 121,
-      "winner_side": "AWAY",
-      "winner_team": "New York Knicks"
+      "loser_abbrev": "OKC",
+      "loser_ml": 120.0,
+      "loser_score": 82,
+      "loser_side": "AWAY",
+      "loser_team": "Oklahoma City Thunder",
+      "underdog_prob": 0.45454545454545453,
+      "winner_abbrev": "SA",
+      "winner_ml": -142.0,
+      "winner_score": 103,
+      "winner_side": "HOME",
+      "winner_team": "San Antonio Spurs"
     }
-  ]
+  ],
+  "summary": {
+    "coinflips_total": 0,
+    "favorites_lost": 0,
+    "favorites_won": 1,
+    "games_total": 1
+  },
+  "underdogs": []
 }
