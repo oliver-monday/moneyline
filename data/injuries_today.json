@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-05-25",
-  "built_at_utc": "2026-05-25T23:11:27Z",
+  "built_at_utc": "2026-05-26T00:07:42Z",
   "source": "rotowire",
   "CLE": [
     {
       "name": "D. Schroder",
-      "status": "QUES",
-      "details": "D. Schroder (Ques)"
+      "status": "OUT",
+      "details": "D. Schroder (Out)"
     }
   ],
   "NYK": [
@@ -17,8 +17,8 @@
     },
     {
       "name": "D. Schroder",
-      "status": "QUES",
-      "details": "D. Schroder (Ques)"
+      "status": "OUT",
+      "details": "D. Schroder (Out)"
     }
   ]
 }
