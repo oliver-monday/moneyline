@@ -1320,4 +1320,5 @@ game_id,game_date,game_time_utc,home_team_name,home_team_abbrev,home_score,home_
 401873199,2026-05-22,2026-05-23T00:30Z,San Antonio Spurs,SA,108,-125.0,,Oklahoma City Thunder,OKC,123,105.0,,San Antonio,TX,,
 401873343,2026-05-23,2026-05-24T00:00Z,Cleveland Cavaliers,CLE,108,-130.0,,New York Knicks,NY,121,110.0,,Cleveland,OH,,
 401873200,2026-05-24,2026-05-25T00:00Z,San Antonio Spurs,SA,103,-142.0,,Oklahoma City Thunder,OKC,82,120.0,,San Antonio,TX,,
-401873344,2026-05-25,2026-05-26T00:00Z,Cleveland Cavaliers,CLE,0,120.0,,New York Knicks,NY,0,-142.0,,Cleveland,OH,,
+401873344,2026-05-25,2026-05-26T00:00Z,Cleveland Cavaliers,CLE,93,120.0,,New York Knicks,NY,130,-142.0,,Cleveland,OH,,
+401873201,2026-05-26,2026-05-27T00:30Z,Oklahoma City Thunder,OKC,0,-170.0,,San Antonio Spurs,SA,0,142.0,,Oklahoma City,OK,T. Sorber (OFS); A. Mitchell (Out),D. Jones Garcia (OFS)
