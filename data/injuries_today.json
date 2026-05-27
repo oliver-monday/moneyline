@@ -1,49 +1,5 @@
 {
-  "asof_date": "2026-05-26",
-  "built_at_utc": "2026-05-27T06:07:47Z",
-  "source": "rotowire",
-  "SAS": [
-    {
-      "name": "D. Jones Garcia",
-      "status": "OFS",
-      "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "Probable Pitchers",
-      "status": "PROB",
-      "details": "Probable Pitchers (Prob)"
-    },
-    {
-      "name": "A. Mitchell",
-      "status": "QUES",
-      "details": "A. Mitchell (Ques)"
-    },
-    {
-      "name": "T. Sorber",
-      "status": "OFS",
-      "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
-    }
-  ],
-  "OKC": [
-    {
-      "name": "A. Mitchell",
-      "status": "QUES",
-      "details": "A. Mitchell (Ques)"
-    },
-    {
-      "name": "T. Sorber",
-      "status": "OFS",
-      "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
-    }
-  ]
+  "asof_date": "2026-05-27",
+  "built_at_utc": "2026-05-27T17:39:41Z",
+  "source": "rotowire"
 }
