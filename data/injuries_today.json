@@ -1,6 +1,6 @@
 {
   "asof_date": "2026-05-26",
-  "built_at_utc": "2026-05-26T23:14:11Z",
+  "built_at_utc": "2026-05-27T00:08:13Z",
   "source": "rotowire",
   "SAS": [
     {
@@ -14,11 +14,6 @@
       "details": "Probable Pitchers (Prob)"
     },
     {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
-    },
-    {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
@@ -27,6 +22,11 @@
       "name": "A. Mitchell",
       "status": "OUT",
       "details": "A. Mitchell (Out)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ],
   "OKC": [
@@ -36,14 +36,14 @@
       "details": "T. Sorber (OFS)"
     },
     {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
-    },
-    {
       "name": "A. Mitchell",
       "status": "OUT",
       "details": "A. Mitchell (Out)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "OUT",
+      "details": "J. Williams (Out)"
     }
   ]
 }
