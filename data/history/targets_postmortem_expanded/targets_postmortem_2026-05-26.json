@@ -1,12 +1,12 @@
 {
   "asof_date": "2026-05-26",
   "summary": {
-    "targets_total": 5,
-    "hits": 5,
+    "targets_total": 7,
+    "hits": 7,
     "misses": 0,
     "hit_rate_pct": 100,
-    "top_targets_total": 5,
-    "top_targets_hits": 5
+    "top_targets_total": 6,
+    "top_targets_hits": 6
   },
   "hits": [
     {
@@ -78,6 +78,23 @@
       "trap_risk": null
     },
     {
+      "player_id": "4845367.0",
+      "player_name": "Stephon Castle",
+      "team_abbrev": "SA",
+      "opp": "OKC",
+      "stat": "3pt",
+      "threshold": 1,
+      "actual": 3,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": -3.2857420357420355,
+      "share_trend_dir": "DOWN",
+      "iqr_10": 0.75,
+      "landmine_rate_10": null,
+      "trap_risk": null
+    },
+    {
       "player_id": "4433255.0",
       "player_name": "Chet Holmgren",
       "team_abbrev": "OKC",
@@ -92,6 +109,23 @@
       "share_trend_dir": "DOWN",
       "iqr_10": 2.25,
       "landmine_rate_10": 0.0,
+      "trap_risk": false
+    },
+    {
+      "player_id": "5037871.0",
+      "player_name": "Dylan Harper",
+      "team_abbrev": "SA",
+      "opp": "OKC",
+      "stat": "reb",
+      "threshold": 4,
+      "actual": 6,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 0.6889402335968395,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 2.75,
+      "landmine_rate_10": 0.1,
       "trap_risk": false
     }
   ],
@@ -119,6 +153,16 @@
       "actual": 4
     },
     {
+      "player_id": "4845367.0",
+      "player_name": "Stephon Castle",
+      "team_abbrev": "SA",
+      "opp": "OKC",
+      "stat": "3pt",
+      "target_threshold": 1,
+      "reached_threshold": 3,
+      "actual": 3
+    },
+    {
       "player_id": "4433255.0",
       "player_name": "Chet Holmgren",
       "team_abbrev": "OKC",
@@ -127,11 +171,21 @@
       "target_threshold": 8,
       "reached_threshold": 10,
       "actual": 11
+    },
+    {
+      "player_id": "5037871.0",
+      "player_name": "Dylan Harper",
+      "team_abbrev": "SA",
+      "opp": "OKC",
+      "stat": "reb",
+      "target_threshold": 4,
+      "reached_threshold": 6,
+      "actual": 6
     }
   ],
-  "built_at_utc": "2026-05-27T11:50:39Z",
-  "snapshot_file": "targets_snapshot_2026-05-26.json",
-  "preset": "baseline",
+  "built_at_utc": "2026-05-27T11:50:41Z",
+  "snapshot_file": "targets_snapshot_expanded_2026-05-26.json",
+  "preset": "expanded",
   "top_targets": [
     {
       "asof_date": "2026-05-26",
@@ -232,6 +286,31 @@
       "actual": 4,
       "hit": true,
       "delta": 0
+    },
+    {
+      "asof_date": "2026-05-26",
+      "player_id": "4845367.0",
+      "player_name": "Stephon Castle",
+      "team_abbrev": "SA",
+      "opp": "OKC",
+      "game_id": "401873201",
+      "stat": "3pt",
+      "threshold": 1,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": -3.2857420357420355,
+      "share_trend_dir": "DOWN",
+      "iqr_10": 0.75,
+      "landmine_rate_10": null,
+      "trap_risk": null,
+      "dnp": false,
+      "actual": 3,
+      "hit": true,
+      "delta": -2
     },
     {
       "asof_date": "2026-05-26",
