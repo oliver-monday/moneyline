@@ -1,5 +1,39 @@
 {
-  "asof_date": "2026-05-27",
-  "built_at_utc": "2026-05-28T06:00:51Z",
-  "source": "rotowire"
+  "asof_date": "2026-05-28",
+  "built_at_utc": "2026-05-28T11:53:17Z",
+  "source": "rotowire",
+  "OKC": [
+    {
+      "name": "T. Sorber",
+      "status": "OFS",
+      "details": "T. Sorber (OFS)"
+    },
+    {
+      "name": "J. Williams",
+      "status": "QUES",
+      "details": "J. Williams (Ques)"
+    },
+    {
+      "name": "A. Mitchell",
+      "status": "OUT",
+      "details": "A. Mitchell (Out)"
+    },
+    {
+      "name": "Probable Pitchers",
+      "status": "PROB",
+      "details": "Probable Pitchers (Prob)"
+    },
+    {
+      "name": "D. Jones Garcia",
+      "status": "OFS",
+      "details": "D. Jones Garcia (OFS)"
+    }
+  ],
+  "SAS": [
+    {
+      "name": "D. Jones Garcia",
+      "status": "OFS",
+      "details": "D. Jones Garcia (OFS)"
+    }
+  ]
 }
