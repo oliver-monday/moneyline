@@ -1,18 +1,18 @@
 {
-  "built_at_utc": "2026-05-29T11:41:57Z",
+  "built_at_utc": "2026-05-29T17:25:30Z",
   "date": "2026-05-28",
-  "git_sha": "a796429bf9c231edd25edf2f8b94a2cb7ebe3267",
+  "git_sha": "6efd5f519872caebb63edaa1cd5259070270d2da",
   "props": {
     "all_targets": {
-      "hit_rate": 0.6666666666666666,
-      "hits": 4,
-      "total": 6
+      "hit_rate": 1.0,
+      "hits": 7,
+      "total": 7
     },
-    "closest_misses": 2,
+    "closest_misses": null,
     "reaches_hit": 3,
     "top_targets": {
-      "hit_rate": 0.6666666666666666,
-      "hits": 4,
+      "hit_rate": 1.0,
+      "hits": 6,
       "total": 6
     }
   },
