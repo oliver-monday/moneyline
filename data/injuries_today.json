@@ -1,17 +1,17 @@
 {
   "asof_date": "2026-05-28",
-  "built_at_utc": "2026-05-29T02:13:13Z",
+  "built_at_utc": "2026-05-29T05:03:57Z",
   "source": "rotowire",
   "OKC": [
+    {
+      "name": "A. Mitchell",
+      "status": "QUES",
+      "details": "A. Mitchell (Ques)"
+    },
     {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "A. Mitchell",
-      "status": "OUT",
-      "details": "A. Mitchell (Out)"
     },
     {
       "name": "Probable Pitchers",
