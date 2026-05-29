@@ -1,17 +1,12 @@
 {
   "asof_date": "2026-05-28",
-  "built_at_utc": "2026-05-28T23:22:14Z",
+  "built_at_utc": "2026-05-29T00:12:52Z",
   "source": "rotowire",
   "OKC": [
     {
       "name": "T. Sorber",
       "status": "OFS",
       "details": "T. Sorber (OFS)"
-    },
-    {
-      "name": "J. Williams",
-      "status": "QUES",
-      "details": "J. Williams (Ques)"
     },
     {
       "name": "A. Mitchell",
