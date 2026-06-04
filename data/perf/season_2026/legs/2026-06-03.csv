@@ -1,0 +1,8 @@
+date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
+2026-06-03,2026,Devin Vassell,SA,NY,reb,4,HIT,9,,targets_snapshot_2026-06-03.json
+2026-06-03,2026,Devin Vassell,SA,NY,ast,2,HIT,3,,targets_snapshot_2026-06-03.json
+2026-06-03,2026,Devin Vassell,SA,NY,3pt,2,MISSED,1,,targets_snapshot_2026-06-03.json
+2026-06-03,2026,Stephon Castle,SA,NY,pts,15,HIT,17,,targets_snapshot_2026-06-03.json
+2026-06-03,2026,De'Aaron Fox,SA,NY,reb,4,HIT,4,,targets_snapshot_2026-06-03.json
+2026-06-03,2026,OG Anunoby,NY,SA,pts,15,HIT,17,,targets_snapshot_2026-06-03.json
+2026-06-03,2026,OG Anunoby,NY,SA,3pt,2,HIT,3,,targets_snapshot_2026-06-03.json
