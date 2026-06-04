@@ -1,25 +1,20 @@
 {
   "asof_date": "2026-06-03",
-  "built_at_utc": "2026-06-03T23:49:42Z",
+  "built_at_utc": "2026-06-04T01:43:16Z",
   "source": "rotowire",
-  "NYK": [
-    {
-      "name": "M. Robinson",
-      "status": "QUES",
-      "details": "M. Robinson (Ques)"
-    },
-    {
-      "name": "Probable Pitchers",
-      "status": "PROB",
-      "details": "Probable Pitchers (Prob)"
-    },
+  "SAS": [
     {
       "name": "D. Jones Garcia",
       "status": "OFS",
       "details": "D. Jones Garcia (OFS)"
     }
   ],
-  "SAS": [
+  "NYK": [
+    {
+      "name": "Probable Pitchers",
+      "status": "PROB",
+      "details": "Probable Pitchers (Prob)"
+    },
     {
       "name": "D. Jones Garcia",
       "status": "OFS",
