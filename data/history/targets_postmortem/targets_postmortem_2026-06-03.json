@@ -153,7 +153,7 @@
       "actual": 3
     }
   ],
-  "built_at_utc": "2026-06-04T16:41:36Z",
+  "built_at_utc": "2026-06-05T11:43:03Z",
   "snapshot_file": "targets_snapshot_2026-06-03.json",
   "preset": "baseline",
   "top_targets": [
@@ -307,5 +307,6 @@
       "hit": true,
       "delta": -2
     }
-  ]
+  ],
+  "note": "Using snapshot from 2026-06-03 for results_date 2026-06-04"
 }
