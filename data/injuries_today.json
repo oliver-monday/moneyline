@@ -1,17 +1,5 @@
 {
-  "asof_date": "2026-06-08",
-  "built_at_utc": "2026-06-09T05:59:38Z",
-  "source": "rotowire",
-  "SAS": [
-    {
-      "name": "D. Jones Garcia",
-      "status": "OFS",
-      "details": "D. Jones Garcia (OFS)"
-    },
-    {
-      "name": "Probable Pitchers",
-      "status": "PROB",
-      "details": "Probable Pitchers (Prob)"
-    }
-  ]
+  "asof_date": "2026-06-09",
+  "built_at_utc": "2026-06-09T11:33:10Z",
+  "source": "rotowire"
 }
