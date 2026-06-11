@@ -1,43 +1,43 @@
 {
-  "asof_date": "2026-06-08",
-  "built_at_utc": "2026-06-10T16:53:00Z",
+  "asof_date": "2026-06-10",
+  "built_at_utc": "2026-06-11T12:18:06Z",
   "coinflips": [],
-  "favorites": [],
-  "summary": {
-    "coinflips_total": 0,
-    "favorites_lost": 1,
-    "favorites_won": 0,
-    "games_total": 1
-  },
-  "underdogs": [
+  "favorites": [
     {
-      "abs_prob_diff": 0.08902691511387162,
+      "abs_prob_diff": 0.10717836548021481,
       "away_abbrev": "SA",
-      "away_ml": 110.0,
-      "away_prob": 0.47619047619047616,
-      "away_score": 115,
+      "away_ml": 114.0,
+      "away_prob": 0.4672897196261682,
+      "away_score": 106,
       "away_team": "San Antonio Spurs",
       "dog_side": "AWAY",
       "fav_side": "HOME",
-      "favorite_prob": 0.5652173913043478,
-      "game_id": 401859965,
+      "favorite_prob": 0.574468085106383,
+      "game_id": 401859966,
       "home_abbrev": "NY",
-      "home_ml": -130.0,
-      "home_prob": 0.5652173913043478,
-      "home_score": 111,
+      "home_ml": -135.0,
+      "home_prob": 0.574468085106383,
+      "home_score": 107,
       "home_team": "New York Knicks",
       "is_coinflip": false,
-      "loser_abbrev": "NY",
-      "loser_ml": -130.0,
-      "loser_score": 111,
-      "loser_side": "HOME",
-      "loser_team": "New York Knicks",
-      "underdog_prob": 0.47619047619047616,
-      "winner_abbrev": "SA",
-      "winner_ml": 110.0,
-      "winner_score": 115,
-      "winner_side": "AWAY",
-      "winner_team": "San Antonio Spurs"
+      "loser_abbrev": "SA",
+      "loser_ml": 114.0,
+      "loser_score": 106,
+      "loser_side": "AWAY",
+      "loser_team": "San Antonio Spurs",
+      "underdog_prob": 0.4672897196261682,
+      "winner_abbrev": "NY",
+      "winner_ml": -135.0,
+      "winner_score": 107,
+      "winner_side": "HOME",
+      "winner_team": "New York Knicks"
     }
-  ]
+  ],
+  "summary": {
+    "coinflips_total": 0,
+    "favorites_lost": 0,
+    "favorites_won": 1,
+    "games_total": 1
+  },
+  "underdogs": []
 }

@@ -1,10 +1,10 @@
 {
   "asof_date": "2026-06-10",
   "summary": {
-    "targets_total": 7,
-    "hits": 6,
+    "targets_total": 9,
+    "hits": 8,
     "misses": 1,
-    "hit_rate_pct": 86,
+    "hit_rate_pct": 89,
     "top_targets_total": 6,
     "top_targets_hits": 5
   },
@@ -110,6 +110,40 @@
       "iqr_10": 0.75,
       "landmine_rate_10": null,
       "trap_risk": null
+    },
+    {
+      "player_id": "3062679.0",
+      "player_name": "Josh Hart",
+      "team_abbrev": "NY",
+      "opp": "SA",
+      "stat": "ast",
+      "threshold": 4,
+      "actual": 6,
+      "is_home_game": true,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 4.785113971121483,
+      "share_trend_dir": "UP",
+      "iqr_10": 2.0,
+      "landmine_rate_10": 0.1,
+      "trap_risk": false
+    },
+    {
+      "player_id": "5037871.0",
+      "player_name": "Dylan Harper",
+      "team_abbrev": "SA",
+      "opp": "NY",
+      "stat": "reb",
+      "threshold": 4,
+      "actual": 4,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": 3.3926025673252314,
+      "share_trend_dir": "UP",
+      "iqr_10": 2.5,
+      "landmine_rate_10": 0.1,
+      "trap_risk": false
     }
   ],
   "misses": [
@@ -182,11 +216,21 @@
       "target_threshold": 2,
       "reached_threshold": 4,
       "actual": 7
+    },
+    {
+      "player_id": "3062679.0",
+      "player_name": "Josh Hart",
+      "team_abbrev": "NY",
+      "opp": "SA",
+      "stat": "ast",
+      "target_threshold": 4,
+      "reached_threshold": 6,
+      "actual": 6
     }
   ],
-  "built_at_utc": "2026-06-11T12:18:19Z",
-  "snapshot_file": "targets_snapshot_2026-06-10.json",
-  "preset": "baseline",
+  "built_at_utc": "2026-06-11T12:18:22Z",
+  "snapshot_file": "targets_snapshot_expanded_2026-06-10.json",
+  "preset": "expanded",
   "top_targets": [
     {
       "asof_date": "2026-06-10",
@@ -290,6 +334,31 @@
     },
     {
       "asof_date": "2026-06-10",
+      "player_id": "4395630.0",
+      "player_name": "Devin Vassell",
+      "team_abbrev": "SA",
+      "opp": "NY",
+      "game_id": "401859966",
+      "stat": "3pt",
+      "threshold": 2,
+      "hits": 8,
+      "window_games": 10,
+      "hit_rate": 0.8,
+      "is_home_game": false,
+      "rest_days": 1,
+      "is_b2b": false,
+      "share_trend_pp": -0.2072074167662391,
+      "share_trend_dir": "FLAT",
+      "iqr_10": 1.75,
+      "landmine_rate_10": null,
+      "trap_risk": null,
+      "dnp": false,
+      "actual": 5,
+      "hit": true,
+      "delta": -3
+    },
+    {
+      "asof_date": "2026-06-10",
       "player_id": "3934719.0",
       "player_name": "OG Anunoby",
       "team_abbrev": "NY",
@@ -312,31 +381,6 @@
       "actual": 7,
       "hit": true,
       "delta": -5
-    },
-    {
-      "asof_date": "2026-06-10",
-      "player_id": "4845367.0",
-      "player_name": "Stephon Castle",
-      "team_abbrev": "SA",
-      "opp": "NY",
-      "game_id": "401859966",
-      "stat": "3pt",
-      "threshold": 1,
-      "hits": 8,
-      "window_games": 10,
-      "hit_rate": 0.8,
-      "is_home_game": false,
-      "rest_days": 1,
-      "is_b2b": false,
-      "share_trend_pp": -3.228508419684889,
-      "share_trend_dir": "DOWN",
-      "iqr_10": 0.75,
-      "landmine_rate_10": null,
-      "trap_risk": null,
-      "dnp": false,
-      "actual": 1,
-      "hit": true,
-      "delta": 0
     }
   ]
 }
