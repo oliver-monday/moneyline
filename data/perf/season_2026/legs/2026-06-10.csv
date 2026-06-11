@@ -1,8 +1,5 @@
 date,season_end_year,player_name,team_abbrev,opp_abbrev,stat,threshold,status,actual,reached,source
-2026-06-10,2026,Victor Wembanyama,SA,NY,ast,2,MISSED,1,,targets_snapshot_2026-06-10.json
 2026-06-10,2026,Victor Wembanyama,SA,NY,3pt,2,HIT,2,,targets_snapshot_2026-06-10.json
 2026-06-10,2026,Devin Vassell,SA,NY,reb,4,HIT,5,,targets_snapshot_2026-06-10.json
 2026-06-10,2026,Devin Vassell,SA,NY,ast,2,HIT,4,,targets_snapshot_2026-06-10.json
 2026-06-10,2026,Devin Vassell,SA,NY,3pt,2,HIT,5,,targets_snapshot_2026-06-10.json
-2026-06-10,2026,OG Anunoby,NY,SA,3pt,2,HIT,7,,targets_snapshot_2026-06-10.json
-2026-06-10,2026,Stephon Castle,SA,NY,3pt,1,HIT,1,,targets_snapshot_2026-06-10.json
